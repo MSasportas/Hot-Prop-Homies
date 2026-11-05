@@ -1,0 +1,62 @@
+# NHL pipeline timer (see sports/nhl/TEAM.md "How the timer runs").
+# Self-dispatching chain: runs sports/nhl/scripts/loop.sh for ~50 min, then starts the next run.
+# Concurrency group keeps one run going and at most one waiting; a newer waiting run replaces an older one.
+# Off switch: commit sports/nhl/config/stop_timer.
+name: nhl-run
+on:
+  workflow_dispatch:
+    inputs:
+      chain_link:
+        description: 'Which link of the chain this is (set by the previous run)'
+        required: false
+        default: '0'
+      chain_started_at:
+        description: 'When the chain began (set by the previous run)'
+        required: false
+        default: ''
+  schedule:
+    - cron: '23 * * * *'      # restarter only (offset from NBA to avoid simultaneous starts)
+  push:                       # a code or rule change starts a chain right away
+    branches: [main]
+    paths: ['sports/nhl/scripts/**', 'sports/nhl/config/**', '.github/workflows/nhl-run.yml']
+permissions:
+  contents: write             # commit sports/nhl/data/
+  actions: write              # start the next run
+concurrency:
+  group: nhl-repo-writer
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 65
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0        # full history: guard_record.py --history walks every Record version
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: loop (about 50 minutes)
+        timeout-minutes: 60
+        working-directory: sports/nhl
+        env:
+          ODDS_API_KEYS: ${{ secrets.NHL_ODDS_API_KEYS }}
+          ODDS_API_KEYS_2: ${{ secrets.NHL_ODDS_API_KEYS_2 }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.NHL_DISCORD_WEBHOOK }}
+          PC_RUNNER_EVENT: ${{ github.event_name }}
+          PC_RUNNER_RUN_ID: ${{ github.run_id }}
+          PC_RUNNER_LINK: ${{ github.event_name == 'workflow_dispatch' && inputs.chain_link || '0' }}
+          PC_RUNNER_CHAIN_STARTED: ${{ github.event_name == 'workflow_dispatch' && inputs.chain_started_at || '' }}
+        run: bash scripts/loop.sh
+
+      - name: start the next run
+        if: always()
+        working-directory: sports/nhl
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          DISPATCH_WORKFLOW: nhl-run.yml
+          PC_RUNNER_LINK: ${{ github.event_name == 'workflow_dispatch' && inputs.chain_link || '0' }}
+          PC_RUNNER_CHAIN_STARTED: ${{ github.event_name == 'workflow_dispatch' && inputs.chain_started_at || '' }}
+        run: bash scripts/dispatch_next.sh || [ -f scripts/dispatch_next.sh ] || gh workflow run nhl-run.yml --ref "${GITHUB_REF_NAME:-main}"

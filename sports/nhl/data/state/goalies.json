@@ -1,0 +1,94 @@
+{
+ "date": "2026-11-05",
+ "teams": {
+  "NYR": {
+   "name": "Dylan Garand",
+   "status": "expected"
+  },
+  "PHI": {
+   "name": "Joseph Woll",
+   "status": "expected"
+  },
+  "TBL": {
+   "name": "Andrei Vasilevskiy",
+   "status": "expected"
+  },
+  "CHI": {
+   "name": "Arvid Soderblom",
+   "status": "expected"
+  },
+  "NYI": {
+   "name": "Semyon Varlamov",
+   "status": "expected"
+  },
+  "CAR": {
+   "name": "Brandon Bussi",
+   "status": "expected"
+  },
+  "DET": {
+   "name": "Daniil Tarasov",
+   "status": "expected"
+  },
+  "VGK": {
+   "name": "Carter Hart",
+   "status": "expected"
+  },
+  "NJD": {
+   "name": "Jake Allen",
+   "status": "expected"
+  },
+  "STL": {
+   "name": "Joel Hofer",
+   "status": "expected"
+  },
+  "PIT": {
+   "name": "Arturs Silovs",
+   "status": "expected"
+  },
+  "BOS": {
+   "name": "Jeremy Swayman",
+   "status": "expected"
+  },
+  "MTL": {
+   "name": "Jacob Fowler",
+   "status": "expected"
+  },
+  "UTA": {
+   "name": "Sebastian Cossa",
+   "status": "expected"
+  },
+  "CBJ": {
+   "name": "Cam Talbot",
+   "status": "expected"
+  },
+  "DAL": {
+   "name": "Jake Oettinger",
+   "status": "expected"
+  },
+  "WPG": {
+   "name": "Stuart Skinner",
+   "status": "expected"
+  },
+  "VAN": {
+   "name": "Leevi Merilainen",
+   "status": "expected"
+  },
+  "EDM": {
+   "name": "Tristan Jarry",
+   "status": "expected"
+  },
+  "ANA": {
+   "name": "Lukas Dostal",
+   "status": "expected"
+  },
+  "COL": {
+   "name": "Mackenzie Blackwood",
+   "status": "expected"
+  },
+  "NSH": {
+   "name": "Juuse Saros",
+   "status": "expected"
+  }
+ },
+ "checked_at": "2026-11-05T10:30:00-05:00"
+}

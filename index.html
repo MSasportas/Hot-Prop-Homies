@@ -396,8 +396,8 @@ var MARKET_LINE_NBA = 'Hard Rock · Rebounds, points, assists, 3-pointers made �
 var MARKET_LINE_NHL = 'Hard Rock · Shots on goal · Main line, over or under · No leg worse than -200';
 var MARKET_LINE = MARKET_LINE_NBA;  /* updated by setSport() */
 var SPORT_BASES = {
-  nba: 'https://msasportas.github.io/prop-check-nba/',
-  nhl: 'https://msasportas.github.io/prop-check-nhl/'
+  nba: 'sports/nba/',
+  nhl: 'sports/nhl/'
 };
 var SPORT_LABELS = { all: 'All', nba: 'NBA', nhl: 'NHL' };
 function getBase(sp) {
@@ -665,7 +665,7 @@ function load() {
   if (S.sport === 'all') return loadAll();
   S.busy = true;
   var base = getBase(S.sport);
-  var labUrl = BASE_FIX ? 'config/lab.json' : SPORT_BASES[S.sport] + 'config/lab.json';
+  var labUrl = BASE_FIX ? 'config/lab.json' : SPORT_BASES[S.sport] + 'config/lab.json';  /* SPORT_BASES now local paths */
   var fetches = [settle(getJSON(base + 'slate.json')), settle(getJSON(base + 'record.json')), settle(getJSON(base + 'rules.json')),
                  settle(getJSON(base + 'headshots.json')), settle(getJSON(labUrl))];
   if (S.sport === 'nhl') fetches.push(settle(getJSON(base + 'record/resets.json')));

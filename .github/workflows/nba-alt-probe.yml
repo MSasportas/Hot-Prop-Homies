@@ -1,0 +1,31 @@
+# NBA: One-time research read of alternate ladders (sports/nba/research/alt_probe.py).
+name: nba-alt-probe
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['sports/nba/research/alt_probe.py', '.github/workflows/nba-alt-probe.yml']
+permissions:
+  contents: write
+concurrency:
+  group: nba-alt-probe
+  cancel-in-progress: false
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - working-directory: sports/nba
+        env:
+          ODDS_API_KEYS: ${{ secrets.NBA_ODDS_API_KEYS }}
+          ODDS_API_KEYS_2: ${{ secrets.NBA_ODDS_API_KEYS_2 }}
+        run: python research/alt_probe.py
+      - run: |
+          git config user.name "prop-check-bot" && git config user.email "bot@users.noreply.github.com"
+          git add sports/nba/research/alt_probe
+          git commit -qm "research: NBA alt ladder probe [skip ci]" || exit 0
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done

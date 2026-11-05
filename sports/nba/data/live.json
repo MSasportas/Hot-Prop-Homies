@@ -1,0 +1,233 @@
+{
+ "slate_date": "2026-11-04",
+ "generated_at": "2026-11-04T23:40:01-05:00",
+ "games": [
+  {
+   "game_id": "401909922",
+   "state": "post",
+   "period": null,
+   "clock": null,
+   "detail": "Final",
+   "in_break": false,
+   "away": {
+    "abbrev": "PHI",
+    "score": 112
+   },
+   "home": {
+    "abbrev": "DET",
+    "score": 106
+   },
+   "updated_at": "2026-11-04T22:00:00-05:00"
+  },
+  {
+   "game_id": "401909924",
+   "state": "post",
+   "period": null,
+   "clock": null,
+   "detail": "Final",
+   "in_break": false,
+   "away": {
+    "abbrev": "MIL",
+    "score": 102
+   },
+   "home": {
+    "abbrev": "BOS",
+    "score": 109
+   },
+   "updated_at": "2026-11-04T22:00:00-05:00"
+  },
+  {
+   "game_id": "401909925",
+   "state": "post",
+   "period": null,
+   "clock": null,
+   "detail": "Final",
+   "in_break": false,
+   "away": {
+    "abbrev": "CHA",
+    "score": 104
+   },
+   "home": {
+    "abbrev": "BKN",
+    "score": 114
+   },
+   "updated_at": "2026-11-04T22:20:00-05:00"
+  },
+  {
+   "game_id": "401909928",
+   "state": "post",
+   "period": null,
+   "clock": null,
+   "detail": "Final/OT",
+   "in_break": false,
+   "away": {
+    "abbrev": "UTA",
+    "score": 113
+   },
+   "home": {
+    "abbrev": "NOP",
+    "score": 120
+   },
+   "updated_at": "2026-11-04T23:10:00-05:00"
+  },
+  {
+   "game_id": "401909929",
+   "state": "post",
+   "period": null,
+   "clock": null,
+   "detail": "Final",
+   "in_break": false,
+   "away": {
+    "abbrev": "CLE",
+    "score": 116
+   },
+   "home": {
+    "abbrev": "OKC",
+    "score": 124
+   },
+   "updated_at": "2026-11-04T22:30:00-05:00"
+  },
+  {
+   "game_id": "401909931",
+   "state": "post",
+   "period": null,
+   "clock": null,
+   "detail": "Final",
+   "in_break": false,
+   "away": {
+    "abbrev": "TOR",
+    "score": 109
+   },
+   "home": {
+    "abbrev": "DEN",
+    "score": 128
+   },
+   "updated_at": "2026-11-04T23:40:01-05:00"
+  },
+  {
+   "game_id": "401909932",
+   "state": "in",
+   "period": 4,
+   "clock": "1:33",
+   "detail": "1:33 - 4th Quarter",
+   "in_break": false,
+   "away": {
+    "abbrev": "POR",
+    "score": 126
+   },
+   "home": {
+    "abbrev": "PHX",
+    "score": 112
+   },
+   "updated_at": "2026-11-04T23:40:01-05:00"
+  },
+  {
+   "game_id": "401909934",
+   "state": "in",
+   "period": 3,
+   "clock": "9:28",
+   "detail": "9:28 - 3rd Quarter",
+   "in_break": false,
+   "away": {
+    "abbrev": "LAL",
+    "score": 67
+   },
+   "home": {
+    "abbrev": "SAC",
+    "score": 60
+   },
+   "updated_at": "2026-11-04T23:40:01-05:00"
+  },
+  {
+   "game_id": "401909935",
+   "state": "in",
+   "period": 2,
+   "clock": "0.0",
+   "detail": "Halftime",
+   "in_break": true,
+   "away": {
+    "abbrev": "MIA",
+    "score": 52
+   },
+   "home": {
+    "abbrev": "LAC",
+    "score": 67
+   },
+   "updated_at": "2026-11-04T23:40:01-05:00"
+  }
+ ],
+ "picks": {
+  "2026-11-04:401909922:3059318:threes:0.5:under": {
+   "game_id": "401909922",
+   "market": "threes",
+   "stat": 0,
+   "dnp": false
+  },
+  "2026-11-04:401909924:3133628:threes:1.5:over": {
+   "game_id": "401909924",
+   "market": "threes",
+   "stat": 4,
+   "dnp": false
+  },
+  "2026-11-04:401909925:3032979:assists:3.5:under": {
+   "game_id": "401909925",
+   "market": "assists",
+   "stat": 4,
+   "dnp": false
+  },
+  "2026-11-04:401909925:4278104:points:21.5:under": {
+   "game_id": "401909925",
+   "market": "points",
+   "stat": 26,
+   "dnp": false
+  },
+  "2026-11-04:401909925:4433249:points:8.5:under": {
+   "game_id": "401909925",
+   "market": "points",
+   "stat": 7,
+   "dnp": false
+  },
+  "2026-11-04:401909928:4433627:points:20.5:over": {
+   "game_id": "401909928",
+   "market": "points",
+   "stat": 39,
+   "dnp": false
+  },
+  "2026-11-04:401909929:4278073:assists:5.5:under": {
+   "game_id": "401909929",
+   "market": "assists",
+   "stat": 8,
+   "dnp": false
+  },
+  "2026-11-04:401909931:5093267:rebounds:5.5:under": {
+   "game_id": "401909931",
+   "market": "rebounds",
+   "stat": 3,
+   "dnp": false
+  },
+  "2026-11-04:401909932:4066383:points:16.5:under": {
+   "game_id": "401909932",
+   "market": "points",
+   "stat": 18,
+   "dnp": false
+  },
+  "2026-11-04:401909934:4431679:points:9.5:under": {
+   "game_id": "401909934",
+   "market": "points",
+   "stat": 7,
+   "dnp": false
+  },
+  "2026-11-04:401909935:3448:threes:1.5:over": {
+   "game_id": "401909935",
+   "market": "threes",
+   "stat": 1,
+   "dnp": false
+  },
+  "2026-11-04:401909935:3936099:rebounds:4.5:over": {
+   "game_id": "401909935",
+   "market": "rebounds",
+   "stat": 5,
+   "dnp": false
+  }
+ }
+}

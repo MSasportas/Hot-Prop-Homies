@@ -1,0 +1,28 @@
+# NBA: One-time setup run to seed box scores (sports/nba/scripts/seed_probe.py).
+name: nba-setup
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['sports/nba/scripts/seed_probe.py', '.github/workflows/nba-setup.yml']
+permissions:
+  contents: write
+concurrency:
+  group: nba-setup
+  cancel-in-progress: false
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - working-directory: sports/nba
+        run: python scripts/seed_probe.py seed
+      - run: |
+          git config user.name "prop-check-bot" && git config user.email "bot@users.noreply.github.com"
+          git add sports/nba/data/seed sports/nba/probe
+          git commit -qm "setup: NBA seed box scores and source probe [skip ci]" || exit 0
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done

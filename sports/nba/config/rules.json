@@ -1,0 +1,201 @@
+{
+ "version": "2.6",
+ "updated": "2026-11-03",
+ "_about": "EVERY rule value lives here (TEAM.md section 4). The engine reads this file; data/rules.json (what the page reads) is generated from it. Live rule since v2.0: pin_solo (Pinnacle moves alone). gap_guard is off (kept for its research rows). Probabilities 0-1, prices American integers, times Eastern.",
+ "customer": {
+  "_about": "Customer facts locked by Matt (setup interview 2026-10-25; points and assists added 2026-10-25 8:22 PM; 3-pointers made added 2026-10-26 11:21 PM). The team never changes these. Books: Hard Rock (DraftKings was a pick book 2026-11-03 6:49-9:46 AM, no picks made; now a second button only, pin_solo.link_books).",
+  "book": "hardrockbet",
+  "books": [
+   "hardrock"
+  ],
+  "main_line_only": true,
+  "sides": [
+   "over",
+   "under"
+  ],
+  "worst_price": -200,
+  "parlays": false,
+  "regular_season_only": true,
+  "markets": [
+   "rebounds",
+   "points",
+   "assists",
+   "threes"
+  ]
+ },
+ "gap_guard": {
+  "active": false,
+  "live_from": "2026-10-25",
+  "checkpoint": "2026-11-16",
+  "gap_ev": 0.03,
+  "books_min": 4,
+  "pin_required": true,
+  "pin_ev_min": 0.0,
+  "book_hold_max": 0.15,
+  "book_fresh_min": 60,
+  "max_price": 200,
+  "pull_ev": 0.015,
+  "market_weight": 0.8,
+  "model_weight": 0.2,
+  "final_ev": 0.02,
+  "flag_pulls": [
+   "B",
+   "C",
+   "D"
+  ],
+  "final_pull": "D",
+  "max_per_player": 1,
+  "flag_max_age_min": 15,
+  "void_after_hours": 36,
+  "offsets": {
+   "rebounds": 0.0,
+   "points": 0.009,
+   "assists": 0.0,
+   "threes": 0.0
+  }
+ },
+ "eligibility": {
+  "min_history": 10,
+  "minutes_drop_ratio": 0.6,
+  "minutes_drop_games": 3,
+  "rotation_size": 7,
+  "never_status": [
+   "out",
+   "doubtful"
+  ],
+  "wait_status": [
+   "questionable",
+   "day-to-day",
+   "gtd"
+  ]
+ },
+ "reads": {
+  "a_clock": "11:00",
+  "a_before_first_min": 180,
+  "b_min": 90,
+  "c_min": 45,
+  "d_min": 20,
+  "latest_min": 8,
+  "retry_min": 20,
+  "priority": [
+   "C",
+   "B",
+   "D",
+   "A"
+  ],
+  "spare": [
+   "A"
+  ],
+  "_spare_about": "Matt, 2026-11-02 11:41 PM: bring the 11 AM read back from 2026-11-04 (no games 11-03). A read the month's allowance can't pay for still runs while the pool covers the planned reads (C, B, D) for every game left this month; then it pauses and the page says so until keys are added. Oct 26-31 replay (2+, fair price): with 11 AM 3.7 picks a night 17-5 +11.09u vs 2.2 a night 9-4 +4.23u without.",
+  "stale_min": 60,
+  "hold_min": 0.02,
+  "hold_max": 0.12
+ },
+ "safety_pause": {
+  "units": -10,
+  "text": "New picks are stopped: the Record is down 10 units or more.",
+  "sub": "The team has to review before picks resume. Picks already shown are unaffected."
+ },
+ "ops": {
+  "rollover_hour": 5,
+  "heartbeat_min": 20,
+  "sport_key": "basketball_nba",
+  "odds_region": "us",
+  "bookmakers": [
+   "hardrockbet"
+  ],
+  "consensus_books": [
+   "draftkings",
+   "fanduel",
+   "betmgm",
+   "espnbet",
+   "pinnacle",
+   "betonlineag",
+   "betrivers",
+   "novig",
+   "prophetx"
+  ],
+  "event_match_hours": 6,
+  "pool_low_allowance": 2,
+  "cost_per_read": 4,
+  "injuries_every_min": 10,
+  "lineups_window_min": 180
+ },
+ "markets": {
+  "rebounds": {
+   "feed_key": "player_rebounds",
+   "stat": "reb",
+   "noun": "rebounds",
+   "short": "reb",
+   "label": "Rebounds"
+  },
+  "points": {
+   "feed_key": "player_points",
+   "stat": "pts",
+   "noun": "points",
+   "short": "pts",
+   "label": "Points"
+  },
+  "assists": {
+   "feed_key": "player_assists",
+   "stat": "ast",
+   "noun": "assists",
+   "short": "ast",
+   "label": "Assists"
+  },
+  "threes": {
+   "feed_key": "player_threes",
+   "stat": "fg3m",
+   "noun": "threes",
+   "short": "threes",
+   "label": "3-pointers made"
+  }
+ },
+ "ui": {
+  "stale_after_min": 30,
+  "refresh_sec": 120,
+  "record_nights": 7
+ },
+ "discord": {
+  "quiet_from": "00:30",
+  "quiet_to": "09:00",
+  "max_per_day": 12
+ },
+ "pin_solo": {
+  "_about": "THE live rule since v2.0, widened v2.1 (Matt, 2026-10-28 11:52 AM): between two consecutive reads Pinnacle's de-vigged chance on Hard Rock's main line (same line on both reads at Hard Rock and Pinnacle) moves >= min_move toward a side while the median move of the other books (same line, both reads, >= others_min books) toward that side is < others_max (2 pts); bet that side at Hard Rock's price on the later read (flag_reads only, read <= max_age_min old). Discovery Oct 25-27: 31 bets 22-9 +9.74u (16 alone 11-5 + 15 with others 1-2 pts 11-4). v2.2 (Matt, 2026-10-28 6:10 PM): Hard Rock's price on that side must also be >= min_gap_vs_pin (2 pts of break-even, ~10 cents) better than Pinnacle's new posted price (Bane O2.5 threes: HR -140 vs Pinnacle -134). Replay at 2 pts: 13 bets 10-3 +5.87u. v2.3 (Matt, 2026-10-29 8:00 AM): the gap gate is REPLACED by min_ev_vs_pin 0.0: Hard Rock's price must be at or better than Pinnacle's FAIR price on that side (its new chance, Pinnacle's own margin removed; EV vs Pinnacle >= 0%). Research Run 7 discovery Oct 25-28: 16 bets 12-4 +7.12u vs the rest 28 bets 16-12 +1.33u. v2.5 (Matt, 2026-11-03 6:49 AM): the other books no longer matter (others_max/others_min null; only Pinnacle and the pick book must quote the same line); a pick can be at Hard Rock OR DraftKings: each book's price on the same line (quoted on both reads) must be at or better than Pinnacle's fair price; the pick shows every book that passes (link per book), headline and graded price = the best of them (ties: Hard Rock). v2.6 (Matt, 2026-11-03 9:46 AM): DraftKings is NOT a pick book (its own picks were flat in the replay); a Hard Rock pick also gets a DraftKings button (at DK's price) when DraftKings passes the same check on the same line (same line on both reads, price at or better than Pinnacle's fair). Graded at the Hard Rock price.",
+  "active": true,
+  "live_from": "2026-10-28",
+  "checkpoint": "2026-11-25",
+  "min_move": 0.02,
+  "others_max": null,
+  "others_min": null,
+  "hold_max": 0.15,
+  "max_price": 200,
+  "flag_reads": [
+   "B",
+   "C",
+   "D"
+  ],
+  "max_age_min": 15,
+  "min_ev_vs_pin": 0.0,
+  "link_books": [
+   "draftkings"
+  ]
+ },
+ "watch": {
+  "pin_judge": {
+   "active": true,
+   "label": "Pinnacle as the price judge",
+   "from_slate": "2026-10-28",
+   "about": "Behind the scenes (Matt, 2026-10-28): Hard Rock's main-line price is min_ev or better against Pinnacle's de-vigged chance on the same line. Research only: Backstage tab, never the Record or Discord. Discovery Oct 25-27 at +2%: 6 bets 5-1 +3.18u.",
+   "min_ev": 0.02,
+   "max_price": 200,
+   "reads": [
+    "B",
+    "C",
+    "D"
+   ],
+   "max_age_min": 15
+  }
+ }
+}

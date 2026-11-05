@@ -1,0 +1,65 @@
+{
+ "slate": "2026-11-05",
+ "teams": {
+  "ORL": {
+   "state": "expected",
+   "starters": [
+    "Jase Richardson",
+    "Anthony Black",
+    "Desmond Bane",
+    "Franz Wagner",
+    "Wendell Carter"
+   ],
+   "status": {
+    "Paolo Banchero": "out",
+    "Jonathan Isaac": "out",
+    "Izaiyah Nelson": "out",
+    "Noah Penda": "out",
+    "Jalen Suggs": "out"
+   }
+  },
+  "PHX": {
+   "state": "expected",
+   "starters": [
+    "Devin Booker",
+    "Jalen Green",
+    "Dillon Brooks",
+    "Miles Bridges",
+    "Khaman Maluach"
+   ],
+   "status": {
+    "Rasheer Fleming": "out",
+    "Jordan Goodwin": "out",
+    "Mark Williams": "out"
+   }
+  },
+  "MIA": {
+   "state": "expected",
+   "starters": [
+    "Davion Mitchell",
+    "Klay Thompson",
+    "Andrew Wiggins",
+    "Giannis Antetokounmpo",
+    "Bam Adebayo"
+   ],
+   "status": {}
+  },
+  "GS": {
+   "state": "expected",
+   "starters": [
+    "Stephen Curry",
+    "Brandin Podziemski",
+    "Will Richard",
+    "Yaxel Lendeborg",
+    "Draymond Green"
+   ],
+   "status": {
+    "Jimmy Butler": "out",
+    "Moses Moody": "out",
+    "Kristaps Porzingis": "out",
+    "Gui Santos": "out"
+   }
+  }
+ },
+ "at": "2026-11-05T05:00:01-05:00"
+}

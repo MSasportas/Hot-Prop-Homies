@@ -1,4 +1,7 @@
-NBA/
-NHL/
-temp-nba/
+/NBA/
+/NHL/
+/temp-nba/
 .superpowers/sdd/
+sports/nba/research/data/
+sports/nhl/research/data/
+*/__pycache__/

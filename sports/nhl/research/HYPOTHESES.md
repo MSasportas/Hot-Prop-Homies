@@ -1,0 +1,598 @@
+# HYPOTHESES.md: every idea, registered before it is tested
+
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| H1 | 2026-10-19 | v2.0 as config (over-hold de-vig, 0.7 blend, edge 0-0.05, 1.5/2.5, caps) | 2025-26 shots -45 | -2.7% n3918 (capped -6.1%) | failed |
+| H2 | 2026-10-19 | rule A (over-hold, 0.7 blend, edge >= 0, all lines) | same | -1.4% n4774 | failed |
+| H3 | 2026-10-19 | v1.0 | same | n3 | n/a |
+| H4 | 2026-10-19 | blind unders 1.5+2.5, -200..+120 | same | -6.3% n13427 | failed |
+| H5 | 2026-10-19 | model vs book log loss | same | model worse (0.6832 vs 0.6814) | failed |
+| WF1-11 | 2026-10-19 | 11 families / 156 variants: rest/B2B, opp suppression, line subsets, TOI trend, PP role, edge band, price band, fitted blend, saves (2 models) | walk-forward Nov-Feb | all negative, best -0.2% | failed |
+| LB1 | 2026-10-19 | v2 + team on back-to-back (frozen) | lockbox Mar-Apr | +2.4% n268, CI -6.8..+11.4 | noise (lockbox look #1) |
+
+## Run 2 (Researcher, 2026-10-19). Registered before any of these were tested.
+Common to all: Hard Rock posted price at the -45 min snapshot (5-min grid, as item 19), price >= -200 (plus money any),
+1u flat, regulation + OT, void no TOI, push on tie, game-clustered bootstrap. BE = break-even of the Hard Rock price.
+Walk-forward test months Nov, Dec, Jan, Feb (train = all earlier months incl. Oct); lockbox Mar 1+ untouched until frozen.
+
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| R1 | 2026-10-19 | **Hard Rock vs other books (stale/off-market line), shots.** Same snapshot, same player, same line. Each other book with both sides: proportional de-vig. Consensus fair = mean over other books. Primary: >= 2 other books, bet the Hard Rock side with consensus fair - BE >= 0.02. No model. Variants (counted): T in {0, .01, .02, .03, .04} x min books {1, 2} x consensus {mean, median} = 20; walk-forward picks the variant with the best train ROI (min n 50) | new pull: player_shots_on_goal, up to 10 books incl. hardrockbet, -45 min, stratified game sample | no bets possible: 0 of 100 probed lines had any HR side at or above consensus fair (see R1-probe) | dropped (untestable) |
+| R2 | 2026-10-19 | **Model flaws fixed, then edge.** Walk-forward logistic on every listed two-way line: logit P(over) = a_line + b*logit(proportional-de-vig book) + c*logit(model p_over). Bet side with p - BE >= T, T in {.01,.02,.03} (3 variants) | shots45_lines (existing) | best T=.03 -0.4% n47; T=.01 -5.4% n188 (bets only in Nov); book weight 0.66-0.91, model 0.13-0.47; log loss = book | failed |
+| R3 | 2026-10-19 | **Market-implied residuals.** Walk-forward L2 logistic: logit P(over) = a_line + b*logit(prop book) + features known before the game: L5 and L10 SOG mean minus line, season-to-date SOG/game minus line, L10 over-rate at this line, TOI L5 minus season, position, home, team B2B, opponent SOG-against L10, book price band. Bet side with p - BE >= T, T in {.01,.02,.03} (3 variants). Plus a residual table by each feature (descriptive, train months only) | shots45_lines + NHL boxscores (existing) | T=.01 -5.6% n1567 [-9.7,-1.8]; .02 -5.9% n906; .03 -8.5% n500; features add nothing (log loss worse than book 3 of 4 months) | failed |
+| R4 | 2026-10-19 | **Hard Rock alt shots ladder vs its own main line.** Fit each player's SOG distribution (negative binomial, dispersion fitted on training months) to the main line's proportional-de-vig fair over; price every alt rung (X+); bet a rung whose model-from-main-line fair - BE >= T, T in {.02,.04} (2 variants). No player model | new pull: player_shots_alternate (only if the probe shows Hard Rock posts it historically) | all 4,676 rungs -12.3% (NB model predicted -12.9%: tails priced as modelled, heavy vig); T=.02 -47% n9, T=.04 n4 | failed |
+| R5 | 2026-10-19 | **Sides/totals: Hard Rock vs other books.** As R1 on h2h and totals (same line), one snapshot per game day before the first game; consensus = mean proportional de-vig of other books; bet HR side with consensus - BE >= T, T in {.01,.02,.03} (3 variants per market) | new pull: featured markets, only if credits remain after R1 | not pulled: probe shows HR at or worse than the field on team totals, alt totals, BTTS | dropped |
+| R6 | 2026-10-19 | **Game script (shots).** Walk-forward L2 logistic: logit P(over) = a_line + b*logit(prop book) + c*strength diff + d*strength diff x is-D, strength diff = team minus opponent goal differential per game in 2025-26 games before the date (0 if < 5 games). Bet side with p - BE >= T, T in {.01,.02,.03} (3 variants). If walk-forward ROI > 0, R6b repeats it with Hard Rock's moneyline (featured h2h, paid) | shots45 + boxscores | T=.01 -15.4% n337; .02 -14.5% n169; .03 -19.3% n81 | failed |
+| R7 | 2026-10-19 | **Teammate absence (shots).** Same logistic with c*absent_sog = sum of 2025-26 SOG/game of teammates who played >= 5 of the team's last 10 games but not its last game (knowable pre-game), and d*absent_sog x player's own SOG share. T in {.01,.02,.03} (3 variants) | shots45 + boxscores | T=.01 -13.6% n235; .02 -13.9% n186; .03 -9.6% n139 | failed |
+| R8 | 2026-10-19 | **1.5 overs at plus money (low-volume shooters' tails).** Found while screening R4 (looked at Oct-Feb outcomes: 1.5 lines with fair over < .44 hit 2+ at 47.9%, n 144), so Nov-Feb is NOT clean for it. Rule: bet over 1.5 when Hard Rock over price >= +100. Variants: price >= +100 / >= +110 / >= +120 (3). Clean test = lockbox only, once, if Nov-Feb ROI > 0 with n >= 300 | shots45 | >=+100 +0.0% n780; >=+110 +6.4% n293 [-4.8,+17.6] (in-sample, n<300); >=+120 +11% n77 | not a candidate (post-hoc, n<300, CI spans 0) |
+| R1-probe | 2026-10-19 | R1 frequency check (prices only, no results): Hard Rock vs 8-9 other books (Pinnacle, FD, DK, MGM, Caesars, ESPN, BetRivers, BetOnline) on 4 snapshots (1 PM x2, -70 min, -45 min), shots 62 lines + points/assists 38 lines: **0 lines where any Hard Rock side beats the other books' de-vigged consensus (T = 0)**; best -0.014. Hard Rock copies the market and keeps ~3.5 pts per side. R1 untestable (no bets) and structurally empty at these times; R5 (featured) not pulled for the same reason (team totals/alt totals/BTTS probe: Hard Rock worse than the field on longshots) | probe pulls | 0 bets | dropped |
+| R4b | 2026-10-19 | **Stale alt ladder.** Same -45 snapshot: when Hard Rock's alt rung at the main line's own point pays MORE than the main over (alt price > main over price), bet that alt rung. Variant R4b2: in that case also bet every higher rung with EV >= 0 under NB tails from the main fair (r fitted on training months). 2 variants. Probe example: Forsling main O1.5 +120, alt 1.5 +145 | new pull: player_shots_alternate, HR only, the 104 pre-lockbox games that have 1 PM prices | ~1% of player-games (13 of 1,348); test n10 +40.8% [-2.5,+95.6] = luck: mean EV vs HR main fair -0.2%; R4b2 -21.8% n18 | failed (no mechanical edge) |
+| R10 | 2026-10-19 | **Follow Hard Rock's own move (under-reaction to news).** Lines with a 1 PM and a -45 price at the same point: if proportional fair over moved by >= d between 1 PM and -45, bet the side it moved toward at the -45 price. d in {0.005, 0.02, 0.04} (3 variants). Same-point line changes (1.5 -> 2.5) counted as a move toward the over/under by line direction, bet at the new line | shots13 + shots45 (existing, 104 pre-lockbox games) | d=.005 -8.0% n210; .02 -14.1% n76; .04 -11.3% n25 | failed |
+| R11 | 2026-10-19 | **Saves vs the shots props (cross-market, no player model).** Implied shots against = sum over the opponent's listed skaters of NB mean (r 20) solved from each Hard Rock shots line's proportional fair, scaled by a ratio fitted on training months (team SOG / listed sum). Walk-forward logistic: logit P(saves over) = a + b*logit(saves book fair) + c*(scaled implied SA - saves line)/sqrt(line). Bet side with p - BE >= T, T in {.01,.02,.03} (3 variants) | saves45 + shots45 (existing) | T=.01 +2.0% n42 [-24,+27]; .02 n6; feature weight ~0 and flips sign | failed (no signal, n tiny) |
+
+Run 2 count: 25 variants tested (R2 3, R3 3, R4 2, R4b 2, R6 3, R7 3, R8 3, R10 3, R11 3; R1's 20 had no bets, R5 not pulled).
+Expected false positives at 5%: ~1.25. Positives seen: R4b n10, R8 +6.4% n293 (post-hoc), R11 n42: all n < 300, CIs span 0.
+Cumulative variants all runs: 181. Lockbox looks: still 1.
+
+## Run 3 (Researcher, 2026-10-19 PM). Registered before any of these were tested.
+Brief: stop polishing the shots model; attack Hard Rock as a retail book (market-vs-market, local bias, structure, timing).
+Probes before registering (prices only, no results, 50 credits): featured h2h/totals/spreads, 10 books, 2025-11-18 22:30Z and
+2025-12-09 17:00Z. Findings that shaped the pull: `hardrockbet_fl` returns nothing historically (only `hardrockbet`); Hard Rock has
+no h2h_3_way or 1st-period totals historically (probe 641); at 17:00Z next-day games have no Hard Rock price, at 22:30Z most do,
+so one 22:30Z snapshot per game day gives every game a LATE price (same-day games, ~0.5-4.5 h before puck) and an EARLY price
+(next-day games, ~24-28 h before). Pull: featured h2h, 10 books (hardrockbet + pinnacle, draftkings, fanduel, betmgm,
+williamhill_us, espnbet, betrivers, fanatics), 22:30Z every game day Oct 7 - Apr 16 (~1,650 credits).
+Common: consensus fair = mean of proportional de-vig fair over the OTHER books with both sides at that snapshot (>= 3 books);
+Pinnacle fair = Pinnacle alone de-vigged. EV = fair x decimal(Hard Rock price) - 1. Hard Rock price must be >= -200. h2h graded
+on the final result incl. OT/shootout (NHL final score). 1u flat, game-clustered bootstrap. Walk-forward folds Nov, Dec, Jan, Feb
+reported per variant; lockbox (Mar 1+) only for a frozen variant positive Nov-Feb with n >= 300, once.
+
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| S1 | 2026-10-19 | **Moneyline stale vs the market, LATE price.** Same-day games (puck 0.25-6 h after the snapshot). Bet the Hard Rock side whose EV >= T. T in {0, .01, .02} x fair in {consensus, Pinnacle} (6 variants) | featured h2h pull (1,102 games late) | Hard Rock ML = consensus within 0.5 pts (mean abs fair gap); EV >= 0 on 0.13% of sides (cons) / 0.31% (Pinnacle); 99th pct EV -1.2%. T=0: n2 / n5; T>=.01: n0-1 | failed (no bets) |
+| S1e | 2026-10-19 | **Same, EARLY price (timing).** Next-day games (puck 18-34 h after the snapshot), same 6 variants. Plus descriptive: does Hard Rock's early-to-late move lag the consensus move (regress HR late-early on consensus late-early)? | same (685 games early) | EV >= 0 on 0.5% of sides; T=0 n5 / n3, T>=.01 n0. Hard Rock's early-to-late move tracks consensus (slope 0.94, corr 0.92); early gap does not predict consensus moving toward Hard Rock (slope -0.23) | failed (no bets; no timing lag) |
+| S2 | 2026-10-19 | **Florida local bias.** Descriptive: d = Hard Rock fair(team) - consensus fair(team), late price, for FLA and TBL sides vs every other team (game-clustered CI). Bets: S2a every FLA/TBL opponent ML at Hard Rock (late, >= -200); S2b same only when that price's EV vs consensus >= -0.01 (2 variants). n ~150 games, so it can never reach the n >= 300 lockbox bar alone: a shading finding would go forward-only | same | Shading tiny: FLA +0.12 pts (90% -0.00..+0.25; 4th of 32 = Hard Rock makes FLA slightly dearer), TBL -0.15 pts (cheaper). Overround FL games 4.36% vs 4.39%. S2a n86 +0.5% [-19.7,+20.6], Nov-Feb n70 -12.9%, mean EV -4.2%; S2b n0 | failed (no local bias worth a cent) |
+| S3 | 2026-10-19 | **Moneyline calibration (favourite-longshot) at Hard Rock.** Walk-forward logistic: logit P(win) = a + b*logit(consensus fair) + c*home, fit on months before m; bet Hard Rock side with p - BE >= T, T in {.01, .02, .03} (3 variants) | same | Consensus slightly overconfident in sample (slope 0.77-0.89) but out of sample: T=.01 -0.1% n187 [-15,+17]; .02 -5.5% n76; .03 +15.7% n22 | failed |
+| P1 | 2026-10-19 | **Correlated parlays (structure), same-team shots overs.** Every pair of teammates' two-way shots OVER lines at the -45 snapshot (each leg >= -200), parlay paid at the PRODUCT of Hard Rock decimal prices (what a product-priced parlay would pay). Report ROI, joint hit vs product of fair (lift), and the break-even same-game-parlay price. No fitting | shots45 (existing) | n40,338 pairs -9.9% [-12.6,-7.2]; lift x1.03 (joint 27.2% vs 26.3% independent); needs a price 1.107x the product to break even | failed |
+| P2 | 2026-10-19 | Same, teammates' UNDER pairs | shots45 | n40,445 -15.2%; lift x0.98 (teammates' unders slightly anti-correlated) | failed |
+| P3 | 2026-10-19 | Same, OVER pairs from opposing teams (same game) | shots45 | n44,377 -11.5%; lift x1.02 | failed |
+| P4 | 2026-10-19 | Goalie saves OVER + each opposing skater's shots OVER (same game, -45) | saves45 + shots45 | 168 games, n2,052 pairs -1.9% [-12.6,+8.3]; lift x1.13; Nov-Feb -4.0% | failed |
+| P5 | 2026-10-19 | Goalie saves UNDER + each opposing skater's shots UNDER | saves45 + shots45 | 168 games, n2,055 pairs +4.3% [-5.6,+14.4]; Nov-Feb n1,676 +4.6% [-6.7,+15.7]; folds +1.1/+7.8/+8.8/-14.9; lift x1.21; placebo (goalie leg paired with another game's skaters) -11.5% sd 2.0, so the correlation is real (~16 pts). Only pays if Hard Rock's same-game parlay pays >= 0.95x the product of the singles, which no API shows (SGP engines usually price this link). No lockbox look: price unverifiable and lockbox has only ~56 saves games (no power) | structural lead, not a candidate |
+| P6 | 2026-10-19 | 3-leg same-team shots OVERS (every triple) | shots45 | n75,722 triples -13.9%; lift x1.06 | failed |
+| S6 | 2026-10-19 | **Schedule spots on the moneyline (free data).** Walk-forward L2 logistic on late-price games: logit P(home win) = a + b*logit(consensus fair) + c*home on 2nd night of a back-to-back + d*away on a back-to-back + e*(home rest days - away rest days, capped +-3), all from the NHL schedule before the game. Bet Hard Rock side with p - BE >= T, T in {.01,.02,.03} (3 variants). Registered after S1-S3 and P1-P6 were run | featured h2h pull + NHL schedule | T=.01 -3.8% n364 [-13.7,+5.5]; .02 -2.5% n272; .03 -3.5% n202; Feb -32 to -65% | failed |
+| S7-probe | 2026-10-19 | **Saves: Hard Rock vs other books (prices only).** 15 random Nov-Feb games that have Hard Rock saves at -45: re-pull player_total_saves at the same -45 timestamp with 9 other books. Count Hard Rock sides whose EV vs the other books' de-vigged consensus (same point only) >= 0. If >= 10% of sides, a full test is queued; else saves joins R1 (no stale prices). NOTE: a script error meant this row was committed just AFTER the pull ran, but before any of the pulled prices were looked at | new pull, 140 credits (14 games) | 22 Hard Rock goalie lines vs 2-5 books (Pinnacle, DK, MGM, ESPN, FD): every one of 44 sides EV < 0 (mean -6.6%, best -5.0%) | dropped (no stale prices; saves joins R1) |
+
+Run 3 count: 26 variants tested (S1 6, S1e 6, S2 2, S3 3, P1-P6 6, S6 3) + 1 price-only probe (S7). Expected false positives at 5%: ~1.3.
+Positives seen: S1/S1e n <= 5, S3 T=.03 n22, P5 +4.6% (CI spans 0, unbettable price). Cumulative variants all runs: 207. Lockbox looks: still 1.
+Raw pulls: research/data/hist_addon_2026-10-19_h2h_saves.tgz (featured h2h 10 books 22:30Z x 167 game days + 2 featured probes + 14 saves games; no key).
+
+## Run 4 (Researcher, 2026-10-19 PM). SHOTS ON GOAL ONLY. Registered before any of these were tested.
+Note (CEO, 2:40 PM): written ~12:55-1:15 PM by run 4, which was cut off by a session restart at 2:34 PM before committing or producing any result file; committed now, unchanged, before the resumed run tests anything.
+Matt: "Use the historical to try different ideas, not different markets." No new historical odds pulls. Free NHL data fetched to
+scratch (code: research/code/r4/fetch_rest.py): team per-game logs 2024-25 + 2025-26, skater per-game SOG/TOI 2024-25, skater
+realtime (missed + blocked attempts) and TOI/PP TOI 2025-26, plus the cached 2025-26 boxscores. Every feature for a line dated d
+uses only games dated < d (2024-25 always allowed: it is all before). Moneyline = run 3's 10-book h2h pull (consensus = mean
+proportional de-vig of the 9 non-Hard Rock books), using the latest snapshot taken at or before that game's shots -45 snapshot.
+Common: shots45_lines, every two-way Hard Rock line (all points), proportional de-vig fair = f, side price >= -200, 1u flat,
+regulation + OT, VOID = no bet, game-clustered bootstrap. Logistic tests (L2 = 2, Newton as R3):
+logit P(over) = a + a15*[line 1.5] + a35*[line >= 3.5] + b*logit(f) + feature terms; fit on all months before the test month;
+bet a side when p - BE >= T, T in {.01, .02, .03} (3 variants). Folds Nov, Dec, Jan, Feb reported; lockbox (Mar 1+) untouched
+unless a frozen variant is positive Nov-Feb with n >= 300 (look #2 would need one-sided p < 0.05/2 = 0.025). Placebo for any
+positive variant with n >= 300: shuffle the feature(s) within date x line, rerun, 200 times.
+
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| K1 | 2026-10-19 | **Arena scorekeeper factor.** For arena = home team H: ratio = mean total SOG (both teams) in H's prior home games / mean in H's prior road games (2024-25 + 2025-26 before d); logA = n/(n+30) x log(ratio), n = H's prior home games. Logistic terms c1*logA + c2*logA*[player on the road team] (3 variants). Plus K1r rules (2 variants): road players' OVER in the 5 arenas with the highest prior logA (>= 0); road players' UNDER in the 5 lowest (<= 0). Descriptive: corr of 2024-25 vs 2025-26 arena ratio | free NHL team logs + shots45 | T=.01 -13.7% n153 [-25.2,-2.7]; .02 -9.4% n59; .03 n9 (bets Nov only). K1r-over -1.7% n747 [-6.8,+3.5] folds -5.6/-10.2/+8.0/+12.4 (n35); K1r-under -5.8% n832 [-12.3,+0.5]. Arena ratio 2024-25 vs 2025-26 corr 0.11 (not persistent) | failed |
+| K2 | 2026-10-19 | **Market-implied game script.** pw = consensus win prob of the player's team. Terms c1*(pw - .5) + c2*(pw - .5)*[D]. Lines with no moneyline snapshot before the shots snapshot are dropped (3 variants) | h2h addon + shots45 | 0 bets at every T: max p - BE per fold +0.008/-0.018/-0.015/-0.004; weights ~0 (game script already in the price) | failed |
+| K3 | 2026-10-19 | **Player-level persistent mispricing.** For each player, prior Hard Rock lines (date < d, OK): res = [actual > line] - f. Term c1*sum(res)/(n + 10) + c2*same*[D] (3 variants) | shots45 | T=.01 -12.6% n240 [-22.7,-3.1]; .02 -14.0% n58; .03 n8 (Nov only); weight flips sign by fold | failed |
+| K4 | 2026-10-19 | **Distribution shape.** Player VMR (var/mean of SOG per game, 2024-25 + prior 2025-26, shrunk 20 games toward his position's VMR from the training months). Market assumed to use the position VMR: solve mean m so NB(m, var = m x VMR_pos) gives P(X > line) = f; p_shape = P(X > line) under NB(m, var = m x VMR_player) (Poisson if VMR <= 1.01). Term c*(logit p_shape - logit f) (3 variants) | NHL logs + shots45 | T=.01 -10.2% n287 [-19.5,-1.8]; .02 -2.1% n135; .03 -2.5% n31 (Nov only); shape weight negative every fold (-0.02..-0.07) | failed |
+| K5 | 2026-10-19 | **Last-game overreaction.** z = (last game SOG - mean of his earlier prior games) / sqrt(that mean); dl = line - his previous Hard Rock line (0 if none). Terms c1*z + c2*dl (3 variants). K5r rules (2 variants): UNDER when last game SOG >= line + 3; OVER when last game SOG = 0 and his prior mean >= line | NHL logs + shots45 | T=.01 +0.0% n246 [-8.7,+9.0] (Nov -0.5 n176, Dec +1.4 n70); .02 -3.8% n55; .03 -0.2% n49. K5r-under -9.1% n616 [-15.3,-2.3]; K5r-over -2.8% n1024 [-7.5,+1.9] folds -6.0/-2.7/+0.8/-6.9 | failed |
+| K6 | 2026-10-19 | **Price selection, fixed rules (no fit).** Lines 1.5 + 2.5 only: a overs >= +100; b overs >= +110; c overs >= +120; d unders >= +100; e unders >= +110; f 2.5 overs >= +110; g walk-forward selector = whichever of a-f had the best ROI on all months before the test month (n >= 50). 7 variants. NOTE a-c contain R8's 1.5 overs, already seen in Nov-Feb (not clean); only the lockbox is clean for them | shots45 | a -6.7% n2855; b -7.4% n2008; c -8.9% n1390; d -9.1% n4563; e -10.6% n3471; f -9.7% n1739; g (picked d,d,d,a) -8.9% n4408. every fold of every rule negative | failed |
+| K7 | 2026-10-19 | **Gradient boosting on the market + rich prior-only features.** LightGBM binary, init_score = logit(f) (learns the residual from the book), features: logit f, line, D, home, logA, pw (NaN if none), K3 residual, K4 shape term, K5 z and dl, L5/L10/season SOG minus line, TOI L5 minus season, PP TOI per game L10, team SF L10, opp SA L10, rest days team/opp, B2B team/opp, travel (previous game in another arena), K9 attempts term, n prior. Params: 7 leaves, min 200 per leaf, lr .03, L2 10, feature fraction .8, rounds by early stopping on the last 25% (by date) of the training rows (max 400), then refit on all training rows. EV-threshold variant K7s: T chosen in {.01, .02, .03, .05} by ROI on that inner 25% split (n >= 30, else .03). Plus fixed T in {.01, .02, .03, .05} for transparency. 5 variants | all above | Log loss vs book by fold: Nov 0.6831 vs 0.6817 (worse), Dec/Jan/Feb equal (early stopping 1-17 rounds = nothing learned). T=.01 -11.0% n76; .02 -36.9% n12; .03 n2; .05 n0; K7s -11.0% n76 (Nov only) | failed |
+| K8 | 2026-10-19 | **Selection: top-k per night** from K7: each date, the k highest-EV (p x decimal - 1) K7 sides with EV > 0, k in {1, 3, 5} (3 variants) | K7 | top1 -9.0% n29; top3 -7.8% n86; top5 -7.9% n138 (EV > 0 sides only in Nov) | failed |
+| K9 | 2026-10-19 | **Shot attempts surplus (own idea).** From 2025-26 realtime logs before d: att = SOG + missed + blocked attempts per game (last 20 games), conv_pos = position SOG/attempt from training months; term c*(att x conv_pos - SOG per game, same 20 games) (expected SOG from attempts minus his real SOG; book may price from SOG only). 3 variants | NHL realtime + shots45 | T=.01 -14.3% n237 [-24.3,-4.8]; .02 -18.5% n150; .03 -13.8% n107 (Nov-heavy). Weight positive every fold (+0.04..+0.08 std) = real but far too small to beat the hold | failed |
+| K10 | 2026-10-19 | **PP1 deployment change (resumed run, own idea; registered after K1-K9 were run, before K10 was built).** From 2025-26 NHL time-on-ice logs before d: pp_l3 = his mean PP TOI (min) over his last 3 games; pp_base = mean over his games 4-20 back (needs >= 5, else term 0). dPP = pp_l3 - pp_base. Terms c1*dPP + c2*dPP*[D] (3 variants) | NHL toi logs + shots45 | T=.01 -7.7% n534 [-14.4,-0.8] folds -7.7 (n457)/+2.0 (n46)/-22.8 (n31)/none; .02 -6.5% n314; .03 -11.8% n180 | failed |
+| K11 | 2026-10-19 | **Opponent shot-blocking rate (own idea; same timing).** From 2025-26 skater realtime logs before d: per team-game, team blocks = sum of its skaters' blockedShots, attempts faced = sum of the opposing skaters' totalShotAttempts; opp_blk = the opponent's blocks / attempts faced over its last 20 games (>= 5, else the training-row mean lg). lg = mean opp_blk over training rows. Terms c1*att20*(lg - opp_blk) + c2*same*[D], att20 as K9 (0 if n20 < 5) (3 variants) | NHL realtime + shots45 | T=.01 -13.2% n235 [-23.4,-3.5]; .02 -11.0% n133; .03 -20.4% n84 (Nov-heavy); weight shrinks to ~0 | failed |
+| K12 | 2026-10-19 | **Linemate quality from shift charts (own idea; same timing).** Free NHL shift charts (api.nhle.com/stats/rest/en/shiftcharts, 2025-26 games before Mar 1). For each skater-game: shared seconds with each teammate skater (overlapping shifts, all strengths). Teammate rate = his SOG per 60 over his last 40 games before d (2024-25 + 2025-26 logs; >= 5 games, else skipped). LQ(game) = shared-time-weighted mean teammate rate. dLQ = LQ of his last game before d minus mean LQ over his previous 10 games before that (>= 3, else 0). Terms c1*dLQ + c2*dLQ*[D] (3 variants) | NHL shift charts + logs + shots45 | T=.01 -7.2% n369 [-15.7,+0.6] (Nov n367); .02 -5.9% n206; .03 -2.3% n101 [-17.9,+13.5]; weight +0.08 Nov then ~0.01 | failed |
+
+
+Run 4 count: 46 variants tested (K1 5, K2 3, K3 3, K4 3, K5 5, K6 7, K7 5, K8 3, K9 3, K10 3, K11 3, K12 3). Expected false
+positives at 5%: ~2.3. Positives seen: none with n >= 300 (best K5 T=.01 +0.0% n246). No placebo needed (rule: positive with n >= 300);
+no lockbox look. Cumulative variants all runs: 253. Lockbox looks: still 1.
+Why the logistic tests bet almost only in November: trained on October alone the fit is noisy; from December on, the book's
+own price (b ~ 1.0) plus any of these features never moves P(over) the ~3.5+ pts needed to clear Hard Rock's hold on a side.
+
+## Run 5 (Researcher, 2026-10-19 night, extra run). FORWARD tests on the live feed. Registered before any EV or result was looked at.
+Shots on goal only (scope). Looked at before registering: file layouts only (data/odds fetch keys, one saves shadow row, lineup_history
+and goalies.json shapes, git history counts). No Hard Rock-vs-consensus EV and no shots result was seen before this commit.
+Scored by `research/code/fwd/score_fwd.py`, which re-scores every registered forward variant on ALL nights to date (2026-10-19 on) each
+run; output `research/fwd/scores.json` + `research/fwd/scores.md`. Grading as the Record: 1u flat at the frozen read's Hard Rock price,
+result = shadow `result.actual` vs line (regulation + OT as the shadow log grades), no ice time / no result = void, tie impossible (x.5).
+Game-clustered bootstrap (2,000 resamples) for CI and one-sided p.
+**Forward bar (fixed now, never lowered):** a variant is a CANDIDATE FOR SHARP only when n >= 300 graded bets AND ROI > 0 AND
+game-clustered one-sided p < 0.05 / 15 (= 0.0033; Bonferroni over the 15 Q1 + Q2 variants below) AND CLV (bet EV vs the consensus at the
+line's last pre-puck read) mean > 0. Until n >= 300 every result is reported as "too small to judge".
+
+Common Q1 definitions. Universe: every read in `data/odds/<date>.json` that carries `others`, market `shots`, every matched player and
+line where Hard Rock posts both sides; side bet only if its Hard Rock price is -200 or better. Consensus at that read, mirroring
+scripts/shadow.py: each other book with both sides at the same pid + line, its own last_update < 60 min before the read, hold 0-15%;
+proportional de-vig; fair = MEDIAN over those books (even count: mean of the middle two). EV(side) = consensus fair(side) x Hard Rock
+decimal - 1 (unrounded). Books = number of books in that median. A line+side is bet at most once: at the FIRST read (time order) where it
+qualifies, price frozen there (like the product). CLV = consensus fair(side) at the last read of that line before puck x frozen decimal - 1.
+
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| Q1a-e | 2026-10-19 | **Bet Hard Rock when it beats consensus fair, >= 1 book.** EV >= X with books >= 1, any read (A, B, C). X = 0.00 / 0.01 / 0.02 / 0.03 / 0.05 (5 variants: a b c d e) | data/odds + data/shadow, 2026-10-19 on | night 1: X=0 13 bets, 10 graded 6-4 +1.7u (+17%); X=.01 7 graded +8%; X=.02 6 graded +26%; X=.03 3 graded -39%; X=.05 1 graded L. Too small to judge. **2026-10-30 (run 15): Q1b met its bar, n312 +13.4% p .0011 CLV +3.4%; to the Sharp** | forward, open (Q1b: candidate) |
+| Q1f-j | 2026-10-19 | Same with books >= 4. X = 0.00 / 0.01 / 0.02 / 0.03 / 0.05 (5 variants: f g h i j) | same | night 1: 8 / 5 / 4 / 2 / 1 graded; +27% / +19% / +48% / -8% / -100%. Too small | forward, open |
+| Q1k-l | 2026-10-19 | **Pinnacle alone as fair** (Pinnacle with both sides, fresh, hold 0-15%). EV vs Pinnacle fair >= X, X = 0.00 / 0.02 (2 variants) | same | night 1: X=0 11 graded 7-4 +3.0u (+28%), X=.02 6 graded +33%. Too small (p .04 is 4 games, far from .0033 and n 300) | forward, open |
+| Q1m | 2026-10-19 | **Gap step 1 lookalike (no guard).** B and C reads only, books >= 4 incl. Pinnacle with Pinnacle-fair EV >= 0, median EV >= 0.03, price -200..+120 (1 variant; the product's guard and caps are NOT applied; that is the DS's Gap + Guard job, not this test) | same | night 1: 2 graded 1-1 (Killorn O1.5 +100 L, Michkov O1.5 -120 W) | forward, open |
+| Q2a | 2026-10-19 | **Lineup promotion, Hard Rock unchanged -> OVER.** Lineup checks = every commit of data/state/lineups.json (git history, time = the team's `tried_at`, else commit time) on the slate date before puck. Event: a skater whose group improves between consecutive checks of his team (f3/f4/none -> f1/f2, or not pp1 -> pp1). At the first Hard Rock read after the event: if his Hard Rock over and under prices on that line are identical to his last Hard Rock read BEFORE the event, bet the OVER at that read's price (-200 or better). One bet per player per slate | data/state/lineups.json git history + data/odds + data/shadow | night 1: 2 promotions, neither had a Hard Rock line; 0 bets | forward, open |
+| Q2b | 2026-10-19 | **Lineup demotion or teammate news, Hard Rock unchanged.** Same, two triggers: (i) his group worsens (f1/f2 -> f3/f4/none, or pp1 -> not pp1) -> UNDER; (ii) a teammate in his f-line or pp1 group at the previous check is listed `out` -> OVER for him. Same unchanged-price condition and pricing (1 variant, both triggers pooled) | same | night 1: 2 demotions (1 with a line: Rakell, news 8:50 PM, no Hard Rock read after it before puck); 0 bets | forward, open |
+| Q2-desc | 2026-10-19 | Descriptive, no bets: for every lineup event and every stale event (shadow `stale_events`: Hard Rock unchanged while the consensus median moved >= 0.03), minutes from the news to Hard Rock's first price change and to the consensus's first move | same + goalies.json git history | night 1: 0 stale events; 4 lineup events, none followed by a read before puck, so no latency measurable; all 8 goalies confirmed by the 2 PM check (between read A and B) | forward, descriptive |
+
+Run 5 count: 15 forward variants (Q1 13, Q2 2; Bonferroni over 15). (Fixed typo 'Q1 13 + Q2 2 = 14' after scoring; the bar was always 0.05/15.) Historical cumulative unchanged at 253. Lockbox looks: 1.
+
+## Run 6 (Researcher, 2026-10-20 AM, daily). SHOTS ON GOAL ONLY. Registered before any of these were tested.
+No odds key, no historical odds pull. Free NHL stats REST per-game logs fetched to scratch (research/code/r6/fetch6.py): skater summary
+2024-25 + 2025-26 (SOG, team, home/road), team summary 2024-25 + 2025-26 (shots for/against), goalie summary 2024-25 + 2025-26 (starts,
+saves, shots against). Every feature for a line dated d uses only games dated < d, except N2's starter identity (see N2).
+Common (as run 4): shots45_lines, every two-way Hard Rock line, proportional de-vig fair f, side price >= -200, 1u flat, regulation + OT,
+VOID = no bet, game-clustered bootstrap. Walk-forward L2 logistic (L2 = 2, extra terms standardised on the training rows):
+logit P(over) = a + a15*[line 1.5] + a35*[line >= 3.5] + b*logit(f) + terms; fit on all months before the test month (Oct included);
+bet the side with p - BE >= T, T in {.01, .02, .03} (3 variants each). Folds Nov, Dec, Jan, Feb reported. Placebo (shuffle the
+feature(s) within date x line, 200 times) for any variant positive Nov-Feb with n >= 300; lockbox (Mar 1+) only for such a frozen
+variant, once, needing one-sided p < 0.05/2 = 0.025 (look #2).
+
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| N1 | 2026-10-20 | **Team coherence of Hard Rock's player lines.** For each (game, team) at -45: m_i = Poisson mean solving P(X > line_i) = f_i for each listed player (one line per player: the line with f nearest 0.5); S = sum m_i; k = number of listed players (need k >= 4, else row dropped). E = 0.5 x (team SOG for per game over its last 20 games + opponent SOG against per game over its last 20; 2024-25 + 2025-26 before d, >= 5 each). Terms c1*(log E - log S) + c2*k. Idea: when Hard Rock's lines add up to fewer team shots than the matchup implies, its overs are cheap (and vice versa) | team logs + shots45 | T=.01 -5.4% n259 [-14.2,+3.3]; .02 +0.7% n110 [-12.8,+13.8]; .03 -1.8% n59; bets Nov-Dec only. Gap weight positive every fold (+0.07..+0.21 std) but too small to clear the hold | failed |
+| N1b | 2026-10-20 | **Within-team share.** Same groups. h_i = player's SOG / his team's SOG over his last 20 games before d (2024-25 + 2025-26, games with the same team abbrev, >= 5 games, else row dropped); hs_i = h_i / sum_j h_j over the listed players; is_i = m_i / S. Term c*log(hs_i / is_i) (Hard Rock gives him a smaller share of the team total than his history -> over) | skater + team logs + shots45 | T=.01 -4.4% n109 (Nov only); .02 +34.7% n11; .03 n0. Weight ~0 and flips sign | failed |
+| N2 | 2026-10-20 | **Starting goalies.** Starter = the goalie with gamesStarted = 1 in that game's goalie log (ASSUMPTION: starters are confirmed by the -45 read; this is the only same-game input and is stated as such). sv_dev = opp starter's save % over his prior games (2024-25 + 2025-26 before d), shrunk 300 shots to the training-row mean, minus that mean; opp_backup = 1 if the opp starter started < 40% of his team's 2025-26 games before d (team >= 5 games, else 0); own_backup = same for the player's own starter. Terms c1*sv_dev + c2*opp_backup + c3*own_backup | goalie logs + shots45 | T=.01 -6.1% n519 [-12.7,+0.5]; .02 +3.2% n230 [-5.7,+11.4] (Nov +1.6 n213, Dec +23.8 n17); .03 -1.9% n108. Weights small (opp sv +0.03..+0.06, own backup -0.04..-0.06) | failed |
+| N3 | 2026-10-20 | **Where Hard Rock puts its vig.** hold = BE(over) + BE(under) - 1; skew = (BE(over) - f) - (BE(under) - (1 - f)) (vig loaded on the over vs the under beyond proportional). Terms c1*skew + c2*hold (does a better de-vig than proportional leave a side under-priced?) | shots45 | T=.01 -9.6% n204; .02 -19.3% n79; .03 -14.9% n13. Skew weight large and stable (+0.16..+0.34 std: proportional de-vig is slightly off) but the correction still never beats the hold | failed |
+| N4 | 2026-10-20 | **Player home/road split.** From his prior games (2024-25 + 2025-26 before d): diff = SOG/g at home - SOG/g on the road (needs >= 3 of each, else 0), shrunk: diff x w/(w + 10), w = nh x nr/(nh + nr). Term c*diff x (+1 if he is home, -1 if road) | skater logs + shots45 | T=.01 -9.9% n211 (Nov only); .02 +8.8% n8; .03 n0. Weight ~0 | failed |
+| N5 | 2026-10-20 | **Close game -> overtime -> more shots.** pw = consensus win prob of the player's team (run 3 h2h pull, latest snapshot at or before the shots -45 snapshot, as K2); close = 0.5 - abs(pw - 0.5). Term c1*close (K2 used pw - 0.5 linearly; this is the symmetric shape, a new variant). Lines with no moneyline snapshot dropped | h2h addon + shots45 | 0 bets at every T; weight ~0 (-0.02..+0.01) | failed |
+
+Run 6 count: 18 variants tested (N1, N1b, N2, N3, N4, N5 x 3 T). Expected false positives at 5%: ~0.9. Positives seen: N1 T.02 +0.7% n110,
+N1b T.02 n11, N2 T.02 +3.2% n230, N4 T.02 n8: all n < 300, CIs span 0. No placebo needed, no lockbox look. Cumulative historical: 271.
+Forward variants unchanged at 15. Lockbox looks: still 1. Output: research/code/r6/n6_results.txt.
+Script note (before scoring): N1b normalises both shares over the listed players that HAVE a history share (players with < 5 games dropped from the
+group, not the whole group), as the registered 'else row dropped' reads.
+
+## Run 7 (Researcher, 2026-10-21 AM, daily). SHOTS ON GOAL ONLY. Registered before any of these were tested.
+No odds key, no historical odds pull. Free NHL stats REST per-game logs refetched to scratch with research/code/r6/fetch6.py (skater,
+team, goalie; 2024-25 + 2025-26 through Feb 28; lockbox never fetched). Every feature for a line dated d uses only games dated < d.
+Common (as runs 4 and 6): shots45_lines, every two-way Hard Rock line, proportional de-vig fair f, side price >= -200, 1u flat,
+regulation + OT, VOID = no bet, game-clustered bootstrap. Fixed rules (no fit) report all bets Nov-Feb with folds. Logistic tests:
+research/code/wf.py (logit P(over) = a + a15*[1.5] + a35*[>=3.5] + b*logit(f) + standardised terms, L2 = 2, fit on all months before
+the test month), bet the side with p - BE >= T, T in {.01, .02, .03}. Placebo (shuffle the feature within date x line, 200 times) for
+any variant positive Nov-Feb with n >= 300; lockbox (Mar 1+) only for such a frozen variant, once, needing one-sided p < 0.05/2 = 0.025.
+
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| T1 | 2026-10-21 | **Return from absence.** missed = number of his current team's 2025-26 games (before d) played after his own last 2025-26 game for that team (0 if he played the team's last game; 0 if he has no 2025-26 game for that team, e.g. a trade or season debut). Fixed rules: T1a UNDER when missed >= 1; T1b UNDER when missed >= 3. Logistic T1c: terms c1*[missed >= 1] + c2*log(1 + missed) (3 T). 5 variants. Idea: rust and eased-in minutes after a layoff, priced off his usual line | skater + team logs + shots45 | T1a UNDER missed>=1 -13.0% n161 [-26.1,+0.0]; T1b >=3 -21.8% n95 [-38.0,-6.2]. T1c T=.01 -1.7% n322 [-10.3,+6.9]; .02 +9.8% n124 [-3.2,+24.4]; .03 +23.3% n84 [+6.6,+40.0] folds +27.6/+10.3/+23.3/+32.8 (p .0085 in-sample, ~0.18 after 21 variants; n < 300). Weight on log(1+missed) POSITIVE: returning players go OVER, the opposite of the registered idea | failed (lead: returners' overs, see queue Q7) |
+| T2 | 2026-10-21 | **Star tax (retail book shades popular overs).** pts = his 2024-25 regular-season points (sum of the per-game log). Fixed rules: T2a UNDER on players in the league top 25 by pts; T2b top 50. Logistic T2c: term c*log(1 + pts + his 2025-26 points before d) (3 T). 5 variants | skater logs + shots45 | T2a top-25 UNDER -5.5% n1038 [-10.5,-0.6]; T2b top-50 -7.7% n2077; T2c T=.01 -6.4% n385, .02 -3.8% n222, .03 -2.7% n137 (Nov only). No star tax: stars' unders lose about the hold | failed |
+| T3 | 2026-10-21 | **Time-zone travel.** tz of each arena (home team: ET 0, CT -1, MT -2, PT -3; UTA MT). For his team: prev = its last game before d; if it was <= 2 days before d, shift = tz(this arena) - tz(prev arena), else 0. Fixed rules: T3a UNDER when abs(shift) >= 2; T3b UNDER when shift >= 2 (flew east, lost hours). Logistic T3c: terms c1*abs(shift) + c2*shift (3 T). 5 variants | team logs + shots45 | T3a abs shift>=2 UNDER +1.5% n498 [-5.8,+8.0] (p .36); T3b east>=2 +0.5% n256; T3c T=.01 -9.4% n208, .02 -39% n20, .03 n0; weights ~0 | failed |
+| T4 | 2026-10-21 | **Big-slate calibration (book attention).** slate = number of NHL games on date d (team logs, known in advance). big = [slate >= 10]. Logistic terms c1*big + c2*big*logit(f) (is Hard Rock less calibrated on crowded nights?) (3 T) | team logs + shots45 | T=.01 -11.1% n363; .02 -16.1% n274; .03 -16.8% n175 (Nov only; Oct-only fit of the slope term). Dec-Feb big-night terms ~0 | failed |
+| T5 | 2026-10-21 | **New team.** new = his 2024-25 last team != r.team. g = his 2025-26 games for r.team before d. If new and g >= 3: dn = (his SOG/g with r.team this season - his 2024-25 SOG/g) x g/(g + 10), else 0. Terms c1*new*[g < 20] + c2*dn (does the book anchor to last season's role for movers?) (3 T) | skater logs + shots45 | T=.01 +1.8% n405 [-5.8,+9.3] folds -10.3/+25.2/+6.8/+22.7 (p .36); .02 +15.9% n148 [+2.4,+29.2] (p .025); .03 +16.2% n79. dn weight negative (movers who out-shoot their old rate are over-priced by the book). Placebo for T=.01: 0 of 200 shuffles >= real (mean -8.5% sd 3.1). Lockbox: see LB2 | failed (lockbox) |
+
+Run 7 count: 21 variants tested (T1 5, T2 5, T3 5, T4 3, T5 3). Expected false positives at 5%: ~1.05. Positives seen: T1c T=.02/.03
+(n124/n84), T3a/b (CIs span 0), T5 T=.01/.02/.03. Only T5 T=.01 had n >= 300 -> placebo -> frozen -> lockbox look #2: failed.
+Cumulative historical variants: 292. Lockbox looks: 2 (the next look needs one-sided p < 0.05/3 = 0.0167). Output: research/code/r7/t7_results.txt.
+
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| LB2 | 2026-10-21 | **Lockbox look #2, FROZEN before looking: T5 at T = .01** (the only run-7 variant positive Nov-Feb with n >= 300: +1.8% n405, 90% [-5.8, +9.3]; placebo 0 of 200 shuffles >= real, shuffled mean -8.5% sd 3.1). Exact rule unchanged: wf.py logistic with terms new*[g < 20] and dn, L2 2, standardised on training rows; walk-forward test months 2026-03 (train Oct-Feb) and 2026-04 (train Oct-Mar); bet side with p - BE >= .01, price >= -200. Pass = one-sided game-clustered bootstrap p < 0.05/2 = 0.025 on all lockbox bets (and ROI > 0). Lockbox logs fetched with research/code/r7/fetch_lb.py | shots45 Mar-Apr + logs | **-7.5% n179 [-18.6,+4.3], one-sided p 0.85** (Mar -7.8% n145, Apr -6.1% n34) | failed (lockbox look #2) |
+
+## Run 8 (Researcher, 2026-10-22 AM, daily). SHOTS ON GOAL ONLY. Registered before any of these were tested.
+No odds key, no historical odds pull. Free NHL stats REST per-game logs refetched to scratch with research/code/r6/fetch6.py (skater,
+team, goalie; 2024-25 + 2025-26 through Feb 28; lockbox not fetched). Every feature for a line dated d uses only games dated < d
+(start time and opponent/division are schedule facts known in advance). Common as runs 4/6/7: shots45_lines, every two-way Hard Rock
+line, proportional de-vig fair f, side price >= -200, 1u flat, regulation + OT, VOID = no bet, game-clustered bootstrap.
+Logistic = research/code/wf.py (a + a15 + a35 + b*logit(f) + standardised terms, L2 2, fit on all months before the test month), bet
+the side with p - BE >= T, T in {.01, .02, .03} (3 variants). Fixed rules report every Nov-Feb bet with folds. Placebo (shuffle the
+feature(s) within date x line, 200 times) for any variant positive Nov-Feb with n >= 300; lockbox (Mar 1+) only for such a frozen
+variant, once, needing one-sided p < 0.05/3 = 0.0167 (look #3).
+
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| U1 | 2026-10-22 | **Template prices (untouched lines).** For each test month, count (line, over price, under price) triples over all training rows (months before); tmpl = 1 if the row's triple is one of the 3 most frequent triples for its line in training. Idea: a line posted at a default price pair was not worked by a trader, so its fair carries less information. Terms c1*tmpl + c2*tmpl*logit(f) (3 T) | shots45 | T=.01 -15.3% n147 [-26.5,-3.8]; .02/.03 -19.4% n45 (Nov only). ~15% of lines carry a top-3 triple; weights ~0 and flip sign; log loss = book Dec-Feb | failed |
+| U2 | 2026-10-22 | **Start time.** et = puck time in US Eastern (from `start`). matinee = [et hour < 17]; late = [et hour >= 21] (West-coast late games). Logistic terms c1*matinee + c2*late (3 T). Fixed rule U2r: UNDER on every matinee line (1 variant). 4 variants | shots45 | T=.01 -9.0% n119; .02 -10.0% n108; .03 n0 (Nov only); weights small (+0.02..+0.05). U2r matinee UNDER -6.8% n1,141 [-12.1,-1.5] folds -2.5/-11.8/-12.7/+29.3 | failed |
+| U3 | 2026-10-22 | **Opponent positional allowance.** From skater logs (2024-25 + 2025-26 before d): for the opponent O, dsh = share of the SOG its opponents' DEFENSEMEN took, over O's last 20 games (>= 5, else training-row mean); dev = dsh - mean dsh over training rows. Terms c1*dev*[D] + c2*dev*[F] (does Hard Rock price the opponent only by total shots allowed, not by who gets them?) (3 T) | skater logs + shots45 | T=.01 -10.6% n194 [-20.8,+0.5]; .02 +16.5% n31; .03 n0 (Nov only); weights ~0, sign flips | failed |
+| U4 | 2026-10-22 | **Division game.** div = both teams in the same 2025-26 division (Atlantic BOS BUF DET FLA MTL OTT TBL TOR; Metro CAR CBJ NJD NYI NYR PHI PIT WSH; Central CHI COL DAL MIN NSH STL UTA WPG; Pacific ANA CGY EDM LAK SEA SJS VAN VGK). Terms c1*div + c2*div*[D] (3 T) | shots45 | T=.01 -13.0% n178 [-24.5,-2.2]; .02 -12.8% n145; .03 n3. div weight +0.04..+0.07 every fold (division games lean over) but far below the hold | failed |
+| U5 | 2026-10-22 | **Player vs this opponent (retail "history vs team").** From his prior games (2024-25 + 2025-26 before d): k = games vs this opponent, m_o = his SOG/g in them, m = his SOG/g in all prior games; dev = (m_o - m) x k/(k + 5) (0 if k = 0). Terms c1*dev + c2*[k >= 3] (3 T). Fixed rule U5r: UNDER when dev >= +1.0 (the public backs a player who "owns" this team) (1 variant). 4 variants | skater logs + shots45 | T=.01 -7.3% n171; .02 -18.1% n87; .03 -18.0% n31 (Nov only); dev weight ~0, [k >= 3] +0.05..+0.06. U5r UNDER when dev >= 1: +8.5% n50 [-12.5,+29.8] (only 50 bets: almost no one 'owns' a team after shrinkage) | failed |
+
+Run 8 count: 17 variants tested (U1 3, U2 4, U3 3, U4 3, U5 4). Expected false positives at 5%: ~0.85. Positives seen: U3 T=.02 +16.5% n31,
+U5r +8.5% n50: n < 300, CIs span 0. No variant positive with n >= 300, so no placebo and no lockbox look. Cumulative historical: 309.
+Forward variants unchanged at 15. Lockbox looks: still 2. Output: research/code/r8/u8_results.txt. Forward (3 nights, Oct 19-21): Q1a +7.4% n90
+[-8,+24] p .23, Q1f +13.8% n70 p .14, Q1k +3.0% n74, Q2a/b 0 bets: too small to judge.
+
+## Run 9 (Researcher, 2026-10-23 AM, daily). SHOTS ON GOAL ONLY. Registered before any of these were tested.
+No odds key, no historical odds pull. Free NHL stats REST per-game logs fetched to scratch with research/code/r9/fetch9.py (team summary,
+skater summary, team powerplay: 2024-25 + 2025-26 through Feb 28; skater timeonice + realtime 2025-26 through Feb 28; lockbox not fetched).
+Every feature for a line dated d uses only games dated < d (schedule facts known in advance). Common as runs 4/6/7/8: shots45_lines, every
+two-way Hard Rock line, proportional de-vig fair f, side price >= -200, 1u flat, regulation + OT, VOID = no bet, game-clustered bootstrap.
+Logistic = research/code/wf.py (a + a15 + a35 + b*logit(f) + standardised terms, L2 2, fit on all months before the test month), bet the
+side with p - BE >= T, T in {.01, .02, .03} (3 variants). Fixed rules report every Nov-Feb bet with folds. Placebo (shuffle the feature(s)
+within date x line, 200 times) for any variant positive Nov-Feb with n >= 300; lockbox (Mar 1+) only for such a frozen variant, once,
+needing one-sided p < 0.05/3 = 0.0167 (look #3).
+
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| W1 | 2026-10-23 | **Penalty environment x PP role.** pps = his PP TOI per game over his last 10 games (2025-26 timeonice, >= 3 games, else 0) / his team's PP TOI per game over its last 10 games (team powerplay ppTimeOnIcePerGame, 2025-26; 0 if team PP TOI 0). opp_give = mean ppOpportunities of the opponent O's opponents over O's last 20 games (2024-25 + 2025-26, >= 5, else training mean); own_draw = mean ppOpportunities of his own team over its last 20. dev = value - training-row mean. Terms c1*pps*opp_dev + c2*pps*own_dev (does Hard Rock price PP specialists for how much PP time this matchup will bring?) (3 T) | team powerplay + timeonice + shots45 | T=.01 -6.1% n493 [-12.6,+0.6] folds -4.9/-10.7/-52.6 (n8)/none; .02 -3.4% n301 [-11.4,+4.4] (Nov n289); .03 -4.8% n184. Weight on pps*opp_give NEGATIVE and shrinking (-0.08 -> -0.03), own-draw ~0; log loss = book | failed |
+| W2 | 2026-10-23 | **Hot shooter (public chases goals, book shades the over).** From skater logs (2024-25 + 2025-26 before d): g5 = goals in his last 5 games; luck = (goals/shots over last 10 games) - (goals + 0.1*100)/(shots + 100) over all his prior games (shrunk shooting %; 0 if < 5 prior games or 0 shots in last 10). Terms c1*g5 + c2*luck (3 T). Fixed rule W2r: UNDER when goals in his last 3 games >= 3 (1 variant). 4 variants | skater logs + shots45 | T=.01 -13.1% n190; .02 -36.4% n27; .03 n1 (Nov only); g5 and luck weights ~0, sign flips. W2r UNDER after 3+ goals in 3 games -4.8% n714 [-11.0,+1.3] folds -0.3/-13.6/-3.8/+3.9. No hot-hand shading | failed |
+| W3 | 2026-10-23 | **New to the league (book has least information).** rook = no 2024-25 regular-season game in the skater logs (approximation: also catches vets who missed all of 2024-25 or came from Europe). g = his 2025-26 games before d. Terms c1*rook + c2*rook*[g < 20] + c3*rook*logit(f) (is Hard Rock's price less calibrated on new players?) (3 T) | skater logs + shots45 | 374 rookie lines Nov-Feb. T=.01 -9.6% n419 [-17.4,-2.1]; .02 -4.2% n195; .03 -3.5% n128 [-16.9,+10.2]. Rookie terms small (+-0.05) and unstable; Hard Rock prices new players as well as vets | failed |
+| W4 | 2026-10-23 | **Rematch (home-and-home / same opponent within 3 days).** rem = his team's previous game was vs this same opponent, dated 1-3 days before d. last = his SOG in that previous game (if he played it) minus his prior mean SOG/g (all prior games before that game). Terms c1*rem + c2*rem*last (3 T). Fixed rule W4r: UNDER on rematch lines where his SOG in the first game >= line + 2 (book/public anchoring to the game everyone just saw) (1 variant). 4 variants | team + skater logs + shots45 | 139 rematch lines. T=.01 -15.1% n240; .02 -27.1% n29; .03 -28.8% n27. W4r -21.3% n21. Weights ~0 | failed |
+| W5 | 2026-10-23 | **Frozen stack of already-seen small stable weights (stated: features seen before, so walk-forward here is NOT clean and only the lockbox could confirm).** Terms together: N3 skew and hold (exact run-6 definitions), U4 div and div*[D] (run 8), K9 attempts surplus att20*conv_pos - SOG per game over the same last 20 (run 4; conv_pos from training rows; 0 if < 5 games). One fit, L2 2 (3 T) | shots45 + realtime 2025-26 + skater logs | T=.01 -4.6% n615 [-10.8,+1.2] folds -11.0/-6.4/-7.8/+18.7 (n108); .02 -8.0% n262; .03 -13.3% n157. Log loss BETTER than the book Dec-Feb (0.6788 vs 0.6796, 0.6805 vs 0.6817, 0.6786 vs 0.6804): the stack is a real calibration fix (mostly the skew/de-vig term) but still loses to the hold | failed |
+
+Forward (registered now, scored only on nights dated 2026-10-23 or later; nothing from those nights exists yet):
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| Q6a | 2026-10-23 | Q1a bets (exact run-5 definition, as in research/fwd/scores.json) whose frozen read is pull A, nights >= 2026-10-23 | score_fwd output | | forward, open |
+| Q6b | 2026-10-23 | Q1a bets whose frozen read is pull B or C, nights >= 2026-10-23 | same | | forward, open |
+| Q6c | 2026-10-23 | Q1a bets on the UNDER side (any read), nights >= 2026-10-23 | same | | forward, open |
+Q6 bar: as the run-5 forward bar (n >= 300 graded, ROI > 0, mean CLV > 0) with one-sided p < 0.05/18 = 0.0028 (15 + 3 forward variants).
+Scored by research/code/r9/score_q6.py (reads research/fwd/scores.json after score_fwd.py runs).
+
+Run 9 count: 17 variants tested (W1 3, W2 4, W3 3, W4 4, W5 3). Expected false positives at 5%: ~0.85. Positives seen: none (best W1 T=.02 -3.4% n301).
+No placebo needed, no lockbox look. Cumulative historical: 326. Forward variants: 18 (Q6a-c added, 0 nights yet). Lockbox looks: still 2.
+Output: research/code/r9/w9_results.txt. Forward (4 nights, Oct 19-22): Q1a +7.4% n153 [-5,+20] p .16; Q1k Pinnacle +11.8% n118 p .08: too small.
+
+## Run 10 (Researcher, 2026-10-25 AM, daily). SHOTS ON GOAL ONLY. Registered before any of these were tested.
+No odds key, no historical odds pull. Free NHL stats REST skater per-game logs fetched to scratch with research/code/r10/fetch10.py
+(skater summary 2024-25 + 2025-26 through Feb 28; lockbox not fetched). Every feature for a line dated d uses only data dated < d
+(day of week is a schedule fact). Common as runs 4/6-9: shots45_lines, every two-way Hard Rock line, proportional de-vig fair f, side
+price >= -200, 1u flat, regulation + OT, VOID = no bet, game-clustered bootstrap. Logistic = research/code/wf.py (a + a15 + a35 +
+b*logit(f) + standardised terms, L2 2, fit on all months before the test month), bet the side with p - BE >= T, T in {.01, .02, .03}.
+Fixed rules report every Nov-Feb bet with folds. Placebo (shuffle the feature(s) within date x line, 200 times) for any variant
+positive Nov-Feb with n >= 300; lockbox (Mar 1+) only for such a frozen variant, once, needing one-sided p < 0.05/3 = 0.0167 (look #3).
+
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| X1 | 2026-10-25 | **Book chasing its own number.** For each Hard Rock -45 line (player, date d): m = Poisson mean solving P(X > line) = f, using the player's line with f nearest 0.5 that game (as N1). prev = his most recent earlier Hard Rock game in shots45_lines (date < d, within 14 days, else no prev -> terms 0). dm = log(m_now / m_prev); z = (his SOG in that prev game - m_prev) / sqrt(m_prev). Terms c1*dm + c2*dm*z (does Hard Rock move its number too far after a big/small game?) (3 T). Fixed rule X1r: UNDER when dm >= log(1.15) and z >= 1.5 (book raised the number after a big game) (1 variant). 4 variants | shots45 | 9,867 of 10,405 lines have a prev game. T=.01 -6.2% n199 [-16.8,+4.1]; .02 +2.1% n96 [-13.9,+18.2]; .03 +9.5% n36 (Nov-Dec only). dm weight small negative every fold (-0.06..-0.02 std: Hard Rock's moves slightly overshoot) but far below the hold. X1r -1.9% n99 [-18.5,+14.9] | failed |
+| X2 | 2026-10-25 | **Public nights (day of week).** sat = [date d is a Saturday]; fs = [Friday or Sunday]. Logistic terms c1*sat + c2*fs + c3*sat*logit(f) (3 T). Fixed rule X2r: UNDER on every Saturday line (retail money on overs on the big TV night) (1 variant). 4 variants | shots45 | T=.01 -8.2% n732 [-13.7,-2.5]; .02 -2.7% n99; .03 -6.1% n41 (Nov only); weights ~0. X2r Saturday UNDERS -9.9% n2,588 [-13.2,-6.9], every fold negative. No Saturday over shading | failed |
+| X3 | 2026-10-25 | **Prior-season anchor (book over-trusts the current season early).** r24 = his 2024-25 SOG/g (needs >= 20 games, else terms 0); g = his 2025-26 games before d, r25 = his 2025-26 SOG/g before d (needs g >= 3, else terms 0). anc = (r24 - r25) x 20/(20 + g). Terms c1*anc + c2*anc*[D] (3 T) | skater logs + shots45 | T=.01 -15.5% n163 [-26.5,-3.7]; .02 -13.5% n75; .03 -12.4% n34 (Nov only). anc weight +0.05 stable every fold (last season still carries a little information) but nowhere near the hold | failed |
+
+Forward (registered now, scored only on nights dated 2026-10-25 or later; Q1a has NOT been looked at by book count before this commit):
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| Q8a | 2026-10-25 | Q1a bets (exact run-5 definition, research/fwd/scores.json) whose frozen read had books 1-3 (thin market), nights >= 2026-10-25 | score_fwd output | | forward, open |
+| Q8b | 2026-10-25 | Q1a bets with books 4-5, nights >= 2026-10-25 | same | | forward, open |
+| Q8c | 2026-10-25 | Q1a bets with books >= 6, nights >= 2026-10-25 | same | | forward, open |
+Q8 bar: run-5 forward bar (n >= 300 graded, ROI > 0, mean CLV > 0) with one-sided p < 0.05/21 = 0.0024 (18 + 3 forward variants).
+Scored by research/code/r10/score_q8.py (reads research/fwd/scores.json after score_fwd.py runs).
+
+Run 10 count: 11 variants tested (X1 4, X2 4, X3 3). Expected false positives at 5%: ~0.55. Positives seen: X1 T=.02 +2.1% n96, T=.03 +9.5% n36:
+n < 300, CIs span 0. No placebo needed, no lockbox look. Cumulative historical: 337. Forward variants: 21 (Q8a-c added, 0 nights yet).
+Lockbox looks: still 2. Output: research/code/r10/x10_results.txt. Forward (6 nights, Oct 19-24): Q1a +7.3% n237 [-2,+18] p .12; Q1c +13.4% n124 p .048: too small.
+
+## Run 11 (Researcher, 2026-10-26 AM, daily). SHOTS ON GOAL ONLY. Registered before any of these were tested.
+No odds key, no historical odds pull. Free NHL stats REST skater per-game logs fetched to scratch with research/code/r11/fetch11.py
+(skater summary 2024-25 + 2025-26 through Feb 28; lockbox not fetched). Every feature for a line dated d uses only data dated < d.
+Common as runs 4/6-10: shots45_lines, every two-way Hard Rock line, proportional de-vig fair f, side price >= -200, 1u flat,
+regulation + OT, VOID = no bet, game-clustered bootstrap. Logistic = research/code/wf.py (a + a15 + a35 + b*logit(f) + standardised
+terms, L2 2, fit on all months before the test month), bet the side with p - BE >= T, T in {.01, .02, .03}. Fixed rules report every
+Nov-Feb bet with folds. Placebo (shuffle the feature(s) within date x line, 200 times) for any variant positive Nov-Feb with n >= 300;
+lockbox (Mar 1+) only for such a frozen variant, once, needing one-sided p < 0.05/3 = 0.0167 (look #3).
+
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| Y1 | 2026-10-26 | **Opponent's missing regulars (injury proxy).** For the opponent O on date d: regulars = O skaters (2025-26 logs, team = O) who played >= 5 of O's last 10 games before d but NOT O's last game before d. missD = sum of the missing defensemen's 2025-26 TOI per game (minutes, their games for O before d); missF = same for forwards. Terms c1*missD + c2*missF (does Hard Rock price a shorthanded opponent D corps?) (3 T). Fixed rule Y1r: OVER when missD >= 20 (about one top-4 D out) (1 variant). 4 variants | skater logs + shots45 | T=.01 -10.2% n210 [-19.8,-0.4]; .02 -6.7% n149; .03 -28.9% n48 (Nov only). Weights ~0 (+-0.02 std). Y1r OVER when opp missD >= 20: -3.0% n2,025 [-6.3,+0.7] folds -4.1/-4.8/-3.6/+11.5 (n153), p .92 | failed |
+| Y2 | 2026-10-26 | **Schedule-strength-adjusted form.** oppf(T) = team T's shots against per game over its 2025-26 games before d (from summed skater SOG of its opponents; >= 5 games, else 1.0 after dividing) / league mean of the same. For his last 10 games before d (2024-25 + 2025-26 logs; 2024-25 games use oppf 1.0): adj = mean(SOG / oppf(opponent)) - mean(SOG) (positive = his recent raw numbers were deflated by tough defenses). Needs >= 5 games, else 0. Terms c1*adj + c2*adj*[D] (3 T) | skater logs + shots45 | T=.01 -11.6% n230 [-20.9,-1.8]; .02 -16.8% n137; .03 -23.5% n74 (Nov only). Weight ~0, sign flips; log loss worse than book in Nov | failed |
+| Y3 | 2026-10-26 | **First Hard Rock postings (book attention).** nHR = number of distinct earlier dates (date < d, 2025-26) on which the player had a Hard Rock -45 shots line in shots45_lines. Terms c1*[nHR = 0] + c2*[1 <= nHR <= 4] (3 T). Fixed rule Y3r: UNDER on a player's first Hard Rock line (nHR = 0), test months only (1 variant). 4 variants | shots45 | 93 first postings in Nov-Feb. T=.01 and .02 -9.9% n209 [-20.0,+0.5]; .03 +7.8% n13 (Nov only). Y3r UNDER first line -16.1% n93 [-30.9,-1.3]. First-timers lean slightly OVER (weight +0.01..+0.05), not enough | failed |
+| Y4 | 2026-10-26 | **Line-specific calibration of the book's fair.** Terms c1*[1.5]*logit(f) + c2*[>= 3.5]*logit(f) + c3*logit(f)^2 (is Hard Rock's fair too steep or too flat at the tails of a given line, e.g. heavily juiced 1.5 overs?) (3 T) | shots45 | T=.01 -8.0% n145 [-19.4,+2.8]; .02 -11.1% n125; .03 -14.3% n116 (Nov only). Squared term small negative every fold (-0.01..-0.04: book's fair a touch too extreme at the tails); log loss better than book only in Feb | failed |
+
+Forward (registered now, scored only on nights dated 2026-10-26 or later; Q1a has NOT been looked at by line before this commit):
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| Q9a | 2026-10-26 | Q1a bets (exact run-5 definition, research/fwd/scores.json) on line 1.5, nights >= 2026-10-26 | score_fwd output | | forward, open |
+| Q9b | 2026-10-26 | Q1a bets on line 2.5, nights >= 2026-10-26 | same | | forward, open |
+| Q9c | 2026-10-26 | Q1a bets on line 3.5, nights >= 2026-10-26 | same | | forward, open |
+Q9 bar: run-5 forward bar (n >= 300 graded, ROI > 0, mean CLV > 0) with one-sided p < 0.05/24 = 0.0021 (21 + 3 forward variants).
+Scored by research/code/r11/score_q9.py (reads research/fwd/scores.json after score_fwd.py runs).
+
+Run 11 count: 14 variants tested (Y1 4, Y2 3, Y3 4, Y4 3). Expected false positives at 5%: ~0.7. Positives seen: Y3 T=.03 +7.8% n13 only.
+No variant positive with n >= 300, so no placebo and no lockbox look. Cumulative historical: 351. Forward variants: 24 (Q9a-c added, 0 nights yet).
+Lockbox looks: still 2. Output: research/code/r11/y11_results.txt (10,413 graded Nov-Feb lines; run 10 counted 10,405, its rows dropped 8 lines
+with a void previous game for X1 only). Forward (7 nights, Oct 19-25): Q1a +7.3% n252 [-2,+17] p .10; Q1c +15.9% n132 p .03: too small.
+
+## Run 12 (Researcher, 2026-10-27 AM, daily). SHOTS ON GOAL ONLY. Registered before any of these were tested.
+No odds key, no historical odds pull. Free NHL stats REST skater per-game logs fetched to scratch with research/code/r12/fetch12.py
+(skater summary + skater realtime, 2024-25 + 2025-26 through Feb 28; lockbox not fetched). Every feature for a line dated d uses only
+data dated < d. Common as runs 4/6-11: shots45_lines, every two-way Hard Rock line, proportional de-vig fair f, side price >= -200,
+1u flat, regulation + OT, VOID = no bet, game-clustered bootstrap. Logistic = research/code/wf.py (a + a15 + a35 + b*logit(f) +
+standardised terms, L2 2, fit on all months before the test month), bet the side with p - BE >= T, T in {.01, .02, .03}. Fixed rules
+report every Nov-Feb bet with folds. Placebo (shuffle the feature(s) within date x line, 200 times) for any variant positive Nov-Feb
+with n >= 300; lockbox (Mar 1+) only for such a frozen variant, once, needing one-sided p < 0.05/3 = 0.0167 (look #3).
+
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| Z1 | 2026-10-27 | **Team-level shot form (book adjusts players one by one, not the team).** Team SOG for a game = sum of its skaters' shots (2025-26 logs). tsf5 = his team's SOG/g over its last 5 games before d minus its SOG/g over all its 2025-26 games before d; osa5 = the opponent's shots-against/g over its last 5 games minus its season shots-against/g. Each needs >= 10 team games before d, else 0. Terms c1*tsf5 + c2*osa5 (3 T). Fixed rule Z1r: OVER when tsf5 + osa5 >= +5 (1 variant). 4 variants | skater logs + shots45 | T=.01 -14.9% n738 [-20.3,-9.4]; .02 -14.5% n452; .03 -12.4% n247 (bets almost all Nov). Weights ~0 (+-0.04 std), signs flip by fold. Z1r OVER when team + opponent recent shot form >= +5: -3.8% n758 [-9.6,+1.8] folds +9.1/-10.6/-4.0/-5.1, p .87 | failed |
+| Z2 | 2026-10-27 | **Accuracy luck (on-target rate regresses).** From skater summary (shots) + realtime (missedShots), 2024-25 + 2025-26 before d: acc10 = SOG/(SOG + missed) over his last 10 games (needs >= 10 unblocked attempts in them, else dev 0); accL = same over ALL his prior games in both seasons; dev = acc10 - accL; att10 = unblocked attempts per game over the last 10. luck = dev x att10 (SOG per game his recent accuracy added beyond his norm). Terms c1*luck + c2*dev (3 T). Fixed rule Z2r: UNDER when luck >= +0.4 (1 variant). 4 variants. (Different from K9, which used position on-target rates, not his own.) | skater summary + realtime + shots45 | T=.01 -10.4% n229 [-20.1,-0.4]; .02 -2.8% n90; .03 +34.8% n9. luck weight +0.04..+0.11, dev -0.06..-0.12 every fold (recent accuracy carries a little, raw rate regresses; they cancel). Z2r UNDER when luck >= +0.4: -4.3% n505 [-11.2,+3.0] folds -4.3/-7.8/-5.8/+13.8, p .83 | failed |
+| Z3 | 2026-10-27 | **Role instability (TOI volatility).** cv = sd / mean of his TOI over his last 10 2025-26 games before d (>= 5 games, else the training-row mean). Terms c1*cv + c2*cv*logit(f) (is the book's fair less reliable, too extreme or too flat, for players whose ice time swings?) (3 T). 3 variants | skater summary + shots45 | T=.01 -9.7% n353 [-17.7,-1.6]; .02 -11.7% n168; .03 -11.3% n103 (all Nov; Dec-Feb no bets). Weights ~0 after Nov; log loss worse than book in Nov/Feb | failed |
+| Z4 | 2026-10-27 | **Stuck line (book keeps the same integer line while his volume drifts).** prior = his Hard Rock lines on earlier dates (date < d, one per date: the line with f nearest 0.5); k = number of his most recent consecutive prior dates whose line equals today's line (0 if none). gap = his SOG/g over his last 10 games before d (both seasons) - today's line. Terms c1*gap*[k >= 4] + c2*[k >= 4] + c3*gap (3 T). Fixed rule Z4r: when k >= 4, OVER if gap >= +0.7, UNDER if gap <= -0.7 (1 variant). 4 variants | shots45 + skater logs | 68% of lines are 'stuck' (k >= 4). T=.01 -11.0% n223 [-20.7,-1.6]; .02 -13.8% n103; .03 +1.1% n42. gap x stuck weight -0.04..-0.09 every fold (when the line is stuck, his recent volume matters LESS than the book's price implies, i.e. the book already moved the price). Z4r -9.6% n1,716 [-13.0,-6.2], every fold -8..-11 | failed |
+
+Forward (registered now; scored on every shadow night in data/shadow, Oct 12 onward; no outcome of these rows has been looked at):
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| Q10 | 2026-10-27 | **Q7 returners' overs, forward.** Every data/shadow shots row with ctx.missed_last = true (missed his team's last game; known pre-game): OVER at the row's `close` read price (last pre-game Hard Rock read), over price >= -200; graded on row.result.over (W/L/P; VOID or no result = no bet). 1 variant | data/shadow | first score (nights Oct 12-26, 15 nights): 27 bets, 26 graded, 17 W, +20.3% [-9,+49] p .14. Too small (~2 per night; bar n >= 300) | forward, open |
+Q10 bar: n >= 300 graded, ROI > 0, one-sided p < 0.05/25 = 0.0020 (24 + 1 forward variants). Scored by research/code/r12/score_q10.py.
+
+Run 12 count: 15 variants tested (Z1 4, Z2 4, Z3 3, Z4 4). Expected false positives at 5%: ~0.75. Positives seen: Z2 T=.03 +34.8% n9, Z4 T=.03
++1.1% n42 only. No variant positive with n >= 300, so no placebo and no lockbox look. Cumulative historical: 366. Forward variants: 25 (Q10 added).
+Lockbox looks: still 2. Output: research/code/r12/z12_results.txt (10,413 graded Nov-Feb lines). Forward (8 nights, Oct 19-26): Q1a +8.8%
+n269 [-1,+19] p .07; Q1b +12.7% n192 p .024; Q1c +15.6% n140 [+4,+27] p .022: too small for the bar (n >= 300, p < .0020).
+
+## Run 13 (Researcher, 2026-10-28 AM, daily). SHOTS ON GOAL ONLY. Registered before any of these were tested.
+No odds key, no historical odds pull. Free NHL stats REST per-game logs fetched to scratch with research/code/r13/fetch13.py
+(skater summary + goalie summary, 2024-25 + 2025-26 through Feb 28; lockbox not fetched). Every feature for a line dated d uses only
+data dated < d, except AA3's identity of tonight's starting goalie (actual starter from the log, as N2 did: starters are normally
+confirmed by -45; stated as a mild timing assumption). Common as runs 4/6-12: shots45_lines, every two-way Hard Rock line, proportional
+de-vig fair f, side price >= -200, 1u flat, regulation + OT, VOID = no bet, game-clustered bootstrap. Logistic = research/code/wf.py
+(a + a15 + a35 + b*logit(f) + standardised terms, L2 2, fit on all months before the test month), bet the side with p - BE >= T,
+T in {.01, .02, .03}. Fixed rules report every Nov-Feb bet with folds. Placebo (shuffle the feature(s) within date x line, 200 times)
+for any variant positive Nov-Feb with n >= 300; lockbox (Mar 1+) only for such a frozen variant, once, needing one-sided p < 0.05/3 =
+0.0167 (look #3).
+
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| AA1 | 2026-10-28 | **Player fatigue load (player level, not team B2B).** From his 2025-26 skater logs before d (needs >= 5 prior games, else all terms 0): avg = his mean TOI (min); g4 = his games dated d-3..d-1; load = TOI summed over those games - g4 x avg; lastx = TOI of his last game - avg if that game was d-1, else 0. Terms c1*load + c2*[g4 >= 2] + c3*lastx (3 T). Fixed rule AA1r: UNDER when g4 >= 2 (his 3rd game in 4 nights) (1 variant). 4 variants | skater logs + shots45 | T=.01 -12.6% n378 [-22.1,-3.2]; .02 -12.0% n269; .03 -11.8% n238 (all Nov). Weights ~0 after Nov (g4 +.05..+.08 std, i.e. 3-in-4 leans OVER if anything). AA1r UNDER on 3rd game in 4 nights -7.3% n2,116 [-10.7,-3.8], every fold -4.6..-10.1 | failed |
+| AA2 | 2026-10-28 | **Board depth = trader attention.** At the -45 snapshot: nT = distinct players with a Hard Rock shots line for his team in this game; nG = same for the game; rel = nT - mean nT of his team over its earlier dates (date < d; 0 if none). Terms c1*nG + c2*rel + c3*rel*logit(f) (is the fair less sharp, too extreme or too flat, on thin or unusually thin boards?) (3 T). 3 variants | shots45 | T=.01 -14.1% n211 [-23.9,-4.0]; .02 -24.0% n121; .03 -25.9% n71 (all Nov). Weights ~0 and sign-flipping; log loss = book Dec-Feb | failed |
+| AA3 | 2026-10-28 | **Own goalie -> score effects.** Own starter = his team's goalie with gamesStarted 1 in this game. osv = that goalie's save % over his 2024-25 + 2025-26 games before d (shots-weighted; < 300 shots against -> league mean of the training rows) minus the league mean; obk = 1 if he started < 40% of his team's 2025-26 games before d (needs >= 10 team games, else 0). A weak/backup own goalie means his team trails more and shoots more. Terms c1*osv + c2*obk (3 T). Fixed rule AA3r: OVER when obk = 1 (1 variant). 4 variants. (N2 used the OPPONENT's goalie only.) | goalie + skater logs + shots45 | T=.01 -4.0% n1,204 [-8.8,+0.8]; .02 -3.3% n1,094; .03 -3.4% n1,083 (all Nov; Dec-Feb no bets). obk weight -0.02..-0.06 (backup own goalie leans UNDER, opposite of the idea), osv +0.01..+0.06. AA3r OVER own backup -7.6% n4,036 [-9.9,-5.3], every fold negative | failed |
+| AA4 | 2026-10-28 | **Position-specific calibration.** isD = 1 for defensemen (shots45 pos). Terms c1*isD + c2*isD*logit(f) + c3*isD*[line >= 2.5] (does Hard Rock price D shots too extreme / too flat, separately from forwards?) (3 T). (R3/K7 had D as a main effect only.) 3 variants | shots45 | T=.01 -8.8% n274 [-18.0,-0.1]; .02 -13.5% n41; .03 +28.4% n11. isD x logit(f) weight -0.03..-0.05 every fold (Hard Rock a touch too extreme on D), far below the hold | failed |
+
+Forward (registered now; no split of these rows by goalie status has been looked at):
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| Q11a | 2026-10-28 | **Q1c split by goalie status at read time: both confirmed.** Every Q1c bet exactly as score_fwd.py makes it (all nights with `others`), kept when, in the latest version of data/state/goalies.json committed at or before the read's `at` (git history, same date), BOTH teams of that game have status "confirmed". 1 variant | score_fwd.py bets + goalies.json git history | first score (Oct 19-27, 9 nights): 56 bets, 53 graded, +10.6% [-10,+28] p .20, CLV .034. Too small | forward, open |
+| Q11b | 2026-10-28 | **Same, NOT both confirmed** (either team expected/unknown/missing, or no goalies.json version that day before the read). 1 variant | same | first score: 124 bets, 124 graded, +24.6% [+13,+37] p .002, CLV .045 (78 of them from read A, 1 PM). Too small (bar n >= 300) | forward, open |
+Q11 bar: n >= 300 graded, ROI > 0, one-sided p < 0.05/27 = 0.00185 (25 + 2 forward variants). Scored by research/code/r13/score_q11.py.
+
+Run 13 count: 14 variants tested (AA1 4, AA2 3, AA3 4, AA4 3). Expected false positives at 5%: ~0.7. Positives seen: AA4 T=.03 +28.4% n11
+only. No variant positive with n >= 300, so no placebo and no lockbox look. Cumulative historical: 380. Forward variants: 27 (Q11a-b added).
+Lockbox looks: still 2. Output: research/code/r13/aa13_results.txt (10,413 graded Nov-Feb lines). Forward (9 nights, Oct 19-27): Q1a +9.0%
+n332 p .053; Q1b +15.3% n241 p .0025; Q1c +20.4% n177 [+11,+30] p < .001: Q1c still short of n >= 300.
+
+## Run 14 (Researcher, 2026-10-29 AM, daily). SHOTS ON GOAL ONLY. Registered before any of these were tested.
+No odds key, no historical odds pull. Free NHL stats REST skater summary per-game logs (2025-26 through Feb 28; lockbox not fetched),
+fetched to scratch with research/code/r14/fetch14.py. Team game table = per (gameId, team): goals and SOG summed over its skaters,
+home/road from the logs; opponent's from the other team of the same gameId. Every feature for a line dated d uses only games dated < d,
+except tonight's home/road flag (known from the schedule). Common as runs 4/6-13: shots45_lines, every two-way Hard Rock line,
+proportional de-vig fair f, side price >= -200, 1u flat, regulation + OT, VOID = no bet, game-clustered bootstrap. Logistic =
+research/code/wf.py (a + a15 + a35 + b*logit(f) + standardised terms, L2 2, fit on all months before the test month), bet the side with
+p - BE >= T, T in {.01, .02, .03}. Fixed rules report every Nov-Feb bet with folds. Placebo (shuffle within date x line, 200 times) for
+any variant positive Nov-Feb with n >= 300; lockbox (Mar 1+) only for such a frozen variant, once, needing one-sided p < 0.05/3 = 0.0167
+(look #3).
+
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| BB1 | 2026-10-29 | **Team bounce-back after a bad game (coach demands more shots; book prices players off season form).** Team's last 2025-26 game before d, only if dated d-4..d-1 (else all terms 0): gd = team goals - opponent goals (capped +-5); sdf = team SOG - opponent SOG (capped +-25); L3 = 1 if gd <= -3. Terms c1*gd + c2*sdf + c3*L3 (3 T). Fixed rule BB1r: OVER when L3 = 1 (1 variant). 4 variants | skater logs + shots45 | T=.01 -15.0% n144 [-26.8,-3.3]; .02 -14.7% n92; .03 -17.0% n66 (all Nov; Dec-Feb no bets). sdf weight +0.05..+0.08 every fold after Nov (a team that outshot its last opponent leans OVER: shot dominance persists a hair), gd and L3 ~0. BB1r OVER after losing by 3+: -3.0% n1,953 [-6.6,+0.4] folds -4.9/-0.4/-5.2/+5.1, p .92 | failed |
+| BB2 | 2026-10-29 | **Streak vs his own Hard Rock number (public chases streaks, book follows).** His earlier Hard Rock dates in shots45 (date < d; one line per date: f nearest 0.5; VOID dates skipped); outcome +1 over / -1 under; s = signed length of the run of equal outcomes ending at his most recent earlier date (capped +-6; 0 if none). Terms c1*s + c2*sign(s)*[abs(s) >= 3] (3 T). Fixed rule BB2r: UNDER when s >= +3 (fade a 3+ over streak) (1 variant). 4 variants. (X1/K5 used one last game, not a streak vs the posted line.) | shots45 | T=.01 -19.4% n120 [-32.5,-6.1]; .02 -31.8% n83; .03 -60.3% n16 (all Nov). Weights ~0 and sign-flipping. BB2r UNDER after 3+ straight overs: -3.7% n1,401 [-8.4,+0.9] folds +4.2/-7.9/-8.5/+3.5, p .90 | failed |
+| BB3 | 2026-10-29 | **Road trip / homecoming.** From the team game table: rt = if tonight is a road game, the number of consecutive road games ending with tonight (1 = trip opener), else 0; hc = 1 if tonight is home and the team's previous 3 games were all road. Terms c1*min(rt, 6) + c2*hc + c3*[rt = 1] (3 T). Fixed rule BB3r: UNDER when rt >= 4 (4th+ straight road game) (1 variant). 4 variants. (T3 = time zones, WF1 = rest days; neither used trip length.) | skater logs + shots45 | T=.01 -8.5% n133 [-21.1,+4.2]; .02 -4.7% n98; .03 -22.3% n23 (all Nov). Weights ~0 (rt -0.00..-0.04, hc ~0). BB3r UNDER on 4th+ straight road game: -9.3% n963 [-14.5,-4.1], every fold negative | failed |
+
+Forward (registered now, scored only on slates from 2026-10-29 onward; none of those nights exist yet):
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| Q15a | 2026-10-29 | **Q1c at the 1 PM read only.** Every Q1c bet exactly as score_fwd.py makes it with pull = "A", nights >= 2026-10-29. (Q11b hinted the gap lives before goalie news; Q6a is Q1a, not Q1c, and its nights are seen.) 1 variant | research/fwd/scores.json | first score: 0 bets (starts tonight, Oct 29 slate) | forward, open |
+| Q15b | 2026-10-29 | **Q1c at the B/C reads only** (pull "B" or "C"; what the product can bet today), nights >= 2026-10-29. 1 variant | same | first score: 0 bets (starts tonight, Oct 29 slate) | forward, open |
+Q15 bar: n >= 300 graded, ROI > 0, one-sided p < 0.05/29 = 0.0017 (27 + 2 forward variants), mean CLV > 0. Scored by research/code/r14/score_q15.py.
+
+Run 14 count: 12 variants tested (BB1 4, BB2 4, BB3 4). Expected false positives at 5%: ~0.6. Positives seen: none. No variant positive
+with n >= 300, so no placebo and no lockbox look. Cumulative historical: 392. Forward variants: 29 (Q15a-b added). Lockbox looks: still 2.
+Output: research/code/r14/bb14_results.txt (10,413 graded Nov-Feb lines). Forward (10 nights, Oct 19-28): Q1a +9.6% n354 [+1,+18] p .025
+(bar p < .0033, not met); Q1b +14.8% n258 p .001; Q1c +18.2% n188 [+9,+28] p .001: Q1b/Q1c still short of n >= 300.
+
+## Run 15 (Researcher, 2026-10-30). Registered before any of these were tested.
+No key used, no historical odds pull. Free NHL stats REST skater summary per-game logs 2025-26 through Feb 28 (lockbox not fetched),
+fetched to scratch with research/code/r14/fetch14.py (unchanged). Common as runs 4/6-14: shots45_lines, every two-way Hard Rock line,
+proportional de-vig fair f, side price >= -200, 1u flat, regulation + OT, VOID = no bet, game-clustered bootstrap. Logistic =
+research/code/wf.py (fit on all months before the test month), bet the side with p - BE >= T, T in {.01, .02, .03}. Fixed rules report
+every Nov-Feb bet with folds. Placebo (shuffle within date x line, 200 times) for any variant positive Nov-Feb with n >= 300; lockbox
+(Mar 1+) only for such a frozen variant, once, needing one-sided p < 0.05/3 = 0.0167 (look #3).
+
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| CC1 | 2026-10-30 | **Slate size = trader attention across the whole night.** nG = number of distinct games dated d in shots45 (a schedule fact). Terms c1*log(nG) + c2*log(nG)*logit(f) (is Hard Rock's fair too extreme or too flat on big nights?) (3 T). Fixed rule CC1r: UNDER on every line on dates with nG >= 11 (1 variant). 4 variants. (AA2 = per-team board depth, not the slate.) | shots45 | T=.01 -10.7% n204 [-20.3,-0.5]; .02 -11.3% n81; .03 -20.0% n14 (mostly Nov). log(nG) x logit(f) weight +0.12..+0.19 every fold (Hard Rock's fair is a bit too flat on big slates) but log loss never beats the book. CC1r UNDER on 11+ game slates -9.5% n4,086 [-12.1,-7.0], every fold negative | failed |
+| CC2 | 2026-10-30 | **Last slate's surprise (book or bettors chase yesterday).** prev = the most recent earlier date in shots45 (d-3..d-1, else all terms 0). surprise = (share of prev's graded lines that went over) - (mean f of those lines); tsur = same over his own team's prev-date lines only (needs >= 3 lines, else 0). Terms c1*surprise + c2*tsur (3 T). Fixed rule CC2r: UNDER when surprise >= +0.08 (1 variant). 4 variants. (BB2 = his own streak; this is league/team level.) | shots45 | T=.01 -9.3% n206 [-19.0,+0.3]; .02 +6.4% n35; .03 n0 (all Nov). Weights ~0 and sign-flipping. CC2r UNDER after an over-heavy slate -11.3% n740 [-17.7,-4.9] | failed |
+| CC3 | 2026-10-30 | **Team PDO luck.** From the skater logs' team game table (BB1 construction), team's last 20 games before d (>= 5, else 0): pdo = team goals/team SOG + (1 - opp goals/opp SOG) - 1; same for tonight's opponent. Terms c1*pdo_own + c2*pdo_opp (do public/book discount the players of an unlucky team, or inflate the players facing a hot goalie team?) (3 T). Fixed rule CC3r: OVER when pdo_own <= -0.03 (1 variant). 4 variants. (Z2 = his own shooting luck, not team PDO.) | skater logs + shots45 | T=.01 -11.7% n149; .02 -1.8% n66; .03 -12.5% n28 (all Nov). Weights ~0 (own +0.03..-0.00, opp +0.00..+0.07). CC3r OVER on unlucky (low-PDO) teams -9.3% n1,184 [-13.8,-4.3], every fold negative | failed |
+
+Forward (registered now, AFTER seeing the Oct 19-29 Q1b split by read and side, so scored only on slates from 2026-10-30 onward):
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| Q16a | 2026-10-30 | **Q1b unders at the 1 PM read.** Every Q1b bet exactly as score_fwd.py makes it with pull = "A" and side = under, nights >= 2026-10-30 (Oct 19-29 split, seen: A +20.2% n188, unders +16.3% n260). 1 variant | research/fwd/scores.json | first score: 0 bets (starts tonight, Oct 30 slate) | forward, open |
+| Q16b | 2026-10-30 | **Flag at 1 PM, bet at 90 min (what the product could do today).** Every side that is a Q1b bet at an A read, bet instead at the same side's price on the first B read of that game (any EV; price >= -200; skipped if no B read or the line is gone), nights >= 2026-10-30. (Oct 19-29 seen: B/C-only Q1b +3.2% n124.) 1 variant | data/odds + data/shadow | first score: 0 bets (starts tonight, Oct 30 slate) | forward, open |
+Q16 bar: n >= 300 graded, ROI > 0, one-sided p < 0.05/31 = 0.0016 (29 + 2 forward variants), mean CLV > 0. Scored by research/code/r15/score_q16.py.
+First score: 0 bets (starts tonight). Code check on the SEEN nights Oct 19-29 (descriptive only, not a result): Q16a +23.1% n166, Q16b +12.6% n173 p .021.
+
+Run 15 count: 12 variants tested (CC1 4, CC2 4, CC3 4). Expected false positives at 5%: ~0.6. Positives with n >= 300: none, so no placebo
+and no lockbox look. Cumulative historical: 404. Forward variants: 31 (Q16a-b added). Lockbox looks: still 2. Output: research/code/r15/cc15_results.txt.
+**Forward Q1b MET ITS REGISTERED BAR on 2026-10-30** (11 nights Oct 19-29): n 312 graded, +13.4%, 90% CI +6.2..+20.5, p .0011 (20k game-clustered
+bootstrap; also < .05/29), mean CLV +3.4%, placebos 0/2000 (research/code/r15/check_q1b.txt). Caveats: A (1 PM) read +20.2% n188 vs B/C +3.2% n124
+(p .35); unders +16.3% n260 vs overs -1.3% n52; realised ROI is ~4x mean EV (+3.45%). Sent to the Sharp as a forward-bar candidate (LOG run 15).
+
+## Run 16 (Researcher, 2026-10-31). Registered before any of these were tested.
+No key used, no historical odds pull. Free NHL api-web play-by-play + right-rail (referees, head coaches) for every 2025-26 regular-season
+game dated Oct 7 - Feb 28 (lockbox games not fetched), to scratch with research/code/r16/fetch16.py. Common as runs 4/6-15: shots45_lines, every
+two-way Hard Rock line, proportional de-vig fair f, side price >= -200, 1u flat, regulation + OT, VOID = no bet, game-clustered bootstrap.
+Logistic = research/code/wf.py (fit on all months before the test month), bet the side with p - BE >= T, T in {.01, .02, .03}. Fixed rules
+report every Nov-Feb bet with folds. Placebo (shuffle within date x line, 200 times) for any variant positive Nov-Feb with n >= 300;
+lockbox (Mar 1+) only for such a frozen variant, once, needing one-sided p < 0.05/3 = 0.0167 (look #3). All features use games dated
+strictly before d. Referees and head coaches for game d itself are public before puck (NHL officials' assignments are published the morning
+of the game; a coaching change is announced before the team's next game), so they count as known at -45.
+
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| DD1 | 2026-10-31 | **Referee crew x power-play role.** crew = mean over game d's two referees of (penalty events per game in that referee's 2025-26 games before d; a referee with < 5 prior games takes the league mean); cdev = crew - league mean penalties/game before d. pps = his share of his team's power-play shots on goal (situationCode: his team has more skaters, both goalies in) over the team's last 15 games before d (>= 5 games and >= 10 team PP SOG, else 0). Terms c1*cdev + c2*cdev*pps (does Hard Rock price PP specialists for a whistle-happy crew?) (3 T). Fixed rule DD1r: OVER when pps >= 0.20 and cdev >= +1.0 (1 variant). 4 variants. (W1 = team penalty draw/give rates, not referees.) | pbp + right-rail + shots45 | T=.01 -7.0% n400 [-15.1,+1.6]; .02 -5.9% n253; .03 -2.4% n178 (mostly Nov). Weights: crew +0.03..+0.05, crew x PP share -0.06..-0.12 every fold (the wrong way: PP specialists do NOT gain with a whistle-happy crew at Hard Rock's price); log loss ~ book. DD1r OVER, PP share >= .20 + crew >= +1.0 -31.2% n64 | failed |
+| DD2 | 2026-10-31 | **Score-state sensitivity x expected game script.** Over the team's last 20 games before d (>= 5, else 0): sens = (his SOG while his team trails / team SOG while trailing) - (his SOG while tied or leading / team SOG while tied or leading), regulation, all strengths; each state needs >= 15 team SOG else 0. pw = no-vig consensus win prob of his team from the h2h addon's daily snapshot taken before puck (latest snapshot <= start; none -> 0.5). Terms c1*sens + c2*sens*(0.5 - pw) (do players who carry the trailing push get priced for the game script? K2 was team-level pw only) (3 T). Fixed rule DD2r: OVER when sens >= +0.03 and pw <= 0.42 (1 variant). 4 variants | pbp + h2h addon + shots45 | T=.01 -7.6% n145; .02 -19.6% n66; .03 -23.8% n32 (all Nov). Weights ~0 (sens -0.03..-0.04, sens x (0.5-pw) +0.01..+0.03). DD2r OVER (sens >= .03, pw <= .42) +3.3% n269 [-5.6,+12.1] p .26, folds -12.5/+17.5/+5.5/+24.2: below n 300 and p far from any bar, so no placebo/lockbox; a lead at most | failed |
+| DD3 | 2026-10-31 | **Rebound environment.** Rebound SOG = a shot on goal within 3 s after a shot attempt (SOG, missed or blocked) by the same team in the same period. reb_opp = rebound SOG per game allowed by tonight's opponent over its last 20 games before d (>= 5, else league mean); reb_own = rebound SOG per game by his team over its last 20; dev = minus the league mean before d. Terms c1*opp_dev + c2*own_dev (3 T). Fixed rule DD3r: OVER when opp_dev >= +0.6 rebound SOG/game (1 variant). 4 variants. (N2 = starting goalie quality; this is the team's rebound control, no goalie identity.) | pbp + shots45 | T=.01 -10.5% n180; .02 +0.1% n87; .03 -2.3% n16 (all Nov). Weights ~0 (opp -0.01..-0.02, own -0.04..+0.03). DD3r OVER vs high-rebound-allowed opponents -10.8% n1,213 [-15.3,-6.0], every fold negative | failed |
+| DD4 | 2026-10-31 | **New head coach.** newc = 1 if game d's head coach of his team (right-rail) differs from the coach in any of the team's previous 10 games dated 2025-10-07 or later, else 0; also newc_opp for the opponent. Terms c1*newc + c2*newc_opp (book slow on a system change?) (3 T). Fixed rule DD4r: OVER on players of a team inside its first 10 games under a new coach (1 variant). 4 variants (n small: only mid-season changes count) | right-rail + shots45 | Only one mid-season change in Oct 7-Feb 28 (CBJ, Bowness -> Evason), 72 lines; no training rows before Feb, weights 0 until Feb. T=.01 -9.5% n221 (all from the base terms, Nov); .02 -9.6% n16; .03 -68% n5. DD4r OVER, CBJ's first 10 games under Evason -11.8% n72 | failed (n too small to say anything) |
+
+Run 16 count: 16 variants tested (DD1-DD4 4 each). Expected false positives at 5%: ~0.8. Positives with n >= 300: none (best DD2r +3.3% n269), so
+no placebo and no lockbox look. Cumulative historical: 420. Forward variants: 31 (unchanged). Lockbox looks: still 2. Output: research/code/r16/dd16_results.txt.
+Forward re-score (12 nights Oct 19-30): Q1b n322 graded +13.1% [+6,+20] p < .001 CLV +3.4%, still over its bar.
+
+## Run 17 (Researcher, 2026-11-01). Registered before any of these were tested.
+No key used, no historical odds pull. Free NHL api-web play-by-play for every 2025-26 regular-season game dated Oct 7 - Feb 28 (lockbox games
+not fetched), to scratch with research/code/r17/fetch17.py (fetch16 + faceoff events kept). Common as runs 4/6-16: shots45_lines, every two-way
+Hard Rock line, proportional de-vig fair f, side price >= -200, 1u flat, regulation + OT, VOID = no bet, game-clustered bootstrap. Logistic =
+research/code/wf.py (fit on all months before the test month), bet the side with p - BE >= T, T in {.01, .02, .03}. Fixed rules report every
+Nov-Feb bet with folds. Placebo (shuffle within date x line, 200 times) for any variant positive Nov-Feb with n >= 300; lockbox (Mar 1+) only
+for such a frozen variant, once, needing one-sided p < 0.05/3 = 0.0167 (look #3). All features use games dated strictly before d.
+
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| EE1 | 2026-11-01 | **Faceoff possession.** From pbp faceoff events (winner = eventOwnerTeamId), team FO% over its last 20 games before d (>= 5, else 0.5). fo = own FO% - .5; fo_opp = opponent FO% - .5. Terms c1*fo + c2*fo_opp (does Hard Rock miss puck-possession edges?) (3 T). Fixed EE1r: OVER when fo - fo_opp >= +0.04 (1 variant). 4 variants | pbp + shots45 | T=.01 -20.7% n261 [-28,-13]; .02 -16.3% n121; .03 -31.6% n57 (all Nov). Weights ~0 (own fo -0.02..-0.04, opp -0.07..+0.03). EE1r OVER on faceoff-advantage teams -7.1% n1,697 [-10.9,-3.6], folds -7.9/-11.3/-1.8/+4.7 | failed |
+| EE2 | 2026-11-01 | **Team-level residual vs Hard Rock's own number.** res = [actual > line] - f on shots45 lines. tres = mean res over lines of his team's players in the team's last 10 game dates before d (>= 20 lines, else 0); ores = mean res over lines of players FACING tonight's opponent in the opponent's last 10 game dates before d (>= 20 lines, else 0). Terms c1*tres + c2*ores (book slow to re-rate a whole team / a whole defence?) (3 T). Fixed EE2r: OVER when ores >= +0.08 (1 variant). 4 variants. (K3 = player-level residual; Z1 = team SOG form, not vs the book) | shots45 | T=.01 -9.8% n187 [-20,+0]; .02 -8.4% n127; .03 -16.8% n53 (all Nov). Weights small, opp +0.07 Nov then ~0. EE2r OVER vs defences whose opponents beat Hard Rock lately -5.4% n1,161 [-9.8,-0.9], every fold negative | failed |
+| EE3 | 2026-11-01 | **Opponent miss-inducement.** Unblocked attempts = SOG + goals + missed shots (no shootout). For the opponent O: mrate = missed / unblocked attempts by O's opponents over O's last 20 games before d (>= 5, else league mean); dev = mrate - league mean before d. att20 = his unblocked attempts in his team's last 20 games before d / 20 (team games, 0 if absent). Terms c1*dev + c2*dev*att20 (3 T). Fixed EE3r: UNDER when dev >= +0.02 and att20 >= 3.5 (1 variant). 4 variants. (K11 = blocks, not misses) | pbp + shots45 | T=.01 -9.1% n425 [-16.8,-1.5]; .02 -7.8% n228; .03 -12.1% n137. Interaction weight +0.06..+0.11 every fold (volume shooters vs miss-inducing defences lean OVER, the opposite of the idea), far below the hold. EE3r UNDER -6.2% n471 [-13.6,+1.5] | failed |
+
+Forward (registered now; nights >= 2026-11-01 only, none seen):
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| Q17a | 2026-11-01 | **Q1b by minutes to the game's first goalie confirmation.** For every Q1b bet (exactly as score_fwd.py makes it): conf = time of the first data/state/goalies.json version (git history, commit time) on that date in which either team of the game has status "confirmed"; lead = conf - read time in minutes (if no confirmation before puck, lead = puck - read). Q17a: lead >= 60. 1 variant | research/fwd/scores.json + goalies.json history | first score: 0 bets (starts tonight). Code check on SEEN nights (not a result): +19.0% n63 | forward, open |
+| Q17b | 2026-11-01 | Same, 0 < lead < 60. 1 variant | same | 0 bets. Seen-night code check +22.9% n41 | forward, open |
+| Q17c | 2026-11-01 | Same, lead <= 0 (read after the first confirmation). 1 variant | same | 0 bets. Seen-night code check +8.4% n263 | forward, open |
+Q17 bar: n >= 300 graded, ROI > 0, one-sided p < 0.05/34 = 0.0015 (31 + 3 forward variants), mean CLV > 0. Scored by research/code/r17/score_q17.py.
+
+Run 17 count: 12 variants tested (EE1-EE3 4 each). Expected false positives at 5%: ~0.6. Positives with n >= 300: none, so no placebo and
+no lockbox look. Cumulative historical: 432. Forward variants: 34 (Q17a-c added). Lockbox looks: still 2. Output: research/code/r17/ee17_results.txt.
+Forward re-score (13 nights Oct 19-31): Q1b n367 graded +11.9% [+6,+19] p .0015 CLV +3.5%, still under its bar (.0033); Oct 31 alone +2.8% n45.
+
+## Run 18 (Researcher, 2026-11-02). Registered before any of these were tested.
+No key used, no historical odds pull. Free data to scratch with research/code/r18/fetch18.py: NHL stats REST skater/timeonice and team/powerplay
+per-game logs 2025-26 (Oct 1 - Feb 28) and api-web daily schedules (tvBroadcasts) Oct 7 - Feb 28 (lockbox not fetched). Common as runs 4/6-17:
+shots45_lines, every two-way Hard Rock line, proportional de-vig fair f, side price >= -200, 1u flat, regulation + OT, VOID = no bet,
+game-clustered bootstrap. Logistic = research/code/wf.py (fit on all months before the test month), bet the side with p - BE >= T,
+T in {.01, .02, .03}. Fixed rules report every Nov-Feb bet with folds. Placebo (shuffle within date x line, 200 times) for any variant
+positive Nov-Feb with n >= 300; lockbox (Mar 1+) only for such a frozen variant, once, needing one-sided p < 0.05/3 = 0.0167 (look #3).
+All features use games dated strictly before d (TV listings and the line's own etoi are known before puck).
+
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| FF1 | 2026-11-02 | **Florida local bias, shots.** Hard Rock is a Florida book; retail money may lean on Panthers/Lightning overs. own = [his team is FLA or TBL]; oppfl = [opponent is FLA or TBL]. Terms c1*own + c2*oppfl (3 T). Fixed FF1r: UNDER on every FLA/TBL player's line (1 variant). 4 variants | shots45 | T=.01 -7.0% n274; .02 +25.1% n19; .03 +33.2% n10 (tiny n, Nov only). FF1r UNDER on FLA/TBL players -8.3% n679 [-14.7,-2.0], folds +2.1/-12.9/-6.5/-29.0. own weight -0.02..-0.04 (FLA/TBL lean under a hair), far below the hold | failed |
+| FF2 | 2026-11-02 | **National TV game.** From api-web schedule tvBroadcasts for game d: natus = [any broadcast with market "N", countryCode "US", network not "NHLN"] (ESPN/ABC/TNT/TBS/truTV-type showcase); natca = [any market "N", countryCode "CA"]. Terms c1*natus + c2*natca (3 T). Fixed FF2r: UNDER on every line in a US national-TV game (public-heavy showcase, overs shaded?) (1 variant). 4 variants | schedule + shots45 | T=.01 -11.0% n118; .02 -8.9% n97; .03 -4.6% n20. FF2r UNDER in US national-TV games -10.5% n1,184 [-15.4,-5.3], every fold negative. Weights ~0 | failed |
+| FF3 | 2026-11-02 | **Penalty-kill burden.** shs = his SH TOI per game (minutes) over his last 10 games before d (skater/timeonice, >= 3 games, else 0). odraw = opponent's PP opportunities per game over its last 10 games before d (team/powerplay, >= 3, else league mean) minus the league mean PP opportunities per team-game before d (the opponent's PP-heavy nights put PK forwards/D on the bench-side of shot volume). Terms c1*shs + c2*shs*odraw (3 T). Fixed FF3r: UNDER when shs >= 1.5 and odraw >= +0.4 (1 variant). 4 variants | REST + shots45 | T=.01 -9.8% n221; .02 -23.1% n46; .03 n2. FF3r UNDER (PK-heavy vs PP-drawing opponent) -14.3% n391 [-22.4,-6.0], every fold negative | failed |
+| FF4 | 2026-11-02 | **Last-change matchup.** The home coach gets the last change and hunts the road team's top forwards with his shutdown pair. For forwards only: tf = etoi/60 - 16 (minutes; etoi = the production model's prior-only expected TOI on the line row), 0 for D. Terms c1*tf*[away] + c2*tf*[home] (3 T). Fixed FF4r: UNDER on road forwards with etoi >= 19 min (1 variant). 4 variants | shots45 | T=.01 -9.1% n246; .02 -13.0% n124; .03 -16.4% n60. FF4r UNDER on road forwards etoi >= 19 -2.5% n1,059 [-7.3,+2.4], p .80, folds +4.1/-7.0/-5.9/+3.6. Road weight ~0; home top forwards lean over (+0.02..0.08) | failed |
+
+Forward (registered now; nights >= 2026-11-02 only, none seen):
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| Q18a | 2026-11-02 | **Q1b unders on line 1.5 at the 1 PM read (A).** Every Q1b bet (exactly as score_fwd.py makes it) with side under, line 1.5, read A. 1 variant | data/shadow + data/odds | 0 bets (start tonight) | forward, open |
+| Q18b | 2026-11-02 | Same at reads B or C. 1 variant | same | 0 bets (start tonight) | forward, open |
+Q18 bar: n >= 300 graded, ROI > 0, one-sided p < 0.05/36 = 0.0014 (34 + 2 forward variants), mean CLV > 0.
+
+Run 18 count: 16 variants tested (FF1-FF4 4 each). Expected false positives at 5%: ~0.8. Positives with n >= 300: none (best FF4r -2.5% n1,059;
+FF1 T=.02/.03 positive on n19/n10 only), so no placebo and no lockbox look. Cumulative historical: 448. Forward variants: 36 (Q18a-b added).
+Lockbox looks: still 2. Output: research/code/r18/ff18_results.txt.
+Forward re-score (14 nights Oct 19 - Nov 1): Q1b n381 +12.0% [+5,+18] p .0012 (20k) CLV +3.4%, still over its registered bar (.0033); Q1g
+(>= 4 books, EV >= 1%) n326 +14.3% [+6,+23] p .0029 (20k) CLV +3.4%, placebo 0/2000: meets its registered forward bar for the first time
+(not the strict .05/36 = .0014). Both: read A +19..23%, reads B/C +2..3% (p .34-.40). research/code/r18/check_q1.txt.
+
+
+## Run 19 (Researcher, 2026-11-03). Registered before any of these were tested.
+No key used, no historical odds pull. Free data to scratch: api-web play-by-play (research/code/r17/fetch17.py, Oct 7 - Feb 28, lockbox not
+fetched), api-web player landing (birth dates, research/code/r19/fetch19.py), stats REST team list. Moneyline pw = median proportional no-vig
+h2h fair over the books in the h2h addon tgz, latest snapshot at or before puck - 45 min (0.5 if none). Common as runs 4/6-18: shots45_lines,
+every two-way Hard Rock line, proportional de-vig fair f, side price >= -200, 1u flat, regulation + OT, VOID = no bet, game-clustered
+bootstrap. Logistic = research/code/wf.py (fit on all months before the test month), bet the side with p - BE >= T, T in {.01, .02, .03}.
+Fixed rules report every Nov-Feb bet with folds. Placebo (shuffle within date x line, 200 times) for any variant positive Nov-Feb with
+n >= 300; lockbox (Mar 1+) only for such a frozen variant, once, needing one-sided p < 0.05/3 = 0.0167 (look #3).
+SOG from pbp = shot-on-goal + goal events, shootout excluded. situationCode digits = [away goalie, away skaters, home skaters, home goalie].
+All features use games dated strictly before d.
+
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| GG1 | 2026-11-03 | **Extra-attacker shooter x chance of trailing late.** ea = his SOG taken with his own net empty (own goalie digit 0) over his team's last 40 games before d; eaT = the team's SOG with own net empty in those games; share = ea/eaT if eaT >= 10 else 0. trail = 0.5 - pw. Terms c1*share + c2*share*trail (6-on-5 shots are a late bonus only for the players the coach sends out, and only when the team trails; does the book price who gets them?) (3 T). Fixed GG1r: OVER when share >= 0.15 and pw <= 0.40 (1 variant). 4 variants | shots45 + pbp + h2h | T=.01 -14.9% n287; .02 -10.6% n129; .03 -10.0% n83 (bets almost all Nov). Weights ~0 (share -0.01..-0.03, share x trail +0.00..+0.04 std); log loss worse than the book in Nov, equal after. GG1r OVER -3.9% n283 [-13.6,+5.8] p .75, folds -20.7/+1.8/+2.8/-0.5 | failed |
+| GG2 | 2026-11-03 | **Overtime role x chance of overtime.** ot = his SOG in OT periods over his team's 2025-26 games before d; otT = team OT SOG in those games; share = ot/otT if otT >= 8 else 0. close = 0.5 - abs(pw - 0.5). Terms c1*share + c2*share*close (3-on-3 OT is a shot bonus for the 4-6 players used; N5 tested closeness alone, not who plays OT) (3 T). Fixed GG2r: OVER when share >= 0.20 and abs(pw - 0.5) <= 0.06 (1 variant). 4 variants | same | T=.01 -5.7% n534; .02 -2.2% n267; .03 -10.0% n148. OT share weight +0.12..+0.24 std but share x closeness -0.14..-0.27 (they cancel; log loss = book). GG2r OVER -11.4% n716 [-17.3,-5.5], every fold negative | failed |
+| GG3 | 2026-11-03 | **Age x back-to-back.** age = years from his birth date (api-web landing) to d; b2b = his team played on d - 1 (pbp schedule). Terms c1*b2b*(age - 28) + c2*(age - 28) (older legs lose more on the second night; WF1 tested team B2B, not by age) (3 T). Fixed GG3r: UNDER on every player aged >= 33 whose team is on a B2B (1 variant). 4 variants | shots45 + pbp + landing | T=.01 -8.4% n448; .02 -0.1% n147; .03 +10.6% n38 (Nov only). B2B x age weight +0.06 in Nov then ~-0.03: no stable sign. GG3r UNDER (33+ on B2B) +3.2% n294 [-7.1,+13.3] p .30, folds +9.7/+9.3/-2.2/-10.6: under n 300, fading, not a candidate | failed |
+
+Forward (registered now; nights >= 2026-11-03 only, none seen):
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| Q20a | 2026-11-03 | **Q1b at the 1 PM read with the product's own guard.** Every Q1b bet (exactly as score_fwd.py makes it) with read A, whose line's data/shadow row has open.pull == "A" and open.model_p_over not null. fair_side = (ev + 1) / decimal(price) (the median consensus fair Q1b used); model_side = model_p_over + offset[line] (config ops.gap_guard offsets: 1.5 .0179, 2.5 .0158, 3.5 .017) for the over, 1 - that for the under; final = 0.8*fair_side + 0.2*model_side; Q20a = bets with final*decimal(price) - 1 >= +0.02 (guard passes). 1 variant | data/odds + data/shadow | | forward, open |
+| Q20b | 2026-11-03 | Same, guard vetoes (final EV < +0.02). 1 variant | same | | forward, open |
+Q20 bar: n >= 300 graded, ROI > 0, one-sided p < 0.05/38 = 0.0013 (36 + 2 forward variants), mean CLV > 0. Scored by research/code/r19/score_q20.py. Seen-night code check (Oct 19 - Nov 2, descriptive, not a result): A + guard passes +21.8% n167,
+A guard-vetoed +11.8% n52.
+
+Run 19 count: 12 variants tested (GG1-GG3 4 each). Expected false positives at 5%: ~0.6. Positives with n >= 300: none (GG3r +3.2% n294,
+GG3 T=.03 +10.6% n38), so no placebo and no lockbox look. Cumulative historical: 460. Forward variants: 38 (Q20a-b added). Lockbox looks:
+still 2. Output: research/code/r19/gg19_results.txt.
+Forward re-score (15 nights Oct 19 - Nov 2): Q1b n389 +11.0% [+5,+18] p .0035 CLV +3.4%: now just MISSES its registered bar (.0033) after
+Nov 2; Q1g n331 +13.2% p .0045: also misses again. Q1b read A +19.4% n219, reads B/C +0.2% n170.
+
+## Run 20 (Researcher, 2026-11-04). Registered before any of these were tested.
+No key used, no historical odds pull. Free data to scratch: api-web play-by-play (research/code/r20/fetch20.py = r17/fetch17.py plus
+blockingPlayerId, Oct 7 - Feb 28, lockbox not fetched) and NHL stats REST skater summary per-game logs 2025-26 (research/code/r14/fetch14.py,
+Feb 28 cut-off). Common as runs 4/6-19: shots45_lines, every two-way Hard Rock line, proportional de-vig fair f, side price >= -200, 1u flat,
+regulation + OT, VOID = no bet, game-clustered bootstrap. Logistic = research/code/wf.py (fit on all months before the test month), bet the side
+with p - BE >= T, T in {.01, .02, .03}. Fixed rules report every Nov-Feb bet with folds. Placebo (shuffle within date x line, 200 times) for any
+variant positive Nov-Feb with n >= 300; lockbox (Mar 1+) only for such a frozen variant, once, needing one-sided p < 0.05/3 = 0.0167 (look #3).
+All features use games dated strictly before d. Attempts from pbp = shot-on-goal + goal + missed-shot + blocked-shot by the shooter, shootout
+excluded, all strengths.
+
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| HH1 | 2026-11-04 | **Short last game (left early / benched).** From his skater per-game logs before d: last = his most recent game, required to be his team's most recent game (else lt = 1: returns are T1/Q10's job); avg10 = mean TOI of his up-to-10 games before `last` (>= 5, else lt = 1); lt = TOI(last) / avg10. Terms c1*[lt < 0.6] + c2*(min(lt, 1.5) - 1) (a player who left his last game hurt or was benched and dresses tonight plays normal minutes; does the book shade him down off that game? K5 used last-game SOG, AA1 only a d-1 TOI excess) (3 T). Fixed HH1r: OVER when lt < 0.6 and avg10 >= 12 min (1 variant). 4 variants | REST + shots45 | T=.01 -7.1% n295; .02 -17.5% n153; .03 -23.1% n94 (bets almost all Nov). Only 8 graded lines had lt < .6 (players who leave early mostly miss the next game or get no Hard Rock line); weights ~0 after Nov. HH1r OVER -52.3% n8 | failed |
+| HH2 | 2026-11-04 | **Shooting lanes: his blocked share x the opponent's blocking.** From pbp before d: bs = his blocked attempts / his attempts over his team's last 20 games (>= 20 attempts, else bs = league mean of eligible players before d); bsc = bs - that league mean. ob = the opponent's blocks / attempts it faced over its last 20 games (>= 5 games) minus the league team mean before d (0 if < 5). Terms c1*bsc + c2*bsc*ob (a shooter whose attempts get blocked a lot gains SOG vs a team that doesn't block and loses vs one that does; K11 tested opponent blocking x his volume, not his own blocked share) (3 T). Fixed HH2r: OVER when bs >= 0.30 and ob <= -0.03 (1 variant). 4 variants | pbp + shots45 | T=.01 -14.0% n203; .02 -22.8% n65; .03 +23.6% n16 (all Nov). bsc weight +0.01..+0.05 std, bsc x ob -0.04..+0.01 (no stable sign); log loss = book after Nov. HH2r OVER -6.7% n285 [-15.8,+2.1] p .90, folds -25.9/+15.6/-4.3/-16.4 | failed |
+| HH3 | 2026-11-04 | **Opponent tightens after a blowout.** From pbp final scores (goals, shootout excluded) before d: oblow = [the opponent's most recent game, within 4 days before d, was a loss by 3+ goals]; osog = [the opponent allowed >= 35 SOG in that game]. Terms c1*oblow + c2*osog (the beaten coach demands defence next game; BB1 tested the player's OWN team after a bad loss) (3 T). Fixed HH3r: UNDER on every line vs an opponent coming off a 3+ goal loss (1 variant). 4 variants | pbp + shots45 | T=.01 -8.3% n194; .02 -9.7% n128; .03 n0 (all Nov). Weights ~0 after Nov. HH3r UNDER vs an opponent off a 3+ goal loss -6.2% n1,973 [-9.8,-2.3], every fold negative | failed |
+
+Forward (registered now; nights >= 2026-11-04 only, none seen):
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| Q21a | 2026-11-04 | **Q1b at the 1 PM read, long lead.** Every Q1b bet (exactly as score_fwd.py makes it) with read A whose game's puck (shadow ctx.start) is >= 6.5 h after the read's `at` (a 1 PM read to a 7 PM ET puck is ~6 h, so this splits 7:30 PM-and-later games from the 7 PM-and-earlier block). 1 variant | data/odds + data/shadow | | forward, open |
+| Q21b | 2026-11-04 | Same, puck < 6.5 h after the read. 1 variant | same | | forward, open |
+Q21 bar: n >= 300 graded, ROI > 0, one-sided p < 0.05/40 = 0.00125 (38 + 2 forward variants), mean CLV > 0. Scored by research/code/r20/score_q21.py
+(added to run_all.sh). Seen-night code check (Oct 19 - Nov 3, descriptive, registered before it was run, not a result): A puck >= 6.5 h
++26.4% n148, A puck < 6.5 h +2.9% n117.
+
+Run 20 count: 12 variants tested (HH1-HH3 4 each). Expected false positives at 5%: ~0.6. Positives with n >= 300: none (best HH2r -6.7% n285),
+so no placebo and no lockbox look. Cumulative historical: 472. Forward variants: 40 (Q21a-b added). Lockbox looks: still 2.
+Output: research/code/r20/hh20_results.txt.
+Forward re-score (16 nights Oct 19 - Nov 3): Q1b n461 +8.8% [+3,+15] p .010 CLV +3.4% (bar .0033 missed); Q1g n390 +11.6% p .0045 (missed);
+Q1b read A +16.0% n265 vs B/C -0.8% n196; unders +11.8% n375, overs -4.1% n86.
+
+## Run 21 (Researcher, 2026-11-05). Registered before any of these were tested.
+No key used, no historical odds pull. Free data to scratch: NHL stats REST skater summary per-game logs 2025-26 (research/code/r14/fetch14.py,
+Feb 28 cut-off; lockbox not fetched). Common as runs 4/6-20: shots45_lines, every two-way Hard Rock line, proportional de-vig fair f, side
+price >= -200, 1u flat, regulation + OT, VOID = no bet, game-clustered bootstrap. Logistic = research/code/wf.py (fit on all months before the
+test month), bet the side with p - BE >= T, T in {.01, .02, .03}. Fixed rules report every Nov-Feb bet with folds. Placebo (shuffle within
+date x line, 200 times) for any variant positive Nov-Feb with n >= 300; lockbox (Mar 1+) only for such a frozen variant, once, needing one-sided
+p < 0.05/3 = 0.0167 (look #3). Features use games dated strictly before d, except tonight's dressed lineup (II1 returner dresses, II3 11F/7D),
+which is treated as known at -45 exactly as R7/Y1 did (morning-skate/line-rush reports; stated look-ahead risk, small).
+
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| II1 | 2026-11-05 | **Teammate return (his recent form was inflated by an absence).** Returner j = a teammate (same team in game d) who dresses in game d, missed his team's two most recent games before d, and had >= 10 earlier 2025-26 games for the team with SOG/game >= 2.0. ret = sum of returners' SOG/game. shb = his SOG/game in the team's games during j's current absence run (games his team played that j missed, most recent run, up to 10, he played >= 2) minus his SOG/game in his other 2025-26 games for the team before d (>= 5). Terms c1*ret + c2*ret*clip(shb, -2, 2) (R7 priced current absences; this is the reverse: the book may still price the inflated recent form when the shooter comes back) (3 T). Fixed II1r: UNDER when ret >= 2.0, shb >= +0.5 and the absence run >= 3 games (1 variant). 4 variants | REST + shots45 | T=.01 -10.4% n290; .02 -14.7% n45; .03 -2.2% n26. 500 graded lines had a returner; weights ~0 (ret -0.04..+0.01, ret x shb +0.02..+0.03 std); log loss = book. II1r UNDER -12.1% n124 [-25.5,+3.1], folds -9/+8/-31/-4 | failed |
+| II2 | 2026-11-05 | **Streakiness x recent form.** From his 2025-26 per-game SOG before d (>= 15 games): ac = lag-1 autocorrelation of his game SOG (demeaned by his own prior mean); fm = mean SOG of his last 5 games minus his prior 2025-26 mean. Terms c1*fm + c2*ac*fm (K5 and K7 used form unconditionally; streaky shooters' form may persist and non-streaky shooters' may revert, more than the book assumes) (3 T). Fixed II2r: OVER when ac >= 0.15 and fm >= +0.8 (1 variant). 4 variants | REST + shots45 | T=.01 -10.5% n222 (Nov/Dec only); .02 +19.0% n13; .03 n2. Weights ~0 after Nov (fm -0.03..+0.02, ac x fm ~0). II2r OVER on streaky hot shooters -14.0% n260 [-23.9,-3.9], folds +5/-19/-22/-16 | failed |
+| II3 | 2026-11-05 | **11 forwards / 7 defencemen.** nF, nD = forwards (C/L/R) and defencemen dressed by his team in game d (skater logs of game d). el = [nF == 11 and nD == 7]. Terms c1*el*[forward] + c2*el*[defenceman] (with 11F the top forwards double-shift and the D share minutes; Hard Rock may post the usual numbers) (3 T). Fixed II3r: OVER on forwards whose mean TOI over his last 10 games before d >= 16 min when el = 1 (1 variant). 4 variants | REST + shots45 | 394 of 10,413 graded lines are 11F/7D (3.8%). T=.01 -6.6% n379; .02 -6.2% n210; .03 -15.3% n77. Forward weight small and positive every fold (+0.02..+0.05 std), D weight -0.005..-0.03, log loss = book. II3r OVER on 16+ min forwards with 11F/7D +4.0% n244 [-4.3,+12.6] p .22, folds +3.6/-15.0/+13.0/+24.8: under n 300, not a candidate, no placebo, no lockbox look | failed (watch) |
+
+Forward (registered now; nights >= 2026-11-05 only, none seen):
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| Q22a | 2026-11-05 | **Q1b at the 1 PM read, Pinnacle agrees.** Every Q1b bet (exactly as score_fwd.py makes it) with read A where Pinnacle has both sides of the same player/line in that A fetch (data/odds `others.pinnacle`), and the Hard Rock side's EV vs Pinnacle's proportional no-vig fair is >= 0. 1 variant | data/odds + research/fwd/scores.json | | forward, open |
+| Q22b | 2026-11-05 | Same, Pinnacle two-sided and EV vs Pinnacle < 0 (Pinnacle disagrees with the median). 1 variant | same | | forward, open |
+Q22 bar: n >= 300 graded, ROI > 0, one-sided p < 0.05/42 = 0.0012 (40 + 2 forward variants), mean CLV > 0. Scored by research/code/r21/score_q22.py
+(added to run_all.sh). Seen nights (Oct 19 - Nov 4) are printed as a descriptive code check, not a result.
+Note: the queued "Hard Rock line age at A" idea (run 20) is not measurable: the feed's `last_update` is the API's poll time (median 0.5 min
+before the read at every A fetch, 164 fetches), so it was dropped before registration.
+Seen-night code check (Oct 19 - Nov 4, descriptive, registered before it was run, not a result): A, Pinnacle agrees +20.2% n143;
+A, Pinnacle disagrees +29.5% n27; 105 A bets had no two-sided Pinnacle.
+
+Run 21 count: 12 variants tested (II1-II3 4 each). Expected false positives at 5%: ~0.6. Positives with n >= 300: none (best II3r +4.0% n244),
+so no placebo and no lockbox look. Cumulative historical: 484. Forward variants: 42 (Q22a-b added). Lockbox looks: still 2.
+Output: research/code/r21/ii21_results.txt.
+Forward re-score (17 nights Oct 19 - Nov 4): Q1b n474 +7.9% [+2,+14] p .0135 CLV +3.5% (bar .0033 missed, Nov 4 -3.4u n13); Q1g n400
++10.8% p .008 (missed); Q1b read A +15.7% n274 vs B/C -2.8% n200; unders +10.5% n386, overs -3.6% n88.
+
+## Queued (not yet tested)
+| id | rule idea | data | status |
+|---|---|---|---|
+| Q1 | Multi-book live pulls at no extra credit (a `bookmakers=` list of up to 10 costs the same as Hard Rock alone): shadow-log Hard Rock vs consensus at every pull | live feed | live since 2026-10-19; registered as Q1a-m (run 5), re-scored on all nights by research/code/fwd/score_fwd.py |
+| Q2 | Lineup-news latency (Daily Faceoff promotion/demotion or linemate out vs an unchanged Hard Rock price) | data/state/lineups.json git history + data/odds | registered as Q2a-b (run 5), scored by score_fwd.py. Note: news landing after the last read (C) can never be bet; most events so far land after it |
+| Q3 | Hard Rock -45 price vs other books' close (-5 min): does the consensus keep moving after -45, and is the direction predictable from features at -45? | historical pull, 10 credits/game, sample 100 games | queued |
+| Q4 | P5 price check: in the Hard Rock app, build a same-game parlay "goalie Under saves + an opposing skater Under shots" on 3-5 games and compare its price with the product of the two singles. If it pays >= 0.95x the product (decimal), register P5 as a forward shadow test (no history can price SGPs) | one in-app look (Matt or a CEO screenshot) | queued |
+| Q5 | Market-vs-market on the LIVE feed (Q1 data): after ~2 weeks, count Hard Rock sides beating the other 9 books' consensus by read time (morning, 1 PM, B, C), especially within 30 min of goalie/lineup news. History says ~0.1-0.5% of sides at fixed times; only news windows can change that | data/shadow (free) | queued |
+| Q7 | **Returners' overs (post-hoc from T1, Nov-Feb seen, so NOT clean in history).** OVER when missed >= 1 (T1 definition). Nov-Feb is contaminated and the lockbox is too small (n ~40); judge forward only: needs a live missed-games field per shadow line (shadow `context` or lineup_history), registered with a start date after the field exists. Note the product's eligibility rules hold these players out (missed last game waits for lineup; back from 3+ sits 2 games) | live shadow log | registered forward as Q10 (run 12, shadow ctx.missed_last) |
+| Q6 | Read A (1 PM) vs consensus: on night 1, 6 of 13 Q1a bets came from the 1 PM read (before lineups and goalies). If after ~2 weeks A-read sides beat consensus more often than B/C sides, register an A-read variant (the product cannot pick at A today) | score_fwd.py output, split by pull | registered as Q6a-c (run 9), forward from 2026-10-23, scored by research/code/r9/score_q6.py |
+| Q12 | **Pinnacle-only gap (registered 2026-10-28 AFTER seeing Oct 19-27, so forward-only).** Shots, 45-min read (C): bet the side where Hard Rock's price beats Pinnacle's proportional no-vig fair by >= 5% EV, price -200..+120. Backtest Oct 19-27 (cutoffs chosen after looking): >= 5% 18-7 +11.47u (n25), >= 3% 29-21 +7.83u (n51), >= 7% 10-2 (n12). Overlap with live Gap + Guard picks not yet checked | `research/code/pin_move.py`, `data/odds/` C reads + `data/shadow/` results; judge forward only, bar n >= 300 + p < .0033 like Q1 | registered; forward scorer `research/code/score_q12.py` -> research/fwd/q12.md from 2026-11-03 (Oct 28-Nov 2: >= 5% 3-4 -1.03u n7) |
+| Q13 | **Pinnacle moves between reads (registered 2026-10-28, forward only).** A Pinnacle no-vig move >= 2 pts between consecutive reads with Hard Rock's price unchanged. Shots Oct 19-27: 37 of 1,257 intervals moved >= 2 pts (33 of them 1 PM -> 90 min); Hard Rock flat on 7: 5-2 +1.92u, but at >= 1 pt (n28) 14-13 -2.33u and Hard Rock's price was ~5% worse than Pinnacle's new fair even when flat: no edge shown. Saves: 28 goalies at both reads, 1 move >= 2 pts (Skinner U25.5 Oct 25, Pinnacle U -126 -> -160 on the same line, BetOnline moved with it, FanDuel/DraftKings did not, Hard Rock moved 26.5 -> 25.5 and posted U +100, won) | `research/code/pin_move.py` | registered; scored forward (from Oct 28, Pinnacle 2+, HR price unchanged) in research/fwd/q19.md by `q19_pin_steam.py --md` from 2026-11-03 (Oct 28-Nov 2: 1-6 -5.13u n7) |
+| Q14 | **Points, model-side OVER on the 0.5 line (registered 2026-10-28 AFTER seeing Oct 12-17, so forward only).** Hard Rock points, model chance of the over above the book's proportional fair: Oct 12-17 overs went 171-156 +7.4% (n327), gap >= 6% 31-29 +19.4% (n60); unders on the same rule 261-198 -2.0%. Six nights, Hard Rock-only prices, no other books; a lead, not a result | forward data from the points watch track (`data/paper_watch/points/`, shadow market points) | registered |
+| Q19 | **Matt's Pinnacle-steam rule (asked 2026-11-03 6:54 AM; run AFTER seeing Oct 19-Nov 2, so forward only from Nov 3).** Shots (saves untestable: no saves reads kept). Consecutive reads: Pinnacle proportional no-vig moves >= 2 pts toward a side; the other books' median move toward it < 2 pts with >= 4 other books two-sided on both reads (hold 0-15%); Hard Rock posts the same line on both reads, price -200..+200 and >= Pinnacle's new fair at read 2; first signal per player per market per night; graded at read-2 price. Oct 19-Nov 2: 2,159 intervals, 91 Pinnacle moves >= 2 pts, 15 picks 5-10 -5.11u (hit 33% vs 52% needed), 1 overlaps the Record. Variants (>= 3 books; +120 cap; 1-pt move) all negative. Every Pinnacle 2+ move, any price: move side hit 47.3% vs Pinnacle's new fair 52.3% (n91): the move itself carried no information here. 2025-26 history has no Pinnacle and one read per game, so untestable without a paid historical pull (~60 credits/game for 3 reads x shots+saves, ~79K for the season) | `research/code/q19_pin_steam.py`; judge forward, bar n >= 150 graded + units > 0 | registered, not live |

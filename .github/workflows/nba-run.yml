@@ -1,0 +1,62 @@
+# NBA pipeline timer (see sports/nba/TEAM.md "How the timer runs").
+# Self-dispatching chain: runs sports/nba/scripts/loop.sh for ~50 min, then starts the next run.
+# Concurrency group keeps one run going and at most one waiting; a newer waiting run replaces an older one.
+# Off switch: commit sports/nba/config/stop_timer.
+name: nba-run
+on:
+  workflow_dispatch:
+    inputs:
+      chain_link:
+        description: 'Which link of the chain this is (set by the previous run)'
+        required: false
+        default: '0'
+      chain_started_at:
+        description: 'When the chain began (set by the previous run)'
+        required: false
+        default: ''
+  schedule:
+    - cron: '17 * * * *'      # restarter only
+  push:                       # a code or rule change starts a chain right away
+    branches: [main]
+    paths: ['sports/nba/scripts/**', 'sports/nba/config/**', '.github/workflows/nba-run.yml']
+permissions:
+  contents: write             # commit sports/nba/data/
+  actions: write              # start the next run
+concurrency:
+  group: nba-repo-writer
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 65
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0        # full history: guard_record.py --history walks every Record version
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: loop (about 50 minutes)
+        timeout-minutes: 60
+        working-directory: sports/nba
+        env:
+          ODDS_API_KEYS: ${{ secrets.NBA_ODDS_API_KEYS }}
+          ODDS_API_KEYS_2: ${{ secrets.NBA_ODDS_API_KEYS_2 }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.NBA_DISCORD_WEBHOOK }}
+          PC_RUNNER_EVENT: ${{ github.event_name }}
+          PC_RUNNER_RUN_ID: ${{ github.run_id }}
+          PC_RUNNER_LINK: ${{ github.event_name == 'workflow_dispatch' && inputs.chain_link || '0' }}
+          PC_RUNNER_CHAIN_STARTED: ${{ github.event_name == 'workflow_dispatch' && inputs.chain_started_at || '' }}
+        run: bash scripts/loop.sh
+
+      - name: start the next run
+        if: always()
+        working-directory: sports/nba
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          DISPATCH_WORKFLOW: nba-run.yml
+          PC_RUNNER_LINK: ${{ github.event_name == 'workflow_dispatch' && inputs.chain_link || '0' }}
+          PC_RUNNER_CHAIN_STARTED: ${{ github.event_name == 'workflow_dispatch' && inputs.chain_started_at || '' }}
+        run: bash scripts/dispatch_next.sh || [ -f scripts/dispatch_next.sh ] || gh workflow run nba-run.yml --ref "${GITHUB_REF_NAME:-main}"

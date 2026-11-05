@@ -1,0 +1,28 @@
+{
+ "date": "2026-11-05",
+ "plan": {
+  "allowance": 13.978,
+  "reads": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "spare": [
+   "A"
+  ],
+  "pool_at_plan": 2544,
+  "games_left": 182,
+  "games_today": 2,
+  "key_count": 6,
+  "made_at": "2026-11-05T05:00:01-05:00",
+  "cost_per_read": 4
+ },
+ "events": {
+  "401909936": "2a76b31e02d1416de069a995589515fc",
+  "401909937": "ac38449dd3dfbe1c9b48164b6a41aa83"
+ },
+ "events_at": "2026-11-05T05:00:01-05:00",
+ "unknown_teams": [],
+ "key_count": 6
+}

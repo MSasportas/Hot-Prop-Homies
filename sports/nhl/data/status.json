@@ -1,0 +1,171 @@
+{
+ "ok": true,
+ "slate_date": "2026-11-05",
+ "started_at": "2026-11-05T10:30:00-05:00",
+ "status_at": "2026-11-05T10:30:00-05:00",
+ "finished_at": "2026-11-05T10:30:01-05:00",
+ "last_ok_at": "2026-11-05T10:30:00-05:00",
+ "failed_step": null,
+ "steps": [
+  {
+   "step": "rules",
+   "status": "skipped",
+   "note": "unchanged"
+  },
+  {
+   "step": "schedule",
+   "status": "ok",
+   "note": "11 game(s) today"
+  },
+  {
+   "step": "stats",
+   "status": "skipped",
+   "note": "nothing new"
+  },
+  {
+   "step": "lineups",
+   "status": "skipped",
+   "note": "no game close enough"
+  },
+  {
+   "step": "lineup_history",
+   "status": "skipped",
+   "note": "no change"
+  },
+  {
+   "step": "odds",
+   "status": "ok",
+   "note": "no pull due"
+  },
+  {
+   "step": "market_menu",
+   "status": "skipped",
+   "note": "read this week"
+  },
+  {
+   "step": "featured",
+   "status": "skipped",
+   "note": "no new shots read to match"
+  },
+  {
+   "step": "book_probe",
+   "status": "skipped",
+   "note": "done"
+  },
+  {
+   "step": "gapguard",
+   "status": "ok",
+   "note": "gap+guard: nothing new"
+  },
+  {
+   "step": "engine",
+   "status": "ok",
+   "note": "no change"
+  },
+  {
+   "step": "grade",
+   "status": "skipped",
+   "note": "nothing to grade"
+  },
+  {
+   "step": "live",
+   "status": "skipped",
+   "note": "no started game with a pick"
+  },
+  {
+   "step": "shadow",
+   "status": "skipped",
+   "note": "nothing new"
+  },
+  {
+   "step": "gg_grade",
+   "status": "ok",
+   "note": "gap+guard: nothing new"
+  },
+  {
+   "step": "slate",
+   "status": "ok",
+   "note": "0 open pick(s)"
+  },
+  {
+   "step": "record",
+   "status": "skipped",
+   "note": "unchanged"
+  }
+ ],
+ "sources": {
+  "nhl_web": "ok",
+  "nhl_stats": "ok",
+  "odds": "ok",
+  "dailyfaceoff": "ok",
+  "dailyfaceoff_goalies": "ok"
+ },
+ "keys": [
+  {
+   "n": 1,
+   "left": null
+  },
+  {
+   "n": 2,
+   "left": 337
+  },
+  {
+   "n": 3,
+   "left": 500
+  },
+  {
+   "n": 4,
+   "left": 500
+  },
+  {
+   "n": 5,
+   "left": 500
+  },
+  {
+   "n": 6,
+   "left": 496
+  },
+  {
+   "n": 7,
+   "left": 374
+  },
+  {
+   "n": 8,
+   "left": 500
+  },
+  {
+   "n": 9,
+   "left": 500
+  },
+  {
+   "n": 10,
+   "left": 500
+  }
+ ],
+ "pool_total": 4207,
+ "allowance": 22.7405,
+ "tier": 4,
+ "budget_today": 250,
+ "budget_used_today": 0,
+ "prices_state": "not_yet",
+ "prices_at": null,
+ "next_price_read_at": "2026-11-05T13:00:00-05:00",
+ "unmatched_names": [],
+ "unknown_teams": [],
+ "lineup_unmatched_names": [],
+ "excluded_teams": [],
+ "stats_through": "2026-11-04",
+ "lineups_at": null,
+ "lineups_note": null,
+ "games_today": 11,
+ "record_events": 144,
+ "odds_notes": [],
+ "runner": {
+  "event": "workflow_dispatch",
+  "run_id": "42050481273",
+  "iteration": 4,
+  "chain_link": 264,
+  "chain_started_at": "2026-10-28T10:00:15-04:00",
+  "run_started_at": "2026-11-05T10:00:15-05:00"
+ }
+}
