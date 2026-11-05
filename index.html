@@ -1546,6 +1546,21 @@ function renderLiveAll() {
 function renderRecordAll() {
   top('The Record', false);
   if (!S.allResults) { app.appendChild(h('div', { class: 'stack' }, h('div', { class: 'skel sm' }), h('div', { class: 'skel' }))); return; }
+  /* combined headline across all sports */
+  var totalW = 0, totalL = 0, totalN = 0, totalUnits = 0;
+  arr(S.allResults).forEach(function (r) {
+    if (!r.record.ok) return;
+    var hd = isObj(r.record.v.summary) && isObj(r.record.v.summary.headline) ? r.record.v.summary.headline : {};
+    totalW += num(hd.w) || 0; totalL += num(hd.l) || 0;
+    totalN += (num(hd.w) || 0) + (num(hd.l) || 0) + (num(hd.push) || 0) + (num(hd.void) || 0);
+    totalUnits += num(hd.units) || 0;
+  });
+  if (totalN > 0) {
+    app.appendChild(h('div', { class: 'big' },
+      h('span', { class: 'wl', text: totalW + '-' + totalL }),
+      h('span', { class: 'un ' + signCls(totalUnits), text: units(totalUnits, 2) || '' })));
+    app.appendChild(h('div', { class: 'subline', text: totalN + ' graded across both sports · 1 unit each' }));
+  }
   ['nba', 'nhl'].forEach(function (sp) {
     var r = null;
     arr(S.allResults).forEach(function (x) { if (x.sport === sp) r = x; });
