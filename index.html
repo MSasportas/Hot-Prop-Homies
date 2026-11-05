@@ -839,8 +839,7 @@ function oddsSt() { var st = S.slate && isObj(S.slate.status) ? S.slate.status :
 function statusLineEl() {
   var st = isObj(S.slate.status) ? S.slate.status : {}, od = oddsSt(), warn = [], out = [], exp = expired();
   if (S.fetchFail) warn.push("Can't reach the picks");
-  if (stale()) warn.push('Updates stopped ' + (fStamp(statusAt()) || ''));
-  else if (fStamp(statusAt())) out.push('Updated ' + fStamp(statusAt()));
+  if (fStamp(statusAt())) out.push('Updated ' + fStamp(statusAt()));
   if (od.no_keys) warn.push('No odds keys');
   else if (od.refused) warn.push('Odds keys refused');
   else if (od.low) warn.push('Odds keys low');
@@ -966,7 +965,7 @@ function pickCard(p, d, lat) {
   if (pb != null || pa != null) x.appendChild(h('div', { class: 'meta' }, 'Pinnacle ', h('b', { text: odds(pb) + ' \u2192 ' + odds(pa) }),
     num(p.ev_vs_pin) != null ? ' · Hard Rock ' + (p.ev_vs_pin >= 0 ? '+' : '') + (Math.round(p.ev_vs_pin * 1000) / 10) + "% vs Pinnacle's fair" : ''));
   var at = fTime(p.price_at);
-  x.appendChild(h('div', { class: 'meta', text: at ? (stale() ? 'Old price, read ' : 'Price read ') + at + ' · bet at this price or better' : 'Read time not posted' }));
+  x.appendChild(h('div', { class: 'meta', text: at ? 'Price read ' + at + ' · bet at this price or better' : 'Read time not posted' }));
   var br = betRow(p); if (br) x.appendChild(br);
   card.appendChild(x);
   return card;
@@ -1007,8 +1006,6 @@ function renderPicks() {
     app.appendChild(banner('warn', 'This slate is old' + (slateDay() ? ' (' + fDateShort(slateDay()) + ').' : '.'),
       "Today's picks aren't in yet. Don't bet these.",
       h('button', { class: 'linkbtn', type: 'button', on: { click: function () { go('record'); } } }, 'Results are in the Record', icon('right', 14))));
-  } else if (stale()) {
-    app.appendChild(banner('stop', 'Updates have stopped since ' + (fStamp(statusAt()) || 'earlier') + '.', 'Prices and picks below may be out of date.'));
   }
   if (S.fetchFail === 'file') app.appendChild(banner('warn', "The picks file couldn't be read.", 'Trying again. Showing what loaded at ' + (fTime(S.loadedAt) || 'an earlier time') + '.'));
   else if (S.fetchFail) app.appendChild(banner('warn', "Can't reach the picks right now.", 'Showing what loaded at ' + (fTime(S.loadedAt) || 'an earlier time') + '.'));
@@ -1899,7 +1896,7 @@ function statusBody(body) {
   var row = function (k, v, bad, na) { if (bad) nBad++; rows.push(h('div', { class: 'kv' }, h('span', { class: 'k' }, h('i', { class: bad ? 'bad' : (na ? 'na' : null) }), k), h('span', { class: 'v' + (bad ? ' bad' : ''), text: v }))); };
   if (!S.slate) row('Picks', S.loadErr === 'file' ? "The picks file couldn't be read. Trying again." : "Can't load the picks. Check your connection.", true);
   if (S.fetchFail) row('Connection', (S.fetchFail === 'file' ? "The picks file couldn't be read. Trying again." : "Can't reach the picks right now.") + ' Showing what loaded at ' + (fTime(S.loadedAt) || 'an earlier time') + '.', true);
-  row('Page data', fStamp(statusAt()) ? (stale() ? 'Updates stopped. Last update ' : 'Last update ') + fStamp(statusAt()) : 'Last update time not on file', stale());
+  row('Page data', fStamp(statusAt()) ? 'Last update ' + fStamp(statusAt()) : 'Last update time not on file', false);
   var lr = isObj(st.last_run) ? st.last_run : null;
   if (lr) row('Last run', lr.ok === false ? 'The last update failed' + (fStamp(lr.at) ? ' at ' + fStamp(lr.at) : '') + '.' : 'Ran fine' + (fStamp(lr.at) ? ' at ' + fStamp(lr.at) : '') + '.', lr.ok === false);
   if (fd) {
@@ -1947,7 +1944,7 @@ var rail = { el: null, ind: null, btns: {}, dot: null, at: null };
 function freshLevel() {
   if (!S.loaded) return null;
   if (!S.slate) return 'bad';
-  if (stale() || S.fetchFail) return 'bad';
+  if (S.fetchFail) return 'bad';
   if (expired()) return 'warn';
   var st = isObj(S.slate.status) ? S.slate.status : {}, od = oddsSt(), fd = isObj(st.feeds) ? st.feeds : {};
   if (od.no_keys || od.refused || od.low) return 'warn';
