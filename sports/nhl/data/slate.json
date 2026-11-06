@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-05",
- "generated_at": "2026-11-05T21:20:00-05:00",
- "status_at": "2026-11-05T21:20:00-05:00",
+ "generated_at": "2026-11-05T21:30:01-05:00",
+ "status_at": "2026-11-05T21:30:01-05:00",
  "valid_until": "2026-11-06T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-05T21:20:00-05:00",
+   "at": "2026-11-05T21:30:01-05:00",
    "failed_step": null
   },
   "pool": {
@@ -32,7 +32,11 @@
   "tier": 4
  },
  "banners": [],
- "empty": null,
+ "empty": {
+  "code": "all_started",
+  "text": "Every game has started.",
+  "sub": "Tonight's picks are on the Live tab."
+ },
  "games": [
   {
    "id": 2026020251,
@@ -396,8 +400,8 @@
      "home": "2026-11-05T20:58:55-05:00"
     }
    },
-   "started": false,
-   "reads_done": true,
+   "started": true,
+   "reads_done": false,
    "picks": 1,
    "excluded_reason": null,
    "excluded_teams": []
@@ -414,11 +418,15 @@
    "breakeven": 0.4878,
    "p_pct": 52,
    "breakeven_pct": 49,
-   "state": "lineup",
+   "state": "locked",
    "history": [
     {
      "at": "2026-11-05T20:58:55-05:00",
      "text": "Lineup confirmed"
+    },
+    {
+     "at": "2026-11-05T21:30:01-05:00",
+     "text": "Locked"
     }
    ],
    "prices": [
@@ -428,9 +436,9 @@
     }
    ],
    "pulled": null,
-   "price_final": true,
+   "price_final": false,
    "graded": null,
-   "rank": 1,
+   "rank": null,
    "tier": "main",
    "game_id": 2026020261,
    "player": "M. Necas",
