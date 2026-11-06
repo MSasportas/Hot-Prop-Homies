@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T13:00:00-05:00",
+ "at": "2026-11-06T13:10:00-05:00",
  "list": {
   "4585618": {
    "status": "out",
@@ -78,19 +78,19 @@
    "date": "2026-10-25T17:19Z",
    "note": "Bilodeau (shoulder) has been ruled out for Sunday's game against Indiana."
   },
+  "4433249": {
+   "status": "day-to-day",
+   "name": "Moussa Diabate",
+   "team": "CHA",
+   "date": "2026-11-06T17:57Z",
+   "note": "Diabate (quadriceps) has been ruled out for Friday's game against Boston, according to the Hornets' official injury report."
+  },
   "3032979": {
    "status": "day-to-day",
    "name": "Dennis Schroder",
    "team": "CHA",
    "date": "2026-11-05T22:11Z",
    "note": "Schroder (thigh) is questionable for Friday's game against the Celtics."
-  },
-  "4433249": {
-   "status": "day-to-day",
-   "name": "Moussa Diabate",
-   "team": "CHA",
-   "date": "2026-11-05T22:08Z",
-   "note": "Diabate (quadriceps) is questionable for Friday's game against the Celtics."
   },
   "5061575": {
    "status": "out",
@@ -574,6 +574,20 @@
    "team": "SA",
    "date": "2026-10-05T21:43Z",
    "note": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports."
+  },
+  "3134908": {
+   "status": "day-to-day",
+   "name": "Jakob Poeltl",
+   "team": "TOR",
+   "date": "2026-11-06T18:03Z",
+   "note": "Poeltl (shoulder) is listed as probable for Friday's game against Milwaukee."
+  },
+  "4395724": {
+   "status": "day-to-day",
+   "name": "Immanuel Quickley",
+   "team": "TOR",
+   "date": "2026-11-06T17:59Z",
+   "note": "Quickley (hamstring) is questionable for Friday against the Bucks."
   },
   "4433134": {
    "status": "day-to-day",
