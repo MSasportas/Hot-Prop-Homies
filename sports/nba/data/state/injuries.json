@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T18:20:01-05:00",
+ "at": "2026-11-06T18:30:00-05:00",
  "list": {
   "4701230": {
    "status": "out",
@@ -147,13 +147,6 @@
    "team": "DAL",
    "date": "2026-11-05T22:24Z",
    "note": "De Larrea (knee) is out for Friday's game against Utah."
-  },
-  "4432582": {
-   "status": "day-to-day",
-   "name": "Max Christie",
-   "team": "DAL",
-   "date": "2026-11-05T22:20Z",
-   "note": "Christie (hip) is probable for Friday's game against the Jazz."
   },
   "5148538": {
    "status": "out",
@@ -460,8 +453,8 @@
    "status": "out",
    "name": "Adem Bona",
    "team": "PHI",
-   "date": "2026-11-06T23:06Z",
-   "note": "Bona (back) is doubtful to play in Friday's game against the Cavaliers, Ky Carlin of USA Today reports."
+   "date": "2026-11-06T23:10Z",
+   "note": "Bona (neck) is listed as out for Friday's game versus the Cavaliers."
   },
   "4870562": {
    "status": "out",
