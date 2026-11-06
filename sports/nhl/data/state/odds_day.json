@@ -1,15 +1,16 @@
 {
  "date": "2026-11-05",
  "plan": {
-  "allowance": 22.7405,
+  "allowance": 20.8541,
   "tier": 4,
-  "budget_today": 250,
-  "pool_at_plan": 4207,
+  "budget_today": 229,
+  "pool_at_plan": 3858,
   "games_left": 185,
   "games_today": 11,
-  "key_count": 10,
+  "key_count": 9,
   "unknown_keys": 1,
-  "made_at": "2026-11-05T05:00:01-05:00"
+  "made_at": "2026-11-05T20:58:55-05:00",
+  "replaced": "2026-11-05T05:00:01-05:00"
  },
  "events": {
   "2026020257": "9e57c39752bfbc587ce341650fcd5a19",
@@ -24,12 +25,29 @@
   "2026020260": "c672f144ecbb937d3b15b483847129d2",
   "2026020261": "446de9651d2d2948326d970e9f858a33"
  },
- "events_at": "2026-11-05T05:00:01-05:00",
+ "events_at": "2026-11-05T20:58:55-05:00",
  "unknown_teams": [],
- "done": {},
+ "done": {
+  "2026020261": [
+   {
+    "game_id": 2026020261,
+    "pull": "B",
+    "at": "2026-11-05T20:58:55-05:00",
+    "markets": [
+     "points",
+     "shots"
+    ],
+    "returned": [
+     "points",
+     "shots"
+    ],
+    "cost": 2
+   }
+  ]
+ },
  "stage": null,
  "skipped": {},
  "last_fail_at": null,
  "fail_note": null,
- "key_count": 10
+ "key_count": 9
 }
