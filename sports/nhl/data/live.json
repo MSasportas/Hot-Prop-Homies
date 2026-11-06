@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-05",
- "generated_at": "2026-11-05T21:40:15-05:00",
+ "generated_at": "2026-11-05T21:50:00-05:00",
  "games": [
   {
    "game_id": 2026020261,
@@ -8,27 +8,27 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "19:21",
+   "clock": "12:12",
    "in_intermission": false,
    "running": true,
    "away": {
     "abbrev": "NSH",
-    "score": 0,
-    "sog": null
+    "score": 1,
+    "sog": 5
    },
    "home": {
     "abbrev": "COL",
     "score": 0,
-    "sog": null
+    "sog": 2
    },
-   "updated_at": "2026-11-05T21:40:15-05:00"
+   "updated_at": "2026-11-05T21:50:00-05:00"
   }
  ],
  "picks": {
   "2026-11-05:2026020261:8480039:shots:2.5:under": {
    "game_id": 2026020261,
    "market": "shots",
-   "stat": 0
+   "stat": 1
   }
  }
 }
