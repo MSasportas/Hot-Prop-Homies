@@ -38,6 +38,20 @@ RESETS = "data/record/resets.json"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
+def _git_prefix(root):
+    """Path from git repo root to ROOT, e.g. 'sports/nhl/'. Empty string in a standalone repo."""
+    r = subprocess.run(["git", "rev-parse", "--show-toplevel"],
+                       cwd=root, capture_output=True, text=True)
+    repo = r.stdout.strip() if r.returncode == 0 else root
+    if os.path.abspath(root) == os.path.abspath(repo):
+        return ""
+    rel = os.path.relpath(os.path.abspath(root), os.path.abspath(repo))
+    return rel.replace("\\", "/") + "/"
+
+
+_PREFIX = _git_prefix(ROOT)
+
+
 class GitError(Exception):
     pass
 
@@ -69,10 +83,10 @@ def committed(root, rev):
     if rev == "HEAD" and _unborn(root):
         return None
     git(root, "rev-parse", "--verify", "--quiet", rev + "^{commit}")          # an unknown revision is an error
-    listed = git(root, "ls-tree", "--name-only", rev, "--", REL).decode("utf-8", "replace").strip()
+    listed = git(root, "ls-tree", "--name-only", rev, "--", _PREFIX + REL).decode("utf-8", "replace").strip()
     if not listed:
         return None
-    return git(root, "cat-file", "blob", "%s:%s" % (rev, REL))
+    return git(root, "cat-file", "blob", "%s:%s%s" % (rev, _PREFIX, REL))
 
 
 def _unborn(root):
@@ -172,9 +186,10 @@ def work_reader(root):
 
 def commit_reader(root, rev):
     def read(rel):
-        if not git(root, "ls-tree", "--name-only", rev, "--", rel).strip():
+        grel = _PREFIX + rel
+        if not git(root, "ls-tree", "--name-only", rev, "--", grel).strip():
             return None
-        return git(root, "cat-file", "blob", "%s:%s" % (rev, rel))
+        return git(root, "cat-file", "blob", "%s:%s" % (rev, grel))
     return read
 
 
@@ -266,7 +281,7 @@ def history_check(root, origin=None):
     # a commit that deleted the file is in the log too: it reads as empty, so deleting a non-empty Record
     # fails ("lost lines") and nothing can sneak back in after it
     walk, prev = commits[start:], None
-    for h, cur in zip(walk, _blobs(root, ["%s:%s" % (h, REL) for h in walk])):
+    for h, cur in zip(walk, _blobs(root, ["%s:%s%s" % (h, _PREFIX, REL) for h in walk])):
         cur_present = cur is not None
         cur = cur if cur is not None else b""
         if prev is not None:
@@ -310,7 +325,7 @@ def _resets_history(root):
     archives it names must be intact in the working tree."""
     commits = [] if _unborn(root) else git(root, "log", "--reverse", "--format=%H", "HEAD", "--", RESETS).decode().split()
     prev = None
-    for h, cur in zip(commits, _blobs(root, ["%s:%s" % (h, RESETS) for h in commits])):
+    for h, cur in zip(commits, _blobs(root, ["%s:%s%s" % (h, _PREFIX, RESETS) for h in commits])):
         if prev is not None:
             if cur is None:
                 return "resets.json was deleted in commit %s" % h[:10]
