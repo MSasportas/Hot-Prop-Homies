@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T13:10:00-05:00",
+ "at": "2026-11-06T13:20:00-05:00",
  "list": {
   "4585618": {
    "status": "out",
@@ -78,19 +78,19 @@
    "date": "2026-10-25T17:19Z",
    "note": "Bilodeau (shoulder) has been ruled out for Sunday's game against Indiana."
   },
-  "4433249": {
-   "status": "day-to-day",
-   "name": "Moussa Diabate",
-   "team": "CHA",
-   "date": "2026-11-06T17:57Z",
-   "note": "Diabate (quadriceps) has been ruled out for Friday's game against Boston, according to the Hornets' official injury report."
-  },
   "3032979": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Dennis Schroder",
    "team": "CHA",
-   "date": "2026-11-05T22:11Z",
-   "note": "Schroder (thigh) is questionable for Friday's game against the Celtics."
+   "date": "2026-11-06T18:09Z",
+   "note": "Schroder (thigh) is out for Friday's game versus Boston."
+  },
+  "4433249": {
+   "status": "out",
+   "name": "Moussa Diabate",
+   "team": "CHA",
+   "date": "2026-11-06T18:08Z",
+   "note": "Diabate (quadriceps) has been ruled out for Friday's game against Boston, according to the Hornets' official injury report."
   },
   "5061575": {
    "status": "out",
@@ -359,11 +359,11 @@
    "note": "Jones (ankle/two-way player) is out for Friday's game against Toronto."
   },
   "4432847": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Terrence Shannon Jr.",
    "team": "MIN",
-   "date": "2026-11-05T22:58Z",
-   "note": "Shannon (hip) is questionable for Friday's game against New Orleans."
+   "date": "2026-11-06T18:06Z",
+   "note": "Shannon (hip) has been ruled out for Friday's game against New Orleans."
   },
   "4594268": {
    "status": "out",
@@ -378,13 +378,6 @@
    "team": "MIN",
    "date": "2026-10-05T20:53Z",
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
-  },
-  "4397688": {
-   "status": "day-to-day",
-   "name": "Trey Murphy III",
-   "team": "NO",
-   "date": "2026-11-06T17:29Z",
-   "note": "Murphy (knee) participated in shootaround and expects to play Friday against Minnesota, Jim Eichenhofer of the Pelicans' official site reports."
   },
   "5061589": {
    "status": "out",
