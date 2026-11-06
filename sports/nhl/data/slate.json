@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-05",
- "generated_at": "2026-11-05T20:58:55-05:00",
- "status_at": "2026-11-05T20:58:55-05:00",
+ "generated_at": "2026-11-05T21:10:01-05:00",
+ "status_at": "2026-11-05T21:10:01-05:00",
  "valid_until": "2026-11-06T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-05T20:58:55-05:00",
+   "at": "2026-11-05T21:10:01-05:00",
    "failed_step": null
   },
   "pool": {
@@ -375,8 +375,8 @@
    },
    "goalies": {
     "away": {
-     "name": "Juuse Saros",
-     "status": "expected"
+     "name": "Justus Annunen",
+     "status": "confirmed"
     },
     "home": {
      "name": "Mackenzie Blackwood",
@@ -452,8 +452,8 @@
     "ours_pct": 52.5,
     "model_pct": 57.4
    },
-   "settled": "lineup",
-   "settled_label": "Lineup confirmed",
+   "settled": "goalie",
+   "settled_label": "Goalie confirmed",
    "reason": "8 other books say 51.7%; Hard Rock's +105 only needs 48.8%. Our model agrees (our blend: 52.5%).",
    "link": "https://app.hardrock.bet/?deep_link_value=betslip/1205807252615856543",
    "links": {
