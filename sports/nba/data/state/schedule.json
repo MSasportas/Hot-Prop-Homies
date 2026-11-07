@@ -390,11 +390,11 @@
     "home": "IND",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "10:24 - 2nd",
     "score": {
-     "DEN": "27",
-     "IND": "19"
+     "DEN": "34",
+     "IND": "28"
     }
    },
    {
