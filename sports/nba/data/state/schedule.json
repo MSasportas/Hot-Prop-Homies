@@ -255,10 +255,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:19 - 2nd",
+    "detail": "5:37 - 2nd",
     "score": {
-     "WSH": "34",
-     "ATL": "30"
+     "WSH": "45",
+     "ATL": "48"
     }
    },
    {
@@ -269,11 +269,11 @@
     "home": "CHA",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:15 - 2nd",
     "score": {
-     "BOS": "40",
-     "CHA": "20"
+     "BOS": "45",
+     "CHA": "23"
     }
    },
    {
@@ -282,13 +282,13 @@
     "start": "2026-11-06T19:30:00-05:00",
     "away": "PHI",
     "home": "CLE",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/6 - 7:30 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:55 - 1st",
     "score": {
-     "PHI": "0",
-     "CLE": "0"
+     "PHI": "2",
+     "CLE": "11"
     }
    },
    {
