@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T17:40:00-05:00",
+ "at": "2026-11-07T18:10:00-05:00",
  "list": {
   "4585618": {
    "status": "out",
@@ -449,11 +449,18 @@
    "date": "2026-09-28T21:33Z",
    "note": "Team president Jeff Weltman said Monday that Nelson (ankle) remains about a month away from returning to the court after offseason surgery, per Philip Rossman-Reich of OrlandoMagicDaily.com."
   },
-  "5105637": {
+  "3059318": {
    "status": "day-to-day",
+   "name": "Joel Embiid",
+   "team": "PHI",
+   "date": "2026-11-07T23:08Z",
+   "note": "Embiid chipped in 26 points (8-18 FG, 0-3 3Pt, 10-10 FT), 15 rebounds, two assists and one steal across 33 minutes during Wednesday's 112-106 win over Detroit."
+  },
+  "5105637": {
+   "status": "out",
    "name": "Adem Bona",
    "team": "PHI",
-   "date": "2026-11-07T17:38Z",
+   "date": "2026-11-07T23:08Z",
    "note": "Bona (neck) is listed as out for Friday's game versus the Cavaliers."
   },
   "4870562": {
@@ -588,6 +595,13 @@
    "team": "TOR",
    "date": "2026-11-02T20:20Z",
    "note": "Bittle (foot) is out for Monday's game against the Clippers and remains without a timetable to return."
+  },
+  "4066336": {
+   "status": "day-to-day",
+   "name": "Lauri Markkanen",
+   "team": "UTAH",
+   "date": "2026-11-07T23:06Z",
+   "note": "Markkanen posted 24 points (8-20 FG, 8-15 3Pt), eight rebounds and an assist across 34 minutes in Friday's 112-100 loss to the Mavericks."
   },
   "3102530": {
    "status": "out",
