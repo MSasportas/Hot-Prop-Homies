@@ -19,7 +19,7 @@
   },
   "SEA": {
    "name": "Joey Daccord",
-   "status": "expected"
+   "status": "confirmed"
   },
   "NYR": {
    "name": "Joonas Korpisalo",
@@ -98,5 +98,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-07T14:50:00-05:00"
+ "checked_at": "2026-11-07T16:40:00-05:00"
 }
