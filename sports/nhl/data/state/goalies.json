@@ -79,7 +79,7 @@
   },
   "PIT": {
    "name": "Sergei Murashov",
-   "status": "expected"
+   "status": "confirmed"
   },
   "COL": {
    "name": "Mackenzie Blackwood",
@@ -98,5 +98,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-07T13:30:01-05:00"
+ "checked_at": "2026-11-07T14:30:00-05:00"
 }
