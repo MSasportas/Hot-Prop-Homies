@@ -270,7 +270,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:26 - 4th",
+    "detail": "10:05 - 4th",
     "score": {
      "BOS": "102",
      "CHA": "61"
@@ -315,7 +315,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:54 - 2nd",
+    "detail": "2:32 - 2nd",
     "score": {
      "OKC": "58",
      "MEM": "46"
@@ -330,7 +330,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:45 - 2nd",
+    "detail": "3:36 - 2nd",
     "score": {
      "TOR": "40",
      "MIL": "49"
