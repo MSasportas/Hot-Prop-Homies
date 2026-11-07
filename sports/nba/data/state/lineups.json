@@ -15,10 +15,10 @@
    }
   },
   "IND": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Andrew Nembhard",
-    "Kelly Oubre",
+    "Braden Smith",
     "Aaron Nesmith",
     "Pascal Siakam",
     "Ivica Zubac"
@@ -220,5 +220,5 @@
    }
   }
  },
- "at": "2026-11-07T16:40:00-05:00"
+ "at": "2026-11-07T16:50:01-05:00"
 }

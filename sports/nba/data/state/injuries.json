@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T16:40:00-05:00",
+ "at": "2026-11-07T16:50:01-05:00",
  "list": {
   "4585618": {
    "status": "out",
@@ -103,8 +103,15 @@
    "status": "day-to-day",
    "name": "Tobe Awaka",
    "team": "CHI",
-   "date": "2026-11-07T21:33Z",
-   "note": "Awaka (ankle) is active for Monday's game against the 76ers."
+   "date": "2026-11-07T21:36Z",
+   "note": "Awaka (knee) is questionable for Sundays' game against the 76ers."
+  },
+  "4397189": {
+   "status": "day-to-day",
+   "name": "Jalen Smith",
+   "team": "CHI",
+   "date": "2026-11-07T21:31Z",
+   "note": "Smith (finger) is probable for Sunday's game against Philadelphia."
   },
   "4278067": {
    "status": "out",
@@ -119,13 +126,6 @@
    "team": "CHI",
    "date": "2026-11-07T21:24Z",
    "note": "Collins (illness) is out for Sunday's game against Philadelphia."
-  },
-  "4397189": {
-   "status": "day-to-day",
-   "name": "Jalen Smith",
-   "team": "CHI",
-   "date": "2026-11-05T01:35Z",
-   "note": "Smith (hand) won't return to Wednesday's game against the Knicks."
   },
   "4683747": {
    "status": "out",
