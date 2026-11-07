@@ -43,7 +43,7 @@
   },
   "OTT": {
    "name": "Samuel Ersson",
-   "status": "expected"
+   "status": "confirmed"
   },
   "UTA": {
    "name": "Karel Vejmelka",
@@ -98,5 +98,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-07T10:30:00-05:00"
+ "checked_at": "2026-11-07T11:20:00-05:00"
 }
