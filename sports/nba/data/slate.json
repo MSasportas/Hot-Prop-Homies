@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2136,
+   "pool_left": 2128,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-07T18:00:00-05:00",
-  "last_read_at": "2026-11-07T16:40:00-05:00",
+  "next_read_at": "2026-11-07T18:30:00-05:00",
+  "last_read_at": "2026-11-07T18:00:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-07T17:50:01-05:00"
+   "at": "2026-11-07T18:00:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-07T17:50:01-05:00",
+    "at": "2026-11-07T18:00:01-05:00",
     "confirmed": [
      "DEN",
      "IND"
@@ -46,7 +46,7 @@
    "away": "DEN",
    "home": "IND",
    "state": "in",
-   "detail": "10:24 - 2nd",
+   "detail": "6:17 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -87,13 +87,18 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-07T11:00:00-05:00",
+   "read_at": "2026-11-07T18:00:01-05:00",
    "picks": 0,
-   "checks": [],
-   "last_check_at": null,
+   "checks": [
+    {
+     "read": "B",
+     "at": "2026-11-07T18:00:01-05:00"
+    }
+   ],
+   "last_check_at": "2026-11-07T18:00:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-07T18:00:00-05:00",
-   "next_check_read": "B",
+   "next_check_at": "2026-11-07T18:45:00-05:00",
+   "next_check_read": "C",
    "injury_clear": {
     "away": false,
     "home": true
@@ -275,11 +280,11 @@
  ],
  "empty": {
   "text": "No picks yet today",
-  "why": "608 lines read. Pinnacle moved alone on 17, none of them bettable yet.",
-  "next": "2026-11-07T18:00:00-05:00"
+  "why": "622 lines read. Pinnacle moved alone on 28, none of them bettable yet.",
+  "next": "2026-11-07T18:30:00-05:00"
  },
  "counts": {
-  "lines_read": 608,
+  "lines_read": 622,
   "passing": 4,
   "games": 7
  },
@@ -289,6 +294,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-07T17:50:01-05:00",
- "status_at": "2026-11-07T17:50:01-05:00"
+ "generated_at": "2026-11-07T18:00:01-05:00",
+ "status_at": "2026-11-07T18:00:01-05:00"
 }
