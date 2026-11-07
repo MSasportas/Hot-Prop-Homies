@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T14:30:00-05:00",
+ "at": "2026-11-07T14:40:01-05:00",
  "list": {
   "4585618": {
    "status": "out",
@@ -407,6 +407,13 @@
    "date": "2026-10-28T23:41Z",
    "note": "Williams (leg) underwent successful surgery Wednesday to \"address a fractured left fibula and reconstruction of ankle ligaments following a fracture and dislocation.\" He will be re-evaluated before th"
   },
+  "4066320": {
+   "status": "out",
+   "name": "Desmond Bane",
+   "team": "ORL",
+   "date": "2026-11-07T19:31Z",
+   "note": "Bane delivered 19 points (7-13 FG, 5-9 3Pt), two rebounds, an assist, two steals and a block across 40 minutes in Sunday's 108-97 loss to the Celtics."
+  },
   "4065654": {
    "status": "out",
    "name": "Jonathan Isaac",
@@ -588,13 +595,6 @@
    "team": "UTAH",
    "date": "2026-10-27T19:25Z",
    "note": "Jackson has been diagnosed with a torn MCL in his right knee and will be sidelined for 6-to-8 weeks, per Shams Charania of ESPN."
-  },
-  "4433268": {
-   "status": "out",
-   "name": "Trey Alexander",
-   "team": "UTAH",
-   "date": "2026-10-24T23:18Z",
-   "note": "Alexander won't play Wednesday against the Grizzlies due to a left knee bone bruise."
   },
   "6583": {
    "status": "day-to-day",
