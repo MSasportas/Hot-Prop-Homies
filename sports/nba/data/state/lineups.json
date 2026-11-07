@@ -42,6 +42,7 @@
     "Day'Ron Sharpe"
    ],
    "status": {
+    "Noah Clowney": "questionable",
     "Egor Demin": "out"
    }
   },
@@ -55,7 +56,7 @@
     "Onyeka Okongwu"
    ],
    "status": {
-    "Jalen Johnson": "out",
+    "Jalen Johnson": "probable",
     "Henri Veesaar": "out",
     "Keshon Gilbert": "out",
     "Mouhamed Gueye": "out",
@@ -81,9 +82,9 @@
    "starters": [
     "James Harden",
     "Donovan Mitchell",
+    "Mario Hezonja",
     "Peyton Watson",
-    "Evan Mobley",
-    "Jarrett Allen"
+    "Evan Mobley"
    ],
    "status": {
     "Jarrett Allen": "out",
@@ -102,7 +103,7 @@
     "Alex Sarr"
    ],
    "status": {
-    "Anthony Davis": "out",
+    "Anthony Davis": "questionable",
     "Reece Beekman": "out",
     "Justin Champagnie": "out",
     "Tristan Vukcevic": "out",
@@ -115,14 +116,13 @@
     "Shai Gilgeous-Alexander",
     "Ajay Mitchell",
     "Alex Caruso",
-    "Jaylin Williams",
+    "Aday Mara",
     "Isaiah Hartenstein"
    ],
    "status": {
-    "Jaylin Williams": "out",
+    "Jaylin Williams": "questionable",
     "Chet Holmgren": "out",
     "Thomas Sorber": "out",
-    "Nikola Topic": "out",
     "Cason Wallace": "out",
     "Jalen Williams": "out"
    }
@@ -221,5 +221,5 @@
    }
   }
  },
- "at": "2026-11-07T05:00:00-05:00"
+ "at": "2026-11-07T14:00:01-05:00"
 }
