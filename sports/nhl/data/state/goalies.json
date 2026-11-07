@@ -27,7 +27,7 @@
   },
   "TOR": {
    "name": "Sergei Bobrovsky",
-   "status": "expected"
+   "status": "confirmed"
   },
   "MTL": {
    "name": "Jacob Fowler",
@@ -98,5 +98,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-07T11:20:00-05:00"
+ "checked_at": "2026-11-07T11:40:01-05:00"
 }
