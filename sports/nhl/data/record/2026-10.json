@@ -1,6 +1,107 @@
 {
  "nights": [
   {
+   "date": "2026-10-31",
+   "graded": true,
+   "w": 2,
+   "l": 2,
+   "units": -0.59,
+   "entries": [
+    {
+     "id": "2026-10-31:2026020218:8482078:shots:2.5:under",
+     "kind": "single",
+     "player": "L. Raymond",
+     "bet": "Under 2.5 shots on goal",
+     "market": "shots",
+     "team": "DET",
+     "game": "STL at DET",
+     "price": 100,
+     "first_price": 100,
+     "last_price": 100,
+     "prices": [
+      {
+       "price": 100,
+       "at": "2026-10-31T11:30:00-04:00"
+      }
+     ],
+     "result": "L",
+     "actual": "had 4",
+     "units": -1.0,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-10-31:2026020217:8477496:shots:2.5:under",
+     "kind": "single",
+     "player": "E. Lindholm",
+     "bet": "Under 2.5 shots on goal",
+     "market": "shots",
+     "team": "BOS",
+     "game": "CHI at BOS",
+     "price": -185,
+     "first_price": -185,
+     "last_price": -185,
+     "prices": [
+      {
+       "price": -185,
+       "at": "2026-10-31T12:20:00-04:00"
+      }
+     ],
+     "result": "W",
+     "actual": "had 2",
+     "units": 0.5405,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-10-31:2026020222:8482105:shots:2.5:under",
+     "kind": "single",
+     "player": "J. Sanderson",
+     "bet": "Under 2.5 shots on goal",
+     "market": "shots",
+     "team": "OTT",
+     "game": "OTT at SJS",
+     "price": -115,
+     "first_price": -115,
+     "last_price": -115,
+     "prices": [
+      {
+       "price": -115,
+       "at": "2026-10-31T15:20:00-04:00"
+      }
+     ],
+     "result": "W",
+     "actual": "had 0",
+     "units": 0.8696,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-10-31:2026020223:8476981:shots:1.5:under",
+     "kind": "single",
+     "player": "J. Anderson",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "MTL",
+     "game": "PIT at MTL",
+     "price": 100,
+     "first_price": 100,
+     "last_price": 100,
+     "prices": [
+      {
+       "price": 100,
+       "at": "2026-10-31T18:20:01-04:00"
+      }
+     ],
+     "result": "L",
+     "actual": "had 2",
+     "units": -1.0,
+     "pulled": null,
+     "legs": []
+    }
+   ]
+  },
+  {
    "date": "2026-10-29",
    "graded": true,
    "w": 2,

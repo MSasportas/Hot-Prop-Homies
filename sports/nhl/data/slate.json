@@ -1,42 +1,38 @@
 {
  "slate_date": "2026-11-07",
- "generated_at": "2026-11-07T11:20:00-05:00",
- "status_at": "2026-11-07T11:20:00-05:00",
+ "generated_at": "2026-11-07T11:30:01-05:00",
+ "status_at": "2026-11-07T11:30:01-05:00",
  "valid_until": "2026-11-08T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
-  "prices_at": "2026-11-07T11:00:01-05:00",
-  "next_price_read_at": "2026-11-07T11:30:00-05:00",
+  "prices_at": "2026-11-07T11:30:01-05:00",
+  "next_price_read_at": "2026-11-07T11:45:00-05:00",
   "stats_built_at": "2026-11-06T23:40:01-05:00",
   "stats_through": "2026-11-06",
-  "lineups_at": "2026-11-07T11:00:01-05:00",
+  "lineups_at": "2026-11-07T11:30:01-05:00",
   "goalies_at": null,
   "lineups_note": "0 of 4 team line pages are dated today.",
   "lineups_state": "ok",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-07T11:20:00-05:00",
+   "at": "2026-11-07T11:30:01-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 3803,
+   "pulls_left": 3798,
    "keys": 9,
    "game_days_left": 22,
    "days_left": 24,
    "low": false
   },
   "excluded_teams": [],
-  "lines_checked": 18,
-  "flag_reads": 1,
+  "lines_checked": 33,
+  "flag_reads": 2,
   "tier": 4
  },
  "banners": [],
- "empty": {
-  "code": "none_qualified",
-  "text": "No picks yet today",
-  "sub": "18 lines read, none cleared both checks. Next read at 11:30 AM."
- },
+ "empty": null,
  "games": [
   {
    "id": 2026020265,
@@ -107,11 +103,15 @@
      {
       "pull": "A",
       "at": "2026-11-07T09:30:00-05:00"
+     },
+     {
+      "pull": "B",
+      "at": "2026-11-07T11:30:01-05:00"
      }
     ],
     "next_read": {
-     "pull": "B",
-     "at": "2026-11-07T11:30:00-05:00"
+     "pull": "C",
+     "at": "2026-11-07T12:15:00-05:00"
     },
     "lineups_at": {
      "away": null,
@@ -120,7 +120,7 @@
    },
    "started": false,
    "reads_done": false,
-   "picks": 0,
+   "picks": 2,
    "excluded_reason": null,
    "excluded_teams": []
   },
@@ -535,7 +535,134 @@
    "excluded_teams": []
   }
  ],
- "picks": [],
+ "picks": [
+  {
+   "id": "2026-11-07:2026020266:8475158:shots:1.5:under",
+   "price": 140,
+   "first_price": 140,
+   "first_price_at": "2026-11-07T11:30:01-05:00",
+   "worst_price": 140,
+   "p": 0.4462,
+   "breakeven": 0.4167,
+   "p_pct": 44,
+   "breakeven_pct": 42,
+   "state": "early",
+   "history": [
+    {
+     "at": "2026-11-07T11:30:01-05:00",
+     "text": "Early: lineup not confirmed"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-07T11:30:01-05:00",
+     "price": 140
+    }
+   ],
+   "pulled": null,
+   "price_final": false,
+   "graded": null,
+   "rank": 1,
+   "tier": "main",
+   "game_id": 2026020266,
+   "player": "R. O'Reilly",
+   "player_id": 8475158,
+   "team": "NSH",
+   "opp": "STL",
+   "home": true,
+   "start": "2026-11-07T13:00:00-05:00",
+   "market": "shots",
+   "line": 1.5,
+   "side": "under",
+   "bet": "Under 1.5 shots on goal",
+   "price_at": "2026-11-07T11:30:01-05:00",
+   "gap_pct": 8.4,
+   "market_fair_pct": 45.2,
+   "n_books": 5,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 44.6,
+    "model_pct": 44.1
+   },
+   "settled": "early",
+   "settled_label": "Early",
+   "reason": "5 other books say 45.2%; Hard Rock's +140 only needs 41.7%. Our model agrees (our blend: 44.6%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/1513968030984569263",
+   "links": {
+    "hardrock": {
+     "id": "1513968030984569263",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/1513968030984569263"
+    },
+    "draftkings": null
+   },
+   "thin": false,
+   "games_used": 97,
+   "games_this_season": 16
+  },
+  {
+   "id": "2026-11-07:2026020266:8474600:shots:2.5:over",
+   "price": 115,
+   "first_price": 115,
+   "first_price_at": "2026-11-07T11:30:01-05:00",
+   "worst_price": 115,
+   "p": 0.4963,
+   "breakeven": 0.4651,
+   "p_pct": 49,
+   "breakeven_pct": 47,
+   "state": "early",
+   "history": [
+    {
+     "at": "2026-11-07T11:30:01-05:00",
+     "text": "Early: lineup not confirmed"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-07T11:30:01-05:00",
+     "price": 115
+    }
+   ],
+   "pulled": null,
+   "price_final": false,
+   "graded": null,
+   "rank": 2,
+   "tier": "main",
+   "game_id": 2026020266,
+   "player": "R. Josi",
+   "player_id": 8474600,
+   "team": "NSH",
+   "opp": "STL",
+   "home": true,
+   "start": "2026-11-07T13:00:00-05:00",
+   "market": "shots",
+   "line": 2.5,
+   "side": "over",
+   "bet": "Over 2.5 shots on goal",
+   "price_at": "2026-11-07T11:30:01-05:00",
+   "gap_pct": 6.4,
+   "market_fair_pct": 49.5,
+   "n_books": 7,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 49.6,
+    "model_pct": 48.5
+   },
+   "settled": "early",
+   "settled_label": "Early",
+   "reason": "7 other books say 49.5%; Hard Rock's +115 only needs 46.5%. Our model agrees (our blend: 49.6%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/8825702763508924840",
+   "links": {
+    "hardrock": {
+     "id": "8825702763508924840",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/8825702763508924840"
+    },
+    "draftkings": null
+   },
+   "thin": false,
+   "games_used": 84,
+   "games_this_season": 16
+  }
+ ],
  "parlays": [],
  "parlays_note": "Parlays are not offered: there is no evidence for them yet."
 }
