@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2172,
+   "pool_left": 2152,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-07T15:30:00-05:00",
-  "last_read_at": "2026-11-07T11:00:00-05:00",
+  "next_read_at": "2026-11-07T16:15:00-05:00",
+  "last_read_at": "2026-11-07T15:30:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-07T15:10:01-05:00"
+   "at": "2026-11-07T15:30:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-07T15:10:01-05:00",
+    "at": "2026-11-07T15:30:00-05:00",
     "confirmed": []
    },
    "grade": true
@@ -48,13 +48,18 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-07T11:00:00-05:00",
-   "picks": 0,
-   "checks": [],
-   "last_check_at": null,
+   "read_at": "2026-11-07T15:30:00-05:00",
+   "picks": 1,
+   "checks": [
+    {
+     "read": "B",
+     "at": "2026-11-07T15:30:00-05:00"
+    }
+   ],
+   "last_check_at": "2026-11-07T15:30:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-07T15:30:00-05:00",
-   "next_check_read": "B",
+   "next_check_at": "2026-11-07T16:15:00-05:00",
+   "next_check_read": "C",
    "injury_clear": {
     "away": true,
     "home": false
@@ -199,15 +204,78 @@
    }
   }
  ],
- "picks": [],
- "empty": {
-  "text": "No picks yet today",
-  "why": "608 lines read. Pinnacle hasn't moved alone on any of them yet.",
-  "next": "2026-11-07T15:30:00-05:00"
- },
+ "picks": [
+  {
+   "player": "Andrew Nembhard",
+   "pid": "4395712",
+   "team": "IND",
+   "opp": "DEN",
+   "home": true,
+   "game_id": "401909938",
+   "start": "2026-11-07T17:00:00-05:00",
+   "bet": "Under 7.5 assists",
+   "market": "assists",
+   "side": "under",
+   "line": 7.5,
+   "price": -130,
+   "price_at": "2026-11-07T15:30:00-05:00",
+   "read": "B",
+   "p": 0.5688,
+   "p_pct": 57,
+   "breakeven": 0.5652,
+   "breakeven_pct": 57,
+   "market_fair": null,
+   "n_books": 7,
+   "gap_ev": null,
+   "final_ev": 0.0317,
+   "model_p": null,
+   "reason": "Pinnacle moved the under from -135 to -155 (54% to 57%). Hard Rock -130 is 0.6% better than Pinnacle's fair price; DraftKings -122 is 3.5% better than Pinnacle's fair price.",
+   "rule": "pin_solo",
+   "pin_before": 0.5371,
+   "pin_after": 0.5688,
+   "pin_price_before": -135,
+   "pin_price_after": -155,
+   "others_move": -0.0,
+   "n_others": 7,
+   "ev_vs_pin": 0.0063,
+   "window": "11 AM \u2192 90 min",
+   "gap_vs_pin": 0.0426,
+   "book": "hardrock",
+   "books": {
+    "draftkings": {
+     "ev_vs_pin": 0.035,
+     "price": -122
+    },
+    "hardrock": {
+     "ev_vs_pin": 0.0063,
+     "price": -130
+    }
+   },
+   "id": "2026-11-07:401909938:4395712:assists:7.5:under",
+   "state": "early",
+   "state_label": "Early",
+   "price_final": false,
+   "pulled": null,
+   "added_at": "2026-11-07T15:30:00-05:00",
+   "result": null,
+   "links": {
+    "hardrock": {
+     "id": "6198502997616624036",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/6198502997616624036",
+     "price": -130
+    },
+    "draftkings": {
+     "url": "https://sportsbook.draftkings.com/?outcomes=0QA386776559%232354348486_13L42648Q11443594486Q20",
+     "price": -122
+    }
+   },
+   "rank": 1
+  }
+ ],
+ "empty": null,
  "counts": {
   "lines_read": 608,
-  "passing": 0,
+  "passing": 4,
   "games": 7
  },
  "safety_paused": false,
@@ -216,6 +284,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-07T14:00:01-05:00",
- "status_at": "2026-11-07T15:10:01-05:00"
+ "generated_at": "2026-11-07T15:30:00-05:00",
+ "status_at": "2026-11-07T15:30:00-05:00"
 }
