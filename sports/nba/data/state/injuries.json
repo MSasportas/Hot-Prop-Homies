@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T16:30:01-05:00",
+ "at": "2026-11-07T16:40:00-05:00",
  "list": {
   "4585618": {
    "status": "out",
@@ -99,19 +99,26 @@
    "date": "2026-11-04T23:50Z",
    "note": "The Hornets recalled Williams (hamstring) from the G League's Greensboro Swarm on Wednesday."
   },
-  "4066650": {
+  "5105555": {
    "status": "day-to-day",
-   "name": "Zach Collins",
+   "name": "Tobe Awaka",
    "team": "CHI",
-   "date": "2026-11-06T19:19Z",
-   "note": "Collins didn't practice Friday due to an illness, per K.C. Johnson of Chicago Sports Network."
+   "date": "2026-11-07T21:33Z",
+   "note": "Awaka (ankle) is active for Monday's game against the 76ers."
   },
   "4278067": {
    "status": "out",
    "name": "Nic Claxton",
    "team": "CHI",
-   "date": "2026-11-06T18:21Z",
-   "note": "Head coach Tiago Splittler said Friday that Claxton (hamstring) is expected to make his season debut Sunday against the 76ers, per Joel Lorenzi of The Athletic."
+   "date": "2026-11-07T21:25Z",
+   "note": "Claxton (hamstring) has been downgraded to questionable for Sunday's game against the 76ers."
+  },
+  "4066650": {
+   "status": "out",
+   "name": "Zach Collins",
+   "team": "CHI",
+   "date": "2026-11-07T21:24Z",
+   "note": "Collins (illness) is out for Sunday's game against Philadelphia."
   },
   "4397189": {
    "status": "day-to-day",
