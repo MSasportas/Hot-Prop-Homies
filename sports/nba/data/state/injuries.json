@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T16:00:01-05:00",
+ "at": "2026-11-07T16:10:01-05:00",
  "list": {
   "4585618": {
    "status": "out",
@@ -161,13 +161,6 @@
    "team": "DAL",
    "date": "2026-11-01T22:57Z",
    "note": "Lively (foot) is listed as out for Monday's game against the Kings."
-  },
-  "3978": {
-   "status": "day-to-day",
-   "name": "DeMar DeRozan",
-   "team": "DEN",
-   "date": "2026-11-06T22:48Z",
-   "note": "DeRozan (back) is probable for Saturday's game against the Pacers."
   },
   "4432181": {
    "status": "out",
@@ -476,6 +469,13 @@
    "team": "PHX",
    "date": "2026-09-11T16:03Z",
    "note": "Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports."
+  },
+  "4066211": {
+   "status": "out",
+   "name": "Robert Williams III",
+   "team": "POR",
+   "date": "2026-11-07T21:04Z",
+   "note": "Williams closed Wednesday's 132-119 victory over the Suns with nine points (4-8 FG, 1-1 FT), eight rebounds, one assist, three blocks and two steals over 16 minutes."
   },
   "4578893": {
    "status": "out",
