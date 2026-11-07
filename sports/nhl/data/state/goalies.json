@@ -3,11 +3,11 @@
  "teams": {
   "WSH": {
    "name": "Logan Thompson",
-   "status": "expected"
+   "status": "confirmed"
   },
   "FLA": {
    "name": "Akira Schmid",
-   "status": "expected"
+   "status": "confirmed"
   },
   "NSH": {
    "name": "Juuse Saros",
@@ -98,5 +98,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-07T10:20:00-05:00"
+ "checked_at": "2026-11-07T10:30:00-05:00"
 }
