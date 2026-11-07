@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T14:00:01-05:00",
+ "at": "2026-11-07T14:20:01-05:00",
  "list": {
   "4585618": {
    "status": "out",
@@ -330,13 +330,6 @@
    "date": "2026-11-05T23:03Z",
    "note": "Pippen (back) has been ruled out for Friday's game against Oklahoma City."
   },
-  "4697268": {
-   "status": "day-to-day",
-   "name": "Kam Jones",
-   "team": "MIL",
-   "date": "2026-11-06T15:08Z",
-   "note": "Jones (ankle/two-way player) is out for Friday's game against Toronto."
-  },
   "5279133": {
    "status": "day-to-day",
    "name": "Joan Beringer",
@@ -380,10 +373,10 @@
    "note": "Hart is out for Saturday's game against the Cavaliers due to right ankle soreness."
   },
   "4432823": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Jaylin Williams",
    "team": "OKC",
-   "date": "2026-11-07T15:04Z",
+   "date": "2026-11-07T19:08Z",
    "note": "Williams (back) has been ruled out for Friday's game against the Grizzlies."
   },
   "5061603": {
