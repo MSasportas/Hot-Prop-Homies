@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-07",
- "generated_at": "2026-11-07T12:50:00-05:00",
- "status_at": "2026-11-07T12:50:00-05:00",
+ "generated_at": "2026-11-07T13:00:01-05:00",
+ "status_at": "2026-11-07T13:00:01-05:00",
  "valid_until": "2026-11-08T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-07T12:50:00-05:00",
+   "at": "2026-11-07T13:00:01-05:00",
    "failed_step": null
   },
   "pool": {
@@ -32,7 +32,11 @@
   "tier": 4
  },
  "banners": [],
- "empty": null,
+ "empty": {
+  "code": "none_qualified",
+  "text": "No picks yet today",
+  "sub": "33 lines read, none cleared both checks. Today's earlier picks are on the Live tab. Next read at 3:30 PM."
+ },
  "games": [
   {
    "id": 2026020265,
@@ -120,8 +124,8 @@
      "home": null
     }
    },
-   "started": false,
-   "reads_done": true,
+   "started": true,
+   "reads_done": false,
    "picks": 2,
    "excluded_reason": null,
    "excluded_teams": []
@@ -539,69 +543,6 @@
  ],
  "picks": [
   {
-   "id": "2026-11-07:2026020266:8475158:shots:1.5:under",
-   "price": 140,
-   "first_price": 140,
-   "first_price_at": "2026-11-07T11:30:01-05:00",
-   "worst_price": 140,
-   "p": 0.4462,
-   "breakeven": 0.4167,
-   "p_pct": 44,
-   "breakeven_pct": 42,
-   "state": "early",
-   "history": [
-    {
-     "at": "2026-11-07T11:30:01-05:00",
-     "text": "Early: lineup not confirmed"
-    }
-   ],
-   "prices": [
-    {
-     "at": "2026-11-07T11:30:01-05:00",
-     "price": 140
-    }
-   ],
-   "pulled": null,
-   "price_final": true,
-   "graded": null,
-   "rank": 1,
-   "tier": "main",
-   "game_id": 2026020266,
-   "player": "R. O'Reilly",
-   "player_id": 8475158,
-   "team": "NSH",
-   "opp": "STL",
-   "home": true,
-   "start": "2026-11-07T13:00:00-05:00",
-   "market": "shots",
-   "line": 1.5,
-   "side": "under",
-   "bet": "Under 1.5 shots on goal",
-   "price_at": "2026-11-07T11:30:01-05:00",
-   "gap_pct": 8.4,
-   "market_fair_pct": 45.2,
-   "n_books": 5,
-   "guard": {
-    "verdict": "agrees",
-    "ours_pct": 44.6,
-    "model_pct": 44.1
-   },
-   "settled": "early",
-   "settled_label": "Early",
-   "reason": "5 other books say 45.2%; Hard Rock's +140 only needs 41.7%. Our model agrees (our blend: 44.6%).",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/1513968030984569263",
-   "links": {
-    "hardrock": {
-     "id": "1513968030984569263",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/1513968030984569263"
-    },
-    "draftkings": null
-   },
-   "thin": false,
-   "games_used": 97,
-   "games_this_season": 16
-  },
-  {
    "id": "2026-11-07:2026020266:8474600:shots:2.5:over",
    "price": 115,
    "first_price": 115,
@@ -611,11 +552,15 @@
    "breakeven": 0.4651,
    "p_pct": 49,
    "breakeven_pct": 47,
-   "state": "early",
+   "state": "locked_unconfirmed",
    "history": [
     {
      "at": "2026-11-07T11:30:01-05:00",
      "text": "Early: lineup not confirmed"
+    },
+    {
+     "at": "2026-11-07T13:00:01-05:00",
+     "text": "Locked: lineup was not confirmed"
     }
    ],
    "prices": [
@@ -625,9 +570,9 @@
     }
    ],
    "pulled": null,
-   "price_final": true,
+   "price_final": false,
    "graded": null,
-   "rank": 2,
+   "rank": null,
    "tier": "main",
    "game_id": 2026020266,
    "player": "R. Josi",
@@ -662,6 +607,73 @@
    },
    "thin": false,
    "games_used": 84,
+   "games_this_season": 16
+  },
+  {
+   "id": "2026-11-07:2026020266:8475158:shots:1.5:under",
+   "price": 140,
+   "first_price": 140,
+   "first_price_at": "2026-11-07T11:30:01-05:00",
+   "worst_price": 140,
+   "p": 0.4462,
+   "breakeven": 0.4167,
+   "p_pct": 44,
+   "breakeven_pct": 42,
+   "state": "locked_unconfirmed",
+   "history": [
+    {
+     "at": "2026-11-07T11:30:01-05:00",
+     "text": "Early: lineup not confirmed"
+    },
+    {
+     "at": "2026-11-07T13:00:01-05:00",
+     "text": "Locked: lineup was not confirmed"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-07T11:30:01-05:00",
+     "price": 140
+    }
+   ],
+   "pulled": null,
+   "price_final": false,
+   "graded": null,
+   "rank": null,
+   "tier": "main",
+   "game_id": 2026020266,
+   "player": "R. O'Reilly",
+   "player_id": 8475158,
+   "team": "NSH",
+   "opp": "STL",
+   "home": true,
+   "start": "2026-11-07T13:00:00-05:00",
+   "market": "shots",
+   "line": 1.5,
+   "side": "under",
+   "bet": "Under 1.5 shots on goal",
+   "price_at": "2026-11-07T11:30:01-05:00",
+   "gap_pct": 8.4,
+   "market_fair_pct": 45.2,
+   "n_books": 5,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 44.6,
+    "model_pct": 44.1
+   },
+   "settled": "early",
+   "settled_label": "Early",
+   "reason": "5 other books say 45.2%; Hard Rock's +140 only needs 41.7%. Our model agrees (our blend: 44.6%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/1513968030984569263",
+   "links": {
+    "hardrock": {
+     "id": "1513968030984569263",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/1513968030984569263"
+    },
+    "draftkings": null
+   },
+   "thin": false,
+   "games_used": 97,
    "games_this_season": 16
   }
  ],
