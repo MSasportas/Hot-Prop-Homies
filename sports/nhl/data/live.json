@@ -1,27 +1,27 @@
 {
  "slate_date": "2026-11-07",
- "generated_at": "2026-11-07T15:30:00-05:00",
+ "generated_at": "2026-11-07T15:40:01-05:00",
  "games": [
   {
    "game_id": 2026020266,
-   "state": "CRIT",
+   "state": "FINAL",
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "04:20",
+   "clock": "00:00",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "STL",
     "score": 1,
-    "sog": 23
+    "sog": 26
    },
    "home": {
     "abbrev": "NSH",
-    "score": 2,
-    "sog": 28
+    "score": 3,
+    "sog": 29
    },
-   "updated_at": "2026-11-07T15:30:00-05:00"
+   "updated_at": "2026-11-07T15:40:01-05:00"
   }
  ],
  "picks": {
