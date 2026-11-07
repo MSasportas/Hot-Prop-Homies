@@ -388,13 +388,13 @@
     "start": "2026-11-07T17:00:00-05:00",
     "away": "DEN",
     "home": "IND",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/7 - 5:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "9:21 - 1st",
     "score": {
-     "DEN": "0",
-     "IND": "0"
+     "DEN": "6",
+     "IND": "7"
     }
    },
    {

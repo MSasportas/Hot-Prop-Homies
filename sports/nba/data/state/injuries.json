@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T17:10:00-05:00",
+ "at": "2026-11-07T17:20:00-05:00",
  "list": {
   "4585618": {
    "status": "out",
@@ -308,6 +308,13 @@
    "team": "LAC",
    "date": "2026-08-26T20:04Z",
    "note": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic."
+  },
+  "3945274": {
+   "status": "day-to-day",
+   "name": "Luka Doncic",
+   "team": "LAL",
+   "date": "2026-11-07T22:11Z",
+   "note": "Doncic (back) is questionable for Sunday's game against the Pistons."
   },
   "5105462": {
    "status": "out",
