@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T17:30:01-05:00",
+ "generated_at": "2026-11-07T18:20:01-05:00",
  "summary": {
   "headline": {
    "w": 30,
@@ -219,7 +219,7 @@
     "push": 0,
     "void": 0,
     "units": 0.4,
-    "n": 4,
+    "n": 5,
     "graded": false
    },
    {
@@ -466,6 +466,32 @@
       {
        "price": 145,
        "at": "2026-11-07T17:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": {
+      "at": "2026-11-07T18:20:01-05:00",
+      "reason": "The other books moved against it"
+     },
+     "legs": []
+    },
+    {
+     "id": "2026-11-07:2026020268:8484158:shots:1.5:under",
+     "kind": "single",
+     "player": "E. Cowan",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "TOR",
+     "game": "MTL at TOR",
+     "price": 120,
+     "first_price": 120,
+     "last_price": 120,
+     "prices": [
+      {
+       "price": 120,
+       "at": "2026-11-07T18:20:01-05:00"
       }
      ],
      "result": null,
