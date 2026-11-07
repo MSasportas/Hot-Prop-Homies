@@ -22,8 +22,8 @@
    "status": "expected"
   },
   "NYR": {
-   "name": "Dylan Garand",
-   "status": "expected"
+   "name": "Joonas Korpisalo",
+   "status": "confirmed"
   },
   "TOR": {
    "name": "Sergei Bobrovsky",
@@ -98,5 +98,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-07T14:30:00-05:00"
+ "checked_at": "2026-11-07T14:50:00-05:00"
 }
