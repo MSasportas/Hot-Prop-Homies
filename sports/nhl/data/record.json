@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T18:20:01-05:00",
+ "generated_at": "2026-11-07T18:30:00-05:00",
  "summary": {
   "headline": {
    "w": 30,
@@ -219,7 +219,7 @@
     "push": 0,
     "void": 0,
     "units": 0.4,
-    "n": 5,
+    "n": 7,
     "graded": false
    },
    {
@@ -429,6 +429,29 @@
      "legs": []
     },
     {
+     "id": "2026-11-07:2026020271:8484390:shots:1.5:under",
+     "kind": "single",
+     "player": "R. Kantserov",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "CHI",
+     "game": "CHI at CAR",
+     "price": 115,
+     "first_price": 115,
+     "last_price": 115,
+     "prices": [
+      {
+       "price": 115,
+       "at": "2026-11-07T18:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
      "id": "2026-11-07:2026020266:8474600:shots:2.5:over",
      "kind": "single",
      "player": "R. Josi",
@@ -492,6 +515,29 @@
       {
        "price": 120,
        "at": "2026-11-07T18:20:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-07:2026020273:8477404:shots:2.5:under",
+     "kind": "single",
+     "player": "J. Guentzel",
+     "bet": "Under 2.5 shots on goal",
+     "market": "shots",
+     "team": "TBL",
+     "game": "TBL at MIN",
+     "price": -105,
+     "first_price": -105,
+     "last_price": -105,
+     "prices": [
+      {
+       "price": -105,
+       "at": "2026-11-07T18:30:00-05:00"
       }
      ],
      "result": null,
