@@ -11,7 +11,7 @@
   },
   "NSH": {
    "name": "Juuse Saros",
-   "status": "expected"
+   "status": "confirmed"
   },
   "STL": {
    "name": "Joel Hofer",
@@ -39,7 +39,7 @@
   },
   "NJD": {
    "name": "Jake Allen",
-   "status": "expected"
+   "status": "confirmed"
   },
   "OTT": {
    "name": "Samuel Ersson",
@@ -62,8 +62,8 @@
    "status": "confirmed"
   },
   "TBL": {
-   "name": "Andrei Vasilevskiy",
-   "status": "expected"
+   "name": "Dennis Hildeby",
+   "status": "confirmed"
   },
   "DAL": {
    "name": "Jake Oettinger",
@@ -98,5 +98,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-07T12:30:00-05:00"
+ "checked_at": "2026-11-07T12:40:00-05:00"
 }
