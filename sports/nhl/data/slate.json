@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-07",
- "generated_at": "2026-11-07T11:50:00-05:00",
- "status_at": "2026-11-07T11:50:00-05:00",
+ "generated_at": "2026-11-07T12:00:00-05:00",
+ "status_at": "2026-11-07T12:00:00-05:00",
  "valid_until": "2026-11-08T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -9,14 +9,14 @@
   "next_price_read_at": "2026-11-07T12:15:00-05:00",
   "stats_built_at": "2026-11-06T23:40:01-05:00",
   "stats_through": "2026-11-06",
-  "lineups_at": "2026-11-07T11:30:01-05:00",
+  "lineups_at": "2026-11-07T12:00:00-05:00",
   "goalies_at": null,
-  "lineups_note": "0 of 4 team line pages are dated today.",
+  "lineups_note": "1 of 4 team line pages are dated today.",
   "lineups_state": "ok",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-07T11:50:00-05:00",
+   "at": "2026-11-07T12:00:00-05:00",
    "failed_step": null
   },
   "pool": {
@@ -86,13 +86,13 @@
    "home": "NSH",
    "start": "2026-11-07T13:00:00-05:00",
    "lineups": {
-    "away": "waiting",
+    "away": "confirmed",
     "home": "waiting"
    },
    "goalies": {
     "away": {
      "name": "Joel Hofer",
-     "status": "expected"
+     "status": "confirmed"
     },
     "home": {
      "name": "Juuse Saros",
@@ -115,7 +115,7 @@
      "at": "2026-11-07T12:15:00-05:00"
     },
     "lineups_at": {
-     "away": null,
+     "away": "2026-11-07T12:00:00-05:00",
      "home": null
     }
    },
