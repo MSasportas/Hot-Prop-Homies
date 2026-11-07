@@ -1,42 +1,38 @@
 {
  "slate_date": "2026-11-07",
- "generated_at": "2026-11-07T17:00:01-05:00",
- "status_at": "2026-11-07T17:00:01-05:00",
+ "generated_at": "2026-11-07T17:30:01-05:00",
+ "status_at": "2026-11-07T17:30:01-05:00",
  "valid_until": "2026-11-08T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
-  "prices_at": "2026-11-07T16:20:00-05:00",
-  "next_price_read_at": "2026-11-07T17:30:00-05:00",
+  "prices_at": "2026-11-07T17:30:01-05:00",
+  "next_price_read_at": "2026-11-07T18:15:00-05:00",
   "stats_built_at": "2026-11-07T16:40:00-05:00",
   "stats_through": "2026-11-07",
-  "lineups_at": "2026-11-07T17:00:01-05:00",
+  "lineups_at": "2026-11-07T17:30:01-05:00",
   "goalies_at": null,
   "lineups_note": "13 of 18 team line pages are dated today.",
   "lineups_state": "ok",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-07T17:00:01-05:00",
+   "at": "2026-11-07T17:30:01-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 3778,
+   "pulls_left": 3769,
    "keys": 9,
    "game_days_left": 22,
    "days_left": 24,
    "low": false
   },
   "excluded_teams": [],
-  "lines_checked": 51,
-  "flag_reads": 3,
+  "lines_checked": 101,
+  "flag_reads": 6,
   "tier": 4
  },
  "banners": [],
- "empty": {
-  "code": "none_qualified",
-  "text": "No picks yet today",
-  "sub": "51 lines read, none cleared both checks. 1 had a gap but our model said no. Today's earlier picks are on the Live tab. Next read at 5:30 PM."
- },
+ "empty": null,
  "games": [
   {
    "id": 2026020265,
@@ -200,11 +196,15 @@
      {
       "pull": "A",
       "at": "2026-11-07T09:30:00-05:00"
+     },
+     {
+      "pull": "B",
+      "at": "2026-11-07T17:30:01-05:00"
      }
     ],
     "next_read": {
-     "pull": "B",
-     "at": "2026-11-07T17:30:00-05:00"
+     "pull": "C",
+     "at": "2026-11-07T18:15:00-05:00"
     },
     "lineups_at": {
      "away": "2026-11-07T16:00:00-05:00",
@@ -241,11 +241,15 @@
      {
       "pull": "A",
       "at": "2026-11-07T09:30:00-05:00"
+     },
+     {
+      "pull": "B",
+      "at": "2026-11-07T17:30:01-05:00"
      }
     ],
     "next_read": {
-     "pull": "B",
-     "at": "2026-11-07T17:30:00-05:00"
+     "pull": "C",
+     "at": "2026-11-07T18:15:00-05:00"
     },
     "lineups_at": {
      "away": null,
@@ -282,11 +286,15 @@
      {
       "pull": "A",
       "at": "2026-11-07T09:30:00-05:00"
+     },
+     {
+      "pull": "B",
+      "at": "2026-11-07T17:30:01-05:00"
      }
     ],
     "next_read": {
-     "pull": "B",
-     "at": "2026-11-07T17:30:00-05:00"
+     "pull": "C",
+     "at": "2026-11-07T18:15:00-05:00"
     },
     "lineups_at": {
      "away": "2026-11-07T16:00:00-05:00",
@@ -295,7 +303,7 @@
    },
    "started": false,
    "reads_done": false,
-   "picks": 0,
+   "picks": 2,
    "excluded_reason": null,
    "excluded_teams": []
   },
@@ -547,6 +555,132 @@
   }
  ],
  "picks": [
+  {
+   "id": "2026-11-07:2026020270:8485388:shots:1.5:under",
+   "price": 100,
+   "first_price": 100,
+   "first_price_at": "2026-11-07T17:30:01-05:00",
+   "worst_price": 100,
+   "p": 0.534,
+   "breakeven": 0.5,
+   "p_pct": 53,
+   "breakeven_pct": 50,
+   "state": "lineup",
+   "history": [
+    {
+     "at": "2026-11-07T17:30:01-05:00",
+     "text": "Lineup confirmed"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-07T17:30:01-05:00",
+     "price": 100
+    }
+   ],
+   "pulled": null,
+   "price_final": false,
+   "graded": null,
+   "rank": 1,
+   "tier": "main",
+   "game_id": 2026020270,
+   "player": "V. Eklund",
+   "player_id": 8485388,
+   "team": "NYI",
+   "opp": "NJD",
+   "home": true,
+   "start": "2026-11-07T19:00:00-05:00",
+   "market": "shots",
+   "line": 1.5,
+   "side": "under",
+   "bet": "Under 1.5 shots on goal",
+   "price_at": "2026-11-07T17:30:01-05:00",
+   "gap_pct": 6.5,
+   "market_fair_pct": 53.2,
+   "n_books": 7,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 53.4,
+    "model_pct": 55.8
+   },
+   "settled": "lineup",
+   "settled_label": "Lineup confirmed",
+   "reason": "7 other books say 53.2%; Hard Rock's +100 only needs 50.0%. Our model agrees (our blend: 53.4%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/8933249884914581912",
+   "links": {
+    "hardrock": {
+     "id": "8933249884914581912",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/8933249884914581912"
+    },
+    "draftkings": null
+   },
+   "thin": true,
+   "games_used": 16,
+   "games_this_season": 15
+  },
+  {
+   "id": "2026-11-07:2026020270:8476462:shots:2.5:over",
+   "price": 145,
+   "first_price": 145,
+   "first_price_at": "2026-11-07T17:30:01-05:00",
+   "worst_price": 145,
+   "p": 0.4215,
+   "breakeven": 0.4082,
+   "p_pct": 42,
+   "breakeven_pct": 41,
+   "state": "lineup",
+   "history": [
+    {
+     "at": "2026-11-07T17:30:01-05:00",
+     "text": "Lineup confirmed"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-07T17:30:01-05:00",
+     "price": 145
+    }
+   ],
+   "pulled": null,
+   "price_final": false,
+   "graded": null,
+   "rank": 2,
+   "tier": "main",
+   "game_id": 2026020270,
+   "player": "D. Hamilton",
+   "player_id": 8476462,
+   "team": "NJD",
+   "opp": "NYI",
+   "home": false,
+   "start": "2026-11-07T19:00:00-05:00",
+   "market": "shots",
+   "line": 2.5,
+   "side": "over",
+   "bet": "Over 2.5 shots on goal",
+   "price_at": "2026-11-07T17:30:01-05:00",
+   "gap_pct": 3.4,
+   "market_fair_pct": 42.2,
+   "n_books": 7,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 42.1,
+    "model_pct": 40.4
+   },
+   "settled": "lineup",
+   "settled_label": "Lineup confirmed",
+   "reason": "7 other books say 42.2%; Hard Rock's +145 only needs 40.8%. Our model agrees (our blend: 42.2%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/7921910293593194893",
+   "links": {
+    "hardrock": {
+     "id": "7921910293593194893",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/7921910293593194893"
+    },
+    "draftkings": null
+   },
+   "thin": false,
+   "games_used": 93,
+   "games_this_season": 16
+  },
   {
    "id": "2026-11-07:2026020266:8474600:shots:2.5:over",
    "price": 115,

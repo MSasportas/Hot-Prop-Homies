@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T16:40:00-05:00",
+ "generated_at": "2026-11-07T17:30:01-05:00",
  "summary": {
   "headline": {
    "w": 30,
@@ -219,8 +219,8 @@
     "push": 0,
     "void": 0,
     "units": 0.4,
-    "n": 2,
-    "graded": true
+    "n": 4,
+    "graded": false
    },
    {
     "date": "2026-11-06",
@@ -377,7 +377,7 @@
  "nights": [
   {
    "date": "2026-11-07",
-   "graded": true,
+   "graded": false,
    "w": 1,
    "l": 1,
    "units": 0.4,
@@ -406,6 +406,29 @@
      "legs": []
     },
     {
+     "id": "2026-11-07:2026020270:8485388:shots:1.5:under",
+     "kind": "single",
+     "player": "V. Eklund",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "NYI",
+     "game": "NJD at NYI",
+     "price": 100,
+     "first_price": 100,
+     "last_price": 100,
+     "prices": [
+      {
+       "price": 100,
+       "at": "2026-11-07T17:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
      "id": "2026-11-07:2026020266:8474600:shots:2.5:over",
      "kind": "single",
      "player": "R. Josi",
@@ -425,6 +448,29 @@
      "result": "L",
      "actual": "had 2",
      "units": -1.0,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-07:2026020270:8476462:shots:2.5:over",
+     "kind": "single",
+     "player": "D. Hamilton",
+     "bet": "Over 2.5 shots on goal",
+     "market": "shots",
+     "team": "NJD",
+     "game": "NJD at NYI",
+     "price": 145,
+     "first_price": 145,
+     "last_price": 145,
+     "prices": [
+      {
+       "price": 145,
+       "at": "2026-11-07T17:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
      "pulled": null,
      "legs": []
     }
