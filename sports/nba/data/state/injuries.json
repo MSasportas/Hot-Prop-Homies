@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T12:50:01-05:00",
+ "at": "2026-11-07T13:00:01-05:00",
  "list": {
   "4585618": {
    "status": "day-to-day",
@@ -78,6 +78,13 @@
    "date": "2026-10-25T17:19Z",
    "note": "Bilodeau (shoulder) has been ruled out for Sunday's game against Indiana."
   },
+  "4433249": {
+   "status": "day-to-day",
+   "name": "Moussa Diabate",
+   "team": "CHA",
+   "date": "2026-11-07T17:39Z",
+   "note": "Diabate (quadriceps) has been ruled out for Friday's game against Boston, according to the Hornets' official injury report."
+  },
   "4433287": {
    "status": "day-to-day",
    "name": "Brandon Miller",
@@ -91,13 +98,6 @@
    "team": "CHA",
    "date": "2026-11-06T18:09Z",
    "note": "Schroder (thigh) is out for Friday's game versus Boston."
-  },
-  "4433249": {
-   "status": "out",
-   "name": "Moussa Diabate",
-   "team": "CHA",
-   "date": "2026-11-06T18:08Z",
-   "note": "Diabate (quadriceps) has been ruled out for Friday's game against Boston, according to the Hornets' official injury report."
   },
   "5061575": {
    "status": "out",
