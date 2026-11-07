@@ -1,16 +1,16 @@
 {
  "slate_date": "2026-11-07",
- "generated_at": "2026-11-07T15:20:01-05:00",
+ "generated_at": "2026-11-07T15:30:00-05:00",
  "games": [
   {
    "game_id": 2026020266,
-   "state": "LIVE",
+   "state": "CRIT",
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "09:44",
+   "clock": "04:20",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "STL",
     "score": 1,
@@ -21,7 +21,7 @@
     "score": 2,
     "sog": 28
    },
-   "updated_at": "2026-11-07T15:20:01-05:00"
+   "updated_at": "2026-11-07T15:30:00-05:00"
   }
  ],
  "picks": {
