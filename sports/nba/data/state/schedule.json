@@ -255,10 +255,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:07 - 1st",
+    "detail": "11:19 - 2nd",
     "score": {
-     "WSH": "18",
-     "ATL": "20"
+     "WSH": "34",
+     "ATL": "30"
     }
    },
    {
@@ -269,11 +269,11 @@
     "home": "CHA",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:09 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
-     "BOS": "26",
-     "CHA": "14"
+     "BOS": "40",
+     "CHA": "20"
     }
    },
    {
