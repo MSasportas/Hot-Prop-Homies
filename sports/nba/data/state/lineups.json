@@ -30,11 +30,11 @@
    }
   },
   "BKN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Nolan Traore",
     "Michael Porter",
-    "Chaney Johnson",
+    "Danny Wolf",
     "Julius Randle",
     "Day'Ron Sharpe"
    ],
@@ -43,7 +43,7 @@
    }
   },
   "ATL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Kingston Flemings",
     "Nickeil Alexander-Walker",
@@ -150,8 +150,6 @@
     "Draymond Green"
    ],
    "status": {
-    "Gui Santos": "questionable",
-    "Draymond Green": "questionable",
     "Jimmy Butler": "out",
     "Moses Moody": "out",
     "Kristaps Porzingis": "out"
@@ -217,5 +215,5 @@
    }
   }
  },
- "at": "2026-11-07T19:00:01-05:00"
+ "at": "2026-11-07T19:10:01-05:00"
 }
