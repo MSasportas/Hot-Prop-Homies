@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-07T19:50:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-07T19:50:01-05:00"
+   "at": "2026-11-07T20:00:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,13 +30,14 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-07T19:50:01-05:00",
+    "at": "2026-11-07T20:00:01-05:00",
     "confirmed": [
      "ATL",
      "BKN",
      "CLE",
      "DEN",
      "IND",
+     "NY",
      "OKC",
      "WSH"
     ]
@@ -87,7 +88,7 @@
    "away": "BKN",
    "home": "ATL",
    "state": "in",
-   "detail": "7:27 - 1st",
+   "detail": "3:31 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -125,7 +126,7 @@
    "state": "pre",
    "detail": "11/7 - 8:00 PM EST",
    "lineups": {
-    "away": "expected",
+    "away": "confirmed",
     "home": "confirmed"
    },
    "read_at": "2026-11-07T19:40:01-05:00",
@@ -383,21 +384,14 @@
     }
    },
    "id": "2026-11-07:401909941:4278073:rebounds:4.5:under",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "added_at": "2026-11-07T18:30:01-05:00",
    "result": null,
-   "links": {
-    "hardrock": {
-     "id": "8599717884868034962",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/8599717884868034962",
-     "price": -150
-    },
-    "draftkings": null
-   },
-   "rank": 2
+   "links": null,
+   "rank": null
   },
   {
    "player": "Andrew Nembhard",
@@ -516,7 +510,7 @@
     },
     "draftkings": null
    },
-   "rank": 3
+   "rank": 2
   }
  ],
  "empty": null,
@@ -531,6 +525,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-07T19:50:01-05:00",
- "status_at": "2026-11-07T19:50:01-05:00"
+ "generated_at": "2026-11-07T20:00:01-05:00",
+ "status_at": "2026-11-07T20:00:01-05:00"
 }

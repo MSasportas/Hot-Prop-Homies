@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:27 - 1st",
+    "detail": "3:31 - 1st",
     "score": {
-     "BKN": "14",
-     "ATL": "4"
+     "BKN": "31",
+     "ATL": "14"
     }
    },
    {
