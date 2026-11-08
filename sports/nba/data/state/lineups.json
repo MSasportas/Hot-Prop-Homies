@@ -27,6 +27,7 @@
     "Nic Claxton"
    ],
    "status": {
+    "Norman Powell": "questionable",
     "Nic Claxton": "questionable",
     "Jalen Smith": "probable",
     "Tobe Awaka": "questionable",
@@ -57,8 +58,6 @@
     "Paul Reed"
    ],
    "status": {
-    "Elijah Harkless": "questionable",
-    "Isaac Jones": "questionable",
     "Jalen Duren": "out",
     "Isaiah Joe": "out"
    }
@@ -73,6 +72,7 @@
     "Jaxson Hayes"
    ],
    "status": {
+    "Keyonte George": "questionable",
     "Lauri Markkanen": "questionable",
     "Jaren Jackson": "out",
     "Jusuf Nurkic": "out"
@@ -88,7 +88,6 @@
     "Rudy Gobert"
    ],
    "status": {
-    "Joan Beringer": "questionable",
     "Donte DiVincenzo": "out",
     "Anthony Edwards": "out"
    }
@@ -201,5 +200,5 @@
    }
   }
  },
- "at": "2026-11-08T05:00:01-05:00"
+ "at": "2026-11-08T12:30:01-05:00"
 }

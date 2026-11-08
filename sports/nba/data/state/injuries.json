@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T11:50:01-05:00",
+ "at": "2026-11-08T12:30:01-05:00",
  "list": {
   "4873201": {
    "status": "day-to-day",
@@ -309,13 +309,6 @@
    "date": "2026-11-05T23:03Z",
    "note": "Pippen (back) has been ruled out for Friday's game against Oklahoma City."
   },
-  "5279133": {
-   "status": "day-to-day",
-   "name": "Joan Beringer",
-   "team": "MIN",
-   "date": "2026-11-07T23:10Z",
-   "note": "Beringer (nose) is questionable for Sunday's game against the Jazz."
-  },
   "4594268": {
    "status": "out",
    "name": "Anthony Edwards",
@@ -526,19 +519,19 @@
    "date": "2026-10-05T21:43Z",
    "note": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports."
   },
-  "4433134": {
-   "status": "day-to-day",
-   "name": "Scottie Barnes",
-   "team": "TOR",
-   "date": "2026-11-07T17:39Z",
-   "note": "Barnes (adductor) is listed as out for Friday's game against Milwaukee, Michael Grange of Sportsnet.ca reports."
-  },
   "4395724": {
    "status": "day-to-day",
    "name": "Immanuel Quickley",
    "team": "TOR",
-   "date": "2026-11-07T17:37Z",
-   "note": "Quickley (hamstring) won't play Friday in Milwaukee, Michael Grange of Sportsnet.ca reports."
+   "date": "2026-11-08T17:14Z",
+   "note": "Quickley (hamstring) was a limited participant in Sunday's practice and will be listed as questionable for Monday's game against the Grizzlies, Michael Grange of Sportsnet.ca reports."
+  },
+  "4433134": {
+   "status": "day-to-day",
+   "name": "Scottie Barnes",
+   "team": "TOR",
+   "date": "2026-11-08T17:11Z",
+   "note": "Barnes (adductor) was a limited participant in Sunday's practice and will be listed as questionable for Monday's game against the Grizzlies, Michael Grange of Sportsnet.ca reports."
   },
   "6450": {
    "status": "out",
