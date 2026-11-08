@@ -405,11 +405,11 @@
     "home": "ATL",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:09 - 2nd",
     "score": {
-     "BKN": "37",
-     "ATL": "27"
+     "BKN": "43",
+     "ATL": "34"
     }
    },
    {
@@ -418,13 +418,13 @@
     "start": "2026-11-07T20:00:00-05:00",
     "away": "NY",
     "home": "CLE",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/7 - 8:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:52 - 1st",
     "score": {
-     "NY": "0",
-     "CLE": "0"
+     "NY": "6",
+     "CLE": "8"
     }
    },
    {
@@ -433,13 +433,13 @@
     "start": "2026-11-07T20:00:00-05:00",
     "away": "WSH",
     "home": "OKC",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/7 - 8:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:10 - 1st",
     "score": {
-     "WSH": "0",
-     "OKC": "0"
+     "WSH": "2",
+     "OKC": "6"
     }
    },
    {
