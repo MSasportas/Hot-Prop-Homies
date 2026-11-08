@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-07",
- "started_at": "2026-11-08T00:50:01-05:00",
- "status_at": "2026-11-08T00:50:01-05:00",
- "finished_at": "2026-11-08T00:50:03-05:00",
- "last_ok_at": "2026-11-08T00:50:01-05:00",
+ "started_at": "2026-11-08T01:00:00-05:00",
+ "status_at": "2026-11-08T01:00:00-05:00",
+ "finished_at": "2026-11-08T01:00:02-05:00",
+ "last_ok_at": "2026-11-08T01:00:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -19,8 +19,8 @@
   },
   {
    "step": "stats",
-   "status": "ok",
-   "note": "1 window(s) read, 2 team-games still missing"
+   "status": "skipped",
+   "note": "waiting to retry"
   },
   {
    "step": "lineups",
@@ -84,8 +84,8 @@
   },
   {
    "step": "slate",
-   "status": "ok",
-   "note": "0 open pick(s)"
+   "status": "skipped",
+   "note": "unchanged"
   },
   {
    "step": "record",
@@ -160,13 +160,11 @@
  "lineups_note": "20 of 24 team line pages are dated today.",
  "games_today": 12,
  "record_events": 182,
- "odds_notes": [
-  "key 1 refused (401)"
- ],
+ "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "42449692613",
-  "iteration": 5,
+  "iteration": 6,
   "chain_link": 68,
   "chain_started_at": "2026-11-05T20:58:54-05:00",
   "run_started_at": "2026-11-08T00:10:16-05:00"
