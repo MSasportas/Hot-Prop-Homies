@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-07",
- "generated_at": "2026-11-07T23:30:01-05:00",
+ "generated_at": "2026-11-07T23:40:00-05:00",
  "games": [
   {
    "game_id": 2026020266,
@@ -109,45 +109,45 @@
   },
   {
    "game_id": 2026020274,
-   "state": "LIVE",
+   "state": "FINAL",
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "06:36",
+   "clock": "00:00",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "DET",
     "score": 0,
-    "sog": 24
+    "sog": 27
    },
    "home": {
     "abbrev": "COL",
     "score": 4,
-    "sog": 28
+    "sog": 29
    },
-   "updated_at": "2026-11-07T23:30:01-05:00"
+   "updated_at": "2026-11-07T23:40:00-05:00"
   },
   {
    "game_id": 2026020275,
-   "state": "LIVE",
+   "state": "CRIT",
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "07:00",
+   "clock": "01:13",
    "in_intermission": false,
    "running": true,
    "away": {
     "abbrev": "PIT",
     "score": 4,
-    "sog": 16
+    "sog": 18
    },
    "home": {
     "abbrev": "LAK",
     "score": 2,
-    "sog": 24
+    "sog": 28
    },
-   "updated_at": "2026-11-07T23:30:01-05:00"
+   "updated_at": "2026-11-07T23:40:00-05:00"
   }
  ],
  "picks": {
