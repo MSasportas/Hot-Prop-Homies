@@ -35,7 +35,7 @@
   },
   "TOR": {
    "name": "Anthony Stolarz",
-   "status": "expected"
+   "status": "confirmed"
   },
   "NJD": {
    "name": "Connor Hellebuyck",
@@ -50,5 +50,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-08T15:20:01-05:00"
+ "checked_at": "2026-11-08T16:50:00-05:00"
 }
