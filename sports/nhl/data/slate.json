@@ -1,12 +1,12 @@
 {
  "slate_date": "2026-11-08",
- "generated_at": "2026-11-08T17:00:01-05:00",
- "status_at": "2026-11-08T17:00:01-05:00",
+ "generated_at": "2026-11-08T17:20:00-05:00",
+ "status_at": "2026-11-08T17:20:00-05:00",
  "valid_until": "2026-11-09T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
-  "prices_at": "2026-11-08T16:30:00-05:00",
-  "next_price_read_at": "2026-11-08T17:15:00-05:00",
+  "prices_at": "2026-11-08T17:20:00-05:00",
+  "next_price_read_at": "2026-11-08T17:30:00-05:00",
   "stats_built_at": "2026-11-08T16:50:00-05:00",
   "stats_through": "2026-11-08",
   "lineups_at": "2026-11-08T17:00:01-05:00",
@@ -16,11 +16,11 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-08T17:00:01-05:00",
+   "at": "2026-11-08T17:20:00-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 3606,
+   "pulls_left": 3601,
    "keys": 9,
    "game_days_left": 21,
    "days_left": 23,
@@ -35,7 +35,7 @@
  "empty": {
   "code": "none_qualified",
   "text": "No picks yet today",
-  "sub": "53 lines read, none cleared both checks. Today's earlier pick is on the Live tab. Next read at 5:15 PM."
+  "sub": "53 lines read, none cleared both checks. Today's earlier pick is on the Live tab. Next read at 5:30 PM."
  },
  "games": [
   {
@@ -158,19 +158,20 @@
      {
       "pull": "B",
       "at": "2026-11-08T16:30:00-05:00"
+     },
+     {
+      "pull": "C",
+      "at": "2026-11-08T17:20:00-05:00"
      }
     ],
-    "next_read": {
-     "pull": "C",
-     "at": "2026-11-08T17:15:00-05:00"
-    },
+    "next_read": null,
     "lineups_at": {
      "away": "2026-11-08T15:00:00-05:00",
      "home": null
     }
    },
    "started": false,
-   "reads_done": false,
+   "reads_done": true,
    "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
@@ -187,7 +188,7 @@
    "goalies": {
     "away": {
      "name": "Connor Hellebuyck",
-     "status": "expected"
+     "status": "confirmed"
     },
     "home": {
      "name": "Anthony Stolarz",
@@ -228,7 +229,7 @@
    "goalies": {
     "away": {
      "name": "Dan Vladar",
-     "status": "expected"
+     "status": "confirmed"
     },
     "home": {
      "name": "Devin Cooley",

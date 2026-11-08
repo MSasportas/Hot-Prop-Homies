@@ -31,7 +31,7 @@
   },
   "PHI": {
    "name": "Dan Vladar",
-   "status": "expected"
+   "status": "confirmed"
   },
   "TOR": {
    "name": "Anthony Stolarz",
@@ -39,7 +39,7 @@
   },
   "NJD": {
    "name": "Connor Hellebuyck",
-   "status": "expected"
+   "status": "confirmed"
   },
   "ANA": {
    "name": "Laurent Brossoit",
@@ -50,5 +50,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-08T16:50:00-05:00"
+ "checked_at": "2026-11-08T17:20:00-05:00"
 }
