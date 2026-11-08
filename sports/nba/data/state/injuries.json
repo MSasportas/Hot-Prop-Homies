@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T17:40:24-05:00",
+ "at": "2026-11-08T17:50:00-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -64,6 +64,27 @@
    "date": "2026-10-29T17:09Z",
    "note": "The Nets exercised Demin's third-year team option for the 2027-28 season, Sharif Phillips-Keaton of USA Today reports Thursday."
   },
+  "4066218": {
+   "status": "out",
+   "name": "Grant Williams",
+   "team": "CHA",
+   "date": "2026-11-08T22:35Z",
+   "note": "Williams (hamstring) is out for Monday's game against the Cavaliers."
+  },
+  "5061575": {
+   "status": "out",
+   "name": "Kon Knueppel",
+   "team": "CHA",
+   "date": "2026-11-08T22:31Z",
+   "note": "Knueppel (hamstring) was diagnosed with a left hamstring strain Sunday and will be re-evaluated in four weeks."
+  },
+  "4433249": {
+   "status": "day-to-day",
+   "name": "Moussa Diabate",
+   "team": "CHA",
+   "date": "2026-11-08T22:31Z",
+   "note": "Diabate (quadriceps) is questionable for Monday's game against the Cavaliers."
+  },
   "3032979": {
    "status": "out",
    "name": "Dennis Schroder",
@@ -77,27 +98,6 @@
    "team": "CHA",
    "date": "2026-11-08T22:25Z",
    "note": "Miller (groin) is listed as out for Monday's game against Cleveland."
-  },
-  "4433249": {
-   "status": "day-to-day",
-   "name": "Moussa Diabate",
-   "team": "CHA",
-   "date": "2026-11-07T17:39Z",
-   "note": "Diabate (quadriceps) has been ruled out for Friday's game against Boston, according to the Hornets' official injury report."
-  },
-  "5061575": {
-   "status": "out",
-   "name": "Kon Knueppel",
-   "team": "CHA",
-   "date": "2026-11-05T22:05Z",
-   "note": "Knueppel (hamstring) is out for Friday's game against the Celtics."
-  },
-  "4066218": {
-   "status": "out",
-   "name": "Grant Williams",
-   "team": "CHA",
-   "date": "2026-11-04T23:50Z",
-   "note": "The Hornets recalled Williams (hamstring) from the G League's Greensboro Swarm on Wednesday."
   },
   "2595516": {
    "status": "out",
@@ -154,6 +154,34 @@
    "team": "DAL",
    "date": "2026-11-01T22:57Z",
    "note": "Lively (foot) is listed as out for Monday's game against the Kings."
+  },
+  "3936299": {
+   "status": "day-to-day",
+   "name": "Jamal Murray",
+   "team": "DEN",
+   "date": "2026-11-08T22:44Z",
+   "note": "Murray totaled 16 points (6-13 FG, 2-6 3Pt, 2-2 FT), eight assists and six rebounds across 34 minutes during Saturday's 114-102 victory over the Pacers."
+  },
+  "4431767": {
+   "status": "day-to-day",
+   "name": "Christian Braun",
+   "team": "DEN",
+   "date": "2026-11-08T22:44Z",
+   "note": "Braun finished with six points (2-8 FG, 0-4 3Pt, 2-2 FT), four rebounds, one assist and one steal across 29 minutes during Saturday's 114-102 victory over the Pacers."
+  },
+  "3064290": {
+   "status": "day-to-day",
+   "name": "Aaron Gordon",
+   "team": "DEN",
+   "date": "2026-11-08T22:40Z",
+   "note": "Gordon supplied 17 points (7-9 FG, 1-2 3Pt, 2-2 FT), one rebound, one block and two steals across 25 minutes during Wednesday's 128-109 victory over Toronto."
+  },
+  "3112335": {
+   "status": "day-to-day",
+   "name": "Nikola Jokic",
+   "team": "DEN",
+   "date": "2026-11-08T22:36Z",
+   "note": "Jokic (elbow) is listed as questionable for Monday's game in Houston."
   },
   "4432181": {
    "status": "out",

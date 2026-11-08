@@ -283,13 +283,13 @@
     "start": "2026-11-08T15:30:00-05:00",
     "away": "PHI",
     "home": "CHI",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:35 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "PHI": "123",
-     "CHI": "116"
+     "PHI": "127",
+     "CHI": "121"
     }
    },
    {
