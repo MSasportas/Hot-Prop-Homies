@@ -21,16 +21,16 @@
    "state": "expected",
    "starters": [
     "Josh Giddey",
-    "Norman Powell",
+    "Isaac Okoro",
     "Matas Buzelis",
     "Caleb Wilson",
     "Jalen Smith"
    ],
    "status": {
-    "Norman Powell": "questionable",
     "Jalen Smith": "probable",
     "Tobe Awaka": "questionable",
     "Zach Collins": "out",
+    "Norman Powell": "out",
     "Dailyn Swain": "out"
    }
   },
@@ -203,5 +203,5 @@
    }
   }
  },
- "at": "2026-11-08T13:50:01-05:00"
+ "at": "2026-11-08T14:00:01-05:00"
 }

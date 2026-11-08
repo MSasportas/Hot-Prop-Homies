@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T23:30:01-05:00",
+ "generated_at": "2026-11-08T14:00:01-05:00",
  "summary": {
   "headline": {
    "w": 30,
@@ -190,6 +190,7 @@
       "needed": 0.4539,
       "n": 10,
       "ids": [
+       "2026-11-08:401909945:3917376:threes:1.5:over",
        "2026-11-06:401909288:4433287:threes:3.5:over",
        "2026-11-06:401909291:4683778:threes:2.5:over",
        "2026-11-04:401909922:3059318:threes:0.5:under",
@@ -221,6 +222,7 @@
       "needed": 0.4898,
       "n": 12,
       "ids": [
+       "2026-11-08:401909945:3917376:threes:1.5:over",
        "2026-11-07:401909942:4566434:rebounds:5.5:over",
        "2026-11-06:401909288:4433287:threes:3.5:over",
        "2026-11-06:401909291:4683778:threes:2.5:over",
@@ -299,6 +301,7 @@
       "needed": 0.5199,
       "n": 36,
       "ids": [
+       "2026-11-08:401909945:3917376:threes:1.5:over",
        "2026-11-07:401909938:4395712:assists:7.5:under",
        "2026-11-07:401909941:4278073:rebounds:4.5:under",
        "2026-11-07:401909942:4277847:points:12.5:under",
@@ -407,6 +410,7 @@
       "needed": 0.5162,
       "n": 32,
       "ids": [
+       "2026-11-08:401909945:3917376:threes:1.5:over",
        "2026-11-07:401909941:4278073:rebounds:4.5:under",
        "2026-11-07:401909942:4277847:points:12.5:under",
        "2026-11-07:401909942:4566434:rebounds:5.5:over",
@@ -510,6 +514,7 @@
       "needed": 0.5536,
       "n": 27,
       "ids": [
+       "2026-11-08:401909945:3917376:threes:1.5:over",
        "2026-11-07:401909938:4395712:assists:7.5:under",
        "2026-11-07:401909941:4278073:rebounds:4.5:under",
        "2026-11-07:401909942:4277847:points:12.5:under",
@@ -543,6 +548,16 @@
    }
   ],
   "days": [
+   {
+    "date": "2026-11-08",
+    "w": 0,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 0,
+    "n": 1,
+    "graded": false
+   },
    {
     "date": "2026-11-07",
     "w": 2,
@@ -646,6 +661,41 @@
   ]
  },
  "nights": [
+  {
+   "date": "2026-11-08",
+   "graded": false,
+   "w": 0,
+   "l": 0,
+   "units": 0,
+   "entries": [
+    {
+     "id": "2026-11-08:401909945:3917376:threes:1.5:over",
+     "kind": "single",
+     "player": "Jaylen Brown",
+     "bet": "Over 1.5 threes",
+     "market": "threes",
+     "team": "PHI",
+     "game": "PHI at CHI",
+     "price": -125,
+     "first_price": -125,
+     "last_price": -125,
+     "prices": [
+      {
+       "price": -125,
+       "at": "2026-11-08T14:00:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "11 AM \u2192 90 min",
+     "book": "hardrock",
+     "under_fair": false
+    }
+   ]
+  },
   {
    "date": "2026-11-07",
    "graded": true,
@@ -1379,41 +1429,6 @@
      "pulled": null,
      "legs": [],
      "window": "45 \u2192 20 min",
-     "book": "hardrock",
-     "under_fair": false
-    }
-   ]
-  },
-  {
-   "date": "2026-10-29",
-   "graded": true,
-   "w": 1,
-   "l": 0,
-   "units": 1.35,
-   "entries": [
-    {
-     "id": "2026-10-29:401909893:4431680:threes:1.5:over",
-     "kind": "single",
-     "player": "Onyeka Okongwu",
-     "bet": "Over 1.5 threes",
-     "market": "threes",
-     "team": "ATL",
-     "game": "CLE at ATL",
-     "price": 135,
-     "first_price": 135,
-     "last_price": 135,
-     "prices": [
-      {
-       "price": 135,
-       "at": "2026-10-29T18:30:00-04:00"
-      }
-     ],
-     "result": "W",
-     "actual": "4 threes",
-     "units": 1.35,
-     "pulled": null,
-     "legs": [],
-     "window": "11 AM \u2192 90 min",
      "book": "hardrock",
      "under_fair": false
     }

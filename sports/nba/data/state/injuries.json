@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T13:40:01-05:00",
+ "at": "2026-11-08T14:00:01-05:00",
  "list": {
   "4873201": {
    "status": "day-to-day",
@@ -100,10 +100,10 @@
    "note": "The Hornets recalled Williams (hamstring) from the G League's Greensboro Swarm on Wednesday."
   },
   "2595516": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Norman Powell",
    "team": "CHI",
-   "date": "2026-11-08T15:07Z",
+   "date": "2026-11-08T18:53Z",
    "note": "Powell (shoulder) is listed as questionable for Sunday's game against the 76ers."
   },
   "5105555": {
@@ -119,13 +119,6 @@
    "team": "CHI",
    "date": "2026-11-07T21:31Z",
    "note": "Smith (finger) is probable for Sunday's game against Philadelphia."
-  },
-  "4278067": {
-   "status": "out",
-   "name": "Nic Claxton",
-   "team": "CHI",
-   "date": "2026-11-07T21:25Z",
-   "note": "Claxton (hamstring) has been downgraded to questionable for Sunday's game against the 76ers."
   },
   "4066650": {
    "status": "out",
