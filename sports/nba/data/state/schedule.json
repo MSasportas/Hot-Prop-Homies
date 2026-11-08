@@ -286,7 +286,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:29 - 1st",
+    "detail": "2:21 - 1st",
     "score": {
      "PHI": "27",
      "CHI": "27"
