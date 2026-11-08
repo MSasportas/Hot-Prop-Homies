@@ -156,7 +156,7 @@
    }
   },
   "HOU": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Fred VanVleet",
     "Amen Thompson",
@@ -170,7 +170,7 @@
    }
   },
   "PHX": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Devin Booker",
     "Jalen Green",
@@ -214,5 +214,5 @@
    }
   }
  },
- "at": "2026-11-07T20:30:01-05:00"
+ "at": "2026-11-07T20:40:02-05:00"
 }
