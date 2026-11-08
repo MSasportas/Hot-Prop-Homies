@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T17:50:00-05:00",
+ "at": "2026-11-08T18:10:00-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -113,6 +113,13 @@
    "date": "2026-11-07T21:24Z",
    "note": "Collins (illness) is out for Sunday's game against Philadelphia."
   },
+  "4066757": {
+   "status": "out",
+   "name": "Sam Merrill",
+   "team": "CLE",
+   "date": "2026-11-08T22:46Z",
+   "note": "Merrill (elbow) is listed as out for Monday's game against the Hornets."
+  },
   "4066328": {
    "status": "day-to-day",
    "name": "Jarrett Allen",
@@ -126,13 +133,6 @@
    "team": "CLE",
    "date": "2026-11-08T22:04Z",
    "note": "Tyson (ankle) is out for Monday's game against the Hornets."
-  },
-  "4066757": {
-   "status": "day-to-day",
-   "name": "Sam Merrill",
-   "team": "CLE",
-   "date": "2026-11-08T16:01Z",
-   "note": "Merrill (elbow) is out for Saturday's game against the Knicks."
   },
   "5279129": {
    "status": "out",
@@ -155,26 +155,40 @@
    "date": "2026-11-01T22:57Z",
    "note": "Lively (foot) is listed as out for Monday's game against the Kings."
   },
-  "3936299": {
+  "3138196": {
    "status": "day-to-day",
-   "name": "Jamal Murray",
+   "name": "Cameron Johnson",
    "team": "DEN",
-   "date": "2026-11-08T22:44Z",
-   "note": "Murray totaled 16 points (6-13 FG, 2-6 3Pt, 2-2 FT), eight assists and six rebounds across 34 minutes during Saturday's 114-102 victory over the Pacers."
+   "date": "2026-11-08T22:51Z",
+   "note": "Johnson (lower body) is questionable for Monday's game against Houston."
+  },
+  "3978": {
+   "status": "day-to-day",
+   "name": "DeMar DeRozan",
+   "team": "DEN",
+   "date": "2026-11-08T22:51Z",
+   "note": "DeRozan is questionable for Monday's game against the Rockets due to lower back spasms."
   },
   "4431767": {
    "status": "day-to-day",
    "name": "Christian Braun",
    "team": "DEN",
-   "date": "2026-11-08T22:44Z",
-   "note": "Braun finished with six points (2-8 FG, 0-4 3Pt, 2-2 FT), four rebounds, one assist and one steal across 29 minutes during Saturday's 114-102 victory over the Pacers."
+   "date": "2026-11-08T22:46Z",
+   "note": "Braun (calf/illness) is listed as questionable for Monday's game against Houston."
+  },
+  "3936299": {
+   "status": "day-to-day",
+   "name": "Jamal Murray",
+   "team": "DEN",
+   "date": "2026-11-08T22:43Z",
+   "note": "Murray is questionable for Monday's game against the Rockets due to a left shin contusion."
   },
   "3064290": {
    "status": "day-to-day",
    "name": "Aaron Gordon",
    "team": "DEN",
-   "date": "2026-11-08T22:40Z",
-   "note": "Gordon supplied 17 points (7-9 FG, 1-2 3Pt, 2-2 FT), one rebound, one block and two steals across 25 minutes during Wednesday's 128-109 victory over Toronto."
+   "date": "2026-11-08T22:42Z",
+   "note": "Gordon (lower body injury management) is listed as questionable for Monday's game against the Rockets."
   },
   "3112335": {
    "status": "day-to-day",
@@ -302,19 +316,19 @@
    "date": "2026-11-08T18:19Z",
    "note": "Doncic has been ruled out for Sunday's game at Detroit due to lower-back tightness, Trevor Lane of LakersNation.com reports."
   },
+  "4432810": {
+   "status": "out",
+   "name": "Isaiah Stewart",
+   "team": "MEM",
+   "date": "2026-11-08T23:01Z",
+   "note": "Stewart (knee) has been ruled out for Monday's game against Toronto."
+  },
   "5105462": {
    "status": "out",
    "name": "Richie Saunders",
    "team": "MEM",
    "date": "2026-11-07T17:24Z",
    "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
-  },
-  "4432810": {
-   "status": "out",
-   "name": "Isaiah Stewart",
-   "team": "MEM",
-   "date": "2026-11-05T23:04Z",
-   "note": "Stewart (knee) has been ruled out for Friday's game against the Thunder."
   },
   "4431785": {
    "status": "out",
@@ -497,6 +511,13 @@
    "team": "POR",
    "date": "2026-08-24T20:23Z",
    "note": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN."
+  },
+  "3155942": {
+   "status": "day-to-day",
+   "name": "Domantas Sabonis",
+   "team": "SAC",
+   "date": "2026-11-08T22:53Z",
+   "note": "Sabonis has been downgraded to questionable for Sunday's game against Miami due to left knee soreness."
   },
   "4898371": {
    "status": "out",
