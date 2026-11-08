@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T11:20:01-05:00",
+ "at": "2026-11-08T11:30:01-05:00",
  "list": {
   "4873201": {
    "status": "day-to-day",
@@ -35,6 +35,13 @@
    "team": "ATL",
    "date": "2026-09-21T19:50Z",
    "note": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday."
+  },
+  "4702670": {
+   "status": "day-to-day",
+   "name": "Grant Nelson",
+   "team": "BKN",
+   "date": "2026-11-08T16:21Z",
+   "note": "Nelson signed a two-way contract with the Nets on Friday, Michael Scotto of HoopsHype.com reports."
   },
   "5101761": {
    "status": "out",
@@ -169,19 +176,19 @@
    "date": "2026-10-17T00:52Z",
    "note": "Strawther (knee) was diagnosed with a left knee sprain Friday and will be re-evaluated in six weeks, Vinny Benedetto of The Denver Gazette reports."
   },
+  "4433621": {
+   "status": "out",
+   "name": "Jalen Duren",
+   "team": "DET",
+   "date": "2026-11-08T16:05Z",
+   "note": "Duren (hamstring) has begun on-court activity and will be re-evaluated in two weeks, Hunter Patterson of The Athletic reports."
+  },
   "4395702": {
    "status": "out",
    "name": "Isaiah Joe",
    "team": "DET",
    "date": "2026-11-07T21:59Z",
    "note": "Joe (hip) has been ruled out for Sunday's game against the Lakers."
-  },
-  "4433621": {
-   "status": "out",
-   "name": "Jalen Duren",
-   "team": "DET",
-   "date": "2026-10-25T14:56Z",
-   "note": "Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports."
   },
   "3102531": {
    "status": "out",
@@ -456,19 +463,19 @@
    "date": "2026-09-11T16:03Z",
    "note": "Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports."
   },
+  "4066211": {
+   "status": "day-to-day",
+   "name": "Robert Williams III",
+   "team": "POR",
+   "date": "2026-11-08T16:27Z",
+   "note": "Williams (rest) won't play in Saturday's game against the Spurs."
+  },
   "4279888": {
    "status": "out",
    "name": "Ja Morant",
    "team": "POR",
    "date": "2026-11-08T02:18Z",
    "note": "Head coach Micah Nori said Morant met with a doctor in Los Angeles, who gave him a positive outlook on his recovery from the hamstring injury. While Nori declined to update Morant's timetable, he adde"
-  },
-  "4066211": {
-   "status": "out",
-   "name": "Robert Williams III",
-   "team": "POR",
-   "date": "2026-11-07T21:12Z",
-   "note": "Williams (rest) won't play in Saturday's game against the Spurs."
   },
   "4578893": {
    "status": "out",
@@ -546,6 +553,13 @@
    "team": "TOR",
    "date": "2026-11-02T20:20Z",
    "note": "Bittle (foot) is out for Monday's game against the Clippers and remains without a timetable to return."
+  },
+  "4433627": {
+   "status": "day-to-day",
+   "name": "Keyonte George",
+   "team": "UTAH",
+   "date": "2026-11-08T16:19Z",
+   "note": "George tallied 16 points (6-13 FG, 1-4 3Pt, 3-4 FT), six rebounds, nine assists and a block across 32 minutes in Friday's 112-100 loss to the Mavericks."
   },
   "4066336": {
    "status": "day-to-day",
