@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T19:00:00-05:00",
+ "generated_at": "2026-11-07T19:30:01-05:00",
  "summary": {
   "headline": {
    "w": 30,
@@ -219,7 +219,7 @@
     "push": 0,
     "void": 0,
     "units": 0.4,
-    "n": 7,
+    "n": 9,
     "graded": false
    },
    {
@@ -515,6 +515,52 @@
       {
        "price": 120,
        "at": "2026-11-07T18:20:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-07:2026020274:8477476:shots:1.5:under",
+     "kind": "single",
+     "player": "A. Lehkonen",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "COL",
+     "game": "DET at COL",
+     "price": 150,
+     "first_price": 150,
+     "last_price": 150,
+     "prices": [
+      {
+       "price": 150,
+       "at": "2026-11-07T19:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-07:2026020275:8476483:shots:2.5:under",
+     "kind": "single",
+     "player": "R. Rakell",
+     "bet": "Under 2.5 shots on goal",
+     "market": "shots",
+     "team": "PIT",
+     "game": "PIT at LAK",
+     "price": -105,
+     "first_price": -105,
+     "last_price": -105,
+     "prices": [
+      {
+       "price": -105,
+       "at": "2026-11-07T19:30:01-05:00"
       }
      ],
      "result": null,
