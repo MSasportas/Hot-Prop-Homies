@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-08",
- "generated_at": "2026-11-08T08:20:00-05:00",
- "status_at": "2026-11-08T08:20:00-05:00",
+ "generated_at": "2026-11-08T08:30:00-05:00",
+ "status_at": "2026-11-08T08:30:00-05:00",
  "valid_until": "2026-11-09T05:00:00-05:00",
  "status": {
   "prices_state": "not_yet",
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-08T08:20:00-05:00",
+   "at": "2026-11-08T08:30:00-05:00",
    "failed_step": null
   },
   "pool": {
@@ -49,7 +49,7 @@
    },
    "goalies": {
     "away": {
-     "name": "Akira Schmid",
+     "name": "Jacob Markstrom",
      "status": "expected"
     },
     "home": {
@@ -85,11 +85,11 @@
    },
    "goalies": {
     "away": {
-     "name": "Carter Hart",
+     "name": "Adin Hill",
      "status": "expected"
     },
     "home": {
-     "name": "Colten Ellis",
+     "name": "Ukko-Pekka Luukkonen",
      "status": "expected"
     }
    },
@@ -157,11 +157,11 @@
    },
    "goalies": {
     "away": {
-     "name": "Jake Allen",
+     "name": "Connor Hellebuyck",
      "status": "expected"
     },
     "home": {
-     "name": "Sergei Bobrovsky",
+     "name": "Anthony Stolarz",
      "status": "expected"
     }
    },
@@ -197,7 +197,7 @@
      "status": "expected"
     },
     "home": {
-     "name": "Dustin Wolf",
+     "name": "Devin Cooley",
      "status": "expected"
     }
    },
@@ -229,11 +229,11 @@
    },
    "goalies": {
     "away": {
-     "name": "Sergei Murashov",
+     "name": "Arturs Silovs",
      "status": "expected"
     },
     "home": {
-     "name": "Lukas Dostal",
+     "name": "Ville Husso",
      "status": "expected"
     }
    },

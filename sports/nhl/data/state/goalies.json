@@ -6,15 +6,15 @@
    "status": "expected"
   },
   "FLA": {
-   "name": "Akira Schmid",
+   "name": "Jacob Markstrom",
    "status": "expected"
   },
   "BUF": {
-   "name": "Colten Ellis",
+   "name": "Ukko-Pekka Luukkonen",
    "status": "expected"
   },
   "VGK": {
-   "name": "Carter Hart",
+   "name": "Adin Hill",
    "status": "expected"
   },
   "WPG": {
@@ -26,7 +26,7 @@
    "status": "expected"
   },
   "CGY": {
-   "name": "Dustin Wolf",
+   "name": "Devin Cooley",
    "status": "expected"
   },
   "PHI": {
@@ -34,21 +34,21 @@
    "status": "expected"
   },
   "TOR": {
-   "name": "Sergei Bobrovsky",
+   "name": "Anthony Stolarz",
    "status": "expected"
   },
   "NJD": {
-   "name": "Jake Allen",
+   "name": "Connor Hellebuyck",
    "status": "expected"
   },
   "ANA": {
-   "name": "Lukas Dostal",
+   "name": "Ville Husso",
    "status": "expected"
   },
   "PIT": {
-   "name": "Sergei Murashov",
+   "name": "Arturs Silovs",
    "status": "expected"
   }
  },
- "checked_at": "2026-11-08T05:00:01-05:00"
+ "checked_at": "2026-11-08T08:30:00-05:00"
 }
