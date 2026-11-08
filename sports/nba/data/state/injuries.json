@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T20:10:23-05:00",
+ "at": "2026-11-07T20:30:01-05:00",
  "list": {
   "4585618": {
    "status": "out",
@@ -246,19 +246,19 @@
    "date": "2026-10-28T21:41Z",
    "note": "Head coach Rick Carlise confirmed Sheppard will miss \"months\" after undergoing surgery to repair a torn meniscus in his left knee, Tony East of Forbes.com reports."
   },
+  "3913176": {
+   "status": "out",
+   "name": "Brandon Ingram",
+   "team": "LAC",
+   "date": "2026-11-08T01:11Z",
+   "note": "Ingram (Achilles) won't play in Sunday's game against New Orleans, Law Murray of The Athletic reports."
+  },
   "4432170": {
    "status": "out",
    "name": "Isaiah Jackson",
    "team": "LAC",
    "date": "2026-11-08T01:03Z",
    "note": "Jackson (groin) won't suit up for Sunday's game against the Pelicans, Law Murray of The Athletic reports."
-  },
-  "3913176": {
-   "status": "out",
-   "name": "Brandon Ingram",
-   "team": "LAC",
-   "date": "2026-11-06T20:20Z",
-   "note": "Ingram (Achilles) has progressed to full contact basketball activities, per NBA writer Justin Russo."
   },
   "5108024": {
    "status": "out",
@@ -449,19 +449,12 @@
    "date": "2026-10-06T19:17Z",
    "note": "Hukporti has sustained a season-ending ruptured right Achilles tendon, per Shams Charania of ESPN."
   },
-  "5105977": {
-   "status": "day-to-day",
-   "name": "Rasheer Fleming",
-   "team": "PHX",
-   "date": "2026-11-07T00:20Z",
-   "note": "Fleming (ankle) is questionable for Saturday's game against the Rockets."
-  },
   "4278402": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Jordan Goodwin",
    "team": "PHX",
-   "date": "2026-11-07T00:20Z",
-   "note": "Goodwin (calf) is doubtful for Saturday's game against the Rockets."
+   "date": "2026-11-08T01:08Z",
+   "note": "Goodwin (calf) is out for Saturday's game against the Rockets."
   },
   "4701232": {
    "status": "out",

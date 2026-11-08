@@ -123,7 +123,7 @@
    }
   },
   "ORL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jase Richardson",
     "Anthony Black",
@@ -141,7 +141,7 @@
    }
   },
   "GS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Stephen Curry",
     "Brandin Podziemski",
@@ -214,5 +214,5 @@
    }
   }
  },
- "at": "2026-11-07T20:20:00-05:00"
+ "at": "2026-11-07T20:30:01-05:00"
 }
