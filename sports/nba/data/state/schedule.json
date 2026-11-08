@@ -420,8 +420,8 @@
     "home": "CLE",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "0.0 - 3rd",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 3rd",
     "score": {
      "NY": "88",
      "CLE": "70"
@@ -466,9 +466,9 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:30 - 2nd",
+    "detail": "6:14 - 2nd",
     "score": {
-     "HOU": "30",
+     "HOU": "32",
      "PHX": "45"
     }
    },
