@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-07",
- "generated_at": "2026-11-07T22:50:00-05:00",
+ "generated_at": "2026-11-07T23:00:00-05:00",
  "games": [
   {
    "game_id": 2026020266,
@@ -67,7 +67,7 @@
   },
   {
    "game_id": 2026020271,
-   "state": "FINAL",
+   "state": "OFF",
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
@@ -84,7 +84,7 @@
     "score": 9,
     "sog": 33
    },
-   "updated_at": "2026-11-07T22:50:00-05:00"
+   "updated_at": "2026-11-07T23:00:00-05:00"
   },
   {
    "game_id": 2026020273,
@@ -92,7 +92,7 @@
    "schedule_state": "OK",
    "period": 4,
    "period_type": "OT",
-   "clock": "01:36",
+   "clock": "01:37",
    "in_intermission": false,
    "running": false,
    "away": {
@@ -105,16 +105,16 @@
     "score": 3,
     "sog": 22
    },
-   "updated_at": "2026-11-07T22:50:00-05:00"
+   "updated_at": "2026-11-07T23:00:00-05:00"
   },
   {
    "game_id": 2026020274,
    "state": "LIVE",
    "schedule_state": "OK",
-   "period": 2,
+   "period": 3,
    "period_type": "REG",
-   "clock": "08:45",
-   "in_intermission": true,
+   "clock": "20:00",
+   "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "DET",
@@ -126,7 +126,7 @@
     "score": 2,
     "sog": 18
    },
-   "updated_at": "2026-11-07T22:50:00-05:00"
+   "updated_at": "2026-11-07T23:00:00-05:00"
   },
   {
    "game_id": 2026020275,
@@ -134,20 +134,20 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "00:44",
-   "in_intermission": false,
+   "clock": "08:04",
+   "in_intermission": true,
    "running": false,
    "away": {
     "abbrev": "PIT",
     "score": 4,
-    "sog": 12
+    "sog": 13
    },
    "home": {
     "abbrev": "LAK",
     "score": 2,
     "sog": 20
    },
-   "updated_at": "2026-11-07T22:50:00-05:00"
+   "updated_at": "2026-11-07T23:00:00-05:00"
   }
  ],
  "picks": {
