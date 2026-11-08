@@ -97,7 +97,7 @@
    "starters": [
     "Nolan Traore",
     "Michael Porter",
-    "Chaney Johnson",
+    "Danny Wolf",
     "Julius Randle",
     "Day'Ron Sharpe"
    ],
@@ -143,12 +143,14 @@
     "Kyle Kuzma",
     "Myles Turner"
    ],
-   "status": {}
+   "status": {
+    "Gary Trent": "questionable"
+   }
   },
   "NO": {
    "state": "expected",
    "starters": [
-    "DeAndre Jordan",
+    "Dejounte Murray",
     "Jeremiah Fears",
     "Trey Murphy",
     "Zion Williamson",
@@ -202,5 +204,5 @@
    }
   }
  },
- "at": "2026-11-08T13:20:01-05:00"
+ "at": "2026-11-08T13:30:01-05:00"
 }

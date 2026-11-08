@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T12:30:01-05:00",
+ "at": "2026-11-08T13:30:01-05:00",
  "list": {
   "4873201": {
    "status": "day-to-day",
@@ -282,11 +282,11 @@
    "note": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic."
   },
   "3945274": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Luka Doncic",
    "team": "LAL",
-   "date": "2026-11-07T22:11Z",
-   "note": "Doncic (back) is questionable for Sunday's game against the Pistons."
+   "date": "2026-11-08T18:19Z",
+   "note": "Doncic has been ruled out for Sunday's game at Detroit due to lower-back tightness, Trevor Lane of LakersNation.com reports."
   },
   "5105462": {
    "status": "out",
@@ -308,6 +308,13 @@
    "team": "MEM",
    "date": "2026-11-05T23:03Z",
    "note": "Pippen (back) has been ruled out for Friday's game against Oklahoma City."
+  },
+  "4277843": {
+   "status": "day-to-day",
+   "name": "Gary Trent Jr.",
+   "team": "MIL",
+   "date": "2026-11-08T18:23Z",
+   "note": "Trent (illness) has been downgraded to questionable for Sunday's game against Boston."
   },
   "4594268": {
    "status": "out",
