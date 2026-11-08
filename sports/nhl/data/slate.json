@@ -1,33 +1,33 @@
 {
  "slate_date": "2026-11-07",
- "generated_at": "2026-11-07T19:10:00-05:00",
- "status_at": "2026-11-07T19:10:00-05:00",
+ "generated_at": "2026-11-07T19:20:00-05:00",
+ "status_at": "2026-11-07T19:20:00-05:00",
  "valid_until": "2026-11-08T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
-  "prices_at": "2026-11-07T18:30:00-05:00",
-  "next_price_read_at": "2026-11-07T19:15:00-05:00",
+  "prices_at": "2026-11-07T19:20:00-05:00",
+  "next_price_read_at": "2026-11-07T19:30:00-05:00",
   "stats_built_at": "2026-11-07T16:40:00-05:00",
   "stats_through": "2026-11-07",
-  "lineups_at": "2026-11-07T19:10:00-05:00",
+  "lineups_at": "2026-11-07T19:20:00-05:00",
   "goalies_at": null,
   "lineups_note": "16 of 24 team line pages are dated today.",
   "lineups_state": "ok",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-07T19:10:00-05:00",
+   "at": "2026-11-07T19:20:00-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 3751,
+   "pulls_left": 3742,
    "keys": 9,
    "game_days_left": 22,
    "days_left": 24,
    "low": false
   },
   "excluded_teams": [],
-  "lines_checked": 150,
+  "lines_checked": 149,
   "flag_reads": 9,
   "tier": 4
  },
@@ -338,19 +338,20 @@
      {
       "pull": "B",
       "at": "2026-11-07T18:30:00-05:00"
+     },
+     {
+      "pull": "C",
+      "at": "2026-11-07T19:20:00-05:00"
      }
     ],
-    "next_read": {
-     "pull": "C",
-     "at": "2026-11-07T19:15:00-05:00"
-    },
+    "next_read": null,
     "lineups_at": {
      "away": "2026-11-07T17:00:01-05:00",
      "home": "2026-11-07T17:00:01-05:00"
     }
    },
    "started": false,
-   "reads_done": false,
+   "reads_done": true,
    "picks": 1,
    "excluded_reason": null,
    "excluded_teams": []
@@ -383,19 +384,20 @@
      {
       "pull": "B",
       "at": "2026-11-07T18:30:00-05:00"
+     },
+     {
+      "pull": "C",
+      "at": "2026-11-07T19:20:00-05:00"
      }
     ],
-    "next_read": {
-     "pull": "C",
-     "at": "2026-11-07T19:15:00-05:00"
-    },
+    "next_read": null,
     "lineups_at": {
      "away": null,
      "home": "2026-11-07T17:00:01-05:00"
     }
    },
    "started": false,
-   "reads_done": false,
+   "reads_done": true,
    "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
@@ -428,19 +430,20 @@
      {
       "pull": "B",
       "at": "2026-11-07T18:30:00-05:00"
+     },
+     {
+      "pull": "C",
+      "at": "2026-11-07T19:20:00-05:00"
      }
     ],
-    "next_read": {
-     "pull": "C",
-     "at": "2026-11-07T19:15:00-05:00"
-    },
+    "next_read": null,
     "lineups_at": {
      "away": null,
      "home": "2026-11-07T19:10:00-05:00"
     }
    },
    "started": false,
-   "reads_done": false,
+   "reads_done": true,
    "picks": 1,
    "excluded_reason": null,
    "excluded_teams": []
@@ -594,7 +597,7 @@
     }
    ],
    "pulled": null,
-   "price_final": false,
+   "price_final": true,
    "graded": null,
    "rank": 1,
    "tier": "main",
@@ -657,7 +660,7 @@
     }
    ],
    "pulled": null,
-   "price_final": false,
+   "price_final": true,
    "graded": null,
    "rank": 2,
    "tier": "main",
