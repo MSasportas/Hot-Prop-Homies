@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-08",
- "generated_at": "2026-11-08T14:20:01-05:00",
+ "generated_at": "2026-11-08T14:30:01-05:00",
  "games": [
   {
    "game_id": 2026020277,
@@ -8,20 +8,20 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "20:00",
+   "clock": "15:33",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "FLA",
     "score": 1,
-    "sog": 18
+    "sog": 20
    },
    "home": {
     "abbrev": "BOS",
     "score": 3,
     "sog": 11
    },
-   "updated_at": "2026-11-08T14:20:01-05:00"
+   "updated_at": "2026-11-08T14:30:01-05:00"
   }
  ],
  "picks": {
