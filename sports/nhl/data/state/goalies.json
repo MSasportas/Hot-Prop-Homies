@@ -1,102 +1,54 @@
 {
- "date": "2026-11-07",
+ "date": "2026-11-08",
  "teams": {
-  "WSH": {
-   "name": "Logan Thompson",
-   "status": "confirmed"
+  "BOS": {
+   "name": "Jeremy Swayman",
+   "status": "expected"
   },
   "FLA": {
    "name": "Akira Schmid",
-   "status": "confirmed"
+   "status": "expected"
   },
-  "NSH": {
-   "name": "Juuse Saros",
-   "status": "confirmed"
+  "BUF": {
+   "name": "Colten Ellis",
+   "status": "expected"
   },
-  "STL": {
-   "name": "Joel Hofer",
-   "status": "confirmed"
+  "VGK": {
+   "name": "Carter Hart",
+   "status": "expected"
   },
-  "SEA": {
-   "name": "Joey Daccord",
-   "status": "confirmed"
+  "WPG": {
+   "name": "Stuart Skinner",
+   "status": "expected"
   },
-  "NYR": {
-   "name": "Joonas Korpisalo",
-   "status": "confirmed"
+  "TBL": {
+   "name": "Andrei Vasilevskiy",
+   "status": "expected"
+  },
+  "CGY": {
+   "name": "Dustin Wolf",
+   "status": "expected"
+  },
+  "PHI": {
+   "name": "Dan Vladar",
+   "status": "expected"
   },
   "TOR": {
    "name": "Sergei Bobrovsky",
-   "status": "confirmed"
-  },
-  "MTL": {
-   "name": "Jacob Fowler",
-   "status": "confirmed"
-  },
-  "NYI": {
-   "name": "Ilya Sorokin",
-   "status": "confirmed"
+   "status": "expected"
   },
   "NJD": {
    "name": "Jake Allen",
-   "status": "confirmed"
+   "status": "expected"
   },
-  "OTT": {
-   "name": "Samuel Ersson",
-   "status": "confirmed"
-  },
-  "UTA": {
-   "name": "Karel Vejmelka",
-   "status": "confirmed"
-  },
-  "CAR": {
-   "name": "Pyotr Kochetkov",
-   "status": "confirmed"
-  },
-  "CHI": {
-   "name": "Spencer Knight",
-   "status": "confirmed"
-  },
-  "MIN": {
-   "name": "Calvin Pickard",
-   "status": "confirmed"
-  },
-  "TBL": {
-   "name": "Dennis Hildeby",
-   "status": "confirmed"
-  },
-  "DAL": {
-   "name": "Jake Oettinger",
-   "status": "confirmed"
-  },
-  "SJS": {
-   "name": "Alex Nedeljkovic",
-   "status": "confirmed"
-  },
-  "LAK": {
-   "name": "Darcy Kuemper",
-   "status": "confirmed"
+  "ANA": {
+   "name": "Lukas Dostal",
+   "status": "expected"
   },
   "PIT": {
    "name": "Sergei Murashov",
-   "status": "confirmed"
-  },
-  "COL": {
-   "name": "Mackenzie Blackwood",
-   "status": "confirmed"
-  },
-  "DET": {
-   "name": "Daniil Tarasov",
-   "status": "confirmed"
-  },
-  "EDM": {
-   "name": "Devon Levi",
-   "status": "confirmed"
-  },
-  "VAN": {
-   "name": "Leevi Merilainen",
-   "status": "confirmed"
+   "status": "expected"
   }
  },
- "checked_at": "2026-11-07T21:40:00-05:00"
+ "checked_at": "2026-11-08T05:00:01-05:00"
 }
