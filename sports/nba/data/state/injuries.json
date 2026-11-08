@@ -1,19 +1,19 @@
 {
- "at": "2026-11-08T10:20:01-05:00",
+ "at": "2026-11-08T11:20:01-05:00",
  "list": {
-  "4585618": {
-   "status": "out",
-   "name": "Keshon Gilbert",
-   "team": "ATL",
-   "date": "2026-11-07T18:17Z",
-   "note": "Gilbert (knee) is out for Saturday's game against Brooklyn."
-  },
   "4873201": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Asa Newell",
    "team": "ATL",
-   "date": "2026-11-07T18:16Z",
+   "date": "2026-11-08T15:59Z",
    "note": "Newell (toe)  is out for Saturday's game against the Nets."
+  },
+  "4585618": {
+   "status": "day-to-day",
+   "name": "Keshon Gilbert",
+   "team": "ATL",
+   "date": "2026-11-08T15:59Z",
+   "note": "Gilbert (knee) is out for Saturday's game against Brooklyn."
   },
   "3146557": {
    "status": "out",
@@ -120,26 +120,26 @@
    "date": "2026-11-07T21:24Z",
    "note": "Collins (illness) is out for Sunday's game against Philadelphia."
   },
+  "4066757": {
+   "status": "day-to-day",
+   "name": "Sam Merrill",
+   "team": "CLE",
+   "date": "2026-11-08T16:01Z",
+   "note": "Merrill (elbow) is out for Saturday's game against the Knicks."
+  },
+  "4066328": {
+   "status": "day-to-day",
+   "name": "Jarrett Allen",
+   "team": "CLE",
+   "date": "2026-11-08T16:01Z",
+   "note": "Allen (knee) is out for Saturday's game against the Knicks"
+  },
   "4683747": {
    "status": "out",
    "name": "Jaylon Tyson",
    "team": "CLE",
    "date": "2026-11-07T18:14Z",
    "note": "Tyson (ankle) is out for Saturday's game against the Knicks."
-  },
-  "4066757": {
-   "status": "out",
-   "name": "Sam Merrill",
-   "team": "CLE",
-   "date": "2026-11-07T18:13Z",
-   "note": "Merrill (elbow) is out for Saturday's game against the Knicks."
-  },
-  "4066328": {
-   "status": "out",
-   "name": "Jarrett Allen",
-   "team": "CLE",
-   "date": "2026-11-07T18:11Z",
-   "note": "Allen (knee) is out for Saturday's game against the Knicks"
   },
   "5279129": {
    "status": "out",
@@ -331,10 +331,10 @@
    "note": "Missi (knee) is out for Friday's game against Minnesota."
   },
   "3062679": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Josh Hart",
    "team": "NY",
-   "date": "2026-11-06T21:48Z",
+   "date": "2026-11-08T16:01Z",
    "note": "Hart is out for Saturday's game against the Cavaliers due to right ankle soreness."
   },
   "4432823": {
@@ -373,10 +373,10 @@
    "note": "Williams (leg) underwent successful surgery Wednesday to \"address a fractured left fibula and reconstruction of ankle ligaments following a fracture and dislocation.\" He will be re-evaluated before th"
   },
   "4066320": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Desmond Bane",
    "team": "ORL",
-   "date": "2026-11-07T19:36Z",
+   "date": "2026-11-08T16:12Z",
    "note": "Bane (illness) has been ruled out for Saturday's game against the Warriors."
   },
   "4065654": {
@@ -568,19 +568,19 @@
    "date": "2026-10-27T19:25Z",
    "note": "Jackson has been diagnosed with a torn MCL in his right knee and will be sidelined for 6-to-8 weeks, per Shams Charania of ESPN."
   },
+  "6583": {
+   "status": "day-to-day",
+   "name": "Anthony Davis",
+   "team": "WSH",
+   "date": "2026-11-08T16:00Z",
+   "note": "Davis (ankle) won't play Saturday against the Thunder."
+  },
   "4278129": {
    "status": "day-to-day",
    "name": "Deandre Ayton",
    "team": "WSH",
    "date": "2026-11-08T14:55Z",
    "note": "Ayton won't return to Saturday's game against the Thunder due to a lower leg injury."
-  },
-  "6583": {
-   "status": "out",
-   "name": "Anthony Davis",
-   "team": "WSH",
-   "date": "2026-11-07T23:33Z",
-   "note": "Davis (ankle) won't play Saturday against the Thunder."
   },
   "4432187": {
    "status": "out",
