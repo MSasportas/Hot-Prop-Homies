@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-07",
- "generated_at": "2026-11-07T19:30:01-05:00",
+ "generated_at": "2026-11-07T19:40:00-05:00",
  "games": [
   {
    "game_id": 2026020266,
@@ -29,20 +29,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "09:27",
+   "clock": "02:35",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "MTL",
-    "score": 1,
-    "sog": 7
+    "score": 2,
+    "sog": 9
    },
    "home": {
     "abbrev": "TOR",
     "score": 0,
-    "sog": 3
+    "sog": 7
    },
-   "updated_at": "2026-11-07T19:30:01-05:00"
+   "updated_at": "2026-11-07T19:40:00-05:00"
   },
   {
    "game_id": 2026020270,
@@ -50,20 +50,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "08:36",
+   "clock": "04:54",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "NJD",
     "score": 0,
-    "sog": 10
+    "sog": 12
    },
    "home": {
     "abbrev": "NYI",
     "score": 0,
-    "sog": 3
+    "sog": 4
    },
-   "updated_at": "2026-11-07T19:30:01-05:00"
+   "updated_at": "2026-11-07T19:40:00-05:00"
   }
  ],
  "picks": {
