@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T16:40:01-05:00",
+ "at": "2026-11-08T17:10:01-05:00",
  "list": {
   "4873201": {
    "status": "day-to-day",
@@ -113,6 +113,13 @@
    "date": "2026-11-07T21:24Z",
    "note": "Collins (illness) is out for Sunday's game against Philadelphia."
   },
+  "4683747": {
+   "status": "out",
+   "name": "Jaylon Tyson",
+   "team": "CLE",
+   "date": "2026-11-08T22:04Z",
+   "note": "Tyson (ankle) is out for Monday's game against the Hornets."
+  },
   "4066757": {
    "status": "day-to-day",
    "name": "Sam Merrill",
@@ -126,13 +133,6 @@
    "team": "CLE",
    "date": "2026-11-08T16:01Z",
    "note": "Allen (knee) is out for Saturday's game against the Knicks"
-  },
-  "4683747": {
-   "status": "out",
-   "name": "Jaylon Tyson",
-   "team": "CLE",
-   "date": "2026-11-07T18:14Z",
-   "note": "Tyson (ankle) is out for Saturday's game against the Knicks."
   },
   "5279129": {
    "status": "out",
