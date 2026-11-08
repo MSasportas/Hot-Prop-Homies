@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T14:00:01-05:00",
+ "generated_at": "2026-11-08T14:50:00-05:00",
  "summary": {
   "headline": {
    "w": 30,
@@ -115,6 +115,7 @@
       "needed": 0.5286,
       "n": 12,
       "ids": [
+       "2026-11-08:401909945:4871145:rebounds:6.5:under",
        "2026-11-07:401909941:4278073:rebounds:4.5:under",
        "2026-11-07:401909942:4566434:rebounds:5.5:over",
        "2026-11-06:401909289:4576087:rebounds:3.5:under",
@@ -249,6 +250,7 @@
       "needed": 0.5233,
       "n": 31,
       "ids": [
+       "2026-11-08:401909945:4871145:rebounds:6.5:under",
        "2026-11-07:401909938:4395712:assists:7.5:under",
        "2026-11-07:401909941:4278073:rebounds:4.5:under",
        "2026-11-07:401909942:4277847:points:12.5:under",
@@ -302,6 +304,7 @@
       "n": 36,
       "ids": [
        "2026-11-08:401909945:3917376:threes:1.5:over",
+       "2026-11-08:401909945:4871145:rebounds:6.5:under",
        "2026-11-07:401909938:4395712:assists:7.5:under",
        "2026-11-07:401909941:4278073:rebounds:4.5:under",
        "2026-11-07:401909942:4277847:points:12.5:under",
@@ -411,6 +414,7 @@
       "n": 32,
       "ids": [
        "2026-11-08:401909945:3917376:threes:1.5:over",
+       "2026-11-08:401909945:4871145:rebounds:6.5:under",
        "2026-11-07:401909941:4278073:rebounds:4.5:under",
        "2026-11-07:401909942:4277847:points:12.5:under",
        "2026-11-07:401909942:4566434:rebounds:5.5:over",
@@ -515,6 +519,7 @@
       "n": 27,
       "ids": [
        "2026-11-08:401909945:3917376:threes:1.5:over",
+       "2026-11-08:401909945:4871145:rebounds:6.5:under",
        "2026-11-07:401909938:4395712:assists:7.5:under",
        "2026-11-07:401909941:4278073:rebounds:4.5:under",
        "2026-11-07:401909942:4277847:points:12.5:under",
@@ -555,7 +560,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 1,
+    "n": 2,
     "graded": false
    },
    {
@@ -691,6 +696,32 @@
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-08:401909945:4871145:rebounds:6.5:under",
+     "kind": "single",
+     "player": "Josh Giddey",
+     "bet": "Under 6.5 rebounds",
+     "market": "rebounds",
+     "team": "CHI",
+     "game": "PHI at CHI",
+     "price": -120,
+     "first_price": -120,
+     "last_price": -120,
+     "prices": [
+      {
+       "price": -120,
+       "at": "2026-11-08T14:50:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "90 \u2192 45 min",
      "book": "hardrock",
      "under_fair": false
     }

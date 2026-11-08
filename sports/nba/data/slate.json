@@ -10,7 +10,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 1956,
+   "pool_left": 1952,
    "low": true,
    "refused": false,
    "no_keys": false,
@@ -23,11 +23,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-08T14:45:00-05:00",
-  "last_read_at": "2026-11-08T14:00:01-05:00",
+  "next_read_at": "2026-11-08T15:10:00-05:00",
+  "last_read_at": "2026-11-08T14:50:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-08T14:20:01-05:00"
+   "at": "2026-11-08T14:50:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -35,7 +35,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-08T14:20:01-05:00",
+    "at": "2026-11-08T14:50:00-05:00",
     "confirmed": []
    },
    "grade": true
@@ -53,18 +53,22 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-08T14:00:01-05:00",
-   "picks": 1,
+   "read_at": "2026-11-08T14:50:00-05:00",
+   "picks": 2,
    "checks": [
     {
      "read": "B",
      "at": "2026-11-08T14:00:01-05:00"
+    },
+    {
+     "read": "C",
+     "at": "2026-11-08T14:50:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-08T14:00:01-05:00",
+   "last_check_at": "2026-11-08T14:50:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-08T14:45:00-05:00",
-   "next_check_read": "C",
+   "next_check_at": "2026-11-08T15:10:00-05:00",
+   "next_check_read": "D",
    "injury_clear": {
     "away": true,
     "home": true
@@ -211,6 +215,72 @@
  ],
  "picks": [
   {
+   "player": "Josh Giddey",
+   "pid": "4871145",
+   "team": "CHI",
+   "opp": "PHI",
+   "home": true,
+   "game_id": "401909945",
+   "start": "2026-11-08T15:30:00-05:00",
+   "bet": "Under 6.5 rebounds",
+   "market": "rebounds",
+   "side": "under",
+   "line": 6.5,
+   "price": -120,
+   "price_at": "2026-11-08T14:50:00-05:00",
+   "read": "C",
+   "p": 0.5504,
+   "p_pct": 55,
+   "breakeven": 0.5455,
+   "breakeven_pct": 55,
+   "market_fair": null,
+   "n_books": 7,
+   "gap_ev": null,
+   "final_ev": 0.0544,
+   "model_p": null,
+   "reason": "Pinnacle moved the under from -113 to -143 (50% to 55%). Hard Rock -120 is 0.9% better than Pinnacle's fair price; DraftKings -113 is 3.7% better than Pinnacle's fair price.",
+   "rule": "pin_solo",
+   "pin_before": 0.496,
+   "pin_after": 0.5504,
+   "pin_price_before": -113,
+   "pin_price_after": -143,
+   "others_move": 0.0181,
+   "n_others": 7,
+   "ev_vs_pin": 0.009,
+   "window": "90 \u2192 45 min",
+   "gap_vs_pin": 0.043,
+   "book": "hardrock",
+   "books": {
+    "draftkings": {
+     "ev_vs_pin": 0.0374,
+     "price": -113
+    },
+    "hardrock": {
+     "ev_vs_pin": 0.009,
+     "price": -120
+    }
+   },
+   "id": "2026-11-08:401909945:4871145:rebounds:6.5:under",
+   "state": "clear",
+   "state_label": "Injury report clear",
+   "price_final": false,
+   "pulled": null,
+   "added_at": "2026-11-08T14:50:00-05:00",
+   "result": null,
+   "links": {
+    "hardrock": {
+     "id": "8460773307793408412",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/8460773307793408412",
+     "price": -120
+    },
+    "draftkings": {
+     "url": "https://sportsbook.draftkings.com/?outcomes=0QA387174873%232356164828_13L42648Q1-1595150841Q20",
+     "price": -113
+    }
+   },
+   "rank": 1
+  },
+  {
    "player": "Jaylen Brown",
    "pid": "3917376",
    "team": "PHI",
@@ -274,13 +344,13 @@
      "price": -124
     }
    },
-   "rank": 1
+   "rank": 2
   }
  ],
  "empty": null,
  "counts": {
-  "lines_read": 258,
-  "passing": 2,
+  "lines_read": 260,
+  "passing": 4,
   "games": 7
  },
  "safety_paused": false,
@@ -289,6 +359,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-08T14:00:01-05:00",
- "status_at": "2026-11-08T14:20:01-05:00"
+ "generated_at": "2026-11-08T14:50:00-05:00",
+ "status_at": "2026-11-08T14:50:00-05:00"
 }
