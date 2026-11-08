@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-07",
- "generated_at": "2026-11-07T16:40:00-05:00",
+ "generated_at": "2026-11-07T19:00:00-05:00",
  "games": [
   {
    "game_id": 2026020266,
@@ -22,6 +22,48 @@
     "sog": 29
    },
    "updated_at": "2026-11-07T16:40:00-05:00"
+  },
+  {
+   "game_id": 2026020268,
+   "state": "PRE",
+   "schedule_state": "OK",
+   "period": null,
+   "period_type": null,
+   "clock": null,
+   "in_intermission": false,
+   "running": false,
+   "away": {
+    "abbrev": "MTL",
+    "score": null,
+    "sog": null
+   },
+   "home": {
+    "abbrev": "TOR",
+    "score": null,
+    "sog": null
+   },
+   "updated_at": "2026-11-07T19:00:00-05:00"
+  },
+  {
+   "game_id": 2026020270,
+   "state": "PRE",
+   "schedule_state": "OK",
+   "period": null,
+   "period_type": null,
+   "clock": null,
+   "in_intermission": false,
+   "running": false,
+   "away": {
+    "abbrev": "NJD",
+    "score": null,
+    "sog": null
+   },
+   "home": {
+    "abbrev": "NYI",
+    "score": null,
+    "sog": null
+   },
+   "updated_at": "2026-11-07T19:00:00-05:00"
   }
  ],
  "picks": {
@@ -34,6 +76,21 @@
    "game_id": 2026020266,
    "market": "shots",
    "stat": 1
+  },
+  "2026-11-07:2026020268:8484158:shots:1.5:under": {
+   "game_id": 2026020268,
+   "market": "shots",
+   "stat": null
+  },
+  "2026-11-07:2026020270:8476462:shots:2.5:over": {
+   "game_id": 2026020270,
+   "market": "shots",
+   "stat": null
+  },
+  "2026-11-07:2026020270:8485388:shots:1.5:under": {
+   "game_id": 2026020270,
+   "market": "shots",
+   "stat": null
   }
  }
 }
