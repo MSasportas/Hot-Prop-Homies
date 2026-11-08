@@ -73,7 +73,7 @@
    }
   },
   "CLE": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "James Harden",
     "Donovan Mitchell",
@@ -215,5 +215,5 @@
    }
   }
  },
- "at": "2026-11-07T19:20:28-05:00"
+ "at": "2026-11-07T19:30:00-05:00"
 }
