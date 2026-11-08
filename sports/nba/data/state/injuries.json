@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T18:20:01-05:00",
+ "at": "2026-11-08T18:30:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -253,6 +253,13 @@
    "date": "2026-11-05T00:21Z",
    "note": "Head coach Ime Udoka said Wednesday that Adams (calf) is still without a timetable to return and will be evaluated on a \"weekly basis,\" Varun Shankar of the Houston Chronicle reports."
   },
+  "2530530": {
+   "status": "day-to-day",
+   "name": "T.J. McConnell",
+   "team": "IND",
+   "date": "2026-11-08T23:24Z",
+   "note": "McConnell is questionable for Monday's game against the Mavericks due to a right hamstring strain."
+  },
   "4396993": {
    "status": "out",
    "name": "Tyrese Haliburton",
@@ -316,6 +323,13 @@
    "date": "2026-11-08T18:19Z",
    "note": "Doncic has been ruled out for Sunday's game at Detroit due to lower-back tightness, Trevor Lane of LakersNation.com reports."
   },
+  "4431785": {
+   "status": "out",
+   "name": "Scotty Pippen Jr.",
+   "team": "MEM",
+   "date": "2026-11-08T23:07Z",
+   "note": "Pippen (back) won't play in Monday's game versus the Raptors."
+  },
   "4432810": {
    "status": "out",
    "name": "Isaiah Stewart",
@@ -329,13 +343,6 @@
    "team": "MEM",
    "date": "2026-11-07T17:24Z",
    "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
-  },
-  "4431785": {
-   "status": "out",
-   "name": "Scotty Pippen Jr.",
-   "team": "MEM",
-   "date": "2026-11-05T23:03Z",
-   "note": "Pippen (back) has been ruled out for Friday's game against Oklahoma City."
   },
   "4277843": {
    "status": "day-to-day",
@@ -574,13 +581,6 @@
    "team": "TOR",
    "date": "2026-11-04T00:14Z",
    "note": "Leonard has completed treatment to reduce swelling in his left knee and he will be re-evaluated in one week, Brett Siegel of ClutchPoints.com reports."
-  },
-  "4066336": {
-   "status": "day-to-day",
-   "name": "Lauri Markkanen",
-   "team": "UTAH",
-   "date": "2026-11-07T23:14Z",
-   "note": "Markkanen is questionable for Sunday's game against the Timberwolves due to a right wrist sprain."
   },
   "3102530": {
    "status": "out",
