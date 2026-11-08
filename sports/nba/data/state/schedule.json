@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "54.9 - 4th",
+    "detail": "5.2 - 4th",
     "score": {
-     "BKN": "114",
-     "ATL": "117"
+     "BKN": "116",
+     "ATL": "123"
     }
    },
    {
@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:16 - 4th",
+    "detail": "3:15 - 4th",
     "score": {
-     "NY": "90",
-     "CLE": "78"
+     "NY": "102",
+     "CLE": "92"
     }
    },
    {
@@ -436,10 +436,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:25 - 4th",
+    "detail": "4:08 - 4th",
     "score": {
-     "WSH": "63",
-     "OKC": "95"
+     "WSH": "69",
+     "OKC": "105"
     }
    },
    {
@@ -451,10 +451,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:39 - 3rd",
+    "detail": "4:28 - 3rd",
     "score": {
-     "ORL": "50",
-     "GS": "61"
+     "ORL": "67",
+     "GS": "69"
     }
    },
    {
@@ -465,10 +465,10 @@
     "home": "PHX",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:58 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "HOU": "45",
+     "HOU": "47",
      "PHX": "47"
     }
    },
