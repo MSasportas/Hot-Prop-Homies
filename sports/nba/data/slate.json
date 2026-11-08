@@ -1,12 +1,17 @@
 {
  "slate": "2026-11-08",
  "valid_until": "2026-11-09T05:00:00-05:00",
- "banners": [],
+ "banners": [
+  {
+   "level": "warn",
+   "text": "The 11 AM price check is paused to save credits for the 90, 45 and 20 minute checks. More odds keys bring it back."
+  }
+ ],
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 1988,
-   "low": false,
+   "pool_left": 1964,
+   "low": true,
    "refused": false,
    "no_keys": false,
    "days_left": 23,
@@ -18,11 +23,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-08T11:00:00-05:00",
-  "last_read_at": null,
+  "next_read_at": "2026-11-08T14:00:00-05:00",
+  "last_read_at": "2026-11-08T11:00:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-08T10:50:01-05:00"
+   "at": "2026-11-08T11:00:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -48,7 +53,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-08T11:00:00-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -71,7 +76,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-08T11:00:00-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -94,7 +99,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-08T11:00:00-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -202,11 +207,11 @@
  "picks": [],
  "empty": {
   "text": "No picks yet today",
-  "why": "No prices read yet. The first close look is 90 minutes before each tip.",
-  "next": "2026-11-08T11:00:00-05:00"
+  "why": "266 lines read. Pinnacle hasn't moved alone on any of them yet.",
+  "next": "2026-11-08T14:00:00-05:00"
  },
  "counts": {
-  "lines_read": 0,
+  "lines_read": 266,
   "passing": 0,
   "games": 7
  },
@@ -216,6 +221,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-08T05:00:01-05:00",
- "status_at": "2026-11-08T10:50:01-05:00"
+ "generated_at": "2026-11-08T11:00:00-05:00",
+ "status_at": "2026-11-08T11:00:00-05:00"
 }
