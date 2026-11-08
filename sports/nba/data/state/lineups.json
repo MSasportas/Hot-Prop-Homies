@@ -38,14 +38,14 @@
   "LAL": {
    "state": "expected",
    "starters": [
-    "Luka Doncic",
     "Austin Reaves",
+    "Quentin Grimes",
     "Ziaire Williams",
     "Matisse Thybulle",
     "Walker Kessler"
    ],
    "status": {
-    "Luka Doncic": "questionable"
+    "Luka Doncic": "out"
    }
   },
   "DET": {
@@ -130,7 +130,9 @@
     "Paul George",
     "Neemias Queta"
    ],
-   "status": {}
+   "status": {
+    "Mitchell Robinson": "questionable"
+   }
   },
   "MIL": {
    "state": "expected",
@@ -200,5 +202,5 @@
    }
   }
  },
- "at": "2026-11-08T13:10:00-05:00"
+ "at": "2026-11-08T13:20:01-05:00"
 }
