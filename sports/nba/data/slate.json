@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2036,
+   "pool_left": 2032,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-07T20:10:00-05:00",
-  "last_read_at": "2026-11-07T19:50:01-05:00",
+  "next_read_at": "2026-11-07T20:15:00-05:00",
+  "last_read_at": "2026-11-07T20:10:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-07T20:00:01-05:00"
+   "at": "2026-11-07T20:10:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-07T20:00:01-05:00",
+    "at": "2026-11-07T20:10:01-05:00",
     "confirmed": [
      "ATL",
      "BKN",
@@ -88,7 +88,7 @@
    "away": "BKN",
    "home": "ATL",
    "state": "in",
-   "detail": "3:31 - 1st",
+   "detail": "End of 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -115,7 +115,7 @@
    "next_check_read": null,
    "injury_clear": {
     "away": false,
-    "home": false
+    "home": true
    }
   },
   {
@@ -201,8 +201,8 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-07T19:50:01-05:00",
-   "picks": 2,
+   "read_at": "2026-11-07T20:10:01-05:00",
+   "picks": 1,
    "checks": [
     {
      "read": "B",
@@ -211,12 +211,16 @@
     {
      "read": "C",
      "at": "2026-11-07T19:50:01-05:00"
+    },
+    {
+     "read": "D",
+     "at": "2026-11-07T20:10:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-07T19:50:01-05:00",
-   "final": false,
-   "next_check_at": "2026-11-07T20:10:00-05:00",
-   "next_check_read": "D",
+   "last_check_at": "2026-11-07T20:10:01-05:00",
+   "final": true,
+   "next_check_at": null,
+   "next_check_read": null,
    "injury_clear": {
     "away": true,
     "home": true
@@ -324,22 +328,18 @@
    "id": "2026-11-07:401909942:4566434:rebounds:5.5:over",
    "state": "clear",
    "state_label": "Injury report clear",
-   "price_final": false,
-   "pulled": null,
+   "price_final": true,
+   "pulled": {
+    "at": "2026-11-07T20:10:01-05:00",
+    "reason": "Hard Rock took the line down",
+    "if_bet": "Got -145? Your bet still stands.",
+    "code": "line_gone",
+    "status": null
+   },
    "added_at": "2026-11-07T19:50:01-05:00",
    "result": null,
-   "links": {
-    "hardrock": {
-     "id": "7228418154989486470",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/7228418154989486470",
-     "price": -145
-    },
-    "draftkings": {
-     "url": "https://sportsbook.draftkings.com/?outcomes=0QA386793302%232354638754_13L42648Q1210220610Q20",
-     "price": -148
-    }
-   },
-   "rank": 1
+   "links": null,
+   "rank": null
   },
   {
    "player": "Shai Gilgeous-Alexander",
@@ -498,7 +498,7 @@
    "id": "2026-11-07:401909942:4277847:points:12.5:under",
    "state": "clear",
    "state_label": "Injury report clear",
-   "price_final": false,
+   "price_final": true,
    "pulled": null,
    "added_at": "2026-11-07T19:00:01-05:00",
    "result": null,
@@ -510,12 +510,12 @@
     },
     "draftkings": null
    },
-   "rank": 2
+   "rank": 1
   }
  ],
  "empty": null,
  "counts": {
-  "lines_read": 646,
+  "lines_read": 648,
   "passing": 13,
   "games": 7
  },
@@ -525,6 +525,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-07T20:00:01-05:00",
- "status_at": "2026-11-07T20:00:01-05:00"
+ "generated_at": "2026-11-07T20:10:01-05:00",
+ "status_at": "2026-11-07T20:10:01-05:00"
 }
