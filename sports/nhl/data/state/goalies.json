@@ -27,7 +27,7 @@
   },
   "CGY": {
    "name": "Devin Cooley",
-   "status": "expected"
+   "status": "confirmed"
   },
   "PHI": {
    "name": "Dan Vladar",
@@ -50,5 +50,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-08T08:30:00-05:00"
+ "checked_at": "2026-11-08T10:30:01-05:00"
 }
