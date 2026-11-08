@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-07",
- "started_at": "2026-11-07T19:50:01-05:00",
- "status_at": "2026-11-07T19:50:01-05:00",
- "finished_at": "2026-11-07T19:50:04-05:00",
- "last_ok_at": "2026-11-07T19:50:01-05:00",
+ "started_at": "2026-11-07T20:00:00-05:00",
+ "status_at": "2026-11-07T20:00:00-05:00",
+ "finished_at": "2026-11-07T20:00:01-05:00",
+ "last_ok_at": "2026-11-07T20:00:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -19,18 +19,18 @@
   },
   {
    "step": "stats",
-   "status": "ok",
-   "note": "1 window(s) read, 2 team-games still missing"
+   "status": "skipped",
+   "note": "waiting to retry"
   },
   {
    "step": "lineups",
    "status": "ok",
-   "note": "10 of 10 team pages read"
+   "note": "2 of 2 team pages read"
   },
   {
    "step": "lineup_history",
-   "status": "ok",
-   "note": "2 team(s) changed"
+   "status": "skipped",
+   "note": "no change"
   },
   {
    "step": "odds",
@@ -60,7 +60,7 @@
   {
    "step": "engine",
    "status": "ok",
-   "note": "1 new event(s), 0 newly shown"
+   "note": "2 new event(s), 0 newly shown"
   },
   {
    "step": "grade",
@@ -70,7 +70,7 @@
   {
    "step": "live",
    "status": "ok",
-   "note": "3 game(s), 2 read this run"
+   "note": "5 game(s), 4 read this run"
   },
   {
    "step": "shadow",
@@ -85,7 +85,7 @@
   {
    "step": "slate",
    "status": "ok",
-   "note": "4 open pick(s)"
+   "note": "2 open pick(s)"
   },
   {
    "step": "record",
@@ -156,15 +156,15 @@
  ],
  "excluded_teams": [],
  "stats_through": "2026-11-06",
- "lineups_at": "2026-11-07T19:50:01-05:00",
+ "lineups_at": "2026-11-07T20:00:00-05:00",
  "lineups_note": "18 of 24 team line pages are dated today.",
  "games_today": 12,
- "record_events": 170,
+ "record_events": 172,
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "42428511654",
-  "iteration": 5,
+  "iteration": 6,
   "chain_link": 62,
   "chain_started_at": "2026-11-05T20:58:54-05:00",
   "run_started_at": "2026-11-07T19:10:14-05:00"
