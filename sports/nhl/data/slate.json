@@ -1,14 +1,14 @@
 {
  "slate_date": "2026-11-08",
- "generated_at": "2026-11-08T18:00:00-05:00",
- "status_at": "2026-11-08T18:00:00-05:00",
+ "generated_at": "2026-11-08T18:10:00-05:00",
+ "status_at": "2026-11-08T18:10:00-05:00",
  "valid_until": "2026-11-09T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
   "prices_at": "2026-11-08T17:30:01-05:00",
   "next_price_read_at": "2026-11-08T18:15:00-05:00",
   "stats_built_at": "2026-11-08T16:50:00-05:00",
-  "stats_through": "2026-11-08",
+  "stats_through": "2026-11-07",
   "lineups_at": "2026-11-08T17:50:01-05:00",
   "goalies_at": null,
   "lineups_note": "9 of 12 team line pages are dated today.",
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-08T18:00:00-05:00",
+   "at": "2026-11-08T18:10:00-05:00",
    "failed_step": null
   },
   "pool": {
