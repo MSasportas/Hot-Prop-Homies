@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-07",
- "generated_at": "2026-11-07T20:20:01-05:00",
+ "generated_at": "2026-11-07T20:30:01-05:00",
  "games": [
   {
    "game_id": 2026020266,
@@ -29,20 +29,20 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "11:54",
+   "clock": "07:03",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "MTL",
-    "score": 2,
-    "sog": 13
+    "score": 3,
+    "sog": 15
    },
    "home": {
     "abbrev": "TOR",
     "score": 0,
-    "sog": 15
+    "sog": 18
    },
-   "updated_at": "2026-11-07T20:20:01-05:00"
+   "updated_at": "2026-11-07T20:30:01-05:00"
   },
   {
    "game_id": 2026020270,
@@ -50,20 +50,20 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "13:50",
+   "clock": "08:40",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "NJD",
     "score": 2,
-    "sog": 19
+    "sog": 22
    },
    "home": {
     "abbrev": "NYI",
     "score": 3,
-    "sog": 8
+    "sog": 9
    },
-   "updated_at": "2026-11-07T20:20:01-05:00"
+   "updated_at": "2026-11-07T20:30:01-05:00"
   },
   {
    "game_id": 2026020271,
@@ -71,20 +71,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "12:37",
+   "clock": "08:38",
    "in_intermission": false,
    "running": true,
    "away": {
     "abbrev": "CHI",
     "score": 0,
-    "sog": 1
+    "sog": 3
    },
    "home": {
     "abbrev": "CAR",
-    "score": 2,
-    "sog": 5
+    "score": 3,
+    "sog": 7
    },
-   "updated_at": "2026-11-07T20:20:01-05:00"
+   "updated_at": "2026-11-07T20:30:01-05:00"
   },
   {
    "game_id": 2026020273,
@@ -92,20 +92,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "14:09",
+   "clock": "09:22",
    "in_intermission": false,
    "running": true,
    "away": {
     "abbrev": "TBL",
     "score": 0,
-    "sog": 1
+    "sog": 5
    },
    "home": {
     "abbrev": "MIN",
     "score": 2,
-    "sog": 5
+    "sog": 6
    },
-   "updated_at": "2026-11-07T20:20:01-05:00"
+   "updated_at": "2026-11-07T20:30:01-05:00"
   }
  ],
  "picks": {
@@ -142,7 +142,7 @@
   "2026-11-07:2026020273:8477404:shots:2.5:under": {
    "game_id": 2026020273,
    "market": "shots",
-   "stat": 0
+   "stat": 1
   }
  }
 }
