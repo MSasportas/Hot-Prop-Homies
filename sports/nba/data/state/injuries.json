@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T15:50:01-05:00",
+ "at": "2026-11-08T16:40:01-05:00",
  "list": {
   "4873201": {
    "status": "day-to-day",
@@ -498,6 +498,13 @@
    "date": "2026-10-05T21:43Z",
    "note": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports."
   },
+  "4432586": {
+   "status": "out",
+   "name": "Nate Bittle",
+   "team": "TOR",
+   "date": "2026-11-08T21:20Z",
+   "note": "Bittle (foot) is listed as out for Monday's game against Memphis."
+  },
   "4395724": {
    "status": "day-to-day",
    "name": "Immanuel Quickley",
@@ -518,13 +525,6 @@
    "team": "TOR",
    "date": "2026-11-04T00:14Z",
    "note": "Leonard has completed treatment to reduce swelling in his left knee and he will be re-evaluated in one week, Brett Siegel of ClutchPoints.com reports."
-  },
-  "4432586": {
-   "status": "out",
-   "name": "Nate Bittle",
-   "team": "TOR",
-   "date": "2026-11-02T20:20Z",
-   "note": "Bittle (foot) is out for Monday's game against the Clippers and remains without a timetable to return."
   },
   "4433627": {
    "status": "day-to-day",

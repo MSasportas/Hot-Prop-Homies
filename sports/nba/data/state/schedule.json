@@ -285,11 +285,11 @@
     "home": "CHI",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:22 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "PHI": "64",
-     "CHI": "56"
+     "PHI": "68",
+     "CHI": "61"
     }
    },
    {
