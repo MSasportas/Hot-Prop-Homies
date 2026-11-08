@@ -286,10 +286,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:21 - 1st",
+    "detail": "9:10 - 2nd",
     "score": {
-     "PHI": "27",
-     "CHI": "27"
+     "PHI": "38",
+     "CHI": "40"
     }
    },
    {
