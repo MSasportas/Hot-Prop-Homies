@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:49 - 3rd",
+    "detail": "1:59 - 3rd",
     "score": {
-     "BKN": "85",
-     "ATL": "78"
+     "BKN": "93",
+     "ATL": "86"
     }
    },
    {
@@ -451,10 +451,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:39 - 2nd",
+    "detail": "6:55 - 2nd",
     "score": {
-     "ORL": "21",
-     "GS": "34"
+     "ORL": "31",
+     "GS": "38"
     }
    },
    {
@@ -463,13 +463,13 @@
     "start": "2026-11-07T21:00:00-05:00",
     "away": "HOU",
     "home": "PHX",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/7 - 9:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:04 - 1st",
     "score": {
-     "HOU": "0",
-     "PHX": "0"
+     "HOU": "11",
+     "PHX": "10"
     }
    },
    {
