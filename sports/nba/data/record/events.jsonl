@@ -213,3 +213,4 @@
 {"at":"2026-11-07T20:00:01-05:00","id":"2026-11-07:401909941:4278073:rebounds:4.5:under","state":"locked","t":"locked"}
 {"at":"2026-11-07T20:10:01-05:00","code":"line_gone","id":"2026-11-07:401909942:4566434:rebounds:5.5:over","if_bet":"Got -145? Your bet still stands.","reason":"Hard Rock took the line down","t":"pulled"}
 {"at":"2026-11-07T20:30:01-05:00","id":"2026-11-07:401909942:4277847:points:12.5:under","state":"locked","t":"locked"}
+{"actual":null,"actual_text":"2 rebounds","at":"2026-11-07T22:20:01-05:00","id":"2026-11-07:401909941:4278073:rebounds:4.5:under","price":-150,"result":"W","t":"graded","units":0.6667}

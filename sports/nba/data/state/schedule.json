@@ -403,13 +403,13 @@
     "start": "2026-11-07T19:30:00-05:00",
     "away": "BKN",
     "home": "ATL",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5.2 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "BKN": "116",
-     "ATL": "123"
+     "BKN": "121",
+     "ATL": "124"
     }
    },
    {
@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:15 - 4th",
+    "detail": "42.8 - 4th",
     "score": {
-     "NY": "102",
-     "CLE": "92"
+     "NY": "107",
+     "CLE": "97"
     }
    },
    {
@@ -433,13 +433,13 @@
     "start": "2026-11-07T20:00:00-05:00",
     "away": "WSH",
     "home": "OKC",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:08 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "WSH": "69",
-     "OKC": "105"
+     "WSH": "75",
+     "OKC": "114"
     }
    },
    {
@@ -451,10 +451,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:28 - 3rd",
+    "detail": "31.9 - 3rd",
     "score": {
-     "ORL": "67",
-     "GS": "69"
+     "ORL": "78",
+     "GS": "75"
     }
    },
    {
@@ -465,8 +465,8 @@
     "home": "PHX",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "0.0 - 3rd",
     "score": {
      "HOU": "47",
      "PHX": "47"
@@ -478,13 +478,13 @@
     "start": "2026-11-07T22:00:00-05:00",
     "away": "SA",
     "home": "POR",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/7 - 10:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:28 - 1st",
     "score": {
-     "SA": "0",
-     "POR": "0"
+     "SA": "11",
+     "POR": "3"
     }
    }
   ]
