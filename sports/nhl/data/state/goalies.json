@@ -75,7 +75,7 @@
   },
   "LAK": {
    "name": "Darcy Kuemper",
-   "status": "expected"
+   "status": "confirmed"
   },
   "PIT": {
    "name": "Sergei Murashov",
@@ -98,5 +98,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-07T19:40:00-05:00"
+ "checked_at": "2026-11-07T20:40:01-05:00"
 }
