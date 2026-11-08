@@ -298,13 +298,13 @@
     "start": "2026-11-08T18:00:00-05:00",
     "away": "LAL",
     "home": "DET",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/8 - 6:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:16 - 1st",
     "score": {
-     "LAL": "0",
-     "DET": "0"
+     "LAL": "14",
+     "DET": "7"
     }
    },
    {
