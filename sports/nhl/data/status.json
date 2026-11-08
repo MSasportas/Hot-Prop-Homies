@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-08",
- "started_at": "2026-11-08T18:20:00-05:00",
- "status_at": "2026-11-08T18:20:00-05:00",
- "finished_at": "2026-11-08T18:20:04-05:00",
- "last_ok_at": "2026-11-08T18:20:00-05:00",
+ "started_at": "2026-11-08T18:30:01-05:00",
+ "status_at": "2026-11-08T18:30:01-05:00",
+ "finished_at": "2026-11-08T18:30:03-05:00",
+ "last_ok_at": "2026-11-08T18:30:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -24,18 +24,18 @@
   },
   {
    "step": "lineups",
-   "status": "ok",
-   "note": "6 of 6 team pages read"
+   "status": "skipped",
+   "note": "checked in the last 20 minutes"
   },
   {
    "step": "lineup_history",
-   "status": "ok",
-   "note": "1 team(s) changed"
+   "status": "skipped",
+   "note": "no change"
   },
   {
    "step": "odds",
    "status": "ok",
-   "note": "2 game(s) priced"
+   "note": "1 game(s) priced"
   },
   {
    "step": "market_menu",
@@ -75,7 +75,7 @@
   {
    "step": "shadow",
    "status": "ok",
-   "note": "72 line read(s) logged"
+   "note": "33 line read(s) logged; 39 graded"
   },
   {
    "step": "gg_grade",
@@ -107,7 +107,7 @@
   },
   {
    "n": 2,
-   "left": 307
+   "left": 302
   },
   {
    "n": 3,
@@ -138,14 +138,14 @@
    "left": 500
   }
  ],
- "pool_total": 3587,
+ "pool_total": 3582,
  "allowance": 22.8931,
  "tier": 4,
  "budget_today": 137,
- "budget_used_today": 53,
+ "budget_used_today": 58,
  "prices_state": "ok",
- "prices_at": "2026-11-08T18:20:00-05:00",
- "next_price_read_at": "2026-11-08T18:30:00-05:00",
+ "prices_at": "2026-11-08T18:30:01-05:00",
+ "next_price_read_at": "2026-11-08T19:15:00-05:00",
  "unmatched_names": [],
  "unknown_teams": [],
  "lineup_unmatched_names": [],
@@ -158,10 +158,10 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "42530538015",
-  "iteration": 6,
-  "chain_link": 92,
+  "run_id": "42534672689",
+  "iteration": 2,
+  "chain_link": 93,
   "chain_started_at": "2026-11-05T20:58:54-05:00",
-  "run_started_at": "2026-11-08T17:30:19-05:00"
+  "run_started_at": "2026-11-08T18:20:17-05:00"
  }
 }
