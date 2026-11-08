@@ -32,12 +32,12 @@
    }
   },
   "LAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Austin Reaves",
     "Quentin Grimes",
-    "Ziaire Williams",
     "Matisse Thybulle",
+    "Jake LaRavia",
     "Walker Kessler"
    ],
    "status": {
@@ -199,5 +199,5 @@
    }
   }
  },
- "at": "2026-11-08T17:30:00-05:00"
+ "at": "2026-11-08T17:40:01-05:00"
 }
