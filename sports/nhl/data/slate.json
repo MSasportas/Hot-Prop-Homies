@@ -1,26 +1,26 @@
 {
  "slate_date": "2026-11-08",
- "generated_at": "2026-11-08T12:00:01-05:00",
- "status_at": "2026-11-08T12:00:01-05:00",
+ "generated_at": "2026-11-08T12:20:01-05:00",
+ "status_at": "2026-11-08T12:20:01-05:00",
  "valid_until": "2026-11-09T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
-  "prices_at": "2026-11-08T11:30:00-05:00",
-  "next_price_read_at": "2026-11-08T12:15:00-05:00",
+  "prices_at": "2026-11-08T12:20:01-05:00",
+  "next_price_read_at": "2026-11-08T14:00:00-05:00",
   "stats_built_at": "2026-11-08T01:40:00-05:00",
   "stats_through": "2026-11-07",
-  "lineups_at": "2026-11-08T12:00:01-05:00",
+  "lineups_at": "2026-11-08T12:20:01-05:00",
   "goalies_at": null,
   "lineups_note": "2 of 2 team line pages are dated today.",
   "lineups_state": "ok",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-08T12:00:01-05:00",
+   "at": "2026-11-08T12:20:01-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 3626,
+   "pulls_left": 3621,
    "keys": 9,
    "game_days_left": 21,
    "days_left": 23,
@@ -32,11 +32,7 @@
   "tier": 4
  },
  "banners": [],
- "empty": {
-  "code": "none_qualified",
-  "text": "No picks yet today",
-  "sub": "18 lines read, none cleared both checks. Next read at 12:15 PM."
- },
+ "empty": null,
  "games": [
   {
    "id": 2026020277,
@@ -66,20 +62,21 @@
      {
       "pull": "B",
       "at": "2026-11-08T11:30:00-05:00"
+     },
+     {
+      "pull": "C",
+      "at": "2026-11-08T12:20:01-05:00"
      }
     ],
-    "next_read": {
-     "pull": "C",
-     "at": "2026-11-08T12:15:00-05:00"
-    },
+    "next_read": null,
     "lineups_at": {
      "away": "2026-11-08T10:20:01-05:00",
      "home": "2026-11-08T12:00:01-05:00"
     }
    },
    "started": false,
-   "reads_done": false,
-   "picks": 0,
+   "reads_done": true,
+   "picks": 1,
    "excluded_reason": null,
    "excluded_teams": []
   },
@@ -289,7 +286,71 @@
    "excluded_teams": []
   }
  ],
- "picks": [],
+ "picks": [
+  {
+   "id": "2026-11-08:2026020277:8477933:shots:2.5:under",
+   "price": 105,
+   "first_price": 105,
+   "first_price_at": "2026-11-08T12:20:01-05:00",
+   "worst_price": 105,
+   "p": 0.5133,
+   "breakeven": 0.4878,
+   "p_pct": 51,
+   "breakeven_pct": 49,
+   "state": "lineup",
+   "history": [
+    {
+     "at": "2026-11-08T12:20:01-05:00",
+     "text": "Lineup confirmed"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-08T12:20:01-05:00",
+     "price": 105
+    }
+   ],
+   "pulled": null,
+   "price_final": true,
+   "graded": null,
+   "rank": 1,
+   "tier": "main",
+   "game_id": 2026020277,
+   "player": "S. Reinhart",
+   "player_id": 8477933,
+   "team": "FLA",
+   "opp": "BOS",
+   "home": false,
+   "start": "2026-11-08T13:00:00-05:00",
+   "market": "shots",
+   "line": 2.5,
+   "side": "under",
+   "bet": "Under 2.5 shots on goal",
+   "price_at": "2026-11-08T12:20:01-05:00",
+   "gap_pct": 6.0,
+   "market_fair_pct": 51.7,
+   "n_books": 8,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 51.3,
+    "model_pct": 51.5
+   },
+   "settled": "goalie",
+   "settled_label": "Goalie confirmed",
+   "reason": "8 other books say 51.7%; Hard Rock's +105 only needs 48.8%. Our model agrees (our blend: 51.3%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/6887108992177406353",
+   "links": {
+    "hardrock": {
+     "id": "6887108992177406353",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/6887108992177406353"
+    },
+    "draftkings": null
+   },
+   "thin": false,
+   "games_used": 81,
+   "games_this_season": 17
+  }
+ ],
  "parlays": [],
  "parlays_note": "Parlays are not offered: there is no evidence for them yet."
 }

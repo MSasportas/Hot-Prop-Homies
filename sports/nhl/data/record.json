@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T00:20:00-05:00",
+ "generated_at": "2026-11-08T12:20:01-05:00",
  "summary": {
   "headline": {
    "w": 33,
@@ -213,6 +213,16 @@
   ],
   "days": [
    {
+    "date": "2026-11-08",
+    "w": 0,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 0,
+    "n": 1,
+    "graded": false
+   },
+   {
     "date": "2026-11-07",
     "w": 4,
     "l": 5,
@@ -375,6 +385,38 @@
   ]
  },
  "nights": [
+  {
+   "date": "2026-11-08",
+   "graded": false,
+   "w": 0,
+   "l": 0,
+   "units": 0,
+   "entries": [
+    {
+     "id": "2026-11-08:2026020277:8477933:shots:2.5:under",
+     "kind": "single",
+     "player": "S. Reinhart",
+     "bet": "Under 2.5 shots on goal",
+     "market": "shots",
+     "team": "FLA",
+     "game": "FLA at BOS",
+     "price": 105,
+     "first_price": 105,
+     "last_price": 105,
+     "prices": [
+      {
+       "price": 105,
+       "at": "2026-11-08T12:20:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    }
+   ]
+  },
   {
    "date": "2026-11-07",
    "graded": true,
@@ -943,67 +985,10 @@
      "legs": []
     }
    ]
-  },
-  {
-   "date": "2026-11-01",
-   "graded": true,
-   "w": 0,
-   "l": 2,
-   "units": -2.0,
-   "entries": [
-    {
-     "id": "2026-11-01:2026020227:8476873:shots:1.5:under",
-     "kind": "single",
-     "player": "M. Jankowski",
-     "bet": "Under 1.5 shots on goal",
-     "market": "shots",
-     "team": "CAR",
-     "game": "WPG at CAR",
-     "price": -115,
-     "first_price": -115,
-     "last_price": -115,
-     "prices": [
-      {
-       "price": -115,
-       "at": "2026-11-01T11:30:01-05:00"
-      }
-     ],
-     "result": "L",
-     "actual": "had 3",
-     "units": -1.0,
-     "pulled": {
-      "at": "2026-11-01T12:20:01-05:00",
-      "reason": "Hard Rock moved it to -135"
-     },
-     "legs": []
-    },
-    {
-     "id": "2026-11-01:2026020227:8480145:shots:1.5:under",
-     "kind": "single",
-     "player": "N. Pionk",
-     "bet": "Under 1.5 shots on goal",
-     "market": "shots",
-     "team": "WPG",
-     "game": "WPG at CAR",
-     "price": -110,
-     "first_price": -110,
-     "last_price": -110,
-     "prices": [
-      {
-       "price": -110,
-       "at": "2026-11-01T11:30:01-05:00"
-      }
-     ],
-     "result": "L",
-     "actual": "had 4",
-     "units": -1.0,
-     "pulled": null,
-     "legs": []
-    }
-   ]
   }
  ],
  "older": [
+  "record/2026-11.json",
   "record/2026-10.json"
  ]
 }
