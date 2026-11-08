@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T13:30:01-05:00",
+ "at": "2026-11-08T13:30:23-05:00",
  "list": {
   "4873201": {
    "status": "day-to-day",
@@ -35,6 +35,13 @@
    "team": "ATL",
    "date": "2026-09-21T19:50Z",
    "note": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday."
+  },
+  "4351852": {
+   "status": "day-to-day",
+   "name": "Mitchell Robinson",
+   "team": "BOS",
+   "date": "2026-11-08T18:18Z",
+   "note": "Robinson provided three points (1-8 FG, 1-2 FT), 10 rebounds, one assist, one block and one steal over 20 minutes during Wednesday's 109-102 victory over the Bucks."
   },
   "4702670": {
    "status": "day-to-day",
@@ -308,13 +315,6 @@
    "team": "MEM",
    "date": "2026-11-05T23:03Z",
    "note": "Pippen (back) has been ruled out for Friday's game against Oklahoma City."
-  },
-  "4277843": {
-   "status": "day-to-day",
-   "name": "Gary Trent Jr.",
-   "team": "MIL",
-   "date": "2026-11-08T18:23Z",
-   "note": "Trent (illness) has been downgraded to questionable for Sunday's game against Boston."
   },
   "4594268": {
    "status": "out",
