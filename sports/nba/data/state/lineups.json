@@ -89,13 +89,13 @@
    }
   },
   "WSH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Trae Young",
     "Kyshawn George",
     "AJ Dybantsa",
-    "Alex Sarr",
-    "Deandre Ayton"
+    "Bilal Coulibaly",
+    "Alex Sarr"
    ],
    "status": {
     "Reece Beekman": "out",
@@ -106,12 +106,12 @@
    }
   },
   "OKC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Shai Gilgeous-Alexander",
     "Ajay Mitchell",
-    "Alex Caruso",
     "Kenrich Williams",
+    "Aday Mara",
     "Isaiah Hartenstein"
    ],
    "status": {
@@ -215,5 +215,5 @@
    }
   }
  },
- "at": "2026-11-07T19:30:00-05:00"
+ "at": "2026-11-07T19:40:01-05:00"
 }
