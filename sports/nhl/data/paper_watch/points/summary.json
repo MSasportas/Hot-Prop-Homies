@@ -2,7 +2,7 @@
  "version": 1,
  "note": "Behind the scenes: research only. Not picks, not on the Record, never sent to Discord.",
  "market": "points",
- "generated_at": "2026-11-08T11:20:01-05:00",
+ "generated_at": "2026-11-08T11:30:00-05:00",
  "slate": "2026-11-08",
  "active": true,
  "window": {
@@ -10,7 +10,42 @@
   "checkpoint": "2026-11-02"
  },
  "tonight": {
-  "flags": [],
+  "flags": [
+   {
+    "id": "2026-11-08:2026020277:8477956:1.5:over",
+    "kind": "flag",
+    "slate": "2026-11-08",
+    "game_id": 2026020277,
+    "player": "D. Pastrnak",
+    "team": "BOS",
+    "opp": "FLA",
+    "game": "BOS vs FLA",
+    "start": "2026-11-08T13:00:00-05:00",
+    "side": "over",
+    "line": 1.5,
+    "bet": "OVER 1.5 points",
+    "price": 170,
+    "gap_pct": 7.5,
+    "final_pct": 6.6,
+    "market_fair_pct": 39.8,
+    "final_p_pct": 39.5,
+    "n_books": 7,
+    "guard": "pass",
+    "cap": null,
+    "flagged_at": "2026-11-08T11:30:00-05:00",
+    "read_pull": "B",
+    "settled": "Early",
+    "frozen_settled": "Early",
+    "move30_pct": null,
+    "pulled": null,
+    "locked": false,
+    "state": "open",
+    "close_fair_pct": null,
+    "clv_pct": null,
+    "result": null,
+    "units": null
+   }
+  ],
   "vetoes": [],
   "capped": []
  },
@@ -857,7 +892,7 @@
  ],
  "nov2": {
   "gaps_measured": 22,
-  "gaps_logged": 23,
+  "gaps_logged": 24,
   "graded_picks": 19,
   "w": 10,
   "l": 9,
@@ -885,7 +920,7 @@
   "clv_passed_mean": 0.04086165143611878,
   "clv_vetoed_mean": 0.05241396729973754,
   "nights": 12,
-  "nights_with_flags": 7,
+  "nights_with_flags": 8,
   "population_slope": null,
   "checkpoint": "2026-11-02"
  }
