@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T16:40:00-05:00",
+ "generated_at": "2026-11-08T17:30:01-05:00",
  "summary": {
   "headline": {
    "w": 33,
@@ -219,8 +219,8 @@
     "push": 0,
     "void": 0,
     "units": -1.0,
-    "n": 1,
-    "graded": true
+    "n": 2,
+    "graded": false
    },
    {
     "date": "2026-11-07",
@@ -387,7 +387,7 @@
  "nights": [
   {
    "date": "2026-11-08",
-   "graded": true,
+   "graded": false,
    "w": 0,
    "l": 1,
    "units": -1.0,
@@ -412,6 +412,29 @@
      "result": "L",
      "actual": "had 3",
      "units": -1.0,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-08:2026020279:8478542:shots:1.5:under",
+     "kind": "single",
+     "player": "E. Rodrigues",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "NJD",
+     "game": "NJD at TOR",
+     "price": 120,
+     "first_price": 120,
+     "last_price": 120,
+     "prices": [
+      {
+       "price": 120,
+       "at": "2026-11-08T17:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
      "pulled": null,
      "legs": []
     }
