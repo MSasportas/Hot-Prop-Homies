@@ -184,7 +184,7 @@
    }
   },
   "SA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "De'Aaron Fox",
     "Stephon Castle",
@@ -198,7 +198,7 @@
    }
   },
   "POR": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Damian Lillard",
     "Scoot Henderson",
@@ -214,5 +214,5 @@
    }
   }
  },
- "at": "2026-11-07T21:30:01-05:00"
+ "at": "2026-11-07T21:40:01-05:00"
 }
