@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 6,
-   "pool_left": 2044,
+   "pool_left": 2036,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-07T19:45:00-05:00",
-  "last_read_at": "2026-11-07T19:40:01-05:00",
+  "next_read_at": "2026-11-07T20:10:00-05:00",
+  "last_read_at": "2026-11-07T19:50:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-07T19:40:01-05:00"
+   "at": "2026-11-07T19:50:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-07T19:40:01-05:00",
+    "at": "2026-11-07T19:50:01-05:00",
     "confirmed": [
      "ATL",
      "BKN",
@@ -86,8 +86,8 @@
    "start": "2026-11-07T19:30:00-05:00",
    "away": "BKN",
    "home": "ATL",
-   "state": "pre",
-   "detail": "11/7 - 7:30 PM EST",
+   "state": "in",
+   "detail": "7:27 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -114,7 +114,7 @@
    "next_check_read": null,
    "injury_clear": {
     "away": false,
-    "home": true
+    "home": false
    }
   },
   {
@@ -200,18 +200,22 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-07T19:00:01-05:00",
-   "picks": 1,
+   "read_at": "2026-11-07T19:50:01-05:00",
+   "picks": 2,
    "checks": [
     {
      "read": "B",
      "at": "2026-11-07T19:00:01-05:00"
+    },
+    {
+     "read": "C",
+     "at": "2026-11-07T19:50:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-07T19:00:01-05:00",
+   "last_check_at": "2026-11-07T19:50:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-07T19:45:00-05:00",
-   "next_check_read": "C",
+   "next_check_at": "2026-11-07T20:10:00-05:00",
+   "next_check_read": "D",
    "injury_clear": {
     "away": true,
     "home": true
@@ -271,6 +275,72 @@
  ],
  "picks": [
   {
+   "player": "Franz Wagner",
+   "pid": "4566434",
+   "team": "ORL",
+   "opp": "GSW",
+   "home": false,
+   "game_id": "401909942",
+   "start": "2026-11-07T20:30:00-05:00",
+   "bet": "Over 5.5 rebounds",
+   "market": "rebounds",
+   "side": "over",
+   "line": 5.5,
+   "price": -145,
+   "price_at": "2026-11-07T19:50:01-05:00",
+   "read": "C",
+   "p": 0.5972,
+   "p_pct": 60,
+   "breakeven": 0.5918,
+   "breakeven_pct": 59,
+   "market_fair": null,
+   "n_books": 3,
+   "gap_ev": null,
+   "final_ev": 0.0649,
+   "model_p": null,
+   "reason": "Pinnacle moved the over from -132 to -177 (53% to 60%). Hard Rock -145 is 0.9% better than Pinnacle's fair price; DraftKings -148 is 0.1% better than Pinnacle's fair price.",
+   "rule": "pin_solo",
+   "pin_before": 0.5323,
+   "pin_after": 0.5972,
+   "pin_price_before": -132,
+   "pin_price_after": -177,
+   "others_move": 0.0127,
+   "n_others": 3,
+   "ev_vs_pin": 0.009,
+   "window": "90 \u2192 45 min",
+   "gap_vs_pin": 0.0472,
+   "book": "hardrock",
+   "books": {
+    "draftkings": {
+     "ev_vs_pin": 0.0007,
+     "price": -148
+    },
+    "hardrock": {
+     "ev_vs_pin": 0.009,
+     "price": -145
+    }
+   },
+   "id": "2026-11-07:401909942:4566434:rebounds:5.5:over",
+   "state": "clear",
+   "state_label": "Injury report clear",
+   "price_final": false,
+   "pulled": null,
+   "added_at": "2026-11-07T19:50:01-05:00",
+   "result": null,
+   "links": {
+    "hardrock": {
+     "id": "7228418154989486470",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/7228418154989486470",
+     "price": -145
+    },
+    "draftkings": {
+     "url": "https://sportsbook.draftkings.com/?outcomes=0QA386793302%232354638754_13L42648Q1210220610Q20",
+     "price": -148
+    }
+   },
+   "rank": 1
+  },
+  {
    "player": "Shai Gilgeous-Alexander",
    "pid": "4278073",
    "team": "OKC",
@@ -327,7 +397,7 @@
     },
     "draftkings": null
    },
-   "rank": 1
+   "rank": 2
   },
   {
    "player": "Andrew Nembhard",
@@ -446,13 +516,13 @@
     },
     "draftkings": null
    },
-   "rank": 2
+   "rank": 3
   }
  ],
  "empty": null,
  "counts": {
-  "lines_read": 644,
-  "passing": 11,
+  "lines_read": 646,
+  "passing": 13,
   "games": 7
  },
  "safety_paused": false,
@@ -461,6 +531,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-07T19:40:01-05:00",
- "status_at": "2026-11-07T19:40:01-05:00"
+ "generated_at": "2026-11-07T19:50:01-05:00",
+ "status_at": "2026-11-07T19:50:01-05:00"
 }

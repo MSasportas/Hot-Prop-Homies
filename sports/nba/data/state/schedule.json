@@ -403,13 +403,13 @@
     "start": "2026-11-07T19:30:00-05:00",
     "away": "BKN",
     "home": "ATL",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/7 - 7:30 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:27 - 1st",
     "score": {
-     "BKN": "0",
-     "ATL": "0"
+     "BKN": "14",
+     "ATL": "4"
     }
    },
    {
