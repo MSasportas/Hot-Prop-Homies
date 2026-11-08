@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-07",
- "generated_at": "2026-11-07T20:40:01-05:00",
- "status_at": "2026-11-07T20:40:01-05:00",
+ "generated_at": "2026-11-07T20:50:02-05:00",
+ "status_at": "2026-11-07T20:50:02-05:00",
  "valid_until": "2026-11-08T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -9,14 +9,14 @@
   "next_price_read_at": "2026-11-07T21:15:00-05:00",
   "stats_built_at": "2026-11-07T16:40:00-05:00",
   "stats_through": "2026-11-06",
-  "lineups_at": "2026-11-07T20:40:01-05:00",
+  "lineups_at": "2026-11-07T20:50:02-05:00",
   "goalies_at": null,
-  "lineups_note": "18 of 24 team line pages are dated today.",
+  "lineups_note": "19 of 24 team line pages are dated today.",
   "lineups_state": "ok",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-07T20:40:01-05:00",
+   "at": "2026-11-07T20:50:02-05:00",
    "failed_step": null
   },
   "pool": {
@@ -455,12 +455,12 @@
    "start": "2026-11-07T21:00:00-05:00",
    "lineups": {
     "away": "waiting",
-    "home": "waiting"
+    "home": "confirmed"
    },
    "goalies": {
     "away": {
      "name": "Daniil Tarasov",
-     "status": "expected"
+     "status": "confirmed"
     },
     "home": {
      "name": "Mackenzie Blackwood",
@@ -485,7 +485,7 @@
     "next_read": null,
     "lineups_at": {
      "away": null,
-     "home": null
+     "home": "2026-11-07T20:50:02-05:00"
     }
    },
    "started": false,
@@ -597,11 +597,15 @@
    "breakeven": 0.4,
    "p_pct": 41,
    "breakeven_pct": 40,
-   "state": "early",
+   "state": "lineup",
    "history": [
     {
      "at": "2026-11-07T19:30:01-05:00",
      "text": "Early: lineup not confirmed"
+    },
+    {
+     "at": "2026-11-07T20:50:02-05:00",
+     "text": "Lineup confirmed"
     }
    ],
    "prices": [
@@ -635,8 +639,8 @@
     "ours_pct": 41.3,
     "model_pct": 41.2
    },
-   "settled": "early",
-   "settled_label": "Early",
+   "settled": "goalie",
+   "settled_label": "Goalie confirmed",
    "reason": "8 other books say 41.8%; Hard Rock's +150 only needs 40.0%. Our model agrees (our blend: 41.3%).",
    "link": "https://app.hardrock.bet/?deep_link_value=betslip/236680995940729232",
    "links": {
