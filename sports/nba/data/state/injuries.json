@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T17:20:01-05:00",
+ "at": "2026-11-08T17:30:00-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -64,19 +64,19 @@
    "date": "2026-10-29T17:09Z",
    "note": "The Nets exercised Demin's third-year team option for the 2027-28 season, Sharif Phillips-Keaton of USA Today reports Thursday."
   },
+  "4433287": {
+   "status": "out",
+   "name": "Brandon Miller",
+   "team": "CHA",
+   "date": "2026-11-08T22:21Z",
+   "note": "Head coach Charles Lee said Miller (groin) will be re-evaluated over the weekend, and they expect to have more information by Monday, Steve Reed of The Associated Press reports."
+  },
   "4433249": {
    "status": "day-to-day",
    "name": "Moussa Diabate",
    "team": "CHA",
    "date": "2026-11-07T17:39Z",
    "note": "Diabate (quadriceps) has been ruled out for Friday's game against Boston, according to the Hornets' official injury report."
-  },
-  "4433287": {
-   "status": "day-to-day",
-   "name": "Brandon Miller",
-   "team": "CHA",
-   "date": "2026-11-07T04:27Z",
-   "note": "Head coach Charles Lee said Miller (groin) will be re-evaluated over the weekend, and they expect to have more information by Monday, Steve Reed of The Associated Press reports."
   },
   "3032979": {
    "status": "out",
@@ -113,6 +113,13 @@
    "date": "2026-11-07T21:24Z",
    "note": "Collins (illness) is out for Sunday's game against Philadelphia."
   },
+  "4066328": {
+   "status": "day-to-day",
+   "name": "Jarrett Allen",
+   "team": "CLE",
+   "date": "2026-11-08T22:15Z",
+   "note": "Allen (knee) is questionable for Monday's game against Charlotte."
+  },
   "4683747": {
    "status": "out",
    "name": "Jaylon Tyson",
@@ -126,13 +133,6 @@
    "team": "CLE",
    "date": "2026-11-08T16:01Z",
    "note": "Merrill (elbow) is out for Saturday's game against the Knicks."
-  },
-  "4066328": {
-   "status": "day-to-day",
-   "name": "Jarrett Allen",
-   "team": "CLE",
-   "date": "2026-11-08T16:01Z",
-   "note": "Allen (knee) is out for Saturday's game against the Knicks"
   },
   "5279129": {
    "status": "out",
@@ -554,19 +554,19 @@
    "date": "2026-10-27T19:25Z",
    "note": "Jackson has been diagnosed with a torn MCL in his right knee and will be sidelined for 6-to-8 weeks, per Shams Charania of ESPN."
   },
+  "4997537": {
+   "status": "out",
+   "name": "Tristan Vukcevic",
+   "team": "WSH",
+   "date": "2026-11-08T22:17Z",
+   "note": "Vukcevic (hip) has been ruled out for Monday's game against Detroit."
+  },
   "6583": {
    "status": "day-to-day",
    "name": "Anthony Davis",
    "team": "WSH",
-   "date": "2026-11-08T16:00Z",
-   "note": "Davis (ankle) won't play Saturday against the Thunder."
-  },
-  "4278129": {
-   "status": "day-to-day",
-   "name": "Deandre Ayton",
-   "team": "WSH",
-   "date": "2026-11-08T14:55Z",
-   "note": "Ayton won't return to Saturday's game against the Thunder due to a lower leg injury."
+   "date": "2026-11-08T22:08Z",
+   "note": "Davis (ankle) is listed as questionable for Monday's game in Detroit."
   },
   "4432187": {
    "status": "out",
@@ -574,13 +574,6 @@
    "team": "WSH",
    "date": "2026-11-02T18:22Z",
    "note": "The Wizards announced Monday that Beekman sustained a right acromioclavicular joint injury and will be re-evaluated in approximately three weeks."
-  },
-  "4997537": {
-   "status": "out",
-   "name": "Tristan Vukcevic",
-   "team": "WSH",
-   "date": "2026-11-01T21:51Z",
-   "note": "Vukcevic (hip) is listed as out for Monday's game against Orlando."
   },
   "4432907": {
    "status": "out",
