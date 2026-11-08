@@ -421,9 +421,9 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:07 - 2nd",
+    "detail": "4:00 - 2nd",
     "score": {
-     "NY": "43",
+     "NY": "46",
      "CLE": "45"
     }
    },
@@ -436,7 +436,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:50 - 2nd",
+    "detail": "3:29 - 2nd",
     "score": {
      "WSH": "29",
      "OKC": "44"
@@ -451,9 +451,9 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:52 - 1st",
+    "detail": "2:40 - 1st",
     "score": {
-     "ORL": "9",
+     "ORL": "12",
      "GS": "23"
     }
    },
