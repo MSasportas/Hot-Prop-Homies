@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-07",
- "generated_at": "2026-11-07T19:00:00-05:00",
+ "generated_at": "2026-11-07T19:10:00-05:00",
  "games": [
   {
    "game_id": 2026020266,
@@ -42,28 +42,28 @@
     "score": null,
     "sog": null
    },
-   "updated_at": "2026-11-07T19:00:00-05:00"
+   "updated_at": "2026-11-07T19:10:00-05:00"
   },
   {
    "game_id": 2026020270,
-   "state": "PRE",
+   "state": "LIVE",
    "schedule_state": "OK",
-   "period": null,
-   "period_type": null,
-   "clock": null,
+   "period": 1,
+   "period_type": "REG",
+   "clock": "20:00",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "NJD",
-    "score": null,
+    "score": 0,
     "sog": null
    },
    "home": {
     "abbrev": "NYI",
-    "score": null,
+    "score": 0,
     "sog": null
    },
-   "updated_at": "2026-11-07T19:00:00-05:00"
+   "updated_at": "2026-11-07T19:10:00-05:00"
   }
  ],
  "picks": {
@@ -85,12 +85,12 @@
   "2026-11-07:2026020270:8476462:shots:2.5:over": {
    "game_id": 2026020270,
    "market": "shots",
-   "stat": null
+   "stat": 0
   },
   "2026-11-07:2026020270:8485388:shots:1.5:under": {
    "game_id": 2026020270,
    "market": "shots",
-   "stat": null
+   "stat": 0
   }
  }
 }
