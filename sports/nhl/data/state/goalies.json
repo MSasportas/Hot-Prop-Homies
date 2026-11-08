@@ -7,7 +7,7 @@
   },
   "FLA": {
    "name": "Jacob Markstrom",
-   "status": "expected"
+   "status": "confirmed"
   },
   "BUF": {
    "name": "Ukko-Pekka Luukkonen",
@@ -50,5 +50,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-08T10:30:01-05:00"
+ "checked_at": "2026-11-08T11:00:00-05:00"
 }
