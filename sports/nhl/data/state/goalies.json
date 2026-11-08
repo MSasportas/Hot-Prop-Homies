@@ -10,12 +10,12 @@
    "status": "confirmed"
   },
   "BUF": {
-   "name": "Ukko-Pekka Luukkonen",
-   "status": "expected"
+   "name": "Colten Ellis",
+   "status": "confirmed"
   },
   "VGK": {
    "name": "Adin Hill",
-   "status": "expected"
+   "status": "confirmed"
   },
   "WPG": {
    "name": "Stuart Skinner",
@@ -50,5 +50,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-08T11:50:01-05:00"
+ "checked_at": "2026-11-08T15:10:01-05:00"
 }

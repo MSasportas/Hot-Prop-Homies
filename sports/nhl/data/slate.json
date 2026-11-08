@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-08",
- "generated_at": "2026-11-08T15:00:00-05:00",
- "status_at": "2026-11-08T15:00:00-05:00",
+ "generated_at": "2026-11-08T15:10:01-05:00",
+ "status_at": "2026-11-08T15:10:01-05:00",
  "valid_until": "2026-11-09T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -9,14 +9,14 @@
   "next_price_read_at": "2026-11-08T16:30:00-05:00",
   "stats_built_at": "2026-11-08T01:40:00-05:00",
   "stats_through": "2026-11-07",
-  "lineups_at": "2026-11-08T15:00:00-05:00",
+  "lineups_at": "2026-11-08T15:10:01-05:00",
   "goalies_at": null,
-  "lineups_note": "3 of 6 team line pages are dated today.",
+  "lineups_note": "4 of 6 team line pages are dated today.",
   "lineups_state": "ok",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-08T15:00:00-05:00",
+   "at": "2026-11-08T15:10:01-05:00",
    "failed_step": null
   },
   "pool": {
@@ -91,16 +91,16 @@
    "start": "2026-11-08T15:30:00-05:00",
    "lineups": {
     "away": "waiting",
-    "home": "waiting"
+    "home": "confirmed"
    },
    "goalies": {
     "away": {
      "name": "Adin Hill",
-     "status": "expected"
+     "status": "confirmed"
     },
     "home": {
-     "name": "Ukko-Pekka Luukkonen",
-     "status": "expected"
+     "name": "Colten Ellis",
+     "status": "confirmed"
     }
    },
    "checks": {
@@ -121,7 +121,7 @@
     "next_read": null,
     "lineups_at": {
      "away": null,
-     "home": null
+     "home": "2026-11-08T15:10:01-05:00"
     }
    },
    "started": false,
