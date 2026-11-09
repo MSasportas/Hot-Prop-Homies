@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:57 - 4th",
+    "detail": "5:47 - 4th",
     "score": {
-     "NO": "97",
-     "LAC": "110"
+     "NO": "105",
+     "LAC": "119"
     }
    },
    {
@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:56 - 4th",
+    "detail": "2:44 - 4th",
     "score": {
-     "MIA": "91",
-     "SAC": "90"
+     "MIA": "106",
+     "SAC": "101"
     }
    }
   ]
