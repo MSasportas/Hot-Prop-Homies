@@ -6,13 +6,13 @@
    "starters": [
     "Luka Doncic",
     "Austin Reaves",
-    "Ziaire Williams",
     "Matisse Thybulle",
+    "Jake LaRavia",
     "Walker Kessler"
    ],
    "status": {
-    "Luka Doncic": "out",
-    "Quentin Grimes": "questionable"
+    "Austin Reaves": "questionable",
+    "Quentin Grimes": "out"
    }
   },
   "ATL": {
@@ -43,6 +43,7 @@
    ],
    "status": {
     "Anthony Davis": "questionable",
+    "Bilal Coulibaly": "questionable",
     "Reece Beekman": "out",
     "Justin Champagnie": "out",
     "Tristan Vukcevic": "out",
@@ -86,10 +87,10 @@
     "Grayson Allen",
     "Sion James",
     "Naz Reid",
-    "Moussa Diabate"
+    "Ryan Kalkbrenner"
    ],
    "status": {
-    "Moussa Diabate": "questionable",
+    "Moussa Diabate": "doubtful",
     "Kon Knueppel": "out",
     "Brandon Miller": "out",
     "Dennis Schroder": "out",
@@ -122,6 +123,7 @@
    "status": {
     "Immanuel Quickley": "questionable",
     "Scottie Barnes": "questionable",
+    "Collin Murray-Boyles": "questionable",
     "Nate Bittle": "out",
     "Kawhi Leonard": "out"
    }
@@ -146,12 +148,13 @@
    "state": "expected",
    "starters": [
     "Kyrie Irving",
-    "Max Christie",
+    "Caleb Martin",
     "Cooper Flagg",
     "P.J. Washington",
     "Daniel Gafford"
    ],
    "status": {
+    "Morez Johnson": "questionable",
     "Tarik Biberovic": "out",
     "Sergio de Larrea": "out",
     "Dereck Lively": "out"
@@ -167,12 +170,12 @@
     "Nikola Jokic"
    ],
    "status": {
-    "Jamal Murray": "questionable",
-    "Christian Braun": "questionable",
-    "Cameron Johnson": "questionable",
-    "Aaron Gordon": "questionable",
-    "Nikola Jokic": "questionable",
-    "DeMar DeRozan": "questionable",
+    "Jamal Murray": "probable",
+    "Christian Braun": "probable",
+    "Cameron Johnson": "probable",
+    "Aaron Gordon": "probable",
+    "Nikola Jokic": "probable",
+    "DeMar DeRozan": "probable",
     "Julian Strawther": "out"
    }
   },
@@ -187,7 +190,8 @@
    ],
    "status": {
     "Steven Adams": "out",
-    "Clint Capela": "out"
+    "Clint Capela": "out",
+    "Oscar Tshiebwe": "out"
    }
   },
   "SA": {
@@ -196,13 +200,13 @@
     "De'Aaron Fox",
     "Stephon Castle",
     "Dylan Harper",
-    "Devin Vassell",
+    "Julian Champagnie",
     "Victor Wembanyama"
    ],
    "status": {
-    "Devin Vassell": "questionable",
     "Tobias Harris": "out",
-    "Jayden Quaintance": "out"
+    "Jayden Quaintance": "out",
+    "Devin Vassell": "out"
    }
   },
   "PHX": {
@@ -224,12 +228,14 @@
    "starters": [
     "Dejounte Murray",
     "Jeremiah Fears",
-    "Trey Murphy",
+    "Herbert Jones",
     "Zion Williamson",
     "Karlo Matkovic"
    ],
    "status": {
-    "Yves Missi": "out"
+    "Yves Missi": "out",
+    "Trey Murphy": "out",
+    "Trendon Watford": "out"
    }
   },
   "GS": {
@@ -243,6 +249,7 @@
    ],
    "status": {
     "Gui Santos": "probable",
+    "Gary Payton": "questionable",
     "Jimmy Butler": "out",
     "Moses Moody": "out",
     "Kristaps Porzingis": "out",
@@ -250,5 +257,5 @@
    }
   }
  },
- "at": "2026-11-09T05:00:01-05:00"
+ "at": "2026-11-09T16:00:01-05:00"
 }

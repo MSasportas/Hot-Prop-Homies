@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T14:40:01-05:00",
+ "at": "2026-11-09T16:00:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -399,6 +399,20 @@
    "team": "MIN",
    "date": "2026-10-05T20:53Z",
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
+  },
+  "4431675": {
+   "status": "out",
+   "name": "Trendon Watford",
+   "team": "NO",
+   "date": "2026-11-09T20:50Z",
+   "note": "Watford (ankle) is out for Monday's game versus Utah."
+  },
+  "4397688": {
+   "status": "out",
+   "name": "Trey Murphy III",
+   "team": "NO",
+   "date": "2026-11-09T20:49Z",
+   "note": "Murphy (knees) has been ruled out for Monday's game against Golden State."
   },
   "5061589": {
    "status": "out",
