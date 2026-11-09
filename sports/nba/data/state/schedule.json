@@ -315,11 +315,11 @@
     "home": "MIN",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:02 - 3rd",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 3rd",
     "score": {
-     "UTAH": "70",
-     "MIN": "76"
+     "UTAH": "78",
+     "MIN": "90"
     }
    },
    {
@@ -346,10 +346,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:33 - 2nd",
+    "detail": "1:55 - 2nd",
     "score": {
-     "BOS": "33",
-     "MIL": "29"
+     "BOS": "54",
+     "MIL": "41"
     }
    },
    {

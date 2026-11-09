@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T20:30:00-05:00",
+ "at": "2026-11-08T21:00:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -210,6 +210,13 @@
    "team": "DET",
    "date": "2026-11-07T21:59Z",
    "note": "Joe (hip) has been ruled out for Sunday's game against the Lakers."
+  },
+  "4897262": {
+   "status": "out",
+   "name": "Will Richard",
+   "team": "GS",
+   "date": "2026-11-09T01:52Z",
+   "note": "Richard is out for Monday's game against the Pelicans due to a left thumb UCL tear."
   },
   "4997536": {
    "status": "day-to-day",
