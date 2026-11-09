@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T18:20:01-05:00",
+ "at": "2026-11-09T18:30:00-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -114,11 +114,11 @@
    "note": "Tyson (ankle) is out for Monday's game against the Hornets."
   },
   "4873153": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Morez Johnson Jr.",
    "team": "DAL",
-   "date": "2026-11-09T18:50Z",
-   "note": "Johnson (leg) is questionable for Monday's game against Indiana."
+   "date": "2026-11-09T23:07Z",
+   "note": "Johnson (leg) has been ruled out for Monday's game against the Pacers."
   },
   "5279129": {
    "status": "out",
@@ -369,8 +369,8 @@
    "status": "day-to-day",
    "name": "Giannis Antetokounmpo",
    "team": "MIA",
-   "date": "2026-11-09T23:04Z",
-   "note": "Antetokounmpo posted 29 points (14-23 FG, 0-1 3Pt, 1-7 FT), 14 rebounds, three assists, two blocks and two steals over 34 minutes during Sunday's 114-108 victory over the Kings."
+   "date": "2026-11-09T23:05Z",
+   "note": "Antetokounmpo is probable for Tuesday's game against the Jazz due to a right wrist sprain."
   },
   "4395725": {
    "status": "day-to-day",
@@ -470,19 +470,19 @@
    "date": "2026-10-28T23:41Z",
    "note": "Williams (leg) underwent successful surgery Wednesday to \"address a fractured left fibula and reconstruction of ankle ligaments following a fracture and dislocation.\" He will be re-evaluated before th"
   },
-  "4065654": {
-   "status": "out",
-   "name": "Jonathan Isaac",
-   "team": "ORL",
-   "date": "2026-11-05T15:12Z",
-   "note": "Orlando recalled Isaac (knee) from the G League's Osceola Magic on Wednesday."
-  },
   "4432165": {
    "status": "out",
    "name": "Jalen Suggs",
    "team": "ORL",
-   "date": "2026-10-26T18:44Z",
-   "note": "Suggs has been diagnosed with a mild bone bruise in his right knee and will be re-evaluated in two weeks, Shams Charania of ESPN reports."
+   "date": "2026-11-09T23:11Z",
+   "note": "Suggs (knee) has been ruled out for Tuesday's game against the Kings."
+  },
+  "4065654": {
+   "status": "out",
+   "name": "Jonathan Isaac",
+   "team": "ORL",
+   "date": "2026-11-09T23:10Z",
+   "note": "Isaac (knee) is out for Tuesday's game against Sacramento."
   },
   "4432573": {
    "status": "out",
