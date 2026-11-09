@@ -142,7 +142,7 @@
    }
   },
   "NO": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Dejounte Murray",
     "Jeremiah Fears",
@@ -155,7 +155,7 @@
    }
   },
   "LAC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Darius Garland",
     "Kris Dunn",
@@ -172,23 +172,23 @@
    }
   },
   "MIA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Davion Mitchell",
     "Klay Thompson",
-    "Andrew Wiggins",
+    "Pelle Larsson",
     "Giannis Antetokounmpo",
     "Bam Adebayo"
    ],
    "status": {}
   },
   "SAC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Darius Acuff",
     "Zach LaVine",
     "De'Andre Hunter",
-    "Keegan Murray",
+    "Precious Achiuwa",
     "Dylan Cardwell"
    ],
    "status": {
@@ -198,5 +198,5 @@
    }
   }
  },
- "at": "2026-11-08T20:30:00-05:00"
+ "at": "2026-11-08T20:40:00-05:00"
 }

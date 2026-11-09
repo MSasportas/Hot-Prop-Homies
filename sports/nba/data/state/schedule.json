@@ -298,13 +298,13 @@
     "start": "2026-11-08T18:00:00-05:00",
     "away": "LAL",
     "home": "DET",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:06 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "LAL": "109",
-     "DET": "104"
+     "LAL": "121",
+     "DET": "116"
     }
    },
    {
@@ -316,10 +316,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:53 - 3rd",
+    "detail": "5:33 - 3rd",
     "score": {
-     "UTAH": "59",
-     "MIN": "59"
+     "UTAH": "63",
+     "MIN": "70"
     }
    },
    {
@@ -331,10 +331,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:33 - 2nd",
+    "detail": "2:40 - 2nd",
     "score": {
-     "BKN": "35",
-     "DAL": "56"
+     "BKN": "40",
+     "DAL": "61"
     }
    },
    {
@@ -345,10 +345,10 @@
     "home": "MIL",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:40 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
-     "BOS": "18",
+     "BOS": "25",
      "MIL": "27"
     }
    },
