@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T17:00:00-05:00",
+ "at": "2026-11-09T17:10:00-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -14,13 +14,6 @@
    "team": "ATL",
    "date": "2026-11-08T22:13Z",
    "note": "Gilbert (knee) has been ruled out for Monday's game against the Lakers."
-  },
-  "3146557": {
-   "status": "out",
-   "name": "Jock Landale",
-   "team": "ATL",
-   "date": "2026-11-08T22:11Z",
-   "note": "Landale (hip) is listed as questionable for Monday's game against the Lakers."
   },
   "4712863": {
    "status": "out",
@@ -404,8 +397,8 @@
    "status": "out",
    "name": "Zion Williamson",
    "team": "NO",
-   "date": "2026-11-09T21:48Z",
-   "note": "Williamson recorded 25 points (9-9 FG, 7-9 FT), four rebounds and two assists in 31 minutes during Sunday's 139-123 loss to the Clippers."
+   "date": "2026-11-09T21:49Z",
+   "note": "Williamson (rest) is out for Monday's game against the Warriors."
   },
   "4431675": {
    "status": "out",
@@ -513,10 +506,10 @@
    "note": "Team president Jeff Weltman said Monday that Nelson (ankle) remains about a month away from returning to the court after offseason surgery, per Philip Rossman-Reich of OrlandoMagicDaily.com."
   },
   "5105637": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Adem Bona",
    "team": "PHI",
-   "date": "2026-11-09T15:41Z",
+   "date": "2026-11-09T22:03Z",
    "note": "Bona (back) is out for Sunday's game in Chicago."
   },
   "4870562": {
