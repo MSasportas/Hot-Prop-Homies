@@ -165,7 +165,11 @@ class LabConfig(unittest.TestCase):
             for k in ("id", "title", "rule", "summary", "stats", "need"):
                 self.assertIn(k, t)
             self.assertNotIn("..", t["summary"])
-            sm = json.load(open(os.path.join(root, "data", t["summary"])))
+            if t.get("base") == "root":
+                self.assertRegex(t["summary"], r"^research/fwd/[\w.-]+\.json$")
+                sm = json.load(open(os.path.join(root, t["summary"])))
+            else:
+                sm = json.load(open(os.path.join(root, "data", t["summary"])))
             self.assertTrue(sm.get("active"), t["id"])
             self.assertIn(t["stats"], sm)
 

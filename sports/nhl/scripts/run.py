@@ -476,7 +476,7 @@ class Run:
             lineup_note = "Lineups not checked: Daily Faceoff did not answer."
         elif lineups_at:
             today_pages = sum(1 for t in ls["teams"].values() if (t.get("page") or {}).get("today"))
-            lineup_note = "%d of %d team line pages are dated today." % (today_pages, len(ls["teams"]))
+            lineup_note = "Lineups posted for %d of %d teams checked so far." % (today_pages, len(ls["teams"]))
 
         lineups_state = self.lineups_state(ls)
         window = timedelta(minutes=cfg["ops"]["lineup_window_min"])

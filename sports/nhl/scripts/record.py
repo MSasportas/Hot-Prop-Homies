@@ -264,7 +264,7 @@ def cuts(rows, need):
              lambda f: f["edge"] is not None),
             ("settled", "By how settled when shown", "A Locked pick can't be bet, so it is not a row", SETTLED_BANDS,
              lambda f: f["settled"] is not None),
-            ("price", "By price", "Hard Rock price at grading", PRICE_BANDS, lambda f: isinstance(f["price"], int))):
+            ("price", "By price", "Posted Hard Rock price", PRICE_BANDS, lambda f: isinstance(f["price"], int))):
         cut_rows = []
         for bk, bl, test in bands:
             sub = [e for e, f in rows if has(f) and test(f)]

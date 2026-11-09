@@ -536,6 +536,14 @@ def done_map(slate):
     return out
 
 
+def paused(cfg, slate):
+    """ops.paused {"from","until","back"} (ET slates, inclusive) -> that dict when slate is inside it, else None."""
+    p = (cfg.get("ops") or {}).get("paused")
+    if isinstance(p, dict) and p.get("from") and p.get("until") and p["from"] <= slate <= p["until"]:
+        return p
+    return None
+
+
 def run_reads(now, slate, games, games_left_month, cfg, matcher_for, started, team_of_name, dry_run=False):
     """The whole odds step. Returns a result dict for status.json and the page."""
     keys = load_keys()
@@ -544,6 +552,10 @@ def run_reads(now, slate, games, games_left_month, cfg, matcher_for, started, te
     day = load_day(slate)
     res = {"status": "ok", "note": "", "keys": pool.public(), "pool_left": None, "plan": day.get("plan"),
            "fetched_now": 0, "errors": client.errors, "no_keys": pool.count() == 0, "refused": False}
+    if paused(cfg, slate):
+        # Matt 2026-11-09: a paused day makes NO odds-feed call at all (not even the free events/key check).
+        res.update(status="skipped", note="paused until %s" % paused(cfg, slate)["back"], paused=True, next_read_at=None)
+        return _finish(day, pool, res, dry_run)
     if pool.count() == 0:
         res.update(status="skipped", note="no odds keys set")
         return _finish(day, pool, res, dry_run)

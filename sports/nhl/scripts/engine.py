@@ -222,9 +222,23 @@ class Inputs:
 
 
 # ---------------------------------------------------------------- the safety pause
+def picks_pause(cfg):
+    """Matt's dated pause (ops.picks_pause.until): no NEW picks while today (Eastern) is before that date. Shown picks are
+    still looked after. Returns {"text", "sub"} or None."""
+    pp = (cfg.get("ops") or {}).get("picks_pause") or {}
+    start, until = pp.get("from"), pp.get("until")
+    today = common.now().date().isoformat()
+    if until and (start is None or today >= start) and today < until:
+        return {"text": pp.get("text") or "Picks are paused.", "sub": pp.get("sub")}
+    return None
+
+
 def safety_pause(events, cfg):
-    """The automatic safeguard: when the Record's graded singles are down `ops.safety_pause.units` or more, no NEW picks are
-    added (shown picks are still looked after). Returns {"text", "sub"} or None."""
+    """No NEW picks when either (a) Matt's dated pause (ops.picks_pause) is on, or (b) the automatic safeguard: the Record's
+    graded singles are down `ops.safety_pause.units` or more. Shown picks are still looked after. Returns {"text", "sub"} or None."""
+    paused = picks_pause(cfg)
+    if paused:
+        return paused
     sp = (cfg.get("ops") or {}).get("safety_pause") or {}
     if not sp:
         return None

@@ -363,6 +363,9 @@ class Run:
         elif plan and plan.get("allowance") is not None and plan["allowance"] < cfg["ops"]["pool_low_allowance"] * cfg["ops"].get("cost_per_read", 1):
             banners.append({"level": "warn", "text": "Odds keys are running low: fewer price checks per game until they refill "
                                                      "on the 1st. More keys would fix it."})
+        if o.get("paused"):
+            banners.append({"level": "stop", "text": "Paused this week: no price checks and no picks until %s. "
+                                                     "Everything restarts by itself then." % odds.paused(cfg, self.slate)["back"]})
         if o.get("spare_paused") and not o.get("all_used_up") and not any("running low" in b["text"] for b in banners):
             banners.append({"level": "warn", "text": "The 11 AM price check is paused to save credits for the 90, 45 and 20 minute "
                                                      "checks. More odds keys bring it back."})
@@ -387,6 +390,9 @@ class Run:
                 empty = {"text": "No NBA games today", "why": "Nothing to check.", "next": None}
             elif all(engine.started(g, now) for g in self.games):
                 empty = {"text": "No open picks right now", "why": "Every game has started.", "next": None}
+            elif o.get("paused"):
+                empty = {"text": "No picks this week", "why": "Paused until %s. Price checks and picks restart then."
+                         % odds.paused(cfg, self.slate)["back"], "next": None}
             elif o.get("no_keys") or refused:
                 empty = {"text": "No picks yet today", "why": "No Hard Rock prices can be read until odds keys are added.",
                          "next": None}
@@ -481,8 +487,11 @@ class Run:
             upcoming = sorted((due[k], k) for k in planned if due[k] > now and tip - due[k] >= timedelta(minutes=cfg["reads"]["latest_min"]))
             if upcoming:
                 nxt, nxt_read = common.iso(upcoming[0][0]), upcoming[0][1]
+        paused = bool((getattr(self, "odds_res", None) or {}).get("paused"))
+        if paused:
+            nxt, nxt_read = None, None
         return {"checks": checks, "last_check_at": checks[-1]["at"] if checks else None, "final": bool(final),
-                "next_check_at": nxt, "next_check_read": nxt_read}
+                "next_check_at": nxt, "next_check_read": nxt_read, "paused": paused}
 
     def summ_paused(self):
         return bool(getattr(self, "summ", {}) and self.summ.get("paused"))
@@ -544,13 +553,17 @@ def main(argv):
     r.step("schedule", r.schedule)
     if not hasattr(r, "games"):
         r.games, r.days, r.games_left_month = [], {}, 0
-    r.step("rosters", r.rosters, soft=True)
+    paused = odds.paused(r.cfg, r.slate)       # Matt 2026-11-09: whole-system pause (rules.json ops.paused)
+    if not paused:
+        r.step("rosters", r.rosters, soft=True)
     if not hasattr(r, "people"):
         r.people = {}
-    r.step("injuries", r.injuries, soft=True)
+    if not paused:
+        r.step("injuries", r.injuries, soft=True)
     if not hasattr(r, "inj"):
         r.inj = {}
-    r.step("lineups", r.lineups, soft=True)
+    if not paused:
+        r.step("lineups", r.lineups, soft=True)
     if not hasattr(r, "lineup_state"):
         r.lineup_state = {}
     r.step("odds", r.odds_step)
@@ -561,7 +574,7 @@ def main(argv):
     r.step("publish", r.publish)
     if "publish" in r.steps and not r.steps["publish"]["ok"]:
         return 1
-    sent = notify.notify(getattr(r, "slate_doc", None))
+    sent = 0 if paused else notify.notify(getattr(r, "slate_doc", None))
     common.log("run done: %s; %d discord message(s)" % (", ".join("%s %s" % (k, "ok" if v.get("ok") else "FAILED")
                                                               for k, v in r.steps.items()), sent))
     hard = [k for k, v in r.steps.items() if not v.get("ok") and not v.get("soft")]
