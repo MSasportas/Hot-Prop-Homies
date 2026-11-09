@@ -88,7 +88,7 @@
    }
   },
   "BKN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Nolan Traore",
     "Michael Porter",
@@ -102,10 +102,10 @@
    }
   },
   "DAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Kyrie Irving",
-    "Max Christie",
+    "Caleb Martin",
     "Cooper Flagg",
     "P.J. Washington",
     "Daniel Gafford"
@@ -199,5 +199,5 @@
    }
   }
  },
- "at": "2026-11-08T19:00:01-05:00"
+ "at": "2026-11-08T19:10:00-05:00"
 }
