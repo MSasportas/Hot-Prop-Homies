@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-08",
- "generated_at": "2026-11-08T20:50:20-05:00",
+ "generated_at": "2026-11-08T21:00:00-05:00",
  "games": [
   {
    "game_id": 2026020277,
@@ -29,20 +29,20 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "01:53",
-   "in_intermission": false,
+   "clock": "09:11",
+   "in_intermission": true,
    "running": false,
    "away": {
     "abbrev": "NJD",
     "score": 2,
-    "sog": 18
+    "sog": 20
    },
    "home": {
     "abbrev": "TOR",
     "score": 0,
     "sog": 13
    },
-   "updated_at": "2026-11-08T20:50:20-05:00"
+   "updated_at": "2026-11-08T21:00:00-05:00"
   }
  ],
  "picks": {
