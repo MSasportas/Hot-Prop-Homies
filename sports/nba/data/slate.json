@@ -1,16 +1,11 @@
 {
  "slate": "2026-11-09",
  "valid_until": "2026-11-10T05:00:00-05:00",
- "banners": [
-  {
-   "level": "stop",
-   "text": "Paused this week: no price checks and no picks until Mon Nov 16. Everything restarts by itself then."
-  }
- ],
+ "banners": [],
  "status": {
   "odds": {
    "keys": 10,
-   "pool_left": 3796,
+   "pool_left": 3764,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -23,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": null,
-  "last_read_at": null,
+  "next_read_at": "2026-11-09T17:30:00-05:00",
+  "last_read_at": "2026-11-09T11:10:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-09T11:00:00-05:00"
+   "at": "2026-11-09T11:10:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -35,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": null,
+    "at": "2026-11-09T05:00:01-05:00",
     "confirmed": []
    },
    "grade": true
@@ -50,20 +45,20 @@
    "state": "pre",
    "detail": "11/9 - 7:00 PM EST",
    "lineups": {
-    "away": "none",
-    "home": "none"
+    "away": "expected",
+    "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-09T11:10:00-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
    "final": false,
-   "next_check_at": null,
-   "next_check_read": null,
-   "paused": true,
+   "next_check_at": "2026-11-09T17:30:00-05:00",
+   "next_check_read": "B",
+   "paused": false,
    "injury_clear": {
-    "away": null,
-    "home": null
+    "away": false,
+    "home": true
    }
   },
   {
@@ -74,20 +69,20 @@
    "state": "pre",
    "detail": "11/9 - 7:00 PM EST",
    "lineups": {
-    "away": "none",
-    "home": "none"
+    "away": "expected",
+    "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-09T11:10:00-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
    "final": false,
-   "next_check_at": null,
-   "next_check_read": null,
-   "paused": true,
+   "next_check_at": "2026-11-09T17:30:00-05:00",
+   "next_check_read": "B",
+   "paused": false,
    "injury_clear": {
-    "away": null,
-    "home": null
+    "away": false,
+    "home": false
    }
   },
   {
@@ -98,20 +93,20 @@
    "state": "pre",
    "detail": "11/9 - 7:00 PM EST",
    "lineups": {
-    "away": "none",
-    "home": "none"
+    "away": "expected",
+    "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-09T11:10:00-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
    "final": false,
-   "next_check_at": null,
-   "next_check_read": null,
-   "paused": true,
+   "next_check_at": "2026-11-09T17:30:00-05:00",
+   "next_check_read": "B",
+   "paused": false,
    "injury_clear": {
-    "away": null,
-    "home": null
+    "away": false,
+    "home": true
    }
   },
   {
@@ -122,20 +117,20 @@
    "state": "pre",
    "detail": "11/9 - 7:30 PM EST",
    "lineups": {
-    "away": "none",
-    "home": "none"
+    "away": "expected",
+    "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-09T11:10:00-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
    "final": false,
-   "next_check_at": null,
-   "next_check_read": null,
-   "paused": true,
+   "next_check_at": "2026-11-09T18:00:00-05:00",
+   "next_check_read": "B",
+   "paused": false,
    "injury_clear": {
-    "away": null,
-    "home": null
+    "away": true,
+    "home": false
    }
   },
   {
@@ -146,20 +141,20 @@
    "state": "pre",
    "detail": "11/9 - 8:00 PM EST",
    "lineups": {
-    "away": "none",
-    "home": "none"
+    "away": "expected",
+    "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-09T11:10:00-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
    "final": false,
-   "next_check_at": null,
-   "next_check_read": null,
-   "paused": true,
+   "next_check_at": "2026-11-09T18:30:00-05:00",
+   "next_check_read": "B",
+   "paused": false,
    "injury_clear": {
-    "away": null,
-    "home": null
+    "away": true,
+    "home": true
    }
   },
   {
@@ -170,20 +165,20 @@
    "state": "pre",
    "detail": "11/9 - 8:30 PM EST",
    "lineups": {
-    "away": "none",
-    "home": "none"
+    "away": "expected",
+    "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-09T11:10:00-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
    "final": false,
-   "next_check_at": null,
-   "next_check_read": null,
-   "paused": true,
+   "next_check_at": "2026-11-09T19:00:00-05:00",
+   "next_check_read": "B",
+   "paused": false,
    "injury_clear": {
-    "away": null,
-    "home": null
+    "away": false,
+    "home": true
    }
   },
   {
@@ -194,20 +189,20 @@
    "state": "pre",
    "detail": "11/9 - 9:00 PM EST",
    "lineups": {
-    "away": "none",
-    "home": "none"
+    "away": "expected",
+    "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-09T11:10:00-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
    "final": false,
-   "next_check_at": null,
-   "next_check_read": null,
-   "paused": true,
+   "next_check_at": "2026-11-09T19:30:00-05:00",
+   "next_check_read": "B",
+   "paused": false,
    "injury_clear": {
-    "away": null,
-    "home": null
+    "away": false,
+    "home": true
    }
   },
   {
@@ -218,31 +213,31 @@
    "state": "pre",
    "detail": "11/9 - 10:00 PM EST",
    "lineups": {
-    "away": "none",
-    "home": "none"
+    "away": "expected",
+    "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-09T11:10:00-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
    "final": false,
-   "next_check_at": null,
-   "next_check_read": null,
-   "paused": true,
+   "next_check_at": "2026-11-09T20:30:00-05:00",
+   "next_check_read": "B",
+   "paused": false,
    "injury_clear": {
-    "away": null,
-    "home": null
+    "away": true,
+    "home": true
    }
   }
  ],
  "picks": [],
  "empty": {
-  "text": "No picks this week",
-  "why": "Paused until Mon Nov 16. Price checks and picks restart then.",
-  "next": null
+  "text": "No picks yet today",
+  "why": "672 lines read. Pinnacle hasn't moved alone on any of them yet.",
+  "next": "2026-11-09T17:30:00-05:00"
  },
  "counts": {
-  "lines_read": 0,
+  "lines_read": 672,
   "passing": 0,
   "games": 8
  },
@@ -252,6 +247,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-09T11:00:00-05:00",
- "status_at": "2026-11-09T11:00:00-05:00"
+ "generated_at": "2026-11-09T11:10:00-05:00",
+ "status_at": "2026-11-09T11:10:00-05:00"
 }
