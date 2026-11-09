@@ -343,13 +343,13 @@
     "start": "2026-11-08T20:00:00-05:00",
     "away": "BOS",
     "home": "MIL",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:19 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "BOS": "111",
-     "MIL": "91"
+     "BOS": "117",
+     "MIL": "97"
     }
    },
    {
@@ -360,11 +360,11 @@
     "home": "LAC",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:18 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "NO": "51",
-     "LAC": "59"
+     "NO": "60",
+     "LAC": "67"
     }
    },
    {
@@ -375,10 +375,10 @@
     "home": "SAC",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:04 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "MIA": "66",
+     "MIA": "68",
      "SAC": "59"
     }
    }
