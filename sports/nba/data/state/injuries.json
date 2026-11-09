@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T12:50:00-05:00",
+ "at": "2026-11-09T13:20:00-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -330,19 +330,19 @@
    "date": "2026-08-26T20:04Z",
    "note": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic."
   },
-  "3945274": {
-   "status": "day-to-day",
-   "name": "Luka Doncic",
-   "team": "LAL",
-   "date": "2026-11-09T15:22Z",
-   "note": "Doncic has been ruled out for Sunday's game at Detroit due to lower-back tightness, Trevor Lane of LakersNation.com reports."
-  },
   "4397014": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Quentin Grimes",
    "team": "LAL",
-   "date": "2026-11-09T02:01Z",
-   "note": "Grimes (finger) did not return to Sunday's game against the Pistons."
+   "date": "2026-11-09T18:13Z",
+   "note": "Grimes (finger) is out for Monday's game against Atlanta, per Dave McMenamin of ESPN.com."
+  },
+  "4066457": {
+   "status": "day-to-day",
+   "name": "Austin Reaves",
+   "team": "LAL",
+   "date": "2026-11-09T18:09Z",
+   "note": "Reaves is questionable for Monday's game against the Hawks due to an illness, per Dave McMenamin of ESPN.com."
   },
   "4431785": {
    "status": "out",
