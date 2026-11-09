@@ -170,7 +170,7 @@
    {
     "key": "price",
     "label": "By price",
-    "note": "Hard Rock price at grading",
+    "note": "Posted Hard Rock price",
     "rows": [
      {
       "key": "fav_big",
