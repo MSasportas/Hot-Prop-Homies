@@ -2,7 +2,7 @@
  "slate": "2026-11-09",
  "teams": {
   "LAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Luka Doncic",
     "Ziaire Williams",
@@ -16,7 +16,7 @@
    }
   },
   "ATL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Kingston Flemings",
     "Nickeil Alexander-Walker",
@@ -32,7 +32,7 @@
    }
   },
   "WSH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Trae Young",
     "Kyshawn George",
@@ -78,7 +78,7 @@
    }
   },
   "CHA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Coby White",
     "Grayson Allen",
@@ -255,5 +255,5 @@
    }
   }
  },
- "at": "2026-11-09T18:30:00-05:00"
+ "at": "2026-11-09T18:40:00-05:00"
 }

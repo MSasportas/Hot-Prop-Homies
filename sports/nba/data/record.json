@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-09T18:20:01-05:00",
+ "generated_at": "2026-11-09T18:40:00-05:00",
  "summary": {
   "headline": {
    "w": 31,
@@ -832,7 +832,11 @@
      "result": null,
      "actual": null,
      "units": null,
-     "pulled": null,
+     "pulled": {
+      "at": "2026-11-09T18:40:00-05:00",
+      "reason": "Hard Rock took the line down",
+      "code": "line_gone"
+     },
      "legs": [],
      "window": "90 \u2192 45 min",
      "book": "hardrock",
