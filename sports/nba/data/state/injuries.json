@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T19:30:01-05:00",
+ "at": "2026-11-08T19:40:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -537,8 +537,15 @@
    "status": "out",
    "name": "Tobias Harris",
    "team": "SA",
-   "date": "2026-10-30T21:44Z",
-   "note": "Harris (calf) is listed as out for Saturday's game against Minnesota."
+   "date": "2026-11-09T00:27Z",
+   "note": "Harris (calf) is listed as out for Monday's game against Phoenix."
+  },
+  "4395630": {
+   "status": "day-to-day",
+   "name": "Devin Vassell",
+   "team": "SA",
+   "date": "2026-11-09T00:20Z",
+   "note": "Vassell is questionable for Monday's game against the Suns due to left adductor tightness."
   },
   "5101845": {
    "status": "out",

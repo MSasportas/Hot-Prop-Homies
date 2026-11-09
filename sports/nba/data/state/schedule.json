@@ -301,10 +301,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:17 - 3rd",
+    "detail": "4:55 - 3rd",
     "score": {
-     "LAL": "64",
-     "DET": "50"
+     "LAL": "80",
+     "DET": "66"
     }
    },
    {
@@ -316,10 +316,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:15 - 1st",
+    "detail": "10:46 - 2nd",
     "score": {
-     "UTAH": "20",
-     "MIN": "23"
+     "UTAH": "27",
+     "MIN": "30"
     }
    },
    {
