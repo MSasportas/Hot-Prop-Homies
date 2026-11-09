@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-09",
- "generated_at": "2026-11-09T11:00:01-05:00",
- "status_at": "2026-11-09T11:00:01-05:00",
+ "generated_at": "2026-11-09T11:10:01-05:00",
+ "status_at": "2026-11-09T11:10:01-05:00",
  "valid_until": "2026-11-10T05:00:00-05:00",
  "status": {
   "prices_state": "not_yet",
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-09T11:00:01-05:00",
+   "at": "2026-11-09T11:10:01-05:00",
    "failed_step": null
   },
   "pool": {
@@ -31,16 +31,11 @@
   "flag_reads": 0,
   "tier": 4
  },
- "banners": [
-  {
-   "level": "warn",
-   "text": "Picks are paused for the week, on Matt's order."
-  }
- ],
+ "banners": [],
  "empty": {
-  "code": "safety_pause",
-  "text": "Picks are paused for the week, on Matt's order.",
-  "sub": "Nothing new is added until Monday Nov 16. Picks already shown are still looked after and graded."
+  "code": "not_yet",
+  "text": "No picks yet today",
+  "sub": "First read is due at 1:00 PM."
  },
  "games": [
   {
