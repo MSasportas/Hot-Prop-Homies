@@ -228,14 +228,15 @@
    "starters": [
     "Dejounte Murray",
     "Jeremiah Fears",
+    "Saddiq Bey",
     "Herbert Jones",
-    "Zion Williamson",
     "Karlo Matkovic"
    ],
    "status": {
     "Yves Missi": "out",
     "Trey Murphy": "out",
-    "Trendon Watford": "out"
+    "Trendon Watford": "out",
+    "Zion Williamson": "out"
    }
   },
   "GS": {
@@ -257,5 +258,5 @@
    }
   }
  },
- "at": "2026-11-09T16:40:02-05:00"
+ "at": "2026-11-09T16:50:01-05:00"
 }
