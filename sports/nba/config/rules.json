@@ -118,8 +118,6 @@
   "event_match_hours": 6,
   "pool_low_allowance": 2,
   "cost_per_read": 4,
-  "paused": {"from": "2026-11-09", "until": "2026-11-15", "back": "Mon Nov 16"},
-  "_paused": "Whole-system pause (Matt 2026-11-09 8:30 AM: pause the whole system this week). For ET slates from..until: NO odds-feed call (not even the free key check), no rosters/injuries/lineups reads, no picks, no Discord. Still runs, free and silent: the ESPN schedule + box scores into the stats store and grading (nothing open), so the restart has no data hole. Resumes by itself on the slate after until. Set to null to clear.",
   "injuries_every_min": 10,
   "lineups_window_min": 180
  },

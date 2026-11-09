@@ -42,13 +42,6 @@
    "text": "New picks are stopped: the Record is down 10 units or more.",
    "sub": "The team has to review before picks resume. Picks already shown are unaffected."
   },
-  "picks_pause": {
-   "_about": "Matt's order (2026-11-09): no NEW picks until `until` (Eastern date, the first day picks may come back). Shown picks are still pulled, locked and graded; the Record, the page and the timer keep running. Remove this block or set until to resume early.",
-   "from": "2026-11-09",
-   "until": "2026-11-16",
-   "text": "Picks are paused for the week, on Matt's order.",
-   "sub": "Nothing new is added until Monday Nov 16. Picks already shown are still looked after and graded."
-  },
   "gap_guard": {
    "_about": "THE live rule: Gap + Guard (TEAM.md section 4). Every pick on the page and in the Record comes from this block and nothing else. Offsets are FROZEN (refit once from the 2025-26 Hard Rock shots lines at -45 min, model from prior games only; do not change without the Data Scientist naming the sample and the Sharp logging it in section 8). All EV% = fair_prob x Hard Rock decimal payout - 1; every threshold is inclusive.",
    "active": true,
