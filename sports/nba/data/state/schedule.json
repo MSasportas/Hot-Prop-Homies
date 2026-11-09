@@ -316,10 +316,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:12 - 4th",
+    "detail": "6:30 - 4th",
     "score": {
-     "UTAH": "78",
-     "MIN": "93"
+     "UTAH": "84",
+     "MIN": "98"
     }
    },
    {
@@ -331,10 +331,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:11 - 3rd",
+    "detail": "4:46 - 3rd",
     "score": {
-     "BKN": "60",
-     "DAL": "83"
+     "BKN": "62",
+     "DAL": "90"
     }
    },
    {
@@ -358,13 +358,13 @@
     "start": "2026-11-08T21:00:00-05:00",
     "away": "NO",
     "home": "LAC",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/8 - 9:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:07 - 1st",
     "score": {
-     "NO": "0",
-     "LAC": "0"
+     "NO": "11",
+     "LAC": "12"
     }
    },
    {
@@ -373,13 +373,13 @@
     "start": "2026-11-08T21:00:00-05:00",
     "away": "MIA",
     "home": "SAC",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/8 - 9:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:50 - 1st",
     "score": {
-     "MIA": "0",
-     "SAC": "0"
+     "MIA": "10",
+     "SAC": "12"
     }
    }
   ]
