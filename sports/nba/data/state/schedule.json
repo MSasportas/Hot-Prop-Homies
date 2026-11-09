@@ -360,11 +360,11 @@
     "home": "LAC",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:24 - 3rd",
     "score": {
-     "NO": "60",
-     "LAC": "67"
+     "NO": "71",
+     "LAC": "75"
     }
    },
    {
@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:40 - 3rd",
+    "detail": "8:04 - 3rd",
     "score": {
-     "MIA": "72",
-     "SAC": "59"
+     "MIA": "77",
+     "SAC": "63"
     }
    }
   ]
