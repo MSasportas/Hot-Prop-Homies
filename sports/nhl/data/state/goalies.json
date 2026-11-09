@@ -7,7 +7,7 @@
   },
   "NYR": {
    "name": "Dylan Garand",
-   "status": "expected"
+   "status": "confirmed"
   },
   "VAN": {
    "name": "Leevi Merilainen",
@@ -26,5 +26,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-09T12:30:01-05:00"
+ "checked_at": "2026-11-09T12:40:01-05:00"
 }
