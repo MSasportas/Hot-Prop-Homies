@@ -346,10 +346,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:55 - 2nd",
+    "detail": "1:19 - 2nd",
     "score": {
      "BOS": "54",
-     "MIL": "41"
+     "MIL": "43"
     }
    },
    {
