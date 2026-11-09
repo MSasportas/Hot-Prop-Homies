@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T17:10:00-05:00",
+ "at": "2026-11-09T17:30:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -51,11 +51,11 @@
    "note": "The Nets exercised Demin's third-year team option for the 2027-28 season, Sharif Phillips-Keaton of USA Today reports Thursday."
   },
   "4433249": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Moussa Diabate",
    "team": "CHA",
-   "date": "2026-11-09T17:32Z",
-   "note": "Diabate (quadriceps) is doubtful for Monday's game against the Cavaliers."
+   "date": "2026-11-09T22:16Z",
+   "note": "Diabate (quadriceps) has been downgraded to out for Monday's game against Cleveland."
   },
   "4066218": {
    "status": "out",
@@ -425,8 +425,8 @@
    "status": "day-to-day",
    "name": "Josh Hart",
    "team": "NY",
-   "date": "2026-11-08T16:01Z",
-   "note": "Hart is out for Saturday's game against the Cavaliers due to right ankle soreness."
+   "date": "2026-11-09T22:04Z",
+   "note": "Hart is questionable for Tuesday's game against the Bucks due to right ankle soreness."
   },
   "4432823": {
    "status": "out",
@@ -510,7 +510,7 @@
    "name": "Adem Bona",
    "team": "PHI",
    "date": "2026-11-09T22:03Z",
-   "note": "Bona (back) is out for Sunday's game in Chicago."
+   "note": "Bona (back) is out for Tuesday's game against the Celtics."
   },
   "4870562": {
    "status": "out",
