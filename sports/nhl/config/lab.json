@@ -1,6 +1,6 @@
 {
- "note": "The page's Lab tab. Curated by the team: list ONLY ideas that passed their historical test and are now tracked on paper. Never a failed or dropped idea, never sides/totals. Each entry's numbers come live from its summary file (path relative to data/). Remove an entry when its track stops or goes live.",
- "updated": "2026-11-04",
+ "note": "The page's Lab tab. Curated by the team: ideas tracked on paper...",
+ "updated": "2026-11-09",
  "tests": [
   {
    "id": "points",
@@ -10,6 +10,16 @@
    "stats": "nov2",
    "need": 150,
    "gate": "Live only at 150 graded, units up and beating the close, and when Matt says go."
+  },
+  {
+   "id": "q24",
+   "title": "1 PM price",
+   "rule": "Hard Rock 1%+ better than the other books' middle price at the 1 PM price read, graded at the 1 PM price. Counting from Nov 9.",
+   "summary": "research/fwd/q24.json",
+   "base": "root",
+   "stats": "fwd",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit. Even then it comes to Matt: 1 PM picks are off until he says go. Updated each morning."
   }
  ]
 }

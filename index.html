@@ -1531,12 +1531,13 @@ function renderLiveAll() {
     var r = null;
     arr(S.allResults).forEach(function (x) { if (x.sport === sp) r = x; });
     if (!r || !r.slate.ok) return;
-    var label = sp === 'nba' ? 'NBA' : 'NHL';
-    app.appendChild(h('div', { class: 'sport-sec-h' }, h('span', { class: 'sp-badge ' + sp, text: label })));
     var savedSport = S.sport, savedSlate = S.slate, savedRecord = S.record;
     S.sport = sp; S.slate = r.slate.v; S.record = r.record.ok ? r.record.v : null;
-    var list = h('div', { class: 'lvlist' });
     var d = split();
+    if (!d.started.length) { S.sport = savedSport; S.slate = savedSlate; S.record = savedRecord; return; }
+    var label = sp === 'nba' ? 'NBA' : 'NHL';
+    app.appendChild(h('div', { class: 'sport-sec-h' }, h('span', { class: 'sp-badge ' + sp, text: label })));
+    var list = h('div', { class: 'lvlist' });
     d.started.forEach(function (p) { list.appendChild(liveRow(p, d)); });
     app.appendChild(list);
     S.sport = savedSport; S.slate = savedSlate; S.record = savedRecord;
@@ -1996,6 +1997,7 @@ function buildRail() {
     rail.btns[r[0]] = b; main.appendChild(b);
   });
   rail.dot = h('span', { class: 'dot', 'aria-hidden': 'true' }); rail.btns.info.appendChild(rail.dot);
+  rail.liveDot = h('span', { class: 'dot', 'aria-hidden': 'true' }); rail.liveDot.hidden = true; rail.btns.live.appendChild(rail.liveDot);
   rail.el = h('div', { class: 'rail' }, main);
   rail.el.addEventListener('keydown', function (e) {
     if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp') return;
@@ -2026,6 +2028,24 @@ function renderTabs() {
   });
   var lv = freshLevel();
   if (rail.dot) { rail.dot.className = 'dot' + (lv ? ' ' + lv : ''); rail.dot.hidden = !lv || lv === 'ok'; }
+  if (rail.liveDot) {
+    var hasLive = false;
+    if (S.loaded) {
+      if (S.allResults) {
+        arr(S.allResults).forEach(function (r) {
+          if (!r.slate.ok) return;
+          var sv = S.sport, sl = S.slate, sr = S.record;
+          S.sport = r.sport; S.slate = r.slate.v; S.record = r.record.ok ? r.record.v : null;
+          if (split().started.length) hasLive = true;
+          S.sport = sv; S.slate = sl; S.record = sr;
+        });
+      } else if (S.slate) {
+        hasLive = split().started.length > 0;
+      }
+    }
+    rail.liveDot.className = 'dot ok';
+    rail.liveDot.hidden = !hasLive;
+  }
   placeInd(false);
 }
 var HASH_VIEWS = { '#live': 'live', '#games': 'games', '#record': 'record', '#lab': 'lab', '#backstage': 'lab', '#info': 'info', '#status': 'info' };
