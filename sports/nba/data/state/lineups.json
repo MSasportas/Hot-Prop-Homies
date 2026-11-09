@@ -113,18 +113,18 @@
   "TOR": {
    "state": "expected",
    "starters": [
-    "Immanuel Quickley",
+    "Jamal Shead",
     "RJ Barrett",
     "Ja'Kobe Walter",
-    "Scottie Barnes",
+    "Jamison Battle",
     "Jakob Poeltl"
    ],
    "status": {
-    "Immanuel Quickley": "questionable",
     "Scottie Barnes": "out",
-    "Collin Murray-Boyles": "questionable",
     "Nate Bittle": "out",
-    "Kawhi Leonard": "out"
+    "Kawhi Leonard": "out",
+    "Collin Murray-Boyles": "out",
+    "Immanuel Quickley": "out"
    }
   },
   "IND": {
@@ -257,5 +257,5 @@
    }
   }
  },
- "at": "2026-11-09T17:50:25-05:00"
+ "at": "2026-11-09T18:00:01-05:00"
 }
