@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:38 - 3rd",
+    "detail": "35.3 - 3rd",
     "score": {
-     "NO": "86",
-     "LAC": "83"
+     "NO": "95",
+     "LAC": "102"
     }
    },
    {
@@ -375,11 +375,11 @@
     "home": "SAC",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:28 - 3rd",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 3rd",
     "score": {
-     "MIA": "88",
-     "SAC": "76"
+     "MIA": "91",
+     "SAC": "81"
     }
    }
   ]
