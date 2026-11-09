@@ -5,14 +5,14 @@
    "state": "expected",
    "starters": [
     "Luka Doncic",
-    "Austin Reaves",
+    "Ziaire Williams",
     "Matisse Thybulle",
     "Jake LaRavia",
     "Walker Kessler"
    ],
    "status": {
-    "Austin Reaves": "questionable",
-    "Quentin Grimes": "out"
+    "Quentin Grimes": "out",
+    "Austin Reaves": "out"
    }
   },
   "ATL": {
@@ -257,5 +257,5 @@
    }
   }
  },
- "at": "2026-11-09T17:30:01-05:00"
+ "at": "2026-11-09T17:40:00-05:00"
 }

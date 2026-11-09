@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T17:30:01-05:00",
+ "at": "2026-11-09T17:40:00-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -337,19 +337,19 @@
    "date": "2026-08-26T20:04Z",
    "note": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic."
   },
+  "4066457": {
+   "status": "out",
+   "name": "Austin Reaves",
+   "team": "LAL",
+   "date": "2026-11-09T22:32Z",
+   "note": "Reaves is questionable for Monday's game against the Hawks due to an illness, per Dave McMenamin of ESPN.com."
+  },
   "4397014": {
    "status": "out",
    "name": "Quentin Grimes",
    "team": "LAL",
    "date": "2026-11-09T18:13Z",
    "note": "Grimes (finger) is out for Monday's game against Atlanta, per Dave McMenamin of ESPN.com."
-  },
-  "4066457": {
-   "status": "day-to-day",
-   "name": "Austin Reaves",
-   "team": "LAL",
-   "date": "2026-11-09T18:09Z",
-   "note": "Reaves is questionable for Monday's game against the Hawks due to an illness, per Dave McMenamin of ESPN.com."
   },
   "4431785": {
    "status": "out",
@@ -371,6 +371,13 @@
    "team": "MEM",
    "date": "2026-11-07T17:24Z",
    "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
+  },
+  "4395725": {
+   "status": "day-to-day",
+   "name": "Tyler Herro",
+   "team": "MIL",
+   "date": "2026-11-09T22:21Z",
+   "note": "Herro (contusion) is listed as questionable for Tuesday's game against the Knicks."
   },
   "4277843": {
    "status": "day-to-day",
