@@ -1,4 +1,4 @@
-# NBA Sharp Director
+# Dwyane Wade — NBA Sharp Director
 
 **KbWen character:** Developer  
 **Reports to:** CEO  

@@ -14,8 +14,8 @@ Both run via GitHub Actions, pulling odds, generating picks, and posting to Disc
 
 | Agent | File | KbWen | What they own |
 |---|---|---|---|
-| NHL Sharp Director | `agents/nhl-sharp.md` | Architect | NHL picks, rules, edge |
-| NBA Sharp Director | `agents/nba-sharp.md` | Developer | NBA picks, rules, edge |
+| Matt Tkachuk (NHL Sharp) | `agents/nhl-sharp.md` | Architect | NHL picks, rules, edge |
+| Dwyane Wade (NBA Sharp) | `agents/nba-sharp.md` | Developer | NBA picks, rules, edge |
 | Data Scientist | `agents/data-scientist.md` | DevOps | Both records, model, samples |
 | QA Team | `agents/qa.md` | QA | Pre-ship sign-off, 380px |
 | Researcher | `agents/researcher.md` | Researcher | Edge discovery, research/ only |

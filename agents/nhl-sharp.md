@@ -1,4 +1,4 @@
-# NHL Sharp Director
+# Matt Tkachuk — NHL Sharp Director
 
 **KbWen character:** Architect  
 **Reports to:** CEO  
