@@ -301,7 +301,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:24 - 4th",
+    "detail": "6:04 - 4th",
     "score": {
      "LAL": "95",
      "DET": "94"
@@ -331,10 +331,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5.8 - 1st",
+    "detail": "0.0 - 1st",
     "score": {
-     "BKN": "25",
-     "DAL": "30"
+     "BKN": "26",
+     "DAL": "33"
     }
    },
    {
