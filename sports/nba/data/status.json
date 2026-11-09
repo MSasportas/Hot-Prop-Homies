@@ -1,11 +1,11 @@
 {
- "finished_at": "2026-11-09T00:20:01-05:00",
+ "finished_at": "2026-11-09T00:20:24-05:00",
  "slate": "2026-11-08",
  "ok": true,
  "steps": {
   "schedule": {
    "ok": true,
-   "sec": 0.1
+   "sec": 0.3
   },
   "rosters": {
    "ok": true,
@@ -13,7 +13,7 @@
   },
   "injuries": {
    "ok": true,
-   "sec": 0.1
+   "sec": 0.3
   },
   "lineups": {
    "ok": true,
@@ -21,11 +21,11 @@
   },
   "odds": {
    "ok": true,
-   "sec": 0.1
+   "sec": 1.5
   },
   "engine": {
    "ok": true,
-   "sec": 1.1
+   "sec": 1.2
   },
   "grade": {
    "ok": true,
@@ -45,7 +45,7 @@
   },
   {
    "n": 3,
-   "left": 300,
+   "left": 296,
    "status": "ok"
   },
   {
@@ -62,25 +62,43 @@
    "n": 6,
    "left": 500,
    "status": "ok"
+  },
+  {
+   "n": 7,
+   "left": 500,
+   "status": "ok"
+  },
+  {
+   "n": 8,
+   "left": 500,
+   "status": "ok"
+  },
+  {
+   "n": 9,
+   "left": 500,
+   "status": "ok"
+  },
+  {
+   "n": 10,
+   "left": 500,
+   "status": "ok"
   }
  ],
- "pool_left": 1800,
+ "pool_left": 3796,
  "plan": {
-  "allowance": 12.122,
+  "allowance": 23.732,
   "reads": [
    "A",
    "B",
    "C",
    "D"
   ],
-  "spare": [
-   "A"
-  ],
-  "pool_at_plan": 1988,
+  "spare": [],
+  "pool_at_plan": 3892,
   "games_left": 164,
   "games_today": 7,
-  "key_count": 6,
-  "made_at": "2026-11-08T05:00:01-05:00",
+  "key_count": 10,
+  "made_at": "2026-11-09T00:20:24-05:00",
   "cost_per_read": 4
  },
  "spent_today": 96,
@@ -98,7 +116,7 @@
    "failed": 0
   },
   "odds": {
-   "ok": 0,
+   "ok": 10,
    "failed": 0
   }
  },
@@ -106,10 +124,10 @@
  "unmatched": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "42562171157",
-  "iteration": 6,
-  "chain_link": 114,
+  "run_id": "42566698350",
+  "iteration": 1,
+  "chain_link": 115,
   "chain_started_at": "2026-11-05T14:14:50-05:00",
-  "run_started_at": "2026-11-08T23:30:18-05:00"
+  "run_started_at": "2026-11-09T00:20:17-05:00"
  }
 }

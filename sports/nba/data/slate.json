@@ -9,13 +9,13 @@
  ],
  "status": {
   "odds": {
-   "keys": 6,
-   "pool_left": 1800,
+   "keys": 10,
+   "pool_left": 3796,
    "low": true,
    "refused": false,
    "no_keys": false,
    "days_left": 23,
-   "allowance": 12.122,
+   "allowance": 23.732,
    "reads": [
     "A",
     "B",
@@ -27,7 +27,7 @@
   "last_read_at": "2026-11-08T20:40:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-09T00:20:01-05:00"
+   "at": "2026-11-09T00:20:24-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -448,6 +448,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-08T23:40:00-05:00",
- "status_at": "2026-11-09T00:20:01-05:00"
+ "generated_at": "2026-11-09T00:20:24-05:00",
+ "status_at": "2026-11-09T00:20:24-05:00"
 }
