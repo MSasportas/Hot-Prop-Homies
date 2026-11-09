@@ -358,13 +358,13 @@
     "start": "2026-11-08T21:00:00-05:00",
     "away": "NO",
     "home": "LAC",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:18 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "NO": "118",
-     "LAC": "137"
+     "NO": "123",
+     "LAC": "139"
     }
    },
    {
@@ -373,10 +373,10 @@
     "start": "2026-11-08T21:00:00-05:00",
     "away": "MIA",
     "home": "SAC",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "13.9 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
      "MIA": "114",
      "SAC": "108"
