@@ -41,10 +41,9 @@
     "Alex Sarr"
    ],
    "status": {
-    "Anthony Davis": "questionable",
-    "Bilal Coulibaly": "questionable",
     "Reece Beekman": "out",
     "Justin Champagnie": "out",
+    "Bilal Coulibaly": "out",
     "Tristan Vukcevic": "out",
     "Jamir Watkins": "out"
    }
@@ -153,9 +152,9 @@
     "Daniel Gafford"
    ],
    "status": {
-    "Morez Johnson": "questionable",
     "Tarik Biberovic": "out",
     "Sergio de Larrea": "out",
+    "Morez Johnson": "out",
     "Dereck Lively": "out"
    }
   },
@@ -257,5 +256,5 @@
    }
   }
  },
- "at": "2026-11-09T18:00:01-05:00"
+ "at": "2026-11-09T18:10:01-05:00"
 }

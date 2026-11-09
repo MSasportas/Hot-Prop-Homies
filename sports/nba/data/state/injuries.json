@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T18:00:01-05:00",
+ "at": "2026-11-09T18:10:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -372,6 +372,13 @@
    "date": "2026-11-07T17:24Z",
    "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
   },
+  "3032977": {
+   "status": "day-to-day",
+   "name": "Giannis Antetokounmpo",
+   "team": "MIA",
+   "date": "2026-11-09T23:04Z",
+   "note": "Antetokounmpo posted 29 points (14-23 FG, 0-1 3Pt, 1-7 FT), 14 rebounds, three assists, two blocks and two steals over 34 minutes during Sunday's 114-108 victory over the Kings."
+  },
   "4395725": {
    "status": "day-to-day",
    "name": "Tyler Herro",
@@ -617,19 +624,26 @@
    "date": "2026-10-05T21:43Z",
    "note": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports."
   },
+  "4395724": {
+   "status": "out",
+   "name": "Immanuel Quickley",
+   "team": "TOR",
+   "date": "2026-11-09T22:54Z",
+   "note": "Quickley (hamstring) has been ruled out for Monday's game against Memphis, Esfandiar Baraheni of The Athletic reports."
+  },
+  "5093267": {
+   "status": "out",
+   "name": "Collin Murray-Boyles",
+   "team": "TOR",
+   "date": "2026-11-09T22:52Z",
+   "note": "Murray-Boyles (illness) is out for Monday's game against the Grizzlies, Esfandiar Baraheni of The Athletic reports."
+  },
   "4433134": {
    "status": "out",
    "name": "Scottie Barnes",
    "team": "TOR",
-   "date": "2026-11-09T22:49Z",
-   "note": "Barnes (adductor) was a limited participant in Sunday's practice and will be listed as questionable for Monday's game against the Grizzlies, Michael Grange of Sportsnet.ca reports."
-  },
-  "5093267": {
-   "status": "day-to-day",
-   "name": "Collin Murray-Boyles",
-   "team": "TOR",
-   "date": "2026-11-09T18:28Z",
-   "note": "Murray-Boyles (illness) is questionable for Monday's game versus Memphis, per Josh Lewenberg of TSN.ca."
+   "date": "2026-11-09T22:50Z",
+   "note": "Barnes (groin) is out for Monday's game against the Grizzlies, Esfandiar Baraheni of The Athletic reports."
   },
   "4432586": {
    "status": "out",
@@ -637,13 +651,6 @@
    "team": "TOR",
    "date": "2026-11-08T21:20Z",
    "note": "Bittle (foot) is listed as out for Monday's game against Memphis."
-  },
-  "4395724": {
-   "status": "day-to-day",
-   "name": "Immanuel Quickley",
-   "team": "TOR",
-   "date": "2026-11-08T17:14Z",
-   "note": "Quickley (hamstring) was a limited participant in Sunday's practice and will be listed as questionable for Monday's game against the Grizzlies, Michael Grange of Sportsnet.ca reports."
   },
   "6450": {
    "status": "out",
@@ -681,10 +688,10 @@
    "note": "Jackson has been diagnosed with a torn MCL in his right knee and will be sidelined for 6-to-8 weeks, per Shams Charania of ESPN."
   },
   "5104155": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Bilal Coulibaly",
    "team": "WSH",
-   "date": "2026-11-09T18:54Z",
+   "date": "2026-11-09T23:02Z",
    "note": "Coulibaly (hand) is listed as questionable for Monday's game against Detroit."
   },
   "4997537": {
@@ -693,13 +700,6 @@
    "team": "WSH",
    "date": "2026-11-08T22:17Z",
    "note": "Vukcevic (hip) has been ruled out for Monday's game against Detroit."
-  },
-  "6583": {
-   "status": "day-to-day",
-   "name": "Anthony Davis",
-   "team": "WSH",
-   "date": "2026-11-08T22:08Z",
-   "note": "Davis (ankle) is listed as questionable for Monday's game in Detroit."
   },
   "4432187": {
    "status": "out",
