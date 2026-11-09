@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T10:30:00-05:00",
+ "at": "2026-11-09T10:50:00-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -93,17 +93,17 @@
    "note": "Miller (groin) is listed as out for Monday's game against Cleveland."
   },
   "2595516": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Norman Powell",
    "team": "CHI",
-   "date": "2026-11-08T18:55Z",
+   "date": "2026-11-09T15:41Z",
    "note": "Powell (shoulder) has been ruled out for Sunday's game against the 76ers, Adam Aaronson of PhillyVoice.com reports."
   },
   "4066650": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Zach Collins",
    "team": "CHI",
-   "date": "2026-11-07T21:24Z",
+   "date": "2026-11-09T15:41Z",
    "note": "Collins (illness) is out for Sunday's game against Philadelphia."
   },
   "4066757": {
@@ -471,10 +471,10 @@
    "note": "Team president Jeff Weltman said Monday that Nelson (ankle) remains about a month away from returning to the court after offseason surgery, per Philip Rossman-Reich of OrlandoMagicDaily.com."
   },
   "5105637": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Adem Bona",
    "team": "PHI",
-   "date": "2026-11-07T23:07Z",
+   "date": "2026-11-09T15:41Z",
    "note": "Bona (back) is out for Sunday's game in Chicago."
   },
   "4870562": {
