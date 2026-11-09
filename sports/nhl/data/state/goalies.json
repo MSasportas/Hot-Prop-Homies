@@ -3,7 +3,7 @@
  "teams": {
   "EDM": {
    "name": "Devon Levi",
-   "status": "expected"
+   "status": "confirmed"
   },
   "NYR": {
    "name": "Dylan Garand",
@@ -26,5 +26,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-09T09:40:00-05:00"
+ "checked_at": "2026-11-09T11:50:01-05:00"
 }
