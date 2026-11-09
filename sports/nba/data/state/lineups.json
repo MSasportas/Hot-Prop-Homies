@@ -49,13 +49,13 @@
    }
   },
   "DET": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Cade Cunningham",
+    "Daniss Jenkins",
     "Duncan Robinson",
     "Ausar Thompson",
-    "John Collins",
-    "Paul Reed"
+    "John Collins"
    ],
    "status": {
     "Jalen Duren": "out",
@@ -135,7 +135,6 @@
     "Ivica Zubac"
    ],
    "status": {
-    "T.J. McConnell": "questionable",
     "Johnny Furphy": "out",
     "Tyrese Haliburton": "out",
     "Ben Sheppard": "out"
@@ -255,5 +254,5 @@
    }
   }
  },
- "at": "2026-11-09T18:40:31-05:00"
+ "at": "2026-11-09T18:50:01-05:00"
 }
