@@ -301,10 +301,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:04 - 4th",
+    "detail": "3:16 - 4th",
     "score": {
-     "LAL": "95",
-     "DET": "94"
+     "LAL": "102",
+     "DET": "99"
     }
    },
    {
@@ -331,10 +331,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "0.0 - 1st",
+    "detail": "8:58 - 2nd",
     "score": {
-     "BKN": "26",
-     "DAL": "33"
+     "BKN": "32",
+     "DAL": "49"
     }
    },
    {
@@ -343,13 +343,13 @@
     "start": "2026-11-08T20:00:00-05:00",
     "away": "BOS",
     "home": "MIL",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/8 - 8:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:03 - 1st",
     "score": {
-     "BOS": "0",
-     "MIL": "0"
+     "BOS": "6",
+     "MIL": "20"
     }
    },
    {
