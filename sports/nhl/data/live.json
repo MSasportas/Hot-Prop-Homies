@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-08",
- "generated_at": "2026-11-08T16:40:00-05:00",
+ "generated_at": "2026-11-08T19:00:00-05:00",
  "games": [
   {
    "game_id": 2026020277,
@@ -22,6 +22,27 @@
     "sog": 36
    },
    "updated_at": "2026-11-08T16:40:00-05:00"
+  },
+  {
+   "game_id": 2026020279,
+   "state": "PRE",
+   "schedule_state": "OK",
+   "period": null,
+   "period_type": null,
+   "clock": null,
+   "in_intermission": false,
+   "running": false,
+   "away": {
+    "abbrev": "NJD",
+    "score": null,
+    "sog": null
+   },
+   "home": {
+    "abbrev": "TOR",
+    "score": null,
+    "sog": null
+   },
+   "updated_at": "2026-11-08T19:00:00-05:00"
   }
  ],
  "picks": {
@@ -29,6 +50,11 @@
    "game_id": 2026020277,
    "market": "shots",
    "stat": 3
+  },
+  "2026-11-08:2026020279:8478542:shots:1.5:under": {
+   "game_id": 2026020279,
+   "market": "shots",
+   "stat": null
   }
  }
 }
