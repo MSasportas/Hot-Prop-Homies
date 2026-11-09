@@ -363,7 +363,7 @@
     "status_name": "STATUS_IN_PROGRESS",
     "detail": "8:24 - 3rd",
     "score": {
-     "NO": "71",
+     "NO": "72",
      "LAC": "75"
     }
    },
@@ -379,7 +379,7 @@
     "detail": "8:04 - 3rd",
     "score": {
      "MIA": "77",
-     "SAC": "63"
+     "SAC": "64"
     }
    }
   ]
