@@ -331,7 +331,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:27 - 4th",
+    "detail": "7:26 - 4th",
     "score": {
      "BKN": "78",
      "DAL": "109"
@@ -346,10 +346,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:00 - 4th",
+    "detail": "10:34 - 4th",
     "score": {
      "BOS": "94",
-     "MIL": "76"
+     "MIL": "78"
     }
    },
    {
