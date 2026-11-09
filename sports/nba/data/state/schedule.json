@@ -301,10 +301,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:55 - 3rd",
+    "detail": "1:38 - 3rd",
     "score": {
-     "LAL": "80",
-     "DET": "66"
+     "LAL": "84",
+     "DET": "79"
     }
    },
    {
@@ -316,10 +316,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:46 - 2nd",
+    "detail": "8:08 - 2nd",
     "score": {
-     "UTAH": "27",
-     "MIN": "30"
+     "UTAH": "31",
+     "MIN": "35"
     }
    },
    {
@@ -328,13 +328,13 @@
     "start": "2026-11-08T19:30:00-05:00",
     "away": "BKN",
     "home": "DAL",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/8 - 7:30 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:33 - 1st",
     "score": {
-     "BKN": "0",
-     "DAL": "0"
+     "BKN": "10",
+     "DAL": "13"
     }
    },
    {
