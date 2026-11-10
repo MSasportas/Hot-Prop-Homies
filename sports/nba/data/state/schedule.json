@@ -451,10 +451,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:55 - 4th",
+    "detail": "5.8 - 4th",
     "score": {
-     "SA": "113",
-     "PHX": "86"
+     "SA": "122",
+     "PHX": "96"
     }
    },
    {
