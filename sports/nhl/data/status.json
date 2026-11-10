@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-09",
- "started_at": "2026-11-09T20:40:01-05:00",
- "status_at": "2026-11-09T20:40:01-05:00",
- "finished_at": "2026-11-09T20:40:02-05:00",
- "last_ok_at": "2026-11-09T20:40:01-05:00",
+ "started_at": "2026-11-09T20:50:00-05:00",
+ "status_at": "2026-11-09T20:50:00-05:00",
+ "finished_at": "2026-11-09T20:50:02-05:00",
+ "last_ok_at": "2026-11-09T20:50:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -24,8 +24,8 @@
   },
   {
    "step": "lineups",
-   "status": "ok",
-   "note": "4 of 4 team pages read"
+   "status": "skipped",
+   "note": "checked in the last 20 minutes"
   },
   {
    "step": "lineup_history",
@@ -35,7 +35,7 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "no pull due"
+   "note": "1 game(s) priced"
   },
   {
    "step": "market_menu",
@@ -44,8 +44,8 @@
   },
   {
    "step": "featured",
-   "status": "skipped",
-   "note": "no new shots read to match"
+   "status": "ok",
+   "note": "sides/totals for 2 game(s), 10 book(s) max, 3 credit(s)"
   },
   {
    "step": "book_probe",
@@ -74,8 +74,8 @@
   },
   {
    "step": "shadow",
-   "status": "skipped",
-   "note": "nothing new"
+   "status": "ok",
+   "note": "35 line read(s) logged"
   },
   {
    "step": "gg_grade",
@@ -107,7 +107,7 @@
   },
   {
    "n": 2,
-   "left": 270
+   "left": 265
   },
   {
    "n": 3,
@@ -138,14 +138,14 @@
    "left": 500
   }
  ],
- "pool_total": 3388,
+ "pool_total": 3383,
  "allowance": 22.3203,
  "tier": 4,
  "budget_today": 66,
- "budget_used_today": 27,
+ "budget_used_today": 32,
  "prices_state": "ok",
- "prices_at": "2026-11-09T20:30:01-05:00",
- "next_price_read_at": "2026-11-09T20:45:00-05:00",
+ "prices_at": "2026-11-09T20:50:00-05:00",
+ "next_price_read_at": "2026-11-09T21:15:00-05:00",
  "unmatched_names": [
   "Elias Pettersson"
  ],
@@ -164,7 +164,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "42735039523",
-  "iteration": 3,
+  "iteration": 4,
   "chain_link": 129,
   "chain_started_at": "2026-11-05T20:58:54-05:00",
   "run_started_at": "2026-11-09T20:20:15-05:00"

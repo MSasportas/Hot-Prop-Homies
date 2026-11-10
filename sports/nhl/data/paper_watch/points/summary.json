@@ -2,7 +2,7 @@
  "version": 1,
  "note": "Behind the scenes: research only. Not picks, not on the Record, never sent to Discord.",
  "market": "points",
- "generated_at": "2026-11-09T20:30:01-05:00",
+ "generated_at": "2026-11-09T20:50:00-05:00",
  "slate": "2026-11-09",
  "active": true,
  "window": {
@@ -80,7 +80,42 @@
     "units": null
    }
   ],
-  "vetoes": [],
+  "vetoes": [
+   {
+    "id": "2026-11-09:2026020284:8481533:0.5:under",
+    "kind": "veto",
+    "slate": "2026-11-09",
+    "game_id": 2026020284,
+    "player": "T. Zegras",
+    "team": "PHI",
+    "opp": "VAN",
+    "game": "PHI @ VAN",
+    "start": "2026-11-09T21:30:00-05:00",
+    "side": "under",
+    "line": 0.5,
+    "bet": "UNDER 0.5 points",
+    "price": 140,
+    "gap_pct": 3.4,
+    "final_pct": 1.2,
+    "market_fair_pct": 43.1,
+    "final_p_pct": 42.2,
+    "n_books": 7,
+    "guard": "veto",
+    "cap": null,
+    "flagged_at": "2026-11-09T20:50:00-05:00",
+    "read_pull": "C",
+    "settled": "Lineup confirmed",
+    "frozen_settled": "Lineup confirmed",
+    "move30_pct": 0.2,
+    "pulled": null,
+    "locked": false,
+    "state": "open",
+    "close_fair_pct": 43.1,
+    "clv_pct": null,
+    "result": null,
+    "units": null
+   }
+  ],
   "capped": []
  },
  "nights": [
@@ -1000,7 +1035,7 @@
  ],
  "nov2": {
   "gaps_measured": 24,
-  "gaps_logged": 27,
+  "gaps_logged": 28,
   "graded_picks": 21,
   "w": 12,
   "l": 9,
