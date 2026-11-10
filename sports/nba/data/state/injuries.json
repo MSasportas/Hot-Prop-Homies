@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T20:40:00-05:00",
+ "at": "2026-11-09T21:00:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -162,26 +162,19 @@
    "date": "2026-11-08T16:05Z",
    "note": "Duren (hamstring) has begun on-court activity and will be re-evaluated in two weeks, Hunter Patterson of The Athletic reports."
   },
+  "3134903": {
+   "status": "out",
+   "name": "Gary Payton II",
+   "team": "GS",
+   "date": "2026-11-10T01:50Z",
+   "note": "Payton (knee) has been ruled out for Monday's game against the Pelicans."
+  },
   "4897262": {
    "status": "out",
    "name": "Will Richard",
    "team": "GS",
    "date": "2026-11-10T01:26Z",
    "note": "Richard is deciding between getting surgery or playing with a splint, Luca Evans of the San Francisco Chronicle reports."
-  },
-  "3134903": {
-   "status": "day-to-day",
-   "name": "Gary Payton II",
-   "team": "GS",
-   "date": "2026-11-09T19:24Z",
-   "note": "Payton (left knee soreness) is listed as questionable for Monday's game against New Orleans."
-  },
-  "4997536": {
-   "status": "day-to-day",
-   "name": "Gui Santos",
-   "team": "GS",
-   "date": "2026-11-09T01:13Z",
-   "note": "Santos (knee) is listed as probable for Monday's game against New Orleans."
   },
   "3102531": {
    "status": "out",
