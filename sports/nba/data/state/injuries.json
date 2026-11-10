@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T22:10:00-05:00",
+ "at": "2026-11-09T23:00:00-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -114,10 +114,10 @@
    "note": "Tyson (ankle) is out for Monday's game against the Hornets."
   },
   "4873153": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Morez Johnson Jr.",
    "team": "DAL",
-   "date": "2026-11-09T23:07Z",
+   "date": "2026-11-10T03:46Z",
    "note": "Johnson (leg) has been ruled out for Monday's game against the Pacers."
   },
   "5279129": {

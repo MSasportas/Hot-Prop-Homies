@@ -433,13 +433,13 @@
     "start": "2026-11-09T20:30:00-05:00",
     "away": "DEN",
     "home": "HOU",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "32.6 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "DEN": "98",
-     "HOU": "109"
+     "DEN": "100",
+     "HOU": "110"
     }
    },
    {
@@ -451,10 +451,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:03 - 3rd",
+    "detail": "9:13 - 4th",
     "score": {
-     "SA": "90",
-     "PHX": "68"
+     "SA": "104",
+     "PHX": "73"
     }
    },
    {
@@ -466,10 +466,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:04 - 2nd",
+    "detail": "2:03 - 2nd",
     "score": {
-     "NO": "24",
-     "GS": "50"
+     "NO": "37",
+     "GS": "66"
     }
    }
   ]
