@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:01 - 1st",
+    "detail": "2:30 - 1st",
     "score": {
      "CLE": "22",
-     "CHA": "21"
+     "CHA": "26"
     }
    },
    {
@@ -391,7 +391,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:19 - 1st",
+    "detail": "4:06 - 1st",
     "score": {
      "WSH": "20",
      "DET": "22"
