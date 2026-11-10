@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-09",
- "generated_at": "2026-11-10T00:10:00-05:00",
+ "generated_at": "2026-11-10T00:20:00-05:00",
  "games": [
   {
    "game_id": 2026020285,
@@ -8,27 +8,27 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "12:54",
+   "clock": "10:18",
    "in_intermission": false,
    "running": true,
    "away": {
     "abbrev": "NYI",
     "score": 2,
-    "sog": 24
+    "sog": 28
    },
    "home": {
     "abbrev": "SJS",
     "score": 2,
-    "sog": 24
+    "sog": 26
    },
-   "updated_at": "2026-11-10T00:10:00-05:00"
+   "updated_at": "2026-11-10T00:20:00-05:00"
   }
  ],
  "picks": {
   "2026-11-09:2026020285:8480748:shots:1.5:under": {
    "game_id": 2026020285,
    "market": "shots",
-   "stat": 1
+   "stat": 2
   }
  }
 }
