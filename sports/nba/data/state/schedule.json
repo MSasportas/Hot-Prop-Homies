@@ -375,8 +375,8 @@
     "home": "CHA",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "11:39 - 3rd",
     "score": {
      "CLE": "53",
      "CHA": "69"
@@ -391,7 +391,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "32.1 - 2nd",
+    "detail": "27.1 - 2nd",
     "score": {
      "WSH": "56",
      "DET": "66"
@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:07 - 2nd",
+    "detail": "7:19 - 2nd",
     "score": {
      "MEM": "36",
-     "TOR": "34"
+     "TOR": "37"
     }
    },
    {
