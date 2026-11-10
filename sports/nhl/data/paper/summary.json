@@ -2,8 +2,8 @@
  "version": 1,
  "note": "Gap + Guard research log. Every flag here is a pick on the page and in the Record; vetoed and capped rows are research only.",
  "market": "shots",
- "generated_at": "2026-11-05T10:30:00-05:00",
- "slate": "2026-11-05",
+ "generated_at": "2026-11-10T00:00:01-05:00",
+ "slate": "2026-11-09",
  "active": true,
  "window": {
   "live_from": "2026-10-20",
@@ -11,7 +11,42 @@
  },
  "tonight": {
   "flags": [],
-  "vetoes": [],
+  "vetoes": [
+   {
+    "id": "2026-11-09:2026020285:8480748:1.5:under",
+    "kind": "veto",
+    "slate": "2026-11-09",
+    "game_id": 2026020285,
+    "player": "K. Sherwood",
+    "team": "SJS",
+    "opp": "NYI",
+    "game": "SJS vs NYI",
+    "start": "2026-11-09T22:00:00-05:00",
+    "side": "under",
+    "line": 1.5,
+    "bet": "UNDER 1.5 shots",
+    "price": 120,
+    "gap_pct": 5.6,
+    "final_pct": 1.2,
+    "market_fair_pct": 48.0,
+    "final_p_pct": 46.0,
+    "n_books": 7,
+    "guard": "veto",
+    "cap": null,
+    "flagged_at": "2026-11-09T20:30:01-05:00",
+    "read_pull": "B",
+    "settled": "Goalie confirmed",
+    "frozen_settled": "Goalie confirmed",
+    "move30_pct": 6.1,
+    "pulled": null,
+    "locked": true,
+    "state": "locked",
+    "close_fair_pct": 48.5,
+    "clv_pct": 6.8,
+    "result": null,
+    "units": null
+   }
+  ],
   "capped": []
  },
  "nights": [
@@ -157,7 +192,7 @@
      "cap": null,
      "flagged_at": "2026-11-03T17:30:02-05:00",
      "read_pull": "B",
-     "settled": "Early",
+     "settled": "Lineup confirmed",
      "frozen_settled": "Early",
      "move30_pct": 0.3,
      "pulled": null,
@@ -293,7 +328,7 @@
      "cap": null,
      "flagged_at": "2026-11-03T19:30:00-05:00",
      "read_pull": "B",
-     "settled": "Early",
+     "settled": "Lineup confirmed",
      "frozen_settled": "Early",
      "move30_pct": 1.2,
      "pulled": null,
@@ -402,7 +437,7 @@
      "cap": null,
      "flagged_at": "2026-11-02T19:30:00-05:00",
      "read_pull": "B",
-     "settled": "Early",
+     "settled": "Lineup confirmed",
      "frozen_settled": "Goalie confirmed",
      "move30_pct": -0.0,
      "pulled": null,
@@ -779,51 +814,11 @@
     }
    ],
    "vetoes": []
-  },
-  {
-   "date": "2026-10-28",
-   "flags": [
-    {
-     "id": "2026-10-28:2026020200:8477953:1.5:under",
-     "kind": "flag",
-     "slate": "2026-10-28",
-     "game_id": 2026020200,
-     "player": "K. Kapanen",
-     "team": "EDM",
-     "opp": "CGY",
-     "game": "EDM vs CGY",
-     "start": "2026-10-28T20:30:00-04:00",
-     "side": "under",
-     "line": 1.5,
-     "bet": "UNDER 1.5 shots",
-     "price": 115,
-     "gap_pct": 3.4,
-     "final_pct": 2.2,
-     "market_fair_pct": 48.1,
-     "final_p_pct": 47.5,
-     "n_books": 7,
-     "guard": "pass",
-     "cap": null,
-     "flagged_at": "2026-10-28T19:00:01-04:00",
-     "read_pull": "B",
-     "settled": "Early",
-     "frozen_settled": "Early",
-     "move30_pct": 0.2,
-     "pulled": null,
-     "locked": true,
-     "state": "locked",
-     "close_fair_pct": 48.5,
-     "clv_pct": 4.3,
-     "result": "L",
-     "units": -1.0
-    }
-   ],
-   "vetoes": []
   }
  ],
  "nov2": {
-  "gaps_measured": 40,
-  "gaps_logged": 51,
+  "gaps_measured": 41,
+  "gaps_logged": 52,
   "graded_picks": 47,
   "w": 29,
   "l": 18,
@@ -831,9 +826,9 @@
   "units": 9.827189440532768,
   "wins_z": 1.136848284488699,
   "clv_gaps": {
-   "n": 40,
-   "mean": 0.04745258491746438,
-   "lb80": 0.043686853716514165,
+   "n": 41,
+   "mean": 0.047945145007610046,
+   "lb80": 0.0442209929350735,
    "pos_share": 1.0
   },
   "clv_flags": {
@@ -843,14 +838,14 @@
    "pos_share": 1.0
   },
   "clv_vetoed": {
-   "n": 1,
-   "mean": 0.04698645650723732,
+   "n": 2,
+   "mean": 0.057317002560337005,
    "lb80": 0.04698645650723732,
    "pos_share": 1.0
   },
   "clv_passed_mean": 0.047464536927983025,
-  "clv_vetoed_mean": 0.04698645650723732,
-  "nights": 17,
+  "clv_vetoed_mean": 0.057317002560337005,
+  "nights": 18,
   "nights_with_flags": 13,
   "population_slope": null,
   "checkpoint": "2026-11-02"
