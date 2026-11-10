@@ -1,13 +1,13 @@
 {
  "slate_date": "2026-11-09",
- "generated_at": "2026-11-10T00:50:20-05:00",
+ "generated_at": "2026-11-10T01:00:01-05:00",
  "games": [
   {
    "game_id": 2026020285,
-   "state": "CRIT",
+   "state": "FINAL",
    "schedule_state": "OK",
-   "period": 4,
-   "period_type": "OT",
+   "period": 5,
+   "period_type": "SO",
    "clock": "00:00",
    "in_intermission": false,
    "running": false,
@@ -18,10 +18,10 @@
    },
    "home": {
     "abbrev": "SJS",
-    "score": 2,
+    "score": 3,
     "sog": 39
    },
-   "updated_at": "2026-11-10T00:50:20-05:00"
+   "updated_at": "2026-11-10T01:00:01-05:00"
   }
  ],
  "picks": {
