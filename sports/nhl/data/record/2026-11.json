@@ -1,6 +1,38 @@
 {
  "nights": [
   {
+   "date": "2026-11-02",
+   "graded": true,
+   "w": 0,
+   "l": 1,
+   "units": -1.0,
+   "entries": [
+    {
+     "id": "2026-11-02:2026020235:8477498:shots:1.5:over",
+     "kind": "single",
+     "player": "D. Nurse",
+     "bet": "Over 1.5 shots on goal",
+     "market": "shots",
+     "team": "SJS",
+     "game": "CGY at SJS",
+     "price": 115,
+     "first_price": 115,
+     "last_price": 115,
+     "prices": [
+      {
+       "price": 115,
+       "at": "2026-11-02T19:30:00-05:00"
+      }
+     ],
+     "result": "L",
+     "actual": "had 0",
+     "units": -1.0,
+     "pulled": null,
+     "legs": []
+    }
+   ]
+  },
+  {
    "date": "2026-11-01",
    "graded": true,
    "w": 0,

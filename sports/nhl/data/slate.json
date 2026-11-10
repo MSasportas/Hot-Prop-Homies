@@ -1,12 +1,12 @@
 {
  "slate_date": "2026-11-09",
- "generated_at": "2026-11-09T21:10:00-05:00",
- "status_at": "2026-11-09T21:10:00-05:00",
+ "generated_at": "2026-11-09T21:20:01-05:00",
+ "status_at": "2026-11-09T21:20:01-05:00",
  "valid_until": "2026-11-10T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
-  "prices_at": "2026-11-09T20:50:00-05:00",
-  "next_price_read_at": "2026-11-09T21:15:00-05:00",
+  "prices_at": "2026-11-09T21:20:01-05:00",
+  "next_price_read_at": null,
   "stats_built_at": "2026-11-08T23:40:01-05:00",
   "stats_through": "2026-11-08",
   "lineups_at": "2026-11-09T21:10:00-05:00",
@@ -16,11 +16,11 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-09T21:10:00-05:00",
+   "at": "2026-11-09T21:20:01-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 3383,
+   "pulls_left": 3378,
    "keys": 9,
    "game_days_left": 20,
    "days_left": 22,
@@ -32,11 +32,7 @@
   "tier": 4
  },
  "banners": [],
- "empty": {
-  "code": "none_qualified",
-  "text": "No picks yet today",
-  "sub": "49 lines read, none cleared both checks. 1 had a gap but our model said no. Next read at 9:15 PM."
- },
+ "empty": null,
  "games": [
   {
    "id": 2026020283,
@@ -158,25 +154,90 @@
      {
       "pull": "B",
       "at": "2026-11-09T20:30:01-05:00"
+     },
+     {
+      "pull": "C",
+      "at": "2026-11-09T21:20:01-05:00"
      }
     ],
-    "next_read": {
-     "pull": "C",
-     "at": "2026-11-09T21:15:00-05:00"
-    },
+    "next_read": null,
     "lineups_at": {
      "away": "2026-11-09T19:00:01-05:00",
      "home": "2026-11-09T19:00:01-05:00"
     }
    },
    "started": false,
-   "reads_done": false,
-   "picks": 0,
+   "reads_done": true,
+   "picks": 1,
    "excluded_reason": null,
    "excluded_teams": []
   }
  ],
- "picks": [],
+ "picks": [
+  {
+   "id": "2026-11-09:2026020285:8480748:shots:1.5:under",
+   "price": 120,
+   "first_price": 120,
+   "first_price_at": "2026-11-09T21:20:01-05:00",
+   "worst_price": 120,
+   "p": 0.4644,
+   "breakeven": 0.4545,
+   "p_pct": 46,
+   "breakeven_pct": 45,
+   "state": "lineup",
+   "history": [
+    {
+     "at": "2026-11-09T21:20:01-05:00",
+     "text": "Lineup confirmed"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-09T21:20:01-05:00",
+     "price": 120
+    }
+   ],
+   "pulled": null,
+   "price_final": true,
+   "graded": null,
+   "rank": 1,
+   "tier": "main",
+   "game_id": 2026020285,
+   "player": "K. Sherwood",
+   "player_id": 8480748,
+   "team": "SJS",
+   "opp": "NYI",
+   "home": true,
+   "start": "2026-11-09T22:00:00-05:00",
+   "market": "shots",
+   "line": 1.5,
+   "side": "under",
+   "bet": "Under 1.5 shots on goal",
+   "price_at": "2026-11-09T21:20:01-05:00",
+   "gap_pct": 6.8,
+   "market_fair_pct": 48.5,
+   "n_books": 8,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 46.4,
+    "model_pct": 39.9
+   },
+   "settled": "lineup",
+   "settled_label": "Lineup confirmed",
+   "reason": "8 other books say 48.5%; Hard Rock's +120 only needs 45.5%. Our model agrees (our blend: 46.4%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/627117699786473906",
+   "links": {
+    "hardrock": {
+     "id": "627117699786473906",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/627117699786473906"
+    },
+    "draftkings": null
+   },
+   "thin": false,
+   "games_used": 91,
+   "games_this_season": 19
+  }
+ ],
  "parlays": [],
  "parlays_note": "Parlays are not offered: there is no evidence for them yet."
 }
