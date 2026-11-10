@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-10T11:00:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-10T11:50:01-05:00"
+   "at": "2026-11-10T12:00:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -153,7 +153,7 @@
    "next_check_read": "B",
    "paused": false,
    "injury_clear": {
-    "away": true,
+    "away": false,
     "home": false
    }
   },
@@ -199,6 +199,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-10T11:00:01-05:00",
- "status_at": "2026-11-10T11:50:01-05:00"
+ "generated_at": "2026-11-10T12:00:01-05:00",
+ "status_at": "2026-11-10T12:00:01-05:00"
 }
