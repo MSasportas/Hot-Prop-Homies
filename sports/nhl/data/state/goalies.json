@@ -39,7 +39,7 @@
   },
   "FLA": {
    "name": "Jacob Markstrom",
-   "status": "expected"
+   "status": "confirmed"
   },
   "STL": {
    "name": "Joel Hofer",
@@ -58,5 +58,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-10T11:30:00-05:00"
+ "checked_at": "2026-11-10T12:10:01-05:00"
 }
