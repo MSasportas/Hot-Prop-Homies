@@ -1,12 +1,12 @@
 {
  "slate_date": "2026-11-10",
- "generated_at": "2026-11-10T18:20:01-05:00",
- "status_at": "2026-11-10T18:20:01-05:00",
+ "generated_at": "2026-11-10T18:30:00-05:00",
+ "status_at": "2026-11-10T18:30:00-05:00",
  "valid_until": "2026-11-11T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
-  "prices_at": "2026-11-10T18:20:01-05:00",
-  "next_price_read_at": "2026-11-10T18:30:00-05:00",
+  "prices_at": "2026-11-10T18:30:00-05:00",
+  "next_price_read_at": "2026-11-10T18:45:00-05:00",
   "stats_built_at": "2026-11-10T01:30:01-05:00",
   "stats_through": "2026-11-09",
   "lineups_at": "2026-11-10T18:20:01-05:00",
@@ -16,19 +16,19 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-10T18:20:01-05:00",
+   "at": "2026-11-10T18:30:00-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 3318,
+   "pulls_left": 3316,
    "keys": 9,
    "game_days_left": 19,
    "days_left": 21,
    "low": false
   },
   "excluded_teams": [],
-  "lines_checked": 90,
-  "flag_reads": 5,
+  "lines_checked": 106,
+  "flag_reads": 6,
   "tier": 4
  },
  "banners": [],
@@ -287,11 +287,15 @@
      {
       "pull": "A",
       "at": "2026-11-10T13:00:01-05:00"
+     },
+     {
+      "pull": "B",
+      "at": "2026-11-10T18:30:00-05:00"
      }
     ],
     "next_read": {
-     "pull": "B",
-     "at": "2026-11-10T18:30:00-05:00"
+     "pull": "C",
+     "at": "2026-11-10T19:15:00-05:00"
     },
     "lineups_at": {
      "away": "2026-11-10T17:00:00-05:00",
