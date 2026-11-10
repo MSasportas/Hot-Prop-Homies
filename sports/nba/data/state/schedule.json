@@ -448,10 +448,10 @@
     "start": "2026-11-09T21:00:00-05:00",
     "away": "SA",
     "home": "PHX",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5.8 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
      "SA": "122",
      "PHX": "96"
@@ -465,11 +465,11 @@
     "home": "GS",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:33 - 3rd",
     "score": {
-     "NO": "43",
-     "GS": "72"
+     "NO": "52",
+     "GS": "83"
     }
    }
   ]

@@ -249,3 +249,4 @@
 {"at":"2026-11-09T21:40:01-05:00","id":"2026-11-09:401909959:5144091:assists:4.5:under","state":"starters","t":"state"}
 {"actual":null,"actual_text":"20 points","at":"2026-11-09T21:50:00-05:00","id":"2026-11-09:401909954:4277905:points:18.5:under","price":-130,"result":"L","t":"graded","units":-1.0}
 {"at":"2026-11-09T22:00:00-05:00","id":"2026-11-09:401909959:5144091:assists:4.5:under","state":"locked","t":"locked"}
+{"actual":null,"actual_text":"4 assists","at":"2026-11-09T23:30:01-05:00","id":"2026-11-09:401909958:5037871:assists:4.5:over","price":100,"result":"L","t":"graded","units":-1.0}
