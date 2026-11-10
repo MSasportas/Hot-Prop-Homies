@@ -11,11 +11,11 @@
   },
   "VAN": {
    "name": "Leevi Merilainen",
-   "status": "expected"
+   "status": "confirmed"
   },
   "PHI": {
    "name": "Joseph Woll",
-   "status": "expected"
+   "status": "confirmed"
   },
   "SJS": {
    "name": "Yaroslav Askarov",
@@ -26,5 +26,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-09T14:30:00-05:00"
+ "checked_at": "2026-11-09T21:10:00-05:00"
 }
