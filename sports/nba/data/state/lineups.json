@@ -157,7 +157,7 @@
    }
   },
   "DEN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jamal Murray",
     "Christian Braun",
@@ -170,7 +170,7 @@
    }
   },
   "HOU": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Fred VanVleet",
     "Amen Thompson",
@@ -248,5 +248,5 @@
    }
   }
  },
- "at": "2026-11-09T20:00:01-05:00"
+ "at": "2026-11-09T20:10:01-05:00"
 }
