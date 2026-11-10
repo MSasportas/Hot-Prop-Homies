@@ -95,7 +95,7 @@
    }
   },
   "MEM": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Ty Jerome",
     "Cedric Coward",
@@ -109,12 +109,12 @@
    }
   },
   "TOR": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jamal Shead",
     "RJ Barrett",
     "Ja'Kobe Walter",
-    "Jamison Battle",
+    "Kyle Anderson",
     "Jakob Poeltl"
    ],
    "status": {
@@ -254,5 +254,5 @@
    }
   }
  },
- "at": "2026-11-09T19:00:00-05:00"
+ "at": "2026-11-09T19:10:01-05:00"
 }

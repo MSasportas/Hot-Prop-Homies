@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T19:00:00-05:00",
+ "at": "2026-11-09T19:10:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -246,26 +246,26 @@
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
   },
+  "3102529": {
+   "status": "out",
+   "name": "Clint Capela",
+   "team": "HOU",
+   "date": "2026-11-09T23:56Z",
+   "note": "Head coach Ime Udoka stated Monday that Capela (ankle) could be cleared to return either Nov. 15 in Washington or Nov. 16 in Miami, Lachard Binkley of SI.com reports."
+  },
+  "2991235": {
+   "status": "out",
+   "name": "Steven Adams",
+   "team": "HOU",
+   "date": "2026-11-09T23:55Z",
+   "note": "Head coach Ime Udoka said Monday that Adams could return as soon as Sunday's game at Washington, Lachard Binkley of SI.com reports."
+  },
   "4432827": {
    "status": "out",
    "name": "Oscar Tshiebwe",
    "team": "HOU",
    "date": "2026-11-09T17:36Z",
    "note": "Tshiebwe has been ruled out for Monday's game against the Nuggets due to an illness."
-  },
-  "3102529": {
-   "status": "out",
-   "name": "Clint Capela",
-   "team": "HOU",
-   "date": "2026-11-08T22:56Z",
-   "note": "Capela (ankle) is listed as out for Monday's game against Denver."
-  },
-  "2991235": {
-   "status": "out",
-   "name": "Steven Adams",
-   "team": "HOU",
-   "date": "2026-11-05T00:21Z",
-   "note": "Head coach Ime Udoka said Wednesday that Adams (calf) is still without a timetable to return and will be evaluated on a \"weekly basis,\" Varun Shankar of the Houston Chronicle reports."
   },
   "4396993": {
    "status": "out",
@@ -288,19 +288,19 @@
    "date": "2026-10-28T21:41Z",
    "note": "Head coach Rick Carlise confirmed Sheppard will miss \"months\" after undergoing surgery to repair a torn meniscus in his left knee, Tony East of Forbes.com reports."
   },
-  "4432170": {
-   "status": "day-to-day",
-   "name": "Isaiah Jackson",
-   "team": "LAC",
-   "date": "2026-11-09T15:58Z",
-   "note": "Jackson (groin) won't suit up for Sunday's game against the Pelicans, Law Murray of The Athletic reports."
-  },
   "3913176": {
    "status": "out",
    "name": "Brandon Ingram",
    "team": "LAC",
-   "date": "2026-11-08T01:11Z",
-   "note": "Ingram (Achilles) won't play in Sunday's game against New Orleans, Law Murray of The Athletic reports."
+   "date": "2026-11-10T00:00Z",
+   "note": "Ingram (Achilles) has been ruled out for Tuesday's game at Phoenix, Ohm Youngmisuk of ESPN.com reports."
+  },
+  "4845363": {
+   "status": "day-to-day",
+   "name": "Cam Christie",
+   "team": "LAC",
+   "date": "2026-11-09T23:59Z",
+   "note": "Christie is questionable for Tuesday's game against the Suns due to a right ankle sprain, Ohm Youngmisuk of ESPN.com reports."
   },
   "5108024": {
    "status": "out",
@@ -638,19 +638,19 @@
    "date": "2026-11-04T00:14Z",
    "note": "Leonard has completed treatment to reduce swelling in his left knee and he will be re-evaluated in one week, Brett Siegel of ClutchPoints.com reports."
   },
+  "4433627": {
+   "status": "out",
+   "name": "Keyonte George",
+   "team": "UTAH",
+   "date": "2026-11-10T00:07Z",
+   "note": "George will not return to Sunday's game against the Timberwolves due to a right ankle injury."
+  },
   "4066336": {
    "status": "day-to-day",
    "name": "Lauri Markkanen",
    "team": "UTAH",
    "date": "2026-11-09T15:46Z",
    "note": "Markkanen (wrist) is out for Sunday's game against the Timberwolves, Shreyas Laddha of The Salt Lake Tribune reports."
-  },
-  "4433627": {
-   "status": "day-to-day",
-   "name": "Keyonte George",
-   "team": "UTAH",
-   "date": "2026-11-09T02:24Z",
-   "note": "George will not return to Sunday's game against the Timberwolves due to a right ankle injury."
   },
   "3102530": {
    "status": "out",
