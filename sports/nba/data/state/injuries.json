@@ -1,5 +1,5 @@
 {
- "at": "2026-11-10T18:10:01-05:00",
+ "at": "2026-11-10T18:20:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -288,19 +288,19 @@
    "date": "2026-08-26T20:04Z",
    "note": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic."
   },
-  "4066457": {
-   "status": "day-to-day",
-   "name": "Austin Reaves",
-   "team": "LAL",
-   "date": "2026-11-10T02:53Z",
-   "note": "Reaves (illness) has been ruled out for Monday's game against Atlanta, Benjamin Royer of The Orange County Register reports."
-  },
   "4397014": {
    "status": "day-to-day",
    "name": "Quentin Grimes",
    "team": "LAL",
-   "date": "2026-11-10T02:53Z",
-   "note": "Grimes (finger) is out for Monday's game against Atlanta, per Dave McMenamin of ESPN.com."
+   "date": "2026-11-10T23:07Z",
+   "note": "Grimes (finger) is listed as questionable for Wednesday's game in Milwaukee."
+  },
+  "4593016": {
+   "status": "out",
+   "name": "Quinten Post",
+   "team": "MEM",
+   "date": "2026-11-10T23:10Z",
+   "note": "Post (head) didn't return to Monday's 118-102 win over the Raptors. He ended the night with one rebound in two minutes."
   },
   "4432810": {
    "status": "day-to-day",
@@ -308,13 +308,6 @@
    "team": "MEM",
    "date": "2026-11-10T03:01Z",
    "note": "Stewart (knee) has been ruled out for Monday's game against Toronto."
-  },
-  "4593016": {
-   "status": "day-to-day",
-   "name": "Quinten Post",
-   "team": "MEM",
-   "date": "2026-11-10T02:58Z",
-   "note": "Post (head) didn't return to Monday's 118-102 win over the Raptors. He ended the night with one rebound in two minutes."
   },
   "4431785": {
    "status": "out",
@@ -390,8 +383,8 @@
    "status": "out",
    "name": "Josh Hart",
    "team": "NY",
-   "date": "2026-11-10T22:59Z",
-   "note": "Hart is doubtful for Tuesday's game against the Bucks due to an illness."
+   "date": "2026-11-10T22:58Z",
+   "note": "Hart (illness) won't play Tuesday against the Bucks, Kristian Winfield of the New York Daily News reports."
   },
   "4432823": {
    "status": "out",

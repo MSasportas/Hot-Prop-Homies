@@ -4,15 +4,14 @@
   "MIL": {
    "state": "expected",
    "starters": [
+    "Ryan Rollins",
     "Brayden Burries",
-    "Tyler Herro",
     "Jaime Jaquez",
     "Kyle Kuzma",
     "Myles Turner"
    ],
    "status": {
-    "Tyler Herro": "questionable",
-    "Kel'el Ware": "questionable"
+    "Tyler Herro": "out"
    }
   },
   "NY": {
@@ -178,5 +177,5 @@
    }
   }
  },
- "at": "2026-11-10T18:10:01-05:00"
+ "at": "2026-11-10T18:20:01-05:00"
 }
