@@ -1,5 +1,26 @@
-# LOG.md (NBA research, newest first)
+﻿# LOG.md (NBA research, newest first)
 
+## 2026-11-10, Run 9 (Researcher; owner: re-test NHL's live Gap + Guard on NBA with all stored data)
+Code: research/code/run9_nhl_port.py. DISCOVERY ONLY (15 nights Oct 25 - Nov 9, no Nov 3, all already seen). Port of NHL v3.5:
+gap EV vs median de-vigged fair of >= 4 books incl. Pinnacle (hold 0-15%) >= +3%, Pinnacle-fair EV >= 0, price -200 or better;
+guard = 0.8 fair + 0.2 NBA model (shadow model_p, offset 0) final EV >= +2% and model >= break-even; picks at B/C only, first passing
+read, 1 side per player per night. CLV = Pinnacle fair at the last read.
+- Sides checked: 21,774 (all reads), 11,376 at B/C. Clearing at B/C: NHL bar 2, 2% 2, 1% 4, 0% (+Pinnacle) 8, 0% gap-only 13.
+  Full NHL rule (gap + guard): 2 picks, 1-1 +0.10u, both Nov 2 (Daniels U5.5 ast +110 at a +17.5% gap = one bad/stale quote; McCollum
+  U3.5 ast +120). 0% + Pinnacle: 8 picks 3-5 -2.11u, CLV -0.1% (n 5). 0% gap-only: 12 picks 5-7 -1.81u, CLV -1.4% (n 9).
+  Late nights (Nov 4-9): NHL bar 0 picks; 0% bar 2 picks 1-1.
+- Hard Rock median gap per night: -6.1% to -6.3% every night; early -6.2% (n 11,797), late -6.2% (n 9,977). By market: pts -6.5%, reb
+  -6.2%, ast/3pm -6.1%; overs -6.8%, unders -5.6%; every read -6.2/-6.3%. Share of sides at gap >= 0: 0.16% early, 0.06% late. The
+  ~6% hold has NOT narrowed.
+- Pinnacle 2+ pt moves (614; 548 with a later read): median share of the eventual move done at first sight 100%; mean drift after
+  -0.11 pts. Held 466 (241-214 -9.67u, CLV -4.1%), reversed 1+ pt 47 (26-20 +2.15u), ran on 1+ pt 35 (16-18 -5.58u). It is a one-time
+  jump; drift direction does not predict results. In the FAIR subset, held 34 bets 23-10 +12.33u, CLV +1.1%.
+- Record overlap (66 pin_solo picks, 40-25 +12.29u): at their own read the median gap vs market is -4.6% (max +1.3%; 0 at >= 3%,
+  2 at >= 0%). The NHL rule picks 0 of them; the 0% bar shares 2.
+- Verdict: NO CANDIDATE. NHL's Gap + Guard has nothing to bet on NBA at Hard Rock: ~2 sides in 15 nights, same as Oct 28. The NBA
+  Record's edge comes from Pinnacle's new fair price after a move, not from Hard Rock beating the market.
+- Next 3: (1) DraftKings as the priced book under the same gap test (rule now allows HR or DK); (2) gap vs Pinnacle-only fair on the
+  held-move subset forward; (3) flag single-book stale quotes like Daniels Nov 2 as a data check, not an edge.
 ## 2026-11-09 night, Run 8 (Researcher; Matt: line moves and book moves for NBA like NHL)
 Code: research/code/run8_moves.py (M1-M7, re-run any day; splits discovery / forward at 2026-11-10). DISCOVERY ONLY: 14 nights with
 moves (Oct 26 - Nov 9, no Nov 3), all already seen through the Record. Nothing here can pass; forward counts from 2026-11-10.
@@ -98,3 +119,4 @@ Matt: 0 picks in 2+ full nights, "figure it out". Data: shadow log Oct 25-27 (3,
 Verdict: the main-line Gap + Guard rule has nothing to bet at Hard Rock NBA. Not a bug: Hard Rock's NBA props are priced at
 market with ~6-7% hold. Next: F1 model disagreement, F2 Pinnacle-only, F3 injury-news reaction (all forward from tonight).
 Blocker for anything faster than weeks: no historical NBA prop prices (paid; Matt's call).
+
