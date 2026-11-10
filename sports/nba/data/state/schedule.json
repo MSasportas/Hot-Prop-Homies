@@ -364,7 +364,7 @@
     "detail": "6:47 - 4th",
     "score": {
      "LAL": "108",
-     "ATL": "103"
+     "ATL": "104"
     }
    },
    {
@@ -376,9 +376,9 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:12 - 4th",
+    "detail": "3:47 - 4th",
     "score": {
-     "CLE": "107",
+     "CLE": "110",
      "CHA": "118"
     }
    },
@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:56 - 3rd",
+    "detail": "4:35 - 3rd",
     "score": {
-     "MEM": "75",
-     "TOR": "66"
+     "MEM": "78",
+     "TOR": "68"
     }
    },
    {
