@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 10,
-   "pool_left": 3696,
+   "pool_left": 3692,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-09T19:45:00-05:00",
-  "last_read_at": "2026-11-09T19:40:01-05:00",
+  "next_read_at": "2026-11-09T20:10:00-05:00",
+  "last_read_at": "2026-11-09T19:50:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-09T19:40:01-05:00"
+   "at": "2026-11-09T19:50:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-09T19:40:01-05:00",
+    "at": "2026-11-09T19:50:01-05:00",
     "confirmed": [
      "ATL",
      "CHA",
@@ -54,7 +54,7 @@
    "away": "LAL",
    "home": "ATL",
    "state": "in",
-   "detail": "10:52 - 2nd",
+   "detail": "8:16 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -91,7 +91,7 @@
    "away": "CLE",
    "home": "CHA",
    "state": "in",
-   "detail": "10:41 - 2nd",
+   "detail": "5:30 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -128,7 +128,7 @@
    "away": "WAS",
    "home": "DET",
    "state": "in",
-   "detail": "1:35 - 1st",
+   "detail": "9:53 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -164,8 +164,8 @@
    "start": "2026-11-09T19:30:00-05:00",
    "away": "MEM",
    "home": "TOR",
-   "state": "pre",
-   "detail": "11/9 - 7:30 PM EST",
+   "state": "in",
+   "detail": "7:41 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -244,18 +244,22 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-09T19:00:00-05:00",
+   "read_at": "2026-11-09T19:50:01-05:00",
    "picks": 0,
    "checks": [
     {
      "read": "B",
      "at": "2026-11-09T19:00:00-05:00"
+    },
+    {
+     "read": "C",
+     "at": "2026-11-09T19:50:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-09T19:00:00-05:00",
+   "last_check_at": "2026-11-09T19:50:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-09T19:45:00-05:00",
-   "next_check_read": "C",
+   "next_check_at": "2026-11-09T20:10:00-05:00",
+   "next_check_read": "D",
    "paused": false,
    "injury_clear": {
     "away": false,
@@ -668,7 +672,7 @@
  ],
  "empty": null,
  "counts": {
-  "lines_read": 714,
+  "lines_read": 718,
   "passing": 16,
   "games": 8
  },
@@ -678,6 +682,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-09T19:40:01-05:00",
- "status_at": "2026-11-09T19:40:01-05:00"
+ "generated_at": "2026-11-09T19:50:01-05:00",
+ "status_at": "2026-11-09T19:50:01-05:00"
 }
