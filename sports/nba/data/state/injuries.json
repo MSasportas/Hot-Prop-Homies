@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T20:00:01-05:00",
+ "at": "2026-11-09T20:30:00-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -294,6 +294,13 @@
    "team": "LAL",
    "date": "2026-11-09T18:13Z",
    "note": "Grimes (finger) is out for Monday's game against Atlanta, per Dave McMenamin of ESPN.com."
+  },
+  "4593016": {
+   "status": "day-to-day",
+   "name": "Quinten Post",
+   "team": "MEM",
+   "date": "2026-11-10T01:17Z",
+   "note": "Post is doubtful to return to Monday's game against Toronto due to a head injury."
   },
   "4431785": {
    "status": "out",
