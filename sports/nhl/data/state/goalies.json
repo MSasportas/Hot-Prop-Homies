@@ -1,30 +1,62 @@
 {
- "date": "2026-11-09",
+ "date": "2026-11-10",
  "teams": {
-  "EDM": {
-   "name": "Devon Levi",
+  "TOR": {
+   "name": "Sergei Bobrovsky",
+   "status": "expected"
+  },
+  "COL": {
+   "name": "Mackenzie Blackwood",
+   "status": "expected"
+  },
+  "OTT": {
+   "name": "Linus Ullmark",
+   "status": "expected"
+  },
+  "WSH": {
+   "name": "Logan Thompson",
+   "status": "expected"
+  },
+  "MTL": {
+   "name": "Jacob Fowler",
+   "status": "expected"
+  },
+  "MIN": {
+   "name": "Jesper Wallstedt",
+   "status": "expected"
+  },
+  "WPG": {
+   "name": "Stuart Skinner",
+   "status": "expected"
+  },
+  "NJD": {
+   "name": "Jake Allen",
    "status": "confirmed"
   },
-  "NYR": {
-   "name": "Dylan Garand",
-   "status": "confirmed"
+  "CBJ": {
+   "name": "Cam Talbot",
+   "status": "expected"
   },
-  "VAN": {
-   "name": "Leevi Merilainen",
-   "status": "confirmed"
+  "FLA": {
+   "name": "Jacob Markstrom",
+   "status": "expected"
   },
-  "PHI": {
-   "name": "Joseph Woll",
-   "status": "confirmed"
+  "STL": {
+   "name": "Joel Hofer",
+   "status": "expected"
   },
-  "SJS": {
-   "name": "Yaroslav Askarov",
-   "status": "confirmed"
+  "DET": {
+   "name": "John Gibson",
+   "status": "expected"
   },
-  "NYI": {
-   "name": "Ilya Sorokin",
-   "status": "confirmed"
+  "LAK": {
+   "name": "Darcy Kuemper",
+   "status": "expected"
+  },
+  "NSH": {
+   "name": "Juuse Saros",
+   "status": "expected"
   }
  },
- "checked_at": "2026-11-09T21:40:00-05:00"
+ "checked_at": "2026-11-10T05:00:00-05:00"
 }
