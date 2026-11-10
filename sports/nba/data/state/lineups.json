@@ -11,7 +11,8 @@
     "Myles Turner"
    ],
    "status": {
-    "Tyler Herro": "questionable"
+    "Tyler Herro": "questionable",
+    "Kel'el Ware": "questionable"
    }
   },
   "NY": {
@@ -19,12 +20,12 @@
    "starters": [
     "Jalen Brunson",
     "Mikal Bridges",
-    "Josh Hart",
+    "Landry Shamet",
     "OG Anunoby",
     "Karl-Anthony Towns"
    ],
    "status": {
-    "Josh Hart": "questionable"
+    "Josh Hart": "doubtful"
    }
   },
   "BOS": {
@@ -80,7 +81,6 @@
     "Oso Ighodaro"
    ],
    "status": {
-    "Jordan Goodwin": "questionable",
     "Mark Williams": "out"
    }
   },
@@ -102,14 +102,14 @@
    "starters": [
     "Isaiah Collier",
     "Darryn Peterson",
+    "Josh Green",
     "Ace Bailey",
-    "Lauri Markkanen",
     "Jaxson Hayes"
    ],
    "status": {
-    "Lauri Markkanen": "questionable",
     "Keyonte George": "out",
     "Jaren Jackson": "out",
+    "Lauri Markkanen": "out",
     "Jusuf Nurkic": "out"
    }
   },
@@ -123,6 +123,7 @@
     "Wendell Carter"
    ],
    "status": {
+    "Tristan da Silva": "questionable",
     "Paolo Banchero": "out",
     "Jonathan Isaac": "out",
     "Izaiyah Nelson": "out",
@@ -140,9 +141,7 @@
     "Domantas Sabonis"
    ],
    "status": {
-    "Domantas Sabonis": "questionable",
     "Ben Simmons": "out",
-    "Keegan Murray": "questionable",
     "Maxime Raynaud": "out"
    }
   },
@@ -179,5 +178,5 @@
    }
   }
  },
- "at": "2026-11-10T05:00:01-05:00"
+ "at": "2026-11-10T16:30:00-05:00"
 }
