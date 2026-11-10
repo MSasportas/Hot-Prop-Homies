@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-10T17:30:00-05:00",
+ "generated_at": "2026-11-10T18:20:01-05:00",
  "summary": {
   "headline": {
    "w": 33,
@@ -219,7 +219,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 1,
+    "n": 3,
     "graded": false
    },
    {
@@ -427,6 +427,52 @@
       {
        "price": 140,
        "at": "2026-11-10T17:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-10:2026020291:8481559:shots:3.5:under",
+     "kind": "single",
+     "player": "J. Hughes",
+     "bet": "Under 3.5 shots on goal",
+     "market": "shots",
+     "team": "NJD",
+     "game": "NJD at WPG",
+     "price": 125,
+     "first_price": 125,
+     "last_price": 125,
+     "prices": [
+      {
+       "price": 125,
+       "at": "2026-11-10T18:20:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-10:2026020286:8480069:shots:2.5:under",
+     "kind": "single",
+     "player": "C. Makar",
+     "bet": "Under 2.5 shots on goal",
+     "market": "shots",
+     "team": "COL",
+     "game": "COL at TOR",
+     "price": 115,
+     "first_price": 115,
+     "last_price": 115,
+     "prices": [
+      {
+       "price": 115,
+       "at": "2026-11-10T18:20:01-05:00"
       }
      ],
      "result": null,
