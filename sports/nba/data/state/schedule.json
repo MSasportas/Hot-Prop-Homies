@@ -435,10 +435,10 @@
     "home": "HOU",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 3rd",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "11:42 - 4th",
     "score": {
-     "DEN": "68",
+     "DEN": "71",
      "HOU": "77"
     }
    },
@@ -466,7 +466,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:25 - 1st",
+    "detail": "7:08 - 1st",
     "score": {
      "NO": "9",
      "GS": "16"
