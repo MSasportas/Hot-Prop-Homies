@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T19:30:00-05:00",
+ "at": "2026-11-09T19:40:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -523,8 +523,8 @@
    "status": "out",
    "name": "Jordan Goodwin",
    "team": "PHX",
-   "date": "2026-11-09T00:23Z",
-   "note": "Goodwin (calf) is questionable for Monday's game against the Spurs."
+   "date": "2026-11-10T00:21Z",
+   "note": "Goodwin (calf) has been ruled out for Monday's game against the Spurs, Kellan Olson of ArizonaSports.com reports."
   },
   "4701232": {
    "status": "out",
@@ -560,6 +560,13 @@
    "team": "POR",
    "date": "2026-08-24T20:23Z",
    "note": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN."
+  },
+  "4594327": {
+   "status": "day-to-day",
+   "name": "Keegan Murray",
+   "team": "SAC",
+   "date": "2026-11-10T00:34Z",
+   "note": "Murray contributed 10 points (3-10 FG, 0-3 3Pt, 4-4 FT), one rebound, two assists, one block and two steals in 23 minutes off the bench during Sunday's 114-108 loss to the Heat."
   },
   "3155942": {
    "status": "day-to-day",

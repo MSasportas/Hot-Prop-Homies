@@ -126,10 +126,10 @@
    }
   },
   "IND": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Andrew Nembhard",
-    "Kelly Oubre",
+    "Braden Smith",
     "Aaron Nesmith",
     "Pascal Siakam",
     "Ivica Zubac"
@@ -141,7 +141,7 @@
    }
   },
   "DAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Kyrie Irving",
     "Caleb Martin",
@@ -167,10 +167,8 @@
    ],
    "status": {
     "Jamal Murray": "probable",
-    "Christian Braun": "probable",
     "Cameron Johnson": "probable",
     "Aaron Gordon": "probable",
-    "Nikola Jokic": "probable",
     "DeMar DeRozan": "probable",
     "Julian Strawther": "out"
    }
@@ -254,5 +252,5 @@
    }
   }
  },
- "at": "2026-11-09T19:30:35-05:00"
+ "at": "2026-11-09T19:40:01-05:00"
 }
