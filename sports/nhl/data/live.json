@@ -1,27 +1,27 @@
 {
  "slate_date": "2026-11-09",
- "generated_at": "2026-11-10T00:40:01-05:00",
+ "generated_at": "2026-11-10T00:50:00-05:00",
  "games": [
   {
    "game_id": 2026020285,
    "state": "CRIT",
    "schedule_state": "OK",
-   "period": 3,
-   "period_type": "REG",
-   "clock": "00:11",
+   "period": 4,
+   "period_type": "OT",
+   "clock": "00:03",
    "in_intermission": false,
    "running": true,
    "away": {
     "abbrev": "NYI",
     "score": 2,
-    "sog": 29
+    "sog": 32
    },
    "home": {
     "abbrev": "SJS",
     "score": 2,
-    "sog": 36
+    "sog": 39
    },
-   "updated_at": "2026-11-10T00:40:01-05:00"
+   "updated_at": "2026-11-10T00:50:00-05:00"
   }
  ],
  "picks": {
