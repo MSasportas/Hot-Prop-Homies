@@ -1,5 +1,5 @@
 {
- "at": "2026-11-10T12:10:00-05:00",
+ "at": "2026-11-10T12:30:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -329,6 +329,13 @@
    "team": "MIA",
    "date": "2026-11-09T23:05Z",
    "note": "Antetokounmpo is probable for Tuesday's game against the Jazz due to a right wrist sprain."
+  },
+  "5105623": {
+   "status": "day-to-day",
+   "name": "Kel'el Ware",
+   "team": "MIL",
+   "date": "2026-11-10T17:18Z",
+   "note": "The Bucks exercised their fourth-year team option on Ware's contract Monday."
   },
   "4395725": {
    "status": "day-to-day",
