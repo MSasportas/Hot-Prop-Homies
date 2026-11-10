@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-10",
- "started_at": "2026-11-10T15:50:24-05:00",
- "status_at": "2026-11-10T15:50:24-05:00",
- "finished_at": "2026-11-10T15:50:25-05:00",
- "last_ok_at": "2026-11-10T15:50:24-05:00",
+ "started_at": "2026-11-10T16:00:01-05:00",
+ "status_at": "2026-11-10T16:00:01-05:00",
+ "finished_at": "2026-11-10T16:00:03-05:00",
+ "last_ok_at": "2026-11-10T16:00:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -24,13 +24,13 @@
   },
   {
    "step": "lineups",
-   "status": "skipped",
-   "note": "no game close enough"
+   "status": "ok",
+   "note": "8 of 8 team pages read"
   },
   {
    "step": "lineup_history",
-   "status": "skipped",
-   "note": "no change"
+   "status": "ok",
+   "note": "8 team(s) changed"
   },
   {
    "step": "odds",
@@ -84,8 +84,8 @@
   },
   {
    "step": "slate",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "0 open pick(s)"
   },
   {
    "step": "record",
@@ -148,18 +148,21 @@
  "next_price_read_at": "2026-11-10T17:30:00-05:00",
  "unmatched_names": [],
  "unknown_teams": [],
- "lineup_unmatched_names": [],
+ "lineup_unmatched_names": [
+  "Jackson Parsons",
+  "Ryan Tverberg"
+ ],
  "excluded_teams": [],
  "stats_through": "2026-11-09",
- "lineups_at": null,
- "lineups_note": null,
+ "lineups_at": "2026-11-10T16:00:01-05:00",
+ "lineups_note": "Lineups posted for 5 of 8 teams checked so far.",
  "games_today": 7,
  "record_events": 191,
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "42899122690",
-  "iteration": 1,
+  "iteration": 2,
   "chain_link": 158,
   "chain_started_at": "2026-11-05T20:58:54-05:00",
   "run_started_at": "2026-11-10T15:50:15-05:00"
