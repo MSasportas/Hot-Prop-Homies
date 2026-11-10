@@ -47,7 +47,7 @@
   },
   "DET": {
    "name": "John Gibson",
-   "status": "expected"
+   "status": "confirmed"
   },
   "LAK": {
    "name": "Darcy Kuemper",
@@ -58,5 +58,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-10T12:10:01-05:00"
+ "checked_at": "2026-11-10T12:50:00-05:00"
 }
