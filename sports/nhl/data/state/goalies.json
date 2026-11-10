@@ -43,7 +43,7 @@
   },
   "STL": {
    "name": "Joel Hofer",
-   "status": "expected"
+   "status": "confirmed"
   },
   "DET": {
    "name": "John Gibson",
@@ -58,5 +58,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-10T15:00:00-05:00"
+ "checked_at": "2026-11-10T15:20:00-05:00"
 }
