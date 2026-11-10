@@ -1,5 +1,5 @@
 {
- "at": "2026-11-10T17:10:00-05:00",
+ "at": "2026-11-10T17:30:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -89,29 +89,36 @@
    "status": "day-to-day",
    "name": "Norman Powell",
    "team": "CHI",
-   "date": "2026-11-09T15:41Z",
-   "note": "Powell (shoulder) has been ruled out for Sunday's game against the 76ers, Adam Aaronson of PhillyVoice.com reports."
+   "date": "2026-11-10T22:21Z",
+   "note": "Powell (shoulder) is listed as questionable for Wednesday's game versus the Spurs."
+  },
+  "5105555": {
+   "status": "day-to-day",
+   "name": "Tobe Awaka",
+   "team": "CHI",
+   "date": "2026-11-10T22:19Z",
+   "note": "Awaka (back) is questionable for Wednesday's game against the Spurs."
   },
   "4066650": {
    "status": "day-to-day",
    "name": "Zach Collins",
    "team": "CHI",
-   "date": "2026-11-09T15:41Z",
-   "note": "Collins (illness) is out for Sunday's game against Philadelphia."
+   "date": "2026-11-10T22:19Z",
+   "note": "Collins (illness) is questionable for Wednesday's game against the Spurs."
   },
   "4066757": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Sam Merrill",
    "team": "CLE",
-   "date": "2026-11-10T02:49Z",
-   "note": "Merrill (elbow) is listed as out for Monday's game against the Hornets."
+   "date": "2026-11-10T22:12Z",
+   "note": "Merrill (elbow) is listed as out for Wednesday's game against the Knicks."
   },
   "4683747": {
    "status": "out",
    "name": "Jaylon Tyson",
    "team": "CLE",
-   "date": "2026-11-08T22:04Z",
-   "note": "Tyson (ankle) is out for Monday's game against the Hornets."
+   "date": "2026-11-10T22:07Z",
+   "note": "Tyson (ankle) is questionable to face the Knicks on Wednesday."
   },
   "4873153": {
    "status": "day-to-day",
@@ -616,13 +623,6 @@
    "team": "UTAH",
    "date": "2026-10-27T19:25Z",
    "note": "Jackson has been diagnosed with a torn MCL in his right knee and will be sidelined for 6-to-8 weeks, per Shams Charania of ESPN."
-  },
-  "5104155": {
-   "status": "day-to-day",
-   "name": "Bilal Coulibaly",
-   "team": "WSH",
-   "date": "2026-11-10T02:53Z",
-   "note": "Coulibaly (hand) is out for Monday's game against the Pistons."
   },
   "4997537": {
    "status": "out",
