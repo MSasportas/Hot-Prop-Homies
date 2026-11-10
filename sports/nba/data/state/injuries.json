@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T23:10:01-05:00",
+ "at": "2026-11-09T23:50:00-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -161,6 +161,13 @@
    "team": "DET",
    "date": "2026-11-08T16:05Z",
    "note": "Duren (hamstring) has begun on-court activity and will be re-evaluated in two weeks, Hunter Patterson of The Athletic reports."
+  },
+  "4397040": {
+   "status": "day-to-day",
+   "name": "Brandon Williams",
+   "team": "GS",
+   "date": "2026-11-10T04:38Z",
+   "note": "Williams (quadriceps) isn't listed on the injury report for Thursday's game against the Heat."
   },
   "3134903": {
    "status": "out",
@@ -534,10 +541,10 @@
    "note": "Simmons underwent successful surgery Tuesday to repair a torn right Achilles tendon, James Ham of ESPN 1320 Sacramento reports."
   },
   "4395630": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Devin Vassell",
    "team": "SA",
-   "date": "2026-11-09T18:41Z",
+   "date": "2026-11-10T04:32Z",
    "note": "Vassell (groin) is out for Monday's game against the Suns, Tom Orsborn of the San Antonio Express-News reports."
   },
   "6440": {
