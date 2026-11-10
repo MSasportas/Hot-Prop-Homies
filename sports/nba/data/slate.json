@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-09T21:40:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-09T23:00:00-05:00"
+   "at": "2026-11-09T23:10:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -282,7 +282,7 @@
    "away": "SAS",
    "home": "PHX",
    "state": "in",
-   "detail": "9:13 - 4th",
+   "detail": "4:55 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -319,7 +319,7 @@
    "away": "NOP",
    "home": "GSW",
    "state": "in",
-   "detail": "2:03 - 2nd",
+   "detail": "Halftime",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -779,6 +779,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-09T23:00:00-05:00",
- "status_at": "2026-11-09T23:00:00-05:00"
+ "generated_at": "2026-11-09T23:10:01-05:00",
+ "status_at": "2026-11-09T23:10:01-05:00"
 }

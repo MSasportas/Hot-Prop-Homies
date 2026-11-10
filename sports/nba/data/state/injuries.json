@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T23:00:00-05:00",
+ "at": "2026-11-09T23:10:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -197,6 +197,13 @@
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
   },
+  "4432827": {
+   "status": "day-to-day",
+   "name": "Oscar Tshiebwe",
+   "team": "HOU",
+   "date": "2026-11-10T03:59Z",
+   "note": "Tshiebwe has been ruled out for Monday's game against the Nuggets due to an illness."
+  },
   "3102529": {
    "status": "out",
    "name": "Clint Capela",
@@ -210,13 +217,6 @@
    "team": "HOU",
    "date": "2026-11-09T23:55Z",
    "note": "Head coach Ime Udoka said Monday that Adams could return as soon as Sunday's game at Washington, Lachard Binkley of SI.com reports."
-  },
-  "4432827": {
-   "status": "out",
-   "name": "Oscar Tshiebwe",
-   "team": "HOU",
-   "date": "2026-11-09T17:36Z",
-   "note": "Tshiebwe has been ruled out for Monday's game against the Nuggets due to an illness."
   },
   "4396993": {
    "status": "out",
@@ -329,13 +329,6 @@
    "team": "MIL",
    "date": "2026-11-09T22:21Z",
    "note": "Herro (contusion) is listed as questionable for Tuesday's game against the Knicks."
-  },
-  "4277843": {
-   "status": "day-to-day",
-   "name": "Gary Trent Jr.",
-   "team": "MIL",
-   "date": "2026-11-09T15:57Z",
-   "note": "Trent (illness) won't play in Sunday's game versus the Celtics."
   },
   "4594268": {
    "status": "out",
