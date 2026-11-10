@@ -80,3 +80,44 @@ bootstrap lower bound > 0, and kept ROI above the cut-group ROI).
   (`ev_vs_pin`, graded from box scores). Metric: ROI at the posted price for each group, CLV (frozen price vs the D-read Pinnacle
   fair), games-clustered 90% bootstrap, shuffle placebo. Pass bar: RESEARCH.md rule 4 on the S1 >= 0 group AND its ROI above the
   rest. At ~4 bets a night that group reaches 150 bets in about 5 weeks (early Dec); the 2026-11-25 checkpoint gets a first read.
+
+## Run 8 (2026-11-09 night, Researcher; Matt 2026-11-09: "line movements, book movements for both NHL and NBA. Expand to NBA.")
+Registered before any of these were scored. Not committed first (this run may not commit; the CEO commits), so the order is on trust.
+What NHL research does on moves that NBA did not: closing-line value on every forward idea (NHL bar: mean CLV > 0), a re-scorer for
+every registered forward idea (research/code/fwd/run_all.sh -> fwd/scores.md), early read vs late read (Q6, Q15, Q16, Q21), flag
+early / bet late (Q16b), Hard Rock stale events and minutes to re-price after news (Q2-desc, shadow `stale_events`), Hard Rock's own
+open-to-close move (R10), Pinnacle agrees / disagrees (Q22), Pinnacle steam (Q13, Q19), and a kill gate on open-to-close movement.
+NBA had: R3 / F6 Hard Rock lag (3 nights), F7 / F7b / F8 / F8b solo and line moves (3 nights), Run 7 scores (4 nights). None re-scored
+since Oct 29, no CLV on the Record, no size / timing / side / reversal splits.
+
+Data for all M ideas: `data/odds/<date>.json` (Hard Rock + 9 books: Pinnacle, DraftKings, FanDuel, BetMGM, BetRivers, ESPN Bet, BetOnline,
+Novig, ProphetX; 4 markets; reads A 11 AM, B ~90, C ~45, D ~20 min before tip), `data/record/events.jsonl` (the live Record), box
+scores for grading. 15 nights stored, Oct 25 - Nov 9 (no Nov 3; Oct 25, Nov 1-2 have no A read). "Close" = the D read (~20 min before
+tip): the last price stored. There is no true closing price in the repo.
+MOVES population (same for M2-M7): consecutive reads of a game (A->B, B->C, C->D); Pinnacle two-sided on the same line both reads
+(hold 0-15%), its de-vigged chance moved >= 2 pts; Hard Rock two-sided on that line on both reads; bet the side Pinnacle moved toward
+at Hard Rock's later-read price, -200..+200; first time per player/market/night. Graded like the Record. Each split is also shown on
+FAIR = the subset with Hard Rock's price at or better than Pinnacle's new fair (the live v2.6 gate) and on the live Record itself.
+Discovery = every night through 2026-11-09 (the Record was already seen). Forward counts from the night of 2026-11-10.
+Pass bar for every M idea (RESEARCH.md rule 4): the kept group n >= 150 graded forward, ROI > 0 at Hard Rock's price with the 90%
+game-clustered bootstrap lower bound > 0, mean CLV vs the D-read Pinnacle fair > 0, and for a split the kept group's ROI above the
+other group's. 7 ideas, ~20 groups: expect 1-2 to look good by luck.
+- M1 Closing-line value of every shown pick. CLV_pin = Pinnacle's de-vigged chance for the side at the D read (same line) x frozen
+  decimal price - 1. CLV_hr = frozen decimal / Hard Rock's D-read decimal on the same side and line - 1 (above 0 = Hard Rock closed
+  shorter than the price we showed). Picks made at the D read have no later price and are left out (counted). Metric: mean and
+  median CLV, share > 0, and W-L / units of CLV > 0 picks vs CLV <= 0 picks. Sample: every Record pick; 150 graded with a later read.
+- M2 Hard Rock lag. MOVES split by what Hard Rock's price on that side did between the two reads: unchanged (stale) / shortened
+  (followed) / lengthened (went the other way). Bet the stale ones. M2b: the OTHER books lead: median de-vigged move of the non-Pinnacle
+  books (>= 4 books on the line both reads) >= 2 pts, Hard Rock's price unchanged, Pinnacle not required; bet that side at Hard Rock.
+  Metric: W-L, units, CLV_pin. Sample: 150 stale bets (M2), 150 (M2b).
+- M3 Consensus move vs Pinnacle-only move. MOVES split by the other books' median move the same way: < 1 pt (solo) / >= 1 pt
+  (consensus), and by how many of them moved >= 1 pt that way: 0-1 / 2-4 / 5+. Sample: 150 in each of solo and consensus.
+- M4 Move size bands: Pinnacle's move 2-3 / 3-4 / 4+ pts. (The live Record's 2-3 pt band is what the Sharp is watching to 15 bets.)
+  Sample: 150 in the 2-3 band; the question is whether 2-3 is worse than 3+.
+- M5 Move timing: the window the move happened in: 11 AM -> 90 min / 90 -> 45 / 45 -> 20 (and "last 90 min" = the last two together).
+  Sample: 150 per group (morning vs last 90 min).
+- M6 Reverse move after we post, as a pull signal. For each bet with a later read: Pinnacle's chance for the side at the NEXT read
+  moved back >= 1 pt (reversed) / stayed within 1 pt / ran on >= 1 pt more. Metric: W-L and units per group at the frozen price. A pull
+  rule would only be proposed if reversed picks lose money AND the rest stay ahead. Sample: 60 reversed bets (they are rare).
+- M7 Unders vs overs. MOVES and the Record split by side. Sample: 150 per side.
+Code: research/code/run8_moves.py (one script scores M1-M7 on every stored night; re-run it each run).

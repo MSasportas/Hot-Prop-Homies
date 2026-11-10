@@ -230,7 +230,7 @@ class Modes(unittest.TestCase):
         cfg = helpers.cfg()
         gg = rules["values"]["gap_guard"]
         self.assertEqual(sorted(gg), ["books_min", "final_ev", "gap_ev", "lines", "live_from", "market_weight", "max_per_game",
-                                      "max_per_night", "max_per_player", "max_price", "model_weight", "pin_ev_min",
+                                      "max_per_night", "max_per_player", "max_price", "model_min_edge", "model_weight", "pin_ev_min",
                                       "price_gate", "pull_ev", "safety_units"])
         self.assertEqual((gg["gap_ev"], gg["final_ev"], gg["books_min"], gg["price_gate"], gg["max_price"]), (0.03, 0.02, 4, -200, None))
         self.assertEqual(rules["version"], cfg["version"])

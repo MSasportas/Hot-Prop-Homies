@@ -102,6 +102,42 @@ class Maths(unittest.TestCase):
         self.assertTrue(paper.guard(0.51, 0.51, 100, T)[0])          # +2.0000%
         self.assertFalse(paper.guard(0.5099, 0.5099, 100, T)[0])
 
+    def test_model_must_reach_break_even_inclusive(self):
+        """v3.5 (2026-11-09): final EV alone is not enough; the calibrated model chance of the side must be >= the
+        Hard Rock price's break-even + model_min_edge. Inclusive at exactly break-even."""
+        self.assertEqual(T["model_min_edge"], 0.0)
+        be = odds.break_even(-110)                                   # 0.5238...
+        fair = 0.60                                                  # final EV passes either way
+        self.assertTrue(paper.guard(fair, be, -110, T)[0])           # exactly break-even: passes
+        self.assertTrue(paper.guard(fair, be + 1e-6, -110, T)[0])
+        ok, final, fe = paper.guard(fair, be - 1e-6, -110, T)        # just below: fails, though final EV clears the bar
+        self.assertFalse(ok)
+        self.assertGreaterEqual(fe, T["final_ev"])
+        self.assertEqual(paper.guard_parts(fair, be - 1e-6, -110, T)[:2], (True, False))
+        self.assertTrue(paper.guard(0.58, 100 / 230.0, 130, T)[0])   # plus money: break-even 43.5%
+        self.assertFalse(paper.guard(0.58, 100 / 230.0 - 1e-6, 130, T)[0])
+        T2 = dict(T, model_min_edge=0.01)                            # the knob moves the bar
+        self.assertFalse(paper.guard(fair, be + 0.005, -110, T2)[0])
+        self.assertTrue(paper.guard(fair, be + 0.01, -110, T2)[0])
+        self.assertTrue(paper.guard(fair, 0.30, -110, dict(T, model_min_edge=None))[0])   # null = check off
+
+    def test_assess_names_why_the_guard_said_no(self):
+        fairs = {b: 0.60 for b in BOOKS}
+        be = odds.break_even(-110)
+        a = self.a("over", 1.5, -110, fairs, be - OFF15)             # calibrated = raw + offset = exactly break-even
+        self.assertAlmostEqual(a["model_side"], be)
+        self.assertTrue(a["step1"] and a["guard"] and a["guard_ev"])
+        self.assertIsNone(a["guard_reason"])
+        a = self.a("over", 1.5, -110, fairs, be - OFF15 - 0.001)     # the CALIBRATED chance is what is compared
+        self.assertIs(a["guard"], False)
+        self.assertIs(a["guard_ev"], True)
+        self.assertEqual(a["guard_reason"], "model below break-even")
+        a = self.a("under", 1.5, -110, {b: 0.40 for b in BOOKS}, 1 - be - OFF15 + 0.001)  # under = 1 - calibrated over
+        self.assertIs(a["guard"], False)
+        self.assertEqual(a["guard_reason"], "model below break-even")
+        a = self.a("over", 1.5, -120, {b: 0.566 for b in BOOKS}, 0.497)                   # Michkov: final EV fails first
+        self.assertEqual((a["guard"], a["guard_ev"], a["guard_reason"]), (False, False, "final EV below the bar"))
+
     def test_three_books_fail_four_pass(self):
         three = ["draftkings", "fanduel", "pinnacle"]
         self.assertIn("books", self.a("over", 1.5, 100, {b: 0.54 for b in three}, 0.5)["fails"])
@@ -335,6 +371,38 @@ class Flags(Base):
         self.step("18:16")
         self.assertEqual(len(self.events("flag")), 1)
 
+    def test_model_below_break_even_is_a_logged_veto_not_a_pick(self):
+        """v3.5: market +10% on Hard Rock's +100 and final EV well over the bar, but the model's calibrated chance
+        (49%) is under the 50% break-even: no flag, a veto with the reason, shadow-tracked to the close."""
+        c = self.lines(101, "AAA", "Ann Aa", 1.5, 0.55, raw=0.49 - OFF15)
+        d = self.lines(102, "AAA", "Bob Bb", 1.5, 0.55, raw=0.50 - OFF15)       # exactly break-even: a pick
+        self.read(1, "B", "17:30", [c, d])
+        self.step("17:31")
+        self.assertEqual([e["pid"] for e in self.events("flag")], [102])
+        self.assertNotIn("reason", self.events("flag")[0])
+        v = self.events("veto")
+        self.assertEqual([e["pid"] for e in v], [101])
+        self.assertEqual((v[0]["guard"], v[0]["reason"]), ("veto", "model below break-even"))
+        self.assertGreaterEqual(v[0]["final_ev"], 0.02)
+        self.assertAlmostEqual(v[0]["model_side"], 0.49)
+        self.read(1, "C", "18:15", [c, d])
+        self.step("18:16")
+        self.assertEqual(len(self.events("veto")), 1)                            # logged once
+        self.assertEqual(sorted(e["id"].split(":")[2] for e in self.events("close")), ["101", "102"])
+
+    def test_a_shown_pick_is_not_pulled_by_the_break_even_check(self):
+        """v3.5 gates NEW picks only: a pick already shown whose model chance is (now) under break-even stays, as long
+        as the final-EV check still holds."""
+        c = self.lines(101, "AAA", "Ann Aa", 1.5, 0.55, raw=0.50 - OFF15)
+        self.read(1, "B", "17:30", [c])
+        self.step("17:31")
+        self.assertEqual(len(self.events("flag")), 1)
+        c2 = self.lines(101, "AAA", "Ann Aa", 1.5, 0.55, raw=0.45 - OFF15)       # model drops under break-even
+        self.read(1, "C", "18:15", [c2])
+        self.step("18:16")
+        self.assertEqual(self.events("pull"), [])
+        self.assertEqual(self.events("veto"), [])
+
     def test_vetoed_candidate_is_logged_once_with_the_same_closing_data(self):
         c = self.lines(101, "AAA", "Ann Aa", 1.5, 0.5175, hr=(100, -125), raw=0.30)   # market +3.5%, model far below
         self.read(1, "B", "17:30", [c])
@@ -343,6 +411,7 @@ class Flags(Base):
         v = self.events("veto")[0]
         self.assertEqual(v["guard"], "veto")
         self.assertLess(v["final_ev"], 0.02)
+        self.assertEqual(v["reason"], "final EV below the bar")
         self.read(1, "C", "18:15", [c])
         self.step("18:16")
         self.assertEqual([e["t"] for e in self.events()], ["veto", "close"])    # not vetoed twice; closed like a flag

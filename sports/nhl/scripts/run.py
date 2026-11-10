@@ -143,7 +143,7 @@ class Run:
         gg = common.gap_guard(self.cfg)
         T = gg.get("thresholds") or {}
         public = {k: T.get(k) for k in ("lines", "price_gate", "max_price", "gap_ev", "books_min", "pin_ev_min", "pull_ev",
-                                        "market_weight", "model_weight", "final_ev", "max_per_player", "max_per_game",
+                                        "market_weight", "model_weight", "final_ev", "model_min_edge", "max_per_player", "max_per_game",
                                         "max_per_night")}
         public["live_from"] = gg.get("live_from")
         public["safety_units"] = ((self.cfg.get("ops") or {}).get("safety_pause") or {}).get("units")

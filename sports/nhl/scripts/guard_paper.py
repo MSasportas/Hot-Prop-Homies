@@ -6,7 +6,8 @@
         end. Exit 1 (and print why) on a breach. A missing file passes (the test has not started or is off).
 
 The paper log is not the Record: cycle.sh answers a breach by restoring data/paper/ from HEAD and carrying on, it never
-stops the cycle or the Record. Same test (guard_record.check), same "absent from HEAD only when git says so" rule.
+stops the cycle or the Record. Paths given to git carry guard_record._git_prefix(root) ("sports/nhl/" in the combined repo, "" in a
+standalone one): without it every cycle failed here and cycle.sh restored data/paper/ from HEAD (2026-11-05 to 11-09). Same test (guard_record.check), same "absent from HEAD only when git says so" rule.
 """
 import os
 import sys
@@ -23,10 +24,10 @@ def committed(root):
     if guard_record._unborn(root):
         return None
     guard_record.git(root, "rev-parse", "--verify", "--quiet", "HEAD^{commit}")
-    listed = guard_record.git(root, "ls-tree", "--name-only", "HEAD", "--", REL).decode("utf-8", "replace").strip()
+    listed = guard_record.git(root, "ls-tree", "--name-only", "HEAD", "--", guard_record._git_prefix(root) + REL).decode("utf-8", "replace").strip()
     if not listed:
         return None
-    return guard_record.git(root, "cat-file", "blob", "HEAD:" + REL)
+    return guard_record.git(root, "cat-file", "blob", "HEAD:" + guard_record._git_prefix(root) + REL)
 
 
 def working(root):

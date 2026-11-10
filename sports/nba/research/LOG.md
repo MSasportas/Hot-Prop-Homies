@@ -1,5 +1,44 @@
 # LOG.md (NBA research, newest first)
 
+## 2026-11-09 night, Run 8 (Researcher; Matt: line moves and book moves for NBA like NHL)
+Code: research/code/run8_moves.py (M1-M7, re-run any day; splits discovery / forward at 2026-11-10). DISCOVERY ONLY: 14 nights with
+moves (Oct 26 - Nov 9, no Nov 3), all already seen through the Record. Nothing here can pass; forward counts from 2026-11-10.
+Populations: MOVES = every Pinnacle 2+ pt move, Hard Rock on the line, bet at Hard Rock: 614 bets, 316-260, +7.65u (+1.3%, 90% CI
+-6..+8%). FAIR = Hard Rock at or better than Pinnacle's new fair (the live gate): 53 bets, 36-15, +19.68u (+38.6%, CI +18..+60%).
+Record (live picks as shown): 66 picks, 40-24, +13.29u. The fair-price gate is the whole edge: moves without it are break-even.
+- M1 CLV (close = the 20-min read; 9 Record picks made at that read have no later price). Record: n 57, mean CLV vs Pinnacle's close
+  -0.8%, median +0.1%, 54% above 0. CLV > 0 picks 19-11 +7.35u; CLV <= 0 picks 15-10 +2.80u. Vs Hard Rock's own close: Hard Rock closed
+  shorter on 13 (9-4 +4.66u), same price on 37 (21-14 +5.65u), longer on 3, line gone on 4. Plain words: the Record wins but is NOT
+  beating the close on average; on NHL the lead idea runs CLV +3.4%. That is the weak spot to watch. All MOVES: CLV -4.4% (7% above 0).
+- M2 Hard Rock lag. Hard Rock re-priced with Pinnacle on 484 of 614 moves (79%), stale on 109 (18%). Stale: 56-45 +3.37u (+3.3%, CI
+  -11..+19%); followed: 251-205 +6.20u (+1.4%). In FAIR: stale 11-3 +7.02u (n 15), followed 22-10 +11.80u (n 33). M2b (other books
+  move 2+ pts, Hard Rock unchanged): 32 bets, 15-14 +0.16u, CLV -5.5%. No lag edge by itself; same answer as R3.
+- M3 Consensus vs Pinnacle-only. MOVES: solo 112-90 +7.73u (+3.8%) vs consensus 204-170 -0.09u. FAIR: solo 18-7 +10.68u vs consensus
+  18-8 +9.00u. Record: solo 24-16 +6.80u vs consensus 16-8 +6.49u. No difference. By books following 1+ pt (MOVES): 0-1 books 45-49
+  -10.82u, 2-4 books 121-80 +25.20u (+12.5%, CI +2..+23%), 5+ books 150-131 -6.73u. A middle-band bump with no story: likely luck.
+- M4 Move size. Record: 2-3 pts 7-8 -2.74u (n 15), 3-4 pts 13-6 +7.32u (n 19), 4+ pts 20-10 +8.71u (n 30). FAIR: 2-3 pts 3-2 (n 5),
+  3-4 11-3, 4+ 22-10. All MOVES: flat (+2.8% / +3.0% / -1.3%). The Record's 2-3 band is the only losing band, on 15 bets; the big
+  population does not back "small moves are worse" and the FAIR 2-3 group is 5 bets. Lead, not a finding. Keep the Sharp's watch.
+- M5 Timing. MOVES: 11 AM -> 90 min 224-194 -4.08u (-1.0%); last 90 min 92-66 +11.73u (+7.4%, CI -4..+19%); 45 -> 20 alone 34-21
+  +8.40u (n 55). FAIR: morning 21-9 +11.84u, 90->45 8-4, 45->20 7-2. Record: 23-13 / 11-8 / 6-3. Late moves look a bit better on all
+  moves, but with the fair gate every window wins. 74% of moves come from the long 11 AM window.
+- M6 Reverse move at the next read (Pinnacle comes back 1+ pt). Record: reversed 6-2 +3.73u (n 8), held 28-16 +9.42u (n 46), ran on
+  0-2. MOVES: reversed 19-14 +2.40u (n 33), held 246-205 +3.92u, ran on 12-15 -5.85u. A reversal is NOT a pull signal so far.
+  Side note: the 7 picks the page pulled ("Hard Rock took the line down") went 2-5 -3.67u vs 38-19 +16.96u not pulled. 7 bets.
+- M7 Side. MOVES: unders 188-143 +14.67u (+4.4%), overs 128-117 -7.02u (-2.9%). FAIR: overs 10-1 +9.93u (n 11), unders 26-14 +9.75u
+  (n 40). Record: overs 13-6 +7.42u, unders 27-18 +5.87u. 77% of FAIR picks are unders; both sides win. No asymmetry to act on.
+- Count: 7 ideas x 3 populations, ~60 groups looked at on nights already seen. Expect ~3-6 "significant" by luck.
+- Verdict: NO CANDIDATE FOR SHARP. Nothing to change live. Most useful fact: the live rule's edge is the fair-price gate, not the move's
+  size, timing, side or how many books followed; and its CLV vs the 20-min Pinnacle price is ~0, not positive.
+- Missing data: (1) no true close (last read is ~20 min before tip; 9 of 66 picks have no later price); (2) no historical NBA prop
+  odds (paid, Matt only); (3) reads are 20-45 min apart (11 AM -> 90 min is hours), so "which book moves first" can only be seen as
+  who had moved by the next read; (4) no A read on Oct 25, Nov 1-2; no Nov 3.
+- Builder request (not made; outside research/): see the report to the CEO. (a) a daily step that runs run8_moves.py after grading and
+  saves the output under research/fwd/; (b) an optional closing read ~2 min before tip for games with a shown pick (costs credits:
+  CEO / Matt decide).
+- Next 3: (1) re-run run8 weekly; first forward read at ~60 forward Record picks; (2) use each book's `last_update` stamp inside a read
+  to order who moved first (free, already stored); (3) M1 by pick state (early / clear / starters) once n allows.
+
 ## 2026-10-29 ~8:10 AM, Run 7 (CEO as Researcher; Matt: fewer picks a day by a calculated method, no hard limits)
 Code: research/code/run7_reduce.py; the 74 scored bets: research/run7_population.json. Discovery only (Oct 25-28), nothing can pass.
 - Population: every Pinnacle 2+ pt move at B/C/D passing the v2.1 base, before the v2.2 gap gate: 74 bets, 44-30, +7.53u. Live-rule

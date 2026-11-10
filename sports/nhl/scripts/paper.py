@@ -17,7 +17,10 @@ Everything is in EV% = fair_prob x Hard Rock decimal payout - 1, on unrounded fl
   STEP 2 (guard): final = market_weight x market_fair + model_weight x calibrated model chance for the side, where the
     calibrated model = raw model chance of the over + a FROZEN additive offset per line (config ops.gap_guard.thresholds.offsets;
     refit once from the 2025-26 Hard Rock shots lines, model from prior games only); under = 1 - over. Passes iff
-    final x decimal - 1 >= final_ev (+2.0%).
+    final x decimal - 1 >= final_ev (+2.0%) AND (v3.5, 2026-11-09) the calibrated model chance for the side on its own
+    >= the Hard Rock price's break-even + model_min_edge (0.0; null = off). A candidate failing either is logged as a
+    veto with a `reason`. The model-vs-break-even check gates NEW picks only: a pick already shown is pulled by the
+    final-EV check alone, exactly as before v3.5.
 Reads: only pull B (90 min) and pull C (45 min) reads can flag. Pull A (the 1 PM read) is baseline / context only. A read with
 no "others" key (Hard Rock-only retry) is skipped entirely. Later reads can only PULL a flag (never re-price it).
 Files (all under data/paper/, never under data/record/): events.jsonl (append-only: flag, veto, capped, pull, close, grade),
@@ -141,11 +144,29 @@ def calibrated_over(raw_over, line, T):
     return min(0.999, max(0.001, raw_over + off))
 
 
-def guard(market_fair, model_side, price, T):
-    """Step 2 on numbers: (passes, final probability, final EV). model_side = the CALIBRATED model chance of the side."""
+VETO_FINAL_EV = "final EV below the bar"
+VETO_MODEL_BE = "model below break-even"
+
+
+def model_ok(model_side, price, T):
+    """v3.5 (2026-11-09): the CALIBRATED model chance of the side must itself be >= the Hard Rock price's break-even +
+    model_min_edge (inclusive). model_min_edge null = this check is off; a config without the key means 0.0."""
+    m = T.get("model_min_edge", 0.0)
+    return m is None or model_side >= odds.break_even(price) + m - EPS
+
+
+def guard_parts(market_fair, model_side, price, T):
+    """(final-EV check passes, model-vs-break-even check passes, final probability, final EV)."""
     final = T["market_weight"] * market_fair + T["model_weight"] * model_side
     fe = ev(final, price)
-    return fe >= T["final_ev"] - EPS, final, fe
+    return fe >= T["final_ev"] - EPS, model_ok(model_side, price, T), final, fe
+
+
+def guard(market_fair, model_side, price, T):
+    """Step 2 on numbers: (passes, final probability, final EV). model_side = the CALIBRATED model chance of the side.
+    Passes iff final EV >= final_ev AND model_side >= break-even of the price + model_min_edge."""
+    ev_ok, m_ok, final, fe = guard_parts(market_fair, model_side, price, T)
+    return ev_ok and m_ok, final, fe
 
 
 def assess(side, line, price, entry, raw_over_fn, T, guard_anyway=False):
@@ -159,7 +180,7 @@ def assess(side, line, price, entry, raw_over_fn, T, guard_anyway=False):
     out = {"side": side, "line": line, "price": price, "n_books": len(fairs), "books": sorted(fairs),
            "market_fair": None, "gap_ev": None, "pin_fair": None, "pin_ev": None, "model_raw_over": None,
            "model_cal_over": None, "model_side": None, "final": None, "final_ev": None, "step1": False,
-           "guard": None, "fails": []}
+           "guard": None, "guard_ev": None, "guard_reason": None, "fails": []}
     if not line_ok(line, T):
         out["fails"].append("line")
     if not inside_gate(price, T):
@@ -187,8 +208,11 @@ def assess(side, line, price, entry, raw_over_fn, T, guard_anyway=False):
             cal = calibrated_over(raw, line, T)
             if cal is not None:
                 ms = side_fair(cal, side)
-                ok, final, fe = guard(out["market_fair"], ms, price, T)
-                out.update(model_raw_over=raw, model_cal_over=cal, model_side=ms, final=final, final_ev=fe, guard=ok)
+                ev_ok, m_ok, final, fe = guard_parts(out["market_fair"], ms, price, T)
+                # guard = what a NEW pick needs (both checks); guard_ev = the final-EV check alone (what pulls a shown pick)
+                out.update(model_raw_over=raw, model_cal_over=cal, model_side=ms, final=final, final_ev=fe,
+                           guard=ev_ok and m_ok, guard_ev=ev_ok,
+                           guard_reason=None if (ev_ok and m_ok) else (VETO_FINAL_EV if not ev_ok else VETO_MODEL_BE))
     return out
 
 
@@ -439,6 +463,8 @@ class Paper:
              "move30": move, "move30_from": prev_at}
         if reason:
             e["cap"] = reason
+        if kind == "veto":
+            e["reason"] = a.get("guard_reason")               # "final EV below the bar" / "model below break-even"
         link = odds.safe_link((((view["pairs"] or {}).get((a["pid"], a["line"])) or {}).get("links") or {}).get(a["side"])) \
             if kind == "flag" else None                       # only a pick needs it (vetoes and capped rows do not)
         if link:
@@ -467,7 +493,7 @@ class Paper:
             return "Pinnacle gone", "Pinnacle no longer quotes both sides"
         if a["pin_ev"] < T["pin_ev_min"] - EPS:
             return "Pinnacle disagrees", "Pinnacle EV %+.1f%%" % (100 * a["pin_ev"])
-        if a["guard"] is False:
+        if a["guard_ev"] is False:                        # final-EV check only: the v3.5 model-vs-break-even check never pulls
             return "model guard fails", "final EV %+.1f%%" % (100 * a["final_ev"])
         return None
 
@@ -766,7 +792,7 @@ def explain(inp, cfg, odds_doc, games, now):
                     elif a["guard"] is None:
                         row["verdict"] = "no model for him"
                     elif not a["guard"]:
-                        row["verdict"] = "vetoed by our model"
+                        row["verdict"] = "vetoed by our model (%s)" % a["guard_reason"]
                     elif not p.eligible(pid, pair["team"]):
                         row["verdict"] = "not eligible (history, absence or lineup)"
                     else:

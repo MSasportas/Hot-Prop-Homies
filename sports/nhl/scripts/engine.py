@@ -79,7 +79,7 @@ def check_config(cfg):
     g = common.gap_guard(cfg)
     T = g.get("thresholds") or {}
     need = ("lines", "price_gate", "max_price", "gap_ev", "books_min", "pin_ev_min", "pull_ev", "market_weight", "model_weight",
-            "offsets", "final_ev", "flag_pulls", "close_min", "move_min", "max_per_player", "max_per_game", "max_per_night",
+            "offsets", "final_ev", "model_min_edge", "flag_pulls", "close_min", "move_min", "max_per_player", "max_per_game", "max_per_night",
             "min_history")
     miss = [k for k in need if k not in T]
     if miss:
