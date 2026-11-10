@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-10T00:30:00-05:00",
+ "generated_at": "2026-11-10T18:50:00-05:00",
  "summary": {
   "headline": {
    "w": 34,
@@ -145,6 +145,7 @@
       "needed": 0.5431,
       "n": 17,
       "ids": [
+       "2026-11-10:401909960:3147657:points:10.5:under",
        "2026-11-09:401909953:3908809:points:23.5:under",
        "2026-11-09:401909954:4277905:points:18.5:under",
        "2026-11-07:401909942:4277847:points:12.5:under",
@@ -258,6 +259,7 @@
       "needed": 0.5274,
       "n": 38,
       "ids": [
+       "2026-11-10:401909960:3147657:points:10.5:under",
        "2026-11-09:401909953:2583632:rebounds:4.5:under",
        "2026-11-09:401909953:3908809:points:23.5:under",
        "2026-11-09:401909953:4066328:rebounds:7.5:under",
@@ -317,6 +319,7 @@
       "needed": 0.5218,
       "n": 42,
       "ids": [
+       "2026-11-10:401909960:3147657:points:10.5:under",
        "2026-11-09:401909953:3908809:points:23.5:under",
        "2026-11-09:401909954:4277905:points:18.5:under",
        "2026-11-09:401909958:5037871:assists:4.5:over",
@@ -434,6 +437,7 @@
       "needed": 0.5218,
       "n": 41,
       "ids": [
+       "2026-11-10:401909960:3147657:points:10.5:under",
        "2026-11-09:401909953:2583632:rebounds:4.5:under",
        "2026-11-09:401909953:3908809:points:23.5:under",
        "2026-11-09:401909953:4066328:rebounds:7.5:under",
@@ -548,6 +552,7 @@
       "needed": 0.5539,
       "n": 34,
       "ids": [
+       "2026-11-10:401909960:3147657:points:10.5:under",
        "2026-11-09:401909953:2583632:rebounds:4.5:under",
        "2026-11-09:401909953:3908809:points:23.5:under",
        "2026-11-09:401909953:4066328:rebounds:7.5:under",
@@ -588,6 +593,16 @@
    }
   ],
   "days": [
+   {
+    "date": "2026-11-10",
+    "w": 0,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 0,
+    "n": 1,
+    "graded": false
+   },
    {
     "date": "2026-11-09",
     "w": 3,
@@ -711,6 +726,41 @@
   ]
  },
  "nights": [
+  {
+   "date": "2026-11-10",
+   "graded": false,
+   "w": 0,
+   "l": 0,
+   "units": 0,
+   "entries": [
+    {
+     "id": "2026-11-10:401909960:3147657:points:10.5:under",
+     "kind": "single",
+     "player": "Mikal Bridges",
+     "bet": "Under 10.5 points",
+     "market": "points",
+     "team": "NYK",
+     "game": "MIL at NYK",
+     "price": -115,
+     "first_price": -115,
+     "last_price": -115,
+     "prices": [
+      {
+       "price": -115,
+       "at": "2026-11-10T18:50:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "90 \u2192 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    }
+   ]
+  },
   {
    "date": "2026-11-09",
    "graded": true,
@@ -1552,67 +1602,6 @@
      "pulled": null,
      "legs": [],
      "window": "90 \u2192 45 min",
-     "book": "hardrock",
-     "under_fair": false
-    }
-   ]
-  },
-  {
-   "date": "2026-10-31",
-   "graded": true,
-   "w": 2,
-   "l": 0,
-   "units": 2.17,
-   "entries": [
-    {
-     "id": "2026-10-31:401909896:5105565:threes:0.5:under",
-     "kind": "single",
-     "player": "Donovan Clingan",
-     "bet": "Under 0.5 threes",
-     "market": "threes",
-     "team": "POR",
-     "game": "POR at UTA",
-     "price": 150,
-     "first_price": 150,
-     "last_price": 150,
-     "prices": [
-      {
-       "price": 150,
-       "at": "2026-10-31T14:40:00-04:00"
-      }
-     ],
-     "result": "W",
-     "actual": "0 threes",
-     "units": 1.5,
-     "pulled": null,
-     "legs": [],
-     "window": "45 \u2192 20 min",
-     "book": "hardrock",
-     "under_fair": false
-    },
-    {
-     "id": "2026-10-31:401909898:5144091:threes:1.5:under",
-     "kind": "single",
-     "player": "Jeremiah Fears",
-     "bet": "Under 1.5 threes",
-     "market": "threes",
-     "team": "NOP",
-     "game": "ATL at NOP",
-     "price": -150,
-     "first_price": -150,
-     "last_price": -150,
-     "prices": [
-      {
-       "price": -150,
-       "at": "2026-10-31T18:40:00-04:00"
-      }
-     ],
-     "result": "W",
-     "actual": "1 three",
-     "units": 0.6667,
-     "pulled": null,
-     "legs": [],
-     "window": "45 \u2192 20 min",
      "book": "hardrock",
      "under_fair": false
     }

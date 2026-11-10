@@ -1,6 +1,67 @@
 {
  "nights": [
   {
+   "date": "2026-10-31",
+   "graded": true,
+   "w": 2,
+   "l": 0,
+   "units": 2.17,
+   "entries": [
+    {
+     "id": "2026-10-31:401909896:5105565:threes:0.5:under",
+     "kind": "single",
+     "player": "Donovan Clingan",
+     "bet": "Under 0.5 threes",
+     "market": "threes",
+     "team": "POR",
+     "game": "POR at UTA",
+     "price": 150,
+     "first_price": 150,
+     "last_price": 150,
+     "prices": [
+      {
+       "price": 150,
+       "at": "2026-10-31T14:40:00-04:00"
+      }
+     ],
+     "result": "W",
+     "actual": "0 threes",
+     "units": 1.5,
+     "pulled": null,
+     "legs": [],
+     "window": "45 \u2192 20 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-10-31:401909898:5144091:threes:1.5:under",
+     "kind": "single",
+     "player": "Jeremiah Fears",
+     "bet": "Under 1.5 threes",
+     "market": "threes",
+     "team": "NOP",
+     "game": "ATL at NOP",
+     "price": -150,
+     "first_price": -150,
+     "last_price": -150,
+     "prices": [
+      {
+       "price": -150,
+       "at": "2026-10-31T18:40:00-04:00"
+      }
+     ],
+     "result": "W",
+     "actual": "1 three",
+     "units": 0.6667,
+     "pulled": null,
+     "legs": [],
+     "window": "45 \u2192 20 min",
+     "book": "hardrock",
+     "under_fair": false
+    }
+   ]
+  },
+  {
    "date": "2026-10-30",
    "graded": true,
    "w": 2,
