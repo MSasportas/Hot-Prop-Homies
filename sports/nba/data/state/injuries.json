@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T19:40:01-05:00",
+ "at": "2026-11-09T20:00:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -140,48 +140,6 @@
    "team": "DAL",
    "date": "2026-11-01T22:57Z",
    "note": "Lively (foot) is listed as out for Monday's game against the Kings."
-  },
-  "3138196": {
-   "status": "day-to-day",
-   "name": "Cameron Johnson",
-   "team": "DEN",
-   "date": "2026-11-09T19:23Z",
-   "note": "Johnson (ankle) is probable for Monday against Houston."
-  },
-  "4431767": {
-   "status": "day-to-day",
-   "name": "Christian Braun",
-   "team": "DEN",
-   "date": "2026-11-09T19:23Z",
-   "note": "Braun (left calf contusion/illness) is probable for Monday's matchup against the Rockets."
-  },
-  "3064290": {
-   "status": "day-to-day",
-   "name": "Aaron Gordon",
-   "team": "DEN",
-   "date": "2026-11-09T19:21Z",
-   "note": "Gordon (left calf injury management) is probable for Monday's game against Houston."
-  },
-  "3112335": {
-   "status": "day-to-day",
-   "name": "Nikola Jokic",
-   "team": "DEN",
-   "date": "2026-11-09T19:21Z",
-   "note": "Jokic (right elbow sprain) is probable for Monday's game against the Rockets."
-  },
-  "3978": {
-   "status": "day-to-day",
-   "name": "DeMar DeRozan",
-   "team": "DEN",
-   "date": "2026-11-09T19:20Z",
-   "note": "DeRozan (back) is probable for Monday against Houston."
-  },
-  "3936299": {
-   "status": "day-to-day",
-   "name": "Jamal Murray",
-   "team": "DEN",
-   "date": "2026-11-09T19:18Z",
-   "note": "Murray (leg) is probable for Monday against Houston."
   },
   "4432181": {
    "status": "out",
@@ -432,8 +390,8 @@
    "status": "out",
    "name": "Jaylin Williams",
    "team": "OKC",
-   "date": "2026-11-07T19:10Z",
-   "note": "Williams (back) has been ruled out for Saturday's game against the Wizards, Brandon Rahbar of DailyThunder.com reports."
+   "date": "2026-11-10T00:53Z",
+   "note": "Williams (back) has been ruled out for Tuesday's game against the Trail Blazers."
   },
   "5061603": {
    "status": "out",
@@ -533,13 +491,6 @@
    "date": "2026-09-11T16:03Z",
    "note": "Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports."
   },
-  "4066211": {
-   "status": "day-to-day",
-   "name": "Robert Williams III",
-   "team": "POR",
-   "date": "2026-11-08T16:27Z",
-   "note": "Williams (rest) won't play in Saturday's game against the Spurs."
-  },
   "4279888": {
    "status": "out",
    "name": "Ja Morant",
@@ -561,26 +512,26 @@
    "date": "2026-08-24T20:23Z",
    "note": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN."
   },
+  "4898371": {
+   "status": "out",
+   "name": "Maxime Raynaud",
+   "team": "SAC",
+   "date": "2026-11-10T00:37Z",
+   "note": "Raynaud (knee) has been ruled out for Tuesday's game against Orlando."
+  },
   "4594327": {
    "status": "day-to-day",
    "name": "Keegan Murray",
    "team": "SAC",
-   "date": "2026-11-10T00:34Z",
-   "note": "Murray contributed 10 points (3-10 FG, 0-3 3Pt, 4-4 FT), one rebound, two assists, one block and two steals in 23 minutes off the bench during Sunday's 114-108 loss to the Heat."
+   "date": "2026-11-10T00:36Z",
+   "note": "Murray is questionable for Tuesday's game against the Magic due to right wrist soreness."
   },
   "3155942": {
    "status": "day-to-day",
    "name": "Domantas Sabonis",
    "team": "SAC",
-   "date": "2026-11-09T16:00Z",
-   "note": "Sabonis (knee) is out for Sunday's game against the Heat."
-  },
-  "4898371": {
-   "status": "out",
-   "name": "Maxime Raynaud",
-   "team": "SAC",
-   "date": "2026-10-26T22:07Z",
-   "note": "Raynaud (knee) is progressing in his rehabilitation and will be re-evaluated in approximately two weeks, Brenden Nunes of KHTK Sactown Sports 1140 reports."
+   "date": "2026-11-10T00:35Z",
+   "note": "Sabonis (knee) is questionable to play Tuesday's game against the Magic."
   },
   "3907387": {
    "status": "out",
