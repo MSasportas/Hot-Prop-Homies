@@ -201,7 +201,7 @@
    }
   },
   "PHX": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Devin Booker",
     "Jalen Green",
@@ -249,5 +249,5 @@
    }
   }
  },
- "at": "2026-11-09T20:30:00-05:00"
+ "at": "2026-11-09T20:40:00-05:00"
 }
