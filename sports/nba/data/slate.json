@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 10,
-   "pool_left": 3704,
+   "pool_left": 3700,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-09T19:30:00-05:00",
-  "last_read_at": "2026-11-09T19:20:01-05:00",
+  "next_read_at": "2026-11-09T19:40:00-05:00",
+  "last_read_at": "2026-11-09T19:30:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-09T19:20:01-05:00"
+   "at": "2026-11-09T19:30:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-09T19:20:01-05:00",
+    "at": "2026-11-09T19:30:00-05:00",
     "confirmed": [
      "ATL",
      "CHA",
@@ -52,7 +52,7 @@
    "away": "LAL",
    "home": "ATL",
    "state": "in",
-   "detail": "6:53 - 1st",
+   "detail": "2:06 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -89,7 +89,7 @@
    "away": "CLE",
    "home": "CHA",
    "state": "in",
-   "detail": "7:33 - 1st",
+   "detail": "3:01 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -126,7 +126,7 @@
    "away": "WAS",
    "home": "DET",
    "state": "in",
-   "detail": "7:55 - 1st",
+   "detail": "4:19 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -267,13 +267,18 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-09T11:10:00-05:00",
-   "picks": 0,
-   "checks": [],
-   "last_check_at": null,
+   "read_at": "2026-11-09T19:30:00-05:00",
+   "picks": 1,
+   "checks": [
+    {
+     "read": "B",
+     "at": "2026-11-09T19:30:00-05:00"
+    }
+   ],
+   "last_check_at": "2026-11-09T19:30:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-09T19:30:00-05:00",
-   "next_check_read": "B",
+   "next_check_at": "2026-11-09T20:15:00-05:00",
+   "next_check_read": "C",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -533,6 +538,72 @@
    "rank": null
   },
   {
+   "player": "Dylan Harper",
+   "pid": "5037871",
+   "team": "SAS",
+   "opp": "PHX",
+   "home": false,
+   "game_id": "401909958",
+   "start": "2026-11-09T21:00:00-05:00",
+   "bet": "Over 4.5 assists",
+   "market": "assists",
+   "side": "over",
+   "line": 4.5,
+   "price": 100,
+   "price_at": "2026-11-09T19:30:00-05:00",
+   "read": "B",
+   "p": 0.5,
+   "p_pct": 50,
+   "breakeven": 0.5,
+   "breakeven_pct": 50,
+   "market_fair": null,
+   "n_books": 8,
+   "gap_ev": null,
+   "final_ev": 0.0379,
+   "model_p": null,
+   "reason": "Pinnacle moved the over from +102 to -115 (46% to 50%). Hard Rock +100 is 0.0% better than Pinnacle's fair price; DraftKings +113 is 6.5% better than Pinnacle's fair price.",
+   "rule": "pin_solo",
+   "pin_before": 0.4621,
+   "pin_after": 0.5,
+   "pin_price_before": 102,
+   "pin_price_after": -115,
+   "others_move": -0.0018,
+   "n_others": 8,
+   "ev_vs_pin": 0.0,
+   "window": "11 AM \u2192 90 min",
+   "gap_vs_pin": 0.0349,
+   "book": "hardrock",
+   "books": {
+    "draftkings": {
+     "ev_vs_pin": 0.065,
+     "price": 113
+    },
+    "hardrock": {
+     "ev_vs_pin": 0.0,
+     "price": 100
+    }
+   },
+   "id": "2026-11-09:401909958:5037871:assists:4.5:over",
+   "state": "clear",
+   "state_label": "Injury report clear",
+   "price_final": false,
+   "pulled": null,
+   "added_at": "2026-11-09T19:30:00-05:00",
+   "result": null,
+   "links": {
+    "hardrock": {
+     "id": "4348099557689786777",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/4348099557689786777",
+     "price": 100
+    },
+    "draftkings": {
+     "url": "https://sportsbook.draftkings.com/?outcomes=0QA387459826%232357536672_13L42648Q1738743730Q20",
+     "price": 113
+    }
+   },
+   "rank": 1
+  },
+  {
    "player": "Donovan Mitchell",
    "pid": "3908809",
    "team": "CLE",
@@ -589,14 +660,10 @@
    "rank": null
   }
  ],
- "empty": {
-  "text": "No picks yet today",
-  "why": "716 lines read. Pinnacle moved alone on 88, none of them bettable yet.",
-  "next": "2026-11-09T19:30:00-05:00"
- },
+ "empty": null,
  "counts": {
-  "lines_read": 716,
-  "passing": 14,
+  "lines_read": 712,
+  "passing": 16,
   "games": 8
  },
  "safety_paused": false,
@@ -605,6 +672,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-09T19:20:01-05:00",
- "status_at": "2026-11-09T19:20:01-05:00"
+ "generated_at": "2026-11-09T19:30:00-05:00",
+ "status_at": "2026-11-09T19:30:00-05:00"
 }

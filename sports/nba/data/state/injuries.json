@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T19:10:01-05:00",
+ "at": "2026-11-09T19:30:00-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -288,6 +288,13 @@
    "date": "2026-10-28T21:41Z",
    "note": "Head coach Rick Carlise confirmed Sheppard will miss \"months\" after undergoing surgery to repair a torn meniscus in his left knee, Tony East of Forbes.com reports."
   },
+  "5108024": {
+   "status": "out",
+   "name": "Yanic Konan Niederhauser",
+   "team": "LAC",
+   "date": "2026-11-10T00:05Z",
+   "note": "Niederhauser (foot) is out for Tuesday's game against Phoenix, Ohm Youngmisuk of ESPN.com reports."
+  },
   "3913176": {
    "status": "out",
    "name": "Brandon Ingram",
@@ -301,13 +308,6 @@
    "team": "LAC",
    "date": "2026-11-09T23:59Z",
    "note": "Christie is questionable for Tuesday's game against the Suns due to a right ankle sprain, Ohm Youngmisuk of ESPN.com reports."
-  },
-  "5108024": {
-   "status": "out",
-   "name": "Yanic Konan Niederhauser",
-   "team": "LAC",
-   "date": "2026-11-02T16:12Z",
-   "note": "The Clippers recalled Niederhauser (foot) from the G League's San Diego Clippers on Sunday."
   },
   "6580": {
    "status": "out",
@@ -642,15 +642,15 @@
    "status": "out",
    "name": "Keyonte George",
    "team": "UTAH",
-   "date": "2026-11-10T00:07Z",
-   "note": "George will not return to Sunday's game against the Timberwolves due to a right ankle injury."
+   "date": "2026-11-10T00:08Z",
+   "note": "George (ankle) has been ruled out for Tuesday's game against the Heat."
   },
   "4066336": {
    "status": "day-to-day",
    "name": "Lauri Markkanen",
    "team": "UTAH",
-   "date": "2026-11-09T15:46Z",
-   "note": "Markkanen (wrist) is out for Sunday's game against the Timberwolves, Shreyas Laddha of The Salt Lake Tribune reports."
+   "date": "2026-11-10T00:08Z",
+   "note": "Markkanen (wrist) is questionable for Tuesday's game against Miami."
   },
   "3102530": {
    "status": "out",
