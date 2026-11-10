@@ -11,8 +11,8 @@
     "Walker Kessler"
    ],
    "status": {
-    "Quentin Grimes": "out",
-    "Austin Reaves": "out"
+    "Quentin Grimes": "questionable",
+    "Austin Reaves": "questionable"
    }
   },
   "ATL": {
@@ -25,10 +25,10 @@
     "Onyeka Okongwu"
    ],
    "status": {
+    "Keshon Gilbert": "doubtful",
+    "Asa Newell": "doubtful",
     "Henri Veesaar": "out",
-    "Keshon Gilbert": "out",
-    "Mouhamed Gueye": "out",
-    "Asa Newell": "out"
+    "Mouhamed Gueye": "out"
    }
   },
   "WSH": {
@@ -41,9 +41,9 @@
     "Alex Sarr"
    ],
    "status": {
+    "Bilal Coulibaly": "questionable",
     "Reece Beekman": "out",
     "Justin Champagnie": "out",
-    "Bilal Coulibaly": "out",
     "Tristan Vukcevic": "out",
     "Jamir Watkins": "out"
    }
@@ -87,11 +87,11 @@
     "Ryan Kalkbrenner"
    ],
    "status": {
-    "Moussa Diabate": "out",
+    "Moussa Diabate": "questionable",
+    "Brandon Miller": "questionable",
+    "Grant Williams": "doubtful",
     "Kon Knueppel": "out",
-    "Brandon Miller": "out",
-    "Dennis Schroder": "out",
-    "Grant Williams": "out"
+    "Dennis Schroder": "out"
    }
   },
   "MEM": {
@@ -104,7 +104,7 @@
     "Zach Edey"
    ],
    "status": {
-    "Quinten Post": "doubtful",
+    "Quinten Post": "questionable",
     "Scotty Pippen": "out",
     "Isaiah Stewart": "out"
    }
@@ -248,5 +248,5 @@
    }
   }
  },
- "at": "2026-11-09T21:50:00-05:00"
+ "at": "2026-11-09T22:00:00-05:00"
 }

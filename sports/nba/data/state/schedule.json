@@ -403,13 +403,13 @@
     "start": "2026-11-09T19:30:00-05:00",
     "away": "MEM",
     "home": "TOR",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:17 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "MEM": "113",
-     "TOR": "97"
+     "MEM": "118",
+     "TOR": "102"
     }
    },
    {
@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:03 - 3rd",
+    "detail": "10:10 - 4th",
     "score": {
-     "IND": "87",
-     "DAL": "85"
+     "IND": "95",
+     "DAL": "93"
     }
    },
    {
@@ -436,10 +436,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:35 - 3rd",
+    "detail": "7:29 - 3rd",
     "score": {
-     "DEN": "40",
-     "HOU": "56"
+     "DEN": "53",
+     "HOU": "60"
     }
    },
    {
@@ -451,10 +451,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:40 - 2nd",
+    "detail": "3:22 - 2nd",
     "score": {
-     "SA": "45",
-     "PHX": "29"
+     "SA": "57",
+     "PHX": "40"
     }
    },
    {

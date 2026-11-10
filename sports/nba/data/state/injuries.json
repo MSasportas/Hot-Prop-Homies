@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T21:00:01-05:00",
+ "at": "2026-11-09T22:00:00-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -50,11 +50,18 @@
    "date": "2026-10-29T17:09Z",
    "note": "The Nets exercised Demin's third-year team option for the 2027-28 season, Sharif Phillips-Keaton of USA Today reports Thursday."
   },
+  "4433287": {
+   "status": "day-to-day",
+   "name": "Brandon Miller",
+   "team": "CHA",
+   "date": "2026-11-10T02:51Z",
+   "note": "Miller (groin) is listed as out for Monday's game against Cleveland."
+  },
   "4433249": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Moussa Diabate",
    "team": "CHA",
-   "date": "2026-11-09T22:16Z",
+   "date": "2026-11-10T02:51Z",
    "note": "Diabate (quadriceps) has been downgraded to out for Monday's game against Cleveland."
   },
   "4066218": {
@@ -77,13 +84,6 @@
    "team": "CHA",
    "date": "2026-11-08T22:26Z",
    "note": "Schroder has been diagnosed with a left hamstring strain and will be reevaluated in two weeks, Michael Scotto of HoopsHype.com reports."
-  },
-  "4433287": {
-   "status": "out",
-   "name": "Brandon Miller",
-   "team": "CHA",
-   "date": "2026-11-08T22:25Z",
-   "note": "Miller (groin) is listed as out for Monday's game against Cleveland."
   },
   "2595516": {
    "status": "day-to-day",
