@@ -451,7 +451,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:15 - 3rd",
+    "detail": "6:09 - 3rd",
     "score": {
      "SA": "78",
      "PHX": "59"
@@ -466,10 +466,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:25 - 2nd",
+    "detail": "10:47 - 2nd",
     "score": {
-     "NO": "20",
-     "GS": "38"
+     "NO": "22",
+     "GS": "40"
     }
    }
   ]
