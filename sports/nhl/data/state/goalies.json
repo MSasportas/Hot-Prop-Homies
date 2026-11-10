@@ -10,8 +10,8 @@
    "status": "expected"
   },
   "OTT": {
-   "name": "Linus Ullmark",
-   "status": "expected"
+   "name": "Samuel Ersson",
+   "status": "confirmed"
   },
   "WSH": {
    "name": "Logan Thompson",
@@ -35,7 +35,7 @@
   },
   "CBJ": {
    "name": "Cam Talbot",
-   "status": "expected"
+   "status": "confirmed"
   },
   "FLA": {
    "name": "Jacob Markstrom",
@@ -58,5 +58,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-10T11:20:01-05:00"
+ "checked_at": "2026-11-10T11:30:00-05:00"
 }
