@@ -186,7 +186,7 @@
    }
   },
   "SA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "De'Aaron Fox",
     "Stephon Castle",
@@ -215,7 +215,7 @@
    }
   },
   "NO": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Dejounte Murray",
     "Jeremiah Fears",
@@ -240,14 +240,13 @@
     "Draymond Green"
    ],
    "status": {
-    "Gui Santos": "probable",
-    "Gary Payton": "questionable",
     "Jimmy Butler": "out",
     "Moses Moody": "out",
+    "Gary Payton": "out",
     "Kristaps Porzingis": "out",
     "Will Richard": "out"
    }
   }
  },
- "at": "2026-11-09T20:40:00-05:00"
+ "at": "2026-11-09T20:50:01-05:00"
 }

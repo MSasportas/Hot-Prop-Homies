@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:29 - 3rd",
+    "detail": "40.1 - 3rd",
     "score": {
-     "LAL": "83",
-     "ATL": "76"
+     "LAL": "93",
+     "ATL": "89"
     }
    },
    {
@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:14 - 3rd",
+    "detail": "11:24 - 4th",
     "score": {
-     "CLE": "70",
-     "CHA": "100"
+     "CLE": "83",
+     "CHA": "107"
     }
    },
    {
@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:49 - 3rd",
+    "detail": "7:26 - 3rd",
     "score": {
-     "WSH": "58",
-     "DET": "71"
+     "WSH": "64",
+     "DET": "80"
     }
    },
    {
@@ -420,11 +420,11 @@
     "home": "DAL",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:17 - 2nd",
     "score": {
-     "IND": "31",
-     "DAL": "26"
+     "IND": "39",
+     "DAL": "41"
     }
    },
    {
@@ -433,13 +433,13 @@
     "start": "2026-11-09T20:30:00-05:00",
     "away": "DEN",
     "home": "HOU",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/9 - 8:30 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:01 - 1st",
     "score": {
-     "DEN": "0",
-     "HOU": "0"
+     "DEN": "13",
+     "HOU": "14"
     }
    },
    {
