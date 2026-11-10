@@ -1,5 +1,5 @@
 {
- "at": "2026-11-10T16:30:00-05:00",
+ "at": "2026-11-10T16:50:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -162,26 +162,26 @@
    "date": "2026-11-08T16:05Z",
    "note": "Duren (hamstring) has begun on-court activity and will be re-evaluated in two weeks, Hunter Patterson of The Athletic reports."
   },
-  "4397040": {
-   "status": "out",
-   "name": "Brandon Williams",
-   "team": "GS",
-   "date": "2026-11-10T21:23Z",
-   "note": "Williams has been ruled out for the remainder of Monday's game against the Pelicans due to a left hamstring injury, Danny Emerman of SFStandard.com reports. He'll finish with four points (2-3 FG) in t"
-  },
   "3134903": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Gary Payton II",
    "team": "GS",
-   "date": "2026-11-10T05:26Z",
-   "note": "Payton (knee) has been ruled out for Monday's game against the Pelicans."
+   "date": "2026-11-10T21:36Z",
+   "note": "Payton (knee) is out for Wednesday's game against Houston."
   },
   "4897262": {
    "status": "out",
    "name": "Will Richard",
    "team": "GS",
-   "date": "2026-11-10T01:26Z",
-   "note": "Richard is deciding between getting surgery or playing with a splint, Luca Evans of the San Francisco Chronicle reports."
+   "date": "2026-11-10T21:34Z",
+   "note": "Richard (thumb) is questionable for Wednesday's game against Houston."
+  },
+  "4397040": {
+   "status": "out",
+   "name": "Brandon Williams",
+   "team": "GS",
+   "date": "2026-11-10T21:24Z",
+   "note": "Williams (hamstring) will miss at least one week, per Anthony Slater of ESPN.com."
   },
   "3102531": {
    "status": "out",
