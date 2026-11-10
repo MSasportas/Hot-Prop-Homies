@@ -582,6 +582,19 @@ Output: research/code/r21/ii21_results.txt.
 Forward re-score (17 nights Oct 19 - Nov 4): Q1b n474 +7.9% [+2,+14] p .0135 CLV +3.5% (bar .0033 missed, Nov 4 -3.4u n13); Q1g n400
 +10.8% p .008 (missed); Q1b read A +15.7% n274 vs B/C -2.8% n200; unders +10.5% n386, overs -3.6% n88.
 
+## Run 22 (Researcher, 2026-11-10; owner's question: does the NBA live rule help NHL?). Registered before any of these were tested.
+No key used, no historical odds pull. History (hist_2025-26_hardrock.tgz, addon tgz) checked first: Hard Rock only, one -45 read (+1 PM on
+144 games), Pinnacle only in 2-3 probe files, so the rule cannot run on history. Forward data only: data/odds (Pinnacle from Oct 19) +
+data/shadow results (actual SOG; void = no TOI). ALL nights Oct 19 - Nov 9 are already seen through Q13/Q19, so this is DISCOVERY ONLY, not a test.
+
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| JJ1 | 2026-11-10 | **NBA pin_solo v2.6 ported to NHL shots, faithfully.** Consecutive reads a -> b of one game (A->B, B->C). Hard Rock main line (both sides, closest to even) quoted at the same line on both reads; Pinnacle two-sided on that same line both reads, hold 0-15%; Pinnacle proportional no-vig over chance moves >= 2 pts; side = direction of the move; Hard Rock price on that side at b: EV vs Pinnacle's new fair >= 0, -200..+200, last_update < 60 min before b. Other books ignored. Flag reads B/C only (b in {B, C}). First qualifying read per player per night. 1u at Hard Rock's b price. CLV = EV of that price vs Pinnacle's fair on the same line at the game's last read. 1 variant | data/odds + data/shadow | 33 bets 13-20 -8.28u ROI -25.1% [90% CI -52,+3], CLV +3.9% (n33). Over 2-7 -5.49u n9, under 11-13 -2.79u n24; 1.5 7-12 n19, 2.5 6-5 -0.08u n11, 3.5 0-3; A->B 30 bets -5.28u, B->C 3 bets 0-3; Oct 19-31 -2.41u n18, Nov 1-9 -5.87u n15 | failed (discovery) |
+| JJ2 | 2026-11-10 | JJ1 vs the NHL Record (data/record shots singles): same / opposite side / new; results of the NEW bets only; Record OR JJ1 per night. Descriptive, 1 variant | + data/record/events.jsonl | same 6 (2-4 -2.73u), opposite 0, new 27 (11-16 -5.55u, ROI -20.5%, CLV +3.2%). Record Oct 19+ 62 bets 33-29 +3.83u, 2.8/night; Record OR JJ1 89 bets 44-45 -1.72u, 4.0/night | failed (discovery) |
+| JJ3 | 2026-11-10 | Frequency: every Pinnacle 2+ pt move on a Hard Rock main line (same line both reads, any price): count per read pair; Hard Rock lag = Hard Rock's own no-vig move toward the same side < 1 pt at b, and whether it catches up (>= 1 pt) by the next read. Descriptive | data/odds | 130 moves in 22 nights (~6/night): 120 at 1 PM->90 min, 10 at 90->45 min. Hard Rock lagged (< 1 pt) on 82 of 125 (66%); of 72 lagged A->B moves only 7 caught up by C | descriptive |
+Run 22 count: 1 variant tested (JJ1; JJ2-3 descriptive), forward variants unchanged at 42, historical unchanged at 484, lockbox looks still 2.
+Code research/code/r22/jj22.py, output jj22_results.txt.
+
 ## Queued (not yet tested)
 | id | rule idea | data | status |
 |---|---|---|---|

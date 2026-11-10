@@ -1,5 +1,21 @@
 # LOG.md: Researcher runs (newest first)
 
+- 2026-11-10 (Researcher run 22, owner's question: does NBA's live rule help NHL?; SHOTS ON GOAL ONLY). No key used, no historical pull.
+  JJ1-JJ3 registered in HYPOTHESES.md before running (not committed: this run was told not to commit). History can't test it: the 2025-26
+  tarballs are Hard Rock only with one -45 read (Pinnacle in 2-3 probe files). Forward data Oct 19 - Nov 9, all seen (Q13/Q19 overlap), so
+  DISCOVERY ONLY. Script research/code/r22/jj22.py, output jj22_results.txt.
+  - JJ1 NBA pin_solo v2.6 ported (Pinnacle no-vig 2+ pt move, same line both reads, Hard Rock at or better than Pinnacle's new fair, B/C
+    reads, -200..+200, other books ignored): 33 bets 13-20 -8.28u ROI -25.1% [90% CI -52,+3], CLV +3.9% (n33). Overs 2-7 n9, unders 11-13
+    n24; 30 of 33 fire at 90 min off the 1 PM read. Both halves negative (Oct -2.41u n18, Nov -5.87u n15).
+  - JJ2 overlap with the Record: 6 same pick (2-4), 0 opposite, 27 new: 11-16 -5.55u (-20.5%). Record Oct 19+ 33-29 +3.83u (n62, 2.8/night);
+    Record OR JJ1 44-45 -1.72u (n89, 4.0/night).
+  - JJ3 Pinnacle 2+ moves: 130 in 22 nights (~6/night, 92% between 1 PM and 90 min); Hard Rock lags (< 1 pt) on 66% (n125) and rarely
+    catches up by 45 min (7 of 72).
+  **Verdict: no. Adding the NBA rule would have turned NHL's +3.83u into -1.72u.** CLV is positive (+3.9%), so the price is not bad; n33
+  is small and the CI touches 0, but it matches Q19 (-6.47u n18): Pinnacle's NHL shots moves carry no edge we can see yet. Leave forward
+  (Q19 already scores a close variant); no candidate for the Sharp.
+  Next: (1) keep Q19 forward; add JJ1 as a forward scorer only if the CEO wants it watched; (2) Q22a-b forward; (3) II3r forward version.
+
 - 2026-11-05 ~8:15 AM ET (Researcher run 21, daily; SHOTS ON GOAL ONLY). No key used, no historical odds pull. II1-II3 + forward Q22a-b registered
   and pushed (573a981) before any test ran. Free NHL stats REST skater per-game logs (r14/fetch14.py, Feb 28 cut-off) fetched to scratch;
   lockbox not fetched. Script research/code/r21/ii21.py, output ii21_results.txt. 10,413 graded Nov-Feb lines.

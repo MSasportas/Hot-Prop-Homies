@@ -1,0 +1,66 @@
+JJ1 faithful NBA port, nights Oct 19 - Nov 9
+ALL                                n  33   13-20    -8.28u  ROI  -25.1%  CLV  +3.9% (n 33)  ungraded 0
+over                               n   9    2-7     -5.49u  ROI  -60.9%  CLV  +4.2% (n 9)  ungraded 0
+under                              n  24   11-13    -2.79u  ROI  -11.6%  CLV  +3.8% (n 24)  ungraded 0
+line 1.5                           n  19    7-12    -5.20u  ROI  -27.4%  CLV  +4.3% (n 19)  ungraded 0
+line 2.5                           n  11    6-5     -0.08u  ROI   -0.7%  CLV  +3.1% (n 11)  ungraded 0
+line 3.5+                          n   3    0-3     -3.00u  ROI -100.0%  CLV  +4.2% (n 3)  ungraded 0
+move 2-3 pts                       n   3    1-2     -1.20u  ROI  -40.0%  CLV  +2.6% (n 3)  ungraded 0
+move 3-5 pts                       n  26   12-14    -3.08u  ROI  -11.8%  CLV  +3.9% (n 26)  ungraded 0
+move 5+ pts                        n   4    0-4     -4.00u  ROI -100.0%  CLV  +5.2% (n 4)  ungraded 0
+A->B (flag at B)                   n  30   13-17    -5.28u  ROI  -17.6%  CLV  +4.1% (n 30)  ungraded 0
+B->C (flag at C)                   n   3    0-3     -3.00u  ROI -100.0%  CLV  +2.2% (n 3)  ungraded 0
+Oct 19-31                          n  18    8-10    -2.41u  ROI  -13.4%  CLV  +3.3% (n 18)  ungraded 0
+Nov 1-9                            n  15    5-10    -5.87u  ROI  -39.1%  CLV  +4.7% (n 15)  ungraded 0
+Oct 19-27 (pre-Q13 reg)            n   4    1-3     -2.29u  ROI  -57.1%  CLV  +3.0% (n 4)  ungraded 0
+Oct 28-Nov 9                       n  29   12-17    -5.99u  ROI  -20.7%  CLV  +4.0% (n 29)  ungraded 0
+
+JJ3 Pinnacle 2+ pt moves on Hard Rock main lines (any price)
+moves by pair: {'AB': 120, 'BC': 10} total 130 nights 21
+  AB: HR two-sided both reads 116; HR moved < 1 pt same way (lag) 73 (63%); of lagged with a next read 72, caught up >= 1 pt 7
+  BC: HR two-sided both reads 9; HR moved < 1 pt same way (lag) 9 (100%); of lagged with a next read 0, caught up >= 1 pt 0
+  all: lag 82 of 125 (66%); median HR move toward side 0.002
+  pin moves per night (nights with reads): 6.2
+
+JJ2 overlap with the NHL Record (shots singles)
+JJ1 same                           n   6    2-4     -2.73u  ROI  -45.5%  CLV  +7.3% (n 6)  ungraded 0
+JJ1 opposite                       n   0    0-0     +0.00u  ROI   +0.0%  CLV  +0.0% (n 0)  ungraded 0
+JJ1 other line                     n   0    0-0     +0.00u  ROI   +0.0%  CLV  +0.0% (n 0)  ungraded 0
+JJ1 new                            n  27   11-16    -5.55u  ROI  -20.5%  CLV  +3.2% (n 27)  ungraded 0
+NHL Record Oct 19+: n 62 33-29 +3.83u ROI +6.2%  picks/night 2.82 (22 nights)
+Record OR JJ1-new: n 89 44-45 -1.72u ROI -1.9%  picks/night 4.05
+
+JJ1 picks:
+  2026-10-19 Auston Matthews        over  3.5 -105 ev +0.004 mv 0.022 BC L clv +0.004
+  2026-10-19 Rickard Rakell         under 2.5 -125 ev +0.010 mv 0.040 AB L clv +0.010
+  2026-10-24 Jack Roslovic          over  1.5 -130 ev +0.027 mv 0.034 BC L clv +0.027
+  2026-10-26 Ryan Shea              under 1.5 -140 ev +0.079 mv 0.032 AB W clv +0.079
+  2026-10-28 Easton Cowan           over  1.5 -115 ev +0.020 mv 0.046 AB W clv +0.020
+  2026-10-30 Matt Coronato          under 2.5 +110 ev +0.050 mv 0.030 AB W clv +0.050
+  2026-10-31 Elias Lindholm         under 2.5 -180 ev +0.043 mv 0.042 AB W clv +0.036
+  2026-10-31 Charlie McAvoy         under 1.5 +135 ev +0.017 mv 0.028 AB L clv +0.017
+  2026-10-31 Fraser Minten          under 1.5 +125 ev +0.062 mv 0.038 AB W clv +0.022
+  2026-10-31 Morgan Geekie          under 2.5 -180 ev +0.015 mv 0.037 AB L clv +0.009
+  2026-10-31 John Carlson           under 1.5 +110 ev +0.029 mv 0.034 AB L clv +0.029
+  2026-10-31 Fabian Zetterlund      under 1.5 +130 ev +0.033 mv 0.030 AB L clv +0.033
+  2026-10-31 Collin Graf            under 1.5 -125 ev +0.029 mv 0.037 AB W clv +0.029
+  2026-10-31 Macklin Celebrini      over  3.5 +125 ev +0.077 mv 0.036 AB L clv +0.073
+  2026-10-31 Alex Newhook           under 1.5 +100 ev +0.016 mv 0.038 AB W clv +0.020
+  2026-10-31 Gabriel Landeskog      under 1.5 +130 ev +0.111 mv 0.049 AB W clv +0.097
+  2026-10-31 Cale Makar             under 2.5 +120 ev +0.034 mv 0.034 AB L clv +0.023
+  2026-10-31 Sam Malinski           under 2.5 -195 ev +0.020 mv 0.057 AB L clv +0.013
+  2026-11-01 Mark Jankowski         under 1.5 -115 ev +0.103 mv 0.037 AB L clv +0.103
+  2026-11-01 Jaccob Slavin          under 1.5 -115 ev +0.017 mv 0.036 AB W clv +0.017
+  2026-11-01 Ryan Nugent-Hopkins    over  1.5 -170 ev +0.034 mv 0.042 BC L clv +0.034
+  2026-11-01 Beckett Sennecke       under 2.5 -110 ev +0.031 mv 0.040 AB L clv +0.031
+  2026-11-02 Lucas Raymond          under 2.5 -130 ev +0.041 mv 0.050 AB W clv +0.041
+  2026-11-03 Nathan MacKinnon       over  3.5 +110 ev +0.071 mv 0.045 AB L clv +0.050
+  2026-11-03 Arseny Gritsyuk        over  1.5 -170 ev +0.032 mv 0.069 AB L clv +0.098
+  2026-11-04 Artemi Panarin         over  2.5 -155 ev +0.030 mv 0.039 AB W clv +0.030
+  2026-11-06 Bobby Brink            over  1.5 -110 ev +0.063 mv 0.105 AB L clv +0.038
+  2026-11-07 Sam Reinhart           under 2.5 +105 ev +0.042 mv 0.036 AB W clv +0.042
+  2026-11-07 Lane Hutson            under 1.5 +100 ev +0.024 mv 0.034 AB L clv +0.024
+  2026-11-08 Connor Brown           under 1.5 -140 ev +0.014 mv 0.034 AB L clv +0.014
+  2026-11-08 Evan Rodrigues         under 1.5 +120 ev +0.091 mv 0.037 AB L clv +0.064
+  2026-11-08 Darren Raddysh         under 2.5 -125 ev +0.058 mv 0.021 AB W clv +0.058
+  2026-11-09 Kiefer Sherwood        under 1.5 +120 ev +0.058 mv 0.067 AB L clv +0.058
