@@ -231,7 +231,7 @@
    }
   },
   "GS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Stephen Curry",
     "Brandin Podziemski",
@@ -248,5 +248,5 @@
    }
   }
  },
- "at": "2026-11-09T21:30:01-05:00"
+ "at": "2026-11-09T21:40:01-05:00"
 }
