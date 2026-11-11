@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-10",
- "generated_at": "2026-11-10T19:00:01-05:00",
+ "generated_at": "2026-11-10T19:10:00-05:00",
  "games": [
   {
    "game_id": 2026020286,
@@ -21,7 +21,7 @@
     "score": null,
     "sog": null
    },
-   "updated_at": "2026-11-10T19:00:01-05:00"
+   "updated_at": "2026-11-10T19:10:00-05:00"
   },
   {
    "game_id": 2026020287,
@@ -42,28 +42,28 @@
     "score": null,
     "sog": null
    },
-   "updated_at": "2026-11-10T19:00:01-05:00"
+   "updated_at": "2026-11-10T19:10:00-05:00"
   },
   {
    "game_id": 2026020291,
-   "state": "PRE",
+   "state": "LIVE",
    "schedule_state": "OK",
-   "period": null,
-   "period_type": null,
-   "clock": null,
+   "period": 1,
+   "period_type": "REG",
+   "clock": "20:00",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "NJD",
-    "score": null,
+    "score": 0,
     "sog": null
    },
    "home": {
     "abbrev": "WPG",
-    "score": null,
+    "score": 0,
     "sog": null
    },
-   "updated_at": "2026-11-10T19:00:01-05:00"
+   "updated_at": "2026-11-10T19:10:00-05:00"
   }
  ],
  "picks": {
@@ -80,7 +80,7 @@
   "2026-11-10:2026020291:8481559:shots:3.5:under": {
    "game_id": 2026020291,
    "market": "shots",
-   "stat": null
+   "stat": 0
   }
  }
 }
