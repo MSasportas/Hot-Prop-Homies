@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T16:40:01-05:00",
+ "at": "2026-11-11T17:10:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -36,19 +36,19 @@
    "date": "2026-11-11T17:55Z",
    "note": "George (illness) has been ruled out for Wednesday's game against Toronto, Taylor Snow of the Celtics' official site reports."
   },
+  "5279130": {
+   "status": "out",
+   "name": "Nolan Traore",
+   "team": "BKN",
+   "date": "2026-11-11T21:57Z",
+   "note": "Traore (calf) has been ruled out for Wednesday's game against the Pelicans, Ian Begley of SportsNet New York reports."
+  },
   "5101761": {
    "status": "out",
    "name": "Mikel Brown Jr.",
    "team": "BKN",
    "date": "2026-11-11T16:40Z",
    "note": "Brown has been ruled out for Wednesday's game against the Pelicans due to an illness, Sharif Phillips-Keaton of USA Today reports."
-  },
-  "5279130": {
-   "status": "day-to-day",
-   "name": "Nolan Traore",
-   "team": "BKN",
-   "date": "2026-11-10T22:56Z",
-   "note": "Traore (calf) is listed as questionable for Wednesday's game against New Orleans."
   },
   "4433287": {
    "status": "day-to-day",
