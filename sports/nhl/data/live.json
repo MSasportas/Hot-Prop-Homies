@@ -1,16 +1,16 @@
 {
  "slate_date": "2026-11-10",
- "generated_at": "2026-11-10T21:40:30-05:00",
+ "generated_at": "2026-11-10T21:50:01-05:00",
  "games": [
   {
    "game_id": 2026020286,
-   "state": "CRIT",
+   "state": "FINAL",
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "00:21",
+   "clock": "00:00",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "COL",
     "score": 6,
@@ -21,28 +21,28 @@
     "score": 3,
     "sog": 31
    },
-   "updated_at": "2026-11-10T21:40:30-05:00"
+   "updated_at": "2026-11-10T21:50:01-05:00"
   },
   {
    "game_id": 2026020287,
-   "state": "LIVE",
+   "state": "CRIT",
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "05:39",
+   "clock": "00:53",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "MIN",
     "score": 1,
-    "sog": 21
+    "sog": 22
    },
    "home": {
     "abbrev": "MTL",
-    "score": 0,
-    "sog": 24
+    "score": 1,
+    "sog": 27
    },
-   "updated_at": "2026-11-10T21:40:30-05:00"
+   "updated_at": "2026-11-10T21:50:01-05:00"
   },
   {
    "game_id": 2026020291,
@@ -63,7 +63,7 @@
     "score": 4,
     "sog": 25
    },
-   "updated_at": "2026-11-10T21:40:30-05:00"
+   "updated_at": "2026-11-10T21:50:01-05:00"
   }
  ],
  "picks": {
