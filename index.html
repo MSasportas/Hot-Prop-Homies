@@ -400,7 +400,6 @@ var UI_DEFS = {
   nhl: { stale_after_min: 75, refresh_sec: 120 },
   all: { stale_after_min: 30, refresh_sec: 120 }
 };
-var UI_DEF = UI_DEFS.nba;  /* initial fallback; uiVal() uses UI_DEFS[S.sport] */
 var LATEST_N = 5;
 var SMALL_N = 30;          /* a cut row with fewer graded picks than this says "small sample" */
 var MARKET_LINE_NBA = 'Hard Rock · Rebounds, points, assists, 3-pointers made · Main line, over or under · No leg worse than -200';
@@ -569,7 +568,7 @@ function betShort(p) {
 function uiVal(k) {
   var c = [S.rules && isObj(S.rules.ui) ? S.rules.ui[k] : null, S.slate && isObj(S.slate.ui) ? S.slate.ui[k] : null];
   for (var i = 0; i < c.length; i++) { var n = num(c[i]); if (n != null && n > 0 && (k !== 'refresh_sec' || n >= 15)) return n; }
-  return (UI_DEFS[S.sport] || UI_DEFS.nba)[k];
+  return (UI_DEFS[S.sport] || UI_DEFS.all)[k];
 }
 function isFixture() { return !!FIX || (S.slate && S.slate.fixture === true); }
 function slateDay() { return S.slate ? str(S.slate.slate || S.slate.slate_date) : ''; }
@@ -679,7 +678,7 @@ function load() {
   var labUrl = BASE_FIX ? 'config/lab.json' : SPORT_BASES[S.sport] + 'config/lab.json';  /* SPORT_BASES now local paths */
   var fetches = [settle(getJSON(base + 'slate.json')), settle(getJSON(base + 'record.json')), settle(getJSON(base + 'rules.json')),
                  settle(getJSON(base + 'headshots.json')), settle(getJSON(labUrl))];
-  if (S.sport === 'nhl') fetches.push(settle(getJSON(base + 'record/resets.json')));
+  if (S.sport === 'nhl') fetches.push(settle(getJSON(base + 'record/resets.json')));  /* NHL only: NBA has no Record resets yet */
   return Promise.all(fetches)
     .then(function (r) {
       if (r[3].ok) S.heads = r[3].v;
