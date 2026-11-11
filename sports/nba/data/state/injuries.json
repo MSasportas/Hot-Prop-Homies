@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T17:10:01-05:00",
+ "at": "2026-11-11T17:10:36-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -40,8 +40,8 @@
    "status": "out",
    "name": "Nolan Traore",
    "team": "BKN",
-   "date": "2026-11-11T21:57Z",
-   "note": "Traore (calf) has been ruled out for Wednesday's game against the Pelicans, Ian Begley of SportsNet New York reports."
+   "date": "2026-11-11T21:54Z",
+   "note": "Traore (calf) is listed as questionable for Wednesday's game against New Orleans."
   },
   "5101761": {
    "status": "out",
@@ -497,6 +497,13 @@
    "team": "ORL",
    "date": "2026-09-28T21:33Z",
    "note": "Team president Jeff Weltman said Monday that Nelson (ankle) remains about a month away from returning to the court after offseason surgery, per Philip Rossman-Reich of OrlandoMagicDaily.com."
+  },
+  "3059318": {
+   "status": "day-to-day",
+   "name": "Joel Embiid",
+   "team": "PHI",
+   "date": "2026-11-11T22:04Z",
+   "note": "Embiid contributed 16 points (2-9 FG, 1-3 3Pt, 11-13 FT), six rebounds and one assist across 31 minutes during Tuesday's 123-101 loss to the Celtics."
   },
   "5105637": {
    "status": "out",
