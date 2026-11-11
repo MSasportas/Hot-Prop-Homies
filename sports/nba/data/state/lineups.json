@@ -96,15 +96,15 @@
   "BKN": {
    "state": "expected",
    "starters": [
-    "Nolan Traore",
     "Egor Demin",
     "Michael Porter",
+    "Danny Wolf",
     "Julius Randle",
     "Day'Ron Sharpe"
    ],
    "status": {
-    "Nolan Traore": "questionable",
-    "Mikel Brown": "out"
+    "Mikel Brown": "out",
+    "Nolan Traore": "out"
    }
   },
   "NO": {
@@ -311,5 +311,5 @@
    }
   }
  },
- "at": "2026-11-11T16:50:01-05:00"
+ "at": "2026-11-11T17:00:00-05:00"
 }
