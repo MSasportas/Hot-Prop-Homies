@@ -15,7 +15,7 @@
    }
   },
   "NY": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jalen Brunson",
     "Mikal Bridges",
@@ -93,7 +93,7 @@
     "Bam Adebayo"
    ],
    "status": {
-    "Giannis Antetokounmpo": "probable"
+    "Giannis Antetokounmpo": "questionable"
    }
   },
   "UTAH": {
@@ -177,5 +177,5 @@
    }
   }
  },
- "at": "2026-11-10T19:10:01-05:00"
+ "at": "2026-11-10T19:20:01-05:00"
 }
