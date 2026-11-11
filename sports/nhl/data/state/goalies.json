@@ -3,11 +3,11 @@
  "teams": {
   "BUF": {
    "name": "Ukko-Pekka Luukkonen",
-   "status": "expected"
+   "status": "confirmed"
   },
   "TBL": {
    "name": "Andrei Vasilevskiy",
-   "status": "expected"
+   "status": "confirmed"
   },
   "CGY": {
    "name": "Devin Cooley",
@@ -50,5 +50,5 @@
    "status": "confirmed"
   }
  },
- "checked_at": "2026-11-11T15:17:42-05:00"
+ "checked_at": "2026-11-11T18:40:00-05:00"
 }
