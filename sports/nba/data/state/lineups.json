@@ -28,10 +28,10 @@
    }
   },
   "BOS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
-    "Mike Conley",
     "Derrick White",
+    "Jordan Walsh",
     "Jayson Tatum",
     "Paul George",
     "Neemias Queta"
@@ -177,5 +177,5 @@
    }
   }
  },
- "at": "2026-11-10T19:40:01-05:00"
+ "at": "2026-11-10T19:50:01-05:00"
 }

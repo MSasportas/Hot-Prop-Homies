@@ -343,13 +343,13 @@
     "start": "2026-11-10T19:30:00-05:00",
     "away": "MIL",
     "home": "NY",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/10 - 7:30 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:41 - 1st",
     "score": {
-     "MIL": "0",
-     "NY": "0"
+     "MIL": "10",
+     "NY": "10"
     }
    },
    {
