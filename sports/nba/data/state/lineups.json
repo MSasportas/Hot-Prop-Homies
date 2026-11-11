@@ -54,7 +54,7 @@
    }
   },
   "LAC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Darius Garland",
     "Kris Dunn",
@@ -63,15 +63,15 @@
     "Brook Lopez"
    ],
    "status": {
-    "Cam Christie": "questionable",
     "Bradley Beal": "out",
+    "Cam Christie": "out",
     "Brandon Ingram": "out",
     "Jordan Miller": "out",
     "Yanic Konan Niederhauser": "out"
    }
   },
   "PHX": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Devin Booker",
     "Jalen Green",
@@ -84,11 +84,11 @@
    }
   },
   "MIA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Davion Mitchell",
     "Klay Thompson",
-    "Andrew Wiggins",
+    "Pelle Larsson",
     "Giannis Antetokounmpo",
     "Bam Adebayo"
    ],
@@ -120,8 +120,8 @@
     "Wendell Carter"
    ],
    "status": {
-    "Tristan da Silva": "questionable",
     "Paolo Banchero": "out",
+    "Tristan da Silva": "out",
     "Jonathan Isaac": "out",
     "Izaiyah Nelson": "out",
     "Noah Penda": "out",
@@ -175,5 +175,5 @@
    }
   }
  },
- "at": "2026-11-10T20:30:00-05:00"
+ "at": "2026-11-10T20:40:00-05:00"
 }
