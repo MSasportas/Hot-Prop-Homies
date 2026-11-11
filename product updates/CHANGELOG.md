@@ -6,6 +6,18 @@ All changes are listed newest-first. Each entry includes the date, what changed,
 
 ## 2026-11-11
 
+### Workflow Deduplication — Reusable `sport-run.yml`
+**Files:** `.github/workflows/sport-run.yml` (new), `.github/workflows/nba-run.yml`, `.github/workflows/nhl-run.yml`
+
+Extracted shared execution logic from both timer workflows into a single reusable `workflow_call` workflow (`sport-run.yml`). `nba-run.yml` and `nhl-run.yml` are now thin ~27-line callers that own only what is sport-specific: cron offset, push paths, and secret name mapping. The reusable workflow handles checkout, Python setup, the loop step, and the self-dispatch step.
+
+- **Maintenance surface cut in half**: a step logic change is one edit, not two.
+- **Per-sport overrides are obvious and easy**: everything sport-specific lives at the top of each caller file.
+- **Independent configurability preserved**: changing NBA cron, adding an NBA-only step, or wiring a new NBA secret requires editing only `nba-run.yml`.
+- **No behavior change**: both timers retain their existing cron offsets (`:17` NBA, `:23` NHL), push-path triggers, concurrency groups, and secret bindings.
+
+---
+
 ### Code Cleanup — Untangle Pass 1 (Python)
 **Commits:** `37b05cb`
 

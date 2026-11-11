@@ -1,0 +1,74 @@
+# Reusable workflow — shared execution logic for all sports.
+# Callers: nba-run.yml, nhl-run.yml  (each owns its cron, push paths, and secret mapping)
+# Self-dispatching chain: runs sports/<sport>/scripts/loop.sh for ~50 min, then starts the next run.
+# Concurrency group keeps one run going and at most one waiting; a newer waiting run replaces an older one.
+# Off switch: commit sports/<sport>/config/stop_timer.
+name: sport-run
+on:
+  workflow_call:
+    inputs:
+      sport:
+        description: 'Sport key (nba or nhl)'
+        required: true
+        type: string
+      chain_link:
+        description: 'Which link of the chain this is (set by the previous run)'
+        required: false
+        type: string
+        default: '0'
+      chain_started_at:
+        description: 'When the chain began (set by the previous run)'
+        required: false
+        type: string
+        default: ''
+    secrets:
+      ODDS_API_KEYS:
+        required: true
+      ODDS_API_KEYS_2:
+        required: false
+      DISCORD_WEBHOOK_URL:
+        required: true
+permissions:
+  contents: write             # commit sports/<sport>/data/
+  actions: write              # start the next run
+concurrency:
+  group: ${{ inputs.sport }}-repo-writer
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 65
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0        # full history: guard_record.py --history walks every Record version
+          sparse-checkout: |
+            sports/${{ inputs.sport }}
+            .github/workflows/${{ inputs.sport }}-run.yml
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: loop (about 50 minutes)
+        timeout-minutes: 60
+        working-directory: sports/${{ inputs.sport }}
+        env:
+          ODDS_API_KEYS: ${{ secrets.ODDS_API_KEYS }}
+          ODDS_API_KEYS_2: ${{ secrets.ODDS_API_KEYS_2 }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          PC_RUNNER_EVENT: ${{ github.event_name }}
+          PC_RUNNER_RUN_ID: ${{ github.run_id }}
+          PC_RUNNER_LINK: ${{ inputs.chain_link }}
+          PC_RUNNER_CHAIN_STARTED: ${{ inputs.chain_started_at }}
+        run: bash scripts/loop.sh
+
+      - name: start the next run
+        if: always()
+        working-directory: sports/${{ inputs.sport }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          DISPATCH_WORKFLOW: ${{ inputs.sport }}-run.yml
+          PC_RUNNER_LINK: ${{ inputs.chain_link }}
+          PC_RUNNER_CHAIN_STARTED: ${{ inputs.chain_started_at }}
+        run: bash scripts/dispatch_next.sh || [ -f scripts/dispatch_next.sh ] || gh workflow run ${{ inputs.sport }}-run.yml --ref "${GITHUB_REF_NAME:-main}"
