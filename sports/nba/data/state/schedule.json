@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:17 - 4th",
+    "detail": "2:47 - 4th",
     "score": {
-     "LAC": "89",
-     "PHX": "115"
+     "LAC": "97",
+     "PHX": "127"
     }
    },
    {
@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:20 - 4th",
+    "detail": "6:42 - 4th",
     "score": {
-     "MIA": "97",
-     "UTAH": "75"
+     "MIA": "101",
+     "UTAH": "93"
     }
    },
    {
@@ -418,13 +418,13 @@
     "start": "2026-11-10T23:00:00-05:00",
     "away": "OKC",
     "home": "POR",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/10 - 11:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:06 - 1st",
     "score": {
-     "OKC": "0",
-     "POR": "0"
+     "OKC": "7",
+     "POR": "7"
     }
    }
   ]
