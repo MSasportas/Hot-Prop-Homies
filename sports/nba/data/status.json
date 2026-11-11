@@ -1,7 +1,7 @@
 {
  "finished_at": "2026-11-11T08:00:01-05:00",
  "slate": "2026-11-11",
- "ok": true,
+ "ok": false,
  "steps": {
   "schedule": {
    "ok": true,
@@ -126,10 +126,14 @@
  "unmatched": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "43020862465",
+  "run_id": "43025192494",
   "iteration": 2,
-  "chain_link": 198,
+  "chain_link": 199,
   "chain_started_at": "2026-11-05T14:14:50-05:00",
-  "run_started_at": "2026-11-11T07:30:18-05:00"
- }
+  "run_started_at": "2026-11-11T08:00:27-05:00"
+ },
+ "status_at": "2026-11-11T08:30:35-05:00",
+ "failed_step": "push",
+ "failed_at": "2026-11-11T08:30:35-05:00",
+ "note": "The run stopped before finishing. Files from the last good run are still in place."
 }
