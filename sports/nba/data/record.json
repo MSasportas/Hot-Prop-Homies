@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-10T21:00:01-05:00",
+ "generated_at": "2026-11-10T22:00:01-05:00",
  "summary": {
   "headline": {
-   "w": 34,
+   "w": 35,
    "l": 18,
    "push": 0,
    "void": 0,
-   "units": 14.83,
-   "hit_rate": 0.6538,
-   "needed": 0.5187,
-   "n": 52
+   "units": 15.7,
+   "hit_rate": 0.6604,
+   "needed": 0.519,
+   "n": 53
   },
   "rows": [
    {
@@ -27,14 +27,14 @@
    {
     "key": "points",
     "label": "Points",
-    "w": 11,
+    "w": 12,
     "l": 6,
     "push": 0,
     "void": 0,
-    "units": 3.4,
-    "hit_rate": 0.6471,
-    "needed": 0.5431,
-    "n": 17
+    "units": 4.27,
+    "hit_rate": 0.6667,
+    "needed": 0.5426,
+    "n": 18
    },
    {
     "key": "assists",
@@ -75,14 +75,14 @@
    {
     "key": "window:90 \u2192 45 min",
     "label": "Window 90 \u2192 45 min",
-    "w": 10,
+    "w": 11,
     "l": 8,
     "push": 0,
     "void": 0,
-    "units": 0.78,
-    "hit_rate": 0.5556,
-    "needed": 0.5325,
-    "n": 18
+    "units": 1.65,
+    "hit_rate": 0.5789,
+    "needed": 0.5326,
+    "n": 19
    },
    {
     "key": "window:45 \u2192 20 min",
@@ -136,14 +136,14 @@
      {
       "key": "points",
       "label": "Points",
-      "w": 11,
+      "w": 12,
       "l": 6,
       "push": 0,
       "void": 0,
-      "units": 3.4,
-      "hit_rate": 0.6471,
-      "needed": 0.5431,
-      "n": 17,
+      "units": 4.27,
+      "hit_rate": 0.6667,
+      "needed": 0.5426,
+      "n": 18,
       "ids": [
        "2026-11-10:401909960:3147657:points:10.5:under",
        "2026-11-10:401909963:4278053:points:13.5:under",
@@ -252,14 +252,14 @@
      {
       "key": "under",
       "label": "Under",
-      "w": 23,
+      "w": 24,
       "l": 15,
       "push": 0,
       "void": 0,
-      "units": 6.21,
-      "hit_rate": 0.6053,
-      "needed": 0.5274,
-      "n": 38,
+      "units": 7.08,
+      "hit_rate": 0.6154,
+      "needed": 0.5276,
+      "n": 39,
       "ids": [
        "2026-11-10:401909960:3147657:points:10.5:under",
        "2026-11-10:401909963:4278053:assists:7.5:under",
@@ -314,14 +314,14 @@
      {
       "key": "e0",
       "label": "0 to 2%",
-      "w": 26,
+      "w": 27,
       "l": 16,
       "push": 0,
       "void": 0,
-      "units": 8.49,
-      "hit_rate": 0.619,
-      "needed": 0.5218,
-      "n": 42,
+      "units": 9.36,
+      "hit_rate": 0.6279,
+      "needed": 0.5221,
+      "n": 43,
       "ids": [
        "2026-11-10:401909960:3147657:points:10.5:under",
        "2026-11-09:401909953:3908809:points:23.5:under",
@@ -436,14 +436,14 @@
      {
       "key": "clear",
       "label": "Injury report clear",
-      "w": 26,
+      "w": 27,
       "l": 15,
       "push": 0,
       "void": 0,
-      "units": 9.72,
-      "hit_rate": 0.6341,
-      "needed": 0.5218,
-      "n": 41,
+      "units": 10.59,
+      "hit_rate": 0.6429,
+      "needed": 0.5221,
+      "n": 42,
       "ids": [
        "2026-11-10:401909960:3147657:points:10.5:under",
        "2026-11-09:401909953:2583632:rebounds:4.5:under",
@@ -552,14 +552,14 @@
      {
       "key": "fav",
       "label": "-100 to -150",
-      "w": 22,
+      "w": 23,
       "l": 12,
       "push": 0,
       "void": 0,
-      "units": 5.63,
-      "hit_rate": 0.6471,
-      "needed": 0.5539,
-      "n": 34,
+      "units": 6.5,
+      "hit_rate": 0.6571,
+      "needed": 0.5534,
+      "n": 35,
       "ids": [
        "2026-11-10:401909960:3147657:points:10.5:under",
        "2026-11-10:401909963:4278053:points:13.5:under",
@@ -605,11 +605,11 @@
   "days": [
    {
     "date": "2026-11-10",
-    "w": 0,
+    "w": 1,
     "l": 0,
     "push": 0,
     "void": 0,
-    "units": 0,
+    "units": 0.87,
     "n": 3,
     "graded": false
    },
@@ -739,9 +739,9 @@
   {
    "date": "2026-11-10",
    "graded": false,
-   "w": 0,
+   "w": 1,
    "l": 0,
-   "units": 0,
+   "units": 0.87,
    "entries": [
     {
      "id": "2026-11-10:401909960:3147657:points:10.5:under",
@@ -760,9 +760,9 @@
        "at": "2026-11-10T18:50:00-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "4 points",
+     "units": 0.8696,
      "pulled": null,
      "legs": [],
      "window": "90 \u2192 45 min",
