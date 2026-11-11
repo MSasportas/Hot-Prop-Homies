@@ -1,34 +1,86 @@
 {
- "slate_date": "2026-11-09",
- "generated_at": "2026-11-10T01:20:01-05:00",
+ "slate_date": "2026-11-10",
+ "generated_at": "2026-11-10T19:00:01-05:00",
  "games": [
   {
-   "game_id": 2026020285,
-   "state": "OFF",
+   "game_id": 2026020286,
+   "state": "PRE",
    "schedule_state": "OK",
-   "period": 5,
-   "period_type": "SO",
-   "clock": "00:00",
+   "period": null,
+   "period_type": null,
+   "clock": null,
    "in_intermission": false,
    "running": false,
    "away": {
-    "abbrev": "NYI",
-    "score": 2,
-    "sog": 32
+    "abbrev": "COL",
+    "score": null,
+    "sog": null
    },
    "home": {
-    "abbrev": "SJS",
-    "score": 3,
-    "sog": 39
+    "abbrev": "TOR",
+    "score": null,
+    "sog": null
    },
-   "updated_at": "2026-11-10T01:20:01-05:00"
+   "updated_at": "2026-11-10T19:00:01-05:00"
+  },
+  {
+   "game_id": 2026020287,
+   "state": "PRE",
+   "schedule_state": "OK",
+   "period": null,
+   "period_type": null,
+   "clock": null,
+   "in_intermission": false,
+   "running": false,
+   "away": {
+    "abbrev": "MIN",
+    "score": null,
+    "sog": null
+   },
+   "home": {
+    "abbrev": "MTL",
+    "score": null,
+    "sog": null
+   },
+   "updated_at": "2026-11-10T19:00:01-05:00"
+  },
+  {
+   "game_id": 2026020291,
+   "state": "PRE",
+   "schedule_state": "OK",
+   "period": null,
+   "period_type": null,
+   "clock": null,
+   "in_intermission": false,
+   "running": false,
+   "away": {
+    "abbrev": "NJD",
+    "score": null,
+    "sog": null
+   },
+   "home": {
+    "abbrev": "WPG",
+    "score": null,
+    "sog": null
+   },
+   "updated_at": "2026-11-10T19:00:01-05:00"
   }
  ],
  "picks": {
-  "2026-11-09:2026020285:8480748:shots:1.5:under": {
-   "game_id": 2026020285,
+  "2026-11-10:2026020286:8480069:shots:2.5:under": {
+   "game_id": 2026020286,
    "market": "shots",
-   "stat": 3
+   "stat": null
+  },
+  "2026-11-10:2026020287:8480800:shots:2.5:over": {
+   "game_id": 2026020287,
+   "market": "shots",
+   "stat": null
+  },
+  "2026-11-10:2026020291:8481559:shots:3.5:under": {
+   "game_id": 2026020291,
+   "market": "shots",
+   "stat": null
   }
  }
 }
