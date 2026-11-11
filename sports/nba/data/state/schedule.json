@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:52 - 4th",
+    "detail": "1:46 - 4th",
     "score": {
      "ORL": "103",
-     "SAC": "91"
+     "SAC": "92"
     }
    },
    {
