@@ -1,6 +1,41 @@
 {
  "nights": [
   {
+   "date": "2026-11-04",
+   "graded": true,
+   "w": 0,
+   "l": 1,
+   "units": -1.0,
+   "entries": [
+    {
+     "id": "2026-11-04:2026020250:8482679:shots:2.5:over",
+     "kind": "single",
+     "player": "M. Coronato",
+     "bet": "Over 2.5 shots on goal",
+     "market": "shots",
+     "team": "CGY",
+     "game": "CGY at SEA",
+     "price": 130,
+     "first_price": 130,
+     "last_price": 130,
+     "prices": [
+      {
+       "price": 130,
+       "at": "2026-11-04T20:30:00-05:00"
+      }
+     ],
+     "result": "L",
+     "actual": "had 1",
+     "units": -1.0,
+     "pulled": {
+      "at": "2026-11-04T21:20:00-05:00",
+      "reason": "Hard Rock moved it to +105"
+     },
+     "legs": []
+    }
+   ]
+  },
+  {
    "date": "2026-11-03",
    "graded": true,
    "w": 5,
