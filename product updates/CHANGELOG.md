@@ -108,10 +108,15 @@ Tested whether NBA's Pinnacle-move rule works on NHL data. Result: No. 27 new be
 
 | Item | Owner | Notes |
 |---|---|---|
-| Disable GitHub Actions on `prop-check-nhl` and `prop-check-nba` standalone repos | Matt | Settings → Actions → General → Disable |
-| NHL API key #1 is invalid | Matt | Replace before December |
-| NBA credits tight end of November (~330 spare) | Matt | May need more keys before Nov 29-30 |
-| Workflow deduplication (`nhl-run.yml` ≈ `nba-run.yml`) | Builder | Safe but touches the timer — own pass |
+| Workflow deduplication (`nhl-run.yml` ≈ `nba-run.yml`) | Builder | The two timer files are near-identical; editing one means editing both. Low urgency — timers work fine. Own pass when convenient. |
 | `stateChip()` restructure — NHL states patched over NBA base | Builder | Needs a rewrite, not a quick edit |
-| NBA closing-price read (extra read ~2 min before tip) | Matt's call | ~850 credits/month; NBA can't afford it in November |
-| NBA daily re-score of movement ideas (`run8_moves.py`) not wired into the timer | Builder | When ready |
+| NBA closing-price read (extra read ~2 min before tip) | Matt's call | ~850 credits/month; on hold until more keys available |
+| NBA daily re-score of movement ideas (`run8_moves.py`) | Builder | Research script (Run 8); wire into nightly timer only when research says the signal is worth tracking live |
+
+## Resolved Items
+
+| Item | Resolved | Notes |
+|---|---|---|
+| Disable GitHub Actions on `prop-check-nhl` and `prop-check-nba` | 2026-11-11 | Done by Matt |
+| NHL API key #1 invalid | 2026-11-11 | Was a paid key no longer in use — ignored |
+| NBA credits tight end of November | 2026-11-11 | Matt added 4-5 new keys; alert Matt again if pool drops below 750 credits |
