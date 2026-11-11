@@ -1533,28 +1533,29 @@ function gameChecks(g) {
 function renderGamesAll() {
   top('Games', true);
   if (!S.allResults) { loadingView(); return; }
-  var bySort = ['nba', 'nhl'];
-  var found = false;
-  bySort.forEach(function (sp) {
-    var r = null;
-    arr(S.allResults).forEach(function (x) { if (x.sport === sp) r = x; });
-    if (!r || !r.slate.ok) return;
-    var games = arr(r.slate.v.games).filter(isObj).slice().sort(function (a, b) { return (ms(a.start) || 0) - (ms(b.start) || 0); });
-    if (!games.length) return;
-    found = true;
-    var label = sp === 'nba' ? 'NBA' : 'NHL';
-    app.appendChild(h('div', { class: 'sport-sec-h' }, h('span', { class: 'sp-badge ' + sp, text: label }), ' Games'));
-    var gl = h('div', { class: 'gl' });
-    var tipLabel = sp === 'nhl' ? 'Puck drop ' : 'Tip ';
-    games.forEach(function (g) {
-      gl.appendChild(h('div', { class: 'gm' + (gameStarted(g) ? ' started' : '') },
-        h('div', { class: 'g1' }, h('span', { class: 'mt', text: (g.away && g.home) ? str(g.away) + ' at ' + str(g.home) : 'Game' }),
-          h('span', { class: 'pt', text: fTime(g.start) ? tipLabel + fTime(g.start) : 'time not posted' })),
-        gameChecks(g)));
+  var allGames = [];
+  arr(S.allResults).forEach(function (r) {
+    if (!r.slate.ok) return;
+    arr(r.slate.v.games).filter(isObj).forEach(function (g) {
+      allGames.push(Object.assign({}, g, { sport: r.sport }));
     });
-    app.appendChild(gl);
   });
-  if (!found) app.appendChild(h('div', { class: 'card empty' }, h('div', { class: 't', text: 'No games found.' })));
+  allGames.sort(function (a, b) { return (ms(a.start) || 0) - (ms(b.start) || 0); });
+  if (!allGames.length) {
+    app.appendChild(h('div', { class: 'card empty' }, h('div', { class: 't', text: 'No games found.' })));
+    app.appendChild(smallFoot()); return;
+  }
+  var gl = h('div', { class: 'gl' });
+  allGames.forEach(function (g) {
+    var tipLabel = g.sport === 'nhl' ? 'Puck drop ' : 'Tip ';
+    gl.appendChild(h('div', { class: 'gm' + (gameStarted(g) ? ' started' : '') },
+      h('div', { class: 'g1' },
+        h('span', { class: 'sp-badge ' + g.sport, text: g.sport.toUpperCase(), style: 'margin-left:0' }),
+        h('span', { class: 'mt', text: (g.away && g.home) ? str(g.away) + ' at ' + str(g.home) : 'Game' }),
+        h('span', { class: 'pt', text: fTime(g.start) ? tipLabel + fTime(g.start) : 'time not posted' })),
+      gameChecks(g)));
+  });
+  app.appendChild(gl);
   app.appendChild(smallFoot());
 }
 function renderLiveAll() {
@@ -1942,7 +1943,42 @@ function renderLab() {
 }
 
 /* ---------- Info: status, how picks are made, the rules, notes ---------- */
+function renderInfoAll() {
+  top('Info', false);
+  if (!S.allResults) { app.appendChild(h('div', { class: 'stack' }, h('div', { class: 'skel sm' }), h('div', { class: 'skel' }))); return; }
+  var st = h('section', { class: 'sec' }, h('div', { class: 'sec-h' }, h('h2', { text: 'Update status' })));
+  arr(S.allResults).forEach(function (r) {
+    var label = r.sport === 'nba' ? 'NBA' : 'NHL';
+    st.appendChild(h('div', { class: 'sport-sec-h', style: 'margin-top:12px' }, h('span', { class: 'sp-badge ' + r.sport, text: label })));
+    var sv = { slate: S.slate, fetchFail: S.fetchFail, loadErr: S.loadErr };
+    S.slate = r.slate.ok ? r.slate.v : null;
+    S.fetchFail = r.slate.ok ? false : (r.slate.kind || 'net');
+    S.loadErr = !r.slate.ok ? (r.slate.kind || 'net') : false;
+    statusBody(st);
+    S.slate = sv.slate; S.fetchFail = sv.fetchFail; S.loadErr = sv.loadErr;
+  });
+  app.appendChild(st);
+  var ru = h('section', { class: 'sec' }, h('div', { class: 'sec-h' }, h('h2', { text: 'How picks are made' })));
+  ru.appendChild(h('p', { class: 'mu', style: 'margin-top:8px', text: 'Tap NHL or NBA above to see that sport’s full rules.' }));
+  app.appendChild(ru);
+  var nt = h('section', { class: 'sec' }, h('div', { class: 'sec-h' }, h('h2', { text: 'On this page' })));
+  nt.appendChild(h('ul', { class: 'plain' },
+    h('li', { text: 'Picks: every leg for a game that has not started, best first. Tap one for the reason, how settled it is and the Hard Rock button. NEW marks the picks the latest update added.' }),
+    h('li', { text: 'Early, Injury report clear, Starters confirmed and Locked show how settled a pick is. Price final means the last price check is done; only injury news can pull it after that.' }),
+    h('li', { text: 'TOO LATE: the pick came off the board before game time (injury news, or Hard Rock took the line down). If you already have it at the shown price, keep it; don’t bet it now.' }),
+    h('li', { text: 'A player ruled Out drops off Picks and Live. Hard Rock voids the bet.' }),
+    h('li', { text: 'Live: picks whose game has started, with the score and his number so far, read straight from ESPN (NBA.com as backup) every 10 seconds while the Live tab is open.' }),
+    h('li', { text: 'Games: our checks on each game (price checks, injury report, starters) and when the next one runs.' }),
+    h('li', { text: 'Record: the strategy’s results. REPLAY bets are the same rule run on price checks saved before it went live (Oct 25-27).' }),
+    h('li', { text: 'New picks stop by themselves if the Record falls to -10 units; the page says so at the top.' }),
+    h('li', { text: 'Parlays are not offered.' })));
+  app.appendChild(nt);
+  app.appendChild(h('footer', { class: 'foot' },
+    h('p', { text: 'All times Eastern.' }),
+    h('p', { text: 'For adults 21+. Picks are estimates, not guarantees. Bet only what you can afford to lose. Gambling problem? Call 1-800-GAMBLER.' })));
+}
 function renderInfo() {
+  if (S.sport === 'all') { renderInfoAll(); return; }
   top('Info', false);
   if (!S.loaded) { app.appendChild(h('div', { class: 'stack' }, h('div', { class: 'skel sm' }), h('div', { class: 'skel' }))); return; }
   var st = h('section', { class: 'sec' }, h('div', { class: 'sec-h' }, h('h2', { text: 'Update status' })));

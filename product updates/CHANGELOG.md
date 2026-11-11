@@ -6,6 +6,15 @@ All changes are listed newest-first. Each entry includes the date, what changed,
 
 ## 2026-11-11
 
+### All-Mode Games + Info — Unified Views
+**Files:** `index.html`
+
+**Games tab (All mode):** Was showing two separate sport sections (NBA section then NHL section). Now shows one chronological list of all games with a small NBA/NHL badge on each row. Single-sport mode unchanged.
+
+**Info tab (All mode):** Had no All-mode handler — in All mode it used single-sport state that wasn't populated, causing the status rows to show misleading data and the rules section to show an error. Added `renderInfoAll()` which shows per-sport Update Status sections (each with a sport badge heading, using each sport's own slate data via state-swap) and one shared "On this page" section. Rules point the user to the sport tabs. Single-sport mode unchanged.
+
+---
+
 ### All-Mode Record — Unified Combined View
 **Files:** `index.html`
 
