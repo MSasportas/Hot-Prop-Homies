@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:37 - 4th",
+    "detail": "1:52 - 4th",
     "score": {
-     "ORL": "96",
-     "SAC": "87"
+     "ORL": "103",
+     "SAC": "91"
     }
    },
    {
@@ -420,11 +420,11 @@
     "home": "POR",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:20 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "OKC": "54",
-     "POR": "54"
+     "OKC": "59",
+     "POR": "59"
     }
    }
   ]
