@@ -143,12 +143,12 @@
    }
   },
   "OKC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Shai Gilgeous-Alexander",
+    "Jared McCain",
     "Ajay Mitchell",
     "Kenrich Williams",
-    "Aday Mara",
     "Isaiah Hartenstein"
    ],
    "status": {
@@ -160,10 +160,10 @@
    }
   },
   "POR": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Damian Lillard",
-    "Scoot Henderson",
+    "Sidy Cissoko",
     "Toumani Camara",
     "Deni Avdija",
     "Donovan Clingan"
@@ -175,5 +175,5 @@
    }
   }
  },
- "at": "2026-11-10T22:40:34-05:00"
+ "at": "2026-11-10T22:50:00-05:00"
 }
