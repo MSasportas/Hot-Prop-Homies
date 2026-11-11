@@ -33,7 +33,7 @@
    }
   },
   "CLE": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "James Harden",
     "Donovan Mitchell",
@@ -123,30 +123,30 @@
     "De'Aaron Fox",
     "Stephon Castle",
     "Dylan Harper",
-    "Devin Vassell",
+    "Julian Champagnie",
     "Victor Wembanyama"
    ],
    "status": {
-    "Devin Vassell": "questionable",
     "Tobias Harris": "out",
-    "Jayden Quaintance": "out"
+    "Jayden Quaintance": "out",
+    "Devin Vassell": "out"
    }
   },
   "CHI": {
    "state": "expected",
    "starters": [
     "Josh Giddey",
-    "Norman Powell",
+    "Isaac Okoro",
     "Matas Buzelis",
     "Caleb Wilson",
     "Jalen Smith"
    ],
    "status": {
-    "Norman Powell": "questionable",
     "Caleb Wilson": "questionable",
     "Zach Collins": "questionable",
     "Dailyn Swain": "questionable",
-    "Tobe Awaka": "out"
+    "Tobe Awaka": "out",
+    "Norman Powell": "out"
    }
   },
   "LAL": {
@@ -306,5 +306,5 @@
    }
   }
  },
- "at": "2026-11-11T18:20:00-05:00"
+ "at": "2026-11-11T18:30:01-05:00"
 }
