@@ -304,7 +304,9 @@ def run(force_id=None):
         "",
     ]
     entry = "\n".join(entry_lines)
-    prepend_log(entry)
+    lp = log_path()
+    if entry_lines[0] not in (open(lp, encoding="utf-8").read() if os.path.exists(lp) else ""):   # a retried run must not log twice
+        prepend_log(entry)
     print(entry)
 
     save_state({"last_id": hid, "last_run": today, "idx": idx})
