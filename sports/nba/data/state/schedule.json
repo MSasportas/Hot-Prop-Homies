@@ -346,10 +346,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:03 - 3rd",
+    "detail": "3:08 - 3rd",
     "score": {
-     "MIL": "52",
-     "NY": "69"
+     "MIL": "56",
+     "NY": "78"
     }
    },
    {
@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:56 - 2nd",
+    "detail": "47.7 - 2nd",
     "score": {
-     "BOS": "48",
-     "PHI": "38"
+     "BOS": "62",
+     "PHI": "49"
     }
    },
    {
