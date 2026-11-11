@@ -388,13 +388,13 @@
     "start": "2026-11-10T21:00:00-05:00",
     "away": "MIA",
     "home": "UTAH",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "18.7 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "MIA": "113",
-     "UTAH": "107"
+     "MIA": "115",
+     "UTAH": "109"
     }
    },
    {
@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:07 - 3rd",
+    "detail": "1:00 - 3rd",
     "score": {
-     "ORL": "68",
-     "SAC": "65"
+     "ORL": "82",
+     "SAC": "76"
     }
    },
    {
@@ -420,11 +420,11 @@
     "home": "POR",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:33 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
-     "OKC": "25",
-     "POR": "22"
+     "OKC": "27",
+     "POR": "26"
     }
    }
   ]
