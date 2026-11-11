@@ -1,27 +1,27 @@
 {
  "slate_date": "2026-11-10",
- "generated_at": "2026-11-10T21:30:01-05:00",
+ "generated_at": "2026-11-10T21:40:00-05:00",
  "games": [
   {
    "game_id": 2026020286,
-   "state": "LIVE",
+   "state": "CRIT",
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "05:13",
+   "clock": "00:38",
    "in_intermission": false,
    "running": true,
    "away": {
     "abbrev": "COL",
-    "score": 4,
-    "sog": 26
+    "score": 6,
+    "sog": 28
    },
    "home": {
     "abbrev": "TOR",
     "score": 3,
-    "sog": 26
+    "sog": 31
    },
-   "updated_at": "2026-11-10T21:30:01-05:00"
+   "updated_at": "2026-11-10T21:40:00-05:00"
   },
   {
    "game_id": 2026020287,
@@ -29,41 +29,41 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "10:02",
+   "clock": "05:39",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "MIN",
     "score": 1,
-    "sog": 20
+    "sog": 21
    },
    "home": {
     "abbrev": "MTL",
     "score": 0,
-    "sog": 20
+    "sog": 24
    },
-   "updated_at": "2026-11-10T21:30:01-05:00"
+   "updated_at": "2026-11-10T21:40:00-05:00"
   },
   {
    "game_id": 2026020291,
-   "state": "CRIT",
+   "state": "FINAL",
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "02:54",
+   "clock": "00:00",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "NJD",
     "score": 2,
-    "sog": 19
+    "sog": 21
    },
    "home": {
     "abbrev": "WPG",
-    "score": 3,
-    "sog": 23
+    "score": 4,
+    "sog": 25
    },
-   "updated_at": "2026-11-10T21:30:01-05:00"
+   "updated_at": "2026-11-10T21:40:00-05:00"
   }
  ],
  "picks": {
@@ -80,7 +80,7 @@
   "2026-11-10:2026020291:8481559:shots:3.5:under": {
    "game_id": 2026020291,
    "market": "shots",
-   "stat": 2
+   "stat": 3
   }
  }
 }
