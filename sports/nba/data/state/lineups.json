@@ -111,9 +111,9 @@
    }
   },
   "ORL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
-    "Jase Richardson",
+    "Jamal Cain",
     "Anthony Black",
     "Desmond Bane",
     "Franz Wagner",
@@ -129,7 +129,7 @@
    }
   },
   "SAC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Darius Acuff",
     "Zach LaVine",
@@ -175,5 +175,5 @@
    }
   }
  },
- "at": "2026-11-10T21:30:01-05:00"
+ "at": "2026-11-10T21:40:00-05:00"
 }
