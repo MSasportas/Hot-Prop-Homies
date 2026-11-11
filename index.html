@@ -16,7 +16,7 @@
 <link rel="preload" as="font" type="font/woff2" href="fonts/ibm-plex-sans-400.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="fonts/ibm-plex-mono-600.woff2" crossorigin>
 <style>
-/* Prop Check NBA. A dense betting sheet in the Ballpark theme (Matt, 2026-11-04; copied from Prop Check NHL): light only,
+/* Prop Check — combined NBA + NHL betting sheet. Ballpark theme: light only,
    hairlines instead of shadows, Graduate headlines, IBM Plex Sans body, IBM Plex Mono odds and numbers. */
 @font-face{font-family:"Graduate";src:url("fonts/graduate-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"IBM Plex Sans";src:url("fonts/ibm-plex-sans-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
@@ -932,11 +932,11 @@ function toggleBtnKeys(fn) {
 }
 
 /* ---------- pick tile ---------- */
-function toTip(t) {
+function toTip(t, sport) {
   if (t == null) return '';
-  var m = Math.round((t - now()) / 60000);
-  if (m <= 0) return 'tipping now';
-  return (m >= 60 ? Math.floor(m / 60) + 'h ' + (m % 60) + 'm' : m + 'm') + ' to tip';
+  var m = Math.round((t - now()) / 60000), nhl = sport === 'nhl';
+  if (m <= 0) return nhl ? 'puck drop now' : 'tipping now';
+  return (m >= 60 ? Math.floor(m / 60) + 'h ' + (m % 60) + 'm' : m + 'm') + (nhl ? ' to puck drop' : ' to tip');
 }
 /* our chance vs what the price needs: "56% vs 53%" */
 function chanceVs(p) {
@@ -987,7 +987,7 @@ function pickCard(p, d, lat) {
   if (rsn) x.appendChild(h('div', { text: rsn }));
   x.appendChild(h('div', { class: 'chips' }, stateChip(p.state, false, p), p.price_final ? h('span', { class: 'tagx ok' }, icon('check', 13), 'Price final') : null));
   x.appendChild(h('div', null, h('div', { class: 'chance' }, 'We say ', h('b', { text: pc || 'not posted' }), be ? ' · price needs ' + be : ''), chanceBar(p.p, p.breakeven)));
-  var mn = muNodes(p, games, true), tp = toTip(pickStart(p, games));
+  var mn = muNodes(p, games, true), tp = toTip(pickStart(p, games), str(p.sport) || S.sport);
   x.appendChild(h('div', { class: 'meta' }, mn.length ? mn : 'Game time not posted', tp ? ' · ' + tp : ''));
   var pb = num(p.pin_price_before), pa = num(p.pin_price_after);
   if (pb != null || pa != null) x.appendChild(h('div', { class: 'meta' }, 'Pinnacle ', h('b', { text: odds(pb) + ' \u2192 ' + odds(pa) }),
@@ -1392,15 +1392,16 @@ function liveTick() {
 }
 function gameLine(p, d) {
   var lg = liveGame(p.game_id), g = d.games[p.game_id], score = null, st, n = lg ? num(lg.period) : null, clk = lg ? str(lg.clock) : '';
+  var nhl = (str(p.sport) || S.sport) === 'nhl';
   if (lg && g && num(lg.away.score) != null && num(lg.home.score) != null)
     score = str(g.away) + ' ' + lg.away.score + '-' + lg.home.score + ' ' + str(g.home);
-  var ot = n != null && n > 4 ? (n === 5 ? 'OT' : (n - 4) + 'OT') : null;
+  var ot = n != null && n > (nhl ? 3 : 4) ? (n === (nhl ? 4 : 5) ? 'OT' : (n - (nhl ? 3 : 4)) + 'OT') : null;
   if (isObj(p.result) || isFinalGame(lg) || (g && g.state === 'post')) st = 'Final' + (ot ? ' (' + ot + ')' : '');
-  else if (!lg || !lg.state) st = 'Tipped' + (fTime(pickStart(p, d.games)) ? ' ' + fTime(pickStart(p, d.games)) : '');
+  else if (!lg || !lg.state) st = 'Started' + (fTime(pickStart(p, d.games)) ? ' ' + fTime(pickStart(p, d.games)) : '');
   else if (lg.state === 'pre') st = 'Starting';
-  else if (lg.in_break && /half/i.test(str(lg.detail))) st = 'Half';
-  else if (lg.in_break) st = 'End ' + (ot || (n != null ? 'Q' + n : 'of quarter'));
-  else st = (ot || (n != null ? 'Q' + n : 'In play')) + (clk ? ' ' + clk : '');
+  else if (lg.in_break && /half/i.test(str(lg.detail))) st = nhl ? 'Intermission' : 'Half';
+  else if (lg.in_break) st = 'End ' + (ot || (n != null ? (nhl ? 'P' : 'Q') + n : (nhl ? 'of period' : 'of quarter')));
+  else st = (ot || (n != null ? (nhl ? 'P' : 'Q') + n : 'In play')) + (clk ? ' ' + clk : '');
   var mu = muNodes(p, d.games, false);
   return { status: st, score: score, mu: mu };
 }
@@ -1488,8 +1489,8 @@ function renderLive() {
   on.sort(byStart); done.sort(byStart);
   if (!d.started.length) {
     var nxt = d.open.map(function (p) { return pickStart(p, d.games); }).filter(function (x) { return x != null; }).sort()[0];
-    app.appendChild(h('div', { class: 'card empty' }, h('div', { class: 't', text: 'No game with a pick has tipped yet.' }),
-      h('div', { class: 's', text: nxt ? 'First tip with a pick: ' + fTime(nxt) + '.' : 'Picks show here once their game starts.' })));
+    app.appendChild(h('div', { class: 'card empty' }, h('div', { class: 't', text: 'No game with a pick has started yet.' }),
+      h('div', { class: 's', text: nxt ? (S.sport === 'nhl' ? 'First puck drop with a pick: ' : 'First tip with a pick: ') + fTime(nxt) + '.' : 'Picks show here once their game starts.' })));
   } else {
     var list = h('div', { class: 'lvlist' });
     on.concat(done).forEach(function (p) { list.appendChild(liveRow(p, d)); });
@@ -1520,7 +1521,7 @@ function gameChecks(g) {
     if (lx[k] === 'confirmed') ul.appendChild(ckItem('', 'check', str(g[k]) + ' starters confirmed'));
     else ul.appendChild(ckItem('wait', 'dash', str(g[k]) + ' starters ' + (started ? 'never confirmed' : 'not confirmed yet')));
   });
-  if (started) ul.appendChild(ckItem('wait', 'lock', 'Tipped. No more checks.'));
+  if (started) ul.appendChild(ckItem('wait', 'lock', (str(g.sport) || S.sport) === 'nhl' ? 'Started. No more checks.' : 'Tipped. No more checks.'));
   else if (g.final === true) ul.appendChild(ckItem('done', 'check', 'Price checks done.'));
   else if (fTime(g.next_check_at)) {
     var past = ms(g.next_check_at) <= now();
@@ -1543,10 +1544,11 @@ function renderGamesAll() {
     var label = sp === 'nba' ? 'NBA' : 'NHL';
     app.appendChild(h('div', { class: 'sport-sec-h' }, h('span', { class: 'sp-badge ' + sp, text: label }), ' Games'));
     var gl = h('div', { class: 'gl' });
+    var tipLabel = sp === 'nhl' ? 'Puck drop ' : 'Tip ';
     games.forEach(function (g) {
       gl.appendChild(h('div', { class: 'gm' + (gameStarted(g) ? ' started' : '') },
         h('div', { class: 'g1' }, h('span', { class: 'mt', text: (g.away && g.home) ? str(g.away) + ' at ' + str(g.home) : 'Game' }),
-          h('span', { class: 'pt', text: fTime(g.start) ? 'Tip ' + fTime(g.start) : 'time not posted' })),
+          h('span', { class: 'pt', text: fTime(g.start) ? tipLabel + fTime(g.start) : 'time not posted' })),
         gameChecks(g)));
     });
     app.appendChild(gl);
@@ -1652,14 +1654,14 @@ function renderGames() {
   }
   var games = arr(S.slate.games).filter(isObj).slice().sort(function (a, b) { return (ms(a.start) || 0) - (ms(b.start) || 0); });
   if (!games.length) {
-    app.appendChild(h('div', { class: 'card empty' }, h('div', { class: 't', text: 'No NBA games today.' })));
+    app.appendChild(h('div', { class: 'card empty' }, h('div', { class: 't', text: 'No ' + (S.sport === 'nhl' ? 'NHL' : 'NBA') + ' games today.' })));
     app.appendChild(smallFoot()); return;
   }
-  var gl = h('div', { class: 'gl' });
+  var gl = h('div', { class: 'gl' }), tipLabel = S.sport === 'nhl' ? 'Puck drop ' : 'Tip ';
   games.forEach(function (g) {
     gl.appendChild(h('div', { class: 'gm' + (gameStarted(g) ? ' started' : '') },
       h('div', { class: 'g1' }, h('span', { class: 'mt', text: (g.away && g.home) ? str(g.away) + ' at ' + str(g.home) : 'Game' }),
-        h('span', { class: 'pt', text: fTime(g.start) ? 'Tip ' + fTime(g.start) : 'time not posted' })),
+        h('span', { class: 'pt', text: fTime(g.start) ? tipLabel + fTime(g.start) : 'time not posted' })),
       gameChecks(g)));
   });
   app.appendChild(gl);
@@ -1932,11 +1934,11 @@ function renderInfo() {
   rulesBody(ru); app.appendChild(ru);
   var nt = h('section', { class: 'sec' }, h('div', { class: 'sec-h' }, h('h2', { text: 'On this page' })));
   nt.appendChild(h('ul', { class: 'plain' },
-    h('li', { text: 'Picks: every leg for a game that has not tipped, best first. Tap one for the reason, how settled it is and the Hard Rock button. NEW marks the picks the latest update added.' }),
+    h('li', { text: 'Picks: every leg for a game that has not started, best first. Tap one for the reason, how settled it is and the Hard Rock button. NEW marks the picks the latest update added.' }),
     h('li', { text: 'Early, Injury report clear, Starters confirmed and Locked show how settled a pick is. Price final means the last price check is done; only injury news can pull it after that.' }),
-    h('li', { text: 'TOO LATE: the pick came off the board before tip (injury news, or Hard Rock took the line down). If you already have it at the shown price, keep it; don\u2019t bet it now.' }),
+    h('li', { text: 'TOO LATE: the pick came off the board before game time (injury news, or Hard Rock took the line down). If you already have it at the shown price, keep it; don\u2019t bet it now.' }),
     h('li', { text: 'A player ruled Out drops off Picks and Live. Hard Rock voids the bet.' }),
-    h('li', { text: 'Live: picks whose game has tipped, with the score and his number so far, read straight from ESPN (NBA.com as backup) every 10 seconds while the Live tab is open.' }),
+    h('li', { text: 'Live: picks whose game has started, with the score and his number so far, read straight from ESPN (NBA.com as backup) every 10 seconds while the Live tab is open.' }),
     h('li', { text: 'Games: our checks on each game (price checks, injury report, starters) and when the next one runs.' }),
     h('li', { text: 'Record: the strategy\u2019s results. REPLAY bets are the same rule run on price checks saved before it went live (Oct 25-27).' }),
     h('li', { text: 'New picks stop by themselves if the Record falls to -10 units; the page says so at the top.' }),
@@ -1974,7 +1976,7 @@ function statusBody(body) {
       : 'Schedule, injury list' + (fd.grade === false ? '' : ' and box scores') + ' answered on the last run.', espnBad);
     var lu = isObj(fd.lineups) ? fd.lineups : {}, nc = arr(lu.confirmed).length;
     row('Lineups', lu.ok === false ? "Rotowire didn't answer. Picks can't reach Starters confirmed until it does."
-      : (fStamp(lu.at) ? 'Rotowire read ' + fStamp(lu.at) + '. ' : 'Rotowire not read yet today (it starts 3 hours before the first tip). ') + (nc ? nc + (nc === 1 ? ' team' : ' teams') + ' with confirmed starters.' : ''), lu.ok === false);
+      : (fStamp(lu.at) ? 'Rotowire read ' + fStamp(lu.at) + '. ' : 'Rotowire not read yet today (it starts 3 hours before the first game). ') + (nc ? nc + (nc === 1 ? ' team' : ' teams') + ' with confirmed starters.' : ''), lu.ok === false);
   } else {
     row('ESPN', 'Not reported on this update.', false, true);
     row('Lineups', 'Not reported on this update.', false, true);
