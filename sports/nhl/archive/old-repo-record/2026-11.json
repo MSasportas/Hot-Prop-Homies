@@ -1,0 +1,62 @@
+{
+ "nights": [
+  {
+   "date": "2026-11-01",
+   "graded": true,
+   "w": 0,
+   "l": 2,
+   "units": -2.0,
+   "entries": [
+    {
+     "id": "2026-11-01:2026020227:8476873:shots:1.5:under",
+     "kind": "single",
+     "player": "M. Jankowski",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "CAR",
+     "game": "WPG at CAR",
+     "price": -115,
+     "first_price": -115,
+     "last_price": -115,
+     "prices": [
+      {
+       "price": -115,
+       "at": "2026-11-01T11:30:01-05:00"
+      }
+     ],
+     "result": "L",
+     "actual": "had 3",
+     "units": -1.0,
+     "pulled": {
+      "at": "2026-11-01T12:20:01-05:00",
+      "reason": "Hard Rock moved it to -135"
+     },
+     "legs": []
+    },
+    {
+     "id": "2026-11-01:2026020227:8480145:shots:1.5:under",
+     "kind": "single",
+     "player": "N. Pionk",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "WPG",
+     "game": "WPG at CAR",
+     "price": -110,
+     "first_price": -110,
+     "last_price": -110,
+     "prices": [
+      {
+       "price": -110,
+       "at": "2026-11-01T11:30:01-05:00"
+      }
+     ],
+     "result": "L",
+     "actual": "had 4",
+     "units": -1.0,
+     "pulled": null,
+     "legs": []
+    }
+   ]
+  }
+ ]
+}

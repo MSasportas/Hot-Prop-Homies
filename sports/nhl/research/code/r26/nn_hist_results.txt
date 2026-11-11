@@ -1,0 +1,9 @@
+games with a usable moneyline snapshot before the -45 read: 634 of 924 (dropped 290)
+2025-11: lines 3105, fit s = -0.0007 +0.0410*(p-.5) on 143 prior game-teams, r q20 -0.0168 q80 +0.0194; NN2 event lines 0
+2025-12: lines 3147, fit s = -0.0008 +0.0465*(p-.5) on 399 prior game-teams, r q20 -0.0186 q80 +0.0183; NN2 event lines 28
+2026-01: lines 3384, fit s = -0.0013 +0.0550*(p-.5) on 737 prior game-teams, r q20 -0.0197 q80 +0.0202; NN2 event lines 14
+2026-02: lines 841, fit s = -0.0012 +0.0585*(p-.5) on 1150 prior game-teams, r q20 -0.0195 q80 +0.0205; NN2 event lines 0
+NN1a fade: n3254 -3.7% [-6.6,-0.7] p 0.975 | folds 11 -8.6% n680 12 -2.3% n1083 01 -0.7% n1131 02 -8.5% n360
+NN1b follow: n3251 -8.8% [-11.5,-6.2] p 1.000 | folds 11 -4.0% n677 12 -9.9% n1083 01 -12.2% n1131 02 -3.8% n360
+NN2a follow market: n41 -10.2% [-28.1,+6.0] p 0.860 | folds 12 -23.6% n27 01 +15.6% n14
+NN2b follow HR: n41 -4.2% [-20.7,+14.0] p 0.600 | folds 12 +10.1% n27 01 -31.8% n14

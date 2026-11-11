@@ -1,6 +1,6 @@
 # LOG.md: Researcher runs (newest first)
 
-- 2026-11-10 (Researcher run 22, owner's question: does NBA's live rule help NHL?; SHOTS ON GOAL ONLY). No key used, no historical pull.
+- 2026-11-10 (Researcher run 22-LIVE (Run in the combined Hot-Prop-Homies repo on Nov 10, separately from the old repo's runs 22-26. Its JJ1-JJ3 ids are NOT the old repo's JJ1-JJ3; read them as JJ1L-JJ3L.), owner's question: does NBA's live rule help NHL?; SHOTS ON GOAL ONLY). No key used, no historical pull.
   JJ1-JJ3 registered in HYPOTHESES.md before running (not committed: this run was told not to commit). History can't test it: the 2025-26
   tarballs are Hard Rock only with one -45 read (Pinnacle in 2-3 probe files). Forward data Oct 19 - Nov 9, all seen (Q13/Q19 overlap), so
   DISCOVERY ONLY. Script research/code/r22/jj22.py, output jj22_results.txt.
@@ -16,6 +16,101 @@
   (Q19 already scores a close variant); no candidate for the Sharp.
   Next: (1) keep Q19 forward; add JJ1 as a forward scorer only if the CEO wants it watched; (2) Q22a-b forward; (3) II3r forward version.
 
+- 2026-11-11 ~8:30 AM ET (Researcher run 26, daily; SHOTS ON GOAL ONLY; books, not players). No key used, no historical odds pull.
+  NN1, NN2, NN2f, NN4-NN6 registered and pushed (bc87599d) before any test ran. History bundle + the h2h addon (one multi-book moneyline
+  snapshot a day, 5:30 PM ET) extracted to scratch; lockbox not read. A "rare / off-ladder Hard Rock price" idea was dropped before
+  registering: Hard Rock's -45 shots prices are a strict 5-cent ladder (112 pairs), so it would repeat the price-band and hold tests.
+  Scripts research/code/r26/nn_hist.py (output nn_hist_results.txt) and research/code/r26/score_nn.py (forward, now in run_all.sh -> research/fwd/nn.md).
+  - NN1 Hard Rock's team shots lean vs what the sides market (moneyline) explains (history, 634 games with a snapshot before the -45 read):
+    fade -3.7% n3,254 [-6.6,-0.7], follow -8.8% n3,251; every fold negative. The props desk's lean is not a mistake vs the sides market.
+  - NN2 Hard Rock's own moneyline >= 2 pts off the other books, carried to its shots props (history): only 41 lines all season (Hard Rock
+    copies the moneyline market); -10.2% / -4.2%. Failed, too rare to matter.
+  - NN2fa-b same forward (data/featured), NN4 exchange (novig/prophetx) steam >= 3 pts with Hard Rock unchanged, NN5 whole market moves
+    >= 2 pts with Hard Rock stale, NN6 soft books move alone -> fade toward the sharps (all forward, judged from tonight). Seen-night code
+    check only, NOT a result: NN2f -9.0% / -8.6% n42; NN4 3-8; NN5 2-4; NN6 1-0. Between our reads Hard Rock almost always moves when the
+    market moves, so the stale-price events are rare (~1 a night).
+  - Forward re-score (run_all.sh, 23 nights Oct 19 - Nov 10; clone unshallowed): Q1a +2.2% n875; Q1b +4.2% n655 [-1,+10] p .11 CLV +3.5%
+    (still fading); Q1g +6.1% n551 p .068; Q1k Pinnacle +3.9% n628. Q6a (A read) +5.6% n420, Q6b (B/C) -5.2% n302. **Q24 (clean 1 PM test)
+    after 2 nights: 29 bets -13.2% [-37,+14]** (night 1 +15.8% n10, night 2 bad). LL (judged from Nov 9): LL5 exchanges as fair +26.2% n24,
+    LL1f fade +13.1% n74 / follow -27.5% n72, rest n <= 29. MM (from Nov 10): all n <= 12.
+  4 historical variants (~0.2 false positives expected), all-time 522; forward 65 (5 new). Lockbox looks: 2 (unchanged; next needs p < 0.0167).
+  **Verdict: nothing passed; no candidate for the Sharp.** Hard Rock's shots props agree with its own and the market's moneyline, and its
+  moneyline copies the market; the only open price signals are forward and small (Q24, LL5, MM2). Picks are paused to Nov 15; the reads
+  keep running, so forward tests keep accruing.
+  Next: (1) LL5 / MM2 / NN4 forward (exchanges and sharps as the fair) to size them; (2) Hard Rock vs the soft books only at 1 PM (does Q24's
+    1 PM gap come from Hard Rock copying DK/FD late?), registered before looking; (3) if the CEO can get a historical key: 3 shots reads a
+    game (1 PM, -90, -45) with Pinnacle + exchanges for ~100 Nov-Feb games (~30 credits a game, ~3,000 credits) to test the move ideas in history.
+- 2026-11-10 ~8:20 AM ET (Researcher run 25, daily; SHOTS ON GOAL ONLY; books, not players). No key used, no historical odds pull.
+  MM1-MM5 registered and pushed (5024f9ca) before any test ran. History bundle extracted to scratch; lockbox not read. A history test of
+  Hard Rock line shifts 1 PM -> 45 min was dropped before registering: only 17 of 1,964 player pairs changed line in 2025-26.
+  Scripts research/code/r25/mm_hist.py (output mm_hist_results.txt) and research/code/r25/score_mm.py (forward, now in run_all.sh -> research/fwd/mm.md).
+  - MM1 team-wide shading (history: Hard Rock leaning a whole team's shot props over or under vs its usual price at that line): fade -5.1%
+    n4,293 [-7.7,-2.8], follow -8.0% n4,291; every fold negative both ways. Hard Rock's team-level lean is not a mistake we can fade or follow.
+  - MM2a-b sharp books (Pinnacle + exchanges + lowvig) vs soft books (DK/FD/MGM/ESPN/BetOnline) split >= 3 pts, bet Hard Rock toward the
+    sharps (forward, judged from tonight). Seen-night code check only, NOT a result: +20.1% n31 / +23.3% n20. Rare (~1.5 a night): it will
+    take months to reach n 300.
+  - MM3a-b a B gap that Hard Rock leaves unchanged to C (forward). Seen: persist -9.1% n141; confirm (books move toward it) n1.
+  - MM4 game total moves >= 0.15 goals A -> C (from data/featured) while Hard Rock's props stay put (forward). Seen Nov 3-9: +16.7% n13.
+  - MM5a-b Hard Rock moves a player's main line A -> C (forward). Seen: follow -15.6% n136, fade -3.2% n124.
+  - Forward re-score (run_all.sh, 22 nights Oct 19 - Nov 9; clone unshallowed): Q1a +2.4% n831; Q1b +5.1% n627 [-1,+11] p .075 CLV +3.5%;
+    Q1g +7.2% n528 p .05; Q1k Pinnacle +4.5% n600. Q1b by read: A +15.2% n356, B/C -8.1% n271. Q6a +7.0% n389, Q6b -6.4% n289. Q16a +13.4%
+    n150, Q16b +4.5% n152. Q20a +2.0% n105. Q21a +15.7% n65. Q22a +27.5% n38. Q19 forward 3-6, Q13 3-9. **Q24 (clean 1 PM test) night 1
+    (Nov 9, picks paused but reads ran): 10 bets +15.8%** (far from n 300). LL (run 24) night 1: all n <= 21, nothing to read yet.
+  2 historical variants (~0.1 false positives expected), all-time 518; forward 60 (7 new). Lockbox looks: 2 (unchanged; next needs p < 0.0167).
+  **Verdict: nothing passed; no candidate for the Sharp.** Hard Rock's team-level lean is priced in, its 45-min gaps that it refuses to
+  fix lose (-9.1%), and following its own line moves loses. The 1 PM gap (Q24) is still the only price signal alive; it is now being
+  scored clean. Picks are paused to Nov 15, but the reads keep coming, so all forward tests keep accruing.
+  Next: (1) MM2 (sharp vs soft split) and MM4 (total moves) forward to size them; (2) at 1 PM, does Hard Rock's price move toward the
+    sharp books or the soft books by 90 min (who Hard Rock copies), registered before looking; (3) Q24 by sharp-soft agreement at 1 PM.
+- 2026-11-09 ~8:30 AM ET (Researcher run 24, daily; SHOTS ON GOAL ONLY; first run under Matt's "books, not players" focus). No key used, no
+  historical odds pull. LL1-LL6 registered and pushed (252712ee) before any test ran. History bundle extracted to scratch; lockbox not read.
+  Scripts research/code/r24/ll_hist.py (output ll_hist_results.txt) and research/code/r24/score_ll.py (forward, now in run_all.sh -> research/fwd/ll.md).
+  - LL1 Hard Rock's own price move 1 PM -> 45 min (history, 1,103 same-line pairs Nov-Feb): follow -12.3% n105, fade -2.7% n106; big moves
+    (>= 3 pts) follow -37.5% n20, fade +19.4% n21 p .18 (11 in Nov). Hard Rock rarely moves its own shots price (~10% of lines); far too few to judge.
+  - LL2 hold shape (history): Hard Rock's shots hold is a template (6.5-7.5% on 80% of lines), so high/low-hold cuts carry no information:
+    -5.5% to -11.0% at n 1,171-2,424, every fold negative but one. Failed.
+  - LL1f / LL3a-b / LL4a-b / LL5 / LL6 (forward, judged from tonight, nights >= Nov 9; bar n300, p < .00094). Seen-night code check only,
+    Oct 19 - Nov 8, NOT a result: LL1f follow -9.0% n1,022 / fade -7.7% n1,044 (HR's A->C move alone tells nothing); LL3 gap with books
+    agreeing (spread <= 4 pts) +0.3% n167 vs disagreeing +5.4% n187; LL4 Hard Rock moves while the books stay put: fade -12.8% n284, follow
+    -6.5% n280; LL5 exchanges (novig/prophetx) as the fair, EV >= 2% +0.7% n348; LL6 Hard Rock line below/above the books' main line -2.3% n149.
+  - Forward re-score (run_all.sh, 21 nights Oct 19 - Nov 8; clone unshallowed): Q1a +1.8% n810; Q1b +4.7% n610 [-1,+10] p .09 CLV +3.5%
+    (still fading: +13.4% at n312); Q1g +6.9% n516 p .059; Q1k Pinnacle +3.7% n585. Q1b by read: A (1 PM) +15.1% n346, B/C -9.1% n264.
+    Q6a (A) +6.7% n375, Q6b (B/C) -7.8% n282. Q16a +13.3% n140; Q16b (flag 1 PM, bet 90 min) +3.8% n144. Q20a -0.5% n96, Q20b +33.1% n31.
+    Q21a +15.7% n55, Q21b +5.0% n26. Q22a +29.0% n31. Q23a 6-5, Q23b 8-5. Q12 5-17 -56% n22; Q19 forward 3-6; Q13 3-9. Q24 0 bets (starts tonight).
+  8 historical variants (~0.4 false positives expected), all-time 516; forward 53. Lockbox looks: 2 (unchanged; next needs p < 0.0167).
+  **Verdict: nothing passed; no candidate for the Sharp.** Hard Rock's shots hold is a fixed template and its own price moves between 1 PM and
+  45 min are rare and uninformative in history. The only price signal still alive is the 1 PM gap vs the other books (Q1b at A, now cleanly
+  tested as Q24 from tonight); at the 90/45-minute reads the product bets, every gap cut is now negative (-9.1% n264).
+  Next: (1) LL3b (loose books) and LL5 forward to n 300; (2) at 1 PM, which book is furthest from Hard Rock (Pinnacle, the exchanges, DK/FD)
+    and does the 1 PM gap close toward that book by 90 min (register before looking; score on Q24 nights); (3) Hard Rock's 1 PM template
+    prices (identical price pairs across a game) vs bespoke prices, forward.
+- 2026-11-08 ~8:15 AM ET (Researcher run 23, daily; SHOTS ON GOAL ONLY). No key used, no historical odds pull. KK1-KK3 registered and pushed
+  (87a4a5c6) before any test ran; JJ1-JJ3 (registered by run 22 on Nov 6, which logged no test and no LOG entry) tested exactly as registered.
+  No run on Nov 7. Free NHL stats REST skater summary + realtime per-game logs (r23/fetch23.py, Feb 28 cut-off) fetched to scratch; lockbox
+  not fetched. Script research/code/r23/kk23.py, output kk23_results.txt. 10,413 graded Nov-Feb lines.
+  - JJ1 mean vs median (average propped up by big nights): -12.2% n343 to -17.5% n108; JJ1r UNDER -9.7% n1,978, every fold negative.
+  - JJ2 opponent possession (its shots FOR): -13.6% n404 to -17.7% n271; JJ2r UNDER vs high-possession teams -11.3% n843.
+  - JJ3 retail hit rate ("8 of last 10") vs tonight's line: -7.5% n734 to -12.5% n274; JJ3r UNDER on 8+/10 -2.0% n785 p .69.
+  - KK1 point streak without shot form (public chases points): -7.0% n308 to -12.6% n91; KK1r UNDER -1.4% n407 [-9.4,+6.5] p .61, folds
+    +5.5/-1.4/-6.5/-10.3 (fading). Best cell today, still negative.
+  - KK2 opponent's home/road split in shots allowed: -12.3% n293 to -19.8% n168; KK2r OVER -5.7% n383, every fold negative.
+  - KK3 opponent giveaways/takeaways: -16.5% n175, -14.9% n55; KK3r OVER -45.2% n23 (the +3/game cut is rare).
+  - Forward re-score (run_all.sh, 20 nights Oct 19 - Nov 7; clone unshallowed): Q1a +3.1% n779 p .14; Q1b +5.8% n590 [-0,+12] p .051 CLV
+    +3.6% (bar .0033 missed; it was +13.4% at n312); Q1g +8.5% n500 p .026 (missed); Q1c +5.1% n427; Q1h +7.4% n361; Q1k Pinnacle +5.4% n565;
+    Q1l +8.0% n337; Q1m +4.4% n69. Q1b read A +14.3% n342 [+7,+21] vs B/C -5.9% n248 (descriptive split, seen). Registered A-read cuts:
+    Q6a +6.7% n365 p .085; Q15a +3.4% n145; Q16a (A unders) +11.2% n136 p .066; Q21a (A, late puck) +13.1% n53, Q21b -1.4% n24; Q22a (A,
+    Pinnacle agrees) +21.0% n27, Q22b +12.4% n5; Q20a (A + product guard) -0.5% n96, Q20b +25.7% n27. B/C cuts: Q6b -4.5% n261; Q15b -18.7%
+    n94; Q16b (flag A, bet at 90 min) +1.7% n140; Q18b -32.9% n42. Q8a-c -9.5% / -3.2% / +5.6%. Q9a-c -3.0% / +4.4% / +21.1% n38. Q10 +10.0%
+    n44. Q11a +2.9%, Q11b +6.0%. Q12 (>= 5% vs Pinnacle at C) -61% n20. Q13 3-9 n12; Q19 forward 2-5 n7. Q17a +0.6% n72, Q17c -6.7% n149.
+    Q23a/b (11F/7D forwards OVER) 3-2 n5 (first nights). Q2a/b 0 bets.
+  24 historical variants (~1.2 false positives expected), all-time 508; forward 44. Lockbox looks: 2 (unchanged; next needs p < 0.0167).
+  **Verdict: nothing passed; no candidate for the Sharp.** Skewed averages, opponent possession, hit-rate streaks, point streaks, home/road
+  defensive splits and opponent puck security are all inside Hard Rock's price. For today's Sharp review (Q1b/Q1g held from Nov 2): every Q1
+  cut has slipped further below its bar; the only part still positive is the 1 PM read (+14.3% n342), which the product cannot bet, and the
+  90/45-minute reads it does bet are now -5.9% n248. Flagging at 1 PM and betting at 90 min (Q16b) is +1.7% n140: the gap does not survive.
+  Next: (1) forward: Hard Rock shots line vs the game total implied by Hard Rock/Pinnacle totals in data/featured (from Nov 3), team share
+    x total, registered before looking; (2) Q21a/Q22a to n 150 to see if the 1 PM gap is a late-game / Pinnacle-agrees gap; (3) defence-pair
+    partner shot share from shift charts (D-men paired with a high-volume partner), history.
 - 2026-11-05 ~8:15 AM ET (Researcher run 21, daily; SHOTS ON GOAL ONLY). No key used, no historical odds pull. II1-II3 + forward Q22a-b registered
   and pushed (573a981) before any test ran. Free NHL stats REST skater per-game logs (r14/fetch14.py, Feb 28 cut-off) fetched to scratch;
   lockbox not fetched. Script research/code/r21/ii21.py, output ii21_results.txt. 10,413 graded Nov-Feb lines.

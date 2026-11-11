@@ -2,7 +2,7 @@
 Tries the ESPN feed with different fetch options and prints what the browser saw. Prints to the log only."""
 import json, re, subprocess, time
 from playwright.sync_api import sync_playwright
-SITE = "https://msasportas.github.io/prop-check-nba/"
+SITE = "https://msasportas.github.io/Hot-Prop-Homies/"
 D = time.strftime("%Y%m%d", time.gmtime(time.time() - 5 * 3600))
 SB = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=" + D
 for h in ([], ["-H", "Cache-Control: no-cache", "-H", "Pragma: no-cache"]):

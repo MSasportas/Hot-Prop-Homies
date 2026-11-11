@@ -4,6 +4,14 @@ Read TEAM.md first (sections 4, 7 items 17-20), then this file, then research/HY
 Update HYPOTHESES.md and LOG.md last, then add one line to TEAM.md section 9.
 
 ## The job
+**Focus (Matt, 2026-11-09): THE BOOKS, NOT THE PLAYERS.** Player-feature ideas (form, usage, opponents, schedule; runs 4-23, 500+ variants) found no edge;
+stop proposing new ones. Every new idea now comes from the prices we pull: Hard Rock's own line and price moves between reads (1 PM, 90, 45 min,
+and what it does vs the close), other books' moves (Pinnacle, the exchanges, DK/FD) and who moves first, Hard Rock lagging or over-reacting,
+disagreement among books, hold/vig shape, line (1.5 vs 2.5) shifts, stale or template prices, timing of the read. Data: data/odds (every read,
+Hard Rock + `others`), data/shadow (open/close, consensus, stale events), data/featured; history has one read per game and no Pinnacle, so most
+of these are forward tests (register first, scorer in run_all.sh the same day). **We still bet only Hard Rock**: other books are signals,
+never the bet. Same bars below.
+
 **Scope (Matt, 2026-10-19: SHOTS ON GOAL ONLY; 2026-10-28: PLAYER POINTS ADDED, saves dropped, see TEAM.md item 28).** Shots stays the live market; points is research-only and gets the same daily run on the forward data in `data/paper_watch/points/`, `data/shadow/` (market points) and `data/odds/`. Original scope text follows. **SHOTS ON GOAL ONLY.** Find the edge in Hard Rock shots on goal props (main lines, over
 and under). Do not test other markets. Try different IDEAS (models, features, player types, timing, structure, price
 selection) on the saved historical shots data and the live shadow log. No new historical pulls (191 credits left; ask

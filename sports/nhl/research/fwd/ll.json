@@ -1,0 +1,130 @@
+{
+ "LL1f-follow": {
+  "bets": 72,
+  "graded": 72,
+  "w": 28,
+  "units": -19.768,
+  "roi": -0.2746,
+  "ci90": [
+   -0.5069,
+   -0.0128
+  ],
+  "p_one_sided": 0.9585,
+  "mean_ev": -0.0782,
+  "mean_clv": -0.0782,
+  "games": 10,
+  "candidate": false
+ },
+ "LL1f-fade": {
+  "bets": 74,
+  "graded": 74,
+  "w": 44,
+  "units": 9.718,
+  "roi": 0.1313,
+  "ci90": [
+   -0.1439,
+   0.381
+  ],
+  "p_one_sided": 0.2315,
+  "mean_ev": -0.0902,
+  "mean_clv": -0.0902,
+  "games": 10,
+  "candidate": false
+ },
+ "LL3a tight": {
+  "bets": 12,
+  "graded": 12,
+  "w": 8,
+  "units": 4.412,
+  "roi": 0.3677,
+  "ci90": [
+   -0.2299,
+   1.0643
+  ],
+  "p_one_sided": 0.157,
+  "mean_ev": 0.0254,
+  "mean_clv": 0.0246,
+  "games": 9,
+  "candidate": false
+ },
+ "LL3b loose": {
+  "bets": 7,
+  "graded": 7,
+  "w": 4,
+  "units": 2.15,
+  "roi": 0.3071,
+  "ci90": [
+   -0.35,
+   0.9929
+  ],
+  "p_one_sided": 0.3285,
+  "mean_ev": 0.0358,
+  "mean_clv": 0.0332,
+  "games": 7,
+  "candidate": false
+ },
+ "LL4a fade": {
+  "bets": 29,
+  "graded": 29,
+  "w": 16,
+  "units": 2.322,
+  "roi": 0.0801,
+  "ci90": [
+   -0.3585,
+   0.4884
+  ],
+  "p_one_sided": 0.383,
+  "mean_ev": -0.0875,
+  "mean_clv": -0.0909,
+  "games": 10,
+  "candidate": false
+ },
+ "LL4b follow": {
+  "bets": 29,
+  "graded": 29,
+  "w": 13,
+  "units": -5.455,
+  "roi": -0.1881,
+  "ci90": [
+   -0.5717,
+   0.2242
+  ],
+  "p_one_sided": 0.779,
+  "mean_ev": -0.0868,
+  "mean_clv": -0.0834,
+  "games": 10,
+  "candidate": false
+ },
+ "LL5 exch": {
+  "bets": 24,
+  "graded": 24,
+  "w": 16,
+  "units": 6.284,
+  "roi": 0.2618,
+  "ci90": [
+   0.0129,
+   0.4657
+  ],
+  "p_one_sided": 0.0415,
+  "mean_ev": 0.0432,
+  "mean_clv": 0.0244,
+  "games": 9,
+  "candidate": false
+ },
+ "LL6 line": {
+  "bets": 19,
+  "graded": 19,
+  "w": 13,
+  "units": 1.222,
+  "roi": 0.0643,
+  "ci90": [
+   -0.1117,
+   0.2811
+  ],
+  "p_one_sided": 0.2595,
+  "mean_ev": -0.0028,
+  "mean_clv": -0.0042,
+  "games": 6,
+  "candidate": false
+ }
+}

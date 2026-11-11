@@ -1,0 +1,18 @@
+{
+ "version": 1,
+ "active": true,
+ "note": "Research only: 1 PM read bets, never picks. Updated by the daily Researcher run.",
+ "generated_at": "2026-11-11T12:54:08+00:00",
+ "from": "2026-11-09",
+ "fwd": {
+  "w": 13,
+  "l": 16,
+  "push": 0,
+  "void": 0,
+  "units": -3.822,
+  "clv_flags": {
+   "n": 29,
+   "mean": 0.0329
+  }
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "NN2fa follow market": {
+  "bets": 0,
+  "graded": 0,
+  "w": 0,
+  "units": 0,
+  "roi": null,
+  "ci90": null,
+  "p_one_sided": null,
+  "mean_ev": null,
+  "mean_clv": null
+ },
+ "NN2fb follow HR": {
+  "bets": 0,
+  "graded": 0,
+  "w": 0,
+  "units": 0,
+  "roi": null,
+  "ci90": null,
+  "p_one_sided": null,
+  "mean_ev": null,
+  "mean_clv": null
+ },
+ "NN4 exch steam": {
+  "bets": 0,
+  "graded": 0,
+  "w": 0,
+  "units": 0,
+  "roi": null,
+  "ci90": null,
+  "p_one_sided": null,
+  "mean_ev": null,
+  "mean_clv": null
+ },
+ "NN5 market moves": {
+  "bets": 0,
+  "graded": 0,
+  "w": 0,
+  "units": 0,
+  "roi": null,
+  "ci90": null,
+  "p_one_sided": null,
+  "mean_ev": null,
+  "mean_clv": null
+ },
+ "NN6 fade soft": {
+  "bets": 0,
+  "graded": 0,
+  "w": 0,
+  "units": 0,
+  "roi": null,
+  "ci90": null,
+  "p_one_sided": null,
+  "mean_ev": null,
+  "mean_clv": null
+ }
+}
