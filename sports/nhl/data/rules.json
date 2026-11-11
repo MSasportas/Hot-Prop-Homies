@@ -51,16 +51,5 @@
   "stale_after_min": 75,
   "refresh_sec": 120,
   "picks_open": 8
- },
- "lines": [
-  "Hard Rock (Florida) prices: player shots on goal, the main line, over or under. No leg worse than -200.",
-  "The rule: Pinnacle (the sharpest book) moves its odds on a line by 2+ points of chance between two of our price checks, and Hard Rock quotes that same line on both checks with a price at or better than Pinnacle's fair price (Pinnacle's new chance with its own margin taken out). We bet the side Pinnacle moved toward.",
-  "Prices are checked at 1 PM ET and about 90, 45 and 20 minutes before each puck drop. A pick can come from the 90, 45 or 20 minute check. The price shown is frozen and is the one graded.",
-  "The book's price must be at least as good as Pinnacle's fair price after the move. It is being proven on the Record (started 2026-10-20).",
-  "A player listed Out or Doubtful is never picked. A player whose ice time dropped below 2 minutes in each of the last 3 games is skipped. Needs 10+ games of history.",
-  "A pick is pulled if he is ruled out or doubtful, or Hard Rock takes the line down. If the line moves after a pick is shown, it goes TOO LATE and still counts on the Record like any other pick.",
-  "One pick per player per market a night.",
-  "Graded after the game at the shown price, 1 unit flat. Overtime counts. Did not play = void.",
-  "New picks stop if the Record falls to -10 units."
- ]
+ }
 }

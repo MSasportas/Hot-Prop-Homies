@@ -11,7 +11,7 @@
   },
   "CGY": {
    "name": "Devin Cooley",
-   "status": "expected"
+   "status": "confirmed"
   },
   "NYR": {
    "name": "Joonas Korpisalo",
@@ -19,7 +19,7 @@
   },
   "EDM": {
    "name": "Tristan Jarry",
-   "status": "expected"
+   "status": "confirmed"
   },
   "PHI": {
    "name": "Dan Vladar",
@@ -27,7 +27,7 @@
   },
   "VGK": {
    "name": "Carter Hart",
-   "status": "expected"
+   "status": "confirmed"
   },
   "UTA": {
    "name": "Sebastian Cossa",
@@ -35,7 +35,7 @@
   },
   "ANA": {
    "name": "Laurent Brossoit",
-   "status": "expected"
+   "status": "confirmed"
   },
   "NSH": {
    "name": "Justus Annunen",
@@ -43,12 +43,12 @@
   },
   "SJS": {
    "name": "Yaroslav Askarov",
-   "status": "expected"
+   "status": "confirmed"
   },
   "PIT": {
    "name": "Sergei Murashov",
-   "status": "expected"
+   "status": "confirmed"
   }
  },
- "checked_at": "2026-11-11T08:20:01-05:00"
+ "checked_at": "2026-11-11T15:17:42-05:00"
 }
