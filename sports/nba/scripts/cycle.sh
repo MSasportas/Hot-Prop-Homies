@@ -46,7 +46,7 @@ fail() {   # $1 = the step that failed
   if ! git diff --cached --quiet; then
     git commit -q -m "run failed: $1"
     for attempt in 1 2 3; do
-      if git pull -q --rebase origin "$BRANCH" && check_history && git push -q origin "HEAD:$BRANCH"; then
+      if git pull -q --rebase --autostash origin "$BRANCH" && check_history && git push -q origin "HEAD:$BRANCH"; then
         say "failure note pushed"
         return 1
       fi
@@ -73,7 +73,7 @@ check_history() {   # also: the Record this runner last saw on origin must still
 if [ "$(git rev-parse --is-shallow-repository 2>/dev/null)" = "true" ]; then
   git fetch -q --unshallow origin "$BRANCH" 2>/dev/null || say "could not fetch full history"
 fi
-if ! git pull -q --rebase origin "$BRANCH"; then
+if ! git pull -q --rebase --autostash origin "$BRANCH"; then
   say "pull --rebase failed; resetting to origin"
   reset_to_origin || { say "origin not reachable; skipping this cycle"; exit 1; }
 fi
@@ -95,14 +95,14 @@ fi
 "$PY" scripts/guard_record.py || { fail "record guard"; exit 1; }
 
 # 4. publish
-git add -A data
+git add -A data research/LOG.md   # nightly auto-hypothesis appends to research/LOG.md; an unstaged edit blocks the rebase
 if git diff --cached --quiet; then
   say "nothing changed, nothing pushed"
   exit 0
 fi
 git commit -q -m "run: $(TZ=America/New_York date '+%Y-%m-%d %-I:%M %p ET')"
 for attempt in 1 2 3; do
-  if git pull -q --rebase origin "$BRANCH"; then
+  if git pull -q --rebase --autostash origin "$BRANCH"; then
     check_history                                   # exits (pushing nothing) if origin's Record was edited
     if git push -q origin "HEAD:$BRANCH"; then
       "$PY" scripts/guard_record.py --remember HEAD || true    # origin now holds this Record
