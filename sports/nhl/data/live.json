@@ -1,27 +1,27 @@
 {
  "slate_date": "2026-11-10",
- "generated_at": "2026-11-10T19:10:00-05:00",
+ "generated_at": "2026-11-10T19:10:22-05:00",
  "games": [
   {
    "game_id": 2026020286,
-   "state": "PRE",
+   "state": "LIVE",
    "schedule_state": "OK",
-   "period": null,
-   "period_type": null,
-   "clock": null,
+   "period": 1,
+   "period_type": "REG",
+   "clock": "20:00",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "COL",
-    "score": null,
+    "score": 0,
     "sog": null
    },
    "home": {
     "abbrev": "TOR",
-    "score": null,
+    "score": 0,
     "sog": null
    },
-   "updated_at": "2026-11-10T19:10:00-05:00"
+   "updated_at": "2026-11-10T19:10:22-05:00"
   },
   {
    "game_id": 2026020287,
@@ -42,7 +42,7 @@
     "score": null,
     "sog": null
    },
-   "updated_at": "2026-11-10T19:10:00-05:00"
+   "updated_at": "2026-11-10T19:10:22-05:00"
   },
   {
    "game_id": 2026020291,
@@ -50,9 +50,9 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "20:00",
+   "clock": "19:46",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "NJD",
     "score": 0,
@@ -63,14 +63,14 @@
     "score": 0,
     "sog": null
    },
-   "updated_at": "2026-11-10T19:10:00-05:00"
+   "updated_at": "2026-11-10T19:10:22-05:00"
   }
  ],
  "picks": {
   "2026-11-10:2026020286:8480069:shots:2.5:under": {
    "game_id": 2026020286,
    "market": "shots",
-   "stat": null
+   "stat": 0
   },
   "2026-11-10:2026020287:8480800:shots:2.5:over": {
    "game_id": 2026020287,
