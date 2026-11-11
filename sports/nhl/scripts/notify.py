@@ -201,7 +201,7 @@ def build_new(slate, st, now):
         return None
     blocks = [pick_line(p) for p in new_p]
     n = len(blocks)
-    head = "🏒 **NEW PICK%s · %s**" % ("" if n == 1 else "S (%d)" % n, now.strftime("%a %b %-d"))
+    head = "🏒 **NEW PICK%s · %s**" % ("" if n == 1 else "S (%d)" % n, "%s %d" % (now.strftime("%a %b"), now.day))
     tail = "%s\n%s" % (CHECK, PAGE)
     shown = []
     for b in blocks[:MAX_LINES]:

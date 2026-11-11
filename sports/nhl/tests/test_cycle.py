@@ -238,12 +238,12 @@ class Cycle(unittest.TestCase):
         self.assertEqual((st["ok"], st["runner"]["iteration"]), (True, 3))
 
     def test_loop_stops_for_new_code_and_for_the_off_switch(self):
-        cmd = ("%s scripts/run.py && cd %s && git pull -q --rebase origin main && echo '# x' >> scripts/teams.py && "
-               "git commit -qam 'code change' && git push -q origin main" % (sys.executable, self.other))
+        cmd = ("%s scripts/run.py && cd %s && git pull -q --rebase origin main && mkdir -p sports/nhl/scripts && echo '# x' >> sports/nhl/scripts/teams.py && "
+               "git add -A && git commit -qm 'code change' && git push -q origin main" % (sys.executable, self.other))
         r = self.script("loop.sh", "09:00", LOOP_MAX_ITER="5", LOOP_SLEEP="0", CYCLE_RUN_CMD=cmd)
         self.assertIn("=== stop: new code on main", r.stdout)
         self.assertNotIn("=== cycle 2", r.stdout)
-        self.other_push("config/stop_timer", "off\n", "stop the timer")
+        self.other_push("sports/nhl/config/stop_timer", "off\n", "stop the timer")
         r = self.script("loop.sh", "09:30", LOOP_MAX_ITER="5", LOOP_SLEEP="0")
         self.assertIn("config/stop_timer is set: no cycles", r.stdout)
         self.assertNotIn("=== cycle 1", r.stdout)
@@ -272,7 +272,7 @@ class Cycle(unittest.TestCase):
         r = self.script("dispatch_next.sh", "09:00", **env)
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
         with open(calls) as f:
-            self.assertEqual(f.read().strip(), "workflow run run.yml --ref main -f chain_link=8 "
+            self.assertEqual(f.read().strip(), "workflow run nhl-run.yml --ref main -f chain_link=8 "
                                                "-f chain_started_at=2026-10-11T08:00:00-04:00")
         self.assertNotIn("SECRET", r.stdout + r.stderr)
         open(fails, "w").close()                                   # GitHub refuses 4 times
@@ -284,7 +284,7 @@ class Cycle(unittest.TestCase):
         self.assertIn("the hourly schedule will restart the chain", r.stdout)
         os.unlink(fails)
         os.unlink(calls)
-        self.other_push("config/stop_timer", "off\n", "stop")
+        self.other_push("sports/nhl/config/stop_timer", "off\n", "stop")
         r = self.script("dispatch_next.sh", "09:00", **env)
         self.assertEqual(r.returncode, 0)
         self.assertFalse(os.path.exists(calls), "the off switch means no next run")

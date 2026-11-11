@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#090812">
-<meta name="color-scheme" content="dark light">
+<meta name="color-scheme" content="dark">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -13,13 +13,12 @@
 <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
 <link rel="manifest" href="manifest.webmanifest">
 <title>HPH · NBA</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+<link rel="preload" as="font" type="font/woff2" href="fonts/orbitron.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="fonts/ibm-plex-sans-400.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="fonts/ibm-plex-mono-600.woff2" crossorigin>
 <style>
 /* HPH · NBA. Flame Night / Flame Day brand theme (Nov 2026). */
+@font-face{font-family:"Orbitron";src:url("fonts/orbitron.woff2") format("woff2");font-weight:400 900;font-style:normal;font-display:swap}
 @font-face{font-family:"Graduate";src:url("fonts/graduate-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"IBM Plex Sans";src:url("fonts/ibm-plex-sans-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"IBM Plex Sans";src:url("fonts/ibm-plex-sans-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
@@ -29,23 +28,6 @@
 @font-face{font-family:"IBM Plex Mono";src:url("fonts/ibm-plex-mono-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
 :root{
   /* HPH — Flame Day (light) */
-  --bg:#F2EFFF; --surface:#FAFAFF; --raise:#E8E3F8; --line:#CBC3EC; --line2:#A99FD0;
-  --fg:#0E0820; --fg2:#261C52; --muted:#695D94;
-  --accent:#1A5EC8; --accent-soft:rgba(26,94,200,.10); --accent-rgb:26,94,200; --on-accent:#FFFFFF;
-  --primary:#C8107A; --on-primary:#FFFFFF; --primary-soft:rgba(200,16,122,.10); --selected-bg:rgba(200,16,122,.10); --selected-text:#960A5A;
-  --good:#C8107A; --good-soft:rgba(200,16,122,.08); --good-rgb:200,16,122;
-  --warn:#A05000; --warn-soft:rgba(160,80,0,.08);
-  --bad:#695D94; --bad-soft:rgba(105,93,148,.10); --bad-rgb:105,93,148;
-  --head:"Orbitron","Graduate",Georgia,serif;
-  --num:"IBM Plex Mono",ui-monospace,Menlo,monospace;
-  --cond:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-  --body:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-  --w:clamp(52px,14.5vw,60px); --h:clamp(50px,7.2vh,58px);
-  --sab:env(safe-area-inset-bottom,0px); --sat:env(safe-area-inset-top,0px); --sal:env(safe-area-inset-left,0px);
-  color-scheme:light dark;
-}
-@media(prefers-color-scheme:dark){:root{
-  /* HPH — Flame Night (dark — brand's true form) */
   --bg:#090812; --surface:#120F1E; --raise:#1C1830; --line:#2E2850; --line2:#3D3666;
   --fg:#F0EDF8; --fg2:#C0B8E0; --muted:#7A74A0;
   --accent:#17E9FF; --accent-soft:rgba(23,233,255,.12); --accent-rgb:23,233,255; --on-accent:#090812;
@@ -53,8 +35,14 @@
   --good:#E8187A; --good-soft:rgba(232,24,122,.12); --good-rgb:232,24,122;
   --warn:#FFB800; --warn-soft:rgba(255,184,0,.12);
   --bad:#7A74A0; --bad-soft:rgba(122,116,160,.15); --bad-rgb:122,116,160;
+  --head:"Orbitron","Graduate",Georgia,serif;
+  --num:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --cond:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  --body:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  --w:clamp(52px,14.5vw,60px); --h:clamp(50px,7.2vh,58px);
+  --sab:env(safe-area-inset-bottom,0px); --sat:env(safe-area-inset-top,0px); --sal:env(safe-area-inset-left,0px);
   color-scheme:dark;
-}}
+}
 *{box-sizing:border-box}
 @keyframes flame-pulse{0%,100%{filter:drop-shadow(0 0 8px rgba(232,24,122,.4));}50%{filter:drop-shadow(0 0 18px rgba(232,24,122,.8)) drop-shadow(0 0 32px rgba(23,233,255,.3));}}
 .mascot-wrap{text-align:center;padding:28px 0 8px;background:var(--bg);}

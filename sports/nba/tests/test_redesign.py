@@ -246,9 +246,9 @@ class Page(unittest.TestCase):
         self.assertNotIn("fonts.googleapis", h)
         self.assertNotIn("prefers-color-scheme", h)
         self.assertNotIn("sportsbook.draftkings.com", h)
-        self.assertIn("<title>Prop Check NBA</title>", h)
-        self.assertIn('content="#DCE9F7"', h)
-        for c in ("#DCE9F7", "#F4F8FD", "#0B1F3A", "#4A6181", "#C8102E", "#1E5AA8", "#B9CDE6", "#FBE3E7", "#A00D25"):
+        self.assertIn("<title>HPH · NBA</title>", h)
+        self.assertIn('content="#090812"', h)
+        for c in ("#090812", "#120F1E", "#F0EDF8", "#E8187A", "#17E9FF"):   # HPH Flame Night
             self.assertIn(c, h)
         for v in ("'picks', 'Picks'", "'live', 'Live'", "'games', 'Games'", "'record', 'Record'", "'lab', 'Lab'", "'info', 'Info'"):
             self.assertIn(v, h)

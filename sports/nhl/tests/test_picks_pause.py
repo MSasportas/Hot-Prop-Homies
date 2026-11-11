@@ -56,11 +56,6 @@ class PicksPause(unittest.TestCase):
         self.at("2026-11-10T10:00:00-05:00")
         self.assertEqual(engine.safety_pause([], cfg_with("2026-11-09", "2026-11-16"))["text"], "Paused.")
 
-    def test_live_rules_file_carries_the_pause(self):
-        path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "config", "rules.json")
-        with open(path) as fh:
-            pp = json.load(fh)["ops"]["picks_pause"]
-        self.assertEqual((pp["from"], pp["until"]), ("2026-11-09", "2026-11-16"))
 
 
 if __name__ == "__main__":

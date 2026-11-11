@@ -7,3 +7,6 @@ Ballpark theme (2026-11-04):
 
 All latin subset woff2, from the @fontsource 5.3.0 npm packages. The SIL OFL 1.1 lets these files be bundled and
 redistributed with the page; they may not be sold on their own. Full licence text: https://openfontlicense.org/open-font-license-official-text/
+
+HPH rebrand (2026-11-11):
+- Orbitron 400-900 variable, latin (display/headings). SIL Open Font License 1.1, Matt McInerney. https://fonts.google.com/specimen/Orbitron

@@ -96,7 +96,7 @@
       "void": 0,
       "units": 2.43,
       "hit_rate": 0.75,
-      "needed": 0.5719,
+      "needed": 0.572,
       "n": 8
      },
      {
@@ -159,7 +159,7 @@
    {
     "key": "price",
     "label": "By price",
-    "note": "Hard Rock price at grading",
+    "note": "Posted Hard Rock price",
     "rows": [
      {
       "key": "fav_big",
