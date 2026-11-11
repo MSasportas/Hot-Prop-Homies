@@ -2,7 +2,7 @@
  "slate": "2026-11-11",
  "teams": {
   "WSH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Trae Young",
     "Kyshawn George",
@@ -18,10 +18,10 @@
    }
   },
   "IND": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Andrew Nembhard",
-    "Braden Smith",
+    "Kelly Oubre",
     "Aaron Nesmith",
     "Pascal Siakam",
     "Ivica Zubac"
@@ -42,7 +42,6 @@
     "Jarrett Allen"
    ],
    "status": {
-    "Jaylon Tyson": "questionable",
     "Sam Merrill": "out",
     "Nae'Qwan Tomlin": "out"
    }
@@ -59,12 +58,12 @@
    "status": {}
   },
   "BOS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Derrick White",
-    "Jordan Walsh",
     "Baylor Scheierman",
     "Jayson Tatum",
+    "Luka Garza",
     "Neemias Queta"
    ],
    "status": {
@@ -72,7 +71,7 @@
    }
   },
   "TOR": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Immanuel Quickley",
     "RJ Barrett",
@@ -306,5 +305,5 @@
    }
   }
  },
- "at": "2026-11-11T18:30:01-05:00"
+ "at": "2026-11-11T18:40:00-05:00"
 }
