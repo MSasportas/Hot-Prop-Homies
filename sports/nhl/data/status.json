@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-10",
- "started_at": "2026-11-11T00:40:01-05:00",
- "status_at": "2026-11-11T00:40:01-05:00",
- "finished_at": "2026-11-11T00:40:02-05:00",
- "last_ok_at": "2026-11-11T00:40:01-05:00",
+ "started_at": "2026-11-11T00:50:01-05:00",
+ "status_at": "2026-11-11T00:50:01-05:00",
+ "finished_at": "2026-11-11T00:50:03-05:00",
+ "last_ok_at": "2026-11-11T00:50:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -19,8 +19,8 @@
   },
   {
    "step": "stats",
-   "status": "skipped",
-   "note": "nothing new"
+   "status": "ok",
+   "note": "1 window(s) read, 2 team-games still missing"
   },
   {
    "step": "lineups",
@@ -153,7 +153,7 @@
   "Ryan Tverberg"
  ],
  "excluded_teams": [],
- "stats_through": "2026-11-10",
+ "stats_through": "2026-11-09",
  "lineups_at": "2026-11-10T21:40:00-05:00",
  "lineups_note": "Lineups posted for 9 of 14 teams checked so far.",
  "games_today": 7,
@@ -162,7 +162,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "42963940213",
-  "iteration": 4,
+  "iteration": 5,
   "chain_link": 168,
   "chain_started_at": "2026-11-05T20:58:54-05:00",
   "run_started_at": "2026-11-11T00:10:13-05:00"
