@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-10",
- "generated_at": "2026-11-10T19:20:00-05:00",
- "status_at": "2026-11-10T19:20:00-05:00",
+ "generated_at": "2026-11-10T19:30:00-05:00",
+ "status_at": "2026-11-10T19:30:00-05:00",
  "valid_until": "2026-11-11T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -9,14 +9,14 @@
   "next_price_read_at": "2026-11-10T20:30:00-05:00",
   "stats_built_at": "2026-11-10T01:30:01-05:00",
   "stats_through": "2026-11-09",
-  "lineups_at": "2026-11-10T19:00:01-05:00",
+  "lineups_at": "2026-11-10T19:30:00-05:00",
   "goalies_at": null,
   "lineups_note": "Lineups posted for 9 of 14 teams checked so far.",
   "lineups_state": "ok",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-10T19:20:00-05:00",
+   "at": "2026-11-10T19:30:00-05:00",
    "failed_step": null
   },
   "pool": {
@@ -262,8 +262,8 @@
      "home": null
     }
    },
-   "started": false,
-   "reads_done": true,
+   "started": true,
+   "reads_done": false,
    "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
