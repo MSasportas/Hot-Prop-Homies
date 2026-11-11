@@ -373,6 +373,25 @@ button.tr.open{background:var(--selected-bg);border-bottom-color:transparent}
 .plain li{margin:0 0 6px}
 .fixed{margin:10px 0 0;padding:10px 12px;border:1px solid var(--line);border-radius:6px;background:var(--surface);font-size:13px;line-height:19px;font-weight:600;color:var(--fg)}
 .cutsw{display:flex;gap:6px;overflow-x:auto;margin:8px 0 10px;padding-bottom:2px;scrollbar-width:none}.cutsw::-webkit-scrollbar{display:none}.cswb{flex:0 0 auto;height:32px;padding:0 12px;border:1px solid var(--line2);border-radius:16px;background:var(--surface);color:var(--fg2);font:inherit;font-size:13px}.cswb:first-letter{text-transform:uppercase}.cut h3{display:none}.cswb.on{background:var(--selected-bg);color:var(--selected-text);border-color:var(--selected-bg)}
+/* P1: confidence badge */
+.tagx.conf{background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent);font-size:10.5px;font-weight:700;letter-spacing:.04em;padding:1px 5px;border-radius:4px}
+/* P2: 7-day W-L strip */
+.wl-strip{display:flex;gap:6px;margin:10px 0 4px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}.wl-strip::-webkit-scrollbar{display:none}
+.wl-day{flex:0 0 auto;display:flex;align-items:center;justify-content:center;min-width:48px;height:32px;border-radius:6px;font:700 12.5px var(--cond);border:1px solid var(--line)}
+.wl-day.up{background:rgba(200,16,46,.12);color:var(--primary);border-color:rgba(200,16,46,.25)}
+.wl-day.dn{background:rgba(74,97,129,.12);color:var(--muted);border-color:var(--line2)}
+.wl-day.ev{background:var(--raise);color:var(--muted);border-color:var(--line)}
+/* P3: upcoming games in empty picks */
+.upcoming{margin-top:14px;border-top:1px solid var(--line);padding-top:10px}
+.up-row{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid var(--line);font-size:13.5px;gap:8px}
+.up-row:last-child{border-bottom:none}
+.up-teams{color:var(--fg2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.up-time{color:var(--muted);font-size:12.5px;white-space:nowrap;flex-shrink:0}
+/* Q2: breakdown expand animation */
+.chev{display:inline-block;margin-right:4px;transition:transform .2s;font-style:normal}
+.chev.on{transform:rotate(90deg)}
+/* Q3: pick count badge on game rows */
+.gcnt{display:inline-block;padding:1px 7px;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent);border-radius:10px;font-size:11.5px;font-weight:700;white-space:nowrap;margin-left:auto}
 </style>
 </head>
 <body>
@@ -447,6 +466,7 @@ function renderSwitcher() {
 (function () {
   var h1 = document.getElementById('sport-title');
   if (h1 && S.sport !== 'all') h1.textContent = 'Prop Check ' + SPORT_LABELS[S.sport];
+  if (S.sport !== 'all') document.title = TITLE + ' · ' + SPORT_LABELS[S.sport];
   MARKET_LINE = S.sport === 'nhl' ? MARKET_LINE_NHL : MARKET_LINE_NBA;
 })();
 
@@ -764,6 +784,7 @@ function setSport(sp) {
   /* update h1 */
   var h1 = document.getElementById('sport-title');
   if (h1) h1.textContent = sp === 'all' ? 'Prop Check' : 'Prop Check ' + SPORT_LABELS[sp];
+  document.title = sp === 'all' ? TITLE : TITLE + ' · ' + SPORT_LABELS[sp];
   S.lab = null; S.labSum = {}; S.labErr = null;
   /* rebuild rail (Lab visibility changes) */
   rail.el = null;
@@ -977,8 +998,10 @@ function pickCard(p, d, lat) {
   card.appendChild(tilePrice(p));
   card.appendChild(chanceVs(p));
   if (!isOpen) {
+    var pev = evOf(p), pconf = pev >= 0.03 ? 'HIGH' : (pev >= 0.01 ? 'MED' : null);
     card.appendChild(h('div', { class: 'ft' }, stateChip(p.state, true, p),
-      p.price_final ? h('span', { class: 'tagx ok' }, icon('check', 12), 'Price final') : null));
+      p.price_final ? h('span', { class: 'tagx ok' }, icon('check', 12), 'Price final') : null,
+      pconf ? h('span', { class: 'tagx conf', text: pconf }) : null));
     return card;
   }
   /* opened: added time, the reason, the full settled track + Price final, the edge meter, game, price read, the bet button */
@@ -1048,6 +1071,19 @@ function renderPicks() {
     var bits = []; if (S.since.n) bits.push(S.since.n + ' new'); if (S.since.p) bits.push(S.since.p + ' too late');
     app.appendChild(h('div', { class: 'since', text: 'Since ' + (fStamp(S.since.at) || 'your last look') + ': ' + bits.join(', ') }));
   }
+  /* M1: first-visit onboarding card */
+  var welcomed = false; try { welcomed = !!localStorage.getItem('pc_welcomed'); } catch(e) { welcomed = true; }
+  if (!welcomed) {
+    try { localStorage.setItem('pc_welcomed', '1'); } catch(e) {}
+    var gsFv = arr(sl.games).filter(isObj).filter(function(g) { return !gameStarted(g) && ms(g.start) != null; });
+    gsFv.sort(function(a,b) { return ms(a.start) - ms(b.start); });
+    var fpAt = gsFv.length ? ms(gsFv[0].start) - 90*60000 : null;
+    var fpStr = (fpAt != null && fpAt > now()) ? 'First picks expected around ' + fTime(fpAt) + '.' : (fpAt != null ? 'Picks drop throughout the day, 90​min before each tip.' : null);
+    app.appendChild(h('div', { class: 'card empty', style: 'margin-bottom:12px' },
+      h('div', { class: 't', text: 'Player prop picks for tonight.' }),
+      h('div', { class: 's', text: 'Bet each pick at Hard Rock — tap a pick, then “Bet at Hard Rock.”' }),
+      fpStr ? h('div', { class: 's', style: 'margin-top:4px', text: fpStr }) : null));
+  }
   var emp = isObj(sl.empty) ? sl.empty : null, nOpen = d.open.length;
   var sec = h('section', { class: 'sec', id: 'picks' }, h('div', { class: 'sec-h' }, h('h2', { text: 'Picks (' + nOpen + (d.late.length ? ' open' : '') + ')' }),
     d.started.length ? h('button', { class: 'linkbtn', type: 'button', style: 'min-height:0;font-size:12.5px', on: { click: function () { go('live'); } } }, d.started.length + ' on Live', icon('right', 12)) : null));
@@ -1059,8 +1095,21 @@ function renderPicks() {
       t = all ? 'Every game has started.' : 'No open picks right now.'; s2 = "Tonight's earlier picks are on the Live tab.";
     } else t = 'No picks posted.';
     if (!nx && !(emp && emp.text) && fStamp(isObj(sl.status) ? sl.status.next_read_at : null)) nx = fStamp(sl.status.next_read_at);
-    sec.appendChild(h('div', { class: 'card empty' }, h('div', { class: 't', text: t }), s2 ? h('div', { class: 's', text: s2 }) : null,
-      nx ? h('div', { class: 's', text: 'Next check ' + nx }) : null));
+    /* P3: upcoming games */
+    var upGames = arr(sl.games).filter(isObj).filter(function(g) { return !gameStarted(g) && g.away && g.home; });
+    upGames.sort(function(a,b) { return (ms(a.start)||0) - (ms(b.start)||0); });
+    var emptyCard = h('div', { class: 'card empty' }, h('div', { class: 't', text: t }), s2 ? h('div', { class: 's', text: s2 }) : null,
+      nx ? h('div', { class: 's', text: 'Next check ' + nx }) : null);
+    if (upGames.length) {
+      var upBox = h('div', { class: 'upcoming' });
+      upGames.forEach(function(g) {
+        upBox.appendChild(h('div', { class: 'up-row' },
+          h('span', { class: 'up-teams', text: str(g.away) + ' vs ' + str(g.home) }),
+          h('span', { class: 'up-time', text: fTime(ms(g.start)) || 'TBD' })));
+      });
+      emptyCard.appendChild(upBox);
+    }
+    sec.appendChild(emptyCard);
   } else {
     var grid = h('div', { class: 'board' }), lat = latestIds(d);
     d.board.forEach(function (p) { grid.appendChild(p.pulled ? lateCard(p) : pickCard(p, d, lat)); });
@@ -1545,14 +1594,22 @@ function renderGamesAll() {
     app.appendChild(h('div', { class: 'card empty' }, h('div', { class: 't', text: 'No games found.' })));
     app.appendChild(smallFoot()); return;
   }
+  /* Q3: picks per game across both sports */
+  var pgCountAll = {};
+  arr(S.allResults).forEach(function(r) {
+    if (!r.slate.ok) return;
+    arr(r.slate.v.picks).filter(isObj).forEach(function(p) { if (p.game_id != null) { var gid = String(p.game_id); pgCountAll[gid] = (pgCountAll[gid] || 0) + 1; } });
+  });
   var gl = h('div', { class: 'gl' });
   allGames.forEach(function (g) {
     var tipLabel = g.sport === 'nhl' ? 'Puck drop ' : 'Tip ';
+    var pc = g.id != null ? (pgCountAll[String(g.id)] || 0) : 0;
     gl.appendChild(h('div', { class: 'gm' + (gameStarted(g) ? ' started' : '') },
       h('div', { class: 'g1' },
         h('span', { class: 'sp-badge ' + g.sport, text: g.sport.toUpperCase(), style: 'margin-left:0' }),
         h('span', { class: 'mt', text: (g.away && g.home) ? str(g.away) + ' at ' + str(g.home) : 'Game' }),
-        h('span', { class: 'pt', text: fTime(g.start) ? tipLabel + fTime(g.start) : 'time not posted' })),
+        h('span', { class: 'pt', text: fTime(g.start) ? tipLabel + fTime(g.start) : 'time not posted' }),
+        pc ? h('span', { class: 'gcnt', text: pc + (pc === 1 ? ' pick' : ' picks') }) : null),
       gameChecks(g)));
   });
   app.appendChild(gl);
@@ -1673,11 +1730,16 @@ function renderGames() {
     app.appendChild(h('div', { class: 'card empty' }, h('div', { class: 't', text: 'No ' + (S.sport === 'nhl' ? 'NHL' : 'NBA') + ' games today.' })));
     app.appendChild(smallFoot()); return;
   }
+  /* Q3: picks per game */
+  var dg = split(), pgCount = {};
+  dg.board.concat(dg.started).forEach(function(p) { if (p.game_id != null) { var gid = String(p.game_id); pgCount[gid] = (pgCount[gid] || 0) + 1; } });
   var gl = h('div', { class: 'gl' }), tipLabel = S.sport === 'nhl' ? 'Puck drop ' : 'Tip ';
   games.forEach(function (g) {
+    var pc = g.id != null ? (pgCount[String(g.id)] || 0) : 0;
     gl.appendChild(h('div', { class: 'gm' + (gameStarted(g) ? ' started' : '') },
       h('div', { class: 'g1' }, h('span', { class: 'mt', text: (g.away && g.home) ? str(g.away) + ' at ' + str(g.home) : 'Game' }),
-        h('span', { class: 'pt', text: fTime(g.start) ? tipLabel + fTime(g.start) : 'time not posted' })),
+        h('span', { class: 'pt', text: fTime(g.start) ? tipLabel + fTime(g.start) : 'time not posted' }),
+        pc ? h('span', { class: 'gcnt', text: pc + (pc === 1 ? ' pick' : ' picks') }) : null),
       gameChecks(g)));
   });
   app.appendChild(gl);
@@ -1711,6 +1773,23 @@ function renderRecord() {
     if (few(n)) app.appendChild(h('div', { class: 'chance hitline' }, 'Hit ', h('b', { text: (num(hd.w) || 0) + ' of ' + n }), pctNear(hd.needed) ? ' · needed ' + pctNear(hd.needed) : '', ' · small sample'));
     else app.appendChild(h('div', { class: 'hitline' }, h('div', { class: 'chance' }, 'Hit ', h('b', { text: pctNear(hd.hit_rate) || 'not posted' }),
       pctNear(hd.needed) ? ' · needed ' + pctNear(hd.needed) : ''), chanceBar(hd.hit_rate, hd.needed)));
+    /* M3: start date context */
+    var allDays = arr(sum.days).filter(isObj).filter(function(dy) { return dy.date; });
+    allDays.sort(function(a,b) { return a.date < b.date ? -1 : 1; });
+    if (allDays.length) app.appendChild(h('div', { class: 'subline mu', text: 'Since ' + fDateShort(allDays[0].date) }));
+    /* P2: 7-day rolling W-L strip */
+    var recentDays = allDays.filter(function(dy) { return (num(dy.w)||0) + (num(dy.l)||0) > 0; });
+    recentDays.sort(function(a,b) { return a.date < b.date ? 1 : -1; });
+    recentDays = recentDays.slice(0, 7).reverse();
+    if (recentDays.length) {
+      var strip = h('div', { class: 'wl-strip', 'aria-label': 'Last 7 results' });
+      recentDays.forEach(function(dy) {
+        var net = (num(dy.w)||0) - (num(dy.l)||0);
+        strip.appendChild(h('span', { class: 'wl-day ' + (net > 0 ? 'up' : net < 0 ? 'dn' : 'ev'), title: fDateShort(dy.date) + ': ' + (num(dy.w)||0) + '-' + (num(dy.l)||0) },
+          h('span', { text: (num(dy.w)||0) + '-' + (num(dy.l)||0) })));
+      });
+      app.appendChild(strip);
+    }
   }
 
   /* month calendar */
@@ -2003,6 +2082,10 @@ function renderInfo() {
     h('p', { text: 'For adults 21+. Picks are estimates, not guarantees. Bet only what you can afford to lose. Gambling problem? Call 1-800-GAMBLER.' })));
 }
 function rulesBody(body) {
+  if (S.sport === 'all') {
+    body.appendChild(h('p', { class: 'mu', style: 'margin-top:8px', text: 'Tap NHL or NBA above to see the full rules.' }));
+    return;
+  }
   var v = S.rules ? S.rules.version : null, up = S.rules ? S.rules.updated : null;
   body.appendChild(h('div', { class: 'mu', style: 'font-size:12px;margin-top:8px', text: (v != null ? 'Rules v' + v : 'Rules') + (up ? ' · changed ' + fDateShort(up) : '') }));
   body.appendChild(h('p', { class: 'fixed', text: MARKET_LINE }));
@@ -2046,7 +2129,7 @@ function statusBody(body) {
     if (od.low) { ot += ' Fewer price checks per game until then. More keys would fix it.'; obad = true; }
   }
   row('Odds keys', ot, obad);
-  var lt = 'From your browser every 10s while Live is open \u00b7 ESPN, NBA.com backup.';
+  var lt = 'From your browser every 10s while Live is open \u00b7 ESPN' + (S.sport !== 'nhl' ? ', NBA.com backup' : '') + '.';
   if (L.lastTry != null && L.fail) lt += ' Last try ' + (fTime(L.lastTry) || '') + ': both feeds failed.';
   else if (L.at != null) lt += ' Last read ' + (fTime(L.at) || '') + (L.src === 'nba' ? ' via NBA.com.' : ' from ESPN.');
   row('Live scores', lt, L.fail && L.lastTry != null);
