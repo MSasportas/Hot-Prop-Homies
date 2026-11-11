@@ -1,112 +1,5 @@
 {
  "days": {
-  "2026-11-07": [
-   {
-    "id": "401909938",
-    "date": "2026-11-07",
-    "start": "2026-11-07T17:00:00-05:00",
-    "away": "DEN",
-    "home": "IND",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "DEN": "114",
-     "IND": "102"
-    }
-   },
-   {
-    "id": "401909939",
-    "date": "2026-11-07",
-    "start": "2026-11-07T19:30:00-05:00",
-    "away": "BKN",
-    "home": "ATL",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "BKN": "121",
-     "ATL": "124"
-    }
-   },
-   {
-    "id": "401909940",
-    "date": "2026-11-07",
-    "start": "2026-11-07T20:00:00-05:00",
-    "away": "NY",
-    "home": "CLE",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "NY": "109",
-     "CLE": "97"
-    }
-   },
-   {
-    "id": "401909941",
-    "date": "2026-11-07",
-    "start": "2026-11-07T20:00:00-05:00",
-    "away": "WSH",
-    "home": "OKC",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "WSH": "75",
-     "OKC": "114"
-    }
-   },
-   {
-    "id": "401909942",
-    "date": "2026-11-07",
-    "start": "2026-11-07T20:30:00-05:00",
-    "away": "ORL",
-    "home": "GS",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final/OT",
-    "score": {
-     "ORL": "119",
-     "GS": "126"
-    }
-   },
-   {
-    "id": "401909943",
-    "date": "2026-11-07",
-    "start": "2026-11-07T21:00:00-05:00",
-    "away": "HOU",
-    "home": "PHX",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "HOU": "99",
-     "PHX": "102"
-    }
-   },
-   {
-    "id": "401909944",
-    "date": "2026-11-07",
-    "start": "2026-11-07T22:00:00-05:00",
-    "away": "SA",
-    "home": "POR",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "SA": "125",
-     "POR": "103"
-    }
-   }
-  ],
   "2026-11-08": [
    {
     "id": "401909945",
@@ -427,12 +320,163 @@
      "POR": "123"
     }
    }
+  ],
+  "2026-11-11": [
+   {
+    "id": "401909966",
+    "date": "2026-11-11",
+    "start": "2026-11-11T19:00:00-05:00",
+    "away": "WSH",
+    "home": "IND",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/11 - 7:00 PM EST",
+    "score": {
+     "WSH": "0",
+     "IND": "0"
+    }
+   },
+   {
+    "id": "401909967",
+    "date": "2026-11-11",
+    "start": "2026-11-11T19:00:00-05:00",
+    "away": "CLE",
+    "home": "NY",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/11 - 7:00 PM EST",
+    "score": {
+     "CLE": "0",
+     "NY": "0"
+    }
+   },
+   {
+    "id": "401909968",
+    "date": "2026-11-11",
+    "start": "2026-11-11T19:00:00-05:00",
+    "away": "BOS",
+    "home": "TOR",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/11 - 7:00 PM EST",
+    "score": {
+     "BOS": "0",
+     "TOR": "0"
+    }
+   },
+   {
+    "id": "401909969",
+    "date": "2026-11-11",
+    "start": "2026-11-11T20:00:00-05:00",
+    "away": "SA",
+    "home": "CHI",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/11 - 8:00 PM EST",
+    "score": {
+     "SA": "0",
+     "CHI": "0"
+    }
+   },
+   {
+    "id": "401909970",
+    "date": "2026-11-11",
+    "start": "2026-11-11T20:00:00-05:00",
+    "away": "DEN",
+    "home": "MEM",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/11 - 8:00 PM EST",
+    "score": {
+     "DEN": "0",
+     "MEM": "0"
+    }
+   },
+   {
+    "id": "401909971",
+    "date": "2026-11-11",
+    "start": "2026-11-11T20:00:00-05:00",
+    "away": "LAL",
+    "home": "MIL",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/11 - 8:00 PM EST",
+    "score": {
+     "LAL": "0",
+     "MIL": "0"
+    }
+   },
+   {
+    "id": "401909972",
+    "date": "2026-11-11",
+    "start": "2026-11-11T20:00:00-05:00",
+    "away": "BKN",
+    "home": "NO",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/11 - 8:00 PM EST",
+    "score": {
+     "BKN": "0",
+     "NO": "0"
+    }
+   },
+   {
+    "id": "401909973",
+    "date": "2026-11-11",
+    "start": "2026-11-11T21:00:00-05:00",
+    "away": "ORL",
+    "home": "UTAH",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/11 - 9:00 PM EST",
+    "score": {
+     "ORL": "0",
+     "UTAH": "0"
+    }
+   },
+   {
+    "id": "401909974",
+    "date": "2026-11-11",
+    "start": "2026-11-11T21:30:00-05:00",
+    "away": "GS",
+    "home": "HOU",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/11 - 9:30 PM EST",
+    "score": {
+     "GS": "0",
+     "HOU": "0"
+    }
+   },
+   {
+    "id": "401909975",
+    "date": "2026-11-11",
+    "start": "2026-11-11T22:00:00-05:00",
+    "away": "OKC",
+    "home": "POR",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/11 - 10:00 PM EST",
+    "score": {
+     "OKC": "0",
+     "POR": "0"
+    }
+   }
   ]
  },
  "month": {
-  "made_for": "2026-11-10",
+  "made_for": "2026-11-11",
   "counts": {
-   "2026-11-10": 6,
    "2026-11-11": 10,
    "2026-11-12": 4,
    "2026-11-13": 9,
