@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T17:20:01-05:00",
+ "at": "2026-11-11T17:20:40-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -127,13 +127,6 @@
    "date": "2026-11-10T22:07Z",
    "note": "Tyson (ankle) is questionable to face the Knicks on Wednesday."
   },
-  "4683688": {
-   "status": "out",
-   "name": "Dereck Lively II",
-   "team": "DAL",
-   "date": "2026-11-11T22:13Z",
-   "note": "Lively (foot) is listed as out for Thursday's game in Minnesota."
-  },
   "5148538": {
    "status": "out",
    "name": "Tarik Biberovic",
@@ -154,6 +147,13 @@
    "team": "DAL",
    "date": "2026-11-11T22:08Z",
    "note": "Johnson (shin) is listed as probable for Thursday's game against Minnesota."
+  },
+  "4683688": {
+   "status": "out",
+   "name": "Dereck Lively II",
+   "team": "DAL",
+   "date": "2026-11-01T22:57Z",
+   "note": "Lively (foot) is listed as out for Monday's game against the Kings."
   },
   "4432181": {
    "status": "out",
