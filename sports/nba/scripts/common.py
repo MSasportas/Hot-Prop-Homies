@@ -198,7 +198,8 @@ def load_config():
 
 
 def gap_guard(cfg):
-    """config gap_guard: THE live rule (TEAM.md section 4)."""
+    """config gap_guard: THE live rule (TEAM.md section 4).
+    NBA stores this at top-level cfg["gap_guard"]; NHL stores it under cfg["ops"]["gap_guard"]."""
     return cfg.get("gap_guard") or {}
 
 

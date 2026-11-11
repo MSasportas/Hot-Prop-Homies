@@ -23,7 +23,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common  # noqa: E402
 import engine  # noqa: E402
 import espn  # noqa: E402
-import lineups as rotowire  # noqa: E402
+import lineups  # noqa: E402
 import names  # noqa: E402
 import notify  # noqa: E402
 import odds  # noqa: E402
@@ -172,11 +172,11 @@ class Run:
         due = any(0 <= (common.parse_iso(g["start"]) - self.now).total_seconds() / 60.0 <= window for g in pre) or \
             (pre and not cache.get("at"))
         if due:
-            page = rotowire.fetch()
+            page = lineups.fetch()
             if page is None:
                 self.steps["lineups"] = {"ok": False, "soft": True, "error": "Rotowire did not answer"}
             else:
-                parsed = rotowire.parse(page)
+                parsed = lineups.parse(page)
                 if not parsed and pre:
                     self.steps["lineups"] = {"ok": False, "soft": True,
                                              "error": "Rotowire answered but no teams were found (layout changed?)"}
@@ -505,7 +505,7 @@ class Run:
               "steps": self.steps, "keys": o.get("keys"), "pool_left": o.get("pool_left"), "plan": o.get("plan"),
               "spent_today": o.get("spent_today"), "odds_note": o.get("note"), "odds_errors": (o.get("errors") or [])[-5:],
               "unknown_teams": o.get("unknown_teams"), "graded_now": getattr(self, "graded_now", 0),
-              "sources": {"espn": dict(espn.SOURCE), "rotowire": dict(rotowire.SOURCE), "odds": dict(odds.SOURCE)},
+              "sources": {"espn": dict(espn.SOURCE), "rotowire": dict(lineups.SOURCE), "odds": dict(odds.SOURCE)},
               "unmatched_rotowire": sorted(set(getattr(getattr(self, "ctx", None), "rw_unmatched", [])))[:40],
               "unmatched": sorted({n for f in (getattr(self, "odds_doc", None) or {}).get("fetches", []) for n in f.get("unmatched", [])})[:40],
               "runner": {"event": env.get("PC_RUNNER_EVENT"), "run_id": env.get("PC_RUNNER_RUN_ID"),

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SYNC: keep identical to sports/nba/scripts/guard_record.py (workflow sparse-checkout prevents sharing)
 """guard_record.py: the Record guard. Run before every commit and around every pull.
 
 The Record (data/record/events.jsonl) is append-only: lines may only be added at the end, never changed,

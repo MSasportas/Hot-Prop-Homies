@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SYNC: keep identical to sports/nba/scripts/fail_status.py (stdlib-only; can't share via imports)
 """fail_status.py: called by the workflow only when a run FAILED. Standard library only and no imports
 from the rest of scripts/, so it still works if the engine itself is broken.
 
