@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:58 - 4th",
+    "detail": "5:37 - 4th",
     "score": {
-     "ORL": "88",
-     "SAC": "78"
+     "ORL": "96",
+     "SAC": "87"
     }
    },
    {
@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:39 - 2nd",
+    "detail": "1:20 - 2nd",
     "score": {
-     "OKC": "46",
-     "POR": "45"
+     "OKC": "54",
+     "POR": "54"
     }
    }
   ]
