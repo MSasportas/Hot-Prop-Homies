@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:49 - 4th",
+    "detail": "7:17 - 4th",
     "score": {
-     "LAC": "73",
-     "PHX": "99"
+     "LAC": "89",
+     "PHX": "115"
     }
    },
    {
@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:08 - 3rd",
+    "detail": "10:20 - 4th",
     "score": {
-     "MIA": "89",
-     "UTAH": "66"
+     "MIA": "97",
+     "UTAH": "75"
     }
    },
    {
@@ -405,11 +405,11 @@
     "home": "SAC",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:38 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "ORL": "49",
-     "SAC": "43"
+     "ORL": "57",
+     "SAC": "52"
     }
    },
    {
