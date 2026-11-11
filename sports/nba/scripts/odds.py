@@ -601,12 +601,8 @@ def run_reads(now, slate, games, games_left_month, cfg, matcher_for, started, te
         # No daily budget (Matt, 2026-11-03 5:09 PM): the month's plan decides which reads each game gets, and every planned read
         # runs while credits last. Spare reads (11 AM) still only spend what the planned reads of the rest of the month don't need.
         cost = cfg["ops"].get("cost_per_read", 1)
-        if d["read"] in (plan.get("spare") or []):
-            if not spare_ok(pool.total_left(), games_left_month, plan, cost):
-                day["spare_paused"] = common.iso(now)
-                no_budget.append(g["id"])
-                continue
-        elif pool.total_left() < cost:
+        # spare reads always run if credits are available; notify Matt instead of skipping (Matt, 2026-11-11)
+        if pool.total_left() < cost:
             no_budget.append(g["id"])
             continue
         ev = day["events"].get(str(g["id"]))

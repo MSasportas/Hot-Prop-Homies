@@ -366,9 +366,6 @@ class Run:
         if o.get("paused"):
             banners.append({"level": "stop", "text": "Paused this week: no price checks and no picks until %s. "
                                                      "Everything restarts by itself then." % odds.paused(cfg, self.slate)["back"]})
-        if o.get("spare_paused") and not o.get("all_used_up") and not any("running low" in b["text"] for b in banners):
-            banners.append({"level": "warn", "text": "The 11 AM price check is paused to save credits for the 90, 45 and 20 minute "
-                                                     "checks. More odds keys bring it back."})
         if self.summ_paused():
             banners.append({"level": "stop", "text": cfg["safety_pause"]["text"] + " " + cfg["safety_pause"]["sub"]})
         if not self.steps.get("schedule", {}).get("ok", True):
