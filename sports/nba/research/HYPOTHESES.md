@@ -121,3 +121,27 @@ other group's. 7 ideas, ~20 groups: expect 1-2 to look good by luck.
   rule would only be proposed if reversed picks lose money AND the rest stay ahead. Sample: 60 reversed bets (they are rare).
 - M7 Unders vs overs. MOVES and the Record split by side. Sample: 150 per side.
 Code: research/code/run8_moves.py (one script scores M1-M7 on every stored night; re-run it each run).
+
+## Run Auto (2026-11-11, CEO; Matt: "rescore movement should be automatic nightly, at least 1 new hypothesis a day")
+Automated nightly hypothesis tester. Each night one variant is selected from AH1-AH15 (round-robin), scored against all
+stored nights (discovery through 2026-11-09, forward from 2026-11-10), and appended to LOG.md. Base population = same MOVES
+as Run 8 (Pinnacle 2+ pt move, Hard Rock on line, -200..+200, 1/player/market/night). Code: research/code/auto_hypothesis.py.
+Pass bar for all: rule 4 (n >= 150 graded forward, ROI > 0, 90% game-clustered bootstrap lower bound > 0, CLV > 0).
+- AH1  Large unders: MOVES where Pinnacle move >= 4 pts AND side = under. Metric: W-L, ROI, CLV_pin. Hypothesis: large
+  moves on unders may carry stronger signal (run8 M4+M7 combination).
+- AH2  Late + large: MOVES where window is 90->45 or 45->20 AND move >= 3 pts. Metric: W-L, ROI, CLV_pin.
+- AH3  Solo + late: MOVES where others < 1 pt (Pinnacle solo) AND window is last 90 min. Metric: W-L, ROI, CLV_pin.
+- AH4  Stale HR + FAIR: MOVES where HR price unchanged AND ev_pin >= 0. Metric: W-L, ROI, CLV_pin.
+- AH5  Large solo (4+ pt): MOVES where move >= 4 pts AND others < 1 pt. Metric: W-L, ROI, CLV_pin.
+- AH6  90->45 window: MOVES in the 90->45 minute window only. Metric: W-L, ROI, CLV_pin.
+- AH7  45->20 window: MOVES in the 45->20 minute window only. Metric: W-L, ROI, CLV_pin.
+- AH8  Unders + late: MOVES where side = under AND window is last 90 min. Metric: W-L, ROI, CLV_pin.
+- AH9  2-4 books following (consensus middle band): MOVES where 2-4 other books moved >= 1 pt same way. Metric: W-L, ROI.
+  Prior: M3 found this group won +12.5% in discovery on 201 bets; forward test here.
+- AH10 Large unders by band: MOVES where side = under AND move >= 3 pts. Sub-split 3-4 vs 4+. Metric: W-L, ROI, CLV_pin.
+- AH11 Morning by side: MOVES in 11AM->90 window, split by side. Metric: W-L, ROI, CLV_pin.
+- AH12 Solo large (3+ pt): MOVES where move >= 3 pts AND others < 1 pt. Metric: W-L, ROI, CLV_pin.
+- AH13 Stale HR unders: MOVES where HR price unchanged AND side = under. Metric: W-L, ROI, CLV_pin.
+- AH14 Small FAIR moves: MOVES where move 2-3 pts AND ev_pin >= 0. Metric: W-L, ROI, CLV_pin.
+  Prior: M4 found 2-3 pt band was the only losing band in the Record (15 bets); this is the FAIR subset question.
+- AH15 Late FAIR: MOVES where window is last 90 min AND ev_pin >= 0. Metric: W-L, ROI, CLV_pin.

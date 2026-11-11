@@ -14,6 +14,7 @@ Safe to run twice. Every write is atomic. Flags: --explain (print every line's v
 """
 import os
 import re
+import subprocess
 import sys
 import time
 import traceback
@@ -493,6 +494,42 @@ class Run:
     def summ_paused(self):
         return bool(getattr(self, "summ", {}) and self.summ.get("paused"))
 
+    def research(self):
+        """Run nightly research scripts once per slate day (non-blocking).
+        1. run8_moves.py: re-scores M1-M7 on all stored nights; output saved to data/research/.
+        2. auto_hypothesis.py: tests one new hypothesis variant; appends to research/LOG.md.
+        Both are skipped if they already ran today (state file check). Failure here never fails the pipeline."""
+        state_path = common.dpath("research", "research_state.json")
+        st = common.read_json(state_path, {}) or {}
+        if st.get("slate") == self.slate:
+            return  # already ran today
+        research_dir = common.dpath("research")
+        os.makedirs(research_dir, exist_ok=True)
+        repo = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+        errors = []
+        # --- run8_moves.py: rescore movement data ---
+        moves_out = os.path.join(research_dir, "moves_%s.txt" % self.slate)
+        try:
+            script = os.path.join(repo, "research", "code", "run8_moves.py")
+            r8 = subprocess.run([sys.executable, script], capture_output=True, text=True, timeout=120)
+            with open(moves_out, "w", encoding="utf-8") as f:
+                f.write(r8.stdout)
+            if r8.returncode != 0:
+                errors.append("run8 exit %d: %s" % (r8.returncode, r8.stderr[:200]))
+        except Exception as e:
+            errors.append("run8: %s" % common.short_err(e))
+        # --- auto_hypothesis.py: test one new hypothesis ---
+        try:
+            script = os.path.join(repo, "research", "code", "auto_hypothesis.py")
+            ah = subprocess.run([sys.executable, script], capture_output=True, text=True, timeout=120)
+            if ah.returncode != 0:
+                errors.append("auto_hyp exit %d: %s" % (ah.returncode, ah.stderr[:200]))
+        except Exception as e:
+            errors.append("auto_hyp: %s" % common.short_err(e))
+        common.write_json(state_path, {"slate": self.slate, "at": common.iso(self.now), "errors": errors})
+        if errors:
+            raise RuntimeError("; ".join(errors))
+
     def write_status(self):
         o = getattr(self, "odds_res", None) or {}
         env = os.environ
@@ -571,6 +608,7 @@ def main(argv):
     r.step("publish", r.publish)
     if "publish" in r.steps and not r.steps["publish"]["ok"]:
         return 1
+    r.step("research", r.research, soft=True)
     sent = 0 if paused else notify.notify(getattr(r, "slate_doc", None))
     common.log("run done: %s; %d discord message(s)" % (", ".join("%s %s" % (k, "ok" if v.get("ok") else "FAILED")
                                                               for k, v in r.steps.items()), sent))

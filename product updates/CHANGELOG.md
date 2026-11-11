@@ -6,6 +6,20 @@ All changes are listed newest-first. Each entry includes the date, what changed,
 
 ## 2026-11-11
 
+### NBA Research Automation — Nightly Rescore + Auto Hypothesis
+**Files:** `sports/nba/scripts/run.py`, `sports/nba/research/code/auto_hypothesis.py` (new), `sports/nba/research/HYPOTHESES.md`, `sports/nba/data/research/.gitkeep` (new)
+
+Implements Matt's directive: "Rescore movement should be automatic nightly. With at least 1 new hypothesis a day being tested."
+
+**What was added:**
+1. **Nightly rescore** — `run.py` now calls `run8_moves.py` once per slate day after grading and publishing. Output (M1-M7 on all stored nights) is saved to `data/research/moves_<date>.txt`. Non-blocking: failure does not stop the main pipeline.
+2. **Auto hypothesis** — `auto_hypothesis.py` cycles through 15 pre-registered hypothesis variants (AH1-AH15) round-robin, one per night. Each variant is a sub-split or parameter variation on the M1-M7 moves population (e.g., large unders, solo+late, stale HR+FAIR). It scores discovery and forward W-L/ROI/CLV, then prepends a compact entry to `research/LOG.md`. Pass bar: rule 4 (n >= 150 graded forward, ROI > 0, 90% CI > 0, CLV > 0).
+3. **15 hypotheses registered** in `HYPOTHESES.md` Run Auto section: AH1 large unders, AH2 late+large, AH3 solo+late, AH4 stale+FAIR, AH5 large solo, AH6 90->45 window, AH7 45->20 window, AH8 unders+late, AH9 2-4 books (prior: +12.5% in discovery), AH10 large unders by band, AH11 morning by side, AH12 solo large, AH13 stale+unders, AH14 small FAIR moves, AH15 late FAIR.
+
+Both steps run once per day (state file `data/research/research_state.json` prevents double-running on the same slate). No extra API credits used — stored odds data only.
+
+---
+
 ### Workflow Deduplication — Reusable `sport-run.yml`
 **Files:** `.github/workflows/sport-run.yml` (new), `.github/workflows/nba-run.yml`, `.github/workflows/nhl-run.yml`
 
