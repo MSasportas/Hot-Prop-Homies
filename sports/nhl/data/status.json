@@ -1,10 +1,10 @@
 {
  "ok": true,
- "slate_date": "2026-11-10",
- "started_at": "2026-11-11T04:30:33-05:00",
- "status_at": "2026-11-11T04:30:33-05:00",
- "finished_at": "2026-11-11T04:30:34-05:00",
- "last_ok_at": "2026-11-11T04:30:33-05:00",
+ "slate_date": "2026-11-11",
+ "started_at": "2026-11-11T05:00:01-05:00",
+ "status_at": "2026-11-11T05:00:01-05:00",
+ "finished_at": "2026-11-11T05:00:08-05:00",
+ "last_ok_at": "2026-11-11T05:00:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -15,7 +15,7 @@
   {
    "step": "schedule",
    "status": "ok",
-   "note": "7 game(s) today"
+   "note": "6 game(s) today"
   },
   {
    "step": "stats",
@@ -70,7 +70,7 @@
   {
    "step": "live",
    "status": "skipped",
-   "note": "no change"
+   "note": "no started game with a pick"
   },
   {
    "step": "shadow",
@@ -84,8 +84,8 @@
   },
   {
    "step": "slate",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "0 open pick(s)"
   },
   {
    "step": "record",
@@ -139,30 +139,29 @@
   }
  ],
  "pool_total": 3268,
- "allowance": 22.44,
+ "allowance": 22.8531,
  "tier": 4,
- "budget_today": 157,
- "budget_used_today": 62,
- "prices_state": "ok",
- "prices_at": "2026-11-10T21:20:00-05:00",
- "next_price_read_at": null,
+ "budget_today": 137,
+ "budget_used_today": 0,
+ "prices_state": "not_yet",
+ "prices_at": null,
+ "next_price_read_at": "2026-11-11T13:00:00-05:00",
  "unmatched_names": [],
  "unknown_teams": [],
- "lineup_unmatched_names": [
-  "Jackson Parsons",
-  "Ryan Tverberg"
- ],
+ "lineup_unmatched_names": [],
  "excluded_teams": [],
  "stats_through": "2026-11-10",
- "lineups_at": "2026-11-10T21:40:00-05:00",
- "lineups_note": "Lineups posted for 9 of 14 teams checked so far.",
- "games_today": 7,
+ "lineups_at": null,
+ "lineups_note": null,
+ "games_today": 6,
  "record_events": 200,
- "odds_notes": [],
+ "odds_notes": [
+  "key 1 refused (401)"
+ ],
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "42995701603",
-  "iteration": 1,
+  "iteration": 2,
   "chain_link": 174,
   "chain_started_at": "2026-11-05T20:58:54-05:00",
   "run_started_at": "2026-11-11T04:30:22-05:00"

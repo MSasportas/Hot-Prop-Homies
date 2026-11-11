@@ -1,62 +1,54 @@
 {
- "date": "2026-11-10",
+ "date": "2026-11-11",
  "teams": {
-  "TOR": {
-   "name": "Sergei Bobrovsky",
-   "status": "confirmed"
+  "BUF": {
+   "name": "Ukko-Pekka Luukkonen",
+   "status": "expected"
   },
-  "COL": {
-   "name": "Mackenzie Blackwood",
-   "status": "confirmed"
+  "TBL": {
+   "name": "Andrei Vasilevskiy",
+   "status": "expected"
   },
-  "OTT": {
-   "name": "Samuel Ersson",
-   "status": "confirmed"
+  "CGY": {
+   "name": "Devin Cooley",
+   "status": "expected"
   },
-  "WSH": {
-   "name": "Logan Thompson",
-   "status": "confirmed"
+  "NYR": {
+   "name": "Dylan Garand",
+   "status": "expected"
   },
-  "MTL": {
-   "name": "Jacob Fowler",
-   "status": "confirmed"
+  "EDM": {
+   "name": "Devon Levi",
+   "status": "expected"
   },
-  "MIN": {
-   "name": "Jesper Wallstedt",
-   "status": "confirmed"
+  "PHI": {
+   "name": "Dan Vladar",
+   "status": "expected"
   },
-  "WPG": {
-   "name": "Nico Daws",
-   "status": "confirmed"
+  "VGK": {
+   "name": "Carter Hart",
+   "status": "expected"
   },
-  "NJD": {
-   "name": "Jake Allen",
-   "status": "confirmed"
+  "UTA": {
+   "name": "Sebastian Cossa",
+   "status": "expected"
   },
-  "CBJ": {
-   "name": "Cam Talbot",
-   "status": "confirmed"
-  },
-  "FLA": {
-   "name": "Jacob Markstrom",
-   "status": "confirmed"
-  },
-  "STL": {
-   "name": "Joel Hofer",
-   "status": "confirmed"
-  },
-  "DET": {
-   "name": "John Gibson",
-   "status": "confirmed"
-  },
-  "LAK": {
-   "name": "Anton Forsberg",
-   "status": "confirmed"
+  "ANA": {
+   "name": "Laurent Brossoit",
+   "status": "expected"
   },
   "NSH": {
    "name": "Juuse Saros",
-   "status": "confirmed"
+   "status": "expected"
+  },
+  "SJS": {
+   "name": "Yaroslav Askarov",
+   "status": "expected"
+  },
+  "PIT": {
+   "name": "Arturs Silovs",
+   "status": "expected"
   }
  },
- "checked_at": "2026-11-10T21:40:00-05:00"
+ "checked_at": "2026-11-11T05:00:01-05:00"
 }
