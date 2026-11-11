@@ -346,10 +346,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:26 - 2nd",
+    "detail": "5:04 - 2nd",
     "score": {
-     "MIL": "23",
-     "NY": "31"
+     "MIL": "26",
+     "NY": "43"
     }
    },
    {
@@ -358,13 +358,13 @@
     "start": "2026-11-10T20:00:00-05:00",
     "away": "BOS",
     "home": "PHI",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/10 - 8:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:07 - 1st",
     "score": {
-     "BOS": "0",
-     "PHI": "0"
+     "BOS": "13",
+     "PHI": "10"
     }
    },
    {
