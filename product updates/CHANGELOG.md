@@ -6,6 +6,20 @@ All changes are listed newest-first. Each entry includes the date, what changed,
 
 ## 2026-11-11
 
+### All-Mode Record — Unified Combined View
+**Files:** `index.html`
+
+Matt's directive: "All mode should be a combined view of ALL sports — not 2 separate codebases rendered one after the other."
+
+**What changed:**
+1. **Unified Record tab in All mode** — `renderRecordAll()` now renders one combined view: one scoreboard, one calendar (all picks from both sports merged by date), and one recent-picks list (entries interleaved chronologically). The old two-sport `<details>` accordion is gone.
+2. **Sport badge on record entries** — `entryRow()` now shows a small NBA/NHL chip (red/blue) on each pick row when `e.sport` is set. In single-sport mode entries never carry `e.sport` so the badge never appears there — no regression.
+3. **Calendar metrics** — Every calendar cell now shows W-L (e.g., "2-1") between the day number and units delta, across both single-sport and All modes. Previously the cell only showed the day number and units.
+
+**Single-sport mode (NHL-only, NBA-only) is unchanged.** The Picks and Live tabs are unchanged.
+
+---
+
 ### NBA Research Automation — Nightly Rescore + Auto Hypothesis
 **Files:** `sports/nba/scripts/run.py`, `sports/nba/research/code/auto_hypothesis.py` (new), `sports/nba/research/HYPOTHESES.md`, `sports/nba/data/research/.gitkeep` (new)
 

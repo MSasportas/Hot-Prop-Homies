@@ -310,16 +310,18 @@ button.tr.open{background:var(--selected-bg);border-bottom-color:transparent}
 .mnav[disabled]{color:var(--line2);cursor:default}
 .cal{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px;margin-top:8px}
 .cal .wd{font-size:10.5px;line-height:14px;color:var(--muted);text-align:center}
-.cd{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:40px;padding:3px 4px;border-radius:4px;
+.cd{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:46px;padding:3px 4px;border-radius:4px;
   background:var(--raise);font-size:10.5px;line-height:13px;color:var(--muted);overflow:hidden}
 .cd.none{background:transparent;border:1px solid var(--line)}
 .cd.blank{background:transparent}
 .cd.has{color:var(--fg)}
 .cd .u{font:600 11px/13px var(--num);color:var(--fg);white-space:nowrap}
+.cd .wl-sm{font:600 9px/11px var(--num);color:var(--fg);white-space:nowrap}
 .cd.even{background:var(--raise);border:1px solid var(--line2)}
 .cd.open{border:1px dashed var(--accent)}
 .cd.sel{outline:2px solid var(--accent);outline-offset:1px}
-.cd.dark,.cd.dark .u{color:var(--surface)}
+.cd.dark .wl-sm,.cd.dark .u{color:var(--surface)}
+.cd.dark{color:var(--surface)}
 .legend{display:flex;flex-wrap:wrap;gap:4px 12px;margin-top:6px;font-size:11px;line-height:15px;color:var(--muted)}
 .legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px}
 .dayd{margin-top:10px}
@@ -1587,9 +1589,9 @@ function renderLiveAll() {
   app.appendChild(smallFoot());
 }
 function renderRecordAll() {
-  top('The Record', false);
-  if (!S.allResults) { app.appendChild(h('div', { class: 'stack' }, h('div', { class: 'skel sm' }), h('div', { class: 'skel' }))); return; }
-  /* combined headline across all sports */
+  top(‘The Record’, false);
+  if (!S.allResults) { app.appendChild(h(‘div’, { class: ‘stack’ }, h(‘div’, { class: ‘skel sm’ }), h(‘div’, { class: ‘skel’ }))); return; }
+  /* combined headline */
   var totalW = 0, totalL = 0, totalN = 0, totalUnits = 0;
   arr(S.allResults).forEach(function (r) {
     if (!r.record.ok) return;
@@ -1599,46 +1601,60 @@ function renderRecordAll() {
     totalUnits += num(hd.units) || 0;
   });
   if (totalN > 0) {
-    app.appendChild(h('div', { class: 'big' },
-      h('span', { class: 'wl', text: totalW + '-' + totalL }),
-      h('span', { class: 'un ' + signCls(totalUnits), text: units(totalUnits, 2) || '' })));
-    app.appendChild(h('div', { class: 'subline', text: totalN + ' graded across both sports · 1 unit each' }));
+    app.appendChild(h(‘div’, { class: ‘big’ },
+      h(‘span’, { class: ‘wl’, text: totalW + ‘-’ + totalL }),
+      h(‘span’, { class: ‘un ‘ + signCls(totalUnits), text: units(totalUnits, 2) || ‘’ })));
+    app.appendChild(h(‘div’, { class: ‘subline’, text: totalN + ‘ graded across both sports · 1 unit each’ }));
   }
-  ['nba', 'nhl'].forEach(function (sp) {
-    var r = null;
-    arr(S.allResults).forEach(function (x) { if (x.sport === sp) r = x; });
-    if (!r) return;
-    var label = sp === 'nba' ? 'NBA' : 'NHL';
-    var rec = r.record.ok ? r.record.v : null;
-    var sum = rec && isObj(rec.summary) ? rec.summary : {};
-    var hd = isObj(sum.headline) ? sum.headline : {};
-    var wl = rec ? (num(hd.w) || 0) + '-' + (num(hd.l) || 0) : '';
-    var det = h('details', { open: '' });
-    det.appendChild(h('summary', { class: 'sport-sec-h' },
-      h('span', { class: 'sp-badge ' + sp, text: label }),
-      ' Record',
-      wl ? h('span', { class: 'muted', style: 'margin-left:6px', text: wl }) : null));
-    if (!rec) {
-      det.appendChild(h('div', { class: 'card empty', style: 'margin:8px 0' }, h('div', { class: 't', text: "Can’t load the " + label + " Record." })));
-    } else {
-      var inner = h('div');
-      var savedSport = S.sport, savedSlate = S.slate, savedRecord = S.record, savedResets = S.resets,
-          savedOlder = S.older, savedMonths = S.months, savedOlderIdx = S.olderIdx;
-      S.sport = sp; S.record = rec; S.resets = null;
-      S.older = []; S.months = {}; S.olderIdx = 0;
-      var tmp = app; app = inner;
-      renderRecord();
-      app = tmp;
-      S.sport = savedSport; S.slate = savedSlate; S.record = savedRecord; S.resets = savedResets;
-      S.older = savedOlder; S.months = savedMonths; S.olderIdx = savedOlderIdx;
-      /* renderRecord called top() which prepended a header+freshstrip — skip those, take the rest */
-      var children = Array.prototype.slice.call(inner.children);
-      var bodyStart = 0;
-      while (bodyStart < children.length && (children[bodyStart].tagName === 'HEADER' || children[bodyStart].tagName === 'BUTTON')) bodyStart++;
-      for (var i = bodyStart; i < children.length; i++) det.appendChild(children[i]);
-    }
-    app.appendChild(det);
+  /* build merged nights (entries tagged with sport) */
+  var nightMap = {}, mergedNights = [];
+  arr(S.allResults).forEach(function (r) {
+    if (!r.record.ok) return;
+    var rec = r.record.v, sp = r.sport;
+    arr(rec.nights).filter(isObj).forEach(function (nt) {
+      if (!nt.date) return;
+      if (!nightMap[nt.date]) {
+        nightMap[nt.date] = { date: nt.date, w: 0, l: 0, units: 0, entries: [], graded: true };
+        mergedNights.push(nightMap[nt.date]);
+      }
+      var mn = nightMap[nt.date];
+      mn.w += num(nt.w) || 0; mn.l += num(nt.l) || 0; mn.units += num(nt.units) || 0;
+      mn.graded = mn.graded && !!nt.graded;
+      arr(nt.entries).filter(isObj).forEach(function (e) { mn.entries.push(Object.assign({}, e, { sport: sp })); });
+    });
   });
+  mergedNights.sort(function (a, b) { return str(a.date) < str(b.date) ? 1 : (str(a.date) > str(b.date) ? -1 : 0); });
+  /* build merged summary (days map) for calendar */
+  var dmap = {}, mergedDays = [];
+  arr(S.allResults).forEach(function (r) {
+    if (!r.record.ok) return;
+    var sum = isObj(r.record.v.summary) ? r.record.v.summary : {};
+    arr(sum.days).filter(isObj).forEach(function (d) {
+      if (!d.date) return;
+      if (!dmap[d.date]) { dmap[d.date] = Object.assign({}, d); mergedDays.push(dmap[d.date]); }
+      else { dmap[d.date].w = (dmap[d.date].w || 0) + (d.w || 0); dmap[d.date].l = (dmap[d.date].l || 0) + (d.l || 0); dmap[d.date].units = (dmap[d.date].units || 0) + (d.units || 0); dmap[d.date].n = (dmap[d.date].n || 0) + (d.n || 0); }
+    });
+  });
+  mergedNights.forEach(function (nt) { if (!dmap[nt.date]) { dmap[nt.date] = { date: nt.date, w: nt.w, l: nt.l, units: nt.units, n: nt.entries.length, graded: nt.graded }; mergedDays.push(dmap[nt.date]); } });
+  var mergedSum = { days: mergedDays, headline: { w: totalW, l: totalL, units: totalUnits } };
+  /* render calendar via temporary state swap (calendar() is synchronous) */
+  var sv = { record: S.record, sport: S.sport, older: S.older, months: S.months, olderIdx: S.olderIdx };
+  S.sport = ‘all_cal’; S.record = { nights: mergedNights, older: [], summary: mergedSum }; S.older = []; S.months = {}; S.olderIdx = 0;
+  calendar(mergedSum);
+  S.record = sv.record; S.sport = sv.sport; S.older = sv.older; S.months = sv.months; S.olderIdx = sv.olderIdx;
+  /* unified latest picks — entries already carry sport badge via e.sport */
+  var latest = [];
+  mergedNights.forEach(function (nt) { arr(nt.entries).filter(isObj).forEach(function (e) { latest.push(e); }); });
+  app.appendChild(h(‘div’, { class: ‘sec-h’, style: ‘margin-top:24px’ }, h(‘h2’, { text: ‘Latest picks’ }),
+    h(‘span’, { class: ‘mu’, text: latest.length > LATEST_N ? ‘Last ‘ + LATEST_N : ‘’ })));
+  if (!latest.length) app.appendChild(h(‘p’, { class: ‘mu’, style: ‘margin-top:16px’, text: ‘No picks on the Record yet.’ }));
+  else {
+    var lbox = h(‘section’, { class: ‘night’ });
+    latest.slice(0, LATEST_N).forEach(function (e) { lbox.appendChild(entryRow(e, true)); });
+    app.appendChild(lbox);
+    if (latest.length > LATEST_N) app.appendChild(h(‘p’, { class: ‘note’, style: ‘margin-top:6px’, text: ‘Older: tap a day on the calendar.’ }));
+  }
+  app.appendChild(h(‘p’, { class: ‘note’, text: ‘Graded at the posted price. Push and void are 0 units.’ }));
   app.appendChild(smallFoot());
 }
 function renderGames() {
@@ -1812,7 +1828,9 @@ function calendar(sum) {
       cal.appendChild(h('button', { class: cls, type: 'button', style: style, 'aria-pressed': S.selDay === k ? 'true' : 'false',
         'aria-label': fDateLong(k) + ': ' + (ww ? (dd.w || 0) + '-' + (dd.l || 0) + ', ' + units(uu, 2) : (dd.graded ? 'no W-L' : 'not graded yet')),
         on: { click: function () { S.selDay = S.selDay === k ? null : k; rerender(); } } },
-        h('span', { text: String(+k.slice(8)) }), ww ? h('span', { class: 'u', text: (uu > 0 ? '+' : '') + uu.toFixed(1) }) : null));
+        h('span', { text: String(+k.slice(8)) }),
+        ww ? h('span', { class: 'wl-sm', text: (dd.w || 0) + '-' + (dd.l || 0) }) : null,
+        ww ? h('span', { class: 'u', text: (uu > 0 ? '+' : '') + uu.toFixed(1) }) : null));
     })(key, d, wl, u);
   }
   app.appendChild(cal);
@@ -1873,7 +1891,7 @@ function entryRow(e, withDate) {
   if (!res) l2.push('Awaiting result');
   else { if (e.actual) l2.push(str(e.actual)); if (units(e.units, 2)) l2.push(units(e.units, 2)); }
   return h('div', { class: 'ent' }, tag, h('div', { class: 'bd' },
-    h('div', { class: 'e1' }, e.replay ? h('span', { class: 'ptag scr', text: 'REPLAY' }) : null, h('span', { class: 'pn', text: e.player || 'Player not named' }), ' ' + str(e.bet)),
+    h('div', { class: 'e1' }, e.sport ? h('span', { class: 'sp-badge ' + e.sport, style: 'margin-left:0', text: e.sport.toUpperCase() }) : null, e.replay ? h('span', { class: 'ptag scr', text: 'REPLAY' }) : null, h('span', { class: 'pn', text: e.player || 'Player not named' }), ' ' + str(e.bet)),
     h('div', { class: 'e2', text: l2.join(' · ') })));
 }
 function loadOlder() {
