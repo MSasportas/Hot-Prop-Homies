@@ -376,7 +376,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:36 - 3rd",
+    "detail": "4:21 - 3rd",
     "score": {
      "LAC": "59",
      "PHX": "89"
@@ -391,9 +391,9 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:07 - 3rd",
+    "detail": "9:32 - 3rd",
     "score": {
-     "MIA": "64",
+     "MIA": "67",
      "UTAH": "58"
     }
    },
@@ -405,8 +405,8 @@
     "home": "SAC",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "11:54 - 2nd",
     "score": {
      "ORL": "34",
      "SAC": "27"
