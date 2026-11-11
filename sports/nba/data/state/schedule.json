@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:54 - 4th",
+    "detail": "2:36 - 4th",
     "score": {
      "MIA": "109",
-     "UTAH": "97"
+     "UTAH": "99"
     }
    },
    {
@@ -421,9 +421,9 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:32 - 1st",
+    "detail": "4:26 - 1st",
     "score": {
-     "OKC": "15",
+     "OKC": "16",
      "POR": "18"
     }
    }
