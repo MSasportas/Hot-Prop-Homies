@@ -14,7 +14,7 @@
    "status": "expected"
   },
   "NYR": {
-   "name": "Dylan Garand",
+   "name": "Joonas Korpisalo",
    "status": "expected"
   },
   "EDM": {
@@ -38,7 +38,7 @@
    "status": "expected"
   },
   "NSH": {
-   "name": "Juuse Saros",
+   "name": "Justus Annunen",
    "status": "expected"
   },
   "SJS": {
@@ -50,5 +50,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-11T07:30:01-05:00"
+ "checked_at": "2026-11-11T08:10:01-05:00"
 }
