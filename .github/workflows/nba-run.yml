@@ -18,6 +18,12 @@ on:
   push:                       # a code or rule change starts a chain right away
     branches: [main]
     paths: ['sports/nba/scripts/**', 'sports/nba/config/**', '.github/workflows/nba-run.yml']
+permissions:                  # must be granted here: a called workflow can't exceed its caller (repo default is read)
+  contents: write
+  actions: write
+concurrency:
+  group: nba-repo-writer
+  cancel-in-progress: false
 jobs:
   run:
     uses: ./.github/workflows/sport-run.yml

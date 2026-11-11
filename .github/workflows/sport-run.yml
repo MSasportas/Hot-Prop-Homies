@@ -31,9 +31,6 @@ on:
 permissions:
   contents: write             # commit sports/<sport>/data/
   actions: write              # start the next run
-concurrency:
-  group: ${{ inputs.sport }}-repo-writer
-  cancel-in-progress: false
 jobs:
   run:
     runs-on: ubuntu-latest
