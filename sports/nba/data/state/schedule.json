@@ -418,13 +418,13 @@
     "start": "2026-11-10T23:00:00-05:00",
     "away": "OKC",
     "home": "POR",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "30.5 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
      "OKC": "103",
-     "POR": "120"
+     "POR": "123"
     }
    }
   ]
