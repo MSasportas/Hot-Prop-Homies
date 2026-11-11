@@ -1,5 +1,5 @@
 {
- "at": "2026-11-10T20:20:00-05:00",
+ "at": "2026-11-10T20:50:00-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -253,6 +253,13 @@
    "date": "2026-10-28T21:41Z",
    "note": "Head coach Rick Carlise confirmed Sheppard will miss \"months\" after undergoing surgery to repair a torn meniscus in his left knee, Tony East of Forbes.com reports."
   },
+  "4845363": {
+   "status": "out",
+   "name": "Cam Christie",
+   "team": "LAC",
+   "date": "2026-11-11T01:37Z",
+   "note": "Christie is questionable for Tuesday's game against the Suns due to a right ankle sprain, Ohm Youngmisuk of ESPN.com reports."
+  },
   "5108024": {
    "status": "out",
    "name": "Yanic Konan Niederhauser",
@@ -266,13 +273,6 @@
    "team": "LAC",
    "date": "2026-11-10T00:00Z",
    "note": "Ingram (Achilles) has been ruled out for Tuesday's game at Phoenix, Ohm Youngmisuk of ESPN.com reports."
-  },
-  "4845363": {
-   "status": "day-to-day",
-   "name": "Cam Christie",
-   "team": "LAC",
-   "date": "2026-11-09T23:59Z",
-   "note": "Christie is questionable for Tuesday's game against the Suns due to a right ankle sprain, Ohm Youngmisuk of ESPN.com reports."
   },
   "6580": {
    "status": "out",
@@ -408,11 +408,11 @@
    "note": "Williams (leg) underwent successful surgery Wednesday to \"address a fractured left fibula and reconstruction of ankle ligaments following a fracture and dislocation.\" He will be re-evaluated before th"
   },
   "4702382": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Tristan da Silva",
    "team": "ORL",
-   "date": "2026-11-10T16:50Z",
-   "note": "Da Silva is questionable for Tuesday's game against the Kings due to a left calf strain."
+   "date": "2026-11-11T01:34Z",
+   "note": "Da Silva (calf) has been ruled out for Tuesday's game against the Kings, Jason Beede of the Orlando Sentinel reports."
   },
   "4432165": {
    "status": "out",

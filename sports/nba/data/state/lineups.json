@@ -95,10 +95,10 @@
    "status": {}
   },
   "UTAH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
-    "Isaiah Collier",
     "Darryn Peterson",
+    "Josh Okogie",
     "Josh Green",
     "Ace Bailey",
     "Jaxson Hayes"
@@ -175,5 +175,5 @@
    }
   }
  },
- "at": "2026-11-10T20:40:00-05:00"
+ "at": "2026-11-10T20:50:00-05:00"
 }
