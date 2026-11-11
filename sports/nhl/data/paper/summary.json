@@ -2,7 +2,7 @@
  "version": 1,
  "note": "Gap + Guard research log. Every flag here is a pick on the page and in the Record; vetoed and capped rows are research only.",
  "market": "shots",
- "generated_at": "2026-11-11T18:30:01-05:00",
+ "generated_at": "2026-11-11T18:50:01-05:00",
  "slate": "2026-11-11",
  "active": true,
  "window": {
@@ -37,11 +37,15 @@
     "settled": "Lineup confirmed",
     "frozen_settled": "Lineup confirmed",
     "move30_pct": 0.0,
-    "pulled": null,
+    "pulled": {
+     "reason": "line removed",
+     "detail": "Hard Rock no longer posts this line",
+     "at": "2026-11-11T18:50:01-05:00"
+    },
     "locked": false,
-    "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "state": "pulled",
+    "close_fair_pct": 43.0,
+    "clv_pct": 3.3,
     "result": null,
     "units": null
    }
@@ -783,7 +787,7 @@
   }
  ],
  "nov2": {
-  "gaps_measured": 44,
+  "gaps_measured": 45,
   "gaps_logged": 58,
   "graded_picks": 50,
   "w": 31,
@@ -792,15 +796,15 @@
   "units": 11.227189440532769,
   "wins_z": 1.2722046142284522,
   "clv_gaps": {
-   "n": 44,
-   "mean": 0.04785052641475495,
-   "lb80": 0.0442999337801141,
+   "n": 45,
+   "mean": 0.047523922025489655,
+   "lb80": 0.04404751962251076,
    "pos_share": 1.0
   },
   "clv_flags": {
-   "n": 40,
-   "mean": 0.047498585003780805,
-   "lb80": 0.043776368066225785,
+   "n": 41,
+   "mean": 0.0471487007085134,
+   "lb80": 0.04346037797114405,
    "pos_share": 1.0
   },
   "clv_vetoed": {
@@ -809,7 +813,7 @@
    "lb80": 0.04350097322746621,
    "pos_share": 1.0
   },
-  "clv_passed_mean": 0.047498585003780805,
+  "clv_passed_mean": 0.0471487007085134,
   "clv_vetoed_mean": 0.05136994052449628,
   "nights": 20,
   "nights_with_flags": 15,

@@ -1,26 +1,26 @@
 {
  "slate_date": "2026-11-11",
- "generated_at": "2026-11-11T18:40:00-05:00",
- "status_at": "2026-11-11T18:40:00-05:00",
+ "generated_at": "2026-11-11T18:50:01-05:00",
+ "status_at": "2026-11-11T18:50:01-05:00",
  "valid_until": "2026-11-12T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
-  "prices_at": "2026-11-11T18:20:00-05:00",
-  "next_price_read_at": "2026-11-11T18:45:00-05:00",
+  "prices_at": "2026-11-11T18:50:01-05:00",
+  "next_price_read_at": "2026-11-11T19:30:00-05:00",
   "stats_built_at": "2026-11-11T01:20:00-05:00",
   "stats_through": "2026-11-10",
-  "lineups_at": "2026-11-11T18:40:00-05:00",
+  "lineups_at": "2026-11-11T18:50:01-05:00",
   "goalies_at": null,
-  "lineups_note": "Lineups posted for 3 of 8 teams checked so far.",
+  "lineups_note": "Lineups posted for 5 of 8 teams checked so far.",
   "lineups_state": "ok",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-11T18:40:00-05:00",
+   "at": "2026-11-11T18:50:01-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 3235,
+   "pulls_left": 3230,
    "keys": 9,
    "game_days_left": 18,
    "days_left": 20,
@@ -32,7 +32,11 @@
   "tier": 4
  },
  "banners": [],
- "empty": null,
+ "empty": {
+  "code": "none_qualified",
+  "text": "No picks yet today",
+  "sub": "32 lines read, none cleared both checks. Next read at 7:30 PM."
+ },
  "games": [
   {
    "id": 2026020293,
@@ -40,8 +44,8 @@
    "home": "BUF",
    "start": "2026-11-11T19:00:00-05:00",
    "lineups": {
-    "away": "waiting",
-    "home": "waiting"
+    "away": "confirmed",
+    "home": "confirmed"
    },
    "goalies": {
     "away": {
@@ -70,8 +74,8 @@
     ],
     "next_read": null,
     "lineups_at": {
-     "away": null,
-     "home": null
+     "away": "2026-11-11T18:50:01-05:00",
+     "home": "2026-11-11T18:50:01-05:00"
     }
    },
    "started": false,
@@ -108,20 +112,21 @@
      {
       "pull": "B",
       "at": "2026-11-11T18:00:00-05:00"
+     },
+     {
+      "pull": "C",
+      "at": "2026-11-11T18:50:01-05:00"
      }
     ],
-    "next_read": {
-     "pull": "C",
-     "at": "2026-11-11T18:45:00-05:00"
-    },
+    "next_read": null,
     "lineups_at": {
      "away": "2026-11-11T16:30:01-05:00",
      "home": null
     }
    },
    "started": false,
-   "reads_done": false,
-   "picks": 1,
+   "reads_done": true,
+   "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
   },
@@ -306,6 +311,10 @@
     {
      "at": "2026-11-11T18:00:00-05:00",
      "text": "Lineup confirmed"
+    },
+    {
+     "at": "2026-11-11T18:50:01-05:00",
+     "text": "Pulled: Hard Rock took the line down"
     }
    ],
    "prices": [
@@ -314,10 +323,15 @@
      "price": 140
     }
    ],
-   "pulled": null,
+   "pulled": {
+    "at": "2026-11-11T18:50:01-05:00",
+    "reason": "Hard Rock took the line down",
+    "if_bet": "Got +140? Your bet still stands.",
+    "code": "line_gone"
+   },
    "price_final": false,
    "graded": null,
-   "rank": 1,
+   "rank": null,
    "tier": "main",
    "game_id": 2026020294,
    "player": "G. Perreault",
