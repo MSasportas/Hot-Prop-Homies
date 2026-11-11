@@ -1352,7 +1352,19 @@ function livePoll() {
   /* QA: ?feed=espnfail / allfail (fixture mode only) still read the feed, then treat it as failed */
   var forceE = !!FIX && (FEED_Q === 'espnfail' || FEED_Q === 'allfail'), forceN = !!FIX && FEED_Q === 'allfail';
   var forced = function (pr, on) { return on ? pr.then(function () { throw new Error('forced'); }) : pr; };
-  var primary = S.sport === 'nhl' ? pollNHL(pl) : forced(pollESPN(pl), forceE).then(null, function () { return forced(pollNBA(pl), forceN); });
+  var primary;
+  if (S.sport === 'all') {
+    var subPlan = function (sp) {
+      var st = pl.d.started.filter(function (p) { return p.sport === sp; });
+      var nd = {}; st.forEach(function (p) { if (!isObj(p.result) && p.game_id != null && !L.done[str(p.game_id)]) nd[str(p.game_id)] = 1; });
+      return Object.assign({}, pl, { d: Object.assign({}, pl.d, { started: st }), need: Object.keys(nd) });
+    };
+    var plNHL = subPlan('nhl'), plNBA = subPlan('nba');
+    primary = Promise.all([pollNHL(plNHL), forced(pollESPN(plNBA), forceE).then(null, function () { return forced(pollNBA(plNBA), forceN); })])
+      .then(function (rs) { return { src: rs[0].src + '+' + rs[1].src, games: Object.assign({}, rs[0].games, rs[1].games), stats: Object.assign({}, rs[0].stats, rs[1].stats), done: Object.assign({}, rs[0].done, rs[1].done) }; });
+  } else {
+    primary = S.sport === 'nhl' ? pollNHL(pl) : forced(pollESPN(pl), forceE).then(null, function () { return forced(pollNBA(pl), forceN); });
+  }
   primary.then(function (r) {
     L.games = r.games;
     Object.keys(r.stats).forEach(function (k) { L.stats[k] = r.stats[k]; });
