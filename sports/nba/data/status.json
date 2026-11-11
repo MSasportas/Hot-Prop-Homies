@@ -1,11 +1,11 @@
 {
- "finished_at": "2026-11-11T08:00:01-05:00",
+ "finished_at": "2026-11-11T16:26:13-05:00",
  "slate": "2026-11-11",
- "ok": false,
+ "ok": true,
  "steps": {
   "schedule": {
    "ok": true,
-   "sec": 0.3
+   "sec": 0.1
   },
   "rosters": {
    "ok": true,
@@ -13,19 +13,19 @@
   },
   "injuries": {
    "ok": true,
-   "sec": 0.5
+   "sec": 0.1
   },
   "lineups": {
    "ok": true,
-   "sec": 0.0
+   "sec": 0.1
   },
   "odds": {
    "ok": true,
-   "sec": 0.0
+   "sec": 1.6
   },
   "engine": {
    "ok": true,
-   "sec": 0.0
+   "sec": 0.5
   },
   "grade": {
    "ok": true,
@@ -45,12 +45,12 @@
   },
   {
    "n": 3,
-   "left": 68,
-   "status": "ok"
+   "left": 0,
+   "status": "empty"
   },
   {
    "n": 4,
-   "left": 500,
+   "left": 408,
    "status": "ok"
   },
   {
@@ -84,7 +84,7 @@
    "status": "ok"
   }
  ],
- "pool_left": 3568,
+ "pool_left": 3408,
  "plan": {
   "allowance": 24.951,
   "reads": [
@@ -101,9 +101,11 @@
   "made_at": "2026-11-11T05:00:00-05:00",
   "cost_per_read": 4
  },
- "spent_today": 0,
- "odds_note": "no read due",
- "odds_errors": [],
+ "spent_today": 40,
+ "odds_note": "10 game(s) priced",
+ "odds_errors": [
+  "key 3 refused (401), trying the next"
+ ],
  "unknown_teams": [],
  "graded_now": 0,
  "sources": {
@@ -112,11 +114,11 @@
    "failed": 0
   },
   "rotowire": {
-   "ok": 0,
+   "ok": 1,
    "failed": 0
   },
   "odds": {
-   "ok": 0,
+   "ok": 10,
    "failed": 0
   }
  },
@@ -125,15 +127,11 @@
  ],
  "unmatched": [],
  "runner": {
-  "event": "push",
-  "run_id": "43095051306",
-  "iteration": 3,
+  "event": "workflow_dispatch",
+  "run_id": "43102982615",
+  "iteration": 1,
   "chain_link": 0,
-  "chain_started_at": "2026-11-11T15:17:26-05:00",
-  "run_started_at": "2026-11-11T15:17:26-05:00"
- },
- "status_at": "2026-11-11T15:30:50-05:00",
- "failed_step": "push",
- "failed_at": "2026-11-11T15:30:50-05:00",
- "note": "The run stopped before finishing. Files from the last good run are still in place."
+  "chain_started_at": "2026-11-11T16:26:05-05:00",
+  "run_started_at": "2026-11-11T16:26:05-05:00"
+ }
 }

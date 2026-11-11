@@ -1,16 +1,11 @@
 {
  "slate": "2026-11-11",
  "valid_until": "2026-11-12T05:00:00-05:00",
- "banners": [
-  {
-   "level": "stop",
-   "text": "The last update failed at 3:30 PM (push). Showing 5:00 AM data."
-  }
- ],
+ "banners": [],
  "status": {
   "odds": {
    "keys": 10,
-   "pool_left": 3568,
+   "pool_left": 3408,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -23,12 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-11T11:00:00-05:00",
-  "last_read_at": null,
+  "next_read_at": "2026-11-11T17:30:00-05:00",
+  "last_read_at": "2026-11-11T16:26:13-05:00",
   "last_run": {
-   "ok": false,
-   "at": "2026-11-11T15:30:50-05:00",
-   "failed_step": "push"
+   "ok": true,
+   "at": "2026-11-11T16:26:13-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -36,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-11T05:00:00-05:00",
+    "at": "2026-11-11T16:26:13-05:00",
     "confirmed": []
    },
    "grade": true
@@ -54,7 +48,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-11T16:26:13-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -78,7 +72,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-11T16:26:13-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -88,7 +82,7 @@
    "paused": false,
    "injury_clear": {
     "away": true,
-    "home": true
+    "home": false
    }
   },
   {
@@ -102,7 +96,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-11T16:26:13-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -126,7 +120,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-11T16:26:13-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -150,7 +144,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-11T16:26:13-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -174,7 +168,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-11T16:26:13-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -183,8 +177,8 @@
    "next_check_read": "B",
    "paused": false,
    "injury_clear": {
-    "away": false,
-    "home": true
+    "away": true,
+    "home": false
    }
   },
   {
@@ -198,7 +192,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-11T16:26:13-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -208,7 +202,7 @@
    "paused": false,
    "injury_clear": {
     "away": true,
-    "home": true
+    "home": false
    }
   },
   {
@@ -222,7 +216,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-11T16:26:13-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -231,8 +225,8 @@
    "next_check_read": "B",
    "paused": false,
    "injury_clear": {
-    "away": true,
-    "home": true
+    "away": false,
+    "home": false
    }
   },
   {
@@ -246,7 +240,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-11T16:26:13-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -270,7 +264,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": null,
+   "read_at": "2026-11-11T16:26:13-05:00",
    "picks": 0,
    "checks": [],
    "last_check_at": null,
@@ -287,11 +281,11 @@
  "picks": [],
  "empty": {
   "text": "No picks yet today",
-  "why": "No prices read yet. The first close look is 90 minutes before each tip.",
-  "next": "2026-11-11T11:00:00-05:00"
+  "why": "862 lines read. Pinnacle hasn't moved alone on any of them yet.",
+  "next": "2026-11-11T17:30:00-05:00"
  },
  "counts": {
-  "lines_read": 0,
+  "lines_read": 862,
   "passing": 0,
   "games": 10
  },
@@ -301,6 +295,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-11T05:00:00-05:00",
- "status_at": "2026-11-11T15:30:50-05:00"
+ "generated_at": "2026-11-11T16:26:13-05:00",
+ "status_at": "2026-11-11T16:26:13-05:00"
 }

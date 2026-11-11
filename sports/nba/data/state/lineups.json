@@ -21,7 +21,7 @@
    "state": "expected",
    "starters": [
     "Andrew Nembhard",
-    "Kelly Oubre",
+    "Braden Smith",
     "Aaron Nesmith",
     "Pascal Siakam",
     "Ivica Zubac"
@@ -58,19 +58,22 @@
     "Karl-Anthony Towns"
    ],
    "status": {
-    "Josh Hart": "out"
+    "Josh Hart": "probable",
+    "Karl-Anthony Towns": "questionable"
    }
   },
   "BOS": {
    "state": "expected",
    "starters": [
-    "Mike Conley",
     "Derrick White",
+    "Jordan Walsh",
+    "Baylor Scheierman",
     "Jayson Tatum",
-    "Paul George",
     "Neemias Queta"
    ],
-   "status": {}
+   "status": {
+    "Paul George": "out"
+   }
   },
   "TOR": {
    "state": "expected",
@@ -84,37 +87,38 @@
    "status": {
     "Immanuel Quickley": "questionable",
     "Collin Murray-Boyles": "questionable",
-    "Trayce Jackson-Davis": "questionable",
     "Scottie Barnes": "out",
     "Nate Bittle": "out",
+    "Trayce Jackson-Davis": "out",
     "Kawhi Leonard": "out"
    }
   },
   "BKN": {
    "state": "expected",
    "starters": [
-    "Egor Demin",
     "Nolan Traore",
+    "Egor Demin",
     "Michael Porter",
     "Julius Randle",
     "Day'Ron Sharpe"
    ],
    "status": {
-    "Egor Demin": "probable",
-    "Nolan Traore": "questionable"
+    "Nolan Traore": "questionable",
+    "Mikel Brown": "out"
    }
   },
   "NO": {
    "state": "expected",
    "starters": [
-    "Dejounte Murray",
     "Jeremiah Fears",
-    "Trey Murphy",
+    "Dejounte Murray",
+    "Saddiq Bey",
     "Zion Williamson",
     "Karlo Matkovic"
    ],
    "status": {
-    "Trey Murphy": "probable",
+    "Trey Murphy": "doubtful",
+    "Bennedict Mathurin": "out",
     "Yves Missi": "out",
     "Trendon Watford": "out"
    }
@@ -145,8 +149,9 @@
    ],
    "status": {
     "Norman Powell": "questionable",
-    "Tobe Awaka": "questionable",
-    "Zach Collins": "questionable"
+    "Caleb Wilson": "questionable",
+    "Zach Collins": "questionable",
+    "Tobe Awaka": "out"
    }
   },
   "LAL": {
@@ -159,7 +164,7 @@
     "Walker Kessler"
    ],
    "status": {
-    "Quentin Grimes": "questionable"
+    "Quentin Grimes": "out"
    }
   },
   "MIL": {
@@ -169,10 +174,11 @@
     "Tyler Herro",
     "Jaime Jaquez",
     "Kyle Kuzma",
-    "Myles Turner"
+    "Kel'el Ware"
    ],
    "status": {
-    "Tyler Herro": "out"
+    "Tyler Herro": "questionable",
+    "Myles Turner": "out"
    }
   },
   "DEN": {
@@ -206,15 +212,16 @@
   "ORL": {
    "state": "expected",
    "starters": [
-    "Jase Richardson",
     "Anthony Black",
     "Desmond Bane",
+    "Jamal Cain",
     "Franz Wagner",
     "Wendell Carter"
    ],
    "status": {
+    "Jamal Cain": "questionable",
+    "Tristan da Silva": "questionable",
     "Paolo Banchero": "out",
-    "Tristan da Silva": "out",
     "Jonathan Isaac": "out",
     "Izaiyah Nelson": "out",
     "Noah Penda": "out",
@@ -224,16 +231,16 @@
   "UTAH": {
    "state": "expected",
    "starters": [
-    "Isaiah Collier",
+    "Keyonte George",
     "Darryn Peterson",
+    "Josh Green",
     "Ace Bailey",
-    "Lauri Markkanen",
     "Jaxson Hayes"
    ],
    "status": {
-    "Lauri Markkanen": "out",
-    "Keyonte George": "out",
+    "Keyonte George": "questionable",
     "Jaren Jackson": "out",
+    "Lauri Markkanen": "out",
     "Jusuf Nurkic": "out"
    }
   },
@@ -247,7 +254,7 @@
     "Draymond Green"
    ],
    "status": {
-    "Will Richard": "questionable",
+    "Will Richard": "probable",
     "Jimmy Butler": "out",
     "Moses Moody": "out",
     "Gary Payton": "out",
@@ -273,13 +280,14 @@
    "state": "expected",
    "starters": [
     "Shai Gilgeous-Alexander",
-    "Ajay Mitchell",
+    "Jared McCain",
+    "Alex Caruso",
     "Kenrich Williams",
-    "Aday Mara",
     "Isaiah Hartenstein"
    ],
    "status": {
     "Chet Holmgren": "out",
+    "Ajay Mitchell": "out",
     "Thomas Sorber": "out",
     "Cason Wallace": "out",
     "Jalen Williams": "out",
@@ -290,7 +298,7 @@
    "state": "expected",
    "starters": [
     "Damian Lillard",
-    "Scoot Henderson",
+    "Sidy Cissoko",
     "Toumani Camara",
     "Deni Avdija",
     "Donovan Clingan"
@@ -298,9 +306,10 @@
    "status": {
     "Vit Krejci": "out",
     "Ja Morant": "out",
-    "Shaedon Sharpe": "out"
+    "Shaedon Sharpe": "out",
+    "Chris Youngblood": "out"
    }
   }
  },
- "at": "2026-11-11T05:00:00-05:00"
+ "at": "2026-11-11T16:26:13-05:00"
 }

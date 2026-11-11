@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T01:20:01-05:00",
+ "at": "2026-11-11T16:26:13-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -29,26 +29,26 @@
    "date": "2026-09-21T19:50Z",
    "note": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday."
   },
+  "4251": {
+   "status": "out",
+   "name": "Paul George",
+   "team": "BOS",
+   "date": "2026-11-11T17:55Z",
+   "note": "George (illness) has been ruled out for Wednesday's game against Toronto, Taylor Snow of the Celtics' official site reports."
+  },
+  "5101761": {
+   "status": "out",
+   "name": "Mikel Brown Jr.",
+   "team": "BKN",
+   "date": "2026-11-11T16:40Z",
+   "note": "Brown has been ruled out for Wednesday's game against the Pelicans due to an illness, Sharif Phillips-Keaton of USA Today reports."
+  },
   "5279130": {
    "status": "day-to-day",
    "name": "Nolan Traore",
    "team": "BKN",
    "date": "2026-11-10T22:56Z",
    "note": "Traore (calf) is listed as questionable for Wednesday's game against New Orleans."
-  },
-  "5175643": {
-   "status": "out",
-   "name": "Egor Demin",
-   "team": "BKN",
-   "date": "2026-11-10T22:51Z",
-   "note": "Demin (leg) is probable for Wednesday's game against the Pelicans, Erik Slater of ClutchPoints.com reports."
-  },
-  "4702670": {
-   "status": "day-to-day",
-   "name": "Grant Nelson",
-   "team": "BKN",
-   "date": "2026-11-08T16:21Z",
-   "note": "Nelson signed a two-way contract with the Nets on Friday, Michael Scotto of HoopsHype.com reports."
   },
   "4433287": {
    "status": "day-to-day",
@@ -85,19 +85,26 @@
    "date": "2026-11-08T22:26Z",
    "note": "Schroder has been diagnosed with a left hamstring strain and will be reevaluated in two weeks, Michael Scotto of HoopsHype.com reports."
   },
+  "5105555": {
+   "status": "out",
+   "name": "Tobe Awaka",
+   "team": "CHI",
+   "date": "2026-11-11T19:18Z",
+   "note": "Awaka (back) has been ruled out for Wednesday's game against the Spurs."
+  },
+  "5095151": {
+   "status": "day-to-day",
+   "name": "Caleb Wilson",
+   "team": "CHI",
+   "date": "2026-11-11T18:21Z",
+   "note": "Wilson has been downgraded to questionable for Wednesday's game against the Spurs due to right hip soreness."
+  },
   "2595516": {
    "status": "day-to-day",
    "name": "Norman Powell",
    "team": "CHI",
    "date": "2026-11-10T22:21Z",
    "note": "Powell (shoulder) is listed as questionable for Wednesday's game versus the Spurs."
-  },
-  "5105555": {
-   "status": "day-to-day",
-   "name": "Tobe Awaka",
-   "team": "CHI",
-   "date": "2026-11-10T22:19Z",
-   "note": "Awaka (back) is questionable for Wednesday's game against the Spurs."
   },
   "4066650": {
    "status": "day-to-day",
@@ -155,6 +162,13 @@
    "date": "2026-10-17T00:52Z",
    "note": "Strawther (knee) was diagnosed with a left knee sprain Friday and will be re-evaluated in six weeks, Vinny Benedetto of The Denver Gazette reports."
   },
+  "5037878": {
+   "status": "day-to-day",
+   "name": "Ugonna Onyenso",
+   "team": "DET",
+   "date": "2026-11-11T15:16Z",
+   "note": "Onyenso agreed to a two-way contract with the Pistons on Thursday."
+  },
   "4395702": {
    "status": "out",
    "name": "Isaiah Joe",
@@ -169,19 +183,19 @@
    "date": "2026-11-08T16:05Z",
    "note": "Duren (hamstring) has begun on-court activity and will be re-evaluated in two weeks, Hunter Patterson of The Athletic reports."
   },
+  "4897262": {
+   "status": "day-to-day",
+   "name": "Will Richard",
+   "team": "GS",
+   "date": "2026-11-11T19:09Z",
+   "note": "Richard (thumb) has been upgraded to probable for Wednesday's game at Houston."
+  },
   "3134903": {
    "status": "out",
    "name": "Gary Payton II",
    "team": "GS",
    "date": "2026-11-10T21:36Z",
    "note": "Payton (knee) is out for Wednesday's game against Houston."
-  },
-  "4897262": {
-   "status": "out",
-   "name": "Will Richard",
-   "team": "GS",
-   "date": "2026-11-10T21:34Z",
-   "note": "Richard (thumb) is questionable for Wednesday's game against Houston."
   },
   "4397040": {
    "status": "out",
@@ -254,10 +268,10 @@
    "note": "Head coach Rick Carlise confirmed Sheppard will miss \"months\" after undergoing surgery to repair a torn meniscus in his left knee, Tony East of Forbes.com reports."
   },
   "4845363": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Cam Christie",
    "team": "LAC",
-   "date": "2026-11-11T01:39Z",
+   "date": "2026-11-11T14:59Z",
    "note": "Christie (ankle) is listed as out for Tuesday's game against Phoenix."
   },
   "5108024": {
@@ -289,11 +303,11 @@
    "note": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic."
   },
   "4397014": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Quentin Grimes",
    "team": "LAL",
-   "date": "2026-11-10T23:07Z",
-   "note": "Grimes (finger) is listed as questionable for Wednesday's game in Milwaukee."
+   "date": "2026-11-11T19:06Z",
+   "note": "Grimes (finger) has been ruled out for Wednesday's game against the Bucks."
   },
   "4432810": {
    "status": "day-to-day",
@@ -324,11 +338,18 @@
    "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
   },
   "4395725": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Tyler Herro",
    "team": "MIL",
-   "date": "2026-11-10T23:24Z",
-   "note": "Herro (knee) is listed as out for Tuesday's game against New York."
+   "date": "2026-11-11T19:05Z",
+   "note": "Herro (knee) is listed as questionable for Wednesday's game against the Lakers."
+  },
+  "3133628": {
+   "status": "out",
+   "name": "Myles Turner",
+   "team": "MIL",
+   "date": "2026-11-11T19:03Z",
+   "note": "Turner has been ruled out for Wednesday's game against the Lakers due to rest."
   },
   "4594268": {
    "status": "out",
@@ -344,19 +365,26 @@
    "date": "2026-10-05T20:53Z",
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
   },
+  "4683634": {
+   "status": "out",
+   "name": "Bennedict Mathurin",
+   "team": "NO",
+   "date": "2026-11-11T16:55Z",
+   "note": "Mathurin has been ruled out for Wednesday's game against the Nets due to a right thumb sprain."
+  },
+  "4397688": {
+   "status": "day-to-day",
+   "name": "Trey Murphy III",
+   "team": "NO",
+   "date": "2026-11-11T16:53Z",
+   "note": "Murphy (knee) is doubtful for Wednesday's game against the Nets."
+  },
   "4431675": {
    "status": "out",
    "name": "Trendon Watford",
    "team": "NO",
    "date": "2026-11-10T19:26Z",
    "note": "Watford (ankle) is out for Wednesday's game against the Nets."
-  },
-  "4397688": {
-   "status": "day-to-day",
-   "name": "Trey Murphy III",
-   "team": "NO",
-   "date": "2026-11-10T19:22Z",
-   "note": "Murphy (knee) is probable for Wednesday's game against the Nets."
   },
   "5061589": {
    "status": "out",
@@ -365,12 +393,26 @@
    "date": "2026-11-05T20:47Z",
    "note": "Missi (knee) is out for Friday's game against Minnesota."
   },
+  "3136195": {
+   "status": "day-to-day",
+   "name": "Karl-Anthony Towns",
+   "team": "NY",
+   "date": "2026-11-11T18:06Z",
+   "note": "Towns (calf) is listed as questionable for Wednesday's game against Cleveland."
+  },
   "3062679": {
    "status": "out",
    "name": "Josh Hart",
    "team": "NY",
-   "date": "2026-11-10T22:58Z",
-   "note": "Hart (illness) won't play Tuesday against the Bucks, Kristian Winfield of the New York Daily News reports."
+   "date": "2026-11-11T18:06Z",
+   "note": "Hart (illness) is probable for Wednesday's game against the Cavaliers."
+  },
+  "4900671": {
+   "status": "out",
+   "name": "Ajay Mitchell",
+   "team": "OKC",
+   "date": "2026-11-11T21:17Z",
+   "note": "Mitchell finished with 14 points (6-10 FG, 0-1 3Pt, 2-2 FT), three rebounds, three assists and one steal across 28 minutes during Tuesday's 123-103 loss to Portland."
   },
   "4432823": {
    "status": "out",
@@ -407,12 +449,19 @@
    "date": "2026-10-28T23:41Z",
    "note": "Williams (leg) underwent successful surgery Wednesday to \"address a fractured left fibula and reconstruction of ankle ligaments following a fracture and dislocation.\" He will be re-evaluated before th"
   },
+  "4278572": {
+   "status": "day-to-day",
+   "name": "Jamal Cain",
+   "team": "ORL",
+   "date": "2026-11-11T19:50Z",
+   "note": "Cain is questionable for Wednesday's game against the Jazz due to a left shoulder contusion."
+  },
   "4702382": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Tristan da Silva",
    "team": "ORL",
-   "date": "2026-11-11T01:34Z",
-   "note": "Da Silva (calf) has been ruled out for Tuesday's game against the Kings, Jason Beede of the Orlando Sentinel reports."
+   "date": "2026-11-11T19:50Z",
+   "note": "Da Silva (calf) is listed as questionable for Wednesday's game at Utah."
   },
   "4432165": {
    "status": "out",
@@ -477,19 +526,26 @@
    "date": "2026-09-11T16:03Z",
    "note": "Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports."
   },
+  "4706557": {
+   "status": "out",
+   "name": "Chris Youngblood",
+   "team": "POR",
+   "date": "2026-11-11T21:05Z",
+   "note": "Youngblood has been ruled out for Wednesday's game against the Thunder."
+  },
+  "4578893": {
+   "status": "out",
+   "name": "Vit Krejci",
+   "team": "POR",
+   "date": "2026-11-11T19:56Z",
+   "note": "Krejci underwent surgery on his fractured left ankle Wednesday and will be re-evaluated in eight weeks, Brett Siegel of ClutchPoints.com reports."
+  },
   "4279888": {
    "status": "out",
    "name": "Ja Morant",
    "team": "POR",
    "date": "2026-11-08T02:18Z",
    "note": "Head coach Micah Nori said Morant met with a doctor in Los Angeles, who gave him a positive outlook on his recovery from the hamstring injury. While Nori declined to update Morant's timetable, he adde"
-  },
-  "4578893": {
-   "status": "out",
-   "name": "Vit Krejci",
-   "team": "POR",
-   "date": "2026-11-05T05:17Z",
-   "note": "Head coach Micah Nori said that Krejci suffered a left leg fracture during Wednesday's 132-119 win over the Suns, Brett Siegel of ClutchPoints.com reports."
   },
   "4914336": {
    "status": "out",
@@ -499,10 +555,10 @@
    "note": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN."
   },
   "4431679": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Precious Achiuwa",
    "team": "SAC",
-   "date": "2026-11-11T06:04Z",
+   "date": "2026-11-11T14:44Z",
    "note": "Achiuwa left Tuesday's 107-100 loss to the Magic with a left lower leg contusion and did not return, Matt George of ABC 10 Sacramento reports."
   },
   "4898371": {
@@ -541,11 +597,11 @@
    "note": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports."
   },
   "4431684": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Trayce Jackson-Davis",
    "team": "TOR",
-   "date": "2026-11-10T21:54Z",
-   "note": "Jackson-Davis is questionable for Wednesday's game against Boston with an illness."
+   "date": "2026-11-11T17:37Z",
+   "note": "Jackson-Davis (illness) has been ruled out for Wednesday's game against the Celtics, Blake Murphy of Sportsnet.ca reports."
   },
   "5093267": {
    "status": "day-to-day",
@@ -582,19 +638,19 @@
    "date": "2026-11-08T21:20Z",
    "note": "Bittle (foot) is listed as out for Monday's game against Memphis."
   },
+  "4433627": {
+   "status": "day-to-day",
+   "name": "Keyonte George",
+   "team": "UTAH",
+   "date": "2026-11-11T20:04Z",
+   "note": "George (ankle) is questionable for Wednesday's game against Orlando."
+  },
   "4066336": {
    "status": "out",
    "name": "Lauri Markkanen",
    "team": "UTAH",
-   "date": "2026-11-10T18:30Z",
-   "note": "Markkanen is out for Tuesday's game versus the Heat with a right wrist sprain."
-  },
-  "4433627": {
-   "status": "out",
-   "name": "Keyonte George",
-   "team": "UTAH",
-   "date": "2026-11-10T00:08Z",
-   "note": "George (ankle) has been ruled out for Tuesday's game against the Heat."
+   "date": "2026-11-11T18:22Z",
+   "note": "Markkanen has been diagnosed with a non-displaced fracture in his right hand and will be sidelined for at least one month, Shams Charania of ESPN reports."
   },
   "3102530": {
    "status": "out",
