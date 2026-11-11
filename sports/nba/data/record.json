@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-10T19:20:01-05:00",
+ "generated_at": "2026-11-10T19:30:00-05:00",
  "summary": {
   "headline": {
    "w": 34,
@@ -146,6 +146,7 @@
       "n": 17,
       "ids": [
        "2026-11-10:401909960:3147657:points:10.5:under",
+       "2026-11-10:401909963:4278053:points:13.5:under",
        "2026-11-09:401909953:3908809:points:23.5:under",
        "2026-11-09:401909954:4277905:points:18.5:under",
        "2026-11-07:401909942:4277847:points:12.5:under",
@@ -177,6 +178,7 @@
       "needed": 0.5106,
       "n": 8,
       "ids": [
+       "2026-11-10:401909963:4278053:assists:7.5:under",
        "2026-11-09:401909958:5037871:assists:4.5:over",
        "2026-11-09:401909959:5144091:assists:4.5:under",
        "2026-11-07:401909938:4395712:assists:7.5:under",
@@ -260,6 +262,8 @@
       "n": 38,
       "ids": [
        "2026-11-10:401909960:3147657:points:10.5:under",
+       "2026-11-10:401909963:4278053:assists:7.5:under",
+       "2026-11-10:401909963:4278053:points:13.5:under",
        "2026-11-09:401909953:2583632:rebounds:4.5:under",
        "2026-11-09:401909953:3908809:points:23.5:under",
        "2026-11-09:401909953:4066328:rebounds:7.5:under",
@@ -376,6 +380,7 @@
       "needed": 0.5261,
       "n": 8,
       "ids": [
+       "2026-11-10:401909963:4278053:assists:7.5:under",
        "2026-11-09:401909953:2583632:rebounds:4.5:under",
        "2026-11-09:401909953:4066328:rebounds:7.5:under",
        "2026-11-09:401909953:4396971:rebounds:8.5:under",
@@ -398,6 +403,7 @@
       "needed": 0.4249,
       "n": 2,
       "ids": [
+       "2026-11-10:401909963:4278053:points:13.5:under",
        "2026-11-04:401909922:3059318:threes:0.5:under",
        "2026-11-04:401909931:5093267:rebounds:5.5:under"
       ]
@@ -421,6 +427,8 @@
       "needed": 0.5048,
       "n": 2,
       "ids": [
+       "2026-11-10:401909963:4278053:assists:7.5:under",
+       "2026-11-10:401909963:4278053:points:13.5:under",
        "2026-11-07:401909938:4395712:assists:7.5:under",
        "2026-10-28:401909891:4683778:threes:2.5:under"
       ]
@@ -520,6 +528,7 @@
       "needed": 0.4523,
       "n": 18,
       "ids": [
+       "2026-11-10:401909963:4278053:assists:7.5:under",
        "2026-11-09:401909958:5037871:assists:4.5:over",
        "2026-11-09:401909959:5144091:assists:4.5:under",
        "2026-11-06:401909288:4433287:threes:3.5:over",
@@ -553,6 +562,7 @@
       "n": 34,
       "ids": [
        "2026-11-10:401909960:3147657:points:10.5:under",
+       "2026-11-10:401909963:4278053:points:13.5:under",
        "2026-11-09:401909953:2583632:rebounds:4.5:under",
        "2026-11-09:401909953:3908809:points:23.5:under",
        "2026-11-09:401909953:4066328:rebounds:7.5:under",
@@ -600,7 +610,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 1,
+    "n": 3,
     "graded": false
    },
    {
@@ -756,6 +766,58 @@
      "pulled": null,
      "legs": [],
      "window": "90 \u2192 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-10:401909963:4278053:assists:7.5:under",
+     "kind": "single",
+     "player": "Davion Mitchell",
+     "bet": "Under 7.5 assists",
+     "market": "assists",
+     "team": "MIA",
+     "game": "MIA at UTA",
+     "price": 100,
+     "first_price": 100,
+     "last_price": 100,
+     "prices": [
+      {
+       "price": 100,
+       "at": "2026-11-10T19:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "11 AM \u2192 90 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-10:401909963:4278053:points:13.5:under",
+     "kind": "single",
+     "player": "Davion Mitchell",
+     "bet": "Under 13.5 points",
+     "market": "points",
+     "team": "MIA",
+     "game": "MIA at UTA",
+     "price": -110,
+     "first_price": -110,
+     "last_price": -110,
+     "prices": [
+      {
+       "price": -110,
+       "at": "2026-11-10T19:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "11 AM \u2192 90 min",
      "book": "hardrock",
      "under_fair": false
     }
