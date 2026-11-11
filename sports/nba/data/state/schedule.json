@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:08 - 4th",
+    "detail": "2:43 - 4th",
     "score": {
-     "BOS": "105",
-     "PHI": "82"
+     "BOS": "118",
+     "PHI": "89"
     }
    },
    {
@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:17 - 2nd",
+    "detail": "29.2 - 2nd",
     "score": {
-     "MIA": "53",
-     "UTAH": "41"
+     "MIA": "62",
+     "UTAH": "52"
     }
    },
    {
@@ -403,13 +403,13 @@
     "start": "2026-11-10T22:00:00-05:00",
     "away": "ORL",
     "home": "SAC",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/10 - 10:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:49 - 1st",
     "score": {
-     "ORL": "0",
-     "SAC": "0"
+     "ORL": "15",
+     "SAC": "9"
     }
    },
    {
