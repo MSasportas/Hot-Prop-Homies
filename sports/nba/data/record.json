@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T17:30:01-05:00",
+ "generated_at": "2026-11-11T18:20:00-05:00",
  "summary": {
   "headline": {
    "w": 35,
@@ -146,6 +146,7 @@
       "n": 19,
       "ids": [
        "2026-11-11:401909967:3908809:points:24.5:under",
+       "2026-11-11:401909966:5160992:points:10.5:under",
        "2026-11-10:401909960:3147657:points:10.5:under",
        "2026-11-10:401909963:4278053:points:13.5:under",
        "2026-11-09:401909953:3908809:points:23.5:under",
@@ -263,6 +264,7 @@
       "n": 41,
       "ids": [
        "2026-11-11:401909967:3908809:points:24.5:under",
+       "2026-11-11:401909966:5160992:points:10.5:under",
        "2026-11-10:401909960:3147657:points:10.5:under",
        "2026-11-10:401909963:4278053:assists:7.5:under",
        "2026-11-10:401909963:4278053:points:13.5:under",
@@ -326,6 +328,7 @@
       "n": 43,
       "ids": [
        "2026-11-11:401909967:3908809:points:24.5:under",
+       "2026-11-11:401909966:5160992:points:10.5:under",
        "2026-11-10:401909960:3147657:points:10.5:under",
        "2026-11-09:401909953:3908809:points:23.5:under",
        "2026-11-09:401909954:4277905:points:18.5:under",
@@ -449,6 +452,7 @@
       "n": 42,
       "ids": [
        "2026-11-11:401909967:3908809:points:24.5:under",
+       "2026-11-11:401909966:5160992:points:10.5:under",
        "2026-11-10:401909960:3147657:points:10.5:under",
        "2026-11-09:401909953:2583632:rebounds:4.5:under",
        "2026-11-09:401909953:3908809:points:23.5:under",
@@ -566,6 +570,7 @@
       "n": 36,
       "ids": [
        "2026-11-11:401909967:3908809:points:24.5:under",
+       "2026-11-11:401909966:5160992:points:10.5:under",
        "2026-11-10:401909960:3147657:points:10.5:under",
        "2026-11-10:401909963:4278053:points:13.5:under",
        "2026-11-09:401909953:2583632:rebounds:4.5:under",
@@ -615,7 +620,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 1,
+    "n": 2,
     "graded": false
    },
    {
@@ -778,9 +783,39 @@
      "result": null,
      "actual": null,
      "units": null,
-     "pulled": null,
+     "pulled": {
+      "at": "2026-11-11T18:20:00-05:00",
+      "reason": "Hard Rock took the line down",
+      "code": "line_gone"
+     },
      "legs": [],
      "window": "11 AM \u2192 90 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-11:401909966:5160992:points:10.5:under",
+     "kind": "single",
+     "player": "Alex Sarr",
+     "bet": "Under 10.5 points",
+     "market": "points",
+     "team": "WAS",
+     "game": "WAS at IND",
+     "price": -130,
+     "first_price": -130,
+     "last_price": -130,
+     "prices": [
+      {
+       "price": -130,
+       "at": "2026-11-11T18:20:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "90 \u2192 45 min",
      "book": "hardrock",
      "under_fair": false
     }
