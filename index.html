@@ -1176,7 +1176,7 @@ function made(v) { var m = /^\s*(\d{1,3})-(\d{1,3})\s*$/.exec(str(v)); return m 
 function normName(s) {
   s = str(s);
   try { s = s.normalize('NFD').replace(/[̀-ͯ]/g, ''); } catch (e) { /* old browser: names compared as they are */ }
-  s = s.toLowerCase().replace(/[.'’`]/g, '').replace(/-/g, ' ').replace(/\s+/g, ' ').trim();
+  s = s.toLowerCase().replace(/[.''`]/g, '').replace(/-/g, ' ').replace(/\s+/g, ' ').trim();
   return s.replace(/\s+(jr|sr|ii|iii|iv)$/, '').trim();
 }
 function feedUrl(kind, id) {
@@ -1665,8 +1665,8 @@ function renderLiveAll() {
   app.appendChild(smallFoot());
 }
 function renderRecordAll() {
-  top(‘The Record’, false);
-  if (!S.allResults) { app.appendChild(h(‘div’, { class: ‘stack’ }, h(‘div’, { class: ‘skel sm’ }), h(‘div’, { class: ‘skel’ }))); return; }
+  top('The Record', false);
+  if (!S.allResults) { app.appendChild(h('div', { class: 'stack' }, h('div', { class: 'skel sm' }), h('div', { class: 'skel' }))); return; }
   /* combined headline */
   var totalW = 0, totalL = 0, totalN = 0, totalUnits = 0;
   arr(S.allResults).forEach(function (r) {
@@ -1677,10 +1677,10 @@ function renderRecordAll() {
     totalUnits += num(hd.units) || 0;
   });
   if (totalN > 0) {
-    app.appendChild(h(‘div’, { class: ‘big’ },
-      h(‘span’, { class: ‘wl’, text: totalW + ‘-’ + totalL }),
-      h(‘span’, { class: ‘un ‘ + signCls(totalUnits), text: units(totalUnits, 2) || ‘’ })));
-    app.appendChild(h(‘div’, { class: ‘subline’, text: totalN + ‘ graded across both sports · 1 unit each’ }));
+    app.appendChild(h('div', { class: 'big' },
+      h('span', { class: 'wl', text: totalW + '-' + totalL }),
+      h('span', { class: 'un ' + signCls(totalUnits), text: units(totalUnits, 2) || '' })));
+    app.appendChild(h('div', { class: 'subline', text: totalN + ' graded across both sports · 1 unit each' }));
   }
   /* build merged nights (entries tagged with sport) */
   var nightMap = {}, mergedNights = [];
@@ -1715,22 +1715,22 @@ function renderRecordAll() {
   var mergedSum = { days: mergedDays, headline: { w: totalW, l: totalL, units: totalUnits } };
   /* render calendar via temporary state swap (calendar() is synchronous) */
   var sv = { record: S.record, sport: S.sport, older: S.older, months: S.months, olderIdx: S.olderIdx };
-  S.sport = ‘all_cal’; S.record = { nights: mergedNights, older: [], summary: mergedSum }; S.older = []; S.months = {}; S.olderIdx = 0;
+  S.sport = 'all_cal'; S.record = { nights: mergedNights, older: [], summary: mergedSum }; S.older = []; S.months = {}; S.olderIdx = 0;
   calendar(mergedSum);
   S.record = sv.record; S.sport = sv.sport; S.older = sv.older; S.months = sv.months; S.olderIdx = sv.olderIdx;
   /* unified latest picks — entries already carry sport badge via e.sport */
   var latest = [];
   mergedNights.forEach(function (nt) { arr(nt.entries).filter(isObj).forEach(function (e) { latest.push(e); }); });
-  app.appendChild(h(‘div’, { class: ‘sec-h’, style: ‘margin-top:24px’ }, h(‘h2’, { text: ‘Latest picks’ }),
-    h(‘span’, { class: ‘mu’, text: latest.length > LATEST_N ? ‘Last ‘ + LATEST_N : ‘’ })));
-  if (!latest.length) app.appendChild(h(‘p’, { class: ‘mu’, style: ‘margin-top:16px’, text: ‘No picks on the Record yet.’ }));
+  app.appendChild(h('div', { class: 'sec-h', style: 'margin-top:24px' }, h('h2', { text: 'Latest picks' }),
+    h('span', { class: 'mu', text: latest.length > LATEST_N ? 'Last ' + LATEST_N : '' })));
+  if (!latest.length) app.appendChild(h('p', { class: 'mu', style: 'margin-top:16px', text: 'No picks on the Record yet.' }));
   else {
-    var lbox = h(‘section’, { class: ‘night’ });
+    var lbox = h('section', { class: 'night' });
     latest.slice(0, LATEST_N).forEach(function (e) { lbox.appendChild(entryRow(e, true)); });
     app.appendChild(lbox);
-    if (latest.length > LATEST_N) app.appendChild(h(‘p’, { class: ‘note’, style: ‘margin-top:6px’, text: ‘Older: tap a day on the calendar.’ }));
+    if (latest.length > LATEST_N) app.appendChild(h('p', { class: 'note', style: 'margin-top:6px', text: 'Older: tap a day on the calendar.' }));
   }
-  app.appendChild(h(‘p’, { class: ‘note’, text: ‘Graded at the posted price. Push and void are 0 units.’ }));
+  app.appendChild(h('p', { class: 'note', text: 'Graded at the posted price. Push and void are 0 units.' }));
   app.appendChild(smallFoot());
 }
 function renderGames() {
@@ -2056,17 +2056,17 @@ function renderInfoAll() {
   });
   app.appendChild(st);
   var ru = h('section', { class: 'sec' }, h('div', { class: 'sec-h' }, h('h2', { text: 'How picks are made' })));
-  ru.appendChild(h('p', { class: 'mu', style: 'margin-top:8px', text: 'Tap NHL or NBA above to see that sport’s full rules.' }));
+  ru.appendChild(h('p', { class: 'mu', style: 'margin-top:8px', text: 'Tap NHL or NBA above to see the full rules.' }));
   app.appendChild(ru);
   var nt = h('section', { class: 'sec' }, h('div', { class: 'sec-h' }, h('h2', { text: 'On this page' })));
   nt.appendChild(h('ul', { class: 'plain' },
     h('li', { text: 'Picks: every leg for a game that has not started, best first. Tap one for the reason, how settled it is and the Hard Rock button. NEW marks the picks the latest update added.' }),
     h('li', { text: 'Early, Injury report clear, Starters confirmed and Locked show how settled a pick is. Price final means the last price check is done; only injury news can pull it after that.' }),
-    h('li', { text: 'TOO LATE: the pick came off the board before game time (injury news, or Hard Rock took the line down). If you already have it at the shown price, keep it; don’t bet it now.' }),
+    h('li', { text: "TOO LATE: the pick came off the board before game time (injury news, or Hard Rock took the line down). If you already have it at the shown price, keep it; don't bet it now." }),
     h('li', { text: 'A player ruled Out drops off Picks and Live. Hard Rock voids the bet.' }),
     h('li', { text: 'Live: picks whose game has started, with the score and his number so far, read straight from ESPN (NBA.com as backup) every 10 seconds while the Live tab is open.' }),
     h('li', { text: 'Games: our checks on each game (price checks, injury report, starters) and when the next one runs.' }),
-    h('li', { text: 'Record: the strategy’s results. REPLAY bets are the same rule run on price checks saved before it went live (Oct 25-27).' }),
+    h('li', { text: "Record: the strategy's results. REPLAY bets are the same rule run on price checks saved before it went live (Oct 25-27)." }),
     h('li', { text: 'New picks stop by themselves if the Record falls to -10 units; the page says so at the top.' }),
     h('li', { text: 'Parlays are not offered.' })));
   app.appendChild(nt);
