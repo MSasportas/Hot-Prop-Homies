@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-10T23:50:00-05:00",
+ "generated_at": "2026-11-11T17:30:01-05:00",
  "summary": {
   "headline": {
    "w": 35,
@@ -145,6 +145,7 @@
       "needed": 0.5416,
       "n": 19,
       "ids": [
+       "2026-11-11:401909967:3908809:points:24.5:under",
        "2026-11-10:401909960:3147657:points:10.5:under",
        "2026-11-10:401909963:4278053:points:13.5:under",
        "2026-11-09:401909953:3908809:points:23.5:under",
@@ -261,6 +262,7 @@
       "needed": 0.5268,
       "n": 41,
       "ids": [
+       "2026-11-11:401909967:3908809:points:24.5:under",
        "2026-11-10:401909960:3147657:points:10.5:under",
        "2026-11-10:401909963:4278053:assists:7.5:under",
        "2026-11-10:401909963:4278053:points:13.5:under",
@@ -323,6 +325,7 @@
       "needed": 0.5221,
       "n": 43,
       "ids": [
+       "2026-11-11:401909967:3908809:points:24.5:under",
        "2026-11-10:401909960:3147657:points:10.5:under",
        "2026-11-09:401909953:3908809:points:23.5:under",
        "2026-11-09:401909954:4277905:points:18.5:under",
@@ -445,6 +448,7 @@
       "needed": 0.5221,
       "n": 42,
       "ids": [
+       "2026-11-11:401909967:3908809:points:24.5:under",
        "2026-11-10:401909960:3147657:points:10.5:under",
        "2026-11-09:401909953:2583632:rebounds:4.5:under",
        "2026-11-09:401909953:3908809:points:23.5:under",
@@ -561,6 +565,7 @@
       "needed": 0.5526,
       "n": 36,
       "ids": [
+       "2026-11-11:401909967:3908809:points:24.5:under",
        "2026-11-10:401909960:3147657:points:10.5:under",
        "2026-11-10:401909963:4278053:points:13.5:under",
        "2026-11-09:401909953:2583632:rebounds:4.5:under",
@@ -603,6 +608,16 @@
    }
   ],
   "days": [
+   {
+    "date": "2026-11-11",
+    "w": 0,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 0,
+    "n": 1,
+    "graded": false
+   },
    {
     "date": "2026-11-10",
     "w": 1,
@@ -736,6 +751,41 @@
   ]
  },
  "nights": [
+  {
+   "date": "2026-11-11",
+   "graded": false,
+   "w": 0,
+   "l": 0,
+   "units": 0,
+   "entries": [
+    {
+     "id": "2026-11-11:401909967:3908809:points:24.5:under",
+     "kind": "single",
+     "player": "Donovan Mitchell",
+     "bet": "Under 24.5 points",
+     "market": "points",
+     "team": "CLE",
+     "game": "CLE at NYK",
+     "price": -125,
+     "first_price": -125,
+     "last_price": -125,
+     "prices": [
+      {
+       "price": -125,
+       "at": "2026-11-11T17:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "11 AM \u2192 90 min",
+     "book": "hardrock",
+     "under_fair": false
+    }
+   ]
+  },
   {
    "date": "2026-11-10",
    "graded": true,
@@ -1633,44 +1683,10 @@
      "under_fair": false
     }
    ]
-  },
-  {
-   "date": "2026-11-02",
-   "graded": true,
-   "w": 1,
-   "l": 0,
-   "units": 1.25,
-   "entries": [
-    {
-     "id": "2026-11-02:401909909:4278039:threes:3.5:over",
-     "kind": "single",
-     "player": "Nickeil Alexander-Walker",
-     "bet": "Over 3.5 threes",
-     "market": "threes",
-     "team": "ATL",
-     "game": "ATL at IND",
-     "price": 125,
-     "first_price": 125,
-     "last_price": 125,
-     "prices": [
-      {
-       "price": 125,
-       "at": "2026-11-02T18:50:01-05:00"
-      }
-     ],
-     "result": "W",
-     "actual": "9 threes",
-     "units": 1.25,
-     "pulled": null,
-     "legs": [],
-     "window": "90 \u2192 45 min",
-     "book": "hardrock",
-     "under_fair": false
-    }
-   ]
   }
  ],
  "older": [
+  "record/2026-11.json",
   "record/2026-10.json"
  ]
 }

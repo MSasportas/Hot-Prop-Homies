@@ -57,10 +57,7 @@
     "OG Anunoby",
     "Karl-Anthony Towns"
    ],
-   "status": {
-    "Josh Hart": "probable",
-    "Karl-Anthony Towns": "questionable"
-   }
+   "status": {}
   },
   "BOS": {
    "state": "expected",
@@ -85,7 +82,6 @@
     "Jakob Poeltl"
    ],
    "status": {
-    "Collin Murray-Boyles": "questionable",
     "Scottie Barnes": "out",
     "Nate Bittle": "out",
     "Trayce Jackson-Davis": "out",
@@ -310,5 +306,5 @@
    }
   }
  },
- "at": "2026-11-11T17:20:40-05:00"
+ "at": "2026-11-11T17:30:01-05:00"
 }

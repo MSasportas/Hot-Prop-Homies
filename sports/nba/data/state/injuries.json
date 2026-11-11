@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T17:20:40-05:00",
+ "at": "2026-11-11T17:30:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -127,6 +127,13 @@
    "date": "2026-11-10T22:07Z",
    "note": "Tyson (ankle) is questionable to face the Knicks on Wednesday."
   },
+  "4683688": {
+   "status": "out",
+   "name": "Dereck Lively II",
+   "team": "DAL",
+   "date": "2026-11-11T22:13Z",
+   "note": "Lively (foot) is listed as out for Thursday's game in Minnesota."
+  },
   "5148538": {
    "status": "out",
    "name": "Tarik Biberovic",
@@ -147,13 +154,6 @@
    "team": "DAL",
    "date": "2026-11-11T22:08Z",
    "note": "Johnson (shin) is listed as probable for Thursday's game against Minnesota."
-  },
-  "4683688": {
-   "status": "out",
-   "name": "Dereck Lively II",
-   "team": "DAL",
-   "date": "2026-11-01T22:57Z",
-   "note": "Lively (foot) is listed as out for Monday's game against the Kings."
   },
   "4432181": {
    "status": "out",
@@ -393,20 +393,6 @@
    "date": "2026-11-05T20:47Z",
    "note": "Missi (knee) is out for Friday's game against Minnesota."
   },
-  "3136195": {
-   "status": "day-to-day",
-   "name": "Karl-Anthony Towns",
-   "team": "NY",
-   "date": "2026-11-11T18:06Z",
-   "note": "Towns (calf) is listed as questionable for Wednesday's game against Cleveland."
-  },
-  "3062679": {
-   "status": "out",
-   "name": "Josh Hart",
-   "team": "NY",
-   "date": "2026-11-11T18:06Z",
-   "note": "Hart (illness) is probable for Wednesday's game against the Cavaliers."
-  },
   "4432823": {
    "status": "out",
    "name": "Jaylin Williams",
@@ -616,20 +602,6 @@
    "team": "TOR",
    "date": "2026-11-11T17:37Z",
    "note": "Jackson-Davis (illness) has been ruled out for Wednesday's game against the Celtics, Blake Murphy of Sportsnet.ca reports."
-  },
-  "5093267": {
-   "status": "day-to-day",
-   "name": "Collin Murray-Boyles",
-   "team": "TOR",
-   "date": "2026-11-10T21:51Z",
-   "note": "Murray-Boyles (illness) is questionable for Wednesday's game against the Celtics."
-  },
-  "4395724": {
-   "status": "day-to-day",
-   "name": "Immanuel Quickley",
-   "team": "TOR",
-   "date": "2026-11-10T21:49Z",
-   "note": "Quickley (hamstring) is questionable for Wednesday's game against Boston."
   },
   "4433134": {
    "status": "out",

@@ -1,0 +1,39 @@
+{
+ "nights": [
+  {
+   "date": "2026-11-02",
+   "graded": true,
+   "w": 1,
+   "l": 0,
+   "units": 1.25,
+   "entries": [
+    {
+     "id": "2026-11-02:401909909:4278039:threes:3.5:over",
+     "kind": "single",
+     "player": "Nickeil Alexander-Walker",
+     "bet": "Over 3.5 threes",
+     "market": "threes",
+     "team": "ATL",
+     "game": "ATL at IND",
+     "price": 125,
+     "first_price": 125,
+     "last_price": 125,
+     "prices": [
+      {
+       "price": 125,
+       "at": "2026-11-02T18:50:01-05:00"
+      }
+     ],
+     "result": "W",
+     "actual": "9 threes",
+     "units": 1.25,
+     "pulled": null,
+     "legs": [],
+     "window": "90 \u2192 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    }
+   ]
+  }
+ ]
+}
