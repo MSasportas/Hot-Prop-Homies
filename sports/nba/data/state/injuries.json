@@ -1,6 +1,13 @@
 {
- "at": "2026-11-12T17:50:00-05:00",
+ "at": "2026-11-12T18:10:01-05:00",
  "list": {
+  "5149077": {
+   "status": "day-to-day",
+   "name": "Kingston Flemings",
+   "team": "ATL",
+   "date": "2026-11-12T23:04Z",
+   "note": "Flemings (back) is questionable for Friday's game against the Bulls."
+  },
   "4873201": {
    "status": "out",
    "name": "Asa Newell",
@@ -215,8 +222,8 @@
    "status": "suspension",
    "name": "Marcus Smart",
    "team": "HOU",
-   "date": "2026-11-12T22:42Z",
-   "note": "Smart was ejected from Wednesday's game against the Warriors after throwing a punch at Charles Bassey, Adam Spolane of Sports Radio 610 Houston reports."
+   "date": "2026-11-12T22:45Z",
+   "note": "Smart has been suspended three games for throwing a punch during Wednesday's matchup against Golden State, Shams Charania of ESPN reports."
   },
   "3102529": {
    "status": "out",
@@ -232,12 +239,19 @@
    "date": "2026-11-09T23:55Z",
    "note": "Head coach Ime Udoka said Monday that Adams could return as soon as Sunday's game at Washington, Lachard Binkley of SI.com reports."
   },
+  "2530530": {
+   "status": "day-to-day",
+   "name": "T.J. McConnell",
+   "team": "IND",
+   "date": "2026-11-12T23:06Z",
+   "note": "McConnell (hamstring) is available for Wednesday's game versus Washington."
+  },
   "4396909": {
    "status": "day-to-day",
    "name": "Aaron Nesmith",
    "team": "IND",
-   "date": "2026-11-12T01:59Z",
-   "note": "Nesmith will not return to Wednesday's game against the Wizards due to right knee soreness. He'll finish with two points (1-6 FG, 0-4 3Pt), one rebound and one assist across 22 minutes."
+   "date": "2026-11-12T23:02Z",
+   "note": "Nesmith (knee) is questionable for Friday's game against the Knicks."
   },
   "4396993": {
    "status": "out",
@@ -595,6 +609,13 @@
    "team": "SAC",
    "date": "2026-10-21T04:22Z",
    "note": "Simmons underwent successful surgery Tuesday to repair a torn right Achilles tendon, James Ham of ESPN 1320 Sacramento reports."
+  },
+  "4066259": {
+   "status": "day-to-day",
+   "name": "De'Aaron Fox",
+   "team": "SA",
+   "date": "2026-11-12T23:05Z",
+   "note": "Fox is questionable for Friday's game against the Warriors due to left hip soreness."
   },
   "4395630": {
    "status": "day-to-day",
