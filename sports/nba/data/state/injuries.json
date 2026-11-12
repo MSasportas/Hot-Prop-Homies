@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T16:21:30-05:00",
+ "at": "2026-11-12T16:30:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -329,6 +329,13 @@
    "team": "MEM",
    "date": "2026-11-07T17:24Z",
    "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
+  },
+  "3032977": {
+   "status": "day-to-day",
+   "name": "Giannis Antetokounmpo",
+   "team": "MIA",
+   "date": "2026-11-12T21:18Z",
+   "note": "Antetokounmpo racked up 30 points (12-21 FG, 1-2 3Pt, 5-9 FT), 11 rebounds and four assists over 31 minutes in Tuesday's 115-109 win over the Jazz."
   },
   "4601025": {
    "status": "day-to-day",
