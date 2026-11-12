@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T11:40:01-05:00",
+ "at": "2026-11-12T12:00:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -491,33 +491,33 @@
    "date": "2026-09-28T21:33Z",
    "note": "Team president Jeff Weltman said Monday that Nelson (ankle) remains about a month away from returning to the court after offseason surgery, per Philip Rossman-Reich of OrlandoMagicDaily.com."
   },
+  "4870562": {
+   "status": "out",
+   "name": "Dominick Barlow",
+   "team": "PHI",
+   "date": "2026-11-12T16:37Z",
+   "note": "Barlow (back) participated in Thursday's shootaround but doesn't have a timeline to return to game action, Ky Carlin of USA Today reports."
+  },
+  "5105637": {
+   "status": "out",
+   "name": "Adem Bona",
+   "team": "PHI",
+   "date": "2026-11-12T16:36Z",
+   "note": "Bona (back) will be re-evaluated in approximately one week after seeing a specialist, Ky Carlin of USA Today reports."
+  },
+  "3059318": {
+   "status": "day-to-day",
+   "name": "Joel Embiid",
+   "team": "PHI",
+   "date": "2026-11-12T16:34Z",
+   "note": "Embiid (foot) remains questionable for Thursday's game against the Raptors, but he participated in the team's morning shootaround, Ky Carlin of USA Today reports."
+  },
   "1966": {
    "status": "day-to-day",
    "name": "LeBron James",
    "team": "PHI",
    "date": "2026-11-12T16:32Z",
    "note": "James (back) remains questionable for Thursday's game against the Raptors, but he participated in the team's morning shootaround, Ky Carlin of USA Today reports."
-  },
-  "5105637": {
-   "status": "out",
-   "name": "Adem Bona",
-   "team": "PHI",
-   "date": "2026-11-11T22:10Z",
-   "note": "Bona (back) is out for Thursday's game against the Raptors, Kyle Neubeck of AllPHLY.com reports."
-  },
-  "3059318": {
-   "status": "day-to-day",
-   "name": "Joel Embiid",
-   "team": "PHI",
-   "date": "2026-11-11T22:06Z",
-   "note": "Embiid (foot) is listed as questionable for Thursday's game against Toronto, Adam Aaronson of PhillyVoice.com reports."
-  },
-  "4870562": {
-   "status": "out",
-   "name": "Dominick Barlow",
-   "team": "PHI",
-   "date": "2026-11-04T22:41Z",
-   "note": "Head coach Nick Nurse said Wednesday that Barlow (back) likely needs another 10-12 days before he's cleared to return to the court, Derek Bodner of AllPHLY.com reports."
   },
   "4871141": {
    "status": "out",
