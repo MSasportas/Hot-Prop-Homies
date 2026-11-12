@@ -1,28 +1,28 @@
 {
- "generated_at": "2026-11-11T21:40:01-05:00",
+ "generated_at": "2026-11-11T23:40:00-05:00",
  "summary": {
   "headline": {
    "w": 37,
-   "l": 20,
+   "l": 21,
    "push": 0,
    "void": 0,
-   "units": 15.27,
-   "hit_rate": 0.6491,
-   "needed": 0.5202,
-   "n": 57
+   "units": 14.27,
+   "hit_rate": 0.6379,
+   "needed": 0.5199,
+   "n": 58
   },
   "rows": [
    {
     "key": "rebounds",
     "label": "Rebounds",
     "w": 10,
-    "l": 6,
+    "l": 7,
     "push": 0,
     "void": 0,
-    "units": 2.86,
-    "hit_rate": 0.625,
-    "needed": 0.5351,
-    "n": 16
+    "units": 1.86,
+    "hit_rate": 0.5882,
+    "needed": 0.5331,
+    "n": 17
    },
    {
     "key": "points",
@@ -88,13 +88,13 @@
     "key": "window:45 \u2192 20 min",
     "label": "Window 45 \u2192 20 min",
     "w": 7,
-    "l": 2,
+    "l": 3,
     "push": 0,
     "void": 0,
-    "units": 4.97,
-    "hit_rate": 0.7778,
-    "needed": 0.5058,
-    "n": 9
+    "units": 3.97,
+    "hit_rate": 0.7,
+    "needed": 0.5052,
+    "n": 10
    }
   ],
   "cuts": [
@@ -107,13 +107,13 @@
       "key": "rebounds",
       "label": "Rebounds",
       "w": 10,
-      "l": 6,
+      "l": 7,
       "push": 0,
       "void": 0,
-      "units": 2.86,
-      "hit_rate": 0.625,
-      "needed": 0.5351,
-      "n": 16,
+      "units": 1.86,
+      "hit_rate": 0.5882,
+      "needed": 0.5331,
+      "n": 17,
       "ids": [
        "2026-11-11:401909973:4873138:rebounds:5.5:under",
        "2026-11-09:401909953:2583632:rebounds:4.5:under",
@@ -256,13 +256,13 @@
       "key": "under",
       "label": "Under",
       "w": 26,
-      "l": 17,
+      "l": 18,
       "push": 0,
       "void": 0,
-      "units": 6.65,
-      "hit_rate": 0.6047,
-      "needed": 0.5284,
-      "n": 43,
+      "units": 5.65,
+      "hit_rate": 0.5909,
+      "needed": 0.5277,
+      "n": 44,
       "ids": [
        "2026-11-11:401909967:3908809:points:24.5:under",
        "2026-11-11:401909966:5160992:points:10.5:under",
@@ -380,13 +380,13 @@
       "key": "e2",
       "label": "2 to 5%",
       "w": 6,
-      "l": 3,
+      "l": 4,
       "push": 0,
       "void": 0,
-      "units": 2.59,
-      "hit_rate": 0.6667,
-      "needed": 0.5232,
-      "n": 9,
+      "units": 1.59,
+      "hit_rate": 0.6,
+      "needed": 0.5209,
+      "n": 10,
       "ids": [
        "2026-11-11:401909973:4873138:rebounds:5.5:under",
        "2026-11-10:401909963:4278053:assists:7.5:under",
@@ -504,13 +504,13 @@
       "key": "starters",
       "label": "Starters confirmed",
       "w": 4,
-      "l": 2,
+      "l": 3,
       "push": 0,
       "void": 0,
-      "units": 2.25,
-      "hit_rate": 0.6667,
-      "needed": 0.4945,
-      "n": 6,
+      "units": 1.25,
+      "hit_rate": 0.5714,
+      "needed": 0.4953,
+      "n": 7,
       "ids": [
        "2026-11-11:401909973:4873138:rebounds:5.5:under",
        "2026-11-06:401909289:4576087:rebounds:3.5:under",
@@ -532,13 +532,13 @@
       "key": "plus",
       "label": "Plus money",
       "w": 12,
-      "l": 7,
+      "l": 8,
       "push": 0,
       "void": 0,
-      "units": 8.2,
-      "hit_rate": 0.6316,
-      "needed": 0.4548,
-      "n": 19,
+      "units": 7.2,
+      "hit_rate": 0.6,
+      "needed": 0.4571,
+      "n": 20,
       "ids": [
        "2026-11-11:401909973:4873138:rebounds:5.5:under",
        "2026-11-10:401909963:4278053:assists:7.5:under",
@@ -621,12 +621,12 @@
    {
     "date": "2026-11-11",
     "w": 2,
-    "l": 0,
+    "l": 1,
     "push": 0,
     "void": 0,
-    "units": 1.57,
+    "units": 0.57,
     "n": 3,
-    "graded": false
+    "graded": true
    },
    {
     "date": "2026-11-10",
@@ -763,10 +763,10 @@
  "nights": [
   {
    "date": "2026-11-11",
-   "graded": false,
+   "graded": true,
    "w": 2,
-   "l": 0,
-   "units": 1.57,
+   "l": 1,
+   "units": 0.57,
    "entries": [
     {
      "id": "2026-11-11:401909967:3908809:points:24.5:under",
@@ -841,9 +841,9 @@
        "at": "2026-11-11T20:40:01-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "L",
+     "actual": "7 rebounds",
+     "units": -1.0,
      "pulled": null,
      "legs": [],
      "window": "45 \u2192 20 min",

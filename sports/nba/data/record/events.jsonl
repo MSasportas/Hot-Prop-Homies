@@ -274,3 +274,4 @@
 {"at":"2026-11-11T21:00:03-05:00","id":"2026-11-11:401909973:4873138:rebounds:5.5:under","state":"locked","t":"locked"}
 {"actual":null,"actual_text":"5 points","at":"2026-11-11T21:30:02-05:00","id":"2026-11-11:401909966:5160992:points:10.5:under","price":-130,"result":"W","t":"graded","units":0.7692}
 {"actual":null,"actual_text":"23 points","at":"2026-11-11T21:40:01-05:00","id":"2026-11-11:401909967:3908809:points:24.5:under","price":-125,"result":"W","t":"graded","units":0.8}
+{"actual":null,"actual_text":"7 rebounds","at":"2026-11-11T23:40:00-05:00","id":"2026-11-11:401909973:4873138:rebounds:5.5:under","price":100,"result":"L","t":"graded","units":-1.0}

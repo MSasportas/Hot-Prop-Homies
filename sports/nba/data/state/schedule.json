@@ -433,10 +433,10 @@
     "start": "2026-11-11T21:00:00-05:00",
     "away": "ORL",
     "home": "UTAH",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2.0 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
      "ORL": "123",
      "UTAH": "108"
@@ -450,11 +450,11 @@
     "home": "HOU",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "21.0 - 3rd",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 3rd",
     "score": {
-     "GS": "76",
-     "HOU": "84"
+     "GS": "79",
+     "HOU": "85"
     }
    },
    {
@@ -466,10 +466,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:57 - 3rd",
+    "detail": "4:37 - 3rd",
     "score": {
-     "OKC": "60",
-     "POR": "67"
+     "OKC": "71",
+     "POR": "77"
     }
    }
   ]
