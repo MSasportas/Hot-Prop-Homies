@@ -22,11 +22,11 @@
    "status": "expected"
   },
   "TBL": {
-   "name": "Andrei Vasilevskiy",
+   "name": "Dennis Hildeby",
    "status": "expected"
   },
   "OTT": {
-   "name": "Samuel Ersson",
+   "name": "Linus Ullmark",
    "status": "expected"
   },
   "COL": {
@@ -34,7 +34,7 @@
    "status": "expected"
   },
   "NJD": {
-   "name": "Jake Allen",
+   "name": "Connor Hellebuyck",
    "status": "expected"
   },
   "WSH": {
@@ -42,7 +42,7 @@
    "status": "expected"
   },
   "TOR": {
-   "name": "Sergei Bobrovsky",
+   "name": "Anthony Stolarz",
    "status": "expected"
   },
   "MIN": {
@@ -54,7 +54,7 @@
    "status": "expected"
   },
   "DET": {
-   "name": "John Gibson",
+   "name": "Daniil Tarasov",
    "status": "expected"
   },
   "CHI": {
@@ -90,5 +90,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-12T05:00:01-05:00"
+ "checked_at": "2026-11-12T07:00:01-05:00"
 }
