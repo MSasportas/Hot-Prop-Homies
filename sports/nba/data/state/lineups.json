@@ -200,7 +200,7 @@
    }
   },
   "ORL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Anthony Black",
     "Alex Morales",
@@ -219,7 +219,7 @@
    }
   },
   "UTAH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Keyonte George",
     "Darryn Peterson",
@@ -299,5 +299,5 @@
    }
   }
  },
- "at": "2026-11-11T20:30:00-05:00"
+ "at": "2026-11-11T20:40:01-05:00"
 }
