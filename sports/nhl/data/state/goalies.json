@@ -31,7 +31,7 @@
   },
   "UTA": {
    "name": "Sebastian Cossa",
-   "status": "expected"
+   "status": "confirmed"
   },
   "ANA": {
    "name": "Laurent Brossoit",
@@ -50,5 +50,5 @@
    "status": "confirmed"
   }
  },
- "checked_at": "2026-11-11T20:40:00-05:00"
+ "checked_at": "2026-11-11T21:20:00-05:00"
 }
