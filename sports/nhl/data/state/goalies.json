@@ -39,7 +39,7 @@
   },
   "WSH": {
    "name": "Logan Thompson",
-   "status": "expected"
+   "status": "confirmed"
   },
   "TOR": {
    "name": "Anthony Stolarz",
@@ -63,7 +63,7 @@
   },
   "BUF": {
    "name": "Alex Lyon",
-   "status": "expected"
+   "status": "confirmed"
   },
   "DAL": {
    "name": "Jake Oettinger",
@@ -90,5 +90,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-12T17:50:01-05:00"
+ "checked_at": "2026-11-12T18:10:01-05:00"
 }
