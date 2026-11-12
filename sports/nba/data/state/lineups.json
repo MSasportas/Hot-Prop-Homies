@@ -117,7 +117,7 @@
    }
   },
   "SA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "De'Aaron Fox",
     "Stephon Castle",
@@ -132,7 +132,7 @@
    }
   },
   "CHI": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Josh Giddey",
     "Isaac Okoro",
@@ -244,7 +244,6 @@
     "Draymond Green"
    ],
    "status": {
-    "Will Richard": "probable",
     "Jimmy Butler": "out",
     "Moses Moody": "out",
     "Gary Payton": "out",
@@ -301,5 +300,5 @@
    }
   }
  },
- "at": "2026-11-11T19:40:00-05:00"
+ "at": "2026-11-11T19:50:00-05:00"
 }
