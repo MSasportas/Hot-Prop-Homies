@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-12",
- "started_at": "2026-11-12T18:40:01-05:00",
- "status_at": "2026-11-12T18:40:01-05:00",
- "finished_at": "2026-11-12T18:40:04-05:00",
- "last_ok_at": "2026-11-12T18:40:01-05:00",
+ "started_at": "2026-11-12T18:50:01-05:00",
+ "status_at": "2026-11-12T18:50:01-05:00",
+ "finished_at": "2026-11-12T18:50:02-05:00",
+ "last_ok_at": "2026-11-12T18:50:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -24,18 +24,18 @@
   },
   {
    "step": "lineups",
-   "status": "ok",
-   "note": "18 of 18 team pages read"
+   "status": "skipped",
+   "note": "checked in the last 20 minutes"
   },
   {
    "step": "lineup_history",
-   "status": "ok",
-   "note": "1 team(s) changed"
+   "status": "skipped",
+   "note": "no change"
   },
   {
    "step": "odds",
    "status": "ok",
-   "note": "no pull due"
+   "note": "1 game(s) priced"
   },
   {
    "step": "market_menu",
@@ -74,8 +74,8 @@
   },
   {
    "step": "shadow",
-   "status": "skipped",
-   "note": "nothing new"
+   "status": "ok",
+   "note": "33 line read(s) logged"
   },
   {
    "step": "gg_grade",
@@ -107,7 +107,7 @@
   },
   {
    "n": 2,
-   "left": 28
+   "left": 23
   },
   {
    "n": 3,
@@ -138,14 +138,14 @@
    "left": 500
   }
  ],
- "pool_total": 3134,
+ "pool_total": 3129,
  "allowance": 23.3285,
  "tier": 4,
  "budget_today": 256,
- "budget_used_today": 62,
+ "budget_used_today": 67,
  "prices_state": "ok",
- "prices_at": "2026-11-12T18:30:00-05:00",
- "next_price_read_at": "2026-11-12T18:45:00-05:00",
+ "prices_at": "2026-11-12T18:50:01-05:00",
+ "next_price_read_at": "2026-11-12T19:15:00-05:00",
  "unmatched_names": [],
  "unknown_teams": [],
  "lineup_unmatched_names": [
@@ -158,13 +158,11 @@
  "lineups_note": "Lineups posted for 14 of 20 teams checked so far.",
  "games_today": 11,
  "record_events": 219,
- "odds_notes": [
-  "key 1 refused (401)"
- ],
+ "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "43325113500",
-  "iteration": 5,
+  "iteration": 6,
   "chain_link": 37,
   "chain_started_at": "2026-11-11T16:26:02-05:00",
   "run_started_at": "2026-11-12T18:01:03-05:00"

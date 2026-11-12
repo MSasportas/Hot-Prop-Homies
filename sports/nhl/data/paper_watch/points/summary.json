@@ -2,7 +2,7 @@
  "version": 1,
  "note": "Behind the scenes: research only. Not picks, not on the Record, never sent to Discord.",
  "market": "points",
- "generated_at": "2026-11-12T18:40:01-05:00",
+ "generated_at": "2026-11-12T18:50:01-05:00",
  "slate": "2026-11-12",
  "active": true,
  "window": {
@@ -74,13 +74,48 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
+    "close_fair_pct": 38.6,
+    "clv_pct": 4.3,
+    "result": null,
+    "units": null
+   }
+  ],
+  "vetoes": [
+   {
+    "id": "2026-11-12:2026020302:8479337:0.5:under",
+    "kind": "veto",
+    "slate": "2026-11-12",
+    "game_id": 2026020302,
+    "player": "A. DeBrincat",
+    "team": "DET",
+    "opp": "FLA",
+    "game": "DET @ FLA",
+    "start": "2026-11-12T19:30:00-05:00",
+    "side": "under",
+    "line": 0.5,
+    "bet": "UNDER 0.5 points",
+    "price": 135,
+    "gap_pct": 3.4,
+    "final_pct": 0.0,
+    "market_fair_pct": 44.0,
+    "final_p_pct": 42.6,
+    "n_books": 7,
+    "guard": "veto",
+    "cap": null,
+    "flagged_at": "2026-11-12T18:50:01-05:00",
+    "read_pull": "C",
+    "settled": "Goalie confirmed",
+    "frozen_settled": "Goalie confirmed",
+    "move30_pct": 0.4,
+    "pulled": null,
+    "locked": false,
+    "state": "open",
+    "close_fair_pct": 44.0,
     "clv_pct": null,
     "result": null,
     "units": null
    }
   ],
-  "vetoes": [],
   "capped": []
  },
  "nights": [
@@ -1108,8 +1143,8 @@
   }
  ],
  "nov2": {
-  "gaps_measured": 27,
-  "gaps_logged": 30,
+  "gaps_measured": 28,
+  "gaps_logged": 31,
   "graded_picks": 23,
   "w": 13,
   "l": 10,
@@ -1117,15 +1152,15 @@
   "units": 6.5,
   "wins_z": 0.8564872413868582,
   "clv_gaps": {
-   "n": 27,
-   "mean": 0.04451566753680348,
-   "lb80": 0.04015245891312445,
+   "n": 28,
+   "mean": 0.04445458671285701,
+   "lb80": 0.040336514853315415,
    "pos_share": 1.0
   },
   "clv_flags": {
-   "n": 24,
-   "mean": 0.04352838006643672,
-   "lb80": 0.03934064078285555,
+   "n": 25,
+   "mean": 0.04349946104243134,
+   "lb80": 0.03934064227703797,
    "pos_share": 1.0
   },
   "clv_vetoed": {
@@ -1134,7 +1169,7 @@
    "lb80": 0.03813754876772305,
    "pos_share": 1.0
   },
-  "clv_passed_mean": 0.04352838006643672,
+  "clv_passed_mean": 0.04349946104243134,
   "clv_vetoed_mean": 0.05241396729973754,
   "nights": 16,
   "nights_with_flags": 10,
