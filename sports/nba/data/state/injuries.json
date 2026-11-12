@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T14:10:00-05:00",
+ "at": "2026-11-12T16:00:00-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -372,33 +372,33 @@
    "date": "2026-10-05T20:53Z",
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
   },
+  "4431675": {
+   "status": "out",
+   "name": "Trendon Watford",
+   "team": "NO",
+   "date": "2026-11-12T20:53Z",
+   "note": "Watford (ankle) is out for Wednesday's game against the Nets."
+  },
+  "5061589": {
+   "status": "out",
+   "name": "Yves Missi",
+   "team": "NO",
+   "date": "2026-11-12T20:50Z",
+   "note": "Missi (knee) is listed as doubtful for Friday's game against the Grizzlies."
+  },
+  "4397688": {
+   "status": "day-to-day",
+   "name": "Trey Murphy III",
+   "team": "NO",
+   "date": "2026-11-12T20:48Z",
+   "note": "Murphy (knee) is listed as doubtful for Friday's game against the Grizzlies."
+  },
   "4683634": {
    "status": "day-to-day",
    "name": "Bennedict Mathurin",
    "team": "NO",
    "date": "2026-11-12T15:03Z",
    "note": "Mathurin has been ruled out for Wednesday's game against the Nets due to a right thumb sprain."
-  },
-  "4431675": {
-   "status": "day-to-day",
-   "name": "Trendon Watford",
-   "team": "NO",
-   "date": "2026-11-12T15:02Z",
-   "note": "Watford (ankle) is out for Wednesday's game against the Nets."
-  },
-  "4397688": {
-   "status": "day-to-day",
-   "name": "Trey Murphy III",
-   "team": "NO",
-   "date": "2026-11-12T15:02Z",
-   "note": "Murphy (knee) is listed as out for Wednesday's game against the Nets."
-  },
-  "5061589": {
-   "status": "out",
-   "name": "Yves Missi",
-   "team": "NO",
-   "date": "2026-11-05T20:47Z",
-   "note": "Missi (knee) is out for Friday's game against Minnesota."
   },
   "4900671": {
    "status": "day-to-day",

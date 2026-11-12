@@ -7,13 +7,13 @@
     "Immanuel Quickley",
     "RJ Barrett",
     "Ja'Kobe Walter",
-    "Scottie Barnes",
+    "Collin Murray-Boyles",
     "Jakob Poeltl"
    ],
    "status": {
-    "Scottie Barnes": "questionable",
-    "Trayce Jackson-Davis": "questionable",
+    "Scottie Barnes": "out",
     "Nate Bittle": "out",
+    "Trayce Jackson-Davis": "out",
     "Kawhi Leonard": "out"
    }
   },
@@ -23,15 +23,15 @@
     "Tyrese Maxey",
     "VJ Edgecombe",
     "Jaylen Brown",
-    "LeBron James",
+    "Dean Wade",
     "Joel Embiid"
    ],
    "status": {
-    "LeBron James": "questionable",
     "Joel Embiid": "questionable",
     "Ariel Hukporti": "out",
     "Dominick Barlow": "out",
-    "Adem Bona": "out"
+    "Adem Bona": "out",
+    "LeBron James": "out"
    }
   },
   "DET": {
@@ -104,8 +104,6 @@
     "Moussa Diabate"
    ],
    "status": {
-    "Moussa Diabate": "probable",
-    "Grant Williams": "probable",
     "Kon Knueppel": "out",
     "Brandon Miller": "out",
     "Dennis Schroder": "out"
@@ -125,5 +123,5 @@
    }
   }
  },
- "at": "2026-11-12T05:00:00-05:00"
+ "at": "2026-11-12T16:00:00-05:00"
 }
