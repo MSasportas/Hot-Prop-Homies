@@ -223,7 +223,10 @@ class RecordCuts(unittest.TestCase):
 class LabConfig(unittest.TestCase):
     def test_entries(self):
         doc = json.load(open(os.path.join(ROOT, "config", "lab.json")))
-        self.assertEqual([t["id"] for t in doc["tests"]], ["pin_judge"])
+        # Matt 2026-11-12: everything being tested is in the Lab (paper tracks first, then the nightly forward filters)
+        ids = [t["id"] for t in doc["tests"]]
+        self.assertEqual(ids[:2], ["pin_judge", "threes_judge"])
+        self.assertEqual(ids[2:], ["AH%d" % i for i in range(1, 16)])
         for t in doc["tests"]:
             for k in ("id", "title", "rule", "summary", "need", "gate"):
                 self.assertIn(k, t)

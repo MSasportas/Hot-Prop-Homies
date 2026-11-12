@@ -15,7 +15,12 @@ import common
 import engine
 import odds
 
-TRACK = "pin_judge"
+TRACK = "pin_judge"          # the track being worked on; flag() and summary() walk every track in config "watch"
+
+
+def tracks(cfg):
+    """Every active watch track id (config "watch": {id: {...}}). A track may limit itself with "markets": [..]."""
+    return [k for k, w in (cfg.get("watch") or {}).items() if isinstance(w, dict) and not k.startswith("_")]
 
 
 def _dir():
@@ -52,6 +57,19 @@ def _append(rows):
 
 
 def flag(ctx, evals):
+    """Every track: add today's new flags. Returns the number added across tracks."""
+    global TRACK
+    saved, n = TRACK, 0
+    try:
+        for tr in tracks(ctx.cfg):
+            TRACK = tr
+            n += _flag_one(ctx, evals)
+    finally:
+        TRACK = saved
+    return n
+
+
+def _flag_one(ctx, evals):
     """Add today's new flags from the newest flag read of each unstarted game. Returns the number added."""
     cfg = ctx.cfg
     w = (cfg.get("watch") or {}).get(TRACK) or {}
@@ -70,6 +88,8 @@ def flag(ctx, evals):
             if r.get("pin_fair") is None or r.get("pin_ev") is None or r["pin_ev"] < w["min_ev"] - engine.EPS:
                 continue
             if not (cfg["customer"]["worst_price"] <= r["price"] <= w["max_price"]):
+                continue
+            if w.get("markets") and r["market"] not in w["markets"]:
                 continue
             key = (ctx.slate, gid, r["pid"], r["market"])
             if key in have or ctx.eligible(r["pid"], r["team"], g):
@@ -95,7 +115,22 @@ def _grade(fl, store, cfg):
 
 
 def summary(store, cfg):
-    """Rebuild data/watch/pin_judge/summary.json from the flags and the box-score store."""
+    """Every track: rebuild its summary.json. Returns the pin_judge document (as before)."""
+    global TRACK
+    saved, out = TRACK, None
+    try:
+        for tr in tracks(cfg):
+            TRACK = tr
+            doc = _summary_one(store, cfg)
+            if tr == "pin_judge":
+                out = doc
+    finally:
+        TRACK = saved
+    return out
+
+
+def _summary_one(store, cfg):
+    """Rebuild data/watch/<track>/summary.json from the flags and the box-score store."""
     w = (cfg.get("watch") or {}).get(TRACK) or {}
     nights = {}
     tot = {"w": 0, "l": 0, "push": 0, "void": 0, "units": 0.0, "pending": 0}
@@ -114,7 +149,7 @@ def summary(store, cfg):
         out.append({"date": d, "w": sum(b["result"] == "W" for b in bs), "l": sum(b["result"] == "L" for b in bs),
                     "units": round(sum(b["units"] or 0 for b in bs), 2), "bets": bs})
     n = tot["w"] + tot["l"]
-    doc = {"track": TRACK, "label": w.get("label", "Pinnacle as the price judge"), "about": w.get("about"),
+    doc = {"track": TRACK, "active": bool(w.get("active")), "label": w.get("label", "Pinnacle as the price judge"), "about": w.get("about"),
            "from_slate": w.get("from_slate"), "min_ev": w.get("min_ev"), "updated_at": common.iso(common.now()),
            "total": dict(tot, units=round(tot["units"], 2), hit_rate=round(tot["w"] / n, 4) if n else None), "nights": out}
     path = os.path.join(_dir(), "summary.json")

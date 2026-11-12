@@ -360,6 +360,22 @@ button.tr.open{background:var(--selected-bg);border-bottom-color:transparent}
 .lab .prog{position:relative;height:4px;margin-top:8px;background:var(--line);border-radius:2px;overflow:hidden}
 .lab .prog i{position:absolute;left:0;top:0;bottom:0;background:var(--accent)}
 .lab .sm{font-size:12px;line-height:17px;color:var(--muted);margin-top:4px}
+.lab{padding:0;overflow:hidden}
+.lab-h{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;min-height:48px;padding:10px 14px;background:none;border:0;color:inherit;font:inherit;text-align:left;cursor:pointer}
+.lab-h:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.lab-t{display:flex;align-items:center;gap:8px;min-width:0;flex:1}
+.lab-n{font:400 14px/19px var(--head);overflow-wrap:anywhere}
+.lab-r{display:flex;align-items:baseline;gap:8px;flex:none;font:600 14px/19px var(--num);white-space:nowrap}
+.lab-r .chev{font-size:11px;color:var(--muted)}
+.lab .prog{margin:0 14px 10px}
+.lab.open .rl,.lab.open>.sm{margin-left:14px;margin-right:14px}
+.lab-p{border-top:1px solid var(--line);margin-top:10px;padding:4px 14px 10px}
+.lab-p .sm{margin-top:8px}
+.lab-d{display:flex;gap:10px;align-items:baseline;margin-top:10px;font:600 12px/17px var(--num);letter-spacing:.04em;text-transform:uppercase}
+.lab-b{display:flex;justify-content:space-between;gap:10px;align-items:baseline;padding:6px 0;border-bottom:1px solid var(--line);font-size:13px;line-height:18px}
+.lab-b:last-child{border-bottom:0}
+.lab-b .who{min-width:0;overflow-wrap:anywhere}
+.lab-b .res{flex:none;font-weight:600}
 
 /* info: update status, one row per feed with its state, like a service status page */
 .svc-h{display:flex;align-items:center;gap:8px;padding:10px 12px;margin:12px 0 6px;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 6px 6px 0;font-weight:650}
@@ -735,7 +751,8 @@ function loadLab() {
   return Promise.all(tests.map(function (t) {
     var p = str(t.summary).replace(/^\/+/, '');
     if (!/^[\w\/.-]+\.json$/.test(p) || /\.\./.test(p)) return Promise.resolve();
-    var base = t._sp ? SPORT_BASES[t._sp] + 'data/' : base0;
+    var root = t._sp ? SPORT_BASES[t._sp] : (BASE_FIX ? '' : (SPORT_BASES[S.sport] || ''));
+    var base = t.base === 'root' ? root : (t._sp ? root + 'data/' : base0);
     return settle(getJSON(base + p)).then(function (r) {
       var id = str(t.id), old = S.labSum[id];
       S.labSum[id] = r.ok ? r.v : (old && !old._err ? old : { _err: r.kind });
@@ -768,7 +785,7 @@ function loadAll() {
       if (!r.lab.ok) return;
       labOk = true; labUpd += str(r.lab.v.updated);
       arr(r.lab.v.tests).filter(isObj).forEach(function (t) {
-        labTests.push(Object.assign({}, t, { _sp: r.sport, id: r.sport + ':' + str(t.id), title: SPORT_LABELS[r.sport] + ' · ' + (str(t.title) || 'Untitled idea') }));
+        labTests.push(Object.assign({}, t, { _sp: r.sport, id: r.sport + ':' + str(t.id), title: str(t.title) || 'Untitled idea' }));
       });
     });
     if (labOk) { S.lab = { tests: labTests, updated: labUpd }; S.labErr = null; } else if (!S.lab) S.labErr = 'net';
@@ -1999,10 +2016,34 @@ function loadOlder() {
   }, function () { S.olderBusy = false; S.olderErr = true; rerender(); });
 }
 
+/* the picks behind one Lab tile, newest night first (Matt 2026-11-12). Summary files differ: nights[].bets (NBA) or nights[].flags (NHL) */
+function labPicks(sm, t) {
+  var box = h('div', { class: 'lab-p' });
+  var per = sm && isObj(sm.tests) && isObj(sm.tests[str(t.stats)]) ? sm.tests[str(t.stats)] : sm;
+  var nights = per ? arr(per.nights).filter(isObj) : [], any = false;
+  nights.forEach(function (n) {
+    var rows = arr(n.bets).concat(arr(n.flags)).filter(function (b) { return isObj(b) && (!b.kind || b.kind === 'flag'); });
+    if (!rows.length) return;
+    any = true;
+    var w = 0, l = 0, u = 0;
+    rows.forEach(function (b) { if (b.result === 'W') w++; else if (b.result === 'L') l++; u += num(b.units) || 0; });
+    box.appendChild(h('div', { class: 'lab-d' }, h('span', { text: fDateShort(str(n.date)) || str(n.date) }), h('span', { class: 'mu', text: w + '-' + l }), h('span', { class: signCls(u), text: units(u, 2) })));
+    rows.forEach(function (b) {
+      var res = str(b.result), pr = num(b.price), cls = res === 'W' ? 'pos' : (res === 'L' ? 'neg' : 'mu');
+      var bet = str(b.bet).replace(/^OVER/, 'Over').replace(/^UNDER/, 'Under');
+      box.appendChild(h('div', { class: 'lab-b' },
+        h('span', { class: 'who' }, h('b', { text: str(b.player) || 'Player' }), h('span', { class: 'mu', text: ' ' + bet + (pr != null ? ' ' + (pr > 0 ? '+' + pr : pr) : '') })),
+        h('span', { class: 'res ' + cls, text: res === 'W' ? 'Won' : res === 'L' ? 'Lost' : res === 'PUSH' ? 'Push' : res === 'VOID' ? 'Void' : (b.pulled ? 'Pulled' : 'Pending') })));
+    });
+  });
+  if (!any) box.appendChild(h('div', { class: 'sm', text: per && per.nights ? 'No picks logged yet.' : "This test's pick list isn't saved yet, only its totals." }));
+  return box;
+}
+function LAB_REDRAW() { render(); }
 /* ---------- Lab: ideas that passed their historical test, tracked on paper (config/lab.json) ---------- */
 function renderLab() {
   top('Lab', false);
-  app.appendChild(h('p', { class: 'mu', style: 'margin:10px 0 0;font-size:13px;line-height:19px', text: 'Ideas that passed their historical test, now tracked on paper. Not picks: never on the Record or in Discord.' }));
+  app.appendChild(h('p', { class: 'mu', style: 'margin:10px 0 0;font-size:13px;line-height:19px', text: 'Everything being tested, tracked on paper. Tap a test to see its picks. Not for betting: never on the Record or in Discord.' }));
   if (!S.loaded) { app.appendChild(h('div', { class: 'stack' }, h('div', { class: 'skel sm' }), h('div', { class: 'skel' }))); return; }
   var tests = S.lab ? arr(S.lab.tests).filter(isObj) : [];
   if (!S.lab) {
@@ -2010,27 +2051,38 @@ function renderLab() {
     app.appendChild(smallFoot()); return;
   }
   if (!tests.length) app.appendChild(h('div', { class: 'card empty' }, h('div', { class: 't', text: 'Nothing is being tracked on paper right now.' })));
+  S.labOpen = S.labOpen || {};
   tests.forEach(function (t) {
-    var sm = S.labSum[str(t.id)], st = sm && isObj(sm[str(t.stats || 'total')]) ? sm[str(t.stats || 'total')] : null, card = h('section', { class: 'lab' });
-    card.appendChild(h('h3', { text: str(t.title) || 'Untitled idea' }));
-    if (t.rule) card.appendChild(h('div', { class: 'rl', text: str(t.rule) }));
-    if (!st) {
-      card.appendChild(h('div', { class: 'sm', style: 'margin-top:10px', text: sm && sm._err === 'file' ? 'No results logged yet.' : (sm ? "Its numbers couldn't be read." : 'Loading its numbers') }));
-    } else {
-      var w = num(st.w) || 0, l = num(st.l) || 0, k = w + l, need = num(t.need), u = num(st.units);
-      card.appendChild(h('div', { class: 'nums' }, h('span', { text: w + '-' + l }), u != null ? h('span', { class: signCls(u), text: units(u, 2) }) : null));
-      if (need) {
-        var bar = h('div', { class: 'prog', role: 'img', 'aria-label': k + ' of ' + need + ' graded' }), fill = h('i'); fill.style.width = Math.min(100, k / need * 100) + '%'; bar.appendChild(fill);
-        card.appendChild(bar);
-      }
-      var bits = [k + (need ? ' of ' + need : '') + ' graded'];
-      if (num(st.pending)) bits.push(st.pending + ' pending');
-      if (num(st.void)) bits.push(st.void + ' void');
-      card.appendChild(h('div', { class: 'sm', text: bits.join(' · ') }));
-      if (sm.updated_at && fStamp(sm.updated_at)) card.appendChild(h('div', { class: 'sm', text: 'Updated ' + fStamp(sm.updated_at) }));
+    var id = (t._sp || '') + str(t.id), sm = S.labSum[str(t.id)], st = sm && isObj(sm[str(t.stats || 'total')]) ? sm[str(t.stats || 'total')] : null;
+    var open = !!S.labOpen[id], card = h('section', { class: 'lab' + (open ? ' open' : '') });
+    var w = st ? (num(st.w) || 0) : 0, l = st ? (num(st.l) || 0) : 0, k = w + l, need = num(t.need), u = st ? num(st.units) : null;
+    /* the tile: tap to open its details and picks */
+    var head = h('button', { class: 'lab-h', type: 'button', 'aria-expanded': open ? 'true' : 'false' },
+      h('span', { class: 'lab-t' }, t._sp ? h('span', { class: 'sp-badge ' + t._sp, text: t._sp.toUpperCase() }) : null, h('span', { class: 'lab-n', text: str(t.title) || 'Untitled idea' })),
+      h('span', { class: 'lab-r' }, h('span', { class: 'rec' + (st ? '' : ' mu'), text: st ? w + '-' + l : (sm ? '0-0' : '...') }),
+        st && u != null ? h('span', { class: 'un ' + signCls(u), text: units(u, 2).replace(/ units?$/, 'u') }) : null, h('span', { class: 'chev', 'aria-hidden': 'true', text: open ? '▴' : '▾' })));
+    head.addEventListener('click', function () { S.labOpen[id] = !S.labOpen[id]; LAB_REDRAW(); });
+    card.appendChild(head);
+    if (need && st) {
+      var bar = h('div', { class: 'prog', role: 'img', 'aria-label': k + ' of ' + need + ' graded' }), fill = h('i'); fill.style.width = Math.min(100, k / need * 100) + '%'; bar.appendChild(fill);
+      card.appendChild(bar);
     }
-    if (t.discovery) card.appendChild(h('div', { class: 'sm', text: str(t.discovery) }));
-    if (t.gate) card.appendChild(h('div', { class: 'sm', text: str(t.gate) }));
+    if (open) {
+      if (t.rule) card.appendChild(h('div', { class: 'rl', text: str(t.rule) }));
+      if (!st) {
+        card.appendChild(h('div', { class: 'sm', style: 'margin-top:10px', text: sm && sm._err === 'file' ? 'No results logged yet.' : (sm ? "Its numbers couldn't be read." : 'Loading its numbers') }));
+      } else {
+        var bits = [k + (need ? ' of ' + need : '') + ' graded'];
+        if (num(st.pending)) bits.push(st.pending + ' pending');
+        if (num(st.void)) bits.push(st.void + ' void');
+        if (num(st.clv) != null) bits.push('vs closing line ' + (st.clv >= 0 ? '+' : '') + (100 * st.clv).toFixed(1) + '%');
+        card.appendChild(h('div', { class: 'sm', text: bits.join(' · ') }));
+        if (sm.updated_at && fStamp(sm.updated_at)) card.appendChild(h('div', { class: 'sm', text: 'Updated ' + fStamp(sm.updated_at) }));
+      }
+      if (t.discovery) card.appendChild(h('div', { class: 'sm', text: str(t.discovery) }));
+      if (t.gate) card.appendChild(h('div', { class: 'sm', text: str(t.gate) }));
+      card.appendChild(labPicks(sm, t));
+    }
     app.appendChild(card);
   });
   app.appendChild(smallFoot());

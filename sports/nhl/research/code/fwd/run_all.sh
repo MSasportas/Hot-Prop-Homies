@@ -24,3 +24,4 @@ python3 -I research/code/r24/score_q24.py "$PWD"          # Q24
 python3 -I research/code/r24/score_ll.py "$PWD"          # LL1f, LL3a-b, LL4a-b, LL5, LL6 (run 24)
 python3 -I research/code/r25/score_mm.py "$PWD"          # MM2a-b, MM3a-b, MM4, MM5a-b (run 25)
 python3 -I research/code/r26/score_nn.py "$PWD"          # NN2fa-b, NN4, NN5, NN6 (run 26)
+python3 -I research/code/fwd/lab_export.py                 # Lab tab totals for LL / MM / NN (always last)

@@ -1,6 +1,6 @@
 {
- "note": "The page's Lab tab. Curated by the team: list ONLY ideas that passed their historical test and are now tracked on paper. Never a failed or dropped idea. Each entry's numbers come live from its summary file (path relative to data/). Remove an entry when its track stops or goes live.",
- "updated": "2026-11-04",
+ "note": "The page's Lab tab. Matt 2026-11-12: EVERYTHING being tested is listed here, and a tile opens to its picks. Each entry's numbers come live from its summary file (path relative to data/). Remove an entry when its test is closed or goes live.",
+ "updated": "2026-11-12",
  "tests": [
   {
    "id": "pin_judge",
@@ -11,6 +11,151 @@
    "need": 150,
    "discovery": "Discovery Oct 25-27: 6 bets 5-1 +3.18u.",
    "gate": "Live only at 150 graded, units up, and when Matt says go."
+  },
+  {
+   "id": "threes_judge",
+   "title": "3-pointers: Hard Rock 1%+ over Pinnacle",
+   "rule": "3-pointers only. Hard Rock's price is 1%+ better than Pinnacle's fair price on the same line, no Pinnacle move needed. Tracked on paper only.",
+   "summary": "watch/threes_judge/summary.json",
+   "stats": "total",
+   "need": 150,
+   "discovery": "18 nights before tracking: 17 bets 10-7 +6.15u, beat the close by 0.9%.",
+   "gate": "Live only at 150 graded, units up and beating the close."
+  },
+  {
+   "id": "AH1",
+   "title": "Large unders (4+ pt move, under side)",
+   "rule": "Filter on the live rule's Pinnacle-move picks: Pinnacle move >= 4 pts AND side = under. Counting from Nov 10.",
+   "summary": "research/lab_ah.json",
+   "stats": "AH1",
+   "need": 150,
+   "gate": "Passes only at 150 graded, profit and beating the close."
+  },
+  {
+   "id": "AH2",
+   "title": "Late + large (last 90 min, move 3+ pts)",
+   "rule": "Filter on the live rule's Pinnacle-move picks: window is 90->45 or 45->20 AND move >= 3 pts. Counting from Nov 10.",
+   "summary": "research/lab_ah.json",
+   "stats": "AH2",
+   "need": 150,
+   "gate": "Passes only at 150 graded, profit and beating the close."
+  },
+  {
+   "id": "AH3",
+   "title": "Solo + late (solo Pinnacle, last 90 min)",
+   "rule": "Filter on the live rule's Pinnacle-move picks: others < 1 pt AND window is 90->45 or 45->20. Counting from Nov 10.",
+   "summary": "research/lab_ah.json",
+   "stats": "AH3",
+   "need": 150,
+   "gate": "Passes only at 150 graded, profit and beating the close."
+  },
+  {
+   "id": "AH4",
+   "title": "Stale HR + FAIR (HR stale, EV >= 0)",
+   "rule": "Filter on the live rule's Pinnacle-move picks: HR price unchanged (stale) AND ev_pin >= 0. Counting from Nov 10.",
+   "summary": "research/lab_ah.json",
+   "stats": "AH4",
+   "need": 150,
+   "gate": "Passes only at 150 graded, profit and beating the close."
+  },
+  {
+   "id": "AH5",
+   "title": "Large solo (4+ pt solo Pinnacle move)",
+   "rule": "Filter on the live rule's Pinnacle-move picks: move >= 4 pts AND others < 1 pt. Counting from Nov 10.",
+   "summary": "research/lab_ah.json",
+   "stats": "AH5",
+   "need": 150,
+   "gate": "Passes only at 150 graded, profit and beating the close."
+  },
+  {
+   "id": "AH6",
+   "title": "90->45 window only",
+   "rule": "Filter on the live rule's Pinnacle-move picks: in the 90->45 minute window. Counting from Nov 10.",
+   "summary": "research/lab_ah.json",
+   "stats": "AH6",
+   "need": 150,
+   "gate": "Passes only at 150 graded, profit and beating the close."
+  },
+  {
+   "id": "AH7",
+   "title": "45->20 window only",
+   "rule": "Filter on the live rule's Pinnacle-move picks: in the 45->20 minute window. Counting from Nov 10.",
+   "summary": "research/lab_ah.json",
+   "stats": "AH7",
+   "need": 150,
+   "gate": "Passes only at 150 graded, profit and beating the close."
+  },
+  {
+   "id": "AH8",
+   "title": "Unders in last 90 min",
+   "rule": "Filter on the live rule's Pinnacle-move picks: side = under AND window in last 90 min. Counting from Nov 10.",
+   "summary": "research/lab_ah.json",
+   "stats": "AH8",
+   "need": 150,
+   "gate": "Passes only at 150 graded, profit and beating the close."
+  },
+  {
+   "id": "AH9",
+   "title": "2-4 books following (consensus middle band)",
+   "rule": "Filter on the live rule's Pinnacle-move picks: 2-4 other books moved >= 1 pt the same way. Counting from Nov 10.",
+   "summary": "research/lab_ah.json",
+   "stats": "AH9",
+   "need": 150,
+   "gate": "Passes only at 150 graded, profit and beating the close."
+  },
+  {
+   "id": "AH10",
+   "title": "Large move unders by size band (3-4 vs 4+)",
+   "rule": "Filter on the live rule's Pinnacle-move picks: MOVES: unders, split 3-4 pts vs 4+ pts. Counting from Nov 10.",
+   "summary": "research/lab_ah.json",
+   "stats": "AH10",
+   "need": 150,
+   "gate": "Passes only at 150 graded, profit and beating the close."
+  },
+  {
+   "id": "AH11",
+   "title": "Morning overs vs unders",
+   "rule": "Filter on the live rule's Pinnacle-move picks: in 11AM->90 window, split by side. Counting from Nov 10.",
+   "summary": "research/lab_ah.json",
+   "stats": "AH11",
+   "need": 150,
+   "gate": "Passes only at 150 graded, profit and beating the close."
+  },
+  {
+   "id": "AH12",
+   "title": "Solo large (3+ pt, solo Pinnacle)",
+   "rule": "Filter on the live rule's Pinnacle-move picks: move >= 3 pts AND others < 1 pt. Counting from Nov 10.",
+   "summary": "research/lab_ah.json",
+   "stats": "AH12",
+   "need": 150,
+   "gate": "Passes only at 150 graded, profit and beating the close."
+  },
+  {
+   "id": "AH13",
+   "title": "Stale HR + unders",
+   "rule": "Filter on the live rule's Pinnacle-move picks: HR price unchanged AND side = under. Counting from Nov 10.",
+   "summary": "research/lab_ah.json",
+   "stats": "AH13",
+   "need": 150,
+   "gate": "Passes only at 150 graded, profit and beating the close."
+  },
+  {
+   "id": "AH14",
+   "title": "Small FAIR moves (2-3 pt, ev_pin >= 0)",
+   "rule": "Filter on the live rule's Pinnacle-move picks: move 2-3 pts AND ev_pin >= 0 (the small-move FAIR question). Counting from Nov 10.",
+   "summary": "research/lab_ah.json",
+   "stats": "AH14",
+   "need": 150,
+   "gate": "Passes only at 150 graded, profit and beating the close."
+  },
+  {
+   "id": "AH15",
+   "title": "Late + FAIR (last 90 min, ev_pin >= 0)",
+   "rule": "Filter on the live rule's Pinnacle-move picks: window is last 90 min AND ev_pin >= 0. Counting from Nov 10.",
+   "summary": "research/lab_ah.json",
+   "stats": "AH15",
+   "need": 150,
+   "gate": "Passes only at 150 graded, profit and beating the close."
   }
  ]
 }

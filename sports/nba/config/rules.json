@@ -202,6 +202,23 @@
     "D"
    ],
    "max_age_min": 15
+  },
+  "threes_judge": {
+   "active": true,
+   "label": "3-pointers: Hard Rock 1%+ over Pinnacle",
+   "from_slate": "2026-11-12",
+   "about": "Lab (Matt, 2026-11-12; research Run 11 T1b): 3-pointers only, Hard Rock's main-line price 1%+ better than Pinnacle's de-vigged chance on the same line, no Pinnacle move needed. 18 nights before tracking: 17 bets 10-7 +6.15u, beat the close by 0.9%. Research only, never the Record or Discord.",
+   "min_ev": 0.01,
+   "max_price": 200,
+   "markets": [
+    "threes"
+   ],
+   "reads": [
+    "B",
+    "C",
+    "D"
+   ],
+   "max_age_min": 15
   }
  }
 }

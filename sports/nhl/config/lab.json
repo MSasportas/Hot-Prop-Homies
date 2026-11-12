@@ -1,5 +1,5 @@
 {
- "note": "The page's Lab tab. Curated by the team: ideas tracked on paper...",
+ "note": "The page's Lab tab. Matt 2026-11-12: EVERYTHING being tested is listed here (live-tracked paper tests and the Researcher's forward tests). Each entry's numbers come live from its summary file. Remove an entry when its test is closed.",
  "updated": "2026-11-12",
  "tests": [
   {
@@ -20,6 +20,206 @@
    "stats": "fwd",
    "need": 300,
    "gate": "Passes only at 300 graded with a clear profit. Even then it comes to Matt: 1 PM picks are off until he says go. Updated each morning."
+  },
+  {
+   "id": "fwd_LL1f-fade",
+   "title": "Hard Rock moved since 1 PM: bet against it",
+   "rule": "Shots, research only. Run 24, counting from Nov 9. Full rule: research/HYPOTHESES.md (LL1f-fade).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "LL1f-fade",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+  },
+  {
+   "id": "fwd_LL1f-follow",
+   "title": "Hard Rock moved since 1 PM: follow it",
+   "rule": "Shots, research only. Run 24, counting from Nov 9. Full rule: research/HYPOTHESES.md (LL1f-follow).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "LL1f-follow",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+  },
+  {
+   "id": "fwd_LL3a_tight",
+   "title": "Hard Rock 1%+ better, other books agree closely",
+   "rule": "Shots, research only. Run 24, counting from Nov 9. Full rule: research/HYPOTHESES.md (LL3a).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "LL3a tight",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+  },
+  {
+   "id": "fwd_LL3b_loose",
+   "title": "Hard Rock 1%+ better, other books disagree",
+   "rule": "Shots, research only. Run 24, counting from Nov 9. Full rule: research/HYPOTHESES.md (LL3b).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "LL3b loose",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+  },
+  {
+   "id": "fwd_LL4a_fade",
+   "title": "Hard Rock moves alone: bet against it",
+   "rule": "Shots, research only. Run 24, counting from Nov 9. Full rule: research/HYPOTHESES.md (LL4a).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "LL4a fade",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+  },
+  {
+   "id": "fwd_LL4b_follow",
+   "title": "Hard Rock moves alone: follow it",
+   "rule": "Shots, research only. Run 24, counting from Nov 9. Full rule: research/HYPOTHESES.md (LL4b).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "LL4b follow",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+  },
+  {
+   "id": "fwd_LL5_exch",
+   "title": "Exchanges as the fair price",
+   "rule": "Shots, research only. Run 24, counting from Nov 9. Full rule: research/HYPOTHESES.md (LL5).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "LL5 exch",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+  },
+  {
+   "id": "fwd_LL6_line",
+   "title": "Hard Rock's line differs from the other books",
+   "rule": "Shots, research only. Run 24, counting from Nov 9. Full rule: research/HYPOTHESES.md (LL6).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "LL6 line",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+  },
+  {
+   "id": "fwd_MM2a_split",
+   "title": "Sharp books vs soft books split",
+   "rule": "Shots, research only. Run 25, counting from Nov 10. Full rule: research/HYPOTHESES.md (MM2a).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "MM2a split",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+  },
+  {
+   "id": "fwd_MM2b_split_2pct",
+   "title": "Sharp vs soft split, 2%+",
+   "rule": "Shots, research only. Run 25, counting from Nov 10. Full rule: research/HYPOTHESES.md (MM2b).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "MM2b split 2%",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+  },
+  {
+   "id": "fwd_MM3a_persist",
+   "title": "Gap holds from 90 to 45 minutes",
+   "rule": "Shots, research only. Run 25, counting from Nov 10. Full rule: research/HYPOTHESES.md (MM3a).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "MM3a persist",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+  },
+  {
+   "id": "fwd_MM3b_confirm",
+   "title": "Gap confirmed at 45 minutes",
+   "rule": "Shots, research only. Run 25, counting from Nov 10. Full rule: research/HYPOTHESES.md (MM3b).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "MM3b confirm",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+  },
+  {
+   "id": "fwd_MM4_total",
+   "title": "Game total moved, props didn't",
+   "rule": "Shots, research only. Run 25, counting from Nov 10. Full rule: research/HYPOTHESES.md (MM4).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "MM4 total",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+  },
+  {
+   "id": "fwd_MM5a_follow",
+   "title": "Hard Rock shifted its line: follow it",
+   "rule": "Shots, research only. Run 25, counting from Nov 10. Full rule: research/HYPOTHESES.md (MM5a).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "MM5a follow",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+  },
+  {
+   "id": "fwd_MM5b_fade",
+   "title": "Hard Rock shifted its line: bet against it",
+   "rule": "Shots, research only. Run 25, counting from Nov 10. Full rule: research/HYPOTHESES.md (MM5b).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "MM5b fade",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+  },
+  {
+   "id": "fwd_NN2fa_follow_market",
+   "title": "Hard Rock moneyline off the market: follow the market",
+   "rule": "Shots, research only. Run 26, counting from Nov 11. Full rule: research/HYPOTHESES.md (NN2fa).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "NN2fa follow market",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+  },
+  {
+   "id": "fwd_NN2fb_follow_HR",
+   "title": "Hard Rock moneyline off the market: follow Hard Rock",
+   "rule": "Shots, research only. Run 26, counting from Nov 11. Full rule: research/HYPOTHESES.md (NN2fb).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "NN2fb follow HR",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+  },
+  {
+   "id": "fwd_NN4_exch_steam",
+   "title": "Exchanges move, Hard Rock hasn't",
+   "rule": "Shots, research only. Run 26, counting from Nov 11. Full rule: research/HYPOTHESES.md (NN4).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "NN4 exch steam",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+  },
+  {
+   "id": "fwd_NN5_market_moves",
+   "title": "Whole market moves, Hard Rock hasn't",
+   "rule": "Shots, research only. Run 26, counting from Nov 11. Full rule: research/HYPOTHESES.md (NN5).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "NN5 market moves",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+  },
+  {
+   "id": "fwd_NN6_fade_soft",
+   "title": "Bet against soft-book moves",
+   "rule": "Shots, research only. Run 26, counting from Nov 11. Full rule: research/HYPOTHESES.md (NN6).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "NN6 fade soft",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close."
   }
  ]
 }

@@ -259,6 +259,58 @@ def prepend_log(text):
     with open(path, "w", encoding="utf-8") as f:
         f.write(new)
 
+NOUN = {"rebounds": "rebounds", "points": "points", "assists": "assists", "threes": "3-pointers"}
+
+
+def _names():
+    out = {}
+    for p in sorted(glob.glob(R + "data/odds/2*.json")):
+        for f in json.load(open(p, encoding="utf-8"))["fetches"]:
+            for mk in (f.get("markets") or {}).values():
+                for o in mk.get("outcomes", []):
+                    if o.get("pid") and o.get("name"):
+                        out[str(o["pid"])] = o["name"]
+    return out
+
+
+def export_lab(moves):
+    """data/research/lab_ah.json for the page's Lab tab (Matt 2026-11-12: everything being tested shows in the Lab, with its
+    picks): each registered hypothesis's FORWARD bets (nights >= FWD, Hard Rock price at or better than Pinnacle fair, the
+    live rule's shape) with totals and the bets by night. Research only."""
+    names = _names()
+    doc = {"active": True, "note": "Research only: forward results of the registered filters on Pinnacle moves. Never picks.",
+           "from": FWD, "tests": {}}
+    for hid, hlabel, hdesc, hfn in HYPOTHESES:
+        es = [e for e in moves if e["day"] >= FWD and e.get("ev_pin", -1) >= 0 and hfn(e)]
+        nights = {}
+        tot = {"w": 0, "l": 0, "push": 0, "void": 0, "units": 0.0, "pending": 0}
+        for e in es:
+            res = {"W": "W", "L": "L", "P": "PUSH", "V": "VOID"}.get(e["res"])
+            u = _units(e) if res in ("W", "L") else (0.0 if res else None)
+            tot[{"W": "w", "L": "l", "PUSH": "push", "VOID": "void", None: "pending"}[res]] += 1
+            tot["units"] += u or 0.0
+            nights.setdefault(e["day"], []).append({
+                "player": names.get(str(e["pid"]), "Player %s" % e["pid"]), "market": e["m"], "line": e["line"], "side": e["side"],
+                "bet": "%s %s %s" % ("Over" if e["side"] == "over" else "Under", e["line"], NOUN.get(e["m"], e["m"])),
+                "price": e["price"], "result": res, "units": None if u is None else round(u, 2)})
+        doc[hid] = dict(tot, units=round(tot["units"], 2))
+        doc["tests"][hid] = {"label": hlabel, "rule": hdesc, "nights": [
+            {"date": d, "w": sum(b["result"] == "W" for b in bs), "l": sum(b["result"] == "L" for b in bs),
+             "units": round(sum(b["units"] or 0 for b in bs), 2), "bets": bs} for d, bs in sorted(nights.items(), reverse=True)]}
+    path = R + "data/research/lab_ah.json"
+    old = None
+    try:
+        old = json.load(open(path, encoding="utf-8"))
+    except (OSError, ValueError):
+        pass
+    if old is None or {k: v for k, v in old.items() if k != "updated_at"} != doc:
+        doc["updated_at"] = common.iso(common.now())
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, "w", encoding="utf-8", newline=chr(10)) as fh:
+            json.dump(doc, fh, separators=(",", ":"), sort_keys=True)
+    return doc
+
+
 def run(force_id=None):
     st = load_state()
     if force_id:
@@ -270,6 +322,10 @@ def run(force_id=None):
     today = date.today().isoformat()
 
     moves, _, _ = build_moves()
+    try:
+        export_lab(moves)
+    except Exception as e:                                   # the Lab file can never stop the nightly test
+        print("lab export skipped: %s" % type(e).__name__)
     fwd = [e for e in moves if e["day"] >= FWD]
 
     all_m = [e for e in moves]
