@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T10:20:00-05:00",
+ "at": "2026-11-12T11:00:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -630,6 +630,13 @@
    "team": "TOR",
    "date": "2026-11-08T21:20Z",
    "note": "Bittle (foot) is listed as out for Monday's game against Memphis."
+  },
+  "4433268": {
+   "status": "out",
+   "name": "Trey Alexander",
+   "team": "UTAH",
+   "date": "2026-11-12T15:42Z",
+   "note": "Alexander won't play Wednesday against the Grizzlies due to a left knee bone bruise."
   },
   "4066336": {
    "status": "out",
