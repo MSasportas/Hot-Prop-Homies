@@ -79,7 +79,8 @@ if ! git pull -q --rebase --autostash origin "$BRANCH"; then
 fi
 check_history
 
-# 2. run
+# 2. run (Discord waits for step 5, once the page is live)
+export PC_DEFER_NOTIFY=1
 if [ -n "${CYCLE_RUN_CMD:-}" ]; then
   timeout "$RUN_TIMEOUT" bash -c "$CYCLE_RUN_CMD"
 else
@@ -94,10 +95,27 @@ fi
 # 3. guard
 "$PY" scripts/guard_record.py || { fail "record guard"; exit 1; }
 
+notify_live() {   # 5. Discord, only after the live page shows this push; then save who was pinged
+  [ -n "${CYCLE_RUN_CMD:-}" ] && return 0          # tests: no real pings
+  PC_DEFER_NOTIFY= "$PY" scripts/notify_live.py || true
+  git add -A data
+  git diff --cached --quiet && return 0
+  git commit -q -m "notify: $(TZ=America/New_York date '+%Y-%m-%d %-I:%M %p ET')"
+  for a in 1 2 3; do
+    if git pull -q --rebase --autostash origin "$BRANCH"; then
+      check_history
+      git push -q origin "HEAD:$BRANCH" && { "$PY" scripts/guard_record.py --remember HEAD || true; return 0; }
+    fi
+    git rebase --abort >/dev/null 2>&1 || true; sleep $((a * 5))
+  done
+  say "notify state could not be pushed"
+}
+
 # 4. publish
 git add -A data research/LOG.md   # nightly auto-hypothesis appends to research/LOG.md; an unstaged edit blocks the rebase
 if git diff --cached --quiet; then
   say "nothing changed, nothing pushed"
+  PC_NOTIFY_NO_WAIT=1 notify_live
   exit 0
 fi
 git commit -q -m "run: $(TZ=America/New_York date '+%Y-%m-%d %-I:%M %p ET')"
@@ -107,6 +125,7 @@ for attempt in 1 2 3; do
     if git push -q origin "HEAD:$BRANCH"; then
       "$PY" scripts/guard_record.py --remember HEAD || true    # origin now holds this Record
       say "pushed $(git rev-parse --short HEAD)"
+      notify_live
       exit 0
     fi
   fi

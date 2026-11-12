@@ -609,7 +609,7 @@ def main(argv):
     if "publish" in r.steps and not r.steps["publish"]["ok"]:
         return 1
     r.step("research", r.research, soft=True)
-    sent = 0 if paused else notify.notify(getattr(r, "slate_doc", None))
+    sent = 0 if (paused or os.environ.get("PC_DEFER_NOTIFY")) else notify.notify(getattr(r, "slate_doc", None))
     common.log("run done: %s; %d discord message(s)" % (", ".join("%s %s" % (k, "ok" if v.get("ok") else "FAILED")
                                                               for k, v in r.steps.items()), sent))
     hard = [k for k, v in r.steps.items() if not v.get("ok") and not v.get("soft")]

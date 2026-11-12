@@ -717,7 +717,7 @@ def run(only=None, dry_run=False):
     except Exception as e:
         common.log("status write failed: %s" % common.short_err(e))
         raise
-    if only is None and not dry_run:
+    if only is None and not dry_run and not os.environ.get("PC_DEFER_NOTIFY"):
         try:
             notify.notify()                                 # Discord; never raises, 5 s timeout per post
         except Exception:
