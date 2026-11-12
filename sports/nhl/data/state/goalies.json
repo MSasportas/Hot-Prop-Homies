@@ -35,7 +35,7 @@
   },
   "NJD": {
    "name": "Connor Hellebuyck",
-   "status": "expected"
+   "status": "confirmed"
   },
   "WSH": {
    "name": "Logan Thompson",
@@ -79,7 +79,7 @@
   },
   "STL": {
    "name": "Joel Hofer",
-   "status": "expected"
+   "status": "confirmed"
   },
   "LAK": {
    "name": "Darcy Kuemper",
@@ -90,5 +90,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-12T13:40:00-05:00"
+ "checked_at": "2026-11-12T14:10:01-05:00"
 }
