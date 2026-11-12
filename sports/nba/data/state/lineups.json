@@ -87,7 +87,7 @@
    }
   },
   "BKN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Egor Demin",
     "Michael Porter",
@@ -101,11 +101,11 @@
    }
   },
   "NO": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jeremiah Fears",
     "Dejounte Murray",
-    "Saddiq Bey",
+    "Herbert Jones",
     "Zion Williamson",
     "Karlo Matkovic"
    ],
@@ -141,14 +141,13 @@
     "Jalen Smith"
    ],
    "status": {
-    "Caleb Wilson": "questionable",
     "Tobe Awaka": "out",
     "Norman Powell": "out",
     "Dailyn Swain": "out"
    }
   },
   "LAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Luka Doncic",
     "Austin Reaves",
@@ -161,21 +160,20 @@
    }
   },
   "MIL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Brayden Burries",
     "Tyler Herro",
-    "Jaime Jaquez",
+    "Nate Ament",
     "Kyle Kuzma",
     "Kel'el Ware"
    ],
    "status": {
-    "Tyler Herro": "questionable",
     "Myles Turner": "out"
    }
   },
   "DEN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jamal Murray",
     "Christian Braun",
@@ -188,7 +186,7 @@
    }
   },
   "MEM": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Ty Jerome",
     "Cedric Coward",
@@ -303,5 +301,5 @@
    }
   }
  },
- "at": "2026-11-11T19:30:01-05:00"
+ "at": "2026-11-11T19:40:00-05:00"
 }
