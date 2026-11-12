@@ -210,3 +210,6 @@
 {"at":"2026-11-12T11:20:01-05:00","code":"gap_gone","id":"2026-11-12:2026020309:8478427:shots:2.5:under","if_bet":"Got +110? Still a small plus. Too thin to bet now.","reason":"Hard Rock moved it to -115","t":"pulled"}
 {"at":"2026-11-12T12:00:01-05:00","id":"2026-11-12:2026020309:8482665:shots:1.5:under","state":"locked_unconfirmed","t":"locked"}
 {"at":"2026-11-12T12:00:01-05:00","id":"2026-11-12:2026020309:8474586:shots:1.5:under","state":"locked_unconfirmed","t":"locked"}
+{"actual":0,"actual_text":"had 0","at":"2026-11-12T15:31:34-05:00","id":"2026-11-12:2026020309:8474586:shots:1.5:under","price":110,"result":"W","t":"graded","units":1.1}
+{"actual":2,"actual_text":"had 2","at":"2026-11-12T15:31:34-05:00","id":"2026-11-12:2026020309:8478427:shots:2.5:under","price":110,"result":"W","t":"graded","units":1.1}
+{"actual":1,"actual_text":"had 1","at":"2026-11-12T15:31:34-05:00","id":"2026-11-12:2026020309:8482665:shots:1.5:under","price":-125,"result":"W","t":"graded","units":0.8}
