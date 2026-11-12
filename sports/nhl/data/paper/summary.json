@@ -2,7 +2,7 @@
  "version": 1,
  "note": "Gap + Guard research log. Every flag here is a pick on the page and in the Record; vetoed and capped rows are research only.",
  "market": "shots",
- "generated_at": "2026-11-11T20:10:01-05:00",
+ "generated_at": "2026-11-11T20:20:01-05:00",
  "slate": "2026-11-11",
  "active": true,
  "window": {
@@ -50,7 +50,42 @@
     "units": null
    }
   ],
-  "vetoes": [],
+  "vetoes": [
+   {
+    "id": "2026-11-11:2026020295:8482159:1.5:under",
+    "kind": "veto",
+    "slate": "2026-11-11",
+    "game_id": 2026020295,
+    "player": "T. Foerster",
+    "team": "PHI",
+    "opp": "EDM",
+    "game": "PHI @ EDM",
+    "start": "2026-11-11T21:00:00-05:00",
+    "side": "under",
+    "line": 1.5,
+    "bet": "UNDER 1.5 shots",
+    "price": 120,
+    "gap_pct": 3.3,
+    "final_pct": 2.2,
+    "market_fair_pct": 47.0,
+    "final_p_pct": 46.5,
+    "n_books": 8,
+    "guard": "veto",
+    "cap": null,
+    "flagged_at": "2026-11-11T20:20:01-05:00",
+    "read_pull": "C",
+    "settled": "Lineup confirmed",
+    "frozen_settled": "Lineup confirmed",
+    "move30_pct": 0.2,
+    "pulled": null,
+    "locked": false,
+    "state": "open",
+    "close_fair_pct": 47.0,
+    "clv_pct": null,
+    "result": null,
+    "units": null
+   }
+  ],
   "capped": []
  },
  "nights": [
@@ -788,7 +823,7 @@
  ],
  "nov2": {
   "gaps_measured": 45,
-  "gaps_logged": 58,
+  "gaps_logged": 59,
   "graded_picks": 50,
   "w": 31,
   "l": 19,
