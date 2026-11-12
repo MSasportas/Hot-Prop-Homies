@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-11",
- "generated_at": "2026-11-11T21:30:01-05:00",
- "status_at": "2026-11-11T21:30:01-05:00",
+ "generated_at": "2026-11-11T21:40:01-05:00",
+ "status_at": "2026-11-11T21:40:01-05:00",
  "valid_until": "2026-11-12T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-11T21:30:01-05:00",
+   "at": "2026-11-11T21:40:01-05:00",
    "failed_step": null
   },
   "pool": {
@@ -230,7 +230,7 @@
    "goalies": {
     "away": {
      "name": "Justus Annunen",
-     "status": "expected"
+     "status": "confirmed"
     },
     "home": {
      "name": "Laurent Brossoit",
@@ -360,8 +360,8 @@
     "ours_pct": 50.3,
     "model_pct": 54.4
    },
-   "settled": "lineup",
-   "settled_label": "Lineup confirmed",
+   "settled": "goalie",
+   "settled_label": "Goalie confirmed",
    "reason": "6 other books say 49.7%; Hard Rock's +110 only needs 47.6%. Our model agrees (our blend: 50.3%).",
    "link": "https://app.hardrock.bet/?deep_link_value=betslip/1627608023195320716",
    "links": {

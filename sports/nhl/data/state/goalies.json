@@ -39,7 +39,7 @@
   },
   "NSH": {
    "name": "Justus Annunen",
-   "status": "expected"
+   "status": "confirmed"
   },
   "SJS": {
    "name": "Yaroslav Askarov",
@@ -50,5 +50,5 @@
    "status": "confirmed"
   }
  },
- "checked_at": "2026-11-11T21:20:00-05:00"
+ "checked_at": "2026-11-11T21:40:01-05:00"
 }
