@@ -1,5 +1,14 @@
 ## 2026-11-11, AH1 (auto; Large unders (4+ pt move, under side))
 
+## 2026-11-12, AH2 (auto; Late + large (last 90 min, move 3+ pts))
+Filter: MOVES where window is 90->45 or 45->20 AND move >= 3 pts. MOVES population (Pinnacle >= 2 pt move, HR on line, -200..+200, 1/player/market/night).
+Discovery (<2026-11-10, 15 nights): n 134 graded 134 80-54 +14.18u ROI +10.6% CLV_pin -3.5% (n 87)
+Discovery FAIR (ev_pin>=0): n 24 graded 24 16-8 +6.61u ROI +27.5% CLV_pin -0.2% (n 14)
+Forward (>=2026-11-10, 2 nights): n 22 graded 22 14-8 +3.77u ROI +17.1% CLV_pin -2.7% (n 16)
+Forward FAIR: n 2 graded 2 1-1 -0.23u ROI -11.5% CLV_pin +1.2% (n 1)
+Pass bar: n>=150 graded fwd, ROI>0, CI>0, CLV>0. Status: FORWARD - accumulating
+
+
 Filter: MOVES where Pinnacle move >= 4 pts AND side = under. MOVES population (Pinnacle >= 2 pt move, HR on line, -200..+200, 1/player/market/night).
 Discovery (<2026-11-10, 15 nights): n 143 graded 139 72-67 -6.74u ROI -4.8% CLV_pin -3.0% (n 127)
 Discovery FAIR (ev_pin>=0): n 27 graded 27 15-12 +1.17u ROI +4.3% CLV_pin +0.0% (n 23)
