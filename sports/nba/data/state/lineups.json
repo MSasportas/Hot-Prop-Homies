@@ -203,15 +203,15 @@
    "state": "expected",
    "starters": [
     "Anthony Black",
+    "Alex Morales",
     "Desmond Bane",
-    "Jamal Cain",
     "Franz Wagner",
     "Wendell Carter"
    ],
    "status": {
-    "Jamal Cain": "questionable",
-    "Tristan da Silva": "questionable",
     "Paolo Banchero": "out",
+    "Jamal Cain": "out",
+    "Tristan da Silva": "out",
     "Jonathan Isaac": "out",
     "Izaiyah Nelson": "out",
     "Noah Penda": "out",
@@ -299,5 +299,5 @@
    }
   }
  },
- "at": "2026-11-11T20:20:02-05:00"
+ "at": "2026-11-11T20:30:00-05:00"
 }

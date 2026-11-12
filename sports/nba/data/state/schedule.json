@@ -330,11 +330,11 @@
     "home": "IND",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:00 - 3rd",
     "score": {
-     "WSH": "50",
-     "IND": "55"
+     "WSH": "56",
+     "IND": "62"
     }
    },
    {
@@ -345,10 +345,10 @@
     "home": "NY",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "11:57 - 3rd",
     "score": {
-     "CLE": "59",
+     "CLE": "62",
      "NY": "53"
     }
    },
@@ -360,10 +360,10 @@
     "home": "TOR",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:39 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "BOS": "53",
+     "BOS": "54",
      "TOR": "61"
     }
    },
@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:51 - 1st",
+    "detail": "2:15 - 1st",
     "score": {
-     "SA": "19",
-     "CHI": "17"
+     "SA": "23",
+     "CHI": "33"
     }
    },
    {
@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:41 - 1st",
+    "detail": "46.6 - 1st",
     "score": {
-     "DEN": "11",
-     "MEM": "10"
+     "DEN": "32",
+     "MEM": "22"
     }
    },
    {
@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:13 - 1st",
+    "detail": "2:03 - 1st",
     "score": {
-     "LAL": "14",
-     "MIL": "7"
+     "LAL": "28",
+     "MIL": "24"
     }
    },
    {
@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:16 - 1st",
+    "detail": "3:08 - 1st",
     "score": {
-     "BKN": "12",
-     "NO": "5"
+     "BKN": "28",
+     "NO": "17"
     }
    },
    {
