@@ -1,27 +1,27 @@
 {
  "slate_date": "2026-11-12",
- "generated_at": "2026-11-12T14:41:28-05:00",
+ "generated_at": "2026-11-12T14:50:00-05:00",
  "games": [
   {
    "game_id": 2026020309,
-   "state": "CRIT",
+   "state": "FINAL",
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "02:42",
+   "clock": "00:00",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "CAR",
     "score": 4,
-    "sog": 29
+    "sog": 30
    },
    "home": {
     "abbrev": "SEA",
     "score": 1,
     "sog": 13
    },
-   "updated_at": "2026-11-12T14:41:28-05:00"
+   "updated_at": "2026-11-12T14:50:00-05:00"
   }
  ],
  "picks": {
