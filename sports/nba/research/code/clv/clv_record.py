@@ -27,6 +27,9 @@ def main():
         if not os.path.exists(f):
             continue
         fetches = json.load(open(f))["fetches"]
+        fc = "data/odds_close/%s.json" % n["date"]          # the late closing read (reads.close), when there is one
+        if os.path.exists(fc):
+            fetches = fetches + json.load(open(fc))["fetches"]
         for e in n.get("entries", []):
             if e.get("kind") != "single" or e.get("result") not in ("W", "L"):
                 continue

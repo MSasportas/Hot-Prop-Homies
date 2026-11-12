@@ -618,6 +618,12 @@ def run_reads(now, slate, games, games_left_month, cfg, matcher_for, started, te
         res["fetched_now"] += 1
         common.write_json(odds_path(slate), doc, pretty=False)       # credits were spent: keep the answer even if we crash
         pool.save()
+    if not dry_run:
+        try:
+            res["close_reads"] = close_reads(now, slate, games, games_left_month, cfg, matcher_for, started, day, plan, pool, client)
+        except Exception as e:                               # research only: never fail the odds step
+            res["close_reads"] = 0
+            common.log("close read skipped: %s" % type(e).__name__)
     if failed and not res["fetched_now"]:
         res["status"] = "failed"
     if pool.all_refused():
@@ -637,6 +643,54 @@ def run_reads(now, slate, games, games_left_month, cfg, matcher_for, started, te
     res["next_read_at"] = common.iso(next_read_at(now, games, set(plan["reads"]), done, started, cfg)) \
         if next_read_at(now, games, set(plan["reads"]), done, started, cfg) else None
     return _finish(day, pool, res, dry_run)
+
+
+def close_path(slate):
+    return common.dpath("odds_close", "%s.json" % slate)
+
+
+def pick_games(slate):
+    """Game ids holding a Record pick on this slate (ids are slate:game:player:market:line:side)."""
+    out = set()
+    try:
+        with open(common.dpath("record", "events.jsonl"), encoding="utf-8") as f:
+            for ln in f:
+                if ('"id":"%s:' % slate) in ln:
+                    out.add(json.loads(ln)["id"].split(":")[1])
+    except (OSError, ValueError, IndexError, KeyError):
+        pass
+    return out
+
+
+def close_reads(now, slate, games, games_left_month, cfg, matcher_for, started, day, plan, pool, client):
+    """The closing read (reads.close; Matt, 2026-11-12): one late read, close.min..close.latest_min before tip, ONLY for games
+    that hold a Record pick, so every pick gets a closing price (research/code/clv). Kept in data/odds_close/, never in
+    data/odds/: the engine never sees it, so it can make, change or pull no pick. It spends only credits the month's planned
+    reads don't need. Returns how many were made."""
+    c = (cfg["reads"].get("close") or {})
+    if not c.get("active") or (pool.fixture and not os.environ.get("PC_CLOSE_TEST")):
+        return 0
+    held = pick_games(slate)
+    doc = common.read_json(close_path(slate)) or {"date": slate, "fetches": []}
+    seen = {str(f["game_id"]) for f in doc["fetches"]}
+    cost = cfg["ops"].get("cost_per_read", 1)
+    n = 0
+    for g in sorted(games, key=lambda x: (x["start"], x["id"])):
+        gid = str(g["id"])
+        mins = (common.parse_iso(g["start"]) - now).total_seconds() / 60.0
+        if started.get(g["id"]) or gid not in held or gid in seen or not (c["latest_min"] <= mins <= c["min"] + 0.5):
+            continue
+        ev = day["events"].get(gid)
+        if not ev or not spare_ok(pool.total_left(), games_left_month, plan, cost):
+            continue
+        payload, spent = client.event_odds(ev, g["away"], g["home"], slate, "E", g["id"], links=False)
+        if payload is None:
+            continue
+        doc["fetches"].append(normalize(payload, g, matcher_for(g), "E", now, spent, cfg))
+        common.write_json(close_path(slate), doc, pretty=False)
+        pool.save()
+        n += 1
+    return n
 
 
 def _finish(day, pool, res, dry_run):

@@ -87,6 +87,12 @@
    "A"
   ],
   "_spare_about": "Matt, 2026-11-02 11:41 PM: bring the 11 AM read back from 2026-11-04 (no games 11-03). A read the month's allowance can't pay for still runs while the pool covers the planned reads (C, B, D) for every game left this month; then it pauses and the page says so until keys are added. Oct 26-31 replay (2+, fair price): with 11 AM 3.7 picks a night 17-5 +11.09u vs 2.2 a night 9-4 +4.23u without.",
+  "close": {
+   "_about": "Matt, 2026-11-12: a closing read for games that hold a pick, kept in data/odds_close/ for the closing-line score only. It never makes, changes or pulls a pick, and only spends credits the planned reads do not need.",
+   "active": true,
+   "min": 10,
+   "latest_min": 2
+  },
   "stale_min": 60,
   "hold_min": 0.02,
   "hold_max": 0.12

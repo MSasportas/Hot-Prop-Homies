@@ -1,0 +1,107 @@
+"""Closing read (Matt 2026-11-12): one late read for games holding a Record pick, kept apart from data/odds."""
+import json
+import os
+import sys
+import tempfile
+import unittest
+from datetime import timedelta
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(HERE)
+sys.path.insert(0, os.path.join(ROOT, "scripts"))
+
+import common  # noqa: E402
+import odds  # noqa: E402
+
+
+class Pool:
+    fixture = False
+
+    def __init__(self, left):
+        self.left, self.saved = left, 0
+
+    def total_left(self):
+        return self.left
+
+    def save(self):
+        self.saved += 1
+
+
+class Client:
+    def __init__(self):
+        self.calls = []
+
+    def event_odds(self, ev, away, home, slate, read, gid, links=True):
+        self.calls.append((ev, read, links))
+        return {"bookmakers": []}, 4
+
+
+class CloseRead(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.old = {k: os.environ.get(k) for k in ("PC_DATA_DIR", "PC_NOW")}
+        os.environ["PC_DATA_DIR"] = self.tmp.name
+        os.makedirs(os.path.join(self.tmp.name, "record"))
+        self.cfg = json.load(open(os.path.join(ROOT, "config", "rules.json"), encoding="utf-8"))
+        self.now = common.parse_iso("2026-11-12T18:50:00-05:00")
+        self.slate = "2026-11-12"
+        self.games = [{"id": "1", "away": "AAA", "home": "BBB", "start": common.iso(self.now + timedelta(minutes=10))},
+                      {"id": "2", "away": "CCC", "home": "DDD", "start": common.iso(self.now + timedelta(minutes=10))},
+                      {"id": "3", "away": "EEE", "home": "FFF", "start": common.iso(self.now + timedelta(minutes=40))}]
+        self.day = {"events": {"1": "ev1", "2": "ev2", "3": "ev3"}}
+        self.plan = {"reads": ["A", "B", "C", "D"], "spare": ["A"]}
+        with open(os.path.join(self.tmp.name, "record", "events.jsonl"), "w", encoding="utf-8") as f:
+            for gid in ("1", "3"):
+                f.write('{"at":"x","id":"%s:%s:99:points:10.5:under","price":-110,"t":"shown"}\n' % (self.slate, gid))
+            f.write('{"at":"x","id":"2026-11-11:2:99:points:10.5:under","price":-110,"t":"shown"}\n')
+
+    def tearDown(self):
+        for k, v in self.old.items():
+            if v is None:
+                os.environ.pop(k, None)
+            else:
+                os.environ[k] = v
+        self.tmp.cleanup()
+
+    def run_it(self, pool, client, started=None, now=None):
+        return odds.close_reads(now or self.now, self.slate, self.games, 100, self.cfg, lambda g: None, started or {},
+                                self.day, self.plan, pool, client)
+
+    def test_config_is_on_and_late(self):
+        c = self.cfg["reads"]["close"]
+        self.assertTrue(c["active"])
+        self.assertLess(c["min"], self.cfg["reads"]["d_min"])
+
+    def test_only_pick_games_inside_the_window_and_only_once(self):
+        pool, client = Pool(5000), Client()
+        self.assertEqual(self.run_it(pool, client), 1)                 # game 1: pick + 10 min. 2: no pick. 3: too early
+        self.assertEqual(client.calls, [("ev1", "E", False)])
+        doc = json.load(open(odds.close_path(self.slate)))
+        self.assertEqual([(f["game_id"], f["read"]) for f in doc["fetches"]], [("1", "E")])
+        self.assertFalse(os.path.exists(odds.odds_path(self.slate)))   # the engine's file is untouched
+        self.assertEqual(self.run_it(pool, client), 0)                 # never twice
+        self.assertEqual(len(client.calls), 1)
+
+    def test_not_after_tip_or_too_late(self):
+        client = Client()
+        self.assertEqual(self.run_it(Pool(5000), client, started={"1": True}), 0)
+        self.assertEqual(self.run_it(Pool(5000), client, now=self.now + timedelta(minutes=9)), 0)
+        self.assertEqual(client.calls, [])
+
+    def test_never_spends_what_planned_reads_need(self):
+        client = Client()
+        self.assertEqual(self.run_it(Pool(1000), client), 0)           # 3 planned reads x 4 credits x 100 games = 1200
+        self.assertEqual(client.calls, [])
+
+    def test_off_switch_and_fixture_runs(self):
+        self.cfg["reads"]["close"]["active"] = False
+        self.assertEqual(self.run_it(Pool(5000), Client()), 0)
+        self.cfg["reads"]["close"]["active"] = True
+        p = Pool(5000)
+        p.fixture = True
+        os.environ.pop("PC_CLOSE_TEST", None)
+        self.assertEqual(self.run_it(p, Client()), 0)
+
+
+if __name__ == "__main__":
+    unittest.main()
