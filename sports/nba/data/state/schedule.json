@@ -436,10 +436,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:30 - 4th",
+    "detail": "4:19 - 4th",
     "score": {
-     "ORL": "93",
-     "UTAH": "91"
+     "ORL": "108",
+     "UTAH": "99"
     }
    },
    {
@@ -451,10 +451,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:26 - 3rd",
+    "detail": "3:06 - 3rd",
     "score": {
-     "GS": "65",
-     "HOU": "69"
+     "GS": "70",
+     "HOU": "78"
     }
    },
    {
