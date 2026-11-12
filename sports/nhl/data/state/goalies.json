@@ -11,7 +11,7 @@
   },
   "BOS": {
    "name": "Jeremy Swayman",
-   "status": "expected"
+   "status": "confirmed"
   },
   "MTL": {
    "name": "Jacob Fowler",
@@ -90,5 +90,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-12T11:10:01-05:00"
+ "checked_at": "2026-11-12T11:20:01-05:00"
 }
