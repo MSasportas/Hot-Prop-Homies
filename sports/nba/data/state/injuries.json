@@ -1,26 +1,26 @@
 {
- "at": "2026-11-12T18:10:01-05:00",
+ "at": "2026-11-12T18:30:01-05:00",
  "list": {
+  "4585618": {
+   "status": "out",
+   "name": "Keshon Gilbert",
+   "team": "ATL",
+   "date": "2026-11-12T23:10Z",
+   "note": "Gilbert (knee) has been ruled out for Friday's game against the Bulls."
+  },
+  "4873201": {
+   "status": "out",
+   "name": "Asa Newell",
+   "team": "ATL",
+   "date": "2026-11-12T23:08Z",
+   "note": "Newell (toe) has been ruled out for Friday's game against Chicago."
+  },
   "5149077": {
    "status": "day-to-day",
    "name": "Kingston Flemings",
    "team": "ATL",
    "date": "2026-11-12T23:04Z",
    "note": "Flemings (back) is questionable for Friday's game against the Bulls."
-  },
-  "4873201": {
-   "status": "out",
-   "name": "Asa Newell",
-   "team": "ATL",
-   "date": "2026-11-08T22:15Z",
-   "note": "Newell (toe) has been ruled out for Monday's game against the Lakers."
-  },
-  "4585618": {
-   "status": "out",
-   "name": "Keshon Gilbert",
-   "team": "ATL",
-   "date": "2026-11-08T22:13Z",
-   "note": "Gilbert (knee) has been ruled out for Monday's game against the Lakers."
   },
   "4712863": {
    "status": "out",
@@ -243,8 +243,8 @@
    "status": "day-to-day",
    "name": "T.J. McConnell",
    "team": "IND",
-   "date": "2026-11-12T23:06Z",
-   "note": "McConnell (hamstring) is available for Wednesday's game versus Washington."
+   "date": "2026-11-12T23:08Z",
+   "note": "McConnell is probable for Friday's game against the Knicks due to a right hamstring strain."
   },
   "4396909": {
    "status": "day-to-day",
@@ -338,11 +338,18 @@
    "note": "Doncic finished Wednesday's 123-112 win over the Bucks with 32 points (10-25 FG, 5-12 3Pt, 7-10 FT), five rebounds, five assists and three steals across 32 minutes. He exited to the locker room late i"
   },
   "4593016": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Quinten Post",
    "team": "MEM",
-   "date": "2026-11-12T15:00Z",
+   "date": "2026-11-12T23:16Z",
    "note": "Post (concussion) has been ruled out for Wednesday's game against the Nuggets."
+  },
+  "4600663": {
+   "status": "out",
+   "name": "Zach Edey",
+   "team": "MEM",
+   "date": "2026-11-12T23:14Z",
+   "note": "Edey recorded eight points (2-3 FG, 4-4 FT), nine rebounds, one assist and one block over 23 minutes during Monday's 118-102 victory over the Raptors."
   },
   "4431785": {
    "status": "out",
@@ -610,19 +617,19 @@
    "date": "2026-10-21T04:22Z",
    "note": "Simmons underwent successful surgery Tuesday to repair a torn right Achilles tendon, James Ham of ESPN 1320 Sacramento reports."
   },
+  "4395630": {
+   "status": "day-to-day",
+   "name": "Devin Vassell",
+   "team": "SA",
+   "date": "2026-11-12T23:07Z",
+   "note": "Vassell is questionable for Friday's game against the Warriors due to left adductor tightness."
+  },
   "4066259": {
    "status": "day-to-day",
    "name": "De'Aaron Fox",
    "team": "SA",
    "date": "2026-11-12T23:05Z",
    "note": "Fox is questionable for Friday's game against the Warriors due to left hip soreness."
-  },
-  "4395630": {
-   "status": "day-to-day",
-   "name": "Devin Vassell",
-   "team": "SA",
-   "date": "2026-11-12T14:59Z",
-   "note": "Vassell (adductor) won't play in Wednesday's game against the Bulls, Jeff Garcia of KENS 5 San Antonio reports."
   },
   "6440": {
    "status": "out",
