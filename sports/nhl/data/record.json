@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12T01:30:01-05:00",
+ "generated_at": "2026-11-12T10:30:01-05:00",
  "summary": {
   "headline": {
    "w": 35,
@@ -225,6 +225,16 @@
   ],
   "days": [
    {
+    "date": "2026-11-12",
+    "w": 0,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 0,
+    "n": 3,
+    "graded": false
+   },
+   {
     "date": "2026-11-11",
     "w": 0,
     "l": 2,
@@ -427,6 +437,84 @@
   ]
  },
  "nights": [
+  {
+   "date": "2026-11-12",
+   "graded": false,
+   "w": 0,
+   "l": 0,
+   "units": 0,
+   "entries": [
+    {
+     "id": "2026-11-12:2026020309:8482665:shots:1.5:under",
+     "kind": "single",
+     "player": "M. Beniers",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "SEA",
+     "game": "CAR at SEA",
+     "price": -125,
+     "first_price": -125,
+     "last_price": -125,
+     "prices": [
+      {
+       "price": -125,
+       "at": "2026-11-12T10:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-12:2026020309:8478427:shots:2.5:under",
+     "kind": "single",
+     "player": "S. Aho",
+     "bet": "Under 2.5 shots on goal",
+     "market": "shots",
+     "team": "CAR",
+     "game": "CAR at SEA",
+     "price": 110,
+     "first_price": 110,
+     "last_price": 110,
+     "prices": [
+      {
+       "price": 110,
+       "at": "2026-11-12T10:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-12:2026020309:8474586:shots:1.5:under",
+     "kind": "single",
+     "player": "J. Eberle",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "SEA",
+     "game": "CAR at SEA",
+     "price": 110,
+     "first_price": 110,
+     "last_price": 110,
+     "prices": [
+      {
+       "price": 110,
+       "at": "2026-11-12T10:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    }
+   ]
+  },
   {
    "date": "2026-11-11",
    "graded": true,
@@ -918,38 +1006,6 @@
      ],
      "result": "L",
      "actual": "had 1",
-     "units": -1.0,
-     "pulled": null,
-     "legs": []
-    }
-   ]
-  },
-  {
-   "date": "2026-11-05",
-   "graded": true,
-   "w": 0,
-   "l": 1,
-   "units": -1.0,
-   "entries": [
-    {
-     "id": "2026-11-05:2026020261:8480039:shots:2.5:under",
-     "kind": "single",
-     "player": "M. Necas",
-     "bet": "Under 2.5 shots on goal",
-     "market": "shots",
-     "team": "COL",
-     "game": "NSH at COL",
-     "price": 105,
-     "first_price": 105,
-     "last_price": 105,
-     "prices": [
-      {
-       "price": 105,
-       "at": "2026-11-05T20:58:55-05:00"
-      }
-     ],
-     "result": "L",
-     "actual": "had 3",
      "units": -1.0,
      "pulled": null,
      "legs": []

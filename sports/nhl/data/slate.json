@@ -1,42 +1,38 @@
 {
  "slate_date": "2026-11-12",
- "generated_at": "2026-11-12T10:10:01-05:00",
- "status_at": "2026-11-12T10:10:01-05:00",
+ "generated_at": "2026-11-12T10:30:01-05:00",
+ "status_at": "2026-11-12T10:30:01-05:00",
  "valid_until": "2026-11-13T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
-  "prices_at": "2026-11-12T09:00:01-05:00",
-  "next_price_read_at": "2026-11-12T10:30:00-05:00",
+  "prices_at": "2026-11-12T10:30:01-05:00",
+  "next_price_read_at": "2026-11-12T11:15:00-05:00",
   "stats_built_at": "2026-11-12T01:40:01-05:00",
   "stats_through": "2026-11-11",
-  "lineups_at": "2026-11-12T10:10:01-05:00",
+  "lineups_at": "2026-11-12T10:30:01-05:00",
   "goalies_at": null,
   "lineups_note": "Lineups posted for 0 of 2 teams checked so far.",
   "lineups_state": "ok",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-12T10:10:01-05:00",
+   "at": "2026-11-12T10:30:01-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 3182,
+   "pulls_left": 3177,
    "keys": 9,
    "game_days_left": 17,
    "days_left": 19,
    "low": false
   },
   "excluded_teams": [],
-  "lines_checked": 0,
-  "flag_reads": 0,
+  "lines_checked": 25,
+  "flag_reads": 1,
   "tier": 4
  },
  "banners": [],
- "empty": {
-  "code": "none_qualified",
-  "text": "No picks yet today",
-  "sub": "Picks come from the price read 90 minutes before each game. Next read at 10:30 AM."
- },
+ "empty": null,
  "games": [
   {
    "id": 2026020309,
@@ -62,11 +58,15 @@
      {
       "pull": "A",
       "at": "2026-11-12T09:00:01-05:00"
+     },
+     {
+      "pull": "B",
+      "at": "2026-11-12T10:30:01-05:00"
      }
     ],
     "next_read": {
-     "pull": "B",
-     "at": "2026-11-12T10:30:00-05:00"
+     "pull": "C",
+     "at": "2026-11-12T11:15:00-05:00"
     },
     "lineups_at": {
      "away": null,
@@ -75,7 +75,7 @@
    },
    "started": false,
    "reads_done": false,
-   "picks": 0,
+   "picks": 3,
    "excluded_reason": null,
    "excluded_teams": []
   },
@@ -490,7 +490,197 @@
    "excluded_teams": []
   }
  ],
- "picks": [],
+ "picks": [
+  {
+   "id": "2026-11-12:2026020309:8482665:shots:1.5:under",
+   "price": -125,
+   "first_price": -125,
+   "first_price_at": "2026-11-12T10:30:01-05:00",
+   "worst_price": -125,
+   "p": 0.5795,
+   "breakeven": 0.5556,
+   "p_pct": 57,
+   "breakeven_pct": 56,
+   "state": "early",
+   "history": [
+    {
+     "at": "2026-11-12T10:30:01-05:00",
+     "text": "Early: lineup not confirmed"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-12T10:30:01-05:00",
+     "price": -125
+    }
+   ],
+   "pulled": null,
+   "price_final": false,
+   "graded": null,
+   "rank": 1,
+   "tier": "main",
+   "game_id": 2026020309,
+   "player": "M. Beniers",
+   "player_id": 8482665,
+   "team": "SEA",
+   "opp": "CAR",
+   "home": true,
+   "start": "2026-11-12T12:00:00-05:00",
+   "market": "shots",
+   "line": 1.5,
+   "side": "under",
+   "bet": "Under 1.5 shots on goal",
+   "price_at": "2026-11-12T10:30:01-05:00",
+   "gap_pct": 3.1,
+   "market_fair_pct": 57.3,
+   "n_books": 7,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 58.0,
+    "model_pct": 62.4
+   },
+   "settled": "early",
+   "settled_label": "Early",
+   "reason": "7 other books say 57.3%; Hard Rock's -125 only needs 55.6%. Our model agrees (our blend: 57.9%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/7988576984133403035",
+   "links": {
+    "hardrock": {
+     "id": "7988576984133403035",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/7988576984133403035"
+    },
+    "draftkings": null
+   },
+   "thin": false,
+   "games_used": 98,
+   "games_this_season": 16
+  },
+  {
+   "id": "2026-11-12:2026020309:8478427:shots:2.5:under",
+   "price": 110,
+   "first_price": 110,
+   "first_price_at": "2026-11-12T10:30:01-05:00",
+   "worst_price": 110,
+   "p": 0.4955,
+   "breakeven": 0.4762,
+   "p_pct": 49,
+   "breakeven_pct": 48,
+   "state": "early",
+   "history": [
+    {
+     "at": "2026-11-12T10:30:01-05:00",
+     "text": "Early: lineup not confirmed"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-12T10:30:01-05:00",
+     "price": 110
+    }
+   ],
+   "pulled": null,
+   "price_final": false,
+   "graded": null,
+   "rank": 2,
+   "tier": "main",
+   "game_id": 2026020309,
+   "player": "S. Aho",
+   "player_id": 8478427,
+   "team": "CAR",
+   "opp": "SEA",
+   "home": false,
+   "start": "2026-11-12T12:00:00-05:00",
+   "market": "shots",
+   "line": 2.5,
+   "side": "under",
+   "bet": "Under 2.5 shots on goal",
+   "price_at": "2026-11-12T10:30:01-05:00",
+   "gap_pct": 3.8,
+   "market_fair_pct": 49.4,
+   "n_books": 8,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 49.5,
+    "model_pct": 51.6
+   },
+   "settled": "early",
+   "settled_label": "Early",
+   "reason": "8 other books say 49.4%; Hard Rock's +110 only needs 47.6%. Our model agrees (our blend: 49.5%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/7752419478673162633",
+   "links": {
+    "hardrock": {
+     "id": "7752419478673162633",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/7752419478673162633"
+    },
+    "draftkings": null
+   },
+   "thin": false,
+   "games_used": 98,
+   "games_this_season": 19
+  },
+  {
+   "id": "2026-11-12:2026020309:8474586:shots:1.5:under",
+   "price": 110,
+   "first_price": 110,
+   "first_price_at": "2026-11-12T10:30:01-05:00",
+   "worst_price": 110,
+   "p": 0.4939,
+   "breakeven": 0.4762,
+   "p_pct": 49,
+   "breakeven_pct": 48,
+   "state": "early",
+   "history": [
+    {
+     "at": "2026-11-12T10:30:01-05:00",
+     "text": "Early: lineup not confirmed"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-12T10:30:01-05:00",
+     "price": 110
+    }
+   ],
+   "pulled": null,
+   "price_final": false,
+   "graded": null,
+   "rank": 3,
+   "tier": "main",
+   "game_id": 2026020309,
+   "player": "J. Eberle",
+   "player_id": 8474586,
+   "team": "SEA",
+   "opp": "CAR",
+   "home": true,
+   "start": "2026-11-12T12:00:00-05:00",
+   "market": "shots",
+   "line": 1.5,
+   "side": "under",
+   "bet": "Under 1.5 shots on goal",
+   "price_at": "2026-11-12T10:30:01-05:00",
+   "gap_pct": 4.4,
+   "market_fair_pct": 49.7,
+   "n_books": 8,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 49.4,
+    "model_pct": 50.0
+   },
+   "settled": "early",
+   "settled_label": "Early",
+   "reason": "8 other books say 49.7%; Hard Rock's +110 only needs 47.6%. Our model agrees (our blend: 49.4%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/3991913789818798491",
+   "links": {
+    "hardrock": {
+     "id": "3991913789818798491",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/3991913789818798491"
+    },
+    "draftkings": null
+   },
+   "thin": false,
+   "games_used": 96,
+   "games_this_season": 16
+  }
+ ],
  "parlays": [],
  "parlays_note": "Parlays are not offered: there is no evidence for them yet."
 }

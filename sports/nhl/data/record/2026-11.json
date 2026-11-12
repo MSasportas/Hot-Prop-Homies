@@ -1,6 +1,38 @@
 {
  "nights": [
   {
+   "date": "2026-11-05",
+   "graded": true,
+   "w": 0,
+   "l": 1,
+   "units": -1.0,
+   "entries": [
+    {
+     "id": "2026-11-05:2026020261:8480039:shots:2.5:under",
+     "kind": "single",
+     "player": "M. Necas",
+     "bet": "Under 2.5 shots on goal",
+     "market": "shots",
+     "team": "COL",
+     "game": "NSH at COL",
+     "price": 105,
+     "first_price": 105,
+     "last_price": 105,
+     "prices": [
+      {
+       "price": 105,
+       "at": "2026-11-05T20:58:55-05:00"
+      }
+     ],
+     "result": "L",
+     "actual": "had 3",
+     "units": -1.0,
+     "pulled": null,
+     "legs": []
+    }
+   ]
+  },
+  {
    "date": "2026-11-04",
    "graded": true,
    "w": 0,
