@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T16:30:01-05:00",
+ "at": "2026-11-12T16:40:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -71,6 +71,13 @@
    "date": "2026-11-08T22:26Z",
    "note": "Schroder has been diagnosed with a left hamstring strain and will be reevaluated in two weeks, Michael Scotto of HoopsHype.com reports."
   },
+  "5095151": {
+   "status": "out",
+   "name": "Caleb Wilson",
+   "team": "CHI",
+   "date": "2026-11-12T21:35Z",
+   "note": "Wilson (hand) is expected to miss four to six weeks, Shams Charania of ESPN reports."
+  },
   "4848625": {
    "status": "day-to-day",
    "name": "Dailyn Swain",
@@ -91,13 +98,6 @@
    "team": "CHI",
    "date": "2026-11-12T15:00Z",
    "note": "Awaka (back) has been ruled out for Wednesday's game against the Spurs."
-  },
-  "5095151": {
-   "status": "day-to-day",
-   "name": "Caleb Wilson",
-   "team": "CHI",
-   "date": "2026-11-12T02:53Z",
-   "note": "Wilson won't return to Wednesday's game against the Spurs due to a right hand injury. He'll finish with 15 points (5-7 FG, 2-2 3Pt, 3-3 FT), five rebounds and one steal in 15 minutes."
   },
   "4066757": {
    "status": "out",
@@ -330,26 +330,26 @@
    "date": "2026-11-07T17:24Z",
    "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
   },
+  "6475": {
+   "status": "day-to-day",
+   "name": "Klay Thompson",
+   "team": "MIA",
+   "date": "2026-11-12T21:23Z",
+   "note": "Thompson (ankle) is listed as questionable for Friday's game against the Cavaliers."
+  },
   "3032977": {
    "status": "day-to-day",
    "name": "Giannis Antetokounmpo",
    "team": "MIA",
-   "date": "2026-11-12T21:18Z",
-   "note": "Antetokounmpo racked up 30 points (12-21 FG, 1-2 3Pt, 5-9 FT), 11 rebounds and four assists over 31 minutes in Tuesday's 115-109 win over the Jazz."
+   "date": "2026-11-12T21:22Z",
+   "note": "Antetokounmpo (wrist) is probable for Friday's game against Cleveland."
   },
   "4601025": {
    "status": "day-to-day",
    "name": "Pelle Larsson",
    "team": "MIA",
-   "date": "2026-11-12T18:35Z",
-   "note": "Larsson sat out Thursday's practice due to an illness, per Ira Winderman of the South Florida Sun Sentinel."
-  },
-  "6475": {
-   "status": "day-to-day",
-   "name": "Klay Thompson",
-   "team": "MIA",
-   "date": "2026-11-12T18:32Z",
-   "note": "Thompson (ankle) didn't practice Thursday, per Ira Winderman of the South Florida Sun Sentinel."
+   "date": "2026-11-12T21:20Z",
+   "note": "Larsson (illness) is listed as questionable for Friday's game against Cleveland."
   },
   "3133628": {
    "status": "day-to-day",
