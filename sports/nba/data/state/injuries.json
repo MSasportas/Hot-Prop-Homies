@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T17:10:34-05:00",
+ "at": "2026-11-12T17:20:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -98,6 +98,13 @@
    "team": "CHI",
    "date": "2026-11-12T21:35Z",
    "note": "Wilson (hand) is expected to miss four to six weeks, Shams Charania of ESPN reports."
+  },
+  "4432158": {
+   "status": "out",
+   "name": "Evan Mobley",
+   "team": "CLE",
+   "date": "2026-11-12T22:08Z",
+   "note": "Mobley (toe) is out for Friday's game against the Heat."
   },
   "4066757": {
    "status": "out",
@@ -350,20 +357,6 @@
    "team": "MIA",
    "date": "2026-11-12T21:20Z",
    "note": "Larsson (illness) is listed as questionable for Friday's game against Cleveland."
-  },
-  "3133628": {
-   "status": "day-to-day",
-   "name": "Myles Turner",
-   "team": "MIL",
-   "date": "2026-11-12T15:01Z",
-   "note": "Turner has been ruled out for Wednesday's game against the Lakers due to rest."
-  },
-  "4591725": {
-   "status": "day-to-day",
-   "name": "Ryan Rollins",
-   "team": "MIL",
-   "date": "2026-11-12T03:40Z",
-   "note": "Rollins (head) exited to the locker room in the fourth quarter of Wednesday's 123-112 loss to the Lakers and did not return, finishing with eight points (3-10 FG, 2-6 3Pt), seven rebounds, four assist"
   },
   "4594268": {
    "status": "out",
