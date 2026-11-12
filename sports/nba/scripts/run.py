@@ -468,8 +468,12 @@ class Run:
         flag read came back, or it is inside latest_min of tip (no read can run any more); next_check_at: the next planned
         check while not final."""
         cfg, now = self.cfg, self.now
-        flag = [k for k in ("B", "C", "D") if k in (cfg.get("pin_solo") or {}).get("flag_reads", [])]
-        planned = [k for k in flag if k in ((plan or {}).get("reads") or flag)]
+        fr = (cfg.get("pin_solo") or {}).get("flag_reads", [])
+        flag = [k for k in odds.all_reads(cfg) if k in fr and k != "A"]
+        if self.games:
+            dts = odds.due_times(g, self.games, cfg)
+            flag.sort(key=lambda k: dts[k])
+        planned = [k for k in flag if k in (((plan or {}).get("reads") or flag) + ((plan or {}).get("extra") or []))]
         fs = [f for f in (getattr(self, "odds_doc", None) or {}).get("fetches", []) if f["game_id"] == g["id"]]
         checks = sorted(({"read": f["read"], "at": f["at"]} for f in fs if f["read"] in flag and f.get("markets")),
                         key=lambda c: c["at"])

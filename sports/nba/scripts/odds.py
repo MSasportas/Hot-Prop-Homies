@@ -26,6 +26,19 @@ SOURCE = {"ok": 0, "failed": 0}
 READS = ("A", "B", "C", "D")
 
 
+def extra_reads(cfg):
+    """Extra price checks between the fixed ones (reads.extra; Matt 2026-11-12, research Run 11: Hard Rock follows Pinnacle
+    in 20-30 minutes, so checks 25-45 minutes apart miss most moves). {"X75": 75, "X60": 60, ...}: minutes before tip."""
+    x = (cfg.get("reads") or {}).get("extra") or {}
+    if not x.get("active"):
+        return {}
+    return {"X%d" % int(m): int(m) for m in x.get("mins", [])}
+
+
+def all_reads(cfg):
+    return READS + tuple(sorted(extra_reads(cfg), key=lambda k: -extra_reads(cfg)[k]))
+
+
 # ---------------------------------------------------------------- price arithmetic
 def break_even(american):
     return (-american) / (-american + 100.0) if american < 0 else 100.0 / (american + 100.0)
@@ -309,7 +322,8 @@ def make_plan(pool_left, games_left, games_today, cfg):
     # reads.spare (Matt, 2026-11-02: "add the 11am back"): reads the allowance can't fully pay for still run from SPARE credits,
     # i.e. only while the pool still covers the planned reads for every game left this month (checked per read in run_reads)
     spare = [r for r in cfg["reads"].get("spare", []) if r in READS and r not in reads]
-    return {"allowance": round(allowance, 3), "reads": sorted(reads | set(spare)), "spare": spare,
+    extra = sorted(extra_reads(cfg))        # run like spare reads: on top of the plan, while credits last
+    return {"allowance": round(allowance, 3), "reads": sorted(reads | set(spare)), "spare": spare, "extra": extra,
             "pool_at_plan": pool_left, "games_left": games_left, "games_today": games_today}
 
 
@@ -328,8 +342,11 @@ def due_times(game, games, cfg):
     hh, mm = [int(x) for x in r["a_clock"].split(":")]
     a_clock = tip.astimezone(common.ET).replace(hour=hh, minute=mm, second=0)
     a = min(a_clock, first - timedelta(minutes=r["a_before_first_min"]))
-    return {"A": a, "B": tip - timedelta(minutes=r["b_min"]), "C": tip - timedelta(minutes=r["c_min"]),
-            "D": tip - timedelta(minutes=r["d_min"])}
+    out = {"A": a, "B": tip - timedelta(minutes=r["b_min"]), "C": tip - timedelta(minutes=r["c_min"]),
+           "D": tip - timedelta(minutes=r["d_min"])}
+    for k, m in extra_reads(cfg).items():
+        out[k] = tip - timedelta(minutes=m)
+    return out
 
 
 def due_reads(now, games, reads, done, started, cfg):
@@ -346,7 +363,7 @@ def due_reads(now, games, reads, done, started, cfg):
         if (tip - now).total_seconds() / 60.0 < r["latest_min"]:
             continue
         dt = due_times(g, games, cfg)
-        cands = [k for k in READS if k in reads and dt[k] <= now]
+        cands = [k for k in all_reads(cfg) if k in reads and dt[k] <= now]
         if not cands:
             continue
         k = max(cands, key=lambda x: dt[x])
@@ -579,6 +596,7 @@ def run_reads(now, slate, games, games_left_month, cfg, matcher_for, started, te
     if pool.known() and (old is None or old.get("key_count") != pool.count() or
                          old.get("cost_per_read", 1) != cfg["ops"].get("cost_per_read", 1) or
                          "spare" not in old and cfg["reads"].get("spare") or
+                         (old.get("extra") or []) != sorted(extra_reads(cfg)) or
                          (old.get("pool_at_plan", 0) == 0 and pool.total_left() > 0)):
         plan = make_plan(pool.total_left() + pool.spent_on(slate), games_left_month, len(games), cfg)
         plan.update(key_count=pool.count(), made_at=common.iso(now), cost_per_read=cfg["ops"].get("cost_per_read", 1))
@@ -591,7 +609,8 @@ def run_reads(now, slate, games, games_left_month, cfg, matcher_for, started, te
                    note="every odds key was refused" if res["refused"] else "could not read the odds keys yet")
         return _finish(day, pool, res, dry_run)
     done = done_map(slate)
-    due = due_reads(now, games, set(plan["reads"]), done, started, cfg)
+    rs = set(plan["reads"]) | set(plan.get("extra") or [])       # the planned reads plus the extra checks (reads.extra)
+    due = due_reads(now, games, rs, done, started, cfg)
     doc = common.read_json(odds_path(slate)) or {"date": slate, "fetches": []}
     failed, no_budget = [], []
     for d in due:
@@ -605,6 +624,8 @@ def run_reads(now, slate, games, games_left_month, cfg, matcher_for, started, te
         if pool.total_left() < cost:
             no_budget.append(g["id"])
             continue
+        if d["read"] in extra_reads(cfg) and not spare_ok(pool.total_left(), games_left_month, plan, cost):
+            continue                                       # an extra check never spends what the planned reads need this month
         ev = day["events"].get(str(g["id"]))
         if not ev:
             failed.append(g["id"])
@@ -640,8 +661,8 @@ def run_reads(now, slate, games, games_left_month, cfg, matcher_for, started, te
         if no_budget:
             bits.append("%d skipped, budget used" % len(no_budget))
         res["note"] = ", ".join(bits) or "no read due"
-    res["next_read_at"] = common.iso(next_read_at(now, games, set(plan["reads"]), done, started, cfg)) \
-        if next_read_at(now, games, set(plan["reads"]), done, started, cfg) else None
+    res["next_read_at"] = common.iso(next_read_at(now, games, rs, done, started, cfg)) \
+        if next_read_at(now, games, rs, done, started, cfg) else None
     return _finish(day, pool, res, dry_run)
 
 

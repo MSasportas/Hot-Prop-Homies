@@ -311,6 +311,49 @@ def export_lab(moves):
     return doc
 
 
+CLASSIC_WINDOWS = ("11 AM \u2192 90 min", "90 \u2192 45 min", "45 \u2192 20 min")
+
+
+def export_fast():
+    """data/research/lab_fast.json: the live picks that came from the EXTRA price checks (reads.extra, 2026-11-12), read from
+    the Record's own views (never edits them). For the Lab tile "Faster price checks"."""
+    rec = json.load(open(R + "data/record.json", encoding="utf-8"))
+    nights = list(rec.get("nights") or [])
+    for m in rec.get("older") or []:
+        try:
+            nights += json.load(open(R + "data/" + m, encoding="utf-8")).get("nights") or []
+        except (OSError, ValueError):
+            pass
+    tot = {"w": 0, "l": 0, "push": 0, "void": 0, "units": 0.0, "pending": 0}
+    out = []
+    for n in sorted(nights, key=lambda x: x.get("date", ""), reverse=True):
+        bs = []
+        for e in n.get("entries") or []:
+            w = e.get("window")
+            if e.get("kind") != "single" or not w or w in CLASSIC_WINDOWS or n.get("date", "") < "2026-11-12":
+                continue
+            res = e.get("result")
+            tot[{"W": "w", "L": "l", "PUSH": "push", "VOID": "void"}.get(res, "pending")] += 1
+            tot["units"] += e.get("units") or 0.0
+            bs.append({"player": e.get("player"), "bet": "%s (%s)" % (e.get("bet"), w), "price": e.get("price"),
+                       "result": res, "units": e.get("units")})
+        if bs:
+            out.append({"date": n["date"], "w": sum(b["result"] == "W" for b in bs), "l": sum(b["result"] == "L" for b in bs),
+                        "units": round(sum(b["units"] or 0 for b in bs), 2), "bets": bs})
+    doc = {"active": True, "note": "Live picks that came from the extra price checks (75, 60 and 30 minutes before tip).",
+           "total": dict(tot, units=round(tot["units"], 2)), "nights": out}
+    path = R + "data/research/lab_fast.json"
+    try:
+        old = json.load(open(path, encoding="utf-8"))
+    except (OSError, ValueError):
+        old = None
+    if old is None or {k: v for k, v in old.items() if k != "updated_at"} != doc:
+        doc["updated_at"] = common.iso(common.now())
+        with open(path, "w", encoding="utf-8", newline=chr(10)) as fh:
+            json.dump(doc, fh, separators=(",", ":"), sort_keys=True)
+    return doc
+
+
 def run(force_id=None):
     st = load_state()
     if force_id:
@@ -324,6 +367,7 @@ def run(force_id=None):
     moves, _, _ = build_moves()
     try:
         export_lab(moves)
+        export_fast()
     except Exception as e:                                   # the Lab file can never stop the nightly test
         print("lab export skipped: %s" % type(e).__name__)
     fwd = [e for e in moves if e["day"] >= FWD]

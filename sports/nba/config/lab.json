@@ -3,6 +3,16 @@
  "updated": "2026-11-12",
  "tests": [
   {
+   "id": "fast_checks",
+   "title": "Faster price checks (live trial)",
+   "rule": "Same live rule, checked every 15 minutes in the last 90 (added 75, 60 and 30 minutes before tip). These ARE real picks on the Record; this tile shows only the ones the extra checks found.",
+   "summary": "research/lab_fast.json",
+   "stats": "total",
+   "need": 100,
+   "discovery": "Saved data: Hard Rock follows a Pinnacle move in 20-30 minutes, so wider checks missed about 5 of 6 moves.",
+   "gate": "Kept if it adds picks and they beat the closing line. Updated nightly."
+  },
+  {
    "id": "pin_judge",
    "title": "Pinnacle as the price judge",
    "rule": "Hard Rock's price is 2%+ better than Pinnacle's fair price on the same line. Tracked on paper only, never the Record or Discord.",

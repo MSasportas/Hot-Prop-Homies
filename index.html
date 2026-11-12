@@ -1588,7 +1588,7 @@ function ckItem(cls, ic, text, at) {
 }
 function gameChecks(g) {
   var ul = h('ul', { class: 'ck' }), started = gameStarted(g);
-  arr(g.checks).filter(isObj).forEach(function (c) { ul.appendChild(ckItem('', 'check', CHECK_NAME[str(c.read)] || 'Price check', fTime(c.at))); });
+  arr(g.checks).filter(isObj).forEach(function (c) { ul.appendChild(ckItem('', 'check', CHECK_NAME[str(c.read)] || (/^X\d+$/.test(str(c.read)) ? str(c.read).slice(1) + '-min price check' : 'Price check'), fTime(c.at))); });
   /* injury report clear (no one in the team's top 7 is Doubtful / Questionable / GTD), per team unless both agree */
   var ic = isObj(g.injury_clear) ? g.injury_clear : {};
   if (ic.away === true && ic.home === true) ul.appendChild(ckItem('', 'check', 'Injury report clear'));

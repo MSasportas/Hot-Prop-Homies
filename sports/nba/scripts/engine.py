@@ -453,9 +453,16 @@ READ_LABEL = {"A": "11 AM", "B": "90 min", "C": "45 min", "D": "20 min"}
 WINDOW_ORDER = ["11 AM → 90 min", "90 → 45 min", "45 → 20 min"]
 
 
+def read_label(read):
+    """'90 min' for B, '75 min' for the extra read X75 (reads.extra)."""
+    if isinstance(read, str) and read[:1] == "X" and read[1:].isdigit():
+        return "%s min" % read[1:]
+    return READ_LABEL.get(read, read)
+
+
 def window_label(prev_read, read):
     """'11 AM → 90 min', '90 → 45 min', '45 → 20 min' (the price checks a Pinnacle move was seen between)."""
-    a, b = READ_LABEL.get(prev_read, prev_read), READ_LABEL.get(read, read)
+    a, b = read_label(prev_read), read_label(read)
     if a.endswith(" min") and b.endswith(" min"):
         a = a[:-4]
     return "%s → %s" % (a, b)

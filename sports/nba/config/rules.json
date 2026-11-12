@@ -95,7 +95,16 @@
   },
   "stale_min": 60,
   "hold_min": 0.02,
-  "hold_max": 0.12
+  "hold_max": 0.12,
+  "extra": {
+   "_about": "Matt, 2026-11-12 (research Run 11): extra price checks 75, 60 and 30 minutes before tip, so the last 90 minutes are checked every 15 minutes (90, 75, 60, 45, 30, 20). Hard Rock follows a Pinnacle move in 20-30 minutes; wider gaps miss most moves. Same rule, same bar: it only looks more often. About +12 credits a game. Trial: judged on picks a night and the closing-line score.",
+   "active": true,
+   "mins": [
+    75,
+    60,
+    30
+   ]
+  }
  },
  "safety_pause": {
   "units": -10,
@@ -179,7 +188,10 @@
   "max_price": 200,
   "flag_reads": [
    "B",
+   "X75",
+   "X60",
    "C",
+   "X30",
    "D"
   ],
   "max_age_min": 15,
@@ -198,7 +210,10 @@
    "max_price": 200,
    "reads": [
     "B",
+    "X75",
+    "X60",
     "C",
+    "X30",
     "D"
    ],
    "max_age_min": 15
@@ -215,7 +230,10 @@
    ],
    "reads": [
     "B",
+    "X75",
+    "X60",
     "C",
+    "X30",
     "D"
    ],
    "max_age_min": 15

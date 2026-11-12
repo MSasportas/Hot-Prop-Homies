@@ -103,5 +103,60 @@ class CloseRead(unittest.TestCase):
         self.assertEqual(self.run_it(p, Client()), 0)
 
 
+class FasterChecks(unittest.TestCase):
+    """reads.extra (Matt 2026-11-12): checks at 75, 60 and 30 minutes too, so the last 90 minutes are checked every 15."""
+
+    def setUp(self):
+        self.cfg = json.load(open(os.path.join(ROOT, "config", "rules.json"), encoding="utf-8"))
+        self.tip = common.parse_iso("2026-11-12T19:00:00-05:00")
+        self.g = {"id": "1", "away": "AAA", "home": "BBB", "start": common.iso(self.tip)}
+
+    def test_config(self):
+        self.assertEqual(odds.extra_reads(self.cfg), {"X75": 75, "X60": 60, "X30": 30})
+        self.assertEqual(odds.all_reads(self.cfg), ("A", "B", "C", "D", "X75", "X60", "X30"))
+        self.assertEqual(self.cfg["pin_solo"]["flag_reads"], ["B", "X75", "X60", "C", "X30", "D"])
+
+    def test_due_times_and_order(self):
+        dt = odds.due_times(self.g, [self.g], self.cfg)
+        mins = {k: int((self.tip - v).total_seconds() / 60) for k, v in dt.items() if k != "A"}
+        self.assertEqual(mins, {"B": 90, "X75": 75, "X60": 60, "C": 45, "X30": 30, "D": 20})
+
+    def test_each_check_is_due_in_turn(self):
+        reads = set(odds.all_reads(self.cfg))
+        done = {"1": []}
+        seen = []
+        for m in (90, 75, 60, 45, 30, 20):
+            now = self.tip - timedelta(minutes=m)
+            due = odds.due_reads(now, [self.g], reads, done, {}, self.cfg)
+            self.assertEqual(len(due), 1, m)
+            seen.append(due[0]["read"])
+            done["1"].append({"read": due[0]["read"], "at": now, "returned": True})
+            self.assertEqual(odds.due_reads(now + timedelta(minutes=5), [self.g], reads, done, {}, self.cfg), [])
+        self.assertEqual(seen, ["B", "X75", "X60", "C", "X30", "D"])
+
+    def test_plan_lists_them_and_they_never_count_as_planned(self):
+        plan = odds.make_plan(5000, 100, 8, self.cfg)
+        self.assertEqual(plan["extra"], ["X30", "X60", "X75"])
+        for k in plan["extra"]:
+            self.assertNotIn(k, plan["reads"])               # beside the plan, never inside it
+        base = len([r for r in plan["reads"] if r not in plan["spare"]])
+        self.assertIn(base, (3, 4))                          # the fixed reads only, never the extra ones
+        need = base * 4 * 100                                # what the planned reads of 100 games cost
+        self.assertTrue(odds.spare_ok(need + 4, 100, plan, 4))
+        self.assertFalse(odds.spare_ok(need + 3, 100, plan, 4))
+
+    def test_off_switch(self):
+        self.cfg["reads"]["extra"]["active"] = False
+        self.assertEqual(odds.extra_reads(self.cfg), {})
+        self.assertEqual(odds.all_reads(self.cfg), ("A", "B", "C", "D"))
+
+    def test_window_labels(self):
+        import engine
+        self.assertEqual(engine.window_label("B", "X75"), "90 → 75 min")
+        self.assertEqual(engine.window_label("X30", "D"), "30 → 20 min")
+        self.assertEqual(engine.window_label("A", "B"), "11 AM → 90 min")
+        self.assertEqual(engine.window_label("B", "C"), "90 → 45 min")
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -225,8 +225,8 @@ class LabConfig(unittest.TestCase):
         doc = json.load(open(os.path.join(ROOT, "config", "lab.json")))
         # Matt 2026-11-12: everything being tested is in the Lab (paper tracks first, then the nightly forward filters)
         ids = [t["id"] for t in doc["tests"]]
-        self.assertEqual(ids[:2], ["pin_judge", "threes_judge"])
-        self.assertEqual(ids[2:], ["AH%d" % i for i in range(1, 16)])
+        self.assertEqual(ids[:3], ["fast_checks", "pin_judge", "threes_judge"])
+        self.assertEqual(ids[3:], ["AH%d" % i for i in range(1, 16)])
         for t in doc["tests"]:
             for k in ("id", "title", "rule", "summary", "need", "gate"):
                 self.assertIn(k, t)
@@ -235,7 +235,7 @@ class LabConfig(unittest.TestCase):
             self.assertIn(t.get("stats", "total"), sm)
             for k in ("w", "l", "units", "pending"):
                 self.assertIn(k, sm[t.get("stats", "total")])
-        self.assertEqual(doc["tests"][0]["need"], 150)
+        self.assertEqual(doc["tests"][1]["need"], 150)
 
 
 class Page(unittest.TestCase):
