@@ -331,10 +331,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:57 - 4th",
+    "detail": "4:21 - 4th",
     "score": {
-     "WSH": "77",
-     "IND": "91"
+     "WSH": "91",
+     "IND": "102"
     }
    },
    {
@@ -346,10 +346,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "30.6 - 3rd",
+    "detail": "9:10 - 4th",
     "score": {
-     "CLE": "79",
-     "NY": "76"
+     "CLE": "92",
+     "NY": "83"
     }
    },
    {
@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:28 - 3rd",
+    "detail": "9:12 - 4th",
     "score": {
-     "BOS": "75",
-     "TOR": "75"
+     "BOS": "80",
+     "TOR": "82"
     }
    },
    {
@@ -375,11 +375,11 @@
     "home": "CHI",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:38 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "SA": "50",
-     "CHI": "68"
+     "SA": "56",
+     "CHI": "70"
     }
    },
    {
@@ -390,11 +390,11 @@
     "home": "MEM",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:21 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "DEN": "61",
-     "MEM": "48"
+     "DEN": "65",
+     "MEM": "52"
     }
    },
    {
@@ -405,11 +405,11 @@
     "home": "MIL",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:44 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "LAL": "51",
-     "MIL": "43"
+     "LAL": "61",
+     "MIL": "50"
     }
    },
    {
@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:17 - 2nd",
+    "detail": "3:01 - 2nd",
     "score": {
-     "BKN": "59",
-     "NO": "45"
+     "BKN": "70",
+     "NO": "56"
     }
    },
    {

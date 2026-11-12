@@ -235,13 +235,13 @@
    }
   },
   "GS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Stephen Curry",
     "Brandin Podziemski",
     "Yaxel Lendeborg",
-    "Gui Santos",
-    "Draymond Green"
+    "Draymond Green",
+    "Al Horford"
    ],
    "status": {
     "Jimmy Butler": "out",
@@ -252,7 +252,7 @@
    }
   },
   "HOU": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Fred VanVleet",
     "Amen Thompson",
@@ -300,5 +300,5 @@
    }
   }
  },
- "at": "2026-11-11T21:00:39-05:00"
+ "at": "2026-11-11T21:10:01-05:00"
 }
