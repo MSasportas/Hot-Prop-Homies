@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T23:00:00-05:00",
+ "at": "2026-11-11T23:10:00-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -295,19 +295,19 @@
    "date": "2026-08-26T20:04Z",
    "note": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic."
   },
+  "4066457": {
+   "status": "day-to-day",
+   "name": "Austin Reaves",
+   "team": "LAL",
+   "date": "2026-11-12T03:53Z",
+   "note": "Reaves will not return to Wednesday's game against the Bucks due to a left heel injury, Benjamin Royer of The Orange County Register reports."
+  },
   "3945274": {
    "status": "day-to-day",
    "name": "Luka Doncic",
    "team": "LAL",
    "date": "2026-11-12T03:34Z",
    "note": "Doncic finished Wednesday's 123-112 win over the Bucks with 32 points (10-25 FG, 5-12 3Pt, 7-10 FT), five rebounds, five assists and three steals across 32 minutes. He exited to the locker room late i"
-  },
-  "4066457": {
-   "status": "out",
-   "name": "Austin Reaves",
-   "team": "LAL",
-   "date": "2026-11-12T03:14Z",
-   "note": "Reaves will not return to Wednesday's game against the Bucks due to a left heel injury, Benjamin Royer of The Orange County Register reports."
   },
   "4277811": {
    "status": "day-to-day",
