@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T19:20:01-05:00",
+ "at": "2026-11-11T19:30:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -50,26 +50,26 @@
    "date": "2026-11-11T16:40Z",
    "note": "Brown has been ruled out for Wednesday's game against the Pelicans due to an illness, Sharif Phillips-Keaton of USA Today reports."
   },
+  "4066218": {
+   "status": "out",
+   "name": "Grant Williams",
+   "team": "CHA",
+   "date": "2026-11-12T00:12Z",
+   "note": "Williams (hamstring) is listed as probable for Thursday's game against the Suns."
+  },
+  "4433249": {
+   "status": "day-to-day",
+   "name": "Moussa Diabate",
+   "team": "CHA",
+   "date": "2026-11-12T00:10Z",
+   "note": "Diabate (quadriceps) is listed as probable for Thursday's game against the Suns."
+  },
   "4433287": {
    "status": "out",
    "name": "Brandon Miller",
    "team": "CHA",
    "date": "2026-11-12T00:06Z",
    "note": "Miller (groin) is listed as out for Thursday's game against Phoenix."
-  },
-  "4433249": {
-   "status": "day-to-day",
-   "name": "Moussa Diabate",
-   "team": "CHA",
-   "date": "2026-11-10T02:51Z",
-   "note": "Diabate (quadriceps) has been downgraded to out for Monday's game against Cleveland."
-  },
-  "4066218": {
-   "status": "out",
-   "name": "Grant Williams",
-   "team": "CHA",
-   "date": "2026-11-08T22:35Z",
-   "note": "Williams (hamstring) is out for Monday's game against the Cavaliers."
   },
   "5061575": {
    "status": "out",
