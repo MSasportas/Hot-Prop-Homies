@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T22:20:01-05:00",
+ "at": "2026-11-11T22:30:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -336,6 +336,13 @@
    "team": "MEM",
    "date": "2026-11-07T17:24Z",
    "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
+  },
+  "4591725": {
+   "status": "day-to-day",
+   "name": "Ryan Rollins",
+   "team": "MIL",
+   "date": "2026-11-12T03:11Z",
+   "note": "Rollins exited to the locker room in the fourth quarter of Wednesday's game against the Lakers due to an apparent head injury, per the broadcast."
   },
   "3133628": {
    "status": "out",
