@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-11",
- "generated_at": "2026-11-11T21:50:00-05:00",
+ "generated_at": "2026-11-11T21:51:17-05:00",
  "games": [
   {
    "game_id": 2026020294,
@@ -8,9 +8,9 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "14:13",
+   "clock": "13:23",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "NYR",
     "score": 2,
@@ -21,7 +21,7 @@
     "score": 0,
     "sog": 23
    },
-   "updated_at": "2026-11-11T21:50:00-05:00"
+   "updated_at": "2026-11-11T21:51:17-05:00"
   }
  ],
  "picks": {
