@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-11",
- "generated_at": "2026-11-12T00:20:24-05:00",
+ "generated_at": "2026-11-12T00:30:00-05:00",
  "games": [
   {
    "game_id": 2026020294,
@@ -29,20 +29,20 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "11:10",
+   "clock": "07:29",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "NSH",
     "score": 3,
-    "sog": 19
+    "sog": 21
    },
    "home": {
     "abbrev": "ANA",
-    "score": 1,
-    "sog": 21
+    "score": 2,
+    "sog": 26
    },
-   "updated_at": "2026-11-12T00:20:24-05:00"
+   "updated_at": "2026-11-12T00:30:00-05:00"
   }
  ],
  "picks": {
