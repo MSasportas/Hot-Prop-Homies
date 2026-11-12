@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T12:00:01-05:00",
+ "at": "2026-11-12T12:10:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -176,19 +176,19 @@
    "date": "2026-11-08T16:05Z",
    "note": "Duren (hamstring) has begun on-court activity and will be re-evaluated in two weeks, Hunter Patterson of The Athletic reports."
   },
+  "3975": {
+   "status": "out",
+   "name": "Stephen Curry",
+   "team": "GS",
+   "date": "2026-11-12T17:01Z",
+   "note": "Steve Kerr told reporters Wednesday that Curry said he tweaked something in his abdominal area and \"had never done it before.\" Kerr added that the concern level is high, but they will await the MRI re"
+  },
   "3134903": {
    "status": "day-to-day",
    "name": "Gary Payton II",
    "team": "GS",
    "date": "2026-11-12T15:03Z",
    "note": "Payton (knee) is out for Wednesday's game against Houston."
-  },
-  "3975": {
-   "status": "day-to-day",
-   "name": "Stephen Curry",
-   "team": "GS",
-   "date": "2026-11-12T05:39Z",
-   "note": "Steve Kerr told reporters Wednesday that Curry said he tweaked something in his abdominal area and \"had never done it before.\" Kerr added that the concern level is high, but they will await the MRI re"
   },
   "4397040": {
    "status": "out",
