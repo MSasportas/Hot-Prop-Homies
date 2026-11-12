@@ -3,11 +3,11 @@
  "teams": {
   "SEA": {
    "name": "Philipp Grubauer",
-   "status": "expected"
+   "status": "confirmed"
   },
   "CAR": {
    "name": "Brandon Bussi",
-   "status": "expected"
+   "status": "confirmed"
   },
   "BOS": {
    "name": "Jeremy Swayman",
@@ -43,7 +43,7 @@
   },
   "TOR": {
    "name": "Anthony Stolarz",
-   "status": "expected"
+   "status": "confirmed"
   },
   "MIN": {
    "name": "Jesper Wallstedt",
@@ -62,12 +62,12 @@
    "status": "expected"
   },
   "BUF": {
-   "name": "Colten Ellis",
+   "name": "Alex Lyon",
    "status": "expected"
   },
   "DAL": {
    "name": "Jake Oettinger",
-   "status": "expected"
+   "status": "confirmed"
   },
   "WPG": {
    "name": "Stuart Skinner",
@@ -90,5 +90,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-12T11:30:01-05:00"
+ "checked_at": "2026-11-12T11:40:00-05:00"
 }

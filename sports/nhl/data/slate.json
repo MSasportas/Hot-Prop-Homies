@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-12",
- "generated_at": "2026-11-12T11:30:01-05:00",
- "status_at": "2026-11-12T11:30:01-05:00",
+ "generated_at": "2026-11-12T11:40:00-05:00",
+ "status_at": "2026-11-12T11:40:00-05:00",
  "valid_until": "2026-11-13T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-12T11:30:01-05:00",
+   "at": "2026-11-12T11:40:00-05:00",
    "failed_step": null
   },
   "pool": {
@@ -46,11 +46,11 @@
    "goalies": {
     "away": {
      "name": "Brandon Bussi",
-     "status": "expected"
+     "status": "confirmed"
     },
     "home": {
      "name": "Philipp Grubauer",
-     "status": "expected"
+     "status": "confirmed"
     }
    },
    "checks": {
@@ -137,7 +137,7 @@
     },
     "home": {
      "name": "Anthony Stolarz",
-     "status": "expected"
+     "status": "confirmed"
     }
    },
    "checks": {
@@ -337,7 +337,7 @@
    },
    "goalies": {
     "away": {
-     "name": "Colten Ellis",
+     "name": "Alex Lyon",
      "status": "expected"
     },
     "home": {
@@ -383,7 +383,7 @@
     },
     "home": {
      "name": "Jake Oettinger",
-     "status": "expected"
+     "status": "confirmed"
     }
    },
    "checks": {
