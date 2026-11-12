@@ -81,6 +81,20 @@
      "shots"
     ],
     "cost": 1
+   },
+   {
+    "game_id": 2026020299,
+    "pull": "B",
+    "at": "2026-11-12T17:30:01-05:00",
+    "markets": [
+     "points",
+     "shots"
+    ],
+    "returned": [
+     "points",
+     "shots"
+    ],
+    "cost": 2
    }
   ],
   "2026020300": [
@@ -95,6 +109,20 @@
      "shots"
     ],
     "cost": 1
+   },
+   {
+    "game_id": 2026020300,
+    "pull": "B",
+    "at": "2026-11-12T17:30:01-05:00",
+    "markets": [
+     "points",
+     "shots"
+    ],
+    "returned": [
+     "points",
+     "shots"
+    ],
+    "cost": 2
    }
   ],
   "2026020301": [
@@ -109,6 +137,20 @@
      "shots"
     ],
     "cost": 1
+   },
+   {
+    "game_id": 2026020301,
+    "pull": "B",
+    "at": "2026-11-12T17:30:01-05:00",
+    "markets": [
+     "points",
+     "shots"
+    ],
+    "returned": [
+     "points",
+     "shots"
+    ],
+    "cost": 2
    }
   ],
   "2026020303": [
@@ -123,6 +165,20 @@
      "shots"
     ],
     "cost": 1
+   },
+   {
+    "game_id": 2026020303,
+    "pull": "B",
+    "at": "2026-11-12T17:30:01-05:00",
+    "markets": [
+     "points",
+     "shots"
+    ],
+    "returned": [
+     "points",
+     "shots"
+    ],
+    "cost": 2
    }
   ],
   "2026020304": [
@@ -137,6 +193,20 @@
      "shots"
     ],
     "cost": 1
+   },
+   {
+    "game_id": 2026020304,
+    "pull": "B",
+    "at": "2026-11-12T17:30:01-05:00",
+    "markets": [
+     "points",
+     "shots"
+    ],
+    "returned": [
+     "points",
+     "shots"
+    ],
+    "cost": 2
    }
   ],
   "2026020302": [

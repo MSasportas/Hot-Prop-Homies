@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12T15:31:34-05:00",
+ "generated_at": "2026-11-12T17:30:01-05:00",
  "summary": {
   "headline": {
    "w": 38,
@@ -231,8 +231,8 @@
     "push": 0,
     "void": 0,
     "units": 3.0,
-    "n": 3,
-    "graded": true
+    "n": 6,
+    "graded": false
    },
    {
     "date": "2026-11-11",
@@ -439,7 +439,7 @@
  "nights": [
   {
    "date": "2026-11-12",
-   "graded": true,
+   "graded": false,
    "w": 3,
    "l": 0,
    "units": 3.0,
@@ -464,6 +464,29 @@
      "result": "W",
      "actual": "had 1",
      "units": 0.8,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-12:2026020303:8478414:points:0.5:under",
+     "kind": "single",
+     "player": "T. Meier",
+     "bet": "Under 0.5 points",
+     "market": "points",
+     "team": "NJD",
+     "game": "WSH at NJD",
+     "price": -110,
+     "first_price": -110,
+     "last_price": -110,
+     "prices": [
+      {
+       "price": -110,
+       "at": "2026-11-12T17:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
      "pulled": null,
      "legs": []
     },
@@ -494,6 +517,29 @@
      "legs": []
     },
     {
+     "id": "2026-11-12:2026020299:8483457:shots:1.5:under",
+     "kind": "single",
+     "player": "L. Hutson",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "MTL",
+     "game": "MTL at BOS",
+     "price": 105,
+     "first_price": 105,
+     "last_price": 105,
+     "prices": [
+      {
+       "price": 105,
+       "at": "2026-11-12T17:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
      "id": "2026-11-12:2026020309:8474586:shots:1.5:under",
      "kind": "single",
      "player": "J. Eberle",
@@ -513,6 +559,29 @@
      "result": "W",
      "actual": "had 0",
      "units": 1.1,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-12:2026020299:8478401:shots:1.5:under",
+     "kind": "single",
+     "player": "P. Zacha",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "BOS",
+     "game": "MTL at BOS",
+     "price": 140,
+     "first_price": 140,
+     "last_price": 140,
+     "prices": [
+      {
+       "price": 140,
+       "at": "2026-11-12T17:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
      "pulled": null,
      "legs": []
     }
