@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T18:50:00-05:00",
+ "at": "2026-11-11T19:10:00-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -51,11 +51,11 @@
    "note": "Brown has been ruled out for Wednesday's game against the Pelicans due to an illness, Sharif Phillips-Keaton of USA Today reports."
   },
   "4433287": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Brandon Miller",
    "team": "CHA",
-   "date": "2026-11-10T02:51Z",
-   "note": "Miller (groin) is listed as out for Monday's game against Cleveland."
+   "date": "2026-11-12T00:06Z",
+   "note": "Miller (groin) is listed as out for Thursday's game against Phoenix."
   },
   "4433249": {
    "status": "day-to-day",
@@ -362,8 +362,8 @@
    "status": "out",
    "name": "Trey Murphy III",
    "team": "NO",
-   "date": "2026-11-11T23:47Z",
-   "note": "Murphy (knee) is doubtful for Wednesday's game against the Nets."
+   "date": "2026-11-11T23:50Z",
+   "note": "Murphy (knee) is listed as out for Wednesday's game against the Nets."
   },
   "4683634": {
    "status": "out",
