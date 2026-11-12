@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T17:30:01-05:00",
+ "at": "2026-11-12T17:50:00-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -210,6 +210,13 @@
    "team": "GS",
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
+  },
+  "2990992": {
+   "status": "suspension",
+   "name": "Marcus Smart",
+   "team": "HOU",
+   "date": "2026-11-12T22:42Z",
+   "note": "Smart was ejected from Wednesday's game against the Warriors after throwing a punch at Charles Bassey, Adam Spolane of Sports Radio 610 Houston reports."
   },
   "3102529": {
    "status": "out",
