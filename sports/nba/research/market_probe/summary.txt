@@ -1,0 +1,23 @@
+credits spent: 83
+market | games HR priced | HR players | other books pricing it | Pinnacle?
+player_assists | 4 | 43 | 9 | yes
+player_assists_alternate | 4 | 43 | 6 | no
+player_assists_q1 | 4 | 15 | 0 | no
+player_blocks | 4 | 13 | 5 | no
+player_blocks_steals | 3 | 4 | 2 | no
+player_double_double | 4 | 40 | 6 | no
+player_first_basket | 4 | 40 | 4 | no
+player_points | 4 | 55 | 9 | yes
+player_points_alternate | 4 | 55 | 6 | no
+player_points_assists | 4 | 43 | 6 | no
+player_points_q1 | 4 | 35 | 1 | no
+player_points_rebounds | 4 | 50 | 7 | no
+player_points_rebounds_assists | 4 | 42 | 9 | yes
+player_rebounds | 4 | 50 | 9 | yes
+player_rebounds_alternate | 4 | 50 | 6 | no
+player_rebounds_assists | 4 | 42 | 7 | no
+player_rebounds_q1 | 4 | 29 | 0 | no
+player_steals | 4 | 21 | 4 | no
+player_threes | 4 | 43 | 9 | yes
+player_threes_alternate | 4 | 43 | 6 | no
+player_triple_double | 3 | 7 | 6 | no
