@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-11",
- "generated_at": "2026-11-11T18:50:01-05:00",
- "status_at": "2026-11-11T18:50:01-05:00",
+ "generated_at": "2026-11-11T19:00:01-05:00",
+ "status_at": "2026-11-11T19:00:01-05:00",
  "valid_until": "2026-11-12T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -9,14 +9,14 @@
   "next_price_read_at": "2026-11-11T19:30:00-05:00",
   "stats_built_at": "2026-11-11T01:20:00-05:00",
   "stats_through": "2026-11-10",
-  "lineups_at": "2026-11-11T18:50:01-05:00",
+  "lineups_at": "2026-11-11T19:00:01-05:00",
   "goalies_at": null,
-  "lineups_note": "Lineups posted for 5 of 8 teams checked so far.",
+  "lineups_note": "Lineups posted for 8 of 12 teams checked so far.",
   "lineups_state": "ok",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-11T18:50:01-05:00",
+   "at": "2026-11-11T19:00:01-05:00",
    "failed_step": null
   },
   "pool": {
@@ -78,8 +78,8 @@
      "home": "2026-11-11T18:50:01-05:00"
     }
    },
-   "started": false,
-   "reads_done": true,
+   "started": true,
+   "reads_done": false,
    "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
@@ -218,8 +218,8 @@
    "home": "ANA",
    "start": "2026-11-11T22:00:00-05:00",
    "lineups": {
-    "away": "not_checked",
-    "home": "not_checked"
+    "away": "confirmed",
+    "home": "confirmed"
    },
    "goalies": {
     "away": {
@@ -243,8 +243,8 @@
      "at": "2026-11-11T20:30:00-05:00"
     },
     "lineups_at": {
-     "away": null,
-     "home": null
+     "away": "2026-11-11T19:00:01-05:00",
+     "home": "2026-11-11T19:00:01-05:00"
     }
    },
    "started": false,
@@ -259,8 +259,8 @@
    "home": "SJS",
    "start": "2026-11-11T22:00:00-05:00",
    "lineups": {
-    "away": "not_checked",
-    "home": "not_checked"
+    "away": "confirmed",
+    "home": "waiting"
    },
    "goalies": {
     "away": {
@@ -284,7 +284,7 @@
      "at": "2026-11-11T20:30:00-05:00"
     },
     "lineups_at": {
-     "away": null,
+     "away": "2026-11-11T19:00:01-05:00",
      "home": null
     }
    },

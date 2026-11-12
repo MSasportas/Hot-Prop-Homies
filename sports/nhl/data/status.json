@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-11",
- "started_at": "2026-11-11T18:50:01-05:00",
- "status_at": "2026-11-11T18:50:01-05:00",
- "finished_at": "2026-11-11T18:50:04-05:00",
- "last_ok_at": "2026-11-11T18:50:01-05:00",
+ "started_at": "2026-11-11T19:00:01-05:00",
+ "status_at": "2026-11-11T19:00:01-05:00",
+ "finished_at": "2026-11-11T19:00:03-05:00",
+ "last_ok_at": "2026-11-11T19:00:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -30,12 +30,12 @@
   {
    "step": "lineup_history",
    "status": "ok",
-   "note": "2 team(s) changed"
+   "note": "4 team(s) changed"
   },
   {
    "step": "odds",
    "status": "ok",
-   "note": "1 game(s) priced"
+   "note": "no pull due"
   },
   {
    "step": "market_menu",
@@ -44,8 +44,8 @@
   },
   {
    "step": "featured",
-   "status": "ok",
-   "note": "sides/totals for 6 game(s), 10 book(s) max, 3 credit(s)"
+   "status": "skipped",
+   "note": "no new shots read to match"
   },
   {
    "step": "book_probe",
@@ -55,12 +55,12 @@
   {
    "step": "gapguard",
    "status": "ok",
-   "note": "gap+guard: 1 close, 1 pull"
+   "note": "gap+guard: nothing new"
   },
   {
    "step": "engine",
    "status": "ok",
-   "note": "1 new event(s), 0 newly shown"
+   "note": "no change"
   },
   {
    "step": "grade",
@@ -74,8 +74,8 @@
   },
   {
    "step": "shadow",
-   "status": "ok",
-   "note": "39 line read(s) logged"
+   "status": "skipped",
+   "note": "nothing new"
   },
   {
    "step": "gg_grade",
@@ -89,8 +89,8 @@
   },
   {
    "step": "record",
-   "status": "ok",
-   "note": "record.json"
+   "status": "skipped",
+   "note": "unchanged"
   }
  ],
  "sources": {
@@ -151,15 +151,15 @@
  "lineup_unmatched_names": [],
  "excluded_teams": [],
  "stats_through": "2026-11-10",
- "lineups_at": "2026-11-11T18:50:01-05:00",
- "lineups_note": "Lineups posted for 5 of 8 teams checked so far.",
+ "lineups_at": "2026-11-11T19:00:01-05:00",
+ "lineups_note": "Lineups posted for 8 of 12 teams checked so far.",
  "games_today": 6,
  "record_events": 202,
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "43117714209",
-  "iteration": 5,
+  "iteration": 6,
   "chain_link": 3,
   "chain_started_at": "2026-11-11T16:26:02-05:00",
   "run_started_at": "2026-11-11T18:10:22-05:00"
