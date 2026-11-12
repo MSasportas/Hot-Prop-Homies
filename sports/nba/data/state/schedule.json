@@ -466,10 +466,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:46 - 4th",
+    "detail": "19.0 - 4th",
     "score": {
-     "OKC": "101",
-     "POR": "108"
+     "OKC": "108",
+     "POR": "117"
     }
    }
   ]
