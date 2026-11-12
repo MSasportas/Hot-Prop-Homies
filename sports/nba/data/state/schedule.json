@@ -345,11 +345,11 @@
     "home": "NY",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:49 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "CLE": "54",
-     "NY": "51"
+     "CLE": "59",
+     "NY": "53"
     }
    },
    {
@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:34 - 2nd",
+    "detail": "1:39 - 2nd",
     "score": {
-     "BOS": "44",
-     "TOR": "59"
+     "BOS": "53",
+     "TOR": "61"
     }
    },
    {
@@ -373,13 +373,13 @@
     "start": "2026-11-11T20:00:00-05:00",
     "away": "SA",
     "home": "CHI",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/11 - 8:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:51 - 1st",
     "score": {
-     "SA": "0",
-     "CHI": "0"
+     "SA": "19",
+     "CHI": "17"
     }
    },
    {
@@ -388,13 +388,13 @@
     "start": "2026-11-11T20:00:00-05:00",
     "away": "DEN",
     "home": "MEM",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/11 - 8:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:41 - 1st",
     "score": {
-     "DEN": "0",
-     "MEM": "0"
+     "DEN": "11",
+     "MEM": "10"
     }
    },
    {
@@ -403,13 +403,13 @@
     "start": "2026-11-11T20:00:00-05:00",
     "away": "LAL",
     "home": "MIL",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/11 - 8:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:13 - 1st",
     "score": {
-     "LAL": "0",
-     "MIL": "0"
+     "LAL": "14",
+     "MIL": "7"
     }
    },
    {
@@ -418,13 +418,13 @@
     "start": "2026-11-11T20:00:00-05:00",
     "away": "BKN",
     "home": "NO",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/11 - 8:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:16 - 1st",
     "score": {
-     "BKN": "0",
-     "NO": "0"
+     "BKN": "12",
+     "NO": "5"
     }
    },
    {
