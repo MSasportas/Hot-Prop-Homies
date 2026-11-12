@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T22:30:01-05:00",
+ "at": "2026-11-11T22:40:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -180,8 +180,8 @@
    "status": "day-to-day",
    "name": "Stephen Curry",
    "team": "GS",
-   "date": "2026-11-12T02:57Z",
-   "note": "Curry (hip/oblique) exited Wednesday's game against the Rockets, Anthony Slater of ESPN.com reports."
+   "date": "2026-11-12T03:19Z",
+   "note": "Curry won't return to Wednesday's game against the Rockets due to right abdominal soreness, Anthony Slater of ESPN.com reports. He'll finish with three points (1-3 FG, 1-2 3Pt) across six minutes."
   },
   "3134903": {
    "status": "out",
@@ -295,19 +295,19 @@
    "date": "2026-08-26T20:04Z",
    "note": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic."
   },
+  "4066457": {
+   "status": "out",
+   "name": "Austin Reaves",
+   "team": "LAL",
+   "date": "2026-11-12T03:14Z",
+   "note": "Reaves will not return to Wednesday's game against the Bucks due to a left heel injury, Benjamin Royer of The Orange County Register reports."
+  },
   "4277811": {
    "status": "day-to-day",
    "name": "Collin Sexton",
    "team": "LAL",
    "date": "2026-11-12T03:11Z",
    "note": "Sexton went back to the locker room during Wednesday's game against the Bucks after bumping heads with Ryan Rollins, Thuc Nhi Nguyen of the Los Angeles Times reports."
-  },
-  "4066457": {
-   "status": "day-to-day",
-   "name": "Austin Reaves",
-   "team": "LAL",
-   "date": "2026-11-12T02:41Z",
-   "note": "Reaves exited Wednesday's game against the Bucks with an undisclosed injury, Khobi Price of The California Post reports."
   },
   "4397014": {
    "status": "out",
