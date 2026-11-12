@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-12",
- "generated_at": "2026-11-12T12:30:01-05:00",
+ "generated_at": "2026-11-12T12:40:00-05:00",
  "games": [
   {
    "game_id": 2026020309,
@@ -8,20 +8,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "13:20",
+   "clock": "08:16",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "CAR",
-    "score": 0,
-    "sog": 3
+    "score": 1,
+    "sog": 11
    },
    "home": {
     "abbrev": "SEA",
     "score": 0,
-    "sog": 1
+    "sog": 4
    },
-   "updated_at": "2026-11-12T12:30:01-05:00"
+   "updated_at": "2026-11-12T12:40:00-05:00"
   }
  ],
  "picks": {
@@ -38,7 +38,7 @@
   "2026-11-12:2026020309:8482665:shots:1.5:under": {
    "game_id": 2026020309,
    "market": "shots",
-   "stat": 0
+   "stat": 1
   }
  }
 }
