@@ -1,34 +1,34 @@
 {
  "slate_date": "2026-11-12",
- "generated_at": "2026-11-12T17:50:01-05:00",
- "status_at": "2026-11-12T17:50:01-05:00",
+ "generated_at": "2026-11-12T18:00:00-05:00",
+ "status_at": "2026-11-12T18:00:00-05:00",
  "valid_until": "2026-11-13T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
-  "prices_at": "2026-11-12T17:30:01-05:00",
-  "next_price_read_at": "2026-11-12T18:00:00-05:00",
+  "prices_at": "2026-11-12T18:00:00-05:00",
+  "next_price_read_at": "2026-11-12T18:15:00-05:00",
   "stats_built_at": "2026-11-12T15:50:01-05:00",
   "stats_through": "2026-11-12",
-  "lineups_at": "2026-11-12T17:50:01-05:00",
+  "lineups_at": "2026-11-12T18:00:00-05:00",
   "goalies_at": null,
-  "lineups_note": "Lineups posted for 11 of 18 teams checked so far.",
+  "lineups_note": "Lineups posted for 13 of 20 teams checked so far.",
   "lineups_state": "ok",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-12T17:50:01-05:00",
+   "at": "2026-11-12T18:00:00-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 3159,
+   "pulls_left": 3154,
    "keys": 9,
    "game_days_left": 17,
    "days_left": 19,
    "low": false
   },
   "excluded_teams": [],
-  "lines_checked": 117,
-  "flag_reads": 6,
+  "lines_checked": 133,
+  "flag_reads": 7,
   "tier": 4
  },
  "banners": [],
@@ -329,11 +329,15 @@
      {
       "pull": "A",
       "at": "2026-11-12T09:00:01-05:00"
+     },
+     {
+      "pull": "B",
+      "at": "2026-11-12T18:00:00-05:00"
      }
     ],
     "next_read": {
-     "pull": "B",
-     "at": "2026-11-12T18:00:00-05:00"
+     "pull": "C",
+     "at": "2026-11-12T18:45:00-05:00"
     },
     "lineups_at": {
      "away": "2026-11-12T16:30:01-05:00",
@@ -342,7 +346,7 @@
    },
    "started": false,
    "reads_done": false,
-   "picks": 0,
+   "picks": 1,
    "excluded_reason": null,
    "excluded_teams": []
   },
@@ -434,8 +438,8 @@
    "home": "UTA",
    "start": "2026-11-12T21:00:00-05:00",
    "lineups": {
-    "away": "not_checked",
-    "home": "not_checked"
+    "away": "confirmed",
+    "home": "confirmed"
    },
    "goalies": {
     "away": {
@@ -459,8 +463,8 @@
      "at": "2026-11-12T19:30:00-05:00"
     },
     "lineups_at": {
-     "away": null,
-     "home": null
+     "away": "2026-11-12T18:00:00-05:00",
+     "home": "2026-11-12T18:00:00-05:00"
     }
    },
    "started": false,
@@ -576,6 +580,69 @@
    "games_this_season": 19
   },
   {
+   "id": "2026-11-12:2026020302:8480801:points:0.5:under",
+   "price": 170,
+   "first_price": 170,
+   "first_price_at": "2026-11-12T18:00:00-05:00",
+   "worst_price": 170,
+   "p": 0.3869,
+   "breakeven": 0.3704,
+   "p_pct": 38,
+   "breakeven_pct": 37,
+   "state": "lineup",
+   "history": [
+    {
+     "at": "2026-11-12T18:00:00-05:00",
+     "text": "Lineup confirmed"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-12T18:00:00-05:00",
+     "price": 170
+    }
+   ],
+   "pulled": null,
+   "price_final": false,
+   "graded": null,
+   "rank": 2,
+   "tier": "main",
+   "game_id": 2026020302,
+   "player": "B. Tkachuk",
+   "player_id": 8480801,
+   "team": "FLA",
+   "opp": "DET",
+   "home": true,
+   "start": "2026-11-12T19:30:00-05:00",
+   "market": "points",
+   "line": 0.5,
+   "side": "under",
+   "bet": "Under 0.5 points",
+   "price_at": "2026-11-12T18:00:00-05:00",
+   "gap_pct": 5.0,
+   "market_fair_pct": 38.9,
+   "n_books": 7,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 38.7,
+    "model_pct": 37.9
+   },
+   "settled": "goalie",
+   "settled_label": "Goalie confirmed",
+   "reason": "7 other books say 38.9%; Hard Rock's +170 only needs 37.0%. Our model agrees (our blend: 38.7%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/1737568414515462551",
+   "links": {
+    "hardrock": {
+     "id": "1737568414515462551",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/1737568414515462551"
+    },
+    "draftkings": null
+   },
+   "thin": false,
+   "games_used": 79,
+   "games_this_season": 19
+  },
+  {
    "id": "2026-11-12:2026020299:8483457:shots:1.5:under",
    "price": 105,
    "first_price": 105,
@@ -601,7 +668,7 @@
    "pulled": null,
    "price_final": false,
    "graded": null,
-   "rank": 2,
+   "rank": 3,
    "tier": "main",
    "game_id": 2026020299,
    "player": "L. Hutson",
@@ -664,7 +731,7 @@
    "pulled": null,
    "price_final": false,
    "graded": null,
-   "rank": 3,
+   "rank": 4,
    "tier": "main",
    "game_id": 2026020299,
    "player": "P. Zacha",

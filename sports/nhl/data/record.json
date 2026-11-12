@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12T17:30:01-05:00",
+ "generated_at": "2026-11-12T18:00:00-05:00",
  "summary": {
   "headline": {
    "w": 38,
@@ -231,7 +231,7 @@
     "push": 0,
     "void": 0,
     "units": 3.0,
-    "n": 6,
+    "n": 7,
     "graded": false
    },
    {
@@ -531,6 +531,29 @@
       {
        "price": 105,
        "at": "2026-11-12T17:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-12:2026020302:8480801:points:0.5:under",
+     "kind": "single",
+     "player": "B. Tkachuk",
+     "bet": "Under 0.5 points",
+     "market": "points",
+     "team": "FLA",
+     "game": "DET at FLA",
+     "price": 170,
+     "first_price": 170,
+     "last_price": 170,
+     "prices": [
+      {
+       "price": 170,
+       "at": "2026-11-12T18:00:00-05:00"
       }
      ],
      "result": null,
