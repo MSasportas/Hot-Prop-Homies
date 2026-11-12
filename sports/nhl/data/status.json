@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-12",
- "started_at": "2026-11-12T17:30:01-05:00",
- "status_at": "2026-11-12T17:30:01-05:00",
- "finished_at": "2026-11-12T17:30:04-05:00",
- "last_ok_at": "2026-11-12T17:30:01-05:00",
+ "started_at": "2026-11-12T17:40:00-05:00",
+ "status_at": "2026-11-12T17:40:00-05:00",
+ "finished_at": "2026-11-12T17:40:01-05:00",
+ "last_ok_at": "2026-11-12T17:40:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -24,8 +24,8 @@
   },
   {
    "step": "lineups",
-   "status": "ok",
-   "note": "16 of 16 team pages read"
+   "status": "skipped",
+   "note": "checked in the last 20 minutes"
   },
   {
    "step": "lineup_history",
@@ -35,7 +35,7 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "5 game(s) priced"
+   "note": "no pull due"
   },
   {
    "step": "market_menu",
@@ -44,8 +44,8 @@
   },
   {
    "step": "featured",
-   "status": "ok",
-   "note": "sides/totals for 10 game(s), 10 book(s) max, 3 credit(s)"
+   "status": "skipped",
+   "note": "no new shots read to match"
   },
   {
    "step": "book_probe",
@@ -55,12 +55,12 @@
   {
    "step": "gapguard",
    "status": "ok",
-   "note": "gap+guard: 2 flag, 1 veto"
+   "note": "gap+guard: nothing new"
   },
   {
    "step": "engine",
    "status": "ok",
-   "note": "3 new event(s), 3 newly shown"
+   "note": "no change"
   },
   {
    "step": "grade",
@@ -74,8 +74,8 @@
   },
   {
    "step": "shadow",
-   "status": "ok",
-   "note": "188 line read(s) logged"
+   "status": "skipped",
+   "note": "nothing new"
   },
   {
    "step": "gg_grade",
@@ -84,13 +84,13 @@
   },
   {
    "step": "slate",
-   "status": "ok",
-   "note": "3 open pick(s)"
+   "status": "skipped",
+   "note": "unchanged"
   },
   {
    "step": "record",
-   "status": "ok",
-   "note": "record.json"
+   "status": "skipped",
+   "note": "unchanged"
   }
  ],
  "sources": {
@@ -158,13 +158,11 @@
  "lineups_note": "Lineups posted for 11 of 18 teams checked so far.",
  "games_today": 11,
  "record_events": 218,
- "odds_notes": [
-  "key 1 refused (401)"
- ],
+ "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "43318284221",
-  "iteration": 3,
+  "iteration": 4,
   "chain_link": 36,
   "chain_started_at": "2026-11-11T16:26:02-05:00",
   "run_started_at": "2026-11-12T17:16:04-05:00"
