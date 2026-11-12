@@ -19,15 +19,15 @@
   },
   "CBJ": {
    "name": "Jet Greaves",
-   "status": "expected"
+   "status": "confirmed"
   },
   "TBL": {
    "name": "Dennis Hildeby",
    "status": "expected"
   },
   "OTT": {
-   "name": "Samuel Ersson",
-   "status": "expected"
+   "name": "Linus Ullmark",
+   "status": "confirmed"
   },
   "COL": {
    "name": "Mackenzie Blackwood",
@@ -90,5 +90,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-12T11:20:01-05:00"
+ "checked_at": "2026-11-12T11:30:01-05:00"
 }
