@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-11",
- "generated_at": "2026-11-11T22:30:01-05:00",
+ "generated_at": "2026-11-11T22:40:00-05:00",
  "games": [
   {
    "game_id": 2026020294,
@@ -19,9 +19,9 @@
    "home": {
     "abbrev": "CGY",
     "score": 1,
-    "sog": 31
+    "sog": 30
    },
-   "updated_at": "2026-11-11T22:30:01-05:00"
+   "updated_at": "2026-11-11T22:40:00-05:00"
   },
   {
    "game_id": 2026020297,
@@ -29,20 +29,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "09:11",
+   "clock": "03:28",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "NSH",
     "score": 1,
-    "sog": 3
+    "sog": 5
    },
    "home": {
     "abbrev": "ANA",
     "score": 1,
-    "sog": 6
+    "sog": 9
    },
-   "updated_at": "2026-11-11T22:30:01-05:00"
+   "updated_at": "2026-11-11T22:40:00-05:00"
   }
  ],
  "picks": {
