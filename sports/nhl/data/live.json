@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-11",
- "generated_at": "2026-11-11T21:40:01-05:00",
+ "generated_at": "2026-11-11T21:50:00-05:00",
  "games": [
   {
    "game_id": 2026020294,
@@ -8,27 +8,27 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "20:00",
+   "clock": "14:13",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "NYR",
     "score": 2,
-    "sog": 18
+    "sog": 21
    },
    "home": {
     "abbrev": "CGY",
     "score": 0,
-    "sog": 21
+    "sog": 23
    },
-   "updated_at": "2026-11-11T21:40:01-05:00"
+   "updated_at": "2026-11-11T21:50:00-05:00"
   }
  ],
  "picks": {
   "2026-11-11:2026020294:8484210:shots:1.5:under": {
    "game_id": 2026020294,
    "market": "shots",
-   "stat": 1
+   "stat": 2
   }
  }
 }
