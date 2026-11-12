@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T18:50:01-05:00",
+ "generated_at": "2026-11-11T20:30:01-05:00",
  "summary": {
   "headline": {
    "w": 35,
@@ -231,7 +231,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 1,
+    "n": 2,
     "graded": false
    },
    {
@@ -458,6 +458,29 @@
       "at": "2026-11-11T18:50:01-05:00",
       "reason": "Hard Rock took the line down"
      },
+     "legs": []
+    },
+    {
+     "id": "2026-11-11:2026020297:8481605:shots:1.5:under",
+     "kind": "single",
+     "player": "J. LaCombe",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "ANA",
+     "game": "NSH at ANA",
+     "price": 110,
+     "first_price": 110,
+     "last_price": 110,
+     "prices": [
+      {
+       "price": 110,
+       "at": "2026-11-11T20:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
      "legs": []
     }
    ]
