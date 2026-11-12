@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T16:40:01-05:00",
+ "at": "2026-11-12T17:00:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -71,33 +71,33 @@
    "date": "2026-11-08T22:26Z",
    "note": "Schroder has been diagnosed with a left hamstring strain and will be reevaluated in two weeks, Michael Scotto of HoopsHype.com reports."
   },
+  "5105555": {
+   "status": "out",
+   "name": "Tobe Awaka",
+   "team": "CHI",
+   "date": "2026-11-12T21:40Z",
+   "note": "Awaka (back) has been ruled out for Friday's game against the Hawks."
+  },
+  "4848625": {
+   "status": "day-to-day",
+   "name": "Dailyn Swain",
+   "team": "CHI",
+   "date": "2026-11-12T21:38Z",
+   "note": "Swain (back) is listed as questionable for Friday's game against Atlanta."
+  },
+  "2595516": {
+   "status": "day-to-day",
+   "name": "Norman Powell",
+   "team": "CHI",
+   "date": "2026-11-12T21:38Z",
+   "note": "Powell (shoulder) is questionable for Friday's game against the Hawks."
+  },
   "5095151": {
    "status": "out",
    "name": "Caleb Wilson",
    "team": "CHI",
    "date": "2026-11-12T21:35Z",
    "note": "Wilson (hand) is expected to miss four to six weeks, Shams Charania of ESPN reports."
-  },
-  "4848625": {
-   "status": "day-to-day",
-   "name": "Dailyn Swain",
-   "team": "CHI",
-   "date": "2026-11-12T15:00Z",
-   "note": "Swain (back) is out for Wednesday's game against the Spurs."
-  },
-  "2595516": {
-   "status": "day-to-day",
-   "name": "Norman Powell",
-   "team": "CHI",
-   "date": "2026-11-12T15:00Z",
-   "note": "Powell (shoulder) won't play in Wednesday's game against the Spurs,Joel Lorenzi of The Athletic reports."
-  },
-  "5105555": {
-   "status": "day-to-day",
-   "name": "Tobe Awaka",
-   "team": "CHI",
-   "date": "2026-11-12T15:00Z",
-   "note": "Awaka (back) has been ruled out for Wednesday's game against the Spurs."
   },
   "4066757": {
    "status": "out",
