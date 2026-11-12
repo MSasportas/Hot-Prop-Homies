@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T10:10:00-05:00",
+ "at": "2026-11-12T10:10:35-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -295,6 +295,13 @@
    "date": "2026-08-26T20:04Z",
    "note": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic."
   },
+  "4397014": {
+   "status": "day-to-day",
+   "name": "Quentin Grimes",
+   "team": "LAL",
+   "date": "2026-11-12T15:01Z",
+   "note": "Grimes (finger) has been ruled out for Wednesday's game against the Bucks."
+  },
   "4277811": {
    "status": "day-to-day",
    "name": "Collin Sexton",
@@ -315,13 +322,6 @@
    "team": "LAL",
    "date": "2026-11-12T03:34Z",
    "note": "Doncic finished Wednesday's 123-112 win over the Bucks with 32 points (10-25 FG, 5-12 3Pt, 7-10 FT), five rebounds, five assists and three steals across 32 minutes. He exited to the locker room late i"
-  },
-  "4397014": {
-   "status": "out",
-   "name": "Quentin Grimes",
-   "team": "LAL",
-   "date": "2026-11-11T19:06Z",
-   "note": "Grimes (finger) has been ruled out for Wednesday's game against the Bucks."
   },
   "4593016": {
    "status": "day-to-day",
@@ -344,19 +344,19 @@
    "date": "2026-11-07T17:24Z",
    "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
   },
-  "3133628": {
-   "status": "day-to-day",
-   "name": "Myles Turner",
-   "team": "MIL",
-   "date": "2026-11-12T15:01Z",
-   "note": "Turner has been ruled out for Wednesday's game against the Lakers due to rest."
-  },
   "4591725": {
    "status": "day-to-day",
    "name": "Ryan Rollins",
    "team": "MIL",
    "date": "2026-11-12T03:40Z",
    "note": "Rollins (head) exited to the locker room in the fourth quarter of Wednesday's 123-112 loss to the Lakers and did not return, finishing with eight points (3-10 FG, 2-6 3Pt), seven rebounds, four assist"
+  },
+  "3133628": {
+   "status": "out",
+   "name": "Myles Turner",
+   "team": "MIL",
+   "date": "2026-11-11T19:03Z",
+   "note": "Turner has been ruled out for Wednesday's game against the Lakers due to rest."
   },
   "4594268": {
    "status": "out",
