@@ -4,13 +4,13 @@
  "banners": [],
  "status": {
   "odds": {
-   "keys": 10,
-   "pool_left": 3272,
+   "keys": 13,
+   "pool_left": 4772,
    "low": false,
    "refused": false,
    "no_keys": false,
    "days_left": 19,
-   "allowance": 24.722,
+   "allowance": 36.0,
    "reads": [
     "A",
     "B",
@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-12T11:00:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-12T11:00:01-05:00"
+   "at": "2026-11-12T11:01:41-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -151,6 +151,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-12T11:00:01-05:00",
- "status_at": "2026-11-12T11:00:01-05:00"
+ "generated_at": "2026-11-12T11:01:41-05:00",
+ "status_at": "2026-11-12T11:01:41-05:00"
 }

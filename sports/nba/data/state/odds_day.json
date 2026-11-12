@@ -1,7 +1,7 @@
 {
  "date": "2026-11-12",
  "plan": {
-  "allowance": 24.722,
+  "allowance": 36.0,
   "reads": [
    "A",
    "B",
@@ -9,11 +9,11 @@
    "D"
   ],
   "spare": [],
-  "pool_at_plan": 3288,
+  "pool_at_plan": 4788,
   "games_left": 133,
   "games_today": 4,
-  "key_count": 10,
-  "made_at": "2026-11-12T05:00:00-05:00",
+  "key_count": 13,
+  "made_at": "2026-11-12T11:01:41-05:00",
   "cost_per_read": 4
  },
  "events": {
@@ -22,7 +22,7 @@
   "401909978": "3c93e4724d36d796aed71c0ca4055b1b",
   "401909979": "f3f429e773bfb2340ba2bb90f2b9dd1e"
  },
- "events_at": "2026-11-12T05:00:00-05:00",
+ "events_at": "2026-11-12T11:01:41-05:00",
  "unknown_teams": [],
- "key_count": 10
+ "key_count": 13
 }
