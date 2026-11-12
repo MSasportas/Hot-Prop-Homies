@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-12",
- "started_at": "2026-11-12T18:20:01-05:00",
- "status_at": "2026-11-12T18:20:01-05:00",
- "finished_at": "2026-11-12T18:20:03-05:00",
- "last_ok_at": "2026-11-12T18:20:01-05:00",
+ "started_at": "2026-11-12T18:30:00-05:00",
+ "status_at": "2026-11-12T18:30:00-05:00",
+ "finished_at": "2026-11-12T18:30:05-05:00",
+ "last_ok_at": "2026-11-12T18:30:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -24,8 +24,8 @@
   },
   {
    "step": "lineups",
-   "status": "ok",
-   "note": "2 of 2 team pages read"
+   "status": "skipped",
+   "note": "checked in the last 20 minutes"
   },
   {
    "step": "lineup_history",
@@ -35,7 +35,7 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "5 game(s) priced"
+   "note": "2 game(s) priced"
   },
   {
    "step": "market_menu",
@@ -44,8 +44,8 @@
   },
   {
    "step": "featured",
-   "status": "ok",
-   "note": "sides/totals for 10 game(s), 10 book(s) max, 3 credit(s)"
+   "status": "skipped",
+   "note": "tried in the last 10 minutes"
   },
   {
    "step": "book_probe",
@@ -55,7 +55,7 @@
   {
    "step": "gapguard",
    "status": "ok",
-   "note": "gap+guard: 3 close"
+   "note": "gap+guard: nothing new"
   },
   {
    "step": "engine",
@@ -75,7 +75,7 @@
   {
    "step": "shadow",
    "status": "ok",
-   "note": "188 line read(s) logged"
+   "note": "72 line read(s) logged"
   },
   {
    "step": "gg_grade",
@@ -107,7 +107,7 @@
   },
   {
    "n": 2,
-   "left": 35
+   "left": 31
   },
   {
    "n": 3,
@@ -138,14 +138,14 @@
    "left": 500
   }
  ],
- "pool_total": 3141,
+ "pool_total": 3137,
  "allowance": 23.3285,
  "tier": 4,
  "budget_today": 256,
- "budget_used_today": 55,
+ "budget_used_today": 59,
  "prices_state": "ok",
- "prices_at": "2026-11-12T18:20:01-05:00",
- "next_price_read_at": "2026-11-12T18:30:00-05:00",
+ "prices_at": "2026-11-12T18:30:00-05:00",
+ "next_price_read_at": "2026-11-12T18:45:00-05:00",
  "unmatched_names": [],
  "unknown_teams": [],
  "lineup_unmatched_names": [
@@ -162,7 +162,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "43325113500",
-  "iteration": 3,
+  "iteration": 4,
   "chain_link": 37,
   "chain_started_at": "2026-11-11T16:26:02-05:00",
   "run_started_at": "2026-11-12T18:01:03-05:00"
