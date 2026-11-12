@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-12",
- "started_at": "2026-11-12T18:30:00-05:00",
- "status_at": "2026-11-12T18:30:00-05:00",
- "finished_at": "2026-11-12T18:30:05-05:00",
- "last_ok_at": "2026-11-12T18:30:00-05:00",
+ "started_at": "2026-11-12T18:40:01-05:00",
+ "status_at": "2026-11-12T18:40:01-05:00",
+ "finished_at": "2026-11-12T18:40:04-05:00",
+ "last_ok_at": "2026-11-12T18:40:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -24,18 +24,18 @@
   },
   {
    "step": "lineups",
-   "status": "skipped",
-   "note": "checked in the last 20 minutes"
+   "status": "ok",
+   "note": "18 of 18 team pages read"
   },
   {
    "step": "lineup_history",
-   "status": "skipped",
-   "note": "no change"
+   "status": "ok",
+   "note": "1 team(s) changed"
   },
   {
    "step": "odds",
    "status": "ok",
-   "note": "2 game(s) priced"
+   "note": "no pull due"
   },
   {
    "step": "market_menu",
@@ -44,8 +44,8 @@
   },
   {
    "step": "featured",
-   "status": "skipped",
-   "note": "tried in the last 10 minutes"
+   "status": "ok",
+   "note": "sides/totals for 10 game(s), 10 book(s) max, 3 credit(s)"
   },
   {
    "step": "book_probe",
@@ -74,8 +74,8 @@
   },
   {
    "step": "shadow",
-   "status": "ok",
-   "note": "72 line read(s) logged"
+   "status": "skipped",
+   "note": "nothing new"
   },
   {
    "step": "gg_grade",
@@ -107,7 +107,7 @@
   },
   {
    "n": 2,
-   "left": 31
+   "left": 28
   },
   {
    "n": 3,
@@ -138,11 +138,11 @@
    "left": 500
   }
  ],
- "pool_total": 3137,
+ "pool_total": 3134,
  "allowance": 23.3285,
  "tier": 4,
  "budget_today": 256,
- "budget_used_today": 59,
+ "budget_used_today": 62,
  "prices_state": "ok",
  "prices_at": "2026-11-12T18:30:00-05:00",
  "next_price_read_at": "2026-11-12T18:45:00-05:00",
@@ -154,15 +154,17 @@
  ],
  "excluded_teams": [],
  "stats_through": "2026-11-12",
- "lineups_at": "2026-11-12T18:20:01-05:00",
- "lineups_note": "Lineups posted for 13 of 20 teams checked so far.",
+ "lineups_at": "2026-11-12T18:40:01-05:00",
+ "lineups_note": "Lineups posted for 14 of 20 teams checked so far.",
  "games_today": 11,
  "record_events": 219,
- "odds_notes": [],
+ "odds_notes": [
+  "key 1 refused (401)"
+ ],
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "43325113500",
-  "iteration": 4,
+  "iteration": 5,
   "chain_link": 37,
   "chain_started_at": "2026-11-11T16:26:02-05:00",
   "run_started_at": "2026-11-12T18:01:03-05:00"
