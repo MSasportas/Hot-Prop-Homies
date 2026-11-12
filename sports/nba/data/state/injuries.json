@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T18:30:01-05:00",
+ "at": "2026-11-12T18:40:00-05:00",
  "list": {
   "4585618": {
    "status": "out",
@@ -140,13 +140,6 @@
    "team": "DAL",
    "date": "2026-11-11T22:10Z",
    "note": "De Larrea (knee) has been ruled out for Thursday's game at Minnesota."
-  },
-  "4873153": {
-   "status": "day-to-day",
-   "name": "Morez Johnson Jr.",
-   "team": "DAL",
-   "date": "2026-11-11T22:08Z",
-   "note": "Johnson (shin) is listed as probable for Thursday's game against Minnesota."
   },
   "4432181": {
    "status": "out",
@@ -341,15 +334,15 @@
    "status": "out",
    "name": "Quinten Post",
    "team": "MEM",
-   "date": "2026-11-12T23:16Z",
-   "note": "Post (concussion) has been ruled out for Wednesday's game against the Nuggets."
+   "date": "2026-11-12T23:17Z",
+   "note": "Post (concussion) has been ruled out for Friday's game against New Orleans."
   },
   "4600663": {
    "status": "out",
    "name": "Zach Edey",
    "team": "MEM",
-   "date": "2026-11-12T23:14Z",
-   "note": "Edey recorded eight points (2-3 FG, 4-4 FT), nine rebounds, one assist and one block over 23 minutes during Monday's 118-102 victory over the Raptors."
+   "date": "2026-11-12T23:16Z",
+   "note": "Edey won't play in Friday's game against the Pelicans due to left ankle injury management."
   },
   "4431785": {
    "status": "out",
@@ -546,13 +539,6 @@
    "team": "PHI",
    "date": "2026-11-12T16:36Z",
    "note": "Bona (back) will be re-evaluated in approximately one week after seeing a specialist, Ky Carlin of USA Today reports."
-  },
-  "3059318": {
-   "status": "day-to-day",
-   "name": "Joel Embiid",
-   "team": "PHI",
-   "date": "2026-11-12T16:34Z",
-   "note": "Embiid (foot) remains questionable for Thursday's game against the Raptors, but he participated in the team's morning shootaround, Ky Carlin of USA Today reports."
   },
   "4871141": {
    "status": "out",

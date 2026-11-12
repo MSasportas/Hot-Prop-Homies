@@ -2,7 +2,7 @@
  "slate": "2026-11-12",
  "teams": {
   "TOR": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Immanuel Quickley",
     "RJ Barrett",
@@ -18,7 +18,7 @@
    }
   },
   "PHI": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Tyrese Maxey",
     "VJ Edgecombe",
@@ -27,7 +27,6 @@
     "Joel Embiid"
    ],
    "status": {
-    "Joel Embiid": "questionable",
     "Ariel Hukporti": "out",
     "Dominick Barlow": "out",
     "Adem Bona": "out",
@@ -35,7 +34,7 @@
    }
   },
   "DET": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Cade Cunningham",
     "Daniss Jenkins",
@@ -49,7 +48,7 @@
    }
   },
   "WSH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Trae Young",
     "Kyshawn George",
@@ -122,5 +121,5 @@
    }
   }
  },
- "at": "2026-11-12T18:30:01-05:00"
+ "at": "2026-11-12T18:40:00-05:00"
 }
