@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-11",
- "generated_at": "2026-11-11T19:10:01-05:00",
- "status_at": "2026-11-11T19:10:01-05:00",
+ "generated_at": "2026-11-11T19:20:00-05:00",
+ "status_at": "2026-11-11T19:20:00-05:00",
  "valid_until": "2026-11-12T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-11T19:10:01-05:00",
+   "at": "2026-11-11T19:20:00-05:00",
    "failed_step": null
   },
   "pool": {
@@ -96,7 +96,7 @@
    "goalies": {
     "away": {
      "name": "Joonas Korpisalo",
-     "status": "expected"
+     "status": "confirmed"
     },
     "home": {
      "name": "Devin Cooley",
@@ -353,8 +353,8 @@
     "ours_pct": 43.0,
     "model_pct": 44.6
    },
-   "settled": "lineup",
-   "settled_label": "Lineup confirmed",
+   "settled": "goalie",
+   "settled_label": "Goalie confirmed",
    "reason": "6 other books say 43.0%; Hard Rock's +140 only needs 41.7%. Our model agrees (our blend: 43.0%).",
    "link": "https://app.hardrock.bet/?deep_link_value=betslip/622354636755567026",
    "links": {
