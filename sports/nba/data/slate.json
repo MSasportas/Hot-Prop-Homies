@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-11T21:40:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-11T21:51:20-05:00"
+   "at": "2026-11-11T22:00:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-11T21:51:20-05:00",
+    "at": "2026-11-11T22:00:00-05:00",
     "confirmed": [
      "BKN",
      "BOS",
@@ -175,7 +175,7 @@
    "away": "SAS",
    "home": "CHI",
    "state": "in",
-   "detail": "10:37 - 4th",
+   "detail": "7:21 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -212,7 +212,7 @@
    "away": "DEN",
    "home": "MEM",
    "state": "in",
-   "detail": "1:24 - 3rd",
+   "detail": "9:48 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -249,7 +249,7 @@
    "away": "LAL",
    "home": "MIL",
    "state": "in",
-   "detail": "End of 3rd",
+   "detail": "9:20 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -286,7 +286,7 @@
    "away": "BKN",
    "home": "NOP",
    "state": "in",
-   "detail": "3:36 - 3rd",
+   "detail": "End of 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -323,7 +323,7 @@
    "away": "ORL",
    "home": "UTA",
    "state": "in",
-   "detail": "8:26 - 2nd",
+   "detail": "6:07 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -360,7 +360,7 @@
    "away": "GSW",
    "home": "HOU",
    "state": "in",
-   "detail": "6:25 - 1st",
+   "detail": "3:01 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -387,7 +387,7 @@
    "next_check_read": null,
    "paused": false,
    "injury_clear": {
-    "away": true,
+    "away": false,
     "home": true
    }
   },
@@ -610,8 +610,8 @@
   }
  ],
  "empty": {
-  "text": "No picks yet today",
-  "why": "950 lines read. Pinnacle moved alone on 98, none of them bettable yet.",
+  "text": "No open picks right now",
+  "why": "Every game has started.",
   "next": null
  },
  "counts": {
@@ -625,6 +625,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-11T21:51:20-05:00",
- "status_at": "2026-11-11T21:51:20-05:00"
+ "generated_at": "2026-11-11T22:00:00-05:00",
+ "status_at": "2026-11-11T22:00:00-05:00"
 }
