@@ -1,3 +1,16 @@
+## 2026-11-12, Run 11 (CEO; Matt: test the top-5 ideas that need no new data). Code: research/code/run11/moves_thr.py. 18 nights.
+T1a 3-pointers / all markets on a smaller Pinnacle move, FAIR (Hard Rock >= Pinnacle fair): move >= 2.0 pts 58 bets 38-20 +16.25u 3.22/night CLV -0.19%; >= 1.0: 61, 38-23; >= 0.5: 61, 40-21. Threes FAIR 12-0 (2 pts) / 14-1 (0.5 pt), CLV +1.2% (n 8-11). Without the fair check threes: 147-295 bets, ROI about 0, CLV -4.3..-4.8%.
+  Verdict: the move size is NOT what limits volume; the fair-price check is. A looser trigger adds 3 bets in 18 nights. Closed.
+T1b no move, Hard Rock X%+ over Pinnacle (B/C/D): threes >= 0%: 45, 26-19 +10.07u, 2.5/night, CLV -0.03% (beat 81%); >= 1%: 17, 10-7, CLV +0.93%; >= 2%: 11, 7-4, CLV +2.69% (7/7). Points/rebounds/assists: CLV negative at every bar.
+  Verdict: threes >= 1% is a small lead (about 1 a night). Forward-track, do not go live on n 17.
+T2 HOW FAST HARD ROCK FOLLOWS a 2+ pt Pinnacle move (state of Hard Rock's price when our next read saw the move):
+  reads <= 30 min apart: 65 moves, Hard Rock already followed 52%, unchanged 40%, still fair-or-better 15%
+  31-50 min: 102 moves, followed 76%, still fair 11% | 51-120 min: 34, followed 76%, fair 8% | over 2 h: 498, followed 82%, fair 6%
+  Upper bound for faster reads = the same bets at Hard Rock's price from BEFORE the move: 333 bets, 177-156 +20.13u ROI +6.0%, 18.5/night, CLV +3.30%, beat close 91% (n 306). The rule today gets 58 of them (3.2/night).
+  Missed today: 280 bets (15.6/night) 142-138 +3.32u, CLV +3.58%.
+  Verdict: LEAD, the biggest so far. Hard Rock follows Pinnacle in roughly 20-30 minutes; our reads are 25-45+ minutes apart, so about 5 of 6 moves are gone when we look. The edge is speed, not a new filter. Caveats: upper bound (assumes every move is seen before Hard Rock reacts; some reactions are near-instant); CLV at the old price is partly by construction; ROI +6% on 333 has a wide interval.
+Next: forward trial of tighter reads in the last 90 minutes (every 15 min), measure the real catch rate and CLV. Needs engine work (reads are fixed A/B/C/D) and about +100 credits a night.
+
 ## 2026-11-12, Run 10 (CEO; Matt picked idea #2 of the 100: LINE disagreements, Hard Rock main line != Pinnacle main line)
 Code: research/code/run10/line_disagree.py, line_convert.py. 18 nights, reads B/C/D, one bet per player/market/night, Hard Rock -200..+200, bet toward Pinnacle (Pinnacle higher = over, lower = under).
 Volume: 1,028 graded disagreements, 60.5 a night. Bet blind: 546-482 -68.07u ROI -6.6%. Hard Rock's line moved our way by the close 11%, against 1%.
