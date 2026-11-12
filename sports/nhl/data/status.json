@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-12",
- "started_at": "2026-11-12T11:30:01-05:00",
- "status_at": "2026-11-12T11:30:01-05:00",
- "finished_at": "2026-11-12T11:30:02-05:00",
- "last_ok_at": "2026-11-12T11:30:01-05:00",
+ "started_at": "2026-11-12T12:00:01-05:00",
+ "status_at": "2026-11-12T12:00:01-05:00",
+ "finished_at": "2026-11-12T12:00:02-05:00",
+ "last_ok_at": "2026-11-12T12:00:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -24,8 +24,8 @@
   },
   {
    "step": "lineups",
-   "status": "ok",
-   "note": "2 of 2 team pages read"
+   "status": "skipped",
+   "note": "no game close enough"
   },
   {
    "step": "lineup_history",
@@ -60,7 +60,7 @@
   {
    "step": "engine",
    "status": "ok",
-   "note": "no change"
+   "note": "2 new event(s), 0 newly shown"
   },
   {
    "step": "grade",
@@ -69,8 +69,8 @@
   },
   {
    "step": "live",
-   "status": "skipped",
-   "note": "no started game with a pick"
+   "status": "ok",
+   "note": "1 game(s), 1 read this run"
   },
   {
    "step": "shadow",
@@ -85,12 +85,12 @@
   {
    "step": "slate",
    "status": "ok",
-   "note": "2 open pick(s)"
+   "note": "0 open pick(s)"
   },
   {
    "step": "record",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "record.json"
   }
  ],
  "sources": {
@@ -154,14 +154,14 @@
  "lineups_at": "2026-11-12T11:30:01-05:00",
  "lineups_note": "Lineups posted for 0 of 2 teams checked so far.",
  "games_today": 11,
- "record_events": 210,
+ "record_events": 212,
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "43252222299",
-  "iteration": 5,
-  "chain_link": 27,
+  "run_id": "43259498707",
+  "iteration": 4,
+  "chain_link": 28,
   "chain_started_at": "2026-11-11T16:26:02-05:00",
-  "run_started_at": "2026-11-12T10:51:06-05:00"
+  "run_started_at": "2026-11-12T11:31:07-05:00"
  }
 }
