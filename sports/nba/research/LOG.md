@@ -1,3 +1,12 @@
+## 2026-11-12, Run 10 (CEO; Matt picked idea #2 of the 100: LINE disagreements, Hard Rock main line != Pinnacle main line)
+Code: research/code/run10/line_disagree.py, line_convert.py. 18 nights, reads B/C/D, one bet per player/market/night, Hard Rock -200..+200, bet toward Pinnacle (Pinnacle higher = over, lower = under).
+Volume: 1,028 graded disagreements, 60.5 a night. Bet blind: 546-482 -68.07u ROI -6.6%. Hard Rock's line moved our way by the close 11%, against 1%.
+No-model lower bound (Pinnacle's chance at ITS line x Hard Rock price): 1 of 1,028 >= 0%.
+Converted (Pinnacle chance carried to Hard Rock's line; Normal(mu, k sqrt(mu)), k fitted per market from book-vs-book line pairs, rmse 0.022-0.026; calibration said .483/.522/.566 -> hit .488/.540/.575):
+ev >= +2%: 10 bets in 18 nights, 5-5 -0.52u. ev >= +4%: 7, 3-4. ev < -2%: 997 of 1,028.
+Verdict: NO CANDIDATE. When Hard Rock's line differs it has already re-juiced the price (same finding as Run 4 F8, now on 18 nights). A different line is not a stale line. No volume here. Do not re-test on main lines.
+Note: the side toward Pinnacle hit 1-2 pts more often than the converted chance across ~700 bets, far short of the ~7% price handicap.
+
 ## 2026-11-12, CLV2 (CEO; closing-line value of the Lab track pin_judge = Hard Rock 2%+ over Pinnacle fair, no move needed)
 Matt asked to put a "2%+ edge" bar in the Lab: it is already there (pin_judge, since 2026-10-28). Scored it against the close from stored reads.
 pin_judge 55 graded: 30-25 +6.71u, 4.2 a night. CLV measured 27 (D-read flags have no later read yet): mean -1.05%, beat close 55%.
