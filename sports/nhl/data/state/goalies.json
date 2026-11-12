@@ -62,7 +62,7 @@
    "status": "expected"
   },
   "BUF": {
-   "name": "Ukko-Pekka Luukkonen",
+   "name": "Colten Ellis",
    "status": "expected"
   },
   "DAL": {
@@ -74,7 +74,7 @@
    "status": "expected"
   },
   "UTA": {
-   "name": "Sebastian Cossa",
+   "name": "Karel Vejmelka",
    "status": "expected"
   },
   "STL": {
@@ -82,7 +82,7 @@
    "status": "expected"
   },
   "LAK": {
-   "name": "Darcy Kuemper",
+   "name": "Anton Forsberg",
    "status": "expected"
   },
   "NYI": {
@@ -90,5 +90,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-12T07:00:01-05:00"
+ "checked_at": "2026-11-12T07:01:20-05:00"
 }
