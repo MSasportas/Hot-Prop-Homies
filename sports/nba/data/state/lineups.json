@@ -142,6 +142,7 @@
     "Jalen Smith"
    ],
    "status": {
+    "Caleb Wilson": "questionable",
     "Tobe Awaka": "out",
     "Norman Powell": "out",
     "Dailyn Swain": "out"
@@ -266,12 +267,12 @@
    }
   },
   "OKC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Shai Gilgeous-Alexander",
     "Jared McCain",
     "Alex Caruso",
-    "Kenrich Williams",
+    "Aday Mara",
     "Isaiah Hartenstein"
    ],
    "status": {
@@ -284,7 +285,7 @@
    }
   },
   "POR": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Damian Lillard",
     "Sidy Cissoko",
@@ -300,5 +301,5 @@
    }
   }
  },
- "at": "2026-11-11T21:30:02-05:00"
+ "at": "2026-11-11T21:40:01-05:00"
 }

@@ -343,13 +343,13 @@
     "start": "2026-11-11T19:00:00-05:00",
     "away": "CLE",
     "home": "NY",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:23 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "CLE": "106",
-     "NY": "103"
+     "CLE": "115",
+     "NY": "107"
     }
    },
    {
@@ -358,13 +358,13 @@
     "start": "2026-11-11T19:00:00-05:00",
     "away": "BOS",
     "home": "TOR",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:55 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "BOS": "90",
-     "TOR": "89"
+     "BOS": "98",
+     "TOR": "93"
     }
    },
    {
@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:57 - 3rd",
+    "detail": "2:16 - 3rd",
     "score": {
-     "SA": "74",
-     "CHI": "73"
+     "SA": "88",
+     "CHI": "84"
     }
    },
    {
@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:45 - 3rd",
+    "detail": "5:37 - 3rd",
     "score": {
-     "DEN": "71",
-     "MEM": "64"
+     "DEN": "77",
+     "MEM": "75"
     }
    },
    {
@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:56 - 3rd",
+    "detail": "2:39 - 3rd",
     "score": {
-     "LAL": "69",
-     "MIL": "56"
+     "LAL": "85",
+     "MIL": "65"
     }
    },
    {
@@ -420,11 +420,11 @@
     "home": "NO",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:34 - 3rd",
     "score": {
-     "BKN": "83",
-     "NO": "66"
+     "BKN": "97",
+     "NO": "72"
     }
    },
    {
@@ -435,11 +435,11 @@
     "home": "UTAH",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:40 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
-     "ORL": "24",
-     "UTAH": "21"
+     "ORL": "29",
+     "UTAH": "34"
     }
    },
    {

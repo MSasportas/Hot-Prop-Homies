@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 10,
-   "pool_left": 3292,
+   "pool_left": 3288,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-11T21:40:00-05:00",
-  "last_read_at": "2026-11-11T21:20:00-05:00",
+  "next_read_at": null,
+  "last_read_at": "2026-11-11T21:40:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-11T21:30:02-05:00"
+   "at": "2026-11-11T21:40:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-11T21:30:02-05:00",
+    "at": "2026-11-11T21:40:01-05:00",
     "confirmed": [
      "BKN",
      "BOS",
@@ -45,7 +45,9 @@
      "MIL",
      "NO",
      "NY",
+     "OKC",
      "ORL",
+     "POR",
      "SA",
      "TOR",
      "UTAH",
@@ -98,8 +100,8 @@
    "start": "2026-11-11T19:00:00-05:00",
    "away": "CLE",
    "home": "NYK",
-   "state": "in",
-   "detail": "2:23 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -135,8 +137,8 @@
    "start": "2026-11-11T19:00:00-05:00",
    "away": "BOS",
    "home": "TOR",
-   "state": "in",
-   "detail": "1:55 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -173,7 +175,7 @@
    "away": "SAS",
    "home": "CHI",
    "state": "in",
-   "detail": "7:57 - 3rd",
+   "detail": "2:16 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -201,7 +203,7 @@
    "paused": false,
    "injury_clear": {
     "away": true,
-    "home": true
+    "home": false
    }
   },
   {
@@ -210,7 +212,7 @@
    "away": "DEN",
    "home": "MEM",
    "state": "in",
-   "detail": "8:45 - 3rd",
+   "detail": "5:37 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -247,7 +249,7 @@
    "away": "LAL",
    "home": "MIL",
    "state": "in",
-   "detail": "7:56 - 3rd",
+   "detail": "2:39 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -284,7 +286,7 @@
    "away": "BKN",
    "home": "NOP",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "6:34 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -321,7 +323,7 @@
    "away": "ORL",
    "home": "UTA",
    "state": "in",
-   "detail": "2:40 - 1st",
+   "detail": "End of 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -397,10 +399,10 @@
    "state": "pre",
    "detail": "11/11 - 10:00 PM EST",
    "lineups": {
-    "away": "expected",
-    "home": "expected"
+    "away": "confirmed",
+    "home": "confirmed"
    },
-   "read_at": "2026-11-11T21:20:00-05:00",
+   "read_at": "2026-11-11T21:40:01-05:00",
    "picks": 0,
    "checks": [
     {
@@ -410,12 +412,16 @@
     {
      "read": "C",
      "at": "2026-11-11T21:20:00-05:00"
+    },
+    {
+     "read": "D",
+     "at": "2026-11-11T21:40:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-11T21:20:00-05:00",
-   "final": false,
-   "next_check_at": "2026-11-11T21:40:00-05:00",
-   "next_check_read": "D",
+   "last_check_at": "2026-11-11T21:40:01-05:00",
+   "final": true,
+   "next_check_at": null,
+   "next_check_read": null,
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -594,18 +600,22 @@
     "status": null
    },
    "added_at": "2026-11-11T17:30:01-05:00",
-   "result": null,
+   "result": {
+    "result": "W",
+    "actual": "23 points",
+    "units": 0.8
+   },
    "links": null,
    "rank": null
   }
  ],
  "empty": {
   "text": "No picks yet today",
-  "why": "956 lines read. Pinnacle moved alone on 98, none of them bettable yet.",
-  "next": "2026-11-11T21:40:00-05:00"
+  "why": "950 lines read. Pinnacle moved alone on 98, none of them bettable yet.",
+  "next": null
  },
  "counts": {
-  "lines_read": 956,
+  "lines_read": 950,
   "passing": 11,
   "games": 10
  },
@@ -615,6 +625,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-11T21:30:02-05:00",
- "status_at": "2026-11-11T21:30:02-05:00"
+ "generated_at": "2026-11-11T21:40:01-05:00",
+ "status_at": "2026-11-11T21:40:01-05:00"
 }
