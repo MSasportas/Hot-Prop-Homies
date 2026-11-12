@@ -1,54 +1,94 @@
 {
- "date": "2026-11-11",
+ "date": "2026-11-12",
  "teams": {
-  "BUF": {
-   "name": "Ukko-Pekka Luukkonen",
+  "SEA": {
+   "name": "Philipp Grubauer",
+   "status": "expected"
+  },
+  "CAR": {
+   "name": "Pyotr Kochetkov",
+   "status": "expected"
+  },
+  "BOS": {
+   "name": "Jeremy Swayman",
+   "status": "expected"
+  },
+  "MTL": {
+   "name": "Jacob Fowler",
    "status": "confirmed"
+  },
+  "CBJ": {
+   "name": "Cam Talbot",
+   "status": "expected"
   },
   "TBL": {
    "name": "Andrei Vasilevskiy",
-   "status": "confirmed"
+   "status": "expected"
   },
-  "CGY": {
-   "name": "Devin Cooley",
-   "status": "confirmed"
+  "OTT": {
+   "name": "Samuel Ersson",
+   "status": "expected"
   },
-  "NYR": {
-   "name": "Joonas Korpisalo",
-   "status": "confirmed"
+  "COL": {
+   "name": "Mackenzie Blackwood",
+   "status": "expected"
   },
-  "EDM": {
-   "name": "Tristan Jarry",
-   "status": "confirmed"
+  "NJD": {
+   "name": "Jake Allen",
+   "status": "expected"
   },
-  "PHI": {
-   "name": "Dan Vladar",
-   "status": "confirmed"
+  "WSH": {
+   "name": "Logan Thompson",
+   "status": "expected"
   },
-  "VGK": {
-   "name": "Carter Hart",
-   "status": "confirmed"
+  "TOR": {
+   "name": "Sergei Bobrovsky",
+   "status": "expected"
+  },
+  "MIN": {
+   "name": "Jesper Wallstedt",
+   "status": "expected"
+  },
+  "FLA": {
+   "name": "Jacob Markstrom",
+   "status": "expected"
+  },
+  "DET": {
+   "name": "John Gibson",
+   "status": "expected"
+  },
+  "CHI": {
+   "name": "Spencer Knight",
+   "status": "expected"
+  },
+  "BUF": {
+   "name": "Ukko-Pekka Luukkonen",
+   "status": "expected"
+  },
+  "DAL": {
+   "name": "Jake Oettinger",
+   "status": "expected"
+  },
+  "WPG": {
+   "name": "Stuart Skinner",
+   "status": "expected"
   },
   "UTA": {
    "name": "Sebastian Cossa",
-   "status": "confirmed"
+   "status": "expected"
   },
-  "ANA": {
-   "name": "Laurent Brossoit",
-   "status": "confirmed"
+  "STL": {
+   "name": "Joel Hofer",
+   "status": "expected"
   },
-  "NSH": {
-   "name": "Justus Annunen",
-   "status": "confirmed"
+  "LAK": {
+   "name": "Darcy Kuemper",
+   "status": "expected"
   },
-  "SJS": {
-   "name": "Yaroslav Askarov",
-   "status": "confirmed"
-  },
-  "PIT": {
-   "name": "Sergei Murashov",
-   "status": "confirmed"
+  "NYI": {
+   "name": "Ilya Sorokin",
+   "status": "expected"
   }
  },
- "checked_at": "2026-11-11T21:40:01-05:00"
+ "checked_at": "2026-11-12T05:00:01-05:00"
 }
