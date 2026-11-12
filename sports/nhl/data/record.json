@@ -1,28 +1,28 @@
 {
- "generated_at": "2026-11-11T22:00:00-05:00",
+ "generated_at": "2026-11-11T22:50:00-05:00",
  "summary": {
   "headline": {
    "w": 35,
-   "l": 30,
+   "l": 31,
    "push": 0,
    "void": 0,
-   "units": 5.23,
-   "hit_rate": 0.5385,
-   "needed": 0.4948,
-   "n": 65
+   "units": 4.23,
+   "hit_rate": 0.5303,
+   "needed": 0.4936,
+   "n": 66
   },
   "rows": [
    {
     "key": "shots",
     "label": "Shots on goal",
     "w": 35,
-    "l": 30,
+    "l": 31,
     "push": 0,
     "void": 0,
-    "units": 5.23,
-    "hit_rate": 0.5385,
-    "needed": 0.4948,
-    "n": 65
+    "units": 4.23,
+    "hit_rate": 0.5303,
+    "needed": 0.4936,
+    "n": 66
    }
   ],
   "cuts": [
@@ -59,13 +59,13 @@
       "key": "under_1.5",
       "label": "Under 1.5",
       "w": 15,
-      "l": 13,
+      "l": 14,
       "push": 0,
       "void": 0,
-      "units": 2.84,
-      "hit_rate": 0.5357,
-      "needed": 0.484,
-      "n": 28
+      "units": 1.84,
+      "hit_rate": 0.5172,
+      "needed": 0.4817,
+      "n": 29
      },
      {
       "key": "under_2.5",
@@ -102,13 +102,13 @@
       "key": "edge_lt2",
       "label": "Under 2 pts",
       "w": 10,
-      "l": 12,
+      "l": 13,
       "push": 0,
       "void": 0,
-      "units": -1.12,
-      "hit_rate": 0.4545,
-      "needed": 0.4783,
-      "n": 22
+      "units": -2.12,
+      "hit_rate": 0.4348,
+      "needed": 0.4756,
+      "n": 23
      },
      {
       "key": "edge_2_3",
@@ -169,13 +169,13 @@
       "key": "lineup",
       "label": "Lineup confirmed",
       "w": 24,
-      "l": 15,
+      "l": 16,
       "push": 0,
       "void": 0,
-      "units": 9.16,
-      "hit_rate": 0.6154,
-      "needed": 0.4966,
-      "n": 39
+      "units": 8.16,
+      "hit_rate": 0.6,
+      "needed": 0.4946,
+      "n": 40
      }
     ]
    },
@@ -212,13 +212,13 @@
       "key": "plus",
       "label": "Even or plus money",
       "w": 20,
-      "l": 22,
+      "l": 23,
       "push": 0,
       "void": 0,
-      "units": 1.15,
-      "hit_rate": 0.4762,
-      "needed": 0.4635,
-      "n": 42
+      "units": 0.15,
+      "hit_rate": 0.4651,
+      "needed": 0.4624,
+      "n": 43
      }
     ]
    }
@@ -227,10 +227,10 @@
    {
     "date": "2026-11-11",
     "w": 0,
-    "l": 0,
+    "l": 1,
     "push": 0,
     "void": 0,
-    "units": 0,
+    "units": -1.0,
     "n": 2,
     "graded": false
    },
@@ -431,8 +431,8 @@
    "date": "2026-11-11",
    "graded": false,
    "w": 0,
-   "l": 0,
-   "units": 0,
+   "l": 1,
+   "units": -1.0,
    "entries": [
     {
      "id": "2026-11-11:2026020294:8484210:shots:1.5:under",
@@ -451,9 +451,9 @@
        "at": "2026-11-11T18:00:00-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "L",
+     "actual": "had 2",
+     "units": -1.0,
      "pulled": {
       "at": "2026-11-11T18:50:01-05:00",
       "reason": "Hard Rock took the line down"
