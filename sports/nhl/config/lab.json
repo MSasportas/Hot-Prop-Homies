@@ -3,15 +3,6 @@
  "updated": "2026-11-12",
  "tests": [
   {
-   "id": "points",
-   "title": "Player points (live since Nov 12)",
-   "rule": "The shots rule on player points: Hard Rock 3%+ better than 4+ other books (Pinnacle one), model agrees.",
-   "summary": "paper_watch/points/summary.json",
-   "stats": "nov2",
-   "need": 150,
-   "gate": "Live since 2026-11-12 on Matt's order. Still tracked here to 150 graded; pulled if it stops beating the close."
-  },
-  {
    "id": "q24",
    "title": "1 PM price",
    "rule": "Hard Rock 1%+ better than the other books' middle price at the 1 PM price read, graded at the 1 PM price. Counting from Nov 9.",
