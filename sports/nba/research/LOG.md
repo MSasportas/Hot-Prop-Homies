@@ -5,7 +5,7 @@ By market (n, W-L, CLV n / mean): threes 10 7-3 +2.69% (7/7 beat) | assists 9 4-
 Edge size: pin_ev >= 3%: 26, 16-10, CLV -2.93% (n 8). 2-3%: 29, 14-15, CLV -0.25% (n 19). A bigger gap to Pinnacle does NOT hold to the close: Pinnacle tends to come back toward Hard Rock.
 Entry edge of the live Record picks: mean +1.60%, median +1.01% (n 55); 27 under 1%.
 Verdict: raising the live bar to 2% is not supported. Only threes beat the close in both the Record (+1.15%, n 8) and pin_judge (+2.69%, n 7). Tiny samples.
-Next (volume, Matt 2026-11-12 "we need more picks a night"): (1) H: port NHL's Gap + Guard (Hard Rock vs the no-vig consensus of 4+ books, NHL CLV +4.7% shots / +4.5% points) to NBA on stored reads, per market; (2) H: threes-only variants of pin_solo and pin_judge; (3) the late closing read (reads.close, live today) will give D-read flags a close.
+Next (volume, Matt 2026-11-12 "we need more picks a night"): (1) NOT the NHL Gap + Guard port: already closed twice (Oct 28 and Run 9, 2026-11-10: about 2 sides in 15 nights; Hard Rock NBA is priced too tight to the other books). Do not re-test. (2) H: threes-only variants of pin_solo and pin_judge; (3) the late closing read (reads.close, live today) will give D-read flags a close; (4) new NBA markets are the open volume route (needs credits: CEO/Matt).
 
 ## 2026-11-12, CLV1 (CEO; closing-line value of the live Record, stored reads only)
 Code: research/code/clv/clv_record.py. Close = last stored read of the game after the pick was first shown (usually D, 20 min); close_fair = Pinnacle no-vig on the same line; CLV = close_fair x decimal(posted price) - 1.
