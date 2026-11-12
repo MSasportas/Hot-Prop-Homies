@@ -23,7 +23,7 @@
   },
   "TBL": {
    "name": "Dennis Hildeby",
-   "status": "expected"
+   "status": "confirmed"
   },
   "OTT": {
    "name": "Linus Ullmark",
@@ -90,5 +90,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-12T14:20:00-05:00"
+ "checked_at": "2026-11-12T17:50:01-05:00"
 }
