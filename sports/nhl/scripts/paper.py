@@ -690,6 +690,31 @@ def watch_tracks(cfg):
     return [t for t in (common.gap_guard(cfg).get("watch") or []) if isinstance(t, dict) and t.get("id")]
 
 
+def live_watch_events(cfg):
+    """Events of every watch track that is LIVE (Matt 2026-11-12: points): a track with "live_from_at" (ISO time) feeds its
+    flags read at or after that moment, and their pull / close / grade events, to engine.py next to the shots log, so they
+    become picks on the page, in the Record and on Discord. Ids get the track's prefix ("points|...") so a points line can
+    never collide with a shots line. Flags from before that moment stay research only. The track keeps its own log."""
+    global _LOG
+    out = []
+    for tr in watch_tracks(cfg):
+        start = common.parse_iso(tr.get("live_from_at")) if tr.get("live_from_at") else None
+        if start is None:
+            continue
+        saved = _LOG
+        _LOG = watch_dir(tr)
+        try:
+            evs = read_events()
+        except Exception:
+            evs = []
+        finally:
+            _LOG = saved
+        ok = {e["id"] for e in evs if e.get("t") == "flag" and e.get("read_at") and common.parse_iso(e["read_at"]) >= start}
+        pre = "%s|" % tr["id"]
+        out += [dict(e, id=pre + e["id"]) for e in evs if e.get("id") in ok]
+    return out
+
+
 def watch_cfg(cfg, tr):
     """A copy of cfg whose gap_guard is the live rule with the track's overrides, live from the track's own first slate."""
     import copy

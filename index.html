@@ -1360,21 +1360,25 @@ function pollNHL(pl) {
         /* remap games by slate gid */
         Object.keys(gidToEspnId).forEach(function (gid) { var g = games[gidToEspnId[gid]]; if (g) gamesOut[gid] = g; });
         boxes.forEach(function (b) {
-          var tbl = {}, gid = b.gid;
+          var tbl = {}, ptsTbl = {}, gid = b.gid;
           arr(b.sm && b.sm.boxscore && b.sm.boxscore.players).forEach(function (t) {
             var team = nhlTeam(t && t.team && t.team.abbreviation);
             arr(t && t.statistics).forEach(function (grp) {
               var lab = arr(grp.labels).length ? arr(grp.labels) : arr(grp.keys), ix = lab.indexOf('S');
+              var ig = lab.indexOf('G'), ia = lab.indexOf('A');
               if (ix < 0) return;
               arr(grp.athletes).forEach(function (a) {
                 var v = a && arr(a.stats)[ix], k = team + '|' + nhlNameKey(a && a.athlete && a.athlete.displayName);
                 if (v != null && /^\d+$/.test(String(v))) tbl[k] = tbl[k] == null ? +v : -1;
+                var g = a && arr(a.stats)[ig], as = a && arr(a.stats)[ia];
+                if (ig >= 0 && ia >= 0 && /^\d+$/.test(String(g)) && /^\d+$/.test(String(as))) ptsTbl[k] = ptsTbl[k] == null ? +g + +as : -1;
               });
             });
           });
           arr(pl.d.started).forEach(function (p) {
-            if (String(p.game_id) !== String(gid) || str(p.market) !== 'shots') return;
-            var v = tbl[nhlTeam(str(p.team)) + '|' + nhlNameKey(p.player)];
+            var mk = str(p.market);
+            if (String(p.game_id) !== String(gid) || (mk !== 'shots' && mk !== 'points')) return;
+            var v = (mk === 'points' ? ptsTbl : tbl)[nhlTeam(str(p.team)) + '|' + nhlNameKey(p.player)];
             if (v != null && v >= 0) stats[str(p.id)] = { stat: v, dnp: false };
           });
           if (gamesOut[gid] && gamesOut[gid].state === 'post') done[gid] = 1;

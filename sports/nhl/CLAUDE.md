@@ -16,7 +16,7 @@ Matt, the customer. A casual bettor, not an engineer, usually on my phone. I don
 - Hard Rock (Florida) only. A pick needs a real Hard Rock number.
 - No single leg priced worse than -200. Plus money is fine.
 - Parlays: 2-3 legs max, and only once the team's evidence says they hit.
-- Markets: player shots on goal (live). Player points are research only, behind the scenes on the Backstage tab, until they prove an edge and I say go live. No goalie saves, sides, totals or other props as picks. (Sides and totals may be tracked for research only, per TEAM.md.)
+- Markets: player shots on goal and player points (both live; points since 2026-11-12, my order). No goalie saves, sides, totals or other props as picks. (Sides and totals may be tracked for research only, per TEAM.md.)
 - I bet at different times, from morning to just before puck drop.
 
 ## The product

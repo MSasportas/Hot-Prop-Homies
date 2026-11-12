@@ -231,7 +231,7 @@ def _row(key, label, entries, needed_of):
 
 # Cuts of the Record (summary only; the entries and the log are untouched). Every shown single counts, pulled ones too
 # (Matt 2026-11-04), graded at the price it was graded at. Each band is (key, label, test).
-LINE_BANDS = [("%s_%s" % (s, l), "%s %s" % (s.capitalize(), l), (lambda s, l: lambda f: f["side"] == s and f["line"] == float(l))(s, l))
+LINE_BANDS = [("%s_%s" % (s, l), "%s %s" % (s.capitalize(), l), (lambda s, l: lambda f: f.get("market", "shots") == "shots" and f["side"] == s and f["line"] == float(l))(s, l))
               for s in ("over", "under") for l in ("1.5", "2.5", "3.5")]
 EDGE_BANDS = [("edge_lt2", "Under 2 pts", lambda f: f["edge"] < 2.0),
               ("edge_2_3", "2 to 3 pts", lambda f: 2.0 <= f["edge"] < 3.0),
@@ -251,7 +251,7 @@ def _facts(e, it):
     line = sh.get("line")
     return {"side": sh.get("side"), "line": float(line) if isinstance(line, (int, float)) else None,
             "edge": round(100.0 * (p - b), 2) if isinstance(p, (int, float)) and isinstance(b, (int, float)) else None,
-            "settled": sh.get("state"), "price": e["price"]}
+            "settled": sh.get("state"), "price": e["price"], "market": sh.get("market") or "shots"}
 
 
 def cuts(rows, need):
@@ -259,7 +259,7 @@ def cuts(rows, need):
     nothing graded is left out. A fact that is missing (an old pick) keeps that pick out of that one cut only."""
     out = []
     for key, label, note, bands, has in (
-            ("line", "By line", None, LINE_BANDS, lambda f: f["side"] in ("over", "under") and f["line"] is not None),
+            ("line", "By line", None, LINE_BANDS, lambda f: f.get("market", "shots") == "shots" and f["side"] in ("over", "under") and f["line"] is not None),
             ("edge", "By edge", "Our chance minus what the price needs, in points, when shown", EDGE_BANDS,
              lambda f: f["edge"] is not None),
             ("settled", "By how settled when shown", "A Locked pick can't be bet, so it is not a row", SETTLED_BANDS,

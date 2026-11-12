@@ -329,7 +329,7 @@ class Run:
         inp = self.build_inputs()
         self.safety = engine.safety_pause(inp.events, self.cfg)
         # stats missing, or behind for half the slate or more, or the safety pause: keep shown picks, add none
-        new, self.extra = engine.evaluate(inp, paper.read_events(), block_new=self.block_new())
+        new, self.extra = engine.evaluate(inp, paper.read_events() + paper.live_watch_events(self.cfg), block_new=self.block_new())
         record.append(new)
         self.events = inp.events + new
         self.new_events += len(new)

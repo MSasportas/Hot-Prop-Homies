@@ -68,6 +68,34 @@ class EndToEnd(unittest.TestCase):
             with open(live) as fh:
                 self.assertNotIn('"points"', fh.read())            # the live research log never sees points
 
+    def go_live(self, at):
+        c = json.load(open(os.environ["PC_CONFIG"]))
+        c["ops"]["gap_guard"]["watch"][0]["live_from_at"] = at
+        json.dump(c, open(os.environ["PC_CONFIG"], "w"))
+
+    def test_live_points_flags_become_picks_in_the_record(self):
+        # Matt 2026-11-12: points go live. A flag read after live_from_at is a pick on the page and in the Record.
+        self.go_live("%sT00:00:00-05:00" % world.SLATE)
+        sl = self.s.read("17:31", cp=[self.points_lines()])
+        flags = [e for e in self.wevents() if e["t"] == "flag"]
+        self.assertTrue(flags, "the +6% points under should flag in the made-up league")
+        self.assertEqual([(p["market"], p["line"], p["side"]) for p in sl["picks"]], [("points", 0.5, "under")])
+        self.assertEqual(sl["picks"][0]["price"], flags[0]["price"])               # frozen at the flag's price
+        shown = [e for e in self.s.events() if e["t"] == "shown"]
+        self.assertEqual(len(shown), 1)
+        self.assertEqual(shown[0]["pick"]["market"], "points")
+        self.assertEqual(shown[0]["pick"]["gg_id"], "points|" + flags[0]["id"])    # can never collide with a shots flag
+        self.assertIn(":points:", shown[0]["id"])
+        self.s.read("17:41", cp=[self.points_lines()])                             # the next run adds nothing twice
+        self.assertEqual(len([e for e in self.s.events() if e["t"] == "shown"]), 1)
+
+    def test_points_flags_from_before_the_go_live_moment_stay_research(self):
+        self.go_live("2099-01-01T00:00:00-05:00")
+        sl = self.s.read("17:31", cp=[self.points_lines()])
+        self.assertTrue([e for e in self.wevents() if e["t"] == "flag"])
+        self.assertEqual(sl["picks"], [])
+        self.assertEqual(self.s.events(), [])
+
     def test_saves_is_not_asked_when_only_the_points_track_runs(self):
         self.assertNotIn("saves", odds.paper_markets(common.load_config(), world.SLATE))
 
@@ -84,6 +112,7 @@ class LiveConfig(unittest.TestCase):
         self.assertNotIn("saves", cfg["ops"]["markets"])
         self.assertEqual(odds.paper_markets(cfg, "2026-10-28"), ["shots", "points"])
         self.assertEqual(odds.paper_markets(cfg, "2026-10-27"), ["shots"])           # before from_slate
+        self.assertEqual(tr[0]["live_from_at"], "2026-11-12T16:15:00-05:00")       # Matt 2026-11-12: points are live picks
 
     def test_points_any_line_and_the_star_offset(self):
         import paper

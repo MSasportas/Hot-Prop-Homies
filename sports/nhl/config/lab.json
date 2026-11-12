@@ -1,15 +1,15 @@
 {
  "note": "The page's Lab tab. Curated by the team: ideas tracked on paper...",
- "updated": "2026-11-09",
+ "updated": "2026-11-12",
  "tests": [
   {
    "id": "points",
-   "title": "Player points",
+   "title": "Player points (live since Nov 12)",
    "rule": "The shots rule on player points: Hard Rock 3%+ better than 4+ other books (Pinnacle one), model agrees.",
    "summary": "paper_watch/points/summary.json",
    "stats": "nov2",
    "need": 150,
-   "gate": "Live only at 150 graded, units up and beating the close, and when Matt says go."
+   "gate": "Live since 2026-11-12 on Matt's order. Still tracked here to 150 graded; pulled if it stops beating the close."
   },
   {
    "id": "q24",
