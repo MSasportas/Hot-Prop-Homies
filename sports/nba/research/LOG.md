@@ -1,3 +1,12 @@
+## 2026-11-12, CLV1 (CEO; closing-line value of the live Record, stored reads only)
+Code: research/code/clv/clv_record.py. Close = last stored read of the game after the pick was first shown (usually D, 20 min); close_fair = Pinnacle no-vig on the same line; CLV = close_fair x decimal(posted price) - 1.
+Record singles 58: 37-21 +14.27u. Measured 46: mean CLV +0.01%, median +0.67%, beat close 74% (one -12.6% outlier).
+By market (measured n, mean CLV): points 17 +0.80% | threes 8 +1.15% | rebounds 13 -1.33% | assists 8 -0.64%.
+Unmeasured 12: picks first shown on the last read (window 45->20: 10 picks, 7-3) have no later read.
+Hard Rock on the same line at the last read (42): moved our way 12, same 28, moved against 2.
+Verdict: the +14u is running well ahead of the price edge (about zero vs the close so far; NHL shots measure +4.7%, n 42). Small sample; watch rebounds and assists. No rule change.
+Next: a late read (about 8-10 min before tip) for games holding a pick, so the 45->20 picks get a close too (needs the 2 extra keys Matt is adding).
+
 ## 2026-11-11, AH1 (auto; Large unders (4+ pt move, under side))
 
 ## 2026-11-12, AH2 (auto; Late + large (last 90 min, move 3+ pts))
