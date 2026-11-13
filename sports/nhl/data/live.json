@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-12",
- "generated_at": "2026-11-12T22:50:01-05:00",
+ "generated_at": "2026-11-12T23:00:00-05:00",
  "games": [
   {
    "game_id": 2026020309,
@@ -92,9 +92,9 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "01:34",
-   "in_intermission": false,
-   "running": true,
+   "clock": "11:06",
+   "in_intermission": true,
+   "running": false,
    "away": {
     "abbrev": "STL",
     "score": 0,
@@ -103,9 +103,9 @@
    "home": {
     "abbrev": "UTA",
     "score": 0,
-    "sog": 17
+    "sog": 19
    },
-   "updated_at": "2026-11-12T22:50:01-05:00"
+   "updated_at": "2026-11-12T23:00:00-05:00"
   },
   {
    "game_id": 2026020308,
@@ -113,7 +113,7 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "13:48",
+   "clock": "03:54",
    "in_intermission": true,
    "running": false,
    "away": {
@@ -126,7 +126,7 @@
     "score": 1,
     "sog": 9
    },
-   "updated_at": "2026-11-12T22:50:01-05:00"
+   "updated_at": "2026-11-12T23:00:00-05:00"
   }
  ],
  "picks": {
