@@ -472,7 +472,8 @@ var S = {
   view: 'picks', expanded: {},
   older: [], olderIdx: 0, olderBusy: false, olderErr: false, months: {}, calMonth: null, selDay: null,
   newIds: {}, since: null, seenDone: false, key: '', scroll: {},
-  allResults: null, resets: null, cutSel: null, openCut: null
+  allResults: null, resets: null, cutSel: null, openCut: null,
+  hq: null
 };
 
 var app = document.getElementById('app');
@@ -544,7 +545,8 @@ var ICONS = {
   pulse: ['M3 12.5h4l2.4-6 4.6 11.5 2.5-5.5H21'],
   court: ['M3.5 5h17v14h-17z', 'M12 5v14', 'M12 9.8a2.2 2.2 0 1 0 0 4.4 2.2 2.2 0 0 0 0-4.4z', 'M3.5 9.5h3v5h-3', 'M20.5 9.5h-3v5h3'],
   ledger: ['M3.8 6.6l1.5 1.5 2.6-3', 'M11 6.8h9', 'M3.8 12.6l1.5 1.5 2.6-3', 'M11 12.8h9', 'M4.2 18.6h3.4', 'M11 18.8h9'],
-  flask: ['M9 3.5h6', 'M10.2 3.5v6L5 18.3A1.8 1.8 0 0 0 6.5 21h11a1.8 1.8 0 0 0 1.5-2.7l-5.2-8.8v-6', 'M7.6 15h8.8']
+  flask: ['M9 3.5h6', 'M10.2 3.5v6L5 18.3A1.8 1.8 0 0 0 6.5 21h11a1.8 1.8 0 0 0 1.5-2.7l-5.2-8.8v-6', 'M7.6 15h8.8'],
+  hq: ['M3 3h8v8H3z', 'M13 3h8v8h-8z', 'M3 13h8v8H3z', 'M13 13h8v8h-8z']
 };
 function icon(name, size, sw) {
   var s = document.createElementNS(SVGNS, 'svg'), d = ICONS[name] || ICONS.info;
@@ -857,7 +859,8 @@ function calcKey() {
   return JSON.stringify([S.loaded, S.loadErr, S.fetchFail, S.recordErr, S.slate && S.slate.generated_at, S.slate && S.slate.status_at, S.record && S.record.generated_at,
     L.ver, L.fail, L.at == null, ls, S.lab && S.lab.updated, S.view, !!S.heads,
     S.rules && S.rules.version, S.rules && S.rules.updated, S.slate && expired(), S.slate && stale(),
-    d ? [d.open.length, d.late.length, d.started.length] : 0, Math.floor(now() / 60000)]);
+    d ? [d.open.length, d.late.length, d.started.length] : 0, Math.floor(now() / 60000),
+    S.hq && S.hq.loadedAt, S.hq && S.hq.loading, S.hq && S.hq.err]);
 }
 function maybeRender() { var k = calcKey(); if (k !== S.key) render(); }
 var RENDER = {};
@@ -2206,13 +2209,342 @@ function statusBody(body) {
   rows.forEach(function (r) { body.appendChild(r); });
   body.appendChild(h('p', { class: 'note', text: 'This page checks for updates about every ' + Math.round(uiVal('refresh_sec') / 60) + ' minutes while it is open. All times Eastern.' }));
 }
-RENDER = { picks: renderPicks, live: renderLive, games: renderGames, record: renderRecord, lab: renderLab, info: renderInfo };
+/* ---------- HQ tab ---------- */
+var HQ_TTL = 2 * 60 * 1000; /* 2 minutes cache */
+function loadHQ() {
+  if (S.hq && S.hq.loadedAt && !S.hq.loading && (Date.now() - S.hq.loadedAt < HQ_TTL)) return;
+  S.hq = { loading: true, loadedAt: null, err: false, nhl: null, nba: null };
+  maybeRender();
+  var base_nhl = 'sports/nhl/data/', base_nba = 'sports/nba/data/';
+  var fetches = [
+    fetch(base_nhl + 'record.json').then(function(r){ return r.json(); }),
+    fetch(base_nba + 'record.json').then(function(r){ return r.json(); }),
+    fetch(base_nhl + 'status.json').then(function(r){ return r.json(); }),
+    fetch(base_nba + 'status.json').then(function(r){ return r.json(); }),
+    fetch(base_nhl + 'slate.json').then(function(r){ return r.json(); }),
+    fetch(base_nba + 'slate.json').then(function(r){ return r.json(); })
+  ];
+  Promise.all(fetches.map(function(p){ return p.catch(function(){ return null; }); })).then(function(res) {
+    S.hq = {
+      loading: false,
+      loadedAt: Date.now(),
+      err: !res[0] && !res[1],
+      nhl: { record: res[0], status: res[2], slate: res[4] },
+      nba: { record: res[1], status: res[3], slate: res[5] }
+    };
+    maybeRender();
+  });
+}
+function hqFmt(v) { /* format units as "+0.37u" or "-2.0u" */
+  var n = num(v); if (n == null) return '—';
+  var s = Math.abs(n).toFixed(2).replace(/\.?0+$/, '') || '0';
+  return (n >= 0 ? '+' : '-') + s + 'u';
+}
+function hqUnitCls(v) { var n = num(v); if (n == null) return ''; return n > 0 ? 'pos' : (n < 0 ? 'neg' : ''); }
+function hqBarsRow(days7, color) {
+  /* render 7 bars as inline SVG, left=oldest, right=newest; each bar is 100%/7 wide */
+  var W = 100, H = 32, N = 7, bw = W / N - 1, maxAbs = 0.1;
+  for (var i = 0; i < days7.length; i++) { var u = Math.abs(num(days7[i].units) || 0); if (u > maxAbs) maxAbs = u; }
+  var svg = document.createElementNS(SVGNS, 'svg');
+  svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+  svg.setAttribute('width', '100%'); svg.setAttribute('height', H);
+  svg.setAttribute('preserveAspectRatio', 'none');
+  svg.setAttribute('aria-hidden', 'true');
+  for (var j = 0; j < N; j++) {
+    var d = days7[j], ux = d ? (num(d.units) || 0) : 0;
+    var x = j * (W / N), bh = Math.max(1, Math.abs(ux) / maxAbs * (H - 2));
+    var y = ux >= 0 ? H - bh : H - bh;
+    var rect = document.createElementNS(SVGNS, 'rect');
+    rect.setAttribute('x', x); rect.setAttribute('width', bw);
+    if (Math.abs(ux) < 0.001) {
+      rect.setAttribute('y', H - 1); rect.setAttribute('height', 1);
+      rect.setAttribute('fill', 'var(--line2)');
+    } else {
+      rect.setAttribute('y', H - bh); rect.setAttribute('height', bh);
+      rect.setAttribute('fill', ux > 0 ? 'var(--good)' : 'var(--bad)');
+    }
+    svg.appendChild(rect);
+  }
+  return svg;
+}
+function hqHealthDot(ok) {
+  var i = document.createElement('i');
+  i.className = 'live' + (ok ? '' : ' bad');
+  i.setAttribute('aria-hidden', 'true');
+  return i;
+}
+function hqKv(label, val, valCls) {
+  return h('div', { class: 'kv' },
+    h('span', { class: 'k', text: label }),
+    h('span', { class: 'v' + (valCls ? ' ' + valCls : ''), text: val || '—' }));
+}
+function renderHQ() {
+  app.appendChild(h('header', { class: 'hdr' }, h('h1', { text: 'HQ' })));
+
+  if (!S.hq || S.hq.loading) {
+    /* skeleton */
+    app.appendChild(h('div', { class: 'stack', style: 'margin-top:14px' },
+      h('div', { class: 'skel' }), h('div', { class: 'skel' }), h('div', { class: 'skel' })));
+    return;
+  }
+  if (S.hq.err) {
+    app.appendChild(h('div', { class: 'card empty', style: 'margin-top:14px' },
+      h('div', { class: 't', text: "Couldn't load HQ data" }),
+      h('div', { class: 's', text: 'Check your connection and try refreshing.' })));
+    return;
+  }
+
+  var nhl = S.hq.nhl, nba = S.hq.nba;
+  var nhlRec = nhl.record && nhl.record.summary ? nhl.record.summary : null;
+  var nbaRec = nba.record && nba.record.summary ? nba.record.summary : null;
+  var nhlH = nhlRec ? nhlRec.headline : null;
+  var nbaH = nbaRec ? nbaRec.headline : null;
+  var nhlDays = nhlRec ? arr(nhlRec.days) : [];
+  var nbaDays = nbaRec ? arr(nbaRec.days) : [];
+
+  /* --- Section 1: Yesterday's Results --- */
+  var sec1 = h('section', { class: 'sec' },
+    h('div', { class: 'sec-h' }, h('h2', { text: "Yesterday's results" })));
+
+  /* Two-column result card */
+  var row2col = h('div', { style: 'display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px' });
+
+  function sportResultCol(sportLabel, sportCls, hd, days) {
+    var col = h('div', { style: 'padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--surface)' });
+    col.appendChild(h('span', { class: 'sp-badge ' + sportCls, text: sportLabel }));
+    if (!hd || !days.length) {
+      col.appendChild(h('div', { style: 'margin-top:8px;color:var(--muted);font-size:13px', text: 'No data' }));
+      return col;
+    }
+    /* find most recent graded day */
+    var lastDay = null;
+    for (var k = 0; k < days.length; k++) { if (days[k].graded) { lastDay = days[k]; break; } }
+    if (!lastDay) { col.appendChild(h('div', { style: 'margin-top:8px;color:var(--muted);font-size:13px', text: 'No graded days yet' })); return col; }
+    var dateStr = fDateShort(lastDay.date);
+    var wl = (lastDay.w || 0) + '-' + (lastDay.l || 0);
+    var uStr = hqFmt(lastDay.units);
+    var uCls = hqUnitCls(lastDay.units);
+    var hrPct = lastDay.n ? Math.round((lastDay.w || 0) / lastDay.n * 100) + '%' : '—';
+    var needed = num(hd.needed);
+    var neededPct = needed != null ? Math.round(needed * 100) + '%' : null;
+    col.appendChild(h('div', { style: 'margin-top:6px;font:600 13px/17px var(--num);color:var(--muted)', text: dateStr }));
+    col.appendChild(h('div', { style: 'font:600 20px/26px var(--num);margin-top:2px', text: wl }));
+    col.appendChild(h('div', { class: uCls, style: 'font:600 15px/20px var(--num);margin-top:2px', text: uStr }));
+    var hrLine = hrPct + (neededPct ? ' (need ' + neededPct + ')' : '') + ' · ' + lastDay.n + ' pick' + (lastDay.n !== 1 ? 's' : '');
+    col.appendChild(h('div', { style: 'font-size:12px;color:var(--muted);margin-top:3px', text: hrLine }));
+    return col;
+  }
+
+  row2col.appendChild(sportResultCol('NHL', 'nhl', nhlH, nhlDays));
+  row2col.appendChild(sportResultCol('NBA', 'nba', nbaH, nbaDays));
+  sec1.appendChild(row2col);
+
+  /* 7-day bars */
+  var barsWrap = h('div', { style: 'margin-top:12px' });
+  function barsRow(sportCls, sportLabel, days) {
+    var last7 = days.slice(0, 7).reverse(); /* oldest first */
+    while (last7.length < 7) last7.unshift(null);
+    var rowEl = h('div', { style: 'display:flex;align-items:center;gap:8px;margin-top:6px' });
+    rowEl.appendChild(h('span', { class: 'sp-badge ' + sportCls, text: sportLabel, style: 'flex:none;width:32px;text-align:center' }));
+    var svgWrap = h('div', { style: 'flex:1;min-width:0' });
+    svgWrap.appendChild(hqBarsRow(last7));
+    rowEl.appendChild(svgWrap);
+    return rowEl;
+  }
+  barsWrap.appendChild(barsRow('nhl', 'NHL', nhlDays));
+  barsWrap.appendChild(barsRow('nba', 'NBA', nbaDays));
+  sec1.appendChild(barsWrap);
+  app.appendChild(sec1);
+
+  /* --- Section 2: Season Record --- */
+  var sec2 = h('section', { class: 'sec' },
+    h('div', { class: 'sec-h' }, h('h2', { text: 'Season record' })));
+
+  var tbl = h('div', { class: 'tbl' });
+  var th = h('div', { class: 'tr th' },
+    h('span', { text: 'Sport' }),
+    h('span', { text: 'W-L' }),
+    h('span', { text: 'Hit%' }),
+    h('span', { text: 'Units' }));
+  tbl.appendChild(th);
+
+  function recRow(label, hd) {
+    if (!hd) return h('div', { class: 'tr' }, h('span', { text: label }), h('span', { class: 'num', text: '—' }), h('span', { class: 'num', text: '—' }), h('span', { class: 'num', text: '—' }));
+    var hrStr = Math.round((hd.hit_rate || 0) * 100) + '%';
+    var needed = num(hd.needed);
+    var hitCls = (needed != null) ? ((hd.hit_rate || 0) >= needed ? 'pos' : 'neg') : '';
+    var wl = (hd.w || 0) + '-' + (hd.l || 0);
+    var un = hqFmt(hd.units);
+    var unCls = hqUnitCls(hd.units);
+    var labelEl = h('span', {}, label, h('small', { text: (hd.n || 0) + ' picks' }));
+    return h('div', { class: 'tr' }, labelEl, h('span', { class: 'num', text: wl }), h('span', { class: 'num ' + hitCls, text: hrStr }), h('span', { class: 'num ' + unCls, text: un }));
+  }
+  tbl.appendChild(recRow('NHL', nhlH));
+  tbl.appendChild(recRow('NBA', nbaH));
+  sec2.appendChild(tbl);
+  app.appendChild(sec2);
+
+  /* --- Section 3: System Health --- */
+  var sec3 = h('section', { class: 'sec' },
+    h('div', { class: 'sec-h' }, h('h2', { text: 'System health' })));
+
+  function healthCard(sportLabel, sportCls, st) {
+    var ok = st ? st.ok !== false : false;
+    var card = h('div', { class: 'lab', style: 'margin-top:10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);padding:10px 12px' });
+
+    /* header */
+    var hdr2 = h('div', { style: 'display:flex;align-items:center;gap:8px;margin-bottom:8px' });
+    hdr2.appendChild(h('span', { class: 'sp-badge ' + sportCls, text: sportLabel }));
+    hdr2.appendChild(hqHealthDot(ok));
+    hdr2.appendChild(h('span', { style: 'font:600 13px/17px var(--cond);color:var(--fg)', text: ok ? 'OK' : 'Problem' }));
+    card.appendChild(hdr2);
+
+    if (!st) {
+      card.appendChild(h('div', { style: 'color:var(--muted);font-size:13px', text: 'Status not loaded' }));
+      return card;
+    }
+
+    /* last run */
+    var finAt = ms(st.finished_at) || ms(st.status_at);
+    var lastRunStr = finAt ? fMD(finAt) + ' at ' + fTime(finAt) : '—';
+    card.appendChild(hqKv('Last run', lastRunStr));
+
+    /* chain link */
+    var runner = isObj(st.runner) ? st.runner : null;
+    if (runner) {
+      var chainStr = 'Chain #' + (runner.chain_link || '?');
+      var chainStarted = ms(runner.chain_started_at);
+      if (chainStarted) chainStr += ' (since ' + fMD(chainStarted) + ')';
+      card.appendChild(hqKv('Chain', chainStr));
+    }
+
+    /* key pool */
+    var poolStr = '—', poolBad = false;
+    if (sportCls === 'nhl' && num(st.pool_total) != null) {
+      poolStr = comma(st.pool_total) + ' credits';
+      poolBad = st.pool_total < 500;
+    } else if (sportCls === 'nba' && num(st.pool_left) != null) {
+      poolStr = comma(st.pool_left) + ' credits';
+      poolBad = st.pool_left < 500;
+    }
+    card.appendChild(hqKv('Key pool', poolStr, poolBad ? 'bad' : ''));
+
+    /* next price read */
+    if (sportCls === 'nhl') {
+      var nprAt = ms(st.next_price_read_at);
+      card.appendChild(hqKv('Next read', nprAt ? fMD(nprAt) + ' at ' + fTime(nprAt) : '—'));
+    } else {
+      card.appendChild(hqKv('Next read', st.odds_note || 'No read due'));
+    }
+
+    /* games today */
+    var gtStr = num(st.games_today) != null ? String(st.games_today) : (st.plan && num(st.plan.games_today) != null ? String(st.plan.games_today) : '—');
+    card.appendChild(hqKv('Games today', gtStr));
+
+    /* failed step */
+    if (st.failed_step) {
+      card.appendChild(h('div', { class: 'banner stop', style: 'margin-top:8px', role: 'status' },
+        h('span', { class: 'ic' }, icon('stop', 16)),
+        h('div', { class: 'txt' }, h('b', { text: 'Failed: ' }), st.failed_step)));
+    }
+
+    /* unmatched names */
+    var unmatched = arr(st.unmatched_names || st.unmatched || []);
+    if (unmatched.length) {
+      card.appendChild(h('div', { class: 'banner', style: 'margin-top:8px' },
+        h('span', { class: 'ic' }, icon('warn', 16)),
+        h('div', { class: 'txt', text: 'Unmatched: ' + unmatched[0] + (unmatched.length > 1 ? ' +' + (unmatched.length - 1) + ' more' : '') })));
+    }
+
+    /* sources */
+    var srcObj = isObj(st.sources) ? st.sources : null;
+    if (srcObj) {
+      var srcEl = h('div', { style: 'margin-top:8px;display:flex;flex-wrap:wrap;gap:6px 10px;font-size:12px;line-height:17px;color:var(--muted)' });
+      if (sportCls === 'nhl') {
+        for (var sk in srcObj) {
+          if (!Object.prototype.hasOwnProperty.call(srcObj, sk)) continue;
+          var sv = srcObj[sk];
+          var sok = sv === 'ok';
+          var dot = document.createElement('i'); dot.className = 'live' + (sok ? '' : ' bad'); dot.setAttribute('aria-hidden', 'true');
+          var sp = h('span', { style: 'display:flex;align-items:center;gap:4px' }, dot, sk.replace(/_/g, ' '));
+          srcEl.appendChild(sp);
+        }
+      } else {
+        var espnSrc = isObj(srcObj.espn) ? srcObj.espn : null;
+        if (espnSrc) {
+          var espnOk = espnSrc.failed === 0;
+          var dot2 = document.createElement('i'); dot2.className = 'live' + (espnOk ? '' : ' bad'); dot2.setAttribute('aria-hidden', 'true');
+          srcEl.appendChild(h('span', { style: 'display:flex;align-items:center;gap:4px' }, dot2, 'ESPN'));
+        }
+      }
+      card.appendChild(srcEl);
+    }
+
+    return card;
+  }
+
+  sec3.appendChild(healthCard('NHL', 'nhl', nhl.status));
+  sec3.appendChild(healthCard('NBA', 'nba', nba.status));
+  app.appendChild(sec3);
+
+  /* --- Section 4: Tonight's Slate --- */
+  var sec4 = h('section', { class: 'sec' },
+    h('div', { class: 'sec-h' }, h('h2', { text: "Tonight's slate" })));
+
+  var slateGrid = h('div', { style: 'display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px' });
+
+  function slateCol(sportLabel, sportCls, st, sl) {
+    var col = h('div', { style: 'padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--surface)' });
+    col.appendChild(h('span', { class: 'sp-badge ' + sportCls, text: sportLabel }));
+
+    var gamesT = st ? (num(st.games_today) != null ? st.games_today : (st.plan ? st.plan.games_today : null)) : null;
+    col.appendChild(h('div', { style: 'margin-top:8px;font-size:13px;color:var(--fg2)' },
+      h('span', { style: 'color:var(--muted)', text: 'Games: ' }),
+      h('span', { style: 'font:600 14px/18px var(--num)', text: gamesT != null ? String(gamesT) : '—' })));
+
+    var openPicks = 0;
+    if (sl && arr(sl.picks).length) {
+      openPicks = arr(sl.picks).filter(function(p) { return !p.pulled && !isObj(p.result) && !isObj(p.graded); }).length;
+    }
+
+    if (openPicks === 0) {
+      col.appendChild(h('div', { style: 'margin-top:6px;font-size:12.5px;color:var(--muted)', text: 'No picks yet — checking every 10 min' }));
+    } else {
+      var cnt = h('span', { class: 'cnt', style: 'position:static;display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:20px;padding:0 5px;border-radius:9px;background:var(--primary);color:var(--on-primary);font:600 12px/17px var(--num);box-shadow:none' });
+      cnt.textContent = String(openPicks);
+      col.appendChild(h('div', { style: 'margin-top:6px;display:flex;align-items:center;gap:6px;font-size:13px' }, cnt, h('span', { style: 'color:var(--fg2)', text: 'open pick' + (openPicks !== 1 ? 's' : '') })));
+    }
+
+    /* last run time */
+    var lastRunAt = st ? (ms(st.finished_at) || ms(st.status_at)) : null;
+    var lastRunStr = lastRunAt ? fTime(lastRunAt) : null;
+    col.appendChild(h('div', { style: 'margin-top:6px;font-size:12px;color:var(--muted)', text: 'Next run: every ~10 min' + (lastRunStr ? ' · Last ' + lastRunStr : '') }));
+
+    return col;
+  }
+
+  slateGrid.appendChild(slateCol('NHL', 'nhl', nhl.status, nhl.slate));
+  slateGrid.appendChild(slateCol('NBA', 'nba', nba.status, nba.slate));
+  sec4.appendChild(slateGrid);
+  app.appendChild(sec4);
+
+  /* --- Refresh button --- */
+  var refSec = h('div', { style: 'margin-top:18px;text-align:center' });
+  refSec.appendChild(h('button', { class: 'chip hollow', type: 'button', text: 'Refresh HQ', on: { click: function() {
+    S.hq = null; loadHQ();
+  } } }));
+  app.appendChild(refSec);
+
+  app.appendChild(h('footer', { class: 'foot' }, h('p', { text: 'All times Eastern. Data as of ' + (S.hq.loadedAt ? fTime(S.hq.loadedAt) : '—') + '.' })));
+}
+
+RENDER = { picks: renderPicks, live: renderLive, games: renderGames, record: renderRecord, lab: renderLab, info: renderInfo, hq: renderHQ };
 
 /* ---------- side rail dock + routing ---------- */
 /* Side rail dock: built once so the accent bar can slide; each render only updates which item is current and the status
    dot (on Info). Labels slide out on hover (mouse) and keyboard focus; on touch only the current item's caption shows. */
-var RAIL_ALL = [['picks', 'Picks', 'ticket'], ['live', 'Live', 'pulse'], ['games', 'Games', 'court'], ['record', 'Record', 'ledger'], ['lab', 'Lab', 'flask'], ['info', 'Info', 'info']];
-var RAIL_SPORT = [['picks', 'Picks', 'ticket'], ['live', 'Live', 'pulse'], ['games', 'Games', 'court'], ['record', 'Record', 'ledger'], ['lab', 'Lab', 'flask'], ['info', 'Info', 'info']];
+var RAIL_ALL = [['picks', 'Picks', 'ticket'], ['live', 'Live', 'pulse'], ['games', 'Games', 'court'], ['record', 'Record', 'ledger'], ['lab', 'Lab', 'flask'], ['info', 'Info', 'info'], ['hq', 'HQ', 'hq']];
+var RAIL_SPORT = [['picks', 'Picks', 'ticket'], ['live', 'Live', 'pulse'], ['games', 'Games', 'court'], ['record', 'Record', 'ledger'], ['lab', 'Lab', 'flask'], ['info', 'Info', 'info'], ['hq', 'HQ', 'hq']];
 var RAIL = RAIL_SPORT;
 var rail = { el: null, ind: null, btns: {}, dot: null, at: null };
 function freshLevel() {
@@ -2303,7 +2635,7 @@ function renderTabs() {
   }
   placeInd(false);
 }
-var HASH_VIEWS = { '#live': 'live', '#games': 'games', '#record': 'record', '#lab': 'lab', '#backstage': 'lab', '#info': 'info', '#status': 'info' };
+var HASH_VIEWS = { '#live': 'live', '#games': 'games', '#record': 'record', '#lab': 'lab', '#backstage': 'lab', '#info': 'info', '#status': 'info', '#hq': 'hq' };
 function viewFromHash() { return HASH_VIEWS[location.hash] || 'picks'; }
 function go(v) {
   if (v === S.view) { window.scrollTo(0, 0); return; }
@@ -2318,6 +2650,7 @@ function route() {
   if (v !== S.view) {
     S.scroll[S.view] = window.scrollY || 0; S.view = v; render(); window.scrollTo(0, S.scroll[v] || 0);
     if (v === 'live') liveGo(true); else liveStop();
+    if (v === 'hq') loadHQ();
   }
 }
 
@@ -2336,6 +2669,7 @@ setInterval(function () { if (S.loaded && !document.hidden) maybeRender(); }, 30
 S.view = viewFromHash();
 renderTabs();
 load().then(schedule);
+if (S.view === 'hq') loadHQ();
 })();
 </script>
 </body>
