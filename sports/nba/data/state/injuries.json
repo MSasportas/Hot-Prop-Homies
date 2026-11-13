@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T16:40:00-05:00",
+ "at": "2026-11-13T17:10:00-05:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -119,6 +119,20 @@
    "team": "CLE",
    "date": "2026-11-10T22:12Z",
    "note": "Merrill (elbow) is listed as out for Wednesday's game against the Knicks."
+  },
+  "4432582": {
+   "status": "day-to-day",
+   "name": "Max Christie",
+   "team": "DAL",
+   "date": "2026-11-13T22:06Z",
+   "note": "Christie is questionable for Saturday's game against the Cavaliers due to a sprained left ankle."
+  },
+  "4873153": {
+   "status": "day-to-day",
+   "name": "Morez Johnson Jr.",
+   "team": "DAL",
+   "date": "2026-11-13T22:05Z",
+   "note": "Johnson (left shin contusion) is listed as probable for Saturday against Cleveland."
   },
   "4683688": {
    "status": "out",
