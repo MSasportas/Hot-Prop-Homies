@@ -347,6 +347,20 @@
      "shots"
     ],
     "cost": 2
+   },
+   {
+    "game_id": 2026020305,
+    "pull": "C",
+    "at": "2026-11-12T19:20:01-05:00",
+    "markets": [
+     "points",
+     "shots"
+    ],
+    "returned": [
+     "points",
+     "shots"
+    ],
+    "cost": 2
    }
   ],
   "2026020306": [
@@ -366,6 +380,20 @@
     "game_id": 2026020306,
     "pull": "B",
     "at": "2026-11-12T18:30:00-05:00",
+    "markets": [
+     "points",
+     "shots"
+    ],
+    "returned": [
+     "points",
+     "shots"
+    ],
+    "cost": 2
+   },
+   {
+    "game_id": 2026020306,
+    "pull": "C",
+    "at": "2026-11-12T19:20:01-05:00",
     "markets": [
      "points",
      "shots"

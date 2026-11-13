@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-12",
- "generated_at": "2026-11-12T19:10:01-05:00",
+ "generated_at": "2026-11-12T19:20:01-05:00",
  "games": [
   {
    "game_id": 2026020309,
@@ -29,20 +29,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "19:19",
+   "clock": "12:01",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "MTL",
-    "score": 0,
-    "sog": null
+    "score": 1,
+    "sog": 7
    },
    "home": {
     "abbrev": "BOS",
     "score": 0,
-    "sog": null
+    "sog": 2
    },
-   "updated_at": "2026-11-12T19:10:01-05:00"
+   "updated_at": "2026-11-12T19:20:01-05:00"
   },
   {
    "game_id": 2026020303,
@@ -50,20 +50,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "19:19",
+   "clock": "12:12",
    "in_intermission": false,
    "running": true,
    "away": {
     "abbrev": "WSH",
     "score": 0,
-    "sog": null
+    "sog": 1
    },
    "home": {
     "abbrev": "NJD",
-    "score": 0,
-    "sog": null
+    "score": 1,
+    "sog": 8
    },
-   "updated_at": "2026-11-12T19:10:01-05:00"
+   "updated_at": "2026-11-12T19:20:01-05:00"
   }
  ],
  "picks": {
@@ -90,12 +90,12 @@
   "2026-11-12:2026020299:8483457:shots:1.5:under": {
    "game_id": 2026020299,
    "market": "shots",
-   "stat": 0
+   "stat": 1
   },
   "2026-11-12:2026020303:8478414:points:0.5:under": {
    "game_id": 2026020303,
    "market": "points",
-   "stat": 0
+   "stat": 1
   }
  }
 }
