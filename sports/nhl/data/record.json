@@ -1,40 +1,40 @@
 {
- "generated_at": "2026-11-13T00:50:00-05:00",
+ "generated_at": "2026-11-13T01:20:01-05:00",
  "summary": {
   "headline": {
-   "w": 38,
+   "w": 40,
    "l": 37,
    "push": 0,
    "void": 0,
-   "units": 1.23,
-   "hit_rate": 0.5067,
-   "needed": 0.4902,
-   "n": 75
+   "units": 3.6,
+   "hit_rate": 0.5195,
+   "needed": 0.4896,
+   "n": 77
   },
   "rows": [
    {
     "key": "shots",
     "label": "Shots on goal",
-    "w": 38,
+    "w": 39,
     "l": 35,
     "push": 0,
     "void": 0,
-    "units": 3.23,
-    "hit_rate": 0.5205,
-    "needed": 0.4914,
-    "n": 73
+    "units": 4.1,
+    "hit_rate": 0.527,
+    "needed": 0.492,
+    "n": 74
    },
    {
     "key": "points",
     "label": "Points",
-    "w": 0,
+    "w": 1,
     "l": 2,
     "push": 0,
     "void": 0,
-    "units": -2.0,
-    "hit_rate": 0.0,
-    "needed": 0.4471,
-    "n": 2
+    "units": -0.5,
+    "hit_rate": 0.3333,
+    "needed": 0.4314,
+    "n": 3
    }
   ],
   "cuts": [
@@ -58,14 +58,14 @@
      {
       "key": "over_2.5",
       "label": "Over 2.5",
-      "w": 2,
+      "w": 3,
       "l": 4,
       "push": 0,
       "void": 0,
-      "units": -1.35,
-      "hit_rate": 0.3333,
-      "needed": 0.4407,
-      "n": 6
+      "units": -0.48,
+      "hit_rate": 0.4286,
+      "needed": 0.4542,
+      "n": 7
      },
      {
       "key": "under_1.5",
@@ -113,26 +113,26 @@
      {
       "key": "edge_lt2",
       "label": "Under 2 pts",
-      "w": 12,
+      "w": 13,
       "l": 16,
       "push": 0,
       "void": 0,
-      "units": -2.92,
-      "hit_rate": 0.4286,
-      "needed": 0.4703,
-      "n": 28
+      "units": -1.42,
+      "hit_rate": 0.4483,
+      "needed": 0.4678,
+      "n": 29
      },
      {
       "key": "edge_2_3",
       "label": "2 to 3 pts",
-      "w": 14,
+      "w": 15,
       "l": 12,
       "push": 0,
       "void": 0,
-      "units": 1.8,
-      "hit_rate": 0.5385,
-      "needed": 0.5,
-      "n": 26
+      "units": 2.67,
+      "hit_rate": 0.5556,
+      "needed": 0.5013,
+      "n": 27
      },
      {
       "key": "edge_3_4",
@@ -180,14 +180,14 @@
      {
       "key": "lineup",
       "label": "Lineup confirmed",
-      "w": 24,
+      "w": 26,
       "l": 21,
       "push": 0,
       "void": 0,
-      "units": 3.16,
-      "hit_rate": 0.5333,
-      "needed": 0.4885,
-      "n": 45
+      "units": 5.53,
+      "hit_rate": 0.5532,
+      "needed": 0.4876,
+      "n": 47
      }
     ]
    },
@@ -211,26 +211,26 @@
      {
       "key": "fav",
       "label": "-149 to -101",
-      "w": 14,
+      "w": 15,
       "l": 8,
       "push": 0,
       "void": 0,
-      "units": 3.78,
-      "hit_rate": 0.6364,
-      "needed": 0.5389,
-      "n": 22
+      "units": 4.65,
+      "hit_rate": 0.6522,
+      "needed": 0.5387,
+      "n": 23
      },
      {
       "key": "plus",
       "label": "Even or plus money",
-      "w": 22,
+      "w": 23,
       "l": 28,
       "push": 0,
       "void": 0,
-      "units": -2.65,
-      "hit_rate": 0.44,
-      "needed": 0.4599,
-      "n": 50
+      "units": -1.15,
+      "hit_rate": 0.451,
+      "needed": 0.4587,
+      "n": 51
      }
     ]
    }
@@ -238,13 +238,13 @@
   "days": [
    {
     "date": "2026-11-12",
-    "w": 3,
+    "w": 5,
     "l": 5,
     "push": 0,
     "void": 0,
-    "units": -2.0,
+    "units": 0.37,
     "n": 10,
-    "graded": false
+    "graded": true
    },
    {
     "date": "2026-11-11",
@@ -451,10 +451,10 @@
  "nights": [
   {
    "date": "2026-11-12",
-   "graded": false,
-   "w": 3,
+   "graded": true,
+   "w": 5,
    "l": 5,
-   "units": -2.0,
+   "units": 0.37,
    "entries": [
     {
      "id": "2026-11-12:2026020309:8482665:shots:1.5:under",
@@ -614,9 +614,9 @@
        "at": "2026-11-12T20:30:00-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "had 3",
+     "units": 0.8696,
      "pulled": null,
      "legs": []
     },
@@ -683,9 +683,9 @@
        "at": "2026-11-12T20:30:00-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "had 1",
+     "units": 1.5,
      "pulled": null,
      "legs": []
     }
