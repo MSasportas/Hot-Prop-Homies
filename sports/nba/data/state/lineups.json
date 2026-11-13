@@ -27,7 +27,6 @@
     "Joel Embiid"
    ],
    "status": {
-    "Joel Embiid": "questionable",
     "Ariel Hukporti": "out",
     "Dominick Barlow": "out",
     "Adem Bona": "out",
@@ -65,7 +64,7 @@
    }
   },
   "DAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Kyrie Irving",
     "Caleb Martin",
@@ -80,7 +79,7 @@
    }
   },
   "MIN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "LaMelo Ball",
     "Ayo Dosunmu",
@@ -122,5 +121,5 @@
    }
   }
  },
- "at": "2026-11-12T19:30:01-05:00"
+ "at": "2026-11-12T19:40:01-05:00"
 }
