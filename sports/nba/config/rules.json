@@ -97,9 +97,12 @@
   "hold_min": 0.02,
   "hold_max": 0.12,
   "extra": {
-   "_about": "Matt, 2026-11-12 (research Run 11): extra price checks 75, 60 and 30 minutes before tip, so the last 90 minutes are checked every 15 minutes (90, 75, 60, 45, 30, 20). Hard Rock follows a Pinnacle move in 20-30 minutes; wider gaps miss most moves. Same rule, same bar: it only looks more often. About +12 credits a game. Trial: judged on picks a night and the closing-line score.",
+   "_about": "Matt, 2026-11-12 (research Runs 11-13): extra price checks 240, 180, 135, 75, 60 and 30 minutes before tip. Hard Rock follows a Pinnacle move in 20-30 minutes, and Pinnacle moves all day, faster toward tip (about 3% of lines an hour in the morning, 6% from 90 to 45 minutes, 9% in the last 45). So: the last 90 minutes are checked every 15 minutes, and the long 11 AM to 90-minute gap (where 23% of lines move 2+ pts) gets three more checks. Same rule, same bar; it only looks more often. About +24 credits a game, only from credits the planned reads do not need. Trial: judged on picks a night and the closing-line score.",
    "active": true,
    "mins": [
+    240,
+    180,
+    135,
     75,
     60,
     30
@@ -187,6 +190,9 @@
   "hold_max": 0.15,
   "max_price": 200,
   "flag_reads": [
+   "X240",
+   "X180",
+   "X135",
    "B",
    "X75",
    "X60",
@@ -209,6 +215,9 @@
    "min_ev": 0.02,
    "max_price": 200,
    "reads": [
+    "X240",
+    "X180",
+    "X135",
     "B",
     "X75",
     "X60",
@@ -229,6 +238,9 @@
     "threes"
    ],
    "reads": [
+    "X240",
+    "X180",
+    "X135",
     "B",
     "X75",
     "X60",

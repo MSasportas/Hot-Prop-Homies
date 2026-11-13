@@ -363,7 +363,8 @@ def due_reads(now, games, reads, done, started, cfg):
         if (tip - now).total_seconds() / 60.0 < r["latest_min"]:
             continue
         dt = due_times(g, games, cfg)
-        cands = [k for k in all_reads(cfg) if k in reads and dt[k] <= now]
+        # an extra check never runs before the morning A read (a game with an early tip would be checked at dawn)
+        cands = [k for k in all_reads(cfg) if k in reads and dt[k] <= now and (k not in extra_reads(cfg) or dt[k] >= dt["A"])]
         if not cands:
             continue
         k = max(cands, key=lambda x: dt[x])
