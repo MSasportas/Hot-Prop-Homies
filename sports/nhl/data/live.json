@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-12",
- "generated_at": "2026-11-12T21:40:00-05:00",
+ "generated_at": "2026-11-12T21:50:00-05:00",
  "games": [
   {
    "game_id": 2026020309,
@@ -42,7 +42,7 @@
     "score": 2,
     "sog": 32
    },
-   "updated_at": "2026-11-12T21:40:00-05:00"
+   "updated_at": "2026-11-12T21:50:00-05:00"
   },
   {
    "game_id": 2026020303,
@@ -63,7 +63,7 @@
     "score": 5,
     "sog": 29
    },
-   "updated_at": "2026-11-12T21:40:00-05:00"
+   "updated_at": "2026-11-12T21:50:00-05:00"
   },
   {
    "game_id": 2026020302,
@@ -71,20 +71,20 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "14:26",
+   "clock": "09:13",
    "in_intermission": false,
    "running": true,
    "away": {
     "abbrev": "DET",
     "score": 4,
-    "sog": 22
+    "sog": 23
    },
    "home": {
     "abbrev": "FLA",
     "score": 3,
-    "sog": 22
+    "sog": 24
    },
-   "updated_at": "2026-11-12T21:40:00-05:00"
+   "updated_at": "2026-11-12T21:50:00-05:00"
   },
   {
    "game_id": 2026020307,
@@ -92,20 +92,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "05:36",
+   "clock": "00:06",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "STL",
     "score": 0,
-    "sog": 2
+    "sog": 5
    },
    "home": {
     "abbrev": "UTA",
     "score": 0,
-    "sog": 5
+    "sog": 9
    },
-   "updated_at": "2026-11-12T21:40:00-05:00"
+   "updated_at": "2026-11-12T21:50:00-05:00"
   }
  ],
  "picks": {
