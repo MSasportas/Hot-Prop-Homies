@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:30 - 1st",
+    "detail": "5:26 - 1st",
     "score": {
-     "TOR": "7",
-     "PHI": "9"
+     "TOR": "19",
+     "PHI": "12"
     }
    },
    {
@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:30 - 1st",
+    "detail": "2:40 - 1st",
     "score": {
-     "DET": "10",
-     "WSH": "17"
+     "DET": "26",
+     "WSH": "32"
     }
    },
    {

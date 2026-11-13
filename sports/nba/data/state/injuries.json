@@ -1,6 +1,13 @@
 {
- "at": "2026-11-12T18:40:00-05:00",
+ "at": "2026-11-12T19:30:01-05:00",
  "list": {
+  "4712863": {
+   "status": "out",
+   "name": "Mouhamed Gueye",
+   "team": "ATL",
+   "date": "2026-11-13T00:06Z",
+   "note": "Gueye (foot) is ready to begin on-court activities and will be re-evaluated in four weeks, Brad Rowland of the Locked On Podcast Network reports."
+  },
   "4585618": {
    "status": "out",
    "name": "Keshon Gilbert",
@@ -21,13 +28,6 @@
    "team": "ATL",
    "date": "2026-11-12T23:04Z",
    "note": "Flemings (back) is questionable for Friday's game against the Bulls."
-  },
-  "4712863": {
-   "status": "out",
-   "name": "Mouhamed Gueye",
-   "team": "ATL",
-   "date": "2026-10-19T19:38Z",
-   "note": "Gueye underwent surgery Tuesday to repair a fractured left foot that he suffered during a workout last week, Brad Rowland of the Locked On Podcast Network reports."
   },
   "5105571": {
    "status": "out",
@@ -518,6 +518,13 @@
    "team": "ORL",
    "date": "2026-09-28T21:33Z",
    "note": "Team president Jeff Weltman said Monday that Nelson (ankle) remains about a month away from returning to the court after offseason surgery, per Philip Rossman-Reich of OrlandoMagicDaily.com."
+  },
+  "3059318": {
+   "status": "day-to-day",
+   "name": "Joel Embiid",
+   "team": "PHI",
+   "date": "2026-11-13T00:21Z",
+   "note": "Embiid (foot) will play Thursday against the Raptors, Austin Krell of OnPattison.com reports."
   },
   "1966": {
    "status": "out",
