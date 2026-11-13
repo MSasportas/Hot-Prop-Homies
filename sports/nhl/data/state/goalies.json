@@ -1,94 +1,22 @@
 {
- "date": "2026-11-12",
+ "date": "2026-11-13",
  "teams": {
-  "SEA": {
-   "name": "Philipp Grubauer",
-   "status": "confirmed"
+  "VAN": {
+   "name": "Leevi Merilainen",
+   "status": "expected"
   },
-  "CAR": {
-   "name": "Brandon Bussi",
-   "status": "confirmed"
+  "NYR": {
+   "name": "Dylan Garand",
+   "status": "expected"
   },
-  "BOS": {
-   "name": "Jeremy Swayman",
-   "status": "confirmed"
+  "VGK": {
+   "name": "Carter Hart",
+   "status": "expected"
   },
-  "MTL": {
-   "name": "Jacob Fowler",
-   "status": "confirmed"
-  },
-  "CBJ": {
-   "name": "Jet Greaves",
-   "status": "confirmed"
-  },
-  "TBL": {
-   "name": "Dennis Hildeby",
-   "status": "confirmed"
-  },
-  "OTT": {
-   "name": "Linus Ullmark",
-   "status": "confirmed"
-  },
-  "COL": {
-   "name": "Scott Wedgewood",
-   "status": "confirmed"
-  },
-  "NJD": {
-   "name": "Connor Hellebuyck",
-   "status": "confirmed"
-  },
-  "WSH": {
-   "name": "Logan Thompson",
-   "status": "confirmed"
-  },
-  "TOR": {
-   "name": "Anthony Stolarz",
-   "status": "confirmed"
-  },
-  "MIN": {
-   "name": "Jesper Wallstedt",
-   "status": "confirmed"
-  },
-  "FLA": {
-   "name": "Akira Schmid",
-   "status": "confirmed"
-  },
-  "DET": {
-   "name": "John Gibson",
-   "status": "confirmed"
-  },
-  "CHI": {
-   "name": "Spencer Knight",
-   "status": "confirmed"
-  },
-  "BUF": {
-   "name": "Alex Lyon",
-   "status": "confirmed"
-  },
-  "DAL": {
-   "name": "Jake Oettinger",
-   "status": "confirmed"
-  },
-  "WPG": {
-   "name": "Stuart Skinner",
-   "status": "confirmed"
-  },
-  "UTA": {
-   "name": "Karel Vejmelka",
-   "status": "confirmed"
-  },
-  "STL": {
-   "name": "Joel Hofer",
-   "status": "confirmed"
-  },
-  "LAK": {
-   "name": "Darcy Kuemper",
-   "status": "confirmed"
-  },
-  "NYI": {
-   "name": "Ilya Sorokin",
-   "status": "confirmed"
+  "NSH": {
+   "name": "Juuse Saros",
+   "status": "expected"
   }
  },
- "checked_at": "2026-11-12T21:30:01-05:00"
+ "checked_at": "2026-11-13T05:00:01-05:00"
 }
