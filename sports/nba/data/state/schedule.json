@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:33 - OT",
+    "detail": "9.1 - OT",
     "score": {
-     "DET": "121",
-     "WSH": "124"
+     "DET": "133",
+     "WSH": "130"
     }
    },
    {
@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:59 - 3rd",
+    "detail": "11:14 - 4th",
     "score": {
-     "DAL": "61",
-     "MIN": "97"
+     "DAL": "72",
+     "MIN": "106"
     }
    },
    {
@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:18 - 2nd",
+    "detail": "7:05 - 2nd",
     "score": {
-     "CHA": "24",
-     "PHX": "31"
+     "CHA": "31",
+     "PHX": "46"
     }
    }
   ]
