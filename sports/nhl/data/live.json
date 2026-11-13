@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-12",
- "generated_at": "2026-11-12T19:40:01-05:00",
+ "generated_at": "2026-11-12T19:41:14-05:00",
  "games": [
   {
    "game_id": 2026020309,
@@ -29,9 +29,9 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "02:40",
+   "clock": "02:16",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "MTL",
     "score": 2,
@@ -42,7 +42,7 @@
     "score": 0,
     "sog": 9
    },
-   "updated_at": "2026-11-12T19:40:01-05:00"
+   "updated_at": "2026-11-12T19:41:14-05:00"
   },
   {
    "game_id": 2026020303,
@@ -63,7 +63,7 @@
     "score": 1,
     "sog": 12
    },
-   "updated_at": "2026-11-12T19:40:01-05:00"
+   "updated_at": "2026-11-12T19:41:14-05:00"
   },
   {
    "game_id": 2026020302,
@@ -71,20 +71,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "19:21",
+   "clock": "18:52",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "DET",
     "score": 0,
-    "sog": null
+    "sog": 1
    },
    "home": {
     "abbrev": "FLA",
     "score": 0,
     "sog": null
    },
-   "updated_at": "2026-11-12T19:40:01-05:00"
+   "updated_at": "2026-11-12T19:41:14-05:00"
   }
  ],
  "picks": {
