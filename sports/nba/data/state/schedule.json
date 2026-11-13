@@ -375,11 +375,11 @@
     "home": "PHI",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "9:37 - 2nd",
     "score": {
-     "TOR": "33",
-     "PHI": "24"
+     "TOR": "34",
+     "PHI": "31"
     }
    },
    {
@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:55 - 2nd",
+    "detail": "6:48 - 2nd",
     "score": {
-     "DET": "40",
-     "WSH": "37"
+     "DET": "44",
+     "WSH": "44"
     }
    },
    {
