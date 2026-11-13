@@ -2,8 +2,8 @@
 
 **KbWen character:** Developer  
 **Reports to:** CEO  
-**Repo:** MSasportas/prop-check-nba  
-**Live page:** https://msasportas.github.io/prop-check-nba/
+**Repo:** MSasportas/Hot-Prop-Homies (sports/nba/ subfolder)  
+**Live page:** https://msasportas.github.io/Hot-Prop-Homies/
 
 ---
 

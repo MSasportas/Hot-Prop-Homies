@@ -1,6 +1,6 @@
 # CLAUDE.md: Prop Check NHL
 
-This folder is the local clone of the GitHub repo MSasportas/prop-check-nhl. Claude Code reads this file at the start of every session.
+This folder is the NHL subfolder (sports/nhl/) of the Hot-Prop-Homies repo (MSasportas/Hot-Prop-Homies). Claude Code reads this file at the start of every session.
 
 ## Start of every session (do this before anything else)
 1. `git pull --rebase origin main`. A GitHub Actions timer commits about every 10 minutes, so the local copy is always behind.
@@ -44,7 +44,7 @@ The team decides and ships without asking me. Every rule is theirs to change, ex
 - The Record: every pick and parlay exactly as shown to me, graded after the game at the posted price, append-only. Pulled picks stay, marked pulled. Nothing is edited or dropped later. Never edit data/record/ by hand. Only I can order a reset, and the old Record is archived byte-exact. The Record is the only reporting I want.
 
 ## How it runs
-- It runs itself, with no chat needed. Repo: MSasportas/prop-check-nhl (public). Live page: https://msasportas.github.io/prop-check-nhl/
+- It runs itself, with no chat needed. Repo: MSasportas/Hot-Prop-Homies (public, sports/nhl/ subfolder). Live page: https://msasportas.github.io/Hot-Prop-Homies/
 - Timer: `.github/workflows/run.yml` is a self-dispatching GitHub Actions chain. `scripts/run.py` is the only entry point and runs stats, odds, lineups, picks, pulls, locking and grading every 10 minutes from 8 AM to 3 AM ET. All times are Eastern.
 - Tests: `python -m unittest discover -s tests`. Stdlib Python 3.12.
 - Historical odds for research: `research/data/*.tgz`. Extract into a scratch folder, never into the repo.

@@ -31,7 +31,7 @@ import urllib.request
 import common
 import odds
 
-PAGE = "https://msasportas.github.io/prop-check-nba/"
+PAGE = "https://msasportas.github.io/Hot-Prop-Homies/"
 MAX_PER_DAY = 12
 FINAL_ROOM = 9
 MAX_LINES = 8

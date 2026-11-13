@@ -2,7 +2,7 @@
 
 Read this first in every session. Update it last. It replaces the old roadmap, spec and briefs.
 
-Live page: https://msasportas.github.io/prop-check-nhl/ · Repo: MSasportas/prop-check-nhl (public)
+Live page: https://msasportas.github.io/Hot-Prop-Homies/ · Repo: MSasportas/Hot-Prop-Homies (public, sports/nhl/ subfolder)
 
 ## 1. The product
 Every NHL game day: every leg that qualifies at a real Hard Rock (`hardrockbet`) price, ranked best first, each
@@ -63,7 +63,7 @@ probability x Hard Rock decimal payout - 1, on unrounded numbers; every threshol
 - **Is it alive?** `git pull` and read `data/status.json`: `finished_at` should be < 30 min old (8 AM-3 AM ET);
   `runner.chain_link` increments each hand-over; `steps` show what ran; `keys` show credits per key (never keys).
   Chats can't see Actions history, Secrets or the live link; the public Actions page can be read with WebFetch:
-  https://github.com/MSasportas/prop-check-nhl/actions
+  https://github.com/MSasportas/Hot-Prop-Homies/actions
 - **Restart a dead chain:** push any commit touching `scripts/`, `config/` or `.github/workflows/`.
 - **Record guard:** every cycle runs `scripts/guard_record.py --history` after pulling and again just before pushing:
   every committed version of `data/record/events.jsonl` must be a byte-exact prefix of the next. If not, the cycle

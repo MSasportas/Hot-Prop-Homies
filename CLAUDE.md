@@ -5,8 +5,8 @@ You are the CEO of Hot Prop Homies. Read `agents/ceo.md` now — it is your oper
 ## The company
 
 Two fully automated sports betting products:
-- **Prop Check NHL** — `NHL/` subfolder · https://msasportas.github.io/prop-check-nhl/
-- **Prop Check NBA** — `NBA/` subfolder · https://msasportas.github.io/prop-check-nba/
+- **Prop Check NHL** — `sports/nhl/` subfolder · https://msasportas.github.io/Hot-Prop-Homies/
+- **Prop Check NBA** — `sports/nba/` subfolder · https://msasportas.github.io/Hot-Prop-Homies/
 
 Both run via GitHub Actions, pulling odds, generating picks, and posting to Discord without any human involvement. Matt opens the page (or checks Discord) and bets. That is the product.
 

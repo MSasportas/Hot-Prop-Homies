@@ -1,11 +1,9 @@
 # TEAM.md: Prop Check NBA operating doc
 
-Read this first in every session. Update it last. Every chat in the NBA project starts by attaching
-MSasportas/prop-check-nba (add_repo, push access), cloning it and reading this file.
+Read this first in every session. Update it last. This project lives in the Hot-Prop-Homies repo under sports/nba/.
 
-Live page: https://msasportas.github.io/prop-check-nba/ · Repo: MSasportas/prop-check-nba (public)
-Sister company of Prop Check NHL (MSasportas/prop-check-nhl): own CEO, team, repo, Record and odds key pool. The NHL repo is the
-template and is READ ONLY from here. Never push to it.
+Live page: https://msasportas.github.io/Hot-Prop-Homies/ · Repo: MSasportas/Hot-Prop-Homies (public)
+Sister product: Prop Check NHL (sports/nhl/ in the same repo). Both share the same repo; NHL code is READ ONLY from here.
 
 ## 1. The product
 Every NBA game day: every rebounds, points, assists and 3-pointers-made leg that qualifies at a real Hard Rock (`hardrockbet`) price, ranked best first, each with
@@ -127,7 +125,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
   `scripts/loop.sh` ~50 min (`scripts/cycle.sh` every 10 min 10 AM-2 AM ET, every 30 min otherwise) then starts the next run via
   workflow_dispatch. Hourly cron and any push to scripts/, config/ or .github/workflows/ (re)start it. Off switch: commit `config/stop_timer`.
 - **Is it alive?** `git pull` and read `data/status.json`: `finished_at` < 30 min old in the day window; `runner.chain_link` increments.
-  Actions page: https://github.com/MSasportas/prop-check-nba/actions (readable with WebFetch or `gh api .../actions/runs`).
+  Actions page: https://github.com/MSasportas/Hot-Prop-Homies/actions (readable with WebFetch or `gh api .../actions/runs`).
 - **Record guard (copied from NHL):** every cycle runs `scripts/guard_record.py --history` before and after: every committed version of
   `data/record/events.jsonl` must be a byte-exact prefix of the next; otherwise the cycle pushes nothing. Only the timer writes
   `data/record/`. No chat ever edits it. A reset needs Matt's explicit order and a byte-exact archive (`data/record/resets.json`).

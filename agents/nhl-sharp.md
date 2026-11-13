@@ -2,8 +2,8 @@
 
 **KbWen character:** Architect  
 **Reports to:** CEO  
-**Repo:** MSasportas/prop-check-nhl  
-**Live page:** https://msasportas.github.io/prop-check-nhl/
+**Repo:** MSasportas/Hot-Prop-Homies (sports/nhl/ subfolder)  
+**Live page:** https://msasportas.github.io/Hot-Prop-Homies/
 
 ---
 
