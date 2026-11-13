@@ -2246,32 +2246,7 @@ function hqFmt(v) { /* format units as "+0.37u" or "-2.0u" */
   return (n >= 0 ? '+' : '-') + s + 'u';
 }
 function hqUnitCls(v) { var n = num(v); if (n == null) return ''; return n > 0 ? 'pos' : (n < 0 ? 'neg' : ''); }
-function hqBarsRow(days7, color) {
-  /* render 7 bars as inline SVG, left=oldest, right=newest; each bar is 100%/7 wide */
-  var W = 100, H = 32, N = 7, bw = W / N - 1, maxAbs = 0.1;
-  for (var i = 0; i < days7.length; i++) { var u = Math.abs(num(days7[i].units) || 0); if (u > maxAbs) maxAbs = u; }
-  var svg = document.createElementNS(SVGNS, 'svg');
-  svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
-  svg.setAttribute('width', '100%'); svg.setAttribute('height', H);
-  svg.setAttribute('preserveAspectRatio', 'none');
-  svg.setAttribute('aria-hidden', 'true');
-  for (var j = 0; j < N; j++) {
-    var d = days7[j], ux = d ? (num(d.units) || 0) : 0;
-    var x = j * (W / N), bh = Math.max(1, Math.abs(ux) / maxAbs * (H - 2));
-    var y = ux >= 0 ? H - bh : H - bh;
-    var rect = document.createElementNS(SVGNS, 'rect');
-    rect.setAttribute('x', x); rect.setAttribute('width', bw);
-    if (Math.abs(ux) < 0.001) {
-      rect.setAttribute('y', H - 1); rect.setAttribute('height', 1);
-      rect.setAttribute('fill', 'var(--line2)');
-    } else {
-      rect.setAttribute('y', H - bh); rect.setAttribute('height', bh);
-      rect.setAttribute('fill', ux > 0 ? 'var(--good)' : 'var(--bad)');
-    }
-    svg.appendChild(rect);
-  }
-  return svg;
-}
+
 function hqHealthDot(ok) {
   var i = document.createElement('i');
   i.className = 'live' + (ok ? '' : ' bad');
@@ -2344,21 +2319,6 @@ function renderHQ() {
   row2col.appendChild(sportResultCol('NBA', 'nba', nbaH, nbaDays));
   sec1.appendChild(row2col);
 
-  /* 7-day bars */
-  var barsWrap = h('div', { style: 'margin-top:12px' });
-  function barsRow(sportCls, sportLabel, days) {
-    var last7 = days.slice(0, 7).reverse(); /* oldest first */
-    while (last7.length < 7) last7.unshift(null);
-    var rowEl = h('div', { style: 'display:flex;align-items:center;gap:8px;margin-top:6px' });
-    rowEl.appendChild(h('span', { class: 'sp-badge ' + sportCls, text: sportLabel, style: 'flex:none;width:32px;text-align:center' }));
-    var svgWrap = h('div', { style: 'flex:1;min-width:0' });
-    svgWrap.appendChild(hqBarsRow(last7));
-    rowEl.appendChild(svgWrap);
-    return rowEl;
-  }
-  barsWrap.appendChild(barsRow('nhl', 'NHL', nhlDays));
-  barsWrap.appendChild(barsRow('nba', 'NBA', nbaDays));
-  sec1.appendChild(barsWrap);
   app.appendChild(sec1);
 
   /* --- Section 2: Season Record --- */
