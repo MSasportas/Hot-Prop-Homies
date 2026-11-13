@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:15 - 2nd",
+    "detail": "9:55 - 2nd",
     "score": {
-     "DET": "35",
-     "WSH": "34"
+     "DET": "40",
+     "WSH": "37"
     }
    },
    {
