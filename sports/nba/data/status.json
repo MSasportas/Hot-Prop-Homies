@@ -1,5 +1,5 @@
 {
- "finished_at": "2026-11-12T23:30:00-05:00",
+ "finished_at": "2026-11-12T23:40:00-05:00",
  "slate": "2026-11-12",
  "ok": true,
  "steps": {
@@ -29,7 +29,7 @@
   },
   "grade": {
    "ok": true,
-   "sec": 0.0
+   "sec": 0.1
   }
  },
  "keys": [
@@ -131,7 +131,7 @@
  "graded_now": 0,
  "sources": {
   "espn": {
-   "ok": 2,
+   "ok": 3,
    "failed": 0
   },
   "rotowire": {
@@ -148,7 +148,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "43363818171",
-  "iteration": 3,
+  "iteration": 4,
   "chain_link": 20,
   "chain_started_at": "2026-11-12T08:01:08-05:00",
   "run_started_at": "2026-11-12T23:11:12-05:00"
