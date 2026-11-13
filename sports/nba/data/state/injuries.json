@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T15:30:00-05:00",
+ "at": "2026-11-13T16:00:01-05:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -295,6 +295,20 @@
    "date": "2026-08-26T20:04Z",
    "note": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic."
   },
+  "4066457": {
+   "status": "day-to-day",
+   "name": "Austin Reaves",
+   "team": "LAL",
+   "date": "2026-11-13T20:40Z",
+   "note": "Reaves (heel) won't undergo imaging and is considered day-to-day ahead of Sunday's game against the Suns, Jovan Buha of The Athletic reports."
+  },
+  "3945274": {
+   "status": "day-to-day",
+   "name": "Luka Doncic",
+   "team": "LAL",
+   "date": "2026-11-13T20:40Z",
+   "note": "Head coach JJ Redick said Friday that Doncic (ankle) is \"fine,\" per Law Murray of The Athletic."
+  },
   "4397014": {
    "status": "day-to-day",
    "name": "Quentin Grimes",
@@ -308,20 +322,6 @@
    "team": "LAL",
    "date": "2026-11-12T04:40Z",
    "note": "Sexton did not return to Wednesday's 123-112 win over the Bucks and required stitches to close a cut on his forehead, Thuc Nhi Nguyen of the Los Angeles Times reports."
-  },
-  "4066457": {
-   "status": "day-to-day",
-   "name": "Austin Reaves",
-   "team": "LAL",
-   "date": "2026-11-12T04:11Z",
-   "note": "Head coach JJ Redick said that X-rays on Reaves' left heel came back negative, but they won't have another update until he undergoes further imaging back in Los Angeles on Thursday, Dave McMenamin of "
-  },
-  "3945274": {
-   "status": "day-to-day",
-   "name": "Luka Doncic",
-   "team": "LAL",
-   "date": "2026-11-12T03:34Z",
-   "note": "Doncic finished Wednesday's 123-112 win over the Bucks with 32 points (10-25 FG, 5-12 3Pt, 7-10 FT), five rebounds, five assists and three steals across 32 minutes. He exited to the locker room late i"
   },
   "4593016": {
    "status": "out",

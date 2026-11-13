@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 4548,
+   "pool_left": 4528,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-13T16:00:00-05:00",
-  "last_read_at": "2026-11-13T15:00:01-05:00",
+  "next_read_at": "2026-11-13T16:30:00-05:00",
+  "last_read_at": "2026-11-13T16:00:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-13T15:40:01-05:00"
+   "at": "2026-11-13T16:00:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-13T05:00:00-05:00",
+    "at": "2026-11-13T16:00:01-05:00",
     "confirmed": []
    },
    "grade": true
@@ -48,18 +48,22 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-13T15:00:01-05:00",
+   "read_at": "2026-11-13T16:00:01-05:00",
    "picks": 0,
    "checks": [
     {
      "read": "X240",
      "at": "2026-11-13T15:00:01-05:00"
+    },
+    {
+     "read": "X180",
+     "at": "2026-11-13T16:00:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-13T15:00:01-05:00",
+   "last_check_at": "2026-11-13T16:00:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-13T16:00:00-05:00",
-   "next_check_read": "X180",
+   "next_check_at": "2026-11-13T16:45:00-05:00",
+   "next_check_read": "X135",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -77,18 +81,22 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-13T15:00:01-05:00",
+   "read_at": "2026-11-13T16:00:01-05:00",
    "picks": 0,
    "checks": [
     {
      "read": "X240",
      "at": "2026-11-13T15:00:01-05:00"
+    },
+    {
+     "read": "X180",
+     "at": "2026-11-13T16:00:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-13T15:00:01-05:00",
+   "last_check_at": "2026-11-13T16:00:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-13T16:00:00-05:00",
-   "next_check_read": "X180",
+   "next_check_at": "2026-11-13T16:45:00-05:00",
+   "next_check_read": "X135",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -106,13 +114,18 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-13T11:00:01-05:00",
-   "picks": 0,
-   "checks": [],
-   "last_check_at": null,
+   "read_at": "2026-11-13T16:00:01-05:00",
+   "picks": 1,
+   "checks": [
+    {
+     "read": "X240",
+     "at": "2026-11-13T16:00:01-05:00"
+    }
+   ],
+   "last_check_at": "2026-11-13T16:00:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-13T16:00:00-05:00",
-   "next_check_read": "X240",
+   "next_check_at": "2026-11-13T17:00:00-05:00",
+   "next_check_read": "X180",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -130,13 +143,18 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-13T11:00:01-05:00",
+   "read_at": "2026-11-13T16:00:01-05:00",
    "picks": 0,
-   "checks": [],
-   "last_check_at": null,
+   "checks": [
+    {
+     "read": "X240",
+     "at": "2026-11-13T16:00:01-05:00"
+    }
+   ],
+   "last_check_at": "2026-11-13T16:00:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-13T16:00:00-05:00",
-   "next_check_read": "X240",
+   "next_check_at": "2026-11-13T17:00:00-05:00",
+   "next_check_read": "X180",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -154,17 +172,22 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-13T11:00:01-05:00",
+   "read_at": "2026-11-13T16:00:01-05:00",
    "picks": 0,
-   "checks": [],
-   "last_check_at": null,
+   "checks": [
+    {
+     "read": "X240",
+     "at": "2026-11-13T16:00:01-05:00"
+    }
+   ],
+   "last_check_at": "2026-11-13T16:00:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-13T16:00:00-05:00",
-   "next_check_read": "X240",
+   "next_check_at": "2026-11-13T17:00:00-05:00",
+   "next_check_read": "X180",
    "paused": false,
    "injury_clear": {
     "away": true,
-    "home": false
+    "home": true
    }
   },
   {
@@ -264,15 +287,71 @@
    }
   }
  ],
- "picks": [],
- "empty": {
-  "text": "No picks yet today",
-  "why": "880 lines read. Pinnacle moved alone on 4, none of them bettable yet.",
-  "next": "2026-11-13T16:00:00-05:00"
- },
+ "picks": [
+  {
+   "player": "Donovan Mitchell",
+   "pid": "3908809",
+   "team": "CLE",
+   "opp": "MIA",
+   "home": false,
+   "game_id": "401909298",
+   "start": "2026-11-13T20:00:00-05:00",
+   "bet": "Over 2.5 threes",
+   "market": "threes",
+   "side": "over",
+   "line": 2.5,
+   "price": -135,
+   "price_at": "2026-11-13T16:00:01-05:00",
+   "read": "X240",
+   "p": 0.5752,
+   "p_pct": 58,
+   "breakeven": 0.5745,
+   "breakeven_pct": 57,
+   "market_fair": null,
+   "n_books": 8,
+   "gap_ev": null,
+   "final_ev": 0.0381,
+   "model_p": null,
+   "reason": "Pinnacle moved the over from -135 to -160 (54% to 58%). Hard Rock -135 is 0.1% better than Pinnacle's fair price.",
+   "rule": "pin_solo",
+   "pin_before": 0.5371,
+   "pin_after": 0.5752,
+   "pin_price_before": -135,
+   "pin_price_after": -160,
+   "others_move": 0.0113,
+   "n_others": 8,
+   "ev_vs_pin": 0.0012,
+   "window": "11 AM \u2192 240 min",
+   "gap_vs_pin": 0.0409,
+   "book": "hardrock",
+   "books": {
+    "hardrock": {
+     "ev_vs_pin": 0.0012,
+     "price": -135
+    }
+   },
+   "id": "2026-11-13:401909298:3908809:threes:2.5:over",
+   "state": "clear",
+   "state_label": "Injury report clear",
+   "price_final": false,
+   "pulled": null,
+   "added_at": "2026-11-13T16:00:01-05:00",
+   "result": null,
+   "links": {
+    "hardrock": {
+     "id": "2286780669690511755",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/2286780669690511755",
+     "price": -135
+    },
+    "draftkings": null
+   },
+   "rank": 1
+  }
+ ],
+ "empty": null,
  "counts": {
-  "lines_read": 880,
-  "passing": 1,
+  "lines_read": 868,
+  "passing": 4,
   "games": 9
  },
  "safety_paused": false,
@@ -281,6 +360,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-13T15:00:01-05:00",
- "status_at": "2026-11-13T15:40:01-05:00"
+ "generated_at": "2026-11-13T16:00:01-05:00",
+ "status_at": "2026-11-13T16:00:01-05:00"
 }
