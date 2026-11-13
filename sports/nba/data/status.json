@@ -1,5 +1,5 @@
 {
- "finished_at": "2026-11-12T21:21:25-05:00",
+ "finished_at": "2026-11-12T21:30:01-05:00",
  "slate": "2026-11-12",
  "ok": true,
  "steps": {
@@ -13,7 +13,7 @@
   },
   "injuries": {
    "ok": true,
-   "sec": 0.3
+   "sec": 0.4
   },
   "lineups": {
    "ok": true,
@@ -29,7 +29,7 @@
   },
   "grade": {
    "ok": true,
-   "sec": 0.0
+   "sec": 0.7
   }
  },
  "keys": [
@@ -101,7 +101,7 @@
  ],
  "pool_left": 4592,
  "plan": {
-  "allowance": 36.0,
+  "allowance": 35.368,
   "reads": [
    "A",
    "B",
@@ -110,15 +110,18 @@
   ],
   "spare": [],
   "extra": [
+   "X135",
+   "X180",
+   "X240",
    "X30",
    "X60",
    "X75"
   ],
-  "pool_at_plan": 4788,
+  "pool_at_plan": 4704,
   "games_left": 133,
   "games_today": 4,
   "key_count": 13,
-  "made_at": "2026-11-12T14:40:01-05:00",
+  "made_at": "2026-11-12T21:30:01-05:00",
   "cost_per_read": 4
  },
  "spent_today": 112,
@@ -128,7 +131,7 @@
  "graded_now": 0,
  "sources": {
   "espn": {
-   "ok": 2,
+   "ok": 3,
    "failed": 0
   },
   "rotowire": {
@@ -145,7 +148,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "43351522205",
-  "iteration": 1,
+  "iteration": 2,
   "chain_link": 17,
   "chain_started_at": "2026-11-12T08:01:08-05:00",
   "run_started_at": "2026-11-12T21:21:10-05:00"

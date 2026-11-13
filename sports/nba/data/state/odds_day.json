@@ -1,7 +1,7 @@
 {
  "date": "2026-11-12",
  "plan": {
-  "allowance": 36.0,
+  "allowance": 35.368,
   "reads": [
    "A",
    "B",
@@ -10,15 +10,18 @@
   ],
   "spare": [],
   "extra": [
+   "X135",
+   "X180",
+   "X240",
    "X30",
    "X60",
    "X75"
   ],
-  "pool_at_plan": 4788,
+  "pool_at_plan": 4704,
   "games_left": 133,
   "games_today": 4,
   "key_count": 13,
-  "made_at": "2026-11-12T14:40:01-05:00",
+  "made_at": "2026-11-12T21:30:01-05:00",
   "cost_per_read": 4
  },
  "events": {
