@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:22 - 3rd",
+    "detail": "3:40 - 3rd",
     "score": {
-     "CHA": "62",
-     "PHX": "59"
+     "CHA": "70",
+     "PHX": "70"
     }
    }
   ]
