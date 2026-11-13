@@ -742,3 +742,11 @@ data/shadow results (actual SOG; void = no TOI). ALL nights Oct 19 - Nov 9 are a
 Run 22 count: 1 variant tested (JJ1; JJ2-3 descriptive), forward variants unchanged at 42, historical unchanged at 484, lockbox looks still 2.
 Code research/code/r22/jj22.py, output jj22_results.txt.
 
+
+## Run 27 (Researcher, 2026-11-13, daily). BOOKS, NOT PLAYERS: book agreement. Registered before any of these were tested.
+Discovery only: every stored night through 2026-11-12 was already seen (Q1, Q13, Q19, JJ overlap), so nothing below can pass. Forward collection starts with the 2026-11-13 reads. Code research/code/run27/disp.py (output disp_results.txt).
+
+| id | date | rule (exact) | data | result | status |
+|---|---|---|---|---|---|
+| DP1 | 2026-11-13 | **Book agreement (dispersion), shots, reads B and C (about 90 and 45 min before tip).** For each (game, player, line) where Hard Rock posts both sides on that line at price -200..+200 and at least 5 other books have both sides on that same line (hold 0-15%, last_update < 60 min before the read): each book's proportional no-vig over chance; spread = max minus min of those chances; consensus = median. DP1a TIGHT: bet the side where Hard Rock EV vs the consensus is >= 0 AND spread <= 2 pts. DP1b DISPUTED: same, spread >= 4 pts. First qualifying read per player per line per night. 1u flat at Hard Rock's price; graded from the shadow result (void if none). CLV = Hard Rock's frozen price vs the consensus fair at the last read. 2 variants | data/odds (reads B, C, `others`) + data/shadow (result) | DP1a 29 graded -4.8% (CI -33..+23, CLV +2.0%); DP1b 247 graded +4.6% (CI -6..+14, CLV +2.3%); no forward bets yet. Discovery: no edge shown | DISCOVERY, judged forward from 2026-11-13. Forward bar = rule 4 of RESEARCH.md: n >= 150 graded, ROI > 0, 90% game-clustered CI > 0, CLV > 0 |
+

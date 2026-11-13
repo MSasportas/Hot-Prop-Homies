@@ -1,4 +1,10 @@
 ## 2026-11-12, Run 13 (CEO; Matt: when does Pinnacle move, and how far before tip). Code: research/code/run11/when_moves.py. 18 nights, consecutive stored reads, lines Pinnacle posted at both.
+- 2026-11-13 (Researcher run 9, daily; NBA; books, not players). No key used, no odds pull.
+  Registered BB1a/BB1b (book agreement, dispersion of other books' no-vig fairs) in HYPOTHESES.md before any test.
+  NOT TESTED THIS RUN: data/odds has no read labels (pull is absent in every fetch), so the B/C reads need mapping by time, and grading needs the box-score join (data/state/box, keyed by pid and date). Neither mapping is built yet. Registration is in place; the test is queued.
+  Current NBA auto-scorer (AH3 entry 2026-11-13, solo + late, forward 15 graded 10-5 +3.37u, CLV -2.5%) is below the bar (n 150 needed); no READY FOR SHARP.
+  **Verdict: nothing tested, no candidate for the Sharp.**
+  Next: (1) build B/C read mapping and box grading for BB1a/BB1b, script to research/code/run9/; (2) keep AH forward scoring nightly.
 
 ## 2026-11-13, AH3 (auto; Solo + late (solo Pinnacle, last 90 min))
 Filter: MOVES where others < 1 pt AND window is 90->45 or 45->20. MOVES population (Pinnacle >= 2 pt move, HR on line, -200..+200, 1/player/market/night).

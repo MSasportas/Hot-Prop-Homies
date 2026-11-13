@@ -145,3 +145,8 @@ Pass bar for all: rule 4 (n >= 150 graded forward, ROI > 0, 90% game-clustered b
 - AH14 Small FAIR moves: MOVES where move 2-3 pts AND ev_pin >= 0. Metric: W-L, ROI, CLV_pin.
   Prior: M4 found 2-3 pt band was the only losing band in the Record (15 bets); this is the FAIR subset question.
 - AH15 Late FAIR: MOVES where window is last 90 min AND ev_pin >= 0. Metric: W-L, ROI, CLV_pin.
+
+## Run 9 (2026-11-13, Researcher; Matt: books, not players). Registered before any of these were tested.
+Discovery only: every stored night through 2026-11-12 was already seen by the AH series, so nothing below can pass. Forward collection starts with the 2026-11-13 reads. Code: to be written at research/code/run9/ (not built yet; see LOG 2026-11-13).
+
+- BB1 Book agreement (dispersion). Reads B and C (about 90 and 45 min before tip) of data/odds. For each (game, player, market, line) where Hard Rock posts both sides on that line at -200..+200 and at least 5 other books have both sides on the same line (hold 0-15%, last update < 60 min before the read): each book's proportional no-vig over chance; spread = max minus min; consensus = median. BB1a TIGHT: bet the side where Hard Rock EV vs consensus >= 0 AND spread <= 2 pts. BB1b DISPUTED: same, spread >= 4 pts. First qualifying read per player/market/line/night. 1u flat at Hard Rock's price; graded from box scores (DNP = void, whole-number line exact = push). CLV = frozen price vs consensus fair at the last read. 2 variants. Status: DISCOVERY, judged forward from 2026-11-13. Forward bar = RESEARCH.md rule 4 (n >= 150 graded, ROI > 0, 90% game-clustered CI > 0, CLV > 0).

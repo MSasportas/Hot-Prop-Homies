@@ -22,26 +22,36 @@
   "mean_clv": null
  },
  "NN4 exch steam": {
-  "bets": 0,
-  "graded": 0,
+  "bets": 1,
+  "graded": 1,
   "w": 0,
-  "units": 0,
-  "roi": null,
-  "ci90": null,
-  "p_one_sided": null,
-  "mean_ev": null,
-  "mean_clv": null
+  "units": -1.0,
+  "roi": -1.0,
+  "ci90": [
+   -1.0,
+   -1.0
+  ],
+  "p_one_sided": 1.0,
+  "mean_ev": 0.0038,
+  "mean_clv": 0.015,
+  "games": 1,
+  "candidate": false
  },
  "NN5 market moves": {
-  "bets": 0,
-  "graded": 0,
-  "w": 0,
-  "units": 0,
-  "roi": null,
-  "ci90": null,
-  "p_one_sided": null,
-  "mean_ev": null,
-  "mean_clv": null
+  "bets": 1,
+  "graded": 1,
+  "w": 1,
+  "units": 1.25,
+  "roi": 1.25,
+  "ci90": [
+   1.25,
+   1.25
+  ],
+  "p_one_sided": 0.0,
+  "mean_ev": 0.0263,
+  "mean_clv": 0.0263,
+  "games": 1,
+  "candidate": false
  },
  "NN6 fade soft": {
   "bets": 0,

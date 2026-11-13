@@ -1,4 +1,14 @@
 # LOG.md: Researcher runs (newest first)
+- 2026-11-13 (Researcher run 27, daily; SHOTS ON GOAL ONLY; books, not players). No key used, no odds pull, stored data only.
+  Re-scored forward: run_all.sh ran clean (exit 0). Forward Q-tests (Q1, Q6, Q12, Q13, Q19, Q24, LL, MM, NN) re-scored; nothing new cleared the bar.
+  DP1 registered in HYPOTHESES.md before any test (book agreement: spread of other books' no-vig fairs, B and C reads).
+  Script research/code/run27/disp.py (output disp_results.txt). Discovery only: nights through 2026-11-12 already seen.
+  - DP1a tight consensus (spread <= 2 pts) EV >= 0 vs median: 29 graded 14-15 -1.38u ROI -4.8% [90% CI -33,+23], CLV +2.0% (n29).
+  - DP1b disputed (spread >= 4 pts) EV >= 0 vs median: 247 graded 129 W +11.43u ROI +4.6% [90% CI -6,+14], CLV +2.3% (n247).
+    The shuffle placebo gives p 0.999 (the shuffled pairing of prices and results beats the actual more often than not), so this is a weak test; treat it as noise, not an edge.
+  **Verdict: nothing passed; no candidate for the Sharp.** DP1b is a positive-CLV, positive-ROI lead, but its CI covers zero and the placebo does not back it. Forward from 2026-11-13: 0 graded so far.
+  Caveat: the first draft of the script read the wrong folder and returned 0 bets; fixed before this result was taken.
+  Next: (1) DP1a/DP1b forward (score from 2026-11-13 reads, n >= 150 needed); (2) re-check placebo with a per-bet sign-flip instead of result shuffle before trusting DP1b.
 
 - 2026-11-10 (Researcher run 22-LIVE (Run in the combined Hot-Prop-Homies repo on Nov 10, separately from the old repo's runs 22-26. Its JJ1-JJ3 ids are NOT the old repo's JJ1-JJ3; read them as JJ1L-JJ3L.), owner's question: does NBA's live rule help NHL?; SHOTS ON GOAL ONLY). No key used, no historical pull.
   JJ1-JJ3 registered in HYPOTHESES.md before running (not committed: this run was told not to commit). History can't test it: the 2025-26
