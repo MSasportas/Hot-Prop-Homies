@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-12",
- "generated_at": "2026-11-12T21:00:01-05:00",
+ "generated_at": "2026-11-12T21:10:00-05:00",
  "games": [
   {
    "game_id": 2026020309,
@@ -29,20 +29,20 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "19:18",
+   "clock": "14:02",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "MTL",
     "score": 5,
-    "sog": 22
+    "sog": 23
    },
    "home": {
     "abbrev": "BOS",
-    "score": 1,
-    "sog": 22
+    "score": 2,
+    "sog": 27
    },
-   "updated_at": "2026-11-12T21:00:01-05:00"
+   "updated_at": "2026-11-12T21:10:00-05:00"
   },
   {
    "game_id": 2026020303,
@@ -50,7 +50,7 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "20:00",
+   "clock": "14:11",
    "in_intermission": false,
    "running": false,
    "away": {
@@ -61,9 +61,9 @@
    "home": {
     "abbrev": "NJD",
     "score": 2,
-    "sog": 20
+    "sog": 22
    },
-   "updated_at": "2026-11-12T21:00:01-05:00"
+   "updated_at": "2026-11-12T21:10:00-05:00"
   },
   {
    "game_id": 2026020302,
@@ -71,41 +71,41 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "07:58",
+   "clock": "00:31",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "DET",
-    "score": 3,
-    "sog": 18
+    "score": 4,
+    "sog": 21
    },
    "home": {
     "abbrev": "FLA",
     "score": 1,
-    "sog": 14
+    "sog": 16
    },
-   "updated_at": "2026-11-12T21:00:01-05:00"
+   "updated_at": "2026-11-12T21:10:00-05:00"
   },
   {
    "game_id": 2026020307,
-   "state": "PRE",
+   "state": "LIVE",
    "schedule_state": "OK",
-   "period": null,
-   "period_type": null,
-   "clock": null,
+   "period": 1,
+   "period_type": "REG",
+   "clock": "19:18",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "STL",
-    "score": null,
+    "score": 0,
     "sog": null
    },
    "home": {
     "abbrev": "UTA",
-    "score": null,
-    "sog": null
+    "score": 0,
+    "sog": 1
    },
-   "updated_at": "2026-11-12T21:00:01-05:00"
+   "updated_at": "2026-11-12T21:10:00-05:00"
   }
  ],
  "picks": {
@@ -147,7 +147,7 @@
   "2026-11-12:2026020307:8476389:shots:1.5:under": {
    "game_id": 2026020307,
    "market": "shots",
-   "stat": null
+   "stat": 0
   }
  }
 }
