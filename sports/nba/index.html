@@ -1561,7 +1561,7 @@ function loadOlder() {
 /* ---------- Lab: ideas that passed their historical test, tracked on paper (config/lab.json) ---------- */
 function renderLab() {
   top('Lab', false);
-  app.appendChild(h('p', { class: 'mu', style: 'margin:10px 0 0;font-size:13px;line-height:19px', text: 'Ideas that passed their historical test, now tracked on paper. Not picks: never on the Record or in Discord.' }));
+  app.appendChild(h('p', { class: 'mu', style: 'margin:10px 0 0;font-size:13px;line-height:19px', text: 'Most tests are paper-only — see each card for its status. Some live tests are real picks on the Record.' }));
   if (!S.loaded) { app.appendChild(h('div', { class: 'stack' }, h('div', { class: 'skel sm' }), h('div', { class: 'skel' }))); return; }
   var tests = S.lab ? arr(S.lab.tests).filter(isObj) : [];
   if (!S.lab) {
