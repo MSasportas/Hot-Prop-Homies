@@ -2171,7 +2171,7 @@ function renderLabToday() {
     var uStr = (u > 0 ? '+' : '') + u.toFixed(2).replace(/\.?0+$/, '') + 'u';
     hd.appendChild(h('span', { class: 'mu', text: w + '-' + l + (pending ? ' · ' + pending + ' live' : '') + ' · ' + uStr }));
   } else {
-    hd.appendChild(h('span', { class: 'mu', text: todayBets.length + (todayBets.length === 1 ? ' pick' : ' picks') }));
+    hd.appendChild(h('span', { class: 'mu', text: todayBets.length + (todayBets.length === 1 ? ' entry' : ' entries') }));
   }
   sec.appendChild(hd);
   if (liveOK() && pending > 0) {
@@ -2186,7 +2186,7 @@ function renderLabToday() {
 /* ---------- Lab: ideas that passed their historical test, tracked on paper (config/lab.json) ---------- */
 function renderLab() {
   top('Lab', false);
-  app.appendChild(h('p', { class: 'mu', style: 'margin:10px 0 0;font-size:13px;line-height:19px', text: 'Everything being tested, tracked on paper. Tap a test to see its picks. Not for betting: never on the Record or in Discord.' }));
+  app.appendChild(h('p', { class: 'mu', style: 'margin:10px 0 0;font-size:13px;line-height:19px', text: 'Most tests are paper-only — see each card for its status. Tap a test to see its picks.' }));
   if (!S.loaded) { app.appendChild(h('div', { class: 'stack' }, h('div', { class: 'skel sm' }), h('div', { class: 'skel' }))); return; }
   renderLabToday();
   var tests = S.lab ? arr(S.lab.tests).filter(isObj) : [];
