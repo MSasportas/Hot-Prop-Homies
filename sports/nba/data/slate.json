@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 4608,
+   "pool_left": 4604,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-12T20:00:00-05:00",
-  "last_read_at": "2026-11-12T19:50:00-05:00",
+  "next_read_at": "2026-11-12T20:15:00-05:00",
+  "last_read_at": "2026-11-12T20:00:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-12T19:50:00-05:00"
+   "at": "2026-11-12T20:00:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-12T19:50:00-05:00",
+    "at": "2026-11-12T20:00:00-05:00",
     "confirmed": [
      "DAL",
      "DET",
@@ -50,7 +50,7 @@
    "away": "TOR",
    "home": "PHI",
    "state": "in",
-   "detail": "9:37 - 2nd",
+   "detail": "4:02 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -99,7 +99,7 @@
    "away": "DET",
    "home": "WAS",
    "state": "in",
-   "detail": "6:48 - 2nd",
+   "detail": "2:57 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -202,7 +202,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-12T19:50:00-05:00",
+   "read_at": "2026-11-12T20:00:00-05:00",
    "picks": 0,
    "checks": [
     {
@@ -212,12 +212,16 @@
     {
      "read": "X75",
      "at": "2026-11-12T19:50:00-05:00"
+    },
+    {
+     "read": "X60",
+     "at": "2026-11-12T20:00:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-12T19:50:00-05:00",
+   "last_check_at": "2026-11-12T20:00:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-12T20:00:00-05:00",
-   "next_check_read": "X60",
+   "next_check_at": "2026-11-12T20:15:00-05:00",
+   "next_check_read": "C",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -229,7 +233,7 @@
  "empty": {
   "text": "No picks yet today",
   "why": "422 lines read. Pinnacle moved alone on 59, none of them bettable yet.",
-  "next": "2026-11-12T20:00:00-05:00"
+  "next": "2026-11-12T20:15:00-05:00"
  },
  "counts": {
   "lines_read": 422,
@@ -242,6 +246,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-12T19:50:00-05:00",
- "status_at": "2026-11-12T19:50:00-05:00"
+ "generated_at": "2026-11-12T20:00:00-05:00",
+ "status_at": "2026-11-12T20:00:00-05:00"
 }
