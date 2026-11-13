@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-12",
- "generated_at": "2026-11-12T20:00:01-05:00",
+ "generated_at": "2026-11-12T20:10:01-05:00",
  "games": [
   {
    "game_id": 2026020309,
@@ -27,22 +27,22 @@
    "game_id": 2026020299,
    "state": "LIVE",
    "schedule_state": "OK",
-   "period": 1,
+   "period": 2,
    "period_type": "REG",
-   "clock": "00:32",
-   "in_intermission": true,
-   "running": false,
+   "clock": "15:18",
+   "in_intermission": false,
+   "running": true,
    "away": {
     "abbrev": "MTL",
-    "score": 2,
-    "sog": 14
+    "score": 3,
+    "sog": 15
    },
    "home": {
     "abbrev": "BOS",
     "score": 0,
-    "sog": 11
+    "sog": 13
    },
-   "updated_at": "2026-11-12T20:00:01-05:00"
+   "updated_at": "2026-11-12T20:10:01-05:00"
   },
   {
    "game_id": 2026020303,
@@ -50,20 +50,20 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "20:00",
+   "clock": "14:50",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "WSH",
-    "score": 1,
-    "sog": 12
+    "score": 2,
+    "sog": 15
    },
    "home": {
     "abbrev": "NJD",
     "score": 1,
-    "sog": 12
+    "sog": 14
    },
-   "updated_at": "2026-11-12T20:00:01-05:00"
+   "updated_at": "2026-11-12T20:10:01-05:00"
   },
   {
    "game_id": 2026020302,
@@ -71,20 +71,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "08:32",
+   "clock": "03:44",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "DET",
-    "score": 1,
-    "sog": 9
+    "score": 2,
+    "sog": 14
    },
    "home": {
     "abbrev": "FLA",
     "score": 1,
     "sog": 6
    },
-   "updated_at": "2026-11-12T20:00:01-05:00"
+   "updated_at": "2026-11-12T20:10:01-05:00"
   }
  ],
  "picks": {
