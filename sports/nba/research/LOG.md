@@ -1,4 +1,13 @@
 ## 2026-11-12, Run 13 (CEO; Matt: when does Pinnacle move, and how far before tip). Code: research/code/run11/when_moves.py. 18 nights, consecutive stored reads, lines Pinnacle posted at both.
+
+## 2026-11-13, AH3 (auto; Solo + late (solo Pinnacle, last 90 min))
+Filter: MOVES where others < 1 pt AND window is 90->45 or 45->20. MOVES population (Pinnacle >= 2 pt move, HR on line, -200..+200, 1/player/market/night).
+Discovery (<2026-11-10, 15 nights): n 103 graded 103 62-41 +11.92u ROI +11.6% CLV_pin -3.1% (n 60)
+Discovery FAIR (ev_pin>=0): n 14 graded 14 11-3 +6.80u ROI +48.6% CLV_pin +0.2% (n 10)
+Forward (>=2026-11-10, 2 nights): n 15 graded 15 10-5 +3.37u ROI +22.4% CLV_pin -2.5% (n 7)
+Forward FAIR: n 1 graded 1 1-0 +0.77u ROI +76.9% CLV_pin +1.2% (n 1)
+Pass bar: n>=150 graded fwd, ROI>0, CI>0, CLV>0. Status: FORWARD - accumulating
+
 Share of Pinnacle lines that moved 2+ pts per read window: 11 AM -> 90 min (about 7 h): 544 of 2,334 (23%), 3.3% per line-hour, 199 moved 4+ | 90 -> 45 min: 155 of 3,082 (5.0%), 6.1% per line-hour | 45 -> 20 min: 90 of 3,136 (2.9%), 8.6% per line-hour.
 By minutes before tip (window end): 25-50 min 6.2%/h; last 25 min 8.7%/h; 80-120 min about 11%/h (n 78). Rate rises toward tip: about 3%/h in the morning, 6%/h from 90 to 45, 9%/h in the last 45.
 By market per line-hour: points 8.1%, rebounds 7.7%, assists 6.7%, threes 4.9% (threes move least).
