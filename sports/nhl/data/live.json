@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-12",
- "generated_at": "2026-11-12T22:10:01-05:00",
+ "generated_at": "2026-11-12T22:11:22-05:00",
  "games": [
   {
    "game_id": 2026020309,
@@ -63,7 +63,7 @@
     "score": 5,
     "sog": 29
    },
-   "updated_at": "2026-11-12T22:10:01-05:00"
+   "updated_at": "2026-11-12T22:11:22-05:00"
   },
   {
    "game_id": 2026020302,
@@ -84,7 +84,7 @@
     "score": 5,
     "sog": 29
    },
-   "updated_at": "2026-11-12T22:10:01-05:00"
+   "updated_at": "2026-11-12T22:11:22-05:00"
   },
   {
    "game_id": 2026020307,
@@ -92,9 +92,9 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "19:26",
+   "clock": "19:09",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "STL",
     "score": 0,
@@ -105,7 +105,7 @@
     "score": 0,
     "sog": 10
    },
-   "updated_at": "2026-11-12T22:10:01-05:00"
+   "updated_at": "2026-11-12T22:11:22-05:00"
   },
   {
    "game_id": 2026020308,
@@ -113,7 +113,7 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "18:12",
+   "clock": "17:30",
    "in_intermission": false,
    "running": true,
    "away": {
@@ -126,7 +126,7 @@
     "score": 0,
     "sog": null
    },
-   "updated_at": "2026-11-12T22:10:01-05:00"
+   "updated_at": "2026-11-12T22:11:22-05:00"
   }
  ],
  "picks": {
