@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-12",
- "generated_at": "2026-11-12T21:50:00-05:00",
- "status_at": "2026-11-12T21:50:00-05:00",
+ "generated_at": "2026-11-12T22:00:00-05:00",
+ "status_at": "2026-11-12T22:00:00-05:00",
  "valid_until": "2026-11-13T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-12T21:50:00-05:00",
+   "at": "2026-11-12T22:00:00-05:00",
    "failed_step": null
   },
   "pool": {
@@ -32,7 +32,11 @@
   "tier": 4
  },
  "banners": [],
- "empty": null,
+ "empty": {
+  "code": "all_started",
+  "text": "Every game has started.",
+  "sub": "Tonight's picks are on the Live tab."
+ },
  "games": [
   {
    "id": 2026020309,
@@ -534,140 +538,14 @@
      "home": "2026-11-12T19:00:00-05:00"
     }
    },
-   "started": false,
-   "reads_done": true,
+   "started": true,
+   "reads_done": false,
    "picks": 2,
    "excluded_reason": null,
    "excluded_teams": []
   }
  ],
  "picks": [
-  {
-   "id": "2026-11-12:2026020308:8485366:shots:2.5:over",
-   "price": -115,
-   "first_price": -115,
-   "first_price_at": "2026-11-12T20:30:00-05:00",
-   "worst_price": -115,
-   "p": 0.5622,
-   "breakeven": 0.5349,
-   "p_pct": 56,
-   "breakeven_pct": 53,
-   "state": "lineup",
-   "history": [
-    {
-     "at": "2026-11-12T20:30:00-05:00",
-     "text": "Lineup confirmed"
-    }
-   ],
-   "prices": [
-    {
-     "at": "2026-11-12T20:30:00-05:00",
-     "price": -115
-    }
-   ],
-   "pulled": null,
-   "price_final": true,
-   "graded": null,
-   "rank": 1,
-   "tier": "main",
-   "game_id": 2026020308,
-   "player": "M. Schaefer",
-   "player_id": 8485366,
-   "team": "NYI",
-   "opp": "LAK",
-   "home": false,
-   "start": "2026-11-12T22:00:00-05:00",
-   "market": "shots",
-   "line": 2.5,
-   "side": "over",
-   "bet": "Over 2.5 shots on goal",
-   "price_at": "2026-11-12T20:30:00-05:00",
-   "gap_pct": 4.2,
-   "market_fair_pct": 55.7,
-   "n_books": 7,
-   "guard": {
-    "verdict": "agrees",
-    "ours_pct": 56.2,
-    "model_pct": 56.6
-   },
-   "settled": "goalie",
-   "settled_label": "Goalie confirmed",
-   "reason": "7 other books say 55.7%; Hard Rock's -115 only needs 53.5%. Our model agrees (our blend: 56.2%).",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/6382926736025321890",
-   "links": {
-    "hardrock": {
-     "id": "6382926736025321890",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/6382926736025321890"
-    },
-    "draftkings": null
-   },
-   "thin": false,
-   "games_used": 99,
-   "games_this_season": 17
-  },
-  {
-   "id": "2026-11-12:2026020308:8485388:points:0.5:over",
-   "price": 150,
-   "first_price": 150,
-   "first_price_at": "2026-11-12T20:30:00-05:00",
-   "worst_price": 150,
-   "p": 0.4157,
-   "breakeven": 0.4,
-   "p_pct": 41,
-   "breakeven_pct": 40,
-   "state": "lineup",
-   "history": [
-    {
-     "at": "2026-11-12T20:30:00-05:00",
-     "text": "Lineup confirmed"
-    }
-   ],
-   "prices": [
-    {
-     "at": "2026-11-12T20:30:00-05:00",
-     "price": 150
-    }
-   ],
-   "pulled": null,
-   "price_final": true,
-   "graded": null,
-   "rank": 2,
-   "tier": "main",
-   "game_id": 2026020308,
-   "player": "V. Eklund",
-   "player_id": 8485388,
-   "team": "NYI",
-   "opp": "LAK",
-   "home": false,
-   "start": "2026-11-12T22:00:00-05:00",
-   "market": "points",
-   "line": 0.5,
-   "side": "over",
-   "bet": "Over 0.5 points",
-   "price_at": "2026-11-12T20:30:00-05:00",
-   "gap_pct": 3.4,
-   "market_fair_pct": 41.4,
-   "n_books": 7,
-   "guard": {
-    "verdict": "agrees",
-    "ours_pct": 41.6,
-    "model_pct": 42.3
-   },
-   "settled": "goalie",
-   "settled_label": "Goalie confirmed",
-   "reason": "7 other books say 41.4%; Hard Rock's +150 only needs 40.0%. Our model agrees (our blend: 41.6%).",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/2496320257604583846",
-   "links": {
-    "hardrock": {
-     "id": "2496320257604583846",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/2496320257604583846"
-    },
-    "draftkings": null
-   },
-   "thin": true,
-   "games_used": 18,
-   "games_this_season": 17
-  },
   {
    "id": "2026-11-12:2026020309:8478427:shots:2.5:under",
    "price": 110,
@@ -1220,6 +1098,140 @@
    "thin": false,
    "games_used": 86,
    "games_this_season": 19
+  },
+  {
+   "id": "2026-11-12:2026020308:8485366:shots:2.5:over",
+   "price": -115,
+   "first_price": -115,
+   "first_price_at": "2026-11-12T20:30:00-05:00",
+   "worst_price": -115,
+   "p": 0.5622,
+   "breakeven": 0.5349,
+   "p_pct": 56,
+   "breakeven_pct": 53,
+   "state": "locked",
+   "history": [
+    {
+     "at": "2026-11-12T20:30:00-05:00",
+     "text": "Lineup confirmed"
+    },
+    {
+     "at": "2026-11-12T22:00:00-05:00",
+     "text": "Locked"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-12T20:30:00-05:00",
+     "price": -115
+    }
+   ],
+   "pulled": null,
+   "price_final": false,
+   "graded": null,
+   "rank": null,
+   "tier": "main",
+   "game_id": 2026020308,
+   "player": "M. Schaefer",
+   "player_id": 8485366,
+   "team": "NYI",
+   "opp": "LAK",
+   "home": false,
+   "start": "2026-11-12T22:00:00-05:00",
+   "market": "shots",
+   "line": 2.5,
+   "side": "over",
+   "bet": "Over 2.5 shots on goal",
+   "price_at": "2026-11-12T20:30:00-05:00",
+   "gap_pct": 4.2,
+   "market_fair_pct": 55.7,
+   "n_books": 7,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 56.2,
+    "model_pct": 56.6
+   },
+   "settled": "goalie",
+   "settled_label": "Goalie confirmed",
+   "reason": "7 other books say 55.7%; Hard Rock's -115 only needs 53.5%. Our model agrees (our blend: 56.2%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/6382926736025321890",
+   "links": {
+    "hardrock": {
+     "id": "6382926736025321890",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/6382926736025321890"
+    },
+    "draftkings": null
+   },
+   "thin": false,
+   "games_used": 99,
+   "games_this_season": 17
+  },
+  {
+   "id": "2026-11-12:2026020308:8485388:points:0.5:over",
+   "price": 150,
+   "first_price": 150,
+   "first_price_at": "2026-11-12T20:30:00-05:00",
+   "worst_price": 150,
+   "p": 0.4157,
+   "breakeven": 0.4,
+   "p_pct": 41,
+   "breakeven_pct": 40,
+   "state": "locked",
+   "history": [
+    {
+     "at": "2026-11-12T20:30:00-05:00",
+     "text": "Lineup confirmed"
+    },
+    {
+     "at": "2026-11-12T22:00:00-05:00",
+     "text": "Locked"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-12T20:30:00-05:00",
+     "price": 150
+    }
+   ],
+   "pulled": null,
+   "price_final": false,
+   "graded": null,
+   "rank": null,
+   "tier": "main",
+   "game_id": 2026020308,
+   "player": "V. Eklund",
+   "player_id": 8485388,
+   "team": "NYI",
+   "opp": "LAK",
+   "home": false,
+   "start": "2026-11-12T22:00:00-05:00",
+   "market": "points",
+   "line": 0.5,
+   "side": "over",
+   "bet": "Over 0.5 points",
+   "price_at": "2026-11-12T20:30:00-05:00",
+   "gap_pct": 3.4,
+   "market_fair_pct": 41.4,
+   "n_books": 7,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 41.6,
+    "model_pct": 42.3
+   },
+   "settled": "goalie",
+   "settled_label": "Goalie confirmed",
+   "reason": "7 other books say 41.4%; Hard Rock's +150 only needs 40.0%. Our model agrees (our blend: 41.6%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/2496320257604583846",
+   "links": {
+    "hardrock": {
+     "id": "2496320257604583846",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/2496320257604583846"
+    },
+    "draftkings": null
+   },
+   "thin": true,
+   "games_used": 18,
+   "games_this_season": 17
   }
  ],
  "parlays": [],
