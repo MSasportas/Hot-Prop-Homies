@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-12",
- "generated_at": "2026-11-12T20:30:00-05:00",
+ "generated_at": "2026-11-12T20:31:20-05:00",
  "games": [
   {
    "game_id": 2026020309,
@@ -29,7 +29,7 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "05:09",
+   "clock": "04:27",
    "in_intermission": false,
    "running": true,
    "away": {
@@ -39,10 +39,10 @@
    },
    "home": {
     "abbrev": "BOS",
-    "score": 0,
-    "sog": 17
+    "score": 1,
+    "sog": 18
    },
-   "updated_at": "2026-11-12T20:30:00-05:00"
+   "updated_at": "2026-11-12T20:31:20-05:00"
   },
   {
    "game_id": 2026020303,
@@ -61,9 +61,9 @@
    "home": {
     "abbrev": "NJD",
     "score": 2,
-    "sog": 17
+    "sog": 19
    },
-   "updated_at": "2026-11-12T20:30:00-05:00"
+   "updated_at": "2026-11-12T20:31:20-05:00"
   },
   {
    "game_id": 2026020302,
@@ -71,7 +71,7 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "02:11",
+   "clock": "00:55",
    "in_intermission": true,
    "running": false,
    "away": {
@@ -84,7 +84,7 @@
     "score": 1,
     "sog": 6
    },
-   "updated_at": "2026-11-12T20:30:00-05:00"
+   "updated_at": "2026-11-12T20:31:20-05:00"
   }
  ],
  "picks": {
