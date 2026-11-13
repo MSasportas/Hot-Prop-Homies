@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-12T22:30:01-05:00",
+ "generated_at": "2026-11-12T22:50:01-05:00",
  "summary": {
   "headline": {
    "w": 38,
-   "l": 35,
+   "l": 36,
    "push": 0,
    "void": 0,
-   "units": 3.23,
-   "hit_rate": 0.5205,
-   "needed": 0.493,
-   "n": 73
+   "units": 2.23,
+   "hit_rate": 0.5135,
+   "needed": 0.4913,
+   "n": 74
   },
   "rows": [
    {
@@ -28,13 +28,13 @@
     "key": "points",
     "label": "Points",
     "w": 0,
-    "l": 1,
+    "l": 2,
     "push": 0,
     "void": 0,
-    "units": -1.0,
+    "units": -2.0,
     "hit_rate": 0.0,
-    "needed": 0.5238,
-    "n": 1
+    "needed": 0.4471,
+    "n": 2
    }
   ],
   "cuts": [
@@ -114,13 +114,13 @@
       "key": "edge_lt2",
       "label": "Under 2 pts",
       "w": 12,
-      "l": 15,
+      "l": 16,
       "push": 0,
       "void": 0,
-      "units": -1.92,
-      "hit_rate": 0.4444,
-      "needed": 0.4739,
-      "n": 27
+      "units": -2.92,
+      "hit_rate": 0.4286,
+      "needed": 0.4703,
+      "n": 28
      },
      {
       "key": "edge_2_3",
@@ -181,13 +181,13 @@
       "key": "lineup",
       "label": "Lineup confirmed",
       "w": 24,
-      "l": 19,
+      "l": 20,
       "push": 0,
       "void": 0,
-      "units": 5.16,
-      "hit_rate": 0.5581,
-      "needed": 0.4931,
-      "n": 43
+      "units": 4.16,
+      "hit_rate": 0.5455,
+      "needed": 0.4903,
+      "n": 44
      }
     ]
    },
@@ -224,13 +224,13 @@
       "key": "plus",
       "label": "Even or plus money",
       "w": 22,
-      "l": 26,
+      "l": 27,
       "push": 0,
       "void": 0,
-      "units": -0.65,
-      "hit_rate": 0.4583,
-      "needed": 0.4629,
-      "n": 48
+      "units": -1.65,
+      "hit_rate": 0.449,
+      "needed": 0.461,
+      "n": 49
      }
     ]
    }
@@ -239,10 +239,10 @@
    {
     "date": "2026-11-12",
     "w": 3,
-    "l": 3,
+    "l": 4,
     "push": 0,
     "void": 0,
-    "units": 0.0,
+    "units": -1.0,
     "n": 10,
     "graded": false
    },
@@ -453,8 +453,8 @@
    "date": "2026-11-12",
    "graded": false,
    "w": 3,
-   "l": 3,
-   "units": 0.0,
+   "l": 4,
+   "units": -1.0,
    "entries": [
     {
      "id": "2026-11-12:2026020309:8482665:shots:1.5:under",
@@ -591,9 +591,9 @@
        "at": "2026-11-12T18:00:00-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "L",
+     "actual": "had 1",
+     "units": -1.0,
      "pulled": null,
      "legs": []
     },
