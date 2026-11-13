@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 4444,
+   "pool_left": 4416,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-13T18:30:00-05:00",
-  "last_read_at": "2026-11-13T18:20:00-05:00",
+  "next_read_at": "2026-11-13T18:40:00-05:00",
+  "last_read_at": "2026-11-13T18:30:06-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-13T18:20:00-05:00"
+   "at": "2026-11-13T18:30:06-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,8 +30,10 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-13T18:20:00-05:00",
-    "confirmed": []
+    "at": "2026-11-13T18:30:06-05:00",
+    "confirmed": [
+     "CHI"
+    ]
    },
    "grade": true
   }
@@ -48,7 +50,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-13T18:20:00-05:00",
+   "read_at": "2026-11-13T18:30:06-05:00",
    "picks": 0,
    "checks": [
     {
@@ -78,12 +80,16 @@
     {
      "read": "C",
      "at": "2026-11-13T18:20:00-05:00"
+    },
+    {
+     "read": "X30",
+     "at": "2026-11-13T18:30:06-05:00"
     }
    ],
-   "last_check_at": "2026-11-13T18:20:00-05:00",
+   "last_check_at": "2026-11-13T18:30:06-05:00",
    "final": false,
-   "next_check_at": "2026-11-13T18:30:00-05:00",
-   "next_check_read": "X30",
+   "next_check_at": "2026-11-13T18:40:00-05:00",
+   "next_check_read": "D",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -101,7 +107,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-13T18:20:00-05:00",
+   "read_at": "2026-11-13T18:30:06-05:00",
    "picks": 0,
    "checks": [
     {
@@ -131,12 +137,16 @@
     {
      "read": "C",
      "at": "2026-11-13T18:20:00-05:00"
+    },
+    {
+     "read": "X30",
+     "at": "2026-11-13T18:30:06-05:00"
     }
    ],
-   "last_check_at": "2026-11-13T18:20:00-05:00",
+   "last_check_at": "2026-11-13T18:30:06-05:00",
    "final": false,
-   "next_check_at": "2026-11-13T18:30:00-05:00",
-   "next_check_read": "X30",
+   "next_check_at": "2026-11-13T18:40:00-05:00",
+   "next_check_read": "D",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -154,7 +164,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-13T17:50:01-05:00",
+   "read_at": "2026-11-13T18:30:06-05:00",
    "picks": 1,
    "checks": [
     {
@@ -168,12 +178,16 @@
     {
      "read": "X135",
      "at": "2026-11-13T17:50:01-05:00"
+    },
+    {
+     "read": "B",
+     "at": "2026-11-13T18:30:06-05:00"
     }
    ],
-   "last_check_at": "2026-11-13T17:50:01-05:00",
+   "last_check_at": "2026-11-13T18:30:06-05:00",
    "final": false,
-   "next_check_at": "2026-11-13T18:30:00-05:00",
-   "next_check_read": "B",
+   "next_check_at": "2026-11-13T18:45:00-05:00",
+   "next_check_read": "X75",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -189,9 +203,9 @@
    "detail": "11/13 - 8:00 PM EST",
    "lineups": {
     "away": "expected",
-    "home": "expected"
+    "home": "confirmed"
    },
-   "read_at": "2026-11-13T17:50:01-05:00",
+   "read_at": "2026-11-13T18:30:06-05:00",
    "picks": 0,
    "checks": [
     {
@@ -205,16 +219,20 @@
     {
      "read": "X135",
      "at": "2026-11-13T17:50:01-05:00"
+    },
+    {
+     "read": "B",
+     "at": "2026-11-13T18:30:06-05:00"
     }
    ],
-   "last_check_at": "2026-11-13T17:50:01-05:00",
+   "last_check_at": "2026-11-13T18:30:06-05:00",
    "final": false,
-   "next_check_at": "2026-11-13T18:30:00-05:00",
-   "next_check_read": "B",
+   "next_check_at": "2026-11-13T18:45:00-05:00",
+   "next_check_read": "X75",
    "paused": false,
    "injury_clear": {
     "away": true,
-    "home": false
+    "home": true
    }
   },
   {
@@ -228,7 +246,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-13T17:50:01-05:00",
+   "read_at": "2026-11-13T18:30:06-05:00",
    "picks": 0,
    "checks": [
     {
@@ -242,12 +260,16 @@
     {
      "read": "X135",
      "at": "2026-11-13T17:50:01-05:00"
+    },
+    {
+     "read": "B",
+     "at": "2026-11-13T18:30:06-05:00"
     }
    ],
-   "last_check_at": "2026-11-13T17:50:01-05:00",
+   "last_check_at": "2026-11-13T18:30:06-05:00",
    "final": false,
-   "next_check_at": "2026-11-13T18:30:00-05:00",
-   "next_check_read": "B",
+   "next_check_at": "2026-11-13T18:45:00-05:00",
+   "next_check_read": "X75",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -302,18 +324,22 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-13T17:30:00-05:00",
+   "read_at": "2026-11-13T18:30:06-05:00",
    "picks": 0,
    "checks": [
     {
      "read": "X240",
      "at": "2026-11-13T17:30:00-05:00"
+    },
+    {
+     "read": "X180",
+     "at": "2026-11-13T18:30:06-05:00"
     }
    ],
-   "last_check_at": "2026-11-13T17:30:00-05:00",
+   "last_check_at": "2026-11-13T18:30:06-05:00",
    "final": false,
-   "next_check_at": "2026-11-13T18:30:00-05:00",
-   "next_check_read": "X180",
+   "next_check_at": "2026-11-13T19:15:00-05:00",
+   "next_check_read": "X135",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -360,13 +386,18 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-13T11:00:01-05:00",
-   "picks": 0,
-   "checks": [],
-   "last_check_at": null,
+   "read_at": "2026-11-13T18:30:06-05:00",
+   "picks": 1,
+   "checks": [
+    {
+     "read": "X240",
+     "at": "2026-11-13T18:30:06-05:00"
+    }
+   ],
+   "last_check_at": "2026-11-13T18:30:06-05:00",
    "final": false,
-   "next_check_at": "2026-11-13T18:30:00-05:00",
-   "next_check_read": "X240",
+   "next_check_at": "2026-11-13T19:30:00-05:00",
+   "next_check_read": "X180",
    "paused": false,
    "injury_clear": {
     "away": false,
@@ -433,12 +464,71 @@
     "draftkings": null
    },
    "rank": 1
+  },
+  {
+   "player": "Darius Garland",
+   "pid": "4396907",
+   "team": "LAC",
+   "opp": "OKC",
+   "home": true,
+   "game_id": "401909304",
+   "start": "2026-11-13T22:30:00-05:00",
+   "bet": "Under 6.5 assists",
+   "market": "assists",
+   "side": "under",
+   "line": 6.5,
+   "price": 105,
+   "price_at": "2026-11-13T18:30:06-05:00",
+   "read": "X240",
+   "p": 0.4889,
+   "p_pct": 49,
+   "breakeven": 0.4878,
+   "breakeven_pct": 49,
+   "market_fair": null,
+   "n_books": 8,
+   "gap_ev": null,
+   "final_ev": 0.0308,
+   "model_p": null,
+   "reason": "Pinnacle moved the under from +104 to -110 (46% to 49%). Hard Rock +105 is 0.2% better than Pinnacle's fair price.",
+   "rule": "pin_solo",
+   "pin_before": 0.4581,
+   "pin_after": 0.4889,
+   "pin_price_before": 104,
+   "pin_price_after": -110,
+   "others_move": 0.0035,
+   "n_others": 8,
+   "ev_vs_pin": 0.0023,
+   "window": "11 AM \u2192 240 min",
+   "gap_vs_pin": 0.036,
+   "book": "hardrock",
+   "books": {
+    "hardrock": {
+     "ev_vs_pin": 0.0023,
+     "price": 105
+    }
+   },
+   "id": "2026-11-13:401909304:4396907:assists:6.5:under",
+   "state": "clear",
+   "state_label": "Injury report clear",
+   "price_final": false,
+   "pulled": null,
+   "added_at": "2026-11-13T18:30:06-05:00",
+   "result": null,
+   "links": {
+    "hardrock": {
+     "id": "2748302283914740116",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/2748302283914740116",
+     "price": 105
+    },
+    "draftkings": null
+   },
+   "rank": 2
   }
  ],
  "empty": null,
  "counts": {
-  "lines_read": 896,
-  "passing": 10,
+  "lines_read": 908,
+  "passing": 11,
   "games": 9
  },
  "safety_paused": false,
@@ -447,6 +537,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-13T18:20:00-05:00",
- "status_at": "2026-11-13T18:20:00-05:00"
+ "generated_at": "2026-11-13T18:30:06-05:00",
+ "status_at": "2026-11-13T18:30:06-05:00"
 }

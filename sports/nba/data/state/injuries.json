@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T18:20:00-05:00",
+ "at": "2026-11-13T18:30:06-05:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -91,13 +91,6 @@
    "team": "CHI",
    "date": "2026-11-12T21:38Z",
    "note": "Swain (back) is listed as questionable for Friday's game against Atlanta."
-  },
-  "2595516": {
-   "status": "day-to-day",
-   "name": "Norman Powell",
-   "team": "CHI",
-   "date": "2026-11-12T21:38Z",
-   "note": "Powell (shoulder) is questionable for Friday's game against the Hawks."
   },
   "5095151": {
    "status": "out",
@@ -352,11 +345,11 @@
    "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
   },
   "6475": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Klay Thompson",
    "team": "MIA",
-   "date": "2026-11-13T23:06Z",
-   "note": "Thompson (ankle) has been downgraded to questionable for Friday's game against Cleveland."
+   "date": "2026-11-13T23:21Z",
+   "note": "Thompson (ankle) is out for Friday's game against the Cavaliers."
   },
   "4601025": {
    "status": "out",
