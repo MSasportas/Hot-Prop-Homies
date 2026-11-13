@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T16:00:01-05:00",
+ "at": "2026-11-13T16:40:00-05:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -295,6 +295,13 @@
    "date": "2026-08-26T20:04Z",
    "note": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic."
   },
+  "4397014": {
+   "status": "day-to-day",
+   "name": "Quentin Grimes",
+   "team": "LAL",
+   "date": "2026-11-13T21:26Z",
+   "note": "Grimes (finger) said he expects to return to action Sunday against the Suns, according to Ricardo Sandoval of Lakers on SI."
+  },
   "4066457": {
    "status": "day-to-day",
    "name": "Austin Reaves",
@@ -308,13 +315,6 @@
    "team": "LAL",
    "date": "2026-11-13T20:40Z",
    "note": "Head coach JJ Redick said Friday that Doncic (ankle) is \"fine,\" per Law Murray of The Athletic."
-  },
-  "4397014": {
-   "status": "day-to-day",
-   "name": "Quentin Grimes",
-   "team": "LAL",
-   "date": "2026-11-12T15:01Z",
-   "note": "Grimes (finger) has been ruled out for Wednesday's game against the Bucks."
   },
   "4277811": {
    "status": "day-to-day",
@@ -583,11 +583,11 @@
    "note": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN."
   },
   "4431679": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Precious Achiuwa",
    "team": "SAC",
-   "date": "2026-11-13T00:22Z",
-   "note": "Achiuwa (ankle) is questionable to play Friday's game against the Trail Blazers."
+   "date": "2026-11-13T21:20Z",
+   "note": "Achiuwa (ankle) is out for Friday's game against the Trail Blazers."
   },
   "4898371": {
    "status": "out",
