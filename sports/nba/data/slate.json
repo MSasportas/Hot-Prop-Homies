@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 4604,
+   "pool_left": 4600,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-12T20:15:00-05:00",
-  "last_read_at": "2026-11-12T20:00:00-05:00",
+  "next_read_at": "2026-11-12T20:30:00-05:00",
+  "last_read_at": "2026-11-12T20:20:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-12T20:10:01-05:00"
+   "at": "2026-11-12T20:20:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-12T20:10:01-05:00",
+    "at": "2026-11-12T20:20:01-05:00",
     "confirmed": [
      "DAL",
      "DET",
@@ -147,8 +147,8 @@
    "start": "2026-11-12T20:00:00-05:00",
    "away": "DAL",
    "home": "MIN",
-   "state": "pre",
-   "detail": "11/12 - 8:00 PM EST",
+   "state": "in",
+   "detail": "6:58 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -202,7 +202,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-12T20:00:00-05:00",
+   "read_at": "2026-11-12T20:20:01-05:00",
    "picks": 0,
    "checks": [
     {
@@ -216,12 +216,16 @@
     {
      "read": "X60",
      "at": "2026-11-12T20:00:00-05:00"
+    },
+    {
+     "read": "C",
+     "at": "2026-11-12T20:20:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-12T20:00:00-05:00",
+   "last_check_at": "2026-11-12T20:20:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-12T20:15:00-05:00",
-   "next_check_read": "C",
+   "next_check_at": "2026-11-12T20:30:00-05:00",
+   "next_check_read": "X30",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -233,7 +237,7 @@
  "empty": {
   "text": "No picks yet today",
   "why": "422 lines read. Pinnacle moved alone on 59, none of them bettable yet.",
-  "next": "2026-11-12T20:15:00-05:00"
+  "next": "2026-11-12T20:30:00-05:00"
  },
  "counts": {
   "lines_read": 422,
@@ -246,6 +250,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-12T20:10:01-05:00",
- "status_at": "2026-11-12T20:10:01-05:00"
+ "generated_at": "2026-11-12T20:20:01-05:00",
+ "status_at": "2026-11-12T20:20:01-05:00"
 }
