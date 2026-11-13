@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-12T20:40:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-12T21:10:00-05:00"
+   "at": "2026-11-12T21:20:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -52,7 +52,7 @@
    "away": "TOR",
    "home": "PHI",
    "state": "in",
-   "detail": "6:14 - 4th",
+   "detail": "2:45 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -101,7 +101,7 @@
    "away": "DET",
    "home": "WAS",
    "state": "in",
-   "detail": "7:11 - 4th",
+   "detail": "3:11 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -198,8 +198,8 @@
    "start": "2026-11-12T21:00:00-05:00",
    "away": "CHA",
    "home": "PHX",
-   "state": "pre",
-   "detail": "11/12 - 9:00 PM EST",
+   "state": "in",
+   "detail": "6:55 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -260,6 +260,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-12T21:10:00-05:00",
- "status_at": "2026-11-12T21:10:00-05:00"
+ "generated_at": "2026-11-12T21:20:01-05:00",
+ "status_at": "2026-11-12T21:20:01-05:00"
 }
