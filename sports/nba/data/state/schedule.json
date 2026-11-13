@@ -420,11 +420,11 @@
     "home": "PHX",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:22 - 3rd",
     "score": {
-     "CHA": "50",
-     "PHX": "55"
+     "CHA": "62",
+     "PHX": "59"
     }
    }
   ]
