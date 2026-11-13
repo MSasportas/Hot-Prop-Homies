@@ -2222,15 +2222,20 @@ function loadHQ() {
     fetch(base_nhl + 'status.json').then(function(r){ return r.json(); }),
     fetch(base_nba + 'status.json').then(function(r){ return r.json(); }),
     fetch(base_nhl + 'slate.json').then(function(r){ return r.json(); }),
-    fetch(base_nba + 'slate.json').then(function(r){ return r.json(); })
+    fetch(base_nba + 'slate.json').then(function(r){ return r.json(); }),
+    fetch('sports/nhl/research/fwd/lab.json').then(function(r){ return r.json(); }),
+    fetch(base_nhl + 'paper_watch/points/summary.json').then(function(r){ return r.json(); }),
+    fetch(base_nba + 'watch/pin_judge/summary.json').then(function(r){ return r.json(); }),
+    fetch(base_nba + 'watch/threes_judge/summary.json').then(function(r){ return r.json(); }),
+    fetch(base_nba + 'research/lab_ah.json').then(function(r){ return r.json(); })
   ];
   Promise.all(fetches.map(function(p){ return p.catch(function(){ return null; }); })).then(function(res) {
     S.hq = {
       loading: false,
       loadedAt: Date.now(),
       err: !res[0] && !res[1],
-      nhl: { record: res[0], status: res[2], slate: res[4] },
-      nba: { record: res[1], status: res[3], slate: res[5] }
+      nhl: { record: res[0], status: res[2], slate: res[4], labFwd: res[6], labPts: res[7] },
+      nba: { record: res[1], status: res[3], slate: res[5], labPin: res[8], labThrees: res[9], labAh: res[10] }
     };
     maybeRender();
   });
@@ -2486,6 +2491,165 @@ function renderHQ() {
   sec3.appendChild(healthCard('NHL', 'nhl', nhl.status));
   sec3.appendChild(healthCard('NBA', 'nba', nba.status));
   app.appendChild(sec3);
+
+  /* --- Section 5: Lab — on the radar --- */
+  var sec5 = h('section', { class: 'sec' },
+    h('div', { class: 'sec-h' }, h('h2', { text: 'Lab — on the radar' })));
+
+  var NHL_FWD_LABELS = {
+    'LL1f-fade':    'HR moved since 1 PM — fade',
+    'LL1f-follow':  'HR moved since 1 PM — follow',
+    'LL3a tight':   'HR 1%+, books agree — tight',
+    'LL3b loose':   'HR 1%+, books disagree',
+    'LL4a fade':    'Books moved — fade HR',
+    'LL4b follow':  'Books moved — follow HR',
+    'LL5 exch':     'Exchange steam',
+    'LL6 line':     'Line moved',
+    'MM2a split':   'Market split test A',
+    'MM2b split 2%':'Market split test B',
+    'MM3a persist': 'Market move persists',
+    'MM3b confirm': 'Market move confirmed',
+    'MM5a follow':  'Market move — follow',
+    'MM5b fade':    'Market move — fade'
+  };
+
+  var labTbl = h('div', { class: 'tbl', style: 'margin-top:10px' });
+
+  /* header row */
+  labTbl.appendChild(h('div', { class: 'tr th' },
+    h('span', { text: 'Test' }),
+    h('span', { class: 'num', text: 'W-L' }),
+    h('span', { class: 'num', text: 'Units' }),
+    h('span', { class: 'num', text: 'n/gate' })));
+
+  /* sub-header helper */
+  function labSubHeader(sportCls, sportLabel, extraLabel) {
+    var inner = h('span', {}, h('span', { class: 'sp-badge ' + sportCls, text: sportLabel }));
+    if (extraLabel) inner.appendChild(document.createTextNode(' ' + extraLabel));
+    return h('div', { class: 'tr', style: 'background:transparent;padding-top:8px' },
+      inner, h('span', {}), h('span', {}), h('span', {}));
+  }
+
+  /* data row helper */
+  function labRow(label, w, l, units, n, gate, extraBadge) {
+    var uStr = hqFmt(units);
+    var uCls = hqUnitCls(units);
+    var labelEl = h('span', {});
+    labelEl.appendChild(document.createTextNode(label));
+    if (extraBadge) {
+      var badge = h('span', { style: 'margin-left:5px;font-size:10px;padding:1px 5px;border-radius:9px;background:var(--primary);color:var(--on-primary);font-weight:600;vertical-align:middle', text: extraBadge });
+      labelEl.appendChild(badge);
+    }
+    return h('div', { class: 'tr' },
+      labelEl,
+      h('span', { class: 'num', text: w + '-' + l }),
+      h('span', { class: 'num ' + uCls, text: uStr }),
+      h('span', { class: 'num', style: 'color:var(--muted)', text: n + '/' + gate }));
+  }
+
+  function labMuted(msg) {
+    return h('div', { class: 'tr', style: 'color:var(--muted);font-size:12.5px' },
+      h('span', { text: msg }),
+      h('span', {}), h('span', {}), h('span', {}));
+  }
+
+  /* ---- NHL fwd tests ---- */
+  labTbl.appendChild(labSubHeader('nhl', 'NHL', 'shots fwd'));
+  var labFwd = nhl.labFwd;
+  var nhlRows = [];
+  if (isObj(labFwd)) {
+    for (var fk in labFwd) {
+      if (!Object.prototype.hasOwnProperty.call(labFwd, fk)) continue;
+      var fv = labFwd[fk];
+      if (!isObj(fv)) continue;
+      var fw = num(fv.w) || 0, fl = num(fv.l) || 0, fu = num(fv.units);
+      if (fw + fl >= 3 && fu != null && fu > 0) {
+        nhlRows.push({ key: fk, w: fw, l: fl, units: fu, n: fw + fl });
+      }
+    }
+    nhlRows.sort(function(a, b) { return b.units - a.units; });
+    nhlRows = nhlRows.slice(0, 5);
+  }
+  if (nhlRows.length) {
+    for (var ri = 0; ri < nhlRows.length; ri++) {
+      var nr = nhlRows[ri];
+      var lbl = NHL_FWD_LABELS[nr.key] || nr.key;
+      labTbl.appendChild(labRow(lbl, nr.w, nr.l, nr.units, nr.n, 300));
+    }
+  } else {
+    labTbl.appendChild(labMuted('Nothing above breakeven yet'));
+  }
+
+  /* ---- NHL points paper watch ---- */
+  labTbl.appendChild(labSubHeader('nhl', 'NHL', 'points (paper watch)'));
+  var labPts = nhl.labPts;
+  var ptsD = labPts && isObj(labPts.nov2) ? labPts.nov2 : null;
+  if (ptsD) {
+    var ptGraded = num(ptsD.graded_picks) || 0;
+    labTbl.appendChild(labRow('NHL points (paper watch)', num(ptsD.w) || 0, num(ptsD.l) || 0, ptsD.units, ptGraded, 300));
+  } else {
+    labTbl.appendChild(labMuted('No data'));
+  }
+
+  /* ---- NBA pin judge ---- */
+  labTbl.appendChild(labSubHeader('nba', 'NBA', ''));
+  var labPin = nba.labPin;
+  if (isObj(labPin) && isObj(labPin.total)) {
+    var pinT = labPin.total;
+    var pinGraded = (num(pinT.w) || 0) + (num(pinT.l) || 0);
+    labTbl.appendChild(labRow(labPin.label || 'Pinnacle as the price judge', num(pinT.w) || 0, num(pinT.l) || 0, pinT.units, pinGraded, 100));
+  } else {
+    labTbl.appendChild(labMuted('No data'));
+  }
+
+  /* ---- NBA threes judge ---- */
+  var labThrees = nba.labThrees;
+  if (isObj(labThrees) && isObj(labThrees.total)) {
+    var thrT = labThrees.total;
+    labTbl.appendChild(labRow(labThrees.label || '3s: HR 1%+ over Pinnacle', num(thrT.w) || 0, num(thrT.l) || 0, thrT.units, (num(thrT.w) || 0) + (num(thrT.l) || 0), 100, 'new'));
+  }
+
+  /* ---- NBA AH filters ---- */
+  var labAh = nba.labAh;
+  var ahTests = isObj(labAh) && isObj(labAh.tests) ? labAh.tests : null;
+  var ahRows = [];
+  if (isObj(labAh)) {
+    var ahMax = 0;
+    for (var ak in labAh) {
+      if (!Object.prototype.hasOwnProperty.call(labAh, ak)) continue;
+      if (ak === 'tests') continue;
+      var av = labAh[ak];
+      if (!isObj(av)) continue;
+      var aw = num(av.w) || 0, al = num(av.l) || 0;
+      if (aw + al > ahMax) ahMax = aw + al;
+    }
+    if (ahMax >= 10) {
+      for (var ak2 in labAh) {
+        if (!Object.prototype.hasOwnProperty.call(labAh, ak2)) continue;
+        if (ak2 === 'tests') continue;
+        var av2 = labAh[ak2];
+        if (!isObj(av2)) continue;
+        var aw2 = num(av2.w) || 0, al2 = num(av2.l) || 0, au2 = num(av2.units);
+        if (au2 != null) {
+          var ahLabel = ahTests && isObj(ahTests[ak2]) ? (ahTests[ak2].label || ak2) : ak2;
+          ahRows.push({ key: ak2, label: ahLabel, w: aw2, l: al2, units: au2, n: aw2 + al2 });
+        }
+      }
+      ahRows.sort(function(a, b) { return b.units - a.units; });
+      ahRows = ahRows.slice(0, 3);
+    }
+  }
+  if (ahRows.length) {
+    labTbl.appendChild(labSubHeader('nba', 'NBA', 'AH filters'));
+    for (var ai = 0; ai < ahRows.length; ai++) {
+      var ar = ahRows[ai];
+      labTbl.appendChild(labRow(ar.label, ar.w, ar.l, ar.units, ar.n, 150));
+    }
+  }
+
+  sec5.appendChild(labTbl);
+  sec5.appendChild(h('div', { style: 'margin-top:8px;font-size:12px;color:var(--muted)', text: 'Research only. Gate: NHL 300 graded · NBA 100 graded.' }));
+  app.appendChild(sec5);
 
   /* --- Section 4: Tonight's Slate --- */
   var sec4 = h('section', { class: 'sec' },
