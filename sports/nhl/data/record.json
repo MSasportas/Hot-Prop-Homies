@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12T19:30:01-05:00",
+ "generated_at": "2026-11-12T20:30:00-05:00",
  "summary": {
   "headline": {
    "w": 38,
@@ -231,7 +231,7 @@
     "push": 0,
     "void": 0,
     "units": 3.0,
-    "n": 8,
+    "n": 10,
     "graded": false
    },
    {
@@ -586,6 +586,29 @@
      "legs": []
     },
     {
+     "id": "2026-11-12:2026020308:8485366:shots:2.5:over",
+     "kind": "single",
+     "player": "M. Schaefer",
+     "bet": "Over 2.5 shots on goal",
+     "market": "shots",
+     "team": "NYI",
+     "game": "NYI at LAK",
+     "price": -115,
+     "first_price": -115,
+     "last_price": -115,
+     "prices": [
+      {
+       "price": -115,
+       "at": "2026-11-12T20:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
      "id": "2026-11-12:2026020309:8474586:shots:1.5:under",
      "kind": "single",
      "player": "J. Eberle",
@@ -623,6 +646,29 @@
       {
        "price": 140,
        "at": "2026-11-12T17:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-12:2026020308:8485388:points:0.5:over",
+     "kind": "single",
+     "player": "V. Eklund",
+     "bet": "Over 0.5 points",
+     "market": "points",
+     "team": "NYI",
+     "game": "NYI at LAK",
+     "price": 150,
+     "first_price": 150,
+     "last_price": 150,
+     "prices": [
+      {
+       "price": 150,
+       "at": "2026-11-12T20:30:00-05:00"
       }
      ],
      "result": null,
