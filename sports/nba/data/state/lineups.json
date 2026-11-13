@@ -22,8 +22,6 @@
     "Ivica Zubac"
    ],
    "status": {
-    "Aaron Nesmith": "questionable",
-    "T.J. McConnell": "probable",
     "Johnny Furphy": "out",
     "Tyrese Haliburton": "out",
     "Ben Sheppard": "out"
@@ -147,8 +145,8 @@
     "Bam Adebayo"
    ],
    "status": {
-    "Klay Thompson": "probable",
-    "Pelle Larsson": "doubtful"
+    "Klay Thompson": "questionable",
+    "Pelle Larsson": "out"
    }
   },
   "UTAH": {
@@ -281,5 +279,5 @@
    }
   }
  },
- "at": "2026-11-13T18:00:00-05:00"
+ "at": "2026-11-13T18:10:01-05:00"
 }
