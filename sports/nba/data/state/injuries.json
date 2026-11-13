@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T11:30:00-05:00",
+ "at": "2026-11-13T12:20:00-05:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -463,26 +463,26 @@
    "date": "2026-10-28T23:41Z",
    "note": "Williams (leg) underwent successful surgery Wednesday to \"address a fractured left fibula and reconstruction of ankle ligaments following a fracture and dislocation.\" He will be re-evaluated before th"
   },
-  "4702382": {
-   "status": "day-to-day",
-   "name": "Tristan da Silva",
-   "team": "ORL",
-   "date": "2026-11-12T22:07Z",
-   "note": "Da Silva (calf) is questionable for Friday's game against Milwaukee."
-  },
   "4278572": {
    "status": "day-to-day",
    "name": "Jamal Cain",
    "team": "ORL",
-   "date": "2026-11-12T22:04Z",
-   "note": "Cain (shoulder) is questionable for Friday's game against the Bucks."
+   "date": "2026-11-13T17:12Z",
+   "note": "Cain (shoulder) participated in Friday morning's shootaround and remains questionable for Friday's game against the Bucks, Jason Beede of the Orlando Sentinel reports."
+  },
+  "4702382": {
+   "status": "day-to-day",
+   "name": "Tristan da Silva",
+   "team": "ORL",
+   "date": "2026-11-13T17:09Z",
+   "note": "Da Silva (calf) participated in Friday's morning shootaround and remains questionable for Friday's game against Milwaukee, Jason Beede of the Orlando Sentinel reports."
   },
   "4432165": {
    "status": "out",
    "name": "Jalen Suggs",
    "team": "ORL",
-   "date": "2026-11-12T22:03Z",
-   "note": "Suggs (knee) is questionable for Friday's game against Milwaukee."
+   "date": "2026-11-13T17:08Z",
+   "note": "Suggs (knee) participated in Friday's morning shootaround and remains questionable for Friday's game against the Bucks, Jason Beede of the Orlando Sentinel reports."
   },
   "4065654": {
    "status": "out",
