@@ -756,14 +756,24 @@ function load() {
 function loadLab() {
   var base0 = getBase(S.sport !== 'all' ? S.sport : 'nba');
   var tests = S.lab ? arr(S.lab.tests).filter(isObj) : [];
-  return Promise.all(tests.map(function (t) {
+  /* deduplicate: many tests share the same summary file (e.g. 20 NHL tests → lab.json,
+     15 NBA tests → lab_ah.json). Build a url→tests map so each file is fetched exactly once. */
+  var urlMap = {}, order = [];
+  tests.forEach(function (t) {
     var p = str(t.summary).replace(/^\/+/, '');
-    if (!/^[\w\/.-]+\.json$/.test(p) || /\.\./.test(p)) return Promise.resolve();
+    if (!/^[\w\/.-]+\.json$/.test(p) || /\.\./.test(p)) return;
     var root = t._sp ? SPORT_BASES[t._sp] : (BASE_FIX ? '' : (SPORT_BASES[S.sport] || ''));
     var base = t.base === 'root' ? root : (t._sp ? root + 'data/' : base0);
-    return settle(getJSON(base + p)).then(function (r) {
-      var id = str(t.id), old = S.labSum[id];
-      S.labSum[id] = r.ok ? r.v : (old && !old._err ? old : { _err: r.kind });
+    var url = base + p;
+    if (!urlMap[url]) { urlMap[url] = []; order.push(url); }
+    urlMap[url].push(t);
+  });
+  return Promise.all(order.map(function (url) {
+    return settle(getJSON(url)).then(function (r) {
+      urlMap[url].forEach(function (t) {
+        var id = str(t.id), old = S.labSum[id];
+        S.labSum[id] = r.ok ? r.v : (old && !old._err ? old : { _err: r.kind });
+      });
     });
   })).then(function () { maybeRender(); });
 }
