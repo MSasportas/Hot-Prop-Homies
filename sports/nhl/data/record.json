@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12T19:00:00-05:00",
+ "generated_at": "2026-11-12T19:30:01-05:00",
  "summary": {
   "headline": {
    "w": 38,
@@ -231,7 +231,7 @@
     "push": 0,
     "void": 0,
     "units": 3.0,
-    "n": 7,
+    "n": 8,
     "graded": false
    },
    {
@@ -482,6 +482,29 @@
       {
        "price": -110,
        "at": "2026-11-12T17:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-12:2026020307:8476389:shots:1.5:under",
+     "kind": "single",
+     "player": "V. Trocheck",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "UTA",
+     "game": "STL at UTA",
+     "price": 145,
+     "first_price": 145,
+     "last_price": 145,
+     "prices": [
+      {
+       "price": 145,
+       "at": "2026-11-12T19:30:01-05:00"
       }
      ],
      "result": null,
