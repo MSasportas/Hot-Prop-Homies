@@ -93,7 +93,7 @@
    }
   },
   "CHA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Coby White",
     "Grayson Allen",
@@ -108,7 +108,7 @@
    }
   },
   "PHX": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Devin Booker",
     "Jalen Green",
@@ -121,5 +121,5 @@
    }
   }
  },
- "at": "2026-11-12T20:31:41-05:00"
+ "at": "2026-11-12T20:40:00-05:00"
 }
