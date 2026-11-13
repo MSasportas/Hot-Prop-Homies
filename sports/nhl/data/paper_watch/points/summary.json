@@ -2,7 +2,7 @@
  "version": 1,
  "note": "Behind the scenes: research only. Not picks, not on the Record, never sent to Discord.",
  "market": "points",
- "generated_at": "2026-11-12T22:20:00-05:00",
+ "generated_at": "2026-11-12T22:30:01-05:00",
  "slate": "2026-11-12",
  "active": true,
  "window": {
@@ -42,8 +42,8 @@
     "state": "locked",
     "close_fair_pct": 53.5,
     "clv_pct": 2.1,
-    "result": null,
-    "units": null
+    "result": "L",
+    "units": -1.0
    },
    {
     "id": "2026-11-12:2026020302:8480801:0.5:under",
@@ -1179,12 +1179,12 @@
  "nov2": {
   "gaps_measured": 29,
   "gaps_logged": 32,
-  "graded_picks": 23,
+  "graded_picks": 24,
   "w": 13,
-  "l": 10,
+  "l": 11,
   "void": 0,
-  "units": 6.5,
-  "wins_z": 0.8564872413868582,
+  "units": 5.5,
+  "wins_z": 0.6079880845032654,
   "clv_gaps": {
    "n": 29,
    "mean": 0.0439725061269695,
