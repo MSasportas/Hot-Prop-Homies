@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T13:30:01-05:00",
+ "at": "2026-11-13T15:20:01-05:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -379,6 +379,13 @@
    "date": "2026-10-05T20:53Z",
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
   },
+  "3907497": {
+   "status": "day-to-day",
+   "name": "Dejounte Murray",
+   "team": "NO",
+   "date": "2026-11-13T19:57Z",
+   "note": "Murray (ankle) requested a trade from the Pelicans on Friday, per Shams Charania of ESPN."
+  },
   "4576086": {
    "status": "out",
    "name": "Bryce McGowens",
@@ -399,13 +406,6 @@
    "team": "NO",
    "date": "2026-11-13T18:10Z",
    "note": "Mathurin (thumb) is listed as questionable for Friday's game against Memphis."
-  },
-  "3907497": {
-   "status": "day-to-day",
-   "name": "Dejounte Murray",
-   "team": "NO",
-   "date": "2026-11-13T18:09Z",
-   "note": "Murray (ankle) is doubtful for Friday's game against Memphis."
   },
   "4397688": {
    "status": "out",
