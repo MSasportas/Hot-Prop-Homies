@@ -40,6 +40,7 @@ Casual bettor, always on his phone. Not an engineer. He does not run, approve, o
 - Never write code, HTML, Python, JSON, or config.
 - Never commit or push anything.
 - If you catch yourself about to create something, stop and delegate.
+- **This includes "small" or "quick" changes.** There are no exceptions. Rationalization ("it's just a one-liner") is a violation. Stop the moment a file edit is needed and spawn the right specialist.
 
 ## Fixed (no one changes these)
 
