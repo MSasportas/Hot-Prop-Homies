@@ -2473,6 +2473,23 @@ function renderHQ() {
     'MM5b fade':    'Market move — fade'
   };
 
+  var NHL_FWD_DESCS = {
+    'LL1f-fade':    'HR moved since 1 PM: bet against it. If HR’s implied hit rate dropped 1%+ after 1 PM and hasn’t snapped back, fade it.',
+    'LL1f-follow':  'HR moved since 1 PM: follow it. Same move, opposite side.',
+    'LL3a tight':   'HR 1%+ better than the other books, and the other books agree closely with each other.',
+    'LL3b loose':   'HR 1%+ better than the other books, but the other books disagree — means uncertainty.',
+    'LL4a fade':    'HR moved its line alone (other books held): bet against HR.',
+    'LL4b follow':  'HR moved its line alone (other books held): follow HR.',
+    'LL5 exch':     'Betting exchanges (Betfair etc.) set the true fair price. Bet when HR beats that price.',
+    'LL6 line':     'HR’s line is different from what the other books are showing.',
+    'MM2a split':   'Sharp books (Pinnacle etc.) and soft books (DraftKings etc.) disagree on the line.',
+    'MM2b split 2%':'Same as MM2a but only when the gap is 2%+.',
+    'MM3a persist': 'A price gap between HR and the market at 90 min pre-game still holds at 45 min.',
+    'MM3b confirm': 'Price gap confirmed at 45 min pre-game.',
+    'MM5a follow':  'HR shifted its line: follow the direction.',
+    'MM5b fade':    'HR shifted its line: bet against the direction.'
+  };
+
   var labTbl = h('div', { class: 'tbl', style: 'margin-top:10px' });
 
   /* header row */
@@ -2490,8 +2507,8 @@ function renderHQ() {
       inner, h('span', {}), h('span', {}), h('span', {}));
   }
 
-  /* data row helper */
-  function labRow(label, w, l, units, n, gate, extraBadge) {
+  /* data row helper — pass desc to make it tap-to-expand */
+  function labRow(label, w, l, units, n, gate, extraBadge, desc) {
     var uStr = hqFmt(units);
     var uCls = hqUnitCls(units);
     var labelEl = h('span', {});
@@ -2500,11 +2517,21 @@ function renderHQ() {
       var badge = h('span', { style: 'margin-left:5px;font-size:10px;padding:1px 5px;border-radius:9px;background:var(--primary);color:var(--on-primary);font-weight:600;vertical-align:middle', text: extraBadge });
       labelEl.appendChild(badge);
     }
-    return h('div', { class: 'tr' },
+    var row = h('div', { class: 'tr' },
       labelEl,
       h('span', { class: 'num', text: w + '-' + l }),
       h('span', { class: 'num ' + uCls, text: uStr }),
       h('span', { class: 'num', style: 'color:var(--muted)', text: n + '/' + gate }));
+    if (!desc) return row;
+    var descEl = h('div', { style: 'padding:7px 10px 9px;font-size:12.5px;color:var(--fg2);line-height:1.5;border-top:1px solid var(--line);display:none', text: desc });
+    row.style.cursor = 'pointer';
+    row.addEventListener('click', function() {
+      descEl.style.display = descEl.style.display !== 'none' ? 'none' : 'block';
+    });
+    var wrapper = h('div');
+    wrapper.appendChild(row);
+    wrapper.appendChild(descEl);
+    return wrapper;
   }
 
   function labMuted(msg) {
@@ -2534,7 +2561,7 @@ function renderHQ() {
     for (var ri = 0; ri < nhlRows.length; ri++) {
       var nr = nhlRows[ri];
       var lbl = NHL_FWD_LABELS[nr.key] || nr.key;
-      labTbl.appendChild(labRow(lbl, nr.w, nr.l, nr.units, nr.n, 300));
+      labTbl.appendChild(labRow(lbl, nr.w, nr.l, nr.units, nr.n, 300, null, NHL_FWD_DESCS[nr.key] || null));
     }
   } else {
     labTbl.appendChild(labMuted('Nothing above breakeven yet'));
@@ -2546,7 +2573,7 @@ function renderHQ() {
   var ptsD = labPts && isObj(labPts.nov2) ? labPts.nov2 : null;
   if (ptsD) {
     var ptGraded = num(ptsD.graded_picks) || 0;
-    labTbl.appendChild(labRow('NHL points (paper watch)', num(ptsD.w) || 0, num(ptsD.l) || 0, ptsD.units, ptGraded, 300));
+    labTbl.appendChild(labRow('NHL points (paper watch)', num(ptsD.w) || 0, num(ptsD.l) || 0, ptsD.units, ptGraded, 300, null, 'Same shots rule applied to player points lines — tracked on paper since Nov 12.'));
   } else {
     labTbl.appendChild(labMuted('No data'));
   }
@@ -2557,7 +2584,7 @@ function renderHQ() {
   if (isObj(labPin) && isObj(labPin.total)) {
     var pinT = labPin.total;
     var pinGraded = (num(pinT.w) || 0) + (num(pinT.l) || 0);
-    labTbl.appendChild(labRow(labPin.label || 'Pinnacle as the price judge', num(pinT.w) || 0, num(pinT.l) || 0, pinT.units, pinGraded, 100));
+    labTbl.appendChild(labRow(labPin.label || 'Pinnacle as the price judge', num(pinT.w) || 0, num(pinT.l) || 0, pinT.units, pinGraded, 100, null, (labPin.about ? labPin.about.split('. Research only')[0] + '.' : 'HR price at or better than Pinnacle’s de-vigged fair price on the same line.')));
   } else {
     labTbl.appendChild(labMuted('No data'));
   }
@@ -2566,7 +2593,7 @@ function renderHQ() {
   var labThrees = nba.labThrees;
   if (isObj(labThrees) && isObj(labThrees.total)) {
     var thrT = labThrees.total;
-    labTbl.appendChild(labRow(labThrees.label || '3s: HR 1%+ over Pinnacle', num(thrT.w) || 0, num(thrT.l) || 0, thrT.units, (num(thrT.w) || 0) + (num(thrT.l) || 0), 100, 'new'));
+    labTbl.appendChild(labRow(labThrees.label || '3s: HR 1%+ over Pinnacle', num(thrT.w) || 0, num(thrT.l) || 0, thrT.units, (num(thrT.w) || 0) + (num(thrT.l) || 0), 100, 'new', (labThrees.about ? labThrees.about.split('. Research only')[0] + '.' : '3-pointers made: HR price 1%+ better than Pinnacle’s fair price.')));
   }
 
   /* ---- NBA AH filters ---- */
