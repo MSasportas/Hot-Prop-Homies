@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T13:20:00-05:00",
+ "at": "2026-11-13T13:30:01-05:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -355,22 +355,15 @@
    "status": "day-to-day",
    "name": "Klay Thompson",
    "team": "MIA",
-   "date": "2026-11-12T21:23Z",
-   "note": "Thompson (ankle) is listed as questionable for Friday's game against the Cavaliers."
-  },
-  "3032977": {
-   "status": "day-to-day",
-   "name": "Giannis Antetokounmpo",
-   "team": "MIA",
-   "date": "2026-11-12T21:22Z",
-   "note": "Antetokounmpo (wrist) is probable for Friday's game against Cleveland."
+   "date": "2026-11-13T18:22Z",
+   "note": "Thompson (ankle) is listed as probable for Friday's game against the Cavaliers."
   },
   "4601025": {
    "status": "day-to-day",
    "name": "Pelle Larsson",
    "team": "MIA",
-   "date": "2026-11-12T21:20Z",
-   "note": "Larsson (illness) is listed as questionable for Friday's game against Cleveland."
+   "date": "2026-11-13T18:20Z",
+   "note": "Larsson (illness) is listed as doubtful for Friday's game against Cleveland."
   },
   "4594268": {
    "status": "out",
