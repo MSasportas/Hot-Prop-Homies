@@ -28,22 +28,22 @@
    }
   },
   "MIL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Brayden Burries",
     "Tyler Herro",
-    "Jaime Jaquez",
+    "Ousmane Dieng",
     "Kyle Kuzma",
     "Myles Turner"
    ],
    "status": {}
   },
   "ORL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
-    "Jalen Suggs",
     "Anthony Black",
     "Desmond Bane",
+    "Tristan da Silva",
     "Franz Wagner",
     "Wendell Carter"
    ],
@@ -277,5 +277,5 @@
    }
   }
  },
- "at": "2026-11-13T18:31:35-05:00"
+ "at": "2026-11-13T18:40:01-05:00"
 }
