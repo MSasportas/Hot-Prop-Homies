@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-12",
- "generated_at": "2026-11-12T21:30:01-05:00",
+ "generated_at": "2026-11-12T21:40:00-05:00",
  "games": [
   {
    "game_id": 2026020309,
@@ -25,45 +25,45 @@
   },
   {
    "game_id": 2026020299,
-   "state": "CRIT",
+   "state": "FINAL",
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "03:35",
+   "clock": "00:00",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "MTL",
     "score": 5,
-    "sog": 28
+    "sog": 31
    },
    "home": {
     "abbrev": "BOS",
     "score": 2,
-    "sog": 31
+    "sog": 32
    },
-   "updated_at": "2026-11-12T21:30:01-05:00"
+   "updated_at": "2026-11-12T21:40:00-05:00"
   },
   {
    "game_id": 2026020303,
-   "state": "CRIT",
+   "state": "FINAL",
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "04:54",
+   "clock": "00:00",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "WSH",
     "score": 2,
-    "sog": 27
+    "sog": 28
    },
    "home": {
     "abbrev": "NJD",
-    "score": 3,
-    "sog": 27
+    "score": 5,
+    "sog": 29
    },
-   "updated_at": "2026-11-12T21:30:01-05:00"
+   "updated_at": "2026-11-12T21:40:00-05:00"
   },
   {
    "game_id": 2026020302,
@@ -71,20 +71,20 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "20:00",
+   "clock": "14:26",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "DET",
     "score": 4,
-    "sog": 20
+    "sog": 22
    },
    "home": {
     "abbrev": "FLA",
-    "score": 2,
-    "sog": 17
+    "score": 3,
+    "sog": 22
    },
-   "updated_at": "2026-11-12T21:30:01-05:00"
+   "updated_at": "2026-11-12T21:40:00-05:00"
   },
   {
    "game_id": 2026020307,
@@ -92,20 +92,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "09:42",
+   "clock": "05:36",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "STL",
     "score": 0,
-    "sog": 1
+    "sog": 2
    },
    "home": {
     "abbrev": "UTA",
     "score": 0,
-    "sog": 4
+    "sog": 5
    },
-   "updated_at": "2026-11-12T21:30:01-05:00"
+   "updated_at": "2026-11-12T21:40:00-05:00"
   }
  ],
  "picks": {
