@@ -194,6 +194,12 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .pip.lose{border-color:var(--bad)}
 .pip.lose.on{background:var(--bad)}
 .lv.fin .nm,.lv.fin .pp{color:var(--fg2)}
+.lv.open{grid-column:1 / -1;border-color:var(--accent);background:var(--accent-soft)}
+.lv.open .nm{color:var(--fg)}
+.lv-xp{margin-top:10px;padding-top:8px;border-top:1px solid var(--line);font-size:12.5px;line-height:18px;color:var(--fg2)}
+.lv-xp>*+*{margin-top:5px}
+.lv-xp b{color:var(--fg);font-weight:700;font-size:13px}
+.lv-xp .lxm{color:var(--muted)}
 /* stat meter for bigger lines (points, rebounds, assists): fill = his number so far, tick = the line */
 .meter{position:relative;display:inline-block;width:96px;height:8px;border-radius:4px;background:var(--raise);border:1px solid var(--line2);overflow:hidden;vertical-align:middle}
 .meter i{position:absolute;left:0;top:0;bottom:0;background:var(--accent)}
@@ -639,12 +645,22 @@ function load() {
 /* each Lab entry's own summary file (its numbers come live from there) */
 function loadLab() {
   var tests = S.lab ? arr(S.lab.tests).filter(isObj) : [];
-  return Promise.all(tests.map(function (t) {
+  /* deduplicate: many tests share the same summary file (e.g. 15 AH tests → lab_ah.json).
+     Build a url→tests map so each file is fetched exactly once. */
+  var urlMap = {}, order = [];
+  tests.forEach(function (t) {
     var p = str(t.summary).replace(/^\/+/, '');
-    if (!/^[\w\/.-]+\.json$/.test(p) || /\.\./.test(p)) return Promise.resolve();
-    return settle(getJSON(BASE + p)).then(function (r) {
-      var id = str(t.id), old = S.labSum[id];
-      S.labSum[id] = r.ok ? r.v : (old && !old._err ? old : { _err: r.kind });
+    if (!/^[\w\/.-]+\.json$/.test(p) || /\.\./.test(p)) return;
+    var url = BASE + p;
+    if (!urlMap[url]) { urlMap[url] = []; order.push(url); }
+    urlMap[url].push(t);
+  });
+  return Promise.all(order.map(function (url) {
+    return settle(getJSON(url)).then(function (r) {
+      urlMap[url].forEach(function (t) {
+        var id = str(t.id), old = S.labSum[id];
+        S.labSum[id] = r.ok ? r.v : (old && !old._err ? old : { _err: r.kind });
+      });
     });
   })).then(function () { maybeRender(); });
 }
@@ -1558,11 +1574,146 @@ function loadOlder() {
   }, function () { S.olderBusy = false; S.olderErr = true; rerender(); });
 }
 
+function LAB_REDRAW() { render(); }
+
+/* ---------- Lab Tonight: today's paper picks with live tracking ---------- */
+function labGameMap(bets) {
+  var m = {};
+  bets.forEach(function (b) {
+    if (!b.game_id) return;
+    var gid = str(b.game_id);
+    if (!m[gid]) m[gid] = b.home ? { away: str(b.opp), home: str(b.team) } : { away: str(b.team), home: str(b.opp) };
+  });
+  /* also merge in slate games so team names are correct when opp/team match */
+  var gm = gameMap(); Object.keys(gm).forEach(function (k) { if (!m[k]) m[k] = gm[k]; });
+  return m;
+}
+function labLiveStat(bet) {
+  /* graded: extract number from actual */
+  if (bet.result && bet.actual) { var m = /^(\d+)\b/.exec(str(bet.actual)); if (m) return +m[1]; }
+  if (!liveOK()) return null;
+  /* find a matching slate pick tracked under same pid + game_id + market */
+  var picks = arr(S.slate && S.slate.picks).filter(isObj);
+  for (var i = 0; i < picks.length; i++) {
+    var p = picks[i];
+    if (str(p.pid) === str(bet.pid) && str(p.game_id) === str(bet.game_id) && str(p.market) === str(bet.market)) {
+      var x = L.stats[str(p.id)]; if (x && num(x.stat) != null) return x.stat;
+    }
+  }
+  return null;
+}
+function labLiveDnp(bet) {
+  if (!liveOK()) return false;
+  var picks = arr(S.slate && S.slate.picks).filter(isObj);
+  for (var i = 0; i < picks.length; i++) {
+    var p = picks[i];
+    if (str(p.pid) === str(bet.pid) && str(p.game_id) === str(bet.game_id)) { var x = L.stats[str(p.id)]; if (x) return !!x.dnp; }
+  }
+  return false;
+}
+function labPickFinal(bet) {
+  if (bet.result === 'W' || bet.result === 'L' || bet.result === 'PUSH' || bet.result === 'VOID') return true;
+  var g = gameMap()[str(bet.game_id)];
+  return isFinalGame(liveGame(str(bet.game_id))) || (!!g && g.state === 'post');
+}
+function labLiveRow(bet, test, d) {
+  S.labTodayOpen = S.labTodayOpen || {};
+  var openKey = str(test.id) + '/' + str(bet.game_id) + '/' + str(bet.pid) + '/' + str(bet.market) + '/' + str(bet.side);
+  var open = !!S.labTodayOpen[openKey], fin = labPickFinal(bet), s = labLiveStat(bet), tk = tracker(bet, s, fin, labLiveDnp(bet));
+  var stPair = null;
+  if (bet.result && FINAL_STAMP[bet.result]) stPair = FINAL_STAMP[bet.result];
+  else if (tk && tk.stamp === 'HIT') stPair = ['HIT', 'W'];
+  else if (tk && tk.stamp === 'LOST') stPair = ['LOST', 'L'];
+  var stmp = stPair ? h('span', { class: 'stmp ' + stPair[1], text: stPair[0] }) : null, trk = null;
+  if (bet.result === 'VOID') trk = h('div', { class: 'trk2' }, stmp, h('span', { class: 'msg', text: str(bet.actual) || 'Void' }));
+  else if (tk) trk = h('div', { class: 'trk2' }, tk.el, stmp, h('span', { class: 'msg', text: tk.msg }));
+  else if (stmp) trk = h('div', { class: 'trk2' }, stmp);
+  var gl = gameLine(bet, d);
+  var card = h('div', { class: 'lv' + (fin ? ' fin' : '') + (open ? ' open' : ''), 'data-labkey': openKey, role: 'button', tabindex: '0' });
+  card.appendChild(h('div', { class: 'top' },
+    headshot(bet),
+    h('div', { class: 'nm', text: str(bet.player) || 'Player not named' })
+  ));
+  card.appendChild(h('div', { class: 'row2' },
+    h('span', { class: 'bt', text: betShort(bet) }),
+    h('span', { class: 'pp', text: odds(bet.price) })
+  ));
+  if (trk) card.appendChild(trk);
+  card.appendChild(h('div', { class: 'gs' }, h('b', { text: gl.status }), ' · ', gl.score ? h('span', { class: 'sc', text: gl.score }) : gl.mu));
+  if (open) {
+    var xp = h('div', { class: 'lv-xp' });
+    xp.appendChild(h('div', null, h('b', { text: str(test.title) || 'Lab test' })));
+    if (test.rule) xp.appendChild(h('div', null, str(test.rule)));
+    if (test.discovery) xp.appendChild(h('div', { class: 'lxm' }, '▶ ' + str(test.discovery)));
+    if (test.gate) xp.appendChild(h('div', { class: 'lxm' }, '▶ ' + str(test.gate)));
+    card.appendChild(xp);
+  }
+  var toggle = function () { S.labTodayOpen[openKey] = !open; LAB_REDRAW(); };
+  card.addEventListener('click', toggle);
+  card.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
+  return card;
+}
+function renderLabToday() {
+  var slateDate = slateDay();
+  if (!S.loaded || !slateDate) return;
+  var tests = S.lab ? arr(S.lab.tests).filter(isObj) : [];
+  if (!tests.length) return;
+  var todayBets = [];
+  tests.forEach(function (t) {
+    var sm = S.labSum[str(t.id)];
+    if (!sm) return;
+    var per = sm && isObj(sm.tests) && isObj(sm.tests[str(t.stats)]) ? sm.tests[str(t.stats)] : sm;
+    if (!per) return;
+    var nights = arr(per.nights).filter(isObj);
+    var tonight = null;
+    for (var i = 0; i < nights.length; i++) { if (str(nights[i].date) === slateDate) { tonight = nights[i]; break; } }
+    if (!tonight) return;
+    var rows = arr(tonight.bets).concat(arr(tonight.flags)).filter(function (b) { return isObj(b) && (!b.kind || b.kind === 'flag'); });
+    rows.forEach(function (bet) { todayBets.push({ bet: bet, test: t }); });
+  });
+  if (!todayBets.length) return;
+  /* sort: pending (no result) first, then by game start */
+  todayBets.sort(function (a, b) {
+    var aFin = !!a.bet.result, bFin = !!b.bet.result;
+    if (aFin !== bFin) return aFin ? 1 : -1;
+    return (ms(str(a.bet.start)) || 0) - (ms(str(b.bet.start)) || 0);
+  });
+  var d = { games: labGameMap(todayBets.map(function (x) { return x.bet; })) };
+  var w = 0, l = 0, u = 0, pending = 0;
+  todayBets.forEach(function (item) {
+    var b = item.bet;
+    if (b.result === 'W') { w++; u += num(b.units) || 0; }
+    else if (b.result === 'L') { l++; u += num(b.units) || 0; }
+    else pending++;
+  });
+  u = Math.round(u * 100) / 100;
+  var sec = h('section', { class: 'sec' });
+  var hd = h('div', { class: 'sec-h' });
+  hd.appendChild(h('h2', { text: 'Tonight' }));
+  var total = w + l;
+  if (total > 0) {
+    var uStr = (u > 0 ? '+' : '') + u.toFixed(2).replace(/\.?0+$/, '') + 'u';
+    hd.appendChild(h('span', { class: 'mu', text: w + '-' + l + (pending ? ' · ' + pending + ' live' : '') + ' · ' + uStr }));
+  } else {
+    hd.appendChild(h('span', { class: 'mu', text: todayBets.length + (todayBets.length === 1 ? ' entry' : ' entries') }));
+  }
+  sec.appendChild(hd);
+  if (liveOK() && pending > 0) {
+    var la = liveAgo();
+    sec.appendChild(h('div', { class: 'lvupd' + (la.bad ? ' bad' : ''), text: la.text }));
+  }
+  var list = h('div', { class: 'lvlist' });
+  todayBets.forEach(function (item) { list.appendChild(labLiveRow(item.bet, item.test, d)); });
+  sec.appendChild(list);
+  app.appendChild(sec);
+}
+
 /* ---------- Lab: ideas that passed their historical test, tracked on paper (config/lab.json) ---------- */
 function renderLab() {
   top('Lab', false);
   app.appendChild(h('p', { class: 'mu', style: 'margin:10px 0 0;font-size:13px;line-height:19px', text: 'Most tests are paper-only — see each card for its status. Some live tests are real picks on the Record.' }));
   if (!S.loaded) { app.appendChild(h('div', { class: 'stack' }, h('div', { class: 'skel sm' }), h('div', { class: 'skel' }))); return; }
+  renderLabToday();
   var tests = S.lab ? arr(S.lab.tests).filter(isObj) : [];
   if (!S.lab) {
     app.appendChild(h('div', { class: 'card empty' }, h('div', { class: 't', text: S.labErr === 'file' ? 'Nothing is being tracked on paper right now.' : "Can't load the Lab right now." })));
