@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-12",
- "generated_at": "2026-11-13T00:10:01-05:00",
+ "generated_at": "2026-11-13T00:20:01-05:00",
  "games": [
   {
    "game_id": 2026020309,
@@ -88,16 +88,16 @@
   },
   {
    "game_id": 2026020307,
-   "state": "CRIT",
+   "state": "FINAL",
    "schedule_state": "OK",
    "period": 5,
    "period_type": "SO",
    "clock": "00:00",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "STL",
-    "score": 0,
+    "score": 1,
     "sog": 22
    },
    "home": {
@@ -105,7 +105,7 @@
     "score": 0,
     "sog": 29
    },
-   "updated_at": "2026-11-13T00:10:01-05:00"
+   "updated_at": "2026-11-13T00:20:01-05:00"
   },
   {
    "game_id": 2026020308,
@@ -113,20 +113,20 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "20:00",
+   "clock": "16:04",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "NYI",
-    "score": 3,
-    "sog": 9
+    "score": 4,
+    "sog": 13
    },
    "home": {
     "abbrev": "LAK",
     "score": 2,
-    "sog": 19
+    "sog": 21
    },
-   "updated_at": "2026-11-13T00:10:01-05:00"
+   "updated_at": "2026-11-13T00:20:01-05:00"
   }
  ],
  "picks": {
