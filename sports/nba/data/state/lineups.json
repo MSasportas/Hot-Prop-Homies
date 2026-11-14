@@ -70,13 +70,13 @@
    }
   },
   "NO": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jeremiah Fears",
     "Herbert Jones",
     "Saddiq Bey",
     "Zion Williamson",
-    "Karlo Matkovic"
+    "DeAndre Jordan"
    ],
    "status": {
     "Bryce McGowens": "out",
@@ -87,7 +87,7 @@
    }
   },
   "ATL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Kingston Flemings",
     "Nickeil Alexander-Walker",
@@ -276,5 +276,5 @@
    }
   }
  },
- "at": "2026-11-13T19:40:01-05:00"
+ "at": "2026-11-13T19:50:00-05:00"
 }
