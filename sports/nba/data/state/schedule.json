@@ -316,10 +316,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:39 - 1st",
+    "detail": "2:27 - 1st",
     "score": {
-     "NY": "16",
-     "IND": "9"
+     "NY": "23",
+     "IND": "24"
     }
    },
    {
@@ -331,10 +331,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:48 - 1st",
+    "detail": "3:17 - 1st",
     "score": {
-     "MIL": "4",
-     "ORL": "12"
+     "MIL": "11",
+     "ORL": "15"
     }
    },
    {
