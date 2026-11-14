@@ -1,7 +1,7 @@
 {
- "date": "2026-11-13",
+ "date": "2026-11-14",
  "plan": {
-  "allowance": 35.597,
+  "allowance": 35.167,
   "reads": [
    "A",
    "B",
@@ -17,25 +17,21 @@
    "X60",
    "X75"
   ],
-  "pool_at_plan": 4592,
-  "games_left": 129,
-  "games_today": 9,
+  "pool_at_plan": 4220,
+  "games_left": 120,
+  "games_today": 5,
   "key_count": 13,
-  "made_at": "2026-11-13T05:00:00-05:00",
+  "made_at": "2026-11-14T05:00:01-05:00",
   "cost_per_read": 4
  },
  "events": {
-  "401909296": "6669b911691463c669a5c10574742e8e",
-  "401909297": "76416359b5453c01968e94702a375f16",
-  "401909299": "80ffc963f864f3d4fcefa82fd02b7d7b",
-  "401909298": "58b860d500be69ebf853926aa1ac8271",
-  "401909300": "8a40b260e8fa0d67c1f2bc2b39a24982",
-  "401909301": "d04acca7f0f369fc53bf04cd3357cb0d",
-  "401909302": "1fae7f34ec6035dffa74feb148ee26c7",
-  "401909303": "a51c350318d7570c2b74af08eedb9fcd",
-  "401909304": "5344669fd560d317ffaee0a1d16be7c8"
+  "401909980": "6cb4c8feeadd57aa6ab46ebdee60818a",
+  "401909981": "2cc2c254049b0bd0a6219f70cbb0b69a",
+  "401909983": "a7cb6062530bd69eb6caee84a015abd0",
+  "401909984": "5773e80d52d3fba36b11be38ded62790",
+  "401909982": "cb06267ae037a883ae6f71078d6e2aaa"
  },
- "events_at": "2026-11-13T05:00:00-05:00",
+ "events_at": "2026-11-14T05:00:01-05:00",
  "unknown_teams": [],
  "key_count": 13
 }

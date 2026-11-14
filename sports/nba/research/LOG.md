@@ -1,4 +1,13 @@
 ## 2026-11-12, Run 13 (CEO; Matt: when does Pinnacle move, and how far before tip). Code: research/code/run11/when_moves.py. 18 nights, consecutive stored reads, lines Pinnacle posted at both.
+
+## 2026-11-14, AH4 (auto; Stale HR + FAIR (HR stale, EV >= 0))
+Filter: MOVES where HR price unchanged (stale) AND ev_pin >= 0. MOVES population (Pinnacle >= 2 pt move, HR on line, -200..+200, 1/player/market/night).
+Discovery (<2026-11-10, 12 nights): n 18 graded 18 12-6 +4.82u ROI +26.8% CLV_pin -0.9% (n 15)
+Discovery FAIR (ev_pin>=0): n 18 graded 18 12-6 +4.82u ROI +26.8% CLV_pin -0.9% (n 15)
+Forward (>=2026-11-10, 3 nights): n 3 graded 3 1-2 -1.20u ROI -40.0% CLV_pin -0.3% (n 3)
+Forward FAIR: n 3 graded 3 1-2 -1.20u ROI -40.0% CLV_pin -0.3% (n 3)
+Pass bar: n>=150 graded fwd, ROI>0, CI>0, CLV>0. Status: FORWARD - accumulating
+
 - 2026-11-13 (Researcher run 9, daily; NBA; books, not players). No key used, no odds pull.
   Registered BB1a/BB1b (book agreement, dispersion of other books' no-vig fairs) in HYPOTHESES.md before any test.
   NOT TESTED THIS RUN: data/odds has no read labels (pull is absent in every fetch), so the B/C reads need mapping by time, and grading needs the box-score join (data/state/box, keyed by pid and date). Neither mapping is built yet. Registration is in place; the test is queued.
