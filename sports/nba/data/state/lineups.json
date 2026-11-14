@@ -147,11 +147,11 @@
    }
   },
   "UTAH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Keyonte George",
     "Darryn Peterson",
-    "Josh Green",
+    "Josh Okogie",
     "Ace Bailey",
     "Jaxson Hayes"
    ],
@@ -162,7 +162,7 @@
    }
   },
   "HOU": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Fred VanVleet",
     "Amen Thompson",
@@ -276,5 +276,5 @@
    }
   }
  },
- "at": "2026-11-13T20:00:00-05:00"
+ "at": "2026-11-13T20:10:01-05:00"
 }
