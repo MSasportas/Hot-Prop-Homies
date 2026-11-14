@@ -406,7 +406,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:58 - 3rd",
+    "detail": "1:29 - 3rd",
     "score": {
      "GS": "52",
      "SA": "90"
@@ -424,7 +424,7 @@
     "detail": "0.0 - 3rd",
     "score": {
      "POR": "72",
-     "SAC": "59"
+     "SAC": "60"
     }
    },
    {
