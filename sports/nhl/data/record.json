@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T00:10:01-05:00",
+ "generated_at": "2026-11-14T17:30:00-05:00",
  "summary": {
   "headline": {
    "w": 40,
@@ -237,6 +237,16 @@
   ],
   "days": [
    {
+    "date": "2026-11-14",
+    "w": 0,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 0,
+    "n": 5,
+    "graded": false
+   },
+   {
     "date": "2026-11-13",
     "w": 0,
     "l": 1,
@@ -459,6 +469,130 @@
   ]
  },
  "nights": [
+  {
+   "date": "2026-11-14",
+   "graded": false,
+   "w": 0,
+   "l": 0,
+   "units": 0,
+   "entries": [
+    {
+     "id": "2026-11-14:2026020317:8481528:shots:2.5:under",
+     "kind": "single",
+     "player": "D. Cozens",
+     "bet": "Under 2.5 shots on goal",
+     "market": "shots",
+     "team": "OTT",
+     "game": "OTT at PIT",
+     "price": -125,
+     "first_price": -125,
+     "last_price": -125,
+     "prices": [
+      {
+       "price": -125,
+       "at": "2026-11-14T17:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-14:2026020320:8477935:points:0.5:over",
+     "kind": "single",
+     "player": "S. Bennett",
+     "bet": "Over 0.5 points",
+     "market": "points",
+     "team": "FLA",
+     "game": "FLA at STL",
+     "price": 140,
+     "first_price": 140,
+     "last_price": 140,
+     "prices": [
+      {
+       "price": 140,
+       "at": "2026-11-14T17:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-14:2026020313:8477496:shots:1.5:under",
+     "kind": "single",
+     "player": "E. Lindholm",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "BOS",
+     "game": "MIN at BOS",
+     "price": 125,
+     "first_price": 125,
+     "last_price": 125,
+     "prices": [
+      {
+       "price": 125,
+       "at": "2026-11-14T17:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-14:2026020313:8483489:shots:1.5:over",
+     "kind": "single",
+     "player": "F. Minten",
+     "bet": "Over 1.5 shots on goal",
+     "market": "shots",
+     "team": "BOS",
+     "game": "MIN at BOS",
+     "price": 115,
+     "first_price": 115,
+     "last_price": 115,
+     "prices": [
+      {
+       "price": 115,
+       "at": "2026-11-14T17:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-14:2026020313:8479987:shots:1.5:under",
+     "kind": "single",
+     "player": "M. Geekie",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "BOS",
+     "game": "MIN at BOS",
+     "price": 120,
+     "first_price": 120,
+     "last_price": 120,
+     "prices": [
+      {
+       "price": 120,
+       "at": "2026-11-14T17:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    }
+   ]
+  },
   {
    "date": "2026-11-13",
    "graded": true,
@@ -950,225 +1084,6 @@
      ],
      "result": "L",
      "actual": "had 4",
-     "units": -1.0,
-     "pulled": null,
-     "legs": []
-    }
-   ]
-  },
-  {
-   "date": "2026-11-07",
-   "graded": true,
-   "w": 4,
-   "l": 5,
-   "units": 0.0,
-   "entries": [
-    {
-     "id": "2026-11-07:2026020266:8475158:shots:1.5:under",
-     "kind": "single",
-     "player": "R. O'Reilly",
-     "bet": "Under 1.5 shots on goal",
-     "market": "shots",
-     "team": "NSH",
-     "game": "STL at NSH",
-     "price": 140,
-     "first_price": 140,
-     "last_price": 140,
-     "prices": [
-      {
-       "price": 140,
-       "at": "2026-11-07T11:30:01-05:00"
-      }
-     ],
-     "result": "W",
-     "actual": "had 1",
-     "units": 1.4,
-     "pulled": null,
-     "legs": []
-    },
-    {
-     "id": "2026-11-07:2026020270:8485388:shots:1.5:under",
-     "kind": "single",
-     "player": "V. Eklund",
-     "bet": "Under 1.5 shots on goal",
-     "market": "shots",
-     "team": "NYI",
-     "game": "NJD at NYI",
-     "price": 100,
-     "first_price": 100,
-     "last_price": 100,
-     "prices": [
-      {
-       "price": 100,
-       "at": "2026-11-07T17:30:01-05:00"
-      }
-     ],
-     "result": "L",
-     "actual": "had 2",
-     "units": -1.0,
-     "pulled": null,
-     "legs": []
-    },
-    {
-     "id": "2026-11-07:2026020271:8484390:shots:1.5:under",
-     "kind": "single",
-     "player": "R. Kantserov",
-     "bet": "Under 1.5 shots on goal",
-     "market": "shots",
-     "team": "CHI",
-     "game": "CHI at CAR",
-     "price": 115,
-     "first_price": 115,
-     "last_price": 115,
-     "prices": [
-      {
-       "price": 115,
-       "at": "2026-11-07T18:30:00-05:00"
-      }
-     ],
-     "result": "L",
-     "actual": "had 2",
-     "units": -1.0,
-     "pulled": null,
-     "legs": []
-    },
-    {
-     "id": "2026-11-07:2026020266:8474600:shots:2.5:over",
-     "kind": "single",
-     "player": "R. Josi",
-     "bet": "Over 2.5 shots on goal",
-     "market": "shots",
-     "team": "NSH",
-     "game": "STL at NSH",
-     "price": 115,
-     "first_price": 115,
-     "last_price": 115,
-     "prices": [
-      {
-       "price": 115,
-       "at": "2026-11-07T11:30:01-05:00"
-      }
-     ],
-     "result": "L",
-     "actual": "had 2",
-     "units": -1.0,
-     "pulled": null,
-     "legs": []
-    },
-    {
-     "id": "2026-11-07:2026020270:8476462:shots:2.5:over",
-     "kind": "single",
-     "player": "D. Hamilton",
-     "bet": "Over 2.5 shots on goal",
-     "market": "shots",
-     "team": "NJD",
-     "game": "NJD at NYI",
-     "price": 145,
-     "first_price": 145,
-     "last_price": 145,
-     "prices": [
-      {
-       "price": 145,
-       "at": "2026-11-07T17:30:01-05:00"
-      }
-     ],
-     "result": "W",
-     "actual": "had 4",
-     "units": 1.45,
-     "pulled": {
-      "at": "2026-11-07T18:20:01-05:00",
-      "reason": "The other books moved against it"
-     },
-     "legs": []
-    },
-    {
-     "id": "2026-11-07:2026020268:8484158:shots:1.5:under",
-     "kind": "single",
-     "player": "E. Cowan",
-     "bet": "Under 1.5 shots on goal",
-     "market": "shots",
-     "team": "TOR",
-     "game": "MTL at TOR",
-     "price": 120,
-     "first_price": 120,
-     "last_price": 120,
-     "prices": [
-      {
-       "price": 120,
-       "at": "2026-11-07T18:20:01-05:00"
-      }
-     ],
-     "result": "W",
-     "actual": "had 1",
-     "units": 1.2,
-     "pulled": null,
-     "legs": []
-    },
-    {
-     "id": "2026-11-07:2026020274:8477476:shots:1.5:under",
-     "kind": "single",
-     "player": "A. Lehkonen",
-     "bet": "Under 1.5 shots on goal",
-     "market": "shots",
-     "team": "COL",
-     "game": "DET at COL",
-     "price": 150,
-     "first_price": 150,
-     "last_price": 150,
-     "prices": [
-      {
-       "price": 150,
-       "at": "2026-11-07T19:30:01-05:00"
-      }
-     ],
-     "result": "L",
-     "actual": "had 2",
-     "units": -1.0,
-     "pulled": null,
-     "legs": []
-    },
-    {
-     "id": "2026-11-07:2026020275:8476483:shots:2.5:under",
-     "kind": "single",
-     "player": "R. Rakell",
-     "bet": "Under 2.5 shots on goal",
-     "market": "shots",
-     "team": "PIT",
-     "game": "PIT at LAK",
-     "price": -105,
-     "first_price": -105,
-     "last_price": -105,
-     "prices": [
-      {
-       "price": -105,
-       "at": "2026-11-07T19:30:01-05:00"
-      }
-     ],
-     "result": "W",
-     "actual": "had 0",
-     "units": 0.9524,
-     "pulled": null,
-     "legs": []
-    },
-    {
-     "id": "2026-11-07:2026020273:8477404:shots:2.5:under",
-     "kind": "single",
-     "player": "J. Guentzel",
-     "bet": "Under 2.5 shots on goal",
-     "market": "shots",
-     "team": "TBL",
-     "game": "TBL at MIN",
-     "price": -105,
-     "first_price": -105,
-     "last_price": -105,
-     "prices": [
-      {
-       "price": -105,
-       "at": "2026-11-07T18:30:00-05:00"
-      }
-     ],
-     "result": "L",
-     "actual": "had 7",
      "units": -1.0,
      "pulled": null,
      "legs": []
