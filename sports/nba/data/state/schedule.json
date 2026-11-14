@@ -316,10 +316,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:45 - 3rd",
+    "detail": "4:32 - 3rd",
     "score": {
-     "NY": "60",
-     "IND": "65"
+     "NY": "69",
+     "IND": "78"
     }
    },
    {
@@ -330,11 +330,11 @@
     "home": "ORL",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:02 - 3rd",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 3rd",
     "score": {
-     "MIL": "55",
-     "ORL": "67"
+     "MIL": "72",
+     "ORL": "84"
     }
    },
    {
@@ -345,11 +345,11 @@
     "home": "MIA",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:53 - 2nd",
     "score": {
-     "CLE": "27",
-     "MIA": "29"
+     "CLE": "39",
+     "MIA": "43"
     }
    },
    {
@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:22 - 2nd",
+    "detail": "6:52 - 2nd",
     "score": {
-     "ATL": "26",
-     "CHI": "36"
+     "ATL": "33",
+     "CHI": "46"
     }
    },
    {
@@ -375,11 +375,11 @@
     "home": "NO",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:01 - 2nd",
     "score": {
-     "MEM": "35",
-     "NO": "28"
+     "MEM": "44",
+     "NO": "37"
     }
    },
    {
@@ -388,13 +388,13 @@
     "start": "2026-11-13T20:30:00-05:00",
     "away": "UTAH",
     "home": "HOU",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/13 - 8:30 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:18 - 1st",
     "score": {
-     "UTAH": "0",
-     "HOU": "0"
+     "UTAH": "13",
+     "HOU": "13"
     }
    },
    {
