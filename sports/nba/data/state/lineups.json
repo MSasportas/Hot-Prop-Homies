@@ -19,14 +19,14 @@
    "starters": [
     "Jeremiah Fears",
     "Herbert Jones",
-    "Trey Murphy",
     "Saddiq Bey",
-    "Karlo Matkovic"
+    "Zion Williamson",
+    "Yves Missi"
    ],
    "status": {
-    "Trey Murphy": "out",
+    "Yves Missi": "probable",
     "Bryce McGowens": "out",
-    "Yves Missi": "out",
+    "Trey Murphy": "out",
     "Dejounte Murray": "out",
     "Trendon Watford": "out"
    }
@@ -42,7 +42,7 @@
    ],
    "status": {
     "Morez Johnson": "probable",
-    "Max Christie": "questionable",
+    "Max Christie": "doubtful",
     "Tarik Biberovic": "out",
     "Sergio de Larrea": "out",
     "Dereck Lively": "out"
@@ -54,12 +54,16 @@
     "James Harden",
     "Donovan Mitchell",
     "Peyton Watson",
-    "Evan Mobley",
+    "Jaylon Tyson",
     "Jarrett Allen"
    ],
    "status": {
-    "Evan Mobley": "out",
+    "James Harden": "questionable",
+    "Donovan Mitchell": "questionable",
+    "Peyton Watson": "questionable",
+    "Jarrett Allen": "questionable",
     "Sam Merrill": "out",
+    "Evan Mobley": "out",
     "Nae'Qwan Tomlin": "out"
    }
   },
@@ -82,13 +86,14 @@
    "starters": [
     "Davion Mitchell",
     "Klay Thompson",
-    "Pelle Larsson",
+    "Myron Gardner",
     "Giannis Antetokounmpo",
     "Bam Adebayo"
    ],
    "status": {
-    "Klay Thompson": "out",
-    "Pelle Larsson": "out"
+    "Klay Thompson": "probable",
+    "Giannis Antetokounmpo": "probable",
+    "Pelle Larsson": "doubtful"
    }
   },
   "CHI": {
@@ -101,9 +106,10 @@
     "Jalen Smith"
    ],
    "status": {
+    "Norman Powell": "questionable",
     "Jalen Smith": "questionable",
+    "Nic Claxton": "questionable",
     "Tobe Awaka": "out",
-    "Dailyn Swain": "out",
     "Caleb Wilson": "out"
    }
   },
@@ -132,24 +138,26 @@
    ],
    "status": {
     "Nolan Traore": "probable",
-    "Mikel Brown": "questionable"
+    "Mikel Brown": "probable"
    }
   },
   "MEM": {
    "state": "expected",
    "starters": [
-    "Ty Jerome",
+    "Cam Spencer",
     "Cedric Coward",
     "Jaylen Wells",
     "Cameron Boozer",
     "Zach Edey"
    ],
    "status": {
-    "Zach Edey": "out",
+    "Zach Edey": "questionable",
+    "Jerami Grant": "questionable",
+    "Ty Jerome": "out",
     "Scotty Pippen": "out",
     "Quinten Post": "out"
    }
   }
  },
- "at": "2026-11-14T05:00:01-05:00"
+ "at": "2026-11-14T16:00:01-05:00"
 }
