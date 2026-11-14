@@ -1,41 +1,41 @@
 {
  "slate_date": "2026-11-14",
- "generated_at": "2026-11-14T13:40:00-05:00",
- "status_at": "2026-11-14T13:40:00-05:00",
+ "generated_at": "2026-11-14T14:00:01-05:00",
+ "status_at": "2026-11-14T14:00:01-05:00",
  "valid_until": "2026-11-15T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
-  "prices_at": "2026-11-14T12:20:01-05:00",
-  "next_price_read_at": "2026-11-14T14:00:00-05:00",
+  "prices_at": "2026-11-14T14:00:01-05:00",
+  "next_price_read_at": "2026-11-14T14:45:00-05:00",
   "stats_built_at": "2026-11-14T01:30:00-05:00",
   "stats_through": "2026-11-13",
-  "lineups_at": "2026-11-14T13:40:00-05:00",
+  "lineups_at": "2026-11-14T14:00:01-05:00",
   "goalies_at": null,
   "lineups_note": "Lineups posted for 2 of 4 teams checked so far.",
   "lineups_state": "ok",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-14T13:40:00-05:00",
+   "at": "2026-11-14T14:00:01-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 3036,
+   "pulls_left": 3031,
    "keys": 9,
    "game_days_left": 15,
    "days_left": 17,
    "low": false
   },
   "excluded_teams": [],
-  "lines_checked": 21,
-  "flag_reads": 1,
+  "lines_checked": 37,
+  "flag_reads": 2,
   "tier": 4
  },
  "banners": [],
  "empty": {
   "code": "none_qualified",
   "text": "No picks yet today",
-  "sub": "21 lines read, none cleared both checks. 1 had a gap but our model said no. Next read at 2:00 PM."
+  "sub": "37 lines read, none cleared both checks. 1 had a gap but our model said no. Next read at 2:45 PM."
  },
  "games": [
   {
@@ -108,11 +108,15 @@
      {
       "pull": "A",
       "at": "2026-11-14T10:00:01-05:00"
+     },
+     {
+      "pull": "B",
+      "at": "2026-11-14T14:00:01-05:00"
      }
     ],
     "next_read": {
-     "pull": "B",
-     "at": "2026-11-14T14:00:00-05:00"
+     "pull": "C",
+     "at": "2026-11-14T14:45:00-05:00"
     },
     "lineups_at": {
      "away": null,
