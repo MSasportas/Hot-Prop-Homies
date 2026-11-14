@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T15:40:00-05:00",
+ "at": "2026-11-14T16:20:01-05:00",
  "list": {
   "5149077": {
    "status": "day-to-day",
@@ -715,12 +715,19 @@
    "date": "2026-10-27T19:25Z",
    "note": "Jackson has been diagnosed with a torn MCL in his right knee and will be sidelined for 6-to-8 weeks, per Shams Charania of ESPN."
   },
+  "5238230": {
+   "status": "day-to-day",
+   "name": "Tre Johnson",
+   "team": "WSH",
+   "date": "2026-11-14T21:09Z",
+   "note": "Johnson is listed as questionable for Sunday's game against the Rockets due to lower-back soreness."
+  },
   "4845374": {
    "status": "day-to-day",
    "name": "Bub Carrington",
    "team": "WSH",
-   "date": "2026-11-13T03:26Z",
-   "note": "Carrington (chest) has been ruled out for the remainder of Thursday's game against the Pistons."
+   "date": "2026-11-14T21:05Z",
+   "note": "Carrington (chest) is listed as questionable for Sunday's game against Houston."
   },
   "4997537": {
    "status": "out",
