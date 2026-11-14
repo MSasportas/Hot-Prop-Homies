@@ -1,184 +1,34 @@
 {
- "slate_date": "2026-11-12",
- "generated_at": "2026-11-13T01:20:01-05:00",
+ "slate_date": "2026-11-13",
+ "generated_at": "2026-11-13T21:00:01-05:00",
  "games": [
   {
-   "game_id": 2026020309,
-   "state": "OFF",
+   "game_id": 2026020310,
+   "state": "PRE",
    "schedule_state": "OK",
-   "period": 3,
-   "period_type": "REG",
-   "clock": "00:00",
+   "period": null,
+   "period_type": null,
+   "clock": null,
    "in_intermission": false,
    "running": false,
    "away": {
-    "abbrev": "CAR",
-    "score": 4,
-    "sog": 30
+    "abbrev": "NYR",
+    "score": null,
+    "sog": null
    },
    "home": {
-    "abbrev": "SEA",
-    "score": 1,
-    "sog": 13
+    "abbrev": "VAN",
+    "score": null,
+    "sog": null
    },
-   "updated_at": "2026-11-12T15:31:34-05:00"
-  },
-  {
-   "game_id": 2026020299,
-   "state": "OFF",
-   "schedule_state": "OK",
-   "period": 3,
-   "period_type": "REG",
-   "clock": "00:00",
-   "in_intermission": false,
-   "running": false,
-   "away": {
-    "abbrev": "MTL",
-    "score": 5,
-    "sog": 31
-   },
-   "home": {
-    "abbrev": "BOS",
-    "score": 2,
-    "sog": 32
-   },
-   "updated_at": "2026-11-12T22:10:01-05:00"
-  },
-  {
-   "game_id": 2026020303,
-   "state": "OFF",
-   "schedule_state": "OK",
-   "period": 3,
-   "period_type": "REG",
-   "clock": "00:00",
-   "in_intermission": false,
-   "running": false,
-   "away": {
-    "abbrev": "WSH",
-    "score": 2,
-    "sog": 28
-   },
-   "home": {
-    "abbrev": "NJD",
-    "score": 5,
-    "sog": 29
-   },
-   "updated_at": "2026-11-12T22:30:01-05:00"
-  },
-  {
-   "game_id": 2026020302,
-   "state": "OFF",
-   "schedule_state": "OK",
-   "period": 3,
-   "period_type": "REG",
-   "clock": "00:00",
-   "in_intermission": false,
-   "running": false,
-   "away": {
-    "abbrev": "DET",
-    "score": 4,
-    "sog": 28
-   },
-   "home": {
-    "abbrev": "FLA",
-    "score": 5,
-    "sog": 29
-   },
-   "updated_at": "2026-11-12T22:50:01-05:00"
-  },
-  {
-   "game_id": 2026020307,
-   "state": "OFF",
-   "schedule_state": "OK",
-   "period": 5,
-   "period_type": "SO",
-   "clock": "00:00",
-   "in_intermission": false,
-   "running": false,
-   "away": {
-    "abbrev": "STL",
-    "score": 1,
-    "sog": 22
-   },
-   "home": {
-    "abbrev": "UTA",
-    "score": 0,
-    "sog": 29
-   },
-   "updated_at": "2026-11-13T00:50:00-05:00"
-  },
-  {
-   "game_id": 2026020308,
-   "state": "OFF",
-   "schedule_state": "OK",
-   "period": 3,
-   "period_type": "REG",
-   "clock": "00:00",
-   "in_intermission": false,
-   "running": false,
-   "away": {
-    "abbrev": "NYI",
-    "score": 5,
-    "sog": 21
-   },
-   "home": {
-    "abbrev": "LAK",
-    "score": 2,
-    "sog": 28
-   },
-   "updated_at": "2026-11-13T01:20:01-05:00"
+   "updated_at": "2026-11-13T21:00:01-05:00"
   }
  ],
  "picks": {
-  "2026-11-12:2026020309:8474586:shots:1.5:under": {
-   "game_id": 2026020309,
+  "2026-11-13:2026020310:8484210:shots:1.5:under": {
+   "game_id": 2026020310,
    "market": "shots",
-   "stat": 0
-  },
-  "2026-11-12:2026020309:8478427:shots:2.5:under": {
-   "game_id": 2026020309,
-   "market": "shots",
-   "stat": 2
-  },
-  "2026-11-12:2026020309:8482665:shots:1.5:under": {
-   "game_id": 2026020309,
-   "market": "shots",
-   "stat": 1
-  },
-  "2026-11-12:2026020299:8478401:shots:1.5:under": {
-   "game_id": 2026020299,
-   "market": "shots",
-   "stat": 3
-  },
-  "2026-11-12:2026020299:8483457:shots:1.5:under": {
-   "game_id": 2026020299,
-   "market": "shots",
-   "stat": 2
-  },
-  "2026-11-12:2026020303:8478414:points:0.5:under": {
-   "game_id": 2026020303,
-   "market": "points",
-   "stat": 1
-  },
-  "2026-11-12:2026020302:8480801:points:0.5:under": {
-   "game_id": 2026020302,
-   "market": "points",
-   "stat": 1
-  },
-  "2026-11-12:2026020307:8476389:shots:1.5:under": {
-   "game_id": 2026020307,
-   "market": "shots",
-   "stat": 2
-  },
-  "2026-11-12:2026020308:8485366:shots:2.5:over": {
-   "game_id": 2026020308,
-   "market": "shots",
-   "stat": 3
-  },
-  "2026-11-12:2026020308:8485388:points:0.5:over": {
-   "game_id": 2026020308,
-   "market": "points",
-   "stat": 1
+   "stat": null
   }
  }
 }

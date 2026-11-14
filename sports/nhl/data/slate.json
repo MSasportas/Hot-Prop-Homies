@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-13",
- "generated_at": "2026-11-13T20:50:27-05:00",
- "status_at": "2026-11-13T20:50:27-05:00",
+ "generated_at": "2026-11-13T21:00:01-05:00",
+ "status_at": "2026-11-13T21:00:01-05:00",
  "valid_until": "2026-11-14T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-13T20:50:27-05:00",
+   "at": "2026-11-13T21:00:01-05:00",
    "failed_step": null
   },
   "pool": {
@@ -32,7 +32,11 @@
   "tier": 4
  },
  "banners": [],
- "empty": null,
+ "empty": {
+  "code": "none_qualified",
+  "text": "No picks yet today",
+  "sub": "31 lines read, none cleared both checks. 1 had a gap but our model said no. Today's earlier pick is on the Live tab. Next read at 9:15 PM."
+ },
  "games": [
   {
    "id": 2026020310,
@@ -74,8 +78,8 @@
      "home": "2026-11-13T20:50:27-05:00"
     }
    },
-   "started": false,
-   "reads_done": true,
+   "started": true,
+   "reads_done": false,
    "picks": 1,
    "excluded_reason": null,
    "excluded_teams": []
@@ -137,7 +141,7 @@
    "breakeven": 0.4082,
    "p_pct": 44,
    "breakeven_pct": 41,
-   "state": "lineup",
+   "state": "locked",
    "history": [
     {
      "at": "2026-11-13T19:30:00-05:00",
@@ -146,6 +150,10 @@
     {
      "at": "2026-11-13T20:50:27-05:00",
      "text": "Lineup confirmed"
+    },
+    {
+     "at": "2026-11-13T21:00:01-05:00",
+     "text": "Locked"
     }
    ],
    "prices": [
@@ -155,9 +163,9 @@
     }
    ],
    "pulled": null,
-   "price_final": true,
+   "price_final": false,
    "graded": null,
-   "rank": 1,
+   "rank": null,
    "tier": "main",
    "game_id": 2026020310,
    "player": "G. Perreault",
