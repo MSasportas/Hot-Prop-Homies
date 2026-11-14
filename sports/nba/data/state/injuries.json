@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T14:00:00-05:00",
+ "at": "2026-11-14T14:50:00-05:00",
  "list": {
   "5149077": {
    "status": "day-to-day",
@@ -364,6 +364,13 @@
    "team": "LAL",
    "date": "2026-11-12T04:40Z",
    "note": "Sexton did not return to Wednesday's 123-112 win over the Bucks and required stitches to close a cut on his forehead, Thuc Nhi Nguyen of the Los Angeles Times reports."
+  },
+  "4065733": {
+   "status": "out",
+   "name": "Ty Jerome",
+   "team": "MEM",
+   "date": "2026-11-14T19:43Z",
+   "note": "Jerome produced 22 points (9-18 FG, 1-5 3Pt, 3-3 FT), two rebounds and five assists over 32 minutes in Wednesday's 123-118 loss to the Nuggets."
   },
   "4593016": {
    "status": "day-to-day",
