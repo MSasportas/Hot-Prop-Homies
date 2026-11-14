@@ -50,7 +50,7 @@
    "status": "expected"
   },
   "STL": {
-   "name": "Joel Hofer",
+   "name": "Jordan Binnington",
    "status": "expected"
   },
   "FLA": {
@@ -78,7 +78,7 @@
    "status": "expected"
   },
   "PHI": {
-   "name": "Dan Vladar",
+   "name": "Joseph Woll",
    "status": "expected"
   },
   "DAL": {
@@ -98,7 +98,7 @@
    "status": "expected"
   },
   "LAK": {
-   "name": "Darcy Kuemper",
+   "name": "Anton Forsberg",
    "status": "expected"
   },
   "CGY": {
@@ -106,7 +106,7 @@
    "status": "expected"
   },
   "ANA": {
-   "name": "Laurent Brossoit",
+   "name": "Ville Husso",
    "status": "expected"
   },
   "NYI": {
@@ -114,5 +114,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-14T07:00:00-05:00"
+ "checked_at": "2026-11-14T07:01:34-05:00"
 }
