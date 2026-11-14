@@ -208,7 +208,7 @@
    }
   },
   "POR": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Damian Lillard",
     "Sidy Cissoko",
@@ -224,7 +224,7 @@
    }
   },
   "SAC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Darius Acuff",
     "Zach LaVine",
@@ -243,13 +243,13 @@
    "starters": [
     "Shai Gilgeous-Alexander",
     "Jared McCain",
-    "Ajay Mitchell",
+    "Alex Caruso",
     "Aday Mara",
     "Isaiah Hartenstein"
    ],
    "status": {
-    "Ajay Mitchell": "questionable",
     "Chet Holmgren": "out",
+    "Ajay Mitchell": "out",
     "Thomas Sorber": "out",
     "Cason Wallace": "out",
     "Jalen Williams": "out",
@@ -273,5 +273,5 @@
    }
   }
  },
- "at": "2026-11-13T21:30:01-05:00"
+ "at": "2026-11-13T21:40:00-05:00"
 }

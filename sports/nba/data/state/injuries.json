@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T21:00:01-05:00",
+ "at": "2026-11-13T21:40:00-05:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -400,19 +400,19 @@
    "date": "2026-11-12T20:53Z",
    "note": "Watford (ankle) is listed as out for Friday's game against the Grizzlies."
   },
+  "4900671": {
+   "status": "out",
+   "name": "Ajay Mitchell",
+   "team": "OKC",
+   "date": "2026-11-14T02:32Z",
+   "note": "Mitchell (ankle) is questionable for Friday's game against the Clippers."
+  },
   "5061603": {
    "status": "out",
    "name": "Thomas Sorber",
    "team": "OKC",
    "date": "2026-11-13T01:07Z",
    "note": "Sorber (knee) has been ruled out for Friday's game against the Clippers."
-  },
-  "4900671": {
-   "status": "day-to-day",
-   "name": "Ajay Mitchell",
-   "team": "OKC",
-   "date": "2026-11-13T01:03Z",
-   "note": "Mitchell (ankle) is questionable for Friday's game against the Clippers."
   },
   "4432823": {
    "status": "out",
