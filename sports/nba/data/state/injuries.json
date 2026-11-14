@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T22:00:00-05:00",
+ "at": "2026-11-13T22:20:00-05:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -236,8 +236,8 @@
    "status": "day-to-day",
    "name": "Aaron Nesmith",
    "team": "IND",
-   "date": "2026-11-14T02:58Z",
-   "note": "Nesmith (knee) is available for Friday's game against the Knicks."
+   "date": "2026-11-14T03:02Z",
+   "note": "Nesmith exited to the locker room in the final seconds of Friday's 106-104 win over the Knicks due to an apparent hand/wrist injury, Tony East of Forbes.com reports. He posted 18 points (7-10 FG, 2-3 "
   },
   "4396993": {
    "status": "out",
@@ -616,6 +616,13 @@
    "team": "TOR",
    "date": "2026-11-08T21:20Z",
    "note": "Bittle (foot) is listed as out for Monday's game against Memphis."
+  },
+  "4397077": {
+   "status": "day-to-day",
+   "name": "Jaxson Hayes",
+   "team": "UTAH",
+   "date": "2026-11-14T02:58Z",
+   "note": "Hayes won't return to Friday's game against the Rockets due to a left knee issue."
   },
   "4433268": {
    "status": "out",
