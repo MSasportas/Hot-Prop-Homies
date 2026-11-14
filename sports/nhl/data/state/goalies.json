@@ -99,11 +99,11 @@
   },
   "LAK": {
    "name": "Anton Forsberg",
-   "status": "expected"
+   "status": "confirmed"
   },
   "CGY": {
-   "name": "Devin Cooley",
-   "status": "expected"
+   "name": "Dustin Wolf",
+   "status": "confirmed"
   },
   "ANA": {
    "name": "Lukas Dostal",
@@ -114,5 +114,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-14T15:20:01-05:00"
+ "checked_at": "2026-11-14T15:40:00-05:00"
 }
