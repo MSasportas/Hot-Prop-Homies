@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T16:51:38-05:00",
+ "at": "2026-11-14T17:10:00-05:00",
  "list": {
   "5149077": {
    "status": "day-to-day",
@@ -260,12 +260,26 @@
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
   },
+  "3102529": {
+   "status": "out",
+   "name": "Clint Capela",
+   "team": "HOU",
+   "date": "2026-11-14T21:54Z",
+   "note": "Capela (ankle) has been ruled out for Sunday's game at Washington."
+  },
+  "2991235": {
+   "status": "out",
+   "name": "Steven Adams",
+   "team": "HOU",
+   "date": "2026-11-14T21:52Z",
+   "note": "Adams (calf) has been upgraded to probable for Sunday's game against the Wizards."
+  },
   "2991230": {
    "status": "out",
    "name": "Fred VanVleet",
    "team": "HOU",
-   "date": "2026-11-14T21:50Z",
-   "note": "VanVleet had 18 points (6-9 FG, 4-7 3Pt, 2-2 FT), two rebounds, six assists and three steals over 30 minutes during Wednesday's 115-108 victory over Golden State."
+   "date": "2026-11-14T21:52Z",
+   "note": "VanVleet (right knee injury management) has been ruled out for Sunday's game against the Wizards."
   },
   "2990992": {
    "status": "suspension",
@@ -273,20 +287,6 @@
    "team": "HOU",
    "date": "2026-11-12T22:45Z",
    "note": "Smart has been suspended three games for throwing a punch during Wednesday's matchup against Golden State, Shams Charania of ESPN reports."
-  },
-  "3102529": {
-   "status": "out",
-   "name": "Clint Capela",
-   "team": "HOU",
-   "date": "2026-11-09T23:56Z",
-   "note": "Head coach Ime Udoka stated Monday that Capela (ankle) could be cleared to return either Nov. 15 in Washington or Nov. 16 in Miami, Lachard Binkley of SI.com reports."
-  },
-  "2991235": {
-   "status": "out",
-   "name": "Steven Adams",
-   "team": "HOU",
-   "date": "2026-11-09T23:55Z",
-   "note": "Head coach Ime Udoka said Monday that Adams could return as soon as Sunday's game at Washington, Lachard Binkley of SI.com reports."
   },
   "2530530": {
    "status": "day-to-day",
@@ -554,6 +554,13 @@
    "date": "2026-09-28T21:33Z",
    "note": "Team president Jeff Weltman said Monday that Nelson (ankle) remains about a month away from returning to the court after offseason surgery, per Philip Rossman-Reich of OrlandoMagicDaily.com."
   },
+  "3059318": {
+   "status": "out",
+   "name": "Joel Embiid",
+   "team": "PHI",
+   "date": "2026-11-14T22:05Z",
+   "note": "Embiid closed with 20 points (7-17 FG, 0-3 3Pt, 6-7 FT), four rebounds, three assists, one block and one steal in 28 minutes during Thursday's 123-112 win over Toronto."
+  },
   "1966": {
    "status": "day-to-day",
    "name": "LeBron James",
@@ -666,6 +673,13 @@
    "date": "2026-10-05T21:43Z",
    "note": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports."
   },
+  "4432586": {
+   "status": "out",
+   "name": "Nate Bittle",
+   "team": "TOR",
+   "date": "2026-11-14T21:59Z",
+   "note": "Bittle (foot) has been ruled out for Sunday's game against the Knicks, Zulfi Sheikh of Sportsnet.ca reports."
+  },
   "4433134": {
    "status": "out",
    "name": "Scottie Barnes",
@@ -680,26 +694,12 @@
    "date": "2026-11-13T15:37Z",
    "note": "McCullar signed a two-way contract with the Raptors on Thursday, Michael Scotto of HoopsHype.com reports."
   },
-  "4431684": {
-   "status": "day-to-day",
-   "name": "Trayce Jackson-Davis",
-   "team": "TOR",
-   "date": "2026-11-13T03:27Z",
-   "note": "Jackson-Davis is out for Thursday's game against the 76ers due to an illness."
-  },
   "6450": {
    "status": "out",
    "name": "Kawhi Leonard",
    "team": "TOR",
    "date": "2026-11-11T22:33Z",
    "note": "Head coach Darko Rajakovic said Wednesday that Leonard (knee) is doing individual on-court work and is progressing well, Michael Grange of Sportsnet.ca reports."
-  },
-  "4432586": {
-   "status": "out",
-   "name": "Nate Bittle",
-   "team": "TOR",
-   "date": "2026-11-08T21:20Z",
-   "note": "Bittle (foot) is listed as out for Monday's game against Memphis."
   },
   "4397077": {
    "status": "day-to-day",
