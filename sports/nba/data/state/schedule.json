@@ -313,13 +313,13 @@
     "start": "2026-11-13T19:00:00-05:00",
     "away": "NY",
     "home": "IND",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/13 - 7:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:39 - 1st",
     "score": {
-     "NY": "0",
-     "IND": "0"
+     "NY": "16",
+     "IND": "9"
     }
    },
    {
@@ -328,13 +328,13 @@
     "start": "2026-11-13T19:00:00-05:00",
     "away": "MIL",
     "home": "ORL",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/13 - 7:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:13 - 1st",
     "score": {
-     "MIL": "0",
-     "ORL": "0"
+     "MIL": "4",
+     "ORL": "12"
     }
    },
    {
