@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T16:30:00-05:00",
+ "generated_at": "2026-11-14T17:50:01-05:00",
  "summary": {
   "headline": {
    "w": 39,
@@ -139,6 +139,7 @@
       "needed": 0.5299,
       "n": 18,
       "ids": [
+       "2026-11-14:401909984:4431671:rebounds:5.5:under",
        "2026-11-13:401909298:3059319:rebounds:3.5:under",
        "2026-11-11:401909973:4873138:rebounds:5.5:under",
        "2026-11-09:401909953:2583632:rebounds:4.5:under",
@@ -294,6 +295,7 @@
       "needed": 0.5258,
       "n": 46,
       "ids": [
+       "2026-11-14:401909984:4431671:rebounds:5.5:under",
        "2026-11-13:401909304:4396907:assists:6.5:under",
        "2026-11-13:401909298:3059319:rebounds:3.5:under",
        "2026-11-11:401909967:3908809:points:24.5:under",
@@ -362,6 +364,7 @@
       "n": 48,
       "ids": [
        "2026-11-14:401909981:4278049:points:7.5:over",
+       "2026-11-14:401909984:4431671:rebounds:5.5:under",
        "2026-11-13:401909298:3908809:threes:2.5:over",
        "2026-11-13:401909304:4396907:assists:6.5:under",
        "2026-11-13:401909298:3059319:rebounds:3.5:under",
@@ -491,6 +494,7 @@
       "n": 47,
       "ids": [
        "2026-11-14:401909981:4278049:points:7.5:over",
+       "2026-11-14:401909984:4431671:rebounds:5.5:under",
        "2026-11-13:401909298:3908809:threes:2.5:over",
        "2026-11-13:401909304:4396907:assists:6.5:under",
        "2026-11-13:401909298:3059319:rebounds:3.5:under",
@@ -580,6 +584,7 @@
       "needed": 0.4593,
       "n": 22,
       "ids": [
+       "2026-11-14:401909984:4431671:rebounds:5.5:under",
        "2026-11-13:401909304:4396907:assists:6.5:under",
        "2026-11-13:401909298:3059319:rebounds:3.5:under",
        "2026-11-11:401909973:4873138:rebounds:5.5:under",
@@ -669,7 +674,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 1,
+    "n": 2,
     "graded": false
    },
    {
@@ -855,6 +860,32 @@
      "pulled": null,
      "legs": [],
      "window": "240 \u2192 180 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-14:401909984:4431671:rebounds:5.5:under",
+     "kind": "single",
+     "player": "Jaden McDaniels",
+     "bet": "Under 5.5 rebounds",
+     "market": "rebounds",
+     "team": "MIN",
+     "game": "CHI at MIN",
+     "price": 110,
+     "first_price": 110,
+     "last_price": 110,
+     "prices": [
+      {
+       "price": 110,
+       "at": "2026-11-14T17:50:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "180 \u2192 135 min",
      "book": "hardrock",
      "under_fair": false
     }
