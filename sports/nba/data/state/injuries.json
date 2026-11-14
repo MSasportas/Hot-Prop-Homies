@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T12:40:00-05:00",
+ "at": "2026-11-14T12:50:01-05:00",
  "list": {
   "5149077": {
    "status": "day-to-day",
@@ -463,6 +463,13 @@
    "date": "2026-10-28T23:41Z",
    "note": "Williams (leg) underwent successful surgery Wednesday to \"address a fractured left fibula and reconstruction of ankle ligaments following a fracture and dislocation.\" He will be re-evaluated before th"
   },
+  "5214637": {
+   "status": "out",
+   "name": "Noah Penda",
+   "team": "ORL",
+   "date": "2026-11-14T17:33Z",
+   "note": "Penda (hamstring) is making progress but remains without a timetable to return to game action, Jason Beede of the Orlando Sentinel reports."
+  },
   "4065654": {
    "status": "out",
    "name": "Jonathan Isaac",
@@ -476,13 +483,6 @@
    "team": "ORL",
    "date": "2026-10-24T16:47Z",
    "note": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports."
-  },
-  "5214637": {
-   "status": "out",
-   "name": "Noah Penda",
-   "team": "ORL",
-   "date": "2026-10-17T22:19Z",
-   "note": "Penda was diagnosed with a partially torn right hamstring Saturday, Jason Beede of the Orlando Sentinel reports."
   },
   "5107251": {
    "status": "out",
