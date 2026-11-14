@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T21:51:28-05:00",
+ "at": "2026-11-13T22:00:00-05:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -231,6 +231,13 @@
    "team": "HOU",
    "date": "2026-11-09T23:55Z",
    "note": "Head coach Ime Udoka said Monday that Adams could return as soon as Sunday's game at Washington, Lachard Binkley of SI.com reports."
+  },
+  "4396909": {
+   "status": "day-to-day",
+   "name": "Aaron Nesmith",
+   "team": "IND",
+   "date": "2026-11-14T02:58Z",
+   "note": "Nesmith (knee) is available for Friday's game against the Knicks."
   },
   "4396993": {
    "status": "out",

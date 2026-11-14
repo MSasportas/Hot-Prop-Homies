@@ -345,11 +345,11 @@
     "home": "MIA",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:54 - 3rd",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 3rd",
     "score": {
-     "CLE": "81",
-     "MIA": "84"
+     "CLE": "91",
+     "MIA": "92"
     }
    },
    {
@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:57 - 4th",
+    "detail": "7:54 - 4th",
     "score": {
-     "ATL": "83",
-     "CHI": "84"
+     "ATL": "90",
+     "CHI": "98"
     }
    },
    {
@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:19 - 3rd",
+    "detail": "55.1 - 3rd",
     "score": {
-     "MEM": "94",
-     "NO": "81"
+     "MEM": "103",
+     "NO": "86"
     }
    },
    {
@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:33 - 1st",
+    "detail": "4:38 - 1st",
     "score": {
-     "GS": "0",
-     "SA": "12"
+     "GS": "5",
+     "SA": "23"
     }
    },
    {
