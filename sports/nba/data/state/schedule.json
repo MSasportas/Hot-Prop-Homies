@@ -331,7 +331,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:13 - 1st",
+    "detail": "6:48 - 1st",
     "score": {
      "MIL": "4",
      "ORL": "12"
