@@ -31,7 +31,7 @@
   },
   "EDM": {
    "name": "Devon Levi",
-   "status": "expected"
+   "status": "confirmed"
   },
   "WSH": {
    "name": "Charlie Lindgren",
@@ -43,11 +43,11 @@
   },
   "TBL": {
    "name": "Andrei Vasilevskiy",
-   "status": "expected"
+   "status": "confirmed"
   },
   "DET": {
    "name": "Daniil Tarasov",
-   "status": "expected"
+   "status": "confirmed"
   },
   "STL": {
    "name": "Joel Hofer",
@@ -114,5 +114,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-14T15:40:00-05:00"
+ "checked_at": "2026-11-14T18:40:01-05:00"
 }
