@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-13",
- "generated_at": "2026-11-13T20:30:01-05:00",
- "status_at": "2026-11-13T20:30:01-05:00",
+ "generated_at": "2026-11-13T20:50:27-05:00",
+ "status_at": "2026-11-13T20:50:27-05:00",
  "valid_until": "2026-11-14T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -9,14 +9,14 @@
   "next_price_read_at": "2026-11-13T21:15:00-05:00",
   "stats_built_at": "2026-11-13T01:30:01-05:00",
   "stats_through": "2026-11-12",
-  "lineups_at": "2026-11-13T20:30:01-05:00",
+  "lineups_at": "2026-11-13T20:50:27-05:00",
   "goalies_at": null,
-  "lineups_note": "Lineups posted for 1 of 4 teams checked so far.",
+  "lineups_note": "Lineups posted for 3 of 4 teams checked so far.",
   "lineups_state": "ok",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-13T20:30:01-05:00",
+   "at": "2026-11-13T20:50:27-05:00",
    "failed_step": null
   },
   "pool": {
@@ -40,8 +40,8 @@
    "home": "VAN",
    "start": "2026-11-13T21:00:00-05:00",
    "lineups": {
-    "away": "waiting",
-    "home": "waiting"
+    "away": "confirmed",
+    "home": "confirmed"
    },
    "goalies": {
     "away": {
@@ -70,8 +70,8 @@
     ],
     "next_read": null,
     "lineups_at": {
-     "away": null,
-     "home": null
+     "away": "2026-11-13T20:50:27-05:00",
+     "home": "2026-11-13T20:50:27-05:00"
     }
    },
    "started": false,
@@ -137,11 +137,15 @@
    "breakeven": 0.4082,
    "p_pct": 44,
    "breakeven_pct": 41,
-   "state": "early",
+   "state": "lineup",
    "history": [
     {
      "at": "2026-11-13T19:30:00-05:00",
      "text": "Early: lineup not confirmed"
+    },
+    {
+     "at": "2026-11-13T20:50:27-05:00",
+     "text": "Lineup confirmed"
     }
    ],
    "prices": [
@@ -175,8 +179,8 @@
     "ours_pct": 44.0,
     "model_pct": 45.8
    },
-   "settled": "early",
-   "settled_label": "Early",
+   "settled": "lineup",
+   "settled_label": "Lineup confirmed",
    "reason": "8 other books say 44.0%; Hard Rock's +145 only needs 40.8%. Our model agrees (our blend: 44.0%).",
    "link": "https://app.hardrock.bet/?deep_link_value=betslip/188421416660631950",
    "links": {
