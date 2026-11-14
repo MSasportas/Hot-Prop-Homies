@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T18:40:00-05:00",
+ "at": "2026-11-14T18:50:01-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -64,33 +64,26 @@
    "date": "2026-11-08T22:26Z",
    "note": "Schroder has been diagnosed with a left hamstring strain and will be reevaluated in two weeks, Michael Scotto of HoopsHype.com reports."
   },
+  "4397189": {
+   "status": "out",
+   "name": "Jalen Smith",
+   "team": "CHI",
+   "date": "2026-11-14T23:40Z",
+   "note": "Smith (finger) has been ruled out for Saturday's game against Minnesota, K.C. Johnson of Chicago Sports Network reports."
+  },
+  "4278067": {
+   "status": "out",
+   "name": "Nic Claxton",
+   "team": "CHI",
+   "date": "2026-11-14T23:39Z",
+   "note": "Claxton (hamstring) is out for Saturday's game against the Timberwolves, K.C. Johnson of Chicago Sports Network reports."
+  },
   "5105555": {
    "status": "out",
    "name": "Tobe Awaka",
    "team": "CHI",
    "date": "2026-11-14T18:10Z",
    "note": "Awaka has been ruled out for Saturday's game against the Timberwolves."
-  },
-  "4278067": {
-   "status": "day-to-day",
-   "name": "Nic Claxton",
-   "team": "CHI",
-   "date": "2026-11-14T18:08Z",
-   "note": "Claxton (hamstring) is listed as questionable for Saturday's game against the Timberwolves."
-  },
-  "4397189": {
-   "status": "day-to-day",
-   "name": "Jalen Smith",
-   "team": "CHI",
-   "date": "2026-11-14T18:00Z",
-   "note": "Smith (finger) is listed as questionable for Saturday's game at Minnesota."
-  },
-  "2595516": {
-   "status": "day-to-day",
-   "name": "Norman Powell",
-   "team": "CHI",
-   "date": "2026-11-14T17:57Z",
-   "note": "Powell (back) is listed as questionable for Saturday's game against Minnesota."
   },
   "5095151": {
    "status": "out",
