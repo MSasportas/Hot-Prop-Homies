@@ -27,15 +27,15 @@
   },
   "TOR": {
    "name": "Anthony Stolarz",
-   "status": "expected"
+   "status": "confirmed"
   },
   "EDM": {
    "name": "Devon Levi",
    "status": "expected"
   },
   "WSH": {
-   "name": "Logan Thompson",
-   "status": "expected"
+   "name": "Charlie Lindgren",
+   "status": "confirmed"
   },
   "NJD": {
    "name": "Connor Hellebuyck",
@@ -114,5 +114,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-14T11:10:01-05:00"
+ "checked_at": "2026-11-14T11:20:00-05:00"
 }
