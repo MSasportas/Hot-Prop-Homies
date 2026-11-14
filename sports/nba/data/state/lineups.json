@@ -40,7 +40,6 @@
     "Daniel Gafford"
    ],
    "status": {
-    "Morez Johnson": "probable",
     "Max Christie": "doubtful",
     "Tarik Biberovic": "out",
     "Sergio de Larrea": "out",
@@ -50,20 +49,20 @@
   "CLE": {
    "state": "expected",
    "starters": [
-    "James Harden",
-    "Donovan Mitchell",
-    "Peyton Watson",
+    "Craig Porter",
+    "Meleek Thomas",
     "Jaylon Tyson",
-    "Jarrett Allen"
+    "Mario Hezonja",
+    "Thomas Bryant"
    ],
    "status": {
-    "James Harden": "questionable",
-    "Donovan Mitchell": "questionable",
-    "Peyton Watson": "questionable",
     "Jarrett Allen": "out",
+    "James Harden": "out",
     "Sam Merrill": "out",
+    "Donovan Mitchell": "out",
     "Evan Mobley": "out",
-    "Nae'Qwan Tomlin": "out"
+    "Nae'Qwan Tomlin": "out",
+    "Peyton Watson": "out"
    }
   },
   "DET": {
@@ -158,5 +157,5 @@
    }
   }
  },
- "at": "2026-11-14T17:50:01-05:00"
+ "at": "2026-11-14T18:00:00-05:00"
 }
