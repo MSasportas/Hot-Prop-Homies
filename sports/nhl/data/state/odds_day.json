@@ -1,108 +1,35 @@
 {
- "date": "2026-11-13",
+ "date": "2026-11-14",
  "plan": {
-  "allowance": 24.619,
+  "allowance": 24.8145,
   "tier": 4,
-  "budget_today": 49,
-  "pool_at_plan": 3102,
-  "games_left": 126,
-  "games_today": 2,
+  "budget_today": 347,
+  "pool_at_plan": 3077,
+  "games_left": 124,
+  "games_today": 14,
   "key_count": 9,
   "unknown_keys": 1,
-  "made_at": "2026-11-13T05:00:01-05:00"
+  "made_at": "2026-11-14T05:00:01-05:00"
  },
  "events": {
-  "2026020310": "069bea369487ef0cd3017c9ceea68817",
-  "2026020311": "21cd36d8c877a851efe2016178ff0bd1"
+  "2026020321": "ccdee466b63a2accb1d804d5ca9e4bdc",
+  "2026020312": "c3f43b11aaf8ba26496727f557330d72",
+  "2026020315": "624643d0e1445dfdb95d86127440548a",
+  "2026020313": "20f100d5b4c8ce5d8c868f34ea7bddbf",
+  "2026020319": "f3b622fed365136e09be1f7b53052543",
+  "2026020316": "9df5283f800c7d4c2d0bd38b7c5f4846",
+  "2026020314": "7f07a205e325038963274f255cb856cc",
+  "2026020320": "77dfcbc978ae3818dc04d2434342bc48",
+  "2026020318": "fa960f164539f05a9e76c85f358b93a6",
+  "2026020317": "13ccf67b4b7c472d4e05fdda2b440b42",
+  "2026020322": "7f213f5d9c0852282bcf4d2c8c2bae9b",
+  "2026020323": "e7f30a1c549ae1d91aac850b81bad637",
+  "2026020324": "ce4dd515ea49344d4707778f27669fec",
+  "2026020325": "4d5a1a721175165a7fc09cc39fd19214"
  },
- "events_at": "2026-11-13T05:00:01-05:00",
+ "events_at": "2026-11-14T05:00:01-05:00",
  "unknown_teams": [],
- "done": {
-  "2026020310": [
-   {
-    "game_id": 2026020310,
-    "pull": "A",
-    "at": "2026-11-13T13:00:00-05:00",
-    "markets": [
-     "shots"
-    ],
-    "returned": [
-     "shots"
-    ],
-    "cost": 1
-   },
-   {
-    "game_id": 2026020310,
-    "pull": "B",
-    "at": "2026-11-13T19:30:00-05:00",
-    "markets": [
-     "points",
-     "shots"
-    ],
-    "returned": [
-     "points",
-     "shots"
-    ],
-    "cost": 2
-   },
-   {
-    "game_id": 2026020310,
-    "pull": "C",
-    "at": "2026-11-13T20:20:00-05:00",
-    "markets": [
-     "points",
-     "shots"
-    ],
-    "returned": [
-     "points",
-     "shots"
-    ],
-    "cost": 2
-   }
-  ],
-  "2026020311": [
-   {
-    "game_id": 2026020311,
-    "pull": "A",
-    "at": "2026-11-13T13:00:00-05:00",
-    "markets": [
-     "shots"
-    ],
-    "returned": [
-     "shots"
-    ],
-    "cost": 1
-   },
-   {
-    "game_id": 2026020311,
-    "pull": "B",
-    "at": "2026-11-13T20:30:01-05:00",
-    "markets": [
-     "points",
-     "shots"
-    ],
-    "returned": [
-     "points",
-     "shots"
-    ],
-    "cost": 2
-   },
-   {
-    "game_id": 2026020311,
-    "pull": "C",
-    "at": "2026-11-13T21:20:00-05:00",
-    "markets": [
-     "points",
-     "shots"
-    ],
-    "returned": [
-     "points",
-     "shots"
-    ],
-    "cost": 2
-   }
-  ]
- },
+ "done": {},
  "stage": null,
  "skipped": {},
  "last_fail_at": null,

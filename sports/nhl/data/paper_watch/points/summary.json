@@ -2,8 +2,8 @@
  "version": 1,
  "note": "Behind the scenes: research only. Not picks, not on the Record, never sent to Discord.",
  "market": "points",
- "generated_at": "2026-11-14T04:30:00-05:00",
- "slate": "2026-11-13",
+ "generated_at": "2026-11-14T05:00:01-05:00",
+ "slate": "2026-11-14",
  "active": true,
  "window": {
   "live_from": "2026-10-28",
@@ -539,7 +539,7 @@
      "cap": null,
      "flagged_at": "2026-11-07T16:20:00-05:00",
      "read_pull": "C",
-     "settled": "Lineup confirmed",
+     "settled": "Early",
      "frozen_settled": "Early",
      "move30_pct": 0.3,
      "pulled": null,
@@ -1210,7 +1210,7 @@
   },
   "clv_passed_mean": 0.0429984913762655,
   "clv_vetoed_mean": 0.05241396729973754,
-  "nights": 17,
+  "nights": 18,
   "nights_with_flags": 10,
   "population_slope": null,
   "checkpoint": "2026-11-02"
