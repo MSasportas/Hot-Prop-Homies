@@ -2,7 +2,7 @@
  "version": 1,
  "note": "Gap + Guard research log. Every flag here is a pick on the page and in the Record; vetoed and capped rows are research only.",
  "market": "shots",
- "generated_at": "2026-11-14T18:00:01-05:00",
+ "generated_at": "2026-11-14T18:20:00-05:00",
  "slate": "2026-11-14",
  "active": true,
  "window": {
@@ -40,8 +40,8 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "close_fair_pct": 58.9,
+    "clv_pct": 6.1,
     "result": null,
     "units": null
    },
@@ -74,8 +74,8 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "close_fair_pct": 46.5,
+    "clv_pct": 4.7,
     "result": null,
     "units": null
    },
@@ -108,8 +108,8 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "close_fair_pct": 48.0,
+    "clv_pct": 3.1,
     "result": null,
     "units": null
    },
@@ -142,8 +142,8 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "close_fair_pct": 46.8,
+    "clv_pct": 3.0,
     "result": null,
     "units": null
    }
@@ -921,7 +921,7 @@
   }
  ],
  "nov2": {
-  "gaps_measured": 57,
+  "gaps_measured": 61,
   "gaps_logged": 75,
   "graded_picks": 60,
   "w": 35,
@@ -930,15 +930,15 @@
   "units": 9.096754657924073,
   "wins_z": 0.9286838663260985,
   "clv_gaps": {
-   "n": 57,
-   "mean": 0.04615250110494654,
-   "lb80": 0.04307794674617026,
+   "n": 61,
+   "mean": 0.045898218942246674,
+   "lb80": 0.043061627192528026,
    "pos_share": 1.0
   },
   "clv_flags": {
-   "n": 50,
-   "mean": 0.04621048483960491,
-   "lb80": 0.0427002551190197,
+   "n": 54,
+   "mean": 0.04591894508287667,
+   "lb80": 0.04257332558859254,
    "pos_share": 1.0
   },
   "clv_vetoed": {
@@ -947,7 +947,7 @@
    "lb80": 0.04015632701075129,
    "pos_share": 1.0
   },
-  "clv_passed_mean": 0.04621048483960491,
+  "clv_passed_mean": 0.04591894508287667,
   "clv_vetoed_mean": 0.04573833157167243,
   "nights": 23,
   "nights_with_flags": 18,

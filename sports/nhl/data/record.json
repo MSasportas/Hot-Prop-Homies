@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T17:30:00-05:00",
+ "generated_at": "2026-11-14T18:20:00-05:00",
  "summary": {
   "headline": {
    "w": 40,
@@ -243,7 +243,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 5,
+    "n": 6,
     "graded": false
    },
    {
@@ -491,6 +491,29 @@
       {
        "price": -125,
        "at": "2026-11-14T17:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-14:2026020316:8478042:points:0.5:over",
+     "kind": "single",
+     "player": "V. Arvidsson",
+     "bet": "Over 0.5 points",
+     "market": "points",
+     "team": "DET",
+     "game": "DET at TBL",
+     "price": 110,
+     "first_price": 110,
+     "last_price": 110,
+     "prices": [
+      {
+       "price": 110,
+       "at": "2026-11-14T18:20:00-05:00"
       }
      ],
      "result": null,
