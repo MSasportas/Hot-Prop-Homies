@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T12:50:01-05:00",
+ "at": "2026-11-14T13:00:01-05:00",
  "list": {
   "5149077": {
    "status": "day-to-day",
@@ -596,6 +596,13 @@
    "date": "2026-10-05T21:43Z",
    "note": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports."
   },
+  "4433134": {
+   "status": "out",
+   "name": "Scottie Barnes",
+   "team": "TOR",
+   "date": "2026-11-14T17:33Z",
+   "note": "Barnes (groin) is listed as questionable for Sunday's game against the Knicks, Michael Grange of Sportsnet.ca reports."
+  },
   "4411057": {
    "status": "day-to-day",
    "name": "Kevin McCullar Jr.",
@@ -609,13 +616,6 @@
    "team": "TOR",
    "date": "2026-11-13T03:27Z",
    "note": "Jackson-Davis is out for Thursday's game against the 76ers due to an illness."
-  },
-  "4433134": {
-   "status": "out",
-   "name": "Scottie Barnes",
-   "team": "TOR",
-   "date": "2026-11-12T18:05Z",
-   "note": "Barnes (groin) is out for Thursday's game against Philadelphia."
   },
   "6450": {
    "status": "out",
