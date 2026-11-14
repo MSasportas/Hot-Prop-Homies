@@ -346,9 +346,9 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:06 - 3rd",
+    "detail": "2:54 - 3rd",
     "score": {
-     "CLE": "79",
+     "CLE": "81",
      "MIA": "84"
     }
    },
@@ -360,8 +360,8 @@
     "home": "CHI",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 3rd",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "11:57 - 4th",
     "score": {
      "ATL": "83",
      "CHI": "84"
@@ -376,9 +376,9 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:44 - 3rd",
+    "detail": "3:19 - 3rd",
     "score": {
-     "MEM": "91",
+     "MEM": "94",
      "NO": "81"
     }
    },
