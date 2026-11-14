@@ -241,11 +241,11 @@
    }
   },
   "OKC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Shai Gilgeous-Alexander",
     "Jared McCain",
-    "Alex Caruso",
+    "Kenrich Williams",
     "Aday Mara",
     "Isaiah Hartenstein"
    ],
@@ -259,7 +259,7 @@
    }
   },
   "LAC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Darius Garland",
     "Kris Dunn",
@@ -275,5 +275,5 @@
    }
   }
  },
- "at": "2026-11-13T22:00:00-05:00"
+ "at": "2026-11-13T22:10:01-05:00"
 }
