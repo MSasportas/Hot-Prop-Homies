@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-14",
- "generated_at": "2026-11-14T10:00:01-05:00",
- "status_at": "2026-11-14T10:00:01-05:00",
+ "generated_at": "2026-11-14T10:20:00-05:00",
+ "status_at": "2026-11-14T10:20:00-05:00",
  "valid_until": "2026-11-15T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-14T10:00:01-05:00",
+   "at": "2026-11-14T10:20:00-05:00",
    "failed_step": null
   },
   "pool": {
@@ -224,8 +224,8 @@
    "checks": {
     "reads": [],
     "next_read": {
-     "pull": "A",
-     "at": "2026-11-14T10:00:00-05:00"
+     "pull": "B",
+     "at": "2026-11-14T17:30:00-05:00"
     },
     "lineups_at": {
      "away": null,
@@ -383,8 +383,8 @@
    "checks": {
     "reads": [],
     "next_read": {
-     "pull": "A",
-     "at": "2026-11-14T10:00:00-05:00"
+     "pull": "B",
+     "at": "2026-11-14T17:30:00-05:00"
     },
     "lineups_at": {
      "away": null,
@@ -419,8 +419,8 @@
    "checks": {
     "reads": [],
     "next_read": {
-     "pull": "A",
-     "at": "2026-11-14T10:00:00-05:00"
+     "pull": "B",
+     "at": "2026-11-14T17:30:00-05:00"
     },
     "lineups_at": {
      "away": null,
@@ -537,8 +537,8 @@
    "checks": {
     "reads": [],
     "next_read": {
-     "pull": "A",
-     "at": "2026-11-14T10:00:00-05:00"
+     "pull": "B",
+     "at": "2026-11-14T20:30:00-05:00"
     },
     "lineups_at": {
      "away": null,
@@ -573,8 +573,8 @@
    "checks": {
     "reads": [],
     "next_read": {
-     "pull": "A",
-     "at": "2026-11-14T10:00:00-05:00"
+     "pull": "B",
+     "at": "2026-11-14T20:30:00-05:00"
     },
     "lineups_at": {
      "away": null,
