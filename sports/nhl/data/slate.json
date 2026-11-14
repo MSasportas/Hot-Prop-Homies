@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-14",
- "generated_at": "2026-11-14T15:00:01-05:00",
- "status_at": "2026-11-14T15:00:01-05:00",
+ "generated_at": "2026-11-14T15:10:01-05:00",
+ "status_at": "2026-11-14T15:10:01-05:00",
  "valid_until": "2026-11-15T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-14T15:00:01-05:00",
+   "at": "2026-11-14T15:10:01-05:00",
    "failed_step": null
   },
   "pool": {
@@ -96,11 +96,11 @@
    "goalies": {
     "away": {
      "name": "Stuart Skinner",
-     "status": "expected"
+     "status": "confirmed"
     },
     "home": {
      "name": "Spencer Knight",
-     "status": "expected"
+     "status": "confirmed"
     }
    },
    "checks": {
@@ -555,7 +555,7 @@
      "status": "expected"
     },
     "home": {
-     "name": "Ville Husso",
+     "name": "Lukas Dostal",
      "status": "expected"
     }
    },

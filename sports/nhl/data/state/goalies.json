@@ -11,11 +11,11 @@
   },
   "CHI": {
    "name": "Spencer Knight",
-   "status": "expected"
+   "status": "confirmed"
   },
   "WPG": {
    "name": "Stuart Skinner",
-   "status": "expected"
+   "status": "confirmed"
   },
   "MTL": {
    "name": "Jakub Dobes",
@@ -106,7 +106,7 @@
    "status": "expected"
   },
   "ANA": {
-   "name": "Ville Husso",
+   "name": "Lukas Dostal",
    "status": "expected"
   },
   "NYI": {
@@ -114,5 +114,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-14T14:40:01-05:00"
+ "checked_at": "2026-11-14T15:10:01-05:00"
 }
