@@ -2,7 +2,7 @@
  "slate": "2026-11-14",
  "teams": {
   "DEN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jamal Murray",
     "Christian Braun",
@@ -15,7 +15,7 @@
    }
   },
   "NO": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jeremiah Fears",
     "Herbert Jones",
@@ -100,13 +100,13 @@
     "Norman Powell",
     "Isaac Okoro",
     "Matas Buzelis",
-    "Jalen Smith"
+    "Zach Collins"
    ],
    "status": {
     "Norman Powell": "questionable",
-    "Jalen Smith": "questionable",
     "Nic Claxton": "questionable",
     "Tobe Awaka": "out",
+    "Jalen Smith": "out",
     "Caleb Wilson": "out"
    }
   },
@@ -155,5 +155,5 @@
    }
   }
  },
- "at": "2026-11-14T18:31:35-05:00"
+ "at": "2026-11-14T18:40:00-05:00"
 }

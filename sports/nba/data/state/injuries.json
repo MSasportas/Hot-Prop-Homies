@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T18:31:35-05:00",
+ "at": "2026-11-14T18:40:00-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -40,22 +40,8 @@
    "status": "day-to-day",
    "name": "Michael Porter Jr.",
    "team": "BKN",
-   "date": "2026-11-14T23:14Z",
-   "note": "Porter delivered 22 points (7-14 FG, 4-10 3Pt, 4-4 FT), six rebounds, three assists and a steal across 28 minutes in Wednesday's 145-111 win over the Pelicans."
-  },
-  "5101761": {
-   "status": "day-to-day",
-   "name": "Mikel Brown Jr.",
-   "team": "BKN",
-   "date": "2026-11-14T17:19Z",
-   "note": "Brown (illness) has been upgraded to probable for Saturday's game at Memphis."
-  },
-  "5279130": {
-   "status": "day-to-day",
-   "name": "Nolan Traore",
-   "team": "BKN",
-   "date": "2026-11-13T22:07Z",
-   "note": "Traore (calf) is listed as probable for Saturday's game against Memphis."
+   "date": "2026-11-14T23:19Z",
+   "note": "Porter (personal) is listed as questionable for Saturday's game against Memphis, Erik Slater of ClutchPoints.com reports."
   },
   "4433287": {
    "status": "day-to-day",
@@ -408,25 +394,11 @@
    "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
   },
   "4601025": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Pelle Larsson",
    "team": "MIA",
-   "date": "2026-11-14T18:12Z",
-   "note": "Larsson (illness) is listed as doubtful for Saturday's game against Detroit."
-  },
-  "6475": {
-   "status": "day-to-day",
-   "name": "Klay Thompson",
-   "team": "MIA",
-   "date": "2026-11-14T18:10Z",
-   "note": "Thompson (ankle) is listed as probable for Saturday's game against the Pistons."
-  },
-  "3032977": {
-   "status": "day-to-day",
-   "name": "Giannis Antetokounmpo",
-   "team": "MIA",
-   "date": "2026-11-14T18:07Z",
-   "note": "Antetokounmpo (wrist) is listed as probable for Saturday's game against Detroit."
+   "date": "2026-11-14T23:26Z",
+   "note": "Larsson (illness) has been ruled out for Saturday's game against the Pistons."
   },
   "4997526": {
    "status": "out",
