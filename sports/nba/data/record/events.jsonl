@@ -285,3 +285,4 @@
 {"at":"2026-11-13T22:30:01-05:00","id":"2026-11-13:401909304:4396907:assists:6.5:under","state":"locked","t":"locked"}
 {"actual":null,"actual_text":"5 threes","at":"2026-11-13T22:50:00-05:00","id":"2026-11-13:401909298:3908809:threes:2.5:over","price":-135,"result":"W","t":"graded","units":0.7407}
 {"actual":null,"actual_text":"3 rebounds","at":"2026-11-13T22:50:00-05:00","id":"2026-11-13:401909298:3059319:rebounds:3.5:under","price":110,"result":"W","t":"graded","units":1.1}
+{"actual":null,"actual_text":"7 assists","at":"2026-11-14T01:00:00-05:00","id":"2026-11-13:401909304:4396907:assists:6.5:under","price":105,"result":"L","t":"graded","units":-1.0}

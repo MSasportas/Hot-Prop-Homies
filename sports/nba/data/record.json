@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-13T22:50:00-05:00",
+ "generated_at": "2026-11-14T01:00:00-05:00",
  "summary": {
   "headline": {
    "w": 39,
-   "l": 21,
+   "l": 22,
    "push": 0,
    "void": 0,
-   "units": 16.11,
-   "hit_rate": 0.65,
-   "needed": 0.5201,
-   "n": 60
+   "units": 15.11,
+   "hit_rate": 0.6393,
+   "needed": 0.5195,
+   "n": 61
   },
   "rows": [
    {
@@ -40,13 +40,13 @@
     "key": "assists",
     "label": "Assists",
     "w": 3,
-    "l": 6,
+    "l": 7,
     "push": 0,
     "void": 0,
-    "units": -3.34,
-    "hit_rate": 0.3333,
-    "needed": 0.5094,
-    "n": 9
+    "units": -4.34,
+    "hit_rate": 0.3,
+    "needed": 0.5073,
+    "n": 10
    },
    {
     "key": "threes",
@@ -100,13 +100,13 @@
     "key": "window:11 AM \u2192 240 min",
     "label": "Window 11 AM \u2192 240 min",
     "w": 1,
-    "l": 0,
+    "l": 1,
     "push": 0,
     "void": 0,
-    "units": 0.74,
-    "hit_rate": 1.0,
-    "needed": 0.5745,
-    "n": 1
+    "units": -0.26,
+    "hit_rate": 0.5,
+    "needed": 0.5311,
+    "n": 2
    },
    {
     "key": "window:45 \u2192 30 min",
@@ -198,13 +198,13 @@
       "key": "assists",
       "label": "Assists",
       "w": 3,
-      "l": 6,
+      "l": 7,
       "push": 0,
       "void": 0,
-      "units": -3.34,
-      "hit_rate": 0.3333,
-      "needed": 0.5094,
-      "n": 9,
+      "units": -4.34,
+      "hit_rate": 0.3,
+      "needed": 0.5073,
+      "n": 10,
       "ids": [
        "2026-11-13:401909304:4396907:assists:6.5:under",
        "2026-11-10:401909963:4278053:assists:7.5:under",
@@ -284,13 +284,13 @@
       "key": "under",
       "label": "Under",
       "w": 27,
-      "l": 18,
+      "l": 19,
       "push": 0,
       "void": 0,
-      "units": 6.75,
-      "hit_rate": 0.6,
-      "needed": 0.5266,
-      "n": 45,
+      "units": 5.75,
+      "hit_rate": 0.587,
+      "needed": 0.5258,
+      "n": 46,
       "ids": [
        "2026-11-13:401909304:4396907:assists:6.5:under",
        "2026-11-13:401909298:3059319:rebounds:3.5:under",
@@ -351,13 +351,13 @@
       "key": "e0",
       "label": "0 to 2%",
       "w": 31,
-      "l": 16,
+      "l": 17,
       "push": 0,
       "void": 0,
-      "units": 12.77,
-      "hit_rate": 0.6596,
-      "needed": 0.5239,
-      "n": 47,
+      "units": 11.77,
+      "hit_rate": 0.6458,
+      "needed": 0.5231,
+      "n": 48,
       "ids": [
        "2026-11-13:401909298:3908809:threes:2.5:over",
        "2026-11-13:401909304:4396907:assists:6.5:under",
@@ -479,13 +479,13 @@
       "key": "clear",
       "label": "Injury report clear",
       "w": 31,
-      "l": 15,
+      "l": 16,
       "push": 0,
       "void": 0,
-      "units": 14.0,
-      "hit_rate": 0.6739,
-      "needed": 0.5239,
-      "n": 46,
+      "units": 13.0,
+      "hit_rate": 0.6596,
+      "needed": 0.5231,
+      "n": 47,
       "ids": [
        "2026-11-13:401909298:3908809:threes:2.5:over",
        "2026-11-13:401909304:4396907:assists:6.5:under",
@@ -568,13 +568,13 @@
       "key": "plus",
       "label": "Plus money",
       "w": 13,
-      "l": 8,
+      "l": 9,
       "push": 0,
       "void": 0,
-      "units": 8.3,
-      "hit_rate": 0.619,
-      "needed": 0.458,
-      "n": 21,
+      "units": 7.3,
+      "hit_rate": 0.5909,
+      "needed": 0.4593,
+      "n": 22,
       "ids": [
        "2026-11-13:401909304:4396907:assists:6.5:under",
        "2026-11-13:401909298:3059319:rebounds:3.5:under",
@@ -660,12 +660,12 @@
    {
     "date": "2026-11-13",
     "w": 2,
-    "l": 0,
+    "l": 1,
     "push": 0,
     "void": 0,
-    "units": 1.84,
+    "units": 0.84,
     "n": 3,
-    "graded": false
+    "graded": true
    },
    {
     "date": "2026-11-11",
@@ -812,10 +812,10 @@
  "nights": [
   {
    "date": "2026-11-13",
-   "graded": false,
+   "graded": true,
    "w": 2,
-   "l": 0,
-   "units": 1.84,
+   "l": 1,
+   "units": 0.84,
    "entries": [
     {
      "id": "2026-11-13:401909298:3908809:threes:2.5:over",
@@ -860,9 +860,9 @@
        "at": "2026-11-13T18:30:06-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "L",
+     "actual": "7 assists",
+     "units": -1.0,
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 240 min",
