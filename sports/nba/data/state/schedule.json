@@ -403,13 +403,13 @@
     "start": "2026-11-13T21:30:00-05:00",
     "away": "GS",
     "home": "SA",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:21 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "GS": "83",
-     "SA": "119"
+     "GS": "85",
+     "SA": "123"
     }
    },
    {
@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:11 - 4th",
+    "detail": "9:01 - 4th",
     "score": {
-     "POR": "98",
-     "SAC": "78"
+     "POR": "100",
+     "SAC": "89"
     }
    },
    {
@@ -436,10 +436,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:54 - 3rd",
+    "detail": "6:59 - 3rd",
     "score": {
-     "OKC": "50",
-     "LAC": "58"
+     "OKC": "63",
+     "LAC": "63"
     }
    }
   ]
