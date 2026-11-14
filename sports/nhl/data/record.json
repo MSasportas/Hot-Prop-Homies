@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T01:20:01-05:00",
+ "generated_at": "2026-11-13T19:30:00-05:00",
  "summary": {
   "headline": {
    "w": 40,
@@ -237,6 +237,16 @@
   ],
   "days": [
    {
+    "date": "2026-11-13",
+    "w": 0,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 0,
+    "n": 1,
+    "graded": false
+   },
+   {
     "date": "2026-11-12",
     "w": 5,
     "l": 5,
@@ -449,6 +459,38 @@
   ]
  },
  "nights": [
+  {
+   "date": "2026-11-13",
+   "graded": false,
+   "w": 0,
+   "l": 0,
+   "units": 0,
+   "entries": [
+    {
+     "id": "2026-11-13:2026020310:8484210:shots:1.5:under",
+     "kind": "single",
+     "player": "G. Perreault",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "NYR",
+     "game": "NYR at VAN",
+     "price": 145,
+     "first_price": 145,
+     "last_price": 145,
+     "prices": [
+      {
+       "price": 145,
+       "at": "2026-11-13T19:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    }
+   ]
+  },
   {
    "date": "2026-11-12",
    "graded": true,
@@ -1127,61 +1169,6 @@
      ],
      "result": "L",
      "actual": "had 7",
-     "units": -1.0,
-     "pulled": null,
-     "legs": []
-    }
-   ]
-  },
-  {
-   "date": "2026-11-06",
-   "graded": true,
-   "w": 0,
-   "l": 2,
-   "units": -2.0,
-   "entries": [
-    {
-     "id": "2026-11-06:2026020264:8484762:shots:2.5:under",
-     "kind": "single",
-     "player": "B. Sennecke",
-     "bet": "Under 2.5 shots on goal",
-     "market": "shots",
-     "team": "ANA",
-     "game": "ANA at CGY",
-     "price": 115,
-     "first_price": 115,
-     "last_price": 115,
-     "prices": [
-      {
-       "price": 115,
-       "at": "2026-11-06T18:30:00-05:00"
-      }
-     ],
-     "result": "L",
-     "actual": "had 3",
-     "units": -1.0,
-     "pulled": null,
-     "legs": []
-    },
-    {
-     "id": "2026-11-06:2026020263:8483525:shots:1.5:over",
-     "kind": "single",
-     "player": "D. Yurov",
-     "bet": "Over 1.5 shots on goal",
-     "market": "shots",
-     "team": "MIN",
-     "game": "SJS at MIN",
-     "price": 125,
-     "first_price": 125,
-     "last_price": 125,
-     "prices": [
-      {
-       "price": 125,
-       "at": "2026-11-06T19:20:01-05:00"
-      }
-     ],
-     "result": "L",
-     "actual": "had 1",
      "units": -1.0,
      "pulled": null,
      "legs": []

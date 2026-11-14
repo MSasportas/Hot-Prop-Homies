@@ -2,7 +2,7 @@
  "version": 1,
  "note": "Gap + Guard research log. Every flag here is a pick on the page and in the Record; vetoed and capped rows are research only.",
  "market": "shots",
- "generated_at": "2026-11-13T19:20:01-05:00",
+ "generated_at": "2026-11-13T19:30:00-05:00",
  "slate": "2026-11-13",
  "active": true,
  "window": {
@@ -10,7 +10,42 @@
   "checkpoint": "2026-11-02"
  },
  "tonight": {
-  "flags": [],
+  "flags": [
+   {
+    "id": "2026-11-13:2026020310:8484210:1.5:under",
+    "kind": "flag",
+    "slate": "2026-11-13",
+    "game_id": 2026020310,
+    "player": "G. Perreault",
+    "team": "NYR",
+    "opp": "VAN",
+    "game": "NYR @ VAN",
+    "start": "2026-11-13T21:00:00-05:00",
+    "side": "under",
+    "line": 1.5,
+    "bet": "UNDER 1.5 shots",
+    "price": 145,
+    "gap_pct": 7.9,
+    "final_pct": 7.9,
+    "market_fair_pct": 44.0,
+    "final_p_pct": 44.0,
+    "n_books": 8,
+    "guard": "pass",
+    "cap": null,
+    "flagged_at": "2026-11-13T19:30:00-05:00",
+    "read_pull": "B",
+    "settled": "Early",
+    "frozen_settled": "Early",
+    "move30_pct": 0.0,
+    "pulled": null,
+    "locked": false,
+    "state": "open",
+    "close_fair_pct": null,
+    "clv_pct": null,
+    "result": null,
+    "units": null
+   }
+  ],
   "vetoes": [],
   "capped": []
  },
@@ -988,51 +1023,11 @@
      "units": -1.0
     }
    ]
-  },
-  {
-   "date": "2026-11-02",
-   "flags": [
-    {
-     "id": "2026-11-02:2026020235:8477498:1.5:over",
-     "kind": "flag",
-     "slate": "2026-11-02",
-     "game_id": 2026020235,
-     "player": "D. Nurse",
-     "team": "SJS",
-     "opp": "CGY",
-     "game": "SJS vs CGY",
-     "start": "2026-11-02T21:00:00-05:00",
-     "side": "over",
-     "line": 1.5,
-     "bet": "OVER 1.5 shots",
-     "price": 115,
-     "gap_pct": 6.3,
-     "final_pct": 10.8,
-     "market_fair_pct": 49.4,
-     "final_p_pct": 51.5,
-     "n_books": 6,
-     "guard": "pass",
-     "cap": null,
-     "flagged_at": "2026-11-02T19:30:00-05:00",
-     "read_pull": "B",
-     "settled": "Early",
-     "frozen_settled": "Goalie confirmed",
-     "move30_pct": -0.0,
-     "pulled": null,
-     "locked": true,
-     "state": "locked",
-     "close_fair_pct": 49.4,
-     "clv_pct": 6.3,
-     "result": "L",
-     "units": -1.0
-    }
-   ],
-   "vetoes": []
   }
  ],
  "nov2": {
   "gaps_measured": 54,
-  "gaps_logged": 68,
+  "gaps_logged": 69,
   "graded_picks": 59,
   "w": 35,
   "l": 24,
@@ -1060,7 +1055,7 @@
   "clv_passed_mean": 0.045620068492504676,
   "clv_vetoed_mean": 0.050441746812120415,
   "nights": 22,
-  "nights_with_flags": 16,
+  "nights_with_flags": 17,
   "population_slope": null,
   "checkpoint": "2026-11-02"
  }
