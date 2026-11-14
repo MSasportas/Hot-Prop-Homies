@@ -315,11 +315,11 @@
     "home": "IND",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:27 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
-     "NY": "23",
-     "IND": "24"
+     "NY": "27",
+     "IND": "26"
     }
    },
    {
@@ -331,10 +331,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:17 - 1st",
+    "detail": "10:30 - 2nd",
     "score": {
-     "MIL": "11",
-     "ORL": "15"
+     "MIL": "18",
+     "ORL": "28"
     }
    },
    {

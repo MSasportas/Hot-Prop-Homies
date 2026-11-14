@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T19:10:01-05:00",
+ "at": "2026-11-13T19:40:01-05:00",
  "list": {
   "4712863": {
    "status": "out",
@@ -71,19 +71,19 @@
    "date": "2026-11-08T22:26Z",
    "note": "Schroder has been diagnosed with a left hamstring strain and will be reevaluated in two weeks, Michael Scotto of HoopsHype.com reports."
   },
+  "4848625": {
+   "status": "out",
+   "name": "Dailyn Swain",
+   "team": "CHI",
+   "date": "2026-11-14T00:17Z",
+   "note": "Swain (back) is out for Friday's game against the Hawks."
+  },
   "5105555": {
    "status": "out",
    "name": "Tobe Awaka",
    "team": "CHI",
    "date": "2026-11-12T21:40Z",
    "note": "Awaka (back) has been ruled out for Friday's game against the Hawks."
-  },
-  "4848625": {
-   "status": "day-to-day",
-   "name": "Dailyn Swain",
-   "team": "CHI",
-   "date": "2026-11-12T21:38Z",
-   "note": "Swain (back) is listed as questionable for Friday's game against Atlanta."
   },
   "5095151": {
    "status": "out",
