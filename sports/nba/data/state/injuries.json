@@ -1,12 +1,12 @@
 {
- "at": "2026-11-14T18:10:01-05:00",
+ "at": "2026-11-14T18:30:02-05:00",
  "list": {
   "5149077": {
    "status": "out",
    "name": "Kingston Flemings",
    "team": "ATL",
-   "date": "2026-11-14T23:06Z",
-   "note": "Flemings (back tightness) will not return to Friday's game against the Bulls."
+   "date": "2026-11-14T23:08Z",
+   "note": "Flemings (back) has been ruled out for Sunday's game against the Bucks."
   },
   "4712863": {
    "status": "out",
@@ -35,6 +35,13 @@
    "team": "ATL",
    "date": "2026-09-21T19:50Z",
    "note": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday."
+  },
+  "4278104": {
+   "status": "day-to-day",
+   "name": "Michael Porter Jr.",
+   "team": "BKN",
+   "date": "2026-11-14T23:14Z",
+   "note": "Porter delivered 22 points (7-14 FG, 4-10 3Pt, 4-4 FT), six rebounds, three assists and a steal across 28 minutes in Wednesday's 145-111 win over the Pelicans."
   },
   "5101761": {
    "status": "day-to-day",
@@ -414,13 +421,6 @@
    "date": "2026-11-14T18:10Z",
    "note": "Thompson (ankle) is listed as probable for Saturday's game against the Pistons."
   },
-  "3032977": {
-   "status": "day-to-day",
-   "name": "Giannis Antetokounmpo",
-   "team": "MIA",
-   "date": "2026-11-14T18:07Z",
-   "note": "Antetokounmpo (wrist) is listed as probable for Saturday's game against Detroit."
-  },
   "4997526": {
    "status": "out",
    "name": "Ousmane Dieng",
@@ -441,6 +441,13 @@
    "team": "MIN",
    "date": "2026-10-05T20:53Z",
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
+  },
+  "4683634": {
+   "status": "out",
+   "name": "Bennedict Mathurin",
+   "team": "NO",
+   "date": "2026-11-14T23:06Z",
+   "note": "Mathurin is out for Saturday's game against the Nuggets due to left plantar fasciitis."
   },
   "4431675": {
    "status": "out",

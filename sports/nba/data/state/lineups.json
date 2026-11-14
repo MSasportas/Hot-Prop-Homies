@@ -90,8 +90,7 @@
     "Bam Adebayo"
    ],
    "status": {
-    "Klay Thompson": "probable",
-    "Pelle Larsson": "doubtful"
+    "Pelle Larsson": "out"
    }
   },
   "CHI": {
@@ -135,9 +134,7 @@
     "Day'Ron Sharpe"
    ],
    "status": {
-    "Nolan Traore": "probable",
-    "Michael Porter": "questionable",
-    "Mikel Brown": "probable"
+    "Michael Porter": "questionable"
    }
   },
   "MEM": {
@@ -158,5 +155,5 @@
    }
   }
  },
- "at": "2026-11-14T18:20:00-05:00"
+ "at": "2026-11-14T18:30:02-05:00"
 }
