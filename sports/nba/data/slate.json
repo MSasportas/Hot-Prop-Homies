@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 4252,
+   "pool_left": 4240,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-13T21:30:00-05:00",
-  "last_read_at": "2026-11-13T21:20:00-05:00",
+  "next_read_at": "2026-11-13T21:40:00-05:00",
+  "last_read_at": "2026-11-13T21:30:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-13T21:20:00-05:00"
+   "at": "2026-11-13T21:30:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-13T21:20:00-05:00",
+    "at": "2026-11-13T21:30:01-05:00",
     "confirmed": [
      "ATL",
      "CHI",
@@ -58,7 +58,7 @@
    "away": "NYK",
    "home": "IND",
    "state": "in",
-   "detail": "7:22 - 4th",
+   "detail": "2:34 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -119,7 +119,7 @@
    "away": "MIL",
    "home": "ORL",
    "state": "in",
-   "detail": "2:34 - 4th",
+   "detail": "15.4 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -180,7 +180,7 @@
    "away": "CLE",
    "home": "MIA",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "9:02 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -241,7 +241,7 @@
    "away": "ATL",
    "home": "CHI",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "8:01 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -302,7 +302,7 @@
    "away": "MEM",
    "home": "NOP",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "10:38 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -363,7 +363,7 @@
    "away": "UTA",
    "home": "HOU",
    "state": "in",
-   "detail": "7:42 - 2nd",
+   "detail": "4:20 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -490,7 +490,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-13T21:20:00-05:00",
+   "read_at": "2026-11-13T21:30:01-05:00",
    "picks": 0,
    "checks": [
     {
@@ -520,12 +520,16 @@
     {
      "read": "C",
      "at": "2026-11-13T21:20:00-05:00"
+    },
+    {
+     "read": "X30",
+     "at": "2026-11-13T21:30:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-13T21:20:00-05:00",
+   "last_check_at": "2026-11-13T21:30:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-13T21:30:00-05:00",
-   "next_check_read": "X30",
+   "next_check_at": "2026-11-13T21:40:00-05:00",
+   "next_check_read": "D",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -543,7 +547,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-13T21:20:00-05:00",
+   "read_at": "2026-11-13T21:30:01-05:00",
    "picks": 1,
    "checks": [
     {
@@ -565,12 +569,16 @@
     {
      "read": "X75",
      "at": "2026-11-13T21:20:00-05:00"
+    },
+    {
+     "read": "X60",
+     "at": "2026-11-13T21:30:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-13T21:20:00-05:00",
+   "last_check_at": "2026-11-13T21:30:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-13T21:30:00-05:00",
-   "next_check_read": "X60",
+   "next_check_at": "2026-11-13T21:45:00-05:00",
+   "next_check_read": "C",
    "paused": false,
    "injury_clear": {
     "away": false,
@@ -752,7 +760,7 @@
  "empty": null,
  "counts": {
   "lines_read": 906,
-  "passing": 23,
+  "passing": 24,
   "games": 9
  },
  "safety_paused": false,
@@ -761,6 +769,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-13T21:20:00-05:00",
- "status_at": "2026-11-13T21:20:00-05:00"
+ "generated_at": "2026-11-13T21:30:01-05:00",
+ "status_at": "2026-11-13T21:30:01-05:00"
 }
