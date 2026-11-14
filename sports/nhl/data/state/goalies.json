@@ -50,12 +50,12 @@
    "status": "expected"
   },
   "STL": {
-   "name": "Jordan Binnington",
+   "name": "Joel Hofer",
    "status": "expected"
   },
   "FLA": {
    "name": "Jacob Markstrom",
-   "status": "expected"
+   "status": "confirmed"
   },
   "BOS": {
    "name": "Jeremy Swayman",
@@ -63,7 +63,7 @@
   },
   "MIN": {
    "name": "Jesper Wallstedt",
-   "status": "expected"
+   "status": "confirmed"
   },
   "PIT": {
    "name": "Sergei Murashov",
@@ -79,7 +79,7 @@
   },
   "PHI": {
    "name": "Joseph Woll",
-   "status": "expected"
+   "status": "confirmed"
   },
   "DAL": {
    "name": "Jake Oettinger",
@@ -114,5 +114,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-14T11:30:00-05:00"
+ "checked_at": "2026-11-14T11:50:00-05:00"
 }
