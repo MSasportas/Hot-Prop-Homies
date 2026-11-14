@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-13",
- "generated_at": "2026-11-13T21:40:01-05:00",
+ "generated_at": "2026-11-13T21:41:12-05:00",
  "games": [
   {
    "game_id": 2026020310,
@@ -8,20 +8,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "03:48",
+   "clock": "03:31",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "NYR",
     "score": 0,
-    "sog": 8
+    "sog": 9
    },
    "home": {
     "abbrev": "VAN",
     "score": 1,
     "sog": 9
    },
-   "updated_at": "2026-11-13T21:40:01-05:00"
+   "updated_at": "2026-11-13T21:41:12-05:00"
   }
  ],
  "picks": {
