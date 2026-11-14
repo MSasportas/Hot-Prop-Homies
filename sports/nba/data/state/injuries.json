@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T23:00:01-05:00",
+ "at": "2026-11-14T10:10:00-05:00",
  "list": {
   "5149077": {
    "status": "day-to-day",
@@ -78,26 +78,26 @@
    "date": "2026-11-08T22:26Z",
    "note": "Schroder has been diagnosed with a left hamstring strain and will be reevaluated in two weeks, Michael Scotto of HoopsHype.com reports."
   },
+  "4848625": {
+   "status": "day-to-day",
+   "name": "Dailyn Swain",
+   "team": "CHI",
+   "date": "2026-11-14T15:00Z",
+   "note": "Swain (back) is out for Friday's game against the Hawks."
+  },
+  "5105555": {
+   "status": "day-to-day",
+   "name": "Tobe Awaka",
+   "team": "CHI",
+   "date": "2026-11-14T15:00Z",
+   "note": "Awaka (back) has been ruled out for Friday's game against the Hawks."
+  },
   "4397189": {
    "status": "day-to-day",
    "name": "Jalen Smith",
    "team": "CHI",
    "date": "2026-11-14T03:50Z",
    "note": "Smith (hand) exited Friday's 125-117 win over the Hawks in overtime and did not return, finishing with 15 points (6-15 FG, 1-6 3Pt, 2-2 FT), 12 rebounds, three assists and three steals across 32 minut"
-  },
-  "4848625": {
-   "status": "out",
-   "name": "Dailyn Swain",
-   "team": "CHI",
-   "date": "2026-11-14T00:17Z",
-   "note": "Swain (back) is out for Friday's game against the Hawks."
-  },
-  "5105555": {
-   "status": "out",
-   "name": "Tobe Awaka",
-   "team": "CHI",
-   "date": "2026-11-12T21:40Z",
-   "note": "Awaka (back) has been ruled out for Friday's game against the Hawks."
   },
   "5095151": {
    "status": "out",
@@ -107,10 +107,10 @@
    "note": "Wilson (hand) is expected to miss four to six weeks, Shams Charania of ESPN reports."
   },
   "4432158": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Evan Mobley",
    "team": "CLE",
-   "date": "2026-11-12T22:08Z",
+   "date": "2026-11-14T15:01Z",
    "note": "Mobley (toe) is out for Friday's game against the Heat."
   },
   "4066757": {
@@ -331,17 +331,17 @@
    "note": "Sexton did not return to Wednesday's 123-112 win over the Bucks and required stitches to close a cut on his forehead, Thuc Nhi Nguyen of the Los Angeles Times reports."
   },
   "4593016": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Quinten Post",
    "team": "MEM",
-   "date": "2026-11-12T23:17Z",
+   "date": "2026-11-14T15:02Z",
    "note": "Post (concussion) has been ruled out for Friday's game against New Orleans."
   },
   "4600663": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Zach Edey",
    "team": "MEM",
-   "date": "2026-11-12T23:16Z",
+   "date": "2026-11-14T15:02Z",
    "note": "Edey won't play in Friday's game against the Pelicans due to left ankle injury management."
   },
   "4431785": {
@@ -358,19 +358,19 @@
    "date": "2026-11-07T17:24Z",
    "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
   },
-  "6475": {
-   "status": "out",
-   "name": "Klay Thompson",
-   "team": "MIA",
-   "date": "2026-11-13T23:21Z",
-   "note": "Thompson (ankle) is out for Friday's game against the Cavaliers."
-  },
   "4601025": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Pelle Larsson",
    "team": "MIA",
-   "date": "2026-11-13T23:04Z",
+   "date": "2026-11-14T15:02Z",
    "note": "Larsson (illness) is out for Friday's game against Cleveland."
+  },
+  "6475": {
+   "status": "day-to-day",
+   "name": "Klay Thompson",
+   "team": "MIA",
+   "date": "2026-11-14T15:01Z",
+   "note": "Thompson (ankle) is out for Friday's game against the Cavaliers."
   },
   "4594268": {
    "status": "out",
@@ -386,19 +386,19 @@
    "date": "2026-10-05T20:53Z",
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
   },
+  "4576086": {
+   "status": "day-to-day",
+   "name": "Bryce McGowens",
+   "team": "NO",
+   "date": "2026-11-14T14:59Z",
+   "note": "McGowens (elbow) is listed as out for Friday's game against the Grizzlies."
+  },
   "3907497": {
    "status": "out",
    "name": "Dejounte Murray",
    "team": "NO",
    "date": "2026-11-13T20:19Z",
    "note": "Murray (ankle) is out for Friday's game against Memphis."
-  },
-  "4576086": {
-   "status": "out",
-   "name": "Bryce McGowens",
-   "team": "NO",
-   "date": "2026-11-13T18:12Z",
-   "note": "McGowens (elbow) is listed as out for Friday's game against the Grizzlies."
   },
   "5061589": {
    "status": "out",
