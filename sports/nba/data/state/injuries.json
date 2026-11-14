@@ -1,11 +1,11 @@
 {
- "at": "2026-11-14T18:00:00-05:00",
+ "at": "2026-11-14T18:10:01-05:00",
  "list": {
   "5149077": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Kingston Flemings",
    "team": "ATL",
-   "date": "2026-11-14T03:20Z",
+   "date": "2026-11-14T23:06Z",
    "note": "Flemings (back tightness) will not return to Friday's game against the Bulls."
   },
   "4712863": {
@@ -106,19 +106,33 @@
    "date": "2026-11-12T21:35Z",
    "note": "Wilson (hand) is expected to miss four to six weeks, Shams Charania of ESPN reports."
   },
+  "4576087": {
+   "status": "out",
+   "name": "Peyton Watson",
+   "team": "CLE",
+   "date": "2026-11-14T22:59Z",
+   "note": "Watson (hamstring) has been ruled out for Saturday's game against the Mavericks."
+  },
+  "3992": {
+   "status": "out",
+   "name": "James Harden",
+   "team": "CLE",
+   "date": "2026-11-14T22:57Z",
+   "note": "Harden (calf) has been ruled out for Saturday's game against Dallas."
+  },
+  "3908809": {
+   "status": "out",
+   "name": "Donovan Mitchell",
+   "team": "CLE",
+   "date": "2026-11-14T22:56Z",
+   "note": "Mitchell (knee) has been ruled out for Saturday's game against the Mavericks."
+  },
   "4066328": {
    "status": "out",
    "name": "Jarrett Allen",
    "team": "CLE",
-   "date": "2026-11-14T22:50Z",
-   "note": "Allen (knee) is listed as questionable for Saturday's game against Dallas."
-  },
-  "4576087": {
-   "status": "day-to-day",
-   "name": "Peyton Watson",
-   "team": "CLE",
-   "date": "2026-11-14T18:38Z",
-   "note": "Watson (hamstring) is listed as questionable for Saturday's game against the Mavericks."
+   "date": "2026-11-14T22:52Z",
+   "note": "Allen (knee) has been ruled out for Saturday's game against the Mavericks."
   },
   "4432158": {
    "status": "out",
@@ -126,20 +140,6 @@
    "team": "CLE",
    "date": "2026-11-14T18:33Z",
    "note": "Mobley (toe) has been ruled out for Saturday's meeting with Dallas."
-  },
-  "3908809": {
-   "status": "day-to-day",
-   "name": "Donovan Mitchell",
-   "team": "CLE",
-   "date": "2026-11-14T18:31Z",
-   "note": "Mitchell (knee) is listed as questionable for Saturday's game against the Mavericks."
-  },
-  "3992": {
-   "status": "day-to-day",
-   "name": "James Harden",
-   "team": "CLE",
-   "date": "2026-11-14T18:28Z",
-   "note": "Harden (left lower leg/calf tightness) is listed as questionable for Saturday's game against the Mavericks."
   },
   "4066757": {
    "status": "out",
@@ -156,18 +156,11 @@
    "note": "Tomlin is set to miss several weeks with a lower back stress reaction, Chris Fedor of The Cleveland Plain Dealer reports."
   },
   "4432582": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Max Christie",
    "team": "DAL",
-   "date": "2026-11-14T18:23Z",
-   "note": "Christie (ankle) has been downgraded to doubtful for Saturday's game against the Cavaliers"
-  },
-  "4873153": {
-   "status": "day-to-day",
-   "name": "Morez Johnson Jr.",
-   "team": "DAL",
-   "date": "2026-11-13T22:05Z",
-   "note": "Johnson (left shin contusion) is listed as probable for Saturday against Cleveland."
+   "date": "2026-11-14T23:02Z",
+   "note": "Christie (ankle) has been ruled out for Saturday's game against Cleveland."
   },
   "4683688": {
    "status": "out",
