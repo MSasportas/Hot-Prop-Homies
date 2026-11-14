@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-13",
- "started_at": "2026-11-13T20:20:00-05:00",
- "status_at": "2026-11-13T20:20:00-05:00",
- "finished_at": "2026-11-13T20:20:01-05:00",
- "last_ok_at": "2026-11-13T20:20:00-05:00",
+ "started_at": "2026-11-13T20:30:01-05:00",
+ "status_at": "2026-11-13T20:30:01-05:00",
+ "finished_at": "2026-11-13T20:30:16-05:00",
+ "last_ok_at": "2026-11-13T20:30:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -24,8 +24,8 @@
   },
   {
    "step": "lineups",
-   "status": "skipped",
-   "note": "checked in the last 20 minutes"
+   "status": "ok",
+   "note": "4 of 4 team pages read"
   },
   {
    "step": "lineup_history",
@@ -55,7 +55,7 @@
   {
    "step": "gapguard",
    "status": "ok",
-   "note": "gap+guard: 1 close"
+   "note": "gap+guard: 1 veto"
   },
   {
    "step": "engine",
@@ -75,7 +75,7 @@
   {
    "step": "shadow",
    "status": "ok",
-   "note": "32 line read(s) logged"
+   "note": "33 line read(s) logged"
   },
   {
    "step": "gg_grade",
@@ -111,7 +111,7 @@
   },
   {
    "n": 3,
-   "left": 481
+   "left": 476
   },
   {
    "n": 4,
@@ -138,14 +138,14 @@
    "left": 500
   }
  ],
- "pool_total": 3087,
+ "pool_total": 3082,
  "allowance": 24.619,
  "tier": 4,
  "budget_today": 49,
- "budget_used_today": 15,
+ "budget_used_today": 20,
  "prices_state": "ok",
- "prices_at": "2026-11-13T20:20:00-05:00",
- "next_price_read_at": "2026-11-13T20:30:00-05:00",
+ "prices_at": "2026-11-13T20:30:01-05:00",
+ "next_price_read_at": "2026-11-13T21:15:00-05:00",
  "unmatched_names": [
   "Elias Pettersson"
  ],
@@ -156,7 +156,7 @@
  ],
  "excluded_teams": [],
  "stats_through": "2026-11-12",
- "lineups_at": "2026-11-13T20:00:01-05:00",
+ "lineups_at": "2026-11-13T20:30:01-05:00",
  "lineups_note": "Lineups posted for 1 of 4 teams checked so far.",
  "games_today": 2,
  "record_events": 237,
@@ -164,7 +164,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "43537919723",
-  "iteration": 3,
+  "iteration": 4,
   "chain_link": 72,
   "chain_started_at": "2026-11-11T16:26:02-05:00",
   "run_started_at": "2026-11-13T20:01:15-05:00"

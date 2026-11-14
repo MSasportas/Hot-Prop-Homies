@@ -2,7 +2,7 @@
  "version": 1,
  "note": "Gap + Guard research log. Every flag here is a pick on the page and in the Record; vetoed and capped rows are research only.",
  "market": "shots",
- "generated_at": "2026-11-13T20:20:00-05:00",
+ "generated_at": "2026-11-13T20:30:01-05:00",
  "slate": "2026-11-13",
  "active": true,
  "window": {
@@ -46,7 +46,42 @@
     "units": null
    }
   ],
-  "vetoes": [],
+  "vetoes": [
+   {
+    "id": "2026-11-13:2026020311:8484803:1.5:under",
+    "kind": "veto",
+    "slate": "2026-11-13",
+    "game_id": 2026020311,
+    "player": "T. Connelly",
+    "team": "VGK",
+    "opp": "NSH",
+    "game": "VGK vs NSH",
+    "start": "2026-11-13T22:00:00-05:00",
+    "side": "under",
+    "line": 1.5,
+    "bet": "UNDER 1.5 shots",
+    "price": 125,
+    "gap_pct": 3.3,
+    "final_pct": 1.7,
+    "market_fair_pct": 45.9,
+    "final_p_pct": 45.2,
+    "n_books": 7,
+    "guard": "veto",
+    "cap": null,
+    "flagged_at": "2026-11-13T20:30:01-05:00",
+    "read_pull": "B",
+    "settled": "Goalie confirmed",
+    "frozen_settled": "Goalie confirmed",
+    "move30_pct": 3.8,
+    "pulled": null,
+    "locked": false,
+    "state": "open",
+    "close_fair_pct": null,
+    "clv_pct": null,
+    "result": null,
+    "units": null
+   }
+  ],
   "capped": []
  },
  "nights": [
@@ -1027,7 +1062,7 @@
  ],
  "nov2": {
   "gaps_measured": 55,
-  "gaps_logged": 69,
+  "gaps_logged": 70,
   "graded_picks": 59,
   "w": 35,
   "l": 24,
