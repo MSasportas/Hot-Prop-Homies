@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T13:30:00-05:00",
+ "at": "2026-11-14T13:40:00-05:00",
  "list": {
   "5149077": {
    "status": "day-to-day",
@@ -113,12 +113,40 @@
    "date": "2026-11-12T21:35Z",
    "note": "Wilson (hand) is expected to miss four to six weeks, Shams Charania of ESPN reports."
   },
-  "4432158": {
+  "4576087": {
    "status": "day-to-day",
+   "name": "Peyton Watson",
+   "team": "CLE",
+   "date": "2026-11-14T18:32Z",
+   "note": "Watson supplied seven points (2-12 FG, 2-5 3Pt, 1-2 FT), five rebounds, four assists and four blocks over 30 minutes in Wednesday's 115-107 win over the Knicks."
+  },
+  "4432158": {
+   "status": "out",
    "name": "Evan Mobley",
    "team": "CLE",
-   "date": "2026-11-14T15:01Z",
+   "date": "2026-11-14T18:32Z",
    "note": "Mobley (toe) is out for Friday's game against the Heat."
+  },
+  "4066328": {
+   "status": "day-to-day",
+   "name": "Jarrett Allen",
+   "team": "CLE",
+   "date": "2026-11-14T18:31Z",
+   "note": "Allen (knee) is listed as questionable for Saturday's game against Dallas."
+  },
+  "3908809": {
+   "status": "day-to-day",
+   "name": "Donovan Mitchell",
+   "team": "CLE",
+   "date": "2026-11-14T18:31Z",
+   "note": "Mitchell (knee) is listed as questionable for Saturday's game against the Mavericks."
+  },
+  "3992": {
+   "status": "day-to-day",
+   "name": "James Harden",
+   "team": "CLE",
+   "date": "2026-11-14T18:28Z",
+   "note": "Harden (left lower leg/calf tightness) is listed as questionable for Saturday's game against the Mavericks."
   },
   "4066757": {
    "status": "out",
