@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T01:00:00-05:00",
+ "generated_at": "2026-11-14T16:30:00-05:00",
  "summary": {
   "headline": {
    "w": 39,
@@ -171,6 +171,7 @@
       "needed": 0.5434,
       "n": 21,
       "ids": [
+       "2026-11-14:401909981:4278049:points:7.5:over",
        "2026-11-11:401909967:3908809:points:24.5:under",
        "2026-11-11:401909966:5160992:points:10.5:under",
        "2026-11-10:401909960:3147657:points:10.5:under",
@@ -263,6 +264,7 @@
       "needed": 0.5005,
       "n": 15,
       "ids": [
+       "2026-11-14:401909981:4278049:points:7.5:over",
        "2026-11-13:401909298:3908809:threes:2.5:over",
        "2026-11-09:401909958:5037871:assists:4.5:over",
        "2026-11-08:401909945:3917376:threes:1.5:over",
@@ -359,6 +361,7 @@
       "needed": 0.5231,
       "n": 48,
       "ids": [
+       "2026-11-14:401909981:4278049:points:7.5:over",
        "2026-11-13:401909298:3908809:threes:2.5:over",
        "2026-11-13:401909304:4396907:assists:6.5:under",
        "2026-11-13:401909298:3059319:rebounds:3.5:under",
@@ -487,6 +490,7 @@
       "needed": 0.5231,
       "n": 47,
       "ids": [
+       "2026-11-14:401909981:4278049:points:7.5:over",
        "2026-11-13:401909298:3908809:threes:2.5:over",
        "2026-11-13:401909304:4396907:assists:6.5:under",
        "2026-11-13:401909298:3059319:rebounds:3.5:under",
@@ -612,6 +616,7 @@
       "needed": 0.5535,
       "n": 39,
       "ids": [
+       "2026-11-14:401909981:4278049:points:7.5:over",
        "2026-11-13:401909298:3908809:threes:2.5:over",
        "2026-11-11:401909967:3908809:points:24.5:under",
        "2026-11-11:401909966:5160992:points:10.5:under",
@@ -657,6 +662,16 @@
    }
   ],
   "days": [
+   {
+    "date": "2026-11-14",
+    "w": 0,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 0,
+    "n": 1,
+    "graded": false
+   },
    {
     "date": "2026-11-13",
     "w": 2,
@@ -810,6 +825,41 @@
   ]
  },
  "nights": [
+  {
+   "date": "2026-11-14",
+   "graded": false,
+   "w": 0,
+   "l": 0,
+   "units": 0,
+   "entries": [
+    {
+     "id": "2026-11-14:401909981:4278049:points:7.5:over",
+     "kind": "single",
+     "player": "Daniel Gafford",
+     "bet": "Over 7.5 points",
+     "market": "points",
+     "team": "DAL",
+     "game": "DAL at CLE",
+     "price": -130,
+     "first_price": -130,
+     "last_price": -130,
+     "prices": [
+      {
+       "price": -130,
+       "at": "2026-11-14T16:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "240 \u2192 180 min",
+     "book": "hardrock",
+     "under_fair": false
+    }
+   ]
+  },
   {
    "date": "2026-11-13",
    "graded": true,
@@ -1447,119 +1497,6 @@
      },
      "legs": [],
      "window": "90 \u2192 45 min",
-     "book": "hardrock",
-     "under_fair": false
-    }
-   ]
-  },
-  {
-   "date": "2026-11-06",
-   "graded": true,
-   "w": 2,
-   "l": 2,
-   "units": 0.12,
-   "entries": [
-    {
-     "id": "2026-11-06:401909288:4433287:threes:3.5:over",
-     "kind": "single",
-     "player": "Brandon Miller",
-     "bet": "Over 3.5 threes",
-     "market": "threes",
-     "team": "CHA",
-     "game": "BOS at CHA",
-     "price": 120,
-     "first_price": 120,
-     "last_price": 120,
-     "prices": [
-      {
-       "price": 120,
-       "at": "2026-11-06T18:20:01-05:00"
-      }
-     ],
-     "result": "L",
-     "actual": "0 threes",
-     "units": -1.0,
-     "pulled": null,
-     "legs": [],
-     "window": "90 \u2192 45 min",
-     "book": "hardrock",
-     "under_fair": false
-    },
-    {
-     "id": "2026-11-06:401909293:4869780:points:10.5:under",
-     "kind": "single",
-     "player": "Derik Queen",
-     "bet": "Under 10.5 points",
-     "market": "points",
-     "team": "NOP",
-     "game": "MIN at NOP",
-     "price": -115,
-     "first_price": -115,
-     "last_price": -115,
-     "prices": [
-      {
-       "price": -115,
-       "at": "2026-11-06T18:30:00-05:00"
-      }
-     ],
-     "result": "W",
-     "actual": "6 points",
-     "units": 0.8696,
-     "pulled": null,
-     "legs": [],
-     "window": "11 AM \u2192 90 min",
-     "book": "hardrock",
-     "under_fair": false
-    },
-    {
-     "id": "2026-11-06:401909289:4576087:rebounds:3.5:under",
-     "kind": "single",
-     "player": "Peyton Watson",
-     "bet": "Under 3.5 rebounds",
-     "market": "rebounds",
-     "team": "CLE",
-     "game": "PHI at CLE",
-     "price": 115,
-     "first_price": 115,
-     "last_price": 115,
-     "prices": [
-      {
-       "price": 115,
-       "at": "2026-11-06T19:10:01-05:00"
-      }
-     ],
-     "result": "L",
-     "actual": "9 rebounds",
-     "units": -1.0,
-     "pulled": null,
-     "legs": [],
-     "window": "45 \u2192 20 min",
-     "book": "hardrock",
-     "under_fair": false
-    },
-    {
-     "id": "2026-11-06:401909291:4683778:threes:2.5:over",
-     "kind": "single",
-     "player": "Jared McCain",
-     "bet": "Over 2.5 threes",
-     "market": "threes",
-     "team": "OKC",
-     "game": "OKC at MEM",
-     "price": 125,
-     "first_price": 125,
-     "last_price": 125,
-     "prices": [
-      {
-       "price": 125,
-       "at": "2026-11-06T19:40:01-05:00"
-      }
-     ],
-     "result": "W",
-     "actual": "3 threes",
-     "units": 1.25,
-     "pulled": null,
-     "legs": [],
-     "window": "45 \u2192 20 min",
      "book": "hardrock",
      "under_fair": false
     }
