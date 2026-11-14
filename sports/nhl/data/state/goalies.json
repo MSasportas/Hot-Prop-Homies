@@ -23,7 +23,7 @@
   },
   "COL": {
    "name": "Mackenzie Blackwood",
-   "status": "expected"
+   "status": "confirmed"
   },
   "TOR": {
    "name": "Anthony Stolarz",
@@ -83,7 +83,7 @@
   },
   "DAL": {
    "name": "Jake Oettinger",
-   "status": "expected"
+   "status": "confirmed"
   },
   "BUF": {
    "name": "Alex Lyon",
@@ -114,5 +114,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-14T12:20:01-05:00"
+ "checked_at": "2026-11-14T12:30:00-05:00"
 }

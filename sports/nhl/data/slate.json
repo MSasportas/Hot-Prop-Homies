@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-14",
- "generated_at": "2026-11-14T12:20:01-05:00",
- "status_at": "2026-11-14T12:20:01-05:00",
+ "generated_at": "2026-11-14T12:30:00-05:00",
+ "status_at": "2026-11-14T12:30:00-05:00",
  "valid_until": "2026-11-15T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -9,14 +9,14 @@
   "next_price_read_at": "2026-11-14T14:00:00-05:00",
   "stats_built_at": "2026-11-14T01:30:00-05:00",
   "stats_through": "2026-11-13",
-  "lineups_at": "2026-11-14T12:20:01-05:00",
+  "lineups_at": "2026-11-14T12:30:00-05:00",
   "goalies_at": null,
-  "lineups_note": "Lineups posted for 2 of 2 teams checked so far.",
+  "lineups_note": "Lineups posted for 2 of 4 teams checked so far.",
   "lineups_state": "ok",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-14T12:20:01-05:00",
+   "at": "2026-11-14T12:30:00-05:00",
    "failed_step": null
   },
   "pool": {
@@ -90,8 +90,8 @@
    "home": "CHI",
    "start": "2026-11-14T15:30:00-05:00",
    "lineups": {
-    "away": "not_checked",
-    "home": "not_checked"
+    "away": "waiting",
+    "home": "waiting"
    },
    "goalies": {
     "away": {
@@ -219,7 +219,7 @@
    "goalies": {
     "away": {
      "name": "Mackenzie Blackwood",
-     "status": "expected"
+     "status": "confirmed"
     },
     "home": {
      "name": "Jakub Dobes",
@@ -469,7 +469,7 @@
     },
     "home": {
      "name": "Jake Oettinger",
-     "status": "expected"
+     "status": "confirmed"
     }
    },
    "checks": {
