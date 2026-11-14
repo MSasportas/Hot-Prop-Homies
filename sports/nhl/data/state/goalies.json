@@ -26,7 +26,7 @@
    "status": "expected"
   },
   "TOR": {
-   "name": "Sergei Bobrovsky",
+   "name": "Anthony Stolarz",
    "status": "expected"
   },
   "EDM": {
@@ -59,7 +59,7 @@
   },
   "BOS": {
    "name": "Jeremy Swayman",
-   "status": "expected"
+   "status": "confirmed"
   },
   "MIN": {
    "name": "Jesper Wallstedt",
@@ -114,5 +114,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-14T07:01:34-05:00"
+ "checked_at": "2026-11-14T10:40:00-05:00"
 }

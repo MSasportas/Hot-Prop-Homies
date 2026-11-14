@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-14",
- "started_at": "2026-11-14T10:30:00-05:00",
- "status_at": "2026-11-14T10:30:00-05:00",
- "finished_at": "2026-11-14T10:30:02-05:00",
- "last_ok_at": "2026-11-14T10:30:00-05:00",
+ "started_at": "2026-11-14T10:40:00-05:00",
+ "status_at": "2026-11-14T10:40:00-05:00",
+ "finished_at": "2026-11-14T10:40:04-05:00",
+ "last_ok_at": "2026-11-14T10:40:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -24,18 +24,18 @@
   },
   {
    "step": "lineups",
-   "status": "ok",
-   "note": "2 of 2 team pages read"
+   "status": "skipped",
+   "note": "checked in the last 20 minutes"
   },
   {
    "step": "lineup_history",
-   "status": "ok",
-   "note": "1 team(s) changed"
+   "status": "skipped",
+   "note": "no change"
   },
   {
    "step": "odds",
    "status": "ok",
-   "note": "no pull due"
+   "note": "1 game(s) priced, 4 game(s) not posted yet"
   },
   {
    "step": "market_menu",
@@ -44,8 +44,8 @@
   },
   {
    "step": "featured",
-   "status": "skipped",
-   "note": "no new shots read to match"
+   "status": "ok",
+   "note": "sides/totals for 14 game(s), 10 book(s) max, 3 credit(s)"
   },
   {
    "step": "book_probe",
@@ -74,8 +74,8 @@
   },
   {
    "step": "shadow",
-   "status": "skipped",
-   "note": "nothing new"
+   "status": "ok",
+   "note": "13 line read(s) logged"
   },
   {
    "step": "gg_grade",
@@ -111,7 +111,7 @@
   },
   {
    "n": 3,
-   "left": 454
+   "left": 450
   },
   {
    "n": 4,
@@ -138,13 +138,13 @@
    "left": 500
   }
  ],
- "pool_total": 3060,
+ "pool_total": 3056,
  "allowance": 24.8145,
  "tier": 4,
  "budget_today": 347,
- "budget_used_today": 17,
+ "budget_used_today": 21,
  "prices_state": "ok",
- "prices_at": "2026-11-14T10:00:01-05:00",
+ "prices_at": "2026-11-14T10:40:00-05:00",
  "next_price_read_at": "2026-11-14T11:30:00-05:00",
  "unmatched_names": [],
  "unknown_teams": [],
@@ -159,7 +159,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "43607869356",
-  "iteration": 4,
+  "iteration": 5,
   "chain_link": 92,
   "chain_started_at": "2026-11-11T16:26:02-05:00",
   "run_started_at": "2026-11-14T10:01:17-05:00"

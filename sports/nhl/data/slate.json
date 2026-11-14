@@ -1,11 +1,11 @@
 {
  "slate_date": "2026-11-14",
- "generated_at": "2026-11-14T10:30:00-05:00",
- "status_at": "2026-11-14T10:30:00-05:00",
+ "generated_at": "2026-11-14T10:40:00-05:00",
+ "status_at": "2026-11-14T10:40:00-05:00",
  "valid_until": "2026-11-15T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
-  "prices_at": "2026-11-14T10:00:01-05:00",
+  "prices_at": "2026-11-14T10:40:00-05:00",
   "next_price_read_at": "2026-11-14T11:30:00-05:00",
   "stats_built_at": "2026-11-14T01:30:00-05:00",
   "stats_through": "2026-11-13",
@@ -16,11 +16,11 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-14T10:30:00-05:00",
+   "at": "2026-11-14T10:40:00-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 3060,
+   "pulls_left": 3056,
    "keys": 9,
    "game_days_left": 15,
    "days_left": 17,
@@ -136,7 +136,7 @@
     },
     "home": {
      "name": "Jeremy Swayman",
-     "status": "expected"
+     "status": "confirmed"
     }
    },
    "checks": {
@@ -176,7 +176,7 @@
      "status": "expected"
     },
     "home": {
-     "name": "Sergei Bobrovsky",
+     "name": "Anthony Stolarz",
      "status": "expected"
     }
    },
@@ -535,7 +535,12 @@
     }
    },
    "checks": {
-    "reads": [],
+    "reads": [
+     {
+      "pull": "A",
+      "at": "2026-11-14T10:40:00-05:00"
+     }
+    ],
     "next_read": {
      "pull": "B",
      "at": "2026-11-14T20:30:00-05:00"
