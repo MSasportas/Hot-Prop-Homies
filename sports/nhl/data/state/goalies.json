@@ -71,11 +71,11 @@
   },
   "OTT": {
    "name": "Linus Ullmark",
-   "status": "expected"
+   "status": "confirmed"
   },
   "CBJ": {
-   "name": "Cam Talbot",
-   "status": "expected"
+   "name": "Jet Greaves",
+   "status": "confirmed"
   },
   "PHI": {
    "name": "Joseph Woll",
@@ -114,5 +114,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-14T11:20:00-05:00"
+ "checked_at": "2026-11-14T11:30:00-05:00"
 }

@@ -1,12 +1,12 @@
 {
  "slate_date": "2026-11-14",
- "generated_at": "2026-11-14T11:20:00-05:00",
- "status_at": "2026-11-14T11:20:00-05:00",
+ "generated_at": "2026-11-14T11:30:00-05:00",
+ "status_at": "2026-11-14T11:30:00-05:00",
  "valid_until": "2026-11-15T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
-  "prices_at": "2026-11-14T11:10:01-05:00",
-  "next_price_read_at": "2026-11-14T11:30:00-05:00",
+  "prices_at": "2026-11-14T11:30:00-05:00",
+  "next_price_read_at": "2026-11-14T12:15:00-05:00",
   "stats_built_at": "2026-11-14T01:30:00-05:00",
   "stats_through": "2026-11-13",
   "lineups_at": "2026-11-14T11:10:01-05:00",
@@ -16,26 +16,26 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-14T11:20:00-05:00",
+   "at": "2026-11-14T11:30:00-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 3051,
+   "pulls_left": 3046,
    "keys": 9,
    "game_days_left": 15,
    "days_left": 17,
    "low": false
   },
   "excluded_teams": [],
-  "lines_checked": 0,
-  "flag_reads": 0,
+  "lines_checked": 21,
+  "flag_reads": 1,
   "tier": 4
  },
  "banners": [],
  "empty": {
   "code": "none_qualified",
   "text": "No picks yet today",
-  "sub": "Picks come from the price read 90 minutes before each game. Next read at 11:30 AM."
+  "sub": "21 lines read, none cleared both checks. 1 had a gap but our model said no. Next read at 12:15 PM."
  },
  "games": [
   {
@@ -62,11 +62,15 @@
      {
       "pull": "A",
       "at": "2026-11-14T10:00:01-05:00"
+     },
+     {
+      "pull": "B",
+      "at": "2026-11-14T11:30:00-05:00"
      }
     ],
     "next_read": {
-     "pull": "B",
-     "at": "2026-11-14T11:30:00-05:00"
+     "pull": "C",
+     "at": "2026-11-14T12:15:00-05:00"
     },
     "lineups_at": {
      "away": "2026-11-14T10:30:00-05:00",
@@ -296,7 +300,7 @@
    "goalies": {
     "away": {
      "name": "Linus Ullmark",
-     "status": "expected"
+     "status": "confirmed"
     },
     "home": {
      "name": "Sergei Murashov",
@@ -381,8 +385,8 @@
      "status": "expected"
     },
     "home": {
-     "name": "Cam Talbot",
-     "status": "expected"
+     "name": "Jet Greaves",
+     "status": "confirmed"
     }
    },
    "checks": {
