@@ -177,12 +177,12 @@
    }
   },
   "GS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Brandin Podziemski",
+    "Will Richard",
     "De'Anthony Melton",
     "Yaxel Lendeborg",
-    "Gui Santos",
     "Draymond Green"
    ],
    "status": {
@@ -273,5 +273,5 @@
    }
   }
  },
- "at": "2026-11-13T21:01:42-05:00"
+ "at": "2026-11-13T21:10:00-05:00"
 }
