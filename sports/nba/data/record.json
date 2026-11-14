@@ -1,28 +1,28 @@
 {
- "generated_at": "2026-11-13T22:30:01-05:00",
+ "generated_at": "2026-11-13T22:50:00-05:00",
  "summary": {
   "headline": {
-   "w": 37,
+   "w": 39,
    "l": 21,
    "push": 0,
    "void": 0,
-   "units": 14.27,
-   "hit_rate": 0.6379,
-   "needed": 0.5199,
-   "n": 58
+   "units": 16.11,
+   "hit_rate": 0.65,
+   "needed": 0.5201,
+   "n": 60
   },
   "rows": [
    {
     "key": "rebounds",
     "label": "Rebounds",
-    "w": 10,
+    "w": 11,
     "l": 7,
     "push": 0,
     "void": 0,
-    "units": 1.86,
-    "hit_rate": 0.5882,
-    "needed": 0.5331,
-    "n": 17
+    "units": 2.96,
+    "hit_rate": 0.6111,
+    "needed": 0.5299,
+    "n": 18
    },
    {
     "key": "points",
@@ -51,14 +51,14 @@
    {
     "key": "threes",
     "label": "3-pointers made",
-    "w": 10,
+    "w": 11,
     "l": 1,
     "push": 0,
     "void": 0,
-    "units": 10.92,
-    "hit_rate": 0.9091,
-    "needed": 0.4632,
-    "n": 11
+    "units": 11.66,
+    "hit_rate": 0.9167,
+    "needed": 0.4724,
+    "n": 12
    },
    {
     "key": "window:11 AM \u2192 90 min",
@@ -95,6 +95,30 @@
     "hit_rate": 0.7,
     "needed": 0.5052,
     "n": 10
+   },
+   {
+    "key": "window:11 AM \u2192 240 min",
+    "label": "Window 11 AM \u2192 240 min",
+    "w": 1,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 0.74,
+    "hit_rate": 1.0,
+    "needed": 0.5745,
+    "n": 1
+   },
+   {
+    "key": "window:45 \u2192 30 min",
+    "label": "Window 45 \u2192 30 min",
+    "w": 1,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 1.1,
+    "hit_rate": 1.0,
+    "needed": 0.4762,
+    "n": 1
    }
   ],
   "cuts": [
@@ -106,14 +130,14 @@
      {
       "key": "rebounds",
       "label": "Rebounds",
-      "w": 10,
+      "w": 11,
       "l": 7,
       "push": 0,
       "void": 0,
-      "units": 1.86,
-      "hit_rate": 0.5882,
-      "needed": 0.5331,
-      "n": 17,
+      "units": 2.96,
+      "hit_rate": 0.6111,
+      "needed": 0.5299,
+      "n": 18,
       "ids": [
        "2026-11-13:401909298:3059319:rebounds:3.5:under",
        "2026-11-11:401909973:4873138:rebounds:5.5:under",
@@ -197,14 +221,14 @@
      {
       "key": "threes",
       "label": "3-pointers made",
-      "w": 10,
+      "w": 11,
       "l": 1,
       "push": 0,
       "void": 0,
-      "units": 10.92,
-      "hit_rate": 0.9091,
-      "needed": 0.4632,
-      "n": 11,
+      "units": 11.66,
+      "hit_rate": 0.9167,
+      "needed": 0.4724,
+      "n": 12,
       "ids": [
        "2026-11-13:401909298:3908809:threes:2.5:over",
        "2026-11-08:401909945:3917376:threes:1.5:over",
@@ -230,14 +254,14 @@
      {
       "key": "over",
       "label": "Over",
-      "w": 11,
+      "w": 12,
       "l": 3,
       "push": 0,
       "void": 0,
-      "units": 8.62,
-      "hit_rate": 0.7857,
-      "needed": 0.4952,
-      "n": 14,
+      "units": 9.36,
+      "hit_rate": 0.8,
+      "needed": 0.5005,
+      "n": 15,
       "ids": [
        "2026-11-13:401909298:3908809:threes:2.5:over",
        "2026-11-09:401909958:5037871:assists:4.5:over",
@@ -259,14 +283,14 @@
      {
       "key": "under",
       "label": "Under",
-      "w": 26,
+      "w": 27,
       "l": 18,
       "push": 0,
       "void": 0,
-      "units": 5.65,
-      "hit_rate": 0.5909,
-      "needed": 0.5277,
-      "n": 44,
+      "units": 6.75,
+      "hit_rate": 0.6,
+      "needed": 0.5266,
+      "n": 45,
       "ids": [
        "2026-11-13:401909304:4396907:assists:6.5:under",
        "2026-11-13:401909298:3059319:rebounds:3.5:under",
@@ -326,14 +350,14 @@
      {
       "key": "e0",
       "label": "0 to 2%",
-      "w": 29,
+      "w": 31,
       "l": 16,
       "push": 0,
       "void": 0,
-      "units": 10.93,
-      "hit_rate": 0.6444,
-      "needed": 0.5238,
-      "n": 45,
+      "units": 12.77,
+      "hit_rate": 0.6596,
+      "needed": 0.5239,
+      "n": 47,
       "ids": [
        "2026-11-13:401909298:3908809:threes:2.5:over",
        "2026-11-13:401909304:4396907:assists:6.5:under",
@@ -454,14 +478,14 @@
      {
       "key": "clear",
       "label": "Injury report clear",
-      "w": 29,
+      "w": 31,
       "l": 15,
       "push": 0,
       "void": 0,
-      "units": 12.16,
-      "hit_rate": 0.6591,
-      "needed": 0.5238,
-      "n": 44,
+      "units": 14.0,
+      "hit_rate": 0.6739,
+      "needed": 0.5239,
+      "n": 46,
       "ids": [
        "2026-11-13:401909298:3908809:threes:2.5:over",
        "2026-11-13:401909304:4396907:assists:6.5:under",
@@ -543,14 +567,14 @@
      {
       "key": "plus",
       "label": "Plus money",
-      "w": 12,
+      "w": 13,
       "l": 8,
       "push": 0,
       "void": 0,
-      "units": 7.2,
-      "hit_rate": 0.6,
-      "needed": 0.4571,
-      "n": 20,
+      "units": 8.3,
+      "hit_rate": 0.619,
+      "needed": 0.458,
+      "n": 21,
       "ids": [
        "2026-11-13:401909304:4396907:assists:6.5:under",
        "2026-11-13:401909298:3059319:rebounds:3.5:under",
@@ -579,14 +603,14 @@
      {
       "key": "fav",
       "label": "-100 to -150",
-      "w": 25,
+      "w": 26,
       "l": 13,
       "push": 0,
       "void": 0,
-      "units": 7.07,
-      "hit_rate": 0.6579,
-      "needed": 0.553,
-      "n": 38,
+      "units": 7.81,
+      "hit_rate": 0.6667,
+      "needed": 0.5535,
+      "n": 39,
       "ids": [
        "2026-11-13:401909298:3908809:threes:2.5:over",
        "2026-11-11:401909967:3908809:points:24.5:under",
@@ -635,11 +659,11 @@
   "days": [
    {
     "date": "2026-11-13",
-    "w": 0,
+    "w": 2,
     "l": 0,
     "push": 0,
     "void": 0,
-    "units": 0,
+    "units": 1.84,
     "n": 3,
     "graded": false
    },
@@ -789,9 +813,9 @@
   {
    "date": "2026-11-13",
    "graded": false,
-   "w": 0,
+   "w": 2,
    "l": 0,
-   "units": 0,
+   "units": 1.84,
    "entries": [
     {
      "id": "2026-11-13:401909298:3908809:threes:2.5:over",
@@ -810,9 +834,9 @@
        "at": "2026-11-13T16:00:01-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "5 threes",
+     "units": 0.7407,
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 240 min",
@@ -862,9 +886,9 @@
        "at": "2026-11-13T19:30:01-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "3 rebounds",
+     "units": 1.1,
      "pulled": {
       "at": "2026-11-13T19:40:01-05:00",
       "reason": "Hard Rock took the line down",
