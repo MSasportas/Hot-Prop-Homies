@@ -95,7 +95,7 @@
   },
   "SJS": {
    "name": "Yaroslav Askarov",
-   "status": "expected"
+   "status": "confirmed"
   },
   "LAK": {
    "name": "Anton Forsberg",
@@ -114,5 +114,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-14T12:40:00-05:00"
+ "checked_at": "2026-11-14T13:40:00-05:00"
 }
