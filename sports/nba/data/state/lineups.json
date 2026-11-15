@@ -176,7 +176,7 @@
    }
   },
   "HOU": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Amen Thompson",
     "Kevin Durant",
@@ -191,7 +191,7 @@
    }
   },
   "WSH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Trae Young",
     "Kyshawn George",
@@ -273,5 +273,5 @@
    }
   }
  },
- "at": "2026-11-15T18:31:38-05:00"
+ "at": "2026-11-15T18:40:01-05:00"
 }

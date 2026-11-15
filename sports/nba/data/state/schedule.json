@@ -301,10 +301,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:04 - 4th",
+    "detail": "1:32 - 4th",
     "score": {
-     "LAL": "122",
-     "PHX": "114"
+     "LAL": "124",
+     "PHX": "117"
     }
    },
    {
@@ -316,10 +316,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:30 - 4th",
+    "detail": "7:14 - 4th",
     "score": {
-     "CHA": "85",
-     "LAC": "88"
+     "CHA": "90",
+     "LAC": "98"
     }
    },
    {
@@ -331,10 +331,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:07 - 3rd",
+    "detail": "1:08 - 3rd",
     "score": {
-     "SA": "75",
-     "UTAH": "70"
+     "SA": "79",
+     "UTAH": "79"
     }
    },
    {
@@ -346,10 +346,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:06 - 1st",
+    "detail": "11:10 - 2nd",
     "score": {
      "DAL": "9",
-     "BOS": "34"
+     "BOS": "42"
     }
    },
    {
@@ -360,11 +360,11 @@
     "home": "TOR",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:17 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
-     "NY": "14",
-     "TOR": "15"
+     "NY": "23",
+     "TOR": "17"
     }
    },
    {
