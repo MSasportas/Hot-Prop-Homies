@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-14",
- "generated_at": "2026-11-14T21:40:01-05:00",
- "status_at": "2026-11-14T21:40:01-05:00",
+ "generated_at": "2026-11-14T22:00:01-05:00",
+ "status_at": "2026-11-14T22:00:01-05:00",
  "valid_until": "2026-11-15T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-14T21:40:01-05:00",
+   "at": "2026-11-14T22:00:01-05:00",
    "failed_step": null
   },
   "pool": {
@@ -32,7 +32,11 @@
   "tier": 4
  },
  "banners": [],
- "empty": null,
+ "empty": {
+  "code": "all_started",
+  "text": "Every game has started.",
+  "sub": "Tonight's picks are on the Live tab."
+ },
  "games": [
   {
    "id": 2026020321,
@@ -626,8 +630,8 @@
      "home": null
     }
    },
-   "started": false,
-   "reads_done": true,
+   "started": true,
+   "reads_done": false,
    "picks": 1,
    "excluded_reason": null,
    "excluded_teams": []
@@ -672,77 +676,14 @@
      "home": "2026-11-14T19:00:01-05:00"
     }
    },
-   "started": false,
-   "reads_done": true,
+   "started": true,
+   "reads_done": false,
    "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
   }
  ],
  "picks": [
-  {
-   "id": "2026-11-14:2026020324:8484762:shots:2.5:under",
-   "price": 115,
-   "first_price": 115,
-   "first_price_at": "2026-11-14T21:20:01-05:00",
-   "worst_price": 115,
-   "p": 0.4867,
-   "breakeven": 0.4651,
-   "p_pct": 48,
-   "breakeven_pct": 47,
-   "state": "early",
-   "history": [
-    {
-     "at": "2026-11-14T21:20:01-05:00",
-     "text": "Early: lineup not confirmed"
-    }
-   ],
-   "prices": [
-    {
-     "at": "2026-11-14T21:20:01-05:00",
-     "price": 115
-    }
-   ],
-   "pulled": null,
-   "price_final": true,
-   "graded": null,
-   "rank": 1,
-   "tier": "main",
-   "game_id": 2026020324,
-   "player": "B. Sennecke",
-   "player_id": 8484762,
-   "team": "ANA",
-   "opp": "NYI",
-   "home": true,
-   "start": "2026-11-14T22:00:00-05:00",
-   "market": "shots",
-   "line": 2.5,
-   "side": "under",
-   "bet": "Under 2.5 shots on goal",
-   "price_at": "2026-11-14T21:20:01-05:00",
-   "gap_pct": 4.0,
-   "market_fair_pct": 48.4,
-   "n_books": 8,
-   "guard": {
-    "verdict": "agrees",
-    "ours_pct": 48.7,
-    "model_pct": 51.4
-   },
-   "settled": "early",
-   "settled_label": "Early",
-   "reason": "8 other books say 48.4%; Hard Rock's +115 only needs 46.5%. Our model agrees (our blend: 48.7%).",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/4801377820043510163",
-   "links": {
-    "hardrock": {
-     "id": "4801377820043510163",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/4801377820043510163"
-    },
-    "draftkings": null
-   },
-   "thin": false,
-   "games_used": 101,
-   "games_this_season": 19
-  },
   {
    "id": "2026-11-14:2026020324:8485388:shots:1.5:under",
    "price": 115,
@@ -1425,6 +1366,73 @@
    "thin": false,
    "games_used": 93,
    "games_this_season": 21
+  },
+  {
+   "id": "2026-11-14:2026020324:8484762:shots:2.5:under",
+   "price": 115,
+   "first_price": 115,
+   "first_price_at": "2026-11-14T21:20:01-05:00",
+   "worst_price": 115,
+   "p": 0.4867,
+   "breakeven": 0.4651,
+   "p_pct": 48,
+   "breakeven_pct": 47,
+   "state": "locked_unconfirmed",
+   "history": [
+    {
+     "at": "2026-11-14T21:20:01-05:00",
+     "text": "Early: lineup not confirmed"
+    },
+    {
+     "at": "2026-11-14T22:00:01-05:00",
+     "text": "Locked: lineup was not confirmed"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-14T21:20:01-05:00",
+     "price": 115
+    }
+   ],
+   "pulled": null,
+   "price_final": false,
+   "graded": null,
+   "rank": null,
+   "tier": "main",
+   "game_id": 2026020324,
+   "player": "B. Sennecke",
+   "player_id": 8484762,
+   "team": "ANA",
+   "opp": "NYI",
+   "home": true,
+   "start": "2026-11-14T22:00:00-05:00",
+   "market": "shots",
+   "line": 2.5,
+   "side": "under",
+   "bet": "Under 2.5 shots on goal",
+   "price_at": "2026-11-14T21:20:01-05:00",
+   "gap_pct": 4.0,
+   "market_fair_pct": 48.4,
+   "n_books": 8,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 48.7,
+    "model_pct": 51.4
+   },
+   "settled": "early",
+   "settled_label": "Early",
+   "reason": "8 other books say 48.4%; Hard Rock's +115 only needs 46.5%. Our model agrees (our blend: 48.7%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/4801377820043510163",
+   "links": {
+    "hardrock": {
+     "id": "4801377820043510163",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/4801377820043510163"
+    },
+    "draftkings": null
+   },
+   "thin": false,
+   "games_used": 101,
+   "games_this_season": 19
   }
  ],
  "parlays": [],
