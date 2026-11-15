@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 3904,
+   "pool_left": 3900,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-15T14:15:00-05:00",
-  "last_read_at": "2026-11-15T14:00:01-05:00",
+  "next_read_at": "2026-11-15T14:30:00-05:00",
+  "last_read_at": "2026-11-15T14:20:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-15T14:10:01-05:00"
+   "at": "2026-11-15T14:20:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-15T14:10:01-05:00",
+    "at": "2026-11-15T14:20:00-05:00",
     "confirmed": [
      "IND",
      "PHI"
@@ -141,8 +141,8 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-15T13:30:01-05:00",
-   "picks": 0,
+   "read_at": "2026-11-15T14:20:00-05:00",
+   "picks": 2,
    "checks": [
     {
      "read": "X240",
@@ -151,12 +151,16 @@
     {
      "read": "X180",
      "at": "2026-11-15T13:30:01-05:00"
+    },
+    {
+     "read": "X135",
+     "at": "2026-11-15T14:20:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-15T13:30:01-05:00",
+   "last_check_at": "2026-11-15T14:20:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-15T14:15:00-05:00",
-   "next_check_read": "X135",
+   "next_check_at": "2026-11-15T15:00:00-05:00",
+   "next_check_read": "B",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -329,6 +333,131 @@
  ],
  "picks": [
   {
+   "player": "Kris Dunn",
+   "pid": "2991139",
+   "team": "LAC",
+   "opp": "CHA",
+   "home": true,
+   "game_id": "401909987",
+   "start": "2026-11-15T16:30:00-05:00",
+   "bet": "Under 6.5 points",
+   "market": "points",
+   "side": "under",
+   "line": 6.5,
+   "price": -120,
+   "price_at": "2026-11-15T14:20:00-05:00",
+   "read": "X135",
+   "p": 0.5511,
+   "p_pct": 55,
+   "breakeven": 0.5455,
+   "breakeven_pct": 55,
+   "market_fair": null,
+   "n_books": 8,
+   "gap_ev": null,
+   "final_ev": 0.0622,
+   "model_p": null,
+   "reason": "Pinnacle moved the under from -110 to -144 (49% to 55%). Hard Rock -120 is 1.0% better than Pinnacle's fair price; DraftKings -110 is 5.2% better than Pinnacle's fair price.",
+   "rule": "pin_solo",
+   "pin_before": 0.4889,
+   "pin_after": 0.5511,
+   "pin_price_before": -110,
+   "pin_price_after": -144,
+   "others_move": 0.0323,
+   "n_others": 8,
+   "ev_vs_pin": 0.0103,
+   "window": "180 \u2192 135 min",
+   "gap_vs_pin": 0.0447,
+   "book": "hardrock",
+   "books": {
+    "draftkings": {
+     "ev_vs_pin": 0.0521,
+     "price": -110
+    },
+    "hardrock": {
+     "ev_vs_pin": 0.0103,
+     "price": -120
+    }
+   },
+   "id": "2026-11-15:401909987:2991139:points:6.5:under",
+   "state": "clear",
+   "state_label": "Injury report clear",
+   "price_final": false,
+   "pulled": null,
+   "added_at": "2026-11-15T14:20:00-05:00",
+   "result": null,
+   "links": {
+    "hardrock": {
+     "id": "8392408051304497556",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/8392408051304497556",
+     "price": -120
+    },
+    "draftkings": {
+     "url": "https://sportsbook.draftkings.com/?outcomes=0QA389399678%232366288720_13L42648Q12036065197Q20",
+     "price": -110
+    }
+   },
+   "rank": 1
+  },
+  {
+   "player": "Darius Garland",
+   "pid": "4396907",
+   "team": "LAC",
+   "opp": "CHA",
+   "home": true,
+   "game_id": "401909987",
+   "start": "2026-11-15T16:30:00-05:00",
+   "bet": "Under 20.5 points",
+   "market": "points",
+   "side": "under",
+   "line": 20.5,
+   "price": -110,
+   "price_at": "2026-11-15T14:20:00-05:00",
+   "read": "X135",
+   "p": 0.5399,
+   "p_pct": 54,
+   "breakeven": 0.5238,
+   "breakeven_pct": 52,
+   "market_fair": null,
+   "n_books": 7,
+   "gap_ev": null,
+   "final_ev": 0.057,
+   "model_p": null,
+   "reason": "Pinnacle moved the under from -107 to -137 (48% to 54%). Hard Rock -110 is 3.1% better than Pinnacle's fair price.",
+   "rule": "pin_solo",
+   "pin_before": 0.4829,
+   "pin_after": 0.5399,
+   "pin_price_before": -107,
+   "pin_price_after": -137,
+   "others_move": 0.0104,
+   "n_others": 7,
+   "ev_vs_pin": 0.0307,
+   "window": "180 \u2192 135 min",
+   "gap_vs_pin": 0.0542,
+   "book": "hardrock",
+   "books": {
+    "hardrock": {
+     "ev_vs_pin": 0.0307,
+     "price": -110
+    }
+   },
+   "id": "2026-11-15:401909987:4396907:points:20.5:under",
+   "state": "clear",
+   "state_label": "Injury report clear",
+   "price_final": false,
+   "pulled": null,
+   "added_at": "2026-11-15T14:20:00-05:00",
+   "result": null,
+   "links": {
+    "hardrock": {
+     "id": "3334610583069786516",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/3334610583069786516",
+     "price": -110
+    },
+    "draftkings": null
+   },
+   "rank": 2
+  },
+  {
    "player": "Pascal Siakam",
    "pid": "3149673",
    "team": "IND",
@@ -385,14 +514,10 @@
    "rank": null
   }
  ],
- "empty": {
-  "text": "No picks yet today",
-  "why": "808 lines read. Pinnacle moved alone on 52, none of them bettable yet.",
-  "next": "2026-11-15T14:15:00-05:00"
- },
+ "empty": null,
  "counts": {
   "lines_read": 808,
-  "passing": 10,
+  "passing": 13,
   "games": 9
  },
  "safety_paused": false,
@@ -401,6 +526,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-15T14:10:01-05:00",
- "status_at": "2026-11-15T14:10:01-05:00"
+ "generated_at": "2026-11-15T14:20:00-05:00",
+ "status_at": "2026-11-15T14:20:00-05:00"
 }

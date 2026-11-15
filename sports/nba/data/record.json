@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T13:00:00-05:00",
+ "generated_at": "2026-11-15T14:20:00-05:00",
  "summary": {
   "headline": {
    "w": 41,
@@ -208,6 +208,8 @@
       "needed": 0.5435,
       "n": 23,
       "ids": [
+       "2026-11-15:401909987:2991139:points:6.5:under",
+       "2026-11-15:401909987:4396907:points:20.5:under",
        "2026-11-14:401909981:4278049:points:7.5:over",
        "2026-11-14:401909982:3032977:points:28.5:under",
        "2026-11-11:401909967:3908809:points:24.5:under",
@@ -334,6 +336,8 @@
       "n": 48,
       "ids": [
        "2026-11-15:401909985:3149673:assists:3.5:under",
+       "2026-11-15:401909987:2991139:points:6.5:under",
+       "2026-11-15:401909987:4396907:points:20.5:under",
        "2026-11-14:401909984:4431671:rebounds:5.5:under",
        "2026-11-14:401909982:3032977:points:28.5:under",
        "2026-11-13:401909304:4396907:assists:6.5:under",
@@ -404,6 +408,7 @@
       "n": 50,
       "ids": [
        "2026-11-15:401909985:3149673:assists:3.5:under",
+       "2026-11-15:401909987:2991139:points:6.5:under",
        "2026-11-14:401909981:4278049:points:7.5:over",
        "2026-11-14:401909984:4431671:rebounds:5.5:under",
        "2026-11-13:401909298:3908809:threes:2.5:over",
@@ -468,6 +473,7 @@
       "needed": 0.5211,
       "n": 11,
       "ids": [
+       "2026-11-15:401909987:4396907:points:20.5:under",
        "2026-11-14:401909982:3032977:points:28.5:under",
        "2026-11-11:401909973:4873138:rebounds:5.5:under",
        "2026-11-10:401909963:4278053:assists:7.5:under",
@@ -535,6 +541,8 @@
       "needed": 0.5231,
       "n": 50,
       "ids": [
+       "2026-11-15:401909987:2991139:points:6.5:under",
+       "2026-11-15:401909987:4396907:points:20.5:under",
        "2026-11-14:401909981:4278049:points:7.5:over",
        "2026-11-14:401909984:4431671:rebounds:5.5:under",
        "2026-11-14:401909982:3032977:points:28.5:under",
@@ -666,6 +674,8 @@
       "needed": 0.5531,
       "n": 41,
       "ids": [
+       "2026-11-15:401909987:2991139:points:6.5:under",
+       "2026-11-15:401909987:4396907:points:20.5:under",
        "2026-11-14:401909981:4278049:points:7.5:over",
        "2026-11-14:401909982:3032977:points:28.5:under",
        "2026-11-13:401909298:3908809:threes:2.5:over",
@@ -720,7 +730,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 1,
+    "n": 3,
     "graded": false
    },
    {
@@ -916,6 +926,58 @@
      "pulled": null,
      "legs": [],
      "window": "30 \u2192 20 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-15:401909987:2991139:points:6.5:under",
+     "kind": "single",
+     "player": "Kris Dunn",
+     "bet": "Under 6.5 points",
+     "market": "points",
+     "team": "LAC",
+     "game": "CHA at LAC",
+     "price": -120,
+     "first_price": -120,
+     "last_price": -120,
+     "prices": [
+      {
+       "price": -120,
+       "at": "2026-11-15T14:20:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "180 \u2192 135 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-15:401909987:4396907:points:20.5:under",
+     "kind": "single",
+     "player": "Darius Garland",
+     "bet": "Under 20.5 points",
+     "market": "points",
+     "team": "LAC",
+     "game": "CHA at LAC",
+     "price": -110,
+     "first_price": -110,
+     "last_price": -110,
+     "prices": [
+      {
+       "price": -110,
+       "at": "2026-11-15T14:20:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "180 \u2192 135 min",
      "book": "hardrock",
      "under_fair": false
     }
