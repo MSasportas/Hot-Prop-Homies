@@ -358,13 +358,13 @@
     "start": "2026-11-14T19:00:00-05:00",
     "away": "DEN",
     "home": "NO",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/14 - 7:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:59 - 1st",
     "score": {
-     "DEN": "0",
-     "NO": "0"
+     "DEN": "13",
+     "NO": "9"
     }
    },
    {

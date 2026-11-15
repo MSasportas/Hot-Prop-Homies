@@ -32,7 +32,7 @@
    }
   },
   "DAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Kyrie Irving",
     "Caleb Martin",
@@ -128,12 +128,12 @@
    "starters": [
     "Nolan Traore",
     "Egor Demin",
-    "Michael Porter",
+    "Danny Wolf",
     "Julius Randle",
     "Day'Ron Sharpe"
    ],
    "status": {
-    "Michael Porter": "questionable"
+    "Michael Porter": "out"
    }
   },
   "MEM": {
@@ -154,5 +154,5 @@
    }
   }
  },
- "at": "2026-11-14T19:10:01-05:00"
+ "at": "2026-11-14T19:20:02-05:00"
 }
