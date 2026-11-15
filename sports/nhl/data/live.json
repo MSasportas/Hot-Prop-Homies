@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-14",
- "generated_at": "2026-11-14T19:20:00-05:00",
+ "generated_at": "2026-11-14T19:30:01-05:00",
  "games": [
   {
    "game_id": 2026020313,
@@ -8,20 +8,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "13:17",
+   "clock": "08:10",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "MIN",
-    "score": 0,
-    "sog": 5
+    "score": 1,
+    "sog": 10
    },
    "home": {
     "abbrev": "BOS",
     "score": 0,
     "sog": 4
    },
-   "updated_at": "2026-11-14T19:20:00-05:00"
+   "updated_at": "2026-11-14T19:30:01-05:00"
   },
   {
    "game_id": 2026020316,
@@ -29,41 +29,41 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "11:45",
+   "clock": "06:49",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "DET",
     "score": 0,
-    "sog": 2
+    "sog": 3
    },
    "home": {
     "abbrev": "TBL",
     "score": 0,
-    "sog": 1
+    "sog": 7
    },
-   "updated_at": "2026-11-14T19:20:00-05:00"
+   "updated_at": "2026-11-14T19:30:01-05:00"
   },
   {
    "game_id": 2026020317,
-   "state": "PRE",
+   "state": "LIVE",
    "schedule_state": "OK",
-   "period": null,
-   "period_type": null,
-   "clock": null,
+   "period": 1,
+   "period_type": "REG",
+   "clock": "14:36",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "OTT",
-    "score": null,
-    "sog": null
+    "score": 0,
+    "sog": 1
    },
    "home": {
     "abbrev": "PIT",
-    "score": null,
+    "score": 0,
     "sog": null
    },
-   "updated_at": "2026-11-14T19:20:00-05:00"
+   "updated_at": "2026-11-14T19:30:01-05:00"
   },
   {
    "game_id": 2026020320,
@@ -71,20 +71,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "15:20",
+   "clock": "10:35",
    "in_intermission": false,
    "running": true,
    "away": {
     "abbrev": "FLA",
-    "score": 0,
-    "sog": 2
+    "score": 2,
+    "sog": 9
    },
    "home": {
     "abbrev": "STL",
     "score": 0,
-    "sog": null
+    "sog": 1
    },
-   "updated_at": "2026-11-14T19:20:00-05:00"
+   "updated_at": "2026-11-14T19:30:01-05:00"
   }
  ],
  "picks": {
@@ -111,12 +111,12 @@
   "2026-11-14:2026020317:8481528:shots:2.5:under": {
    "game_id": 2026020317,
    "market": "shots",
-   "stat": null
+   "stat": 0
   },
   "2026-11-14:2026020320:8477935:points:0.5:over": {
    "game_id": 2026020320,
    "market": "points",
-   "stat": 0
+   "stat": 1
   }
  }
 }

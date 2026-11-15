@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T19:00:01-05:00",
+ "generated_at": "2026-11-14T19:30:01-05:00",
  "summary": {
   "headline": {
    "w": 40,
@@ -243,7 +243,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 6,
+    "n": 9,
     "graded": false
    },
    {
@@ -523,6 +523,29 @@
      "legs": []
     },
     {
+     "id": "2026-11-14:2026020323:8476389:points:0.5:under",
+     "kind": "single",
+     "player": "V. Trocheck",
+     "bet": "Under 0.5 points",
+     "market": "points",
+     "team": "UTA",
+     "game": "SJS at UTA",
+     "price": 170,
+     "first_price": 170,
+     "last_price": 170,
+     "prices": [
+      {
+       "price": 170,
+       "at": "2026-11-14T19:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
      "id": "2026-11-14:2026020320:8477935:points:0.5:over",
      "kind": "single",
      "player": "S. Bennett",
@@ -546,6 +569,29 @@
      "legs": []
     },
     {
+     "id": "2026-11-14:2026020323:8480748:shots:1.5:over",
+     "kind": "single",
+     "player": "K. Sherwood",
+     "bet": "Over 1.5 shots on goal",
+     "market": "shots",
+     "team": "SJS",
+     "game": "SJS at UTA",
+     "price": 105,
+     "first_price": 105,
+     "last_price": 105,
+     "prices": [
+      {
+       "price": 105,
+       "at": "2026-11-14T19:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
      "id": "2026-11-14:2026020313:8477496:shots:1.5:under",
      "kind": "single",
      "player": "E. Lindholm",
@@ -560,6 +606,29 @@
       {
        "price": 125,
        "at": "2026-11-14T17:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-14:2026020323:8479410:points:0.5:under",
+     "kind": "single",
+     "player": "M. Sergachev",
+     "bet": "Under 0.5 points",
+     "market": "points",
+     "team": "UTA",
+     "game": "SJS at UTA",
+     "price": 165,
+     "first_price": 165,
+     "last_price": 165,
+     "prices": [
+      {
+       "price": 165,
+       "at": "2026-11-14T19:30:01-05:00"
       }
      ],
      "result": null,
