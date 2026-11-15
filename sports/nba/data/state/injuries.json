@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T17:40:00-05:00",
+ "at": "2026-11-15T17:50:00-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -380,11 +380,11 @@
    "note": "Rollins (illness) is questionable to play in Sunday's game against the Hawks."
   },
   "4432247": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Jaylen Clark",
    "team": "MIN",
-   "date": "2026-11-15T15:31Z",
-   "note": "Clark (hamstring) has been ruled out for the remainder of Saturday's game against the Bulls, Sarah Todd of The Deseret News reports."
+   "date": "2026-11-15T22:40Z",
+   "note": "Clark (hamstring) has been ruled out for the next two weeks."
   },
   "4594268": {
    "status": "out",
@@ -617,13 +617,6 @@
    "date": "2026-10-05T21:43Z",
    "note": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports."
   },
-  "4433134": {
-   "status": "out",
-   "name": "Scottie Barnes",
-   "team": "TOR",
-   "date": "2026-11-15T21:43Z",
-   "note": "Barnes (groin) is listed as probable to play in Sunday's game against the Knicks."
-  },
   "4432586": {
    "status": "out",
    "name": "Nate Bittle",
@@ -681,11 +674,11 @@
    "note": "Jackson has been diagnosed with a torn MCL in his right knee and will be sidelined for 6-to-8 weeks, per Shams Charania of ESPN."
   },
   "5238230": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Tre Johnson",
    "team": "WSH",
-   "date": "2026-11-14T21:09Z",
-   "note": "Johnson is listed as questionable for Sunday's game against the Rockets due to lower-back soreness."
+   "date": "2026-11-15T22:31Z",
+   "note": "Johnson (back) won't play in Sunday's game against Houston, Josh Robbins of The Athletic reports."
   },
   "4997537": {
    "status": "out",
