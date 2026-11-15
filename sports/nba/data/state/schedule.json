@@ -298,13 +298,13 @@
     "start": "2026-11-15T16:00:00-05:00",
     "away": "LAL",
     "home": "PHX",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/15 - 4:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:20 - 1st",
     "score": {
-     "LAL": "0",
-     "PHX": "0"
+     "LAL": "18",
+     "PHX": "5"
     }
    },
    {
