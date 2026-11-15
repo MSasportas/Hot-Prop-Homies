@@ -301,10 +301,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:48 - 1st",
+    "detail": "10:37 - 2nd",
     "score": {
-     "LAL": "28",
-     "PHX": "19"
+     "LAL": "37",
+     "PHX": "29"
     }
    },
    {
@@ -313,13 +313,13 @@
     "start": "2026-11-15T16:30:00-05:00",
     "away": "CHA",
     "home": "LAC",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/15 - 4:30 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:17 - 1st",
     "score": {
-     "CHA": "0",
-     "LAC": "0"
+     "CHA": "4",
+     "LAC": "9"
     }
    },
    {

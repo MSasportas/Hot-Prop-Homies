@@ -106,7 +106,7 @@
    }
   },
   "UTAH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Keyonte George",
     "Darryn Peterson",
@@ -172,7 +172,7 @@
     "Jakob Poeltl"
    ],
    "status": {
-    "Scottie Barnes": "questionable",
+    "Scottie Barnes": "probable",
     "Nate Bittle": "out",
     "Kawhi Leonard": "out"
    }
@@ -275,5 +275,5 @@
    }
   }
  },
- "at": "2026-11-15T16:40:01-05:00"
+ "at": "2026-11-15T16:50:01-05:00"
 }
