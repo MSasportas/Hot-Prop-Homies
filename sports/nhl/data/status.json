@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-14",
- "started_at": "2026-11-14T20:20:01-05:00",
- "status_at": "2026-11-14T20:20:01-05:00",
- "finished_at": "2026-11-14T20:20:04-05:00",
- "last_ok_at": "2026-11-14T20:20:01-05:00",
+ "started_at": "2026-11-14T20:30:00-05:00",
+ "status_at": "2026-11-14T20:30:00-05:00",
+ "finished_at": "2026-11-14T20:30:03-05:00",
+ "last_ok_at": "2026-11-14T20:30:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -24,8 +24,8 @@
   },
   {
    "step": "lineups",
-   "status": "ok",
-   "note": "6 of 6 team pages read"
+   "status": "skipped",
+   "note": "checked in the last 20 minutes"
   },
   {
    "step": "lineup_history",
@@ -35,7 +35,7 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "1 game(s) priced"
+   "note": "2 game(s) priced"
   },
   {
    "step": "market_menu",
@@ -44,8 +44,8 @@
   },
   {
    "step": "featured",
-   "status": "ok",
-   "note": "sides/totals for 3 game(s), 10 book(s) max, 3 credit(s)"
+   "status": "skipped",
+   "note": "tried in the last 10 minutes"
   },
   {
    "step": "book_probe",
@@ -55,12 +55,12 @@
   {
    "step": "gapguard",
    "status": "ok",
-   "note": "gap+guard: 1 close"
+   "note": "gap+guard: 1 flag"
   },
   {
    "step": "engine",
    "status": "ok",
-   "note": "no change"
+   "note": "1 new event(s), 1 newly shown"
   },
   {
    "step": "grade",
@@ -75,7 +75,7 @@
   {
    "step": "shadow",
    "status": "ok",
-   "note": "37 line read(s) logged"
+   "note": "64 line read(s) logged"
   },
   {
    "step": "gg_grade",
@@ -85,12 +85,12 @@
   {
    "step": "slate",
    "status": "ok",
-   "note": "3 open pick(s)"
+   "note": "4 open pick(s)"
   },
   {
    "step": "record",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "record.json"
   }
  ],
  "sources": {
@@ -111,7 +111,7 @@
   },
   {
    "n": 3,
-   "left": 362
+   "left": 358
   },
   {
    "n": 4,
@@ -138,15 +138,17 @@
    "left": 500
   }
  ],
- "pool_total": 2968,
+ "pool_total": 2964,
  "allowance": 24.8145,
  "tier": 4,
  "budget_today": 347,
- "budget_used_today": 109,
+ "budget_used_today": 113,
  "prices_state": "ok",
- "prices_at": "2026-11-14T20:20:01-05:00",
- "next_price_read_at": "2026-11-14T20:30:00-05:00",
- "unmatched_names": [],
+ "prices_at": "2026-11-14T20:30:00-05:00",
+ "next_price_read_at": "2026-11-14T21:15:00-05:00",
+ "unmatched_names": [
+  "Mathew Barzal"
+ ],
  "unknown_teams": [],
  "lineup_unmatched_names": [
   "Anton Silayev",
@@ -157,12 +159,12 @@
  "lineups_at": "2026-11-14T20:20:01-05:00",
  "lineups_note": "Lineups posted for 22 of 28 teams checked so far.",
  "games_today": 14,
- "record_events": 255,
+ "record_events": 256,
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "43661431020",
-  "iteration": 3,
+  "iteration": 4,
   "chain_link": 104,
   "chain_started_at": "2026-11-11T16:26:02-05:00",
   "run_started_at": "2026-11-14T20:06:02-05:00"

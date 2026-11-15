@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T19:30:01-05:00",
+ "generated_at": "2026-11-14T20:30:00-05:00",
  "summary": {
   "headline": {
    "w": 40,
@@ -243,7 +243,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 9,
+    "n": 10,
     "graded": false
    },
    {
@@ -629,6 +629,29 @@
       {
        "price": 165,
        "at": "2026-11-14T19:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-14:2026020324:8485388:shots:1.5:under",
+     "kind": "single",
+     "player": "V. Eklund",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "NYI",
+     "game": "NYI at ANA",
+     "price": 115,
+     "first_price": 115,
+     "last_price": 115,
+     "prices": [
+      {
+       "price": 115,
+       "at": "2026-11-14T20:30:00-05:00"
       }
      ],
      "result": null,

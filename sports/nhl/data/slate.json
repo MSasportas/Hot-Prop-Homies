@@ -1,12 +1,12 @@
 {
  "slate_date": "2026-11-14",
- "generated_at": "2026-11-14T20:20:01-05:00",
- "status_at": "2026-11-14T20:20:01-05:00",
+ "generated_at": "2026-11-14T20:30:00-05:00",
+ "status_at": "2026-11-14T20:30:00-05:00",
  "valid_until": "2026-11-15T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
-  "prices_at": "2026-11-14T20:20:01-05:00",
-  "next_price_read_at": "2026-11-14T20:30:00-05:00",
+  "prices_at": "2026-11-14T20:30:00-05:00",
+  "next_price_read_at": "2026-11-14T21:15:00-05:00",
   "stats_built_at": "2026-11-14T18:50:01-05:00",
   "stats_through": "2026-11-14",
   "lineups_at": "2026-11-14T20:20:01-05:00",
@@ -16,19 +16,19 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-14T20:20:01-05:00",
+   "at": "2026-11-14T20:30:00-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 2968,
+   "pulls_left": 2964,
    "keys": 9,
    "game_days_left": 15,
    "days_left": 17,
    "low": false
   },
   "excluded_teams": [],
-  "lines_checked": 204,
-  "flag_reads": 12,
+  "lines_checked": 234,
+  "flag_reads": 14,
   "tier": 4
  },
  "banners": [],
@@ -610,11 +610,15 @@
      {
       "pull": "A",
       "at": "2026-11-14T10:40:00-05:00"
+     },
+     {
+      "pull": "B",
+      "at": "2026-11-14T20:30:00-05:00"
      }
     ],
     "next_read": {
-     "pull": "B",
-     "at": "2026-11-14T20:30:00-05:00"
+     "pull": "C",
+     "at": "2026-11-14T21:15:00-05:00"
     },
     "lineups_at": {
      "away": null,
@@ -623,7 +627,7 @@
    },
    "started": false,
    "reads_done": false,
-   "picks": 0,
+   "picks": 1,
    "excluded_reason": null,
    "excluded_teams": []
   },
@@ -651,11 +655,15 @@
      {
       "pull": "A",
       "at": "2026-11-14T11:41:04-05:00"
+     },
+     {
+      "pull": "B",
+      "at": "2026-11-14T20:30:00-05:00"
      }
     ],
     "next_read": {
-     "pull": "B",
-     "at": "2026-11-14T20:30:00-05:00"
+     "pull": "C",
+     "at": "2026-11-14T21:15:00-05:00"
     },
     "lineups_at": {
      "away": null,
@@ -797,6 +805,69 @@
    "games_this_season": 21
   },
   {
+   "id": "2026-11-14:2026020324:8485388:shots:1.5:under",
+   "price": 115,
+   "first_price": 115,
+   "first_price_at": "2026-11-14T20:30:00-05:00",
+   "worst_price": 115,
+   "p": 0.4938,
+   "breakeven": 0.4651,
+   "p_pct": 49,
+   "breakeven_pct": 47,
+   "state": "early",
+   "history": [
+    {
+     "at": "2026-11-14T20:30:00-05:00",
+     "text": "Early: lineup not confirmed"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-14T20:30:00-05:00",
+     "price": 115
+    }
+   ],
+   "pulled": null,
+   "price_final": false,
+   "graded": null,
+   "rank": 3,
+   "tier": "main",
+   "game_id": 2026020324,
+   "player": "V. Eklund",
+   "player_id": 8485388,
+   "team": "NYI",
+   "opp": "ANA",
+   "home": false,
+   "start": "2026-11-14T22:00:00-05:00",
+   "market": "shots",
+   "line": 1.5,
+   "side": "under",
+   "bet": "Under 1.5 shots on goal",
+   "price_at": "2026-11-14T20:30:00-05:00",
+   "gap_pct": 5.3,
+   "market_fair_pct": 49.0,
+   "n_books": 7,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 49.4,
+    "model_pct": 52.7
+   },
+   "settled": "early",
+   "settled_label": "Early",
+   "reason": "7 other books say 49.0%; Hard Rock's +115 only needs 46.5%. Our model agrees (our blend: 49.4%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/7966141720689770911",
+   "links": {
+    "hardrock": {
+     "id": "7966141720689770911",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/7966141720689770911"
+    },
+    "draftkings": null
+   },
+   "thin": true,
+   "games_used": 19,
+   "games_this_season": 18
+  },
+  {
    "id": "2026-11-14:2026020323:8479410:points:0.5:under",
    "price": 165,
    "first_price": 165,
@@ -822,7 +893,7 @@
    "pulled": null,
    "price_final": true,
    "graded": null,
-   "rank": 3,
+   "rank": 4,
    "tier": "main",
    "game_id": 2026020323,
    "player": "M. Sergachev",
