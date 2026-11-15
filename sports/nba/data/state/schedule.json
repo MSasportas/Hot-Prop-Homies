@@ -390,11 +390,11 @@
     "home": "MIA",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 3rd",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:59 - 4th",
     "score": {
-     "DET": "86",
-     "MIA": "103"
+     "DET": "96",
+     "MIA": "107"
     }
    },
    {
@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:24 - 4th",
+    "detail": "4:15 - 4th",
     "score": {
-     "BKN": "91",
-     "MEM": "115"
+     "BKN": "106",
+     "MEM": "119"
     }
    },
    {
@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:24 - 4th",
+    "detail": "1:59 - 4th",
     "score": {
-     "CHI": "109",
-     "MIN": "94"
+     "CHI": "113",
+     "MIN": "102"
     }
    }
   ]
