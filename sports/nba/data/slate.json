@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-15T13:30:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-15T13:30:01-05:00"
+   "at": "2026-11-15T13:31:34-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-15T13:30:01-05:00",
+    "at": "2026-11-15T13:31:34-05:00",
     "confirmed": [
      "IND",
      "PHI"
@@ -46,7 +46,7 @@
    "away": "IND",
    "home": "PHI",
    "state": "in",
-   "detail": "2:36 - 1st",
+   "detail": "1:50 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -383,6 +383,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-15T13:30:01-05:00",
- "status_at": "2026-11-15T13:30:01-05:00"
+ "generated_at": "2026-11-15T13:31:34-05:00",
+ "status_at": "2026-11-15T13:31:34-05:00"
 }
