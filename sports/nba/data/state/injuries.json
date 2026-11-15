@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T12:30:00-05:00",
+ "at": "2026-11-15T12:50:01-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -246,13 +246,6 @@
    "date": "2026-11-14T21:54Z",
    "note": "Capela (ankle) has been ruled out for Sunday's game at Washington."
   },
-  "2991235": {
-   "status": "out",
-   "name": "Steven Adams",
-   "team": "HOU",
-   "date": "2026-11-14T21:52Z",
-   "note": "Adams (calf) has been upgraded to probable for Sunday's game against the Wizards."
-  },
   "2991230": {
    "status": "out",
    "name": "Fred VanVleet",
@@ -404,8 +397,8 @@
    "status": "day-to-day",
    "name": "Ryan Rollins",
    "team": "MIL",
-   "date": "2026-11-15T17:19Z",
-   "note": "Rollins (head) isn't listed on the injury report for Friday's game against Orlando."
+   "date": "2026-11-15T17:23Z",
+   "note": "Rollins (illness) is questionable to play in Sunday's game against the Hawks."
   },
   "4997526": {
    "status": "out",
