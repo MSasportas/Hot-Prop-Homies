@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-14",
- "generated_at": "2026-11-14T23:20:31-05:00",
+ "generated_at": "2026-11-14T23:30:00-05:00",
  "games": [
   {
    "game_id": 2026020313,
@@ -92,20 +92,20 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "15:37",
+   "clock": "10:30",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "SJS",
-    "score": 3,
-    "sog": 13
+    "score": 4,
+    "sog": 14
    },
    "home": {
     "abbrev": "UTA",
     "score": 4,
-    "sog": 21
+    "sog": 23
    },
-   "updated_at": "2026-11-14T23:20:31-05:00"
+   "updated_at": "2026-11-14T23:30:00-05:00"
   },
   {
    "game_id": 2026020324,
@@ -113,20 +113,20 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "10:07",
+   "clock": "06:21",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "NYI",
-    "score": 4,
-    "sog": 17
+    "score": 5,
+    "sog": 18
    },
    "home": {
     "abbrev": "ANA",
     "score": 1,
-    "sog": 13
+    "sog": 16
    },
-   "updated_at": "2026-11-14T23:20:31-05:00"
+   "updated_at": "2026-11-14T23:30:00-05:00"
   }
  ],
  "picks": {
@@ -178,7 +178,7 @@
   "2026-11-14:2026020324:8484762:shots:2.5:under": {
    "game_id": 2026020324,
    "market": "shots",
-   "stat": 0
+   "stat": 1
   },
   "2026-11-14:2026020324:8485388:shots:1.5:under": {
    "game_id": 2026020324,
