@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-14",
- "generated_at": "2026-11-14T20:50:29-05:00",
+ "generated_at": "2026-11-14T21:00:00-05:00",
  "games": [
   {
    "game_id": 2026020313,
@@ -8,7 +8,7 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "13:30",
+   "clock": "03:45",
    "in_intermission": true,
    "running": false,
    "away": {
@@ -21,28 +21,28 @@
     "score": 1,
     "sog": 18
    },
-   "updated_at": "2026-11-14T20:50:29-05:00"
+   "updated_at": "2026-11-14T21:00:00-05:00"
   },
   {
    "game_id": 2026020316,
    "state": "LIVE",
    "schedule_state": "OK",
-   "period": 2,
+   "period": 3,
    "period_type": "REG",
-   "clock": "04:26",
-   "in_intermission": true,
-   "running": false,
+   "clock": "17:55",
+   "in_intermission": false,
+   "running": true,
    "away": {
     "abbrev": "DET",
     "score": 1,
-    "sog": 16
+    "sog": 17
    },
    "home": {
     "abbrev": "TBL",
     "score": 0,
-    "sog": 22
+    "sog": 25
    },
-   "updated_at": "2026-11-14T20:50:29-05:00"
+   "updated_at": "2026-11-14T21:00:00-05:00"
   },
   {
    "game_id": 2026020317,
@@ -50,20 +50,20 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "05:08",
-   "in_intermission": false,
+   "clock": "14:56",
+   "in_intermission": true,
    "running": false,
    "away": {
     "abbrev": "OTT",
-    "score": 1,
-    "sog": 10
+    "score": 2,
+    "sog": 17
    },
    "home": {
     "abbrev": "PIT",
     "score": 1,
-    "sog": 12
+    "sog": 13
    },
-   "updated_at": "2026-11-14T20:50:29-05:00"
+   "updated_at": "2026-11-14T21:00:00-05:00"
   },
   {
    "game_id": 2026020320,
@@ -71,7 +71,7 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "11:09",
+   "clock": "01:23",
    "in_intermission": true,
    "running": false,
    "away": {
@@ -84,7 +84,28 @@
     "score": 0,
     "sog": 11
    },
-   "updated_at": "2026-11-14T20:50:29-05:00"
+   "updated_at": "2026-11-14T21:00:00-05:00"
+  },
+  {
+   "game_id": 2026020323,
+   "state": "PRE",
+   "schedule_state": "OK",
+   "period": null,
+   "period_type": null,
+   "clock": null,
+   "in_intermission": false,
+   "running": false,
+   "away": {
+    "abbrev": "SJS",
+    "score": null,
+    "sog": null
+   },
+   "home": {
+    "abbrev": "UTA",
+    "score": null,
+    "sog": null
+   },
+   "updated_at": "2026-11-14T21:00:00-05:00"
   }
  ],
  "picks": {
@@ -117,6 +138,21 @@
    "game_id": 2026020320,
    "market": "points",
    "stat": 1
+  },
+  "2026-11-14:2026020323:8476389:points:0.5:under": {
+   "game_id": 2026020323,
+   "market": "points",
+   "stat": null
+  },
+  "2026-11-14:2026020323:8479410:points:0.5:under": {
+   "game_id": 2026020323,
+   "market": "points",
+   "stat": null
+  },
+  "2026-11-14:2026020323:8480748:shots:1.5:over": {
+   "game_id": 2026020323,
+   "market": "shots",
+   "stat": null
   }
  }
 }

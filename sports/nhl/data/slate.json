@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-14",
- "generated_at": "2026-11-14T20:40:01-05:00",
- "status_at": "2026-11-14T20:40:01-05:00",
+ "generated_at": "2026-11-14T21:00:00-05:00",
+ "status_at": "2026-11-14T21:00:00-05:00",
  "valid_until": "2026-11-15T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-14T20:40:01-05:00",
+   "at": "2026-11-14T21:00:00-05:00",
    "failed_step": null
   },
   "pool": {
@@ -580,8 +580,8 @@
      "home": "2026-11-14T18:00:01-05:00"
     }
    },
-   "started": false,
-   "reads_done": true,
+   "started": true,
+   "reads_done": false,
    "picks": 3,
    "excluded_reason": null,
    "excluded_teams": []
@@ -679,136 +679,6 @@
  ],
  "picks": [
   {
-   "id": "2026-11-14:2026020323:8476389:points:0.5:under",
-   "price": 170,
-   "first_price": 170,
-   "first_price_at": "2026-11-14T19:30:01-05:00",
-   "worst_price": 170,
-   "p": 0.421,
-   "breakeven": 0.3704,
-   "p_pct": 42,
-   "breakeven_pct": 37,
-   "state": "lineup",
-   "history": [
-    {
-     "at": "2026-11-14T19:30:01-05:00",
-     "text": "Lineup confirmed"
-    }
-   ],
-   "prices": [
-    {
-     "at": "2026-11-14T19:30:01-05:00",
-     "price": 170
-    }
-   ],
-   "pulled": null,
-   "price_final": true,
-   "graded": null,
-   "rank": 1,
-   "tier": "main",
-   "game_id": 2026020323,
-   "player": "V. Trocheck",
-   "player_id": 8476389,
-   "team": "UTA",
-   "opp": "SJS",
-   "home": true,
-   "start": "2026-11-14T21:00:00-05:00",
-   "market": "points",
-   "line": 0.5,
-   "side": "under",
-   "bet": "Under 0.5 points",
-   "price_at": "2026-11-14T19:30:01-05:00",
-   "gap_pct": 9.6,
-   "market_fair_pct": 40.6,
-   "n_books": 7,
-   "guard": {
-    "verdict": "agrees",
-    "ours_pct": 42.1,
-    "model_pct": 48.1
-   },
-   "settled": "goalie",
-   "settled_label": "Goalie confirmed",
-   "reason": "7 other books say 40.6%; Hard Rock's +170 only needs 37.0%. Our model agrees (our blend: 42.1%).",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/7116145305294340507",
-   "links": {
-    "hardrock": {
-     "id": "7116145305294340507",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/7116145305294340507"
-    },
-    "draftkings": null
-   },
-   "thin": false,
-   "games_used": 87,
-   "games_this_season": 20
-  },
-  {
-   "id": "2026-11-14:2026020323:8480748:shots:1.5:over",
-   "price": 105,
-   "first_price": 105,
-   "first_price_at": "2026-11-14T19:30:01-05:00",
-   "worst_price": 105,
-   "p": 0.5498,
-   "breakeven": 0.4878,
-   "p_pct": 54,
-   "breakeven_pct": 49,
-   "state": "lineup",
-   "history": [
-    {
-     "at": "2026-11-14T19:30:01-05:00",
-     "text": "Early: lineup not confirmed"
-    },
-    {
-     "at": "2026-11-14T20:40:01-05:00",
-     "text": "Lineup confirmed"
-    }
-   ],
-   "prices": [
-    {
-     "at": "2026-11-14T19:30:01-05:00",
-     "price": 105
-    }
-   ],
-   "pulled": null,
-   "price_final": true,
-   "graded": null,
-   "rank": 2,
-   "tier": "main",
-   "game_id": 2026020323,
-   "player": "K. Sherwood",
-   "player_id": 8480748,
-   "team": "SJS",
-   "opp": "UTA",
-   "home": false,
-   "start": "2026-11-14T21:00:00-05:00",
-   "market": "shots",
-   "line": 1.5,
-   "side": "over",
-   "bet": "Over 1.5 shots on goal",
-   "price_at": "2026-11-14T19:30:01-05:00",
-   "gap_pct": 11.6,
-   "market_fair_pct": 54.5,
-   "n_books": 7,
-   "guard": {
-    "verdict": "agrees",
-    "ours_pct": 55.0,
-    "model_pct": 55.3
-   },
-   "settled": "goalie",
-   "settled_label": "Goalie confirmed",
-   "reason": "7 other books say 54.5%; Hard Rock's +105 only needs 48.8%. Our model agrees (our blend: 55.0%).",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/9113378094124761490",
-   "links": {
-    "hardrock": {
-     "id": "9113378094124761490",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/9113378094124761490"
-    },
-    "draftkings": null
-   },
-   "thin": false,
-   "games_used": 93,
-   "games_this_season": 21
-  },
-  {
    "id": "2026-11-14:2026020324:8485388:shots:1.5:under",
    "price": 115,
    "first_price": 115,
@@ -834,7 +704,7 @@
    "pulled": null,
    "price_final": false,
    "graded": null,
-   "rank": 3,
+   "rank": 1,
    "tier": "main",
    "game_id": 2026020324,
    "player": "V. Eklund",
@@ -870,69 +740,6 @@
    "thin": true,
    "games_used": 19,
    "games_this_season": 18
-  },
-  {
-   "id": "2026-11-14:2026020323:8479410:points:0.5:under",
-   "price": 165,
-   "first_price": 165,
-   "first_price_at": "2026-11-14T19:30:01-05:00",
-   "worst_price": 165,
-   "p": 0.3975,
-   "breakeven": 0.3774,
-   "p_pct": 39,
-   "breakeven_pct": 38,
-   "state": "lineup",
-   "history": [
-    {
-     "at": "2026-11-14T19:30:01-05:00",
-     "text": "Lineup confirmed"
-    }
-   ],
-   "prices": [
-    {
-     "at": "2026-11-14T19:30:01-05:00",
-     "price": 165
-    }
-   ],
-   "pulled": null,
-   "price_final": true,
-   "graded": null,
-   "rank": 4,
-   "tier": "main",
-   "game_id": 2026020323,
-   "player": "M. Sergachev",
-   "player_id": 8479410,
-   "team": "UTA",
-   "opp": "SJS",
-   "home": true,
-   "start": "2026-11-14T21:00:00-05:00",
-   "market": "points",
-   "line": 0.5,
-   "side": "under",
-   "bet": "Under 0.5 points",
-   "price_at": "2026-11-14T19:30:01-05:00",
-   "gap_pct": 4.9,
-   "market_fair_pct": 39.6,
-   "n_books": 7,
-   "guard": {
-    "verdict": "agrees",
-    "ours_pct": 39.8,
-    "model_pct": 40.3
-   },
-   "settled": "goalie",
-   "settled_label": "Goalie confirmed",
-   "reason": "7 other books say 39.6%; Hard Rock's +165 only needs 37.7%. Our model agrees (our blend: 39.7%).",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/4772189528316314018",
-   "links": {
-    "hardrock": {
-     "id": "4772189528316314018",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/4772189528316314018"
-    },
-    "draftkings": null
-   },
-   "thin": false,
-   "games_used": 98,
-   "games_this_season": 20
   },
   {
    "id": "2026-11-14:2026020313:8477496:shots:1.5:under",
@@ -1335,6 +1142,211 @@
    "thin": false,
    "games_used": 96,
    "games_this_season": 20
+  },
+  {
+   "id": "2026-11-14:2026020323:8476389:points:0.5:under",
+   "price": 170,
+   "first_price": 170,
+   "first_price_at": "2026-11-14T19:30:01-05:00",
+   "worst_price": 170,
+   "p": 0.421,
+   "breakeven": 0.3704,
+   "p_pct": 42,
+   "breakeven_pct": 37,
+   "state": "locked",
+   "history": [
+    {
+     "at": "2026-11-14T19:30:01-05:00",
+     "text": "Lineup confirmed"
+    },
+    {
+     "at": "2026-11-14T21:00:00-05:00",
+     "text": "Locked"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-14T19:30:01-05:00",
+     "price": 170
+    }
+   ],
+   "pulled": null,
+   "price_final": false,
+   "graded": null,
+   "rank": null,
+   "tier": "main",
+   "game_id": 2026020323,
+   "player": "V. Trocheck",
+   "player_id": 8476389,
+   "team": "UTA",
+   "opp": "SJS",
+   "home": true,
+   "start": "2026-11-14T21:00:00-05:00",
+   "market": "points",
+   "line": 0.5,
+   "side": "under",
+   "bet": "Under 0.5 points",
+   "price_at": "2026-11-14T19:30:01-05:00",
+   "gap_pct": 9.6,
+   "market_fair_pct": 40.6,
+   "n_books": 7,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 42.1,
+    "model_pct": 48.1
+   },
+   "settled": "goalie",
+   "settled_label": "Goalie confirmed",
+   "reason": "7 other books say 40.6%; Hard Rock's +170 only needs 37.0%. Our model agrees (our blend: 42.1%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/7116145305294340507",
+   "links": {
+    "hardrock": {
+     "id": "7116145305294340507",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/7116145305294340507"
+    },
+    "draftkings": null
+   },
+   "thin": false,
+   "games_used": 87,
+   "games_this_season": 20
+  },
+  {
+   "id": "2026-11-14:2026020323:8479410:points:0.5:under",
+   "price": 165,
+   "first_price": 165,
+   "first_price_at": "2026-11-14T19:30:01-05:00",
+   "worst_price": 165,
+   "p": 0.3975,
+   "breakeven": 0.3774,
+   "p_pct": 39,
+   "breakeven_pct": 38,
+   "state": "locked",
+   "history": [
+    {
+     "at": "2026-11-14T19:30:01-05:00",
+     "text": "Lineup confirmed"
+    },
+    {
+     "at": "2026-11-14T21:00:00-05:00",
+     "text": "Locked"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-14T19:30:01-05:00",
+     "price": 165
+    }
+   ],
+   "pulled": null,
+   "price_final": false,
+   "graded": null,
+   "rank": null,
+   "tier": "main",
+   "game_id": 2026020323,
+   "player": "M. Sergachev",
+   "player_id": 8479410,
+   "team": "UTA",
+   "opp": "SJS",
+   "home": true,
+   "start": "2026-11-14T21:00:00-05:00",
+   "market": "points",
+   "line": 0.5,
+   "side": "under",
+   "bet": "Under 0.5 points",
+   "price_at": "2026-11-14T19:30:01-05:00",
+   "gap_pct": 4.9,
+   "market_fair_pct": 39.6,
+   "n_books": 7,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 39.8,
+    "model_pct": 40.3
+   },
+   "settled": "goalie",
+   "settled_label": "Goalie confirmed",
+   "reason": "7 other books say 39.6%; Hard Rock's +165 only needs 37.7%. Our model agrees (our blend: 39.7%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/4772189528316314018",
+   "links": {
+    "hardrock": {
+     "id": "4772189528316314018",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/4772189528316314018"
+    },
+    "draftkings": null
+   },
+   "thin": false,
+   "games_used": 98,
+   "games_this_season": 20
+  },
+  {
+   "id": "2026-11-14:2026020323:8480748:shots:1.5:over",
+   "price": 105,
+   "first_price": 105,
+   "first_price_at": "2026-11-14T19:30:01-05:00",
+   "worst_price": 105,
+   "p": 0.5498,
+   "breakeven": 0.4878,
+   "p_pct": 54,
+   "breakeven_pct": 49,
+   "state": "locked",
+   "history": [
+    {
+     "at": "2026-11-14T19:30:01-05:00",
+     "text": "Early: lineup not confirmed"
+    },
+    {
+     "at": "2026-11-14T20:40:01-05:00",
+     "text": "Lineup confirmed"
+    },
+    {
+     "at": "2026-11-14T21:00:00-05:00",
+     "text": "Locked"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-14T19:30:01-05:00",
+     "price": 105
+    }
+   ],
+   "pulled": null,
+   "price_final": false,
+   "graded": null,
+   "rank": null,
+   "tier": "main",
+   "game_id": 2026020323,
+   "player": "K. Sherwood",
+   "player_id": 8480748,
+   "team": "SJS",
+   "opp": "UTA",
+   "home": false,
+   "start": "2026-11-14T21:00:00-05:00",
+   "market": "shots",
+   "line": 1.5,
+   "side": "over",
+   "bet": "Over 1.5 shots on goal",
+   "price_at": "2026-11-14T19:30:01-05:00",
+   "gap_pct": 11.6,
+   "market_fair_pct": 54.5,
+   "n_books": 7,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 55.0,
+    "model_pct": 55.3
+   },
+   "settled": "goalie",
+   "settled_label": "Goalie confirmed",
+   "reason": "7 other books say 54.5%; Hard Rock's +105 only needs 48.8%. Our model agrees (our blend: 55.0%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/9113378094124761490",
+   "links": {
+    "hardrock": {
+     "id": "9113378094124761490",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/9113378094124761490"
+    },
+    "draftkings": null
+   },
+   "thin": false,
+   "games_used": 93,
+   "games_this_season": 21
   }
  ],
  "parlays": [],
