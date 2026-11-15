@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-14",
- "generated_at": "2026-11-14T20:06:25-05:00",
+ "generated_at": "2026-11-14T20:10:00-05:00",
  "games": [
   {
    "game_id": 2026020313,
@@ -8,20 +8,20 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "20:00",
+   "clock": "18:27",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "MIN",
-    "score": 1,
-    "sog": 12
+    "score": 2,
+    "sog": 13
    },
    "home": {
     "abbrev": "BOS",
     "score": 0,
     "sog": 6
    },
-   "updated_at": "2026-11-14T20:06:25-05:00"
+   "updated_at": "2026-11-14T20:10:00-05:00"
   },
   {
    "game_id": 2026020316,
@@ -29,20 +29,20 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "16:41",
+   "clock": "14:22",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "DET",
     "score": 0,
-    "sog": 6
+    "sog": 8
    },
    "home": {
     "abbrev": "TBL",
     "score": 0,
     "sog": 13
    },
-   "updated_at": "2026-11-14T20:06:25-05:00"
+   "updated_at": "2026-11-14T20:10:00-05:00"
   },
   {
    "game_id": 2026020317,
@@ -50,7 +50,7 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "11:08",
+   "clock": "07:20",
    "in_intermission": true,
    "running": false,
    "away": {
@@ -63,7 +63,7 @@
     "score": 1,
     "sog": 7
    },
-   "updated_at": "2026-11-14T20:06:25-05:00"
+   "updated_at": "2026-11-14T20:10:00-05:00"
   },
   {
    "game_id": 2026020320,
@@ -71,20 +71,20 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "20:00",
+   "clock": "17:29",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "FLA",
     "score": 2,
-    "sog": 10
+    "sog": 11
    },
    "home": {
     "abbrev": "STL",
     "score": 0,
     "sog": 2
    },
-   "updated_at": "2026-11-14T20:06:25-05:00"
+   "updated_at": "2026-11-14T20:10:00-05:00"
   }
  ],
  "picks": {
