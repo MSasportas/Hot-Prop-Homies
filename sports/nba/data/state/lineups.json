@@ -11,8 +11,6 @@
     "Ivica Zubac"
    ],
    "status": {
-    "Aaron Nesmith": "questionable",
-    "T.J. McConnell": "probable",
     "Johnny Furphy": "out",
     "Tyrese Haliburton": "out",
     "Andrew Nembhard": "out",
@@ -241,6 +239,7 @@
     "Myles Turner"
    ],
    "status": {
+    "Ryan Rollins": "questionable",
     "Ousmane Dieng": "out"
    }
   },
@@ -279,5 +278,5 @@
    }
   }
  },
- "at": "2026-11-15T12:10:01-05:00"
+ "at": "2026-11-15T12:20:01-05:00"
 }
