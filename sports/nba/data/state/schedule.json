@@ -360,11 +360,11 @@
     "home": "NO",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:03 - 2nd",
     "score": {
-     "DEN": "29",
-     "NO": "23"
+     "DEN": "40",
+     "NO": "36"
     }
    },
    {
@@ -373,13 +373,13 @@
     "start": "2026-11-14T19:30:00-05:00",
     "away": "DAL",
     "home": "CLE",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/14 - 7:30 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:32 - 1st",
     "score": {
-     "DAL": "0",
-     "CLE": "0"
+     "DAL": "12",
+     "CLE": "13"
     }
    },
    {

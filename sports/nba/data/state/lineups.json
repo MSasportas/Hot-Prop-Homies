@@ -124,10 +124,10 @@
    }
   },
   "BKN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
-    "Nolan Traore",
     "Egor Demin",
+    "Noah Clowney",
     "Danny Wolf",
     "Julius Randle",
     "Day'Ron Sharpe"
@@ -137,16 +137,16 @@
    }
   },
   "MEM": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Cam Spencer",
     "Cedric Coward",
     "Jaylen Wells",
     "Cameron Boozer",
-    "Zach Edey"
+    "Isaiah Stewart"
    ],
    "status": {
-    "Zach Edey": "questionable",
+    "Zach Edey": "out",
     "Jerami Grant": "out",
     "Ty Jerome": "out",
     "Scotty Pippen": "out",
@@ -154,5 +154,5 @@
    }
   }
  },
- "at": "2026-11-14T19:40:02-05:00"
+ "at": "2026-11-14T19:50:00-05:00"
 }
