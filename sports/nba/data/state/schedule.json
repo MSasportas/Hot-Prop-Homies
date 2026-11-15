@@ -301,10 +301,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:18 - 1st",
+    "detail": "1:48 - 1st",
     "score": {
-     "LAL": "23",
-     "PHX": "12"
+     "LAL": "28",
+     "PHX": "19"
     }
    },
    {

@@ -91,7 +91,7 @@
    }
   },
   "SA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Stephon Castle",
     "Dylan Harper",
@@ -110,7 +110,7 @@
    "starters": [
     "Keyonte George",
     "Darryn Peterson",
-    "Josh Okogie",
+    "Josh Green",
     "Ace Bailey",
     "Mo Bamba"
    ],
@@ -275,5 +275,5 @@
    }
   }
  },
- "at": "2026-11-15T16:30:00-05:00"
+ "at": "2026-11-15T16:40:01-05:00"
 }
