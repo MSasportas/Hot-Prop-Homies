@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T13:20:01-05:00",
+ "at": "2026-11-15T13:30:01-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -526,19 +526,19 @@
    "date": "2026-10-28T23:41Z",
    "note": "Williams (leg) underwent successful surgery Wednesday to \"address a fractured left fibula and reconstruction of ankle ligaments following a fracture and dislocation.\" He will be re-evaluated before th"
   },
+  "4065654": {
+   "status": "out",
+   "name": "Jonathan Isaac",
+   "team": "ORL",
+   "date": "2026-11-15T18:22Z",
+   "note": "Isaac (knee) has been ruled out for Monday's game against the Celtics."
+  },
   "5214637": {
    "status": "out",
    "name": "Noah Penda",
    "team": "ORL",
    "date": "2026-11-14T17:33Z",
    "note": "Penda (hamstring) is making progress but remains without a timetable to return to game action, Jason Beede of the Orlando Sentinel reports."
-  },
-  "4065654": {
-   "status": "out",
-   "name": "Jonathan Isaac",
-   "team": "ORL",
-   "date": "2026-11-09T23:10Z",
-   "note": "Isaac (knee) is out for Tuesday's game against Sacramento."
   },
   "4432573": {
    "status": "out",
