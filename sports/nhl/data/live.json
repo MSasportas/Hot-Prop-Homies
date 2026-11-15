@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-14",
- "generated_at": "2026-11-14T19:40:01-05:00",
+ "generated_at": "2026-11-14T19:50:00-05:00",
  "games": [
   {
    "game_id": 2026020313,
@@ -8,20 +8,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "03:45",
-   "in_intermission": false,
-   "running": true,
+   "clock": "15:01",
+   "in_intermission": true,
+   "running": false,
    "away": {
     "abbrev": "MIN",
     "score": 1,
-    "sog": 11
+    "sog": 12
    },
    "home": {
     "abbrev": "BOS",
     "score": 0,
-    "sog": 4
+    "sog": 6
    },
-   "updated_at": "2026-11-14T19:40:01-05:00"
+   "updated_at": "2026-11-14T19:50:00-05:00"
   },
   {
    "game_id": 2026020316,
@@ -29,20 +29,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "01:56",
-   "in_intermission": false,
-   "running": true,
+   "clock": "08:57",
+   "in_intermission": true,
+   "running": false,
    "away": {
     "abbrev": "DET",
     "score": 0,
-    "sog": 3
+    "sog": 4
    },
    "home": {
     "abbrev": "TBL",
     "score": 0,
-    "sog": 9
+    "sog": 10
    },
-   "updated_at": "2026-11-14T19:40:01-05:00"
+   "updated_at": "2026-11-14T19:50:00-05:00"
   },
   {
    "game_id": 2026020317,
@@ -50,20 +50,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "10:37",
+   "clock": "05:33",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "OTT",
     "score": 0,
-    "sog": 2
+    "sog": 4
    },
    "home": {
     "abbrev": "PIT",
     "score": 0,
-    "sog": 1
+    "sog": 3
    },
-   "updated_at": "2026-11-14T19:40:01-05:00"
+   "updated_at": "2026-11-14T19:50:00-05:00"
   },
   {
    "game_id": 2026020320,
@@ -71,8 +71,8 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "05:28",
-   "in_intermission": false,
+   "clock": "15:18",
+   "in_intermission": true,
    "running": false,
    "away": {
     "abbrev": "FLA",
@@ -82,9 +82,9 @@
    "home": {
     "abbrev": "STL",
     "score": 0,
-    "sog": 1
+    "sog": 2
    },
-   "updated_at": "2026-11-14T19:40:01-05:00"
+   "updated_at": "2026-11-14T19:50:00-05:00"
   }
  ],
  "picks": {
