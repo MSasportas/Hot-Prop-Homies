@@ -1,30 +1,9 @@
 {
  "slate_date": "2026-11-14",
- "generated_at": "2026-11-14T20:00:00-05:00",
+ "generated_at": "2026-11-14T20:06:25-05:00",
  "games": [
   {
    "game_id": 2026020313,
-   "state": "LIVE",
-   "schedule_state": "OK",
-   "period": 1,
-   "period_type": "REG",
-   "clock": "04:57",
-   "in_intermission": true,
-   "running": false,
-   "away": {
-    "abbrev": "MIN",
-    "score": 1,
-    "sog": 13
-   },
-   "home": {
-    "abbrev": "BOS",
-    "score": 0,
-    "sog": 6
-   },
-   "updated_at": "2026-11-14T20:00:00-05:00"
-  },
-  {
-   "game_id": 2026020316,
    "state": "LIVE",
    "schedule_state": "OK",
    "period": 2,
@@ -33,16 +12,37 @@
    "in_intermission": false,
    "running": false,
    "away": {
+    "abbrev": "MIN",
+    "score": 1,
+    "sog": 12
+   },
+   "home": {
+    "abbrev": "BOS",
+    "score": 0,
+    "sog": 6
+   },
+   "updated_at": "2026-11-14T20:06:25-05:00"
+  },
+  {
+   "game_id": 2026020316,
+   "state": "LIVE",
+   "schedule_state": "OK",
+   "period": 2,
+   "period_type": "REG",
+   "clock": "16:41",
+   "in_intermission": false,
+   "running": false,
+   "away": {
     "abbrev": "DET",
     "score": 0,
-    "sog": 4
+    "sog": 6
    },
    "home": {
     "abbrev": "TBL",
     "score": 0,
-    "sog": 10
+    "sog": 13
    },
-   "updated_at": "2026-11-14T20:00:00-05:00"
+   "updated_at": "2026-11-14T20:06:25-05:00"
   },
   {
    "game_id": 2026020317,
@@ -50,8 +50,8 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "00:06",
-   "in_intermission": false,
+   "clock": "11:08",
+   "in_intermission": true,
    "running": false,
    "away": {
     "abbrev": "OTT",
@@ -61,18 +61,18 @@
    "home": {
     "abbrev": "PIT",
     "score": 1,
-    "sog": 6
+    "sog": 7
    },
-   "updated_at": "2026-11-14T20:00:00-05:00"
+   "updated_at": "2026-11-14T20:06:25-05:00"
   },
   {
    "game_id": 2026020320,
    "state": "LIVE",
    "schedule_state": "OK",
-   "period": 1,
+   "period": 2,
    "period_type": "REG",
-   "clock": "05:19",
-   "in_intermission": true,
+   "clock": "20:00",
+   "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "FLA",
@@ -84,7 +84,7 @@
     "score": 0,
     "sog": 2
    },
-   "updated_at": "2026-11-14T20:00:00-05:00"
+   "updated_at": "2026-11-14T20:06:25-05:00"
   }
  ],
  "picks": {
