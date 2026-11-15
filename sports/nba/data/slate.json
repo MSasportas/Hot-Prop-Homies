@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 3940,
+   "pool_left": 3936,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-15T12:40:00-05:00",
-  "last_read_at": "2026-11-15T12:30:00-05:00",
+  "next_read_at": "2026-11-15T13:00:00-05:00",
+  "last_read_at": "2026-11-15T12:40:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-15T12:30:00-05:00"
+   "at": "2026-11-15T12:40:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,8 +30,11 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-15T12:30:00-05:00",
-    "confirmed": []
+    "at": "2026-11-15T12:40:01-05:00",
+    "confirmed": [
+     "IND",
+     "PHI"
+    ]
    },
    "grade": true
   }
@@ -45,11 +48,11 @@
    "state": "pre",
    "detail": "11/15 - 1:00 PM EST",
    "lineups": {
-    "away": "expected",
-    "home": "expected"
+    "away": "confirmed",
+    "home": "confirmed"
    },
-   "read_at": "2026-11-15T12:30:00-05:00",
-   "picks": 0,
+   "read_at": "2026-11-15T12:40:01-05:00",
+   "picks": 1,
    "checks": [
     {
      "read": "X135",
@@ -74,12 +77,16 @@
     {
      "read": "X30",
      "at": "2026-11-15T12:30:00-05:00"
+    },
+    {
+     "read": "D",
+     "at": "2026-11-15T12:40:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-15T12:30:00-05:00",
-   "final": false,
-   "next_check_at": "2026-11-15T12:40:00-05:00",
-   "next_check_read": "D",
+   "last_check_at": "2026-11-15T12:40:01-05:00",
+   "final": true,
+   "next_check_at": null,
+   "next_check_read": null,
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -289,15 +296,78 @@
    }
   }
  ],
- "picks": [],
- "empty": {
-  "text": "No picks yet today",
-  "why": "800 lines read. Pinnacle moved alone on 21, none of them bettable yet.",
-  "next": "2026-11-15T12:40:00-05:00"
- },
+ "picks": [
+  {
+   "player": "Pascal Siakam",
+   "pid": "3149673",
+   "team": "IND",
+   "opp": "PHI",
+   "home": false,
+   "game_id": "401909985",
+   "start": "2026-11-15T13:00:00-05:00",
+   "bet": "Under 3.5 assists",
+   "market": "assists",
+   "side": "under",
+   "line": 3.5,
+   "price": 115,
+   "price_at": "2026-11-15T12:40:01-05:00",
+   "read": "D",
+   "p": 0.4677,
+   "p_pct": 47,
+   "breakeven": 0.4651,
+   "breakeven_pct": 47,
+   "market_fair": null,
+   "n_books": 5,
+   "gap_ev": null,
+   "final_ev": 0.0287,
+   "model_p": null,
+   "reason": "Pinnacle moved the under from +113 to +100 (44% to 47%). Hard Rock +115 is 0.6% better than Pinnacle's fair price; DraftKings +122 is 3.8% better than Pinnacle's fair price.",
+   "rule": "pin_solo",
+   "pin_before": 0.439,
+   "pin_after": 0.4677,
+   "pin_price_before": 113,
+   "pin_price_after": 100,
+   "others_move": 0.0167,
+   "n_others": 5,
+   "ev_vs_pin": 0.0056,
+   "window": "30 \u2192 20 min",
+   "gap_vs_pin": 0.0349,
+   "book": "hardrock",
+   "books": {
+    "draftkings": {
+     "ev_vs_pin": 0.0384,
+     "price": 122
+    },
+    "hardrock": {
+     "ev_vs_pin": 0.0056,
+     "price": 115
+    }
+   },
+   "id": "2026-11-15:401909985:3149673:assists:3.5:under",
+   "state": "starters",
+   "state_label": "Starters confirmed",
+   "price_final": true,
+   "pulled": null,
+   "added_at": "2026-11-15T12:40:01-05:00",
+   "result": null,
+   "links": {
+    "hardrock": {
+     "id": "2194242938230407571",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/2194242938230407571",
+     "price": 115
+    },
+    "draftkings": {
+     "url": "https://sportsbook.draftkings.com/?outcomes=0QA389378941%232366103958_13L42648Q11701984101Q20",
+     "price": 122
+    }
+   },
+   "rank": 1
+  }
+ ],
+ "empty": null,
  "counts": {
-  "lines_read": 800,
-  "passing": 2,
+  "lines_read": 806,
+  "passing": 5,
   "games": 9
  },
  "safety_paused": false,
@@ -306,6 +376,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-15T12:30:00-05:00",
- "status_at": "2026-11-15T12:30:00-05:00"
+ "generated_at": "2026-11-15T12:40:01-05:00",
+ "status_at": "2026-11-15T12:40:01-05:00"
 }

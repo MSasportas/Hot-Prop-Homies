@@ -2,7 +2,7 @@
  "slate": "2026-11-15",
  "teams": {
   "IND": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Quenton Jackson",
     "Kelly Oubre",
@@ -18,7 +18,7 @@
    }
   },
   "PHI": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Tyrese Maxey",
     "VJ Edgecombe",
@@ -187,7 +187,6 @@
     "Alperen Sengun"
    ],
    "status": {
-    "Steven Adams": "probable",
     "Clint Capela": "out",
     "Marcus Smart": "out",
     "Fred VanVleet": "out"
@@ -278,5 +277,5 @@
    }
   }
  },
- "at": "2026-11-15T12:30:00-05:00"
+ "at": "2026-11-15T12:40:01-05:00"
 }
