@@ -2,7 +2,7 @@
  "version": 1,
  "note": "Gap + Guard research log. Every flag here is a pick on the page and in the Record; vetoed and capped rows are research only.",
  "market": "shots",
- "generated_at": "2026-11-15T18:40:01-05:00",
+ "generated_at": "2026-11-15T18:50:01-05:00",
  "slate": "2026-11-15",
  "active": true,
  "window": {
@@ -10,7 +10,42 @@
   "checkpoint": "2026-11-02"
  },
  "tonight": {
-  "flags": [],
+  "flags": [
+   {
+    "id": "2026-11-15:2026020326:8485406:1.5:under",
+    "kind": "flag",
+    "slate": "2026-11-15",
+    "game_id": 2026020326,
+    "player": "P. Martone",
+    "team": "PHI",
+    "opp": "EDM",
+    "game": "PHI vs EDM",
+    "start": "2026-11-15T19:30:00-05:00",
+    "side": "under",
+    "line": 1.5,
+    "bet": "UNDER 1.5 shots",
+    "price": 130,
+    "gap_pct": 6.9,
+    "final_pct": 7.9,
+    "market_fair_pct": 46.5,
+    "final_p_pct": 46.9,
+    "n_books": 7,
+    "guard": "pass",
+    "cap": null,
+    "flagged_at": "2026-11-15T18:50:01-05:00",
+    "read_pull": "C",
+    "settled": "Goalie confirmed",
+    "frozen_settled": "Goalie confirmed",
+    "move30_pct": 0.0,
+    "pulled": null,
+    "locked": false,
+    "state": "open",
+    "close_fair_pct": 46.5,
+    "clv_pct": null,
+    "result": null,
+    "units": null
+   }
+  ],
   "vetoes": [],
   "capped": []
  },
@@ -985,55 +1020,11 @@
      "units": -1.0
     }
    ]
-  },
-  {
-   "date": "2026-11-04",
-   "flags": [
-    {
-     "id": "2026-11-04:2026020250:8482679:2.5:over",
-     "kind": "flag",
-     "slate": "2026-11-04",
-     "game_id": 2026020250,
-     "player": "M. Coronato",
-     "team": "CGY",
-     "opp": "SEA",
-     "game": "CGY @ SEA",
-     "start": "2026-11-04T22:00:00-05:00",
-     "side": "over",
-     "line": 2.5,
-     "bet": "OVER 2.5 shots",
-     "price": 130,
-     "gap_pct": 5.9,
-     "final_pct": 4.8,
-     "market_fair_pct": 46.1,
-     "final_p_pct": 45.5,
-     "n_books": 8,
-     "guard": "pass",
-     "cap": null,
-     "flagged_at": "2026-11-04T20:30:00-05:00",
-     "read_pull": "B",
-     "settled": "Lineup confirmed",
-     "frozen_settled": "Early",
-     "move30_pct": -0.7,
-     "pulled": {
-      "reason": "price moved, gap gone",
-      "detail": "gap -4.4% at +105",
-      "at": "2026-11-04T21:20:00-05:00"
-     },
-     "locked": true,
-     "state": "pulled",
-     "close_fair_pct": 46.6,
-     "clv_pct": 7.2,
-     "result": "L",
-     "units": -1.0
-    }
-   ],
-   "vetoes": []
   }
  ],
  "nov2": {
   "gaps_measured": 63,
-  "gaps_logged": 78,
+  "gaps_logged": 79,
   "graded_picks": 67,
   "w": 41,
   "l": 26,
@@ -1061,7 +1052,7 @@
   "clv_passed_mean": 0.046792278289014666,
   "clv_vetoed_mean": 0.04573833157167243,
   "nights": 24,
-  "nights_with_flags": 18,
+  "nights_with_flags": 19,
   "population_slope": null,
   "checkpoint": "2026-11-02"
  }
