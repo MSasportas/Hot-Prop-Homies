@@ -301,10 +301,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:47 - 3rd",
+    "detail": "1:15 - 3rd",
     "score": {
-     "LAL": "85",
-     "PHX": "65"
+     "LAL": "101",
+     "PHX": "73"
     }
    },
    {
@@ -315,11 +315,11 @@
     "home": "LAC",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "9:43 - 3rd",
     "score": {
-     "CHA": "52",
-     "LAC": "51"
+     "CHA": "59",
+     "LAC": "52"
     }
    },
    {
@@ -331,10 +331,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:50 - 2nd",
+    "detail": "2:32 - 2nd",
     "score": {
-     "SA": "45",
-     "UTAH": "47"
+     "SA": "50",
+     "UTAH": "53"
     }
    },
    {

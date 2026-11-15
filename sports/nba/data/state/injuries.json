@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T17:50:00-05:00",
+ "at": "2026-11-15T18:00:01-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -362,8 +362,8 @@
    "status": "day-to-day",
    "name": "Pelle Larsson",
    "team": "MIA",
-   "date": "2026-11-15T15:26Z",
-   "note": "Larsson (illness) has been ruled out for Saturday's game against the Pistons."
+   "date": "2026-11-15T22:47Z",
+   "note": "Larsson (illness) is questionable to play in Monday's game against the Rockets."
   },
   "4997526": {
    "status": "out",
@@ -400,6 +400,13 @@
    "date": "2026-10-05T20:53Z",
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
   },
+  "4431675": {
+   "status": "out",
+   "name": "Trendon Watford",
+   "team": "NO",
+   "date": "2026-11-15T22:52Z",
+   "note": "Watford (ankle) has been ruled out for Monday's game against Golden State."
+  },
   "4576086": {
    "status": "out",
    "name": "Bryce McGowens",
@@ -413,13 +420,6 @@
    "team": "NO",
    "date": "2026-11-15T22:06Z",
    "note": "Mathurin is out for Saturday's game against the Nuggets due to left plantar fasciitis."
-  },
-  "4431675": {
-   "status": "out",
-   "name": "Trendon Watford",
-   "team": "NO",
-   "date": "2026-11-14T17:58Z",
-   "note": "Watford (ankle) has been ruled out for Saturday's game against Denver."
   },
   "4397688": {
    "status": "out",
