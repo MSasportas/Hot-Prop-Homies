@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-14",
- "generated_at": "2026-11-15T00:10:01-05:00",
+ "generated_at": "2026-11-15T00:11:06-05:00",
  "games": [
   {
    "game_id": 2026020313,
@@ -105,7 +105,7 @@
     "score": 5,
     "sog": 32
    },
-   "updated_at": "2026-11-15T00:10:01-05:00"
+   "updated_at": "2026-11-15T00:11:06-05:00"
   },
   {
    "game_id": 2026020324,
@@ -113,20 +113,20 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "14:14",
+   "clock": "13:47",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "NYI",
     "score": 6,
-    "sog": 23
+    "sog": 24
    },
    "home": {
     "abbrev": "ANA",
     "score": 2,
     "sog": 23
    },
-   "updated_at": "2026-11-15T00:10:01-05:00"
+   "updated_at": "2026-11-15T00:11:06-05:00"
   }
  ],
  "picks": {
