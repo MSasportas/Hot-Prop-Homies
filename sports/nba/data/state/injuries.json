@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T19:30:00-05:00",
+ "at": "2026-11-14T19:40:02-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -337,19 +337,19 @@
    "date": "2026-11-14T20:25Z",
    "note": "Sexton (head) was a full participant in Saturday's practice, Dave McMenamin of ESPN.com reports."
   },
+  "2991070": {
+   "status": "out",
+   "name": "Jerami Grant",
+   "team": "MEM",
+   "date": "2026-11-15T00:32Z",
+   "note": "Grant (head) is questionable for Saturday's game against the Nets."
+  },
   "4593016": {
    "status": "out",
    "name": "Quinten Post",
    "team": "MEM",
    "date": "2026-11-14T19:47Z",
    "note": "Post (concussion) has been ruled out for Saturday's game against the Nets."
-  },
-  "2991070": {
-   "status": "day-to-day",
-   "name": "Jerami Grant",
-   "team": "MEM",
-   "date": "2026-11-14T19:46Z",
-   "note": "Grant (head) is questionable for Saturday's game against the Nets."
   },
   "4600663": {
    "status": "day-to-day",

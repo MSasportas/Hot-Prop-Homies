@@ -67,7 +67,7 @@
    }
   },
   "DET": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Cade Cunningham",
     "Daniss Jenkins",
@@ -81,7 +81,7 @@
    }
   },
   "MIA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Davion Mitchell",
     "Klay Thompson",
@@ -94,7 +94,7 @@
    }
   },
   "CHI": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Josh Giddey",
     "Norman Powell",
@@ -110,7 +110,7 @@
    }
   },
   "MIN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "LaMelo Ball",
     "Ayo Dosunmu",
@@ -147,12 +147,12 @@
    ],
    "status": {
     "Zach Edey": "questionable",
-    "Jerami Grant": "questionable",
+    "Jerami Grant": "out",
     "Ty Jerome": "out",
     "Scotty Pippen": "out",
     "Quinten Post": "out"
    }
   }
  },
- "at": "2026-11-14T19:30:00-05:00"
+ "at": "2026-11-14T19:40:02-05:00"
 }
