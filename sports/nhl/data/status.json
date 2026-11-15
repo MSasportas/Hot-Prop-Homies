@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-15",
- "started_at": "2026-11-15T18:21:21-05:00",
- "status_at": "2026-11-15T18:21:21-05:00",
- "finished_at": "2026-11-15T18:21:22-05:00",
- "last_ok_at": "2026-11-15T18:21:21-05:00",
+ "started_at": "2026-11-15T18:30:01-05:00",
+ "status_at": "2026-11-15T18:30:01-05:00",
+ "finished_at": "2026-11-15T18:30:05-05:00",
+ "last_ok_at": "2026-11-15T18:30:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -35,7 +35,7 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "no pull due"
+   "note": "2 game(s) priced"
   },
   {
    "step": "market_menu",
@@ -44,8 +44,8 @@
   },
   {
    "step": "featured",
-   "status": "skipped",
-   "note": "no new shots read to match"
+   "status": "ok",
+   "note": "sides/totals for 5 game(s), 10 book(s) max, 3 credit(s)"
   },
   {
    "step": "book_probe",
@@ -74,8 +74,8 @@
   },
   {
    "step": "shadow",
-   "status": "skipped",
-   "note": "nothing new"
+   "status": "ok",
+   "note": "66 line read(s) logged"
   },
   {
    "step": "gg_grade",
@@ -111,7 +111,7 @@
   },
   {
    "n": 3,
-   "left": 335
+   "left": 328
   },
   {
    "n": 4,
@@ -138,14 +138,14 @@
    "left": 500
   }
  ],
- "pool_total": 2941,
+ "pool_total": 2934,
  "allowance": 26.8545,
  "tier": 4,
  "budget_today": 134,
- "budget_used_today": 13,
+ "budget_used_today": 20,
  "prices_state": "ok",
- "prices_at": "2026-11-15T18:00:00-05:00",
- "next_price_read_at": "2026-11-15T18:30:00-05:00",
+ "prices_at": "2026-11-15T18:30:01-05:00",
+ "next_price_read_at": "2026-11-15T18:45:00-05:00",
  "unmatched_names": [],
  "unknown_teams": [],
  "lineup_unmatched_names": [],
@@ -159,7 +159,7 @@
  "runner": {
   "event": "schedule",
   "run_id": "43772169853",
-  "iteration": 1,
+  "iteration": 2,
   "chain_link": 0,
   "chain_started_at": "2026-11-15T18:21:00-05:00",
   "run_started_at": "2026-11-15T18:21:00-05:00"
