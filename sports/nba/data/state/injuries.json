@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T20:00:00-05:00",
+ "at": "2026-11-14T20:10:01-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -42,13 +42,6 @@
    "team": "BKN",
    "date": "2026-11-15T00:15Z",
    "note": "Porter (personal) is out for Saturday's game against the Grizzlies, Brian Lewis of the New York Post reports."
-  },
-  "4433287": {
-   "status": "day-to-day",
-   "name": "Brandon Miller",
-   "team": "CHA",
-   "date": "2026-11-13T04:46Z",
-   "note": "Miller (groin) is listed as out for Thursday's game against Phoenix."
   },
   "5061575": {
    "status": "out",
@@ -589,26 +582,26 @@
    "date": "2026-08-24T20:23Z",
    "note": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN."
   },
+  "4898371": {
+   "status": "out",
+   "name": "Maxime Raynaud",
+   "team": "SAC",
+   "date": "2026-11-15T01:00Z",
+   "note": "Raynaud (knee) has been ruled out for Sunday's game against the Thunder."
+  },
   "4594327": {
    "status": "day-to-day",
    "name": "Keegan Murray",
    "team": "SAC",
-   "date": "2026-11-14T21:36Z",
-   "note": "Murray (illness) didn't participate in Saturday's practice, Brenden Nunes of KHTK Sactown Sports 1140 reports."
+   "date": "2026-11-15T01:00Z",
+   "note": "Murray (illness) is questionable for Sunday's game against the Thunder."
   },
   "4431679": {
    "status": "day-to-day",
    "name": "Precious Achiuwa",
    "team": "SAC",
-   "date": "2026-11-14T15:05Z",
-   "note": "Achiuwa (ankle) is out for Friday's game against the Trail Blazers."
-  },
-  "4898371": {
-   "status": "out",
-   "name": "Maxime Raynaud",
-   "team": "SAC",
-   "date": "2026-11-10T00:37Z",
-   "note": "Raynaud (knee) has been ruled out for Tuesday's game against Orlando."
+   "date": "2026-11-15T00:57Z",
+   "note": "Achiuwa (ankle) is questionable for Sunday's game against the Thunder."
   },
   "3907387": {
    "status": "out",
