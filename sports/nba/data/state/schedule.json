@@ -300,8 +300,8 @@
     "home": "PHX",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "12:00 - 3rd",
     "score": {
      "LAL": "64",
      "PHX": "54"
@@ -316,10 +316,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:26 - 2nd",
+    "detail": "3:41 - 2nd",
     "score": {
-     "CHA": "32",
-     "LAC": "35"
+     "CHA": "43",
+     "LAC": "44"
     }
    },
    {
@@ -331,10 +331,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:27 - 1st",
+    "detail": "3:54 - 1st",
     "score": {
-     "SA": "8",
-     "UTAH": "14"
+     "SA": "18",
+     "UTAH": "22"
     }
    },
    {

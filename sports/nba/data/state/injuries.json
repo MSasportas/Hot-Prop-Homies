@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T17:20:01-05:00",
+ "at": "2026-11-15T17:30:00-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -82,8 +82,8 @@
    "status": "day-to-day",
    "name": "Jaylon Tyson",
    "team": "CLE",
-   "date": "2026-11-15T22:06Z",
-   "note": "Tyson closed with 16 points (6-11 FG, 4-7 3Pt), three rebounds, one assist and one steal over 30 minutes during Friday's 133-121 loss to Miami."
+   "date": "2026-11-15T22:09Z",
+   "note": "Tyson (ankle) is questionable for Monday's game against the Bulls."
   },
   "4576087": {
    "status": "day-to-day",
@@ -105,27 +105,6 @@
    "team": "CLE",
    "date": "2026-11-15T21:39Z",
    "note": "Merrill (elbow) has been ruled out for Monday's game against the Bulls."
-  },
-  "4066328": {
-   "status": "day-to-day",
-   "name": "Jarrett Allen",
-   "team": "CLE",
-   "date": "2026-11-15T15:26Z",
-   "note": "Allen (knee) has been ruled out for Saturday's game against the Mavericks."
-  },
-  "3908809": {
-   "status": "day-to-day",
-   "name": "Donovan Mitchell",
-   "team": "CLE",
-   "date": "2026-11-15T15:25Z",
-   "note": "Mitchell (knee) has been ruled out for Saturday's game against the Mavericks."
-  },
-  "3992": {
-   "status": "day-to-day",
-   "name": "James Harden",
-   "team": "CLE",
-   "date": "2026-11-15T15:25Z",
-   "note": "Harden (calf) has been ruled out for Saturday's game against Dallas."
   },
   "5106268": {
    "status": "out",
@@ -337,33 +316,40 @@
    "date": "2026-11-15T00:17Z",
    "note": "Reaves (heel) has been ruled out for Sunday's game against the Suns, Daniel Starkand of LakersNation.com reports."
   },
-  "4065733": {
-   "status": "out",
-   "name": "Ty Jerome",
-   "team": "MEM",
-   "date": "2026-11-15T22:08Z",
-   "note": "Jerome (hip) has been ruled out for Saturday's game against the Nets."
-  },
   "5105550": {
    "status": "out",
    "name": "GG Jackson",
    "team": "MEM",
-   "date": "2026-11-15T22:08Z",
-   "note": "According to Grizzlies head coach Tuomas Iisalo, Jackson suffered a \"relatively serious\" foot injury in Saturday's 129-110 win over Brooklyn, Michael Wallace of the Grizzlies' official site reports."
+   "date": "2026-11-15T22:16Z",
+   "note": "Jackson (foot) is out for Monday's game against Washington."
   },
-  "4600663": {
+  "4432810": {
    "status": "day-to-day",
-   "name": "Zach Edey",
+   "name": "Isaiah Stewart",
    "team": "MEM",
-   "date": "2026-11-15T15:29Z",
-   "note": "Edey (ankle) is listed as out for Saturday's game against the Nets."
+   "date": "2026-11-15T22:15Z",
+   "note": "Stewart is questionable for Monday's game against the Wizards due to an illness."
+  },
+  "4065733": {
+   "status": "out",
+   "name": "Ty Jerome",
+   "team": "MEM",
+   "date": "2026-11-15T22:13Z",
+   "note": "Jerome (hip) has been ruled out for Monday's game against the Wizards."
   },
   "4593016": {
    "status": "out",
    "name": "Quinten Post",
    "team": "MEM",
-   "date": "2026-11-14T19:47Z",
-   "note": "Post (concussion) has been ruled out for Saturday's game against the Nets."
+   "date": "2026-11-15T22:12Z",
+   "note": "Post (concussion) is questionable for Monday's game against the Wizards."
+  },
+  "4600663": {
+   "status": "day-to-day",
+   "name": "Zach Edey",
+   "team": "MEM",
+   "date": "2026-11-15T22:11Z",
+   "note": "Edey (ankle) is questionable for Monday's game against Washington."
   },
   "4431785": {
    "status": "out",

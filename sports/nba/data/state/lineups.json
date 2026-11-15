@@ -131,8 +131,7 @@
     "Daniel Gafford"
    ],
    "status": {
-    "Daniel Gafford": "probable",
-    "Santi Aldama": "questionable",
+    "Santi Aldama": "out",
     "Tarik Biberovic": "out",
     "Max Christie": "out",
     "Sergio de Larrea": "out",
@@ -202,9 +201,9 @@
     "Alex Sarr"
    ],
    "status": {
-    "Tre Johnson": "questionable",
     "Reece Beekman": "out",
     "Justin Champagnie": "out",
+    "Tre Johnson": "out",
     "Tristan Vukcevic": "out",
     "Jamir Watkins": "out"
    }
@@ -275,5 +274,5 @@
    }
   }
  },
- "at": "2026-11-15T17:20:01-05:00"
+ "at": "2026-11-15T17:30:00-05:00"
 }
