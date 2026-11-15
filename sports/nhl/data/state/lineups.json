@@ -2,7 +2,7 @@
  "date": "2026-11-15",
  "teams": {
   "EDM": {
-   "tried_at": "2026-11-15T17:40:00-05:00",
+   "tried_at": "2026-11-15T18:00:00-05:00",
    "page": {
     "today": true,
     "page_date": "2026-11-15",
@@ -107,7 +107,7 @@
    "last_error": "page not read"
   },
   "PHI": {
-   "tried_at": "2026-11-15T17:40:00-05:00",
+   "tried_at": "2026-11-15T18:00:00-05:00",
    "page": {
     "today": true,
     "page_date": "2026-11-15",
@@ -208,22 +208,38 @@
    "last_error": "page not read"
   },
   "FLA": {
-   "tried_at": "2026-11-15T17:40:00-05:00",
+   "tried_at": "2026-11-15T18:00:00-05:00",
    "last_error": "page not read"
   },
   "DAL": {
-   "tried_at": "2026-11-15T17:40:00-05:00",
+   "tried_at": "2026-11-15T18:00:00-05:00",
    "last_error": "page not read"
   },
   "CGY": {
-   "tried_at": "2026-11-15T17:40:00-05:00",
+   "tried_at": "2026-11-15T18:00:00-05:00",
    "last_error": "page not read"
   },
   "ANA": {
-   "tried_at": "2026-11-15T17:40:00-05:00",
+   "tried_at": "2026-11-15T18:00:00-05:00",
+   "last_error": "page not read"
+  },
+  "VAN": {
+   "tried_at": "2026-11-15T18:00:00-05:00",
+   "last_error": "page not read"
+  },
+  "VGK": {
+   "tried_at": "2026-11-15T18:00:00-05:00",
+   "last_error": "page not read"
+  },
+  "NSH": {
+   "tried_at": "2026-11-15T18:00:00-05:00",
+   "last_error": "page not read"
+  },
+  "SJS": {
+   "tried_at": "2026-11-15T18:00:00-05:00",
    "last_error": "page not read"
   }
  },
  "last_ok_at": "2026-11-15T16:30:01-05:00",
- "last_try_at": "2026-11-15T17:40:00-05:00"
+ "last_try_at": "2026-11-15T18:00:00-05:00"
 }
