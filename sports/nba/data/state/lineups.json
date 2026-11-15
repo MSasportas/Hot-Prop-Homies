@@ -4,18 +4,18 @@
   "IND": {
    "state": "expected",
    "starters": [
-    "Andrew Nembhard",
+    "Quenton Jackson",
     "Kelly Oubre",
     "Aaron Nesmith",
     "Pascal Siakam",
     "Ivica Zubac"
    ],
    "status": {
-    "Andrew Nembhard": "questionable",
     "Aaron Nesmith": "questionable",
     "T.J. McConnell": "probable",
     "Johnny Furphy": "out",
     "Tyrese Haliburton": "out",
+    "Andrew Nembhard": "out",
     "Ben Sheppard": "out"
    }
   },
@@ -279,5 +279,5 @@
    }
   }
  },
- "at": "2026-11-15T11:40:00-05:00"
+ "at": "2026-11-15T11:50:01-05:00"
 }
