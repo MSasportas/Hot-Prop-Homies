@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T17:00:01-05:00",
+ "at": "2026-11-15T17:20:01-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -43,13 +43,6 @@
    "date": "2026-09-21T19:50Z",
    "note": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday."
   },
-  "4278104": {
-   "status": "day-to-day",
-   "name": "Michael Porter Jr.",
-   "team": "BKN",
-   "date": "2026-11-15T15:29Z",
-   "note": "Porter (personal) is out for Saturday's game against the Grizzlies, Brian Lewis of the New York Post reports."
-  },
   "5061575": {
    "status": "out",
    "name": "Kon Knueppel",
@@ -85,12 +78,26 @@
    "date": "2026-11-12T21:35Z",
    "note": "Wilson (hand) is expected to miss four to six weeks, Shams Charania of ESPN reports."
   },
+  "4683747": {
+   "status": "day-to-day",
+   "name": "Jaylon Tyson",
+   "team": "CLE",
+   "date": "2026-11-15T22:06Z",
+   "note": "Tyson closed with 16 points (6-11 FG, 4-7 3Pt), three rebounds, one assist and one steal over 30 minutes during Friday's 133-121 loss to Miami."
+  },
+  "4576087": {
+   "status": "day-to-day",
+   "name": "Peyton Watson",
+   "team": "CLE",
+   "date": "2026-11-15T22:04Z",
+   "note": "Watson (abdominal soreness) is questionable to play in Monday's game against the Bulls."
+  },
   "4432158": {
    "status": "out",
    "name": "Evan Mobley",
    "team": "CLE",
-   "date": "2026-11-15T21:54Z",
-   "note": "Mobley (toe) has been ruled out for Saturday's meeting with Dallas."
+   "date": "2026-11-15T21:58Z",
+   "note": "Mobley (toe) has been ruled out for Monday's game against Chicago."
   },
   "4066757": {
    "status": "out",
@@ -105,13 +112,6 @@
    "team": "CLE",
    "date": "2026-11-15T15:26Z",
    "note": "Allen (knee) has been ruled out for Saturday's game against the Mavericks."
-  },
-  "4576087": {
-   "status": "day-to-day",
-   "name": "Peyton Watson",
-   "team": "CLE",
-   "date": "2026-11-15T15:25Z",
-   "note": "Watson (hamstring) has been ruled out for Saturday's game against the Mavericks."
   },
   "3908809": {
    "status": "day-to-day",
@@ -337,33 +337,26 @@
    "date": "2026-11-15T00:17Z",
    "note": "Reaves (heel) has been ruled out for Sunday's game against the Suns, Daniel Starkand of LakersNation.com reports."
   },
+  "4065733": {
+   "status": "out",
+   "name": "Ty Jerome",
+   "team": "MEM",
+   "date": "2026-11-15T22:08Z",
+   "note": "Jerome (hip) has been ruled out for Saturday's game against the Nets."
+  },
+  "5105550": {
+   "status": "out",
+   "name": "GG Jackson",
+   "team": "MEM",
+   "date": "2026-11-15T22:08Z",
+   "note": "According to Grizzlies head coach Tuomas Iisalo, Jackson suffered a \"relatively serious\" foot injury in Saturday's 129-110 win over Brooklyn, Michael Wallace of the Grizzlies' official site reports."
+  },
   "4600663": {
    "status": "day-to-day",
    "name": "Zach Edey",
    "team": "MEM",
    "date": "2026-11-15T15:29Z",
    "note": "Edey (ankle) is listed as out for Saturday's game against the Nets."
-  },
-  "4065733": {
-   "status": "day-to-day",
-   "name": "Ty Jerome",
-   "team": "MEM",
-   "date": "2026-11-15T15:28Z",
-   "note": "Jerome (hip) has been ruled out for Saturday's game against the Nets."
-  },
-  "5105550": {
-   "status": "day-to-day",
-   "name": "GG Jackson",
-   "team": "MEM",
-   "date": "2026-11-15T15:28Z",
-   "note": "According to Grizzlies head coach Tuomas Iisalo, Jackson suffered a \"relatively serious\" foot injury in Saturday's 129-110 win over Brooklyn, Michael Wallace of the Grizzlies' official site reports."
-  },
-  "2991070": {
-   "status": "day-to-day",
-   "name": "Jerami Grant",
-   "team": "MEM",
-   "date": "2026-11-15T15:28Z",
-   "note": "Grant (head) is out for Saturday's game against the Nets."
   },
   "4593016": {
    "status": "out",
@@ -429,17 +422,17 @@
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
   },
   "4576086": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Bryce McGowens",
    "team": "NO",
-   "date": "2026-11-15T15:24Z",
+   "date": "2026-11-15T22:07Z",
    "note": "McGowens (elbow) has been ruled out for Saturday's game against the Nuggets."
   },
   "4683634": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Bennedict Mathurin",
    "team": "NO",
-   "date": "2026-11-15T15:24Z",
+   "date": "2026-11-15T22:06Z",
    "note": "Mathurin is out for Saturday's game against the Nuggets due to left plantar fasciitis."
   },
   "4431675": {

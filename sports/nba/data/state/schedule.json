@@ -300,11 +300,11 @@
     "home": "PHX",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:04 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "LAL": "62",
-     "PHX": "49"
+     "LAL": "64",
+     "PHX": "54"
     }
    },
    {
@@ -316,10 +316,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:57 - 2nd",
+    "detail": "7:26 - 2nd",
     "score": {
-     "CHA": "21",
-     "LAC": "22"
+     "CHA": "32",
+     "LAC": "35"
     }
    },
    {
@@ -328,13 +328,13 @@
     "start": "2026-11-15T17:00:00-05:00",
     "away": "SA",
     "home": "UTAH",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/15 - 5:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:27 - 1st",
     "score": {
-     "SA": "0",
-     "UTAH": "0"
+     "SA": "8",
+     "UTAH": "14"
     }
    },
    {
