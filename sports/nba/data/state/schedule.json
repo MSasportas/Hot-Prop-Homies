@@ -388,13 +388,13 @@
     "start": "2026-11-14T20:00:00-05:00",
     "away": "DET",
     "home": "MIA",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:01 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "DET": "116",
-     "MIA": "132"
+     "DET": "117",
+     "MIA": "137"
     }
    },
    {
