@@ -360,8 +360,8 @@
     "home": "NO",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "0.0 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
      "DEN": "56",
      "NO": "51"
@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:43 - 2nd",
+    "detail": "10:40 - 2nd",
     "score": {
      "DAL": "33",
-     "CLE": "33"
+     "CLE": "35"
     }
    },
    {
@@ -403,10 +403,10 @@
     "start": "2026-11-14T20:00:00-05:00",
     "away": "BKN",
     "home": "MEM",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/14 - 8:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "11:55 - 1st",
     "score": {
      "BKN": "0",
      "MEM": "0"
@@ -418,10 +418,10 @@
     "start": "2026-11-14T20:00:00-05:00",
     "away": "CHI",
     "home": "MIN",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/14 - 8:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "11:41 - 1st",
     "score": {
      "CHI": "0",
      "MIN": "0"
