@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-14",
- "generated_at": "2026-11-14T21:40:01-05:00",
+ "generated_at": "2026-11-14T21:41:39-05:00",
  "games": [
   {
    "game_id": 2026020313,
@@ -8,9 +8,9 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "03:35",
+   "clock": "03:08",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "MIN",
     "score": 6,
@@ -21,7 +21,7 @@
     "score": 2,
     "sog": 30
    },
-   "updated_at": "2026-11-14T21:40:01-05:00"
+   "updated_at": "2026-11-14T21:41:39-05:00"
   },
   {
    "game_id": 2026020316,
@@ -42,7 +42,7 @@
     "score": 0,
     "sog": 31
    },
-   "updated_at": "2026-11-14T21:40:01-05:00"
+   "updated_at": "2026-11-14T21:41:39-05:00"
   },
   {
    "game_id": 2026020317,
@@ -50,9 +50,9 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "07:10",
+   "clock": "06:44",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "OTT",
     "score": 2,
@@ -61,9 +61,9 @@
    "home": {
     "abbrev": "PIT",
     "score": 1,
-    "sog": 16
+    "sog": 17
    },
-   "updated_at": "2026-11-14T21:40:01-05:00"
+   "updated_at": "2026-11-14T21:41:39-05:00"
   },
   {
    "game_id": 2026020320,
@@ -82,9 +82,9 @@
    "home": {
     "abbrev": "STL",
     "score": 1,
-    "sog": 23
+    "sog": 24
    },
-   "updated_at": "2026-11-14T21:40:01-05:00"
+   "updated_at": "2026-11-14T21:41:39-05:00"
   },
   {
    "game_id": 2026020323,
@@ -92,9 +92,9 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "06:29",
+   "clock": "05:33",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "SJS",
     "score": 1,
@@ -105,7 +105,7 @@
     "score": 3,
     "sog": 10
    },
-   "updated_at": "2026-11-14T21:40:01-05:00"
+   "updated_at": "2026-11-14T21:41:39-05:00"
   }
  ],
  "picks": {
