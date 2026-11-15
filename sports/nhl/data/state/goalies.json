@@ -7,7 +7,7 @@
   },
   "EDM": {
    "name": "Tristan Jarry",
-   "status": "expected"
+   "status": "confirmed"
   },
   "ANA": {
    "name": "Ville Husso",
@@ -23,7 +23,7 @@
   },
   "FLA": {
    "name": "Akira Schmid",
-   "status": "expected"
+   "status": "confirmed"
   },
   "VGK": {
    "name": "Carter Hart",
@@ -42,5 +42,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-15T14:00:01-05:00"
+ "checked_at": "2026-11-15T18:21:21-05:00"
 }
