@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T16:01:55-05:00",
+ "at": "2026-11-15T16:30:00-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -64,6 +64,13 @@
    "date": "2026-11-08T22:26Z",
    "note": "Schroder has been diagnosed with a left hamstring strain and will be reevaluated in two weeks, Michael Scotto of HoopsHype.com reports."
   },
+  "5105555": {
+   "status": "out",
+   "name": "Tobe Awaka",
+   "team": "CHI",
+   "date": "2026-11-15T21:27Z",
+   "note": "Awaka has been ruled out for Saturday's game against the Timberwolves."
+  },
   "4397189": {
    "status": "day-to-day",
    "name": "Jalen Smith",
@@ -77,13 +84,6 @@
    "team": "CHI",
    "date": "2026-11-15T15:30Z",
    "note": "Claxton (hamstring) is out for Saturday's game against the Timberwolves, K.C. Johnson of Chicago Sports Network reports."
-  },
-  "5105555": {
-   "status": "day-to-day",
-   "name": "Tobe Awaka",
-   "team": "CHI",
-   "date": "2026-11-15T15:30Z",
-   "note": "Awaka has been ruled out for Saturday's game against the Timberwolves."
   },
   "5095151": {
    "status": "out",

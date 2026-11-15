@@ -124,19 +124,19 @@
   "DAL": {
    "state": "expected",
    "starters": [
-    "Kyrie Irving",
+    "Marcus Sasser",
     "Caleb Martin",
     "Cooper Flagg",
     "P.J. Washington",
     "Daniel Gafford"
    ],
    "status": {
-    "Kyrie Irving": "out",
     "Daniel Gafford": "probable",
     "Santi Aldama": "questionable",
-    "Max Christie": "doubtful",
     "Tarik Biberovic": "out",
+    "Max Christie": "out",
     "Sergio de Larrea": "out",
+    "Kyrie Irving": "out",
     "Dereck Lively": "out"
    }
   },
@@ -275,5 +275,5 @@
    }
   }
  },
- "at": "2026-11-15T16:20:00-05:00"
+ "at": "2026-11-15T16:30:00-05:00"
 }
