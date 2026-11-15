@@ -1,48 +1,48 @@
 {
  "slate_date": "2026-11-14",
- "generated_at": "2026-11-14T21:30:00-05:00",
+ "generated_at": "2026-11-14T21:40:01-05:00",
  "games": [
   {
    "game_id": 2026020313,
-   "state": "LIVE",
-   "schedule_state": "OK",
-   "period": 3,
-   "period_type": "REG",
-   "clock": "06:14",
-   "in_intermission": false,
-   "running": false,
-   "away": {
-    "abbrev": "MIN",
-    "score": 5,
-    "sog": 23
-   },
-   "home": {
-    "abbrev": "BOS",
-    "score": 2,
-    "sog": 29
-   },
-   "updated_at": "2026-11-14T21:30:00-05:00"
-  },
-  {
-   "game_id": 2026020316,
    "state": "CRIT",
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "01:50",
+   "clock": "03:35",
    "in_intermission": false,
    "running": true,
    "away": {
+    "abbrev": "MIN",
+    "score": 6,
+    "sog": 24
+   },
+   "home": {
+    "abbrev": "BOS",
+    "score": 2,
+    "sog": 30
+   },
+   "updated_at": "2026-11-14T21:40:01-05:00"
+  },
+  {
+   "game_id": 2026020316,
+   "state": "FINAL",
+   "schedule_state": "OK",
+   "period": 3,
+   "period_type": "REG",
+   "clock": "00:00",
+   "in_intermission": false,
+   "running": false,
+   "away": {
     "abbrev": "DET",
-    "score": 1,
-    "sog": 21
+    "score": 2,
+    "sog": 22
    },
    "home": {
     "abbrev": "TBL",
     "score": 0,
-    "sog": 29
+    "sog": 31
    },
-   "updated_at": "2026-11-14T21:30:00-05:00"
+   "updated_at": "2026-11-14T21:40:01-05:00"
   },
   {
    "game_id": 2026020317,
@@ -50,41 +50,41 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "12:28",
+   "clock": "07:10",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "OTT",
     "score": 2,
-    "sog": 20
+    "sog": 25
    },
    "home": {
     "abbrev": "PIT",
     "score": 1,
     "sog": 16
    },
-   "updated_at": "2026-11-14T21:30:00-05:00"
+   "updated_at": "2026-11-14T21:40:01-05:00"
   },
   {
    "game_id": 2026020320,
-   "state": "CRIT",
+   "state": "FINAL",
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "04:34",
+   "clock": "00:00",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "FLA",
     "score": 4,
-    "sog": 25
+    "sog": 28
    },
    "home": {
     "abbrev": "STL",
-    "score": 0,
-    "sog": 17
+    "score": 1,
+    "sog": 23
    },
-   "updated_at": "2026-11-14T21:30:00-05:00"
+   "updated_at": "2026-11-14T21:40:01-05:00"
   },
   {
    "game_id": 2026020323,
@@ -92,20 +92,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "09:35",
+   "clock": "06:29",
    "in_intermission": false,
    "running": true,
    "away": {
     "abbrev": "SJS",
-    "score": 0,
-    "sog": 2
+    "score": 1,
+    "sog": 5
    },
    "home": {
     "abbrev": "UTA",
-    "score": 2,
-    "sog": 5
+    "score": 3,
+    "sog": 10
    },
-   "updated_at": "2026-11-14T21:30:00-05:00"
+   "updated_at": "2026-11-14T21:40:01-05:00"
   }
  ],
  "picks": {
