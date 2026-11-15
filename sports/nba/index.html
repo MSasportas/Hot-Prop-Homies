@@ -555,7 +555,7 @@ function muNodes(p, games, withTime) {
   var g = games[p.game_id], own = str(p.team), opp = str(p.opp), home = p.home === true, out = [];
   if (g && own && !opp) { if (own === str(g.home)) { opp = str(g.away); home = true; } else if (own === str(g.away)) opp = str(g.home); }
   if (own && opp) out.push(h('span', { class: 'own', title: 'His team', text: own }), (home ? ' vs ' : ' @ ') + opp);
-  else if (g) out.push(str(g.away) + ' at ' + str(g.home));
+  else if (g && str(g.away) && str(g.home)) out.push(str(g.away) + ' at ' + str(g.home));
   var t = withTime ? fTime(pickStart(p, games)) : null;
   if (t) out.push((out.length ? ' \u00b7 ' : '') + t);
   return out;
@@ -1662,7 +1662,9 @@ function labLiveRow(bet, test, d) {
     h('span', { class: 'pp', text: odds(bet.price) })
   ));
   if (trk) card.appendChild(trk);
-  card.appendChild(h('div', { class: 'gs' }, h('b', { text: gl.status }), ' · ', gl.score ? h('span', { class: 'sc', text: gl.score }) : gl.mu));
+  var _glTrail = gl.score ? h('span', { class: 'sc', text: gl.score }) : gl.mu;
+  var _hasSep = gl.score || (Array.isArray(gl.mu) && gl.mu.length > 0);
+  card.appendChild(h('div', { class: 'gs' }, h('b', { text: gl.status }), _hasSep ? ' · ' : null, _glTrail));
   if (open) {
     var xp = h('div', { class: 'lv-xp' });
     xp.appendChild(h('div', null, h('b', { text: str(test.title) || 'Lab test' })));
