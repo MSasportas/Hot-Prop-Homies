@@ -301,10 +301,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:08 - 2nd",
+    "detail": "1:04 - 2nd",
     "score": {
-     "LAL": "54",
-     "PHX": "37"
+     "LAL": "62",
+     "PHX": "49"
     }
    },
    {
@@ -316,10 +316,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:06 - 1st",
+    "detail": "11:57 - 2nd",
     "score": {
-     "CHA": "18",
-     "LAC": "18"
+     "CHA": "21",
+     "LAC": "22"
     }
    },
    {
