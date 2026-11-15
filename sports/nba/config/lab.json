@@ -166,6 +166,36 @@
    "stats": "AH15",
    "need": 150,
    "gate": "Passes only at 150 graded, profit and beating the close."
+  },
+  {
+   "id": "NP1",
+   "title": "Sharp vs soft group split",
+   "rule": "Reads B or C. SHARP = pinnacle, novig, prophetx (>= 2 two-sided, hold 0-15%, fresh < 60 min). SOFT = draftkings, fanduel, betmgm, espnbet, betonlineag, betrivers (>= 3). sf = mean sharp fair over, tf = median soft fair over. Event abs(sf-tf) >= 0.03; side = over if sf > tf. Bet HR if EV vs sf >= 0, price -200..+200, first per player/market/night.",
+   "summary": "research/lab_np.json",
+   "stats": "NP1",
+   "need": 150,
+   "discovery": "Discovery Oct 25-Nov 14 (21 nights): 90 events, 87 graded, 49-38, +11.48u, ROI +13.2%.",
+   "gate": "Passes only at 150 graded forward, profit and beating close."
+  },
+  {
+   "id": "NP2",
+   "title": "Fade soft-book move (sharp did not follow)",
+   "rule": "Consecutive reads, HR over and under identical. >= 3 soft and >= 2 sharp books fresh at both reads. dT = soft median fair over change, dS = sharp mean change. Event abs(dT) >= 0.02 and dS x sign(dT) < 0.005. Bet HR against the soft direction if EV vs later sharp mean >= 0, price -200..+200, first per player/market/night.",
+   "summary": "research/lab_np.json",
+   "stats": "NP2",
+   "need": 150,
+   "discovery": "Discovery Oct 25-Nov 14 (21 nights): 23 candidate pairs before EV gate; 0 clear EV >= 0 (sample too thin; sharp never pricing the fade side favorably at HR's stale price).",
+   "gate": "Passes only at 150 graded forward, profit and beating close."
+  },
+  {
+   "id": "NP3",
+   "title": "Whole market moves, HR still: follow",
+   "rule": "Consecutive reads, HR over and under identical. Per-book fair-over change c for each fresh book at both reads. Event: >= 3 books with c >= +0.015 and none with c <= -0.015 (or mirror), and median c >= 0.02. Bet HR toward the move if EV vs later median fair >= 0, price -200..+200, first per player/market/night. Not conditioned on Pinnacle.",
+   "summary": "research/lab_np.json",
+   "stats": "NP3",
+   "need": 150,
+   "discovery": "Discovery Oct 25-Nov 14 (21 nights): 3 events, 3 graded, 1-2, -0.85u (sample too thin to judge).",
+   "gate": "Passes only at 150 graded forward, profit and beating close."
   }
  ]
 }

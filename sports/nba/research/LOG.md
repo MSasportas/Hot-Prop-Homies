@@ -126,6 +126,25 @@ Forward FAIR: n 3 graded 3 1-2 -1.23u ROI -41.0% CLV_pin +0.9% (n 3)
 Pass bar: n>=150 graded fwd, ROI>0, CI>0, CLV>0. Status: FORWARD - accumulating
 
 
+## 2026-11-15, NP1-NP3 (DS; NHL parity registration — sharp/soft split, fade soft move, whole-market follow)
+Registered from nhl_parity_2026-11-15.md. NHL analogs: MM2a/b (NP1), NN6 (NP2), NN5 (NP3).
+Code: research/code/np1_np2_np3_discovery.py. Discovery = all 21 nights Oct 25-Nov 14. Forward from Nov 15. Gate: 150 graded.
+
+NP1 (sharp vs soft split, B/C reads, abs(sf-tf)>=0.03, EV>=0 vs sharp):
+Discovery (21 nights): n 90 graded 87 49-38 +11.48u ROI +13.2%
+  over subset: n 7 graded 6 3-3 +0.30u ROI +4.9%
+  under subset: n 83 graded 81 46-35 +11.18u ROI +13.8%
+Sample: 90 bets but all discovery (all 21 nights already seen). Gate at 150 graded forward.
+
+NP2 (fade soft move, sharp not follow, HR stale, EV>=0 vs sharp):
+Discovery (21 nights): 23 candidate pairs before EV gate; 0 bets after EV gate.
+Sharp never prices the fade side favorably at HR's stale price — EV gate is structural.
+Sample: too thin to judge. Accumulating forward.
+
+NP3 (whole market moves >= 3 books, HR still, follow direction, not conditioned on Pinnacle):
+Discovery (21 nights): n 3 graded 3 1-2 -0.85u ROI -28.3%
+Sample: 3 bets. Too thin to judge. Accumulating forward.
+
 ## 2026-11-15, AH5 (auto; Large solo (4+ pt solo Pinnacle move))
 Filter: MOVES where move >= 4 pts AND others < 1 pt. MOVES population (Pinnacle >= 2 pt move, HR on line, -200..+200, 1/player/market/night).
 Discovery (<2026-11-10, 18 nights): n 66 graded 66 42-24 +12.07u ROI +18.3% CLV_pin -2.2% (n 51)

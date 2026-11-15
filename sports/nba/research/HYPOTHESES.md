@@ -146,6 +146,27 @@ Pass bar for all: rule 4 (n >= 150 graded forward, ROI > 0, 90% game-clustered b
   Prior: M4 found 2-3 pt band was the only losing band in the Record (15 bets); this is the FAIR subset question.
 - AH15 Late FAIR: MOVES where window is last 90 min AND ev_pin >= 0. Metric: W-L, ROI, CLV_pin.
 
+## Run NP (2026-11-15, DS; NHL parity registration). Registered before discovery scoring. Discovery = Oct 25-Nov 14 (21 nights). Forward counts from Nov 15. NHL analogs: MM2a/b (NP1), NN6 (NP2), NN5 (NP3). Code: research/code/np1_np2_np3_discovery.py. Pass bar for all: n >= 150 graded forward, ROI > 0, 90% game-clustered bootstrap lower bound > 0, CLV > 0.
+
+- NP1  Sharp vs soft group split: Reads B or C. SHARP = pinnacle, novig, prophetx (>= 2 two-sided, hold 0-15%, fresh < 60 min).
+  SOFT = draftkings, fanduel, betmgm, espnbet, betonlineag, betrivers (>= 3). sf = mean sharp fair over, tf = median soft fair over.
+  Event abs(sf - tf) >= 0.03; side = over if sf > tf else under. Bet HR if EV vs sf >= 0, price -200..+200, first read per
+  player/market/night. Metric: ROI at HR price, CLV vs close Pinnacle fair. Status: DISCOVERY.
+  Discovery Oct 25-Nov 14 (21 nights): n 90, graded 87, 49-38, +11.48u, ROI +13.2%.
+
+- NP2  Fade soft-book price move, sharp did not follow: Consecutive reads of same game. HR over and under identical at both reads.
+  Books two-sided and fresh at both reads (>= 3 soft, >= 2 sharp). dT = soft median fair over change; dS = sharp mean change.
+  Event abs(dT) >= 0.02 and dS x sign(dT) < 0.005. Bet HR AGAINST the soft direction at the later read if EV vs later sharp
+  mean >= 0, price -200..+200, first per player/market/night. Metric: ROI, CLV. Status: DISCOVERY.
+  Discovery Oct 25-Nov 14 (21 nights): 23 candidate pairs; 0 clear EV >= 0 gate (sharp never favors the fade vs HR's stale price).
+  Note: EV gate is structural - HR is stale on the fade side. Gate stays; sample is just thin.
+
+- NP3  Whole market moves, HR still: follow (not conditioned on Pinnacle): Consecutive reads, HR over and under identical.
+  Per-book fair-over change c, books fresh at both reads. Event: >= 3 books with c >= +0.015 and none with c <= -0.015 (or
+  mirror), and median c >= 0.02. Bet HR toward the market move if EV vs later median fair >= 0, price -200..+200, first per
+  player/market/night. Metric: ROI, CLV. Status: DISCOVERY.
+  Discovery Oct 25-Nov 14 (21 nights): n 3, graded 3, 1-2, -0.85u. Sample too thin to judge.
+
 ## Run 9 (2026-11-13, Researcher; Matt: books, not players). Registered before any of these were tested.
 Discovery only: every stored night through 2026-11-12 was already seen by the AH series, so nothing below can pass. Forward collection starts with the 2026-11-13 reads. Code: to be written at research/code/run9/ (not built yet; see LOG 2026-11-13).
 
