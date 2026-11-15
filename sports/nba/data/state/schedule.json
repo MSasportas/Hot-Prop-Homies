@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:16 - 4th",
+    "detail": "1:23 - 4th",
     "score": {
-     "DET": "102",
-     "MIA": "118"
+     "DET": "113",
+     "MIA": "132"
     }
    },
    {
@@ -403,10 +403,10 @@
     "start": "2026-11-14T20:00:00-05:00",
     "away": "BKN",
     "home": "MEM",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "0.6 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
      "BKN": "110",
      "MEM": "129"
