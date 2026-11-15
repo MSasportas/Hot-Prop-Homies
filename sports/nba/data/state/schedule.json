@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:11 - 2nd",
+    "detail": "3:44 - 2nd",
     "score": {
      "BKN": "45",
-     "MEM": "55"
+     "MEM": "58"
     }
    },
    {
@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:16 - 2nd",
+    "detail": "1:54 - 2nd",
     "score": {
-     "CHI": "46",
-     "MIN": "38"
+     "CHI": "53",
+     "MIN": "40"
     }
    }
   ]
