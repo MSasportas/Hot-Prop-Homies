@@ -11,9 +11,9 @@
     "Ivica Zubac"
    ],
    "status": {
+    "Andrew Nembhard": "questionable",
     "Johnny Furphy": "out",
     "Tyrese Haliburton": "out",
-    "Andrew Nembhard": "out",
     "Ben Sheppard": "out"
    }
   },
@@ -27,10 +27,10 @@
     "Jabari Walker"
    ],
    "status": {
+    "Joel Embiid": "questionable",
     "Ariel Hukporti": "out",
     "Dominick Barlow": "out",
-    "Adem Bona": "out",
-    "Joel Embiid": "out"
+    "Adem Bona": "out"
    }
   },
   "LAL": {
@@ -275,5 +275,5 @@
    }
   }
  },
- "at": "2026-11-15T15:50:00-05:00"
+ "at": "2026-11-15T16:00:00-05:00"
 }
