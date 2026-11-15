@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-14",
- "started_at": "2026-11-15T00:40:01-05:00",
- "status_at": "2026-11-15T00:40:01-05:00",
- "finished_at": "2026-11-15T00:40:03-05:00",
- "last_ok_at": "2026-11-15T00:40:01-05:00",
+ "started_at": "2026-11-15T01:00:01-05:00",
+ "status_at": "2026-11-15T01:00:01-05:00",
+ "finished_at": "2026-11-15T01:00:04-05:00",
+ "last_ok_at": "2026-11-15T01:00:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -64,23 +64,23 @@
   },
   {
    "step": "grade",
-   "status": "ok",
-   "note": "3 graded"
+   "status": "skipped",
+   "note": "nothing to grade"
   },
   {
    "step": "live",
    "status": "ok",
-   "note": "6 game(s), 2 read this run"
+   "note": "6 game(s), 1 read this run"
   },
   {
    "step": "shadow",
-   "status": "ok",
-   "note": "37 graded"
+   "status": "skipped",
+   "note": "nothing new"
   },
   {
    "step": "gg_grade",
    "status": "ok",
-   "note": "gap+guard: 1 grade"
+   "note": "gap+guard: nothing new"
   },
   {
    "step": "slate",
@@ -89,8 +89,8 @@
   },
   {
    "step": "record",
-   "status": "ok",
-   "note": "record.json"
+   "status": "skipped",
+   "note": "unchanged"
   }
  ],
  "sources": {
@@ -161,11 +161,13 @@
  "lineups_note": "Lineups posted for 24 of 28 teams checked so far.",
  "games_today": 14,
  "record_events": 273,
- "odds_notes": [],
+ "odds_notes": [
+  "key 1 refused (401)"
+ ],
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "43679935228",
-  "iteration": 4,
+  "iteration": 6,
   "chain_link": 109,
   "chain_started_at": "2026-11-11T16:26:02-05:00",
   "run_started_at": "2026-11-15T00:10:47-05:00"
