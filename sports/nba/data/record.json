@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T15:40:00-05:00",
+ "generated_at": "2026-11-15T15:50:00-05:00",
  "summary": {
   "headline": {
    "w": 42,
@@ -189,6 +189,7 @@
       "ids": [
        "2026-11-15:401909987:3448:rebounds:4.5:under",
        "2026-11-15:401909986:3136193:rebounds:2.5:under",
+       "2026-11-15:401909990:3136195:rebounds:12.5:under",
        "2026-11-14:401909984:4431671:rebounds:5.5:under",
        "2026-11-13:401909298:3059319:rebounds:3.5:under",
        "2026-11-11:401909973:4873138:rebounds:5.5:under",
@@ -264,6 +265,7 @@
       "n": 11,
       "ids": [
        "2026-11-15:401909985:3149673:assists:3.5:under",
+       "2026-11-15:401909988:5041955:assists:3.5:under",
        "2026-11-13:401909304:4396907:assists:6.5:under",
        "2026-11-10:401909963:4278053:assists:7.5:under",
        "2026-11-09:401909958:5037871:assists:4.5:over",
@@ -288,6 +290,7 @@
       "needed": 0.4724,
       "n": 12,
       "ids": [
+       "2026-11-15:401909988:5037871:threes:1.5:over",
        "2026-11-13:401909298:3908809:threes:2.5:over",
        "2026-11-08:401909945:3917376:threes:1.5:over",
        "2026-11-06:401909288:4433287:threes:3.5:over",
@@ -322,6 +325,7 @@
       "n": 16,
       "ids": [
        "2026-11-15:401909988:4592479:points:9.5:over",
+       "2026-11-15:401909988:5037871:threes:1.5:over",
        "2026-11-14:401909981:4278049:points:7.5:over",
        "2026-11-13:401909298:3908809:threes:2.5:over",
        "2026-11-09:401909958:5037871:assists:4.5:over",
@@ -358,6 +362,8 @@
        "2026-11-15:401909987:3448:rebounds:4.5:under",
        "2026-11-15:401909987:5254165:points:9.5:under",
        "2026-11-15:401909986:3136193:rebounds:2.5:under",
+       "2026-11-15:401909988:5041955:assists:3.5:under",
+       "2026-11-15:401909990:3136195:rebounds:12.5:under",
        "2026-11-14:401909984:4431671:rebounds:5.5:under",
        "2026-11-14:401909982:3032977:points:28.5:under",
        "2026-11-13:401909304:4396907:assists:6.5:under",
@@ -432,6 +438,8 @@
        "2026-11-15:401909987:3448:rebounds:4.5:under",
        "2026-11-15:401909987:5254165:points:9.5:under",
        "2026-11-15:401909988:4592479:points:9.5:over",
+       "2026-11-15:401909988:5037871:threes:1.5:over",
+       "2026-11-15:401909990:3136195:rebounds:12.5:under",
        "2026-11-14:401909981:4278049:points:7.5:over",
        "2026-11-14:401909984:4431671:rebounds:5.5:under",
        "2026-11-13:401909298:3908809:threes:2.5:over",
@@ -523,6 +531,7 @@
       "needed": 0.4578,
       "n": 3,
       "ids": [
+       "2026-11-15:401909988:5041955:assists:3.5:under",
        "2026-11-10:401909963:4278053:points:13.5:under",
        "2026-11-04:401909922:3059318:threes:0.5:under",
        "2026-11-04:401909931:5093267:rebounds:5.5:under"
@@ -571,6 +580,9 @@
        "2026-11-15:401909987:3448:rebounds:4.5:under",
        "2026-11-15:401909987:5254165:points:9.5:under",
        "2026-11-15:401909986:3136193:rebounds:2.5:under",
+       "2026-11-15:401909988:5037871:threes:1.5:over",
+       "2026-11-15:401909988:5041955:assists:3.5:under",
+       "2026-11-15:401909990:3136195:rebounds:12.5:under",
        "2026-11-14:401909981:4278049:points:7.5:over",
        "2026-11-14:401909984:4431671:rebounds:5.5:under",
        "2026-11-14:401909982:3032977:points:28.5:under",
@@ -667,6 +679,8 @@
        "2026-11-15:401909985:3149673:assists:3.5:under",
        "2026-11-15:401909987:3448:rebounds:4.5:under",
        "2026-11-15:401909986:3136193:rebounds:2.5:under",
+       "2026-11-15:401909988:5037871:threes:1.5:over",
+       "2026-11-15:401909988:5041955:assists:3.5:under",
        "2026-11-14:401909984:4431671:rebounds:5.5:under",
        "2026-11-13:401909304:4396907:assists:6.5:under",
        "2026-11-13:401909298:3059319:rebounds:3.5:under",
@@ -708,6 +722,7 @@
        "2026-11-15:401909987:4396907:points:20.5:under",
        "2026-11-15:401909987:5254165:points:9.5:under",
        "2026-11-15:401909988:4592479:points:9.5:over",
+       "2026-11-15:401909990:3136195:rebounds:12.5:under",
        "2026-11-14:401909981:4278049:points:7.5:over",
        "2026-11-14:401909982:3032977:points:28.5:under",
        "2026-11-13:401909298:3908809:threes:2.5:over",
@@ -762,7 +777,7 @@
     "push": 0,
     "void": 0,
     "units": 1.15,
-    "n": 7,
+    "n": 10,
     "graded": false
    },
    {
@@ -1111,9 +1126,91 @@
      "result": null,
      "actual": null,
      "units": null,
-     "pulled": null,
+     "pulled": {
+      "at": "2026-11-15T15:50:00-05:00",
+      "reason": "Hard Rock took the line down",
+      "code": "line_gone"
+     },
      "legs": [],
      "window": "135 \u2192 90 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-15:401909988:5037871:threes:1.5:over",
+     "kind": "single",
+     "player": "Dylan Harper",
+     "bet": "Over 1.5 threes",
+     "market": "threes",
+     "team": "SAS",
+     "game": "SAS at UTA",
+     "price": 140,
+     "first_price": 140,
+     "last_price": 140,
+     "prices": [
+      {
+       "price": 140,
+       "at": "2026-11-15T15:50:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "90 \u2192 75 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-15:401909988:5041955:assists:3.5:under",
+     "kind": "single",
+     "player": "Darryn Peterson",
+     "bet": "Under 3.5 assists",
+     "market": "assists",
+     "team": "UTA",
+     "game": "SAS at UTA",
+     "price": 115,
+     "first_price": 115,
+     "last_price": 115,
+     "prices": [
+      {
+       "price": 115,
+       "at": "2026-11-15T15:50:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "90 \u2192 75 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-15:401909990:3136195:rebounds:12.5:under",
+     "kind": "single",
+     "player": "Karl-Anthony Towns",
+     "bet": "Under 12.5 rebounds",
+     "market": "rebounds",
+     "team": "NYK",
+     "game": "NYK at TOR",
+     "price": -110,
+     "first_price": -110,
+     "last_price": -110,
+     "prices": [
+      {
+       "price": -110,
+       "at": "2026-11-15T15:50:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "180 \u2192 135 min",
      "book": "hardrock",
      "under_fair": false
     }
