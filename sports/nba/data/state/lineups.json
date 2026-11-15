@@ -61,10 +61,10 @@
    }
   },
   "CHA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Coby White",
-    "Grayson Allen",
+    "Sion James",
     "Brandon Miller",
     "Naz Reid",
     "Moussa Diabate"
@@ -75,7 +75,7 @@
    }
   },
   "LAC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Darius Garland",
     "Kris Dunn",
@@ -275,5 +275,5 @@
    }
   }
  },
- "at": "2026-11-15T16:01:55-05:00"
+ "at": "2026-11-15T16:10:00-05:00"
 }
