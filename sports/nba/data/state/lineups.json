@@ -140,10 +140,10 @@
    }
   },
   "BOS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Derrick White",
-    "Baylor Scheierman",
+    "Jordan Walsh",
     "Jayson Tatum",
     "Paul George",
     "Neemias Queta"
@@ -151,7 +151,7 @@
    "status": {}
   },
   "NY": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jalen Brunson",
     "Mikal Bridges",
@@ -162,16 +162,15 @@
    "status": {}
   },
   "TOR": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Immanuel Quickley",
     "RJ Barrett",
     "Ja'Kobe Walter",
     "Scottie Barnes",
-    "Jakob Poeltl"
+    "Collin Murray-Boyles"
    ],
    "status": {
-    "Scottie Barnes": "probable",
     "Nate Bittle": "out",
     "Kawhi Leonard": "out"
    }
@@ -180,10 +179,10 @@
    "state": "expected",
    "starters": [
     "Amen Thompson",
-    "Reed Sheppard",
     "Kevin Durant",
     "Jabari Smith",
-    "Alperen Sengun"
+    "Alperen Sengun",
+    "Steven Adams"
    ],
    "status": {
     "Clint Capela": "out",
@@ -274,5 +273,5 @@
    }
   }
  },
- "at": "2026-11-15T17:30:00-05:00"
+ "at": "2026-11-15T17:40:00-05:00"
 }

@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T17:30:00-05:00",
+ "at": "2026-11-15T17:40:00-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -113,6 +113,13 @@
    "date": "2026-10-20T15:11Z",
    "note": "Tomlin is set to miss several weeks with a lower back stress reaction, Chris Fedor of The Cleveland Plain Dealer reports."
   },
+  "4593125": {
+   "status": "out",
+   "name": "Santi Aldama",
+   "team": "DAL",
+   "date": "2026-11-15T22:27Z",
+   "note": "Aldama (ankle) is out for Sunday's game against the Celtics."
+  },
   "4432582": {
    "status": "out",
    "name": "Max Christie",
@@ -126,20 +133,6 @@
    "team": "DAL",
    "date": "2026-11-15T21:20Z",
    "note": "Irving (knee) has been ruled out for Sunday's game against the Celtics."
-  },
-  "4593125": {
-   "status": "day-to-day",
-   "name": "Santi Aldama",
-   "team": "DAL",
-   "date": "2026-11-15T18:19Z",
-   "note": "Aldama (ankle) is listed as questionable for Sunday's game in Boston."
-  },
-  "4278049": {
-   "status": "day-to-day",
-   "name": "Daniel Gafford",
-   "team": "DAL",
-   "date": "2026-11-15T18:09Z",
-   "note": "Gafford (shoulder) is probable to play in Sunday's game against the Celtics."
   },
   "4683688": {
    "status": "out",
