@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T13:31:34-05:00",
+ "at": "2026-11-15T14:50:00-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -337,20 +337,6 @@
    "date": "2026-08-26T20:04Z",
    "note": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic."
   },
-  "5060631": {
-   "status": "day-to-day",
-   "name": "Adou Thiero",
-   "team": "LAL",
-   "date": "2026-11-15T00:40Z",
-   "note": "Thiero (ankle) is questionable for Sunday's game against the Suns."
-  },
-  "4277811": {
-   "status": "day-to-day",
-   "name": "Collin Sexton",
-   "team": "LAL",
-   "date": "2026-11-15T00:27Z",
-   "note": "Sexton (head) is questionable for Sunday's game against the Suns, Daniel Starkand of LakersNation.com reports."
-  },
   "4066457": {
    "status": "out",
    "name": "Austin Reaves",
@@ -631,13 +617,6 @@
    "date": "2026-11-15T01:00Z",
    "note": "Raynaud (knee) has been ruled out for Sunday's game against the Thunder."
   },
-  "4594327": {
-   "status": "day-to-day",
-   "name": "Keegan Murray",
-   "team": "SAC",
-   "date": "2026-11-15T01:00Z",
-   "note": "Murray (illness) is questionable for Sunday's game against the Thunder."
-  },
   "4431679": {
    "status": "day-to-day",
    "name": "Precious Achiuwa",
@@ -736,26 +715,12 @@
    "date": "2026-10-27T19:25Z",
    "note": "Jackson has been diagnosed with a torn MCL in his right knee and will be sidelined for 6-to-8 weeks, per Shams Charania of ESPN."
   },
-  "5160992": {
-   "status": "day-to-day",
-   "name": "Alex Sarr",
-   "team": "WSH",
-   "date": "2026-11-14T21:24Z",
-   "note": "Sarr (illness) is listed as questionable for Sunday's game against Houston."
-  },
   "5238230": {
    "status": "day-to-day",
    "name": "Tre Johnson",
    "team": "WSH",
    "date": "2026-11-14T21:09Z",
    "note": "Johnson is listed as questionable for Sunday's game against the Rockets due to lower-back soreness."
-  },
-  "4845374": {
-   "status": "day-to-day",
-   "name": "Bub Carrington",
-   "team": "WSH",
-   "date": "2026-11-14T21:05Z",
-   "note": "Carrington (chest) is listed as questionable for Sunday's game against Houston."
   },
   "4997537": {
    "status": "out",
