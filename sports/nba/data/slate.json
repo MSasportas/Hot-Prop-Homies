@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-14T19:40:02-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-14T22:20:01-05:00"
+   "at": "2026-11-14T22:30:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -176,7 +176,7 @@
    "away": "DET",
    "home": "MIA",
    "state": "in",
-   "detail": "7:59 - 4th",
+   "detail": "4:16 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -237,7 +237,7 @@
    "away": "BKN",
    "home": "MEM",
    "state": "in",
-   "detail": "4:15 - 4th",
+   "detail": "0.6 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -297,8 +297,8 @@
    "start": "2026-11-14T20:00:00-05:00",
    "away": "CHI",
    "home": "MIN",
-   "state": "in",
-   "detail": "1:59 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -519,7 +519,11 @@
    "price_final": false,
    "pulled": null,
    "added_at": "2026-11-14T17:50:01-05:00",
-   "result": null,
+   "result": {
+    "result": "W",
+    "actual": "5 rebounds",
+    "units": 1.1
+   },
    "links": null,
    "rank": null
   }
@@ -540,6 +544,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-14T22:20:01-05:00",
- "status_at": "2026-11-14T22:20:01-05:00"
+ "generated_at": "2026-11-14T22:30:01-05:00",
+ "status_at": "2026-11-14T22:30:01-05:00"
 }
