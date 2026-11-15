@@ -1,12 +1,12 @@
 {
  "slate_date": "2026-11-14",
- "generated_at": "2026-11-14T21:10:01-05:00",
- "status_at": "2026-11-14T21:10:01-05:00",
+ "generated_at": "2026-11-14T21:20:01-05:00",
+ "status_at": "2026-11-14T21:20:01-05:00",
  "valid_until": "2026-11-15T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
-  "prices_at": "2026-11-14T20:30:00-05:00",
-  "next_price_read_at": "2026-11-14T21:15:00-05:00",
+  "prices_at": "2026-11-14T21:20:01-05:00",
+  "next_price_read_at": null,
   "stats_built_at": "2026-11-14T18:50:01-05:00",
   "stats_through": "2026-11-14",
   "lineups_at": "2026-11-14T21:10:01-05:00",
@@ -16,11 +16,11 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-14T21:10:01-05:00",
+   "at": "2026-11-14T21:20:01-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 2961,
+   "pulls_left": 2954,
    "keys": 9,
    "game_days_left": 15,
    "days_left": 17,
@@ -614,19 +614,20 @@
      {
       "pull": "B",
       "at": "2026-11-14T20:30:00-05:00"
+     },
+     {
+      "pull": "C",
+      "at": "2026-11-14T21:20:01-05:00"
      }
     ],
-    "next_read": {
-     "pull": "C",
-     "at": "2026-11-14T21:15:00-05:00"
-    },
+    "next_read": null,
     "lineups_at": {
      "away": "2026-11-14T21:10:01-05:00",
      "home": null
     }
    },
    "started": false,
-   "reads_done": false,
+   "reads_done": true,
    "picks": 1,
    "excluded_reason": null,
    "excluded_teams": []
@@ -659,25 +660,89 @@
      {
       "pull": "B",
       "at": "2026-11-14T20:30:00-05:00"
+     },
+     {
+      "pull": "C",
+      "at": "2026-11-14T21:20:01-05:00"
      }
     ],
-    "next_read": {
-     "pull": "C",
-     "at": "2026-11-14T21:15:00-05:00"
-    },
+    "next_read": null,
     "lineups_at": {
      "away": null,
      "home": "2026-11-14T19:00:01-05:00"
     }
    },
    "started": false,
-   "reads_done": false,
+   "reads_done": true,
    "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
   }
  ],
  "picks": [
+  {
+   "id": "2026-11-14:2026020324:8484762:shots:2.5:under",
+   "price": 115,
+   "first_price": 115,
+   "first_price_at": "2026-11-14T21:20:01-05:00",
+   "worst_price": 115,
+   "p": 0.4867,
+   "breakeven": 0.4651,
+   "p_pct": 48,
+   "breakeven_pct": 47,
+   "state": "early",
+   "history": [
+    {
+     "at": "2026-11-14T21:20:01-05:00",
+     "text": "Early: lineup not confirmed"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-14T21:20:01-05:00",
+     "price": 115
+    }
+   ],
+   "pulled": null,
+   "price_final": true,
+   "graded": null,
+   "rank": 1,
+   "tier": "main",
+   "game_id": 2026020324,
+   "player": "B. Sennecke",
+   "player_id": 8484762,
+   "team": "ANA",
+   "opp": "NYI",
+   "home": true,
+   "start": "2026-11-14T22:00:00-05:00",
+   "market": "shots",
+   "line": 2.5,
+   "side": "under",
+   "bet": "Under 2.5 shots on goal",
+   "price_at": "2026-11-14T21:20:01-05:00",
+   "gap_pct": 4.0,
+   "market_fair_pct": 48.4,
+   "n_books": 8,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 48.7,
+    "model_pct": 51.4
+   },
+   "settled": "early",
+   "settled_label": "Early",
+   "reason": "8 other books say 48.4%; Hard Rock's +115 only needs 46.5%. Our model agrees (our blend: 48.7%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/4801377820043510163",
+   "links": {
+    "hardrock": {
+     "id": "4801377820043510163",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/4801377820043510163"
+    },
+    "draftkings": null
+   },
+   "thin": false,
+   "games_used": 101,
+   "games_this_season": 19
+  },
   {
    "id": "2026-11-14:2026020324:8485388:shots:1.5:under",
    "price": 115,
@@ -697,6 +762,10 @@
     {
      "at": "2026-11-14T21:10:01-05:00",
      "text": "Lineup confirmed"
+    },
+    {
+     "at": "2026-11-14T21:20:01-05:00",
+     "text": "Pulled: Hard Rock moved it to +110"
     }
    ],
    "prices": [
@@ -705,10 +774,15 @@
      "price": 115
     }
    ],
-   "pulled": null,
+   "pulled": {
+    "at": "2026-11-14T21:20:01-05:00",
+    "reason": "Hard Rock moved it to +110",
+    "if_bet": "Got +115? Still a good bet. Don't bet it at +110.",
+    "code": "gap_gone"
+   },
    "price_final": false,
    "graded": null,
-   "rank": 1,
+   "rank": null,
    "tier": "main",
    "game_id": 2026020324,
    "player": "V. Eklund",

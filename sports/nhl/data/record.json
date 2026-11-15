@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T21:10:01-05:00",
+ "generated_at": "2026-11-14T21:20:01-05:00",
  "summary": {
   "headline": {
    "w": 40,
@@ -243,7 +243,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 10,
+    "n": 11,
     "graded": false
    },
    {
@@ -546,6 +546,29 @@
      "legs": []
     },
     {
+     "id": "2026-11-14:2026020324:8484762:shots:2.5:under",
+     "kind": "single",
+     "player": "B. Sennecke",
+     "bet": "Under 2.5 shots on goal",
+     "market": "shots",
+     "team": "ANA",
+     "game": "NYI at ANA",
+     "price": 115,
+     "first_price": 115,
+     "last_price": 115,
+     "prices": [
+      {
+       "price": 115,
+       "at": "2026-11-14T21:20:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
      "id": "2026-11-14:2026020320:8477935:points:0.5:over",
      "kind": "single",
      "player": "S. Bennett",
@@ -657,7 +680,10 @@
      "result": null,
      "actual": null,
      "units": null,
-     "pulled": null,
+     "pulled": {
+      "at": "2026-11-14T21:20:01-05:00",
+      "reason": "Hard Rock moved it to +110"
+     },
      "legs": []
     },
     {
