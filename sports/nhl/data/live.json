@@ -1,34 +1,122 @@
 {
- "slate_date": "2026-11-13",
- "generated_at": "2026-11-14T00:10:01-05:00",
+ "slate_date": "2026-11-14",
+ "generated_at": "2026-11-14T19:00:01-05:00",
  "games": [
   {
-   "game_id": 2026020310,
-   "state": "OFF",
+   "game_id": 2026020313,
+   "state": "PRE",
    "schedule_state": "OK",
-   "period": 3,
-   "period_type": "REG",
-   "clock": "00:00",
+   "period": null,
+   "period_type": null,
+   "clock": null,
    "in_intermission": false,
    "running": false,
    "away": {
-    "abbrev": "NYR",
-    "score": 5,
-    "sog": 31
+    "abbrev": "MIN",
+    "score": null,
+    "sog": null
    },
    "home": {
-    "abbrev": "VAN",
-    "score": 1,
-    "sog": 28
+    "abbrev": "BOS",
+    "score": null,
+    "sog": null
    },
-   "updated_at": "2026-11-14T00:10:01-05:00"
+   "updated_at": "2026-11-14T19:00:01-05:00"
+  },
+  {
+   "game_id": 2026020316,
+   "state": "PRE",
+   "schedule_state": "OK",
+   "period": null,
+   "period_type": null,
+   "clock": null,
+   "in_intermission": false,
+   "running": false,
+   "away": {
+    "abbrev": "DET",
+    "score": null,
+    "sog": null
+   },
+   "home": {
+    "abbrev": "TBL",
+    "score": null,
+    "sog": null
+   },
+   "updated_at": "2026-11-14T19:00:01-05:00"
+  },
+  {
+   "game_id": 2026020317,
+   "state": "PRE",
+   "schedule_state": "OK",
+   "period": null,
+   "period_type": null,
+   "clock": null,
+   "in_intermission": false,
+   "running": false,
+   "away": {
+    "abbrev": "OTT",
+    "score": null,
+    "sog": null
+   },
+   "home": {
+    "abbrev": "PIT",
+    "score": null,
+    "sog": null
+   },
+   "updated_at": "2026-11-14T19:00:01-05:00"
+  },
+  {
+   "game_id": 2026020320,
+   "state": "PRE",
+   "schedule_state": "OK",
+   "period": null,
+   "period_type": null,
+   "clock": null,
+   "in_intermission": false,
+   "running": false,
+   "away": {
+    "abbrev": "FLA",
+    "score": null,
+    "sog": null
+   },
+   "home": {
+    "abbrev": "STL",
+    "score": null,
+    "sog": null
+   },
+   "updated_at": "2026-11-14T19:00:01-05:00"
   }
  ],
  "picks": {
-  "2026-11-13:2026020310:8484210:shots:1.5:under": {
-   "game_id": 2026020310,
+  "2026-11-14:2026020313:8477496:shots:1.5:under": {
+   "game_id": 2026020313,
    "market": "shots",
-   "stat": 2
+   "stat": null
+  },
+  "2026-11-14:2026020313:8479987:shots:1.5:under": {
+   "game_id": 2026020313,
+   "market": "shots",
+   "stat": null
+  },
+  "2026-11-14:2026020313:8483489:shots:1.5:over": {
+   "game_id": 2026020313,
+   "market": "shots",
+   "stat": null
+  },
+  "2026-11-14:2026020316:8478042:points:0.5:over": {
+   "game_id": 2026020316,
+   "market": "points",
+   "stat": null
+  },
+  "2026-11-14:2026020317:8481528:shots:2.5:under": {
+   "game_id": 2026020317,
+   "market": "shots",
+   "stat": null
+  },
+  "2026-11-14:2026020320:8477935:points:0.5:over": {
+   "game_id": 2026020320,
+   "market": "points",
+   "stat": null
   }
  }
 }

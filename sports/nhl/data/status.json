@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-14",
- "started_at": "2026-11-14T18:50:01-05:00",
- "status_at": "2026-11-14T18:50:01-05:00",
- "finished_at": "2026-11-14T18:50:05-05:00",
- "last_ok_at": "2026-11-14T18:50:01-05:00",
+ "started_at": "2026-11-14T19:00:01-05:00",
+ "status_at": "2026-11-14T19:00:01-05:00",
+ "finished_at": "2026-11-14T19:00:03-05:00",
+ "last_ok_at": "2026-11-14T19:00:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -19,18 +19,18 @@
   },
   {
    "step": "stats",
-   "status": "ok",
-   "note": "1 window(s) read"
+   "status": "skipped",
+   "note": "nothing new"
   },
   {
    "step": "lineups",
    "status": "ok",
-   "note": "20 of 20 team pages read"
+   "note": "4 of 4 team pages read"
   },
   {
    "step": "lineup_history",
    "status": "ok",
-   "note": "10 team(s) changed"
+   "note": "4 team(s) changed"
   },
   {
    "step": "odds",
@@ -60,7 +60,7 @@
   {
    "step": "engine",
    "status": "ok",
-   "note": "no change"
+   "note": "6 new event(s), 0 newly shown"
   },
   {
    "step": "grade",
@@ -69,8 +69,8 @@
   },
   {
    "step": "live",
-   "status": "skipped",
-   "note": "no started game with a pick"
+   "status": "ok",
+   "note": "4 game(s), 4 read this run"
   },
   {
    "step": "shadow",
@@ -85,12 +85,12 @@
   {
    "step": "slate",
    "status": "ok",
-   "note": "6 open pick(s)"
+   "note": "0 open pick(s)"
   },
   {
    "step": "record",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "record.json"
   }
  ],
  "sources": {
@@ -154,15 +154,15 @@
  ],
  "excluded_teams": [],
  "stats_through": "2026-11-14",
- "lineups_at": "2026-11-14T18:50:01-05:00",
- "lineups_note": "Lineups posted for 21 of 24 teams checked so far.",
+ "lineups_at": "2026-11-14T19:00:01-05:00",
+ "lineups_note": "Lineups posted for 22 of 28 teams checked so far.",
  "games_today": 14,
- "record_events": 246,
+ "record_events": 252,
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "43652791113",
-  "iteration": 4,
+  "iteration": 5,
   "chain_link": 102,
   "chain_started_at": "2026-11-11T16:26:02-05:00",
   "run_started_at": "2026-11-14T18:21:07-05:00"
