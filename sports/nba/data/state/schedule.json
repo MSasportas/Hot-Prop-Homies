@@ -301,7 +301,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:16 - 3rd",
+    "detail": "7:38 - 3rd",
     "score": {
      "LAL": "77",
      "PHX": "59"
@@ -331,10 +331,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:36 - 2nd",
+    "detail": "9:54 - 2nd",
     "score": {
-     "SA": "33",
-     "UTAH": "38"
+     "SA": "38",
+     "UTAH": "40"
     }
    },
    {

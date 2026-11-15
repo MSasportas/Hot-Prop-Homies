@@ -122,11 +122,11 @@
    }
   },
   "DAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
-    "Marcus Sasser",
-    "Caleb Martin",
     "Cooper Flagg",
+    "Caleb Martin",
+    "Naji Marshall",
     "P.J. Washington",
     "Daniel Gafford"
    ],
@@ -273,5 +273,5 @@
    }
   }
  },
- "at": "2026-11-15T17:40:00-05:00"
+ "at": "2026-11-15T17:41:50-05:00"
 }
