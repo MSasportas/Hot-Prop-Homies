@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T23:20:00-05:00",
+ "at": "2026-11-15T10:30:00-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -85,40 +85,40 @@
    "date": "2026-11-12T21:35Z",
    "note": "Wilson (hand) is expected to miss four to six weeks, Shams Charania of ESPN reports."
   },
-  "4576087": {
-   "status": "out",
-   "name": "Peyton Watson",
-   "team": "CLE",
-   "date": "2026-11-14T22:59Z",
-   "note": "Watson (hamstring) has been ruled out for Saturday's game against the Mavericks."
-  },
-  "3992": {
-   "status": "out",
-   "name": "James Harden",
-   "team": "CLE",
-   "date": "2026-11-14T22:57Z",
-   "note": "Harden (calf) has been ruled out for Saturday's game against Dallas."
-  },
-  "3908809": {
-   "status": "out",
-   "name": "Donovan Mitchell",
-   "team": "CLE",
-   "date": "2026-11-14T22:56Z",
-   "note": "Mitchell (knee) has been ruled out for Saturday's game against the Mavericks."
-  },
   "4066328": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Jarrett Allen",
    "team": "CLE",
-   "date": "2026-11-14T22:52Z",
+   "date": "2026-11-15T15:26Z",
    "note": "Allen (knee) has been ruled out for Saturday's game against the Mavericks."
   },
+  "4576087": {
+   "status": "day-to-day",
+   "name": "Peyton Watson",
+   "team": "CLE",
+   "date": "2026-11-15T15:25Z",
+   "note": "Watson (hamstring) has been ruled out for Saturday's game against the Mavericks."
+  },
   "4432158": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Evan Mobley",
    "team": "CLE",
-   "date": "2026-11-14T18:33Z",
+   "date": "2026-11-15T15:25Z",
    "note": "Mobley (toe) has been ruled out for Saturday's meeting with Dallas."
+  },
+  "3908809": {
+   "status": "day-to-day",
+   "name": "Donovan Mitchell",
+   "team": "CLE",
+   "date": "2026-11-15T15:25Z",
+   "note": "Mitchell (knee) has been ruled out for Saturday's game against the Mavericks."
+  },
+  "3992": {
+   "status": "day-to-day",
+   "name": "James Harden",
+   "team": "CLE",
+   "date": "2026-11-15T15:25Z",
+   "note": "Harden (calf) has been ruled out for Saturday's game against Dallas."
   },
   "4066757": {
    "status": "out",
