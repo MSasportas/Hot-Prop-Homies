@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-14",
- "started_at": "2026-11-14T20:00:00-05:00",
- "status_at": "2026-11-14T20:00:00-05:00",
- "finished_at": "2026-11-14T20:00:02-05:00",
- "last_ok_at": "2026-11-14T20:00:00-05:00",
+ "started_at": "2026-11-14T20:20:01-05:00",
+ "status_at": "2026-11-14T20:20:01-05:00",
+ "finished_at": "2026-11-14T20:20:04-05:00",
+ "last_ok_at": "2026-11-14T20:20:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -35,7 +35,7 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "no pull due"
+   "note": "1 game(s) priced"
   },
   {
    "step": "market_menu",
@@ -44,8 +44,8 @@
   },
   {
    "step": "featured",
-   "status": "skipped",
-   "note": "no new shots read to match"
+   "status": "ok",
+   "note": "sides/totals for 3 game(s), 10 book(s) max, 3 credit(s)"
   },
   {
    "step": "book_probe",
@@ -55,7 +55,7 @@
   {
    "step": "gapguard",
    "status": "ok",
-   "note": "gap+guard: nothing new"
+   "note": "gap+guard: 1 close"
   },
   {
    "step": "engine",
@@ -74,8 +74,8 @@
   },
   {
    "step": "shadow",
-   "status": "skipped",
-   "note": "nothing new"
+   "status": "ok",
+   "note": "37 line read(s) logged"
   },
   {
    "step": "gg_grade",
@@ -111,7 +111,7 @@
   },
   {
    "n": 3,
-   "left": 367
+   "left": 362
   },
   {
    "n": 4,
@@ -138,14 +138,14 @@
    "left": 500
   }
  ],
- "pool_total": 2973,
+ "pool_total": 2968,
  "allowance": 24.8145,
  "tier": 4,
  "budget_today": 347,
- "budget_used_today": 104,
+ "budget_used_today": 109,
  "prices_state": "ok",
- "prices_at": "2026-11-14T19:30:01-05:00",
- "next_price_read_at": "2026-11-14T20:15:00-05:00",
+ "prices_at": "2026-11-14T20:20:01-05:00",
+ "next_price_read_at": "2026-11-14T20:30:00-05:00",
  "unmatched_names": [],
  "unknown_teams": [],
  "lineup_unmatched_names": [
@@ -154,17 +154,17 @@
  ],
  "excluded_teams": [],
  "stats_through": "2026-11-14",
- "lineups_at": "2026-11-14T20:00:00-05:00",
+ "lineups_at": "2026-11-14T20:20:01-05:00",
  "lineups_note": "Lineups posted for 22 of 28 teams checked so far.",
  "games_today": 14,
  "record_events": 255,
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "43656908028",
-  "iteration": 6,
-  "chain_link": 103,
+  "run_id": "43661431020",
+  "iteration": 3,
+  "chain_link": 104,
   "chain_started_at": "2026-11-11T16:26:02-05:00",
-  "run_started_at": "2026-11-14T19:11:16-05:00"
+  "run_started_at": "2026-11-14T20:06:02-05:00"
  }
 }
