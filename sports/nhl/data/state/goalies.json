@@ -10,31 +10,31 @@
    "status": "expected"
   },
   "ANA": {
-   "name": "Lukas Dostal",
+   "name": "Ville Husso",
    "status": "expected"
   },
   "CGY": {
-   "name": "Dustin Wolf",
+   "name": "Devin Cooley",
    "status": "expected"
   },
   "DAL": {
-   "name": "Jake Oettinger",
+   "name": "Casey DeSmith",
    "status": "expected"
   },
   "FLA": {
-   "name": "Jacob Markstrom",
+   "name": "Akira Schmid",
    "status": "expected"
   },
   "VGK": {
-   "name": "Adin Hill",
+   "name": "Carter Hart",
    "status": "expected"
   },
   "VAN": {
-   "name": "Leevi Merilainen",
+   "name": "Kevin Lankinen",
    "status": "expected"
   },
   "SJS": {
-   "name": "Yaroslav Askarov",
+   "name": "Alex Nedeljkovic",
    "status": "expected"
   },
   "NSH": {
@@ -42,5 +42,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-15T07:31:10-05:00"
+ "checked_at": "2026-11-15T08:00:00-05:00"
 }
