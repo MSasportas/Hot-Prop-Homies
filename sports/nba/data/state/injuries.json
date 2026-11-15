@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T19:50:00-05:00",
+ "at": "2026-11-14T20:00:00-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -327,8 +327,8 @@
    "status": "day-to-day",
    "name": "Adou Thiero",
    "team": "LAL",
-   "date": "2026-11-15T00:38Z",
-   "note": "Thiero posted two points (1-1 FG) and two rebounds in eight minutes during Sunday's 121-116 win over the Pistons."
+   "date": "2026-11-15T00:40Z",
+   "note": "Thiero (ankle) is questionable for Sunday's game against the Suns."
   },
   "4277811": {
    "status": "day-to-day",
@@ -344,12 +344,19 @@
    "date": "2026-11-15T00:17Z",
    "note": "Reaves (heel) has been ruled out for Sunday's game against the Suns, Daniel Starkand of LakersNation.com reports."
   },
+  "4600663": {
+   "status": "out",
+   "name": "Zach Edey",
+   "team": "MEM",
+   "date": "2026-11-15T00:43Z",
+   "note": "Edey (ankle) is listed as out for Saturday's game against the Nets."
+  },
   "2991070": {
    "status": "out",
    "name": "Jerami Grant",
    "team": "MEM",
-   "date": "2026-11-15T00:32Z",
-   "note": "Grant (head) is questionable for Saturday's game against the Nets."
+   "date": "2026-11-15T00:35Z",
+   "note": "Grant (head) is out for Saturday's game against the Nets."
   },
   "4593016": {
    "status": "out",
@@ -357,13 +364,6 @@
    "team": "MEM",
    "date": "2026-11-14T19:47Z",
    "note": "Post (concussion) has been ruled out for Saturday's game against the Nets."
-  },
-  "4600663": {
-   "status": "day-to-day",
-   "name": "Zach Edey",
-   "team": "MEM",
-   "date": "2026-11-14T19:45Z",
-   "note": "Edey (ankle) is listed as questionable for Saturday's game against Brooklyn."
   },
   "4065733": {
    "status": "out",

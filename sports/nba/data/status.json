@@ -1,5 +1,5 @@
 {
- "finished_at": "2026-11-14T19:50:00-05:00",
+ "finished_at": "2026-11-14T20:00:00-05:00",
  "slate": "2026-11-14",
  "ok": true,
  "steps": {
@@ -21,7 +21,7 @@
   },
   "odds": {
    "ok": true,
-   "sec": 1.0
+   "sec": 0.3
   },
   "engine": {
    "ok": true,
@@ -29,7 +29,7 @@
   },
   "grade": {
    "ok": true,
-   "sec": 0.0
+   "sec": 0.2
   }
  },
  "keys": [
@@ -131,7 +131,7 @@
  "graded_now": 0,
  "sources": {
   "espn": {
-   "ok": 3,
+   "ok": 5,
    "failed": 0
   },
   "rotowire": {
@@ -139,7 +139,7 @@
    "failed": 0
   },
   "odds": {
-   "ok": 2,
+   "ok": 0,
    "failed": 0
   }
  },
@@ -148,7 +148,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "43657728566",
-  "iteration": 4,
+  "iteration": 5,
   "chain_link": 83,
   "chain_started_at": "2026-11-12T08:01:08-05:00",
   "run_started_at": "2026-11-14T19:21:17-05:00"

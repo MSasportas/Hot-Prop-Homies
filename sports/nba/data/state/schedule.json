@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:03 - 2nd",
+    "detail": "3:07 - 2nd",
     "score": {
-     "DEN": "40",
-     "NO": "36"
+     "DEN": "49",
+     "NO": "40"
     }
    },
    {
@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:32 - 1st",
+    "detail": "2:45 - 1st",
     "score": {
-     "DAL": "12",
-     "CLE": "13"
+     "DAL": "26",
+     "CLE": "26"
     }
    },
    {
