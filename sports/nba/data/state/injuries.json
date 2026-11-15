@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T20:20:00-05:00",
+ "at": "2026-11-14T20:30:01-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -252,6 +252,13 @@
    "team": "HOU",
    "date": "2026-11-12T22:45Z",
    "note": "Smart has been suspended three games for throwing a punch during Wednesday's matchup against Golden State, Shams Charania of ESPN reports."
+  },
+  "4395712": {
+   "status": "day-to-day",
+   "name": "Andrew Nembhard",
+   "team": "IND",
+   "date": "2026-11-15T01:14Z",
+   "note": "Nembhard is questionable for Sunday's game against the 76ers due to left hip soreness."
   },
   "2530530": {
    "status": "day-to-day",
