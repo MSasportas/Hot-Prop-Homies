@@ -157,9 +157,12 @@ Pass bar for all: rule 4 (n >= 150 graded forward, ROI > 0, 90% game-clustered b
 - NP2  Fade soft-book price move, sharp did not follow: Consecutive reads of same game. HR over and under identical at both reads.
   Books two-sided and fresh at both reads (>= 3 soft, >= 2 sharp). dT = soft median fair over change; dS = sharp mean change.
   Event abs(dT) >= 0.02 and dS x sign(dT) < 0.005. Bet HR AGAINST the soft direction at the later read if EV vs later sharp
-  mean >= 0, price -200..+200, first per player/market/night. Metric: ROI, CLV. Status: DISCOVERY.
-  Discovery Oct 25-Nov 14 (21 nights): 23 candidate pairs; 0 clear EV >= 0 gate (sharp never favors the fade vs HR's stale price).
-  Note: EV gate is structural - HR is stale on the fade side. Gate stays; sample is just thin.
+  mean >= 0, price -200..+200, first per player/market/night. Metric: ROI, CLV. Status: FAILED (Sharp review 2026-11-15).
+  Discovery Oct 25-Nov 14 (21 nights): 23 candidate pairs; 0 cleared the EV >= 0 gate.
+  Sharp decision: DROP. The 0/23 result is structural, not a thin-sample issue. When soft books move and sharp books don't
+  follow, HR is by definition on the stale (soft) side, so HR's price will never be at or better than the sharp fair value.
+  The EV gate is correct. Redesigning by removing the EV gate would mean betting at negative EV — that is not a pick.
+  Registered as a structural barrier: soft-move-only setups cannot generate valid picks under any sensible edge rule.
 
 - NP3  Whole market moves, HR still: follow (not conditioned on Pinnacle): Consecutive reads, HR over and under identical.
   Per-book fair-over change c, books fresh at both reads. Event: >= 3 books with c >= +0.015 and none with c <= -0.015 (or
