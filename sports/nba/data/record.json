@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-15T15:30:00-05:00",
+ "generated_at": "2026-11-15T15:40:00-05:00",
  "summary": {
   "headline": {
-   "w": 41,
+   "w": 42,
    "l": 23,
    "push": 0,
    "void": 0,
-   "units": 15.98,
-   "hit_rate": 0.6406,
-   "needed": 0.5197,
-   "n": 64
+   "units": 17.13,
+   "hit_rate": 0.6462,
+   "needed": 0.5188,
+   "n": 65
   },
   "rows": [
    {
@@ -39,14 +39,14 @@
    {
     "key": "assists",
     "label": "Assists",
-    "w": 3,
+    "w": 4,
     "l": 7,
     "push": 0,
     "void": 0,
-    "units": -4.34,
-    "hit_rate": 0.3,
-    "needed": 0.5073,
-    "n": 10
+    "units": -3.2,
+    "hit_rate": 0.3636,
+    "needed": 0.5035,
+    "n": 11
    },
    {
     "key": "threes",
@@ -130,6 +130,18 @@
     "units": 0.77,
     "hit_rate": 1.0,
     "needed": 0.5652,
+    "n": 1
+   },
+   {
+    "key": "window:30 \u2192 20 min",
+    "label": "Window 30 \u2192 20 min",
+    "w": 1,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 1.15,
+    "hit_rate": 1.0,
+    "needed": 0.4651,
     "n": 1
    },
    {
@@ -242,14 +254,14 @@
      {
       "key": "assists",
       "label": "Assists",
-      "w": 3,
+      "w": 4,
       "l": 7,
       "push": 0,
       "void": 0,
-      "units": -4.34,
-      "hit_rate": 0.3,
-      "needed": 0.5073,
-      "n": 10,
+      "units": -3.2,
+      "hit_rate": 0.3636,
+      "needed": 0.5035,
+      "n": 11,
       "ids": [
        "2026-11-15:401909985:3149673:assists:3.5:under",
        "2026-11-13:401909304:4396907:assists:6.5:under",
@@ -331,14 +343,14 @@
      {
       "key": "under",
       "label": "Under",
-      "w": 28,
+      "w": 29,
       "l": 20,
       "push": 0,
       "void": 0,
-      "units": 5.85,
-      "hit_rate": 0.5833,
-      "needed": 0.5247,
-      "n": 48,
+      "units": 7.0,
+      "hit_rate": 0.5918,
+      "needed": 0.5235,
+      "n": 49,
       "ids": [
        "2026-11-15:401909985:3149673:assists:3.5:under",
        "2026-11-15:401909987:2991139:points:6.5:under",
@@ -406,14 +418,14 @@
      {
       "key": "e0",
       "label": "0 to 2%",
-      "w": 33,
+      "w": 34,
       "l": 17,
       "push": 0,
       "void": 0,
-      "units": 13.64,
-      "hit_rate": 0.66,
-      "needed": 0.523,
-      "n": 50,
+      "units": 14.79,
+      "hit_rate": 0.6667,
+      "needed": 0.5219,
+      "n": 51,
       "ids": [
        "2026-11-15:401909985:3149673:assists:3.5:under",
        "2026-11-15:401909987:2991139:points:6.5:under",
@@ -614,14 +626,14 @@
      {
       "key": "starters",
       "label": "Starters confirmed",
-      "w": 4,
+      "w": 5,
       "l": 3,
       "push": 0,
       "void": 0,
-      "units": 1.25,
-      "hit_rate": 0.5714,
-      "needed": 0.4953,
-      "n": 7,
+      "units": 2.4,
+      "hit_rate": 0.625,
+      "needed": 0.4915,
+      "n": 8,
       "ids": [
        "2026-11-15:401909985:3149673:assists:3.5:under",
        "2026-11-11:401909973:4873138:rebounds:5.5:under",
@@ -643,14 +655,14 @@
      {
       "key": "plus",
       "label": "Plus money",
-      "w": 14,
+      "w": 15,
       "l": 9,
       "push": 0,
       "void": 0,
-      "units": 8.4,
-      "hit_rate": 0.6087,
-      "needed": 0.4601,
-      "n": 23,
+      "units": 9.55,
+      "hit_rate": 0.625,
+      "needed": 0.4603,
+      "n": 24,
       "ids": [
        "2026-11-15:401909985:3149673:assists:3.5:under",
        "2026-11-15:401909987:3448:rebounds:4.5:under",
@@ -745,11 +757,11 @@
   "days": [
    {
     "date": "2026-11-15",
-    "w": 0,
+    "w": 1,
     "l": 0,
     "push": 0,
     "void": 0,
-    "units": 0,
+    "units": 1.15,
     "n": 7,
     "graded": false
    },
@@ -919,9 +931,9 @@
   {
    "date": "2026-11-15",
    "graded": false,
-   "w": 0,
+   "w": 1,
    "l": 0,
-   "units": 0,
+   "units": 1.15,
    "entries": [
     {
      "id": "2026-11-15:401909985:3149673:assists:3.5:under",
@@ -940,9 +952,9 @@
        "at": "2026-11-15T12:40:01-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "2 assists",
+     "units": 1.15,
      "pulled": null,
      "legs": [],
      "window": "30 \u2192 20 min",

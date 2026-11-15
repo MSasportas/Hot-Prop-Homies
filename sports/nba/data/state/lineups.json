@@ -34,7 +34,7 @@
    }
   },
   "LAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Luka Doncic",
     "Quentin Grimes",
@@ -48,7 +48,7 @@
    }
   },
   "PHX": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Devin Booker",
     "Jalen Green",
@@ -93,14 +93,14 @@
   "SA": {
    "state": "expected",
    "starters": [
-    "De'Aaron Fox",
     "Stephon Castle",
     "Dylan Harper",
+    "Julian Champagnie",
     "Devin Vassell",
     "Victor Wembanyama"
    ],
    "status": {
-    "De'Aaron Fox": "questionable",
+    "De'Aaron Fox": "out",
     "Tobias Harris": "out",
     "Jayden Quaintance": "out"
    }
@@ -275,5 +275,5 @@
    }
   }
  },
- "at": "2026-11-15T15:30:00-05:00"
+ "at": "2026-11-15T15:40:00-05:00"
 }
