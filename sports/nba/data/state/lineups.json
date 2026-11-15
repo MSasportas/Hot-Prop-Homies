@@ -48,9 +48,9 @@
    }
   },
   "CLE": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
-    "Craig Porter",
+    "Tyrese Proctor",
     "Meleek Thomas",
     "Jaylon Tyson",
     "Mario Hezonja",
@@ -154,5 +154,5 @@
    }
   }
  },
- "at": "2026-11-14T19:00:00-05:00"
+ "at": "2026-11-14T19:10:01-05:00"
 }
