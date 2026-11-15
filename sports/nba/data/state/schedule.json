@@ -283,13 +283,13 @@
     "start": "2026-11-15T13:00:00-05:00",
     "away": "IND",
     "home": "PHI",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/15 - 1:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "5:54 - 1st",
     "score": {
-     "IND": "0",
-     "PHI": "0"
+     "IND": "14",
+     "PHI": "17"
     }
    },
    {
