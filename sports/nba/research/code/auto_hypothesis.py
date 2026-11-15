@@ -349,6 +349,7 @@ def export_fast():
         old = None
     if old is None or {k: v for k, v in old.items() if k != "updated_at"} != doc:
         doc["updated_at"] = common.iso(common.now())
+        os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, "w", encoding="utf-8", newline=chr(10)) as fh:
             json.dump(doc, fh, separators=(",", ":"), sort_keys=True)
     return doc
@@ -367,9 +368,16 @@ def run(force_id=None):
     moves, _, _ = build_moves()
     try:
         export_lab(moves)
-        export_fast()
     except Exception as e:                                   # the Lab file can never stop the nightly test
-        print("lab export skipped: %s" % type(e).__name__)
+        import traceback
+        print("lab_ah export skipped: %s: %s" % (type(e).__name__, e))
+        traceback.print_exc()
+    try:
+        export_fast()
+    except Exception as e:
+        import traceback
+        print("lab_fast export skipped: %s: %s" % (type(e).__name__, e))
+        traceback.print_exc()
     fwd = [e for e in moves if e["day"] >= FWD]
 
     all_m = [e for e in moves]
