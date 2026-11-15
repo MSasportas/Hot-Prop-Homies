@@ -1423,7 +1423,7 @@ function pollNHL(pl) {
       });
     });
 }
-function liveWanted() { return S.view === 'live' && !document.hidden && !!S.slate && !expired(); }
+function liveWanted() { return (S.view === 'live' || S.view === 'lab') && !document.hidden && !!S.slate && !expired(); }
 function liveClear() { if (L.next) clearTimeout(L.next); if (L.wake) clearTimeout(L.wake); L.next = L.wake = null; }
 function liveStop() { liveClear(); }
 /* entry = Live opened / page came back: poll at once. Otherwise only start when a game needs it. */
@@ -1943,6 +1943,20 @@ function calendar(sum) {
       on: { click: function () { if (to) { S.calMonth = to; S.selDay = null; rerender(); } } } }, icon(ic, 18));
   };
   app.appendChild(h('div', { class: 'cal-h' }, h('h3', { text: MONTHS[mo - 1] + ' ' + y }), nav(-1, 'left', 'Earlier month'), nav(1, 'right', 'Later month')));
+  /* monthly W-L summary for the selected month */
+  var mw = 0, ml = 0, mu = 0, mn = 0;
+  Object.keys(m).forEach(function(k) {
+    if (k.slice(0, 7) !== S.calMonth) return;
+    var d = m[k]; mw += num(d.w)||0; ml += num(d.l)||0; mu += num(d.units)||0; mn += num(d.n)||0;
+  });
+  if (mn > 0) {
+    var us = uShort(mu, 2);
+    app.appendChild(h('div', { style: 'margin:4px 0 2px' },
+      h('b', { text: mw + '-' + ml }),
+      us ? ' · ' : null,
+      us ? h('span', { class: signCls(mu), text: us }) : null,
+      ' · ', h('span', { class: 'mu', text: mn + ' graded' })));
+  }
   var cal = h('div', { class: 'cal', role: 'grid', 'aria-label': 'Units by day' });
   ['S', 'M', 'T', 'W', 'T', 'F', 'S'].forEach(function (w) { cal.appendChild(h('span', { class: 'wd', 'aria-hidden': 'true', text: w })); });
   var first = new Date(Date.UTC(y, mo - 1, 1)).getUTCDay(), days = new Date(Date.UTC(y, mo, 0)).getUTCDate(), i;
@@ -2082,6 +2096,13 @@ function labLiveStat(bet) {
     var p = picks[i];
     if (str(p.pid) === str(bet.pid) && str(p.game_id) === str(bet.game_id) && str(p.market) === str(bet.market)) {
       var x = L.stats[str(p.id)]; if (x && num(x.stat) != null) return x.stat;
+    }
+  }
+  /* fallback: match by pid + game_id only (lab bet market may differ from slate pick market) */
+  for (var j = 0; j < picks.length; j++) {
+    var q = picks[j];
+    if (str(q.pid) === str(bet.pid) && str(q.game_id) === str(bet.game_id)) {
+      var y = L.stats[str(q.id)]; if (y && num(y.stat) != null) return y.stat;
     }
   }
   return null;
@@ -2951,7 +2972,7 @@ function route() {
   var v = viewFromHash();
   if (v !== S.view) {
     S.scroll[S.view] = window.scrollY || 0; S.view = v; render(); window.scrollTo(0, S.scroll[v] || 0);
-    if (v === 'live') liveGo(true); else liveStop();
+    if (v === 'live' || v === 'lab') liveGo(true); else liveStop();
     if (v === 'hq') loadHQ();
   }
 }
