@@ -15,7 +15,7 @@
   },
   "CGY": {
    "name": "Devin Cooley",
-   "status": "expected"
+   "status": "confirmed"
   },
   "DAL": {
    "name": "Casey DeSmith",
@@ -42,5 +42,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-15T13:30:00-05:00"
+ "checked_at": "2026-11-15T14:00:01-05:00"
 }
