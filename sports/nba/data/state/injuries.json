@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T12:00:01-05:00",
+ "at": "2026-11-15T12:30:00-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -274,20 +274,6 @@
    "date": "2026-11-15T16:44Z",
    "note": "Nembhard (hip) has been ruled out for Sunday's game against the 76ers, Tony East of Forbes.com reports."
   },
-  "2530530": {
-   "status": "day-to-day",
-   "name": "T.J. McConnell",
-   "team": "IND",
-   "date": "2026-11-14T21:23Z",
-   "note": "McConnell (hamstring) is listed as probable for Sunday's game against the 76ers."
-  },
-  "4396909": {
-   "status": "day-to-day",
-   "name": "Aaron Nesmith",
-   "team": "IND",
-   "date": "2026-11-14T21:21Z",
-   "note": "Nesmith (hand) is listed as questionable for Sunday's game against Philadelphia."
-  },
   "4396993": {
    "status": "out",
    "name": "Tyrese Haliburton",
@@ -413,6 +399,13 @@
    "team": "MIA",
    "date": "2026-11-15T15:26Z",
    "note": "Larsson (illness) has been ruled out for Saturday's game against the Pistons."
+  },
+  "4591725": {
+   "status": "day-to-day",
+   "name": "Ryan Rollins",
+   "team": "MIL",
+   "date": "2026-11-15T17:19Z",
+   "note": "Rollins (head) isn't listed on the injury report for Friday's game against Orlando."
   },
   "4997526": {
    "status": "out",
