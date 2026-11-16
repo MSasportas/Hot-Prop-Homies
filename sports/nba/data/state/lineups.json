@@ -45,7 +45,7 @@
    }
   },
   "CLE": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "James Harden",
     "Donovan Mitchell",
@@ -70,8 +70,6 @@
     "Zach Edey"
    ],
    "status": {
-    "Zach Edey": "questionable",
-    "Quinten Post": "questionable",
     "GG Jackson": "out",
     "Ty Jerome": "out",
     "Scotty Pippen": "out",
@@ -246,5 +244,5 @@
    }
   }
  },
- "at": "2026-11-16T18:10:01-05:00"
+ "at": "2026-11-16T18:20:00-05:00"
 }
