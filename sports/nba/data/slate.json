@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 3504,
+   "pool_left": 3492,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-16T17:00:00-05:00",
-  "last_read_at": "2026-11-16T16:50:00-05:00",
+  "next_read_at": "2026-11-16T17:15:00-05:00",
+  "last_read_at": "2026-11-16T17:00:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-16T16:50:00-05:00"
+   "at": "2026-11-16T17:00:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-16T16:50:00-05:00",
+    "at": "2026-11-16T17:00:01-05:00",
     "confirmed": []
    },
    "grade": true
@@ -245,7 +245,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-16T16:00:00-05:00",
+   "read_at": "2026-11-16T17:00:01-05:00",
    "picks": 0,
    "checks": [
     {
@@ -255,12 +255,16 @@
     {
      "read": "X240",
      "at": "2026-11-16T16:00:00-05:00"
+    },
+    {
+     "read": "X180",
+     "at": "2026-11-16T17:00:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-16T16:00:00-05:00",
+   "last_check_at": "2026-11-16T17:00:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-16T17:00:00-05:00",
-   "next_check_read": "X180",
+   "next_check_at": "2026-11-16T17:45:00-05:00",
+   "next_check_read": "X135",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -278,7 +282,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-16T16:00:00-05:00",
+   "read_at": "2026-11-16T17:00:01-05:00",
    "picks": 0,
    "checks": [
     {
@@ -288,12 +292,16 @@
     {
      "read": "X240",
      "at": "2026-11-16T16:00:00-05:00"
+    },
+    {
+     "read": "X180",
+     "at": "2026-11-16T17:00:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-16T16:00:00-05:00",
+   "last_check_at": "2026-11-16T17:00:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-16T17:00:00-05:00",
-   "next_check_read": "X180",
+   "next_check_at": "2026-11-16T17:45:00-05:00",
+   "next_check_read": "X135",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -311,18 +319,22 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-16T15:00:01-05:00",
-   "picks": 2,
+   "read_at": "2026-11-16T17:00:01-05:00",
+   "picks": 1,
    "checks": [
     {
      "read": "X360",
      "at": "2026-11-16T15:00:01-05:00"
+    },
+    {
+     "read": "X240",
+     "at": "2026-11-16T17:00:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-16T15:00:01-05:00",
+   "last_check_at": "2026-11-16T17:00:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-16T17:00:00-05:00",
-   "next_check_read": "X240",
+   "next_check_at": "2026-11-16T18:00:00-05:00",
+   "next_check_read": "X180",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -381,21 +393,17 @@
    "state": "clear",
    "state_label": "Injury report clear",
    "price_final": false,
-   "pulled": null,
+   "pulled": {
+    "at": "2026-11-16T17:00:01-05:00",
+    "reason": "Hard Rock took the line down",
+    "if_bet": "Got -120? Your bet still stands.",
+    "code": "line_gone",
+    "status": null
+   },
    "added_at": "2026-11-16T15:00:01-05:00",
    "result": null,
-   "links": {
-    "hardrock": {
-     "id": "7095489363653558694",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/7095489363653558694",
-     "price": -120
-    },
-    "draftkings": {
-     "url": "https://sportsbook.draftkings.com/?outcomes=0QA389694688%232367738106_13L42648Q1-246698947Q20",
-     "price": -118
-    }
-   },
-   "rank": 1
+   "links": null,
+   "rank": null
   },
   {
    "player": "Kevin Durant",
@@ -454,7 +462,7 @@
     },
     "draftkings": null
    },
-   "rank": 2
+   "rank": 1
   },
   {
    "player": "Miles Bridges",
@@ -520,12 +528,12 @@
      "price": 104
     }
    },
-   "rank": 3
+   "rank": 2
   }
  ],
  "empty": null,
  "counts": {
-  "lines_read": 754,
+  "lines_read": 752,
   "passing": 14,
   "games": 8
  },
@@ -535,6 +543,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-16T16:50:00-05:00",
- "status_at": "2026-11-16T16:50:00-05:00"
+ "generated_at": "2026-11-16T17:00:01-05:00",
+ "status_at": "2026-11-16T17:00:01-05:00"
 }
