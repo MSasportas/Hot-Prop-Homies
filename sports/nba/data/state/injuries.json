@@ -1,5 +1,5 @@
 {
- "at": "2026-11-16T13:20:01-05:00",
+ "at": "2026-11-16T13:30:00-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -225,12 +225,26 @@
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
   },
+  "4684740": {
+   "status": "day-to-day",
+   "name": "Amen Thompson",
+   "team": "HOU",
+   "date": "2026-11-16T18:13Z",
+   "note": "Thompson (knee) is listed as questionable for Monday's game against the Heat."
+  },
+  "3102529": {
+   "status": "out",
+   "name": "Clint Capela",
+   "team": "HOU",
+   "date": "2026-11-16T18:09Z",
+   "note": "Capela (ankle) is out for Monday's game against the Heat."
+  },
   "2991235": {
    "status": "out",
    "name": "Steven Adams",
    "team": "HOU",
-   "date": "2026-11-16T18:06Z",
-   "note": "Adams will start in Sunday's game against Washington but will be limited to 15 minutes, Varun Shankar of the Houston Chronicle reports."
+   "date": "2026-11-16T18:07Z",
+   "note": "Adams (calf) is out for Monday's game against the Heat."
   },
   "5105553": {
    "status": "day-to-day",
@@ -238,20 +252,6 @@
    "team": "HOU",
    "date": "2026-11-16T15:28Z",
    "note": "Phillips (illness) is available for Wednesday's game against Dallas."
-  },
-  "2991230": {
-   "status": "day-to-day",
-   "name": "Fred VanVleet",
-   "team": "HOU",
-   "date": "2026-11-16T14:46Z",
-   "note": "VanVleet (right knee injury management) has been ruled out for Sunday's game against the Wizards."
-  },
-  "3102529": {
-   "status": "out",
-   "name": "Clint Capela",
-   "team": "HOU",
-   "date": "2026-11-14T21:54Z",
-   "note": "Capela (ankle) has been ruled out for Sunday's game at Washington."
   },
   "2990992": {
    "status": "suspension",
@@ -327,8 +327,8 @@
    "status": "out",
    "name": "Isaiah Stewart",
    "team": "MEM",
-   "date": "2026-11-16T18:04Z",
-   "note": "Stewart is questionable for Monday's game against the Wizards due to an illness."
+   "date": "2026-11-16T18:05Z",
+   "note": "Stewart is out for Monday's game against the Wizards due to an illness."
   },
   "4431785": {
    "status": "out",
@@ -701,19 +701,19 @@
    "date": "2026-10-27T19:25Z",
    "note": "Jackson has been diagnosed with a torn MCL in his right knee and will be sidelined for 6-to-8 weeks, per Shams Charania of ESPN."
   },
+  "4997537": {
+   "status": "out",
+   "name": "Tristan Vukcevic",
+   "team": "WSH",
+   "date": "2026-11-16T18:14Z",
+   "note": "Vukcevic (hip) has been ruled out for Monday's game against Memphis."
+  },
   "5238230": {
    "status": "day-to-day",
    "name": "Tre Johnson",
    "team": "WSH",
    "date": "2026-11-16T14:47Z",
    "note": "Johnson (back) won't play in Sunday's game against Houston, Josh Robbins of The Athletic reports."
-  },
-  "4997537": {
-   "status": "out",
-   "name": "Tristan Vukcevic",
-   "team": "WSH",
-   "date": "2026-11-08T22:17Z",
-   "note": "Vukcevic (hip) has been ruled out for Monday's game against Detroit."
   },
   "4432187": {
    "status": "out",
