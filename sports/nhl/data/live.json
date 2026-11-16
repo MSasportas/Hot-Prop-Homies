@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-15",
- "generated_at": "2026-11-15T21:40:34-05:00",
+ "generated_at": "2026-11-15T21:50:00-05:00",
  "games": [
   {
    "game_id": 2026020326,
@@ -8,20 +8,20 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "16:53",
+   "clock": "11:40",
    "in_intermission": false,
    "running": true,
    "away": {
     "abbrev": "EDM",
     "score": 4,
-    "sog": 16
+    "sog": 18
    },
    "home": {
     "abbrev": "PHI",
     "score": 2,
-    "sog": 25
+    "sog": 30
    },
-   "updated_at": "2026-11-15T21:40:34-05:00"
+   "updated_at": "2026-11-15T21:50:00-05:00"
   }
  ],
  "picks": {
