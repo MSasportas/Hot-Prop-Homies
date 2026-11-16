@@ -1,18 +1,18 @@
 {
- "at": "2026-11-16T09:50:01-05:00",
+ "at": "2026-11-16T10:00:00-05:00",
  "list": {
   "3146557": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Jock Landale",
    "team": "ATL",
-   "date": "2026-11-15T23:22Z",
+   "date": "2026-11-16T14:47Z",
    "note": "Landale (hip) is out for Sunday's game against Bucks, Brad Rowland of the Locked On Podcast Network reports."
   },
   "5149077": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Kingston Flemings",
    "team": "ATL",
-   "date": "2026-11-14T23:08Z",
+   "date": "2026-11-16T14:47Z",
    "note": "Flemings (back) has been ruled out for Sunday's game against the Bucks."
   },
   "4712863": {
@@ -106,25 +106,25 @@
    "date": "2026-10-20T15:11Z",
    "note": "Tomlin is set to miss several weeks with a lower back stress reaction, Chris Fedor of The Cleveland Plain Dealer reports."
   },
-  "4593125": {
-   "status": "out",
-   "name": "Santi Aldama",
-   "team": "DAL",
-   "date": "2026-11-15T22:27Z",
-   "note": "Aldama (ankle) is out for Sunday's game against the Celtics."
-  },
   "4432582": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Max Christie",
    "team": "DAL",
-   "date": "2026-11-15T21:24Z",
+   "date": "2026-11-16T14:45Z",
    "note": "Christie (ankle) has been ruled out for Sunday's game against the Celtics."
   },
+  "4593125": {
+   "status": "day-to-day",
+   "name": "Santi Aldama",
+   "team": "DAL",
+   "date": "2026-11-16T14:45Z",
+   "note": "Aldama (ankle) is out for Sunday's game against the Celtics."
+  },
   "6442": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Kyrie Irving",
    "team": "DAL",
-   "date": "2026-11-15T21:20Z",
+   "date": "2026-11-16T14:44Z",
    "note": "Irving (knee) has been ruled out for Sunday's game against the Celtics."
   },
   "4683688": {
@@ -225,19 +225,19 @@
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
   },
+  "2991230": {
+   "status": "day-to-day",
+   "name": "Fred VanVleet",
+   "team": "HOU",
+   "date": "2026-11-16T14:46Z",
+   "note": "VanVleet (right knee injury management) has been ruled out for Sunday's game against the Wizards."
+  },
   "3102529": {
    "status": "out",
    "name": "Clint Capela",
    "team": "HOU",
    "date": "2026-11-14T21:54Z",
    "note": "Capela (ankle) has been ruled out for Sunday's game at Washington."
-  },
-  "2991230": {
-   "status": "out",
-   "name": "Fred VanVleet",
-   "team": "HOU",
-   "date": "2026-11-14T21:52Z",
-   "note": "VanVleet (right knee injury management) has been ruled out for Sunday's game against the Wizards."
   },
   "2990992": {
    "status": "suspension",
@@ -303,10 +303,10 @@
    "note": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic."
   },
   "4066457": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Austin Reaves",
    "team": "LAL",
-   "date": "2026-11-15T00:17Z",
+   "date": "2026-11-16T14:42Z",
    "note": "Reaves (heel) has been ruled out for Sunday's game against the Suns, Daniel Starkand of LakersNation.com reports."
   },
   "5105550": {
@@ -568,25 +568,25 @@
    "date": "2026-08-24T20:23Z",
    "note": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN."
   },
-  "4065732": {
-   "status": "out",
-   "name": "De'Andre Hunter",
-   "team": "SAC",
-   "date": "2026-11-16T01:18Z",
-   "note": "Hunter (hip) is out for Sunday's game against the Thunder."
-  },
   "3064440": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Zach LaVine",
    "team": "SAC",
-   "date": "2026-11-16T01:06Z",
+   "date": "2026-11-16T14:48Z",
    "note": "LaVine is out for Sunday's game against Oklahoma City due to illness, Brandon Rahbar of DailyThunder.com reports."
   },
+  "4065732": {
+   "status": "day-to-day",
+   "name": "De'Andre Hunter",
+   "team": "SAC",
+   "date": "2026-11-16T14:48Z",
+   "note": "Hunter (hip) is out for Sunday's game against the Thunder."
+  },
   "4431679": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Precious Achiuwa",
    "team": "SAC",
-   "date": "2026-11-16T00:24Z",
+   "date": "2026-11-16T14:48Z",
    "note": "Achiuwa (ankle) has been ruled out for Sunday's game against the Thunder, Brenden Nunes of KHTK Sactown Sports 1140 reports."
   },
   "4898371": {
@@ -604,10 +604,10 @@
    "note": "Simmons underwent successful surgery Tuesday to repair a torn right Achilles tendon, James Ham of ESPN 1320 Sacramento reports."
   },
   "4066259": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "De'Aaron Fox",
    "team": "SA",
-   "date": "2026-11-15T20:33Z",
+   "date": "2026-11-16T14:44Z",
    "note": "Fox (hip) has been ruled out for Sunday's game against the Jazz."
   },
   "6440": {
@@ -646,10 +646,10 @@
    "note": "Head coach Darko Rajakovic said Wednesday that Leonard (knee) is doing individual on-court work and is progressing well, Michael Grange of Sportsnet.ca reports."
   },
   "4397077": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Jaxson Hayes",
    "team": "UTAH",
-   "date": "2026-11-15T00:07Z",
+   "date": "2026-11-16T14:44Z",
    "note": "Hayes (knee) has been ruled out for Sunday's game against the Spurs."
   },
   "4433268": {
@@ -681,10 +681,10 @@
    "note": "Jackson has been diagnosed with a torn MCL in his right knee and will be sidelined for 6-to-8 weeks, per Shams Charania of ESPN."
   },
   "5238230": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Tre Johnson",
    "team": "WSH",
-   "date": "2026-11-15T22:31Z",
+   "date": "2026-11-16T14:47Z",
    "note": "Johnson (back) won't play in Sunday's game against Houston, Josh Robbins of The Athletic reports."
   },
   "4997537": {
