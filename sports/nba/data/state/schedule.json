@@ -405,11 +405,11 @@
     "home": "SAC",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:45 - 3rd",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 3rd",
     "score": {
-     "OKC": "82",
-     "SAC": "73"
+     "OKC": "94",
+     "SAC": "80"
     }
    }
   ]
