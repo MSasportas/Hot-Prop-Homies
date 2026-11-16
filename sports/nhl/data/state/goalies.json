@@ -2,7 +2,7 @@
  "date": "2026-11-16",
  "teams": {
   "NYR": {
-   "name": "Dylan Garand",
+   "name": "Joonas Korpisalo",
    "status": "expected"
   },
   "MTL": {
@@ -10,13 +10,13 @@
    "status": "expected"
   },
   "UTA": {
-   "name": "Karel Vejmelka",
+   "name": "Sebastian Cossa",
    "status": "expected"
   },
   "VAN": {
-   "name": "Leevi Merilainen",
+   "name": "Nikita Tolopilo",
    "status": "expected"
   }
  },
- "checked_at": "2026-11-16T05:00:01-05:00"
+ "checked_at": "2026-11-16T07:30:01-05:00"
 }
