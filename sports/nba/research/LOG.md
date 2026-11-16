@@ -1,4 +1,13 @@
 ## 2026-11-15, LVA2 (Sharp; line vs rolling avg — over signal registered)
+
+## 2026-11-16, AH11 (auto; Morning overs vs unders)
+Filter: MOVES in 11AM->90 window, split by side. MOVES population (Pinnacle >= 2 pt move, HR on line, -200..+200, 1/player/market/night).
+Discovery (<2026-11-10, 14 nights): n 526 graded 518 274-244 -12.66u ROI -2.4% CLV_pin -4.5% (n 512)
+Discovery FAIR (ev_pin>=0): n 34 graded 34 22-12 +9.64u ROI +28.4% CLV_pin -0.2% (n 34)
+Forward (>=2026-11-10, 3 nights): n 74 graded 74 41-33 +0.96u ROI +1.3% CLV_pin -4.4% (n 70)
+Forward FAIR: n 3 graded 3 1-2 -1.20u ROI -40.0% CLV_pin -1.1% (n 3)
+Pass bar: n>=150 graded fwd, ROI>0, CI>0, CLV>0. Status: FORWARD - accumulating
+
 Finding: pin_solo OVER picks where Pinnacle's line is 5%+ above the player's rolling season average hit at 100% (8-0, n=8) at min 3 prior games, vs base over rate 78.9% (15-4). Result holds across all three minimum-game cutoffs. Post-hoc discovery.
 Sharp decision: Register LVA2 as forward lab test. n=8 is thin but 8-0 is notable and the logic is coherent — line set high vs recent output, overs still hitting, possible upward trend or systematic market caution. Independent from LVA1 (different side: overs, different condition: line above avg). Forward gate: n>=30 fresh forward over picks in the above-5% bucket (min 3 prior games), hit rate clearly above the base over rate (78.9%). No live rule change until gate is met and DS names the sample.
 Files changed: lab.json (new LVA2 entry), HYPOTHESES.md (LVA2 added under Run LVA section). Shadow tracking begins 2026-11-16.
