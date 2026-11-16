@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-15",
- "generated_at": "2026-11-15T21:20:00-05:00",
+ "generated_at": "2026-11-15T21:30:01-05:00",
  "games": [
   {
    "game_id": 2026020326,
@@ -8,7 +8,7 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "13:33",
+   "clock": "03:35",
    "in_intermission": true,
    "running": false,
    "away": {
@@ -21,7 +21,7 @@
     "score": 2,
     "sog": 22
    },
-   "updated_at": "2026-11-15T21:20:00-05:00"
+   "updated_at": "2026-11-15T21:30:01-05:00"
   }
  ],
  "picks": {
