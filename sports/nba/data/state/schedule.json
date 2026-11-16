@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:47 - 3rd",
+    "detail": "3:14 - 3rd",
     "score": {
      "ATL": "76",
-     "MIL": "67"
+     "MIL": "73"
     }
    },
    {
@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:04 - 2nd",
+    "detail": "9:15 - 2nd",
     "score": {
-     "OKC": "34",
-     "SAC": "30"
+     "OKC": "37",
+     "SAC": "33"
     }
    }
   ]
