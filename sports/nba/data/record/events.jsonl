@@ -339,3 +339,6 @@
 {"actual":null,"actual_text":"5 rebounds","at":"2026-11-15T19:00:02-05:00","id":"2026-11-15:401909987:3448:rebounds:4.5:under","price":115,"result":"L","t":"graded","units":-1.0}
 {"actual":null,"actual_text":"6 rebounds","at":"2026-11-15T19:00:02-05:00","id":"2026-11-15:401909987:4396907:rebounds:2.5:over","price":105,"result":"W","t":"graded","units":1.05}
 {"at":"2026-11-15T19:20:00-05:00","code":"status","id":"2026-11-15:401909993:4065732:points:13.5:over","if_bet":"Already bet? If he doesn't play it voids and refunds.","reason":"Now listed questionable","t":"pulled"}
+{"actual":null,"actual_text":"4 points","at":"2026-11-15T19:30:01-05:00","id":"2026-11-15:401909988:4592479:points:9.5:over","price":-120,"result":"L","t":"graded","units":-1.0}
+{"actual":null,"actual_text":"2 threes","at":"2026-11-15T19:30:01-05:00","id":"2026-11-15:401909988:5037871:threes:1.5:over","price":140,"result":"W","t":"graded","units":1.4}
+{"actual":null,"actual_text":"4 assists","at":"2026-11-15T19:30:01-05:00","id":"2026-11-15:401909988:5041955:assists:3.5:under","price":115,"result":"L","t":"graded","units":-1.0}
