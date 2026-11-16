@@ -1,3 +1,15 @@
+## 2026-11-16, Run DM (Sharp; data mining 2026-11-16 — three leads registered)
+
+Source: data_mining_2026-11-16.md. Base population: 9,176 graded sides (all Pinnacle-on-line sides with HR -200..+200, shadow reads Oct 26-Nov 15, 20 slates). Three findings reviewed; all three registered as forward lab tests (DM1, DM2, DM3).
+
+**DM1 — Minutes down 3+, unders (registered).** Discovery: n=153 (second half, Nov 6+), 64.1% hit, +19.3% ROI, 90% CI [+7.2, +31.4]. CLV_pin -5.7% (same as base): this is a player-state filter, not a pricing-edge, so CLV gate not required. Record live picks in bucket: 4 picks 1-3 — too thin to override the shadow sample, but flagged. Mirror (minutes up 3+, overs): -15.1% ROI, CI entirely negative — tracked as the inverse. Registered as DM1 with gate: n >= 100 graded forward unders in bucket, hit rate > 55%, ROI > 0.
+
+**DM2 — Hot-form overs fade (registered).** Last-5 output 10%+ above season avg, overs: n=361, 45.7% hit, -12.6% ROI, CI [-21.0, -4.3]. Points overs: 40.0%, -25.1%. Hot unders near breakeven — no action. LVA2 overlap check done: LVA2 (line 5%+ above rolling avg) and DM2 (output 10%+ above season avg) are different features. LVA2 says overs hit when line is high; DM2 says overs miss when player is hot. These are conceptually compatible (line being high = market already priced it correctly; hot player whose line hasn't caught up = different). DS to report overlap correlation at first scoring check. Registered as DM2 with gate: n >= 80 forward overs in hot bucket, hit rate < 50%, ROI < -5%.
+
+**DM3 — Pinnacle 3+ pts off market, skip unders (registered).** Discovery: n=81, 32-49, 39.5% hit, -26.3% ROI, CI [-43.2, -9.5]. Both halves negative (first -18.1%, second -39.6%). Overs in same bucket +13.4% — not stable (second half only +30.6%), watch only, not registered. Registered as DM3 with gate: n >= 50 forward unders in Pinnacle-outlier bucket, hit rate < 48%.
+
+Files changed: lab.json (3 new entries: DM1, DM2, DM3), HYPOTHESES.md (Run DM section), LOG.md.
+
 ## 2026-11-15, LVA2 (Sharp; line vs rolling avg — over signal registered)
 
 ## 2026-11-16, AH11 (auto; Morning overs vs unders)
