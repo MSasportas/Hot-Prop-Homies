@@ -1,12 +1,12 @@
 {
  "slate_date": "2026-11-15",
- "generated_at": "2026-11-15T20:01:41-05:00",
- "status_at": "2026-11-15T20:01:41-05:00",
+ "generated_at": "2026-11-15T20:20:01-05:00",
+ "status_at": "2026-11-15T20:20:01-05:00",
  "valid_until": "2026-11-16T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
-  "prices_at": "2026-11-15T19:30:00-05:00",
-  "next_price_read_at": "2026-11-15T20:15:00-05:00",
+  "prices_at": "2026-11-15T20:20:01-05:00",
+  "next_price_read_at": null,
   "stats_built_at": "2026-11-15T01:50:01-05:00",
   "stats_through": "2026-11-14",
   "lineups_at": "2026-11-15T20:01:41-05:00",
@@ -16,11 +16,11 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-15T20:01:41-05:00",
+   "at": "2026-11-15T20:20:01-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 2915,
+   "pulls_left": 2908,
    "keys": 9,
    "game_days_left": 14,
    "days_left": 16,
@@ -35,7 +35,7 @@
  "empty": {
   "code": "none_qualified",
   "text": "No picks yet today",
-  "sub": "75 lines read, none cleared both checks. Today's earlier pick is on the Live tab. Next read at 8:15 PM."
+  "sub": "75 lines read, none cleared both checks. Today's earlier pick is on the Live tab."
  },
  "games": [
   {
@@ -204,19 +204,20 @@
      {
       "pull": "B",
       "at": "2026-11-15T19:30:00-05:00"
+     },
+     {
+      "pull": "C",
+      "at": "2026-11-15T20:20:01-05:00"
      }
     ],
-    "next_read": {
-     "pull": "C",
-     "at": "2026-11-15T20:15:00-05:00"
-    },
+    "next_read": null,
     "lineups_at": {
      "away": "2026-11-15T18:40:01-05:00",
      "home": null
     }
    },
    "started": false,
-   "reads_done": false,
+   "reads_done": true,
    "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
@@ -249,19 +250,20 @@
      {
       "pull": "B",
       "at": "2026-11-15T19:30:00-05:00"
+     },
+     {
+      "pull": "C",
+      "at": "2026-11-15T20:20:01-05:00"
      }
     ],
-    "next_read": {
-     "pull": "C",
-     "at": "2026-11-15T20:15:00-05:00"
-    },
+    "next_read": null,
     "lineups_at": {
      "away": "2026-11-15T18:40:01-05:00",
      "home": "2026-11-15T18:40:01-05:00"
     }
    },
    "started": false,
-   "reads_done": false,
+   "reads_done": true,
    "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
