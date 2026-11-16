@@ -19,6 +19,7 @@ except Exception:
     pass
 
 FWD = "2026-11-10"  # forward period starts here (run8 registration night)
+DM_FWD = "2026-11-16"  # forward period for DM1/DM2/DM3 (data mining registration date)
 
 # ---------------------------------------------------------------------------
 # Data loading (mirrors run8_moves.py)
@@ -311,27 +312,158 @@ def export_lab(moves):
     return doc
 
 
-def export_dm():
-    """data/research/lab_dm.json: forward shadow tracking for DM1-DM3 (data mining tests,
-    registered 2026-11-16). DM1 and DM2 filter the base population by player-state features
-    (rolling minutes / form vs season average). DM3 filters by Pinnacle vs consensus spread.
-    Computation logic requires player rolling-average data not yet integrated into this script;
-    this function ensures the file exists with the correct structure so the Lab page can read it
-    while that logic is being built out."""
+def _build_player_history(box):
+    """Rebuild box dict into per-player sorted game lists for rolling-average lookups."""
+    by_pid = {}
+    for (gid, pid), row in box.items():
+        key = str(pid)
+        if key not in by_pid:
+            by_pid[key] = []
+        by_pid[key].append(row)
+    for pid in by_pid:
+        by_pid[pid].sort(key=lambda r: r["date"])
+    return by_pid
+
+
+def _dm_rolling(player_hist, pid, game_date, m):
+    """Rolling stats for pid before game_date (prior non-DNP games only).
+    Returns None if no prior games.  Keys: n_prior, season_min, last3_min,
+    season_stat, last5_stat."""
+    games = player_hist.get(str(pid), [])
+    prior = [g for g in games if g["date"] < game_date and not g.get("dnp") and g.get("min")]
+    if not prior:
+        return None
+    sk = STAT.get(m)
+    season_min = statistics.mean(g["min"] for g in prior)
+    prior_s = [g for g in prior if sk and g.get(sk) is not None] if sk else []
+    season_stat = statistics.mean(g[sk] for g in prior_s) if prior_s else None
+    last3 = prior[-3:] if len(prior) >= 3 else None
+    last3_min = statistics.mean(g["min"] for g in last3) if last3 else None
+    last5 = prior[-5:] if len(prior) >= 5 else None
+    last5_s = [g for g in last5 if sk and g.get(sk) is not None] if last5 and sk else []
+    last5_stat = statistics.mean(g[sk] for g in last5_s) if last5_s else None
+    return {"n_prior": len(prior), "season_min": season_min, "last3_min": last3_min,
+            "season_stat": season_stat, "last5_stat": last5_stat}
+
+
+def _dm_tally(t, res, price):
+    """Accumulate one result into a DM tally dict."""
+    u = odds.decimal(price) - 1 if res == "W" else (-1.0 if res == "L" else 0.0)
+    if res == "W":
+        t["w"] += 1; t["units"] += u
+    elif res == "L":
+        t["l"] += 1; t["units"] += u
+    elif res == "P":
+        t["push"] += 1
+    elif res == "V":
+        t["void"] += 1
+    else:
+        t["pending"] += 1
+
+
+def export_dm(days_map=None, box=None):
+    """data/research/lab_dm.json: nightly forward shadow tracking for DM1-DM3.
+
+    DM1 — Minutes down 3+, unders
+      Base population (all Pinnacle-on-line sides, HR -200..+200, 1/player/market/side/night).
+      Filter: player's last-3-game minutes average is 3+ below season average (min 3 prior non-DNP
+      games).  Side must be under.
+
+    DM2 — Hot-form overs fade
+      Same base population.  Filter: player's last-5-game stat average (same market) is >= 10%
+      above season average (min 5 prior non-DNP games).  Side must be over.
+
+    DM3 — Pinnacle 3+ pts off market, skip unders
+      Same base population.  Filter: Pinnacle's de-vigged fair for the bet side differs from the
+      median of all other books by >= 3 pts (0.03).  Side must be under.
+
+    Forward period: nights >= DM_FWD (2026-11-16).
+    """
+    # Load data if not passed in; pass from run() to avoid a double load.
+    if days_map is None:
+        _days = {}
+        for p in sorted(glob.glob(R + "data/odds/2*.json")):
+            d = json.load(open(p, encoding="utf-8"))
+            byg = collections.defaultdict(list)
+            for f in sorted(d["fetches"], key=lambda x: x["at"]):
+                byg[f["game_id"]].append(f)
+            _days[d["date"]] = byg
+        days_map = _days
+    if box is None:
+        box = _load_box()
+
+    player_hist = _build_player_history(box)
+    dm = {k: {"w": 0, "l": 0, "units": 0.0, "pending": 0, "push": 0, "void": 0}
+          for k in ("DM1", "DM2", "DM3")}
+
+    for day in sorted(days_map.keys()):
+        if day < DM_FWD:
+            continue
+        byg = days_map[day]
+        seen = set()  # (pid, market, side) — first qualifying read per night
+        for gid, fs in byg.items():
+            for f in sorted(fs, key=lambda x: x["at"]):
+                for m in f["markets"]:
+                    hr = _hr(f, m)
+                    pin_pairs = _bk(f, "pinnacle", m)
+                    # Other-books fairs for DM3 consensus
+                    others_fairs = {}  # (pid, line) -> [fair_over, ...]
+                    for bk_name in (f.get("others") or {}):
+                        if bk_name == "pinnacle":
+                            continue
+                        for k, q in _bk(f, bk_name, m).items():
+                            fo = _fo(q)
+                            if fo is not None:
+                                others_fairs.setdefault(k, []).append(fo)
+                    for (pid, line), hq in hr.items():
+                        pin_q = pin_pairs.get((pid, line))
+                        pin_fair = _fo(pin_q)
+                        if pin_fair is None:
+                            continue
+                        cons_list = others_fairs.get((pid, line), [])
+                        cons_fair = statistics.median(cons_list) if cons_list else None
+                        for side in ("over", "under"):
+                            price = hq.get(side)
+                            if not price or not (-200 <= price <= 200):
+                                continue
+                            key = (pid, m, side)
+                            if key in seen:
+                                continue
+                            seen.add(key)
+                            res = _grade(box, gid, pid, m, line, side)
+                            pin_sp = pin_fair if side == "over" else (1 - pin_fair)
+                            # DM3: Pinnacle vs consensus gap on this side, unders only
+                            if side == "under" and cons_fair is not None:
+                                cons_sp = 1 - cons_fair
+                                if abs(pin_sp - cons_sp) >= 0.03:
+                                    _dm_tally(dm["DM3"], res, price)
+                            # DM1 and DM2 require rolling player stats
+                            rolling = _dm_rolling(player_hist, pid, day, m)
+                            if rolling is None:
+                                continue
+                            # DM1: minutes down 3+, under (min 3 prior games)
+                            if side == "under" and rolling["last3_min"] is not None:
+                                if rolling["season_min"] - rolling["last3_min"] >= 3.0:
+                                    _dm_tally(dm["DM1"], res, price)
+                            # DM2: hot-form overs fade (last-5 >= 10% above season, min 5 prior games)
+                            if side == "over" and rolling["last5_stat"] is not None and rolling["season_stat"]:
+                                ratio = (rolling["last5_stat"] - rolling["season_stat"]) / rolling["season_stat"]
+                                if ratio >= 0.10:
+                                    _dm_tally(dm["DM2"], res, price)
+
+    doc = {k: dict(v, units=round(v["units"], 2)) for k, v in dm.items()}
     path = R + "data/research/lab_dm.json"
+    old = None
     try:
-        existing = json.load(open(path, encoding="utf-8"))
+        old = json.load(open(path, encoding="utf-8"))
     except (OSError, ValueError):
-        existing = None
-    if existing is None:
-        doc = {
-            "DM1": {"w": 0, "l": 0, "units": 0.0, "pending": 0, "push": 0, "void": 0},
-            "DM2": {"w": 0, "l": 0, "units": 0.0, "pending": 0, "push": 0, "void": 0},
-            "DM3": {"w": 0, "l": 0, "units": 0.0, "pending": 0, "push": 0, "void": 0},
-        }
+        pass
+    if old is None or {k: v for k, v in old.items() if k != "updated_at"} != doc:
+        doc["updated_at"] = common.iso(common.now())
         os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, "w", encoding="utf-8", newline=chr(10)) as fh:
             json.dump(doc, fh, separators=(",", ":"), sort_keys=True)
+    return doc
 
 
 CLASSIC_WINDOWS = ("11 AM \u2192 90 min", "90 \u2192 45 min", "45 \u2192 20 min")
@@ -388,7 +520,7 @@ def run(force_id=None):
     hid, hlabel, hdesc, hfn = HYPOTHESES[idx]
     today = date.today().isoformat()
 
-    moves, _, _ = build_moves()
+    moves, days_map, box = build_moves()
     try:
         export_lab(moves)
     except Exception as e:                                   # the Lab file can never stop the nightly test
@@ -402,7 +534,7 @@ def run(force_id=None):
         print("lab_fast export skipped: %s: %s" % (type(e).__name__, e))
         traceback.print_exc()
     try:
-        export_dm()
+        export_dm(days_map, box)
     except Exception as e:
         import traceback
         print("lab_dm export skipped: %s: %s" % (type(e).__name__, e))
