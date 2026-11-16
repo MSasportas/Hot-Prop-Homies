@@ -1,5 +1,5 @@
 {
- "at": "2026-11-16T13:00:01-05:00",
+ "at": "2026-11-16T13:10:01-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -218,6 +218,13 @@
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
   },
+  "2991235": {
+   "status": "out",
+   "name": "Steven Adams",
+   "team": "HOU",
+   "date": "2026-11-16T18:06Z",
+   "note": "Adams will start in Sunday's game against Washington but will be limited to 15 minutes, Varun Shankar of the Houston Chronicle reports."
+  },
   "5105553": {
    "status": "day-to-day",
    "name": "Julian Phillips",
@@ -309,6 +316,13 @@
    "date": "2026-11-16T14:42Z",
    "note": "Reaves (heel) has been ruled out for Sunday's game against the Suns, Daniel Starkand of LakersNation.com reports."
   },
+  "4432810": {
+   "status": "out",
+   "name": "Isaiah Stewart",
+   "team": "MEM",
+   "date": "2026-11-16T18:04Z",
+   "note": "Stewart is questionable for Monday's game against the Wizards due to an illness."
+  },
   "4431785": {
    "status": "out",
    "name": "Scotty Pippen Jr.",
@@ -322,13 +336,6 @@
    "team": "MEM",
    "date": "2026-11-16T17:12Z",
    "note": "Jackson will undergo surgery to repair the broken fifth metatarsal in his left foot and is set to miss significant time."
-  },
-  "4432810": {
-   "status": "day-to-day",
-   "name": "Isaiah Stewart",
-   "team": "MEM",
-   "date": "2026-11-15T22:15Z",
-   "note": "Stewart is questionable for Monday's game against the Wizards due to an illness."
   },
   "4065733": {
    "status": "out",
