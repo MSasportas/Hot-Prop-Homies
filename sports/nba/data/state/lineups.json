@@ -208,7 +208,7 @@
    }
   },
   "ATL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "CJ McCollum",
     "Nickeil Alexander-Walker",
@@ -226,12 +226,12 @@
    }
   },
   "MIL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Brayden Burries",
     "Tyler Herro",
-    "Jaime Jaquez",
     "Kyle Kuzma",
+    "Jericho Sims",
     "Myles Turner"
    ],
    "status": {
@@ -274,5 +274,5 @@
    }
   }
  },
- "at": "2026-11-15T19:30:01-05:00"
+ "at": "2026-11-15T19:40:01-05:00"
 }

@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T19:20:00-05:00",
+ "at": "2026-11-15T19:40:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -582,12 +582,19 @@
    "date": "2026-08-24T20:23Z",
    "note": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN."
   },
+  "4431679": {
+   "status": "out",
+   "name": "Precious Achiuwa",
+   "team": "SAC",
+   "date": "2026-11-16T00:24Z",
+   "note": "Achiuwa (ankle) has been ruled out for Sunday's game against the Thunder, Brenden Nunes of KHTK Sactown Sports 1140 reports."
+  },
   "4065732": {
    "status": "day-to-day",
    "name": "De'Andre Hunter",
    "team": "SAC",
    "date": "2026-11-16T00:18Z",
-   "note": "Hunter supplied 24 points (7-13 FG, 2-5 3Pt, 8-9 FT), five rebounds, two assists and two steals in 42 minutes during Friday's 120-107 loss to Portland."
+   "note": "Hunter is questionable for Sunday's game against the Thunder due to left hip soreness."
   },
   "4898371": {
    "status": "out",
@@ -595,13 +602,6 @@
    "team": "SAC",
    "date": "2026-11-15T01:00Z",
    "note": "Raynaud (knee) has been ruled out for Sunday's game against the Thunder."
-  },
-  "4431679": {
-   "status": "day-to-day",
-   "name": "Precious Achiuwa",
-   "team": "SAC",
-   "date": "2026-11-15T00:57Z",
-   "note": "Achiuwa (ankle) is questionable for Sunday's game against the Thunder."
   },
   "3907387": {
    "status": "out",
