@@ -96,16 +96,16 @@
    "state": "expected",
    "starters": [
     "Fred VanVleet",
-    "Amen Thompson",
+    "Reed Sheppard",
     "Kevin Durant",
     "Jabari Smith",
     "Alperen Sengun"
    ],
    "status": {
-    "Amen Thompson": "questionable",
     "Steven Adams": "out",
     "Clint Capela": "out",
-    "Marcus Smart": "out"
+    "Marcus Smart": "out",
+    "Amen Thompson": "out"
    }
   },
   "MIA": {
@@ -244,5 +244,5 @@
    }
   }
  },
- "at": "2026-11-16T18:41:59-05:00"
+ "at": "2026-11-16T18:50:00-05:00"
 }
