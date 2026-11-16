@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:19 - 4th",
+    "detail": "5:24 - 4th",
     "score": {
-     "HOU": "124",
-     "WSH": "96"
+     "HOU": "132",
+     "WSH": "102"
     }
    },
    {
@@ -390,10 +390,10 @@
     "home": "MIL",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "11:40 - 3rd",
     "score": {
-     "ATL": "55",
+     "ATL": "57",
      "MIL": "53"
     }
    },
@@ -403,13 +403,13 @@
     "start": "2026-11-15T21:00:00-05:00",
     "away": "OKC",
     "home": "SAC",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/15 - 9:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:59 - 1st",
     "score": {
-     "OKC": "0",
-     "SAC": "0"
+     "OKC": "15",
+     "SAC": "4"
     }
    }
   ]
