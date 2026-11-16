@@ -1,5 +1,5 @@
 {
- "at": "2026-11-16T12:30:00-05:00",
+ "at": "2026-11-16T12:50:00-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -75,8 +75,8 @@
    "status": "day-to-day",
    "name": "Jaylon Tyson",
    "team": "CLE",
-   "date": "2026-11-15T22:09Z",
-   "note": "Tyson (ankle) is questionable for Monday's game against the Bulls."
+   "date": "2026-11-16T17:35Z",
+   "note": "Tyson (ankle) has been downgraded to doubtful for Monday's game against the Bulls."
   },
   "4576087": {
    "status": "day-to-day",
@@ -357,6 +357,13 @@
    "team": "MEM",
    "date": "2026-11-07T17:24Z",
    "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
+  },
+  "4997528": {
+   "status": "day-to-day",
+   "name": "Nikola Jovic",
+   "team": "MIA",
+   "date": "2026-11-16T17:40Z",
+   "note": "Jovic closed with one point (0-2 FG, 0-2 3Pt, 1-2 FT), one assist and one block in 12 minutes during Thursday's 120-100 loss to Golden State."
   },
   "4601025": {
    "status": "day-to-day",
