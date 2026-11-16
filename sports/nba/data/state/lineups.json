@@ -2,7 +2,7 @@
  "slate": "2026-11-16",
  "teams": {
   "ORL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jalen Suggs",
     "Anthony Black",
@@ -18,20 +18,20 @@
    }
   },
   "BOS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Derrick White",
-    "Baylor Scheierman",
+    "Jordan Walsh",
     "Jayson Tatum",
     "Paul George",
-    "Mitchell Robinson"
+    "Luka Garza"
    ],
    "status": {
     "Neemias Queta": "out"
    }
   },
   "CHI": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Josh Giddey",
     "Norman Powell",
@@ -61,7 +61,7 @@
    }
   },
   "MEM": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Cam Spencer",
     "Cedric Coward",
@@ -77,7 +77,7 @@
    }
   },
   "WSH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Trae Young",
     "Kyshawn George",
@@ -244,5 +244,5 @@
    }
   }
  },
- "at": "2026-11-16T18:30:01-05:00"
+ "at": "2026-11-16T18:40:00-05:00"
 }
