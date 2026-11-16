@@ -349,7 +349,7 @@
     "detail": "2:52 - 4th",
     "score": {
      "DAL": "90",
-     "BOS": "126"
+     "BOS": "127"
     }
    },
    {
@@ -360,8 +360,8 @@
     "home": "TOR",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "39.9 - 3rd",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 3rd",
     "score": {
      "NY": "67",
      "TOR": "74"
@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:26 - 2nd",
+    "detail": "1:27 - 2nd",
     "score": {
      "HOU": "71",
-     "WSH": "50"
+     "WSH": "52"
     }
    },
    {
