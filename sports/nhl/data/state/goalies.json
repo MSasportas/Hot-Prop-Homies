@@ -3,7 +3,7 @@
  "teams": {
   "NYR": {
    "name": "Joonas Korpisalo",
-   "status": "expected"
+   "status": "confirmed"
   },
   "MTL": {
    "name": "Jacob Fowler",
@@ -18,5 +18,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-16T07:30:01-05:00"
+ "checked_at": "2026-11-16T11:00:01-05:00"
 }
