@@ -176,6 +176,11 @@ Pass bar for all: rule 4 (n >= 150 graded forward, ROI > 0, 90% game-clustered b
   Status: DISCOVERY.
   Discovery Oct 25-Nov 14 (21 nights): n 861, graded 795, 398-397, -46.79u, ROI -5.9%.
 
+## Run LVA (2026-11-15, Sharp; line vs rolling season average). Registered after discovery review; discovery = Oct 25-Nov 14 (71 live picks). Forward counts from 2026-11-16. Data: data/state/box/players_2026-27.json.gz (rolling avg), data/odds/<date>.json (Pinnacle line at pick time), data/record/events.jsonl (graded picks). Pass bar: n>=40 fresh forward under picks in the below-5% bucket (Pinnacle line >= 5% below player rolling avg, min 3 prior non-DNP games), hit rate above breakeven (~52%). Sharp decision to register: 4-13 (23.5%) on unders in the below-5% bucket vs 50% base under rate; pattern holds across all three minimum-game cutoffs (1, 3, 5), which earns forward tracking. Post-hoc, so forward gate is the only evidence that counts. Overs are not part of this test (overs-below-avg n=5, too small). No change to live picks during the test.
+
+- LVA1  Under filter (line 5%+ below avg): pin_solo UNDER picks where Pinnacle's line is >= 5% below the player's rolling season average (prior non-DNP games, min 3 prior games). Shadow-track only: count the bet, record whether the pick would have been skipped, and score it as W/L at the posted price. Metric: W-L and ROI of the skipped group vs the non-skipped group (kept unders). Pass bar: n>=40 skipped (the below-5% under picks), hit rate above breakeven, and skipped-group ROI clearly below the kept-group ROI. If it passes: Sharp reviews the sample with DS before any live rule change. Status: FORWARD from 2026-11-16.
+  Discovery Oct 25-Nov 14 (71 live picks): 17 unders in bucket, 4-13, 23.5%, -9.05u.
+
 ## Run 9 (2026-11-13, Researcher; Matt: books, not players). Registered before any of these were tested.
 Discovery only: every stored night through 2026-11-12 was already seen by the AH series, so nothing below can pass. Forward collection starts with the 2026-11-13 reads. Code: to be written at research/code/run9/ (not built yet; see LOG 2026-11-13).
 

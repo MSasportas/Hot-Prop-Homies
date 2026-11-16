@@ -1,3 +1,8 @@
+## 2026-11-15, LVA1 (Sharp; line vs rolling avg — under filter registered)
+Finding: pin_solo UNDER picks where Pinnacle's line is 5%+ below the player's rolling season average hit at 23.5% (4-13, n=17) vs 50% base under rate. Pattern holds at min 1, 3, and 5 prior games.
+Sharp decision: Register LVA1 as forward lab test. Post-hoc, so discovery numbers are informational only — no conclusion possible from them. Forward gate: n>=40 skipped under picks (below-5% bucket, min 3 prior games), hit rate above breakeven, skipped ROI below kept-unders ROI. No live rule change until gate is met and DS names the sample.
+Files changed: lab.json (new LVA1 entry), HYPOTHESES.md (Run LVA section). Shadow tracking begins 2026-11-16.
+
 ## 2026-11-15, NP4 (DS; exchange move, HR unchanged)
 Rule: novig AND prophetx both move fair-over >= 1 pt (0.01) same direction, HR prices unchanged, consecutive reads. Bet HR in exchange direction. No Pinnacle condition. NHL analogs: NN4/LL5. Code: scratchpad/np4_discovery.py.
 Discovery Oct 25-Nov 14 (21 nights): n 861 graded 795 398-397 -46.79u ROI -5.9%

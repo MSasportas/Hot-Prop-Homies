@@ -198,6 +198,16 @@
    "gate": "Passes only at 150 graded forward, profit and beating close."
   },
   {
+   "id": "LVA1",
+   "title": "Line vs avg: skip unders when line is 5%+ below rolling avg",
+   "rule": "pin_solo UNDER picks only. Skip (shadow, not live) when Pinnacle's line is 5%+ below the player's rolling season average (prior non-DNP games, min 3 prior games). Overs unchanged. Shadow tracking from 2026-11-16.",
+   "summary": "research/lab_lva.json",
+   "stats": "LVA1",
+   "need": 40,
+   "discovery": "Discovery Oct 25-Nov 14 (71 live picks): unders in the below-5% bucket 4-13 (23.5%, n=17 at min 3 prior games). Base under rate 50% (26-26).",
+   "gate": "n>=40 fresh forward under picks in the below-5% bucket (min 3 prior games), hit rate above breakeven. Post-hoc finding, forward only."
+  },
+  {
    "id": "NP4",
    "title": "Exchange move, HR unchanged",
    "rule": "Consecutive reads, HR prices identical at both reads. novig AND prophetx both move their fair-over >= 1 pt (0.01) in the same direction. No Pinnacle condition. Bet HR in the direction of the exchange move, price -200..+200, first per player/market/night.",
