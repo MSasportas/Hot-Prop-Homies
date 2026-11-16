@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T23:30:01-05:00",
+ "generated_at": "2026-11-16T15:00:01-05:00",
  "summary": {
   "headline": {
    "w": 46,
@@ -260,6 +260,7 @@
       "needed": 0.5422,
       "n": 27,
       "ids": [
+       "2026-11-16:401910001:3136193:points:23.5:under",
        "2026-11-15:401909987:2991139:points:6.5:under",
        "2026-11-15:401909987:4396907:points:20.5:under",
        "2026-11-15:401909987:5254165:points:9.5:under",
@@ -329,6 +330,7 @@
       "needed": 0.4744,
       "n": 14,
       "ids": [
+       "2026-11-16:401910001:4066383:threes:1.5:over",
        "2026-11-15:401909988:5037871:threes:1.5:over",
        "2026-11-15:401909993:4594327:threes:1.5:over",
        "2026-11-13:401909298:3908809:threes:2.5:over",
@@ -364,6 +366,7 @@
       "needed": 0.5039,
       "n": 20,
       "ids": [
+       "2026-11-16:401910001:4066383:threes:1.5:over",
        "2026-11-15:401909988:4592479:points:9.5:over",
        "2026-11-15:401909988:5037871:threes:1.5:over",
        "2026-11-15:401909987:4396907:rebounds:2.5:over",
@@ -399,6 +402,7 @@
       "needed": 0.5215,
       "n": 57,
       "ids": [
+       "2026-11-16:401910001:3136193:points:23.5:under",
        "2026-11-15:401909985:3149673:assists:3.5:under",
        "2026-11-15:401909987:2991139:points:6.5:under",
        "2026-11-15:401909987:4396907:points:20.5:under",
@@ -477,6 +481,8 @@
       "needed": 0.5218,
       "n": 59,
       "ids": [
+       "2026-11-16:401910001:3136193:points:23.5:under",
+       "2026-11-16:401910001:4066383:threes:1.5:over",
        "2026-11-15:401909985:3149673:assists:3.5:under",
        "2026-11-15:401909987:2991139:points:6.5:under",
        "2026-11-15:401909987:3448:rebounds:4.5:under",
@@ -624,6 +630,8 @@
       "needed": 0.5195,
       "n": 61,
       "ids": [
+       "2026-11-16:401910001:3136193:points:23.5:under",
+       "2026-11-16:401910001:4066383:threes:1.5:over",
        "2026-11-15:401909987:2991139:points:6.5:under",
        "2026-11-15:401909987:4396907:points:20.5:under",
        "2026-11-15:401909987:3448:rebounds:4.5:under",
@@ -728,6 +736,7 @@
       "needed": 0.4592,
       "n": 29,
       "ids": [
+       "2026-11-16:401910001:4066383:threes:1.5:over",
        "2026-11-15:401909985:3149673:assists:3.5:under",
        "2026-11-15:401909987:3448:rebounds:4.5:under",
        "2026-11-15:401909986:3136193:rebounds:2.5:under",
@@ -771,6 +780,7 @@
       "needed": 0.5518,
       "n": 48,
       "ids": [
+       "2026-11-16:401910001:3136193:points:23.5:under",
        "2026-11-15:401909987:2991139:points:6.5:under",
        "2026-11-15:401909987:4396907:points:20.5:under",
        "2026-11-15:401909987:5254165:points:9.5:under",
@@ -826,6 +836,16 @@
    }
   ],
   "days": [
+   {
+    "date": "2026-11-16",
+    "w": 0,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 0,
+    "n": 2,
+    "graded": false
+   },
    {
     "date": "2026-11-15",
     "w": 5,
@@ -999,6 +1019,67 @@
   ]
  },
  "nights": [
+  {
+   "date": "2026-11-16",
+   "graded": false,
+   "w": 0,
+   "l": 0,
+   "units": 0,
+   "entries": [
+    {
+     "id": "2026-11-16:401910001:3136193:points:23.5:under",
+     "kind": "single",
+     "player": "Devin Booker",
+     "bet": "Under 23.5 points",
+     "market": "points",
+     "team": "PHX",
+     "game": "PHX at DEN",
+     "price": -120,
+     "first_price": -120,
+     "last_price": -120,
+     "prices": [
+      {
+       "price": -120,
+       "at": "2026-11-16T15:00:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "11 AM \u2192 360 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-16:401910001:4066383:threes:1.5:over",
+     "kind": "single",
+     "player": "Miles Bridges",
+     "bet": "Over 1.5 threes",
+     "market": "threes",
+     "team": "PHX",
+     "game": "PHX at DEN",
+     "price": 105,
+     "first_price": 105,
+     "last_price": 105,
+     "prices": [
+      {
+       "price": 105,
+       "at": "2026-11-16T15:00:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "11 AM \u2192 360 min",
+     "book": "hardrock",
+     "under_fair": false
+    }
+   ]
+  },
   {
    "date": "2026-11-15",
    "graded": true,
@@ -1922,67 +2003,6 @@
      ],
      "result": "L",
      "actual": "8 assists",
-     "units": -1.0,
-     "pulled": null,
-     "legs": [],
-     "window": "90 \u2192 45 min",
-     "book": "hardrock",
-     "under_fair": false
-    }
-   ]
-  },
-  {
-   "date": "2026-11-08",
-   "graded": true,
-   "w": 1,
-   "l": 1,
-   "units": -0.2,
-   "entries": [
-    {
-     "id": "2026-11-08:401909945:3917376:threes:1.5:over",
-     "kind": "single",
-     "player": "Jaylen Brown",
-     "bet": "Over 1.5 threes",
-     "market": "threes",
-     "team": "PHI",
-     "game": "PHI at CHI",
-     "price": -125,
-     "first_price": -125,
-     "last_price": -125,
-     "prices": [
-      {
-       "price": -125,
-       "at": "2026-11-08T14:00:01-05:00"
-      }
-     ],
-     "result": "W",
-     "actual": "2 threes",
-     "units": 0.8,
-     "pulled": null,
-     "legs": [],
-     "window": "11 AM \u2192 90 min",
-     "book": "hardrock",
-     "under_fair": false
-    },
-    {
-     "id": "2026-11-08:401909945:4871145:rebounds:6.5:under",
-     "kind": "single",
-     "player": "Josh Giddey",
-     "bet": "Under 6.5 rebounds",
-     "market": "rebounds",
-     "team": "CHI",
-     "game": "PHI at CHI",
-     "price": -120,
-     "first_price": -120,
-     "last_price": -120,
-     "prices": [
-      {
-       "price": -120,
-       "at": "2026-11-08T14:50:00-05:00"
-      }
-     ],
-     "result": "L",
-     "actual": "7 rebounds",
      "units": -1.0,
      "pulled": null,
      "legs": [],
