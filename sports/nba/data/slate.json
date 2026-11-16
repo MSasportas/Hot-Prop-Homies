@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-15T20:40:04-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-15T23:21:31-05:00"
+   "at": "2026-11-15T23:30:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -541,8 +541,8 @@
    "start": "2026-11-15T21:00:00-05:00",
    "away": "OKC",
    "home": "SAC",
-   "state": "in",
-   "detail": "31.4 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -767,7 +767,11 @@
    "price_final": false,
    "pulled": null,
    "added_at": "2026-11-15T20:20:01-05:00",
-   "result": null,
+   "result": {
+    "result": "W",
+    "actual": "2 assists",
+    "units": 0.6897
+   },
    "links": null,
    "rank": null
   },
@@ -1001,7 +1005,11 @@
     "status": "questionable"
    },
    "added_at": "2026-11-15T17:00:01-05:00",
-   "result": null,
+   "result": {
+    "result": "VOID",
+    "actual": "did not play",
+    "units": 0.0
+   },
    "links": null,
    "rank": null
   },
@@ -1227,7 +1235,11 @@
    "price_final": false,
    "pulled": null,
    "added_at": "2026-11-15T20:30:01-05:00",
-   "result": null,
+   "result": {
+    "result": "W",
+    "actual": "2 threes",
+    "units": 0.8
+   },
    "links": null,
    "rank": null
   },
@@ -1424,6 +1436,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-15T23:21:31-05:00",
- "status_at": "2026-11-15T23:21:31-05:00"
+ "generated_at": "2026-11-15T23:30:01-05:00",
+ "status_at": "2026-11-15T23:30:01-05:00"
 }
