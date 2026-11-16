@@ -40,7 +40,6 @@
     "Jalen Smith"
    ],
    "status": {
-    "Jalen Smith": "questionable",
     "Tobe Awaka": "out",
     "Caleb Wilson": "out"
    }
@@ -55,11 +54,10 @@
     "Jarrett Allen"
    ],
    "status": {
-    "Peyton Watson": "questionable",
-    "Jaylon Tyson": "doubtful",
     "Sam Merrill": "out",
     "Evan Mobley": "out",
-    "Nae'Qwan Tomlin": "out"
+    "Nae'Qwan Tomlin": "out",
+    "Jaylon Tyson": "out"
    }
   },
   "MEM": {
@@ -248,5 +246,5 @@
    }
   }
  },
- "at": "2026-11-16T17:30:01-05:00"
+ "at": "2026-11-16T17:40:00-05:00"
 }
