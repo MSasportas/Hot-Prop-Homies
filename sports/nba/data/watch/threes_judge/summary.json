@@ -5,14 +5,14 @@
  "about": "Lab (Matt, 2026-11-12; research Run 11 T1b): 3-pointers only, Hard Rock's main-line price 1%+ better than Pinnacle's de-vigged chance on the same line, no Pinnacle move needed. 18 nights before tracking: 17 bets 10-7 +6.15u, beat the close by 0.9%. Research only, never the Record or Discord.",
  "from_slate": "2026-11-12",
  "min_ev": 0.01,
- "updated_at": "2026-11-15T19:30:07-05:00",
+ "updated_at": "2026-11-15T20:30:08-05:00",
  "total": {
   "w": 3,
   "l": 4,
   "push": 0,
   "void": 0,
   "units": -0.78,
-  "pending": 0,
+  "pending": 1,
   "hit_rate": 0.4286
  },
  "nights": [
@@ -69,6 +69,30 @@
      "result": "W",
      "actual": "1 three",
      "units": 0.7692
+    },
+    {
+     "at": "2026-11-15T20:30:01-05:00",
+     "bet": "Over 1.5 threes",
+     "game_id": "401909993",
+     "gap_ev": -0.0607,
+     "home": false,
+     "line": 1.5,
+     "market": "threes",
+     "market_fair": 0.4473,
+     "opp": "SAC",
+     "pid": "3133626",
+     "pin_ev": 0.0458,
+     "pin_fair": 0.498,
+     "player": "Kenrich Williams",
+     "price": 110,
+     "read": "X30",
+     "side": "over",
+     "slate": "2026-11-15",
+     "start": "2026-11-15T21:00:00-05:00",
+     "team": "OKC",
+     "result": null,
+     "actual": null,
+     "units": null
     }
    ]
   },

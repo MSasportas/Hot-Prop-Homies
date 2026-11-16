@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 3640,
+   "pool_left": 3636,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-15T20:30:00-05:00",
-  "last_read_at": "2026-11-15T20:20:01-05:00",
+  "next_read_at": "2026-11-15T20:40:00-05:00",
+  "last_read_at": "2026-11-15T20:30:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-15T20:20:01-05:00"
+   "at": "2026-11-15T20:30:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-15T20:20:01-05:00",
+    "at": "2026-11-15T20:30:01-05:00",
     "confirmed": [
      "ATL",
      "BOS",
@@ -357,7 +357,7 @@
    "away": "NYK",
    "home": "TOR",
    "state": "in",
-   "detail": "5:33 - 4th",
+   "detail": "57.5 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -418,7 +418,7 @@
    "away": "HOU",
    "home": "WAS",
    "state": "in",
-   "detail": "10:59 - 3rd",
+   "detail": "8:35 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -479,7 +479,7 @@
    "away": "ATL",
    "home": "MIL",
    "state": "in",
-   "detail": "6:12 - 1st",
+   "detail": "3:00 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -545,8 +545,8 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-15T20:20:01-05:00",
-   "picks": 1,
+   "read_at": "2026-11-15T20:30:01-05:00",
+   "picks": 2,
    "checks": [
     {
      "read": "X240",
@@ -575,12 +575,16 @@
     {
      "read": "C",
      "at": "2026-11-15T20:20:01-05:00"
+    },
+    {
+     "read": "X30",
+     "at": "2026-11-15T20:30:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-15T20:20:01-05:00",
+   "last_check_at": "2026-11-15T20:30:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-15T20:30:00-05:00",
-   "next_check_read": "X30",
+   "next_check_at": "2026-11-15T20:40:00-05:00",
+   "next_check_read": "D",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -1177,6 +1181,65 @@
    "rank": null
   },
   {
+   "player": "Keegan Murray",
+   "pid": "4594327",
+   "team": "SAC",
+   "opp": "OKC",
+   "home": true,
+   "game_id": "401909993",
+   "start": "2026-11-15T21:00:00-05:00",
+   "bet": "Over 1.5 threes",
+   "market": "threes",
+   "side": "over",
+   "line": 1.5,
+   "price": -125,
+   "price_at": "2026-11-15T20:30:01-05:00",
+   "read": "X30",
+   "p": 0.5567,
+   "p_pct": 56,
+   "breakeven": 0.5556,
+   "breakeven_pct": 56,
+   "market_fair": null,
+   "n_books": 6,
+   "gap_ev": null,
+   "final_ev": 0.0384,
+   "model_p": null,
+   "reason": "Pinnacle moved the over from -124 to -147 (52% to 56%). Hard Rock -125 is 0.2% better than Pinnacle's fair price.",
+   "rule": "pin_solo",
+   "pin_before": 0.5183,
+   "pin_after": 0.5567,
+   "pin_price_before": -124,
+   "pin_price_after": -147,
+   "others_move": 0.0065,
+   "n_others": 6,
+   "ev_vs_pin": 0.002,
+   "window": "45 \u2192 30 min",
+   "gap_vs_pin": 0.0396,
+   "book": "hardrock",
+   "books": {
+    "hardrock": {
+     "ev_vs_pin": 0.002,
+     "price": -125
+    }
+   },
+   "id": "2026-11-15:401909993:4594327:threes:1.5:over",
+   "state": "clear",
+   "state_label": "Injury report clear",
+   "price_final": false,
+   "pulled": null,
+   "added_at": "2026-11-15T20:30:01-05:00",
+   "result": null,
+   "links": {
+    "hardrock": {
+     "id": "5898734886602277296",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/5898734886602277296",
+     "price": -125
+    },
+    "draftkings": null
+   },
+   "rank": 2
+  },
+  {
    "player": "Pascal Siakam",
    "pid": "3149673",
    "team": "IND",
@@ -1351,8 +1414,8 @@
  ],
  "empty": null,
  "counts": {
-  "lines_read": 788,
-  "passing": 32,
+  "lines_read": 796,
+  "passing": 33,
   "games": 9
  },
  "safety_paused": false,
@@ -1361,6 +1424,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-15T20:20:01-05:00",
- "status_at": "2026-11-15T20:20:01-05:00"
+ "generated_at": "2026-11-15T20:30:01-05:00",
+ "status_at": "2026-11-15T20:30:01-05:00"
 }
