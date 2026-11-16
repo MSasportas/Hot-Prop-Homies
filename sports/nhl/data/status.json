@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-16",
- "started_at": "2026-11-16T13:00:01-05:00",
- "status_at": "2026-11-16T13:00:01-05:00",
- "finished_at": "2026-11-16T13:00:18-05:00",
- "last_ok_at": "2026-11-16T13:00:01-05:00",
+ "started_at": "2026-11-16T13:10:31-05:00",
+ "status_at": "2026-11-16T13:10:31-05:00",
+ "finished_at": "2026-11-16T13:10:32-05:00",
+ "last_ok_at": "2026-11-16T13:10:31-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -35,17 +35,17 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "2 game(s) priced"
+   "note": "no pull due"
   },
   {
    "step": "market_menu",
-   "status": "ok",
-   "note": "33 Hard Rock market(s) listed for MTL at NYR"
+   "status": "skipped",
+   "note": "read this week"
   },
   {
    "step": "featured",
-   "status": "ok",
-   "note": "sides/totals for 2 game(s), 10 book(s) max, 3 credit(s)"
+   "status": "skipped",
+   "note": "no new shots read to match"
   },
   {
    "step": "book_probe",
@@ -74,8 +74,8 @@
   },
   {
    "step": "shadow",
-   "status": "ok",
-   "note": "31 line read(s) logged"
+   "status": "skipped",
+   "note": "nothing new"
   },
   {
    "step": "gg_grade",
@@ -157,13 +157,15 @@
  "lineups_note": null,
  "games_today": 2,
  "record_events": 278,
- "odds_notes": [],
+ "odds_notes": [
+  "key 1 refused (401)"
+ ],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "43917455710",
-  "iteration": 5,
-  "chain_link": 23,
+  "run_id": "43925965162",
+  "iteration": 1,
+  "chain_link": 24,
   "chain_started_at": "2026-11-15T18:21:00-05:00",
-  "run_started_at": "2026-11-16T12:21:18-05:00"
+  "run_started_at": "2026-11-16T13:10:15-05:00"
  }
 }
