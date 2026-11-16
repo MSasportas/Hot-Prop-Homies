@@ -406,7 +406,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:11 - 4th",
+    "detail": "31.4 - 4th",
     "score": {
      "OKC": "125",
      "SAC": "101"
