@@ -330,10 +330,10 @@
     "home": "UTAH",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "36.7 - 4th",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 4th",
     "score": {
-     "SA": "108",
+     "SA": "110",
      "UTAH": "102"
     }
    },
@@ -346,10 +346,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:15 - 3rd",
+    "detail": "8:14 - 3rd",
     "score": {
-     "DAL": "47",
-     "BOS": "76"
+     "DAL": "49",
+     "BOS": "81"
     }
    },
    {
@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:37 - 1st",
+    "detail": "6:09 - 1st",
     "score": {
-     "HOU": "12",
-     "WSH": "13"
+     "HOU": "15",
+     "WSH": "16"
     }
    },
    {
