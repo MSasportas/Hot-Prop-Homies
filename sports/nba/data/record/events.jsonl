@@ -333,3 +333,8 @@
 {"at":"2026-11-15T17:40:00-05:00","id":"2026-11-15:401909990:3136195:rebounds:12.5:under","state":"starters","t":"state"}
 {"at":"2026-11-15T18:00:01-05:00","id":"2026-11-15:401909990:3136195:rebounds:12.5:under","state":"locked","t":"locked"}
 {"actual":null,"actual_text":"4 rebounds","at":"2026-11-15T18:50:01-05:00","id":"2026-11-15:401909986:3136193:rebounds:2.5:under","price":130,"result":"L","t":"graded","units":-1.0}
+{"actual":null,"actual_text":"7 points","at":"2026-11-15T19:00:02-05:00","id":"2026-11-15:401909987:2991139:points:6.5:under","price":-120,"result":"L","t":"graded","units":-1.0}
+{"actual":null,"actual_text":"27 points","at":"2026-11-15T19:00:02-05:00","id":"2026-11-15:401909987:4396907:points:20.5:under","price":-110,"result":"L","t":"graded","units":-1.0}
+{"actual":null,"actual_text":"12 points","at":"2026-11-15T19:00:02-05:00","id":"2026-11-15:401909987:5254165:points:9.5:under","price":-110,"result":"L","t":"graded","units":-1.0}
+{"actual":null,"actual_text":"5 rebounds","at":"2026-11-15T19:00:02-05:00","id":"2026-11-15:401909987:3448:rebounds:4.5:under","price":115,"result":"L","t":"graded","units":-1.0}
+{"actual":null,"actual_text":"6 rebounds","at":"2026-11-15T19:00:02-05:00","id":"2026-11-15:401909987:4396907:rebounds:2.5:over","price":105,"result":"W","t":"graded","units":1.05}
