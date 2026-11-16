@@ -1,11 +1,11 @@
 {
- "finished_at": "2026-11-16T11:40:01-05:00",
+ "finished_at": "2026-11-16T12:00:01-05:00",
  "slate": "2026-11-16",
  "ok": true,
  "steps": {
   "schedule": {
    "ok": true,
-   "sec": 0.4
+   "sec": 0.3
   },
   "rosters": {
    "ok": true,
@@ -13,7 +13,7 @@
   },
   "injuries": {
    "ok": true,
-   "sec": 0.2
+   "sec": 0.3
   },
   "lineups": {
    "ok": true,
@@ -114,6 +114,7 @@
    "X180",
    "X240",
    "X30",
+   "X360",
    "X60",
    "X75"
   ],
@@ -121,7 +122,7 @@
   "games_left": 106,
   "games_today": 8,
   "key_count": 13,
-  "made_at": "2026-11-16T05:00:00-05:00",
+  "made_at": "2026-11-16T12:00:01-05:00",
   "cost_per_read": 4
  },
  "spent_today": 32,
@@ -148,7 +149,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "43904465707",
-  "iteration": 4,
+  "iteration": 6,
   "chain_link": 142,
   "chain_started_at": "2026-11-12T08:01:08-05:00",
   "run_started_at": "2026-11-16T11:10:26-05:00"
