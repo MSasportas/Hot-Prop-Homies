@@ -358,10 +358,10 @@
     "start": "2026-11-15T18:00:00-05:00",
     "away": "NY",
     "home": "TOR",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4.2 - OT",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final/OT",
     "score": {
      "NY": "112",
      "TOR": "108"
@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "45.7 - 3rd",
+    "detail": "3.2 - 3rd",
     "score": {
-     "HOU": "116",
-     "WSH": "83"
+     "HOU": "119",
+     "WSH": "85"
     }
    },
    {
@@ -391,7 +391,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:19 - 2nd",
+    "detail": "1:54 - 2nd",
     "score": {
      "ATL": "47",
      "MIL": "51"
