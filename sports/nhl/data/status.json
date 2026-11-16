@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-16",
- "started_at": "2026-11-16T18:40:00-05:00",
- "status_at": "2026-11-16T18:40:00-05:00",
- "finished_at": "2026-11-16T18:40:01-05:00",
- "last_ok_at": "2026-11-16T18:40:00-05:00",
+ "started_at": "2026-11-16T18:50:00-05:00",
+ "status_at": "2026-11-16T18:50:00-05:00",
+ "finished_at": "2026-11-16T18:50:03-05:00",
+ "last_ok_at": "2026-11-16T18:50:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -35,7 +35,7 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "no pull due"
+   "note": "1 game(s) priced"
   },
   {
    "step": "market_menu",
@@ -44,8 +44,8 @@
   },
   {
    "step": "featured",
-   "status": "skipped",
-   "note": "no new shots read to match"
+   "status": "ok",
+   "note": "sides/totals for 2 game(s), 10 book(s) max, 3 credit(s)"
   },
   {
    "step": "book_probe",
@@ -74,8 +74,8 @@
   },
   {
    "step": "shadow",
-   "status": "skipped",
-   "note": "nothing new"
+   "status": "ok",
+   "note": "31 line read(s) logged"
   },
   {
    "step": "gg_grade",
@@ -84,8 +84,8 @@
   },
   {
    "step": "slate",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "0 open pick(s)"
   },
   {
    "step": "record",
@@ -111,7 +111,7 @@
   },
   {
    "n": 3,
-   "left": 291
+   "left": 286
   },
   {
    "n": 4,
@@ -138,14 +138,14 @@
    "left": 500
   }
  ],
- "pool_total": 2897,
+ "pool_total": 2892,
  "allowance": 27.6952,
  "tier": 4,
  "budget_today": 55,
- "budget_used_today": 11,
+ "budget_used_today": 16,
  "prices_state": "ok",
- "prices_at": "2026-11-16T18:00:01-05:00",
- "next_price_read_at": "2026-11-16T18:45:00-05:00",
+ "prices_at": "2026-11-16T18:50:00-05:00",
+ "next_price_read_at": "2026-11-16T20:00:00-05:00",
  "unmatched_names": [
   "Elias Pettersson"
  ],
@@ -164,7 +164,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "43976857600",
-  "iteration": 4,
+  "iteration": 5,
   "chain_link": 30,
   "chain_started_at": "2026-11-15T18:21:00-05:00",
   "run_started_at": "2026-11-16T18:10:15-05:00"
