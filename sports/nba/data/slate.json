@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-15T20:40:04-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-15T21:20:00-05:00"
+   "at": "2026-11-15T21:30:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -420,7 +420,7 @@
    "away": "HOU",
    "home": "WAS",
    "state": "in",
-   "detail": "5:24 - 4th",
+   "detail": "58.1 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -481,7 +481,7 @@
    "away": "ATL",
    "home": "MIL",
    "state": "in",
-   "detail": "11:40 - 3rd",
+   "detail": "6:18 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -542,7 +542,7 @@
    "away": "OKC",
    "home": "SAC",
    "state": "in",
-   "detail": "7:59 - 1st",
+   "detail": "2:46 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -1424,6 +1424,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-15T21:20:00-05:00",
- "status_at": "2026-11-15T21:20:00-05:00"
+ "generated_at": "2026-11-15T21:30:00-05:00",
+ "status_at": "2026-11-15T21:30:00-05:00"
 }
