@@ -1,3 +1,11 @@
+## 2026-11-15, NP4 (DS; exchange move, HR unchanged)
+Rule: novig AND prophetx both move fair-over >= 1 pt (0.01) same direction, HR prices unchanged, consecutive reads. Bet HR in exchange direction. No Pinnacle condition. NHL analogs: NN4/LL5. Code: scratchpad/np4_discovery.py.
+Discovery Oct 25-Nov 14 (21 nights): n 861 graded 795 398-397 -46.79u ROI -5.9%
+  overs: n 383 graded 355 176-179 -25.00u ROI -7.0%
+  unders: n 478 graded 440 222-218 -21.78u ROI -5.0%
+Pass bar: n>=150 graded fwd, ROI>0, CI>0, CLV>0. Status: DISCOVERY - accumulating.
+NOTE: Discovery shows 795 graded events over 21 nights (~38/night) — large sample base, but 50/50 W-L with negative ROI from vig. No edge visible in discovery. Forward test required; needs 150 graded.
+
 ## 2026-11-12, Run 13 (CEO; Matt: when does Pinnacle move, and how far before tip). Code: research/code/run11/when_moves.py. 18 nights, consecutive stored reads, lines Pinnacle posted at both.
 
 ## 2026-11-15, AH11 (auto; Morning overs vs unders)

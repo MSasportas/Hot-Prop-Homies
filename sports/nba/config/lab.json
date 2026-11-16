@@ -196,6 +196,16 @@
    "need": 150,
    "discovery": "Discovery Oct 25-Nov 14 (21 nights): 3 events, 3 graded, 1-2, -0.85u (sample too thin to judge).",
    "gate": "Passes only at 150 graded forward, profit and beating close."
+  },
+  {
+   "id": "NP4",
+   "title": "Exchange move, HR unchanged",
+   "rule": "Consecutive reads, HR prices identical at both reads. novig AND prophetx both move their fair-over >= 1 pt (0.01) in the same direction. No Pinnacle condition. Bet HR in the direction of the exchange move, price -200..+200, first per player/market/night.",
+   "summary": "research/lab_np.json",
+   "stats": "NP4",
+   "need": 150,
+   "discovery": "Discovery Oct 25-Nov 14 (21 nights): 795 graded, 398-397, -46.79u, ROI -5.9%.",
+   "gate": "Passes only at 150 graded forward, profit and beating close."
   }
  ]
 }

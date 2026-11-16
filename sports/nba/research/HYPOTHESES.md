@@ -170,6 +170,12 @@ Pass bar for all: rule 4 (n >= 150 graded forward, ROI > 0, 90% game-clustered b
   player/market/night. Metric: ROI, CLV. Status: DISCOVERY.
   Discovery Oct 25-Nov 14 (21 nights): n 3, graded 3, 1-2, -0.85u. Sample too thin to judge.
 
+- NP4  Exchange move, HR unchanged: Consecutive reads, HR prices identical at both reads. novig AND prophetx
+  both move their fair-over >= 1 pt (0.01) in the same direction. No Pinnacle condition. Bet HR in the direction
+  of the exchange move, price -200..+200, first per player/market/night. NHL analogs: NN4/LL5. Metric: ROI, CLV.
+  Status: DISCOVERY.
+  Discovery Oct 25-Nov 14 (21 nights): n 861, graded 795, 398-397, -46.79u, ROI -5.9%.
+
 ## Run 9 (2026-11-13, Researcher; Matt: books, not players). Registered before any of these were tested.
 Discovery only: every stored night through 2026-11-12 was already seen by the AH series, so nothing below can pass. Forward collection starts with the 2026-11-13 reads. Code: to be written at research/code/run9/ (not built yet; see LOG 2026-11-13).
 
