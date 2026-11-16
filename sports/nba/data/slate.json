@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 3492,
+   "pool_left": 3484,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-16T17:15:00-05:00",
-  "last_read_at": "2026-11-16T17:00:01-05:00",
+  "next_read_at": "2026-11-16T17:30:00-05:00",
+  "last_read_at": "2026-11-16T17:20:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-16T17:10:01-05:00"
+   "at": "2026-11-16T17:20:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-16T17:10:01-05:00",
+    "at": "2026-11-16T17:20:01-05:00",
     "confirmed": []
    },
    "grade": true
@@ -171,7 +171,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-16T16:30:01-05:00",
+   "read_at": "2026-11-16T17:20:01-05:00",
    "picks": 0,
    "checks": [
     {
@@ -185,12 +185,16 @@
     {
      "read": "X180",
      "at": "2026-11-16T16:30:01-05:00"
+    },
+    {
+     "read": "X135",
+     "at": "2026-11-16T17:20:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-16T16:30:01-05:00",
+   "last_check_at": "2026-11-16T17:20:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-16T17:15:00-05:00",
-   "next_check_read": "X135",
+   "next_check_at": "2026-11-16T18:00:00-05:00",
+   "next_check_read": "B",
    "paused": false,
    "injury_clear": {
     "away": false,
@@ -208,8 +212,8 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-16T16:30:01-05:00",
-   "picks": 1,
+   "read_at": "2026-11-16T17:20:01-05:00",
+   "picks": 2,
    "checks": [
     {
      "read": "X360",
@@ -222,12 +226,16 @@
     {
      "read": "X180",
      "at": "2026-11-16T16:30:01-05:00"
+    },
+    {
+     "read": "X135",
+     "at": "2026-11-16T17:20:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-16T16:30:01-05:00",
+   "last_check_at": "2026-11-16T17:20:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-16T17:15:00-05:00",
-   "next_check_read": "X135",
+   "next_check_at": "2026-11-16T18:00:00-05:00",
+   "next_check_read": "B",
    "paused": false,
    "injury_clear": {
     "away": false,
@@ -343,6 +351,72 @@
   }
  ],
  "picks": [
+  {
+   "player": "Giannis Antetokounmpo",
+   "pid": "3032977",
+   "team": "MIA",
+   "opp": "HOU",
+   "home": true,
+   "game_id": "401909998",
+   "start": "2026-11-16T19:30:00-05:00",
+   "bet": "Under 28.5 points",
+   "market": "points",
+   "side": "under",
+   "line": 28.5,
+   "price": -120,
+   "price_at": "2026-11-16T17:20:01-05:00",
+   "read": "X135",
+   "p": 0.5567,
+   "p_pct": 56,
+   "breakeven": 0.5455,
+   "breakeven_pct": 55,
+   "market_fair": null,
+   "n_books": 5,
+   "gap_ev": null,
+   "final_ev": 0.0567,
+   "model_p": null,
+   "reason": "Pinnacle moved the under from -115 to -147 (50% to 56%). Hard Rock -120 is 2.1% better than Pinnacle's fair price; DraftKings -106 is 8.2% better than Pinnacle's fair price.",
+   "rule": "pin_solo",
+   "pin_before": 0.5,
+   "pin_after": 0.5567,
+   "pin_price_before": -115,
+   "pin_price_after": -147,
+   "others_move": 0.014,
+   "n_others": 5,
+   "ev_vs_pin": 0.0206,
+   "window": "180 \u2192 135 min",
+   "gap_vs_pin": 0.0497,
+   "book": "hardrock",
+   "books": {
+    "draftkings": {
+     "ev_vs_pin": 0.0819,
+     "price": -106
+    },
+    "hardrock": {
+     "ev_vs_pin": 0.0206,
+     "price": -120
+    }
+   },
+   "id": "2026-11-16:401909998:3032977:points:28.5:under",
+   "state": "early",
+   "state_label": "Early",
+   "price_final": false,
+   "pulled": null,
+   "added_at": "2026-11-16T17:20:01-05:00",
+   "result": null,
+   "links": {
+    "hardrock": {
+     "id": "1146663807387566469",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/1146663807387566469",
+     "price": -120
+    },
+    "draftkings": {
+     "url": "https://sportsbook.draftkings.com/?outcomes=0QA389691506%232367747066_13L42648Q1247962133Q20",
+     "price": -106
+    }
+   },
+   "rank": 1
+  },
   {
    "player": "Devin Booker",
    "pid": "3136193",
@@ -462,7 +536,7 @@
     },
     "draftkings": null
    },
-   "rank": 1
+   "rank": 2
   },
   {
    "player": "Miles Bridges",
@@ -528,13 +602,13 @@
      "price": 104
     }
    },
-   "rank": 2
+   "rank": 3
   }
  ],
  "empty": null,
  "counts": {
   "lines_read": 752,
-  "passing": 14,
+  "passing": 16,
   "games": 8
  },
  "safety_paused": false,
@@ -543,6 +617,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-16T17:10:01-05:00",
- "status_at": "2026-11-16T17:10:01-05:00"
+ "generated_at": "2026-11-16T17:20:01-05:00",
+ "status_at": "2026-11-16T17:20:01-05:00"
 }

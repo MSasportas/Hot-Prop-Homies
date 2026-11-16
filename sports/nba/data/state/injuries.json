@@ -1,5 +1,5 @@
 {
- "at": "2026-11-16T15:30:01-05:00",
+ "at": "2026-11-16T17:20:01-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -37,11 +37,11 @@
    "note": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday."
   },
   "4397424": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Neemias Queta",
    "team": "BOS",
-   "date": "2026-11-16T18:12Z",
-   "note": "Queta (rest) is questionable for Monday's game against the Magic."
+   "date": "2026-11-16T22:10Z",
+   "note": "Queta (rest) won't play in Monday's game against the Magic, Taylor Snow of the Celtics' official site reports."
   },
   "5061575": {
    "status": "out",
@@ -78,6 +78,13 @@
    "date": "2026-11-12T21:35Z",
    "note": "Wilson (hand) is expected to miss four to six weeks, Shams Charania of ESPN reports."
   },
+  "4432158": {
+   "status": "out",
+   "name": "Evan Mobley",
+   "team": "CLE",
+   "date": "2026-11-16T22:06Z",
+   "note": "Mobley will receive treatment and participate in rehab after the team confirmed a diagnosis of a right great toe sprain, and he'll be re-evaluated in the next 7-to-10 days."
+  },
   "4683747": {
    "status": "day-to-day",
    "name": "Jaylon Tyson",
@@ -91,13 +98,6 @@
    "team": "CLE",
    "date": "2026-11-15T22:04Z",
    "note": "Watson (abdominal soreness) is questionable to play in Monday's game against the Bulls."
-  },
-  "4432158": {
-   "status": "out",
-   "name": "Evan Mobley",
-   "team": "CLE",
-   "date": "2026-11-15T21:58Z",
-   "note": "Mobley (toe) has been ruled out for Monday's game against Chicago."
   },
   "4066757": {
    "status": "out",
