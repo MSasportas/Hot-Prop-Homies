@@ -311,6 +311,29 @@ def export_lab(moves):
     return doc
 
 
+def export_dm():
+    """data/research/lab_dm.json: forward shadow tracking for DM1-DM3 (data mining tests,
+    registered 2026-11-16). DM1 and DM2 filter the base population by player-state features
+    (rolling minutes / form vs season average). DM3 filters by Pinnacle vs consensus spread.
+    Computation logic requires player rolling-average data not yet integrated into this script;
+    this function ensures the file exists with the correct structure so the Lab page can read it
+    while that logic is being built out."""
+    path = R + "data/research/lab_dm.json"
+    try:
+        existing = json.load(open(path, encoding="utf-8"))
+    except (OSError, ValueError):
+        existing = None
+    if existing is None:
+        doc = {
+            "DM1": {"w": 0, "l": 0, "units": 0.0, "pending": 0, "push": 0, "void": 0},
+            "DM2": {"w": 0, "l": 0, "units": 0.0, "pending": 0, "push": 0, "void": 0},
+            "DM3": {"w": 0, "l": 0, "units": 0.0, "pending": 0, "push": 0, "void": 0},
+        }
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, "w", encoding="utf-8", newline=chr(10)) as fh:
+            json.dump(doc, fh, separators=(",", ":"), sort_keys=True)
+
+
 CLASSIC_WINDOWS = ("11 AM \u2192 90 min", "90 \u2192 45 min", "45 \u2192 20 min")
 
 
@@ -377,6 +400,12 @@ def run(force_id=None):
     except Exception as e:
         import traceback
         print("lab_fast export skipped: %s: %s" % (type(e).__name__, e))
+        traceback.print_exc()
+    try:
+        export_dm()
+    except Exception as e:
+        import traceback
+        print("lab_dm export skipped: %s: %s" % (type(e).__name__, e))
         traceback.print_exc()
     fwd = [e for e in moves if e["day"] >= FWD]
 
