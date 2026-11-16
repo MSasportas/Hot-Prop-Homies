@@ -388,12 +388,12 @@
     "start": "2026-11-15T20:00:00-05:00",
     "away": "ATL",
     "home": "MIL",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:11 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "ATL": "109",
+     "ATL": "113",
      "MIL": "106"
     }
    },
@@ -405,11 +405,11 @@
     "home": "SAC",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "9:14 - 3rd",
     "score": {
-     "OKC": "62",
-     "SAC": "50"
+     "OKC": "72",
+     "SAC": "60"
     }
    }
   ]
