@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-15T20:40:04-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-15T21:50:00-05:00"
+   "at": "2026-11-15T22:00:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -481,7 +481,7 @@
    "away": "ATL",
    "home": "MIL",
    "state": "in",
-   "detail": "End of 3rd",
+   "detail": "6:58 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -542,7 +542,7 @@
    "away": "OKC",
    "home": "SAC",
    "state": "in",
-   "detail": "6:27 - 2nd",
+   "detail": "2:05 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -1424,6 +1424,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-15T21:50:00-05:00",
- "status_at": "2026-11-15T21:50:00-05:00"
+ "generated_at": "2026-11-15T22:00:01-05:00",
+ "status_at": "2026-11-15T22:00:01-05:00"
 }

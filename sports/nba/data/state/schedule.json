@@ -390,11 +390,11 @@
     "home": "MIL",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 3rd",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:58 - 4th",
     "score": {
-     "ATL": "87",
-     "MIL": "80"
+     "ATL": "97",
+     "MIL": "92"
     }
    },
    {
@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:27 - 2nd",
+    "detail": "2:05 - 2nd",
     "score": {
-     "OKC": "40",
-     "SAC": "41"
+     "OKC": "53",
+     "SAC": "50"
     }
    }
   ]
