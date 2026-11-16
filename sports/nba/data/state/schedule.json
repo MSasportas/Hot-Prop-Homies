@@ -346,10 +346,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:43 - 4th",
+    "detail": "2:52 - 4th",
     "score": {
-     "DAL": "78",
-     "BOS": "117"
+     "DAL": "90",
+     "BOS": "126"
     }
    },
    {
@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:46 - 3rd",
+    "detail": "39.9 - 3rd",
     "score": {
-     "NY": "59",
-     "TOR": "63"
+     "NY": "67",
+     "TOR": "74"
     }
    },
    {
@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:37 - 2nd",
+    "detail": "2:26 - 2nd",
     "score": {
-     "HOU": "55",
-     "WSH": "40"
+     "HOU": "71",
+     "WSH": "50"
     }
    },
    {
