@@ -1,5 +1,5 @@
 {
- "at": "2026-11-16T17:40:00-05:00",
+ "at": "2026-11-16T17:50:00-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -71,26 +71,19 @@
    "date": "2026-11-12T21:35Z",
    "note": "Wilson (hand) is expected to miss four to six weeks, Shams Charania of ESPN reports."
   },
+  "4683747": {
+   "status": "out",
+   "name": "Jaylon Tyson",
+   "team": "CLE",
+   "date": "2026-11-16T22:39Z",
+   "note": "Tyson (ankle) has been ruled out for Monday's game against Chicago."
+  },
   "4432158": {
    "status": "out",
    "name": "Evan Mobley",
    "team": "CLE",
    "date": "2026-11-16T22:06Z",
    "note": "Mobley will receive treatment and participate in rehab after the team confirmed a diagnosis of a right great toe sprain, and he'll be re-evaluated in the next 7-to-10 days."
-  },
-  "4683747": {
-   "status": "day-to-day",
-   "name": "Jaylon Tyson",
-   "team": "CLE",
-   "date": "2026-11-16T17:35Z",
-   "note": "Tyson (ankle) has been downgraded to doubtful for Monday's game against the Bulls."
-  },
-  "4576087": {
-   "status": "day-to-day",
-   "name": "Peyton Watson",
-   "team": "CLE",
-   "date": "2026-11-15T22:04Z",
-   "note": "Watson (abdominal soreness) is questionable to play in Monday's game against the Bulls."
   },
   "4066757": {
    "status": "out",
