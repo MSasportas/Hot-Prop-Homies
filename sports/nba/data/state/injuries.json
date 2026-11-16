@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T20:20:01-05:00",
+ "at": "2026-11-15T20:40:04-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -575,6 +575,13 @@
    "date": "2026-08-24T20:23Z",
    "note": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN."
   },
+  "4065732": {
+   "status": "out",
+   "name": "De'Andre Hunter",
+   "team": "SAC",
+   "date": "2026-11-16T01:18Z",
+   "note": "Hunter (hip) is out for Sunday's game against the Thunder."
+  },
   "3064440": {
    "status": "out",
    "name": "Zach LaVine",
@@ -588,13 +595,6 @@
    "team": "SAC",
    "date": "2026-11-16T00:24Z",
    "note": "Achiuwa (ankle) has been ruled out for Sunday's game against the Thunder, Brenden Nunes of KHTK Sactown Sports 1140 reports."
-  },
-  "4065732": {
-   "status": "day-to-day",
-   "name": "De'Andre Hunter",
-   "team": "SAC",
-   "date": "2026-11-16T00:18Z",
-   "note": "Hunter is questionable for Sunday's game against the Thunder due to left hip soreness."
   },
   "4898371": {
    "status": "out",
