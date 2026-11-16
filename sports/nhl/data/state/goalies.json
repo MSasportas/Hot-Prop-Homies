@@ -1,46 +1,22 @@
 {
- "date": "2026-11-15",
+ "date": "2026-11-16",
  "teams": {
-  "PHI": {
-   "name": "Dan Vladar",
-   "status": "confirmed"
+  "NYR": {
+   "name": "Dylan Garand",
+   "status": "expected"
   },
-  "EDM": {
-   "name": "Tristan Jarry",
-   "status": "confirmed"
+  "MTL": {
+   "name": "Jacob Fowler",
+   "status": "expected"
   },
-  "ANA": {
-   "name": "Ville Husso",
-   "status": "confirmed"
-  },
-  "CGY": {
-   "name": "Devin Cooley",
-   "status": "confirmed"
-  },
-  "DAL": {
-   "name": "Casey DeSmith",
-   "status": "confirmed"
-  },
-  "FLA": {
-   "name": "Akira Schmid",
-   "status": "confirmed"
-  },
-  "VGK": {
-   "name": "Carter Hart",
-   "status": "confirmed"
+  "UTA": {
+   "name": "Karel Vejmelka",
+   "status": "expected"
   },
   "VAN": {
    "name": "Leevi Merilainen",
-   "status": "confirmed"
-  },
-  "SJS": {
-   "name": "Alex Nedeljkovic",
-   "status": "confirmed"
-  },
-  "NSH": {
-   "name": "Juuse Saros",
-   "status": "confirmed"
+   "status": "expected"
   }
  },
- "checked_at": "2026-11-15T20:40:01-05:00"
+ "checked_at": "2026-11-16T05:00:01-05:00"
 }
