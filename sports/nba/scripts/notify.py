@@ -32,7 +32,6 @@ import common
 import odds
 
 PAGE = "https://msasportas.github.io/Hot-Prop-Homies/"
-MAX_PER_DAY = 12
 FINAL_ROOM = 9
 MAX_LINES = 8
 QUIET_FROM = (0, 30)        # inclusive
@@ -316,8 +315,6 @@ def _notify(slate, sender):
     stamp = common.iso(now)
 
     def post(text, mark):
-        if st["sent"].get(today, 0) >= MAX_PER_DAY:
-            return False                                       # over the cap: drop silently
         if not sender.send(text):
             return False                                       # not a 2xx: nothing marked, retried next cycle
         st["sent"][today] = st["sent"].get(today, 0) + 1
