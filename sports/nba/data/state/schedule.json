@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:54 - 4th",
+    "detail": "5:33 - 4th",
     "score": {
-     "NY": "71",
-     "TOR": "84"
+     "NY": "81",
+     "TOR": "86"
     }
    },
    {
@@ -375,11 +375,11 @@
     "home": "WSH",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "10:59 - 3rd",
     "score": {
-     "HOU": "73",
-     "WSH": "54"
+     "HOU": "75",
+     "WSH": "56"
     }
    },
    {
@@ -388,13 +388,13 @@
     "start": "2026-11-15T20:00:00-05:00",
     "away": "ATL",
     "home": "MIL",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/15 - 8:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:12 - 1st",
     "score": {
-     "ATL": "0",
-     "MIL": "0"
+     "ATL": "9",
+     "MIL": "18"
     }
    },
    {

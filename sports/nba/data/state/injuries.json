@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T19:40:01-05:00",
+ "at": "2026-11-15T20:20:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -449,13 +449,6 @@
    "date": "2026-11-15T01:14Z",
    "note": "Williams (back) has been ruled out for Sunday's game against the Kings."
   },
-  "4900671": {
-   "status": "day-to-day",
-   "name": "Ajay Mitchell",
-   "team": "OKC",
-   "date": "2026-11-15T01:10Z",
-   "note": "Mitchell (ankle) is questionable to suit up for Sunday's game against the Kings."
-  },
   "5061603": {
    "status": "out",
    "name": "Thomas Sorber",
@@ -581,6 +574,13 @@
    "team": "POR",
    "date": "2026-08-24T20:23Z",
    "note": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN."
+  },
+  "3064440": {
+   "status": "out",
+   "name": "Zach LaVine",
+   "team": "SAC",
+   "date": "2026-11-16T01:06Z",
+   "note": "LaVine is out for Sunday's game against Oklahoma City due to illness, Brandon Rahbar of DailyThunder.com reports."
   },
   "4431679": {
    "status": "out",
