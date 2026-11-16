@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T19:00:02-05:00",
+ "generated_at": "2026-11-15T19:20:00-05:00",
  "summary": {
   "headline": {
    "w": 43,
@@ -1282,7 +1282,11 @@
      "result": null,
      "actual": null,
      "units": null,
-     "pulled": null,
+     "pulled": {
+      "at": "2026-11-15T19:20:00-05:00",
+      "reason": "Now listed questionable",
+      "code": "status"
+     },
      "legs": [],
      "window": "11 AM \u2192 240 min",
      "book": "hardrock",
