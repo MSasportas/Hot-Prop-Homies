@@ -26,7 +26,9 @@
     "Paul George",
     "Neemias Queta"
    ],
-   "status": {}
+   "status": {
+    "Neemias Queta": "questionable"
+   }
   },
   "CHI": {
    "state": "expected",
@@ -48,13 +50,13 @@
    "starters": [
     "James Harden",
     "Donovan Mitchell",
+    "Meleek Thomas",
     "Peyton Watson",
-    "Jaylon Tyson",
     "Jarrett Allen"
    ],
    "status": {
     "Peyton Watson": "questionable",
-    "Jaylon Tyson": "questionable",
+    "Jaylon Tyson": "doubtful",
     "Sam Merrill": "out",
     "Evan Mobley": "out",
     "Nae'Qwan Tomlin": "out"
@@ -72,10 +74,10 @@
    "status": {
     "Zach Edey": "questionable",
     "Quinten Post": "questionable",
-    "Isaiah Stewart": "questionable",
     "GG Jackson": "out",
     "Ty Jerome": "out",
-    "Scotty Pippen": "out"
+    "Scotty Pippen": "out",
+    "Isaiah Stewart": "out"
    }
   },
   "WSH": {
@@ -88,9 +90,9 @@
     "Alex Sarr"
    ],
    "status": {
+    "Tre Johnson": "questionable",
     "Reece Beekman": "out",
     "Justin Champagnie": "out",
-    "Tre Johnson": "out",
     "Tristan Vukcevic": "out",
     "Jamir Watkins": "out"
    }
@@ -105,7 +107,8 @@
     "Alperen Sengun"
    ],
    "status": {
-    "Fred VanVleet": "out",
+    "Amen Thompson": "questionable",
+    "Steven Adams": "out",
     "Clint Capela": "out",
     "Marcus Smart": "out"
    }
@@ -115,12 +118,13 @@
    "starters": [
     "Davion Mitchell",
     "Klay Thompson",
-    "Pelle Larsson",
+    "Myron Gardner",
     "Giannis Antetokounmpo",
     "Bam Adebayo"
    ],
    "status": {
-    "Pelle Larsson": "questionable"
+    "Nikola Jovic": "questionable",
+    "Pelle Larsson": "doubtful"
    }
   },
   "PHI": {
@@ -129,14 +133,15 @@
     "Tyrese Maxey",
     "VJ Edgecombe",
     "Jaylen Brown",
-    "LeBron James",
+    "Dean Wade",
     "Joel Embiid"
    ],
    "status": {
     "Joel Embiid": "questionable",
     "Ariel Hukporti": "out",
     "Dominick Barlow": "out",
-    "Adem Bona": "out"
+    "Adem Bona": "out",
+    "LeBron James": "out"
    }
   },
   "BKN": {
@@ -226,6 +231,7 @@
     "Oso Ighodaro"
    ],
    "status": {
+    "Ryan Dunn": "questionable",
     "Mark Williams": "out"
    }
   },
@@ -243,5 +249,5 @@
    }
   }
  },
- "at": "2026-11-16T05:00:00-05:00"
+ "at": "2026-11-16T16:00:00-05:00"
 }
