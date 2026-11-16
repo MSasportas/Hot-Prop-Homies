@@ -208,6 +208,16 @@
    "gate": "n>=40 fresh forward under picks in the below-5% bucket (min 3 prior games), hit rate above breakeven. Post-hoc finding, forward only."
   },
   {
+   "id": "LVA2",
+   "title": "Line vs avg: flag overs when line is 5%+ above rolling avg",
+   "rule": "pin_solo OVER picks only. Flag (shadow, not live) when Pinnacle's line is 5%+ above the player's rolling season average (prior non-DNP games, min 3 prior games). Unders unchanged. Shadow tracking from 2026-11-16.",
+   "summary": "research/lab_lva.json",
+   "stats": "LVA2",
+   "need": 30,
+   "discovery": "Discovery Oct 25-Nov 14 (71 live picks): overs in the above-5% bucket 8-0 (100%, n=8 at min 3 prior games). Base over rate 78.9% (15-4). Post-hoc.",
+   "gate": "n>=30 fresh forward over picks in the above-5% bucket (min 3 prior games), hit rate clearly above the base over rate (78.9%). Post-hoc finding, forward only."
+  },
+  {
    "id": "NP4",
    "title": "Exchange move, HR unchanged",
    "rule": "Consecutive reads, HR prices identical at both reads. novig AND prophetx both move their fair-over >= 1 pt (0.01) in the same direction. No Pinnacle condition. Bet HR in the direction of the exchange move, price -200..+200, first per player/market/night.",
