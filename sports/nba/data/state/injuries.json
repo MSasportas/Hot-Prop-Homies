@@ -1,5 +1,5 @@
 {
- "at": "2026-11-16T13:10:01-05:00",
+ "at": "2026-11-16T13:20:01-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -35,6 +35,13 @@
    "team": "ATL",
    "date": "2026-09-21T19:50Z",
    "note": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday."
+  },
+  "4397424": {
+   "status": "day-to-day",
+   "name": "Neemias Queta",
+   "team": "BOS",
+   "date": "2026-11-16T18:12Z",
+   "note": "Queta (rest) is questionable for Monday's game against the Magic."
   },
   "5061575": {
    "status": "out",
@@ -516,8 +523,15 @@
    "status": "day-to-day",
    "name": "Joel Embiid",
    "team": "PHI",
-   "date": "2026-11-15T20:58Z",
-   "note": "Embiid (right foot injury management) has been ruled out for Sunday's game against the Pacers."
+   "date": "2026-11-16T18:09Z",
+   "note": "Embiid (foot) is questionable for Monday's game against the Nets."
+  },
+  "1966": {
+   "status": "out",
+   "name": "LeBron James",
+   "team": "PHI",
+   "date": "2026-11-16T18:07Z",
+   "note": "James (back) has been ruled out for Monday's game against the Nets."
   },
   "4870562": {
    "status": "out",
