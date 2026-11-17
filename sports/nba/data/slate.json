@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 3240,
+   "pool_left": 3232,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-17T14:00:00-05:00",
-  "last_read_at": "2026-11-17T13:30:01-05:00",
+  "next_read_at": "2026-11-17T15:30:00-05:00",
+  "last_read_at": "2026-11-17T14:00:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-17T13:50:01-05:00"
+   "at": "2026-11-17T14:00:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -77,13 +77,18 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-17T11:00:00-05:00",
-   "picks": 0,
-   "checks": [],
-   "last_check_at": null,
+   "read_at": "2026-11-17T14:00:00-05:00",
+   "picks": 1,
+   "checks": [
+    {
+     "read": "X360",
+     "at": "2026-11-17T14:00:00-05:00"
+    }
+   ],
+   "last_check_at": "2026-11-17T14:00:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-17T14:00:00-05:00",
-   "next_check_read": "X360",
+   "next_check_at": "2026-11-17T16:00:00-05:00",
+   "next_check_read": "X240",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -101,13 +106,18 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-17T11:00:00-05:00",
+   "read_at": "2026-11-17T14:00:00-05:00",
    "picks": 0,
-   "checks": [],
-   "last_check_at": null,
+   "checks": [
+    {
+     "read": "X360",
+     "at": "2026-11-17T14:00:00-05:00"
+    }
+   ],
+   "last_check_at": "2026-11-17T14:00:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-17T14:00:00-05:00",
-   "next_check_read": "X360",
+   "next_check_at": "2026-11-17T16:00:00-05:00",
+   "next_check_read": "X240",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -163,15 +173,78 @@
    }
   }
  ],
- "picks": [],
- "empty": {
-  "text": "No picks yet today",
-  "why": "458 lines read. Pinnacle moved alone on 11, none of them bettable yet.",
-  "next": "2026-11-17T14:00:00-05:00"
- },
+ "picks": [
+  {
+   "player": "Jrue Holiday",
+   "pid": "3995",
+   "team": "POR",
+   "opp": "MIN",
+   "home": false,
+   "game_id": "401910003",
+   "start": "2026-11-17T20:00:00-05:00",
+   "bet": "Under 3.5 rebounds",
+   "market": "rebounds",
+   "side": "under",
+   "line": 3.5,
+   "price": -115,
+   "price_at": "2026-11-17T14:00:00-05:00",
+   "read": "X360",
+   "p": 0.5351,
+   "p_pct": 54,
+   "breakeven": 0.5349,
+   "breakeven_pct": 53,
+   "market_fair": null,
+   "n_books": 7,
+   "gap_ev": null,
+   "final_ev": 0.0592,
+   "model_p": null,
+   "reason": "Pinnacle moved the under from -104 to -134 (48% to 54%). Hard Rock -115 is 0.0% better than Pinnacle's fair price; DraftKings -111 is 1.7% better than Pinnacle's fair price.",
+   "rule": "pin_solo",
+   "pin_before": 0.4759,
+   "pin_after": 0.5351,
+   "pin_price_before": -104,
+   "pin_price_after": -134,
+   "others_move": 0.0101,
+   "n_others": 7,
+   "ev_vs_pin": 0.0004,
+   "window": "11 AM \u2192 360 min",
+   "gap_vs_pin": 0.0378,
+   "book": "hardrock",
+   "books": {
+    "draftkings": {
+     "ev_vs_pin": 0.0172,
+     "price": -111
+    },
+    "hardrock": {
+     "ev_vs_pin": 0.0004,
+     "price": -115
+    }
+   },
+   "id": "2026-11-17:401910003:3995:rebounds:3.5:under",
+   "state": "clear",
+   "state_label": "Injury report clear",
+   "price_final": false,
+   "pulled": null,
+   "added_at": "2026-11-17T14:00:00-05:00",
+   "result": null,
+   "links": {
+    "hardrock": {
+     "id": "8013930774625649074",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/8013930774625649074",
+     "price": -115
+    },
+    "draftkings": {
+     "url": "https://sportsbook.draftkings.com/?outcomes=0QA389985263%232368966653_13L42648Q1647990913Q20",
+     "price": -111
+    }
+   },
+   "rank": 1
+  }
+ ],
+ "empty": null,
  "counts": {
   "lines_read": 458,
-  "passing": 0,
+  "passing": 3,
   "games": 5
  },
  "safety_paused": false,
@@ -180,6 +253,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-17T13:30:01-05:00",
- "status_at": "2026-11-17T13:50:01-05:00"
+ "generated_at": "2026-11-17T14:00:00-05:00",
+ "status_at": "2026-11-17T14:00:00-05:00"
 }
