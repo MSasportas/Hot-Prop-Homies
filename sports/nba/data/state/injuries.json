@@ -1,6 +1,13 @@
 {
- "at": "2026-11-17T16:20:00-05:00",
+ "at": "2026-11-17T16:40:00-05:00",
  "list": {
+  "4873201": {
+   "status": "out",
+   "name": "Asa Newell",
+   "team": "ATL",
+   "date": "2026-11-17T21:16Z",
+   "note": "Newell underwent surgery Tuesday for a plantar plate tear in his left great toe, and he will be re-evaluated in approximately four months, Brad Rowland of the Locked On Podcast Network reports."
+  },
   "2490149": {
    "status": "out",
    "name": "CJ McCollum",
@@ -28,13 +35,6 @@
    "team": "ATL",
    "date": "2026-11-13T00:06Z",
    "note": "Gueye (foot) is ready to begin on-court activities and will be re-evaluated in four weeks, Brad Rowland of the Locked On Podcast Network reports."
-  },
-  "4873201": {
-   "status": "out",
-   "name": "Asa Newell",
-   "team": "ATL",
-   "date": "2026-11-12T23:08Z",
-   "note": "Newell (toe) has been ruled out for Friday's game against Chicago."
   },
   "5105571": {
    "status": "out",
@@ -505,6 +505,13 @@
    "date": "2026-10-28T23:41Z",
    "note": "Williams (leg) underwent successful surgery Wednesday to \"address a fractured left fibula and reconstruction of ankle ligaments following a fracture and dislocation.\" He will be re-evaluated before th"
   },
+  "5107251": {
+   "status": "out",
+   "name": "Izaiyah Nelson",
+   "team": "ORL",
+   "date": "2026-11-17T21:22Z",
+   "note": "Nelson (ankle) has been ruled out for Wednesday's game against the 76ers."
+  },
   "4065654": {
    "status": "out",
    "name": "Jonathan Isaac",
@@ -525,13 +532,6 @@
    "team": "ORL",
    "date": "2026-10-24T16:47Z",
    "note": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports."
-  },
-  "5107251": {
-   "status": "out",
-   "name": "Izaiyah Nelson",
-   "team": "ORL",
-   "date": "2026-09-28T21:33Z",
-   "note": "Team president Jeff Weltman said Monday that Nelson (ankle) remains about a month away from returning to the court after offseason surgery, per Philip Rossman-Reich of OrlandoMagicDaily.com."
   },
   "3917376": {
    "status": "day-to-day",
