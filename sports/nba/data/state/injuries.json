@@ -1,5 +1,5 @@
 {
- "at": "2026-11-17T14:30:00-05:00",
+ "at": "2026-11-17T14:40:00-05:00",
  "list": {
   "5149077": {
    "status": "day-to-day",
@@ -589,12 +589,19 @@
    "date": "2026-09-11T16:03Z",
    "note": "Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports."
   },
+  "4683021": {
+   "status": "day-to-day",
+   "name": "Deni Avdija",
+   "team": "POR",
+   "date": "2026-11-17T19:20Z",
+   "note": "Avdija (foot) is questionable for Tuesday's game against the Timberwolves."
+  },
   "4706557": {
    "status": "out",
    "name": "Chris Youngblood",
    "team": "POR",
-   "date": "2026-11-15T23:02Z",
-   "note": "Youngblood (foot) is out for Monday's game against the Timberwolves."
+   "date": "2026-11-17T19:19Z",
+   "note": "Youngblood (heel) has been ruled out for Tuesday's game at Minnesota."
   },
   "4578893": {
    "status": "out",
