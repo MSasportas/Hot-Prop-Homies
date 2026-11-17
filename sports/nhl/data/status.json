@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-17",
- "started_at": "2026-11-17T15:51:48-05:00",
- "status_at": "2026-11-17T15:51:48-05:00",
- "finished_at": "2026-11-17T15:51:49-05:00",
- "last_ok_at": "2026-11-17T15:51:48-05:00",
+ "started_at": "2026-11-17T16:00:01-05:00",
+ "status_at": "2026-11-17T16:00:01-05:00",
+ "finished_at": "2026-11-17T16:00:03-05:00",
+ "last_ok_at": "2026-11-17T16:00:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -24,13 +24,13 @@
   },
   {
    "step": "lineups",
-   "status": "skipped",
-   "note": "no game close enough"
+   "status": "ok",
+   "note": "10 of 10 team pages read"
   },
   {
    "step": "lineup_history",
-   "status": "skipped",
-   "note": "no change"
+   "status": "ok",
+   "note": "10 team(s) changed"
   },
   {
    "step": "odds",
@@ -84,8 +84,8 @@
   },
   {
    "step": "slate",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "0 open pick(s)"
   },
   {
    "step": "record",
@@ -97,7 +97,7 @@
   "nhl_web": "ok",
   "nhl_stats": "ok",
   "odds": "ok",
-  "dailyfaceoff": "failed",
+  "dailyfaceoff": "ok",
   "dailyfaceoff_goalies": "ok"
  },
  "keys": [
@@ -148,18 +148,20 @@
  "next_price_read_at": "2026-11-17T17:30:00-05:00",
  "unmatched_names": [],
  "unknown_teams": [],
- "lineup_unmatched_names": [],
+ "lineup_unmatched_names": [
+  "Tyler Boucher"
+ ],
  "excluded_teams": [],
  "stats_through": "2026-11-16",
- "lineups_at": null,
- "lineups_note": null,
+ "lineups_at": "2026-11-17T16:00:01-05:00",
+ "lineups_note": "Lineups posted for 5 of 10 teams checked so far.",
  "games_today": 11,
  "record_events": 278,
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "44173626413",
-  "iteration": 1,
+  "iteration": 2,
   "chain_link": 7,
   "chain_started_at": "2026-11-17T10:00:17-05:00",
   "run_started_at": "2026-11-17T15:51:18-05:00"
