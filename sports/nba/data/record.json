@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T18:00:01-05:00",
+ "generated_at": "2026-11-17T18:30:02-05:00",
  "summary": {
   "headline": {
    "w": 50,
@@ -248,6 +248,7 @@
       "n": 23,
       "ids": [
        "2026-11-17:401910003:3995:rebounds:3.5:under",
+       "2026-11-17:401910002:5093267:rebounds:6.5:under",
        "2026-11-15:401909987:3448:rebounds:4.5:under",
        "2026-11-15:401909986:3136193:rebounds:2.5:under",
        "2026-11-15:401909990:3136195:rebounds:12.5:under",
@@ -434,6 +435,7 @@
       "ids": [
        "2026-11-17:401910003:3995:rebounds:3.5:under",
        "2026-11-17:401910002:4395625:threes:1.5:under",
+       "2026-11-17:401910002:5093267:rebounds:6.5:under",
        "2026-11-16:401910001:3136193:points:23.5:under",
        "2026-11-16:401909998:3202:threes:1.5:under",
        "2026-11-16:401909998:3032977:points:28.5:under",
@@ -519,6 +521,7 @@
       "ids": [
        "2026-11-17:401910003:3995:rebounds:3.5:under",
        "2026-11-17:401910002:4395625:threes:1.5:under",
+       "2026-11-17:401910002:5093267:rebounds:6.5:under",
        "2026-11-16:401910001:3136193:points:23.5:under",
        "2026-11-16:401910001:4066383:threes:1.5:over",
        "2026-11-16:401909998:3202:threes:1.5:under",
@@ -676,6 +679,7 @@
       "ids": [
        "2026-11-17:401910003:3995:rebounds:3.5:under",
        "2026-11-17:401910002:4395625:threes:1.5:under",
+       "2026-11-17:401910002:5093267:rebounds:6.5:under",
        "2026-11-16:401910001:3136193:points:23.5:under",
        "2026-11-16:401910001:4066383:threes:1.5:over",
        "2026-11-16:401910000:5144091:assists:6.5:under",
@@ -831,6 +835,7 @@
       "n": 52,
       "ids": [
        "2026-11-17:401910003:3995:rebounds:3.5:under",
+       "2026-11-17:401910002:5093267:rebounds:6.5:under",
        "2026-11-16:401910001:3136193:points:23.5:under",
        "2026-11-16:401909998:3032977:points:28.5:under",
        "2026-11-16:401910000:5144091:assists:6.5:under",
@@ -897,7 +902,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 2,
+    "n": 3,
     "graded": false
    },
    {
@@ -1139,6 +1144,32 @@
      "pulled": null,
      "legs": [],
      "window": "135 \u2192 90 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-17:401910002:5093267:rebounds:6.5:under",
+     "kind": "single",
+     "player": "Collin Murray-Boyles",
+     "bet": "Under 6.5 rebounds",
+     "market": "rebounds",
+     "team": "TOR",
+     "game": "NYK at TOR",
+     "price": -145,
+     "first_price": -145,
+     "last_price": -145,
+     "prices": [
+      {
+       "price": -145,
+       "at": "2026-11-17T18:30:02-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "75 \u2192 60 min",
      "book": "hardrock",
      "under_fair": false
     }
