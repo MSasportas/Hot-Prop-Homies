@@ -215,7 +215,7 @@
    }
   },
   "PHX": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Devin Booker",
     "Jalen Green",
@@ -228,7 +228,7 @@
    }
   },
   "DEN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jamal Murray",
     "Christian Braun",
@@ -241,5 +241,5 @@
    }
   }
  },
- "at": "2026-11-16T20:30:01-05:00"
+ "at": "2026-11-16T20:40:00-05:00"
 }
