@@ -1,5 +1,5 @@
 {
- "at": "2026-11-17T17:30:01-05:00",
+ "at": "2026-11-17T17:40:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -208,8 +208,8 @@
    "status": "day-to-day",
    "name": "Al Horford",
    "team": "GS",
-   "date": "2026-11-17T22:20Z",
-   "note": "Horford is starting Monday's game against the Pelicans, Dalton Johnson of NBC Sports Bay Area reports."
+   "date": "2026-11-17T22:21Z",
+   "note": "Horford (back) is questionable for Wednesday's game against Dallas."
   },
   "3975": {
    "status": "out",
@@ -267,19 +267,26 @@
    "date": "2026-11-16T15:28Z",
    "note": "Phillips (illness) is available for Wednesday's game against Dallas."
   },
+  "2530530": {
+   "status": "day-to-day",
+   "name": "T.J. McConnell",
+   "team": "IND",
+   "date": "2026-11-17T22:24Z",
+   "note": "McConnell (hamstring) is probable to play Wednesday against the Rockets."
+  },
+  "4395712": {
+   "status": "day-to-day",
+   "name": "Andrew Nembhard",
+   "team": "IND",
+   "date": "2026-11-17T22:19Z",
+   "note": "Nembhard (hip) is questionable for Wednesday's game against Houston."
+  },
   "4396993": {
    "status": "out",
    "name": "Tyrese Haliburton",
    "team": "IND",
    "date": "2026-11-17T18:46Z",
    "note": "Head coach Rick Carlisle said Tuesday that Haliburton (hamstring) is \"getting there,\" but there's still no definitive timetable for his return to game action, Dustin Dopirak of The Indianapolis Star r"
-  },
-  "4395712": {
-   "status": "day-to-day",
-   "name": "Andrew Nembhard",
-   "team": "IND",
-   "date": "2026-11-15T20:57Z",
-   "note": "Nembhard (hip) has been ruled out for Sunday's game against the 76ers, Tony East of Forbes.com reports."
   },
   "5157066": {
    "status": "out",
@@ -652,6 +659,13 @@
    "date": "2026-10-05T21:43Z",
    "note": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports."
   },
+  "6450": {
+   "status": "out",
+   "name": "Kawhi Leonard",
+   "team": "TOR",
+   "date": "2026-11-17T22:25Z",
+   "note": "Leonard (knee) has progressed in his strength and conditioning program but will miss at least one more week, Michael Scotto of HoopsHype.com reports."
+  },
   "4433134": {
    "status": "day-to-day",
    "name": "Scottie Barnes",
@@ -672,13 +686,6 @@
    "team": "TOR",
    "date": "2026-11-13T15:37Z",
    "note": "McCullar signed a two-way contract with the Raptors on Thursday, Michael Scotto of HoopsHype.com reports."
-  },
-  "6450": {
-   "status": "out",
-   "name": "Kawhi Leonard",
-   "team": "TOR",
-   "date": "2026-11-11T22:33Z",
-   "note": "Head coach Darko Rajakovic said Wednesday that Leonard (knee) is doing individual on-court work and is progressing well, Michael Grange of Sportsnet.ca reports."
   },
   "4397077": {
    "status": "out",
