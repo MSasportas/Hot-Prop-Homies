@@ -1,6 +1,38 @@
 {
  "nights": [
   {
+   "date": "2026-11-09",
+   "graded": true,
+   "w": 0,
+   "l": 1,
+   "units": -1.0,
+   "entries": [
+    {
+     "id": "2026-11-09:2026020285:8480748:shots:1.5:under",
+     "kind": "single",
+     "player": "K. Sherwood",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "SJS",
+     "game": "NYI at SJS",
+     "price": 120,
+     "first_price": 120,
+     "last_price": 120,
+     "prices": [
+      {
+       "price": 120,
+       "at": "2026-11-09T21:20:01-05:00"
+      }
+     ],
+     "result": "L",
+     "actual": "had 3",
+     "units": -1.0,
+     "pulled": null,
+     "legs": []
+    }
+   ]
+  },
+  {
    "date": "2026-11-08",
    "graded": true,
    "w": 0,

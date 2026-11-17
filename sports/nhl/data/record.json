@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T22:40:01-05:00",
+ "generated_at": "2026-11-17T17:30:00-05:00",
  "summary": {
   "headline": {
    "w": 48,
@@ -236,6 +236,16 @@
    }
   ],
   "days": [
+   {
+    "date": "2026-11-17",
+    "w": 0,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 0,
+    "n": 8,
+    "graded": false
+   },
    {
     "date": "2026-11-15",
     "w": 0,
@@ -479,6 +489,199 @@
   ]
  },
  "nights": [
+  {
+   "date": "2026-11-17",
+   "graded": false,
+   "w": 0,
+   "l": 0,
+   "units": 0,
+   "entries": [
+    {
+     "id": "2026-11-17:2026020337:8477948:points:0.5:over",
+     "kind": "single",
+     "player": "T. Sanheim",
+     "bet": "Over 0.5 points",
+     "market": "points",
+     "team": "PHI",
+     "game": "BUF at PHI",
+     "price": 225,
+     "first_price": 225,
+     "last_price": 225,
+     "prices": [
+      {
+       "price": 225,
+       "at": "2026-11-17T17:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-17:2026020333:8482124:points:0.5:under",
+     "kind": "single",
+     "player": "Q. Byfield",
+     "bet": "Under 0.5 points",
+     "market": "points",
+     "team": "LAK",
+     "game": "LAK at BOS",
+     "price": 115,
+     "first_price": 115,
+     "last_price": 115,
+     "prices": [
+      {
+       "price": 115,
+       "at": "2026-11-17T17:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-17:2026020333:8482155:points:0.5:under",
+     "kind": "single",
+     "player": "A. Laferriere",
+     "bet": "Under 0.5 points",
+     "market": "points",
+     "team": "LAK",
+     "game": "LAK at BOS",
+     "price": 110,
+     "first_price": 110,
+     "last_price": 110,
+     "prices": [
+      {
+       "price": 110,
+       "at": "2026-11-17T17:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-17:2026020337:8480064:points:0.5:over",
+     "kind": "single",
+     "player": "J. Norris",
+     "bet": "Over 0.5 points",
+     "market": "points",
+     "team": "BUF",
+     "game": "BUF at PHI",
+     "price": 175,
+     "first_price": 175,
+     "last_price": 175,
+     "prices": [
+      {
+       "price": 175,
+       "at": "2026-11-17T17:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-17:2026020336:8485388:shots:1.5:under",
+     "kind": "single",
+     "player": "V. Eklund",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "NYI",
+     "game": "CBJ at NYI",
+     "price": 125,
+     "first_price": 125,
+     "last_price": 125,
+     "prices": [
+      {
+       "price": 125,
+       "at": "2026-11-17T17:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-17:2026020333:8477942:points:0.5:under",
+     "kind": "single",
+     "player": "K. Fiala",
+     "bet": "Under 0.5 points",
+     "market": "points",
+     "team": "LAK",
+     "game": "LAK at BOS",
+     "price": 115,
+     "first_price": 115,
+     "last_price": 115,
+     "prices": [
+      {
+       "price": 115,
+       "at": "2026-11-17T17:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-17:2026020337:8480839:shots:2.5:under",
+     "kind": "single",
+     "player": "R. Dahlin",
+     "bet": "Under 2.5 shots on goal",
+     "market": "shots",
+     "team": "BUF",
+     "game": "BUF at PHI",
+     "price": -105,
+     "first_price": -105,
+     "last_price": -105,
+     "prices": [
+      {
+       "price": -105,
+       "at": "2026-11-17T17:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-17:2026020333:8479325:points:0.5:under",
+     "kind": "single",
+     "player": "C. McAvoy",
+     "bet": "Under 0.5 points",
+     "market": "points",
+     "team": "BOS",
+     "game": "LAK at BOS",
+     "price": 130,
+     "first_price": 130,
+     "last_price": 130,
+     "prices": [
+      {
+       "price": 130,
+       "at": "2026-11-17T17:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    }
+   ]
+  },
   {
    "date": "2026-11-15",
    "graded": true,
@@ -1181,38 +1384,6 @@
      "result": "W",
      "actual": "had 1",
      "units": 1.15,
-     "pulled": null,
-     "legs": []
-    }
-   ]
-  },
-  {
-   "date": "2026-11-09",
-   "graded": true,
-   "w": 0,
-   "l": 1,
-   "units": -1.0,
-   "entries": [
-    {
-     "id": "2026-11-09:2026020285:8480748:shots:1.5:under",
-     "kind": "single",
-     "player": "K. Sherwood",
-     "bet": "Under 1.5 shots on goal",
-     "market": "shots",
-     "team": "SJS",
-     "game": "NYI at SJS",
-     "price": 120,
-     "first_price": 120,
-     "last_price": 120,
-     "prices": [
-      {
-       "price": 120,
-       "at": "2026-11-09T21:20:01-05:00"
-      }
-     ],
-     "result": "L",
-     "actual": "had 3",
-     "units": -1.0,
      "pulled": null,
      "legs": []
     }
