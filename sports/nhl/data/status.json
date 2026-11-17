@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-16",
- "started_at": "2026-11-16T21:10:01-05:00",
- "status_at": "2026-11-16T21:10:01-05:00",
- "finished_at": "2026-11-16T21:10:01-05:00",
- "last_ok_at": "2026-11-16T21:10:01-05:00",
+ "started_at": "2026-11-16T21:31:33-05:00",
+ "status_at": "2026-11-16T21:31:33-05:00",
+ "finished_at": "2026-11-16T21:31:34-05:00",
+ "last_ok_at": "2026-11-16T21:31:33-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -24,8 +24,8 @@
   },
   {
    "step": "lineups",
-   "status": "ok",
-   "note": "Daily Faceoff did not answer: lineups not checked"
+   "status": "skipped",
+   "note": "no game close enough"
   },
   {
    "step": "lineup_history",
@@ -84,8 +84,8 @@
   },
   {
    "step": "slate",
-   "status": "ok",
-   "note": "0 open pick(s)"
+   "status": "skipped",
+   "note": "unchanged"
   },
   {
    "step": "record",
@@ -163,10 +163,10 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "43997305490",
-  "iteration": 4,
-  "chain_link": 33,
+  "run_id": "44003569448",
+  "iteration": 1,
+  "chain_link": 34,
   "chain_started_at": "2026-11-15T18:21:00-05:00",
-  "run_started_at": "2026-11-16T20:40:14-05:00"
+  "run_started_at": "2026-11-16T21:31:13-05:00"
  }
 }
