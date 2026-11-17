@@ -19,11 +19,11 @@
   },
   "NYI": {
    "name": "Ilya Sorokin",
-   "status": "expected"
+   "status": "confirmed"
   },
   "CBJ": {
    "name": "Cam Talbot",
-   "status": "expected"
+   "status": "confirmed"
   },
   "FLA": {
    "name": "Jacob Markstrom",
@@ -35,7 +35,7 @@
   },
   "WPG": {
    "name": "Stuart Skinner",
-   "status": "expected"
+   "status": "confirmed"
   },
   "OTT": {
    "name": "Linus Ullmark",
@@ -90,5 +90,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-17T10:30:01-05:00"
+ "checked_at": "2026-11-17T10:50:00-05:00"
 }
