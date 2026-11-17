@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T14:40:00-05:00",
+ "generated_at": "2026-11-17T18:00:01-05:00",
  "summary": {
   "headline": {
    "w": 50,
@@ -358,6 +358,7 @@
       "needed": 0.4753,
       "n": 16,
       "ids": [
+       "2026-11-17:401910002:4395625:threes:1.5:under",
        "2026-11-16:401910001:4066383:threes:1.5:over",
        "2026-11-16:401909998:3202:threes:1.5:under",
        "2026-11-15:401909988:5037871:threes:1.5:over",
@@ -432,6 +433,7 @@
       "n": 62,
       "ids": [
        "2026-11-17:401910003:3995:rebounds:3.5:under",
+       "2026-11-17:401910002:4395625:threes:1.5:under",
        "2026-11-16:401910001:3136193:points:23.5:under",
        "2026-11-16:401909998:3202:threes:1.5:under",
        "2026-11-16:401909998:3032977:points:28.5:under",
@@ -516,6 +518,7 @@
       "n": 64,
       "ids": [
        "2026-11-17:401910003:3995:rebounds:3.5:under",
+       "2026-11-17:401910002:4395625:threes:1.5:under",
        "2026-11-16:401910001:3136193:points:23.5:under",
        "2026-11-16:401910001:4066383:threes:1.5:over",
        "2026-11-16:401909998:3202:threes:1.5:under",
@@ -672,6 +675,7 @@
       "n": 65,
       "ids": [
        "2026-11-17:401910003:3995:rebounds:3.5:under",
+       "2026-11-17:401910002:4395625:threes:1.5:under",
        "2026-11-16:401910001:3136193:points:23.5:under",
        "2026-11-16:401910001:4066383:threes:1.5:over",
        "2026-11-16:401910000:5144091:assists:6.5:under",
@@ -780,6 +784,7 @@
       "needed": 0.4606,
       "n": 31,
       "ids": [
+       "2026-11-17:401910002:4395625:threes:1.5:under",
        "2026-11-16:401910001:4066383:threes:1.5:over",
        "2026-11-16:401909998:3202:threes:1.5:under",
        "2026-11-15:401909985:3149673:assists:3.5:under",
@@ -892,7 +897,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 1,
+    "n": 2,
     "graded": false
    },
    {
@@ -1108,6 +1113,32 @@
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 360 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-17:401910002:4395625:threes:1.5:under",
+     "kind": "single",
+     "player": "R.J. Barrett",
+     "bet": "Under 1.5 threes",
+     "market": "threes",
+     "team": "TOR",
+     "game": "NYK at TOR",
+     "price": 100,
+     "first_price": 100,
+     "last_price": 100,
+     "prices": [
+      {
+       "price": 100,
+       "at": "2026-11-17T18:00:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "135 \u2192 90 min",
      "book": "hardrock",
      "under_fair": false
     }
