@@ -11,7 +11,7 @@
   },
   "PHI": {
    "name": "Joseph Woll",
-   "status": "expected"
+   "status": "confirmed"
   },
   "BUF": {
    "name": "Alex Lyon",
@@ -27,7 +27,7 @@
   },
   "FLA": {
    "name": "Jacob Markstrom",
-   "status": "expected"
+   "status": "confirmed"
   },
   "EDM": {
    "name": "Devon Levi",
@@ -59,7 +59,7 @@
   },
   "MIN": {
    "name": "Jesper Wallstedt",
-   "status": "expected"
+   "status": "confirmed"
   },
   "NSH": {
    "name": "Juuse Saros",
@@ -90,5 +90,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-17T10:50:00-05:00"
+ "checked_at": "2026-11-17T11:10:01-05:00"
 }
