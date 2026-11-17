@@ -1,5 +1,5 @@
 {
- "at": "2026-11-17T16:02:03-05:00",
+ "at": "2026-11-17T16:10:00-05:00",
  "list": {
   "5149077": {
    "status": "day-to-day",
@@ -436,32 +436,32 @@
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
   },
   "4683634": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Bennedict Mathurin",
    "team": "NO",
-   "date": "2026-11-17T03:48Z",
-   "note": "Mathurin (foot) has been ruled out for Monday's game against the Warriors."
+   "date": "2026-11-17T20:59Z",
+   "note": "Mathurin (foot) has been ruled out for Wednesday's game against Detroit."
   },
   "4576086": {
    "status": "out",
    "name": "Bryce McGowens",
    "team": "NO",
-   "date": "2026-11-15T23:10Z",
-   "note": "McGowens (elbow) has been ruled out for Monday's game against the Warriors."
-  },
-  "4397688": {
-   "status": "out",
-   "name": "Trey Murphy III",
-   "team": "NO",
-   "date": "2026-11-15T22:57Z",
-   "note": "Murphy (knees) has been ruled out for Monday's game against Golden State."
+   "date": "2026-11-17T20:57Z",
+   "note": "McGowens (elbow) has been ruled out for Wednesday's game against Detroit."
   },
   "4431675": {
    "status": "out",
    "name": "Trendon Watford",
    "team": "NO",
-   "date": "2026-11-15T22:52Z",
-   "note": "Watford (ankle) has been ruled out for Monday's game against Golden State."
+   "date": "2026-11-17T20:55Z",
+   "note": "Watford (ankle) has been ruled out for Wednesday's game against Detroit."
+  },
+  "4397688": {
+   "status": "out",
+   "name": "Trey Murphy III",
+   "team": "NO",
+   "date": "2026-11-17T20:51Z",
+   "note": "Murphy (knee) has been ruled out for Wednesday's game against Detroit."
   },
   "3907497": {
    "status": "out",
