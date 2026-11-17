@@ -1,0 +1,244 @@
+
+===== DISCOVERY (nights < 2026-11-10): nights 14, MOVES 614, FAIR subset 53, Record picks 66
+  all MOVES                          n 614 graded 606  328-278   -0.58u ROI -0.1% 90% CI -7..+7% | CLV_pin -4.4% (n 548)
+  FAIR (HR >= Pinnacle new fair)     n  53 graded  53   36-17   +17.68u ROI +33.4% 90% CI +13..+54% | CLV_pin -0.2% (n 44)
+  Record (live picks)                n  66 graded  66   40-26   +11.29u ROI +17.1% 90% CI -1..+36% | CLV_pin -0.8% (n 57)
+M1 closing-line value (close = D read)
+  Record  picks 66, no later read 9 | CLV_pin n 57 mean -0.84% median +0.12% share>0 54% | CLV_hr n 53 mean +0.43% share>0 25% (HR line gone or moved at D: 4)
+ Record by CLV_pin sign
+  CLV_pin <= 0                       n  26 graded  26   15-11    +1.80u ROI +6.9% 90% CI -27..+36% | CLV_pin -3.2% (n 26)
+  CLV_pin > 0                        n  31 graded  31   19-12    +6.35u ROI +20.5% 90% CI -5..+48% | CLV_pin +1.2% (n 31)
+ Record by Hard Rock close
+  HR closed longer                   n   3 graded   3    2-1     +0.51u ROI +17.0% | CLV_pin -0.7% (n 3)
+  HR closed shorter                  n  13 graded  13    9-4     +4.66u ROI +35.8% | CLV_pin -0.7% (n 13)
+  HR line gone/moved at D            n   4 graded   4    2-2     -0.67u ROI -16.6% | CLV_pin +0.2% (n 4)
+  HR same                            n  37 graded  37   21-16    +3.65u ROI +9.9% 90% CI -18..+37% | CLV_pin -1.0% (n 37)
+  FAIR    picks 53, no later read 9 | CLV_pin n 44 mean -0.16% median +0.56% share>0 73% | CLV_hr n 42 mean +0.46% share>0 26% (HR line gone or moved at D: 2)
+ FAIR by CLV_pin sign
+  CLV_pin <= 0                       n  12 graded  12    7-5     +1.76u ROI +14.7% | CLV_pin -4.0% (n 12)
+  CLV_pin > 0                        n  32 graded  32   22-10   +11.46u ROI +35.8% 90% CI +9..+62% | CLV_pin +1.3% (n 32)
+ FAIR by Hard Rock close
+  HR closed longer                   n   2 graded   2    1-1     -0.26u ROI -13.0% | CLV_pin -3.7% (n 2)
+  HR closed shorter                  n  11 graded  11    8-3     +4.91u ROI +44.6% | CLV_pin +0.2% (n 11)
+  HR line gone/moved at D            n   2 graded   2    0-2     -2.00u ROI -100.0% | CLV_pin +2.1% (n 2)
+  HR same                            n  29 graded  29   20-9    +10.57u ROI +36.4% 90% CI +7..+65% | CLV_pin -0.2% (n 29)
+  MOVES   picks 614, no later read 55 | CLV_pin n 548 mean -4.40% median -4.16% share>0 7% | CLV_hr n 523 mean +0.30% share>0 23% (HR line gone or moved at D: 36)
+ MOVES by CLV_pin sign
+  CLV_pin <= 0                       n 507 graded 504  262-242  -23.82u ROI -4.7% 90% CI -12..+3% | CLV_pin -4.9% (n 507)
+  CLV_pin > 0                        n  41 graded  40   26-14   +10.63u ROI +26.6% 90% CI +3..+49% | CLV_pin +1.4% (n 41)
+ MOVES by Hard Rock close
+  HR closed longer                   n  60 graded  60   28-32    -8.75u ROI -14.6% 90% CI -31..+3% | CLV_pin -7.8% (n 59)
+  HR closed shorter                  n 122 graded 122   63-59    -5.53u ROI -4.5% 90% CI -19..+9% | CLV_pin -3.7% (n 119)
+  HR line gone/moved at D            n  36 graded  31   17-14    -1.38u ROI -4.4% 90% CI -31..+22% | CLV_pin -3.1% (n 30)
+  HR same                            n 341 graded 338  186-152   +6.68u ROI +2.0% 90% CI -7..+11% | CLV_pin -4.2% (n 340)
+M2 Hard Rock lag
+ MOVES by what HR's price did
+  against                            n  21 graded  21   10-11    -2.31u ROI -11.0% 90% CI -43..+22% | CLV_pin -3.2% (n 17)
+  followed                           n 484 graded 478  259-219   -1.51u ROI -0.3% 90% CI -8..+7% | CLV_pin -4.6% (n 449)
+  stale                              n 109 graded 107   59-48    +3.24u ROI +3.0% 90% CI -12..+18% | CLV_pin -3.7% (n 82)
+ FAIR by what HR's price did
+  against                            n   5 graded   5    3-2     +0.86u ROI +17.2% | CLV_pin +1.3% (n 3)
+  followed                           n  33 graded  33   22-11   +10.80u ROI +32.7% 90% CI +8..+57% | CLV_pin +0.0% (n 29)
+  stale                              n  15 graded  15   11-4     +6.02u ROI +40.2% | CLV_pin -1.0% (n 12)
+  M2b others move >=2, HR unchanged  n  32 graded  31   17-14    +2.10u ROI +6.8% 90% CI -24..+36% | CLV_pin -5.5% (n 18)
+M3 consensus vs Pinnacle-only
+ MOVES
+  consensus (others >=1pt)           n 398 graded 393  208-185  -12.04u ROI -3.1% 90% CI -11..+5% | CLV_pin -4.7% (n 368)
+  solo (others <1pt)                 n 216 graded 213  120-93   +11.46u ROI +5.4% 90% CI -4..+16% | CLV_pin -3.7% (n 180)
+ FAIR
+  consensus (others >=1pt)           n  27 graded  27   18-9     +8.00u ROI +29.6% 90% CI +0..+57% | CLV_pin +0.4% (n 22)
+  solo (others <1pt)                 n  26 graded  26   18-8     +9.68u ROI +37.2% 90% CI +5..+68% | CLV_pin -0.8% (n 22)
+ Record
+  consensus (others >=1pt)           n  25 graded  25   16-9     +5.49u ROI +22.0% 90% CI -7..+49% | CLV_pin -0.1% (n 22)
+  solo (others <1pt)                 n  41 graded  41   24-17    +5.80u ROI +14.1% 90% CI -11..+44% | CLV_pin -1.3% (n 35)
+ MOVES by books following >=1pt
+  0-1 books                          n  98 graded  98   48-50    -9.64u ROI -9.8% 90% CI -26..+6% | CLV_pin -3.7% (n 79)
+  2-4 books                          n 216 graded 212  126-86   +23.74u ROI +11.2% 90% CI +1..+22% | CLV_pin -4.2% (n 182)
+  5+ books                           n 300 graded 296  154-142  -14.68u ROI -5.0% 90% CI -14..+3% | CLV_pin -4.7% (n 287)
+M4 move size
+ MOVES
+  2-3 pts                            n 222 graded 218  122-96    +5.40u ROI +2.5% 90% CI -7..+12% | CLV_pin -4.8% (n 204)
+  3-4 pts                            n 159 graded 159   87-72    +3.55u ROI +2.2% 90% CI -10..+15% | CLV_pin -4.4% (n 143)
+  4+ pts                             n 233 graded 229  119-110   -9.53u ROI -4.2% 90% CI -14..+6% | CLV_pin -4.0% (n 201)
+ FAIR
+  2-3 pts                            n   5 graded   5    3-2     +0.42u ROI +8.3% | CLV_pin +1.6% (n 5)
+  3-4 pts                            n  15 graded  15   11-4     +7.86u ROI +52.4% | CLV_pin -0.9% (n 12)
+  4+ pts                             n  33 graded  33   22-11    +9.41u ROI +28.5% 90% CI +5..+53% | CLV_pin -0.2% (n 27)
+ Record
+  2-3 pts                            n  15 graded  15    7-8     -2.74u ROI -18.3% | CLV_pin -1.3% (n 15)
+  3-4 pts                            n  20 graded  20   13-7     +6.32u ROI +31.6% 90% CI -8..+70% | CLV_pin -1.6% (n 17)
+  4+ pts                             n  31 graded  31   20-11    +7.71u ROI +24.9% 90% CI +1..+50% | CLV_pin -0.1% (n 25)
+M5 timing
+ MOVES
+  11AM->90                           n 452 graded 444  233-211  -13.61u ROI -3.1% 90% CI -11..+5% | CLV_pin -4.5% (n 442)
+  90->45                             n 107 graded 107   61-46    +4.64u ROI +4.3% 90% CI -9..+17% | CLV_pin -4.1% (n 106)
+  45->20                             n  55 graded  55   34-21    +8.40u ROI +15.3% 90% CI -3..+34% | CLV_pin - (n 0)
+ FAIR
+  11AM->90                           n  31 graded  31   21-10   +10.84u ROI +35.0% 90% CI +6..+62% | CLV_pin -0.1% (n 31)
+  90->45                             n  13 graded  13    8-5     +2.37u ROI +18.3% | CLV_pin -0.3% (n 13)
+  45->20                             n   9 graded   9    7-2     +4.47u ROI +49.7% | CLV_pin - (n 0)
+ Record
+  11AM->90                           n  37 graded  37   23-14    +8.00u ROI +21.6% 90% CI -2..+46% | CLV_pin -1.1% (n 37)
+  90->45                             n  20 graded  20   11-9     +0.15u ROI +0.8% 90% CI -30..+31% | CLV_pin -0.4% (n 20)
+  45->20                             n   9 graded   9    6-3     +3.14u ROI +34.9% | CLV_pin - (n 0)
+ MOVES morning vs last 90
+  last 90 min                        n 162 graded 162   95-67   +13.03u ROI +8.0% 90% CI -3..+18% | CLV_pin -4.1% (n 106)
+  morning                            n 452 graded 444  233-211  -13.61u ROI -3.1% 90% CI -11..+5% | CLV_pin -4.5% (n 442)
+M6 reverse move at the next read
+ MOVES
+  held (<1pt)                        n 483 graded 478  257-221   -3.00u ROI -0.6% 90% CI -8..+8% | CLV_pin -4.3% (n 478)
+  ran on >=1pt                       n  28 graded  28   13-15    -5.16u ROI -18.4% 90% CI -48..+10% | CLV_pin -1.3% (n 28)
+  reversed >=1pt                     n  35 graded  35   19-16    +0.40u ROI +1.1% 90% CI -22..+26% | CLV_pin -8.8% (n 35)
+ FAIR
+  held (<1pt)                        n  34 graded  34   24-10   +13.19u ROI +38.8% 90% CI +13..+65% | CLV_pin +0.9% (n 34)
+  ran on >=1pt                       n   1 graded   1    0-1     -1.00u ROI -100.0% | CLV_pin +3.0% (n 1)
+  reversed >=1pt                     n   8 graded   8    5-3     +2.02u ROI +25.2% | CLV_pin -5.3% (n 8)
+ Record
+  held (<1pt)                        n  46 graded  46   28-18    +7.42u ROI +16.1% 90% CI -5..+41% | CLV_pin -0.3% (n 46)
+  ran on >=1pt                       n   2 graded   2    0-2     -2.00u ROI -100.0% | CLV_pin -1.6% (n 2)
+  reversed >=1pt                     n   8 graded   8    6-2     +3.73u ROI +46.7% | CLV_pin -4.4% (n 8)
+ Record pulled?
+  not pulled                         n  59 graded  59   38-21   +14.96u ROI +25.3% 90% CI +6..+46% | CLV_pin -0.7% (n 50)
+  pulled                             n   7 graded   7    2-5     -3.67u ROI -52.4% | CLV_pin -1.9% (n 7)
+M7 side
+ MOVES
+  over                               n 260 graded 260  134-126  -11.40u ROI -4.4% 90% CI -14..+7% | CLV_pin -5.5% (n 227)
+  under                              n 354 graded 346  194-152  +10.82u ROI +3.1% 90% CI -5..+12% | CLV_pin -3.6% (n 321)
+ FAIR
+  over                               n  12 graded  12   10-2     +8.93u ROI +74.4% | CLV_pin -0.9% (n 10)
+  under                              n  41 graded  41   26-15    +8.75u ROI +21.3% 90% CI -3..+45% | CLV_pin +0.0% (n 34)
+ Record
+  over                               n  20 graded  20   13-7     +6.42u ROI +32.1% 90% CI -6..+70% | CLV_pin -1.6% (n 17)
+  under                              n  46 graded  46   27-19    +4.87u ROI +10.6% 90% CI -10..+32% | CLV_pin -0.5% (n 40)
+ MOVES by market
+  assists                            n 126 graded 125   62-63   -14.52u ROI -11.6% 90% CI -24..+1% | CLV_pin -4.6% (n 117)
+  points                             n 170 graded 168   95-73    +7.36u ROI +4.4% 90% CI -8..+17% | CLV_pin -4.1% (n 149)
+  rebounds                           n 188 graded 183  105-78    +8.23u ROI +4.5% 90% CI -7..+16% | CLV_pin -4.6% (n 165)
+  threes                             n 130 graded 130   66-64    -1.66u ROI -1.3% 90% CI -15..+13% | CLV_pin -4.3% (n 117)
+ Record by market
+  assists                            n  13 graded  13    6-7     -2.22u ROI -17.0% | CLV_pin -1.6% (n 12)
+  points                             n  20 graded  20   10-10    -1.39u ROI -7.0% 90% CI -39..+30% | CLV_pin -0.3% (n 19)
+  rebounds                           n  19 graded  19   12-7     +3.32u ROI +17.5% | CLV_pin -1.4% (n 15)
+  threes                             n  14 graded  14   12-2    +11.58u ROI +82.7% | CLV_pin -0.2% (n 11)
+
+===== FORWARD (nights >= 2026-11-10): nights 7, MOVES 357, FAIR subset 32, Record picks 32
+  all MOVES                          n 357 graded 349  189-160   -0.78u ROI -0.2% 90% CI -9..+8% | CLV_pin -3.7% (n 312)
+  FAIR (HR >= Pinnacle new fair)     n  32 graded  30   14-16    -3.55u ROI -11.8% 90% CI -47..+25% | CLV_pin -0.4% (n 27)
+  Record (live picks)                n  32 graded  31   16-15    -0.21u ROI -0.7% 90% CI -30..+32% | CLV_pin +0.2% (n 27)
+M1 closing-line value (close = D read)
+  Record  picks 32, no later read 2 | CLV_pin n 27 mean +0.19% median +0.28% share>0 59% | CLV_hr n 24 mean +1.21% share>0 33% (HR line gone or moved at D: 6)
+ Record by CLV_pin sign
+  CLV_pin <= 0                       n  11 graded  11    6-5     +0.81u ROI +7.4% | CLV_pin -2.8% (n 11)
+  CLV_pin > 0                        n  16 graded  16    8-8     -0.94u ROI -5.9% | CLV_pin +2.2% (n 16)
+ Record by Hard Rock close
+  HR closed longer                   n   2 graded   2    1-1     -0.17u ROI -8.3% | CLV_pin -1.0% (n 2)
+  HR closed shorter                  n   8 graded   8    3-5     -2.36u ROI -29.5% | CLV_pin -0.4% (n 8)
+  HR line gone/moved at D            n   6 graded   5    3-2     +0.73u ROI +14.7% | CLV_pin +2.8% (n 4)
+  HR same                            n  14 graded  14    8-6     +1.43u ROI +10.2% | CLV_pin -0.1% (n 13)
+  FAIR    picks 32, no later read 2 | CLV_pin n 27 mean -0.40% median +0.20% share>0 52% | CLV_hr n 24 mean +1.23% share>0 38% (HR line gone or moved at D: 6)
+ FAIR by CLV_pin sign
+  CLV_pin <= 0                       n  13 graded  13    7-6     +0.53u ROI +4.1% | CLV_pin -2.8% (n 13)
+  CLV_pin > 0                        n  14 graded  14    6-8     -3.22u ROI -23.0% | CLV_pin +1.8% (n 14)
+ FAIR by Hard Rock close
+  HR closed longer                   n   3 graded   3    2-1     +0.55u ROI +18.3% | CLV_pin -2.2% (n 3)
+  HR closed shorter                  n   9 graded   9    3-6     -3.36u ROI -37.3% | CLV_pin -0.5% (n 9)
+  HR line gone/moved at D            n   6 graded   4    2-2     -0.37u ROI -9.2% | CLV_pin +3.5% (n 3)
+  HR same                            n  12 graded  12    6-6     -0.52u ROI -4.3% | CLV_pin -0.9% (n 12)
+  MOVES   picks 357, no later read 18 | CLV_pin n 312 mean -3.74% median -3.56% share>0 14% | CLV_hr n 288 mean +0.66% share>0 37% (HR line gone or moved at D: 51)
+ MOVES by CLV_pin sign
+  CLV_pin <= 0                       n 269 graded 269  148-121   +4.07u ROI +1.5% 90% CI -8..+11% | CLV_pin -4.8% (n 269)
+  CLV_pin > 0                        n  43 graded  43   25-18    +2.42u ROI +5.6% 90% CI -17..+26% | CLV_pin +3.0% (n 43)
+ MOVES by Hard Rock close
+  HR closed longer                   n  53 graded  53   25-28    -8.26u ROI -15.6% 90% CI -37..+9% | CLV_pin -8.2% (n 51)
+  HR closed shorter                  n 107 graded 107   64-43   +11.32u ROI +10.6% 90% CI -3..+24% | CLV_pin -2.0% (n 103)
+  HR line gone/moved at D            n  51 graded  43   26-17    +3.84u ROI +8.9% 90% CI -10..+30% | CLV_pin -1.3% (n 32)
+  HR same                            n 128 graded 128   68-60    -1.28u ROI -1.0% 90% CI -15..+13% | CLV_pin -3.9% (n 126)
+M2 Hard Rock lag
+ MOVES by what HR's price did
+  against                            n   4 graded   4    1-3     -2.05u ROI -51.2% | CLV_pin -2.9% (n 3)
+  followed                           n 271 graded 264  144-120   +0.67u ROI +0.3% 90% CI -10..+9% | CLV_pin -4.1% (n 235)
+  stale                              n  82 graded  81   44-37    +0.59u ROI +0.7% 90% CI -17..+19% | CLV_pin -2.8% (n 74)
+ FAIR by what HR's price did
+  against                            n   1 graded   1    0-1     -1.00u ROI -100.0% | CLV_pin -2.0% (n 1)
+  followed                           n  17 graded  15    9-6     +2.23u ROI +14.9% | CLV_pin -0.7% (n 13)
+  stale                              n  14 graded  14    5-9     -4.78u ROI -34.1% | CLV_pin +0.0% (n 13)
+  M2b others move >=2, HR unchanged  n  31 graded  31   12-19    -7.83u ROI -25.3% 90% CI -49..-1% | CLV_pin -2.9% (n 13)
+M3 consensus vs Pinnacle-only
+ MOVES
+  consensus (others >=1pt)           n 212 graded 206  114-92    +2.43u ROI +1.2% 90% CI -10..+12% | CLV_pin -3.8% (n 190)
+  solo (others <1pt)                 n 145 graded 143   75-68    -3.21u ROI -2.2% 90% CI -13..+9% | CLV_pin -3.6% (n 122)
+ FAIR
+  consensus (others >=1pt)           n  18 graded  17    7-10    -3.29u ROI -19.3% | CLV_pin -0.0% (n 15)
+  solo (others <1pt)                 n  14 graded  13    7-6     -0.26u ROI -2.0% | CLV_pin -0.9% (n 12)
+ Record
+  consensus (others >=1pt)           n  18 graded  18    9-9     -0.37u ROI -2.0% | CLV_pin +0.7% (n 16)
+  solo (others <1pt)                 n  14 graded  13    7-6     +0.16u ROI +1.2% | CLV_pin -0.5% (n 11)
+ MOVES by books following >=1pt
+  0-1 books                          n  68 graded  68   38-30    +2.05u ROI +3.0% 90% CI -17..+22% | CLV_pin -3.8% (n 59)
+  2-4 books                          n 145 graded 140   70-70    -9.80u ROI -7.0% 90% CI -21..+6% | CLV_pin -3.2% (n 124)
+  5+ books                           n 144 graded 141   81-60    +6.98u ROI +4.9% 90% CI -8..+18% | CLV_pin -4.2% (n 129)
+M4 move size
+ MOVES
+  2-3 pts                            n 138 graded 136   70-66    -6.12u ROI -4.5% 90% CI -19..+10% | CLV_pin -4.1% (n 118)
+  3-4 pts                            n  80 graded  77   48-29   +12.31u ROI +16.0% 90% CI -2..+32% | CLV_pin -3.8% (n 71)
+  4+ pts                             n 139 graded 136   71-65    -6.96u ROI -5.1% 90% CI -19..+9% | CLV_pin -3.4% (n 123)
+ FAIR
+  2-3 pts                            n   5 graded   5    3-2     +1.03u ROI +20.7% | CLV_pin -2.6% (n 4)
+  3-4 pts                            n   5 graded   5    3-2     +0.37u ROI +7.5% | CLV_pin -0.5% (n 5)
+  4+ pts                             n  22 graded  20    8-12    -4.95u ROI -24.8% 90% CI -61..+20% | CLV_pin +0.1% (n 18)
+ Record
+  2-3 pts                            n   6 graded   6    4-2     +2.13u ROI +35.6% | CLV_pin -2.0% (n 5)
+  3-4 pts                            n   5 graded   5    3-2     +0.37u ROI +7.5% | CLV_pin -0.5% (n 5)
+  4+ pts                             n  21 graded  20    9-11    -2.72u ROI -13.6% 90% CI -42..+28% | CLV_pin +1.0% (n 17)
+M5 timing
+ MOVES
+  11AM->90                           n  74 graded  74   41-33    +0.96u ROI +1.3% 90% CI -17..+19% | CLV_pin -4.4% (n 70)
+  90->45                             n  20 graded  20   16-4     +8.86u ROI +44.3% 90% CI +6..+62% | CLV_pin -3.0% (n 19)
+  45->20                             n  10 graded  10    4-6     -2.34u ROI -23.4% | CLV_pin - (n 0)
+ FAIR
+  11AM->90                           n   3 graded   3    1-2     -1.20u ROI -40.0% | CLV_pin -1.1% (n 3)
+  90->45                             n   1 graded   1    1-0     +0.77u ROI +76.9% | CLV_pin +1.2% (n 1)
+  45->20                             n   1 graded   1    0-1     -1.00u ROI -100.0% | CLV_pin - (n 0)
+ Record
+  11AM->90                           n   7 graded   7    2-5     -3.37u ROI -48.1% | CLV_pin -0.7% (n 6)
+  90->45                             n   3 graded   3    3-0     +2.33u ROI +77.6% | CLV_pin +0.6% (n 3)
+  45->20                             n   2 graded   2    1-1     +0.15u ROI +7.5% | CLV_pin - (n 0)
+ MOVES morning vs last 90
+  last 90 min                        n 283 graded 275  148-127   -1.73u ROI -0.6% 90% CI -10..+8% | CLV_pin -3.5% (n 242)
+  morning                            n  74 graded  74   41-33    +0.96u ROI +1.3% 90% CI -17..+19% | CLV_pin -4.4% (n 70)
+M6 reverse move at the next read
+ MOVES
+  held (<1pt)                        n 291 graded 283  154-129   +1.29u ROI +0.5% 90% CI -9..+10% | CLV_pin -3.5% (n 270)
+  ran on >=1pt                       n  20 graded  20   14-6     +4.71u ROI +23.5% 90% CI -6..+54% | CLV_pin -1.1% (n 18)
+  reversed >=1pt                     n  23 graded  23   12-11    -0.72u ROI -3.1% 90% CI -31..+29% | CLV_pin -8.5% (n 23)
+ FAIR
+  held (<1pt)                        n  25 graded  23   12-11    -0.53u ROI -2.3% 90% CI -39..+40% | CLV_pin -0.1% (n 23)
+  ran on >=1pt                       n   1 graded   1    1-0     +0.83u ROI +83.3% | CLV_pin +7.2% (n 1)
+  reversed >=1pt                     n   3 graded   3    0-3     -3.00u ROI -100.0% | CLV_pin -5.0% (n 3)
+ Record
+  held (<1pt)                        n  24 graded  23   13-10    +2.04u ROI +8.9% 90% CI -25..+48% | CLV_pin +0.6% (n 23)
+  ran on >=1pt                       n   1 graded   1    1-0     +0.83u ROI +83.3% | CLV_pin +7.2% (n 1)
+  reversed >=1pt                     n   4 graded   4    1-3     -2.23u ROI -55.8% | CLV_pin -5.0% (n 3)
+ Record pulled?
+  not pulled                         n  26 graded  26   13-13    -0.94u ROI -3.6% 90% CI -34..+32% | CLV_pin -0.3% (n 23)
+  pulled                             n   6 graded   5    3-2     +0.73u ROI +14.7% | CLV_pin +2.8% (n 4)
+M7 side
+ MOVES
+  over                               n 162 graded 160   87-73    +1.43u ROI +0.9% 90% CI -11..+12% | CLV_pin -4.7% (n 144)
+  under                              n 195 graded 189  102-87    -2.21u ROI -1.2% 90% CI -13..+10% | CLV_pin -2.9% (n 168)
+ FAIR
+  over                               n   7 graded   6    5-1     +3.71u ROI +61.8% | CLV_pin -1.9% (n 5)
+  under                              n  25 graded  24    9-15    -7.25u ROI -30.2% 90% CI -64..+8% | CLV_pin -0.1% (n 22)
+ Record
+  over                               n   8 graded   7    6-1     +4.81u ROI +68.7% | CLV_pin +0.6% (n 5)
+  under                              n  24 graded  24   10-14    -5.02u ROI -20.9% 90% CI -54..+19% | CLV_pin +0.1% (n 22)
+ MOVES by market
+  assists                            n  74 graded  72   43-29    +6.41u ROI +8.9% 90% CI -9..+27% | CLV_pin -4.0% (n 67)
+  points                             n 118 graded 114   61-53    -1.85u ROI -1.6% 90% CI -16..+11% | CLV_pin -3.3% (n 102)
+  rebounds                           n 104 graded 103   60-43    +7.03u ROI +6.8% 90% CI -10..+24% | CLV_pin -4.3% (n 88)
+  threes                             n  61 graded  60   25-35   -12.36u ROI -20.6% 90% CI -40..-2% | CLV_pin -3.3% (n 55)
+ Record by market
+  assists                            n   6 graded   6    2-4     -2.16u ROI -36.0% | CLV_pin +0.6% (n 5)
+  points                             n  14 graded  13    7-6     -0.29u ROI -2.2% | CLV_pin +1.3% (n 11)
+  rebounds                           n   7 graded   7    3-4     -0.75u ROI -10.7% | CLV_pin -0.1% (n 6)
+  threes                             n   5 graded   5    4-1     +2.99u ROI +59.8% | CLV_pin -2.2% (n 5)

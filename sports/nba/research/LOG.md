@@ -1,5 +1,14 @@
 ## 2026-11-16, Run DM (Sharp; data mining 2026-11-16 — three leads registered)
 
+## 2026-11-17, AH12 (auto; Solo large (3+ pt, solo Pinnacle))
+Filter: MOVES where move >= 3 pts AND others < 1 pt. MOVES population (Pinnacle >= 2 pt move, HR on line, -200..+200, 1/player/market/night).
+Discovery (<2026-11-10, 20 nights): n 178 graded 177 102-75 +14.48u ROI +8.2% CLV_pin -3.1% (n 146)
+Discovery FAIR (ev_pin>=0): n 33 graded 32 21-11 +8.99u ROI +28.1% CLV_pin -0.7% (n 27)
+Forward (>=2026-11-10, 7 nights): n 68 graded 67 39-28 +5.90u ROI +8.8% CLV_pin -3.3% (n 60)
+Forward FAIR: n 10 graded 9 5-4 -0.14u ROI -1.6% CLV_pin -0.0% (n 8)
+Pass bar: n>=150 graded fwd, ROI>0, CI>0, CLV>0. Status: FORWARD - accumulating
+
+
 Source: data_mining_2026-11-16.md. Base population: 9,176 graded sides (all Pinnacle-on-line sides with HR -200..+200, shadow reads Oct 26-Nov 15, 20 slates). Three findings reviewed; all three registered as forward lab tests (DM1, DM2, DM3).
 
 **DM1 — Minutes down 3+, unders (registered).** Discovery: n=153 (second half, Nov 6+), 64.1% hit, +19.3% ROI, 90% CI [+7.2, +31.4]. CLV_pin -5.7% (same as base): this is a player-state filter, not a pricing-edge, so CLV gate not required. Record live picks in bucket: 4 picks 1-3 — too thin to override the shadow sample, but flagged. Mirror (minutes up 3+, overs): -15.1% ROI, CI entirely negative — tracked as the inverse. Registered as DM1 with gate: n >= 100 graded forward unders in bucket, hit rate > 55%, ROI > 0.
