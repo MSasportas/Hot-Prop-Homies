@@ -1,5 +1,5 @@
 {
- "at": "2026-11-17T17:10:00-05:00",
+ "at": "2026-11-17T17:20:01-05:00",
  "list": {
   "4873201": {
    "status": "out",
@@ -331,18 +331,18 @@
    "note": "Walker (leg) has been ruled out for Tuesday's game against the Hornets."
   },
   "4432810": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Isaiah Stewart",
    "team": "MEM",
-   "date": "2026-11-17T03:35Z",
-   "note": "Stewart is out for Monday's game against the Wizards due to an illness."
+   "date": "2026-11-17T22:10Z",
+   "note": "Stewart (illness) won't play Wednesday against the Cavs."
   },
   "4065733": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Ty Jerome",
    "team": "MEM",
-   "date": "2026-11-17T03:35Z",
-   "note": "Jerome (hip) has been ruled out for Monday's game against the Wizards."
+   "date": "2026-11-17T22:07Z",
+   "note": "Jerome (hip) has been ruled out for Wednesday's game in Cleveland."
   },
   "4431785": {
    "status": "out",
@@ -385,13 +385,6 @@
    "team": "MIA",
    "date": "2026-11-17T21:32Z",
    "note": "Adebayo (hip) is probable for Wednesday's game against the Bucks, per Ira Winderman of the South Florida Sun Sentinel."
-  },
-  "4591725": {
-   "status": "day-to-day",
-   "name": "Ryan Rollins",
-   "team": "MIL",
-   "date": "2026-11-16T14:47Z",
-   "note": "Rollins (illness) is out for Sunday's game against the Hawks."
   },
   "4997526": {
    "status": "out",
