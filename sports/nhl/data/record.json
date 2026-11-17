@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T17:30:00-05:00",
+ "generated_at": "2026-11-17T18:20:01-05:00",
  "summary": {
   "headline": {
    "w": 48,
@@ -243,7 +243,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 8,
+    "n": 9,
     "graded": false
    },
    {
@@ -654,7 +654,10 @@
      "result": null,
      "actual": null,
      "units": null,
-     "pulled": null,
+     "pulled": {
+      "at": "2026-11-17T18:20:01-05:00",
+      "reason": "Pinnacle moved against it"
+     },
      "legs": []
     },
     {
@@ -672,6 +675,29 @@
       {
        "price": 130,
        "at": "2026-11-17T17:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-17:2026020337:8482142:shots:1.5:under",
+     "kind": "single",
+     "player": "J. Drysdale",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "PHI",
+     "game": "BUF at PHI",
+     "price": -130,
+     "first_price": -130,
+     "last_price": -130,
+     "prices": [
+      {
+       "price": -130,
+       "at": "2026-11-17T18:20:01-05:00"
       }
      ],
      "result": null,

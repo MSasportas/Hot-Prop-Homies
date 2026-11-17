@@ -43,7 +43,7 @@
   },
   "TBL": {
    "name": "Andrei Vasilevskiy",
-   "status": "expected"
+   "status": "confirmed"
   },
   "WSH": {
    "name": "Logan Thompson",
@@ -90,5 +90,5 @@
    "status": "confirmed"
   }
  },
- "checked_at": "2026-11-17T18:00:00-05:00"
+ "checked_at": "2026-11-17T18:20:01-05:00"
 }

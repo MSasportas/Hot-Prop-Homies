@@ -2,7 +2,7 @@
  "version": 1,
  "note": "Behind the scenes: research only. Not picks, not on the Record, never sent to Discord.",
  "market": "points",
- "generated_at": "2026-11-17T18:00:00-05:00",
+ "generated_at": "2026-11-17T18:20:01-05:00",
  "slate": "2026-11-17",
  "active": true,
  "window": {
@@ -40,8 +40,8 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "close_fair_pct": 33.8,
+    "clv_pct": 9.9,
     "result": null,
     "units": null
    },
@@ -74,8 +74,8 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "close_fair_pct": 49.0,
+    "clv_pct": 5.3,
     "result": null,
     "units": null
    },
@@ -108,8 +108,8 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "close_fair_pct": 50.0,
+    "clv_pct": 5.0,
     "result": null,
     "units": null
    },
@@ -142,8 +142,8 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "close_fair_pct": 37.8,
+    "clv_pct": 3.8,
     "result": null,
     "units": null
    },
@@ -176,8 +176,8 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "close_fair_pct": 48.0,
+    "clv_pct": 3.1,
     "result": null,
     "units": null
    },
@@ -210,8 +210,8 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "close_fair_pct": 45.3,
+    "clv_pct": 4.1,
     "result": null,
     "units": null
    }
@@ -246,8 +246,8 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "close_fair_pct": 39.5,
+    "clv_pct": 2.8,
     "result": null,
     "units": null
    },
@@ -314,8 +314,8 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "close_fair_pct": 45.9,
+    "clv_pct": 3.2,
     "result": null,
     "units": null
    },
@@ -1130,7 +1130,7 @@
      "cap": null,
      "flagged_at": "2026-11-07T18:30:00-05:00",
      "read_pull": "B",
-     "settled": "Lineup confirmed",
+     "settled": "Goalie confirmed",
      "frozen_settled": "Early",
      "move30_pct": null,
      "pulled": null,
@@ -1843,7 +1843,7 @@
   }
  ],
  "nov2": {
-  "gaps_measured": 37,
+  "gaps_measured": 45,
   "gaps_logged": 51,
   "graded_picks": 30,
   "w": 16,
@@ -1852,25 +1852,25 @@
   "units": 7.1,
   "wins_z": 0.7027460799444971,
   "clv_gaps": {
-   "n": 37,
-   "mean": 0.044133429454348436,
-   "lb80": 0.04023430269079997,
+   "n": 45,
+   "mean": 0.044568174201492776,
+   "lb80": 0.04095748507131032,
    "pos_share": 1.0
   },
   "clv_flags": {
-   "n": 29,
-   "mean": 0.045270427658658505,
-   "lb80": 0.04110280953790388,
+   "n": 35,
+   "mean": 0.046438159189389226,
+   "lb80": 0.042392230705582276,
    "pos_share": 1.0
   },
   "clv_vetoed": {
-   "n": 8,
-   "mean": 0.04001181096372444,
-   "lb80": 0.03244704735461956,
+   "n": 10,
+   "mean": 0.038023226743855235,
+   "lb80": 0.03175773775636004,
    "pos_share": 1.0
   },
-  "clv_passed_mean": 0.045270427658658505,
-  "clv_vetoed_mean": 0.04001181096372444,
+  "clv_passed_mean": 0.046438159189389226,
+  "clv_vetoed_mean": 0.038023226743855235,
   "nights": 21,
   "nights_with_flags": 12,
   "population_slope": null,
