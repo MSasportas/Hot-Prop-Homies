@@ -1,130 +1,368 @@
 {
- "slate_date": "2026-11-16",
- "generated_at": "2026-11-17T04:30:01-05:00",
- "status_at": "2026-11-17T04:30:01-05:00",
- "valid_until": "2026-11-17T05:00:00-05:00",
+ "slate_date": "2026-11-17",
+ "generated_at": "2026-11-17T05:00:00-05:00",
+ "status_at": "2026-11-17T05:00:00-05:00",
+ "valid_until": "2026-11-18T05:00:00-05:00",
  "status": {
-  "prices_state": "ok",
-  "prices_at": "2026-11-16T20:50:00-05:00",
-  "next_price_read_at": null,
+  "prices_state": "not_yet",
+  "prices_at": null,
+  "next_price_read_at": "2026-11-17T13:00:00-05:00",
   "stats_built_at": "2026-11-17T01:10:01-05:00",
   "stats_through": "2026-11-16",
-  "lineups_at": "2026-11-16T20:20:01-05:00",
+  "lineups_at": null,
   "goalies_at": null,
-  "lineups_note": "Lineups posted for 4 of 4 teams checked so far.",
-  "lineups_state": "ok",
+  "lineups_note": null,
+  "lineups_state": "not_yet",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-17T04:30:01-05:00",
+   "at": "2026-11-17T05:00:00-05:00",
    "failed_step": null
   },
   "pool": {
    "pulls_left": 2882,
    "keys": 9,
-   "game_days_left": 13,
-   "days_left": 15,
+   "game_days_left": 12,
+   "days_left": 14,
    "low": false
   },
   "excluded_teams": [],
-  "lines_checked": 31,
-  "flag_reads": 2,
+  "lines_checked": 0,
+  "flag_reads": 0,
   "tier": 4
  },
  "banners": [],
  "empty": {
-  "code": "all_started",
-  "text": "Every game has started.",
-  "sub": "No picks were posted tonight. 31 lines read across 2 games, none cleared both checks."
+  "code": "not_yet",
+  "text": "No picks yet today",
+  "sub": "First read is due at 1:00 PM."
  },
  "games": [
   {
-   "id": 2026020331,
-   "away": "MTL",
-   "home": "NYR",
-   "start": "2026-11-16T19:30:00-05:00",
+   "id": 2026020333,
+   "away": "LAK",
+   "home": "BOS",
+   "start": "2026-11-17T19:00:00-05:00",
    "lineups": {
-    "away": "confirmed",
-    "home": "confirmed"
+    "away": "not_checked",
+    "home": "not_checked"
    },
    "goalies": {
-    "away": {
-     "name": "Jacob Fowler",
-     "status": "confirmed"
-    },
-    "home": {
-     "name": "Joonas Korpisalo",
-     "status": "confirmed"
-    }
+    "away": null,
+    "home": null
    },
    "checks": {
-    "reads": [
-     {
-      "pull": "A",
-      "at": "2026-11-16T13:00:01-05:00"
-     },
-     {
-      "pull": "B",
-      "at": "2026-11-16T18:00:01-05:00"
-     },
-     {
-      "pull": "C",
-      "at": "2026-11-16T18:50:00-05:00"
-     }
-    ],
-    "next_read": null,
+    "reads": [],
+    "next_read": {
+     "pull": "A",
+     "at": "2026-11-17T13:00:00-05:00"
+    },
     "lineups_at": {
-     "away": "2026-11-16T19:20:01-05:00",
-     "home": "2026-11-16T19:20:01-05:00"
+     "away": null,
+     "home": null
     }
    },
-   "started": true,
+   "started": false,
    "reads_done": false,
    "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
   },
   {
-   "id": 2026020332,
-   "away": "VAN",
-   "home": "UTA",
-   "start": "2026-11-16T21:30:00-05:00",
+   "id": 2026020335,
+   "away": "EDM",
+   "home": "FLA",
+   "start": "2026-11-17T19:00:00-05:00",
    "lineups": {
-    "away": "confirmed",
-    "home": "confirmed"
+    "away": "not_checked",
+    "home": "not_checked"
    },
    "goalies": {
-    "away": {
-     "name": "Nikita Tolopilo",
-     "status": "expected"
-    },
-    "home": {
-     "name": "Karel Vejmelka",
-     "status": "confirmed"
-    }
+    "away": null,
+    "home": null
    },
    "checks": {
-    "reads": [
-     {
-      "pull": "A",
-      "at": "2026-11-16T13:00:01-05:00"
-     },
-     {
-      "pull": "B",
-      "at": "2026-11-16T20:00:01-05:00"
-     },
-     {
-      "pull": "C",
-      "at": "2026-11-16T20:50:00-05:00"
-     }
-    ],
-    "next_read": null,
+    "reads": [],
+    "next_read": {
+     "pull": "A",
+     "at": "2026-11-17T13:00:00-05:00"
+    },
     "lineups_at": {
-     "away": "2026-11-16T18:30:01-05:00",
-     "home": "2026-11-16T18:30:01-05:00"
+     "away": null,
+     "home": null
     }
    },
-   "started": true,
+   "started": false,
+   "reads_done": false,
+   "picks": 0,
+   "excluded_reason": null,
+   "excluded_teams": []
+  },
+  {
+   "id": 2026020336,
+   "away": "CBJ",
+   "home": "NYI",
+   "start": "2026-11-17T19:00:00-05:00",
+   "lineups": {
+    "away": "not_checked",
+    "home": "not_checked"
+   },
+   "goalies": {
+    "away": null,
+    "home": null
+   },
+   "checks": {
+    "reads": [],
+    "next_read": {
+     "pull": "A",
+     "at": "2026-11-17T13:00:00-05:00"
+    },
+    "lineups_at": {
+     "away": null,
+     "home": null
+    }
+   },
+   "started": false,
+   "reads_done": false,
+   "picks": 0,
+   "excluded_reason": null,
+   "excluded_teams": []
+  },
+  {
+   "id": 2026020337,
+   "away": "BUF",
+   "home": "PHI",
+   "start": "2026-11-17T19:00:00-05:00",
+   "lineups": {
+    "away": "not_checked",
+    "home": "not_checked"
+   },
+   "goalies": {
+    "away": null,
+    "home": null
+   },
+   "checks": {
+    "reads": [],
+    "next_read": {
+     "pull": "A",
+     "at": "2026-11-17T13:00:00-05:00"
+    },
+    "lineups_at": {
+     "away": null,
+     "home": null
+    }
+   },
+   "started": false,
+   "reads_done": false,
+   "picks": 0,
+   "excluded_reason": null,
+   "excluded_teams": []
+  },
+  {
+   "id": 2026020341,
+   "away": "OTT",
+   "home": "WPG",
+   "start": "2026-11-17T19:00:00-05:00",
+   "lineups": {
+    "away": "not_checked",
+    "home": "not_checked"
+   },
+   "goalies": {
+    "away": null,
+    "home": null
+   },
+   "checks": {
+    "reads": [],
+    "next_read": {
+     "pull": "A",
+     "at": "2026-11-17T13:00:00-05:00"
+    },
+    "lineups_at": {
+     "away": null,
+     "home": null
+    }
+   },
+   "started": false,
+   "reads_done": false,
+   "picks": 0,
+   "excluded_reason": null,
+   "excluded_teams": []
+  },
+  {
+   "id": 2026020334,
+   "away": "WSH",
+   "home": "TBL",
+   "start": "2026-11-17T19:30:00-05:00",
+   "lineups": {
+    "away": "not_checked",
+    "home": "not_checked"
+   },
+   "goalies": {
+    "away": null,
+    "home": null
+   },
+   "checks": {
+    "reads": [],
+    "next_read": {
+     "pull": "A",
+     "at": "2026-11-17T13:00:00-05:00"
+    },
+    "lineups_at": {
+     "away": null,
+     "home": null
+    }
+   },
+   "started": false,
+   "reads_done": false,
+   "picks": 0,
+   "excluded_reason": null,
+   "excluded_teams": []
+  },
+  {
+   "id": 2026020338,
+   "away": "TOR",
+   "home": "CHI",
+   "start": "2026-11-17T19:30:00-05:00",
+   "lineups": {
+    "away": "not_checked",
+    "home": "not_checked"
+   },
+   "goalies": {
+    "away": null,
+    "home": null
+   },
+   "checks": {
+    "reads": [],
+    "next_read": {
+     "pull": "A",
+     "at": "2026-11-17T13:00:00-05:00"
+    },
+    "lineups_at": {
+     "away": null,
+     "home": null
+    }
+   },
+   "started": false,
+   "reads_done": false,
+   "picks": 0,
+   "excluded_reason": null,
+   "excluded_teams": []
+  },
+  {
+   "id": 2026020339,
+   "away": "ANA",
+   "home": "STL",
+   "start": "2026-11-17T20:00:00-05:00",
+   "lineups": {
+    "away": "not_checked",
+    "home": "not_checked"
+   },
+   "goalies": {
+    "away": null,
+    "home": null
+   },
+   "checks": {
+    "reads": [],
+    "next_read": {
+     "pull": "A",
+     "at": "2026-11-17T13:00:00-05:00"
+    },
+    "lineups_at": {
+     "away": null,
+     "home": null
+    }
+   },
+   "started": false,
+   "reads_done": false,
+   "picks": 0,
+   "excluded_reason": null,
+   "excluded_teams": []
+  },
+  {
+   "id": 2026020340,
+   "away": "NSH",
+   "home": "MIN",
+   "start": "2026-11-17T20:00:00-05:00",
+   "lineups": {
+    "away": "not_checked",
+    "home": "not_checked"
+   },
+   "goalies": {
+    "away": null,
+    "home": null
+   },
+   "checks": {
+    "reads": [],
+    "next_read": {
+     "pull": "A",
+     "at": "2026-11-17T13:00:00-05:00"
+    },
+    "lineups_at": {
+     "away": null,
+     "home": null
+    }
+   },
+   "started": false,
+   "reads_done": false,
+   "picks": 0,
+   "excluded_reason": null,
+   "excluded_teams": []
+  },
+  {
+   "id": 2026020342,
+   "away": "DAL",
+   "home": "VGK",
+   "start": "2026-11-17T22:00:00-05:00",
+   "lineups": {
+    "away": "not_checked",
+    "home": "not_checked"
+   },
+   "goalies": {
+    "away": null,
+    "home": null
+   },
+   "checks": {
+    "reads": [],
+    "next_read": {
+     "pull": "A",
+     "at": "2026-11-17T13:00:00-05:00"
+    },
+    "lineups_at": {
+     "away": null,
+     "home": null
+    }
+   },
+   "started": false,
+   "reads_done": false,
+   "picks": 0,
+   "excluded_reason": null,
+   "excluded_teams": []
+  },
+  {
+   "id": 2026020343,
+   "away": "CGY",
+   "home": "SJS",
+   "start": "2026-11-17T22:00:00-05:00",
+   "lineups": {
+    "away": "not_checked",
+    "home": "not_checked"
+   },
+   "goalies": {
+    "away": null,
+    "home": null
+   },
+   "checks": {
+    "reads": [],
+    "next_read": {
+     "pull": "A",
+     "at": "2026-11-17T13:00:00-05:00"
+    },
+    "lineups_at": {
+     "away": null,
+     "home": null
+    }
+   },
+   "started": false,
    "reads_done": false,
    "picks": 0,
    "excluded_reason": null,
