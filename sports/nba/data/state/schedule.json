@@ -360,8 +360,8 @@
     "home": "BOS",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "11:57 - 2nd",
     "score": {
      "ORL": "20",
      "BOS": "17"
@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:26 - 2nd",
+    "detail": "10:19 - 2nd",
     "score": {
-     "CHI": "31",
-     "CLE": "25"
+     "CHI": "36",
+     "CLE": "28"
     }
    },
    {
@@ -390,11 +390,11 @@
     "home": "WSH",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "35.3 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
-     "MEM": "32",
-     "WSH": "32"
+     "MEM": "33",
+     "WSH": "35"
     }
    },
    {
