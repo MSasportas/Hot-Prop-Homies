@@ -1,5 +1,5 @@
 {
- "at": "2026-11-17T14:00:00-05:00",
+ "at": "2026-11-17T14:20:00-05:00",
  "list": {
   "5149077": {
    "status": "day-to-day",
@@ -414,12 +414,19 @@
    "date": "2026-11-15T23:46Z",
    "note": "Dieng will undergo a procedure to repair a fractured left finger Monday, Justin Garcia of the Milwaukee Bucks Radio Network reports."
   },
+  "4592979": {
+   "status": "out",
+   "name": "Zyon Pullin",
+   "team": "MIN",
+   "date": "2026-11-17T19:05Z",
+   "note": "Pullin (quadriceps) has been ruled out for Tuesday's game against Portland."
+  },
   "4433247": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Jonathan Kuminga",
    "team": "MIN",
-   "date": "2026-11-17T03:32Z",
-   "note": "Kuminga (shoulder) exited in the fourth quarter of Monday's 106-98 win over Portland and did not return. He closed with 13 points (5-12 FG, 1-2 3Pt, 2-2 FT), nine rebounds and one assist across 29 min"
+   "date": "2026-11-17T19:03Z",
+   "note": "Kuminga (shoulder) is out for Tuesday's game against Portland."
   },
   "4432247": {
    "status": "out",
