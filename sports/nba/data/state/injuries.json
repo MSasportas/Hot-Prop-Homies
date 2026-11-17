@@ -1,5 +1,5 @@
 {
- "at": "2026-11-17T18:30:02-05:00",
+ "at": "2026-11-17T18:32:07-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -344,6 +344,13 @@
    "date": "2026-11-17T01:10Z",
    "note": "Walker (leg) has been ruled out for Tuesday's game against the Hornets."
   },
+  "5105550": {
+   "status": "out",
+   "name": "GG Jackson",
+   "team": "MEM",
+   "date": "2026-11-17T23:18Z",
+   "note": "Jackson underwent a procedure Wednesday to repair a broken fifth metatarsal in his left foot. He is expected to recover fully and will be re-evaluated in approximately three months."
+  },
   "4432810": {
    "status": "out",
    "name": "Isaiah Stewart",
@@ -364,13 +371,6 @@
    "team": "MEM",
    "date": "2026-11-16T17:16Z",
    "note": "Pippen (back) is progressing in his recovery but is still considered week-to-week."
-  },
-  "5105550": {
-   "status": "out",
-   "name": "GG Jackson",
-   "team": "MEM",
-   "date": "2026-11-16T17:12Z",
-   "note": "Jackson will undergo surgery to repair the broken fifth metatarsal in his left foot and is set to miss significant time."
   },
   "5105462": {
    "status": "out",
