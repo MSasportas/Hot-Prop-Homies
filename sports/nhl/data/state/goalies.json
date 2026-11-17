@@ -75,7 +75,7 @@
   },
   "VGK": {
    "name": "Adin Hill",
-   "status": "expected"
+   "status": "confirmed"
   },
   "DAL": {
    "name": "Jake Oettinger",
@@ -90,5 +90,5 @@
    "status": "confirmed"
   }
  },
- "checked_at": "2026-11-17T14:20:00-05:00"
+ "checked_at": "2026-11-17T14:40:00-05:00"
 }
