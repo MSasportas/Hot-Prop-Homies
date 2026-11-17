@@ -1,5 +1,5 @@
 {
- "at": "2026-11-16T20:10:01-05:00",
+ "at": "2026-11-16T20:20:00-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -281,19 +281,19 @@
    "date": "2026-10-28T21:41Z",
    "note": "Head coach Rick Carlise confirmed Sheppard will miss \"months\" after undergoing surgery to repair a torn meniscus in his left knee, Tony East of Forbes.com reports."
   },
+  "5108024": {
+   "status": "out",
+   "name": "Yanic Konan Niederhauser",
+   "team": "LAC",
+   "date": "2026-11-17T01:07Z",
+   "note": "Niederhauser (foot) has been ruled out for Tuesday's game against the Jazz."
+  },
   "3913176": {
    "status": "out",
    "name": "Brandon Ingram",
    "team": "LAC",
    "date": "2026-11-12T21:05Z",
    "note": "Ingram (Achilles) won't play in Friday's game against the Thunder, per Law Murray of The Athletic."
-  },
-  "5108024": {
-   "status": "out",
-   "name": "Yanic Konan Niederhauser",
-   "team": "LAC",
-   "date": "2026-11-10T00:05Z",
-   "note": "Niederhauser (foot) is out for Tuesday's game against Phoenix, Ohm Youngmisuk of ESPN.com reports."
   },
   "6580": {
    "status": "out",
@@ -533,13 +533,6 @@
    "date": "2026-10-06T19:17Z",
    "note": "Hukporti has sustained a season-ending ruptured right Achilles tendon, per Shams Charania of ESPN."
   },
-  "4888725": {
-   "status": "day-to-day",
-   "name": "Ryan Dunn",
-   "team": "PHX",
-   "date": "2026-11-16T20:18Z",
-   "note": "Dunn (thumb) is listed as questionable for Monday's game against Denver."
-  },
   "4701232": {
    "status": "out",
    "name": "Mark Williams",
@@ -646,11 +639,11 @@
    "note": "Head coach Darko Rajakovic said Wednesday that Leonard (knee) is doing individual on-court work and is progressing well, Michael Grange of Sportsnet.ca reports."
   },
   "4397077": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Jaxson Hayes",
    "team": "UTAH",
-   "date": "2026-11-16T14:44Z",
-   "note": "Hayes (knee) has been ruled out for Sunday's game against the Spurs."
+   "date": "2026-11-17T01:08Z",
+   "note": "Hayes (knee) has been ruled out for Tuesday's game against the Clippers."
   },
   "4066336": {
    "status": "out",
