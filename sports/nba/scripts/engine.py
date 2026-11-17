@@ -444,7 +444,21 @@ def solo_moves(a, b, ctx):
                 elif ps.get("others_max") is not None and statistics.median(mv) >= ps["others_max"] - EPS:
                     r["why"] = "the other books moved too (%+.1f pts)" % (100 * statistics.median(mv))
                 else:
-                    r["why"] = ctx.eligible(pid, team, g)
+                    # LVA1 filter (2026-11-16): skip under picks where Pinnacle's line is >= threshold below the
+                    # rolling season average (prior non-DNP games, current season, min_prior_games required).
+                    lva1_why = None
+                    if side == "under":
+                        lva1 = ps.get("lva1") or {}
+                        if lva1.get("active"):
+                            stat = cfg["markets"][market]["stat"]
+                            avg = rolling_season_avg(ctx.store, pid, ctx.slate, stat, ctx.season_start,
+                                                     lva1.get("min_prior_games", 3))
+                            if avg is not None and avg > 0:
+                                ratio = (avg - line) / avg
+                                if ratio >= lva1.get("threshold", 0.05) - EPS:
+                                    lva1_why = "LVA1: line %.1f is %.0f%% below rolling avg %.1f" % (
+                                        line, 100 * ratio, avg)
+                    r["why"] = lva1_why if lva1_why else ctx.eligible(pid, team, g)
                 rows.append(r)
     return rows
 
@@ -466,6 +480,17 @@ def window_label(prev_read, read):
     if a.endswith(" min") and b.endswith(" min"):
         a = a[:-4]
     return "%s → %s" % (a, b)
+
+
+def rolling_season_avg(store, pid, slate, stat, season_start, min_games=3):
+    """Simple mean of `stat` over prior non-DNP, played games this season (date >= season_start, before slate).
+    Returns None when fewer than min_games qualifying games exist — in that case the LVA1 filter does NOT fire."""
+    rows = store.player_rows(pid, slate)
+    played = [r for r in rows if not r.get("dnp") and (r.get("min") or 0) > 0
+              and r.get(stat) is not None and r.get("date", "") >= season_start]
+    if len(played) < min_games:
+        return None
+    return sum(r[stat] for r in played) / len(played)
 
 
 def solo_reason(r):

@@ -206,7 +206,13 @@
   "min_ev_vs_pin": 0.0,
   "link_books": [
    "draftkings"
-  ]
+  ],
+  "lva1": {
+   "_about": "LVA1 filter (2026-11-16): skip a pin_solo UNDER pick when Pinnacle's line is >= threshold below the player's rolling season average (prior non-DNP games, current season only). Applies to unders only. Overs unaffected. If fewer than min_prior_games non-DNP games exist, do NOT skip.",
+   "active": true,
+   "threshold": 0.05,
+   "min_prior_games": 3
+  }
  },
  "watch": {
   "pin_judge": {
