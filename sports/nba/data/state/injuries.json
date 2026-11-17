@@ -1,6 +1,13 @@
 {
- "at": "2026-11-17T16:10:00-05:00",
+ "at": "2026-11-17T16:20:00-05:00",
  "list": {
+  "2490149": {
+   "status": "out",
+   "name": "CJ McCollum",
+   "team": "ATL",
+   "date": "2026-11-17T21:08Z",
+   "note": "McCollum (calf) will miss at least four weeks, per Brad Rowland of the Locked On Podcast Network."
+  },
   "5149077": {
    "status": "day-to-day",
    "name": "Kingston Flemings",
@@ -57,19 +64,19 @@
    "date": "2026-11-08T22:26Z",
    "note": "Schroder has been diagnosed with a left hamstring strain and will be reevaluated in two weeks, Michael Scotto of HoopsHype.com reports."
   },
+  "4431687": {
+   "status": "day-to-day",
+   "name": "Patrick Williams",
+   "team": "CHI",
+   "date": "2026-11-17T21:04Z",
+   "note": "Williams (finger) is listed as probable for Wednesday's game against Brooklyn."
+  },
   "5105555": {
    "status": "out",
    "name": "Tobe Awaka",
    "team": "CHI",
    "date": "2026-11-17T20:53Z",
    "note": "Awaka (back) has been ruled out for Wednesday's game against the Nets."
-  },
-  "4431687": {
-   "status": "day-to-day",
-   "name": "Patrick Williams",
-   "team": "CHI",
-   "date": "2026-11-17T02:12Z",
-   "note": "Williams (finger) has been ruled out for the remainder of Monday's game against Cleveland."
   },
   "5095151": {
    "status": "out",
@@ -232,26 +239,19 @@
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
   },
+  "3102529": {
+   "status": "out",
+   "name": "Clint Capela",
+   "team": "HOU",
+   "date": "2026-11-17T20:58Z",
+   "note": "Capela (ankle) has been ruled out for Wednesday's game against Indiana."
+  },
   "4684740": {
    "status": "day-to-day",
    "name": "Amen Thompson",
    "team": "HOU",
    "date": "2026-11-17T20:49Z",
    "note": "Thompson (knee) is questionable for Wednesday's game against the Pacers."
-  },
-  "2991235": {
-   "status": "day-to-day",
-   "name": "Steven Adams",
-   "team": "HOU",
-   "date": "2026-11-17T03:38Z",
-   "note": "Adams (calf) is out for Monday's game against the Heat."
-  },
-  "3102529": {
-   "status": "out",
-   "name": "Clint Capela",
-   "team": "HOU",
-   "date": "2026-11-16T18:09Z",
-   "note": "Capela (ankle) is out for Monday's game against the Heat."
   },
   "5105553": {
    "status": "day-to-day",
