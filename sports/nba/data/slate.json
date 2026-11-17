@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-16T20:40:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-16T21:30:00-05:00"
+   "at": "2026-11-16T21:40:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -59,8 +59,8 @@
    "start": "2026-11-16T19:00:00-05:00",
    "away": "ORL",
    "home": "BOS",
-   "state": "in",
-   "detail": "36.5 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -124,8 +124,8 @@
    "start": "2026-11-16T19:00:00-05:00",
    "away": "CHI",
    "home": "CLE",
-   "state": "in",
-   "detail": "46.8 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -255,7 +255,7 @@
    "away": "PHI",
    "home": "BKN",
    "state": "in",
-   "detail": "2:10 - 3rd",
+   "detail": "10:27 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -320,7 +320,7 @@
    "away": "HOU",
    "home": "MIA",
    "state": "in",
-   "detail": "10:11 - 4th",
+   "detail": "6:18 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -385,7 +385,7 @@
    "away": "POR",
    "home": "MIN",
    "state": "in",
-   "detail": "10:15 - 3rd",
+   "detail": "5:50 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -450,7 +450,7 @@
    "away": "GSW",
    "home": "NOP",
    "state": "in",
-   "detail": "11:45 - 3rd",
+   "detail": "7:09 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -515,7 +515,7 @@
    "away": "PHX",
    "home": "DEN",
    "state": "in",
-   "detail": "2:34 - 1st",
+   "detail": "10:24 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -933,6 +933,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-16T21:30:00-05:00",
- "status_at": "2026-11-16T21:30:00-05:00"
+ "generated_at": "2026-11-16T21:40:01-05:00",
+ "status_at": "2026-11-16T21:40:01-05:00"
 }

@@ -358,13 +358,13 @@
     "start": "2026-11-16T19:00:00-05:00",
     "away": "ORL",
     "home": "BOS",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "36.5 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "ORL": "110",
-     "BOS": "103"
+     "ORL": "115",
+     "BOS": "105"
     }
    },
    {
@@ -373,13 +373,13 @@
     "start": "2026-11-16T19:00:00-05:00",
     "away": "CHI",
     "home": "CLE",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "46.8 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
      "CHI": "115",
-     "CLE": "125"
+     "CLE": "126"
     }
    },
    {
@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:10 - 3rd",
+    "detail": "10:27 - 4th",
     "score": {
-     "PHI": "99",
-     "BKN": "90"
+     "PHI": "105",
+     "BKN": "98"
     }
    },
    {
@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:11 - 4th",
+    "detail": "6:18 - 4th",
     "score": {
-     "HOU": "84",
-     "MIA": "106"
+     "HOU": "92",
+     "MIA": "115"
     }
    },
    {
@@ -436,10 +436,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:15 - 3rd",
+    "detail": "5:50 - 3rd",
     "score": {
-     "POR": "51",
-     "MIN": "62"
+     "POR": "58",
+     "MIN": "68"
     }
    },
    {
@@ -451,10 +451,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:45 - 3rd",
+    "detail": "7:09 - 3rd",
     "score": {
-     "GS": "36",
-     "NO": "61"
+     "GS": "52",
+     "NO": "73"
     }
    },
    {
@@ -466,10 +466,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:34 - 1st",
+    "detail": "10:24 - 2nd",
     "score": {
-     "PHX": "18",
-     "DEN": "20"
+     "PHX": "25",
+     "DEN": "27"
     }
    }
   ]
