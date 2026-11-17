@@ -1,5 +1,5 @@
 {
- "at": "2026-11-16T22:00:01-05:00",
+ "at": "2026-11-16T22:02:00-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -42,6 +42,13 @@
    "team": "BOS",
    "date": "2026-11-16T22:10Z",
    "note": "Queta (rest) won't play in Monday's game against the Magic, Taylor Snow of the Celtics' official site reports."
+  },
+  "3064514": {
+   "status": "day-to-day",
+   "name": "Julius Randle",
+   "team": "BKN",
+   "date": "2026-11-17T02:53Z",
+   "note": "Randle finished with 22 points (8-16 FG, 3-6 3Pt, 3-6 FT), four rebounds, five assists and three steals across 31 minutes in Saturday's 129-110 loss to Memphis."
   },
   "5061575": {
    "status": "out",
