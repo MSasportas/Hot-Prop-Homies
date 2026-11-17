@@ -1,6 +1,20 @@
 {
- "at": "2026-11-17T18:00:01-05:00",
+ "at": "2026-11-17T18:20:00-05:00",
  "list": {
+  "3146557": {
+   "status": "out",
+   "name": "Jock Landale",
+   "team": "ATL",
+   "date": "2026-11-17T23:07Z",
+   "note": "Landale (hip) won't play Wednesday in Oklahoma City."
+  },
+  "5149077": {
+   "status": "out",
+   "name": "Kingston Flemings",
+   "team": "ATL",
+   "date": "2026-11-17T23:06Z",
+   "note": "Flemings (back) is out for Wednesday's game against the Thunder."
+  },
   "4873201": {
    "status": "out",
    "name": "Asa Newell",
@@ -14,20 +28,6 @@
    "team": "ATL",
    "date": "2026-11-17T21:08Z",
    "note": "McCollum (calf) will miss at least four weeks, per Brad Rowland of the Locked On Podcast Network."
-  },
-  "5149077": {
-   "status": "day-to-day",
-   "name": "Kingston Flemings",
-   "team": "ATL",
-   "date": "2026-11-17T18:28Z",
-   "note": "Flemings (back) practiced Tuesday, per Lauren L. Williams of The Atlanta Journal-Constitution."
-  },
-  "3146557": {
-   "status": "day-to-day",
-   "name": "Jock Landale",
-   "team": "ATL",
-   "date": "2026-11-16T14:47Z",
-   "note": "Landale (hip) is out for Sunday's game against Bucks, Brad Rowland of the Locked On Podcast Network reports."
   },
   "4712863": {
    "status": "out",
