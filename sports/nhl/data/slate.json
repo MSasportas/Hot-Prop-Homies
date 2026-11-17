@@ -1,12 +1,12 @@
 {
  "slate_date": "2026-11-17",
- "generated_at": "2026-11-17T18:40:00-05:00",
- "status_at": "2026-11-17T18:40:00-05:00",
+ "generated_at": "2026-11-17T18:50:01-05:00",
+ "status_at": "2026-11-17T18:50:01-05:00",
  "valid_until": "2026-11-18T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
-  "prices_at": "2026-11-17T18:30:00-05:00",
-  "next_price_read_at": "2026-11-17T18:45:00-05:00",
+  "prices_at": "2026-11-17T18:50:01-05:00",
+  "next_price_read_at": "2026-11-17T19:15:00-05:00",
   "stats_built_at": "2026-11-17T01:10:01-05:00",
   "stats_through": "2026-11-16",
   "lineups_at": "2026-11-17T18:40:00-05:00",
@@ -16,18 +16,18 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-17T18:40:00-05:00",
+   "at": "2026-11-17T18:50:01-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 2828,
+   "pulls_left": 2821,
    "keys": 9,
    "game_days_left": 12,
    "days_left": 14,
    "low": false
   },
   "excluded_teams": [],
-  "lines_checked": 158,
+  "lines_checked": 157,
   "flag_reads": 9,
   "tier": 4
  },
@@ -292,20 +292,21 @@
      {
       "pull": "B",
       "at": "2026-11-17T18:00:00-05:00"
+     },
+     {
+      "pull": "C",
+      "at": "2026-11-17T18:50:01-05:00"
      }
     ],
-    "next_read": {
-     "pull": "C",
-     "at": "2026-11-17T18:45:00-05:00"
-    },
+    "next_read": null,
     "lineups_at": {
      "away": null,
      "home": "2026-11-17T16:30:00-05:00"
     }
    },
    "started": false,
-   "reads_done": false,
-   "picks": 0,
+   "reads_done": true,
+   "picks": 1,
    "excluded_reason": null,
    "excluded_teams": []
   },
@@ -337,19 +338,20 @@
      {
       "pull": "B",
       "at": "2026-11-17T18:00:00-05:00"
+     },
+     {
+      "pull": "C",
+      "at": "2026-11-17T18:50:01-05:00"
      }
     ],
-    "next_read": {
-     "pull": "C",
-     "at": "2026-11-17T18:45:00-05:00"
-    },
+    "next_read": null,
     "lineups_at": {
      "away": null,
      "home": null
     }
    },
    "started": false,
-   "reads_done": false,
+   "reads_done": true,
    "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
@@ -655,6 +657,69 @@
    "games_this_season": 16
   },
   {
+   "id": "2026-11-17:2026020334:8478519:points:0.5:over",
+   "price": 130,
+   "first_price": 130,
+   "first_price_at": "2026-11-17T18:50:01-05:00",
+   "worst_price": 130,
+   "p": 0.4653,
+   "breakeven": 0.4348,
+   "p_pct": 46,
+   "breakeven_pct": 43,
+   "state": "lineup",
+   "history": [
+    {
+     "at": "2026-11-17T18:50:01-05:00",
+     "text": "Lineup confirmed"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-17T18:50:01-05:00",
+     "price": 130
+    }
+   ],
+   "pulled": null,
+   "price_final": true,
+   "graded": null,
+   "rank": 3,
+   "tier": "main",
+   "game_id": 2026020334,
+   "player": "A. Cirelli",
+   "player_id": 8478519,
+   "team": "TBL",
+   "opp": "WSH",
+   "home": true,
+   "start": "2026-11-17T19:30:00-05:00",
+   "market": "points",
+   "line": 0.5,
+   "side": "over",
+   "bet": "Over 0.5 points",
+   "price_at": "2026-11-17T18:50:01-05:00",
+   "gap_pct": 3.9,
+   "market_fair_pct": 45.2,
+   "n_books": 6,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 46.5,
+    "model_pct": 52.0
+   },
+   "settled": "goalie",
+   "settled_label": "Goalie confirmed",
+   "reason": "6 other books say 45.2%; Hard Rock's +130 only needs 43.5%. Our model agrees (our blend: 46.5%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/4364398524853518735",
+   "links": {
+    "hardrock": {
+     "id": "4364398524853518735",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/4364398524853518735"
+    },
+    "draftkings": null
+   },
+   "thin": false,
+   "games_used": 89,
+   "games_this_season": 18
+  },
+  {
    "id": "2026-11-17:2026020339:8481598:shots:1.5:under",
    "price": 120,
    "first_price": 120,
@@ -680,7 +745,7 @@
    "pulled": null,
    "price_final": false,
    "graded": null,
-   "rank": 3,
+   "rank": 4,
    "tier": "main",
    "game_id": 2026020339,
    "player": "P. Broberg",
@@ -743,7 +808,7 @@
    "pulled": null,
    "price_final": true,
    "graded": null,
-   "rank": 4,
+   "rank": 5,
    "tier": "main",
    "game_id": 2026020333,
    "player": "A. Laferriere",
@@ -806,7 +871,7 @@
    "pulled": null,
    "price_final": false,
    "graded": null,
-   "rank": 5,
+   "rank": 6,
    "tier": "main",
    "game_id": 2026020340,
    "player": "R. Josi",
@@ -869,7 +934,7 @@
    "pulled": null,
    "price_final": true,
    "graded": null,
-   "rank": 6,
+   "rank": 7,
    "tier": "main",
    "game_id": 2026020337,
    "player": "J. Norris",
@@ -932,7 +997,7 @@
    "pulled": null,
    "price_final": true,
    "graded": null,
-   "rank": 7,
+   "rank": 8,
    "tier": "main",
    "game_id": 2026020336,
    "player": "V. Eklund",
@@ -995,7 +1060,7 @@
    "pulled": null,
    "price_final": true,
    "graded": null,
-   "rank": 8,
+   "rank": 9,
    "tier": "main",
    "game_id": 2026020333,
    "player": "K. Fiala",
@@ -1058,7 +1123,7 @@
    "pulled": null,
    "price_final": false,
    "graded": null,
-   "rank": 9,
+   "rank": 10,
    "tier": "main",
    "game_id": 2026020339,
    "player": "C. McMichael",
@@ -1121,7 +1186,7 @@
    "pulled": null,
    "price_final": true,
    "graded": null,
-   "rank": 10,
+   "rank": 11,
    "tier": "main",
    "game_id": 2026020333,
    "player": "C. McAvoy",
@@ -1184,7 +1249,7 @@
    "pulled": null,
    "price_final": true,
    "graded": null,
-   "rank": 11,
+   "rank": 12,
    "tier": "main",
    "game_id": 2026020337,
    "player": "J. Drysdale",
@@ -1247,7 +1312,7 @@
    "pulled": null,
    "price_final": false,
    "graded": null,
-   "rank": 12,
+   "rank": 13,
    "tier": "main",
    "game_id": 2026020340,
    "player": "S. Stamkos",

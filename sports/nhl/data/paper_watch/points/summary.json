@@ -2,7 +2,7 @@
  "version": 1,
  "note": "Behind the scenes: research only. Not picks, not on the Record, never sent to Discord.",
  "market": "points",
- "generated_at": "2026-11-17T18:40:00-05:00",
+ "generated_at": "2026-11-17T18:50:01-05:00",
  "slate": "2026-11-17",
  "active": true,
  "window": {
@@ -76,6 +76,40 @@
     "state": "open",
     "close_fair_pct": 49.0,
     "clv_pct": 5.3,
+    "result": null,
+    "units": null
+   },
+   {
+    "id": "2026-11-17:2026020334:8478519:0.5:over",
+    "kind": "flag",
+    "slate": "2026-11-17",
+    "game_id": 2026020334,
+    "player": "A. Cirelli",
+    "team": "TBL",
+    "opp": "WSH",
+    "game": "TBL vs WSH",
+    "start": "2026-11-17T19:30:00-05:00",
+    "side": "over",
+    "line": 0.5,
+    "bet": "OVER 0.5 points",
+    "price": 130,
+    "gap_pct": 3.9,
+    "final_pct": 7.0,
+    "market_fair_pct": 45.2,
+    "final_p_pct": 46.5,
+    "n_books": 6,
+    "guard": "pass",
+    "cap": null,
+    "flagged_at": "2026-11-17T18:50:01-05:00",
+    "read_pull": "C",
+    "settled": "Goalie confirmed",
+    "frozen_settled": "Goalie confirmed",
+    "move30_pct": 1.4,
+    "pulled": null,
+    "locked": false,
+    "state": "open",
+    "close_fair_pct": 45.2,
+    "clv_pct": null,
     "result": null,
     "units": null
    },
@@ -314,8 +348,8 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "close_fair_pct": 50.0,
+    "clv_pct": 5.0,
     "result": null,
     "units": null
    },
@@ -382,8 +416,8 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "close_fair_pct": 55.2,
+    "clv_pct": 3.2,
     "result": null,
     "units": null
    }
@@ -1877,8 +1911,8 @@
   }
  ],
  "nov2": {
-  "gaps_measured": 45,
-  "gaps_logged": 52,
+  "gaps_measured": 47,
+  "gaps_logged": 53,
   "graded_picks": 30,
   "w": 16,
   "l": 14,
@@ -1886,9 +1920,9 @@
   "units": 7.1,
   "wins_z": 0.7027460799444971,
   "clv_gaps": {
-   "n": 45,
-   "mean": 0.044568174201492776,
-   "lb80": 0.04095748507131032,
+   "n": 47,
+   "mean": 0.044426707773365166,
+   "lb80": 0.04089144430891435,
    "pos_share": 1.0
   },
   "clv_flags": {
@@ -1898,13 +1932,13 @@
    "pos_share": 1.0
   },
   "clv_vetoed": {
-   "n": 10,
-   "mean": 0.038023226743855235,
-   "lb80": 0.03175773775636004,
+   "n": 12,
+   "mean": 0.038559974476628324,
+   "lb80": 0.03322127563120009,
    "pos_share": 1.0
   },
   "clv_passed_mean": 0.046438159189389226,
-  "clv_vetoed_mean": 0.038023226743855235,
+  "clv_vetoed_mean": 0.038559974476628324,
   "nights": 21,
   "nights_with_flags": 12,
   "population_slope": null,

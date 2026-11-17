@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T18:30:00-05:00",
+ "generated_at": "2026-11-17T18:50:01-05:00",
  "summary": {
   "headline": {
    "w": 48,
@@ -243,7 +243,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 13,
+    "n": 14,
     "graded": false
    },
    {
@@ -580,6 +580,29 @@
       {
        "price": 120,
        "at": "2026-11-17T18:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-17:2026020334:8478519:points:0.5:over",
+     "kind": "single",
+     "player": "A. Cirelli",
+     "bet": "Over 0.5 points",
+     "market": "points",
+     "team": "TBL",
+     "game": "WSH at TBL",
+     "price": 130,
+     "first_price": 130,
+     "last_price": 130,
+     "prices": [
+      {
+       "price": 130,
+       "at": "2026-11-17T18:50:01-05:00"
       }
      ],
      "result": null,
