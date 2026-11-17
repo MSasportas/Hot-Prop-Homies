@@ -2,7 +2,7 @@
  "version": 1,
  "note": "Gap + Guard research log. Every flag here is a pick on the page and in the Record; vetoed and capped rows are research only.",
  "market": "shots",
- "generated_at": "2026-11-17T17:50:01-05:00",
+ "generated_at": "2026-11-17T18:00:00-05:00",
  "slate": "2026-11-17",
  "active": true,
  "window": {
@@ -80,7 +80,42 @@
     "units": null
    }
   ],
-  "vetoes": [],
+  "vetoes": [
+   {
+    "id": "2026-11-17:2026020338:8484158:1.5:under",
+    "kind": "veto",
+    "slate": "2026-11-17",
+    "game_id": 2026020338,
+    "player": "E. Cowan",
+    "team": "TOR",
+    "opp": "CHI",
+    "game": "TOR @ CHI",
+    "start": "2026-11-17T19:30:00-05:00",
+    "side": "under",
+    "line": 1.5,
+    "bet": "UNDER 1.5 shots",
+    "price": 125,
+    "gap_pct": 4.2,
+    "final_pct": 3.0,
+    "market_fair_pct": 46.3,
+    "final_p_pct": 45.8,
+    "n_books": 7,
+    "guard": "veto",
+    "cap": null,
+    "flagged_at": "2026-11-17T18:00:00-05:00",
+    "read_pull": "B",
+    "settled": "Early",
+    "frozen_settled": "Early",
+    "move30_pct": 0.2,
+    "pulled": null,
+    "locked": false,
+    "state": "open",
+    "close_fair_pct": null,
+    "clv_pct": null,
+    "result": null,
+    "units": null
+   }
+  ],
   "capped": []
  },
  "nights": [
@@ -1058,7 +1093,7 @@
  ],
  "nov2": {
   "gaps_measured": 63,
-  "gaps_logged": 81,
+  "gaps_logged": 82,
   "graded_picks": 68,
   "w": 41,
   "l": 27,
