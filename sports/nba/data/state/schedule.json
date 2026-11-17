@@ -466,10 +466,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:09 - 3rd",
+    "detail": "10:36 - 4th",
     "score": {
-     "PHX": "85",
-     "DEN": "77"
+     "PHX": "95",
+     "DEN": "82"
     }
    }
   ]
