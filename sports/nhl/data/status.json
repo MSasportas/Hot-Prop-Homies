@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-17",
- "started_at": "2026-11-17T18:20:01-05:00",
- "status_at": "2026-11-17T18:20:01-05:00",
- "finished_at": "2026-11-17T18:20:06-05:00",
- "last_ok_at": "2026-11-17T18:20:01-05:00",
+ "started_at": "2026-11-17T18:21:46-05:00",
+ "status_at": "2026-11-17T18:21:46-05:00",
+ "finished_at": "2026-11-17T18:21:47-05:00",
+ "last_ok_at": "2026-11-17T18:21:46-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -35,7 +35,7 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "5 game(s) priced"
+   "note": "no pull due"
   },
   {
    "step": "market_menu",
@@ -44,8 +44,8 @@
   },
   {
    "step": "featured",
-   "status": "ok",
-   "note": "sides/totals for 11 game(s), 10 book(s) max, 3 credit(s)"
+   "status": "skipped",
+   "note": "no new shots read to match"
   },
   {
    "step": "book_probe",
@@ -55,12 +55,12 @@
   {
    "step": "gapguard",
    "status": "ok",
-   "note": "gap+guard: 3 close, 1 flag, 1 pull"
+   "note": "gap+guard: nothing new"
   },
   {
    "step": "engine",
    "status": "ok",
-   "note": "2 new event(s), 1 newly shown"
+   "note": "no change"
   },
   {
    "step": "grade",
@@ -74,8 +74,8 @@
   },
   {
    "step": "shadow",
-   "status": "ok",
-   "note": "183 line read(s) logged"
+   "status": "skipped",
+   "note": "nothing new"
   },
   {
    "step": "gg_grade",
@@ -84,13 +84,13 @@
   },
   {
    "step": "slate",
-   "status": "ok",
-   "note": "8 open pick(s)"
+   "status": "skipped",
+   "note": "unchanged"
   },
   {
    "step": "record",
-   "status": "ok",
-   "note": "record.json"
+   "status": "skipped",
+   "note": "unchanged"
   }
  ],
  "sources": {
@@ -157,15 +157,13 @@
  "lineups_note": "Lineups posted for 8 of 18 teams checked so far.",
  "games_today": 11,
  "record_events": 288,
- "odds_notes": [
-  "key 1 refused (401)"
- ],
+ "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "44190800003",
-  "iteration": 6,
-  "chain_link": 9,
+  "run_id": "44198620086",
+  "iteration": 1,
+  "chain_link": 10,
   "chain_started_at": "2026-11-17T10:00:17-05:00",
-  "run_started_at": "2026-11-17T17:31:08-05:00"
+  "run_started_at": "2026-11-17T18:21:23-05:00"
  }
 }
