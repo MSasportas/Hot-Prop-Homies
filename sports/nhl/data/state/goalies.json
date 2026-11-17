@@ -31,7 +31,7 @@
   },
   "EDM": {
    "name": "Devon Levi",
-   "status": "expected"
+   "status": "confirmed"
   },
   "WPG": {
    "name": "Stuart Skinner",
@@ -67,7 +67,7 @@
   },
   "STL": {
    "name": "Jordan Binnington",
-   "status": "expected"
+   "status": "confirmed"
   },
   "ANA": {
    "name": "Ville Husso",
@@ -90,5 +90,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-17T11:20:01-05:00"
+ "checked_at": "2026-11-17T11:40:00-05:00"
 }
