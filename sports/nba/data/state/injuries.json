@@ -1,19 +1,19 @@
 {
- "at": "2026-11-17T13:32:11-05:00",
+ "at": "2026-11-17T13:50:01-05:00",
  "list": {
+  "5149077": {
+   "status": "day-to-day",
+   "name": "Kingston Flemings",
+   "team": "ATL",
+   "date": "2026-11-17T18:28Z",
+   "note": "Flemings (back) practiced Tuesday, per Lauren L. Williams of The Atlanta Journal-Constitution."
+  },
   "3146557": {
    "status": "day-to-day",
    "name": "Jock Landale",
    "team": "ATL",
    "date": "2026-11-16T14:47Z",
    "note": "Landale (hip) is out for Sunday's game against Bucks, Brad Rowland of the Locked On Podcast Network reports."
-  },
-  "5149077": {
-   "status": "day-to-day",
-   "name": "Kingston Flemings",
-   "team": "ATL",
-   "date": "2026-11-16T14:47Z",
-   "note": "Flemings (back) has been ruled out for Sunday's game against the Bucks."
   },
   "4712863": {
    "status": "out",
@@ -169,6 +169,13 @@
    "date": "2026-10-17T00:52Z",
    "note": "Strawther (knee) was diagnosed with a left knee sprain Friday and will be re-evaluated in six weeks, Vinny Benedetto of The Denver Gazette reports."
   },
+  "4395702": {
+   "status": "out",
+   "name": "Isaiah Joe",
+   "team": "DET",
+   "date": "2026-11-17T18:33Z",
+   "note": "Joe (hip) is out for Tuesday's game against the Spurs."
+  },
   "3157465": {
    "status": "out",
    "name": "Duncan Robinson",
@@ -189,13 +196,6 @@
    "team": "DET",
    "date": "2026-11-16T22:53Z",
    "note": "Holland is out for Tuesday's game against San Antonio due to a left knee contusion."
-  },
-  "4395702": {
-   "status": "out",
-   "name": "Isaiah Joe",
-   "team": "DET",
-   "date": "2026-11-16T22:40Z",
-   "note": "Joe (hip) is doubtful to play in Tuesday's game against the Spurs."
   },
   "4433621": {
    "status": "out",
