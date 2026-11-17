@@ -466,9 +466,9 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:27 - 3rd",
+    "detail": "2:09 - 3rd",
     "score": {
-     "PHX": "83",
+     "PHX": "85",
      "DEN": "77"
     }
    }
