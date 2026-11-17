@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-16",
- "started_at": "2026-11-16T19:40:01-05:00",
- "status_at": "2026-11-16T19:40:01-05:00",
- "finished_at": "2026-11-16T19:40:02-05:00",
- "last_ok_at": "2026-11-16T19:40:01-05:00",
+ "started_at": "2026-11-16T20:00:01-05:00",
+ "status_at": "2026-11-16T20:00:01-05:00",
+ "finished_at": "2026-11-16T20:00:15-05:00",
+ "last_ok_at": "2026-11-16T20:00:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -35,7 +35,7 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "no pull due"
+   "note": "1 game(s) priced"
   },
   {
    "step": "market_menu",
@@ -44,8 +44,8 @@
   },
   {
    "step": "featured",
-   "status": "skipped",
-   "note": "no new shots read to match"
+   "status": "ok",
+   "note": "sides/totals for 1 game(s), 10 book(s) max, 3 credit(s)"
   },
   {
    "step": "book_probe",
@@ -74,8 +74,8 @@
   },
   {
    "step": "shadow",
-   "status": "skipped",
-   "note": "nothing new"
+   "status": "ok",
+   "note": "31 line read(s) logged"
   },
   {
    "step": "gg_grade",
@@ -111,7 +111,7 @@
   },
   {
    "n": 3,
-   "left": 286
+   "left": 281
   },
   {
    "n": 4,
@@ -138,14 +138,14 @@
    "left": 500
   }
  ],
- "pool_total": 2892,
+ "pool_total": 2887,
  "allowance": 27.6952,
  "tier": 4,
  "budget_today": 55,
- "budget_used_today": 16,
+ "budget_used_today": 21,
  "prices_state": "ok",
- "prices_at": "2026-11-16T18:50:00-05:00",
- "next_price_read_at": "2026-11-16T20:00:00-05:00",
+ "prices_at": "2026-11-16T20:00:01-05:00",
+ "next_price_read_at": "2026-11-16T20:45:00-05:00",
  "unmatched_names": [
   "Elias Pettersson"
  ],
@@ -156,17 +156,17 @@
  ],
  "excluded_teams": [],
  "stats_through": "2026-11-15",
- "lineups_at": "2026-11-16T19:40:01-05:00",
+ "lineups_at": "2026-11-16T20:00:01-05:00",
  "lineups_note": "Lineups posted for 4 of 4 teams checked so far.",
  "games_today": 2,
  "record_events": 278,
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "43984150931",
-  "iteration": 5,
-  "chain_link": 31,
+  "run_id": "43990816797",
+  "iteration": 2,
+  "chain_link": 32,
   "chain_started_at": "2026-11-15T18:21:00-05:00",
-  "run_started_at": "2026-11-16T19:01:19-05:00"
+  "run_started_at": "2026-11-16T19:50:15-05:00"
  }
 }
