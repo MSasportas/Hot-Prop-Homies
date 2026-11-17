@@ -51,7 +51,7 @@
   },
   "CHI": {
    "name": "Spencer Knight",
-   "status": "expected"
+   "status": "confirmed"
   },
   "TOR": {
    "name": "Sergei Bobrovsky",
@@ -90,5 +90,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-17T12:20:00-05:00"
+ "checked_at": "2026-11-17T12:40:01-05:00"
 }
