@@ -150,13 +150,13 @@
    "status": {}
   },
   "GS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Brandin Podziemski",
-    "De'Anthony Melton",
-    "Will Richard",
+    "LJ Cryer",
     "Yaxel Lendeborg",
-    "Draymond Green"
+    "Draymond Green",
+    "Al Horford"
    ],
    "status": {
     "Jimmy Butler": "out",
@@ -200,7 +200,7 @@
    }
   },
   "MIN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "LaMelo Ball",
     "Ayo Dosunmu",
@@ -242,5 +242,5 @@
    }
   }
  },
- "at": "2026-11-16T19:30:00-05:00"
+ "at": "2026-11-16T19:37:05-05:00"
 }
