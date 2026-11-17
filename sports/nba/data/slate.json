@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 3268,
+   "pool_left": 3264,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-16T20:40:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-16T20:40:00-05:00"
+   "at": "2026-11-16T20:50:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-16T20:40:00-05:00",
+    "at": "2026-11-16T20:50:01-05:00",
     "confirmed": [
      "BKN",
      "BOS",
@@ -60,7 +60,7 @@
    "away": "ORL",
    "home": "BOS",
    "state": "in",
-   "detail": "5:51 - 3rd",
+   "detail": "2:52 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -125,7 +125,7 @@
    "away": "CHI",
    "home": "CLE",
    "state": "in",
-   "detail": "3:58 - 3rd",
+   "detail": "14.6 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -190,7 +190,7 @@
    "away": "MEM",
    "home": "WAS",
    "state": "in",
-   "detail": "4:49 - 3rd",
+   "detail": "47.4 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -255,7 +255,7 @@
    "away": "PHI",
    "home": "BKN",
    "state": "in",
-   "detail": "3:56 - 2nd",
+   "detail": "Halftime",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -320,7 +320,7 @@
    "away": "HOU",
    "home": "MIA",
    "state": "in",
-   "detail": "32.8 - 2nd",
+   "detail": "Halftime",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -385,7 +385,7 @@
    "away": "POR",
    "home": "MIN",
    "state": "in",
-   "detail": "50.8 - 1st",
+   "detail": "8:38 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -450,7 +450,7 @@
    "away": "GSW",
    "home": "NOP",
    "state": "in",
-   "detail": "End of 1st",
+   "detail": "6:28 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -939,6 +939,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-16T20:40:00-05:00",
- "status_at": "2026-11-16T20:40:00-05:00"
+ "generated_at": "2026-11-16T20:50:01-05:00",
+ "status_at": "2026-11-16T20:50:01-05:00"
 }
