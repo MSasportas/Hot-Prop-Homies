@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-17",
- "generated_at": "2026-11-17T05:00:00-05:00",
- "status_at": "2026-11-17T05:00:00-05:00",
+ "generated_at": "2026-11-17T05:01:45-05:00",
+ "status_at": "2026-11-17T05:01:45-05:00",
  "valid_until": "2026-11-18T05:00:00-05:00",
  "status": {
   "prices_state": "not_yet",
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-17T05:00:00-05:00",
+   "at": "2026-11-17T05:01:45-05:00",
    "failed_step": null
   },
   "pool": {
@@ -48,8 +48,14 @@
     "home": "not_checked"
    },
    "goalies": {
-    "away": null,
-    "home": null
+    "away": {
+     "name": "Anton Forsberg",
+     "status": "expected"
+    },
+    "home": {
+     "name": "Jeremy Swayman",
+     "status": "expected"
+    }
    },
    "checks": {
     "reads": [],
@@ -78,8 +84,14 @@
     "home": "not_checked"
    },
    "goalies": {
-    "away": null,
-    "home": null
+    "away": {
+     "name": "Devon Levi",
+     "status": "expected"
+    },
+    "home": {
+     "name": "Jacob Markstrom",
+     "status": "expected"
+    }
    },
    "checks": {
     "reads": [],
@@ -108,8 +120,14 @@
     "home": "not_checked"
    },
    "goalies": {
-    "away": null,
-    "home": null
+    "away": {
+     "name": "Cam Talbot",
+     "status": "expected"
+    },
+    "home": {
+     "name": "Ilya Sorokin",
+     "status": "expected"
+    }
    },
    "checks": {
     "reads": [],
@@ -138,8 +156,14 @@
     "home": "not_checked"
    },
    "goalies": {
-    "away": null,
-    "home": null
+    "away": {
+     "name": "Alex Lyon",
+     "status": "expected"
+    },
+    "home": {
+     "name": "Joseph Woll",
+     "status": "expected"
+    }
    },
    "checks": {
     "reads": [],
@@ -168,8 +192,14 @@
     "home": "not_checked"
    },
    "goalies": {
-    "away": null,
-    "home": null
+    "away": {
+     "name": "Linus Ullmark",
+     "status": "expected"
+    },
+    "home": {
+     "name": "Nico Daws",
+     "status": "expected"
+    }
    },
    "checks": {
     "reads": [],
@@ -198,8 +228,14 @@
     "home": "not_checked"
    },
    "goalies": {
-    "away": null,
-    "home": null
+    "away": {
+     "name": "Logan Thompson",
+     "status": "expected"
+    },
+    "home": {
+     "name": "Andrei Vasilevskiy",
+     "status": "expected"
+    }
    },
    "checks": {
     "reads": [],
@@ -228,8 +264,14 @@
     "home": "not_checked"
    },
    "goalies": {
-    "away": null,
-    "home": null
+    "away": {
+     "name": "Sergei Bobrovsky",
+     "status": "expected"
+    },
+    "home": {
+     "name": "Spencer Knight",
+     "status": "expected"
+    }
    },
    "checks": {
     "reads": [],
@@ -258,8 +300,14 @@
     "home": "not_checked"
    },
    "goalies": {
-    "away": null,
-    "home": null
+    "away": {
+     "name": "Ville Husso",
+     "status": "expected"
+    },
+    "home": {
+     "name": "Jordan Binnington",
+     "status": "expected"
+    }
    },
    "checks": {
     "reads": [],
@@ -288,8 +336,14 @@
     "home": "not_checked"
    },
    "goalies": {
-    "away": null,
-    "home": null
+    "away": {
+     "name": "Juuse Saros",
+     "status": "expected"
+    },
+    "home": {
+     "name": "Jesper Wallstedt",
+     "status": "expected"
+    }
    },
    "checks": {
     "reads": [],
@@ -318,8 +372,14 @@
     "home": "not_checked"
    },
    "goalies": {
-    "away": null,
-    "home": null
+    "away": {
+     "name": "Jake Oettinger",
+     "status": "expected"
+    },
+    "home": {
+     "name": "Adin Hill",
+     "status": "expected"
+    }
    },
    "checks": {
     "reads": [],
@@ -348,8 +408,14 @@
     "home": "not_checked"
    },
    "goalies": {
-    "away": null,
-    "home": null
+    "away": {
+     "name": "Dustin Wolf",
+     "status": "expected"
+    },
+    "home": {
+     "name": "Yaroslav Askarov",
+     "status": "expected"
+    }
    },
    "checks": {
     "reads": [],
