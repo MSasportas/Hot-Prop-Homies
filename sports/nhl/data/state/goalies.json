@@ -55,7 +55,7 @@
   },
   "TOR": {
    "name": "Sergei Bobrovsky",
-   "status": "expected"
+   "status": "confirmed"
   },
   "MIN": {
    "name": "Jesper Wallstedt",
@@ -90,5 +90,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-17T11:41:47-05:00"
+ "checked_at": "2026-11-17T12:20:00-05:00"
 }
