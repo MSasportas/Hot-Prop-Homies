@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-17",
- "generated_at": "2026-11-17T18:30:00-05:00",
- "status_at": "2026-11-17T18:30:00-05:00",
+ "generated_at": "2026-11-17T18:40:00-05:00",
+ "status_at": "2026-11-17T18:40:00-05:00",
  "valid_until": "2026-11-18T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -9,18 +9,18 @@
   "next_price_read_at": "2026-11-17T18:45:00-05:00",
   "stats_built_at": "2026-11-17T01:10:01-05:00",
   "stats_through": "2026-11-16",
-  "lineups_at": "2026-11-17T18:10:01-05:00",
+  "lineups_at": "2026-11-17T18:40:00-05:00",
   "goalies_at": null,
   "lineups_note": "Lineups posted for 8 of 18 teams checked so far.",
   "lineups_state": "ok",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-17T18:30:00-05:00",
+   "at": "2026-11-17T18:40:00-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 2831,
+   "pulls_left": 2828,
    "keys": 9,
    "game_days_left": 12,
    "days_left": 14,
@@ -46,7 +46,7 @@
    "goalies": {
     "away": {
      "name": "Darcy Kuemper",
-     "status": "expected"
+     "status": "confirmed"
     },
     "home": {
      "name": "Michael DiPietro",
@@ -184,7 +184,7 @@
    "goalies": {
     "away": {
      "name": "Alex Lyon",
-     "status": "expected"
+     "status": "confirmed"
     },
     "home": {
      "name": "Joseph Woll",
@@ -576,8 +576,8 @@
     "ours_pct": 33.8,
     "model_pct": 33.7
    },
-   "settled": "lineup",
-   "settled_label": "Lineup confirmed",
+   "settled": "goalie",
+   "settled_label": "Goalie confirmed",
    "reason": "7 other books say 33.8%; Hard Rock's +225 only needs 30.8%. Our model agrees (our blend: 33.8%).",
    "link": "https://app.hardrock.bet/?deep_link_value=betslip/4475587111732511127",
    "links": {
@@ -639,8 +639,8 @@
     "ours_pct": 50.8,
     "model_pct": 58.2
    },
-   "settled": "lineup",
-   "settled_label": "Lineup confirmed",
+   "settled": "goalie",
+   "settled_label": "Goalie confirmed",
    "reason": "7 other books say 49.0%; Hard Rock's +115 only needs 46.5%. Our model agrees (our blend: 50.8%).",
    "link": "https://app.hardrock.bet/?deep_link_value=betslip/7668731785829810594",
    "links": {
@@ -765,8 +765,8 @@
     "ours_pct": 50.8,
     "model_pct": 56.1
    },
-   "settled": "lineup",
-   "settled_label": "Lineup confirmed",
+   "settled": "goalie",
+   "settled_label": "Goalie confirmed",
    "reason": "7 other books say 49.5%; Hard Rock's +110 only needs 47.6%. Our model agrees (our blend: 50.8%).",
    "link": "https://app.hardrock.bet/?deep_link_value=betslip/3473628732934193570",
    "links": {
@@ -1017,8 +1017,8 @@
     "ours_pct": 49.0,
     "model_pct": 53.1
    },
-   "settled": "lineup",
-   "settled_label": "Lineup confirmed",
+   "settled": "goalie",
+   "settled_label": "Goalie confirmed",
    "reason": "7 other books say 48.0%; Hard Rock's +115 only needs 46.5%. Our model agrees (our blend: 49.0%).",
    "link": "https://app.hardrock.bet/?deep_link_value=betslip/6797285257933619629",
    "links": {
@@ -1206,8 +1206,8 @@
     "ours_pct": 58.5,
     "model_pct": 60.8
    },
-   "settled": "lineup",
-   "settled_label": "Lineup confirmed",
+   "settled": "goalie",
+   "settled_label": "Goalie confirmed",
    "reason": "7 other books say 58.4%; Hard Rock's -130 only needs 56.5%. Our model agrees (our blend: 58.5%).",
    "link": "https://app.hardrock.bet/?deep_link_value=betslip/528686687335874965",
    "links": {
