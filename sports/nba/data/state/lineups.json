@@ -22,6 +22,7 @@
     "Collin Murray-Boyles"
    ],
    "status": {
+    "Scottie Barnes": "questionable",
     "Nate Bittle": "out",
     "Kawhi Leonard": "out"
    }
@@ -36,10 +37,11 @@
     "Donovan Clingan"
    ],
    "status": {
-    "Chris Youngblood": "questionable",
+    "Deni Avdija": "questionable",
     "Vit Krejci": "out",
     "Ja Morant": "out",
-    "Shaedon Sharpe": "out"
+    "Shaedon Sharpe": "out",
+    "Chris Youngblood": "out"
    }
   },
   "MIN": {
@@ -47,15 +49,16 @@
    "starters": [
     "LaMelo Ball",
     "Ayo Dosunmu",
-    "Jonathan Kuminga",
+    "Terrence Shannon",
     "Jaden McDaniels",
     "Rudy Gobert"
    ],
    "status": {
-    "Jonathan Kuminga": "questionable",
     "Jaylen Clark": "out",
     "Donte DiVincenzo": "out",
-    "Anthony Edwards": "out"
+    "Anthony Edwards": "out",
+    "Jonathan Kuminga": "out",
+    "Zyon Pullin": "out"
    }
   },
   "DET": {
@@ -68,9 +71,9 @@
     "John Collins"
    ],
    "status": {
-    "Isaiah Joe": "doubtful",
     "Jalen Duren": "out",
     "Ronald Holland": "out",
+    "Isaiah Joe": "out",
     "Taurean Prince": "out",
     "Duncan Robinson": "out"
    }
@@ -125,7 +128,7 @@
    "state": "expected",
    "starters": [
     "Coby White",
-    "Grayson Allen",
+    "Sion James",
     "Brandon Miller",
     "Naz Reid",
     "Moussa Diabate"
@@ -150,5 +153,5 @@
    }
   }
  },
- "at": "2026-11-17T05:00:00-05:00"
+ "at": "2026-11-17T16:30:00-05:00"
 }
