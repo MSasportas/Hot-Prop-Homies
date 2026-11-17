@@ -93,12 +93,12 @@
    }
   },
   "HOU": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Fred VanVleet",
+    "Tari Eason",
     "Kevin Durant",
     "Jabari Smith",
-    "Tari Eason",
     "Alperen Sengun"
    ],
    "status": {
@@ -109,7 +109,7 @@
    }
   },
   "MIA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Davion Mitchell",
     "Klay Thompson",
@@ -123,7 +123,7 @@
    }
   },
   "PHI": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Tyrese Maxey",
     "VJ Edgecombe",
@@ -132,7 +132,6 @@
     "Joel Embiid"
    ],
    "status": {
-    "Joel Embiid": "questionable",
     "Ariel Hukporti": "out",
     "Dominick Barlow": "out",
     "Adem Bona": "out",
@@ -140,11 +139,11 @@
    }
   },
   "BKN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
+    "Nolan Traore",
     "Egor Demin",
     "Michael Porter",
-    "Danny Wolf",
     "Julius Randle",
     "Day'Ron Sharpe"
    ],
@@ -244,5 +243,5 @@
    }
   }
  },
- "at": "2026-11-16T19:00:01-05:00"
+ "at": "2026-11-16T19:10:00-05:00"
 }
