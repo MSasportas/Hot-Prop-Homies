@@ -1,5 +1,5 @@
 {
- "at": "2026-11-17T16:00:01-05:00",
+ "at": "2026-11-17T16:02:03-05:00",
  "list": {
   "5149077": {
    "status": "day-to-day",
@@ -57,12 +57,12 @@
    "date": "2026-11-08T22:26Z",
    "note": "Schroder has been diagnosed with a left hamstring strain and will be reevaluated in two weeks, Michael Scotto of HoopsHype.com reports."
   },
-  "4397189": {
-   "status": "day-to-day",
-   "name": "Jalen Smith",
+  "5105555": {
+   "status": "out",
+   "name": "Tobe Awaka",
    "team": "CHI",
-   "date": "2026-11-17T02:58Z",
-   "note": "Smith (undisclosed) exited in the fourth quarter of Monday's 126-115 loss to the Cavaliers and did not return."
+   "date": "2026-11-17T20:53Z",
+   "note": "Awaka (back) has been ruled out for Wednesday's game against the Nets."
   },
   "4431687": {
    "status": "day-to-day",
@@ -70,13 +70,6 @@
    "team": "CHI",
    "date": "2026-11-17T02:12Z",
    "note": "Williams (finger) has been ruled out for the remainder of Monday's game against Cleveland."
-  },
-  "5105555": {
-   "status": "out",
-   "name": "Tobe Awaka",
-   "team": "CHI",
-   "date": "2026-11-15T21:30Z",
-   "note": "Awaka (back) has been ruled out for Monday's game against the Cavaliers."
   },
   "5095151": {
    "status": "out",
