@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T18:20:00-05:00",
+ "at": "2026-11-18T18:30:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -292,8 +292,8 @@
    "status": "out",
    "name": "Brandon Ingram",
    "team": "LAC",
-   "date": "2026-11-12T21:05Z",
-   "note": "Ingram (Achilles) won't play in Friday's game against the Thunder, per Law Murray of The Athletic."
+   "date": "2026-11-18T23:11Z",
+   "note": "Ingram (heel/Achilles) will remain on the inactive list for Thursday's game in San Antonio."
   },
   "6580": {
    "status": "out",
@@ -505,6 +505,13 @@
    "date": "2026-10-24T16:47Z",
    "note": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports."
   },
+  "3912848": {
+   "status": "out",
+   "name": "Dean Wade",
+   "team": "PHI",
+   "date": "2026-11-18T23:19Z",
+   "note": "Wade (hamstring) is out for Wednesday's game in Orlando."
+  },
   "4431678": {
    "status": "day-to-day",
    "name": "Tyrese Maxey",
@@ -518,13 +525,6 @@
    "team": "PHI",
    "date": "2026-11-18T22:21Z",
    "note": "Brown (hamstring) will be re-evaluated at some point this weekend, per Kris Rihm of ESPN.com."
-  },
-  "3912848": {
-   "status": "day-to-day",
-   "name": "Dean Wade",
-   "team": "PHI",
-   "date": "2026-11-18T18:06Z",
-   "note": "Wade (hamstring) has been downgraded to questionable for Wednesday's game against the Magic."
   },
   "4870562": {
    "status": "out",

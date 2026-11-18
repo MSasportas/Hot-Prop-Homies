@@ -18,7 +18,7 @@
    }
   },
   "CLE": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "James Harden",
     "Donovan Mitchell",
@@ -101,10 +101,10 @@
    "status": {
     "Tyrese Maxey": "questionable",
     "Ariel Hukporti": "out",
-    "Dean Wade": "questionable",
     "Dominick Barlow": "out",
     "Adem Bona": "out",
-    "Jaylen Brown": "out"
+    "Jaylen Brown": "out",
+    "Dean Wade": "out"
    }
   },
   "ORL": {
@@ -369,5 +369,5 @@
    }
   }
  },
- "at": "2026-11-18T18:20:00-05:00"
+ "at": "2026-11-18T18:30:00-05:00"
 }
