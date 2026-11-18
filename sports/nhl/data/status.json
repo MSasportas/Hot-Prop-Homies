@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-17",
- "started_at": "2026-11-17T21:40:01-05:00",
- "status_at": "2026-11-17T21:40:01-05:00",
- "finished_at": "2026-11-17T21:40:53-05:00",
- "last_ok_at": "2026-11-17T21:40:01-05:00",
+ "started_at": "2026-11-17T22:00:01-05:00",
+ "status_at": "2026-11-17T22:00:01-05:00",
+ "finished_at": "2026-11-17T22:01:21-05:00",
+ "last_ok_at": "2026-11-17T22:00:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -20,17 +20,17 @@
   {
    "step": "stats",
    "status": "ok",
-   "note": "1 window(s) read, 8 team-games still missing"
+   "note": "1 window(s) read, 10 team-games still missing"
   },
   {
    "step": "lineups",
-   "status": "ok",
-   "note": "4 of 4 team pages read"
+   "status": "skipped",
+   "note": "no game close enough"
   },
   {
    "step": "lineup_history",
-   "status": "ok",
-   "note": "1 team(s) changed"
+   "status": "skipped",
+   "note": "no change"
   },
   {
    "step": "odds",
@@ -60,7 +60,7 @@
   {
    "step": "engine",
    "status": "ok",
-   "note": "no change"
+   "note": "2 new event(s), 0 newly shown"
   },
   {
    "step": "grade",
@@ -70,7 +70,7 @@
   {
    "step": "live",
    "status": "ok",
-   "note": "6 game(s), 6 read this run"
+   "note": "7 game(s), 7 read this run"
   },
   {
    "step": "shadow",
@@ -85,12 +85,12 @@
   {
    "step": "slate",
    "status": "ok",
-   "note": "2 open pick(s)"
+   "note": "0 open pick(s)"
   },
   {
    "step": "record",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "record.json"
   }
  ],
  "sources": {
@@ -157,14 +157,14 @@
  "lineups_at": "2026-11-17T21:40:01-05:00",
  "lineups_note": "Lineups posted for 13 of 22 teams checked so far.",
  "games_today": 11,
- "record_events": 308,
+ "record_events": 310,
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "44218928106",
-  "iteration": 6,
-  "chain_link": 13,
+  "run_id": "44225126038",
+  "iteration": 3,
+  "chain_link": 14,
   "chain_started_at": "2026-11-17T10:00:17-05:00",
-  "run_started_at": "2026-11-17T20:51:18-05:00"
+  "run_started_at": "2026-11-17T21:41:51-05:00"
  }
 }
