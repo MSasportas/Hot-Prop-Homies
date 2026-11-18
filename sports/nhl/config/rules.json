@@ -77,7 +77,8 @@
     "max_per_player": 1,
     "max_per_game": null,
     "max_per_night": null,
-    "min_history": 10
+    "min_history": 10,
+    "require_lineup_confirmed": true
    },
    "watch": [
     {

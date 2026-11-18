@@ -334,6 +334,8 @@ class Paper:
         status = lineups.player_status(self.ls, team, pid)
         if status == "out":
             return False
+        if self.T.get("require_lineup_confirmed") and status != "in":
+            return False
         if pv["missed_last"] and status != "in":
             return False
         return True
