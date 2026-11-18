@@ -360,11 +360,11 @@
     "home": "MIN",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:04 - 2nd",
     "score": {
-     "POR": "17",
-     "MIN": "29"
+     "POR": "34",
+     "MIN": "36"
     }
    },
    {
@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9.2 - 1st",
+    "detail": "10:09 - 2nd",
     "score": {
-     "DET": "24",
-     "SA": "31"
+     "DET": "26",
+     "SA": "40"
     }
    },
    {
