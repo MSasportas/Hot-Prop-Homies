@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 3068,
+   "pool_left": 3060,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-17T21:45:00-05:00",
-  "last_read_at": "2026-11-17T21:30:02-05:00",
+  "next_read_at": "2026-11-17T22:00:00-05:00",
+  "last_read_at": "2026-11-17T21:50:02-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-17T21:40:00-05:00"
+   "at": "2026-11-17T21:50:02-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-17T21:40:00-05:00",
+    "at": "2026-11-17T21:50:02-05:00",
     "confirmed": [
      "DET",
      "MIN",
@@ -50,7 +50,7 @@
    "away": "NYK",
    "home": "TOR",
    "state": "in",
-   "detail": "5:19 - 4th",
+   "detail": "1:25 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -115,7 +115,7 @@
    "away": "POR",
    "home": "MIN",
    "state": "in",
-   "detail": "8:30 - 3rd",
+   "detail": "4:50 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -180,7 +180,7 @@
    "away": "DET",
    "home": "SAS",
    "state": "in",
-   "detail": "7:12 - 3rd",
+   "detail": "2:11 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -250,7 +250,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-17T21:30:02-05:00",
+   "read_at": "2026-11-17T21:50:02-05:00",
    "picks": 0,
    "checks": [
     {
@@ -280,12 +280,16 @@
     {
      "read": "X60",
      "at": "2026-11-17T21:30:02-05:00"
+    },
+    {
+     "read": "C",
+     "at": "2026-11-17T21:50:02-05:00"
     }
    ],
-   "last_check_at": "2026-11-17T21:30:02-05:00",
+   "last_check_at": "2026-11-17T21:50:02-05:00",
    "final": false,
-   "next_check_at": "2026-11-17T21:45:00-05:00",
-   "next_check_read": "C",
+   "next_check_at": "2026-11-17T22:00:00-05:00",
+   "next_check_read": "X30",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -303,7 +307,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-17T21:30:02-05:00",
+   "read_at": "2026-11-17T21:50:02-05:00",
    "picks": 0,
    "checks": [
     {
@@ -325,12 +329,16 @@
     {
      "read": "B",
      "at": "2026-11-17T21:30:02-05:00"
+    },
+    {
+     "read": "X75",
+     "at": "2026-11-17T21:50:02-05:00"
     }
    ],
-   "last_check_at": "2026-11-17T21:30:02-05:00",
+   "last_check_at": "2026-11-17T21:50:02-05:00",
    "final": false,
-   "next_check_at": "2026-11-17T21:45:00-05:00",
-   "next_check_read": "X75",
+   "next_check_at": "2026-11-17T22:00:00-05:00",
+   "next_check_read": "X60",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -559,7 +567,7 @@
  "empty": {
   "text": "No picks yet today",
   "why": "472 lines read. Pinnacle moved alone on 118, none of them bettable yet.",
-  "next": "2026-11-17T21:45:00-05:00"
+  "next": "2026-11-17T22:00:00-05:00"
  },
  "counts": {
   "lines_read": 472,
@@ -572,6 +580,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-17T21:40:00-05:00",
- "status_at": "2026-11-17T21:40:00-05:00"
+ "generated_at": "2026-11-17T21:50:02-05:00",
+ "status_at": "2026-11-17T21:50:02-05:00"
 }
