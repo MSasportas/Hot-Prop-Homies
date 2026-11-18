@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-18",
- "started_at": "2026-11-18T16:10:00-05:00",
- "status_at": "2026-11-18T16:10:00-05:00",
- "finished_at": "2026-11-18T16:10:02-05:00",
- "last_ok_at": "2026-11-18T16:10:00-05:00",
+ "started_at": "2026-11-18T16:30:01-05:00",
+ "status_at": "2026-11-18T16:30:01-05:00",
+ "finished_at": "2026-11-18T16:30:04-05:00",
+ "last_ok_at": "2026-11-18T16:30:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -24,13 +24,13 @@
   },
   {
    "step": "lineups",
-   "status": "skipped",
-   "note": "no game close enough"
+   "status": "ok",
+   "note": "4 of 4 team pages read"
   },
   {
    "step": "lineup_history",
-   "status": "skipped",
-   "note": "no change"
+   "status": "ok",
+   "note": "4 team(s) changed"
   },
   {
    "step": "odds",
@@ -84,8 +84,8 @@
   },
   {
    "step": "slate",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "0 open pick(s)"
   },
   {
    "step": "record",
@@ -151,15 +151,17 @@
  "lineup_unmatched_names": [],
  "excluded_teams": [],
  "stats_through": "2026-11-17",
- "lineups_at": null,
- "lineups_note": null,
+ "lineups_at": "2026-11-18T16:30:01-05:00",
+ "lineups_note": "Lineups posted for 3 of 4 teams checked so far.",
  "games_today": 3,
  "record_events": 326,
- "odds_notes": [],
+ "odds_notes": [
+  "key 1 refused (401)"
+ ],
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "44395329016",
-  "iteration": 3,
+  "iteration": 5,
   "chain_link": 7,
   "chain_started_at": "2026-11-18T10:00:22-05:00",
   "run_started_at": "2026-11-18T15:51:17-05:00"
