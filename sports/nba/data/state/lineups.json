@@ -27,10 +27,10 @@
    }
   },
   "POR": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Damian Lillard",
-    "Jrue Holiday",
+    "Jayson Kent",
     "Toumani Camara",
     "Sidy Cissoko",
     "Donovan Clingan"
@@ -44,11 +44,11 @@
    }
   },
   "MIN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "LaMelo Ball",
     "Ayo Dosunmu",
-    "Terrence Shannon",
+    "Cody Williams",
     "Jaden McDaniels",
     "Rudy Gobert"
    ],
@@ -61,7 +61,7 @@
    }
   },
   "DET": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Cade Cunningham",
     "Daniss Jenkins",
@@ -78,7 +78,7 @@
    }
   },
   "SA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "De'Aaron Fox",
     "Stephon Castle",
@@ -152,5 +152,5 @@
    }
   }
  },
- "at": "2026-11-17T19:30:01-05:00"
+ "at": "2026-11-17T19:40:00-05:00"
 }
