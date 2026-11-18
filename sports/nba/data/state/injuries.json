@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T10:11:39-05:00",
+ "at": "2026-11-18T10:20:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -44,10 +44,10 @@
    "note": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday."
   },
   "3135045": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Grayson Allen",
    "team": "CHA",
-   "date": "2026-11-18T02:19Z",
+   "date": "2026-11-18T15:07Z",
    "note": "Allen (concussion-like symptoms) has been ruled out for Tuesday's game against the Lakers."
   },
   "5061575": {
@@ -422,17 +422,17 @@
    "note": "Dieng will undergo a procedure to repair a fractured left finger Monday, Justin Garcia of the Milwaukee Bucks Radio Network reports."
   },
   "4592979": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Zyon Pullin",
    "team": "MIN",
-   "date": "2026-11-17T19:05Z",
+   "date": "2026-11-18T15:04Z",
    "note": "Pullin (quadriceps) has been ruled out for Tuesday's game against Portland."
   },
   "4433247": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Jonathan Kuminga",
    "team": "MIN",
-   "date": "2026-11-17T19:03Z",
+   "date": "2026-11-18T15:04Z",
    "note": "Kuminga (shoulder) is out for Tuesday's game against Portland."
   },
   "4432247": {
