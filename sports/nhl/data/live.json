@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-17",
- "generated_at": "2026-11-17T20:01:40-05:00",
+ "generated_at": "2026-11-17T20:10:00-05:00",
  "games": [
   {
    "game_id": 2026020333,
@@ -8,30 +8,30 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "19:44",
+   "clock": "14:28",
    "in_intermission": false,
    "running": true,
    "away": {
     "abbrev": "LAK",
     "score": 1,
-    "sog": 7
+    "sog": 12
    },
    "home": {
     "abbrev": "BOS",
     "score": 0,
-    "sog": 6
+    "sog": 7
    },
-   "updated_at": "2026-11-17T20:01:40-05:00"
+   "updated_at": "2026-11-17T20:10:00-05:00"
   },
   {
    "game_id": 2026020336,
    "state": "LIVE",
    "schedule_state": "OK",
-   "period": 1,
+   "period": 2,
    "period_type": "REG",
-   "clock": "00:00",
-   "in_intermission": true,
-   "running": false,
+   "clock": "15:27",
+   "in_intermission": false,
+   "running": true,
    "away": {
     "abbrev": "CBJ",
     "score": 0,
@@ -39,20 +39,20 @@
    },
    "home": {
     "abbrev": "NYI",
-    "score": 1,
-    "sog": 14
+    "score": 2,
+    "sog": 17
    },
-   "updated_at": "2026-11-17T20:01:40-05:00"
+   "updated_at": "2026-11-17T20:10:00-05:00"
   },
   {
    "game_id": 2026020337,
    "state": "LIVE",
    "schedule_state": "OK",
-   "period": 1,
+   "period": 2,
    "period_type": "REG",
-   "clock": "03:17",
-   "in_intermission": true,
-   "running": false,
+   "clock": "17:14",
+   "in_intermission": false,
+   "running": true,
    "away": {
     "abbrev": "BUF",
     "score": 1,
@@ -63,7 +63,7 @@
     "score": 0,
     "sog": 6
    },
-   "updated_at": "2026-11-17T20:01:40-05:00"
+   "updated_at": "2026-11-17T20:10:00-05:00"
   },
   {
    "game_id": 2026020334,
@@ -71,62 +71,62 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "07:21",
-   "in_intermission": false,
-   "running": true,
-   "away": {
-    "abbrev": "WSH",
-    "score": 0,
-    "sog": 6
-   },
-   "home": {
-    "abbrev": "TBL",
-    "score": 2,
-    "sog": 3
-   },
-   "updated_at": "2026-11-17T20:01:40-05:00"
-  },
-  {
-   "game_id": 2026020339,
-   "state": "PRE",
-   "schedule_state": "OK",
-   "period": null,
-   "period_type": null,
-   "clock": null,
+   "clock": "04:12",
    "in_intermission": false,
    "running": false,
    "away": {
+    "abbrev": "WSH",
+    "score": 0,
+    "sog": 7
+   },
+   "home": {
+    "abbrev": "TBL",
+    "score": 3,
+    "sog": 6
+   },
+   "updated_at": "2026-11-17T20:10:00-05:00"
+  },
+  {
+   "game_id": 2026020339,
+   "state": "LIVE",
+   "schedule_state": "OK",
+   "period": 1,
+   "period_type": "REG",
+   "clock": "18:40",
+   "in_intermission": false,
+   "running": true,
+   "away": {
     "abbrev": "ANA",
-    "score": null,
+    "score": 0,
     "sog": null
    },
    "home": {
     "abbrev": "STL",
-    "score": null,
+    "score": 0,
     "sog": null
    },
-   "updated_at": "2026-11-17T20:01:40-05:00"
+   "updated_at": "2026-11-17T20:10:00-05:00"
   },
   {
    "game_id": 2026020340,
-   "state": "PRE",
+   "state": "LIVE",
    "schedule_state": "OK",
-   "period": null,
-   "period_type": null,
-   "clock": null,
+   "period": 1,
+   "period_type": "REG",
+   "clock": "19:28",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "NSH",
-    "score": null,
+    "score": 0,
     "sog": null
    },
    "home": {
     "abbrev": "MIN",
-    "score": null,
-    "sog": null
+    "score": 0,
+    "sog": 1
    },
-   "updated_at": "2026-11-17T20:01:40-05:00"
+   "updated_at": "2026-11-17T20:10:00-05:00"
   }
  ],
  "picks": {
@@ -183,22 +183,22 @@
   "2026-11-17:2026020339:8481580:shots:1.5:under": {
    "game_id": 2026020339,
    "market": "shots",
-   "stat": null
+   "stat": 0
   },
   "2026-11-17:2026020339:8481598:shots:1.5:under": {
    "game_id": 2026020339,
    "market": "shots",
-   "stat": null
+   "stat": 0
   },
   "2026-11-17:2026020340:8474564:points:0.5:over": {
    "game_id": 2026020340,
    "market": "points",
-   "stat": null
+   "stat": 0
   },
   "2026-11-17:2026020340:8474600:shots:2.5:over": {
    "game_id": 2026020340,
    "market": "shots",
-   "stat": null
+   "stat": 0
   }
  }
 }
