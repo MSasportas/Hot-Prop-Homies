@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T01:10:00-05:00",
+ "at": "2026-11-18T10:10:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -344,19 +344,19 @@
    "date": "2026-08-26T20:04Z",
    "note": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic."
   },
-  "4433136": {
-   "status": "out",
-   "name": "Walker Kessler",
-   "team": "LAL",
-   "date": "2026-11-18T02:57Z",
-   "note": "Head coach JJ Redick said he expects Walker (leg) to be available for Wednesday's game against the Jazz, Thuc Nhi Nguyen of the Los Angeles Times reports."
-  },
   "4066457": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Austin Reaves",
    "team": "LAL",
-   "date": "2026-11-17T01:11Z",
+   "date": "2026-11-18T15:02Z",
    "note": "Reaves (heel) is out for Tuesday's game against the Hornets, Dave McMenamin of ESPN.com reports."
+  },
+  "4433136": {
+   "status": "day-to-day",
+   "name": "Walker Kessler",
+   "team": "LAL",
+   "date": "2026-11-18T15:02Z",
+   "note": "Head coach JJ Redick said he expects Walker (leg) to be available for Wednesday's game against the Jazz, Thuc Nhi Nguyen of the Los Angeles Times reports."
   },
   "5105550": {
    "status": "out",
@@ -590,10 +590,10 @@
    "note": "Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports."
   },
   "4683021": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Deni Avdija",
    "team": "POR",
-   "date": "2026-11-18T00:28Z",
+   "date": "2026-11-18T15:04Z",
    "note": "Avdija (foot) won't play Tuesday versus Minnesota."
   },
   "4706557": {
