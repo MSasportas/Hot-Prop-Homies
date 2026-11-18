@@ -30,13 +30,13 @@
    "state": "expected",
    "starters": [
     "Damian Lillard",
-    "Sidy Cissoko",
+    "Jrue Holiday",
     "Toumani Camara",
-    "Deni Avdija",
+    "Sidy Cissoko",
     "Donovan Clingan"
    ],
    "status": {
-    "Deni Avdija": "questionable",
+    "Deni Avdija": "out",
     "Vit Krejci": "out",
     "Ja Morant": "out",
     "Shaedon Sharpe": "out",
@@ -152,5 +152,5 @@
    }
   }
  },
- "at": "2026-11-17T19:21:50-05:00"
+ "at": "2026-11-17T19:30:01-05:00"
 }

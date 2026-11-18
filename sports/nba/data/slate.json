@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 3120,
+   "pool_left": 3108,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-17T19:30:00-05:00",
-  "last_read_at": "2026-11-17T19:20:01-05:00",
+  "next_read_at": "2026-11-17T19:40:00-05:00",
+  "last_read_at": "2026-11-17T19:30:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-17T19:20:01-05:00"
+   "at": "2026-11-17T19:30:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-17T19:20:01-05:00",
+    "at": "2026-11-17T19:30:01-05:00",
     "confirmed": [
      "NY",
      "TOR"
@@ -116,7 +116,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-17T19:20:01-05:00",
+   "read_at": "2026-11-17T19:30:01-05:00",
    "picks": 1,
    "checks": [
     {
@@ -150,15 +150,19 @@
     {
      "read": "C",
      "at": "2026-11-17T19:20:01-05:00"
+    },
+    {
+     "read": "X30",
+     "at": "2026-11-17T19:30:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-17T19:20:01-05:00",
+   "last_check_at": "2026-11-17T19:30:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-17T19:30:00-05:00",
-   "next_check_read": "X30",
+   "next_check_at": "2026-11-17T19:40:00-05:00",
+   "next_check_read": "D",
    "paused": false,
    "injury_clear": {
-    "away": false,
+    "away": true,
     "home": true
    }
   },
@@ -173,7 +177,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-17T19:20:01-05:00",
+   "read_at": "2026-11-17T19:30:01-05:00",
    "picks": 0,
    "checks": [
     {
@@ -207,12 +211,16 @@
     {
      "read": "C",
      "at": "2026-11-17T19:20:01-05:00"
+    },
+    {
+     "read": "X30",
+     "at": "2026-11-17T19:30:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-17T19:20:01-05:00",
+   "last_check_at": "2026-11-17T19:30:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-17T19:30:00-05:00",
-   "next_check_read": "X30",
+   "next_check_at": "2026-11-17T19:40:00-05:00",
+   "next_check_read": "D",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -230,7 +238,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-17T18:30:02-05:00",
+   "read_at": "2026-11-17T19:30:01-05:00",
    "picks": 0,
    "checks": [
     {
@@ -240,12 +248,16 @@
     {
      "read": "X240",
      "at": "2026-11-17T18:30:02-05:00"
+    },
+    {
+     "read": "X180",
+     "at": "2026-11-17T19:30:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-17T18:30:02-05:00",
+   "last_check_at": "2026-11-17T19:30:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-17T19:30:00-05:00",
-   "next_check_read": "X180",
+   "next_check_at": "2026-11-17T20:15:00-05:00",
+   "next_check_read": "X135",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -334,24 +346,14 @@
     }
    },
    "id": "2026-11-17:401910002:5093267:rebounds:6.5:under",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "added_at": "2026-11-17T18:30:02-05:00",
    "result": null,
-   "links": {
-    "hardrock": {
-     "id": "985884744814297488",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/985884744814297488",
-     "price": -145
-    },
-    "draftkings": {
-     "url": "https://sportsbook.draftkings.com/?outcomes=0QA389903213%232368960579_13L42648Q1-1595150841Q20",
-     "price": -139
-    }
-   },
-   "rank": 1
+   "links": null,
+   "rank": null
   },
   {
    "player": "Jrue Holiday",
@@ -400,8 +402,8 @@
     }
    },
    "id": "2026-11-17:401910003:3995:rebounds:3.5:under",
-   "state": "early",
-   "state_label": "Early",
+   "state": "clear",
+   "state_label": "Injury report clear",
    "price_final": false,
    "pulled": null,
    "added_at": "2026-11-17T14:00:00-05:00",
@@ -417,7 +419,7 @@
      "price": -111
     }
    },
-   "rank": 2
+   "rank": 1
   },
   {
    "player": "R.J. Barrett",
@@ -462,26 +464,19 @@
     }
    },
    "id": "2026-11-17:401910002:4395625:threes:1.5:under",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "added_at": "2026-11-17T18:00:01-05:00",
    "result": null,
-   "links": {
-    "hardrock": {
-     "id": "7085848219172864427",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/7085848219172864427",
-     "price": 100
-    },
-    "draftkings": null
-   },
-   "rank": 3
+   "links": null,
+   "rank": null
   }
  ],
  "empty": null,
  "counts": {
-  "lines_read": 496,
+  "lines_read": 476,
   "passing": 9,
   "games": 5
  },
@@ -491,6 +486,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-17T19:20:01-05:00",
- "status_at": "2026-11-17T19:20:01-05:00"
+ "generated_at": "2026-11-17T19:30:01-05:00",
+ "status_at": "2026-11-17T19:30:01-05:00"
 }
