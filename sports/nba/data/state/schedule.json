@@ -388,13 +388,13 @@
     "start": "2026-11-17T22:30:00-05:00",
     "away": "UTAH",
     "home": "LAC",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:22 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "UTAH": "118",
-     "LAC": "96"
+     "UTAH": "132",
+     "LAC": "107"
     }
    },
    {
@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:17 - 3rd",
+    "detail": "3:48 - 3rd",
     "score": {
-     "CHA": "76",
-     "LAL": "72"
+     "CHA": "84",
+     "LAL": "74"
     }
    }
   ]
