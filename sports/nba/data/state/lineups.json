@@ -34,7 +34,7 @@
    }
   },
   "HOU": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Fred VanVleet",
     "Amen Thompson",
@@ -47,7 +47,7 @@
    }
   },
   "IND": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Quenton Jackson",
     "Kelly Oubre",
@@ -99,7 +99,7 @@
     "Joel Embiid"
    ],
    "status": {
-    "Tyrese Maxey": "questionable",
+    "Tyrese Maxey": "out",
     "Ariel Hukporti": "out",
     "Dominick Barlow": "out",
     "Adem Bona": "out",
@@ -225,8 +225,7 @@
     "Al Horford"
    ],
    "status": {
-    "Draymond Green": "questionable",
-    "Al Horford": "questionable",
+    "Al Horford": "out",
     "Jimmy Butler": "out",
     "Stephen Curry": "out",
     "Moses Moody": "out",
@@ -369,5 +368,5 @@
    }
   }
  },
- "at": "2026-11-18T18:32:39-05:00"
+ "at": "2026-11-18T18:40:01-05:00"
 }
