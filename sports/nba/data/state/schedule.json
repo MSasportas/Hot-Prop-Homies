@@ -345,11 +345,11 @@
     "home": "TOR",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 3rd",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:34 - 4th",
     "score": {
-     "NY": "80",
-     "TOR": "83"
+     "NY": "90",
+     "TOR": "84"
     }
    },
    {
