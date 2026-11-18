@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T16:30:00-05:00",
+ "at": "2026-11-18T17:30:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -281,19 +281,19 @@
    "date": "2026-11-17T20:49Z",
    "note": "Thompson (knee) is questionable for Wednesday's game against the Pacers."
   },
+  "4395712": {
+   "status": "out",
+   "name": "Andrew Nembhard",
+   "team": "IND",
+   "date": "2026-11-18T22:24Z",
+   "note": "Nembhard (hip) is questionable for Wednesday's game against Houston."
+  },
   "2530530": {
    "status": "day-to-day",
    "name": "T.J. McConnell",
    "team": "IND",
    "date": "2026-11-17T22:24Z",
    "note": "McConnell (hamstring) is probable to play Wednesday against the Rockets."
-  },
-  "4395712": {
-   "status": "day-to-day",
-   "name": "Andrew Nembhard",
-   "team": "IND",
-   "date": "2026-11-17T22:19Z",
-   "note": "Nembhard (hip) is questionable for Wednesday's game against Houston."
   },
   "4396993": {
    "status": "out",
@@ -540,6 +540,13 @@
    "date": "2026-10-24T16:47Z",
    "note": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports."
   },
+  "3917376": {
+   "status": "out",
+   "name": "Jaylen Brown",
+   "team": "PHI",
+   "date": "2026-11-18T22:21Z",
+   "note": "Brown (hamstring) will be re-evaluated at some point this weekend, per Kris Rihm of ESPN.com."
+  },
   "3912848": {
    "status": "day-to-day",
    "name": "Dean Wade",
@@ -553,13 +560,6 @@
    "team": "PHI",
    "date": "2026-11-17T22:12Z",
    "note": "Barlow (back) is out for Wednesday's game against Orlando."
-  },
-  "3917376": {
-   "status": "out",
-   "name": "Jaylen Brown",
-   "team": "PHI",
-   "date": "2026-11-17T22:08Z",
-   "note": "Brown is out for Wednesday's game against the Magic with a left hamstring strain."
   },
   "5105637": {
    "status": "out",

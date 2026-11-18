@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-18T17:20:01-05:00",
+ "generated_at": "2026-11-18T17:30:01-05:00",
  "summary": {
   "headline": {
    "w": 52,
@@ -288,6 +288,8 @@
       "n": 30,
       "ids": [
        "2026-11-18:401910011:4432194:points:10.5:under",
+       "2026-11-18:401910010:4431678:points:25.5:under",
+       "2026-11-18:401910015:4065648:points:25.5:under",
        "2026-11-16:401910001:3136193:points:23.5:under",
        "2026-11-16:401909998:3032977:points:28.5:under",
        "2026-11-16:401909998:4066261:points:18.5:under",
@@ -441,6 +443,8 @@
       "n": 65,
       "ids": [
        "2026-11-18:401910011:4432194:points:10.5:under",
+       "2026-11-18:401910010:4431678:points:25.5:under",
+       "2026-11-18:401910015:4065648:points:25.5:under",
        "2026-11-17:401910003:3995:rebounds:3.5:under",
        "2026-11-17:401910002:4395625:threes:1.5:under",
        "2026-11-17:401910002:5093267:rebounds:6.5:under",
@@ -613,6 +617,8 @@
       "needed": 0.5169,
       "n": 14,
       "ids": [
+       "2026-11-18:401910010:4431678:points:25.5:under",
+       "2026-11-18:401910015:4065648:points:25.5:under",
        "2026-11-16:401909998:3032977:points:28.5:under",
        "2026-11-15:401909987:4396907:points:20.5:under",
        "2026-11-15:401909986:3136193:rebounds:2.5:under",
@@ -668,6 +674,7 @@
       "n": 7,
       "ids": [
        "2026-11-18:401910017:5041955:threes:2.5:over",
+       "2026-11-18:401910010:4431678:points:25.5:under",
        "2026-11-16:401909998:3202:threes:1.5:under",
        "2026-11-16:401909998:3032977:points:28.5:under",
        "2026-11-15:401909988:4592479:points:9.5:over",
@@ -692,6 +699,7 @@
       "ids": [
        "2026-11-18:401910010:3059318:assists:3.5:over",
        "2026-11-18:401910011:4432194:points:10.5:under",
+       "2026-11-18:401910015:4065648:points:25.5:under",
        "2026-11-17:401910003:3995:rebounds:3.5:under",
        "2026-11-17:401910002:4395625:threes:1.5:under",
        "2026-11-17:401910002:5093267:rebounds:6.5:under",
@@ -854,6 +862,8 @@
       "n": 54,
       "ids": [
        "2026-11-18:401910011:4432194:points:10.5:under",
+       "2026-11-18:401910010:4431678:points:25.5:under",
+       "2026-11-18:401910015:4065648:points:25.5:under",
        "2026-11-17:401910003:3995:rebounds:3.5:under",
        "2026-11-17:401910002:5093267:rebounds:6.5:under",
        "2026-11-16:401910001:3136193:points:23.5:under",
@@ -922,7 +932,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 3,
+    "n": 5,
     "graded": false
    },
    {
@@ -1200,6 +1210,58 @@
      "pulled": null,
      "legs": [],
      "window": "180 \u2192 135 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-18:401910010:4431678:points:25.5:under",
+     "kind": "single",
+     "player": "Tyrese Maxey",
+     "bet": "Under 25.5 points",
+     "market": "points",
+     "team": "PHI",
+     "game": "PHI at ORL",
+     "price": -120,
+     "first_price": -120,
+     "last_price": -120,
+     "prices": [
+      {
+       "price": -120,
+       "at": "2026-11-18T17:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "135 \u2192 90 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-18:401910015:4065648:points:25.5:under",
+     "kind": "single",
+     "player": "Jayson Tatum",
+     "bet": "Under 25.5 points",
+     "market": "points",
+     "team": "BOS",
+     "game": "BOS at DEN",
+     "price": -115,
+     "first_price": -115,
+     "last_price": -115,
+     "prices": [
+      {
+       "price": -115,
+       "at": "2026-11-18T17:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "360 \u2192 240 min",
      "book": "hardrock",
      "under_fair": false
     }
