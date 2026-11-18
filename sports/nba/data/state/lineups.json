@@ -27,11 +27,10 @@
     "Jarrett Allen"
    ],
    "status": {
-    "Sam Merrill": "questionable",
-    "Peyton Watson": "doubtful",
     "Evan Mobley": "out",
     "Nae'Qwan Tomlin": "out",
-    "Jaylon Tyson": "out"
+    "Jaylon Tyson": "out",
+    "Peyton Watson": "out"
    }
   },
   "HOU": {
@@ -95,14 +94,14 @@
    "starters": [
     "Tyrese Maxey",
     "VJ Edgecombe",
-    "Dean Wade",
+    "Kentavious Caldwell-Pope",
     "LeBron James",
     "Joel Embiid"
    ],
    "status": {
     "Tyrese Maxey": "questionable",
-    "Dean Wade": "questionable",
     "Ariel Hukporti": "out",
+    "Dean Wade": "questionable",
     "Dominick Barlow": "out",
     "Adem Bona": "out",
     "Jaylen Brown": "out"
@@ -370,5 +369,5 @@
    }
   }
  },
- "at": "2026-11-18T18:10:00-05:00"
+ "at": "2026-11-18T18:20:00-05:00"
 }

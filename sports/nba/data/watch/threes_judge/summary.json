@@ -5,14 +5,14 @@
  "about": "Lab (Matt, 2026-11-12; research Run 11 T1b): 3-pointers only, Hard Rock's main-line price 1%+ better than Pinnacle's de-vigged chance on the same line, no Pinnacle move needed. 18 nights before tracking: 17 bets 10-7 +6.15u, beat the close by 0.9%. Research only, never the Record or Discord.",
  "from_slate": "2026-11-12",
  "min_ev": 0.01,
- "updated_at": "2026-11-18T18:00:20-05:00",
+ "updated_at": "2026-11-18T18:20:07-05:00",
  "total": {
   "w": 6,
   "l": 6,
   "push": 0,
   "void": 0,
   "units": 0.04,
-  "pending": 1,
+  "pending": 2,
   "hit_rate": 0.5
  },
  "nights": [
@@ -22,6 +22,30 @@
    "l": 0,
    "units": 0,
    "bets": [
+    {
+     "at": "2026-11-18T18:20:00-05:00",
+     "bet": "Under 0.5 threes",
+     "game_id": "401910010",
+     "gap_ev": -0.0026,
+     "home": false,
+     "line": 0.5,
+     "market": "threes",
+     "market_fair": 0.3439,
+     "opp": "ORL",
+     "pid": "3059318",
+     "pin_ev": 0.0423,
+     "pin_fair": 0.3594,
+     "player": "Joel Embiid",
+     "price": 190,
+     "read": "C",
+     "side": "under",
+     "slate": "2026-11-18",
+     "start": "2026-11-18T19:00:00-05:00",
+     "team": "PHI",
+     "result": null,
+     "actual": null,
+     "units": null
+    },
     {
      "at": "2026-11-18T18:00:00-05:00",
      "bet": "Under 2.5 threes",
