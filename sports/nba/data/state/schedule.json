@@ -390,11 +390,11 @@
     "home": "LAC",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:34 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "UTAH": "55",
-     "LAC": "49"
+     "UTAH": "58",
+     "LAC": "62"
     }
    },
    {
@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:46 - 1st",
+    "detail": "22.4 - 1st",
     "score": {
-     "CHA": "24",
-     "LAL": "23"
+     "CHA": "34",
+     "LAL": "30"
     }
    }
   ]
