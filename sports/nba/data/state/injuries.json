@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T18:00:00-05:00",
+ "at": "2026-11-18T18:10:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -295,13 +295,6 @@
    "date": "2026-10-28T21:41Z",
    "note": "Head coach Rick Carlise confirmed Sheppard will miss \"months\" after undergoing surgery to repair a torn meniscus in his left knee, Tony East of Forbes.com reports."
   },
-  "5108024": {
-   "status": "out",
-   "name": "Yanic Konan Niederhauser",
-   "team": "LAC",
-   "date": "2026-11-17T01:07Z",
-   "note": "Niederhauser (foot) has been ruled out for Tuesday's game against the Jazz."
-  },
   "3913176": {
    "status": "out",
    "name": "Brandon Ingram",
@@ -561,12 +554,26 @@
    "date": "2026-09-11T16:03Z",
    "note": "Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports."
   },
+  "4066211": {
+   "status": "out",
+   "name": "Robert Williams III",
+   "team": "POR",
+   "date": "2026-11-18T22:58Z",
+   "note": "Williams (rest) is listed as out for Thursday's game versus the Bucks."
+  },
   "4683021": {
    "status": "day-to-day",
    "name": "Deni Avdija",
    "team": "POR",
-   "date": "2026-11-18T15:04Z",
-   "note": "Avdija (foot) won't play Tuesday versus Minnesota."
+   "date": "2026-11-18T22:54Z",
+   "note": "Avdija (foot) is listed as questionable ahead of Thursday's game against Milwaukee."
+  },
+  "4431736": {
+   "status": "day-to-day",
+   "name": "Toumani Camara",
+   "team": "POR",
+   "date": "2026-11-18T22:53Z",
+   "note": "Camara is questionable to play Thursday against the Bucks due to general soreness."
   },
   "4706557": {
    "status": "out",
@@ -632,11 +639,11 @@
    "note": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports."
   },
   "4395625": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "RJ Barrett",
    "team": "TOR",
-   "date": "2026-11-18T17:49Z",
-   "note": "Barrett is questionable for Wednesday's game against the Wizards due to hamstring tightness, Esfandiar Baraheni of The Athletic reports."
+   "date": "2026-11-18T22:55Z",
+   "note": "Barrett (hamstring) is out for Wednesday's game against the Wizards, Michael Grange of Sportsnet.ca reports."
   },
   "4433134": {
    "status": "out",

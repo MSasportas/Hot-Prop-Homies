@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-18T18:00:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-18T18:00:00-05:00"
+   "at": "2026-11-18T18:10:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-18T18:00:00-05:00",
+    "at": "2026-11-18T18:10:00-05:00",
     "confirmed": []
    },
    "grade": true
@@ -208,7 +208,7 @@
     "home": "expected"
    },
    "read_at": "2026-11-18T18:00:00-05:00",
-   "picks": 1,
+   "picks": 0,
    "checks": [
     {
      "read": "X360",
@@ -668,18 +668,17 @@
    "state": "early",
    "state_label": "Early",
    "price_final": false,
-   "pulled": null,
+   "pulled": {
+    "at": "2026-11-18T18:10:00-05:00",
+    "reason": "Now listed questionable",
+    "if_bet": "Already bet? If he doesn't play it voids and refunds.",
+    "code": "status",
+    "status": "questionable"
+   },
    "added_at": "2026-11-18T17:30:01-05:00",
    "result": null,
-   "links": {
-    "hardrock": {
-     "id": "5913385484576489874",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/5913385484576489874",
-     "price": -120
-    },
-    "draftkings": null
-   },
-   "rank": 2
+   "links": null,
+   "rank": null
   },
   {
    "player": "Day'Ron Sharpe",
@@ -745,7 +744,7 @@
      "price": -126
     }
    },
-   "rank": 3
+   "rank": 2
   },
   {
    "player": "Jayson Tatum",
@@ -804,7 +803,7 @@
     },
     "draftkings": null
    },
-   "rank": 4
+   "rank": 3
   },
   {
    "player": "Joel Embiid",
@@ -932,13 +931,13 @@
      "price": 114
     }
    },
-   "rank": 5
+   "rank": 4
   }
  ],
  "empty": null,
  "counts": {
   "lines_read": 1100,
-  "passing": 18,
+  "passing": 17,
   "games": 12
  },
  "safety_paused": false,
@@ -947,6 +946,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-18T18:00:00-05:00",
- "status_at": "2026-11-18T18:00:00-05:00"
+ "generated_at": "2026-11-18T18:10:00-05:00",
+ "status_at": "2026-11-18T18:10:00-05:00"
 }
