@@ -1,116 +1,116 @@
 {
  "slate_date": "2026-11-17",
- "generated_at": "2026-11-17T19:00:00-05:00",
+ "generated_at": "2026-11-17T19:10:01-05:00",
  "games": [
   {
    "game_id": 2026020333,
-   "state": "PRE",
+   "state": "LIVE",
    "schedule_state": "OK",
-   "period": null,
-   "period_type": null,
-   "clock": null,
+   "period": 1,
+   "period_type": "REG",
+   "clock": "18:33",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "LAK",
-    "score": null,
+    "score": 0,
     "sog": null
    },
    "home": {
     "abbrev": "BOS",
-    "score": null,
-    "sog": null
+    "score": 0,
+    "sog": 1
    },
-   "updated_at": "2026-11-17T19:00:00-05:00"
+   "updated_at": "2026-11-17T19:10:01-05:00"
   },
   {
    "game_id": 2026020336,
-   "state": "PRE",
+   "state": "LIVE",
    "schedule_state": "OK",
-   "period": null,
-   "period_type": null,
-   "clock": null,
+   "period": 1,
+   "period_type": "REG",
+   "clock": "19:06",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "CBJ",
-    "score": null,
+    "score": 0,
     "sog": null
    },
    "home": {
     "abbrev": "NYI",
-    "score": null,
-    "sog": null
+    "score": 0,
+    "sog": 2
    },
-   "updated_at": "2026-11-17T19:00:00-05:00"
+   "updated_at": "2026-11-17T19:10:01-05:00"
   },
   {
    "game_id": 2026020337,
-   "state": "PRE",
+   "state": "LIVE",
    "schedule_state": "OK",
-   "period": null,
-   "period_type": null,
-   "clock": null,
+   "period": 1,
+   "period_type": "REG",
+   "clock": "20:00",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "BUF",
-    "score": null,
+    "score": 0,
     "sog": null
    },
    "home": {
     "abbrev": "PHI",
-    "score": null,
+    "score": 0,
     "sog": null
    },
-   "updated_at": "2026-11-17T19:00:00-05:00"
+   "updated_at": "2026-11-17T19:10:01-05:00"
   }
  ],
  "picks": {
   "2026-11-17:2026020333:8477942:points:0.5:under": {
    "game_id": 2026020333,
    "market": "points",
-   "stat": null
+   "stat": 0
   },
   "2026-11-17:2026020333:8479325:points:0.5:under": {
    "game_id": 2026020333,
    "market": "points",
-   "stat": null
+   "stat": 0
   },
   "2026-11-17:2026020333:8482124:points:0.5:under": {
    "game_id": 2026020333,
    "market": "points",
-   "stat": null
+   "stat": 0
   },
   "2026-11-17:2026020333:8482155:points:0.5:under": {
    "game_id": 2026020333,
    "market": "points",
-   "stat": null
+   "stat": 0
   },
   "2026-11-17:2026020336:8485388:shots:1.5:under": {
    "game_id": 2026020336,
    "market": "shots",
-   "stat": null
+   "stat": 0
   },
   "2026-11-17:2026020337:8477948:points:0.5:over": {
    "game_id": 2026020337,
    "market": "points",
-   "stat": null
+   "stat": 0
   },
   "2026-11-17:2026020337:8480064:points:0.5:over": {
    "game_id": 2026020337,
    "market": "points",
-   "stat": null
+   "stat": 0
   },
   "2026-11-17:2026020337:8480839:shots:2.5:under": {
    "game_id": 2026020337,
    "market": "shots",
-   "stat": null
+   "stat": 0
   },
   "2026-11-17:2026020337:8482142:shots:1.5:under": {
    "game_id": 2026020337,
    "market": "shots",
-   "stat": null
+   "stat": 0
   }
  }
 }
