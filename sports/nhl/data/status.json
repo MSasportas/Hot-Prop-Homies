@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-17",
- "started_at": "2026-11-18T00:40:01-05:00",
- "status_at": "2026-11-18T00:40:01-05:00",
- "finished_at": "2026-11-18T00:40:03-05:00",
- "last_ok_at": "2026-11-18T00:40:01-05:00",
+ "started_at": "2026-11-18T00:50:00-05:00",
+ "status_at": "2026-11-18T00:50:00-05:00",
+ "finished_at": "2026-11-18T00:50:02-05:00",
+ "last_ok_at": "2026-11-18T00:50:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -19,8 +19,8 @@
   },
   {
    "step": "stats",
-   "status": "skipped",
-   "note": "nothing new"
+   "status": "ok",
+   "note": "1 window(s) read, 2 team-games still missing"
   },
   {
    "step": "lineups",
@@ -153,18 +153,16 @@
   "Tyler Boucher"
  ],
  "excluded_teams": [],
- "stats_through": "2026-11-17",
+ "stats_through": "2026-11-16",
  "lineups_at": "2026-11-17T21:40:01-05:00",
  "lineups_note": "Lineups posted for 13 of 22 teams checked so far.",
  "games_today": 11,
  "record_events": 324,
- "odds_notes": [
-  "key 1 refused (401)"
- ],
+ "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "44242410964",
-  "iteration": 4,
+  "iteration": 5,
   "chain_link": 17,
   "chain_started_at": "2026-11-17T10:00:17-05:00",
   "run_started_at": "2026-11-18T00:11:01-05:00"
