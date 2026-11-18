@@ -1,40 +1,40 @@
 {
- "generated_at": "2026-11-17T22:00:01-05:00",
+ "generated_at": "2026-11-17T22:10:00-05:00",
  "summary": {
   "headline": {
-   "w": 48,
-   "l": 42,
+   "w": 50,
+   "l": 44,
    "push": 0,
    "void": 0,
-   "units": 8.4,
-   "hit_rate": 0.5333,
-   "needed": 0.4836,
-   "n": 90
+   "units": 9.6,
+   "hit_rate": 0.5319,
+   "needed": 0.4816,
+   "n": 94
   },
   "rows": [
    {
     "key": "shots",
     "label": "Shots on goal",
-    "w": 45,
-    "l": 38,
+    "w": 46,
+    "l": 39,
     "push": 0,
     "void": 0,
-    "units": 7.8,
-    "hit_rate": 0.5422,
-    "needed": 0.489,
-    "n": 83
+    "units": 7.75,
+    "hit_rate": 0.5412,
+    "needed": 0.4902,
+    "n": 85
    },
    {
     "key": "points",
     "label": "Points",
-    "w": 3,
-    "l": 4,
+    "w": 4,
+    "l": 5,
     "push": 0,
     "void": 0,
-    "units": 0.6,
-    "hit_rate": 0.4286,
-    "needed": 0.4193,
-    "n": 7
+    "units": 1.85,
+    "hit_rate": 0.4444,
+    "needed": 0.4007,
+    "n": 9
    }
   ],
   "cuts": [
@@ -71,25 +71,25 @@
       "key": "under_1.5",
       "label": "Under 1.5",
       "w": 20,
-      "l": 20,
+      "l": 21,
       "push": 0,
       "void": 0,
-      "units": 1.34,
-      "hit_rate": 0.5,
-      "needed": 0.4749,
-      "n": 40
+      "units": 0.34,
+      "hit_rate": 0.4878,
+      "needed": 0.4771,
+      "n": 41
      },
      {
       "key": "under_2.5",
       "label": "Under 2.5",
-      "w": 19,
+      "w": 20,
       "l": 8,
       "push": 0,
       "void": 0,
-      "units": 9.63,
-      "hit_rate": 0.7037,
-      "needed": 0.517,
-      "n": 27
+      "units": 10.59,
+      "hit_rate": 0.7143,
+      "needed": 0.5168,
+      "n": 28
      },
      {
       "key": "under_3.5",
@@ -125,26 +125,26 @@
      {
       "key": "edge_2_3",
       "label": "2 to 3 pts",
-      "w": 20,
-      "l": 13,
+      "w": 21,
+      "l": 15,
       "push": 0,
       "void": 0,
-      "units": 7.77,
-      "hit_rate": 0.6061,
-      "needed": 0.49,
-      "n": 33
+      "units": 6.72,
+      "hit_rate": 0.5833,
+      "needed": 0.4892,
+      "n": 36
      },
      {
       "key": "edge_3_4",
       "label": "3 to 4 pts",
-      "w": 10,
+      "w": 11,
       "l": 10,
       "push": 0,
       "void": 0,
-      "units": -0.52,
-      "hit_rate": 0.5,
-      "needed": 0.5003,
-      "n": 20
+      "units": 1.73,
+      "hit_rate": 0.5238,
+      "needed": 0.4911,
+      "n": 21
      },
      {
       "key": "edge_4",
@@ -168,26 +168,26 @@
      {
       "key": "early",
       "label": "Early",
-      "w": 16,
-      "l": 18,
+      "w": 17,
+      "l": 19,
       "push": 0,
       "void": 0,
-      "units": -1.63,
-      "hit_rate": 0.4706,
-      "needed": 0.4886,
-      "n": 34
+      "units": -1.68,
+      "hit_rate": 0.4722,
+      "needed": 0.4858,
+      "n": 36
      },
      {
       "key": "lineup",
       "label": "Lineup confirmed",
-      "w": 32,
-      "l": 24,
+      "w": 33,
+      "l": 25,
       "push": 0,
       "void": 0,
-      "units": 10.03,
-      "hit_rate": 0.5714,
-      "needed": 0.4805,
-      "n": 56
+      "units": 11.28,
+      "hit_rate": 0.569,
+      "needed": 0.479,
+      "n": 58
      }
     ]
    },
@@ -211,26 +211,26 @@
      {
       "key": "fav",
       "label": "-149 to -101",
-      "w": 16,
-      "l": 8,
+      "w": 17,
+      "l": 9,
       "push": 0,
       "void": 0,
-      "units": 5.45,
-      "hit_rate": 0.6667,
+      "units": 5.41,
+      "hit_rate": 0.6538,
       "needed": 0.5394,
-      "n": 24
+      "n": 26
      },
      {
       "key": "plus",
       "label": "Even or plus money",
-      "w": 30,
-      "l": 33,
+      "w": 31,
+      "l": 34,
       "push": 0,
       "void": 0,
-      "units": 2.85,
-      "hit_rate": 0.4762,
-      "needed": 0.4549,
-      "n": 63
+      "units": 4.1,
+      "hit_rate": 0.4769,
+      "needed": 0.4513,
+      "n": 65
      }
     ]
    }
@@ -238,11 +238,11 @@
   "days": [
    {
     "date": "2026-11-17",
-    "w": 0,
-    "l": 0,
+    "w": 2,
+    "l": 2,
     "push": 0,
     "void": 0,
-    "units": 0,
+    "units": 1.2,
     "n": 16,
     "graded": false
    },
@@ -492,9 +492,9 @@
   {
    "date": "2026-11-17",
    "graded": false,
-   "w": 0,
-   "l": 0,
-   "units": 0,
+   "w": 2,
+   "l": 2,
+   "units": 1.2,
    "entries": [
     {
      "id": "2026-11-17:2026020337:8477948:points:0.5:over",
@@ -513,9 +513,9 @@
        "at": "2026-11-17T17:30:00-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "had 1",
+     "units": 2.25,
      "pulled": null,
      "legs": []
     },
@@ -674,9 +674,9 @@
        "at": "2026-11-17T17:30:00-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "L",
+     "actual": "had 0",
+     "units": -1.0,
      "pulled": null,
      "legs": []
     },
@@ -766,9 +766,9 @@
        "at": "2026-11-17T17:30:00-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "had 2",
+     "units": 0.9524,
      "pulled": {
       "at": "2026-11-17T18:20:01-05:00",
       "reason": "Pinnacle moved against it"
@@ -815,9 +815,9 @@
        "at": "2026-11-17T18:20:01-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "L",
+     "actual": "had 2",
+     "units": -1.0,
      "pulled": null,
      "legs": []
     },
