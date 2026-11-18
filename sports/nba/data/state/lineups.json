@@ -23,15 +23,15 @@
     "James Harden",
     "Donovan Mitchell",
     "Tyrese Proctor",
-    "Peyton Watson",
+    "Mario Hezonja",
     "Jarrett Allen"
    ],
    "status": {
-    "Peyton Watson": "questionable",
     "Sam Merrill": "questionable",
-    "Jaylon Tyson": "doubtful",
+    "Peyton Watson": "doubtful",
     "Evan Mobley": "out",
-    "Nae'Qwan Tomlin": "out"
+    "Nae'Qwan Tomlin": "out",
+    "Jaylon Tyson": "out"
    }
   },
   "HOU": {
@@ -75,7 +75,8 @@
     "Myles Turner"
    ],
    "status": {
-    "Ousmane Dieng": "out"
+    "Ousmane Dieng": "out",
+    "Ryan Rollins": "out"
    }
   },
   "MIA": {
@@ -88,9 +89,7 @@
     "Bam Adebayo"
    ],
    "status": {
-    "Bam Adebayo": "probable",
-    "Nikola Jovic": "probable",
-    "Myron Gardner": "questionable"
+    "Myron Gardner": "out"
    }
   },
   "PHI": {
@@ -103,6 +102,7 @@
     "Joel Embiid"
    ],
    "status": {
+    "Dean Wade": "questionable",
     "Ariel Hukporti": "out",
     "Dominick Barlow": "out",
     "Adem Bona": "out",
@@ -173,10 +173,12 @@
     "Immanuel Quickley",
     "RJ Barrett",
     "Ja'Kobe Walter",
-    "Scottie Barnes",
-    "Collin Murray-Boyles"
+    "Collin Murray-Boyles",
+    "Jakob Poeltl"
    ],
    "status": {
+    "RJ Barrett": "questionable",
+    "Scottie Barnes": "out",
     "Nate Bittle": "out",
     "Kawhi Leonard": "out"
    }
@@ -191,9 +193,10 @@
     "John Collins"
    ],
    "status": {
+    "Cade Cunningham": "questionable",
+    "Isaiah Joe": "questionable",
     "Jalen Duren": "out",
     "Ronald Holland": "out",
-    "Isaiah Joe": "out",
     "Taurean Prince": "out",
     "Duncan Robinson": "out"
    }
@@ -322,7 +325,7 @@
     "Jaxson Hayes"
    ],
    "status": {
-    "Jaxson Hayes": "out",
+    "Jaxson Hayes": "questionable",
     "Jaren Jackson": "out",
     "Lauri Markkanen": "out",
     "Jusuf Nurkic": "out"
@@ -338,8 +341,8 @@
     "Walker Kessler"
    ],
    "status": {
-    "Austin Reaves": "out",
-    "Walker Kessler": "out"
+    "Austin Reaves": "questionable",
+    "Walker Kessler": "probable"
    }
   },
   "PHX": {
@@ -372,5 +375,5 @@
    }
   }
  },
- "at": "2026-11-18T05:00:01-05:00"
+ "at": "2026-11-18T16:00:00-05:00"
 }
