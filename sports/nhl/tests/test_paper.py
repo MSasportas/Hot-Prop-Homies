@@ -264,6 +264,16 @@ class Base(unittest.TestCase):
         self.cfg = json.loads(json.dumps(common.load_config()))
         self.games = [game(1, "AAA", "BBB", "19:00"), game(2, "CCC", "DDD", "19:30")]
         self.inp = Stub()
+        # Default lineup state: all fixture players confirmed "in" so the require_lineup_confirmed gate
+        # passes by default.  Individual tests that need "out" or "unknown" override this after setUp.
+        self.inp.lineup_state = {
+            "teams": {
+                "AAA": {"page": {"today": True, "in": [101, 102, 103], "unsure": [], "out": [], "complete": False}},
+                "BBB": {"page": {"today": True, "in": [], "unsure": [], "out": [], "complete": False}},
+                "CCC": {"page": {"today": True, "in": [201, 202], "unsure": [], "out": [], "complete": False}},
+                "DDD": {"page": {"today": True, "in": [], "unsure": [], "out": [], "complete": False}},
+            }
+        }
         self.fetches = []
 
     def tearDown(self):
@@ -337,7 +347,7 @@ class Flags(Base):
         self.assertAlmostEqual(f["market_fair"], 0.52, places=6)
         self.assertAlmostEqual(f["gap_ev"], 0.04, places=6)
         self.assertEqual(f["guard"], "pass")
-        self.assertEqual(f["settled"], "Early")
+        self.assertEqual(f["settled"], "Lineup confirmed")
 
     def test_move30_is_the_market_change_since_the_earlier_read(self):
         a = self.lines(101, "AAA", "Ann Aa", 1.5, 0.50)
@@ -579,7 +589,7 @@ class Caps(Base):
         c = [self.lines(101, "AAA", "Ann Aa", 1.5, 0.54), self.lines(102, "AAA", "Bo Bb", 1.5, 0.53)]
         self.read(1, "B", "17:30", c)
         self.step("17:31")
-        self.inp.lineup_state = {"teams": {"AAA": {"page": {"today": True, "in": [], "unsure": [], "out": [101, 102],
+        self.inp.lineup_state = {"teams": {"AAA": {"page": {"today": True, "in": [103], "unsure": [], "out": [101, 102],
                                                              "complete": False}}}}
         self.step("17:41")
         self.assertEqual(len(self.events("pull")), 2)
@@ -1048,6 +1058,12 @@ class Oct19Replay(unittest.TestCase):
         self.inp = Stub()
         self.inp.raw[(8473986, 1.5)] = 0.5205948068315722        # Killorn (the engine's own number that day)
         self.inp.raw[(8484387, 1.5)] = 0.4973965194814922        # Michkov
+        # Set both players "in" on all four teams so the require_lineup_confirmed gate passes.
+        self.inp.lineup_state = {
+            "teams": {t: {"page": {"today": True, "in": [8473986, 8484387], "unsure": [], "out": [],
+                                   "complete": False}}
+                      for t in ("ANA", "NYR", "COL", "PHI")}
+        }
 
     def tearDown(self):
         shutil.rmtree(self.dir, ignore_errors=True)
@@ -1085,6 +1101,45 @@ class Oct19Replay(unittest.TestCase):
     def summary_flags(self):
         return common.read_json(paper.summary_path())["tonight"]["flags"]
 
+
+
+class LineupGate(Base):
+    """Unit tests for the require_lineup_confirmed gate in Paper.eligible()."""
+
+    def test_require_confirmed_blocks_unknown_status(self):
+        """Gate ON + status 'unknown' (empty lineup_state) → player blocked; no flag, no veto."""
+        self.inp.lineup_state = {}
+        c = self.lines(101, "AAA", "Ann Aa", 1.5, 0.52)
+        self.read(1, "B", "17:30", [c])
+        self.step("17:31")
+        self.assertEqual(self.events(), [])
+
+    def test_require_confirmed_blocks_unsure_status(self):
+        """Gate ON + status 'unknown' via unsure list → player blocked (gate fires before 'out' check)."""
+        self.inp.lineup_state = {"teams": {"AAA": {"page": {"today": True, "in": [], "unsure": [101],
+                                                              "out": [], "complete": True}}}}
+        c = self.lines(101, "AAA", "Ann Aa", 1.5, 0.52)
+        self.read(1, "B", "17:30", [c])
+        self.step("17:31")
+        self.assertEqual(self.events("flag"), [])
+
+    def test_require_confirmed_passes_in_status(self):
+        """Gate ON + status 'in' → player eligible and can flag."""
+        self.inp.lineup_state = {"teams": {"AAA": {"page": {"today": True, "in": [101], "unsure": [],
+                                                              "out": [], "complete": True}}}}
+        c = self.lines(101, "AAA", "Ann Aa", 1.5, 0.52)
+        self.read(1, "B", "17:30", [c])
+        self.step("17:31")
+        self.assertEqual(len(self.events("flag")), 1)
+
+    def test_require_confirmed_off_unknown_is_eligible(self):
+        """Gate OFF (key false) → unknown-status players remain eligible (pre-gate behavior)."""
+        self.cfg["ops"]["gap_guard"]["thresholds"]["require_lineup_confirmed"] = False
+        self.inp.lineup_state = {}
+        c = self.lines(101, "AAA", "Ann Aa", 1.5, 0.52)
+        self.read(1, "B", "17:30", [c])
+        self.step("17:31")
+        self.assertEqual(len(self.events("flag")), 1)
 
 
 if __name__ == "__main__":
