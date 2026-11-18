@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-17",
- "generated_at": "2026-11-17T21:42:15-05:00",
+ "generated_at": "2026-11-17T21:50:01-05:00",
  "games": [
   {
    "game_id": 2026020333,
@@ -21,7 +21,7 @@
     "score": 0,
     "sog": 29
    },
-   "updated_at": "2026-11-17T21:42:15-05:00"
+   "updated_at": "2026-11-17T21:50:01-05:00"
   },
   {
    "game_id": 2026020336,
@@ -40,9 +40,9 @@
    "home": {
     "abbrev": "NYI",
     "score": 5,
-    "sog": 42
+    "sog": 41
    },
-   "updated_at": "2026-11-17T21:42:15-05:00"
+   "updated_at": "2026-11-17T21:50:01-05:00"
   },
   {
    "game_id": 2026020337,
@@ -63,7 +63,7 @@
     "score": 4,
     "sog": 33
    },
-   "updated_at": "2026-11-17T21:42:15-05:00"
+   "updated_at": "2026-11-17T21:50:01-05:00"
   },
   {
    "game_id": 2026020334,
@@ -71,20 +71,20 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "14:40",
+   "clock": "08:47",
    "in_intermission": false,
    "running": true,
    "away": {
     "abbrev": "WSH",
     "score": 2,
-    "sog": 23
+    "sog": 26
    },
    "home": {
     "abbrev": "TBL",
     "score": 4,
-    "sog": 23
+    "sog": 24
    },
-   "updated_at": "2026-11-17T21:42:15-05:00"
+   "updated_at": "2026-11-17T21:50:01-05:00"
   },
   {
    "game_id": 2026020339,
@@ -92,20 +92,20 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "03:07",
-   "in_intermission": false,
-   "running": true,
+   "clock": "12:23",
+   "in_intermission": true,
+   "running": false,
    "away": {
     "abbrev": "ANA",
     "score": 3,
-    "sog": 20
+    "sog": 22
    },
    "home": {
     "abbrev": "STL",
     "score": 4,
     "sog": 18
    },
-   "updated_at": "2026-11-17T21:42:15-05:00"
+   "updated_at": "2026-11-17T21:50:01-05:00"
   },
   {
    "game_id": 2026020340,
@@ -113,20 +113,20 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "02:11",
-   "in_intermission": false,
-   "running": true,
+   "clock": "13:49",
+   "in_intermission": true,
+   "running": false,
    "away": {
     "abbrev": "NSH",
-    "score": 2,
-    "sog": 16
+    "score": 3,
+    "sog": 18
    },
    "home": {
     "abbrev": "MIN",
-    "score": 6,
-    "sog": 26
+    "score": 7,
+    "sog": 28
    },
-   "updated_at": "2026-11-17T21:42:15-05:00"
+   "updated_at": "2026-11-17T21:50:01-05:00"
   }
  ],
  "picks": {
