@@ -364,7 +364,7 @@
     "detail": "3:10 - 2nd",
     "score": {
      "POR": "40",
-     "MIN": "46"
+     "MIN": "47"
     }
    },
    {
@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:19 - 2nd",
+    "detail": "6:44 - 2nd",
     "score": {
-     "DET": "38",
-     "SA": "44"
+     "DET": "39",
+     "SA": "46"
     }
    },
    {
