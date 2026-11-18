@@ -28,13 +28,13 @@
 @font-face{font-family:"IBM Plex Mono";src:url("fonts/ibm-plex-mono-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
 :root{
   /* HPH — Flame Night (always dark) */
-  --bg:#090812; --surface:#120F1E; --raise:#1C1830; --line:#2E2850; --line2:#3D3666;
-  --fg:#F0EDF8; --fg2:#C0B8E0; --muted:#7A74A0;
+  --bg:#090812; --surface:#1A163A; --raise:#221E42; --line:#2E2850; --line2:#3D3666;
+  --fg:#F0EDF8; --fg2:#C0B8E0; --muted:#9490B8;
   --accent:#17E9FF; --accent-soft:rgba(23,233,255,.12); --accent-rgb:23,233,255; --on-accent:#090812;
-  --primary:#E8187A; --on-primary:#FFFFFF; --primary-soft:rgba(232,24,122,.15); --selected-bg:rgba(232,24,122,.15); --selected-text:#F060A8;
-  --good:#E8187A; --good-soft:rgba(232,24,122,.12); --good-rgb:232,24,122;
+  --primary:#E8187A; --on-primary:#FFFFFF; --primary-soft:rgba(232,24,122,.15); --selected-bg:rgba(232,24,122,.15); --selected-text:#F060A8; --cta:#E8187A;
+  --good:#22C55E; --good-soft:rgba(34,197,94,.12); --good-rgb:34,197,94;
   --warn:#FFB800; --warn-soft:rgba(255,184,0,.12);
-  --bad:#7A74A0; --bad-soft:rgba(122,116,160,.15); --bad-rgb:122,116,160;
+  --bad:#F43F5E; --bad-soft:rgba(244,63,94,.15); --bad-rgb:244,63,94;
   --head:"Orbitron","Graduate",Georgia,serif;
   --num:"IBM Plex Mono",ui-monospace,Menlo,monospace;
   --cond:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
@@ -50,7 +50,7 @@
 .wordmark{font:900 18px/22px var(--head);letter-spacing:.08em;text-transform:uppercase;text-align:center}
 .mascot-hero{display:inline-block;width:88px;animation:flame-pulse 2.4s ease-in-out infinite;}
 html{background:var(--bg);-webkit-text-size-adjust:100%;text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--fg);font:400 14px/20px var(--body);
+body{margin:0;background:radial-gradient(ellipse at 50% 30%, #110f1f 0%, #090812 70%);color:var(--fg);font:400 14px/20px var(--body);
   font-variant-numeric:tabular-nums;-webkit-tap-highlight-color:transparent}
 button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;text-align:left;cursor:pointer;
   font-variant-numeric:inherit;-webkit-appearance:none;appearance:none}
@@ -96,7 +96,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 /* banners: a 3px meaning bar on the left, plain text */
 .banner{display:flex;gap:10px;padding:10px 12px;margin-top:12px;border-left:3px solid var(--warn);background:var(--warn-soft);font-size:13.5px;line-height:19px;border-radius:0 6px 6px 0}
 .banner .ic{flex:none;color:var(--warn);margin-top:1px;display:flex}
-.banner.stop{border-left-color:var(--primary);background:var(--selected-bg)} .banner.stop .ic{color:var(--primary)}
+.banner.stop{border-left-color:var(--cta);background:var(--selected-bg)} .banner.stop .ic{color:var(--cta)}
 .banner.info{border-left-color:var(--accent);background:var(--accent-soft)} .banner.info .ic{color:var(--accent)}
 .banner b{font-weight:650;color:var(--fg)}
 .banner .txt{min-width:0;flex:1;overflow-wrap:anywhere;color:var(--fg2)}
@@ -133,9 +133,9 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .tile .ft{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px;margin-top:8px;font-size:11.5px;line-height:15px}
 .tagx{display:inline-flex;align-items:center;gap:3px;color:var(--fg2);white-space:nowrap}
 .tagx.ok{color:var(--good)}
-.tagx.new{color:var(--accent);font-weight:700;letter-spacing:.04em}
-.newlbl{position:absolute;top:-1px;right:-1px;padding:2px 7px 2px;border-radius:0 8px 0 6px;background:var(--accent);color:var(--on-accent);font:700 10.5px/14px var(--body);letter-spacing:.08em}
-.tile.isnew{border-color:var(--accent)}
+.tagx.new{color:var(--warn);font-weight:700;letter-spacing:.04em}
+.newlbl{position:absolute;top:-1px;right:-1px;padding:2px 7px 2px;border-radius:0 8px 0 6px;background:var(--warn);color:var(--on-accent);font:700 10.5px/14px var(--body);letter-spacing:.08em}
+.tile.isnew{border-color:var(--warn)}
 .tile.isnew .top{padding-right:30px}
 .tagx svg{flex:none}
 .own{display:inline-block;font:700 12px/16px var(--cond);letter-spacing:.06em;color:var(--fg);padding:0 4px;border:1px solid var(--line2);border-radius:3px;vertical-align:1px}
@@ -177,7 +177,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 16px;border-radius:6px;
   border:1px solid var(--line2);color:var(--fg);font:600 15px/20px var(--body)}
 .btn.wide{width:100%}
-.btn.hr{width:100%;background:var(--primary);color:var(--on-primary);border-color:var(--primary);text-decoration:none;white-space:nowrap}
+.btn.hr{width:100%;background:var(--cta);color:var(--on-primary);border-color:var(--cta);text-decoration:none;white-space:nowrap}
 /* TOO LATE: off the board before tip. Solid Dugout Navy stamp, the tile dimmed under it; the price is not struck */
 .tile.late{border-color:var(--line)}
 .tile.late .dimmed{opacity:.5}
@@ -225,7 +225,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .lv-xp .lxm{color:var(--muted)}
 /* stat meter for bigger lines (points, rebounds, assists): fill = his number so far, tick = the line */
 .meter{position:relative;display:inline-block;width:96px;height:8px;border-radius:4px;background:var(--raise);border:1px solid var(--line2);overflow:hidden;vertical-align:middle}
-.meter i{position:absolute;left:0;top:0;bottom:0;background:var(--accent)}
+.meter i{position:absolute;left:0;top:0;bottom:0;background:var(--good)}
 .meter i.on{background:var(--good)} .meter i.used{background:var(--warn)} .meter i.bad{background:var(--bad)}
 .meter u{position:absolute;top:0;bottom:0;width:2px;margin-left:-1px;background:var(--fg)}
 
