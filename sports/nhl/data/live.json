@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-17",
- "generated_at": "2026-11-17T20:10:00-05:00",
+ "generated_at": "2026-11-17T20:20:01-05:00",
  "games": [
   {
    "game_id": 2026020333,
@@ -8,20 +8,20 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "14:28",
+   "clock": "09:25",
    "in_intermission": false,
    "running": true,
    "away": {
     "abbrev": "LAK",
     "score": 1,
-    "sog": 12
+    "sog": 15
    },
    "home": {
     "abbrev": "BOS",
     "score": 0,
-    "sog": 7
+    "sog": 10
    },
-   "updated_at": "2026-11-17T20:10:00-05:00"
+   "updated_at": "2026-11-17T20:20:01-05:00"
   },
   {
    "game_id": 2026020336,
@@ -29,20 +29,20 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "15:27",
+   "clock": "09:38",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "CBJ",
     "score": 0,
-    "sog": 11
+    "sog": 13
    },
    "home": {
     "abbrev": "NYI",
     "score": 2,
-    "sog": 17
+    "sog": 22
    },
-   "updated_at": "2026-11-17T20:10:00-05:00"
+   "updated_at": "2026-11-17T20:20:01-05:00"
   },
   {
    "game_id": 2026020337,
@@ -50,20 +50,20 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "17:14",
+   "clock": "11:16",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "BUF",
     "score": 1,
-    "sog": 8
+    "sog": 9
    },
    "home": {
     "abbrev": "PHI",
-    "score": 0,
-    "sog": 6
+    "score": 1,
+    "sog": 10
    },
-   "updated_at": "2026-11-17T20:10:00-05:00"
+   "updated_at": "2026-11-17T20:20:01-05:00"
   },
   {
    "game_id": 2026020334,
@@ -71,20 +71,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "04:12",
-   "in_intermission": false,
+   "clock": "15:15",
+   "in_intermission": true,
    "running": false,
    "away": {
     "abbrev": "WSH",
-    "score": 0,
-    "sog": 7
+    "score": 1,
+    "sog": 11
    },
    "home": {
     "abbrev": "TBL",
     "score": 3,
-    "sog": 6
+    "sog": 8
    },
-   "updated_at": "2026-11-17T20:10:00-05:00"
+   "updated_at": "2026-11-17T20:20:01-05:00"
   },
   {
    "game_id": 2026020339,
@@ -92,7 +92,7 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "18:40",
+   "clock": "11:42",
    "in_intermission": false,
    "running": true,
    "away": {
@@ -102,10 +102,10 @@
    },
    "home": {
     "abbrev": "STL",
-    "score": 0,
-    "sog": null
+    "score": 1,
+    "sog": 5
    },
-   "updated_at": "2026-11-17T20:10:00-05:00"
+   "updated_at": "2026-11-17T20:20:01-05:00"
   },
   {
    "game_id": 2026020340,
@@ -113,20 +113,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "19:28",
+   "clock": "12:33",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "NSH",
     "score": 0,
-    "sog": null
+    "sog": 1
    },
    "home": {
     "abbrev": "MIN",
-    "score": 0,
-    "sog": 1
+    "score": 1,
+    "sog": 6
    },
-   "updated_at": "2026-11-17T20:10:00-05:00"
+   "updated_at": "2026-11-17T20:20:01-05:00"
   }
  ],
  "picks": {
@@ -168,12 +168,12 @@
   "2026-11-17:2026020337:8480839:shots:2.5:under": {
    "game_id": 2026020337,
    "market": "shots",
-   "stat": 1
+   "stat": 2
   },
   "2026-11-17:2026020337:8482142:shots:1.5:under": {
    "game_id": 2026020337,
    "market": "shots",
-   "stat": 0
+   "stat": 1
   },
   "2026-11-17:2026020334:8478519:points:0.5:over": {
    "game_id": 2026020334,
