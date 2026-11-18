@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-17T22:40:03-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-17T22:50:01-05:00"
+   "at": "2026-11-17T23:00:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-17T22:50:01-05:00",
+    "at": "2026-11-17T23:00:00-05:00",
     "confirmed": [
      "CHA",
      "DET",
@@ -249,7 +249,7 @@
    "away": "UTA",
    "home": "LAC",
    "state": "in",
-   "detail": "6:59 - 1st",
+   "detail": "2:17 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -609,8 +609,8 @@
   }
  ],
  "empty": {
-  "text": "No picks yet today",
-  "why": "470 lines read. Pinnacle moved alone on 121, none of them bettable yet.",
+  "text": "No open picks right now",
+  "why": "Every game has started.",
   "next": null
  },
  "counts": {
@@ -624,6 +624,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-17T22:50:01-05:00",
- "status_at": "2026-11-17T22:50:01-05:00"
+ "generated_at": "2026-11-17T23:00:00-05:00",
+ "status_at": "2026-11-17T23:00:00-05:00"
 }
