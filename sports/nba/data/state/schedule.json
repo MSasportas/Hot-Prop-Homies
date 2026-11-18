@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:29 - 4th",
+    "detail": "6:02 - 4th",
     "score": {
-     "CHA": "97",
-     "LAL": "87"
+     "CHA": "102",
+     "LAL": "98"
     }
    }
   ]
