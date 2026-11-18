@@ -405,11 +405,11 @@
     "home": "LAL",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 4th",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "1:13 - OT",
     "score": {
-     "CHA": "111",
-     "LAL": "111"
+     "CHA": "114",
+     "LAL": "115"
     }
    }
   ]
