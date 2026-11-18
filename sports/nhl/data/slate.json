@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-17",
- "generated_at": "2026-11-17T19:20:01-05:00",
- "status_at": "2026-11-17T19:20:01-05:00",
+ "generated_at": "2026-11-17T19:30:00-05:00",
+ "status_at": "2026-11-17T19:30:00-05:00",
  "valid_until": "2026-11-18T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-17T19:20:01-05:00",
+   "at": "2026-11-17T19:30:00-05:00",
    "failed_step": null
   },
   "pool": {
@@ -304,8 +304,8 @@
      "home": "2026-11-17T16:30:00-05:00"
     }
    },
-   "started": false,
-   "reads_done": true,
+   "started": true,
+   "reads_done": false,
    "picks": 1,
    "excluded_reason": null,
    "excluded_teams": []
@@ -350,8 +350,8 @@
      "home": null
     }
    },
-   "started": false,
-   "reads_done": true,
+   "started": true,
+   "reads_done": false,
    "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
@@ -533,69 +533,6 @@
  ],
  "picks": [
   {
-   "id": "2026-11-17:2026020334:8478519:points:0.5:over",
-   "price": 130,
-   "first_price": 130,
-   "first_price_at": "2026-11-17T18:50:01-05:00",
-   "worst_price": 130,
-   "p": 0.4653,
-   "breakeven": 0.4348,
-   "p_pct": 46,
-   "breakeven_pct": 43,
-   "state": "lineup",
-   "history": [
-    {
-     "at": "2026-11-17T18:50:01-05:00",
-     "text": "Lineup confirmed"
-    }
-   ],
-   "prices": [
-    {
-     "at": "2026-11-17T18:50:01-05:00",
-     "price": 130
-    }
-   ],
-   "pulled": null,
-   "price_final": true,
-   "graded": null,
-   "rank": 1,
-   "tier": "main",
-   "game_id": 2026020334,
-   "player": "A. Cirelli",
-   "player_id": 8478519,
-   "team": "TBL",
-   "opp": "WSH",
-   "home": true,
-   "start": "2026-11-17T19:30:00-05:00",
-   "market": "points",
-   "line": 0.5,
-   "side": "over",
-   "bet": "Over 0.5 points",
-   "price_at": "2026-11-17T18:50:01-05:00",
-   "gap_pct": 3.9,
-   "market_fair_pct": 45.2,
-   "n_books": 6,
-   "guard": {
-    "verdict": "agrees",
-    "ours_pct": 46.5,
-    "model_pct": 52.0
-   },
-   "settled": "goalie",
-   "settled_label": "Goalie confirmed",
-   "reason": "6 other books say 45.2%; Hard Rock's +130 only needs 43.5%. Our model agrees (our blend: 46.5%).",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/4364398524853518735",
-   "links": {
-    "hardrock": {
-     "id": "4364398524853518735",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/4364398524853518735"
-    },
-    "draftkings": null
-   },
-   "thin": false,
-   "games_used": 89,
-   "games_this_season": 18
-  },
-  {
    "id": "2026-11-17:2026020339:8481598:shots:1.5:under",
    "price": 120,
    "first_price": 120,
@@ -621,7 +558,7 @@
    "pulled": null,
    "price_final": true,
    "graded": null,
-   "rank": 2,
+   "rank": 1,
    "tier": "main",
    "game_id": 2026020339,
    "player": "P. Broberg",
@@ -684,7 +621,7 @@
    "pulled": null,
    "price_final": true,
    "graded": null,
-   "rank": 3,
+   "rank": 2,
    "tier": "main",
    "game_id": 2026020340,
    "player": "R. Josi",
@@ -747,7 +684,7 @@
    "pulled": null,
    "price_final": true,
    "graded": null,
-   "rank": 4,
+   "rank": 3,
    "tier": "main",
    "game_id": 2026020339,
    "player": "C. McMichael",
@@ -810,7 +747,7 @@
    "pulled": null,
    "price_final": true,
    "graded": null,
-   "rank": 5,
+   "rank": 4,
    "tier": "main",
    "game_id": 2026020340,
    "player": "S. Stamkos",
@@ -1454,6 +1391,73 @@
    "thin": false,
    "games_used": 101,
    "games_this_season": 23
+  },
+  {
+   "id": "2026-11-17:2026020334:8478519:points:0.5:over",
+   "price": 130,
+   "first_price": 130,
+   "first_price_at": "2026-11-17T18:50:01-05:00",
+   "worst_price": 130,
+   "p": 0.4653,
+   "breakeven": 0.4348,
+   "p_pct": 46,
+   "breakeven_pct": 43,
+   "state": "locked",
+   "history": [
+    {
+     "at": "2026-11-17T18:50:01-05:00",
+     "text": "Lineup confirmed"
+    },
+    {
+     "at": "2026-11-17T19:30:00-05:00",
+     "text": "Locked"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-17T18:50:01-05:00",
+     "price": 130
+    }
+   ],
+   "pulled": null,
+   "price_final": false,
+   "graded": null,
+   "rank": null,
+   "tier": "main",
+   "game_id": 2026020334,
+   "player": "A. Cirelli",
+   "player_id": 8478519,
+   "team": "TBL",
+   "opp": "WSH",
+   "home": true,
+   "start": "2026-11-17T19:30:00-05:00",
+   "market": "points",
+   "line": 0.5,
+   "side": "over",
+   "bet": "Over 0.5 points",
+   "price_at": "2026-11-17T18:50:01-05:00",
+   "gap_pct": 3.9,
+   "market_fair_pct": 45.2,
+   "n_books": 6,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 46.5,
+    "model_pct": 52.0
+   },
+   "settled": "goalie",
+   "settled_label": "Goalie confirmed",
+   "reason": "6 other books say 45.2%; Hard Rock's +130 only needs 43.5%. Our model agrees (our blend: 46.5%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/4364398524853518735",
+   "links": {
+    "hardrock": {
+     "id": "4364398524853518735",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/4364398524853518735"
+    },
+    "draftkings": null
+   },
+   "thin": false,
+   "games_used": 89,
+   "games_this_season": 18
   }
  ],
  "parlays": [],
