@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-17",
- "generated_at": "2026-11-18T00:20:00-05:00",
+ "generated_at": "2026-11-18T00:30:00-05:00",
  "games": [
   {
    "game_id": 2026020333,
@@ -134,20 +134,20 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "11:43",
+   "clock": "07:17",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "DAL",
-    "score": 0,
-    "sog": 16
-   },
-   "home": {
-    "abbrev": "VGK",
     "score": 1,
     "sog": 18
    },
-   "updated_at": "2026-11-18T00:20:00-05:00"
+   "home": {
+    "abbrev": "VGK",
+    "score": 3,
+    "sog": 23
+   },
+   "updated_at": "2026-11-18T00:30:00-05:00"
   }
  ],
  "picks": {
@@ -229,7 +229,7 @@
   "2026-11-17:2026020342:8484803:points:0.5:under": {
    "game_id": 2026020342,
    "market": "points",
-   "stat": 1
+   "stat": 2
   }
  }
 }
