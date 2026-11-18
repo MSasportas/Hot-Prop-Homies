@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T13:10:00-05:00",
+ "at": "2026-11-18T13:20:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -393,6 +393,13 @@
    "date": "2026-11-18T18:08Z",
    "note": "Gardner (hamstring) is questionable for Wednesday's game against the Bucks, per Ira Winderman of the South Florida Sun Sentinel."
   },
+  "4591725": {
+   "status": "out",
+   "name": "Ryan Rollins",
+   "team": "MIL",
+   "date": "2026-11-18T18:10Z",
+   "note": "Rollins (illness) has been ruled out for Wednesday's game at Miami."
+  },
   "4997526": {
    "status": "out",
    "name": "Ousmane Dieng",
@@ -532,6 +539,13 @@
    "team": "ORL",
    "date": "2026-10-24T16:47Z",
    "note": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports."
+  },
+  "3912848": {
+   "status": "day-to-day",
+   "name": "Dean Wade",
+   "team": "PHI",
+   "date": "2026-11-18T18:06Z",
+   "note": "Wade (hamstring) has been downgraded to questionable for Wednesday's game against the Magic."
   },
   "4870562": {
    "status": "out",
