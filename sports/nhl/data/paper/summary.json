@@ -2,7 +2,7 @@
  "version": 1,
  "note": "Gap + Guard research log. Every flag here is a pick on the page and in the Record; vetoed and capped rows are research only.",
  "market": "shots",
- "generated_at": "2026-11-17T19:00:00-05:00",
+ "generated_at": "2026-11-17T19:20:01-05:00",
  "slate": "2026-11-17",
  "active": true,
  "window": {
@@ -40,8 +40,8 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "close_fair_pct": 47.7,
+    "clv_pct": 4.9,
     "result": null,
     "units": null
    },
@@ -74,8 +74,8 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "close_fair_pct": 46.5,
+    "clv_pct": 4.6,
     "result": null,
     "units": null
    },
@@ -180,8 +180,8 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "close_fair_pct": 54.4,
+    "clv_pct": 3.8,
     "result": null,
     "units": null
    },
@@ -278,7 +278,7 @@
     "cap": null,
     "flagged_at": "2026-11-17T18:50:01-05:00",
     "read_pull": "C",
-    "settled": "Early",
+    "settled": "Goalie confirmed",
     "frozen_settled": "Early",
     "move30_pct": -0.1,
     "pulled": null,
@@ -961,7 +961,7 @@
      "cap": null,
      "flagged_at": "2026-11-12T17:30:01-05:00",
      "read_pull": "B",
-     "settled": "Early",
+     "settled": "Lineup confirmed",
      "frozen_settled": "Early",
      "move30_pct": 1.1,
      "pulled": null,
@@ -1266,7 +1266,7 @@
   }
  ],
  "nov2": {
-  "gaps_measured": 66,
+  "gaps_measured": 69,
   "gaps_logged": 87,
   "graded_picks": 68,
   "w": 41,
@@ -1275,15 +1275,15 @@
   "units": 13.796754657924073,
   "wins_z": 1.3574334936421533,
   "clv_gaps": {
-   "n": 66,
-   "mean": 0.046162573802462296,
-   "lb80": 0.04313899676174703,
+   "n": 69,
+   "mean": 0.04608699261632519,
+   "lb80": 0.04313891709135071,
    "pos_share": 1.0
   },
   "clv_flags": {
-   "n": 58,
-   "mean": 0.046280936345988406,
-   "lb80": 0.042865477372496234,
+   "n": 61,
+   "mean": 0.046189621764446784,
+   "lb80": 0.0429615323608021,
    "pos_share": 1.0
   },
   "clv_vetoed": {
@@ -1292,7 +1292,7 @@
    "lb80": 0.04022234362802046,
    "pos_share": 1.0
   },
-  "clv_passed_mean": 0.046280936345988406,
+  "clv_passed_mean": 0.046189621764446784,
   "clv_vetoed_mean": 0.04530444536189801,
   "nights": 26,
   "nights_with_flags": 20,
