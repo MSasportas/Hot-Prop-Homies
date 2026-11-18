@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T20:00:00-05:00",
+ "generated_at": "2026-11-17T20:30:01-05:00",
  "summary": {
   "headline": {
    "w": 48,
@@ -243,7 +243,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 14,
+    "n": 16,
     "graded": false
    },
    {
@@ -520,6 +520,29 @@
      "legs": []
     },
     {
+     "id": "2026-11-17:2026020342:8475913:shots:1.5:under",
+     "kind": "single",
+     "player": "M. Stone",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "VGK",
+     "game": "DAL at VGK",
+     "price": 135,
+     "first_price": 135,
+     "last_price": 135,
+     "prices": [
+      {
+       "price": 135,
+       "at": "2026-11-17T20:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
      "id": "2026-11-17:2026020333:8482124:points:0.5:under",
      "kind": "single",
      "player": "Q. Byfield",
@@ -534,6 +557,29 @@
       {
        "price": 115,
        "at": "2026-11-17T17:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-17:2026020342:8484803:points:0.5:under",
+     "kind": "single",
+     "player": "T. Connelly",
+     "bet": "Under 0.5 points",
+     "market": "points",
+     "team": "VGK",
+     "game": "DAL at VGK",
+     "price": -130,
+     "first_price": -130,
+     "last_price": -130,
+     "prices": [
+      {
+       "price": -130,
+       "at": "2026-11-17T20:30:01-05:00"
       }
      ],
      "result": null,
