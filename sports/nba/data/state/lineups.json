@@ -2,7 +2,7 @@
  "slate": "2026-11-18",
  "teams": {
   "MEM": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Cam Spencer",
     "Cedric Coward",
@@ -92,18 +92,18 @@
   "PHI": {
    "state": "expected",
    "starters": [
-    "Tyrese Maxey",
+    "Anfernee Simons",
     "VJ Edgecombe",
     "Kentavious Caldwell-Pope",
     "LeBron James",
     "Joel Embiid"
    ],
    "status": {
-    "Tyrese Maxey": "out",
     "Ariel Hukporti": "out",
     "Dominick Barlow": "out",
     "Adem Bona": "out",
     "Jaylen Brown": "out",
+    "Tyrese Maxey": "out",
     "Dean Wade": "out"
    }
   },
@@ -222,12 +222,12 @@
     "Brandin Podziemski",
     "Yaxel Lendeborg",
     "Draymond Green",
-    "Al Horford"
+    "Charles Bassey"
    ],
    "status": {
-    "Al Horford": "out",
     "Jimmy Butler": "out",
     "Stephen Curry": "out",
+    "Al Horford": "out",
     "Moses Moody": "out",
     "Kristaps Porzingis": "out",
     "Brandon Williams": "out"
@@ -280,7 +280,6 @@
     "Isaiah Hartenstein"
    ],
    "status": {
-    "Jaylin Williams": "questionable",
     "Chet Holmgren": "out",
     "Thomas Sorber": "out",
     "Cason Wallace": "out",
@@ -368,5 +367,5 @@
    }
   }
  },
- "at": "2026-11-18T18:40:01-05:00"
+ "at": "2026-11-18T18:50:01-05:00"
 }

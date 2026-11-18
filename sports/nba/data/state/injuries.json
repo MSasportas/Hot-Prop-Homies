@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T18:32:39-05:00",
+ "at": "2026-11-18T18:50:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -204,26 +204,19 @@
    "date": "2026-11-08T16:05Z",
    "note": "Duren (hamstring) has begun on-court activity and will be re-evaluated in two weeks, Hunter Patterson of The Athletic reports."
   },
+  "3213": {
+   "status": "out",
+   "name": "Al Horford",
+   "team": "GS",
+   "date": "2026-11-18T23:39Z",
+   "note": "Horford (back) is questionable for Wednesday's game against Dallas."
+  },
   "4397040": {
    "status": "out",
    "name": "Brandon Williams",
    "team": "GS",
    "date": "2026-11-18T17:12Z",
    "note": "Williams (hamstring) has progressed to on-court activities and will be re-evaluated Saturday."
-  },
-  "6589": {
-   "status": "day-to-day",
-   "name": "Draymond Green",
-   "team": "GS",
-   "date": "2026-11-18T05:49Z",
-   "note": "Green is questionable for Wednesday's game in Dallas due to inflammation in his right elbow."
-  },
-  "3213": {
-   "status": "day-to-day",
-   "name": "Al Horford",
-   "team": "GS",
-   "date": "2026-11-17T22:21Z",
-   "note": "Horford (back) is questionable for Wednesday's game against Dallas."
   },
   "3975": {
    "status": "out",
@@ -505,19 +498,19 @@
    "date": "2026-10-24T16:47Z",
    "note": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports."
   },
+  "4431678": {
+   "status": "out",
+   "name": "Tyrese Maxey",
+   "team": "PHI",
+   "date": "2026-11-18T23:33Z",
+   "note": "Maxey (foot) is out for Wednesday's game in Orlando, Ky Carlin of USA Today reports."
+  },
   "3912848": {
    "status": "out",
    "name": "Dean Wade",
    "team": "PHI",
    "date": "2026-11-18T23:19Z",
    "note": "Wade (hamstring) is out for Wednesday's game in Orlando."
-  },
-  "4431678": {
-   "status": "day-to-day",
-   "name": "Tyrese Maxey",
-   "team": "PHI",
-   "date": "2026-11-18T22:59Z",
-   "note": "Maxey is questionable for Wednesday's game in Orlando due to right foot soreness, Gina Mizell of The Philadelphia Inquirer reports."
   },
   "3917376": {
    "status": "out",
