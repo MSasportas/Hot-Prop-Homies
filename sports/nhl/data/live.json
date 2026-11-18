@@ -1,10 +1,10 @@
 {
  "slate_date": "2026-11-17",
- "generated_at": "2026-11-17T21:40:01-05:00",
+ "generated_at": "2026-11-17T21:42:15-05:00",
  "games": [
   {
    "game_id": 2026020333,
-   "state": "CRIT",
+   "state": "FINAL",
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
@@ -21,7 +21,7 @@
     "score": 0,
     "sog": 29
    },
-   "updated_at": "2026-11-17T21:40:01-05:00"
+   "updated_at": "2026-11-17T21:42:15-05:00"
   },
   {
    "game_id": 2026020336,
@@ -42,7 +42,7 @@
     "score": 5,
     "sog": 42
    },
-   "updated_at": "2026-11-17T21:40:01-05:00"
+   "updated_at": "2026-11-17T21:42:15-05:00"
   },
   {
    "game_id": 2026020337,
@@ -63,7 +63,7 @@
     "score": 4,
     "sog": 33
    },
-   "updated_at": "2026-11-17T21:40:01-05:00"
+   "updated_at": "2026-11-17T21:42:15-05:00"
   },
   {
    "game_id": 2026020334,
@@ -71,20 +71,20 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "15:17",
+   "clock": "14:40",
    "in_intermission": false,
    "running": true,
    "away": {
     "abbrev": "WSH",
-    "score": 1,
-    "sog": 22
+    "score": 2,
+    "sog": 23
    },
    "home": {
     "abbrev": "TBL",
     "score": 4,
     "sog": 23
    },
-   "updated_at": "2026-11-17T21:40:01-05:00"
+   "updated_at": "2026-11-17T21:42:15-05:00"
   },
   {
    "game_id": 2026020339,
@@ -92,20 +92,20 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "03:44",
+   "clock": "03:07",
    "in_intermission": false,
    "running": true,
    "away": {
     "abbrev": "ANA",
-    "score": 2,
-    "sog": 19
+    "score": 3,
+    "sog": 20
    },
    "home": {
     "abbrev": "STL",
     "score": 4,
     "sog": 18
    },
-   "updated_at": "2026-11-17T21:40:01-05:00"
+   "updated_at": "2026-11-17T21:42:15-05:00"
   },
   {
    "game_id": 2026020340,
@@ -113,9 +113,9 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "02:36",
+   "clock": "02:11",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "NSH",
     "score": 2,
@@ -126,7 +126,7 @@
     "score": 6,
     "sog": 26
    },
-   "updated_at": "2026-11-17T21:40:01-05:00"
+   "updated_at": "2026-11-17T21:42:15-05:00"
   }
  ],
  "picks": {
