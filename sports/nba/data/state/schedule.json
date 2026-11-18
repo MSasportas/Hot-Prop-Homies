@@ -390,11 +390,11 @@
     "home": "LAC",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 3rd",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "9:06 - 4th",
     "score": {
-     "UTAH": "88",
-     "LAC": "86"
+     "UTAH": "100",
+     "LAC": "93"
     }
    },
    {
