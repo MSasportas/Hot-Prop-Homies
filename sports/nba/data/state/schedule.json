@@ -346,10 +346,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:16 - 2nd",
+    "detail": "7:16 - 2nd",
     "score": {
-     "NY": "27",
-     "TOR": "34"
+     "NY": "33",
+     "TOR": "38"
     }
    },
    {
@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:22 - 1st",
+    "detail": "6:55 - 1st",
     "score": {
-     "POR": "0",
-     "MIN": "2"
+     "POR": "5",
+     "MIN": "8"
     }
    },
    {
@@ -373,13 +373,13 @@
     "start": "2026-11-17T20:00:00-05:00",
     "away": "DET",
     "home": "SA",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/17 - 8:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:53 - 1st",
     "score": {
-     "DET": "0",
-     "SA": "0"
+     "DET": "4",
+     "SA": "8"
     }
    },
    {
