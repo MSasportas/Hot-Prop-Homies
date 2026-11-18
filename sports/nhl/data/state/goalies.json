@@ -62,8 +62,8 @@
    "status": "confirmed"
   },
   "NSH": {
-   "name": "Juuse Saros",
-   "status": "expected"
+   "name": "Justus Annunen",
+   "status": "confirmed"
   },
   "STL": {
    "name": "Jordan Binnington",
@@ -71,7 +71,7 @@
   },
   "ANA": {
    "name": "Ville Husso",
-   "status": "expected"
+   "status": "confirmed"
   },
   "VGK": {
    "name": "Adin Hill",
@@ -90,5 +90,5 @@
    "status": "confirmed"
   }
  },
- "checked_at": "2026-11-17T18:40:00-05:00"
+ "checked_at": "2026-11-17T19:40:00-05:00"
 }
