@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-18T16:00:00-05:00",
+ "generated_at": "2026-11-18T17:20:01-05:00",
  "summary": {
   "headline": {
    "w": 52,
@@ -287,6 +287,7 @@
       "needed": 0.5425,
       "n": 30,
       "ids": [
+       "2026-11-18:401910011:4432194:points:10.5:under",
        "2026-11-16:401910001:3136193:points:23.5:under",
        "2026-11-16:401909998:3032977:points:28.5:under",
        "2026-11-16:401909998:4066261:points:18.5:under",
@@ -439,6 +440,7 @@
       "needed": 0.5236,
       "n": 65,
       "ids": [
+       "2026-11-18:401910011:4432194:points:10.5:under",
        "2026-11-17:401910003:3995:rebounds:3.5:under",
        "2026-11-17:401910002:4395625:threes:1.5:under",
        "2026-11-17:401910002:5093267:rebounds:6.5:under",
@@ -527,6 +529,7 @@
       "ids": [
        "2026-11-18:401910010:3059318:assists:3.5:over",
        "2026-11-18:401910017:5041955:threes:2.5:over",
+       "2026-11-18:401910011:4432194:points:10.5:under",
        "2026-11-17:401910003:3995:rebounds:3.5:under",
        "2026-11-17:401910002:4395625:threes:1.5:under",
        "2026-11-17:401910002:5093267:rebounds:6.5:under",
@@ -688,6 +691,7 @@
       "n": 68,
       "ids": [
        "2026-11-18:401910010:3059318:assists:3.5:over",
+       "2026-11-18:401910011:4432194:points:10.5:under",
        "2026-11-17:401910003:3995:rebounds:3.5:under",
        "2026-11-17:401910002:4395625:threes:1.5:under",
        "2026-11-17:401910002:5093267:rebounds:6.5:under",
@@ -849,6 +853,7 @@
       "needed": 0.5523,
       "n": 54,
       "ids": [
+       "2026-11-18:401910011:4432194:points:10.5:under",
        "2026-11-17:401910003:3995:rebounds:3.5:under",
        "2026-11-17:401910002:5093267:rebounds:6.5:under",
        "2026-11-16:401910001:3136193:points:23.5:under",
@@ -917,7 +922,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 2,
+    "n": 3,
     "graded": false
    },
    {
@@ -1169,6 +1174,32 @@
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 360 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-18:401910011:4432194:points:10.5:under",
+     "kind": "single",
+     "player": "Day'Ron Sharpe",
+     "bet": "Under 10.5 points",
+     "market": "points",
+     "team": "BKN",
+     "game": "CHI at BKN",
+     "price": -125,
+     "first_price": -125,
+     "last_price": -125,
+     "prices": [
+      {
+       "price": -125,
+       "at": "2026-11-18T17:20:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "180 \u2192 135 min",
      "book": "hardrock",
      "under_fair": false
     }
