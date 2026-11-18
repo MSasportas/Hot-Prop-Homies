@@ -376,7 +376,7 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:11 - 3rd",
+    "detail": "2:00 - 3rd",
     "score": {
      "DET": "73",
      "SA": "68"
