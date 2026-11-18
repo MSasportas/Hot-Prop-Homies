@@ -124,11 +124,11 @@
    }
   },
   "CHA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Coby White",
-    "Sion James",
     "Brandon Miller",
+    "Grant Williams",
     "Naz Reid",
     "Moussa Diabate"
    ],
@@ -153,5 +153,5 @@
    }
   }
  },
- "at": "2026-11-17T22:40:03-05:00"
+ "at": "2026-11-17T22:41:41-05:00"
 }

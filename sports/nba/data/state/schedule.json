@@ -388,12 +388,12 @@
     "start": "2026-11-17T22:30:00-05:00",
     "away": "UTAH",
     "home": "LAC",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/17 - 10:30 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "11:05 - 1st",
     "score": {
-     "UTAH": "0",
+     "UTAH": "2",
      "LAC": "0"
     }
    },
