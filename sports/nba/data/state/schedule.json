@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:22 - 2nd",
+    "detail": "6:48 - 2nd",
     "score": {
-     "UTAH": "38",
-     "LAC": "29"
+     "UTAH": "47",
+     "LAC": "40"
     }
    },
    {
@@ -403,13 +403,13 @@
     "start": "2026-11-17T23:00:00-05:00",
     "away": "CHA",
     "home": "LAL",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/17 - 11:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:29 - 1st",
     "score": {
-     "CHA": "0",
-     "LAL": "0"
+     "CHA": "12",
+     "LAL": "8"
     }
    }
   ]
