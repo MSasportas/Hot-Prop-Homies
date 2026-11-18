@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-18T17:30:01-05:00",
+ "generated_at": "2026-11-18T18:00:00-05:00",
  "summary": {
   "headline": {
    "w": 52,
@@ -290,6 +290,7 @@
        "2026-11-18:401910011:4432194:points:10.5:under",
        "2026-11-18:401910010:4431678:points:25.5:under",
        "2026-11-18:401910015:4065648:points:25.5:under",
+       "2026-11-18:401910011:4395626:points:11.5:under",
        "2026-11-16:401910001:3136193:points:23.5:under",
        "2026-11-16:401909998:3032977:points:28.5:under",
        "2026-11-16:401909998:4066261:points:18.5:under",
@@ -445,6 +446,7 @@
        "2026-11-18:401910011:4432194:points:10.5:under",
        "2026-11-18:401910010:4431678:points:25.5:under",
        "2026-11-18:401910015:4065648:points:25.5:under",
+       "2026-11-18:401910011:4395626:points:11.5:under",
        "2026-11-17:401910003:3995:rebounds:3.5:under",
        "2026-11-17:401910002:4395625:threes:1.5:under",
        "2026-11-17:401910002:5093267:rebounds:6.5:under",
@@ -647,6 +649,7 @@
       "needed": 0.4653,
       "n": 5,
       "ids": [
+       "2026-11-18:401910011:4395626:points:11.5:under",
        "2026-11-15:401909988:5041955:assists:3.5:under",
        "2026-11-15:401909987:4396907:rebounds:2.5:over",
        "2026-11-10:401909963:4278053:points:13.5:under",
@@ -700,6 +703,7 @@
        "2026-11-18:401910010:3059318:assists:3.5:over",
        "2026-11-18:401910011:4432194:points:10.5:under",
        "2026-11-18:401910015:4065648:points:25.5:under",
+       "2026-11-18:401910011:4395626:points:11.5:under",
        "2026-11-17:401910003:3995:rebounds:3.5:under",
        "2026-11-17:401910002:4395625:threes:1.5:under",
        "2026-11-17:401910002:5093267:rebounds:6.5:under",
@@ -864,6 +868,7 @@
        "2026-11-18:401910011:4432194:points:10.5:under",
        "2026-11-18:401910010:4431678:points:25.5:under",
        "2026-11-18:401910015:4065648:points:25.5:under",
+       "2026-11-18:401910011:4395626:points:11.5:under",
        "2026-11-17:401910003:3995:rebounds:3.5:under",
        "2026-11-17:401910002:5093267:rebounds:6.5:under",
        "2026-11-16:401910001:3136193:points:23.5:under",
@@ -932,7 +937,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 5,
+    "n": 6,
     "graded": false
    },
    {
@@ -1155,7 +1160,11 @@
      "result": null,
      "actual": null,
      "units": null,
-     "pulled": null,
+     "pulled": {
+      "at": "2026-11-18T18:00:00-05:00",
+      "reason": "Hard Rock took the line down",
+      "code": "line_gone"
+     },
      "legs": [],
      "window": "11 AM \u2192 360 min",
      "book": "hardrock",
@@ -1262,6 +1271,32 @@
      "pulled": null,
      "legs": [],
      "window": "360 \u2192 240 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-18:401910011:4395626:points:11.5:under",
+     "kind": "single",
+     "player": "Tre Jones",
+     "bet": "Under 11.5 points",
+     "market": "points",
+     "team": "CHI",
+     "game": "CHI at BKN",
+     "price": -110,
+     "first_price": -110,
+     "last_price": -110,
+     "prices": [
+      {
+       "price": -110,
+       "at": "2026-11-18T18:00:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "135 \u2192 90 min",
      "book": "hardrock",
      "under_fair": false
     }
