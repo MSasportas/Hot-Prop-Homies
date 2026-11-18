@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T13:00:01-05:00",
+ "at": "2026-11-18T13:10:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -387,25 +387,11 @@
    "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
   },
   "4431772": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Myron Gardner",
    "team": "MIA",
-   "date": "2026-11-17T21:35Z",
+   "date": "2026-11-18T18:08Z",
    "note": "Gardner (hamstring) is questionable for Wednesday's game against the Bucks, per Ira Winderman of the South Florida Sun Sentinel."
-  },
-  "4997528": {
-   "status": "day-to-day",
-   "name": "Nikola Jovic",
-   "team": "MIA",
-   "date": "2026-11-17T21:34Z",
-   "note": "Jovic (illness) is listed as probable for Wednesday's game against Milwaukee, Ira Winderman of the South Florida Sun Sentinel reports."
-  },
-  "4066261": {
-   "status": "day-to-day",
-   "name": "Bam Adebayo",
-   "team": "MIA",
-   "date": "2026-11-17T21:32Z",
-   "note": "Adebayo (hip) is probable for Wednesday's game against the Bucks, per Ira Winderman of the South Florida Sun Sentinel."
   },
   "4997526": {
    "status": "out",
@@ -670,8 +656,8 @@
    "status": "day-to-day",
    "name": "RJ Barrett",
    "team": "TOR",
-   "date": "2026-11-18T17:47Z",
-   "note": "Barrett posted 22 points (9-17 FG, 2-8 3Pt, 2-6 FT), five rebounds, five assists and a block across 39 minutes in Tuesday's 111-102 loss to the Knicks."
+   "date": "2026-11-18T17:49Z",
+   "note": "Barrett is questionable for Wednesday's game against the Wizards due to hamstring tightness, Esfandiar Baraheni of The Athletic reports."
   },
   "4433134": {
    "status": "out",
