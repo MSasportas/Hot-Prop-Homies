@@ -346,10 +346,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:43 - 1st",
+    "detail": "2:49 - 1st",
     "score": {
-     "NY": "11",
-     "TOR": "13"
+     "NY": "20",
+     "TOR": "24"
     }
    },
    {
