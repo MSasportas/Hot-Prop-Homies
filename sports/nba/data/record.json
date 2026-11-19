@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-18T21:20:07-05:00",
+ "generated_at": "2026-11-18T21:30:03-05:00",
  "summary": {
   "headline": {
-   "w": 52,
+   "w": 53,
    "l": 35,
    "push": 0,
    "void": 1,
-   "units": 14.46,
-   "hit_rate": 0.5977,
-   "needed": 0.518,
-   "n": 87
+   "units": 15.26,
+   "hit_rate": 0.6023,
+   "needed": 0.5185,
+   "n": 88
   },
   "rows": [
    {
@@ -27,14 +27,14 @@
    {
     "key": "points",
     "label": "Points",
-    "w": 18,
+    "w": 19,
     "l": 12,
     "push": 0,
     "void": 1,
-    "units": 3.11,
-    "hit_rate": 0.6,
-    "needed": 0.5425,
-    "n": 30
+    "units": 3.91,
+    "hit_rate": 0.6129,
+    "needed": 0.5429,
+    "n": 31
    },
    {
     "key": "assists",
@@ -195,14 +195,14 @@
    {
     "key": "window:60 \u2192 45 min",
     "label": "Window 60 \u2192 45 min",
-    "w": 1,
+    "w": 2,
     "l": 0,
     "push": 0,
     "void": 0,
-    "units": 0.69,
+    "units": 1.49,
     "hit_rate": 1.0,
-    "needed": 0.5918,
-    "n": 1
+    "needed": 0.5737,
+    "n": 2
    },
    {
     "key": "window:75 \u2192 60 min",
@@ -279,14 +279,14 @@
      {
       "key": "points",
       "label": "Points",
-      "w": 18,
+      "w": 19,
       "l": 12,
       "push": 0,
       "void": 1,
-      "units": 3.11,
-      "hit_rate": 0.6,
-      "needed": 0.5425,
-      "n": 30,
+      "units": 3.91,
+      "hit_rate": 0.6129,
+      "needed": 0.5429,
+      "n": 31,
       "ids": [
        "2026-11-18:401910011:4432194:points:10.5:under",
        "2026-11-18:401910010:4431678:points:25.5:under",
@@ -442,14 +442,14 @@
      {
       "key": "under",
       "label": "Under",
-      "w": 34,
+      "w": 35,
       "l": 31,
       "push": 0,
       "void": 0,
-      "units": -0.12,
-      "hit_rate": 0.5231,
-      "needed": 0.5236,
-      "n": 65,
+      "units": 0.68,
+      "hit_rate": 0.5303,
+      "needed": 0.5241,
+      "n": 66,
       "ids": [
        "2026-11-18:401910011:4432194:points:10.5:under",
        "2026-11-18:401910010:4431678:points:25.5:under",
@@ -538,14 +538,14 @@
      {
       "key": "e0",
       "label": "0 to 2%",
-      "w": 42,
+      "w": 43,
       "l": 26,
       "push": 0,
       "void": 1,
-      "units": 13.24,
-      "hit_rate": 0.6176,
-      "needed": 0.5221,
-      "n": 68,
+      "units": 14.04,
+      "hit_rate": 0.6232,
+      "needed": 0.5226,
+      "n": 69,
       "ids": [
        "2026-11-18:401910010:3059318:assists:3.5:over",
        "2026-11-18:401910017:5041955:threes:2.5:over",
@@ -713,14 +713,14 @@
      {
       "key": "clear",
       "label": "Injury report clear",
-      "w": 41,
+      "w": 42,
       "l": 27,
       "push": 0,
       "void": 0,
-      "units": 11.22,
-      "hit_rate": 0.6029,
-      "needed": 0.5216,
-      "n": 68,
+      "units": 12.02,
+      "hit_rate": 0.6087,
+      "needed": 0.5221,
+      "n": 69,
       "ids": [
        "2026-11-18:401910010:3059318:assists:3.5:over",
        "2026-11-18:401910011:4432194:points:10.5:under",
@@ -885,14 +885,14 @@
      {
       "key": "fav",
       "label": "-100 to -150",
-      "w": 33,
+      "w": 34,
       "l": 21,
       "push": 0,
       "void": 1,
-      "units": 5.26,
-      "hit_rate": 0.6111,
+      "units": 6.06,
+      "hit_rate": 0.6182,
       "needed": 0.5523,
-      "n": 54,
+      "n": 55,
       "ids": [
        "2026-11-18:401910011:4432194:points:10.5:under",
        "2026-11-18:401910010:4431678:points:25.5:under",
@@ -967,11 +967,11 @@
   "days": [
    {
     "date": "2026-11-18",
-    "w": 0,
+    "w": 1,
     "l": 0,
     "push": 0,
     "void": 0,
-    "units": 0,
+    "units": 0.8,
     "n": 13,
     "graded": false
    },
@@ -1171,9 +1171,9 @@
   {
    "date": "2026-11-18",
    "graded": false,
-   "w": 0,
+   "w": 1,
    "l": 0,
-   "units": 0,
+   "units": 0.8,
    "entries": [
     {
      "id": "2026-11-18:401910010:3059318:assists:3.5:over",
@@ -1356,9 +1356,9 @@
        "at": "2026-11-18T18:20:00-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "4 points",
+     "units": 0.8,
      "pulled": null,
      "legs": [],
      "window": "60 \u2192 45 min",
