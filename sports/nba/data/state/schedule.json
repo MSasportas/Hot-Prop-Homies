@@ -343,12 +343,12 @@
     "start": "2026-11-18T19:00:00-05:00",
     "away": "MEM",
     "home": "CLE",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "13.8 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "MEM": "122",
+     "MEM": "124",
      "CLE": "121"
     }
    },
@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:20 - 4th",
+    "detail": "4:59 - 4th",
     "score": {
-     "MIL": "97",
-     "MIA": "127"
+     "MIL": "109",
+     "MIA": "128"
     }
    },
    {
@@ -388,13 +388,13 @@
     "start": "2026-11-18T19:00:00-05:00",
     "away": "PHI",
     "home": "ORL",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "37.0 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "PHI": "116",
-     "ORL": "112"
+     "PHI": "121",
+     "ORL": "116"
     }
    },
    {
@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:26 - 4th",
+    "detail": "3:46 - 4th",
     "score": {
-     "CHI": "124",
-     "BKN": "90"
+     "CHI": "135",
+     "BKN": "102"
     }
    },
    {
@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:55 - 4th",
+    "detail": "6:06 - 4th",
     "score": {
-     "WSH": "91",
-     "TOR": "82"
+     "WSH": "95",
+     "TOR": "88"
     }
    },
    {
@@ -436,10 +436,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:14 - 3rd",
+    "detail": "4:57 - 3rd",
     "score": {
-     "DET": "67",
-     "NO": "60"
+     "DET": "81",
+     "NO": "72"
     }
    },
    {
@@ -451,10 +451,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:09 - 3rd",
+    "detail": "2:03 - 3rd",
     "score": {
-     "ATL": "74",
-     "OKC": "67"
+     "ATL": "79",
+     "OKC": "77"
     }
    },
    {
@@ -466,10 +466,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:34 - 3rd",
+    "detail": "7:26 - 3rd",
     "score": {
-     "GS": "49",
-     "DAL": "64"
+     "GS": "53",
+     "DAL": "78"
     }
    },
    {

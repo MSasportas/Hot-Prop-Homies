@@ -309,13 +309,13 @@
    }
   },
   "UTAH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Keyonte George",
     "Darryn Peterson",
     "Josh Green",
     "Ace Bailey",
-    "Jaxson Hayes"
+    "Mo Bamba"
    ],
    "status": {
     "Jaren Jackson": "out",
@@ -324,12 +324,12 @@
    }
   },
   "LAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Luka Doncic",
     "Quentin Grimes",
     "Matisse Thybulle",
-    "Jake LaRavia",
+    "Ziaire Williams",
     "Walker Kessler"
    ],
    "status": {
@@ -337,7 +337,7 @@
    }
   },
   "PHX": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Devin Booker",
     "Jalen Green",
@@ -350,7 +350,7 @@
    }
   },
   "SAC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Darius Acuff",
     "Zach LaVine",
@@ -364,5 +364,5 @@
    }
   }
  },
- "at": "2026-11-18T21:30:03-05:00"
+ "at": "2026-11-18T21:40:00-05:00"
 }
