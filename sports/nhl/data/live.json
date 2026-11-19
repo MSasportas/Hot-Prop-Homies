@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-18",
- "generated_at": "2026-11-18T23:30:00-05:00",
+ "generated_at": "2026-11-18T23:40:00-05:00",
  "games": [
   {
    "game_id": 2026020346,
@@ -8,20 +8,20 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "13:50",
+   "clock": "10:06",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "COL",
     "score": 0,
-    "sog": 13
+    "sog": 15
    },
    "home": {
     "abbrev": "UTA",
     "score": 1,
-    "sog": 15
+    "sog": 17
    },
-   "updated_at": "2026-11-18T23:30:00-05:00"
+   "updated_at": "2026-11-18T23:40:00-05:00"
   }
  ],
  "picks": {
