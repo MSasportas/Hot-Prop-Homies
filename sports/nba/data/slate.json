@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 2484,
+   "pool_left": 2480,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-18T21:40:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-18T21:40:00-05:00"
+   "at": "2026-11-18T21:50:08-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-18T21:40:00-05:00",
+    "at": "2026-11-18T21:50:08-05:00",
     "confirmed": [
      "ATL",
      "BKN",
@@ -198,7 +198,7 @@
    "away": "MIL",
    "home": "MIA",
    "state": "in",
-   "detail": "4:59 - 4th",
+   "detail": "2:14 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -327,8 +327,8 @@
    "start": "2026-11-18T19:30:00-05:00",
    "away": "CHI",
    "home": "BKN",
-   "state": "in",
-   "detail": "3:46 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -393,7 +393,7 @@
    "away": "WAS",
    "home": "TOR",
    "state": "in",
-   "detail": "6:06 - 4th",
+   "detail": "1:53 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -458,7 +458,7 @@
    "away": "DET",
    "home": "NOP",
    "state": "in",
-   "detail": "4:57 - 3rd",
+   "detail": "2:18 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -523,7 +523,7 @@
    "away": "ATL",
    "home": "OKC",
    "state": "in",
-   "detail": "2:03 - 3rd",
+   "detail": "10:48 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -588,7 +588,7 @@
    "away": "GSW",
    "home": "DAL",
    "state": "in",
-   "detail": "7:26 - 3rd",
+   "detail": "2:03 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -652,8 +652,8 @@
    "start": "2026-11-18T21:30:00-05:00",
    "away": "BOS",
    "home": "DEN",
-   "state": "pre",
-   "detail": "11/18 - 9:30 PM EST",
+   "state": "in",
+   "detail": "9:32 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -892,7 +892,11 @@
    "price_final": false,
    "pulled": null,
    "added_at": "2026-11-18T18:00:00-05:00",
-   "result": null,
+   "result": {
+    "result": "W",
+    "actual": "10 points",
+    "units": 0.9091
+   },
    "links": null,
    "rank": null
   },
@@ -1308,7 +1312,11 @@
    "price_final": false,
    "pulled": null,
    "added_at": "2026-11-18T18:20:00-05:00",
-   "result": null,
+   "result": {
+    "result": "W",
+    "actual": "17 points",
+    "units": 0.8
+   },
    "links": null,
    "rank": null
   },
@@ -1364,7 +1372,11 @@
    "price_final": false,
    "pulled": null,
    "added_at": "2026-11-18T17:20:01-05:00",
-   "result": null,
+   "result": {
+    "result": "W",
+    "actual": "6 points",
+    "units": 0.8
+   },
    "links": null,
    "rank": null
   },
@@ -1617,6 +1629,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-18T21:40:00-05:00",
- "status_at": "2026-11-18T21:40:00-05:00"
+ "generated_at": "2026-11-18T21:50:08-05:00",
+ "status_at": "2026-11-18T21:50:08-05:00"
 }

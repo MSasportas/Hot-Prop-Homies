@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:59 - 4th",
+    "detail": "2:14 - 4th",
     "score": {
-     "MIL": "109",
-     "MIA": "128"
+     "MIL": "118",
+     "MIA": "135"
     }
    },
    {
@@ -403,13 +403,13 @@
     "start": "2026-11-18T19:30:00-05:00",
     "away": "CHI",
     "home": "BKN",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:46 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "CHI": "135",
-     "BKN": "102"
+     "CHI": "137",
+     "BKN": "107"
     }
    },
    {
@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:06 - 4th",
+    "detail": "1:53 - 4th",
     "score": {
-     "WSH": "95",
-     "TOR": "88"
+     "WSH": "100",
+     "TOR": "94"
     }
    },
    {
@@ -436,10 +436,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:57 - 3rd",
+    "detail": "2:18 - 3rd",
     "score": {
-     "DET": "81",
-     "NO": "72"
+     "DET": "87",
+     "NO": "78"
     }
    },
    {
@@ -451,10 +451,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:03 - 3rd",
+    "detail": "10:48 - 4th",
     "score": {
-     "ATL": "79",
-     "OKC": "77"
+     "ATL": "89",
+     "OKC": "86"
     }
    },
    {
@@ -466,10 +466,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:26 - 3rd",
+    "detail": "2:03 - 3rd",
     "score": {
-     "GS": "53",
-     "DAL": "78"
+     "GS": "64",
+     "DAL": "93"
     }
    },
    {
@@ -478,13 +478,13 @@
     "start": "2026-11-18T21:30:00-05:00",
     "away": "BOS",
     "home": "DEN",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/18 - 9:30 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "9:32 - 1st",
     "score": {
-     "BOS": "0",
-     "DEN": "0"
+     "BOS": "8",
+     "DEN": "2"
     }
    },
    {
