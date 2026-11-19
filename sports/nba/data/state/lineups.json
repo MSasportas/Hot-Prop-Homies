@@ -296,7 +296,7 @@
    "status": {}
   },
   "DEN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jamal Murray",
     "Christian Braun",
@@ -318,7 +318,6 @@
     "Jaxson Hayes"
    ],
    "status": {
-    "Jaxson Hayes": "questionable",
     "Jaren Jackson": "out",
     "Lauri Markkanen": "out",
     "Jusuf Nurkic": "out"
@@ -365,5 +364,5 @@
    }
   }
  },
- "at": "2026-11-18T21:02:47-05:00"
+ "at": "2026-11-18T21:10:00-05:00"
 }
