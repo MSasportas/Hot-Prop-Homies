@@ -1584,12 +1584,12 @@ function renderLive() {
   var d = split(), w = 0, l = 0, u = 0;
   /* tonight so far: finished (graded) picks the Record counts, at the posted price; voids and pushes stay out of W-L */
   d.started.forEach(function (p) {
-    var r = isObj(p.result) ? p.result : null; if (!r) return;
+    var r = isObj(p.result) ? p.result : (isObj(p.graded) ? p.graded : null); if (!r) return;
     if (r.result === 'W') w++; else if (r.result === 'L') l++; else return;
     u += num(r.units) || 0;
   });
   u = Math.round(u * 100) / 100;
-  app.appendChild(h('div', { class: 'tonight' }, (w + l) ? ['Tonight ' + w + '-' + l + ' \u00b7 ', h('span', { class: signCls(u), text: (u > 0 ? '+' : u < 0 ? '-' : '') + Math.abs(u).toFixed(2) + 'u' })] : 'Tonight: no results yet'));
+  app.appendChild(h('div', { class: 'tonight' }, (w + l) ? ['Tonight ' + w + '-' + l + ' \u00b7 ', h('span', { class: signCls(u), text: uShort(u, 1) })] : 'Tonight: no results yet'));
   if (d.started.length) { var la = liveAgo(); app.appendChild(h('div', { id: 'lvupd', class: 'lvupd' + (la.bad ? ' bad' : ''), role: 'status', text: la.text })); }
   var on = d.started.filter(function (p) { return !pickFinal(p); }), done = d.started.filter(pickFinal);
   var byStart = function (a, b) { return (pickStart(a, d.games) || 0) - (pickStart(b, d.games) || 0) || evOf(b) - evOf(a); };
@@ -1675,6 +1675,31 @@ function renderGamesAll() {
 function renderLiveAll() {
   top('Live', true);
   if (!S.allResults) { loadingView(); return; }
+  /* today's running W/L/units for already-graded picks, with per-sport breakdown */
+  var sportSt = {}, tw = 0, tl = 0, tu = 0;
+  ['nba', 'nhl'].forEach(function(sp) {
+    var r = null; arr(S.allResults).forEach(function(x) { if (x.sport === sp) r = x; });
+    if (!r || !r.slate.ok) return;
+    var sw = 0, sl = 0, su = 0;
+    arr(r.slate.v.picks).filter(isObj).forEach(function(p) {
+      var g = sp === 'nhl' ? (isObj(p.graded) ? p.graded : null) : (isObj(p.result) ? p.result : null);
+      if (!g) return;
+      if (g.result === 'W') sw++; else if (g.result === 'L') sl++; else return;
+      su += num(g.units) || 0;
+    });
+    su = Math.round(su * 100) / 100;
+    if (sw + sl) sportSt[sp] = { w: sw, l: sl, u: su };
+    tw += sw; tl += sl; tu += su;
+  });
+  tu = Math.round(tu * 100) / 100;
+  if (tw + tl) {
+    var parts = ['Today ' + tw + '-' + tl + ' · ', h('span', { class: signCls(tu), text: uShort(tu, 1) })];
+    ['nba', 'nhl'].forEach(function(sp) {
+      var ss = sportSt[sp]; if (!ss) return;
+      parts.push(' · '); parts.push(h('span', { class: 'sp-badge ' + sp, text: sp.toUpperCase() })); parts.push(' ' + ss.w + '-' + ss.l);
+    });
+    app.appendChild(h('div', { class: 'tonight' }, parts));
+  }
   var anyOn = false;
   arr(S.allResults).forEach(function (r) {
     if (!r.slate.ok) return;
@@ -1683,7 +1708,7 @@ function renderLiveAll() {
     anyOn = true;
   });
   if (!anyOn) {
-    app.appendChild(h('div', { class: 'card empty' }, h('div', { class: 't', text: 'No live games right now.' })));
+    if (!(tw + tl)) app.appendChild(h('div', { class: 'card empty' }, h('div', { class: 't', text: 'No live games right now.' })));
     app.appendChild(smallFoot()); return;
   }
   ['nba', 'nhl'].forEach(function (sp) {
