@@ -79,7 +79,7 @@
   },
   "ANA": {
    "name": "Lukas Dostal",
-   "status": "expected"
+   "status": "confirmed"
   },
   "SEA": {
    "name": "Philipp Grubauer",
@@ -98,5 +98,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-19T14:10:35-05:00"
+ "checked_at": "2026-11-19T14:20:01-05:00"
 }
