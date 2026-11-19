@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T22:40:01-05:00",
+ "at": "2026-11-19T09:50:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -232,19 +232,19 @@
    "date": "2026-11-17T20:58Z",
    "note": "Capela (ankle) has been ruled out for Wednesday's game against Indiana."
   },
+  "4395712": {
+   "status": "day-to-day",
+   "name": "Andrew Nembhard",
+   "team": "IND",
+   "date": "2026-11-19T14:45Z",
+   "note": "Nembhard (hip) won't play in Wednesday's game against the Rockets, Tony East of Forbes.com reports."
+  },
   "5105854": {
    "status": "day-to-day",
    "name": "Braden Smith",
    "team": "IND",
    "date": "2026-11-19T02:52Z",
    "note": "Smith suffered a right ankle sprain during Wednesday's game against the Wizards, Tony East of Forbes.com reports."
-  },
-  "4395712": {
-   "status": "out",
-   "name": "Andrew Nembhard",
-   "team": "IND",
-   "date": "2026-11-18T22:27Z",
-   "note": "Nembhard (hip) won't play in Wednesday's game against the Rockets, Tony East of Forbes.com reports."
   },
   "4396993": {
    "status": "out",
@@ -331,10 +331,10 @@
    "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
   },
   "4431772": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Myron Gardner",
    "team": "MIA",
-   "date": "2026-11-18T18:09Z",
+   "date": "2026-11-19T14:45Z",
    "note": "Gardner (hamstring) is out for Wednesday's game against the Bucks."
   },
   "4591725": {
