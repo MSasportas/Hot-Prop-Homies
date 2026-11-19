@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-18T21:40:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-18T21:52:04-05:00"
+   "at": "2026-11-18T22:00:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-18T21:52:04-05:00",
+    "at": "2026-11-18T22:00:00-05:00",
     "confirmed": [
      "ATL",
      "BKN",
@@ -197,8 +197,8 @@
    "start": "2026-11-18T19:00:00-05:00",
    "away": "MIL",
    "home": "MIA",
-   "state": "in",
-   "detail": "1:22 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -393,7 +393,7 @@
    "away": "WAS",
    "home": "TOR",
    "state": "in",
-   "detail": "1:53 - 4th",
+   "detail": "End of 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -458,7 +458,7 @@
    "away": "DET",
    "home": "NOP",
    "state": "in",
-   "detail": "1:40 - 3rd",
+   "detail": "10:37 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -523,7 +523,7 @@
    "away": "ATL",
    "home": "OKC",
    "state": "in",
-   "detail": "10:43 - 4th",
+   "detail": "7:20 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -588,7 +588,7 @@
    "away": "GSW",
    "home": "DAL",
    "state": "in",
-   "detail": "1:16 - 3rd",
+   "detail": "11:24 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -653,7 +653,7 @@
    "away": "BOS",
    "home": "DEN",
    "state": "in",
-   "detail": "7:59 - 1st",
+   "detail": "5:46 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -947,24 +947,14 @@
     }
    },
    "id": "2026-11-18:401910017:3945274:assists:8.5:under",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "added_at": "2026-11-18T20:30:01-05:00",
    "result": null,
-   "links": {
-    "hardrock": {
-     "id": "3575965217598865831",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/3575965217598865831",
-     "price": -145
-    },
-    "draftkings": {
-     "url": "https://sportsbook.draftkings.com/?outcomes=0QA390333469%232370466884_13L42648Q1311103930Q20",
-     "price": -138
-    }
-   },
-   "rank": 1
+   "links": null,
+   "rank": null
   },
   {
    "player": "Luguentz Dort",
@@ -1597,27 +1587,21 @@
     }
    },
    "id": "2026-11-18:401910017:5041955:threes:2.5:over",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "added_at": "2026-11-18T16:00:00-05:00",
    "result": null,
-   "links": {
-    "hardrock": {
-     "id": "67837029737693613",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/67837029737693613",
-     "price": 115
-    },
-    "draftkings": {
-     "url": "https://sportsbook.draftkings.com/?outcomes=0QA390334111%232370816490_13L42648Q1-717019713Q20",
-     "price": 114
-    }
-   },
-   "rank": 2
+   "links": null,
+   "rank": null
   }
  ],
- "empty": null,
+ "empty": {
+  "text": "No open picks right now",
+  "why": "Every game has started.",
+  "next": null
+ },
  "counts": {
   "lines_read": 1162,
   "passing": 31,
@@ -1629,6 +1613,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-18T21:52:04-05:00",
- "status_at": "2026-11-18T21:52:04-05:00"
+ "generated_at": "2026-11-18T22:00:00-05:00",
+ "status_at": "2026-11-18T22:00:00-05:00"
 }
