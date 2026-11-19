@@ -346,9 +346,9 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:57 - 4th",
+    "detail": "8:40 - 4th",
     "score": {
-     "MEM": "102",
+     "MEM": "105",
      "CLE": "105"
     }
    },
@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:56 - 4th",
+    "detail": "7:06 - 4th",
     "score": {
-     "HOU": "101",
-     "IND": "81"
+     "HOU": "104",
+     "IND": "85"
     }
    },
    {
@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:30 - 3rd",
+    "detail": "5:54 - 3rd",
     "score": {
      "MIL": "61",
-     "MIA": "81"
+     "MIA": "88"
     }
    },
    {
@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:55 - 3rd",
+    "detail": "6:32 - 3rd",
     "score": {
-     "CHI": "87",
-     "BKN": "62"
+     "CHI": "91",
+     "BKN": "63"
     }
    },
    {
@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:02 - 3rd",
+    "detail": "6:40 - 3rd",
     "score": {
      "WSH": "64",
-     "TOR": "62"
+     "TOR": "63"
     }
    },
    {
@@ -436,10 +436,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:21 - 2nd",
+    "detail": "2:14 - 2nd",
     "score": {
-     "DET": "57",
-     "NO": "48"
+     "DET": "58",
+     "NO": "53"
     }
    },
    {
@@ -451,10 +451,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:15 - 2nd",
+    "detail": "0.0 - 2nd",
     "score": {
-     "ATL": "56",
-     "OKC": "47"
+     "ATL": "64",
+     "OKC": "51"
     }
    },
    {
@@ -466,10 +466,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:56 - 2nd",
+    "detail": "2:36 - 2nd",
     "score": {
      "GS": "44",
-     "DAL": "54"
+     "DAL": "55"
     }
    },
    {
