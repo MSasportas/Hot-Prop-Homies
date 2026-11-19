@@ -547,7 +547,10 @@ function split() { /* board (open + too late, not started) / started (Live) / sc
     else out.open.push(p);
   }
   var byRank = function (a, b) { var x = num(a.rank), y = num(b.rank); return (x == null ? 1e9 : x) - (y == null ? 1e9 : y); };
-  out.open.sort(byRank); out.started.sort(byRank);
+  var byEv = function(a, b) {
+    return evOf(b) - evOf(a) || (ms(a.start) || 0) - (ms(b.start) || 0);
+  };
+  out.open.sort(byEv); out.started.sort(byEv);
   /* a pick that came off the board keeps its place: it sits where its edge put it among the open picks */
   var board = out.open.slice();
   out.late.slice().sort(function (a, b) { return evOf(b) - evOf(a); }).forEach(function (q) {
@@ -1740,6 +1743,20 @@ setInterval(function () { if (S.loaded) espnPoll(); }, ESPN_EVERY);
 S.view = viewFromHash();
 renderTabs();
 load().then(schedule).then(espnPoll);
+})();
+(function() {
+  if (!('wakeLock' in navigator)) return;
+  var wl = null;
+  function req() {
+    navigator.wakeLock.request('screen').then(function(lock) {
+      wl = lock;
+      lock.addEventListener('release', function() { wl = null; });
+    }).catch(function() {});
+  }
+  document.addEventListener('visibilitychange', function() {
+    if (document.visibilityState === 'visible') req();
+  });
+  req();
 })();
 </script>
 </body>
