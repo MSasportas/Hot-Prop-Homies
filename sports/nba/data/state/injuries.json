@@ -1,19 +1,19 @@
 {
- "at": "2026-11-19T17:10:01-05:00",
+ "at": "2026-11-19T17:20:01-05:00",
  "list": {
   "3146557": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Jock Landale",
    "team": "ATL",
-   "date": "2026-11-19T14:50Z",
-   "note": "Landale (hip) won't play Wednesday in Oklahoma City."
+   "date": "2026-11-19T22:07Z",
+   "note": "Landale (hip) won't play in Friday's game against the Hornets, Brad Rowland of the Locked On Podcast Network reports."
   },
   "5149077": {
    "status": "day-to-day",
    "name": "Kingston Flemings",
    "team": "ATL",
-   "date": "2026-11-19T14:50Z",
-   "note": "Flemings (back) is out for Wednesday's game against the Thunder."
+   "date": "2026-11-19T22:05Z",
+   "note": "Flemings (back) is questionable for Friday's game against the Hornets, Brad Rowland of the Locked On Podcast Network reports."
   },
   "4873201": {
    "status": "out",
@@ -51,11 +51,11 @@
    "note": "Nelson (ankle) has been ruled out for Friday's game against Orlando."
   },
   "3135045": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Grayson Allen",
    "team": "CHA",
-   "date": "2026-11-18T15:07Z",
-   "note": "Allen (concussion-like symptoms) has been ruled out for Tuesday's game against the Lakers."
+   "date": "2026-11-19T22:02Z",
+   "note": "Allen (concussion) has been ruled out for Friday's game against Atlanta."
   },
   "5061575": {
    "status": "out",
@@ -70,6 +70,13 @@
    "team": "CHA",
    "date": "2026-11-08T22:26Z",
    "note": "Schroder has been diagnosed with a left hamstring strain and will be reevaluated in two weeks, Michael Scotto of HoopsHype.com reports."
+  },
+  "5242496": {
+   "status": "day-to-day",
+   "name": "Noa Essengue",
+   "team": "CHI",
+   "date": "2026-11-19T22:11Z",
+   "note": "Essengue contributed one point (0-4 FG, 0-3 3Pt, 1-2 FT), two rebounds, one assist and one steal in 14 minutes during Monday's 126-115 loss to the Cavaliers."
   },
   "5105555": {
    "status": "out",
@@ -152,8 +159,8 @@
    "status": "out",
    "name": "Taurean Prince",
    "team": "DET",
-   "date": "2026-11-19T21:49Z",
-   "note": "Prince (knee) is out for Wednesday's game against the Pelicans."
+   "date": "2026-11-19T21:53Z",
+   "note": "Prince underwent right knee surgery and is listed as out for Friday's game against the Raptors."
   },
   "5258459": {
    "status": "out",
@@ -260,19 +267,26 @@
    "date": "2026-11-17T20:58Z",
    "note": "Capela (ankle) has been ruled out for Wednesday's game against Indiana."
   },
+  "2530530": {
+   "status": "day-to-day",
+   "name": "T.J. McConnell",
+   "team": "IND",
+   "date": "2026-11-19T22:10Z",
+   "note": "McConnell recorded 14 points (7-10 FG), five assists, two rebounds and two steals over 18 minutes during the Packers' 119-104 loss to the Rockets on Wednesday."
+  },
   "4395712": {
    "status": "day-to-day",
    "name": "Andrew Nembhard",
    "team": "IND",
-   "date": "2026-11-19T14:45Z",
-   "note": "Nembhard (hip) won't play in Wednesday's game against the Rockets, Tony East of Forbes.com reports."
+   "date": "2026-11-19T22:07Z",
+   "note": "Nembhard (hip) is questionable for Friday's game in Cleveland."
   },
   "5105854": {
    "status": "day-to-day",
    "name": "Braden Smith",
    "team": "IND",
-   "date": "2026-11-19T02:52Z",
-   "note": "Smith suffered a right ankle sprain during Wednesday's game against the Wizards, Tony East of Forbes.com reports."
+   "date": "2026-11-19T22:05Z",
+   "note": "Smith (ankle) is listed as questionable for Friday's game against Cleveland."
   },
   "4396993": {
    "status": "out",
