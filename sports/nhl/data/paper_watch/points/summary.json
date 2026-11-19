@@ -2,7 +2,7 @@
  "version": 1,
  "note": "Behind the scenes: research only. Not picks, not on the Record, never sent to Discord.",
  "market": "points",
- "generated_at": "2026-11-18T20:00:36-05:00",
+ "generated_at": "2026-11-18T20:30:01-05:00",
  "slate": "2026-11-18",
  "active": true,
  "window": {
@@ -10,7 +10,42 @@
   "checkpoint": "2026-11-02"
  },
  "tonight": {
-  "flags": [],
+  "flags": [
+   {
+    "id": "2026-11-18:2026020346:8476389:0.5:under",
+    "kind": "flag",
+    "slate": "2026-11-18",
+    "game_id": 2026020346,
+    "player": "V. Trocheck",
+    "team": "UTA",
+    "opp": "COL",
+    "game": "UTA vs COL",
+    "start": "2026-11-18T22:00:00-05:00",
+    "side": "under",
+    "line": 0.5,
+    "bet": "UNDER 0.5 points",
+    "price": 130,
+    "gap_pct": 4.7,
+    "final_pct": 8.5,
+    "market_fair_pct": 45.5,
+    "final_p_pct": 47.2,
+    "n_books": 7,
+    "guard": "pass",
+    "cap": null,
+    "flagged_at": "2026-11-18T20:30:01-05:00",
+    "read_pull": "B",
+    "settled": "Lineup confirmed",
+    "frozen_settled": "Lineup confirmed",
+    "move30_pct": null,
+    "pulled": null,
+    "locked": false,
+    "state": "open",
+    "close_fair_pct": null,
+    "clv_pct": null,
+    "result": null,
+    "units": null
+   }
+  ],
   "vetoes": [],
   "capped": []
  },
@@ -1951,7 +1986,7 @@
  ],
  "nov2": {
   "gaps_measured": 49,
-  "gaps_logged": 54,
+  "gaps_logged": 55,
   "graded_picks": 39,
   "w": 23,
   "l": 16,
@@ -1979,7 +2014,7 @@
   "clv_passed_mean": 0.04580826677433942,
   "clv_vetoed_mean": 0.038559974476628324,
   "nights": 22,
-  "nights_with_flags": 12,
+  "nights_with_flags": 13,
   "population_slope": null,
   "checkpoint": "2026-11-02"
  }

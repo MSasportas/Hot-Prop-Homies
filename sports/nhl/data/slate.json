@@ -1,42 +1,38 @@
 {
  "slate_date": "2026-11-18",
- "generated_at": "2026-11-18T20:00:36-05:00",
- "status_at": "2026-11-18T20:00:36-05:00",
+ "generated_at": "2026-11-18T20:30:01-05:00",
+ "status_at": "2026-11-18T20:30:01-05:00",
  "valid_until": "2026-11-19T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
-  "prices_at": "2026-11-18T18:50:01-05:00",
-  "next_price_read_at": "2026-11-18T20:30:00-05:00",
+  "prices_at": "2026-11-18T20:30:01-05:00",
+  "next_price_read_at": "2026-11-18T21:15:00-05:00",
   "stats_built_at": "2026-11-18T02:30:01-05:00",
   "stats_through": "2026-11-17",
-  "lineups_at": "2026-11-18T20:00:36-05:00",
+  "lineups_at": "2026-11-18T20:30:01-05:00",
   "goalies_at": null,
   "lineups_note": "Lineups posted for 6 of 6 teams checked so far.",
   "lineups_state": "ok",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-18T20:00:36-05:00",
+   "at": "2026-11-18T20:30:01-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 2780,
+   "pulls_left": 2775,
    "keys": 9,
    "game_days_left": 11,
    "days_left": 13,
    "low": false
   },
   "excluded_teams": [],
-  "lines_checked": 29,
-  "flag_reads": 2,
+  "lines_checked": 50,
+  "flag_reads": 3,
   "tier": 4
  },
  "banners": [],
- "empty": {
-  "code": "none_qualified",
-  "text": "No picks yet today",
-  "sub": "29 lines read, none cleared both checks. 1 had a gap but our model said no. Next read at 8:30 PM."
- },
+ "empty": null,
  "games": [
   {
    "id": 2026020344,
@@ -154,11 +150,15 @@
      {
       "pull": "A",
       "at": "2026-11-18T13:00:00-05:00"
+     },
+     {
+      "pull": "B",
+      "at": "2026-11-18T20:30:01-05:00"
      }
     ],
     "next_read": {
-     "pull": "B",
-     "at": "2026-11-18T20:30:00-05:00"
+     "pull": "C",
+     "at": "2026-11-18T21:15:00-05:00"
     },
     "lineups_at": {
      "away": "2026-11-18T19:00:01-05:00",
@@ -167,12 +167,76 @@
    },
    "started": false,
    "reads_done": false,
-   "picks": 0,
+   "picks": 1,
    "excluded_reason": null,
    "excluded_teams": []
   }
  ],
- "picks": [],
+ "picks": [
+  {
+   "id": "2026-11-18:2026020346:8476389:points:0.5:under",
+   "price": 130,
+   "first_price": 130,
+   "first_price_at": "2026-11-18T20:30:01-05:00",
+   "worst_price": 130,
+   "p": 0.4719,
+   "breakeven": 0.4348,
+   "p_pct": 47,
+   "breakeven_pct": 43,
+   "state": "lineup",
+   "history": [
+    {
+     "at": "2026-11-18T20:30:01-05:00",
+     "text": "Lineup confirmed"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-18T20:30:01-05:00",
+     "price": 130
+    }
+   ],
+   "pulled": null,
+   "price_final": false,
+   "graded": null,
+   "rank": 1,
+   "tier": "main",
+   "game_id": 2026020346,
+   "player": "V. Trocheck",
+   "player_id": 8476389,
+   "team": "UTA",
+   "opp": "COL",
+   "home": true,
+   "start": "2026-11-18T22:00:00-05:00",
+   "market": "points",
+   "line": 0.5,
+   "side": "under",
+   "bet": "Under 0.5 points",
+   "price_at": "2026-11-18T20:30:01-05:00",
+   "gap_pct": 4.7,
+   "market_fair_pct": 45.5,
+   "n_books": 7,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 47.2,
+    "model_pct": 53.8
+   },
+   "settled": "lineup",
+   "settled_label": "Lineup confirmed",
+   "reason": "7 other books say 45.5%; Hard Rock's +130 only needs 43.5%. Our model agrees (our blend: 47.2%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/7009424355342025102",
+   "links": {
+    "hardrock": {
+     "id": "7009424355342025102",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/7009424355342025102"
+    },
+    "draftkings": null
+   },
+   "thin": false,
+   "games_used": 89,
+   "games_this_season": 22
+  }
+ ],
  "parlays": [],
  "parlays_note": "Parlays are not offered: there is no evidence for them yet."
 }
