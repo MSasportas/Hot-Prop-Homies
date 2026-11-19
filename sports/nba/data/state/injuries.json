@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T15:30:01-05:00",
+ "at": "2026-11-19T16:20:00-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -44,10 +44,10 @@
    "note": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday."
   },
   "4702670": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Grant Nelson",
    "team": "BKN",
-   "date": "2026-11-19T15:45Z",
+   "date": "2026-11-19T21:17Z",
    "note": "Nelson signed a two-way contract with the Nets on Friday, Michael Scotto of HoopsHype.com reports."
   },
   "3135045": {
@@ -414,12 +414,26 @@
    "date": "2026-10-05T20:53Z",
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
   },
+  "4431675": {
+   "status": "out",
+   "name": "Trendon Watford",
+   "team": "NO",
+   "date": "2026-11-19T21:09Z",
+   "note": "Watford (ankle) has been ruled out for Friday's game against Oklahoma City."
+  },
   "4683634": {
    "status": "out",
    "name": "Bennedict Mathurin",
    "team": "NO",
-   "date": "2026-11-17T20:59Z",
-   "note": "Mathurin (foot) has been ruled out for Wednesday's game against Detroit."
+   "date": "2026-11-19T21:07Z",
+   "note": "Mathurin (foot) has been ruled out for Friday's game against the Thunder."
+  },
+  "4397688": {
+   "status": "out",
+   "name": "Trey Murphy III",
+   "team": "NO",
+   "date": "2026-11-19T21:05Z",
+   "note": "Murphy (knee) is questionable for Friday's game against the Thunder."
   },
   "4576086": {
    "status": "out",
@@ -427,20 +441,6 @@
    "team": "NO",
    "date": "2026-11-17T20:57Z",
    "note": "McGowens (elbow) has been ruled out for Wednesday's game against Detroit."
-  },
-  "4431675": {
-   "status": "out",
-   "name": "Trendon Watford",
-   "team": "NO",
-   "date": "2026-11-17T20:55Z",
-   "note": "Watford (ankle) has been ruled out for Wednesday's game against Detroit."
-  },
-  "4397688": {
-   "status": "out",
-   "name": "Trey Murphy III",
-   "team": "NO",
-   "date": "2026-11-17T20:51Z",
-   "note": "Murphy (knee) has been ruled out for Wednesday's game against Detroit."
   },
   "3907497": {
    "status": "out",
@@ -646,10 +646,10 @@
    "note": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports."
   },
   "4395625": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "RJ Barrett",
    "team": "TOR",
-   "date": "2026-11-19T14:48Z",
+   "date": "2026-11-19T21:06Z",
    "note": "Barrett (hamstring) is out for Wednesday's game against the Wizards, Michael Grange of Sportsnet.ca reports."
   },
   "4433134": {
