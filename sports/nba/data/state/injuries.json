@@ -1,18 +1,18 @@
 {
- "at": "2026-11-19T10:00:00-05:00",
+ "at": "2026-11-19T10:10:01-05:00",
  "list": {
   "3146557": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Jock Landale",
    "team": "ATL",
-   "date": "2026-11-17T23:07Z",
+   "date": "2026-11-19T14:50Z",
    "note": "Landale (hip) won't play Wednesday in Oklahoma City."
   },
   "5149077": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Kingston Flemings",
    "team": "ATL",
-   "date": "2026-11-17T23:06Z",
+   "date": "2026-11-19T14:50Z",
    "note": "Flemings (back) is out for Wednesday's game against the Thunder."
   },
   "4873201": {
@@ -176,11 +176,18 @@
    "date": "2026-11-08T16:05Z",
    "note": "Duren (hamstring) has begun on-court activity and will be re-evaluated in two weeks, Hunter Patterson of The Athletic reports."
   },
+  "6589": {
+   "status": "day-to-day",
+   "name": "Draymond Green",
+   "team": "GS",
+   "date": "2026-11-19T14:59Z",
+   "note": "Green (elbow) is available for Wednesday's game against the Mavericks."
+  },
   "3213": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Al Horford",
    "team": "GS",
-   "date": "2026-11-18T23:38Z",
+   "date": "2026-11-19T14:51Z",
    "note": "Horford (back) is out for Wednesday's game against the Mavericks, but will play Thursday against the Grizzlies, Nick Friedell of The Athletic reports."
   },
   "4397040": {
