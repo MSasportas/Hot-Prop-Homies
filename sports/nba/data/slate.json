@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-18T21:40:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-18T23:00:01-05:00"
+   "at": "2026-11-18T23:10:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -653,7 +653,7 @@
    "away": "BOS",
    "home": "DEN",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "10:59 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -718,7 +718,7 @@
    "away": "UTA",
    "home": "LAL",
    "state": "in",
-   "detail": "5:56 - 2nd",
+   "detail": "45.2 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -783,7 +783,7 @@
    "away": "PHX",
    "home": "SAC",
    "state": "in",
-   "detail": "0.5 - 2nd",
+   "detail": "Halftime",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -1625,6 +1625,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-18T23:00:01-05:00",
- "status_at": "2026-11-18T23:00:01-05:00"
+ "generated_at": "2026-11-18T23:10:00-05:00",
+ "status_at": "2026-11-18T23:10:00-05:00"
 }
