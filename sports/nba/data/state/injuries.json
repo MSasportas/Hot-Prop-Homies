@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T14:00:01-05:00",
+ "at": "2026-11-19T14:10:00-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -190,26 +190,19 @@
    "date": "2026-11-08T16:05Z",
    "note": "Duren (hamstring) has begun on-court activity and will be re-evaluated in two weeks, Hunter Patterson of The Athletic reports."
   },
+  "6589": {
+   "status": "out",
+   "name": "Draymond Green",
+   "team": "GS",
+   "date": "2026-11-19T18:51Z",
+   "note": "Green (elbow) is out for Thursday's game against the Grizzlies."
+  },
   "4433149": {
    "status": "day-to-day",
    "name": "LJ Cryer",
    "team": "GS",
    "date": "2026-11-19T18:46Z",
    "note": "Cryer (back) is questionable for Thursday's game against Memphis."
-  },
-  "6589": {
-   "status": "day-to-day",
-   "name": "Draymond Green",
-   "team": "GS",
-   "date": "2026-11-19T14:59Z",
-   "note": "Green (elbow) is available for Wednesday's game against the Mavericks."
-  },
-  "3213": {
-   "status": "day-to-day",
-   "name": "Al Horford",
-   "team": "GS",
-   "date": "2026-11-19T14:51Z",
-   "note": "Horford (back) is out for Wednesday's game against the Mavericks, but will play Thursday against the Grizzlies, Nick Friedell of The Athletic reports."
   },
   "4397040": {
    "status": "out",
