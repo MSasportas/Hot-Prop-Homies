@@ -441,3 +441,5 @@
 {"actual":null,"actual_text":"4 assists","at":"2026-11-18T22:40:01-05:00","id":"2026-11-18:401910013:4684742:assists:6.5:under","price":-105,"result":"W","t":"graded","units":0.9524}
 {"actual":null,"actual_text":"24 points","at":"2026-11-19T00:20:01-05:00","id":"2026-11-18:401910015:4065648:points:25.5:under","price":-115,"result":"W","t":"graded","units":0.8696}
 {"actual":null,"actual_text":"1 three","at":"2026-11-19T00:20:01-05:00","id":"2026-11-18:401910015:4431767:threes:1.5:over","price":110,"result":"L","t":"graded","units":-1.0}
+{"actual":null,"actual_text":"1 three","at":"2026-11-19T00:40:01-05:00","id":"2026-11-18:401910017:5041955:threes:2.5:over","price":115,"result":"L","t":"graded","units":-1.0}
+{"actual":null,"actual_text":"7 assists","at":"2026-11-19T00:40:01-05:00","id":"2026-11-18:401910017:3945274:assists:8.5:under","price":-145,"result":"W","t":"graded","units":0.6897}
