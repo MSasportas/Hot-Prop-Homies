@@ -71,7 +71,7 @@
   },
   "MIN": {
    "name": "Jesper Wallstedt",
-   "status": "expected"
+   "status": "confirmed"
   },
   "COL": {
    "name": "Scott Wedgewood",
@@ -98,5 +98,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-19T12:20:01-05:00"
+ "checked_at": "2026-11-19T13:10:01-05:00"
 }
