@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T17:30:01-05:00",
+ "generated_at": "2026-11-19T18:30:00-05:00",
  "summary": {
   "headline": {
    "w": 60,
@@ -243,7 +243,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 2,
+    "n": 4,
     "graded": false
    },
    {
@@ -540,6 +540,29 @@
      "legs": []
     },
     {
+     "id": "2026-11-19:2026020355:8485702:shots:1.5:under",
+     "kind": "single",
+     "player": "M. Shabanov",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "MIN",
+     "game": "MIN at CGY",
+     "price": 120,
+     "first_price": 120,
+     "last_price": 120,
+     "prices": [
+      {
+       "price": 120,
+       "at": "2026-11-19T18:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
      "id": "2026-11-19:2026020350:8477402:shots:1.5:under",
      "kind": "single",
      "player": "P. Buchnevich",
@@ -554,6 +577,29 @@
       {
        "price": 100,
        "at": "2026-11-19T17:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-19:2026020353:8482720:points:0.5:over",
+     "kind": "single",
+     "player": "M. Knies",
+     "bet": "Over 0.5 points",
+     "market": "points",
+     "team": "CBJ",
+     "game": "CBJ at CHI",
+     "price": -110,
+     "first_price": -110,
+     "last_price": -110,
+     "prices": [
+      {
+       "price": -110,
+       "at": "2026-11-19T18:30:00-05:00"
       }
      ],
      "result": null,

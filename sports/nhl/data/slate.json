@@ -1,12 +1,12 @@
 {
  "slate_date": "2026-11-19",
- "generated_at": "2026-11-19T18:20:01-05:00",
- "status_at": "2026-11-19T18:20:01-05:00",
+ "generated_at": "2026-11-19T18:30:00-05:00",
+ "status_at": "2026-11-19T18:30:00-05:00",
  "valid_until": "2026-11-20T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
-  "prices_at": "2026-11-19T18:20:01-05:00",
-  "next_price_read_at": "2026-11-19T18:30:00-05:00",
+  "prices_at": "2026-11-19T18:30:00-05:00",
+  "next_price_read_at": "2026-11-19T18:45:00-05:00",
   "stats_built_at": "2026-11-19T01:50:26-05:00",
   "stats_through": "2026-11-18",
   "lineups_at": "2026-11-19T18:20:01-05:00",
@@ -16,19 +16,19 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-19T18:20:01-05:00",
+   "at": "2026-11-19T18:30:00-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 2720,
+   "pulls_left": 2716,
    "keys": 9,
    "game_days_left": 10,
    "days_left": 12,
    "low": false
   },
   "excluded_teams": [],
-  "lines_checked": 115,
-  "flag_reads": 7,
+  "lines_checked": 150,
+  "flag_reads": 9,
   "tier": 4
  },
  "banners": [],
@@ -379,11 +379,15 @@
      {
       "pull": "A",
       "at": "2026-11-19T13:00:00-05:00"
+     },
+     {
+      "pull": "B",
+      "at": "2026-11-19T18:30:00-05:00"
      }
     ],
     "next_read": {
-     "pull": "B",
-     "at": "2026-11-19T18:30:00-05:00"
+     "pull": "C",
+     "at": "2026-11-19T19:15:00-05:00"
     },
     "lineups_at": {
      "away": "2026-11-19T17:00:00-05:00",
@@ -392,7 +396,7 @@
    },
    "started": false,
    "reads_done": false,
-   "picks": 0,
+   "picks": 1,
    "excluded_reason": null,
    "excluded_teams": []
   },
@@ -420,11 +424,15 @@
      {
       "pull": "A",
       "at": "2026-11-19T13:00:00-05:00"
+     },
+     {
+      "pull": "B",
+      "at": "2026-11-19T18:30:00-05:00"
      }
     ],
     "next_read": {
-     "pull": "B",
-     "at": "2026-11-19T18:30:00-05:00"
+     "pull": "C",
+     "at": "2026-11-19T19:15:00-05:00"
     },
     "lineups_at": {
      "away": "2026-11-19T17:00:00-05:00",
@@ -433,7 +441,7 @@
    },
    "started": false,
    "reads_done": false,
-   "picks": 0,
+   "picks": 1,
    "excluded_reason": null,
    "excluded_teams": []
   },
@@ -563,6 +571,69 @@
  ],
  "picks": [
   {
+   "id": "2026-11-19:2026020355:8485702:shots:1.5:under",
+   "price": 120,
+   "first_price": 120,
+   "first_price_at": "2026-11-19T18:30:00-05:00",
+   "worst_price": 120,
+   "p": 0.4997,
+   "breakeven": 0.4545,
+   "p_pct": 49,
+   "breakeven_pct": 45,
+   "state": "lineup",
+   "history": [
+    {
+     "at": "2026-11-19T18:30:00-05:00",
+     "text": "Lineup confirmed"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-19T18:30:00-05:00",
+     "price": 120
+    }
+   ],
+   "pulled": null,
+   "price_final": false,
+   "graded": null,
+   "rank": 1,
+   "tier": "main",
+   "game_id": 2026020355,
+   "player": "M. Shabanov",
+   "player_id": 8485702,
+   "team": "MIN",
+   "opp": "CGY",
+   "home": false,
+   "start": "2026-11-19T20:00:00-05:00",
+   "market": "shots",
+   "line": 1.5,
+   "side": "under",
+   "bet": "Under 1.5 shots on goal",
+   "price_at": "2026-11-19T18:30:00-05:00",
+   "gap_pct": 8.5,
+   "market_fair_pct": 49.3,
+   "n_books": 6,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 50.0,
+    "model_pct": 54.3
+   },
+   "settled": "goalie",
+   "settled_label": "Goalie confirmed",
+   "reason": "6 other books say 49.3%; Hard Rock's +120 only needs 45.5%. Our model agrees (our blend: 50.0%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/4263136982724641167",
+   "links": {
+    "hardrock": {
+     "id": "4263136982724641167",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/4263136982724641167"
+    },
+    "draftkings": null
+   },
+   "thin": false,
+   "games_used": 66,
+   "games_this_season": 22
+  },
+  {
    "id": "2026-11-19:2026020354:8485388:points:0.5:over",
    "price": 140,
    "first_price": 140,
@@ -588,7 +659,7 @@
    "pulled": null,
    "price_final": true,
    "graded": null,
-   "rank": 1,
+   "rank": 2,
    "tier": "main",
    "game_id": 2026020354,
    "player": "V. Eklund",
@@ -651,7 +722,7 @@
    "pulled": null,
    "price_final": true,
    "graded": null,
-   "rank": 2,
+   "rank": 3,
    "tier": "main",
    "game_id": 2026020350,
    "player": "P. Buchnevich",
@@ -687,6 +758,69 @@
    "thin": false,
    "games_used": 101,
    "games_this_season": 20
+  },
+  {
+   "id": "2026-11-19:2026020353:8482720:points:0.5:over",
+   "price": -110,
+   "first_price": -110,
+   "first_price_at": "2026-11-19T18:30:00-05:00",
+   "worst_price": -110,
+   "p": 0.5437,
+   "breakeven": 0.5238,
+   "p_pct": 54,
+   "breakeven_pct": 52,
+   "state": "lineup",
+   "history": [
+    {
+     "at": "2026-11-19T18:30:00-05:00",
+     "text": "Lineup confirmed"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-19T18:30:00-05:00",
+     "price": -110
+    }
+   ],
+   "pulled": null,
+   "price_final": false,
+   "graded": null,
+   "rank": 4,
+   "tier": "main",
+   "game_id": 2026020353,
+   "player": "M. Knies",
+   "player_id": 8482720,
+   "team": "CBJ",
+   "opp": "CHI",
+   "home": false,
+   "start": "2026-11-19T20:00:00-05:00",
+   "market": "points",
+   "line": 0.5,
+   "side": "over",
+   "bet": "Over 0.5 points",
+   "price_at": "2026-11-19T18:30:00-05:00",
+   "gap_pct": 3.2,
+   "market_fair_pct": 54.1,
+   "n_books": 7,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 54.4,
+    "model_pct": 55.5
+   },
+   "settled": "lineup",
+   "settled_label": "Lineup confirmed",
+   "reason": "7 other books say 54.1%; Hard Rock's -110 only needs 52.4%. Our model agrees (our blend: 54.4%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/1346884428531630471",
+   "links": {
+    "hardrock": {
+     "id": "1346884428531630471",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/1346884428531630471"
+    },
+    "draftkings": null
+   },
+   "thin": false,
+   "games_used": 98,
+   "games_this_season": 19
   }
  ],
  "parlays": [],
