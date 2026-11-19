@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-19",
- "started_at": "2026-11-19T17:40:01-05:00",
- "status_at": "2026-11-19T17:40:01-05:00",
- "finished_at": "2026-11-19T17:40:03-05:00",
- "last_ok_at": "2026-11-19T17:40:01-05:00",
+ "started_at": "2026-11-19T18:00:01-05:00",
+ "status_at": "2026-11-19T18:00:01-05:00",
+ "finished_at": "2026-11-19T18:00:04-05:00",
+ "last_ok_at": "2026-11-19T18:00:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -25,17 +25,17 @@
   {
    "step": "lineups",
    "status": "ok",
-   "note": "4 of 4 team pages read"
+   "note": "20 of 20 team pages read"
   },
   {
    "step": "lineup_history",
-   "status": "skipped",
-   "note": "no change"
+   "status": "ok",
+   "note": "2 team(s) changed"
   },
   {
    "step": "odds",
    "status": "ok",
-   "note": "no pull due"
+   "note": "1 game(s) priced"
   },
   {
    "step": "market_menu",
@@ -44,8 +44,8 @@
   },
   {
    "step": "featured",
-   "status": "skipped",
-   "note": "no new shots read to match"
+   "status": "ok",
+   "note": "sides/totals for 12 game(s), 10 book(s) max, 3 credit(s)"
   },
   {
    "step": "book_probe",
@@ -74,8 +74,8 @@
   },
   {
    "step": "shadow",
-   "status": "skipped",
-   "note": "nothing new"
+   "status": "ok",
+   "note": "36 line read(s) logged"
   },
   {
    "step": "gg_grade",
@@ -111,7 +111,7 @@
   },
   {
    "n": 3,
-   "left": 134
+   "left": 129
   },
   {
    "n": 4,
@@ -138,30 +138,32 @@
    "left": 500
   }
  ],
- "pool_total": 2740,
+ "pool_total": 2735,
  "allowance": 31.1236,
  "tier": 4,
  "budget_today": 373,
- "budget_used_today": 30,
+ "budget_used_today": 35,
  "prices_state": "ok",
- "prices_at": "2026-11-19T17:30:01-05:00",
- "next_price_read_at": "2026-11-19T18:00:00-05:00",
+ "prices_at": "2026-11-19T18:00:01-05:00",
+ "next_price_read_at": "2026-11-19T18:15:00-05:00",
  "unmatched_names": [
   "Elias Pettersson"
  ],
  "unknown_teams": [],
- "lineup_unmatched_names": [],
+ "lineup_unmatched_names": [
+  "Adam Beckman"
+ ],
  "excluded_teams": [],
  "stats_through": "2026-11-18",
- "lineups_at": "2026-11-19T17:40:01-05:00",
- "lineups_note": "Lineups posted for 11 of 18 teams checked so far.",
+ "lineups_at": "2026-11-19T18:00:01-05:00",
+ "lineups_note": "Lineups posted for 13 of 20 teams checked so far.",
  "games_today": 12,
  "record_events": 331,
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "44629442859",
-  "iteration": 2,
+  "iteration": 4,
   "chain_link": 41,
   "chain_started_at": "2026-11-18T10:00:22-05:00",
   "run_started_at": "2026-11-19T17:31:45-05:00"
