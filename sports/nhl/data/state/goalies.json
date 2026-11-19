@@ -39,7 +39,7 @@
   },
   "LAK": {
    "name": "Darcy Kuemper",
-   "status": "expected"
+   "status": "confirmed"
   },
   "WPG": {
    "name": "Nico Daws",
@@ -98,5 +98,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-19T13:20:01-05:00"
+ "checked_at": "2026-11-19T14:10:35-05:00"
 }
