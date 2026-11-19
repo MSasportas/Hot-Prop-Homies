@@ -481,10 +481,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:05 - 2nd",
+    "detail": "25.5 - 2nd",
     "score": {
-     "BOS": "51",
-     "DEN": "39"
+     "BOS": "61",
+     "DEN": "49"
     }
    },
    {
@@ -495,11 +495,11 @@
     "home": "LAL",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "9:02 - 2nd",
     "score": {
-     "UTAH": "29",
-     "LAL": "34"
+     "UTAH": "32",
+     "LAL": "38"
     }
    },
    {
@@ -511,10 +511,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:31 - 2nd",
+    "detail": "4:55 - 2nd",
     "score": {
-     "PHX": "41",
-     "SAC": "35"
+     "PHX": "55",
+     "SAC": "50"
     }
    }
   ]
