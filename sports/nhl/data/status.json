@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-19",
- "started_at": "2026-11-19T18:40:00-05:00",
- "status_at": "2026-11-19T18:40:00-05:00",
- "finished_at": "2026-11-19T18:40:02-05:00",
- "last_ok_at": "2026-11-19T18:40:00-05:00",
+ "started_at": "2026-11-19T18:50:00-05:00",
+ "status_at": "2026-11-19T18:50:00-05:00",
+ "finished_at": "2026-11-19T18:50:03-05:00",
+ "last_ok_at": "2026-11-19T18:50:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -35,7 +35,7 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "no pull due"
+   "note": "1 game(s) priced"
   },
   {
    "step": "market_menu",
@@ -74,8 +74,8 @@
   },
   {
    "step": "shadow",
-   "status": "skipped",
-   "note": "nothing new"
+   "status": "ok",
+   "note": "34 line read(s) logged"
   },
   {
    "step": "gg_grade",
@@ -111,7 +111,7 @@
   },
   {
    "n": 3,
-   "left": 107
+   "left": 102
   },
   {
    "n": 4,
@@ -138,14 +138,14 @@
    "left": 500
   }
  ],
- "pool_total": 2713,
+ "pool_total": 2708,
  "allowance": 31.1236,
  "tier": 4,
  "budget_today": 373,
- "budget_used_today": 57,
+ "budget_used_today": 62,
  "prices_state": "ok",
- "prices_at": "2026-11-19T18:30:00-05:00",
- "next_price_read_at": "2026-11-19T18:45:00-05:00",
+ "prices_at": "2026-11-19T18:50:00-05:00",
+ "next_price_read_at": "2026-11-19T19:15:00-05:00",
  "unmatched_names": [
   "Elias Pettersson"
  ],
@@ -163,7 +163,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "44636914763",
-  "iteration": 3,
+  "iteration": 4,
   "chain_link": 42,
   "chain_started_at": "2026-11-18T10:00:22-05:00",
   "run_started_at": "2026-11-19T18:21:22-05:00"
