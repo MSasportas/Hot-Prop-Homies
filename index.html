@@ -1694,6 +1694,7 @@ function renderLiveAll() {
     var label = sp === 'nba' ? 'NBA' : 'NHL';
     app.appendChild(h('div', { class: 'sport-sec-h' }, h('span', { class: 'sp-badge ' + sp, text: label })));
     var list = h('div', { class: 'lvlist' });
+    d.started.sort(function(a,b){ return (ms(a.start)||0) - (ms(b.start)||0); });
     d.started.forEach(function (p) { list.appendChild(liveRow(p, d)); });
     app.appendChild(list);
     S.sport = savedSport; S.slate = savedSlate; S.record = savedRecord;
