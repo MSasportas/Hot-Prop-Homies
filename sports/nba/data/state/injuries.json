@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T14:21:19-05:00",
+ "at": "2026-11-19T14:30:00-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -316,26 +316,26 @@
    "date": "2026-11-19T01:38Z",
    "note": "Head coach JJ Redick said Reaves' (heel) pregame workout went \"well,\" but he remains without an official timetable to return, Daniel Starkand of LakersNation.com reports."
   },
+  "4432810": {
+   "status": "day-to-day",
+   "name": "Isaiah Stewart",
+   "team": "MEM",
+   "date": "2026-11-19T19:11Z",
+   "note": "Stewart is questionable for Thursday's game against the Warriors due to an illness."
+  },
+  "4600663": {
+   "status": "out",
+   "name": "Zach Edey",
+   "team": "MEM",
+   "date": "2026-11-19T19:09Z",
+   "note": "Edey (hip) has been ruled out for Thursday's game against the Warriors."
+  },
   "4065733": {
    "status": "out",
    "name": "Ty Jerome",
    "team": "MEM",
    "date": "2026-11-19T19:07Z",
    "note": "Jerome (hip) has been ruled out for Thursday's game against the Warriors."
-  },
-  "4600663": {
-   "status": "out",
-   "name": "Zach Edey",
-   "team": "MEM",
-   "date": "2026-11-19T19:02Z",
-   "note": "Edey finished with 11 points (5-7 FG, 1-1 FT), two rebounds, one assist and two steals in 21 minutes before fouling out of Wednesday's 124-121 victory over the Cavaliers."
-  },
-  "4432810": {
-   "status": "day-to-day",
-   "name": "Isaiah Stewart",
-   "team": "MEM",
-   "date": "2026-11-19T14:44Z",
-   "note": "Stewart (illness) won't play Wednesday against the Cavs."
   },
   "5105550": {
    "status": "out",
@@ -365,12 +365,19 @@
    "date": "2026-11-19T14:45Z",
    "note": "Gardner (hamstring) is out for Wednesday's game against the Bucks."
   },
-  "4591725": {
-   "status": "day-to-day",
-   "name": "Ryan Rollins",
+  "3133628": {
+   "status": "out",
+   "name": "Myles Turner",
    "team": "MIL",
-   "date": "2026-11-19T14:45Z",
-   "note": "Rollins (illness) has been ruled out for Wednesday's game at Miami."
+   "date": "2026-11-19T19:15Z",
+   "note": "Turner (shoulder) has been ruled out for Thursday's game against Portland due to a left shoulder contusion,"
+  },
+  "3134907": {
+   "status": "out",
+   "name": "Kyle Kuzma",
+   "team": "MIL",
+   "date": "2026-11-19T19:11Z",
+   "note": "Kuzma registered 26 points (9-16 FG, 2-5 3Pt, 6-10 FT), five rebounds, one assist, one block and two steals over 30 minutes during Wednesday's 137-130 loss to Miami."
   },
   "4997526": {
    "status": "out",
