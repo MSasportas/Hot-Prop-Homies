@@ -149,7 +149,7 @@
    "status": {}
   },
   "WSH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Trae Young",
     "Kyshawn George",
@@ -190,8 +190,7 @@
     "John Collins"
    ],
    "status": {
-    "Cade Cunningham": "questionable",
-    "Isaiah Joe": "questionable",
+    "Cade Cunningham": "out",
     "Jalen Duren": "out",
     "Ronald Holland": "out",
     "Taurean Prince": "out",
@@ -216,7 +215,7 @@
    }
   },
   "GS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "LJ Cryer",
     "Brandin Podziemski",
@@ -364,5 +363,5 @@
    }
   }
  },
- "at": "2026-11-18T19:30:01-05:00"
+ "at": "2026-11-18T19:40:01-05:00"
 }
