@@ -769,7 +769,7 @@ function loadLab() {
     var p = str(t.summary).replace(/^\/+/, '');
     if (!/^[\w\/.-]+\.json$/.test(p) || /\.\./.test(p)) return;
     var root = t._sp ? SPORT_BASES[t._sp] : (BASE_FIX ? '' : (SPORT_BASES[S.sport] || ''));
-    var base = t.base === 'root' ? root : (t._sp ? root + 'data/' : base0);
+    var base = t.base === 'root' ? root : base0;
     var url = base + p;
     if (!urlMap[url]) { urlMap[url] = []; order.push(url); }
     urlMap[url].push(t);
@@ -833,6 +833,7 @@ function setSport(sp) {
   S.fetchFail = false; S.resets = null; S.allResults = null; S.heads = null;
   S.older = []; S.olderIdx = 0; S.months = {}; S.calMonth = null; S.selDay = null;
   S.newIds = {}; S.since = null; S.seenDone = false;
+  S.recFilters = [];
   /* update h1 */
   var h1 = document.getElementById('sport-title');
   if (h1) h1.textContent = sp === 'all' ? 'Hot Prop Homies' : 'HPH · ' + SPORT_LABELS[sp];
@@ -1738,22 +1739,7 @@ function renderLiveAll() {
 function renderRecordAll() {
   top('The Record', false);
   if (!S.allResults) { app.appendChild(h('div', { class: 'stack' }, h('div', { class: 'skel sm' }), h('div', { class: 'skel' }))); return; }
-  /* combined headline */
-  var totalW = 0, totalL = 0, totalN = 0, totalUnits = 0;
-  arr(S.allResults).forEach(function (r) {
-    if (!r.record.ok) return;
-    var hd = isObj(r.record.v.summary) && isObj(r.record.v.summary.headline) ? r.record.v.summary.headline : {};
-    totalW += num(hd.w) || 0; totalL += num(hd.l) || 0;
-    totalN += (num(hd.w) || 0) + (num(hd.l) || 0) + (num(hd.push) || 0) + (num(hd.void) || 0);
-    totalUnits += num(hd.units) || 0;
-  });
-  if (totalN > 0) {
-    app.appendChild(h('div', { class: 'big' },
-      h('span', { class: 'wl', text: totalW + '-' + totalL }),
-      h('span', { class: 'un ' + signCls(totalUnits), text: units(totalUnits, 2) || '' })));
-    app.appendChild(h('div', { class: 'subline', text: totalN + ' graded across both sports · 1 unit each' }));
-  }
-  /* build merged nights (entries tagged with sport) */
+  /* build merged nights first (chips need entry data) */
   var nightMap = {}, mergedNights = [];
   arr(S.allResults).forEach(function (r) {
     if (!r.record.ok) return;
@@ -1771,6 +1757,72 @@ function renderRecordAll() {
     });
   });
   mergedNights.sort(function (a, b) { return str(a.date) < str(b.date) ? 1 : (str(a.date) > str(b.date) ? -1 : 0); });
+  /* build chips from merged entry data */
+  var recFilters = S.recFilters || [];
+  var allMkts = {}, allSides = {};
+  mergedNights.forEach(function (nt) {
+    arr(nt.entries).filter(isObj).forEach(function (e) {
+      if (e.kind === 'parlay') return;
+      var mkt = str(e.market); if (mkt) allMkts[mkt] = 1;
+      var sid = e.id ? str(e.id).split(':').pop() : null;
+      if (sid === 'over' || sid === 'under') allSides[sid] = 1;
+    });
+  });
+  var mktChips = Object.keys(allMkts).map(function (k) { return { key: 'm:' + k, label: k }; });
+  var sideChips = ['over', 'under'].filter(function (s) { return allSides[s]; }).map(function (s) { return { key: 's:' + s, label: s.charAt(0).toUpperCase() + s.slice(1) }; });
+  var allChips = mktChips.concat(sideChips);
+  /* apply filters */
+  var filtNights = null;
+  if (recFilters.length > 0) {
+    var mktF = recFilters.filter(function (f) { return f.slice(0, 2) === 'm:'; }).map(function (f) { return f.slice(2); });
+    var sideF = recFilters.filter(function (f) { return f.slice(0, 2) === 's:'; }).map(function (f) { return f.slice(2); });
+    filtNights = mergedNights.map(function (nt) {
+      var ents = arr(nt.entries).filter(function (e) {
+        if (!isObj(e) || e.kind === 'parlay') return false;
+        if (mktF.length && mktF.indexOf(str(e.market)) < 0) return false;
+        if (sideF.length) { var sid = e.id ? str(e.id).split(':').pop() : null; if (!sid || sideF.indexOf(sid) < 0) return false; }
+        return true;
+      });
+      if (!ents.length) return null;
+      var fw = 0, fl = 0, fu = 0;
+      ents.forEach(function (e) { if (e.result === 'W') { fw++; fu += num(e.units) || 0; } else if (e.result === 'L') { fl++; fu += num(e.units) || 0; } });
+      return Object.assign({}, nt, { entries: ents, w: fw, l: fl, units: fu });
+    }).filter(Boolean);
+  }
+  /* combined headline — from filtered nights when active, else from allResults summary */
+  var totalW = 0, totalL = 0, totalN = 0, totalUnits = 0;
+  if (filtNights) {
+    filtNights.forEach(function (nt) { arr(nt.entries).filter(isObj).forEach(function (e) {
+      if (e.result === 'W') { totalW++; totalUnits += num(e.units) || 0; }
+      else if (e.result === 'L') { totalL++; totalUnits += num(e.units) || 0; }
+    }); });
+    totalN = totalW + totalL;
+  } else {
+    arr(S.allResults).forEach(function (r) {
+      if (!r.record.ok) return;
+      var hd = isObj(r.record.v.summary) && isObj(r.record.v.summary.headline) ? r.record.v.summary.headline : {};
+      totalW += num(hd.w) || 0; totalL += num(hd.l) || 0;
+      totalN += (num(hd.w) || 0) + (num(hd.l) || 0) + (num(hd.push) || 0) + (num(hd.void) || 0);
+      totalUnits += num(hd.units) || 0;
+    });
+  }
+  if (totalN > 0) {
+    app.appendChild(h('div', { class: 'big' },
+      h('span', { class: 'wl', text: totalW + '-' + totalL }),
+      h('span', { class: 'un ' + signCls(totalUnits), text: units(totalUnits, 2) || '' })));
+    app.appendChild(h('div', { class: 'subline', text: totalN + ' graded across both sports · 1 unit each' }));
+  }
+  /* chip bar */
+  if (allChips.length > 0) {
+    var rfRow = h('div', { class: 'rf-row', role: 'group', 'aria-label': 'Filter record' });
+    allChips.forEach(function (chip) {
+      var active = recFilters.indexOf(chip.key) >= 0;
+      rfRow.appendChild(h('button', { class: 'rf-btn' + (active ? ' on' : ''), type: 'button', 'aria-pressed': active ? 'true' : 'false', text: chip.label,
+        on: { click: (function (ck) { return function () { var f = S.recFilters || [], idx = f.indexOf(ck); S.recFilters = idx >= 0 ? f.filter(function (k) { return k !== ck; }) : f.concat([ck]); rerender(); }; })(chip.key) } }));
+    });
+    if (recFilters.length > 0) rfRow.appendChild(h('button', { class: 'rf-clr', type: 'button', text: 'Clear', on: { click: function () { S.recFilters = []; rerender(); } } }));
+    app.appendChild(rfRow);
+  }
   /* build merged summary (days map) for calendar */
   var dmap = {}, mergedDays = [];
   arr(S.allResults).forEach(function (r) {
@@ -1785,13 +1837,14 @@ function renderRecordAll() {
   mergedNights.forEach(function (nt) { if (!dmap[nt.date]) { dmap[nt.date] = { date: nt.date, w: nt.w, l: nt.l, units: nt.units, n: nt.entries.length, graded: nt.graded }; mergedDays.push(dmap[nt.date]); } });
   var mergedSum = { days: mergedDays, headline: { w: totalW, l: totalL, units: totalUnits } };
   /* render calendar via temporary state swap (calendar() is synchronous) */
+  var calNights = filtNights || mergedNights;
   var sv = { record: S.record, sport: S.sport, older: S.older, months: S.months, olderIdx: S.olderIdx };
-  S.sport = 'all_cal'; S.record = { nights: mergedNights, older: [], summary: mergedSum }; S.older = []; S.months = {}; S.olderIdx = 0;
-  calendar(mergedSum);
+  S.sport = 'all_cal'; S.record = { nights: calNights, older: [], summary: mergedSum }; S.older = []; S.months = {}; S.olderIdx = 0;
+  calendar(mergedSum, filtNights || null);
   S.record = sv.record; S.sport = sv.sport; S.older = sv.older; S.months = sv.months; S.olderIdx = sv.olderIdx;
   /* unified latest picks — entries already carry sport badge via e.sport */
   var latest = [];
-  mergedNights.forEach(function (nt) { arr(nt.entries).filter(isObj).forEach(function (e) { latest.push(e); }); });
+  calNights.forEach(function (nt) { arr(nt.entries).filter(isObj).forEach(function (e) { latest.push(e); }); });
   app.appendChild(h('div', { class: 'sec-h', style: 'margin-top:24px' }, h('h2', { text: 'Latest picks' }),
     h('span', { class: 'mu', text: latest.length > LATEST_N ? 'Last ' + LATEST_N : '' })));
   if (!latest.length) app.appendChild(h('p', { class: 'mu', style: 'margin-top:16px', text: 'No picks on the Record yet.' }));
