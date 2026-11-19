@@ -402,6 +402,9 @@ button.tr.open{background:var(--selected-bg);border-bottom-color:transparent}
 .plain li{margin:0 0 6px}
 .fixed{margin:10px 0 0;padding:10px 12px;border:1px solid var(--line);border-radius:6px;background:var(--surface);font-size:13px;line-height:19px;font-weight:600;color:var(--fg)}
 .cutsw{display:flex;gap:6px;overflow-x:auto;margin:8px 0 10px;padding-bottom:2px;scrollbar-width:none}.cutsw::-webkit-scrollbar{display:none}.cswb{flex:0 0 auto;height:32px;padding:0 12px;border:1px solid var(--line2);border-radius:16px;background:var(--surface);color:var(--fg2);font:inherit;font-size:13px}.cswb:first-letter{text-transform:uppercase}.cut h3{display:none}.cswb.on{background:var(--selected-bg);color:var(--selected-text);border-color:var(--selected-bg)}
+.rf-row{display:flex;gap:6px;overflow-x:auto;margin:14px 0 2px;padding-bottom:2px;scrollbar-width:none}.rf-row::-webkit-scrollbar{display:none}
+.rf-btn{flex:0 0 auto;height:32px;padding:0 12px;border:1px solid var(--line2);border-radius:16px;background:var(--surface);color:var(--fg2);font:inherit;font-size:13px;cursor:pointer;-webkit-tap-highlight-color:transparent}.rf-btn.on{background:var(--selected-bg);color:var(--selected-text);border-color:var(--selected-bg)}
+.rf-clr{margin-left:4px;flex:0 0 auto;height:32px;padding:0 10px;background:none;border:0;color:var(--muted);font-size:12px;cursor:pointer}
 /* P1: confidence badge */
 .tagx.conf{background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent);font-size:10.5px;font-weight:700;letter-spacing:.04em;padding:1px 5px;border-radius:4px}
 /* P2: 7-day W-L strip */
@@ -478,7 +481,7 @@ var S = {
   view: 'picks', expanded: {},
   older: [], olderIdx: 0, olderBusy: false, olderErr: false, months: {}, calMonth: null, selDay: null,
   newIds: {}, since: null, seenDone: false, key: '', scroll: {},
-  allResults: null, resets: null, cutSel: null, openCut: null,
+  allResults: null, resets: null, cutSel: null, openCut: null, recFilters: [],
   hq: null
 };
 
@@ -1212,7 +1215,7 @@ function normName(s) {
   return s.replace(/\s+(jr|sr|ii|iii|iv)$/, '').trim();
 }
 function feedUrl(kind, id) {
-  if (FIX) return BASE + 'feeds/' + { es: 'espn_scoreboard.json', ex: 'espn_summary_' + id + '.json', ns: 'nba_scoreboard.json', nb: 'nba_boxscore_' + id + '.json' }[kind];
+  if (FIX) return BASE_FIX + 'feeds/' + { es: 'espn_scoreboard.json', ex: 'espn_summary_' + id + '.json', ns: 'nba_scoreboard.json', nb: 'nba_boxscore_' + id + '.json' }[kind];
   if (kind === 'es') return ESPN_API + 'scoreboard?dates=' + slateDay().replace(/-/g, '');
   if (kind === 'ex') return ESPN_API + 'summary?event=' + encodeURIComponent(id);
   if (kind === 'ns') return NBA_API + 'scoreboard/todaysScoreboard_00.json';
@@ -1815,6 +1818,34 @@ function renderRecord() {
   }
   var sum = isObj(S.record.summary) ? S.record.summary : {}, hd = isObj(sum.headline) ? sum.headline : {};
   var n = sampleN(hd), few = function (k) { return k < SMALL_N; };
+  /* Record filter chips */
+  var recFilters = S.recFilters || [];
+  var mktChips = arr(sum.rows).filter(function(r) { return isObj(r) && str(r.key).indexOf('window:') !== 0 && sampleN(r) > 0; }).map(function(r) { return { key: 'm:' + str(r.key), label: str(r.label || r.key) }; });
+  var sideCut = arr(sum.cuts).filter(isObj).filter(function(c) { return str(c.key) === 'side'; })[0];
+  var sideChips = sideCut ? arr(sideCut.rows).filter(isObj).filter(function(r) { return sampleN(r) > 0; }).map(function(r) { return { key: 's:' + str(r.key), label: str(r.label || r.key) }; }) : [];
+  var allChips = mktChips.concat(sideChips);
+  var filtNights = null;
+  if (recFilters.length > 0) {
+    var mktF = recFilters.filter(function(f) { return f.slice(0,2) === 'm:'; }).map(function(f) { return f.slice(2); });
+    var sideF = recFilters.filter(function(f) { return f.slice(0,2) === 's:'; }).map(function(f) { return f.slice(2); });
+    filtNights = allNights().map(function(nt) {
+      var ents = arr(nt.entries).filter(function(e) {
+        if (!isObj(e) || e.kind === 'parlay') return false;
+        if (mktF.length && mktF.indexOf(e.market) < 0) return false;
+        if (sideF.length) { var sid = e.id ? str(e.id).split(':').pop() : null; if (!sid || sideF.indexOf(sid) < 0) return false; }
+        return true;
+      });
+      if (!ents.length) return null;
+      var fw = 0, fl = 0, fpu = 0, fvo = 0, fu = 0;
+      ents.forEach(function(e) { if (e.result === 'W') { fw++; fu += num(e.units) || 0; } else if (e.result === 'L') { fl++; fu += num(e.units) || 0; } else if (e.result === 'PUSH') fpu++; else if (e.result === 'VOID') fvo++; });
+      return Object.assign({}, nt, { entries: ents, w: fw, l: fl, units: fu });
+    }).filter(Boolean);
+    var fw2 = 0, fl2 = 0, fpu2 = 0, fvo2 = 0, fu2 = 0;
+    filtNights.forEach(function(nt) { arr(nt.entries).filter(isObj).forEach(function(e) { if (e.result === 'W') { fw2++; fu2 += num(e.units) || 0; } else if (e.result === 'L') { fl2++; fu2 += num(e.units) || 0; } else if (e.result === 'PUSH') fpu2++; else if (e.result === 'VOID') fvo2++; }); });
+    var fn = fw2 + fl2;
+    hd = { w: fw2, l: fl2, push: fpu2, void: fvo2, units: fu2, n: fn, hit_rate: fn ? fw2 / fn : 0, needed: hd.needed };
+    n = sampleN(hd);
+  }
   if (!(n + (num(hd.push) || 0) + (num(hd.void) || 0))) {
     app.appendChild(h('div', { class: 'card empty', style: 'margin-top:8px' },
       h('div', { class: 't', text: 'No graded picks yet.' }), h('div', { class: 's', text: 'Results post once each game is final.' })));
@@ -1847,8 +1878,19 @@ function renderRecord() {
     }
   }
 
+  /* Record filter chips */
+  if (allChips.length > 0) {
+    var rfRow = h('div', { class: 'rf-row', role: 'group', 'aria-label': 'Filter record' });
+    allChips.forEach(function(chip) {
+      var active = recFilters.indexOf(chip.key) >= 0;
+      rfRow.appendChild(h('button', { class: 'rf-btn' + (active ? ' on' : ''), type: 'button', 'aria-pressed': active ? 'true' : 'false', text: chip.label,
+        on: { click: (function(ck) { return function() { var f = S.recFilters || [], idx = f.indexOf(ck); S.recFilters = idx >= 0 ? f.filter(function(k) { return k !== ck; }) : f.concat([ck]); rerender(); }; })(chip.key) } }));
+    });
+    if (recFilters.length > 0) rfRow.appendChild(h('button', { class: 'rf-clr', type: 'button', text: 'Clear', on: { click: function() { S.recFilters = []; rerender(); } } }));
+    app.appendChild(rfRow);
+  }
   /* month calendar */
-  calendar(sum);
+  calendar(sum, filtNights);
 
   /* cuts: market, edge, settled when shown, price (record.py summary.cuts), plus the price-check window rows */
   var cuts = arr(sum.cuts).filter(function (c) { return isObj(c) && arr(c.rows).length; });
@@ -1872,7 +1914,7 @@ function renderRecord() {
 
   /* latest picks only (Matt, 2026-11-05: no endless list). Older picks: tap a day on the calendar or a row in the cuts. */
   var latest = [];
-  allNights().forEach(function (nt) { arr(nt.entries).filter(isObj).forEach(function (e) { latest.push(e); }); });
+  (filtNights || allNights()).forEach(function (nt) { arr(nt.entries).filter(isObj).forEach(function (e) { latest.push(e); }); });
   app.appendChild(h('div', { class: 'sec-h', style: 'margin-top:24px' }, h('h2', { text: 'Latest picks' }),
     h('span', { class: 'mu', text: latest.length > LATEST_N ? 'Last ' + LATEST_N : '' })));
   if (!latest.length) app.appendChild(h('p', { class: 'mu', style: 'margin-top:16px', text: 'No picks on the Record yet.' }));
@@ -1924,19 +1966,20 @@ function cutTable(c, few) {
   return box;
 }
 /* the month calendar: one square per day, red = units up, slate = down, darker = bigger, outline = no picks */
-function dayMap(sum) {
+function dayMap(sum, filt) {
   var m = {};
-  arr(sum.days).filter(isObj).forEach(function (d) { if (d.date) m[d.date] = d; });
-  allNights().forEach(function (nt) {
+  if (!filt) arr(sum.days).filter(isObj).forEach(function (d) { if (d.date) m[d.date] = d; });
+  (filt || allNights()).forEach(function (nt) {
     if (m[nt.date]) return;
     var s = arr(nt.entries).filter(function (e) { return isObj(e) && e.kind !== 'parlay'; });
+    if (!s.length) return;
     m[nt.date] = { date: nt.date, w: num(nt.w) || 0, l: num(nt.l) || 0, units: num(nt.units) || 0, n: s.length, graded: !!nt.graded };
   });
   return m;
 }
 function shade(u) { var a = Math.abs(u); return a < 0.5 ? 0.24 : a < 1.5 ? 0.42 : a < 3 ? 0.62 : 0.86; }
-function calendar(sum) {
-  var m = dayMap(sum), keys = Object.keys(m).filter(function (k) { return m[k].n > 0; }).sort();
+function calendar(sum, filtNights) {
+  var m = dayMap(sum, filtNights || null), keys = Object.keys(m).filter(function (k) { return m[k].n > 0; }).sort();
   if (!keys.length) return;
   var months = []; keys.forEach(function (k) { var mo = k.slice(0, 7); if (months.indexOf(mo) < 0) months.push(mo); });
   if (!S.calMonth || months.indexOf(S.calMonth) < 0) S.calMonth = months[months.length - 1];
@@ -1990,11 +2033,12 @@ function calendar(sum) {
     h('span', null, 'Darker = bigger')));
   /* tap a day: that day's picks (an older month's file is loaded on demand) */
   if (S.selDay) {
-    var nt = allNights().filter(function (x) { return x.date === S.selDay; })[0], box = h('div', { class: 'dayd' });
+    var nt = (filtNights || allNights()).filter(function (x) { return x.date === S.selDay; })[0], box = h('div', { class: 'dayd' });
     if (nt) box.appendChild(nightSection(nt, arr(nt.entries).filter(isObj)));
     else {
       var path = 'record/' + S.selDay.slice(0, 7) + '.json', listed = arr(S.record.older).map(function (x) { return str(x).replace(/^\/+/, ''); }).indexOf(path) >= 0;
-      if (listed && !S.months[path]) { loadMonth(path); box.appendChild(h('p', { class: 'mu', style: 'margin-top:8px', text: 'Loading ' + fDateLong(S.selDay) }));
+      if (filtNights) box.appendChild(h('p', { class: 'mu', style: 'margin-top:8px', text: 'No picks match this filter for ' + fDateLong(S.selDay) + '.' }));
+      else if (listed && !S.months[path]) { loadMonth(path); box.appendChild(h('p', { class: 'mu', style: 'margin-top:8px', text: 'Loading ' + fDateLong(S.selDay) }));
       } else if (listed && S.months[path] && S.months[path].busy) box.appendChild(h('p', { class: 'mu', style: 'margin-top:8px', text: 'Loading ' + fDateLong(S.selDay) }));
       else box.appendChild(h('p', { class: 'mu', style: 'margin-top:8px', text: S.months[path] && S.months[path]._err ? "Couldn't load that day. Tap it again." : 'No picks listed for ' + fDateLong(S.selDay) + '.' }));
     }
@@ -2027,7 +2071,7 @@ function cutList(ids) {
 }
 function loadMonth(path, keepDay) {
   S.months[path] = { busy: true };
-  getJSON(BASE + path).then(function (j) { S.months[path] = j; rerender(); }, function () { S.months[path] = { _err: true }; if (!keepDay) S.selDay = null; rerender(); });
+  getJSON(getBase(S.sport) + path).then(function (j) { S.months[path] = j; rerender(); }, function () { S.months[path] = { _err: true }; if (!keepDay) S.selDay = null; rerender(); });
 }
 function entryRow(e, withDate) {
   var res = e.result == null ? null : str(e.result), known = { W: 1, L: 1, PUSH: 1, VOID: 1 };
@@ -2048,7 +2092,7 @@ function loadOlder() {
   var list = arr(S.record.older), path = list[S.olderIdx]; if (!path) return;
   path = str(path).replace(/^\/+/, '').replace(/\.\.\//g, '');
   S.olderBusy = true; S.olderErr = false; rerender();
-  getJSON(BASE + path).then(function (j) {
+  getJSON(getBase(S.sport) + path).then(function (j) {
     S.olderBusy = false; S.olderIdx++; S.older = S.older.concat(arr(j.nights)); rerender();
   }, function () { S.olderBusy = false; S.olderErr = true; rerender(); });
 }
