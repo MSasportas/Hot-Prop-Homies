@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T17:40:00-05:00",
+ "at": "2026-11-19T18:30:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -260,19 +260,26 @@
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
   },
-  "4871144": {
+  "2991235": {
    "status": "day-to-day",
-   "name": "Alperen Sengun",
+   "name": "Steven Adams",
    "team": "HOU",
-   "date": "2026-11-19T01:27Z",
-   "note": "Sengun (eye) will not return to Wednesday's game against the Pacers, Will Guillory of The Athletic reports."
+   "date": "2026-11-19T23:21Z",
+   "note": "Adams (calf) isn't listed on the injury report for Wednesday's game against Indiana."
   },
   "3102529": {
    "status": "out",
    "name": "Clint Capela",
    "team": "HOU",
-   "date": "2026-11-17T20:58Z",
-   "note": "Capela (ankle) has been ruled out for Wednesday's game against Indiana."
+   "date": "2026-11-19T23:19Z",
+   "note": "Capela (ankle) is out for Friday's game against Denver."
+  },
+  "4871144": {
+   "status": "day-to-day",
+   "name": "Alperen Sengun",
+   "team": "HOU",
+   "date": "2026-11-19T23:17Z",
+   "note": "Sengun (eye) is questionable for Friday's game against the Nuggets."
   },
   "2530530": {
    "status": "day-to-day",
