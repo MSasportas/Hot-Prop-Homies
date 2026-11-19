@@ -43,6 +43,7 @@
     "Alperen Sengun"
    ],
    "status": {
+    "Alperen Sengun": "questionable",
     "Clint Capela": "out"
    }
   },
@@ -249,11 +250,11 @@
    }
   },
   "ATL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Nickeil Alexander-Walker",
     "Dyson Daniels",
-    "Luguentz Dort",
+    "Aaron Wiggins",
     "Jalen Johnson",
     "Onyeka Okongwu"
    ],
@@ -363,5 +364,5 @@
    }
   }
  },
- "at": "2026-11-18T19:50:01-05:00"
+ "at": "2026-11-18T20:00:00-05:00"
 }

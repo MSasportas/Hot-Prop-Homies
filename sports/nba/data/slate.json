@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 2560,
+   "pool_left": 2556,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-18T20:00:00-05:00",
-  "last_read_at": "2026-11-18T19:50:01-05:00",
+  "next_read_at": "2026-11-18T20:15:00-05:00",
+  "last_read_at": "2026-11-18T20:00:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-18T19:50:01-05:00"
+   "at": "2026-11-18T20:00:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,8 +30,9 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-18T19:50:01-05:00",
+    "at": "2026-11-18T20:00:00-05:00",
     "confirmed": [
+     "ATL",
      "BKN",
      "CHI",
      "CLE",
@@ -61,7 +62,7 @@
    "away": "MEM",
    "home": "CLE",
    "state": "in",
-   "detail": "6:37 - 2nd",
+   "detail": "5:43 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -126,7 +127,7 @@
    "away": "HOU",
    "home": "IND",
    "state": "in",
-   "detail": "6:56 - 2nd",
+   "detail": "2:24 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -181,7 +182,7 @@
    "next_check_read": null,
    "paused": false,
    "injury_clear": {
-    "away": true,
+    "away": false,
     "home": true
    }
   },
@@ -191,7 +192,7 @@
    "away": "MIL",
    "home": "MIA",
    "state": "in",
-   "detail": "End of 1st",
+   "detail": "8:52 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -256,7 +257,7 @@
    "away": "PHI",
    "home": "ORL",
    "state": "in",
-   "detail": "8:04 - 2nd",
+   "detail": "3:31 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -321,7 +322,7 @@
    "away": "CHI",
    "home": "BKN",
    "state": "in",
-   "detail": "7:34 - 1st",
+   "detail": "2:10 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -386,7 +387,7 @@
    "away": "WAS",
    "home": "TOR",
    "state": "in",
-   "detail": "8:34 - 1st",
+   "detail": "3:53 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -518,7 +519,7 @@
    "state": "pre",
    "detail": "11/18 - 8:00 PM EST",
    "lineups": {
-    "away": "expected",
+    "away": "confirmed",
     "home": "confirmed"
    },
    "read_at": "2026-11-18T19:40:01-05:00",
@@ -651,7 +652,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-18T19:20:05-05:00",
+   "read_at": "2026-11-18T20:00:00-05:00",
    "picks": 2,
    "checks": [
     {
@@ -669,12 +670,16 @@
     {
      "read": "X135",
      "at": "2026-11-18T19:20:05-05:00"
+    },
+    {
+     "read": "B",
+     "at": "2026-11-18T20:00:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-18T19:20:05-05:00",
+   "last_check_at": "2026-11-18T20:00:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-18T20:00:00-05:00",
-   "next_check_read": "B",
+   "next_check_at": "2026-11-18T20:15:00-05:00",
+   "next_check_read": "X75",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -918,21 +923,14 @@
     }
    },
    "id": "2026-11-18:401910013:4684742:assists:6.5:under",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "added_at": "2026-11-18T19:40:01-05:00",
    "result": null,
-   "links": {
-    "hardrock": {
-     "id": "7254328840873443753",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/7254328840873443753",
-     "price": -105
-    },
-    "draftkings": null
-   },
-   "rank": 1
+   "links": null,
+   "rank": null
   },
   {
    "player": "Ivica Zubac",
@@ -1279,7 +1277,7 @@
     },
     "draftkings": null
    },
-   "rank": 2
+   "rank": 1
   },
   {
    "player": "Christian Braun",
@@ -1338,7 +1336,7 @@
     },
     "draftkings": null
    },
-   "rank": 3
+   "rank": 2
   },
   {
    "player": "Joel Embiid",
@@ -1466,7 +1464,7 @@
      "price": 114
     }
    },
-   "rank": 4
+   "rank": 3
   }
  ],
  "empty": null,
@@ -1481,6 +1479,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-18T19:50:01-05:00",
- "status_at": "2026-11-18T19:50:01-05:00"
+ "generated_at": "2026-11-18T20:00:00-05:00",
+ "status_at": "2026-11-18T20:00:00-05:00"
 }
