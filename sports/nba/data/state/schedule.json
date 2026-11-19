@@ -346,10 +346,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:41 - 2nd",
+    "detail": "6:37 - 2nd",
     "score": {
-     "MEM": "30",
-     "CLE": "39"
+     "MEM": "41",
+     "CLE": "48"
     }
    },
    {
@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:19 - 2nd",
+    "detail": "6:56 - 2nd",
     "score": {
-     "HOU": "39",
-     "IND": "28"
+     "HOU": "49",
+     "IND": "30"
     }
    },
    {
@@ -375,11 +375,11 @@
     "home": "MIA",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:49 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
-     "MIL": "20",
-     "MIA": "28"
+     "MIL": "23",
+     "MIA": "34"
     }
    },
    {
@@ -390,11 +390,11 @@
     "home": "ORL",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:04 - 2nd",
     "score": {
-     "PHI": "27",
-     "ORL": "40"
+     "PHI": "41",
+     "ORL": "51"
     }
    },
    {
@@ -403,13 +403,13 @@
     "start": "2026-11-18T19:30:00-05:00",
     "away": "CHI",
     "home": "BKN",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/18 - 7:30 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:34 - 1st",
     "score": {
-     "CHI": "0",
-     "BKN": "0"
+     "CHI": "12",
+     "BKN": "6"
     }
    },
    {
@@ -418,13 +418,13 @@
     "start": "2026-11-18T19:30:00-05:00",
     "away": "WSH",
     "home": "TOR",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/18 - 7:30 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:34 - 1st",
     "score": {
-     "WSH": "0",
-     "TOR": "0"
+     "WSH": "11",
+     "TOR": "7"
     }
    },
    {

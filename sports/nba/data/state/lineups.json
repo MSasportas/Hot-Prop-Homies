@@ -181,11 +181,11 @@
    }
   },
   "DET": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
-    "Cade Cunningham",
     "Daniss Jenkins",
     "Kevin Huerter",
+    "Javonte Green",
     "Ausar Thompson",
     "John Collins"
    ],
@@ -198,7 +198,7 @@
    }
   },
   "NO": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jeremiah Fears",
     "Herbert Jones",
@@ -233,7 +233,7 @@
    }
   },
   "DAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Kyrie Irving",
     "Caleb Martin",
@@ -267,13 +267,13 @@
    }
   },
   "OKC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Shai Gilgeous-Alexander",
     "Jared McCain",
     "Ajay Mitchell",
-    "Kenrich Williams",
-    "Isaiah Hartenstein"
+    "Isaiah Hartenstein",
+    "Aday Mara"
    ],
    "status": {
     "Chet Holmgren": "out",
@@ -363,5 +363,5 @@
    }
   }
  },
- "at": "2026-11-18T19:40:01-05:00"
+ "at": "2026-11-18T19:50:01-05:00"
 }
