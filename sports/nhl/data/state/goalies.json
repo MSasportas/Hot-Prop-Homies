@@ -1,30 +1,102 @@
 {
- "date": "2026-11-18",
+ "date": "2026-11-19",
  "teams": {
-  "DET": {
-   "name": "Daniil Tarasov",
-   "status": "confirmed"
+  "OTT": {
+   "name": "Linus Ullmark",
+   "status": "expected"
   },
-  "BOS": {
-   "name": "Jeremy Swayman",
-   "status": "confirmed"
+  "PHI": {
+   "name": "Dan Vladar",
+   "status": "expected"
   },
-  "NJD": {
-   "name": "Connor Hellebuyck",
-   "status": "confirmed"
+  "CAR": {
+   "name": "Pyotr Kochetkov",
+   "status": "expected"
   },
   "MTL": {
-   "name": "Jacob Fowler",
+   "name": "Jakub Dobes",
    "status": "confirmed"
   },
-  "UTA": {
-   "name": "Sebastian Cossa",
+  "WSH": {
+   "name": "Logan Thompson",
+   "status": "expected"
+  },
+  "BUF": {
+   "name": "Ukko-Pekka Luukkonen",
+   "status": "expected"
+  },
+  "PIT": {
+   "name": "Arturs Silovs",
+   "status": "expected"
+  },
+  "STL": {
+   "name": "Joel Hofer",
+   "status": "expected"
+  },
+  "TOR": {
+   "name": "Anthony Stolarz",
+   "status": "expected"
+  },
+  "LAK": {
+   "name": "Darcy Kuemper",
+   "status": "expected"
+  },
+  "WPG": {
+   "name": "Nico Daws",
+   "status": "expected"
+  },
+  "NYI": {
+   "name": "Ilya Sorokin",
+   "status": "expected"
+  },
+  "TBL": {
+   "name": "Andrei Vasilevskiy",
+   "status": "expected"
+  },
+  "EDM": {
+   "name": "Devon Levi",
+   "status": "expected"
+  },
+  "CHI": {
+   "name": "Spencer Knight",
+   "status": "expected"
+  },
+  "CBJ": {
+   "name": "Cam Talbot",
+   "status": "expected"
+  },
+  "CGY": {
+   "name": "Dustin Wolf",
+   "status": "expected"
+  },
+  "MIN": {
+   "name": "Jesper Wallstedt",
    "status": "expected"
   },
   "COL": {
    "name": "Mackenzie Blackwood",
-   "status": "confirmed"
+   "status": "expected"
+  },
+  "ANA": {
+   "name": "Lukas Dostal",
+   "status": "expected"
+  },
+  "SEA": {
+   "name": "Philipp Grubauer",
+   "status": "expected"
+  },
+  "VAN": {
+   "name": "Leevi Merilainen",
+   "status": "expected"
+  },
+  "VGK": {
+   "name": "Carter Hart",
+   "status": "expected"
+  },
+  "DAL": {
+   "name": "Jake Oettinger",
+   "status": "expected"
   }
  },
- "checked_at": "2026-11-18T19:10:51-05:00"
+ "checked_at": "2026-11-19T05:00:01-05:00"
 }
