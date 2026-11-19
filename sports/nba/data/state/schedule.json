@@ -345,11 +345,11 @@
     "home": "CLE",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:12 - 3rd",
     "score": {
-     "MEM": "71",
-     "CLE": "72"
+     "MEM": "95",
+     "CLE": "90"
     }
    },
    {
@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:17 - 3rd",
+    "detail": "4:09 - 3rd",
     "score": {
-     "HOU": "72",
-     "IND": "56"
+     "HOU": "76",
+     "IND": "65"
     }
    },
    {
@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:14 - 3rd",
+    "detail": "7:30 - 3rd",
     "score": {
-     "PHI": "64",
-     "ORL": "73"
+     "PHI": "76",
+     "ORL": "79"
     }
    },
    {
@@ -405,11 +405,11 @@
     "home": "BKN",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:47 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "CHI": "67",
-     "BKN": "42"
+     "CHI": "76",
+     "BKN": "51"
     }
    },
    {
@@ -420,11 +420,11 @@
     "home": "TOR",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:50 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "WSH": "48",
-     "TOR": "42"
+     "WSH": "49",
+     "TOR": "47"
     }
    },
    {
@@ -435,11 +435,11 @@
     "home": "NO",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:11 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
-     "DET": "18",
-     "NO": "18"
+     "DET": "31",
+     "NO": "31"
     }
    },
    {
@@ -451,10 +451,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:33 - 1st",
+    "detail": "11:22 - 2nd",
     "score": {
-     "ATL": "25",
-     "OKC": "22"
+     "ATL": "31",
+     "OKC": "31"
     }
    },
    {
@@ -465,11 +465,11 @@
     "home": "DAL",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:43 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
-     "GS": "12",
-     "DAL": "27"
+     "GS": "25",
+     "DAL": "35"
     }
    },
    {

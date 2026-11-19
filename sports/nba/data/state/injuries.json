@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T20:10:05-05:00",
+ "at": "2026-11-18T20:40:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -222,8 +222,8 @@
    "status": "day-to-day",
    "name": "Alperen Sengun",
    "team": "HOU",
-   "date": "2026-11-19T00:54Z",
-   "note": "Sengun exited Wednesday's game against the Pacers for the locker room due to an apparent facial injury, Will Guillory of The Athletic reports."
+   "date": "2026-11-19T01:27Z",
+   "note": "Sengun (eye) will not return to Wednesday's game against the Pacers, Will Guillory of The Athletic reports."
   },
   "3102529": {
    "status": "out",
@@ -602,6 +602,13 @@
    "team": "SA",
    "date": "2026-10-05T21:43Z",
    "note": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports."
+  },
+  "5093267": {
+   "status": "day-to-day",
+   "name": "Collin Murray-Boyles",
+   "team": "TOR",
+   "date": "2026-11-19T01:35Z",
+   "note": "Murray-Boyles ended Tuesday's 111-102 loss to New York with eight points (4-6 FG), one rebound, three assists, three blocks and one steal in 33 minutes."
   },
   "4395625": {
    "status": "out",
