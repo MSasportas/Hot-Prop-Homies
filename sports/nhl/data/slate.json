@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-19",
- "generated_at": "2026-11-19T18:30:00-05:00",
- "status_at": "2026-11-19T18:30:00-05:00",
+ "generated_at": "2026-11-19T18:40:00-05:00",
+ "status_at": "2026-11-19T18:40:00-05:00",
  "valid_until": "2026-11-20T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -11,16 +11,16 @@
   "stats_through": "2026-11-18",
   "lineups_at": "2026-11-19T18:20:01-05:00",
   "goalies_at": null,
-  "lineups_note": "Lineups posted for 13 of 20 teams checked so far.",
-  "lineups_state": "ok",
+  "lineups_note": "Lineups posted for 13 of 22 teams checked so far.",
+  "lineups_state": "partial",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-19T18:30:00-05:00",
+   "at": "2026-11-19T18:40:00-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 2716,
+   "pulls_left": 2713,
    "keys": 9,
    "game_days_left": 10,
    "days_left": 12,
@@ -31,7 +31,12 @@
   "flag_reads": 9,
   "tier": 4
  },
- "banners": [],
+ "banners": [
+  {
+   "level": "warn",
+   "text": "Lineups couldn't be checked, so picks stay Early."
+  }
+ ],
  "empty": null,
  "games": [
   {
