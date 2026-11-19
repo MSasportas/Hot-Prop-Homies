@@ -621,7 +621,7 @@ function loadLab() {
   return Promise.all(tests.map(function (t) {
     var p = str(t.summary).replace(/^\/+/, '');
     if (!/^[\w\/.-]+\.json$/.test(p) || /\.\./.test(p)) return Promise.resolve();
-    return settle(getJSON(BASE + p)).then(function (r) { S.labSum[str(t.id)] = r.ok ? r.v : (S.labSum[str(t.id)] && S.labSum[str(t.id)].generated_at ? S.labSum[str(t.id)] : { _err: r.kind }); });
+    return settle(getJSON((t.base === 'root' ? '' : BASE) + p)).then(function (r) { S.labSum[str(t.id)] = r.ok ? r.v : (S.labSum[str(t.id)] && S.labSum[str(t.id)].generated_at ? S.labSum[str(t.id)] : { _err: r.kind }); });
   })).then(function () { maybeRender(); });
 }
 var timer = null;
