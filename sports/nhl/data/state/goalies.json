@@ -35,7 +35,7 @@
   },
   "TOR": {
    "name": "Anthony Stolarz",
-   "status": "expected"
+   "status": "confirmed"
   },
   "LAK": {
    "name": "Darcy Kuemper",
@@ -74,7 +74,7 @@
    "status": "expected"
   },
   "COL": {
-   "name": "Mackenzie Blackwood",
+   "name": "Scott Wedgewood",
    "status": "expected"
   },
   "ANA": {
@@ -98,5 +98,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-19T10:30:01-05:00"
+ "checked_at": "2026-11-19T10:40:01-05:00"
 }
