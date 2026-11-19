@@ -63,7 +63,7 @@
    }
   },
   "MIL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Brayden Burries",
     "Tyler Herro",
@@ -77,7 +77,7 @@
    }
   },
   "MIA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Davion Mitchell",
     "Klay Thompson",
@@ -90,7 +90,7 @@
    }
   },
   "PHI": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Anfernee Simons",
     "VJ Edgecombe",
@@ -108,7 +108,7 @@
    }
   },
   "ORL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jalen Suggs",
     "Anthony Black",
@@ -243,12 +243,10 @@
     "Daniel Gafford"
    ],
    "status": {
-    "Santi Aldama": "probable",
     "Walter Clayton": "probable",
-    "Max Christie": "questionable",
-    "Tobi Lawal": "doubtful",
     "Tarik Biberovic": "out",
     "Sergio de Larrea": "out",
+    "Tobi Lawal": "out",
     "Dereck Lively": "out"
    }
   },
@@ -367,5 +365,5 @@
    }
   }
  },
- "at": "2026-11-18T18:50:01-05:00"
+ "at": "2026-11-18T19:00:01-05:00"
 }
