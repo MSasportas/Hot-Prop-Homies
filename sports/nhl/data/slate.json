@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-19",
- "generated_at": "2026-11-19T11:20:00-05:00",
- "status_at": "2026-11-19T11:20:00-05:00",
+ "generated_at": "2026-11-19T11:30:00-05:00",
+ "status_at": "2026-11-19T11:30:00-05:00",
  "valid_until": "2026-11-20T05:00:00-05:00",
  "status": {
   "prices_state": "not_yet",
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-19T11:20:00-05:00",
+   "at": "2026-11-19T11:30:00-05:00",
    "failed_step": null
   },
   "pool": {
@@ -90,7 +90,7 @@
     },
     "home": {
      "name": "Samuel Ersson",
-     "status": "expected"
+     "status": "confirmed"
     }
    },
    "checks": {
@@ -126,7 +126,7 @@
     },
     "home": {
      "name": "Arturs Silovs",
-     "status": "expected"
+     "status": "confirmed"
     }
    },
    "checks": {
@@ -342,7 +342,7 @@
     },
     "home": {
      "name": "Dustin Wolf",
-     "status": "expected"
+     "status": "confirmed"
     }
    },
    "checks": {

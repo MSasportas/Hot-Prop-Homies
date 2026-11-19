@@ -3,7 +3,7 @@
  "teams": {
   "OTT": {
    "name": "Samuel Ersson",
-   "status": "expected"
+   "status": "confirmed"
   },
   "PHI": {
    "name": "Dan Vladar",
@@ -27,7 +27,7 @@
   },
   "PIT": {
    "name": "Arturs Silovs",
-   "status": "expected"
+   "status": "confirmed"
   },
   "STL": {
    "name": "Joel Hofer",
@@ -67,7 +67,7 @@
   },
   "CGY": {
    "name": "Dustin Wolf",
-   "status": "expected"
+   "status": "confirmed"
   },
   "MIN": {
    "name": "Jesper Wallstedt",
@@ -98,5 +98,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-19T11:00:00-05:00"
+ "checked_at": "2026-11-19T11:30:00-05:00"
 }
