@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T19:00:01-05:00",
+ "at": "2026-11-18T19:10:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -106,19 +106,19 @@
    "date": "2026-11-16T22:06Z",
    "note": "Mobley will receive treatment and participate in rehab after the team confirmed a diagnosis of a right great toe sprain, and he'll be re-evaluated in the next 7-to-10 days."
   },
+  "5106040": {
+   "status": "out",
+   "name": "Tobi Lawal",
+   "team": "DAL",
+   "date": "2026-11-18T23:59Z",
+   "note": "Lawal is out for Wednesday's game against the Warriors due to tightness in his right groin."
+  },
   "5279129": {
    "status": "out",
    "name": "Sergio de Larrea",
    "team": "DAL",
    "date": "2026-11-17T22:53Z",
    "note": "De Larrea (knee) is listed as out for Wednesday's game against the Warriors."
-  },
-  "4896372": {
-   "status": "day-to-day",
-   "name": "Walter Clayton Jr.",
-   "team": "DAL",
-   "date": "2026-11-17T22:47Z",
-   "note": "Clayton (ankle) is listed as probable for Wednesday's game against the Warriors."
   },
   "4683688": {
    "status": "out",
@@ -127,33 +127,12 @@
    "date": "2026-11-17T22:45Z",
    "note": "Lively (foot) is out for Wednesday's game against the Warriors."
   },
-  "5106040": {
-   "status": "day-to-day",
-   "name": "Tobi Lawal",
-   "team": "DAL",
-   "date": "2026-11-17T22:45Z",
-   "note": "Lawal is doubtful for Wednesday's game against the Warriors due to tightness in his right groin."
-  },
   "5148538": {
    "status": "out",
    "name": "Tarik Biberovic",
    "team": "DAL",
    "date": "2026-11-17T22:42Z",
    "note": "Biberovic (heel) is out for Wednesday's game against the Warriors."
-  },
-  "4432582": {
-   "status": "day-to-day",
-   "name": "Max Christie",
-   "team": "DAL",
-   "date": "2026-11-17T22:38Z",
-   "note": "Christie (ankle) is questionable for Wednesday's game against the Warriors."
-  },
-  "4593125": {
-   "status": "day-to-day",
-   "name": "Santi Aldama",
-   "team": "DAL",
-   "date": "2026-11-17T22:36Z",
-   "note": "Aldama (ankle) is probable for Wednesday's game against the Warriors."
   },
   "4432181": {
    "status": "out",
@@ -441,13 +420,6 @@
    "team": "OKC",
    "date": "2026-11-18T00:01Z",
    "note": "Sorber underwent an arthroscopic knee procedure Tuesday to address inflammation at the patellofemoral joint in his right knee, and he's expected to return to on-court activities in 6-8 weeks, Steve Mc"
-  },
-  "4432823": {
-   "status": "out",
-   "name": "Jaylin Williams",
-   "team": "OKC",
-   "date": "2026-11-17T23:08Z",
-   "note": "Williams (back) is listed as questionable for Wednesday's game against the Hawks, Clemente Almanza of USA Today reports."
   },
   "4683692": {
    "status": "out",
