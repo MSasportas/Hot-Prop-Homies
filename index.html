@@ -1497,6 +1497,8 @@ function liveTick() {
   var a = liveAgo(); if (el.textContent !== a.text) el.textContent = a.text;
   el.className = 'lvupd' + (a.bad ? ' bad' : '');
 }
+function clockSec(c) { var m = /^(\d+):(\d+(?:\.\d+)?)$/.exec(str(c)); return m ? parseInt(m[1], 10) * 60 + parseFloat(m[2]) : 0; }
+function pickProgress(p, games) { var lg = liveGame(p.game_id); if (!lg || lg.state === 'pre') return 0; var per = num(lg.period) || 0; return per * 10000 - (lg.in_break ? 0 : clockSec(str(lg.clock))); }
 function gameLine(p, d) {
   var lg = liveGame(p.game_id), g = d.games[p.game_id], score = null, st, n = lg ? num(lg.period) : null, clk = lg ? str(lg.clock) : '';
   var nhl = (str(p.sport) || S.sport) === 'nhl';
@@ -1593,7 +1595,8 @@ function renderLive() {
   if (d.started.length) { var la = liveAgo(); app.appendChild(h('div', { id: 'lvupd', class: 'lvupd' + (la.bad ? ' bad' : ''), role: 'status', text: la.text })); }
   var on = d.started.filter(function (p) { return !pickFinal(p); }), done = d.started.filter(pickFinal);
   var byStart = function (a, b) { return (pickStart(a, d.games) || 0) - (pickStart(b, d.games) || 0) || evOf(b) - evOf(a); };
-  on.sort(byStart); done.sort(byStart);
+  var byProgress = function (a, b) { var pa = pickProgress(a, d.games), pb = pickProgress(b, d.games); return pa !== pb ? pb - pa : byStart(a, b); };
+  on.sort(byProgress); done.sort(byStart);
   if (!d.started.length) {
     var nxt = d.open.map(function (p) { return pickStart(p, d.games); }).filter(function (x) { return x != null; }).sort()[0];
     app.appendChild(h('div', { class: 'card empty' }, h('div', { class: 't', text: 'No game with a pick has started yet.' }),
@@ -1722,8 +1725,11 @@ function renderLiveAll() {
     var label = sp === 'nba' ? 'NBA' : 'NHL';
     app.appendChild(h('div', { class: 'sport-sec-h' }, h('span', { class: 'sp-badge ' + sp, text: label })));
     var list = h('div', { class: 'lvlist' });
-    d.started.sort(function(a,b){ return (ms(a.start)||0) - (ms(b.start)||0); });
-    d.started.forEach(function (p) { list.appendChild(liveRow(p, d)); });
+    var on2 = d.started.filter(function(p){ return !pickFinal(p); }), done2 = d.started.filter(pickFinal);
+    var byStart2 = function(a,b){ return (ms(a.start)||0) - (ms(b.start)||0); };
+    var byProg2 = function(a,b){ var pa = pickProgress(a, d.games), pb = pickProgress(b, d.games); return pa !== pb ? pb - pa : byStart2(a,b); };
+    on2.sort(byProg2); done2.sort(byStart2);
+    on2.concat(done2).forEach(function (p) { list.appendChild(liveRow(p, d)); });
     app.appendChild(list);
     S.sport = savedSport; S.slate = savedSlate; S.record = savedRecord;
   });

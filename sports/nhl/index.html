@@ -1122,6 +1122,8 @@ function liveStale() {
 }
 function ordinal(n) { return n === 1 ? '1st' : n === 2 ? '2nd' : n === 3 ? '3rd' : n + 'th'; }
 function clockText(c) { return str(c).replace(/^0(\d:)/, '$1'); }
+function clockSec(c) { var m = /^(\d+):(\d+(?:\.\d+)?)$/.exec(str(c)); return m ? parseInt(m[1], 10) * 60 + parseFloat(m[2]) : 0; }
+function pickProgress(p, games) { var lg = liveGame(p.game_id); if (!lg || lg.state !== 'LIVE') return 0; var per = num(lg.period) || 0; return per * 10000 - (lg.in_intermission ? 0 : clockSec(str(lg.clock))); }
 function gameLine(p, d) {
   var lg = liveGame(p.game_id), mu = matchup(p, d.games), score = null, st;
   if (lg && isObj(lg.away) && isObj(lg.home) && num(lg.away.score) != null && num(lg.home.score) != null)
@@ -1209,7 +1211,8 @@ function renderLive() {
   }
   var rows = d.started.slice(), on = rows.filter(function (p) { return !pickFinal(p); }), done = rows.filter(pickFinal);
   var byStart = function (a, b) { var x = ms(a.start) || 0, y = ms(b.start) || 0; return x - y || evOf(b) - evOf(a); };
-  on.sort(byStart); done.sort(byStart);
+  var byProgress = function (a, b) { var pa = pickProgress(a, d.games), pb = pickProgress(b, d.games); return pa !== pb ? pb - pa : byStart(a, b); };
+  on.sort(byProgress); done.sort(byStart);
   if (!rows.length) {
     var nxt = d.board.filter(function (p) { return !p.pulled; }).map(function (p) { return ms(p.start); }).filter(function (x) { return x != null; }).sort()[0];
     app.appendChild(h('div', { class: 'card empty' }, h('div', { class: 't', text: 'No game with a pick has started yet.' }),
