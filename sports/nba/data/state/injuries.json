@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T09:50:01-05:00",
+ "at": "2026-11-19T10:00:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -78,19 +78,19 @@
    "date": "2026-11-12T21:35Z",
    "note": "Wilson (hand) is expected to miss four to six weeks, Shams Charania of ESPN reports."
   },
-  "4576087": {
-   "status": "out",
-   "name": "Peyton Watson",
-   "team": "CLE",
-   "date": "2026-11-18T23:17Z",
-   "note": "Watson (back) is out for Wednesday's game versus Memphis."
-  },
   "4683747": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Jaylon Tyson",
    "team": "CLE",
-   "date": "2026-11-18T18:21Z",
+   "date": "2026-11-19T14:45Z",
    "note": "Tyson (ankle) has been ruled out for Wednesday's game against Memphis."
+  },
+  "4576087": {
+   "status": "day-to-day",
+   "name": "Peyton Watson",
+   "team": "CLE",
+   "date": "2026-11-19T14:44Z",
+   "note": "Watson (back) is out for Wednesday's game versus Memphis."
   },
   "5106268": {
    "status": "out",
@@ -107,10 +107,10 @@
    "note": "Mobley will receive treatment and participate in rehab after the team confirmed a diagnosis of a right great toe sprain, and he'll be re-evaluated in the next 7-to-10 days."
   },
   "5106040": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Tobi Lawal",
    "team": "DAL",
-   "date": "2026-11-18T23:59Z",
+   "date": "2026-11-19T14:51Z",
    "note": "Lawal is out for Wednesday's game against the Warriors due to tightness in his right groin."
   },
   "5279129": {
@@ -141,26 +141,26 @@
    "date": "2026-10-17T00:52Z",
    "note": "Strawther (knee) was diagnosed with a left knee sprain Friday and will be re-evaluated in six weeks, Vinny Benedetto of The Denver Gazette reports."
   },
-  "4432166": {
-   "status": "out",
-   "name": "Cade Cunningham",
-   "team": "DET",
-   "date": "2026-11-19T00:37Z",
-   "note": "Cunningham (knee) won't play in Wednesday's game against New Orleans."
-  },
   "2990962": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Taurean Prince",
    "team": "DET",
-   "date": "2026-11-18T19:05Z",
+   "date": "2026-11-19T14:49Z",
    "note": "Prince (knee) is out for Wednesday's game against the Pelicans."
   },
   "4683771": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Ronald Holland II",
    "team": "DET",
-   "date": "2026-11-18T19:04Z",
+   "date": "2026-11-19T14:49Z",
    "note": "Holland (knee) is out for Wednesday's game against the Pelicans."
+  },
+  "4432166": {
+   "status": "day-to-day",
+   "name": "Cade Cunningham",
+   "team": "DET",
+   "date": "2026-11-19T14:49Z",
+   "note": "Cunningham (knee) won't play in Wednesday's game against New Orleans."
   },
   "3157465": {
    "status": "out",
@@ -295,19 +295,19 @@
    "date": "2026-11-19T01:38Z",
    "note": "Head coach JJ Redick said Reaves' (heel) pregame workout went \"well,\" but he remains without an official timetable to return, Daniel Starkand of LakersNation.com reports."
   },
+  "4432810": {
+   "status": "day-to-day",
+   "name": "Isaiah Stewart",
+   "team": "MEM",
+   "date": "2026-11-19T14:44Z",
+   "note": "Stewart (illness) won't play Wednesday against the Cavs."
+  },
   "5105550": {
    "status": "out",
    "name": "GG Jackson",
    "team": "MEM",
    "date": "2026-11-17T23:18Z",
    "note": "Jackson underwent a procedure Wednesday to repair a broken fifth metatarsal in his left foot. He is expected to recover fully and will be re-evaluated in approximately three months."
-  },
-  "4432810": {
-   "status": "out",
-   "name": "Isaiah Stewart",
-   "team": "MEM",
-   "date": "2026-11-17T22:10Z",
-   "note": "Stewart (illness) won't play Wednesday against the Cavs."
   },
   "4065733": {
    "status": "out",
@@ -338,10 +338,10 @@
    "note": "Gardner (hamstring) is out for Wednesday's game against the Bucks."
   },
   "4591725": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Ryan Rollins",
    "team": "MIL",
-   "date": "2026-11-18T18:10Z",
+   "date": "2026-11-19T14:45Z",
    "note": "Rollins (illness) has been ruled out for Wednesday's game at Miami."
   },
   "4997526": {
@@ -422,10 +422,10 @@
    "note": "Murray (ankle) is out for Friday's game against Memphis."
   },
   "2991350": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Alex Caruso",
    "team": "OKC",
-   "date": "2026-11-19T03:13Z",
+   "date": "2026-11-19T14:50Z",
    "note": "Caruso won't return to Wednesday's game against the Hawks due to right hip soreness, Clemente Almanza of USA Today reports."
   },
   "5061603": {
@@ -484,19 +484,19 @@
    "date": "2026-10-24T16:47Z",
    "note": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports."
   },
-  "4431678": {
-   "status": "out",
-   "name": "Tyrese Maxey",
-   "team": "PHI",
-   "date": "2026-11-18T23:33Z",
-   "note": "Maxey (foot) is out for Wednesday's game in Orlando, Ky Carlin of USA Today reports."
-  },
   "3912848": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Dean Wade",
    "team": "PHI",
-   "date": "2026-11-18T23:19Z",
+   "date": "2026-11-19T14:47Z",
    "note": "Wade (hamstring) is out for Wednesday's game in Orlando."
+  },
+  "4431678": {
+   "status": "day-to-day",
+   "name": "Tyrese Maxey",
+   "team": "PHI",
+   "date": "2026-11-19T14:46Z",
+   "note": "Maxey (foot) is out for Wednesday's game in Orlando, Ky Carlin of USA Today reports."
   },
   "3917376": {
    "status": "out",
@@ -617,26 +617,26 @@
    "date": "2026-10-05T21:43Z",
    "note": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports."
   },
+  "4395625": {
+   "status": "day-to-day",
+   "name": "RJ Barrett",
+   "team": "TOR",
+   "date": "2026-11-19T14:48Z",
+   "note": "Barrett (hamstring) is out for Wednesday's game against the Wizards, Michael Grange of Sportsnet.ca reports."
+  },
+  "4433134": {
+   "status": "day-to-day",
+   "name": "Scottie Barnes",
+   "team": "TOR",
+   "date": "2026-11-19T14:48Z",
+   "note": "Barnes (injury management) has been ruled out for Wednesday's game against Washington, Esfandiar Baraheni of The Athletic reports."
+  },
   "5093267": {
    "status": "day-to-day",
    "name": "Collin Murray-Boyles",
    "team": "TOR",
    "date": "2026-11-19T01:34Z",
    "note": "Murray-Boyles will not return to Wednesday's game against the Wizards due to an illness, Blake Murphy of Sportsnet.ca reports."
-  },
-  "4395625": {
-   "status": "out",
-   "name": "RJ Barrett",
-   "team": "TOR",
-   "date": "2026-11-18T22:55Z",
-   "note": "Barrett (hamstring) is out for Wednesday's game against the Wizards, Michael Grange of Sportsnet.ca reports."
-  },
-  "4433134": {
-   "status": "out",
-   "name": "Scottie Barnes",
-   "team": "TOR",
-   "date": "2026-11-18T17:46Z",
-   "note": "Barnes (injury management) has been ruled out for Wednesday's game against Washington, Esfandiar Baraheni of The Athletic reports."
   },
   "6450": {
    "status": "out",
