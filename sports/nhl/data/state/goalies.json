@@ -23,7 +23,7 @@
   },
   "BUF": {
    "name": "Ukko-Pekka Luukkonen",
-   "status": "expected"
+   "status": "confirmed"
   },
   "PIT": {
    "name": "Arturs Silovs",
@@ -90,13 +90,13 @@
    "status": "expected"
   },
   "VGK": {
-   "name": "Carter Hart",
-   "status": "expected"
+   "name": "Adin Hill",
+   "status": "confirmed"
   },
   "DAL": {
    "name": "Jake Oettinger",
    "status": "expected"
   }
  },
- "checked_at": "2026-11-19T14:20:01-05:00"
+ "checked_at": "2026-11-19T14:40:00-05:00"
 }
