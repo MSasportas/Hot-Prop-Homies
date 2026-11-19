@@ -2,7 +2,7 @@
  "date": "2026-11-19",
  "teams": {
   "OTT": {
-   "name": "Linus Ullmark",
+   "name": "Samuel Ersson",
    "status": "expected"
   },
   "PHI": {
@@ -98,5 +98,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-19T10:40:01-05:00"
+ "checked_at": "2026-11-19T10:50:50-05:00"
 }
