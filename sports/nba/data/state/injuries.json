@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T14:10:00-05:00",
+ "at": "2026-11-19T14:20:01-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -320,8 +320,22 @@
    "status": "day-to-day",
    "name": "Isaiah Stewart",
    "team": "MEM",
-   "date": "2026-11-19T14:44Z",
-   "note": "Stewart (illness) won't play Wednesday against the Cavs."
+   "date": "2026-11-19T19:11Z",
+   "note": "Stewart is questionable for Thursday's game against the Warriors due to an illness."
+  },
+  "4600663": {
+   "status": "out",
+   "name": "Zach Edey",
+   "team": "MEM",
+   "date": "2026-11-19T19:09Z",
+   "note": "Edey (hip) has been ruled out for Thursday's game against the Warriors."
+  },
+  "4065733": {
+   "status": "out",
+   "name": "Ty Jerome",
+   "team": "MEM",
+   "date": "2026-11-19T19:07Z",
+   "note": "Jerome (hip) has been ruled out for Thursday's game against the Warriors."
   },
   "5105550": {
    "status": "out",
@@ -329,13 +343,6 @@
    "team": "MEM",
    "date": "2026-11-17T23:18Z",
    "note": "Jackson underwent a procedure Wednesday to repair a broken fifth metatarsal in his left foot. He is expected to recover fully and will be re-evaluated in approximately three months."
-  },
-  "4065733": {
-   "status": "out",
-   "name": "Ty Jerome",
-   "team": "MEM",
-   "date": "2026-11-17T22:07Z",
-   "note": "Jerome (hip) has been ruled out for Wednesday's game in Cleveland."
   },
   "4431785": {
    "status": "out",
@@ -357,6 +364,13 @@
    "team": "MIA",
    "date": "2026-11-19T14:45Z",
    "note": "Gardner (hamstring) is out for Wednesday's game against the Bucks."
+  },
+  "3133628": {
+   "status": "out",
+   "name": "Myles Turner",
+   "team": "MIL",
+   "date": "2026-11-19T19:10Z",
+   "note": "Turner posted four points (2-5 FG, 0-2 3Pt), five rebounds, four assists and three blocks in 21 minutes during Wednesday's 137-130 loss to Miami."
   },
   "4591725": {
    "status": "day-to-day",
