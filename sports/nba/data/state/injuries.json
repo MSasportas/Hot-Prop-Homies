@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T10:10:01-05:00",
+ "at": "2026-11-19T10:12:21-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -540,6 +540,13 @@
    "date": "2026-09-11T16:03Z",
    "note": "Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports."
   },
+  "4706557": {
+   "status": "out",
+   "name": "Chris Youngblood",
+   "team": "POR",
+   "date": "2026-11-19T15:06Z",
+   "note": "Youngblood (heel) has been ruled out for Thursday's game against the Bucks."
+  },
   "4066211": {
    "status": "out",
    "name": "Robert Williams III",
@@ -560,13 +567,6 @@
    "team": "POR",
    "date": "2026-11-18T22:53Z",
    "note": "Camara is questionable to play Thursday against the Bucks due to general soreness."
-  },
-  "4706557": {
-   "status": "out",
-   "name": "Chris Youngblood",
-   "team": "POR",
-   "date": "2026-11-17T19:19Z",
-   "note": "Youngblood (heel) has been ruled out for Tuesday's game at Minnesota."
   },
   "4578893": {
    "status": "out",
