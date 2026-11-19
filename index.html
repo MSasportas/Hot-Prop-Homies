@@ -1497,7 +1497,7 @@ function liveTick() {
   var a = liveAgo(); if (el.textContent !== a.text) el.textContent = a.text;
   el.className = 'lvupd' + (a.bad ? ' bad' : '');
 }
-function clockSec(c) { var m = /^(\d+):(\d+(?:\.\d+)?)$/.exec(str(c)); return m ? parseInt(m[1], 10) * 60 + parseFloat(m[2]) : 0; }
+function clockSec(c) { var s = str(c); if (!s) return 0; var m = /^(\d+):(\d+(?:\.\d+)?)$/.exec(s); if (m) return parseInt(m[1], 10) * 60 + parseFloat(m[2]); return parseFloat(s) || 0; }
 function pickProgress(p, games) { var lg = liveGame(p.game_id); if (!lg || lg.state === 'pre') return 0; var per = num(lg.period) || 0; return per * 10000 - (lg.in_break ? 0 : clockSec(str(lg.clock))); }
 function gameLine(p, d) {
   var lg = liveGame(p.game_id), g = d.games[p.game_id], score = null, st, n = lg ? num(lg.period) : null, clk = lg ? str(lg.clock) : '';
