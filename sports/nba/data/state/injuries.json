@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T16:30:01-05:00",
+ "at": "2026-11-19T16:40:01-05:00",
  "list": {
   "3146557": {
    "status": "day-to-day",
@@ -47,8 +47,8 @@
    "status": "out",
    "name": "Grant Nelson",
    "team": "BKN",
-   "date": "2026-11-19T21:17Z",
-   "note": "Nelson signed a two-way contract with the Nets on Friday, Michael Scotto of HoopsHype.com reports."
+   "date": "2026-11-19T21:18Z",
+   "note": "Nelson (ankle) has been ruled out for Friday's game against Orlando."
   },
   "3135045": {
    "status": "day-to-day",
@@ -414,6 +414,13 @@
    "date": "2026-10-05T20:53Z",
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
   },
+  "4576086": {
+   "status": "out",
+   "name": "Bryce McGowens",
+   "team": "NO",
+   "date": "2026-11-19T21:15Z",
+   "note": "McGowens (elbow) has been ruled out for Friday's game against the Thunder."
+  },
   "4431675": {
    "status": "out",
    "name": "Trendon Watford",
@@ -434,13 +441,6 @@
    "team": "NO",
    "date": "2026-11-19T21:05Z",
    "note": "Murphy (knee) is questionable for Friday's game against the Thunder."
-  },
-  "4576086": {
-   "status": "out",
-   "name": "Bryce McGowens",
-   "team": "NO",
-   "date": "2026-11-17T20:57Z",
-   "note": "McGowens (elbow) has been ruled out for Wednesday's game against Detroit."
   },
   "3907497": {
    "status": "out",
