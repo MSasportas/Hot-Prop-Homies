@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-19",
- "generated_at": "2026-11-19T19:10:01-05:00",
+ "generated_at": "2026-11-19T19:10:38-05:00",
  "games": [
   {
    "game_id": 2026020350,
@@ -8,9 +8,9 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "19:52",
+   "clock": "19:28",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "STL",
     "score": 0,
@@ -21,7 +21,7 @@
     "score": 0,
     "sog": null
    },
-   "updated_at": "2026-11-19T19:10:01-05:00"
+   "updated_at": "2026-11-19T19:10:38-05:00"
   },
   {
    "game_id": 2026020354,
@@ -29,7 +29,7 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "19:10",
+   "clock": "18:58",
    "in_intermission": false,
    "running": true,
    "away": {
@@ -42,7 +42,7 @@
     "score": 0,
     "sog": null
    },
-   "updated_at": "2026-11-19T19:10:01-05:00"
+   "updated_at": "2026-11-19T19:10:38-05:00"
   }
  ],
  "picks": {

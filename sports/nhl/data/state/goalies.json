@@ -11,7 +11,7 @@
   },
   "CAR": {
    "name": "Pyotr Kochetkov",
-   "status": "expected"
+   "status": "confirmed"
   },
   "MTL": {
    "name": "Jakub Dobes",
@@ -43,15 +43,15 @@
   },
   "WPG": {
    "name": "Nico Daws",
-   "status": "expected"
+   "status": "confirmed"
   },
   "NYI": {
    "name": "Semyon Varlamov",
-   "status": "expected"
+   "status": "confirmed"
   },
   "TBL": {
    "name": "Andrei Vasilevskiy",
-   "status": "expected"
+   "status": "confirmed"
   },
   "EDM": {
    "name": "Devon Levi",
@@ -98,5 +98,5 @@
    "status": "confirmed"
   }
  },
- "checked_at": "2026-11-19T15:00:00-05:00"
+ "checked_at": "2026-11-19T19:10:38-05:00"
 }
