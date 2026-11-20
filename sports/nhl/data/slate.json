@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-19",
- "generated_at": "2026-11-19T21:41:57-05:00",
- "status_at": "2026-11-19T21:41:57-05:00",
+ "generated_at": "2026-11-19T22:00:00-05:00",
+ "status_at": "2026-11-19T22:00:00-05:00",
  "valid_until": "2026-11-20T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -15,9 +15,9 @@
   "lineups_state": "ok",
   "stats_state": "ok",
   "last_run": {
-   "ok": true,
-   "at": "2026-11-19T21:41:57-05:00",
-   "failed_step": null
+   "ok": false,
+   "at": "2026-11-19T22:00:00-05:00",
+   "failed_step": "stats"
   },
   "pool": {
    "pulls_left": 2671,
@@ -31,8 +31,17 @@
   "flag_reads": 12,
   "tier": 4
  },
- "banners": [],
- "empty": null,
+ "banners": [
+  {
+   "level": "warn",
+   "text": "Part of the last update failed at 10:00 PM (stats). Some of what is below may be older."
+  }
+ ],
+ "empty": {
+  "code": "all_started",
+  "text": "Every game has started.",
+  "sub": "Tonight's picks are on the Live tab."
+ },
  "games": [
   {
    "id": 2026020347,
@@ -580,77 +589,14 @@
      "home": "2026-11-19T19:30:01-05:00"
     }
    },
-   "started": false,
-   "reads_done": true,
+   "started": true,
+   "reads_done": false,
    "picks": 1,
    "excluded_reason": null,
    "excluded_teams": []
   }
  ],
  "picks": [
-  {
-   "id": "2026-11-19:2026020358:8475913:shots:1.5:under",
-   "price": 130,
-   "first_price": 130,
-   "first_price_at": "2026-11-19T20:30:01-05:00",
-   "worst_price": 130,
-   "p": 0.4674,
-   "breakeven": 0.4348,
-   "p_pct": 46,
-   "breakeven_pct": 43,
-   "state": "lineup",
-   "history": [
-    {
-     "at": "2026-11-19T20:30:01-05:00",
-     "text": "Lineup confirmed"
-    }
-   ],
-   "prices": [
-    {
-     "at": "2026-11-19T20:30:01-05:00",
-     "price": 130
-    }
-   ],
-   "pulled": null,
-   "price_final": true,
-   "graded": null,
-   "rank": 1,
-   "tier": "main",
-   "game_id": 2026020358,
-   "player": "M. Stone",
-   "player_id": 8475913,
-   "team": "VGK",
-   "opp": "DAL",
-   "home": true,
-   "start": "2026-11-19T22:00:00-05:00",
-   "market": "shots",
-   "line": 1.5,
-   "side": "under",
-   "bet": "Under 1.5 shots on goal",
-   "price_at": "2026-11-19T20:30:01-05:00",
-   "gap_pct": 8.3,
-   "market_fair_pct": 47.1,
-   "n_books": 8,
-   "guard": {
-    "verdict": "agrees",
-    "ours_pct": 46.7,
-    "model_pct": 47.2
-   },
-   "settled": "goalie",
-   "settled_label": "Goalie confirmed",
-   "reason": "8 other books say 47.1%; Hard Rock's +130 only needs 43.5%. Our model agrees (our blend: 46.7%).",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/7587537364921221514",
-   "links": {
-    "hardrock": {
-     "id": "7587537364921221514",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/7587537364921221514"
-    },
-    "draftkings": null
-   },
-   "thin": false,
-   "games_used": 83,
-   "games_this_season": 23
-  },
   {
    "id": "2026-11-19:2026020356:8475754:shots:1.5:over",
    "price": 105,
@@ -1268,6 +1214,73 @@
    "thin": false,
    "games_used": 90,
    "games_this_season": 22
+  },
+  {
+   "id": "2026-11-19:2026020358:8475913:shots:1.5:under",
+   "price": 130,
+   "first_price": 130,
+   "first_price_at": "2026-11-19T20:30:01-05:00",
+   "worst_price": 130,
+   "p": 0.4674,
+   "breakeven": 0.4348,
+   "p_pct": 46,
+   "breakeven_pct": 43,
+   "state": "locked",
+   "history": [
+    {
+     "at": "2026-11-19T20:30:01-05:00",
+     "text": "Lineup confirmed"
+    },
+    {
+     "at": "2026-11-19T22:00:00-05:00",
+     "text": "Locked"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-19T20:30:01-05:00",
+     "price": 130
+    }
+   ],
+   "pulled": null,
+   "price_final": false,
+   "graded": null,
+   "rank": null,
+   "tier": "main",
+   "game_id": 2026020358,
+   "player": "M. Stone",
+   "player_id": 8475913,
+   "team": "VGK",
+   "opp": "DAL",
+   "home": true,
+   "start": "2026-11-19T22:00:00-05:00",
+   "market": "shots",
+   "line": 1.5,
+   "side": "under",
+   "bet": "Under 1.5 shots on goal",
+   "price_at": "2026-11-19T20:30:01-05:00",
+   "gap_pct": 8.3,
+   "market_fair_pct": 47.1,
+   "n_books": 8,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 46.7,
+    "model_pct": 47.2
+   },
+   "settled": "goalie",
+   "settled_label": "Goalie confirmed",
+   "reason": "8 other books say 47.1%; Hard Rock's +130 only needs 43.5%. Our model agrees (our blend: 46.7%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/7587537364921221514",
+   "links": {
+    "hardrock": {
+     "id": "7587537364921221514",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/7587537364921221514"
+    },
+    "draftkings": null
+   },
+   "thin": false,
+   "games_used": 83,
+   "games_this_season": 23
   }
  ],
  "parlays": [],
