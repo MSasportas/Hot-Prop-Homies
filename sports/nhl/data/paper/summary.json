@@ -2,7 +2,7 @@
  "version": 1,
  "note": "Gap + Guard research log. Every flag here is a pick on the page and in the Record; vetoed and capped rows are research only.",
  "market": "shots",
- "generated_at": "2026-11-19T19:10:38-05:00",
+ "generated_at": "2026-11-19T19:20:00-05:00",
  "slate": "2026-11-19",
  "active": true,
  "window": {
@@ -40,8 +40,8 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "close_fair_pct": 49.4,
+    "clv_pct": 8.7,
     "result": null,
     "units": null
    },
@@ -76,6 +76,40 @@
     "state": "locked",
     "close_fair_pct": 52.5,
     "clv_pct": 4.9,
+    "result": null,
+    "units": null
+   },
+   {
+    "id": "2026-11-19:2026020355:8478493:2.5:under",
+    "kind": "flag",
+    "slate": "2026-11-19",
+    "game_id": 2026020355,
+    "player": "J. Eriksson Ek",
+    "team": "MIN",
+    "opp": "CGY",
+    "game": "MIN @ CGY",
+    "start": "2026-11-19T20:00:00-05:00",
+    "side": "under",
+    "line": 2.5,
+    "bet": "UNDER 2.5 shots",
+    "price": 120,
+    "gap_pct": 4.0,
+    "final_pct": 3.8,
+    "market_fair_pct": 47.3,
+    "final_p_pct": 47.2,
+    "n_books": 8,
+    "guard": "pass",
+    "cap": null,
+    "flagged_at": "2026-11-19T19:20:00-05:00",
+    "read_pull": "C",
+    "settled": "Goalie confirmed",
+    "frozen_settled": "Goalie confirmed",
+    "move30_pct": 0.0,
+    "pulled": null,
+    "locked": false,
+    "state": "open",
+    "close_fair_pct": 47.3,
+    "clv_pct": null,
     "result": null,
     "units": null
    }
@@ -1158,8 +1192,8 @@
   }
  ],
  "nov2": {
-  "gaps_measured": 72,
-  "gaps_logged": 92,
+  "gaps_measured": 73,
+  "gaps_logged": 93,
   "graded_picks": 75,
   "w": 46,
   "l": 29,
@@ -1167,15 +1201,15 @@
   "units": 17.799135610305026,
   "wins_z": 1.628276062465429,
   "clv_gaps": {
-   "n": 72,
-   "mean": 0.04675592363674102,
-   "lb80": 0.04398712720260375,
+   "n": 73,
+   "mean": 0.04730825335309956,
+   "lb80": 0.04442043665201923,
    "pos_share": 1.0
   },
   "clv_flags": {
-   "n": 63,
-   "mean": 0.04671984455055116,
-   "lb80": 0.043559647323760914,
+   "n": 64,
+   "mean": 0.04735040936899433,
+   "lb80": 0.044039979471269475,
    "pos_share": 1.0
   },
   "clv_vetoed": {
@@ -1184,7 +1218,7 @@
    "lb80": 0.04215912990916686,
    "pos_share": 1.0
   },
-  "clv_passed_mean": 0.04671984455055116,
+  "clv_passed_mean": 0.04735040936899433,
   "clv_vetoed_mean": 0.04700847724007004,
   "nights": 28,
   "nights_with_flags": 21,
