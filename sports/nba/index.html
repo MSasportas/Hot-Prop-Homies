@@ -76,7 +76,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .live{display:inline-block;width:7px;height:7px;margin-right:7px;vertical-align:1px;border-radius:50%;background:var(--accent)}
 .live.warn{background:var(--warn)} .live.bad{background:var(--primary)}
 .statusline{font-size:12.5px;line-height:17px;color:var(--fg2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.statusline .lowpool,.statusline .wt{color:var(--warn);font-weight:600}
+.statusline .wt{color:var(--warn);font-weight:600}
 
 /* banners: a 3px meaning bar on the left, plain text */
 .banner{display:flex;gap:10px;padding:10px 12px;margin-top:12px;border-left:3px solid var(--warn);background:var(--warn-soft);font-size:13.5px;line-height:19px;border-radius:0 6px 6px 0}
@@ -130,23 +130,17 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .stp .n{width:7px;height:7px;border-radius:50%;border:1.5px solid var(--line2);background:transparent}
 .stp .c{width:6px;height:1.5px;background:var(--line2)}
 .stp .n.on{border-color:currentColor;background:currentColor}
-.stp .n.skip{border-style:dashed;border-color:currentColor}
 .stp .c.on{background:currentColor}
 .stp.early{color:var(--warn)} .stp.ok{color:var(--good)} .stp.lock{color:var(--muted)}
 .stp .t{color:inherit;font-weight:600}
 .stp.lock .t{color:var(--fg2)}
 .xp .stp .n{width:8px;height:8px} .xp .stp .c{width:10px}
-.chip.hollow{display:inline-flex;align-items:center;height:20px;padding:0 6px;border:1px solid var(--line2);border-radius:4px;font-size:11.5px;color:var(--fg2)}
 /* opened tile */
 .xp{margin-top:10px;padding-top:10px;border-top:1px solid var(--line);font-size:13px;line-height:19px;color:var(--fg2)}
 .xp>*+*{margin-top:8px}
 .xp b{color:var(--fg);font-weight:700}
-.xp .ag{color:var(--good);font-weight:600}
 .xp .meta{font-size:12.5px;line-height:18px;color:var(--muted)}
 .xp .chips{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;font-size:12.5px;line-height:18px}
-.hist{margin:0;padding:0;list-style:none;font-size:12px;line-height:17px;color:var(--muted)}
-.hist li{display:flex;gap:8px}
-.hist time{flex:none;min-width:58px}
 /* chance vs break-even: an edge meter. Centre tick = what the price needs, dot = our chance, red run = the edge */
 .bar{position:relative;height:14px}
 .bar::before{content:"";position:absolute;left:0;right:0;top:6px;height:2px;background:var(--line2);border-radius:1px}
@@ -161,7 +155,6 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 /* tap to bet */
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 16px;border-radius:6px;
   border:1px solid var(--line2);color:var(--fg);font:600 15px/20px var(--body)}
-.btn.wide{width:100%}
 .btn.hr{width:100%;background:var(--cta);color:var(--on-primary);border-color:var(--cta);text-decoration:none;white-space:nowrap}
 /* TOO LATE: off the board before tip. Solid Dugout Navy stamp, the tile dimmed under it; the price is not struck */
 .tile.late{border-color:var(--line)}
@@ -172,7 +165,6 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 
 /* live */
 .tonight{margin-top:12px;font:400 18px/24px var(--head);letter-spacing:.01em}
-.lvnote{margin-top:6px;font-size:12.5px;line-height:17px;color:var(--warn)}
 .lvupd{margin-top:6px;font-size:12.5px;line-height:17px;color:var(--muted)}
 .lvupd.bad{color:var(--warn);font-weight:600}
 .lvlist{margin-top:8px}
@@ -270,7 +262,6 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .big .wl{font:600 38px/46px var(--num);letter-spacing:.01em}
 .big .un{font:600 26px/34px var(--num)}
 .subline{font-size:12px;line-height:17px;color:var(--muted);margin-top:2px}
-.allbets{font:400 16px/22px var(--head);margin-top:6px}
 .hitline{margin-top:10px}
 .hitline .bar{margin-top:4px}
 .tbl{margin-top:8px;font-size:13px;line-height:18px;border-top:1px solid var(--line2)}
@@ -321,11 +312,6 @@ button.tr.open{background:var(--selected-bg);border-bottom-color:transparent}
 .legend{display:flex;flex-wrap:wrap;gap:4px 12px;margin-top:6px;font-size:11px;line-height:15px;color:var(--muted)}
 .legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px}
 .dayd{margin-top:10px}
-.filters{display:inline-flex;margin:12px 0 0;border:1px solid var(--line2);border-radius:6px;overflow:hidden}
-.fbtn{min-height:44px;display:inline-flex;align-items:center}
-.fbtn+.fbtn{border-left:1px solid var(--line2)}
-.fbtn span{display:inline-flex;align-items:center;height:44px;padding:0 18px;font-size:13.5px;font-weight:600;color:var(--muted)}
-.fbtn[aria-pressed="true"] span{background:var(--raise);color:var(--fg)}
 .night{margin-top:20px}
 .night h3{padding-bottom:6px;border-bottom:1px solid var(--line2)}
 .night h3 .mu{font:400 12px/16px var(--body);letter-spacing:0}
@@ -338,8 +324,6 @@ button.tr.open{background:var(--selected-bg);border-bottom-color:transparent}
 .ent .e2{font-size:12px;line-height:17px;color:var(--muted);overflow-wrap:anywhere}
 .ptag{display:inline-block;font:700 11px/15px var(--cond);letter-spacing:.07em;padding:0 4px;margin-right:6px;border:1px solid var(--warn);border-radius:3px;color:var(--warn);vertical-align:1px}
 .ptag.scr{border-color:var(--line2);color:var(--muted)}
-.legs{padding:0 0 0 12px;border-left:1px solid var(--line2);margin:0 0 4px 20px}
-.legs .ent{min-height:0}
 
 /* lab */
 .lab{margin-top:14px;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
@@ -364,7 +348,6 @@ button.tr.open{background:var(--selected-bg);border-bottom-color:transparent}
 .rules li{margin:0 0 10px;padding-left:2px;line-height:20px;overflow-wrap:anywhere;color:var(--fg2)}
 .rules li::marker{color:var(--muted);font:700 14px var(--cond)}
 .slot{font-weight:650;color:var(--fg);white-space:nowrap}
-.slot.miss{color:var(--warn)}
 .plain{margin:10px 0 0;padding:0 0 0 18px;font-size:13.5px;line-height:20px;color:var(--fg2)}
 .plain li{margin:0 0 6px}
 .fixed{margin:10px 0 0;padding:10px 12px;border:1px solid var(--line);border-radius:6px;background:var(--surface);font-size:13px;line-height:19px;font-weight:600;color:var(--fg)}
@@ -397,7 +380,6 @@ var TZ = 'America/New_York';
 var TITLE = 'HPH · NBA';
 var SEEN_KEY = FIX ? 'pc_nba_seen_fx' : 'pc_nba_seen';
 var UI_DEF = { stale_after_min: 30, refresh_sec: 120 };
-var LATEST_N = 5;
 var SMALL_N = 30;          /* a cut row with fewer graded picks than this says "small sample" */
 var MARKET_LINE = 'Hard Rock prices only · No leg worse than -200 · Rebounds, points, assists, 3-pointers made · Main line only, over or under';
 
@@ -405,7 +387,7 @@ var S = {
   slate: null, record: null, rules: null, recordErr: null, lab: null, labSum: {}, labErr: null, heads: null,
   loaded: false, loadErr: false, fetchFail: false, loadedAt: null, busy: false,
   view: 'picks', expanded: {}, openNight: {},
-  older: [], olderIdx: 0, olderBusy: false, olderErr: false, months: {}, calMonth: null, selDay: null,
+  months: {}, calMonth: null, selDay: null,
   newIds: {}, since: null, seenDone: false, key: '', scroll: {}
 };
 
@@ -529,6 +511,13 @@ function betShort(p) {
 }
 
 /* ---------- data access ---------- */
+/* the Record's safety-stop level, from the rules file (NBA: top level; NHL: gap_guard) */
+function safetyUnits() {
+  var r = S.rules, u = r ? num(r.safety_units != null ? r.safety_units : (isObj(r.gap_guard) ? r.gap_guard.safety_units : null)) : null;
+  return u == null ? null : Math.abs(u);
+}
+function safetyDown() { var u = safetyUnits(); return u == null ? 'past the safety limit' : 'down ' + u + ' units or more'; }
+function safetyFall() { var u = safetyUnits(); return u == null ? 'the safety limit' : '-' + u + ' units'; }
 function uiVal(k) {
   var c = [S.rules && isObj(S.rules.ui) ? S.rules.ui[k] : null, S.slate && isObj(S.slate.ui) ? S.slate.ui[k] : null];
   for (var i = 0; i < c.length; i++) { var n = num(c[i]); if (n != null && n > 0 && (k !== 'refresh_sec' || n >= 15)) return n; }
@@ -939,7 +928,7 @@ function renderPicks() {
   var bl = arr(sl.banners);
   if (!exp) bl.forEach(function (b) { var e = engineBanner(b); if (e) app.appendChild(e); });
   if (!exp && sl.safety_paused && !bl.some(function (b) { return isObj(b) && b.level === 'stop'; }))
-    app.appendChild(banner('stop', 'New picks are stopped.', 'The Record is down 10 units or more. The team has to review first.'));
+    app.appendChild(banner('stop', 'New picks are stopped.', 'The Record is ' + safetyDown() + '. The team has to review first.'));
   if (exp) { app.appendChild(smallFoot()); return; }
 
   if (S.since && !stale()) {                     /* nothing is "new" while updates have stopped */
@@ -992,7 +981,6 @@ var NBA_API = 'https://cdn.nba.com/static/json/liveData/';
 var L = { ver: 0, at: null, src: null, fail: false, lastTry: null, busy: false, next: null, wake: null, stopped: false,
           games: {}, stats: {}, done: {}, polls: 0 };
 var NBA_TRI = { GS: 'GSW', NO: 'NOP', NY: 'NYK', SA: 'SAS', UTAH: 'UTA', WSH: 'WAS' };
-var MKT_LABEL = { points: 'PTS', rebounds: 'REB', assists: 'AST', threes: '3PT' };
 var NBA_STAT = { points: 'points', rebounds: 'reboundsTotal', assists: 'assists', threes: 'threePointersMade' };
 function tri(c) { c = str(c).toUpperCase(); return NBA_TRI[c] || c; }
 function liveOK() { return L.at != null && !L.fail; }
@@ -1452,7 +1440,7 @@ function renderRecord() {
 function allNights() {
   var seen = {}, nights = [];
   var add = function (nt) { if (isObj(nt) && nt.date && !seen[nt.date]) { seen[nt.date] = 1; nights.push(nt); } };
-  arr(S.record && S.record.nights).concat(S.older).forEach(add);
+  arr(S.record && S.record.nights).forEach(add);
   Object.keys(S.months).forEach(function (k) { arr(S.months[k] && S.months[k].nights).forEach(add); });
   nights.sort(function (a, b) { return str(a.date) < str(b.date) ? 1 : (str(a.date) > str(b.date) ? -1 : 0); });
   return nights;
@@ -1605,16 +1593,6 @@ function entryRow(e, withDate) {
     h('div', { class: 'e1' }, e.replay ? h('span', { class: 'ptag scr', text: 'REPLAY' }) : null, h('span', { class: 'pn', text: e.player || 'Player not named' }), ' ' + str(e.bet)),
     h('div', { class: 'e2', text: l2.join(' · ') })));
 }
-function loadOlder() {
-  if (S.olderBusy || !S.record) return;
-  var list = arr(S.record.older), path = list[S.olderIdx]; if (!path) return;
-  path = str(path).replace(/^\/+/, '').replace(/\.\.\//g, '');
-  S.olderBusy = true; S.olderErr = false; rerender();
-  getJSON(BASE + path).then(function (j) {
-    S.olderBusy = false; S.olderIdx++; S.older = S.older.concat(arr(j.nights)); rerender();
-  }, function () { S.olderBusy = false; S.olderErr = true; rerender(); });
-}
-
 function LAB_REDRAW() { render(); }
 
 /* ---------- Lab Tonight: today's paper picks with live tracking ---------- */
@@ -1813,7 +1791,7 @@ function renderInfo() {
     h('li', { text: 'Live: picks in progress, with the score and his stat so far, refreshing every 10 seconds.' }),
     h('li', { text: 'Games: price checks, injury report and starters for each game, plus next check time.' }),
     h('li', { text: 'Record: the strategy\u2019s track record. REPLAY = test bets run on saved price checks before launch.' }),
-    h('li', { text: 'New picks stop if the Record falls to -10 units; the page says so at the top.' }),
+    h('li', { text: 'New picks stop if the Record falls to ' + safetyFall() + '; the page says so at the top.' }),
     h('li', { text: 'Parlays are not offered.' })));
   app.appendChild(nt);
   var v = S.rules ? S.rules.version : null;
@@ -1869,7 +1847,7 @@ function statusBody(body) {
   if (L.lastTry != null && L.fail) lt += ' Last try ' + (fTime(L.lastTry) || '') + ': both feeds failed.';
   else if (L.at != null) lt += ' Last read ' + (fTime(L.at) || '') + (L.src === 'nba' ? ' via NBA.com.' : ' from ESPN.');
   row('Live scores', lt, L.fail && L.lastTry != null);
-  if (sl.safety_paused) row('Safety', 'New picks are stopped: the Record is down 10 units or more. The team reviews first.', true);
+  if (sl.safety_paused) row('Safety', 'New picks are stopped: the Record is ' + safetyDown() + '. The team reviews first.', true);
   body.appendChild(h('div', { class: 'svc-h' + (nBad ? ' bad' : ''), role: 'status' }, h('span', { class: 'ic' }, icon(nBad ? 'warn' : 'check', 16)),
     nBad ? (nBad === 1 ? '1 thing needs attention' : nBad + ' things need attention') : 'No problems found'));
   rows.forEach(function (r) { body.appendChild(r); });

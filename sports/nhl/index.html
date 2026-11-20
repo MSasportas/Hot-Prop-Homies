@@ -287,11 +287,6 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .legend{display:flex;flex-wrap:wrap;gap:4px 12px;margin-top:6px;font-size:11px;line-height:15px;color:var(--muted)}
 .legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px}
 .dayd{margin-top:10px}
-.filters{display:inline-flex;margin:12px 0 0;border:1px solid var(--line2);border-radius:6px;overflow:hidden}
-.fbtn{min-height:44px;display:inline-flex;align-items:center}
-.fbtn+.fbtn{border-left:1px solid var(--line2)}
-.fbtn span{display:inline-flex;align-items:center;height:44px;padding:0 18px;font-size:13.5px;font-weight:600;color:var(--muted)}
-.fbtn[aria-pressed="true"] span{background:var(--raise);color:var(--fg)}
 .rf-row{display:flex;gap:6px;overflow-x:auto;margin:14px 0 2px;padding-bottom:2px;scrollbar-width:none}.rf-row::-webkit-scrollbar{display:none}
 .rf-btn{flex:0 0 auto;height:32px;padding:0 12px;border:1px solid var(--line2);border-radius:16px;background:var(--surface);color:var(--fg2);font:inherit;font-size:13px;cursor:pointer;-webkit-tap-highlight-color:transparent}.rf-btn.on{background:var(--selected-bg);color:var(--selected-text);border-color:var(--selected-bg)}
 .rf-clr{margin-left:4px;flex:0 0 auto;height:32px;padding:0 10px;background:none;border:0;color:var(--muted);font-size:12px;cursor:pointer}
@@ -545,7 +540,6 @@ function isScratch(p) {
   if (isObj(pl) && pl.code) return pl.code === 'out';
   return /scratch|out of the lineup/i.test(str(isObj(pl) ? pl.reason : pl));
 }
-function tooLate(p) { return !!(p && p.pulled) && !isScratch(p); }
 function evOf(p) { var d = payout(p.price), pn = num(p.p); return (d == null || pn == null) ? -1 : pn * (1 + d) - 1; }
 function split() { /* board (open + too late, not started) / started (Live) / scratched */
   var games = gameMap(), out = { games: games, open: [], late: [], started: [], pulled: [], scratched: [], byId: {} };
@@ -558,7 +552,6 @@ function split() { /* board (open + too late, not started) / started (Live) / sc
     else if (p.pulled) out.late.push(p);
     else out.open.push(p);
   }
-  var byRank = function (a, b) { var x = num(a.rank), y = num(b.rank); return (x == null ? 1e9 : x) - (y == null ? 1e9 : y); };
   var byEv = function(a, b) {
     return evOf(b) - evOf(a) || (ms(a.start) || 0) - (ms(b.start) || 0);
   };
@@ -768,7 +761,6 @@ function stateChip(state, short) {
   }
   return h('span', { class: 'stp ' + s[0], role: 'img', 'aria-label': s[2] }, trk, h('span', { class: 't', 'aria-hidden': 'true', text: short ? s[3] : s[2] }));
 }
-var RESULT = { W: ['Hit', 'W'], L: ['Miss', 'L'], PUSH: ['Push', 'PUSH'], VOID: ['Void', 'VOID'] };
 /* "had 0" -> "had 0 shots", from the bet or market */
 function actualText(a, kind) {
   var t = str(a), m = /^had (\d+)$/.exec(t); if (!m) return t;
@@ -1026,8 +1018,6 @@ function notCovered(b, games) {
   var why = m[2] === 'stats behind' ? "their stats aren't updated." : (m[2] === 'stats check failed' ? "their stats couldn't be checked." : m[2] + '.');
   return { level: isObj(b) ? b.level : 'warn', text: 'No picks for ' + teams.join(', ') + ' tonight: ' + why };
 }
-/* goalie last name, kept for any list that names a goalie (the Games tab shows our checks only) */
-function lastName(n) { var w = str(n).trim().split(/\s+/); return w[w.length - 1] || ''; }
 function smallFoot() {
   return h('footer', { class: 'foot' }, h('p', { text: 'For adults 21+. Picks are estimates, not guarantees. Gambling problem? Call 1-888-ADMIT-IT.' }));
 }
