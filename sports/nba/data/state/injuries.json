@@ -1,19 +1,19 @@
 {
- "at": "2026-11-20T17:20:00-05:00",
+ "at": "2026-11-20T17:30:00-05:00",
  "list": {
+  "5149077": {
+   "status": "out",
+   "name": "Kingston Flemings",
+   "team": "ATL",
+   "date": "2026-11-20T22:15Z",
+   "note": "Flemings (back) is out for Friday's game against the Hornets, Brad Rowland of the Locked On Podcast Network reports."
+  },
   "3146557": {
    "status": "out",
    "name": "Jock Landale",
    "team": "ATL",
    "date": "2026-11-19T22:07Z",
    "note": "Landale (hip) won't play in Friday's game against the Hornets, Brad Rowland of the Locked On Podcast Network reports."
-  },
-  "5149077": {
-   "status": "day-to-day",
-   "name": "Kingston Flemings",
-   "team": "ATL",
-   "date": "2026-11-19T22:05Z",
-   "note": "Flemings (back) is questionable for Friday's game against the Hornets, Brad Rowland of the Locked On Podcast Network reports."
   },
   "4873201": {
    "status": "out",
@@ -547,6 +547,27 @@
    "date": "2026-10-24T16:47Z",
    "note": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports."
   },
+  "4870562": {
+   "status": "out",
+   "name": "Dominick Barlow",
+   "team": "PHI",
+   "date": "2026-11-20T22:13Z",
+   "note": "Barlow (back) is probable for Saturday's game versus the Bucks."
+  },
+  "3912848": {
+   "status": "out",
+   "name": "Dean Wade",
+   "team": "PHI",
+   "date": "2026-11-20T22:11Z",
+   "note": "Wade (hamstring) won't play Saturday against the Bucks."
+  },
+  "4431678": {
+   "status": "day-to-day",
+   "name": "Tyrese Maxey",
+   "team": "PHI",
+   "date": "2026-11-20T22:07Z",
+   "note": "Maxey (foot) is questionable for Saturday's game against the Bucks."
+  },
   "5105637": {
    "status": "out",
    "name": "Adem Bona",
@@ -554,26 +575,12 @@
    "date": "2026-11-20T17:33Z",
    "note": "Bona (back) participated in Friday's practice, though he still needs to go through a full practice with contact before being cleared to return to game action, Adam Aaronson of PhillyVoice.com reports."
   },
-  "4431678": {
-   "status": "day-to-day",
-   "name": "Tyrese Maxey",
-   "team": "PHI",
-   "date": "2026-11-20T17:28Z",
-   "note": "Maxey (foot) was a full participant in Friday's practice, Tony Jones of The Athletic reports."
-  },
   "3917376": {
    "status": "out",
    "name": "Jaylen Brown",
    "team": "PHI",
    "date": "2026-11-20T17:26Z",
    "note": "Brown (hamstring) went through individual work during Friday's practice, Tony Jones of The Athletic reports."
-  },
-  "4870562": {
-   "status": "out",
-   "name": "Dominick Barlow",
-   "team": "PHI",
-   "date": "2026-11-20T17:20Z",
-   "note": "Barlow (back) is trending toward making his season debut in Saturday's game against the Bucks, Tony Jones of The Athletic reports."
   },
   "4871141": {
    "status": "out",
