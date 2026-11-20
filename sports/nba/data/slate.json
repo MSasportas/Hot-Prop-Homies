@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 2076,
+   "pool_left": 2052,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-20T18:45:00-05:00",
-  "last_read_at": "2026-11-20T18:40:01-05:00",
+  "next_read_at": "2026-11-20T19:00:00-05:00",
+  "last_read_at": "2026-11-20T18:50:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-20T18:40:01-05:00"
+   "at": "2026-11-20T18:50:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-20T18:40:01-05:00",
+    "at": "2026-11-20T18:50:00-05:00",
     "confirmed": [
      "ATL",
      "CHA"
@@ -116,7 +116,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-20T18:30:03-05:00",
+   "read_at": "2026-11-20T18:50:00-05:00",
    "picks": 2,
    "checks": [
     {
@@ -146,12 +146,16 @@
     {
      "read": "X60",
      "at": "2026-11-20T18:30:03-05:00"
+    },
+    {
+     "read": "C",
+     "at": "2026-11-20T18:50:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-20T18:30:03-05:00",
+   "last_check_at": "2026-11-20T18:50:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-20T18:45:00-05:00",
-   "next_check_read": "C",
+   "next_check_at": "2026-11-20T19:00:00-05:00",
+   "next_check_read": "X30",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -169,7 +173,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-20T18:30:03-05:00",
+   "read_at": "2026-11-20T18:50:00-05:00",
    "picks": 0,
    "checks": [
     {
@@ -199,12 +203,16 @@
     {
      "read": "X60",
      "at": "2026-11-20T18:30:03-05:00"
+    },
+    {
+     "read": "C",
+     "at": "2026-11-20T18:50:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-20T18:30:03-05:00",
+   "last_check_at": "2026-11-20T18:50:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-20T18:45:00-05:00",
-   "next_check_read": "C",
+   "next_check_at": "2026-11-20T19:00:00-05:00",
+   "next_check_read": "X30",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -222,7 +230,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-20T18:30:03-05:00",
+   "read_at": "2026-11-20T18:50:00-05:00",
    "picks": 1,
    "checks": [
     {
@@ -252,12 +260,16 @@
     {
      "read": "X60",
      "at": "2026-11-20T18:30:03-05:00"
+    },
+    {
+     "read": "C",
+     "at": "2026-11-20T18:50:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-20T18:30:03-05:00",
+   "last_check_at": "2026-11-20T18:50:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-20T18:45:00-05:00",
-   "next_check_read": "C",
+   "next_check_at": "2026-11-20T19:00:00-05:00",
+   "next_check_read": "X30",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -275,7 +287,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-20T18:30:03-05:00",
+   "read_at": "2026-11-20T18:50:00-05:00",
    "picks": 1,
    "checks": [
     {
@@ -297,12 +309,16 @@
     {
      "read": "B",
      "at": "2026-11-20T18:30:03-05:00"
+    },
+    {
+     "read": "X75",
+     "at": "2026-11-20T18:50:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-20T18:30:03-05:00",
+   "last_check_at": "2026-11-20T18:50:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-20T18:45:00-05:00",
-   "next_check_read": "X75",
+   "next_check_at": "2026-11-20T19:00:00-05:00",
+   "next_check_read": "X60",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -320,8 +336,8 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-20T18:30:03-05:00",
-   "picks": 0,
+   "read_at": "2026-11-20T18:50:00-05:00",
+   "picks": 1,
    "checks": [
     {
      "read": "X360",
@@ -342,12 +358,16 @@
     {
      "read": "B",
      "at": "2026-11-20T18:30:03-05:00"
+    },
+    {
+     "read": "X75",
+     "at": "2026-11-20T18:50:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-20T18:30:03-05:00",
+   "last_check_at": "2026-11-20T18:50:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-20T18:45:00-05:00",
-   "next_check_read": "X75",
+   "next_check_at": "2026-11-20T19:00:00-05:00",
+   "next_check_read": "X60",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -516,7 +536,7 @@
     },
     "draftkings": {
      "url": "https://sportsbook.draftkings.com/?outcomes=0QA390898712%232372897954_13L42648Q1-1820894743Q20",
-     "price": -137,
+     "price": -142,
      "qualifies": false
     }
    },
@@ -586,6 +606,69 @@
    "rank": 2
   },
   {
+   "player": "Jared McCain",
+   "pid": "4683778",
+   "team": "OKC",
+   "opp": "NOP",
+   "home": true,
+   "game_id": "401909310",
+   "start": "2026-11-20T20:00:00-05:00",
+   "bet": "Over 3.5 rebounds",
+   "market": "rebounds",
+   "side": "over",
+   "line": 3.5,
+   "price": 115,
+   "price_at": "2026-11-20T18:50:00-05:00",
+   "read": "X75",
+   "p": 0.4747,
+   "p_pct": 47,
+   "breakeven": 0.4651,
+   "breakeven_pct": 47,
+   "market_fair": null,
+   "n_books": 8,
+   "gap_ev": null,
+   "final_ev": 0.0555,
+   "model_p": null,
+   "reason": "Pinnacle moved the over from +123 to -103 (42% to 47%). Hard Rock +115 is 2.1% better than Pinnacle's fair price.",
+   "rule": "pin_solo",
+   "pin_before": 0.4192,
+   "pin_after": 0.4747,
+   "pin_price_before": 123,
+   "pin_price_after": -103,
+   "others_move": 0.0,
+   "n_others": 8,
+   "ev_vs_pin": 0.0207,
+   "window": "90 \u2192 75 min",
+   "gap_vs_pin": 0.0423,
+   "book": "hardrock",
+   "books": {
+    "hardrock": {
+     "ev_vs_pin": 0.0207,
+     "price": 115
+    }
+   },
+   "id": "2026-11-20:401909310:4683778:rebounds:3.5:over",
+   "state": "clear",
+   "state_label": "Injury report clear",
+   "price_final": false,
+   "pulled": null,
+   "added_at": "2026-11-20T18:50:00-05:00",
+   "result": null,
+   "links": {
+    "hardrock": {
+     "id": "6764811508022116777",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/6764811508022116777",
+     "price": 115
+    },
+    "draftkings": {
+     "url": "https://sportsbook.draftkings.com/?outcomes=0QA390964070%232373228074_13L42648Q11299195355Q20",
+     "price": 110,
+     "qualifies": false
+    }
+   },
+   "rank": 3
+  },
+  {
    "player": "Naz Reid",
    "pid": "4396971",
    "team": "CHA",
@@ -650,7 +733,7 @@
      "qualifies": true
     }
    },
-   "rank": 3
+   "rank": 4
   },
   {
    "player": "Collin Sexton",
@@ -717,7 +800,7 @@
      "qualifies": true
     }
    },
-   "rank": 4
+   "rank": 5
   },
   {
    "player": "Josh Giddey",
@@ -784,7 +867,7 @@
      "qualifies": true
     }
    },
-   "rank": 5
+   "rank": 6
   },
   {
    "player": "Franz Wagner",
@@ -847,7 +930,7 @@
      "qualifies": false
     }
    },
-   "rank": 6
+   "rank": 7
   },
   {
    "player": "Anthony Black",
@@ -910,13 +993,13 @@
      "qualifies": false
     }
    },
-   "rank": 7
+   "rank": 8
   }
  ],
  "empty": null,
  "counts": {
-  "lines_read": 866,
-  "passing": 20,
+  "lines_read": 878,
+  "passing": 21,
   "games": 9
  },
  "safety_paused": false,
@@ -926,6 +1009,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-20T18:40:01-05:00",
- "status_at": "2026-11-20T18:40:01-05:00"
+ "generated_at": "2026-11-20T18:50:00-05:00",
+ "status_at": "2026-11-20T18:50:00-05:00"
 }
