@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-19",
- "generated_at": "2026-11-19T20:06:42-05:00",
+ "generated_at": "2026-11-19T20:10:01-05:00",
  "games": [
   {
    "game_id": 2026020350,
@@ -8,7 +8,7 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "17:54",
+   "clock": "17:23",
    "in_intermission": false,
    "running": false,
    "away": {
@@ -21,7 +21,7 @@
     "score": 1,
     "sog": 9
    },
-   "updated_at": "2026-11-19T20:06:42-05:00"
+   "updated_at": "2026-11-19T20:10:01-05:00"
   },
   {
    "game_id": 2026020354,
@@ -29,41 +29,41 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "20:00",
+   "clock": "18:05",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "NYI",
-    "score": 2,
-    "sog": 8
+    "score": 3,
+    "sog": 10
    },
    "home": {
     "abbrev": "WPG",
     "score": 2,
-    "sog": 6
+    "sog": 7
    },
-   "updated_at": "2026-11-19T20:06:42-05:00"
+   "updated_at": "2026-11-19T20:10:01-05:00"
   },
   {
    "game_id": 2026020353,
-   "state": "PRE",
+   "state": "LIVE",
    "schedule_state": "OK",
-   "period": null,
-   "period_type": null,
-   "clock": null,
+   "period": 1,
+   "period_type": "REG",
+   "clock": "20:00",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "CBJ",
-    "score": null,
+    "score": 0,
     "sog": null
    },
    "home": {
     "abbrev": "CHI",
-    "score": null,
+    "score": 0,
     "sog": null
    },
-   "updated_at": "2026-11-19T20:06:42-05:00"
+   "updated_at": "2026-11-19T20:10:01-05:00"
   },
   {
    "game_id": 2026020355,
@@ -84,7 +84,7 @@
     "score": null,
     "sog": null
    },
-   "updated_at": "2026-11-19T20:06:42-05:00"
+   "updated_at": "2026-11-19T20:10:01-05:00"
   }
  ],
  "picks": {
@@ -101,7 +101,7 @@
   "2026-11-19:2026020353:8482720:points:0.5:over": {
    "game_id": 2026020353,
    "market": "points",
-   "stat": null
+   "stat": 0
   },
   "2026-11-19:2026020355:8478493:shots:2.5:under": {
    "game_id": 2026020355,
