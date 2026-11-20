@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-20",
- "generated_at": "2026-11-20T09:50:01-05:00",
- "status_at": "2026-11-20T09:50:01-05:00",
+ "generated_at": "2026-11-20T10:00:00-05:00",
+ "status_at": "2026-11-20T10:00:00-05:00",
  "valid_until": "2026-11-21T05:00:00-05:00",
  "status": {
   "prices_state": "not_yet",
@@ -15,9 +15,9 @@
   "lineups_state": "not_yet",
   "stats_state": "ok",
   "last_run": {
-   "ok": false,
-   "at": "2026-11-20T09:50:01-05:00",
-   "failed_step": "stats"
+   "ok": true,
+   "at": "2026-11-20T10:00:00-05:00",
+   "failed_step": null
   },
   "pool": {
    "pulls_left": 2671,
@@ -31,12 +31,7 @@
   "flag_reads": 0,
   "tier": null
  },
- "banners": [
-  {
-   "level": "warn",
-   "text": "Part of the last update failed at 9:50 AM (stats). Some of what is below may be older."
-  }
- ],
+ "banners": [],
  "empty": {
   "code": "no_games",
   "text": "No NHL games today.",
