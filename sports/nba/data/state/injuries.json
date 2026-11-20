@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T23:10:00-05:00",
+ "at": "2026-11-20T12:20:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -469,6 +469,13 @@
    "team": "NO",
    "date": "2026-11-13T20:19Z",
    "note": "Murray (ankle) is out for Friday's game against Memphis."
+  },
+  "5159925": {
+   "status": "out",
+   "name": "Nikola Topic",
+   "team": "OKC",
+   "date": "2026-11-20T17:02Z",
+   "note": "Topic (hip) is out for Friday's game against New Orleans."
   },
   "2991350": {
    "status": "day-to-day",
