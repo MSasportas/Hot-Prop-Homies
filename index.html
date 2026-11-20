@@ -2382,6 +2382,8 @@ function renderLab() {
     var id = (t._sp || '') + str(t.id), sm = S.labSum[str(t.id)], st = sm && isObj(sm[str(t.stats || 'total')]) ? sm[str(t.stats || 'total')] : null;
     var open = !!S.labOpen[id], card = h('section', { class: 'lab' + (open ? ' open' : '') });
     var w = st ? (num(st.w) || 0) : 0, l = st ? (num(st.l) || 0) : 0, k = w + l, need = num(t.need), u = st ? num(st.units) : null;
+    var fade = t.direction === 'fade';   /* a fade track tracks one side but is judged on betting the other: show that result */
+    if (fade) { var swap = w; w = l; l = swap; if (u != null) u = -u; }
     /* the tile: tap to open its details and picks */
     var head = h('button', { class: 'lab-h', type: 'button', 'aria-expanded': open ? 'true' : 'false' },
       h('span', { class: 'lab-t' }, t._sp ? h('span', { class: 'sp-badge ' + t._sp, text: t._sp.toUpperCase() }) : null, h('span', { class: 'lab-n', text: str(t.title) || 'Untitled idea' })),
@@ -2400,9 +2402,10 @@ function renderLab() {
         card.appendChild(h('div', { class: 'sm', style: 'margin-top:10px', text: sm && sm._err === 'file' ? 'No results logged yet.' : (sm ? "Its numbers couldn't be read." : 'Loading its numbers') }));
       } else {
         var bits = [k + (need ? ' of ' + need : '') + ' graded'];
+        if (fade) bits.push('fade: shown as betting against the tracked side');
         if (num(st.pending)) bits.push(st.pending + ' pending');
         if (num(st.void)) bits.push(st.void + ' void');
-        if (num(st.clv) != null) bits.push('vs closing line ' + (st.clv >= 0 ? '+' : '') + (100 * st.clv).toFixed(1) + '%');
+        if (num(st.clv) != null) { var clv = fade ? -st.clv : st.clv; bits.push('vs closing line ' + (clv >= 0 ? '+' : '') + (100 * clv).toFixed(1) + '%'); }
         card.appendChild(h('div', { class: 'sm', text: bits.join(' · ') }));
         if (sm.updated_at && fStamp(sm.updated_at)) card.appendChild(h('div', { class: 'sm', text: 'Updated ' + fStamp(sm.updated_at) }));
       }

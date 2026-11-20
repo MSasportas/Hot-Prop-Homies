@@ -1793,13 +1793,15 @@ function renderLab() {
     if (!st) {
       card.appendChild(h('div', { class: 'sm', style: 'margin-top:10px', text: sm && sm._err === 'file' ? 'No results logged yet.' : (sm ? "Its numbers couldn't be read." : 'Loading its numbers') }));
     } else {
-      var w = num(st.w) || 0, l = num(st.l) || 0, k = w + l, need = num(t.need), u = num(st.units);
+      var w = num(st.w) || 0, l = num(st.l) || 0, k = w + l, need = num(t.need), u = num(st.units), fade = t.direction === 'fade';
+      if (fade) { var swap = w; w = l; l = swap; if (u != null) u = -u; }   /* a fade track is judged on betting the other side: show that result */
       card.appendChild(h('div', { class: 'nums' }, h('span', { text: w + '-' + l }), u != null ? h('span', { class: signCls(u), text: units(u, 2) }) : null));
       if (need) {
         var bar = h('div', { class: 'prog', role: 'img', 'aria-label': k + ' of ' + need + ' graded' }), fill = h('i'); fill.style.width = Math.min(100, k / need * 100) + '%'; bar.appendChild(fill);
         card.appendChild(bar);
       }
       var bits = [k + (need ? ' of ' + need : '') + ' graded'];
+      if (fade) bits.push('fade: shown as betting against the tracked side');
       if (num(st.pending)) bits.push(st.pending + ' pending');
       if (num(st.void)) bits.push(st.void + ' void');
       card.appendChild(h('div', { class: 'sm', text: bits.join(' · ') }));
