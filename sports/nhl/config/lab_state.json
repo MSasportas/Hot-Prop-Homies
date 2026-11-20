@@ -1,0 +1,111 @@
+{
+ "updated": "2026-11-20T17:41:50+00:00",
+ "day": "2026-11-20",
+ "tracks": {
+  "q24": {
+   "fail_streak": 0,
+   "k": 62,
+   "k_changed": "2026-11-20"
+  },
+  "fwd_LL1f-fade": {
+   "fail_streak": 0,
+   "k": 186,
+   "k_changed": "2026-11-20"
+  },
+  "fwd_LL1f-follow": {
+   "fail_streak": 0,
+   "k": 183,
+   "k_changed": "2026-11-20"
+  },
+  "fwd_LL3a_tight": {
+   "fail_streak": 0,
+   "k": 40,
+   "k_changed": "2026-11-20"
+  },
+  "fwd_LL3b_loose": {
+   "fail_streak": 0,
+   "k": 25,
+   "k_changed": "2026-11-20"
+  },
+  "fwd_LL4a_fade": {
+   "fail_streak": 0,
+   "k": 52,
+   "k_changed": "2026-11-20"
+  },
+  "fwd_LL4b_follow": {
+   "fail_streak": 0,
+   "k": 52,
+   "k_changed": "2026-11-20"
+  },
+  "fwd_LL5_exch": {
+   "fail_streak": 0,
+   "k": 80,
+   "k_changed": "2026-11-20"
+  },
+  "fwd_LL6_line": {
+   "fail_streak": 0,
+   "k": 37,
+   "k_changed": "2026-11-20"
+  },
+  "fwd_MM2a_split": {
+   "fail_streak": 0,
+   "k": 8,
+   "k_changed": "2026-11-20"
+  },
+  "fwd_MM2b_split_2pct": {
+   "fail_streak": 0,
+   "k": 4,
+   "k_changed": "2026-11-20"
+  },
+  "fwd_MM3a_persist": {
+   "fail_streak": 0,
+   "k": 32,
+   "k_changed": "2026-11-20"
+  },
+  "fwd_MM3b_confirm": {
+   "fail_streak": 0,
+   "k": 0,
+   "k_changed": "2026-11-20"
+  },
+  "fwd_MM4_total": {
+   "fail_streak": 0,
+   "k": 10,
+   "k_changed": "2026-11-20"
+  },
+  "fwd_MM5a_follow": {
+   "fail_streak": 0,
+   "k": 22,
+   "k_changed": "2026-11-20"
+  },
+  "fwd_MM5b_fade": {
+   "fail_streak": 0,
+   "k": 21,
+   "k_changed": "2026-11-20"
+  },
+  "fwd_NN2fa_follow_market": {
+   "fail_streak": 0,
+   "k": 0,
+   "k_changed": "2026-11-20"
+  },
+  "fwd_NN2fb_follow_HR": {
+   "fail_streak": 0,
+   "k": 0,
+   "k_changed": "2026-11-20"
+  },
+  "fwd_NN4_exch_steam": {
+   "fail_streak": 0,
+   "k": 1,
+   "k_changed": "2026-11-20"
+  },
+  "fwd_NN5_market_moves": {
+   "fail_streak": 0,
+   "k": 1,
+   "k_changed": "2026-11-20"
+  },
+  "fwd_NN6_fade_soft": {
+   "fail_streak": 0,
+   "k": 0,
+   "k_changed": "2026-11-20"
+  }
+ }
+}
