@@ -113,15 +113,23 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .empty .s{font-size:13px;line-height:19px;color:var(--muted);margin-top:4px}
 .note{font-size:13px;line-height:18px;color:var(--muted);margin-top:12px}
 
-/* pick tiles: a 2-column board, best first; a tapped tile opens full width */
-.board{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-flow:row dense;gap:8px;margin-top:10px}
+/* pick tiles: a 2-column board, newest first; a tapped tile opens full width */
+.board{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-flow:row;gap:8px;margin-top:10px}
 .tile{position:relative;display:flex;flex-direction:column;min-width:0;padding:10px 10px 9px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
 .tile[role=button]{cursor:pointer}
 .tile.open{grid-column:1 / -1;border-color:var(--primary);background:var(--selected-bg)}
 .tile.open .nm{color:var(--selected-text)}
-.tile .top{display:flex;gap:8px;align-items:center;min-width:0}
+.tile .top{display:flex;gap:6px;align-items:center;min-width:0}
 .hs{flex:none;width:30px;height:30px;border-radius:50%;object-fit:cover;object-position:50% 15%;background:var(--raise);border:1px solid var(--line)}
-.tile .nm{min-width:0;font:600 15px/19px var(--cond);letter-spacing:.005em;overflow-wrap:anywhere}
+.tile .hs{width:26px;height:26px}
+.tile.open .hs{width:30px;height:30px}
+.tile .nm{display:block;flex:1;min-width:0;overflow-wrap:normal;word-break:normal;hyphens:none}
+.tile .nm .fn,.tile .nm .ln{display:block;min-width:0;overflow:hidden;white-space:nowrap;overflow-wrap:normal;word-break:normal;hyphens:none}
+.tile .nm .fn{font:500 12px/14px var(--cond);color:var(--muted)}
+.tile .nm .ln{font:600 15px/19px var(--cond);letter-spacing:.005em}
+.tile .nm .ln.brk{white-space:normal}
+.tile .nm .ln.ell{text-overflow:ellipsis}
+.tile.open .nm{font:600 16px/21px var(--cond);letter-spacing:.005em}
 .tile .row2{display:flex;align-items:baseline;justify-content:space-between;gap:6px;margin-top:8px}
 .tile .bt{min-width:0;font:600 13.5px/18px var(--num);letter-spacing:0;color:var(--fg2);overflow-wrap:anywhere}
 .tile .pr{flex:none;font:600 21px/24px var(--num);color:var(--fg);white-space:nowrap}
@@ -134,9 +142,10 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .tagx{display:inline-flex;align-items:center;gap:3px;color:var(--fg2);white-space:nowrap}
 .tagx.ok{color:var(--good)}
 .tagx.new{color:var(--warn);font-weight:700;letter-spacing:.04em}
-.newlbl{position:absolute;top:-1px;right:-1px;padding:2px 7px 2px;border-radius:0 8px 0 6px;background:var(--warn);color:var(--on-accent);font:700 10.5px/14px var(--body);letter-spacing:.08em}
 .tile.isnew{border-color:var(--warn)}
-.tile.isnew .top{padding-right:30px}
+.tile .ft .sp-badge{margin-left:auto}
+.seen-div{grid-column:1 / -1;display:flex;align-items:center;gap:8px;font-size:12px;line-height:16px;color:var(--muted)}
+.seen-div::before,.seen-div::after{content:"";flex:1;height:1px;background:var(--line2)}
 .tagx svg{flex:none}
 .own{display:inline-block;font:700 12px/16px var(--cond);letter-spacing:.06em;color:var(--fg);padding:0 4px;border:1px solid var(--line2);border-radius:3px;vertical-align:1px}
 /* settled track (segmented stepper, driven by the pick's real state): Early -> Lineup -> Locked */
@@ -687,15 +696,16 @@ function split() { /* board (open + too late, not started) / started (Live) / sc
     return evOf(b) - evOf(a) || (ms(a.start) || 0) - (ms(b.start) || 0);
   };
   out.open.sort(byEv); out.started.sort(byEv);
-  /* a pick that came off the board keeps its place: it sits where its edge put it among the open picks */
-  var board = out.open.slice();
-  out.late.slice().sort(function (a, b) { return evOf(b) - evOf(a); }).forEach(function (q) {
-    var e = evOf(q), at = board.length;
-    for (var j = 0; j < board.length; j++) if (!board[j].pulled && evOf(board[j]) < e) { at = j; break; }
-    board.splice(at, 0, q);
-  });
-  out.board = board;
+  out.board = newestFirst(picks.filter(function (q) { return out.open.indexOf(q) >= 0 || out.late.indexOf(q) >= 0; }));
   return out;
+}
+/* The board reads newest to oldest by the time each pick was added (a pick that came off the board sits by its own time).
+   A pick with no time sorts last; ties keep the order the slate file lists them. */
+function newestFirst(list) {
+  return list.map(function (p, i) { return { p: p, i: i, t: addedAt(p) }; }).sort(function (a, b) {
+    if (a.t == null || b.t == null) return (a.t == null) - (b.t == null) || a.i - b.i;
+    return b.t - a.t || a.i - b.i;
+  }).map(function (x) { return x.p; });
 }
 
 /* Player photo from data/headshots.json (ESPN's own links, by the pick's ESPN id). No link or a broken image = no photo. */
@@ -890,6 +900,7 @@ function render() {
     clear(app);
     (RENDER[S.view] || renderPicks)();
     renderTabs();
+    fitNames();
   } catch (err) {
     clear(app);
     app.appendChild(header(TITLE, null));
@@ -902,6 +913,8 @@ function render() {
   window.scrollTo(0, y);
 }
 function rerender() { render(); }
+window.addEventListener('resize', fitNames);
+if (document.fonts) { document.fonts.ready.then(fitNames); document.fonts.addEventListener('loadingdone', fitNames); }
 
 /* ---------- shared pieces ---------- */
 function header(title, dateText) {
@@ -1015,11 +1028,49 @@ function chanceVs(p) {
   return h('div', { class: 'cv', title: 'Our chance vs what the price needs' },
     h('b', { class: short ? 'short' : null, text: pc || '—' }), ' vs ', h('span', { text: be || '—' }));
 }
-function tileTop(p) {
-  return h('div', { class: 'top' }, headshot(p),
-    h('span', { class: 'nm', text: p.player || 'Player not named' }),
-    (S.sport === 'all' && p.sport) ? h('span', { class: 'sp-badge ' + p.sport, text: p.sport.toUpperCase() }) : null);
+/* Names never break inside a word. A closed tile stacks first name over last name and fits the last name to its room (fitNames):
+   smaller type, then no suffix, then no photo, then an initial for the first name, then a wrap after a hyphen, then an ellipsis. */
+var NAME_SUFFIX = /^(jr\.?|sr\.?|ii|iii|iv|v)$/i;
+var NAME_SIZES = [15, 14, 13];
+function splitName(full) {
+  var t = str(full).trim().replace(/\s+/g, ' ').split(' ');
+  if (t.length < 2) return { first: '', last: t[0], core: t[0] };
+  var last = t.slice(1).join(' '), hasSuffix = t.length > 2 && NAME_SUFFIX.test(t[t.length - 1]);
+  return { first: t[0], last: last, core: hasSuffix ? t.slice(1, -1).join(' ') : last };
 }
+function nameBlock(full, closed) {
+  if (!closed) return h('span', { class: 'nm', text: full });
+  var n = splitName(full);
+  return h('span', { class: 'nm', role: 'img', 'aria-label': full, 'data-first': n.first, 'data-last': n.last, 'data-core': n.core },
+    n.first ? h('span', { class: 'fn', 'aria-hidden': 'true', text: n.first }) : null,
+    h('span', { class: 'ln', 'aria-hidden': 'true', text: n.last }));
+}
+function fitsLine(el) { return el.scrollWidth <= el.clientWidth; }
+function fitName(nm) {
+  var top = nm.parentNode, im = top.querySelector('.hs'), fn = nm.querySelector('.fn'), ln = nm.querySelector('.ln');
+  var first = nm.getAttribute('data-first'), last = nm.getAttribute('data-last'), core = nm.getAttribute('data-core');
+  var fitFirst = function () { if (!fn) return; fn.textContent = first; if (!fitsLine(fn)) fn.textContent = first.charAt(0) + '.'; };
+  var photo = function (on) { if (im) im.style.display = on ? '' : 'none'; };
+  ln.className = 'ln';
+  var tiers = [[true, last], [true, core], [false, last], [false, core]], i, j;
+  for (i = 0; i < tiers.length; i++) {
+    if (!im && !tiers[i][0]) continue;
+    photo(tiers[i][0]); ln.textContent = tiers[i][1];
+    for (j = 0; j < NAME_SIZES.length; j++) {
+      ln.style.fontSize = NAME_SIZES[j] + 'px'; fitFirst();
+      if (fitsLine(ln)) return;
+    }
+  }
+  photo(false); ln.textContent = last; ln.style.fontSize = NAME_SIZES[0] + 'px'; fitFirst();
+  ln.classList.add('brk');
+  if (!fitsLine(ln)) { ln.classList.remove('brk'); ln.classList.add('ell'); }
+}
+function fitNames() { Array.prototype.forEach.call(app.querySelectorAll('.tile .nm[data-last]'), fitName); }
+function tileTop(p, open) {
+  var full = str(p.player).trim();
+  return h('div', { class: 'top' }, headshot(p), nameBlock(full || 'Player not named', !open && !!full));
+}
+function sportBadge(p) { return (S.sport === 'all' && p.sport) ? h('span', { class: 'sp-badge ' + p.sport, text: p.sport.toUpperCase() }) : null; }
 function tilePrice(p) {
   var np = num(p.price) == null;
   return h('div', { class: 'row2' }, h('span', { class: 'bt', text: betShort(p) }),
@@ -1042,23 +1093,24 @@ function pickCard(p, d, lat) {
     'aria-expanded': isOpen ? 'true' : 'false', 'data-id': id });
   var toggle = function () { if (S.expanded[id]) delete S.expanded[id]; else S.expanded[id] = 1; rerender(); };
   var ev = toggleBtnKeys(toggle); card.addEventListener('click', ev.click); card.addEventListener('keydown', ev.keydown);
-  if (isNew) card.appendChild(h('span', { class: 'newlbl', text: 'NEW', title: addedAt(p) != null ? 'Added ' + fStamp(addedAt(p)) : 'New since your last look' }));
-  card.appendChild(tileTop(p));
+  card.appendChild(tileTop(p, isOpen));
   card.appendChild(tilePrice(p));
   card.appendChild(chanceVs(p));
   if (!isOpen) {
     var pev = evOf(p), pconf = pev >= 0.03 ? 'HIGH' : (pev >= 0.01 ? 'MED' : null);
-    card.appendChild(h('div', { class: 'ft' }, stateChip(p.state, true, p),
+    card.appendChild(h('div', { class: 'ft' },
+      isNew ? h('span', { class: 'tagx new', text: 'NEW', title: addedAt(p) != null ? 'Added ' + fStamp(addedAt(p)) : 'New since your last look' }) : null,
+      stateChip(p.state, true, p),
       p.price_final ? h('span', { class: 'tagx ok' }, icon('check', 12), 'Price final') : null,
-      pconf ? h('span', { class: 'tagx conf', text: pconf }) : null));
+      pconf ? h('span', { class: 'tagx conf', text: pconf }) : null, sportBadge(p)));
     return card;
   }
   /* opened: added time, the reason, the full settled track + Price final, the edge meter, game, price read, the bet button */
   var x = h('div', { class: 'xp' }), pc = pctP(p), be = pctB(p), games = d.games;
-  if (isNew && addedAt(p) != null) x.appendChild(h('div', null, h('span', { class: 'tagx new', text: 'Added ' + fTime(addedAt(p)) })));
+  if (isNew) x.appendChild(h('div', null, h('span', { class: 'tagx new', text: addedAt(p) != null ? 'NEW \u00b7 Added ' + fTime(addedAt(p)) : 'NEW' })));
   var rsn = noDK(p.reason);
   if (rsn) x.appendChild(h('div', { text: rsn }));
-  x.appendChild(h('div', { class: 'chips' }, stateChip(p.state, false, p), p.price_final ? h('span', { class: 'tagx ok' }, icon('check', 13), 'Price final') : null));
+  x.appendChild(h('div', { class: 'chips' }, stateChip(p.state, false, p), p.price_final ? h('span', { class: 'tagx ok' }, icon('check', 13), 'Price final') : null, sportBadge(p)));
   x.appendChild(h('div', null, h('div', { class: 'chance' }, 'We say ', h('b', { text: pc || 'not posted' }), be ? ' · price needs ' + be : ''), chanceBar(p.p, p.breakeven)));
   var mn = muNodes(p, games, true), tp = toTip(pickStart(p, games), str(p.sport) || S.sport);
   x.appendChild(h('div', { class: 'meta' }, mn.length ? mn : 'Game time not posted', tp ? ' · ' + tp : ''));
@@ -1088,7 +1140,8 @@ function betRow(p) {
 function lateCard(p) {
   return h('div', { class: 'tile late', 'data-id': str(p.id) },
     h('span', { class: 'tl', text: 'TOO LATE' }),
-    h('div', { class: 'dimmed' }, tileTop(p), tilePrice(p), chanceVs(p)),
+    h('div', { class: 'dimmed' }, tileTop(p, false), tilePrice(p), chanceVs(p)),
+    sportBadge(p) ? h('div', { class: 'ft' }, sportBadge(p)) : null,
     h('div', { class: 'keep', text: 'Got ' + betShort(p) + ' ' + odds(p.price) + ' earlier? Keep it. Don\u2019t bet it now.' }));
 }
 
@@ -1160,8 +1213,14 @@ function renderPicks() {
     }
     sec.appendChild(emptyCard);
   } else {
-    var grid = h('div', { class: 'board' }), lat = latestIds(d);
-    d.board.forEach(function (p) { grid.appendChild(p.pulled ? lateCard(p) : pickCard(p, d, lat)); });
+    var grid = h('div', { class: 'board' }), lat = latestIds(d), sawNew = false, divided = false;
+    d.board.forEach(function (p) {
+      if (!p.pulled) {                           /* "Seen earlier" sits before the first older pick that follows a NEW one */
+        if (isNewPick(str(p.id), d, lat)) sawNew = true;
+        else if (sawNew && !divided) { grid.appendChild(h('div', { class: 'seen-div', text: 'Seen earlier' })); divided = true; }
+      }
+      grid.appendChild(p.pulled ? lateCard(p) : pickCard(p, d, lat));
+    });
     sec.appendChild(grid);
   }
   app.appendChild(sec);
