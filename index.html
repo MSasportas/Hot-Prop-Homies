@@ -437,12 +437,11 @@ var TZ = 'America/New_York';
 var TITLE = 'Hot Prop Homies';
 var SEEN_KEY = FIX ? 'pc_seen_fx' : 'pc_seen';
 var UI_DEFS = {
-  nba: { stale_after_min: 30, refresh_sec: 120 },
-  nhl: { stale_after_min: 75, refresh_sec: 120 },
-  all: { stale_after_min: 30, refresh_sec: 120 }
+  nba: { stale_after_min: 30, refresh_sec: 120, small_sample_n: 30 },
+  nhl: { stale_after_min: 75, refresh_sec: 120, small_sample_n: 30 },
+  all: { stale_after_min: 30, refresh_sec: 120, small_sample_n: 30 }
 };
 var LATEST_N = 5;
-var SMALL_N = 30;          /* a cut row with fewer graded picks than this says "small sample" */
 var MARKET_LINE_NBA = 'Hard Rock · Rebounds, points, assists, 3-pointers made · Main line, over or under · No leg worse than -200';
 var MARKET_LINE_NHL = 'Hard Rock · Shots on goal · Main line, over or under · No leg worse than -200';
 var MARKET_LINE = MARKET_LINE_NBA;  /* updated by setSport() */
@@ -1890,7 +1889,7 @@ function renderRecord() {
     app.appendChild(smallFoot()); return;
   }
   var sum = isObj(S.record.summary) ? S.record.summary : {}, hd = isObj(sum.headline) ? sum.headline : {};
-  var n = sampleN(hd), few = function (k) { return k < SMALL_N; };
+  var n = sampleN(hd), few = function (k) { return k < uiVal('small_sample_n'); };
   /* Record filter chips */
   var recFilters = S.recFilters || [];
   var mktChips = arr(sum.rows).filter(function(r) { return isObj(r) && str(r.key).indexOf('window:') !== 0 && sampleN(r) > 0; }).map(function(r) { return { key: 'm:' + str(r.key), label: str(r.label || r.key) }; });

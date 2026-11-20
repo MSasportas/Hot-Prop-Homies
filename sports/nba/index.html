@@ -379,8 +379,7 @@ var NOW_Q = ms(String(Q.get('now') || '').replace(' ', '+'));
 var TZ = 'America/New_York';
 var TITLE = 'HPH · NBA';
 var SEEN_KEY = FIX ? 'pc_nba_seen_fx' : 'pc_nba_seen';
-var UI_DEF = { stale_after_min: 30, refresh_sec: 120 };
-var SMALL_N = 30;          /* a cut row with fewer graded picks than this says "small sample" */
+var UI_DEF = { stale_after_min: 30, refresh_sec: 120, small_sample_n: 30 };
 var MARKET_LINE = 'Hard Rock prices only · No leg worse than -200 · Rebounds, points, assists, 3-pointers made · Main line only, over or under';
 
 var S = {
@@ -1367,7 +1366,7 @@ function renderRecord() {
     app.appendChild(smallFoot()); return;
   }
   var sum = isObj(S.record.summary) ? S.record.summary : {}, hd = isObj(sum.headline) ? sum.headline : {};
-  var n = sampleN(hd), few = function (k) { return k < SMALL_N; };
+  var n = sampleN(hd), few = function (k) { return k < uiVal('small_sample_n'); };
   if (!(n + (num(hd.push) || 0) + (num(hd.void) || 0))) {
     app.appendChild(h('div', { class: 'card empty', style: 'margin-top:8px' },
       h('div', { class: 't', text: 'No graded picks yet.' }), h('div', { class: 's', text: 'Results post once each game is final.' })));
