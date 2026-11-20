@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-19",
- "generated_at": "2026-11-19T22:50:01-05:00",
+ "generated_at": "2026-11-19T23:00:01-05:00",
  "games": [
   {
    "game_id": 2026020350,
@@ -63,7 +63,7 @@
     "score": 2,
     "sog": 25
    },
-   "updated_at": "2026-11-19T22:50:01-05:00"
+   "updated_at": "2026-11-19T23:00:01-05:00"
   },
   {
    "game_id": 2026020355,
@@ -84,16 +84,16 @@
     "score": 1,
     "sog": 23
    },
-   "updated_at": "2026-11-19T22:50:01-05:00"
+   "updated_at": "2026-11-19T23:00:01-05:00"
   },
   {
    "game_id": 2026020356,
    "state": "LIVE",
    "schedule_state": "OK",
-   "period": 2,
+   "period": 3,
    "period_type": "REG",
-   "clock": "09:42",
-   "in_intermission": true,
+   "clock": "20:00",
+   "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "ANA",
@@ -105,16 +105,16 @@
     "score": 3,
     "sog": 18
    },
-   "updated_at": "2026-11-19T22:50:01-05:00"
+   "updated_at": "2026-11-19T23:00:01-05:00"
   },
   {
    "game_id": 2026020358,
    "state": "LIVE",
    "schedule_state": "OK",
-   "period": 1,
+   "period": 2,
    "period_type": "REG",
-   "clock": "06:42",
-   "in_intermission": true,
+   "clock": "19:12",
+   "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "DAL",
@@ -126,7 +126,7 @@
     "score": 0,
     "sog": 11
    },
-   "updated_at": "2026-11-19T22:50:01-05:00"
+   "updated_at": "2026-11-19T23:00:01-05:00"
   }
  ],
  "picks": {
