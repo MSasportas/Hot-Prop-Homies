@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T20:50:00-05:00",
+ "at": "2026-11-19T21:00:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -343,6 +343,13 @@
    "team": "LAL",
    "date": "2026-11-20T01:05Z",
    "note": "Reaves (heel) is listed as out for Friday's game against the Kings."
+  },
+  "2991070": {
+   "status": "day-to-day",
+   "name": "Jerami Grant",
+   "team": "MEM",
+   "date": "2026-11-20T01:48Z",
+   "note": "Grant went to the locker room during the second quarter of Thursday's game against Golden State due to an undisclosed injury, Drew Hill of The Daily Memphian reports."
   },
   "4600663": {
    "status": "out",
