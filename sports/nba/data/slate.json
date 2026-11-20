@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-20T17:00:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-20T17:00:00-05:00"
+   "at": "2026-11-20T17:10:02-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-20T17:00:00-05:00",
+    "at": "2026-11-20T17:10:02-05:00",
     "confirmed": []
    },
    "grade": true
@@ -407,7 +407,11 @@
      "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/5521527958841459102",
      "price": -125
     },
-    "draftkings": null
+    "draftkings": {
+     "url": "https://sportsbook.draftkings.com/?outcomes=0QA390898712%232372897954_13L42648Q1-1820894743Q20",
+     "price": -137,
+     "qualifies": false
+    }
    },
    "rank": 1
   },
@@ -472,7 +476,8 @@
     },
     "draftkings": {
      "url": "https://sportsbook.draftkings.com/?outcomes=0QA390905561%232372938491_13L42648Q1935105358Q20",
-     "price": -116
+     "price": -116,
+     "qualifies": true
     }
    },
    "rank": 2
@@ -538,7 +543,8 @@
     },
     "draftkings": {
      "url": "https://sportsbook.draftkings.com/?outcomes=0QA390948638%232373420792_13L42648Q1-148850323Q20",
-     "price": -111
+     "price": -111,
+     "qualifies": true
     }
    },
    "rank": 3
@@ -604,7 +610,8 @@
     },
     "draftkings": {
      "url": "https://sportsbook.draftkings.com/?outcomes=0QA390910209%232372945876_13L42648Q11799469575Q20",
-     "price": 124
+     "price": 124,
+     "qualifies": true
     }
    },
    "rank": 4
@@ -723,7 +730,11 @@
      "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/4155153202462982549",
      "price": 110
     },
-    "draftkings": null
+    "draftkings": {
+     "url": "https://sportsbook.draftkings.com/?outcomes=0QA390906415%232373005930_13L42648Q1-150170292Q20",
+     "price": 102,
+     "qualifies": false
+    }
    },
    "rank": 6
   }
@@ -741,6 +752,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-20T17:00:00-05:00",
- "status_at": "2026-11-20T17:00:00-05:00"
+ "generated_at": "2026-11-20T17:10:02-05:00",
+ "status_at": "2026-11-20T17:10:02-05:00"
 }
