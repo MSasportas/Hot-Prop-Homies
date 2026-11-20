@@ -45,7 +45,6 @@
     "Ivica Zubac"
    ],
    "status": {
-    "Braden Smith": "questionable",
     "T.J. McConnell": "probable",
     "Johnny Furphy": "out",
     "Tyrese Haliburton": "out",
@@ -154,11 +153,11 @@
     "Norman Powell",
     "Isaac Okoro",
     "Matas Buzelis",
-    "Jalen Smith"
+    "Nic Claxton"
    ],
    "status": {
-    "Jalen Smith": "questionable",
     "Noa Essengue": "probable",
+    "Jalen Smith": "out",
     "Caleb Wilson": "out"
    }
   },
@@ -283,5 +282,5 @@
    }
   }
  },
- "at": "2026-11-20T18:10:00-05:00"
+ "at": "2026-11-20T18:20:00-05:00"
 }

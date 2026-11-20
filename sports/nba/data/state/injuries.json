@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T18:00:01-05:00",
+ "at": "2026-11-20T18:20:00-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -183,19 +183,19 @@
    "date": "2026-10-17T00:52Z",
    "note": "Strawther (knee) was diagnosed with a left knee sprain Friday and will be re-evaluated in six weeks, Vinny Benedetto of The Denver Gazette reports."
   },
+  "2990962": {
+   "status": "out",
+   "name": "Taurean Prince",
+   "team": "DET",
+   "date": "2026-11-20T23:02Z",
+   "note": "Prince (knee) underwent surgery to address lingering issues and has no timeline for a return, Hunter Patterson of The Athletic reports."
+  },
   "4683771": {
    "status": "day-to-day",
    "name": "Ronald Holland II",
    "team": "DET",
    "date": "2026-11-20T17:46Z",
    "note": "Holland (knee) has been upgraded to doubtful for Friday's game against Toronto, Hunter Patterson of The Athletic reports."
-  },
-  "2990962": {
-   "status": "out",
-   "name": "Taurean Prince",
-   "team": "DET",
-   "date": "2026-11-19T21:53Z",
-   "note": "Prince underwent right knee surgery and is listed as out for Friday's game against the Raptors."
   },
   "5258459": {
    "status": "out",
@@ -365,12 +365,26 @@
    "date": "2026-11-20T01:05Z",
    "note": "Reaves (heel) is listed as out for Friday's game against the Kings."
   },
-  "4600663": {
-   "status": "day-to-day",
-   "name": "Zach Edey",
+  "4781746": {
+   "status": "out",
+   "name": "Javon Small",
    "team": "MEM",
-   "date": "2026-11-20T03:53Z",
-   "note": "Edey (hip) has been ruled out for Thursday's game against the Warriors."
+   "date": "2026-11-20T23:14Z",
+   "note": "Small won't play Saturday against the Timberwolves due to personal reasons."
+  },
+  "5041935": {
+   "status": "out",
+   "name": "Cameron Boozer",
+   "team": "MEM",
+   "date": "2026-11-20T23:12Z",
+   "note": "Boozer is out for Saturday's game against Minnesota due to a right ankle sprain."
+  },
+  "4065733": {
+   "status": "out",
+   "name": "Ty Jerome",
+   "team": "MEM",
+   "date": "2026-11-20T23:11Z",
+   "note": "Jerome (hip) is probable for Saturday's game in Minnesota."
   },
   "2991070": {
    "status": "day-to-day",
@@ -378,13 +392,6 @@
    "team": "MEM",
    "date": "2026-11-20T02:08Z",
    "note": "Grant won't return to Thursday's game against the Warriors due to a left calf injury. He'll finish with three points (1-2 FG, 1-1 3Pt) across five minutes."
-  },
-  "4065733": {
-   "status": "out",
-   "name": "Ty Jerome",
-   "team": "MEM",
-   "date": "2026-11-19T19:07Z",
-   "note": "Jerome (hip) has been ruled out for Thursday's game against the Warriors."
   },
   "5105550": {
    "status": "out",
