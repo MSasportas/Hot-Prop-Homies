@@ -71,12 +71,11 @@ class Evaluate(unittest.TestCase):
 
 
 class Pages(unittest.TestCase):
-    def test_every_page_defines_the_redraw_its_lab_calls(self):
-        for page in ("index.html", os.path.join("sports", "nba", "index.html"), os.path.join("sports", "nhl", "index.html")):
-            with open(os.path.join(os.path.dirname(lr.__file__), "..", page), encoding="utf-8") as fh:
-                html = fh.read()
-            if "LAB_REDRAW(" in html:
-                self.assertIn("function LAB_REDRAW()", html, page)
+    def test_the_page_defines_the_redraw_its_lab_calls(self):
+        with open(os.path.join(os.path.dirname(lr.__file__), "..", "index.html"), encoding="utf-8") as fh:
+            html = fh.read()
+        if "LAB_REDRAW(" in html:
+            self.assertIn("function LAB_REDRAW()", html)
 
 
 class Run(unittest.TestCase):

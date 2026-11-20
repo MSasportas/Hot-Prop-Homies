@@ -338,26 +338,5 @@ class Minors2(unittest.TestCase):
         self.assertFalse([e for e in mine if e["t"] in ("price", "pulled")], mine)
 
 
-# ---------------------------------------------------------------- page sentences (m4, m5, m10, M2)
-class PageText(unittest.TestCase):
-    @classmethod
-    def setUpClass(cls):
-        with open(os.path.join(REPO, "index.html"), encoding="utf-8") as f:
-            cls.html = f.read()
-
-    def test_m4_rules_sheet(self):
-        self.assertIn("at {gap_guard.price_gate|price} or better. Plus money has no cap.", self.html)
-        self.assertIn("Parlays are not offered", self.html)
-        self.assertNotIn("parlay_min_legs", self.html)
-        self.assertNotIn("two or three legs", self.html)
-
-    def test_m5_m10_m2_sentences(self):
-        self.assertIn("Last night's picks are in the Record.", self.html)
-        self.assertNotIn("Last night's results are in the Record.", self.html)
-        self.assertNotIn("No open parlay right now", self.html)
-        self.assertIn("case 'keys_refused':", self.html)
-        self.assertIn(odds.KEYS_REFUSED_TEXT, self.html)
-
-
 if __name__ == "__main__":
     unittest.main()

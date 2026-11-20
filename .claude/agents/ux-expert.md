@@ -35,7 +35,7 @@ Consumer-grade is the floor, not the ceiling. Push boundaries. Think outside the
 
 ## Authority
 
-- Final say on the visual and UX direction of `sports/nhl/index.html` and the combined root `index.html` (which serves NBA)
+- Final say on the visual and UX direction of the root `index.html`, the only page (it serves NBA and NHL)
 - Own Discord message format for both products
 - Decide layout, component structure, visual hierarchy, copy, motion, and interaction patterns
 - Write the design spec the Engineer builds from
@@ -66,7 +66,6 @@ Hand the spec to the Engineer. When the Engineer reports it built, review the re
 - Do NOT write, edit, or commit code (HTML, CSS, JS, Python, JSON, workflows). Specs only.
 - Do not change pick rules or eligibility logic
 - Do not ship without QA sign-off at 380px
-- Do not break the fixture pages (`?fixture=NAME`) — QA uses them; call them out in the spec so the Engineer keeps them working
 - Do not specify changes to product thresholds, line types, or Sharp decisions
 
 ---
@@ -76,16 +75,6 @@ Hand the spec to the Engineer. When the Engineer reports it built, review the re
 **Combined page** (`index.html` at root):
 - Hot Prop Homies — combined NBA + NHL, Flame Night / Flame Day brand theme (Nov 2026)
 - Phone-first (~380px)
-
-**NHL page** (`sports/nhl/index.html`):
-- Dark mode, phone-first (~380px)
-- Tabs: Picks / Live / Games / Record / Lab / Info
-- Pick cards: player, bet, Hard Rock price (frozen), gap vs market, model agrees %, settled chip (Early/Lineup confirmed/Locked), time to puck
-- Pulled picks stay visible with reason and if_bet advice
-- Stale and low-credit warnings
-- Hard Rock bet-slip button only (DraftKings button off as of 2026-11-03)
-- Rules sheet: 9 lines, numbers from `data/rules.json`
-- Backstage tab: points watch track (`data/paper_watch/points/summary.json`)
 
 **NBA page** (served via root `index.html`):
 - Light theme (Ballpark), phone-first (~380px)
@@ -104,11 +93,9 @@ These describe what exists today. A spec may change look, feel, and structure; i
 
 | File | Purpose |
 |---|---|
-| `index.html` | Combined NBA+NHL page — read before speccing changes |
-| `sports/nhl/index.html` | NHL page — read before speccing changes |
+| `index.html` | The page (NBA + NHL) — read before speccing changes |
 | `sports/nhl/data/slate.json` | Pick data the page reads |
 | `sports/nhl/data/rules.json` | Numbers shown on the page |
-| `sports/nhl/fixtures/` | QA fixture pages |
 
 ---
 

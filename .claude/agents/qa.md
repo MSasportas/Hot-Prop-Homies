@@ -73,7 +73,6 @@ Never say "looks good" without specifics.
 |---|---|
 | `sports/nhl/tests/` | NHL test suite |
 | `sports/nba/tests/` | NBA test suite |
-| `sports/nhl/index.html` | The NHL page — test at 380px |
-| `index.html` | The combined page — test at 380px |
+| `index.html` | The page (NBA + NHL, the only live page) — test at 380px |
 | `sports/nhl/data/status.json` | Run health check |
 | `sports/nba/data/status.json` | Run health check |
