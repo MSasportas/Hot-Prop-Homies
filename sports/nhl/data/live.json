@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-19",
- "generated_at": "2026-11-19T22:00:00-05:00",
+ "generated_at": "2026-11-19T22:10:00-05:00",
  "games": [
   {
    "game_id": 2026020350,
@@ -21,7 +21,7 @@
     "score": 2,
     "sog": 33
    },
-   "updated_at": "2026-11-19T22:00:00-05:00"
+   "updated_at": "2026-11-19T22:10:00-05:00"
   },
   {
    "game_id": 2026020354,
@@ -42,38 +42,38 @@
     "score": 4,
     "sog": 22
    },
-   "updated_at": "2026-11-19T22:00:00-05:00"
+   "updated_at": "2026-11-19T22:10:00-05:00"
   },
   {
    "game_id": 2026020353,
    "state": "LIVE",
    "schedule_state": "OK",
-   "period": 2,
+   "period": 3,
    "period_type": "REG",
-   "clock": "00:30",
-   "in_intermission": true,
-   "running": false,
+   "clock": "14:45",
+   "in_intermission": false,
+   "running": true,
    "away": {
     "abbrev": "CBJ",
     "score": 3,
-    "sog": 25
+    "sog": 30
    },
    "home": {
     "abbrev": "CHI",
-    "score": 1,
-    "sog": 15
+    "score": 2,
+    "sog": 18
    },
-   "updated_at": "2026-11-19T22:00:00-05:00"
+   "updated_at": "2026-11-19T22:10:00-05:00"
   },
   {
    "game_id": 2026020355,
    "state": "LIVE",
    "schedule_state": "OK",
-   "period": 2,
+   "period": 3,
    "period_type": "REG",
-   "clock": "07:01",
-   "in_intermission": true,
-   "running": false,
+   "clock": "18:48",
+   "in_intermission": false,
+   "running": true,
    "away": {
     "abbrev": "MIN",
     "score": 3,
@@ -84,49 +84,49 @@
     "score": 1,
     "sog": 17
    },
-   "updated_at": "2026-11-19T22:00:00-05:00"
+   "updated_at": "2026-11-19T22:10:00-05:00"
   },
   {
    "game_id": 2026020356,
    "state": "LIVE",
    "schedule_state": "OK",
-   "period": 1,
+   "period": 2,
    "period_type": "REG",
-   "clock": "02:32",
-   "in_intermission": true,
+   "clock": "16:35",
+   "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "ANA",
     "score": 0,
-    "sog": 4
+    "sog": 5
    },
    "home": {
     "abbrev": "COL",
-    "score": 0,
-    "sog": 9
+    "score": 2,
+    "sog": 11
    },
-   "updated_at": "2026-11-19T22:00:00-05:00"
+   "updated_at": "2026-11-19T22:10:00-05:00"
   },
   {
    "game_id": 2026020358,
-   "state": "PRE",
+   "state": "LIVE",
    "schedule_state": "OK",
-   "period": null,
-   "period_type": null,
-   "clock": null,
+   "period": 1,
+   "period_type": "REG",
+   "clock": "19:05",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "DAL",
-    "score": null,
-    "sog": null
+    "score": 0,
+    "sog": 1
    },
    "home": {
     "abbrev": "VGK",
-    "score": null,
+    "score": 0,
     "sog": null
    },
-   "updated_at": "2026-11-19T22:00:00-05:00"
+   "updated_at": "2026-11-19T22:10:00-05:00"
   }
  ],
  "picks": {
@@ -178,7 +178,7 @@
   "2026-11-19:2026020358:8475913:shots:1.5:under": {
    "game_id": 2026020358,
    "market": "shots",
-   "stat": null
+   "stat": 0
   }
  }
 }
