@@ -5,7 +5,7 @@ SPEC ONLY, for the Engineer. A dead test retires on its own; a passing test is o
 ## 0. Facts this builds on
 - Tracks: `sports/{nba,nhl}/config/lab.json` -> `tests[]` with `id, title, rule, summary, stats, need, gate, discovery, base`. NBA has 27 tracks (need 150 for most; LVA1 40, LVA2 30, DM1 100, DM2 80, DM3 50, fast_checks 100). NHL has 21, all need 300, all read from `sports/nhl/research/fwd/lab.json` (written by `research/code/fwd/lab_export.py`) plus `q24.json`.
 - Numbers: summary file block `summary[stats]` = `{w, l, push, void, pending, units, clv?}`. `units` is already graded at posted price, so ROI per bet = `units / (w + l)`. Hit rate vs break-even is NOT used (break-even moves with price).
-- Consumers: Lab tab (`renderLab` in `index.html`, `sports/nba/index.html`, `sports/nhl/index.html`) draws every entry in `tests[]`; HQ "Lab - on the radar" reads the same configs (`labCfg`, `hqGate`).
+- Consumers: Lab tab (`renderLab` in the root `index.html`) draws every entry in `tests[]`; HQ "Lab - on the radar" reads the same configs (`labCfg`, `hqGate`).
 - `fast_checks` is a live trial of real Record picks: excluded from auto-retire (`no_auto_retire: true`).
 
 ## 1. Definitions
@@ -62,7 +62,7 @@ Stalled = 45 days since `first_seen` AND `k < need/2` AND no new graded pick in 
 1. New `scripts/lab_retire.py --sport {nba|nhl}` (stdlib only, one shared copy). Reads `config/lab.json`, each summary, `config/lab_state.json`; writes `lab.json`, `lab_retired.jsonl`, `lab_state.json`. Pure function `evaluate(track, block)` returning verdict and final stats so it is unit-testable.
 2. Run once daily, as the last step after grading and summary refresh (NBA: after the `lab_*.json` writers; NHL: after `lab_export.py` in `run_all.sh`). Grades only change nightly; two-run confirmation makes the earliest retire 2 days.
 3. Optional new `tests[]` fields: `first_seen`, `no_auto_retire` (true on `fast_checks`), `seasonal`, `status`, `ready_at`. Existing files stay valid.
-4. Page (all three `index.html`): retired tracks vanish automatically (they leave `tests[]`). Add one muted line at the Lab bottom, "N retired", shown only when `retired_count > 0`; tap expands a list (title, record, units, plain-words reason, date) from `lab_retired.jsonl`. "Ready for Sharp" badge on the tile. HQ "Lab - on the radar" lists only remaining entries plus the same one-line count. Check 380px: single line, no new tiles. `hqGate` already returns null for a missing id.
+4. Page (root `index.html`): retired tracks vanish automatically (they leave `tests[]`). Add one muted line at the Lab bottom, "N retired", shown only when `retired_count > 0`; tap expands a list (title, record, units, plain-words reason, date) from `lab_retired.jsonl`. "Ready for Sharp" badge on the tile. HQ "Lab - on the radar" lists only remaining entries plus the same one-line count. Check 380px: single line, no new tiles. `hqGate` already returns null for a missing id.
 5. Tests for `evaluate`: the cutoff table; k=150 units -25 retires, -15 does not; CLV > 0 vetoes; pending > 25% skips; one-run fail does not retire; mass cap; idempotent rerun; `fast_checks` never retires.
 6. Do not touch `data/record/` or live rules.
 
