@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T20:20:01-05:00",
+ "at": "2026-11-19T20:30:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -463,6 +463,13 @@
    "date": "2026-11-13T20:19Z",
    "note": "Murray (ankle) is out for Friday's game against Memphis."
   },
+  "3934672": {
+   "status": "day-to-day",
+   "name": "Jalen Brunson",
+   "team": "NY",
+   "date": "2026-11-20T01:19Z",
+   "note": "Brunson exited to the locker room in the first quarter of Thursday's game against Minnesota due to an apparent facial injury, Jared Schwartz of the New York Post reports."
+  },
   "2991350": {
    "status": "day-to-day",
    "name": "Alex Caruso",
@@ -616,6 +623,20 @@
    "team": "POR",
    "date": "2026-08-24T20:23Z",
    "note": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN."
+  },
+  "4431679": {
+   "status": "day-to-day",
+   "name": "Precious Achiuwa",
+   "team": "SAC",
+   "date": "2026-11-20T01:22Z",
+   "note": "Achiuwa is doubtful for Friday's game against the Lakers due to a left lower leg bruise."
+  },
+  "4065732": {
+   "status": "day-to-day",
+   "name": "De'Andre Hunter",
+   "team": "SAC",
+   "date": "2026-11-20T01:21Z",
+   "note": "Hunter (hip) is listed as questionable for Friday's game against the Lakers."
   },
   "4898371": {
    "status": "out",
