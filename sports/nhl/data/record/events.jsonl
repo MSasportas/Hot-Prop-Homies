@@ -356,3 +356,4 @@
 {"actual":0,"actual_text":"had 0","at":"2026-11-20T00:10:00-05:00","id":"2026-11-19:2026020356:8477476:points:0.5:over","price":-125,"result":"L","t":"graded","units":-1.0}
 {"actual":2,"actual_text":"had 2","at":"2026-11-20T00:10:00-05:00","id":"2026-11-19:2026020356:8478038:shots:1.5:under","price":120,"result":"L","t":"graded","units":-1.0}
 {"actual":2,"actual_text":"had 2","at":"2026-11-20T00:10:00-05:00","id":"2026-11-19:2026020356:8480039:points:1.5:over","price":180,"result":"W","t":"graded","units":1.8}
+{"actual":0,"actual_text":"had 0","at":"2026-11-20T01:20:00-05:00","id":"2026-11-19:2026020358:8475913:shots:1.5:under","price":130,"result":"W","t":"graded","units":1.3}
