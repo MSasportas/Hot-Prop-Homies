@@ -2,7 +2,7 @@
  "slate": "2026-11-19",
  "teams": {
   "POR": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Damian Lillard",
     "Scoot Henderson",
@@ -20,13 +20,13 @@
    }
   },
   "MIL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Brayden Burries",
     "Tyler Herro",
-    "Jaime Jaquez",
     "Nate Ament",
-    "Jericho Sims"
+    "Pete Nance",
+    "Kel'el Ware"
    ],
    "status": {
     "Ousmane Dieng": "out",
@@ -35,7 +35,7 @@
    }
   },
   "NY": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jalen Brunson",
     "Mikal Bridges",
@@ -46,7 +46,7 @@
    "status": {}
   },
   "MIN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "LaMelo Ball",
     "Ayo Dosunmu",
@@ -61,10 +61,10 @@
    }
   },
   "LAC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Darius Garland",
-    "Kris Dunn",
+    "Max Strus",
     "Derrick Jones",
     "Rui Hachimura",
     "Brook Lopez"
@@ -76,7 +76,7 @@
    }
   },
   "SA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "De'Aaron Fox",
     "Stephon Castle",
@@ -91,13 +91,13 @@
    }
   },
   "GS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
-    "LJ Cryer",
+    "De'Anthony Melton",
     "Brandin Podziemski",
     "Yaxel Lendeborg",
     "Gui Santos",
-    "Al Horford"
+    "Charles Bassey"
    ],
    "status": {
     "Jimmy Butler": "out",
@@ -109,13 +109,13 @@
    }
   },
   "MEM": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Cam Spencer",
     "Cedric Coward",
     "Jaylen Wells",
     "Cameron Boozer",
-    "Isaiah Stewart"
+    "Taylor Hendricks"
    ],
    "status": {
     "Zach Edey": "out",
@@ -125,5 +125,5 @@
    }
   }
  },
- "at": "2026-11-19T19:30:01-05:00"
+ "at": "2026-11-19T19:40:02-05:00"
 }
