@@ -7,15 +7,23 @@ import json
 import os
 import sys
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "..", "..", "..", "..", "scripts"))
-import lab_retire  # noqa: E402
 
 SRC = ("ll", "mm", "nn")
 
 
+def retired_names(summary):
+    """Variants auto-retired from this summary file (scripts/lab_retire.py). Retirement is optional: never stops the export."""
+    try:
+        sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "..", "..", "..", "..", "scripts"))
+        import lab_retire
+        return lab_retire.retired_stats("config", summary)
+    except Exception:
+        return set()
+
+
 def main():
     base = os.path.join("research", "fwd")
-    gone = lab_retire.retired_stats("config", os.path.join(base, "lab.json").replace(os.sep, "/"))
+    gone = retired_names(os.path.join(base, "lab.json").replace(os.sep, "/"))
     doc = {"version": 1, "active": True, "note": "Research only: forward tests, never picks. Updated by the daily Researcher run."}
     for s in SRC:
         try:

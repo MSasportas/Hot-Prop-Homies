@@ -6,13 +6,12 @@ Writes: data/research/hypothesis_state.json (index), appends to research/LOG.md.
 Never posts to Discord, never affects picks. No API calls.
 Usage: python research/code/auto_hypothesis.py [--force AHN]
 """
-import collections, glob, gzip, json, os, random, statistics, sys
+import collections, glob, gzip, json, os, statistics, sys
 from datetime import date
 
 R = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")) + os.sep
 sys.path.insert(0, R + "scripts")
-sys.path.insert(0, os.path.join(R, "..", "..", "scripts"))
-import common, lab_retire, odds
+import common, odds
 
 try:
     sys.stdout.reconfigure(encoding="utf-8")
@@ -231,7 +230,12 @@ HYPO_IDS = [h[0] for h in HYPOTHESES]
 
 def retired(summary):
     """Lab ids auto-retired from this summary file (scripts/lab_retire.py): no longer tested or exported."""
-    return lab_retire.retired_stats(R + "config", summary)
+    try:
+        sys.path.insert(0, os.path.join(R, "..", "..", "scripts"))
+        import lab_retire
+        return lab_retire.retired_stats(R + "config", summary)
+    except Exception:                                        # retirement is optional: never let it stop the nightly test
+        return set()
 
 # ---------------------------------------------------------------------------
 # State + main

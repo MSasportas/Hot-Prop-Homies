@@ -41,6 +41,7 @@ jobs:
           fetch-depth: 0        # full history: guard_record.py --history walks every Record version
           sparse-checkout: |
             sports/${{ inputs.sport }}
+            scripts
             .github/workflows/${{ inputs.sport }}-run.yml
       - uses: actions/setup-python@v5
         with:
