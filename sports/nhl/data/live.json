@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-19",
- "generated_at": "2026-11-20T00:40:01-05:00",
+ "generated_at": "2026-11-20T00:50:01-05:00",
  "games": [
   {
    "game_id": 2026020350,
@@ -111,22 +111,22 @@
    "game_id": 2026020358,
    "state": "CRIT",
    "schedule_state": "OK",
-   "period": 4,
-   "period_type": "OT",
-   "clock": "03:37",
+   "period": 5,
+   "period_type": "SO",
+   "clock": "03:53",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "DAL",
     "score": 3,
-    "sog": 21
+    "sog": 22
    },
    "home": {
     "abbrev": "VGK",
     "score": 3,
-    "sog": 28
+    "sog": 30
    },
-   "updated_at": "2026-11-20T00:40:01-05:00"
+   "updated_at": "2026-11-20T00:50:01-05:00"
   }
  ],
  "picks": {
