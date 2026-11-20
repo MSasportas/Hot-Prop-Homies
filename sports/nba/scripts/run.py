@@ -504,6 +504,8 @@ class Run:
         2. auto_hypothesis.py: tests one new hypothesis variant; appends to research/LOG.md.
         3. scripts/lab_retire.py (repo root): retires dead Lab tests once the summaries above are fresh.
         All are skipped if they already ran today (state file check). Failure here never fails the pipeline."""
+        if common.data_dir() != common.REPO_DATA:
+            return  # a redirected data dir (tests) must never run the research scripts, which read and write the repo itself
         state_path = common.dpath("research", "research_state.json")
         st = common.read_json(state_path, {}) or {}
         if st.get("slate") == self.slate:
