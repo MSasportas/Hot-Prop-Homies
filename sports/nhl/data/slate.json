@@ -1,26 +1,26 @@
 {
  "slate_date": "2026-11-19",
- "generated_at": "2026-11-19T21:00:01-05:00",
- "status_at": "2026-11-19T21:00:01-05:00",
+ "generated_at": "2026-11-19T21:20:01-05:00",
+ "status_at": "2026-11-19T21:20:01-05:00",
  "valid_until": "2026-11-20T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
-  "prices_at": "2026-11-19T21:00:01-05:00",
-  "next_price_read_at": "2026-11-19T21:15:00-05:00",
+  "prices_at": "2026-11-19T21:20:01-05:00",
+  "next_price_read_at": null,
   "stats_built_at": "2026-11-19T01:50:26-05:00",
   "stats_through": "2026-11-18",
-  "lineups_at": "2026-11-19T20:50:02-05:00",
+  "lineups_at": "2026-11-19T21:20:01-05:00",
   "goalies_at": null,
   "lineups_note": "Lineups posted for 15 of 24 teams checked so far.",
   "lineups_state": "ok",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-19T21:00:01-05:00",
+   "at": "2026-11-19T21:20:01-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 2676,
+   "pulls_left": 2671,
    "keys": 9,
    "game_days_left": 10,
    "days_left": 12,
@@ -506,11 +506,11 @@
    "goalies": {
     "away": {
      "name": "Leevi Merilainen",
-     "status": "expected"
+     "status": "confirmed"
     },
     "home": {
      "name": "Philipp Grubauer",
-     "status": "expected"
+     "status": "confirmed"
     }
    },
    "checks": {
@@ -568,19 +568,20 @@
      {
       "pull": "B",
       "at": "2026-11-19T20:30:01-05:00"
+     },
+     {
+      "pull": "C",
+      "at": "2026-11-19T21:20:01-05:00"
      }
     ],
-    "next_read": {
-     "pull": "C",
-     "at": "2026-11-19T21:15:00-05:00"
-    },
+    "next_read": null,
     "lineups_at": {
      "away": null,
      "home": "2026-11-19T19:30:01-05:00"
     }
    },
    "started": false,
-   "reads_done": false,
+   "reads_done": true,
    "picks": 1,
    "excluded_reason": null,
    "excluded_teams": []
@@ -611,7 +612,7 @@
     }
    ],
    "pulled": null,
-   "price_final": false,
+   "price_final": true,
    "graded": null,
    "rank": 1,
    "tier": "main",

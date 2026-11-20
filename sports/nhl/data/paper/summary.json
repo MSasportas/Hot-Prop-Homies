@@ -2,7 +2,7 @@
  "version": 1,
  "note": "Gap + Guard research log. Every flag here is a pick on the page and in the Record; vetoed and capped rows are research only.",
  "market": "shots",
- "generated_at": "2026-11-19T21:00:01-05:00",
+ "generated_at": "2026-11-19T21:20:01-05:00",
  "slate": "2026-11-19",
  "active": true,
  "window": {
@@ -112,8 +112,8 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "close_fair_pct": 47.1,
+    "clv_pct": 8.3,
     "result": null,
     "units": null
    },
@@ -1142,7 +1142,7 @@
      "cap": null,
      "flagged_at": "2026-11-12T10:30:01-05:00",
      "read_pull": "B",
-     "settled": "Lineup confirmed",
+     "settled": "Goalie confirmed",
      "frozen_settled": "Early",
      "move30_pct": 0.6,
      "pulled": null,
@@ -1214,7 +1214,7 @@
      "cap": null,
      "flagged_at": "2026-11-12T10:30:01-05:00",
      "read_pull": "B",
-     "settled": "Lineup confirmed",
+     "settled": "Goalie confirmed",
      "frozen_settled": "Early",
      "move30_pct": 0.6,
      "pulled": null,
@@ -1333,7 +1333,7 @@
   }
  ],
  "nov2": {
-  "gaps_measured": 75,
+  "gaps_measured": 76,
   "gaps_logged": 97,
   "graded_picks": 75,
   "w": 46,
@@ -1342,15 +1342,15 @@
   "units": 17.799135610305026,
   "wins_z": 1.628276062465429,
   "clv_gaps": {
-   "n": 75,
-   "mean": 0.04802636140386396,
-   "lb80": 0.04491240440158784,
+   "n": 76,
+   "mean": 0.04848593143230623,
+   "lb80": 0.04537066975642281,
    "pos_share": 1.0
   },
   "clv_flags": {
-   "n": 65,
-   "mean": 0.04853481352453359,
-   "lb80": 0.04507898872884871,
+   "n": 66,
+   "mean": 0.04905631155545697,
+   "lb80": 0.045470528238229495,
    "pos_share": 1.0
   },
   "clv_vetoed": {
@@ -1359,7 +1359,7 @@
    "lb80": 0.03960546321348539,
    "pos_share": 1.0
   },
-  "clv_passed_mean": 0.04853481352453359,
+  "clv_passed_mean": 0.04905631155545697,
   "clv_vetoed_mean": 0.04472142261951133,
   "nights": 28,
   "nights_with_flags": 21,

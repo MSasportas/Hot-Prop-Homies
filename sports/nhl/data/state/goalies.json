@@ -83,11 +83,11 @@
   },
   "SEA": {
    "name": "Philipp Grubauer",
-   "status": "expected"
+   "status": "confirmed"
   },
   "VAN": {
    "name": "Leevi Merilainen",
-   "status": "expected"
+   "status": "confirmed"
   },
   "VGK": {
    "name": "Adin Hill",
@@ -98,5 +98,5 @@
    "status": "confirmed"
   }
  },
- "checked_at": "2026-11-19T20:40:00-05:00"
+ "checked_at": "2026-11-19T21:20:01-05:00"
 }
