@@ -316,14 +316,19 @@ class Run:
                 try:
                     lk = odds.bet_links(getattr(self, "odds_doc", None), sh["game_id"], sh["market"], sh["pid"],
                                         sh["line"], sh["side"])
-                    # v2.5 (Matt, 2026-11-03): a button only for a book whose price passed the rule; it shows that book's
-                    # frozen price (the one to bet at or better). Picks before v2.5 were Hard Rock picks.
+                    # v2.5 (Matt, 2026-11-03): Hard Rock's button shows its frozen price (the one to bet at or better). Picks
+                    # before v2.5 were Hard Rock picks. DraftKings (Matt, 2026-11-20): its link is kept for every pick it lists
+                    # on the exact same line, flagged `qualifies` when its price also passed the rule. A link only; it changes
+                    # no pick, rule or grade, and Discord still posts only the qualifying one.
                     bks = sh.get("books") or {"hardrock": {"price": sh["price"]}}
-                    for bk in ("hardrock", "draftkings"):
-                        if bk not in bks or not lk.get(bk):
-                            lk[bk] = None
-                        else:
-                            lk[bk]["price"] = bks[bk]["price"]
+                    if "hardrock" not in bks or not lk["hardrock"]:
+                        lk["hardrock"] = None
+                    else:
+                        lk["hardrock"]["price"] = bks["hardrock"]["price"]
+                    if lk["draftkings"]:
+                        lk["draftkings"]["qualifies"] = "draftkings" in bks
+                        if lk["draftkings"]["qualifies"]:
+                            lk["draftkings"]["price"] = bks["draftkings"]["price"]
                     p["links"] = lk if (lk["hardrock"] or lk["draftkings"]) else None
                 except Exception as e:                     # a button is a nicety: never fails the page
                     common.log("bet links failed: %s" % common.short_err(e))
