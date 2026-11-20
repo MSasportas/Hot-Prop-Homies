@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-19",
- "generated_at": "2026-11-20T00:10:00-05:00",
+ "generated_at": "2026-11-20T00:12:38-05:00",
  "games": [
   {
    "game_id": 2026020350,
@@ -113,9 +113,9 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "12:38",
+   "clock": "11:40",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "DAL",
     "score": 2,
@@ -126,7 +126,7 @@
     "score": 3,
     "sog": 24
    },
-   "updated_at": "2026-11-20T00:10:00-05:00"
+   "updated_at": "2026-11-20T00:12:38-05:00"
   }
  ],
  "picks": {
