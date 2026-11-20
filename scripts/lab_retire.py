@@ -1,6 +1,6 @@
 """lab_retire.py: retire dead Lab tests on their own and flag passing ones for the Sharp (research/lab-retirement-spec.md).
 
-Run once a night after the Lab summaries refresh:  python3 -I scripts/lab_retire.py --sport nba|nhl
+Run once a night after the Lab summaries refresh (a second run the same day does nothing; PC_NOW sets the clock like the pipeline):  python3 -I scripts/lab_retire.py --sport nba|nhl
 Reads  sports/<sport>/config/lab.json, each track's summary file and config/lab_state.json.
 Writes lab.json (retired tracks leave tests[]), config/lab_retired.jsonl (append-only archive) and lab_state.json.
 It never touches live rules or the Record: a passing track only gets status "ready_for_sharp".
@@ -142,8 +142,8 @@ def archive_event(ts, event, track, verdict, reason=None):
 
 
 def run(sport, root=REPO, now=None):
-    now = now or datetime.datetime.now(datetime.timezone.utc)
-    today = now.astimezone().date() if now.tzinfo else now.date()
+    now = now or (datetime.datetime.fromisoformat(os.environ["PC_NOW"]) if os.environ.get("PC_NOW") else datetime.datetime.now(datetime.timezone.utc))
+    today = now.date()
     sport_dir = os.path.join(root, "sports", sport)
     cfg_dir = os.path.join(sport_dir, "config")
     lab_path, state_path = os.path.join(cfg_dir, "lab.json"), os.path.join(cfg_dir, "lab_state.json")
@@ -153,6 +153,8 @@ def run(sport, root=REPO, now=None):
         print("lab_retire: %s lab.json unreadable, nothing done" % sport)
         return []
     state = read_json(state_path, {}) or {}
+    if state.get("day") == today.isoformat():
+        return []                                   # once a day: a second run the same day must not count as another night
     tracks_state = state.get("tracks") or {}
     already = retired_ids(arch_path)
     ts = now.isoformat(timespec="seconds")
@@ -190,7 +192,7 @@ def run(sport, root=REPO, now=None):
         retired_total = len(already) + sum(ev["event"] == "retired" for ev in events)
         lab["retired_count"], lab["updated"] = retired_total, today.isoformat()
         write_json(lab_path, lab)
-    write_json(state_path, {"updated": ts, "tracks": new_state})
+    write_json(state_path, {"updated": ts, "day": today.isoformat(), "tracks": new_state})
     return events
 
 

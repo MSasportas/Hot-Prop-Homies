@@ -106,6 +106,34 @@ class Cycle(unittest.TestCase):
         self.assertEqual(len(self.subjects()), n + 1)
         self.assertEqual(json.loads(self.origin_file("data/status.json"))["runner"]["iteration"], 3)
 
+    def test_lab_retirement_is_committed_and_pushed(self):
+        """Two nightly cycles in a repo laid out like the real one (scripts/ at the root, the runner in sports/nhl)
+        retire a failing Lab test and publish lab.json, lab_retired.jsonl and lab_state.json (and nothing else new)."""
+        mono = os.path.join(self.tmp, "mono")
+        shutil.copytree(os.path.join(REPO, "..", "..", "scripts"), os.path.join(mono, "scripts"),
+                        ignore=shutil.ignore_patterns("__pycache__"))
+        self.runner = os.path.join(mono, "sports", "nhl")
+        self.git(self.tmp, "clone", "-q", "-b", "main", self.origin, self.runner)
+        track = {"id": "T1", "title": "Dead idea", "rule": "r", "summary": "research/fwd/lab.json", "base": "root",
+                 "stats": "T1", "need": 100}
+        os.makedirs(os.path.join(self.runner, "research", "fwd"))
+        with open(os.path.join(self.runner, "config", "lab.json"), "w") as f:
+            json.dump({"updated": "2026-10-01", "tests": [track]}, f)
+        with open(os.path.join(self.runner, "research", "fwd", "lab.json"), "w") as f:
+            json.dump({"T1": {"w": 40, "l": 70, "push": 0, "void": 0, "pending": 0, "units": -30}}, f)
+        self.git(self.runner, "add", "-f", "config/lab.json", "research/fwd/lab.json")
+        self.git(self.runner, "commit", "-q", "-m", "lab fixture")
+        self.git(self.runner, "push", "-q", "origin", "main")
+        for hhmm, day in (("09:00", "2026-10-11"), ("09:00", "2026-10-12")):
+            r = subprocess.run(
+                ["bash", os.path.join(self.runner, "scripts", "cycle.sh")], capture_output=True, text=True, timeout=300,
+                env=dict(self.env, PC_NOW="%sT%s:00-04:00" % (day, hhmm)))
+            self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        archive = [json.loads(line) for line in self.origin_file("config/lab_retired.jsonl").splitlines()]
+        self.assertEqual([(e["event"], e["id"], e["reason"]) for e in archive], [("retired", "T1", "fail_full")])
+        self.assertEqual(json.loads(self.origin_file("config/lab.json"))["tests"], [])
+        self.assertEqual(json.loads(self.origin_file("config/lab_state.json"))["day"], "2026-10-12")
+
     def test_edited_record_is_blocked_and_the_failure_is_published(self):
         # a full, already graded pick from an earlier night (so the engine has nothing to do with it)
         ev = test_record_grade.shown("x", slate="2026-10-01", at="2026-10-01T13:02:00-04:00",
