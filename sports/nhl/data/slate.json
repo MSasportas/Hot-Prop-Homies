@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-19",
- "generated_at": "2026-11-19T19:30:01-05:00",
- "status_at": "2026-11-19T19:30:01-05:00",
+ "generated_at": "2026-11-19T19:40:01-05:00",
+ "status_at": "2026-11-19T19:40:01-05:00",
  "valid_until": "2026-11-20T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-19T19:30:01-05:00",
+   "at": "2026-11-19T19:40:01-05:00",
    "failed_step": null
   },
   "pool": {
@@ -372,7 +372,7 @@
     },
     "home": {
      "name": "Spencer Knight",
-     "status": "expected"
+     "status": "confirmed"
     }
    },
    "checks": {
@@ -940,8 +940,8 @@
     "ours_pct": 54.4,
     "model_pct": 55.5
    },
-   "settled": "lineup",
-   "settled_label": "Lineup confirmed",
+   "settled": "goalie",
+   "settled_label": "Goalie confirmed",
    "reason": "7 other books say 54.1%; Hard Rock's -110 only needs 52.4%. Our model agrees (our blend: 54.4%).",
    "link": "https://app.hardrock.bet/?deep_link_value=betslip/1346884428531630471",
    "links": {
