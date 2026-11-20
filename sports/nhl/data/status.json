@@ -1,11 +1,11 @@
 {
- "ok": false,
+ "ok": true,
  "slate_date": "2026-11-19",
- "started_at": "2026-11-19T22:30:01-05:00",
- "status_at": "2026-11-19T22:30:01-05:00",
- "finished_at": "2026-11-19T22:30:05-05:00",
- "last_ok_at": "2026-11-19T21:41:57-05:00",
- "failed_step": "stats",
+ "started_at": "2026-11-19T22:32:18-05:00",
+ "status_at": "2026-11-19T22:32:18-05:00",
+ "finished_at": "2026-11-19T22:32:21-05:00",
+ "last_ok_at": "2026-11-19T22:32:18-05:00",
+ "failed_step": null,
  "steps": [
   {
    "step": "rules",
@@ -19,8 +19,8 @@
   },
   {
    "step": "stats",
-   "status": "failed",
-   "note": "NHL stats did not answer for 1 window(s)"
+   "status": "skipped",
+   "note": "waiting to retry"
   },
   {
    "step": "lineups",
@@ -70,17 +70,17 @@
   {
    "step": "live",
    "status": "ok",
-   "note": "6 game(s), 6 read this run"
+   "note": "6 game(s), 5 read this run"
   },
   {
    "step": "shadow",
    "status": "ok",
-   "note": "74 graded"
+   "note": "34 graded"
   },
   {
    "step": "gg_grade",
    "status": "ok",
-   "note": "gap+guard: 1 grade"
+   "note": "gap+guard: nothing new"
   },
   {
    "step": "slate",
@@ -161,16 +161,14 @@
  "lineups_at": "2026-11-19T21:40:02-05:00",
  "lineups_note": "Lineups posted for 15 of 24 teams checked so far.",
  "games_today": 12,
- "record_events": 350,
- "odds_notes": [
-  "key 1 refused (401)"
- ],
+ "record_events": 351,
+ "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "44662551331",
-  "iteration": 6,
-  "chain_link": 46,
+  "run_id": "44668313674",
+  "iteration": 1,
+  "chain_link": 47,
   "chain_started_at": "2026-11-18T10:00:22-05:00",
-  "run_started_at": "2026-11-19T21:41:19-05:00"
+  "run_started_at": "2026-11-19T22:31:48-05:00"
  }
 }
