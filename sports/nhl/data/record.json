@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T19:20:00-05:00",
+ "generated_at": "2026-11-19T19:30:01-05:00",
  "summary": {
   "headline": {
    "w": 60,
@@ -243,7 +243,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 5,
+    "n": 8,
     "graded": false
    },
    {
@@ -563,6 +563,29 @@
      "legs": []
     },
     {
+     "id": "2026-11-19:2026020356:8475754:shots:1.5:over",
+     "kind": "single",
+     "player": "B. Nelson",
+     "bet": "Over 1.5 shots on goal",
+     "market": "shots",
+     "team": "COL",
+     "game": "ANA at COL",
+     "price": 105,
+     "first_price": 105,
+     "last_price": 105,
+     "prices": [
+      {
+       "price": 105,
+       "at": "2026-11-19T19:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
      "id": "2026-11-19:2026020350:8477402:shots:1.5:under",
      "kind": "single",
      "player": "P. Buchnevich",
@@ -609,6 +632,29 @@
      "legs": []
     },
     {
+     "id": "2026-11-19:2026020356:8477476:points:0.5:over",
+     "kind": "single",
+     "player": "A. Lehkonen",
+     "bet": "Over 0.5 points",
+     "market": "points",
+     "team": "COL",
+     "game": "ANA at COL",
+     "price": -125,
+     "first_price": -125,
+     "last_price": -125,
+     "prices": [
+      {
+       "price": -125,
+       "at": "2026-11-19T19:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
      "id": "2026-11-19:2026020353:8482720:points:0.5:over",
      "kind": "single",
      "player": "M. Knies",
@@ -623,6 +669,29 @@
       {
        "price": -110,
        "at": "2026-11-19T18:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-19:2026020356:8480039:points:1.5:over",
+     "kind": "single",
+     "player": "M. Necas",
+     "bet": "Over 1.5 points",
+     "market": "points",
+     "team": "COL",
+     "game": "ANA at COL",
+     "price": 180,
+     "first_price": 180,
+     "last_price": 180,
+     "prices": [
+      {
+       "price": 180,
+       "at": "2026-11-19T19:30:01-05:00"
       }
      ],
      "result": null,

@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-19",
- "generated_at": "2026-11-19T19:20:00-05:00",
+ "generated_at": "2026-11-19T19:30:01-05:00",
  "games": [
   {
    "game_id": 2026020350,
@@ -8,20 +8,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "11:54",
+   "clock": "08:30",
    "in_intermission": false,
    "running": true,
    "away": {
     "abbrev": "STL",
     "score": 0,
-    "sog": 1
+    "sog": 2
    },
    "home": {
     "abbrev": "PIT",
     "score": 1,
     "sog": 5
    },
-   "updated_at": "2026-11-19T19:20:00-05:00"
+   "updated_at": "2026-11-19T19:30:01-05:00"
   },
   {
    "game_id": 2026020354,
@@ -29,27 +29,27 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "13:59",
+   "clock": "09:18",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "NYI",
-    "score": 1,
-    "sog": 5
+    "score": 2,
+    "sog": 6
    },
    "home": {
     "abbrev": "WPG",
     "score": 1,
-    "sog": 2
+    "sog": 3
    },
-   "updated_at": "2026-11-19T19:20:00-05:00"
+   "updated_at": "2026-11-19T19:30:01-05:00"
   }
  ],
  "picks": {
   "2026-11-19:2026020350:8477402:shots:1.5:under": {
    "game_id": 2026020350,
    "market": "shots",
-   "stat": 0
+   "stat": 1
   },
   "2026-11-19:2026020354:8485388:points:0.5:over": {
    "game_id": 2026020354,
