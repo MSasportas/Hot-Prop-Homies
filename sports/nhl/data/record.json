@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T20:00:00-05:00",
+ "generated_at": "2026-11-19T20:20:01-05:00",
  "summary": {
   "headline": {
    "w": 60,
@@ -243,7 +243,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 8,
+    "n": 9,
     "graded": false
    },
    {
@@ -582,6 +582,32 @@
      "result": null,
      "actual": null,
      "units": null,
+     "pulled": {
+      "at": "2026-11-19T20:20:01-05:00",
+      "reason": "Hard Rock moved it to -130"
+     },
+     "legs": []
+    },
+    {
+     "id": "2026-11-19:2026020356:8478038:shots:1.5:under",
+     "kind": "single",
+     "player": "D. Toews",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "COL",
+     "game": "ANA at COL",
+     "price": 120,
+     "first_price": 120,
+     "last_price": 120,
+     "prices": [
+      {
+       "price": 120,
+       "at": "2026-11-19T20:20:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
      "pulled": null,
      "legs": []
     },
@@ -651,7 +677,10 @@
      "result": null,
      "actual": null,
      "units": null,
-     "pulled": null,
+     "pulled": {
+      "at": "2026-11-19T20:20:01-05:00",
+      "reason": "Hard Rock moved it to -145"
+     },
      "legs": []
     },
     {
@@ -697,7 +726,10 @@
      "result": null,
      "actual": null,
      "units": null,
-     "pulled": null,
+     "pulled": {
+      "at": "2026-11-19T20:20:01-05:00",
+      "reason": "Hard Rock moved it to +150"
+     },
      "legs": []
     }
    ]
