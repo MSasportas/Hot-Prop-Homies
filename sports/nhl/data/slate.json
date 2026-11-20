@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-19",
- "generated_at": "2026-11-20T02:10:01-05:00",
- "status_at": "2026-11-20T02:10:01-05:00",
+ "generated_at": "2026-11-20T02:20:01-05:00",
+ "status_at": "2026-11-20T02:20:01-05:00",
  "valid_until": "2026-11-20T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": false,
-   "at": "2026-11-20T02:10:01-05:00",
+   "at": "2026-11-20T02:20:01-05:00",
    "failed_step": "stats"
   },
   "pool": {
@@ -34,7 +34,7 @@
  "banners": [
   {
    "level": "warn",
-   "text": "Part of the last update failed at 2:10 AM (stats). Some of what is below may be older."
+   "text": "Part of the last update failed at 2:20 AM (stats). Some of what is below may be older."
   }
  ],
  "empty": {
