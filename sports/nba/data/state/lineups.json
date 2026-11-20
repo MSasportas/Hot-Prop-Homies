@@ -20,15 +20,15 @@
   "ATL": {
    "state": "expected",
    "starters": [
-    "Kingston Flemings",
     "Nickeil Alexander-Walker",
     "Dyson Daniels",
+    "Aaron Wiggins",
     "Jalen Johnson",
     "Onyeka Okongwu"
    ],
    "status": {
-    "Kingston Flemings": "questionable",
     "Henri Veesaar": "out",
+    "Kingston Flemings": "out",
     "Mouhamed Gueye": "out",
     "Jock Landale": "out",
     "CJ McCollum": "out",
@@ -284,5 +284,5 @@
    }
   }
  },
- "at": "2026-11-20T17:12:23-05:00"
+ "at": "2026-11-20T17:20:00-05:00"
 }
