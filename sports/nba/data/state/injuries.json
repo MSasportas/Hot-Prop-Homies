@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T21:20:01-05:00",
+ "at": "2026-11-19T23:00:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -393,19 +393,19 @@
    "date": "2026-11-19T14:45Z",
    "note": "Gardner (hamstring) is out for Wednesday's game against the Bucks."
   },
-  "3134907": {
-   "status": "out",
-   "name": "Kyle Kuzma",
-   "team": "MIL",
-   "date": "2026-11-19T19:20Z",
-   "note": "Kuzma (shoulder) has been ruled out for Thursday's game against Portland due to a right shoulder contusion."
-  },
   "3133628": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Myles Turner",
    "team": "MIL",
-   "date": "2026-11-19T19:15Z",
+   "date": "2026-11-20T03:55Z",
    "note": "Turner (shoulder) has been ruled out for Thursday's game against Portland due to a left shoulder contusion,"
+  },
+  "3134907": {
+   "status": "day-to-day",
+   "name": "Kyle Kuzma",
+   "team": "MIL",
+   "date": "2026-11-20T03:55Z",
+   "note": "Kuzma (shoulder) has been ruled out for Thursday's game against Portland due to a right shoulder contusion."
   },
   "4997526": {
    "status": "out",
