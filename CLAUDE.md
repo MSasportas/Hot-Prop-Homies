@@ -18,7 +18,7 @@ Both run via GitHub Actions, pulling odds, generating picks, and posting to Disc
 | Dwyane Wade (NBA Sharp) | `.claude/agents/nba-sharp.md` | Developer | NBA picks, rules, edge |
 | Data Scientist | `.claude/agents/data-scientist.md` | DevOps | Both records, model, samples |
 | QA Team | `.claude/agents/qa.md` | QA | Pre-ship sign-off, 380px |
-| Researcher | `.claude/agents/researcher.md` | Researcher | Edge discovery, research/ only |
+| Researcher | `.claude/agents/researcher.md` | Researcher | Edge discovery; writes research/ and config/lab.json entries, code goes via Engineer |
 | UX Expert | `.claude/agents/ux-expert.md` | Designer | Both pages, phone UX (specs only) |
 | Engineer | `.claude/agents/engineer.md` | Engineer | All code, commits, pushes |
 
