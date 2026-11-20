@@ -241,36 +241,5 @@ class LabConfig(unittest.TestCase):
         self.assertEqual(doc["tests"][1]["need"], 150)
 
 
-class Page(unittest.TestCase):
-    """The page itself: Hard Rock only, bundled fonts, light Ballpark theme, six rail tabs."""
-
-    def setUp(self):
-        self.html = open(os.path.join(ROOT, "index.html"), encoding="utf-8").read()
-
-    def test_shape(self):
-        h = self.html
-        self.assertNotIn("fonts.googleapis", h)
-        self.assertNotIn("prefers-color-scheme", h)
-        self.assertNotIn("sportsbook.draftkings.com", h)
-        self.assertIn("<title>HPH · NBA</title>", h)
-        self.assertIn('content="#090812"', h)
-        for c in ("#090812", "#1A163A", "#F0EDF8", "#E8187A", "#17E9FF"):   # HPH Flame Night
-            self.assertIn(c, h)
-        for v in ("'picks', 'Picks'", "'live', 'Live'", "'games', 'Games'", "'record', 'Record'", "'lab', 'Lab'", "'info', 'Info'"):
-            self.assertIn(v, h)
-        self.assertIn("1-800-GAMBLER", h)
-        for f in ("graduate-400", "ibm-plex-sans-400", "ibm-plex-sans-500", "ibm-plex-sans-600", "ibm-plex-sans-700",
-                  "ibm-plex-mono-500", "ibm-plex-mono-600"):
-            self.assertTrue(os.path.exists(os.path.join(ROOT, "fonts", f + ".woff2")), f)
-        self.assertTrue(os.path.exists(os.path.join(ROOT, "fonts", "README.txt")))
-
-    def test_every_fixture_has_a_slate(self):
-        fx = os.path.join(ROOT, "fixtures")
-        for d in os.listdir(fx):
-            if os.path.isdir(os.path.join(fx, d)):
-                s = json.load(open(os.path.join(fx, d, "slate.json")))
-                self.assertIn("picks", s, d)
-
-
 if __name__ == "__main__":
     unittest.main()

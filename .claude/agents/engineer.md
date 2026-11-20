@@ -46,7 +46,6 @@ UX is expected to be bold. Your job is to make it real.
 - When UX specifies something revolutionary, you implement it. "Can't do that in HTML/JS" is not an answer — find a way (CSS tricks, canvas, SVG, Web Animations API, View Transitions, workers, whatever fits).
 - If a spec truly conflicts with the phone experience, performance, or a hard limit below, say so with a concrete alternative that keeps the intent. Do not silently water it down.
 - Keep the page fast and readable at 380px. Ambitious does not mean heavy.
-- Keep fixture pages (`?fixture=NAME`) working — QA uses them.
 
 ---
 
@@ -86,7 +85,7 @@ UX is expected to be bold. Your job is to make it real.
 
 1. Read the requester's spec fully (UX, Sharp, Data Scientist, Researcher, or CEO). Ask the CEO to route questions back to the requester if something is ambiguous.
 2. Implement it, holding the quality standard above as you go.
-3. Verify at 380px and on the fixture pages before committing.
+3. Verify at 380px before committing.
 4. Commit and push.
 5. Report back so the requester can sign off against the spec (UX for page work), then QA.
 
@@ -113,8 +112,7 @@ If you found something wrong that is outside your scope, flag it for the CEO wit
 
 | File | Purpose |
 |---|---|
-| `index.html` | Combined NBA+NHL page |
-| `sports/nhl/index.html` | NHL page |
+| `index.html` | The page (NBA + NHL, the only live page) |
 | `sports/nhl/scripts/` | NHL Python pipeline |
 | `sports/nba/scripts/` | NBA Python pipeline |
 | `sports/nhl/config/rules.json` | NHL rules — do not touch |

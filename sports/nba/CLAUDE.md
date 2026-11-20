@@ -45,7 +45,7 @@ A CEO agent owns the product end to end and runs subagents: Sharp (betting stand
 
 ## Page
 
-- Dark mode is not the current spec. Match NHL's Nov 4 redesign: Ballpark light theme, side-rail tabs Picks / Live / Games / Record / Lab / Info. (Earlier notes said dark mode; the Nov 4 note supersedes. Verify.)
+- The only page is the root `index.html` (Hot Prop Homies). `sports/nba/` has no page of its own; the old standalone page is retired.
 - Phone width. Readable in seconds.
 - No DraftKings link on the page. No Hard Rock bet link on the page or in Discord picks.
 - Picks tab: each pick shows its Hard Rock or DraftKings number, a short plain reason, and how settled it is (early, lineup or availability confirmed, as the NBA equivalent of goalie confirmed).

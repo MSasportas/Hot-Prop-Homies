@@ -15,7 +15,7 @@ fills the Hard Rock slip and a "DraftKings -110" button (DK's own price), on the
 the NEWEST odds read (`includeLinks=true` on B/C/D reads, same credits; links kept for Hard Rock and DraftKings only). Hard Rock: the
 feed's `app.hardrock.bet/?deep_link_value=betslip/<id>` only opens the app, so we build `share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/<id>`
 (NHL, tested on Matt's phone). No link from the feed = no button; a full URL is never shown. Code: `odds.bet_links`, `run.publish`
-(`links`), `notify.bet_buttons`, `index.html` `betRow`. DraftKings is untested on a phone: Matt taps the first one.
+(`links`), `notify.bet_buttons`, root `index.html` `betRow`. DraftKings is untested on a phone: Matt taps the first one.
 
 **Customer facts (fixed; locked in the setup interview 2026-10-25, Matt):**
 | Fact | Locked value |
@@ -149,10 +149,10 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
   2026-11-01 all 12 reads (4 games x B/C/D): Hard Rock all 4 markets, all 9 other books all 4 markets on every read (BetMGM complete).
   2026-11-02 all 45 reads (15 games x B/C/D): Hard Rock all 4 markets, all 9 other books all 4 markets on every read.
   2026-11-04 A read (first under v2.4 spare credits, 14 games x 4 = 56 credits): Hard Rock all 4 markets on 14/14; all 9 other books all 4 markets except BetMGM (absent MIL@BOS).
-- **Page (2026-11-04):** `index.html` (Ballpark, fonts bundled in fonts/, no outside font calls). Extra data it reads:
+- **Page:** the root `index.html` is the only page (the standalone `sports/nba/index.html` was retired). Extra data it reads:
   `data/headshots.json` (ESPN pid -> a.espncdn.com photo, merged on each fresh roster read), `record.json` `summary.cuts`/`summary.days`
   (views only), `config/lab.json` (Lab entries). Slate adds `pulled.code/status` (status Out = scratch, hidden), `added_at` (NEW label),
-  `games[].injury_clear`, `next_check_read`, `status.feeds`. Fixtures: `fixtures/make_fixtures.py`, open `?fixture=<name>`.
+  `games[].injury_clear`, `next_check_read`, `status.feeds`.
 - **Live tab = in-browser polling (Matt, 2026-11-04 11:12 PM; replaced the timer's `live` step / data/live.json, which fed nothing else).**
   While Live is the open tab and the page is visible, the phone itself reads every 10 s: ESPN scoreboard
   (`site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=YYYYMMDD`) + one `summary?event=<id>` per started game with an
@@ -161,8 +161,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
   scoreboard/todaysScoreboard_00.json` + `boxscore/boxscore_<gameId>.json` (teams by tricode map, players by normalized name). Both fail ->
   "Live scores unavailable", scores/clocks/stats hidden (never old scores as live). Pauses when hidden or on another tab, polls at once on
   return, stops when no game with a pick is in progress (one wake-up at the next tip). "Updated Xs ago" on the tab. No relay needed:
-  ESPN answers browsers directly (CORS check below). Fixtures `liveon`, `liveespnfail`, `liveallfail`, `livedone`, `livepre` read
-  `fixtures/<name>/feeds/`; `?feed=espnfail|allfail` forces the backup / failure. `data/live.json` is a leftover: nothing writes or reads it.
+  ESPN answers browsers directly (CORS check below). `?feed=espnfail|allfail` forces the backup / failure (fixture mode). `data/live.json` is a leftover: nothing writes or reads it.
   **CORS check (2026-11-04, from GitHub's servers, Origin https://msasportas.github.io):** ESPN scoreboard + summary GET ->
   `access-control-allow-origin: *`, cache max-age 7-10 s; OPTIONS preflight -> 403 (so the page sends simple GETs only, no custom
   headers). cdn.nba.com -> 403 to GitHub's servers (browser CORS unknown). **Live-game browser check (11:55 PM, `probe/qa_live.py`, workflow
@@ -220,7 +219,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 9. **Headshots are ESPN's, not NBA's (2026-11-04).** Runner probe (probe/live_probe.py): cdn.nba.com JSON and nba.com 403,
    stats.nba.com times out, so no free reachable source maps ESPN ids to NBA person ids. ESPN's roster JSON carries an official
    a.espncdn.com photo keyed by the same ESPN id we use. Live box scores use ESPN for the same reason.
-10. **DraftKings is hidden on the page by a text filter** (`noDK` in index.html): the slate still carries DraftKings links/clauses for
+10. **DraftKings is hidden on the page by a text filter** (`noDK` in the root `index.html`): the slate still carries DraftKings links/clauses for
    Discord. If the engine's reason wording changes, re-check the page.
 11. **Lab's only entry (Pinnacle judge) is 13-16 -2.94u live** (passed its Oct 25-27 discovery). Shown honestly; remove it if the
    Sharp drops the track.

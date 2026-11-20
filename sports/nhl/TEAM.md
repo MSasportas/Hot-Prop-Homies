@@ -187,7 +187,7 @@ probability x Hard Rock decimal payout - 1, on unrounded numbers; every threshol
   market with the books count and market fair, "Model agrees · We say X% · price needs Y%", the settled chip (Early / Lineup
   confirmed / Goalie confirmed, or Locked) and time to puck. Empty state: "No picks yet today" plus the next read time and
   the real reason ("108 lines read, none cleared both checks."). Stale and low-credit warnings unchanged. The paper section, the
-  paused banner and the goal-watch list are gone. One rules sheet (the 9 lines in `RULES` in index.html), numbers from rules.json.
+  paused banner and the goal-watch list are gone. One rules sheet (the 9 lines in `RULES`; that page was the retired `sports/nhl/index.html`), numbers from rules.json.
 - **Discord (v3.0, replaces the older Discord and PAPER wording in this section):** cycle, 8 blocks then "+N more"; each pick once), PULLED (only picks already notified, before puck), ACTION NEEDED (keys refused, pool low/empty, once per ET day each), a one-time hello. NEW PICK block = bold bet line `**P. Name OVER 1.5 shots +100**`, `CAR @ PHI · 7:00 PM ET · ⏳ Early` (or `✅ Lineup confirmed`), `Gap +5.7% vs market, we say 53%, price needs 50%`; footer "Bet only at this price or better. If Hard Rock shows worse, skip it." and the link last, never cut. Never: no-pick nights, heartbeats, grading, errors, vetoes. Quiet 12:30-8:00 AM ET (held items go out at 8 if still ahead). Max 6 messages per ET day. Delete "parlays included", "Why:" and "Bet only at these prices or better". State `notified.json` keys: picks, pulled, sent, action, hello.
 - **Pull advice + Price final (v3.2, 2026-10-21):** `paper.at_your_price()` adds `now_price`, `yours_ev`, `yours_gap_ev`, `yours_pin_ev`
   (at the FROZEN price, on the pulling read) to research-log pull events; `engine.advice()` writes the Record `pulled` event's `reason`
@@ -195,13 +195,13 @@ probability x Hard Rock decimal payout - 1, on unrounded numbers; every threshol
   Discord: PULLED lists each with its `if_bet` line ("Don't bet these now"); ✅ PRICE FINAL once per told pick; a pick first shown at
   the last read says "✅ Price final" in its NEW block. **Max 12 messages per ET day; FINAL pings only while < 9 sent** (replaces the 6/day
   wording above). `notified.json` gains `final`.
-- Tests: `python -m unittest discover -s tests`, 394 tests (2026-11-04) (`tests/test_live_picks.py` end to end; `tests/test_paper.py` research-log maths; `tests/fixtures/paper_oct19/` = real Oct 19 reads). Fixtures: `python3 fixtures/make_fixtures.py`.
+- Tests: `python -m unittest discover -s tests`, 394 tests (2026-11-04) (`tests/test_live_picks.py` end to end; `tests/test_paper.py` research-log maths; `tests/fixtures/paper_oct19/` = real Oct 19 reads).
 
-- **Files:** `index.html` (page; reads `data/slate.json`, `data/record.json`, `data/rules.json`), `data/odds/<date>.json`
+- **Files:** the root `index.html` (the only page; reads `data/slate.json`, `data/record.json`, `data/rules.json`), `data/odds/<date>.json`
   (every price pulled: Hard Rock in `markets`, 9 other books in `others`; ~10x bigger: ~1.5 MB on a 16-game night, ~2.5-3 MB
   with C on every game, ~250 MB a season in the working tree; git-compressed ~60 KB/day. Gzip/rotate old days before ~Dec:
   Pages' 1 GB site limit and full-history checkout), `data/shadow/` (shadow log), `data/state/` (stats store, schedule,
-  credits ledger, lineup history, market menu), `fixtures/` (QA pages: `?fixture=NAME`, `?now=ISO`), `tests/`
+  credits ledger, lineup history, market menu), `tests/`
   (`python -m unittest discover -s tests`, 282 tests; `tests/replay_day.py` replays a day).
 - **Debug:** `python scripts/run.py --explain` shows why each line did or didn't qualify. Test env vars: `PC_NOW`,
   `PC_DATA_DIR`, `PC_ODDS_FIXTURE_DIR`, `PC_LINEUP_FIXTURE_DIR`, `PC_NHL_FIXTURE_DIR`. Never test against the live data/.

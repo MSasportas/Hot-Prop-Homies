@@ -125,7 +125,7 @@ class TimerHasNoLiveStep(unittest.TestCase):
 
 class Page(unittest.TestCase):
     def setUp(self):
-        self.html = open(os.path.join(ROOT, "index.html"), encoding="utf-8").read()
+        self.html = open(os.path.join(ROOT, "..", "..", "index.html"), encoding="utf-8").read()
 
     def test_live_reads_the_feeds_not_live_json(self):
         h = self.html
@@ -150,15 +150,6 @@ class Page(unittest.TestCase):
               "counted({rule:'pin_solo',ev_vs_pin:-0.01}), counted({rule:'pin_solo',ev_vs_pin:0.01})]))")
         out = subprocess.run(["node", "-e", js], capture_output=True, text=True, timeout=30)
         self.assertEqual(json.loads(out.stdout), [True, True, True, False, False, True], out.stderr)
-
-    def test_fixtures_have_the_live_feeds(self):
-        fx = os.path.join(ROOT, "fixtures")
-        for name in ("liveon", "liveespnfail", "livedone", "livepre"):
-            for f in ("espn_scoreboard.json", "nba_scoreboard.json"):
-                self.assertTrue(os.path.exists(os.path.join(fx, name, "feeds", f)), (name, f))
-        sl = json.load(open(os.path.join(fx, "liveon", "slate.json")))
-        codes = {p["player"]: (p["pulled"] or {}).get("code") for p in sl["picks"]}
-        self.assertEqual((codes["Josh Hart"], codes["Franz Wagner"]), ("line_gone", "out"))   # Live shows Hart, never Wagner
 
 
 if __name__ == "__main__":
