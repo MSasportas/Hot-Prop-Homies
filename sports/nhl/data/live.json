@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-19",
- "generated_at": "2026-11-19T23:20:01-05:00",
+ "generated_at": "2026-11-19T23:21:34-05:00",
  "games": [
   {
    "game_id": 2026020350,
@@ -92,9 +92,9 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "09:02",
+   "clock": "08:57",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "ANA",
     "score": 0,
@@ -105,7 +105,7 @@
     "score": 4,
     "sog": 25
    },
-   "updated_at": "2026-11-19T23:20:01-05:00"
+   "updated_at": "2026-11-19T23:21:34-05:00"
   },
   {
    "game_id": 2026020358,
@@ -126,7 +126,7 @@
     "score": 2,
     "sog": 18
    },
-   "updated_at": "2026-11-19T23:20:01-05:00"
+   "updated_at": "2026-11-19T23:21:34-05:00"
   }
  ],
  "picks": {
