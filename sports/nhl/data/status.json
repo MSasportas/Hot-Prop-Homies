@@ -1,11 +1,11 @@
 {
- "ok": false,
+ "ok": true,
  "slate_date": "2026-11-20",
- "started_at": "2026-11-20T13:20:00-05:00",
- "status_at": "2026-11-20T13:20:00-05:00",
- "finished_at": "2026-11-20T13:20:02-05:00",
- "last_ok_at": "2026-11-20T13:10:00-05:00",
- "failed_step": "stats",
+ "started_at": "2026-11-20T13:31:52-05:00",
+ "status_at": "2026-11-20T13:31:52-05:00",
+ "finished_at": "2026-11-20T13:31:52-05:00",
+ "last_ok_at": "2026-11-20T13:31:52-05:00",
+ "failed_step": null,
  "steps": [
   {
    "step": "rules",
@@ -19,8 +19,8 @@
   },
   {
    "step": "stats",
-   "status": "failed",
-   "note": "NHL stats did not answer for 1 window(s)"
+   "status": "skipped",
+   "note": "waiting to retry"
   },
   {
    "step": "lineups",
@@ -158,10 +158,10 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "44785922019",
-  "iteration": 5,
-  "chain_link": 69,
+  "run_id": "44793552106",
+  "iteration": 1,
+  "chain_link": 70,
   "chain_started_at": "2026-11-18T10:00:22-05:00",
-  "run_started_at": "2026-11-20T12:43:03-05:00"
+  "run_started_at": "2026-11-20T13:31:33-05:00"
  }
 }
