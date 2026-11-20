@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-19",
- "generated_at": "2026-11-20T01:50:00-05:00",
- "status_at": "2026-11-20T01:50:00-05:00",
+ "generated_at": "2026-11-20T01:51:40-05:00",
+ "status_at": "2026-11-20T01:51:40-05:00",
  "valid_until": "2026-11-20T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -15,9 +15,9 @@
   "lineups_state": "ok",
   "stats_state": "ok",
   "last_run": {
-   "ok": false,
-   "at": "2026-11-20T01:50:00-05:00",
-   "failed_step": "stats"
+   "ok": true,
+   "at": "2026-11-20T01:51:40-05:00",
+   "failed_step": null
   },
   "pool": {
    "pulls_left": 2671,
@@ -31,12 +31,7 @@
   "flag_reads": 12,
   "tier": 4
  },
- "banners": [
-  {
-   "level": "warn",
-   "text": "Part of the last update failed at 1:50 AM (stats). Some of what is below may be older."
-  }
- ],
+ "banners": [],
  "empty": {
   "code": "all_started",
   "text": "Every game has started.",

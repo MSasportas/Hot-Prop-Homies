@@ -1,11 +1,11 @@
 {
- "ok": false,
+ "ok": true,
  "slate_date": "2026-11-19",
- "started_at": "2026-11-20T01:50:00-05:00",
- "status_at": "2026-11-20T01:50:00-05:00",
- "finished_at": "2026-11-20T01:50:02-05:00",
- "last_ok_at": "2026-11-20T01:40:00-05:00",
- "failed_step": "stats",
+ "started_at": "2026-11-20T01:51:40-05:00",
+ "status_at": "2026-11-20T01:51:40-05:00",
+ "finished_at": "2026-11-20T01:51:41-05:00",
+ "last_ok_at": "2026-11-20T01:51:40-05:00",
+ "failed_step": null,
  "steps": [
   {
    "step": "rules",
@@ -19,8 +19,8 @@
   },
   {
    "step": "stats",
-   "status": "failed",
-   "note": "NHL stats did not answer for 1 window(s)"
+   "status": "skipped",
+   "note": "waiting to retry"
   },
   {
    "step": "lineups",
@@ -162,15 +162,13 @@
  "lineups_note": "Lineups posted for 15 of 24 teams checked so far.",
  "games_today": 12,
  "record_events": 359,
- "odds_notes": [
-  "key 1 refused (401)"
- ],
+ "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "44684840487",
-  "iteration": 6,
-  "chain_link": 50,
+  "run_id": "44690719210",
+  "iteration": 1,
+  "chain_link": 51,
   "chain_started_at": "2026-11-18T10:00:22-05:00",
-  "run_started_at": "2026-11-20T01:01:19-05:00"
+  "run_started_at": "2026-11-20T01:51:13-05:00"
  }
 }
