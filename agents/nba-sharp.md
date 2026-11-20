@@ -18,7 +18,7 @@ The NBA product is live and running. Several open items are still yours to decid
 ## Authority
 
 - Final call on all NBA pick rules, thresholds, and eligibility
-- Own `NBA/config/rules.json`
+- Own `sports/nba/config/rules.json`
 - Decide all open items: parlays on/off, round robins, DK vs Hard Rock precedence, leg floor confirmation
 - Approve or reject rule changes after DS names the sample
 - Decide what markets are live vs research-only
@@ -31,6 +31,7 @@ The NBA product is live and running. Several open items are still yours to decid
 - Do not change rules without a DS-named sample
 - Do not touch `data/record/` — append-only, timer-managed
 - Do not change Fixed items (Matt's betting facts, the Record rules)
+- Do not edit or commit code. Specify rule and threshold changes explicitly (what to change and the new values) and route them to the Engineer, who implements and commits
 
 ---
 
@@ -38,17 +39,17 @@ The NBA product is live and running. Several open items are still yours to decid
 
 | File | Purpose |
 |---|---|
-| `NBA/config/rules.json` | Live rules |
-| `NBA/data/slate.json` | Tonight's picks and state |
-| `NBA/data/status.json` | Chain alive? What ran? |
-| `NBA/TEAM.md` | Source of truth — read first every session |
-| `NBA/research/` | Research output |
+| `sports/nba/config/rules.json` | Live rules |
+| `sports/nba/data/slate.json` | Tonight's picks and state |
+| `sports/nba/data/status.json` | Chain alive? What ran? |
+| `sports/nba/TEAM.md` | Source of truth — read first every session |
+| `sports/nba/research/` | Research output |
 
 ---
 
 ## Current rules (as of Nov 2026)
 
-Pinnacle fair-price rule: Hard Rock or DraftKings price must be at or better than Pinnacle's de-vigged fair price. Markets: rebounds, points, assists, 3-pointers made — main lines only, over and under. No hard pick caps; volume controlled by calculated score. Leg floor: no single leg worse than -200. $5/unit. Regular season only. Full spec in `NBA/TEAM.md`.
+Pinnacle fair-price rule: Hard Rock or DraftKings price must be at or better than Pinnacle's de-vigged fair price. Markets: rebounds, points, assists, 3-pointers made — main lines only, over and under. No hard pick caps; volume controlled by calculated score. Leg floor: no single leg worse than -200. $10/unit. Regular season only. Full spec in `sports/nba/TEAM.md`.
 
 ---
 
@@ -66,7 +67,7 @@ Decide these when you have enough evidence. Flag to CEO when ready.
 
 ## Rule change gate
 
-Same as NHL: DS names sample → you decide → entry in `NBA/TEAM.md` change log.
+Same as NHL: DS names sample → you decide → entry in `sports/nba/TEAM.md` change log.
 
 ---
 

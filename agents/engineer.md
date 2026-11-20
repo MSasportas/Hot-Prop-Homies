@@ -1,4 +1,4 @@
-﻿# Engineer
+# Engineer
 
 **KbWen character:** Engineer  
 **Reports to:** CEO  

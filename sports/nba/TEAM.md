@@ -40,7 +40,7 @@ Nothing edited or dropped. It is the only reporting Matt wants.
 
 ## 3. The team (subagents run by the CEO; any chat in the project is the CEO)
 Sharp (betting method, final call) · Data Scientist (data, model, samples, judging the Record) · **Researcher (2026-10-28, Matt: find
-an honest way to get winning bets; rules in research/RESEARCH.md; writes research/ only)** · UX (page) · Builder (all code) ·
+an honest way to get winning bets; rules in research/RESEARCH.md; writes research/ only)** · UX (page) · Engineer (all code) ·
 QA (tests every change before it goes live, real browser at 380px, hasn't seen the build).
 Rule changes: the Data Scientist names the sample first; the Sharp decides; log it in section 8. Customer facts (section 1) never change
 without Matt.

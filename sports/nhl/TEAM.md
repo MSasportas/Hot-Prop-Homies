@@ -25,7 +25,7 @@ short message.
 
 ## 3. The team (subagents run by the CEO; any chat in the project is the CEO)
 Sharp (betting method, final call) · Data Scientist (data, model, samples, judging the Record) · **Researcher (new 2026-10-19: tests new hypotheses every day to find an edge; rules in research/RESEARCH.md; writes research/ only)** · UX (page) ·
-Builder (all code) · QA (tests every change before it goes live, real browser at 380px, hasn't seen the build).
+Engineer (all code) · QA (tests every change before it goes live, real browser at 380px, hasn't seen the build).
 Rule changes: the Data Scientist names the sample first; the Sharp decides; log it in section 8.
 
 ## 4. Current rules (v3.5, 2026-11-09: model must reach break-even; v3.4, 2026-11-03: no plus-money cap; first slate 2026-10-20). Source of truth: `config/rules.json` (`ops.gap_guard`)

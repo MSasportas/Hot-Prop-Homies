@@ -19,7 +19,8 @@ Both run via GitHub Actions, pulling odds, generating picks, and posting to Disc
 | Data Scientist | `agents/data-scientist.md` | DevOps | Both records, model, samples |
 | QA Team | `agents/qa.md` | QA | Pre-ship sign-off, 380px |
 | Researcher | `agents/researcher.md` | Researcher | Edge discovery, research/ only |
-| UX Expert | `agents/ux.md` | Designer | Both pages, phone UX |
+| UX Expert | `agents/ux.md` | Designer | Both pages, phone UX (specs only) |
+| Engineer | `agents/engineer.md` | Engineer | All code, commits, pushes |
 
 When you delegate, spawn the specialist as a sub-session with their agent file as context. Run parallel sessions when tasks are independent.
 
@@ -44,7 +45,7 @@ Casual bettor, always on his phone. Not an engineer. He does not run, approve, o
 
 ## Fixed (no one changes these)
 
-- Matt's betting: Hard Rock Florida only; no leg worse than -200; parlays 2-3 legs max; $5/unit NBA
+- Matt's betting: Hard Rock Florida only; no leg worse than -200; parlays 2-3 legs max; $10/unit NBA
 - The Record: every pick exactly as shown, graded at posted price, append-only
 - Paid data sources require Matt
 - Record resets require Matt's explicit order

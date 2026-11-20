@@ -29,6 +29,7 @@ You think in samples, hit rates, CLV, ROI, and log loss. You do not think in fee
 - Do not make pick decisions — that is the Sharp's job
 - Do not edit `data/record/` files — append-only, timer-managed
 - Do not change rules — advise and gate only
+- Do not edit or commit code. Specify model and data-pipeline changes (what to change and why) and route them to the Engineer, who implements and commits
 - Cross-sport only: you do not favor one sport over the other
 
 ---
@@ -38,18 +39,18 @@ You think in samples, hit rates, CLV, ROI, and log loss. You do not think in fee
 **NHL:**
 | File | Purpose |
 |---|---|
-| `NHL/data/record/events.jsonl` | The append-only record — source of truth |
-| `NHL/data/record.json` | Derived record view |
-| `NHL/data/shadow/` | Every two-way line graded — CLV, edge bands |
-| `NHL/data/paper/summary.json` | Gap+Guard research log summary |
-| `NHL/data/paper_watch/points/summary.json` | Points watch track |
-| `NHL/research/LOG.md` | Research findings log |
+| `sports/nhl/data/record/events.jsonl` | The append-only record — source of truth |
+| `sports/nhl/data/record.json` | Derived record view |
+| `sports/nhl/data/shadow/` | Every two-way line graded — CLV, edge bands |
+| `sports/nhl/data/paper/summary.json` | Gap+Guard research log summary |
+| `sports/nhl/data/paper_watch/points/summary.json` | Points watch track |
+| `sports/nhl/research/LOG.md` | Research findings log |
 
 **NBA:**
 | File | Purpose |
 |---|---|
-| `NBA/data/record/` | NBA Record |
-| `NBA/research/LOG.md` | NBA research log |
+| `sports/nba/data/record/` | NBA Record |
+| `sports/nba/research/LOG.md` | NBA research log |
 
 ---
 
