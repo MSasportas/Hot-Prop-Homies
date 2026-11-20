@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 2244,
+   "pool_left": 2240,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-20T15:00:00-05:00",
-  "last_read_at": "2026-11-20T14:00:01-05:00",
+  "next_read_at": "2026-11-20T15:30:00-05:00",
+  "last_read_at": "2026-11-20T15:00:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-20T14:40:01-05:00"
+   "at": "2026-11-20T15:00:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -48,18 +48,22 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-20T13:00:01-05:00",
-   "picks": 0,
+   "read_at": "2026-11-20T15:00:00-05:00",
+   "picks": 1,
    "checks": [
     {
      "read": "X360",
      "at": "2026-11-20T13:00:01-05:00"
+    },
+    {
+     "read": "X240",
+     "at": "2026-11-20T15:00:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-20T13:00:01-05:00",
+   "last_check_at": "2026-11-20T15:00:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-20T15:00:00-05:00",
-   "next_check_read": "X240",
+   "next_check_at": "2026-11-20T16:00:00-05:00",
+   "next_check_read": "X180",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -286,6 +290,72 @@
  ],
  "picks": [
   {
+   "player": "Naz Reid",
+   "pid": "4396971",
+   "team": "CHA",
+   "opp": "ATL",
+   "home": false,
+   "game_id": "401909305",
+   "start": "2026-11-20T19:00:00-05:00",
+   "bet": "Over 18.5 points",
+   "market": "points",
+   "side": "over",
+   "line": 18.5,
+   "price": -120,
+   "price_at": "2026-11-20T15:00:00-05:00",
+   "read": "X240",
+   "p": 0.5504,
+   "p_pct": 55,
+   "breakeven": 0.5455,
+   "breakeven_pct": 55,
+   "market_fair": null,
+   "n_books": 8,
+   "gap_ev": null,
+   "final_ev": 0.0484,
+   "model_p": null,
+   "reason": "Pinnacle moved the over from -116 to -143 (50% to 55%). Hard Rock -120 is 0.9% better than Pinnacle's fair price; DraftKings -116 is 2.5% better than Pinnacle's fair price.",
+   "rule": "pin_solo",
+   "pin_before": 0.502,
+   "pin_after": 0.5504,
+   "pin_price_before": -116,
+   "pin_price_after": -143,
+   "others_move": 0.0071,
+   "n_others": 8,
+   "ev_vs_pin": 0.009,
+   "window": "360 \u2192 240 min",
+   "gap_vs_pin": 0.043,
+   "book": "hardrock",
+   "books": {
+    "draftkings": {
+     "ev_vs_pin": 0.0248,
+     "price": -116
+    },
+    "hardrock": {
+     "ev_vs_pin": 0.009,
+     "price": -120
+    }
+   },
+   "id": "2026-11-20:401909305:4396971:points:18.5:over",
+   "state": "clear",
+   "state_label": "Injury report clear",
+   "price_final": false,
+   "pulled": null,
+   "added_at": "2026-11-20T15:00:00-05:00",
+   "result": null,
+   "links": {
+    "hardrock": {
+     "id": "2260103568635855282",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/2260103568635855282",
+     "price": -120
+    },
+    "draftkings": {
+     "url": "https://sportsbook.draftkings.com/?outcomes=0QA390905561%232372938491_13L42648Q1935105358Q20",
+     "price": -116
+    }
+   },
+   "rank": 1
+  },
+  {
    "player": "Josh Giddey",
    "pid": "4871145",
    "team": "CHI",
@@ -349,7 +419,7 @@
      "price": 124
     }
    },
-   "rank": 1
+   "rank": 2
   },
   {
    "player": "Franz Wagner",
@@ -408,13 +478,13 @@
     },
     "draftkings": null
    },
-   "rank": 2
+   "rank": 3
   }
  ],
  "empty": null,
  "counts": {
   "lines_read": 836,
-  "passing": 4,
+  "passing": 6,
   "games": 9
  },
  "safety_paused": false,
@@ -424,6 +494,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-20T14:00:01-05:00",
- "status_at": "2026-11-20T14:40:01-05:00"
+ "generated_at": "2026-11-20T15:00:00-05:00",
+ "status_at": "2026-11-20T15:00:00-05:00"
 }
