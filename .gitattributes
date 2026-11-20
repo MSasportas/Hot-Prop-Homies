@@ -1,0 +1,2 @@
+# The Record is hash-checked byte for byte: never let a checkout rewrite its line endings
+sports/*/data/record/** text eol=lf
