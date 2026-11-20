@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-19",
- "started_at": "2026-11-19T20:40:00-05:00",
- "status_at": "2026-11-19T20:40:00-05:00",
- "finished_at": "2026-11-19T20:40:02-05:00",
- "last_ok_at": "2026-11-19T20:40:00-05:00",
+ "started_at": "2026-11-19T20:50:02-05:00",
+ "status_at": "2026-11-19T20:50:02-05:00",
+ "finished_at": "2026-11-19T20:50:04-05:00",
+ "last_ok_at": "2026-11-19T20:50:02-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -24,13 +24,13 @@
   },
   {
    "step": "lineups",
-   "status": "skipped",
-   "note": "checked in the last 20 minutes"
+   "status": "ok",
+   "note": "6 of 6 team pages read"
   },
   {
    "step": "lineup_history",
-   "status": "skipped",
-   "note": "no change"
+   "status": "ok",
+   "note": "2 team(s) changed"
   },
   {
    "step": "odds",
@@ -153,11 +153,12 @@
  "lineup_unmatched_names": [
   "Adam Beckman",
   "Elias Nils Pettersson",
-  "Elias Pettersson"
+  "Elias Pettersson",
+  "Stian Solberg"
  ],
  "excluded_teams": [],
  "stats_through": "2026-11-18",
- "lineups_at": "2026-11-19T20:20:01-05:00",
+ "lineups_at": "2026-11-19T20:50:02-05:00",
  "lineups_note": "Lineups posted for 15 of 24 teams checked so far.",
  "games_today": 12,
  "record_events": 347,
@@ -165,7 +166,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "44651062900",
-  "iteration": 5,
+  "iteration": 6,
   "chain_link": 44,
   "chain_started_at": "2026-11-18T10:00:22-05:00",
   "run_started_at": "2026-11-19T20:06:16-05:00"
