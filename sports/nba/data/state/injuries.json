@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T23:00:01-05:00",
+ "at": "2026-11-19T23:10:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -212,10 +212,10 @@
    "note": "Duren (hamstring) has begun on-court activity and will be re-evaluated in two weeks, Hunter Patterson of The Athletic reports."
   },
   "6589": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Draymond Green",
    "team": "GS",
-   "date": "2026-11-19T18:51Z",
+   "date": "2026-11-20T03:53Z",
    "note": "Green (elbow) is out for Thursday's game against the Grizzlies."
   },
   "4397040": {
@@ -344,19 +344,19 @@
    "date": "2026-11-20T01:05Z",
    "note": "Reaves (heel) is listed as out for Friday's game against the Kings."
   },
+  "4600663": {
+   "status": "day-to-day",
+   "name": "Zach Edey",
+   "team": "MEM",
+   "date": "2026-11-20T03:53Z",
+   "note": "Edey (hip) has been ruled out for Thursday's game against the Warriors."
+  },
   "2991070": {
    "status": "day-to-day",
    "name": "Jerami Grant",
    "team": "MEM",
    "date": "2026-11-20T02:08Z",
    "note": "Grant won't return to Thursday's game against the Warriors due to a left calf injury. He'll finish with three points (1-2 FG, 1-1 3Pt) across five minutes."
-  },
-  "4600663": {
-   "status": "out",
-   "name": "Zach Edey",
-   "team": "MEM",
-   "date": "2026-11-19T19:09Z",
-   "note": "Edey (hip) has been ruled out for Thursday's game against the Warriors."
   },
   "4065733": {
    "status": "out",
@@ -582,11 +582,18 @@
    "date": "2026-09-11T16:03Z",
    "note": "Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports."
   },
+  "4066211": {
+   "status": "day-to-day",
+   "name": "Robert Williams III",
+   "team": "POR",
+   "date": "2026-11-20T03:55Z",
+   "note": "Williams (rest) is listed as out for Thursday's game versus the Bucks."
+  },
   "4683021": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Deni Avdija",
    "team": "POR",
-   "date": "2026-11-20T00:21Z",
+   "date": "2026-11-20T03:55Z",
    "note": "Avdija (foot) is listed as out for Thursday's game against the Bucks."
   },
   "4706557": {
@@ -595,13 +602,6 @@
    "team": "POR",
    "date": "2026-11-19T15:06Z",
    "note": "Youngblood (heel) has been ruled out for Thursday's game against the Bucks."
-  },
-  "4066211": {
-   "status": "out",
-   "name": "Robert Williams III",
-   "team": "POR",
-   "date": "2026-11-18T22:58Z",
-   "note": "Williams (rest) is listed as out for Thursday's game versus the Bucks."
   },
   "4578893": {
    "status": "out",
