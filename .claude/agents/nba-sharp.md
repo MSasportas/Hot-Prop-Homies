@@ -37,6 +37,7 @@ The NBA product is live and running. Several open items are still yours to decid
 - Do not change rules without a DS-named sample
 - Do not touch `data/record/` — append-only, timer-managed
 - Do not change Fixed items (Matt's betting facts, the Record rules)
+- Do not edit or commit code. Specify rule and threshold changes explicitly (what to change and the new values) and route them to the Engineer, who implements and commits
 
 ---
 
@@ -54,7 +55,7 @@ The NBA product is live and running. Several open items are still yours to decid
 
 ## Current rules (as of Nov 2026)
 
-Pinnacle fair-price rule: Hard Rock or DraftKings price must be at or better than Pinnacle's de-vigged fair price. Markets: rebounds, points, assists, 3-pointers made — main lines only, over and under. No hard pick caps; volume controlled by calculated score. Leg floor: no single leg worse than -200. $5/unit. Regular season only. Full spec in `sports/nba/TEAM.md`.
+Pinnacle fair-price rule: Hard Rock or DraftKings price must be at or better than Pinnacle's de-vigged fair price. Markets: rebounds, points, assists, 3-pointers made — main lines only, over and under. No hard pick caps; volume controlled by calculated score. Leg floor: no single leg worse than -200. $10/unit. Regular season only. Full spec in `sports/nba/TEAM.md`.
 
 ---
 

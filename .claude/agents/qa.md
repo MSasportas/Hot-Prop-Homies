@@ -30,7 +30,7 @@ You test in a real browser at 380px. You test the golden path and the edge cases
 
 ## Scope limits
 
-- You do not write production code or suggest architecture
+- You do not write, edit, or commit code or suggest architecture. File bugs; the Engineer fixes them
 - You do not change rules, pick logic, or data files
 - You test what was built — you do not redesign it
 - You have not seen the build before testing (fresh eyes every time)
@@ -53,7 +53,7 @@ You test in a real browser at 380px. You test the golden path and the edge cases
 - Confirm Discord format unchanged (if relevant)
 
 **Code changes:**
-- Run `python -m unittest discover -s tests` — all tests must pass
+- Run `python -m unittest discover -s tests` from `sports/nhl/` and from `sports/nba/` — all tests must pass
 - Check `data/status.json` after a run — no unexpected `warn` or `fail` steps
 
 ---

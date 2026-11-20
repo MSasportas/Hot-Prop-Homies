@@ -112,31 +112,31 @@ class FasterChecks(unittest.TestCase):
         self.g = {"id": "1", "away": "AAA", "home": "BBB", "start": common.iso(self.tip)}
 
     def test_config(self):
-        self.assertEqual(odds.extra_reads(self.cfg), {"X240": 240, "X180": 180, "X135": 135, "X75": 75, "X60": 60, "X30": 30})
-        self.assertEqual(odds.all_reads(self.cfg), ("A", "B", "C", "D", "X240", "X180", "X135", "X75", "X60", "X30"))
-        self.assertEqual(self.cfg["pin_solo"]["flag_reads"], ["X240", "X180", "X135", "B", "X75", "X60", "C", "X30", "D"])
+        self.assertEqual(odds.extra_reads(self.cfg), {"X360": 360, "X240": 240, "X180": 180, "X135": 135, "X75": 75, "X60": 60, "X30": 30})
+        self.assertEqual(odds.all_reads(self.cfg), ("A", "B", "C", "D", "X360", "X240", "X180", "X135", "X75", "X60", "X30"))
+        self.assertEqual(self.cfg["pin_solo"]["flag_reads"], ["X360", "X240", "X180", "X135", "B", "X75", "X60", "C", "X30", "D"])
 
     def test_due_times_and_order(self):
         dt = odds.due_times(self.g, [self.g], self.cfg)
         mins = {k: int((self.tip - v).total_seconds() / 60) for k, v in dt.items() if k != "A"}
-        self.assertEqual(mins, {"B": 90, "X240": 240, "X180": 180, "X135": 135, "X75": 75, "X60": 60, "C": 45, "X30": 30, "D": 20})
+        self.assertEqual(mins, {"B": 90, "X360": 360, "X240": 240, "X180": 180, "X135": 135, "X75": 75, "X60": 60, "C": 45, "X30": 30, "D": 20})
 
     def test_each_check_is_due_in_turn(self):
         reads = set(odds.all_reads(self.cfg))
         done = {"1": []}
         seen = []
-        for m in (240, 180, 135, 90, 75, 60, 45, 30, 20):
+        for m in (360, 240, 180, 135, 90, 75, 60, 45, 30, 20):
             now = self.tip - timedelta(minutes=m)
             due = odds.due_reads(now, [self.g], reads, done, {}, self.cfg)
             self.assertEqual(len(due), 1, m)
             seen.append(due[0]["read"])
             done["1"].append({"read": due[0]["read"], "at": now, "returned": True})
             self.assertEqual(odds.due_reads(now + timedelta(minutes=5), [self.g], reads, done, {}, self.cfg), [])
-        self.assertEqual(seen, ["X240", "X180", "X135", "B", "X75", "X60", "C", "X30", "D"])
+        self.assertEqual(seen, ["X360", "X240", "X180", "X135", "B", "X75", "X60", "C", "X30", "D"])
 
     def test_plan_lists_them_and_they_never_count_as_planned(self):
         plan = odds.make_plan(5000, 100, 8, self.cfg)
-        self.assertEqual(plan["extra"], ["X135", "X180", "X240", "X30", "X60", "X75"])
+        self.assertEqual(plan["extra"], ["X135", "X180", "X240", "X30", "X360", "X60", "X75"])
         for k in plan["extra"]:
             self.assertNotIn(k, plan["reads"])               # beside the plan, never inside it
         base = len([r for r in plan["reads"] if r not in plan["spare"]])

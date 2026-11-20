@@ -138,13 +138,13 @@ Contains:
 
 ### Agent Briefs (to be created)
 
-Each specialist gets a brief at `agents/<role>.md`:
-- `agents/nhl-sharp.md` — NHL-specific context, files, authority
-- `agents/nba-sharp.md` — NBA-specific context, files, authority  
-- `agents/data-scientist.md` — both sports, record files, DS authority
-- `agents/ux.md` — both pages, design rules
-- `agents/qa.md` — test protocol, browser requirements
-- `agents/researcher.md` — research scope, write rules
+Each specialist gets a brief at `.claude/agents/<role>.md`:
+- `.claude/agents/nhl-sharp.md` — NHL-specific context, files, authority
+- `.claude/agents/nba-sharp.md` — NBA-specific context, files, authority  
+- `.claude/agents/data-scientist.md` — both sports, record files, DS authority
+- `.claude/agents/ux-expert.md` — both pages, design rules
+- `.claude/agents/qa.md` — test protocol, browser requirements
+- `.claude/agents/researcher.md` — research scope, write rules
 
 These are the briefs the CEO pastes into sub-session prompts. They are short and focused — not full TEAM.md dumps.
 
@@ -158,7 +158,7 @@ These are the briefs the CEO pastes into sub-session prompts. They are short and
 ## What Done Looks Like
 
 1. `CLAUDE.md` exists at the Hot Prop Homies root and loads as the CEO on every session in this folder
-2. `agents/` directory holds six brief files, one per role
+2. `.claude/agents/` directory holds the brief files, one per role
 3. When Matt opens this folder and asks a business question, the CEO routes to the right specialist, runs them as a sub-session, and returns a synthesized answer
 4. When Matt asks about NHL picks tonight, he gets the NHL Sharp's view — not a generic answer
 5. When a rule change is proposed, the DS names the sample, the Sharp approves, the Builder ships, QA signs off — and Matt sees the result, not the process

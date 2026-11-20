@@ -91,7 +91,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .live{display:inline-block;width:7px;height:7px;margin-right:7px;vertical-align:1px;border-radius:50%;background:var(--accent)}
 .live.warn{background:var(--warn)} .live.bad{background:var(--primary)}
 .statusline{font-size:12.5px;line-height:17px;color:var(--fg2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.statusline .lowpool,.statusline .wt{color:var(--warn);font-weight:600}
+.statusline .wt{color:var(--warn);font-weight:600}
 
 /* banners: a 3px meaning bar on the left, plain text */
 .banner{display:flex;gap:10px;padding:10px 12px;margin-top:12px;border-left:3px solid var(--warn);background:var(--warn-soft);font-size:13.5px;line-height:19px;border-radius:0 6px 6px 0}
@@ -145,7 +145,6 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .stp .n{width:7px;height:7px;border-radius:50%;border:1.5px solid var(--line2);background:transparent}
 .stp .c{width:6px;height:1.5px;background:var(--line2)}
 .stp .n.on{border-color:currentColor;background:currentColor}
-.stp .n.skip{border-style:dashed;border-color:currentColor}
 .stp .c.on{background:currentColor}
 .stp.early{color:var(--warn)} .stp.ok{color:var(--good)} .stp.lock{color:var(--muted)}
 .stp .t{color:inherit;font-weight:600}
@@ -156,12 +155,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .xp{margin-top:10px;padding-top:10px;border-top:1px solid var(--line);font-size:13px;line-height:19px;color:var(--fg2)}
 .xp>*+*{margin-top:8px}
 .xp b{color:var(--fg);font-weight:700}
-.xp .ag{color:var(--good);font-weight:600}
 .xp .meta{font-size:12.5px;line-height:18px;color:var(--muted)}
 .xp .chips{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;font-size:12.5px;line-height:18px}
-.hist{margin:0;padding:0;list-style:none;font-size:12px;line-height:17px;color:var(--muted)}
-.hist li{display:flex;gap:8px}
-.hist time{flex:none;min-width:58px}
 /* chance vs break-even: an edge meter. Centre tick = what the price needs, dot = our chance, red run = the edge */
 .bar{position:relative;height:14px}
 .bar::before{content:"";position:absolute;left:0;right:0;top:6px;height:2px;background:var(--line2);border-radius:1px}
@@ -176,7 +171,6 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 /* tap to bet */
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 16px;border-radius:6px;
   border:1px solid var(--line2);color:var(--fg);font:600 15px/20px var(--body)}
-.btn.wide{width:100%}
 .btn.hr{width:100%;background:var(--cta);color:var(--on-primary);border-color:var(--cta);text-decoration:none;white-space:nowrap}
 /* TOO LATE: off the board before tip. Solid Dugout Navy stamp, the tile dimmed under it; the price is not struck */
 .tile.late{border-color:var(--line)}
@@ -187,7 +181,6 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 
 /* live */
 .tonight{margin-top:12px;font:400 18px/24px var(--head);letter-spacing:.01em}
-.lvnote{margin-top:6px;font-size:12.5px;line-height:17px;color:var(--warn)}
 .lvupd{margin-top:6px;font-size:12.5px;line-height:17px;color:var(--muted)}
 .lvupd.bad{color:var(--warn);font-weight:600}
 /* Live cards sit two to a row, like the Picks board (2026-11-09, Matt: "so we can fit more") */
@@ -294,7 +287,6 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .big .wl{font:600 38px/46px var(--num);letter-spacing:.01em}
 .big .un{font:600 26px/34px var(--num)}
 .subline{font-size:12px;line-height:17px;color:var(--muted);margin-top:2px}
-.allbets{font:400 16px/22px var(--head);margin-top:6px}
 .hitline{margin-top:10px}
 .hitline .bar{margin-top:4px}
 .tbl{margin-top:8px;font-size:13px;line-height:18px;border-top:1px solid var(--line2)}
@@ -339,10 +331,6 @@ button.tr.open{background:var(--selected-bg);border-bottom-color:transparent}
 .legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px}
 .dayd{margin-top:10px}
 .filters{display:inline-flex;margin:12px 0 0;border:1px solid var(--line2);border-radius:6px;overflow:hidden}
-.fbtn{min-height:44px;display:inline-flex;align-items:center}
-.fbtn+.fbtn{border-left:1px solid var(--line2)}
-.fbtn span{display:inline-flex;align-items:center;height:44px;padding:0 18px;font-size:13.5px;font-weight:600;color:var(--muted)}
-.fbtn[aria-pressed="true"] span{background:var(--raise);color:var(--fg)}
 .night{margin-top:20px}
 .night h3{padding-bottom:6px;border-bottom:1px solid var(--line2)}
 .night h3 .mu{font:400 12px/16px var(--body);letter-spacing:0}
@@ -355,14 +343,11 @@ button.tr.open{background:var(--selected-bg);border-bottom-color:transparent}
 .ent .e2{font-size:12px;line-height:17px;color:var(--muted);overflow-wrap:anywhere}
 .ptag{display:inline-block;font:700 11px/15px var(--cond);letter-spacing:.07em;padding:0 4px;margin-right:6px;border:1px solid var(--warn);border-radius:3px;color:var(--warn);vertical-align:1px}
 .ptag.scr{border-color:var(--line2);color:var(--muted)}
-.legs{padding:0 0 0 12px;border-left:1px solid var(--line2);margin:0 0 4px 20px}
-.legs .ent{min-height:0}
 
 /* lab */
 .lab{margin-top:14px;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
 .lab h3{font:400 16px/22px var(--head);margin:0}
 .lab .rl{font-size:13px;line-height:19px;color:var(--fg2);margin-top:4px}
-.lab .nums{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-top:10px;font:600 21px/28px var(--num)}
 .lab .prog{position:relative;height:4px;margin-top:8px;background:var(--line);border-radius:2px;overflow:hidden}
 .lab .prog i{position:absolute;left:0;top:0;bottom:0;background:var(--accent)}
 .lab .sm{font-size:12px;line-height:17px;color:var(--muted);margin-top:4px}
@@ -380,6 +365,12 @@ button.tr.open{background:var(--selected-bg);border-bottom-color:transparent}
 .lab-d{display:flex;gap:10px;align-items:baseline;margin-top:10px;font:600 12px/17px var(--num);letter-spacing:.04em;text-transform:uppercase}
 .lab-b{display:flex;justify-content:space-between;gap:10px;align-items:baseline;padding:6px 0;border-bottom:1px solid var(--line);font-size:13px;line-height:18px}
 .lab-b:last-child{border-bottom:0}
+.lab-ready{display:inline-block;flex:none;padding:0 7px;border:1px solid var(--good);border-radius:9px;font:600 11px/16px var(--num);letter-spacing:.04em;text-transform:uppercase;color:var(--good);white-space:nowrap}
+.lab>.lab-ready{margin:0 14px 10px}
+.lab-ret{margin-top:14px}
+.lab-ret-b{display:block;width:100%;min-height:44px;padding:10px 0;background:none;border:0;color:var(--muted);font:inherit;font-size:13px;text-align:left;cursor:pointer}
+.lab-ret-b:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.lab-ret .sm{font-size:12px;line-height:17px;color:var(--muted);margin-top:4px;overflow-wrap:anywhere}
 .lab-b .who{min-width:0;overflow-wrap:anywhere}
 .lab-b .res{flex:none;font-weight:600}
 
@@ -397,7 +388,6 @@ button.tr.open{background:var(--selected-bg);border-bottom-color:transparent}
 .rules li{margin:0 0 10px;padding-left:2px;line-height:20px;overflow-wrap:anywhere;color:var(--fg2)}
 .rules li::marker{color:var(--muted);font:700 14px var(--cond)}
 .slot{font-weight:650;color:var(--fg);white-space:nowrap}
-.slot.miss{color:var(--warn)}
 .plain{margin:10px 0 0;padding:0 0 0 18px;font-size:13.5px;line-height:20px;color:var(--fg2)}
 .plain li{margin:0 0 6px}
 .fixed{margin:10px 0 0;padding:10px 12px;border:1px solid var(--line);border-radius:6px;background:var(--surface);font-size:13px;line-height:19px;font-weight:600;color:var(--fg)}
@@ -453,12 +443,11 @@ var TZ = 'America/New_York';
 var TITLE = 'Hot Prop Homies';
 var SEEN_KEY = FIX ? 'pc_seen_fx' : 'pc_seen';
 var UI_DEFS = {
-  nba: { stale_after_min: 30, refresh_sec: 120 },
-  nhl: { stale_after_min: 75, refresh_sec: 120 },
-  all: { stale_after_min: 30, refresh_sec: 120 }
+  nba: { stale_after_min: 30, refresh_sec: 120, small_sample_n: 30 },
+  nhl: { stale_after_min: 75, refresh_sec: 120, small_sample_n: 30 },
+  all: { stale_after_min: 30, refresh_sec: 120, small_sample_n: 30 }
 };
 var LATEST_N = 5;
-var SMALL_N = 30;          /* a cut row with fewer graded picks than this says "small sample" */
 var MARKET_LINE_NBA = 'Hard Rock · Rebounds, points, assists, 3-pointers made · Main line, over or under · No leg worse than -200';
 var MARKET_LINE_NHL = 'Hard Rock · Shots on goal · Main line, over or under · No leg worse than -200';
 var MARKET_LINE = MARKET_LINE_NBA;  /* updated by setSport() */
@@ -479,7 +468,7 @@ var S = {
   slate: null, record: null, rules: null, recordErr: null, lab: null, labSum: {}, labErr: null, heads: null,
   loaded: false, loadErr: false, fetchFail: false, loadedAt: null, busy: false,
   view: 'picks', expanded: {},
-  older: [], olderIdx: 0, olderBusy: false, olderErr: false, months: {}, calMonth: null, selDay: null,
+  months: {}, calMonth: null, selDay: null,
   newIds: {}, since: null, seenDone: false, key: '', scroll: {},
   allResults: null, resets: null, cutSel: null, openCut: null, recFilters: [],
   hq: null
@@ -625,6 +614,13 @@ function betShort(p) {
 }
 
 /* ---------- data access ---------- */
+/* the Record's safety-stop level, from the rules file (NBA: top level; NHL: gap_guard) */
+function safetyUnits() {
+  var r = S.rules, u = r ? num(r.safety_units != null ? r.safety_units : (isObj(r.gap_guard) ? r.gap_guard.safety_units : null)) : null;
+  return u == null ? null : Math.abs(u);
+}
+function safetyDown() { var u = safetyUnits(); return u == null ? 'past the safety limit' : 'down ' + u + ' units or more'; }
+function safetyFall() { var u = safetyUnits(); return u == null ? 'the safety limit' : '-' + u + ' units'; }
 function uiVal(k) {
   var c = [S.rules && isObj(S.rules.ui) ? S.rules.ui[k] : null, S.slate && isObj(S.slate.ui) ? S.slate.ui[k] : null];
   for (var i = 0; i < c.length; i++) { var n = num(c[i]); if (n != null && n > 0 && (k !== 'refresh_sec' || n >= 15)) return n; }
@@ -687,7 +683,6 @@ function split() { /* board (open + too late, not started) / started (Live) / sc
     else if (p.pulled) out.late.push(p);
     else out.open.push(p);
   }
-  var byRank = function (a, b) { var x = num(a.rank), y = num(b.rank); return (x == null ? 1e9 : x) - (y == null ? 1e9 : y); };
   var byEv = function(a, b) {
     return evOf(b) - evOf(a) || (ms(a.start) || 0) - (ms(b.start) || 0);
   };
@@ -831,7 +826,7 @@ function setSport(sp) {
   /* reset all data */
   S.slate = null; S.record = null; S.rules = null; S.loaded = false; S.loadErr = false;
   S.fetchFail = false; S.resets = null; S.allResults = null; S.heads = null;
-  S.older = []; S.olderIdx = 0; S.months = {}; S.calMonth = null; S.selDay = null;
+  S.months = {}; S.calMonth = null; S.selDay = null;
   S.newIds = {}; S.since = null; S.seenDone = false;
   S.recFilters = [];
   /* update h1 */
@@ -1118,7 +1113,7 @@ function renderPicks() {
   var bl = arr(sl.banners);
   if (!exp) bl.forEach(function (b) { var e = engineBanner(b); if (e) app.appendChild(e); });
   if (!exp && sl.safety_paused && !bl.some(function (b) { return isObj(b) && b.level === 'stop'; }))
-    app.appendChild(banner('stop', 'New picks are stopped.', 'The Record is down 10 units or more. The team has to review first.'));
+    app.appendChild(banner('stop', 'New picks are stopped.', 'The Record is ' + safetyDown() + '. The team has to review first.'));
   if (exp) { app.appendChild(smallFoot()); return; }
 
   if (S.since && !stale()) {                     /* nothing is "new" while updates have stopped */
@@ -1132,7 +1127,7 @@ function renderPicks() {
     var gsFv = arr(sl.games).filter(isObj).filter(function(g) { return !gameStarted(g) && ms(g.start) != null; });
     gsFv.sort(function(a,b) { return ms(a.start) - ms(b.start); });
     var fpAt = gsFv.length ? ms(gsFv[0].start) - 90*60000 : null;
-    var fpStr = (fpAt != null && fpAt > now()) ? 'First picks expected around ' + fTime(fpAt) + '.' : (fpAt != null ? 'Picks drop throughout the day, 90​min before each tip.' : null);
+    var fpStr = (fpAt != null && fpAt > now()) ? 'First picks expected around ' + fTime(fpAt) + '.' : (fpAt != null ? 'Picks drop throughout the day, 90 min before each tip.' : null);
     app.appendChild(h('div', { class: 'card empty', style: 'margin-bottom:12px' },
       h('div', { class: 't', text: 'Player prop picks for tonight.' }),
       h('div', { class: 's', text: 'Bet each pick at Hard Rock — tap a pick, then “Bet at Hard Rock.”' }),
@@ -1197,7 +1192,6 @@ var NBA_API = 'https://cdn.nba.com/static/json/liveData/';
 var L = { ver: 0, at: null, src: null, fail: false, lastTry: null, busy: false, next: null, wake: null, stopped: false,
           games: {}, stats: {}, done: {}, polls: 0 };
 var NBA_TRI = { GS: 'GSW', NO: 'NOP', NY: 'NYK', SA: 'SAS', UTAH: 'UTA', WSH: 'WAS' };
-var MKT_LABEL = { points: 'PTS', rebounds: 'REB', assists: 'AST', threes: '3PT' };
 var NBA_STAT = { points: 'points', rebounds: 'reboundsTotal', assists: 'assists', threes: 'threePointersMade' };
 function tri(c) { c = str(c).toUpperCase(); return NBA_TRI[c] || c; }
 function liveOK() { return L.at != null && !L.fail; }
@@ -1838,10 +1832,10 @@ function renderRecordAll() {
   var mergedSum = { days: mergedDays, headline: { w: totalW, l: totalL, units: totalUnits } };
   /* render calendar via temporary state swap (calendar() is synchronous) */
   var calNights = filtNights || mergedNights;
-  var sv = { record: S.record, sport: S.sport, older: S.older, months: S.months, olderIdx: S.olderIdx };
-  S.sport = 'all_cal'; S.record = { nights: calNights, older: [], summary: mergedSum }; S.older = []; S.months = {}; S.olderIdx = 0;
+  var sv = { record: S.record, sport: S.sport, months: S.months };
+  S.sport = 'all_cal'; S.record = { nights: calNights, older: [], summary: mergedSum }; S.months = {};
   calendar(mergedSum, filtNights || null);
-  S.record = sv.record; S.sport = sv.sport; S.older = sv.older; S.months = sv.months; S.olderIdx = sv.olderIdx;
+  S.record = sv.record; S.sport = sv.sport; S.months = sv.months;
   /* unified latest picks — entries already carry sport badge via e.sport */
   var latest = [];
   calNights.forEach(function (nt) { arr(nt.entries).filter(isObj).forEach(function (e) { latest.push(e); }); });
@@ -1901,7 +1895,7 @@ function renderRecord() {
     app.appendChild(smallFoot()); return;
   }
   var sum = isObj(S.record.summary) ? S.record.summary : {}, hd = isObj(sum.headline) ? sum.headline : {};
-  var n = sampleN(hd), few = function (k) { return k < SMALL_N; };
+  var n = sampleN(hd), few = function (k) { return k < uiVal('small_sample_n'); };
   /* Record filter chips */
   var recFilters = S.recFilters || [];
   var mktChips = arr(sum.rows).filter(function(r) { return isObj(r) && str(r.key).indexOf('window:') !== 0 && sampleN(r) > 0; }).map(function(r) { return { key: 'm:' + str(r.key), label: str(r.label || r.key) }; });
@@ -2014,7 +2008,7 @@ function renderRecord() {
 function allNights() {
   var seen = {}, nights = [];
   var add = function (nt) { if (isObj(nt) && nt.date && !seen[nt.date]) { seen[nt.date] = 1; nights.push(nt); } };
-  arr(S.record && S.record.nights).concat(S.older).forEach(add);
+  arr(S.record && S.record.nights).forEach(add);
   Object.keys(S.months).forEach(function (k) { arr(S.months[k] && S.months[k].nights).forEach(add); });
   nights.sort(function (a, b) { return str(a.date) < str(b.date) ? 1 : (str(a.date) > str(b.date) ? -1 : 0); });
   return nights;
@@ -2171,16 +2165,6 @@ function entryRow(e, withDate) {
     h('div', { class: 'e1' }, e.sport ? h('span', { class: 'sp-badge ' + e.sport, style: 'margin-left:0', text: e.sport.toUpperCase() }) : null, e.replay ? h('span', { class: 'ptag scr', text: 'REPLAY' }) : null, h('span', { class: 'pn', text: e.player || 'Player not named' }), ' ' + str(e.bet)),
     h('div', { class: 'e2', text: l2.join(' · ') })));
 }
-function loadOlder() {
-  if (S.olderBusy || !S.record) return;
-  var list = arr(S.record.older), path = list[S.olderIdx]; if (!path) return;
-  path = str(path).replace(/^\/+/, '').replace(/\.\.\//g, '');
-  S.olderBusy = true; S.olderErr = false; rerender();
-  getJSON(getBase(S.sport) + path).then(function (j) {
-    S.olderBusy = false; S.olderIdx++; S.older = S.older.concat(arr(j.nights)); rerender();
-  }, function () { S.olderBusy = false; S.olderErr = true; rerender(); });
-}
-
 /* the picks behind one Lab tile, newest night first (Matt 2026-11-12). Summary files differ: nights[].bets (NBA) or nights[].flags (NHL) */
 function labPicks(sm, t) {
   var box = h('div', { class: 'lab-p' });
@@ -2349,6 +2333,39 @@ function renderLabToday() {
   app.appendChild(sec);
 }
 /* ---------- Lab: ideas that passed their historical test, tracked on paper (config/lab.json) ---------- */
+/* ---------- Lab: retired tests (config/lab_retired.jsonl, written by scripts/lab_retire.py) ---------- */
+var RETIRED_WHY = { fail_full: 'failed its test', fail_early: 'losing clearly, stopped early', inconclusive_cap: 'never proved itself', stalled: 'ran out of picks' };
+function labRetiredSources() {
+  var sports = S.sport === 'all' ? arr(S.allResults).filter(function (r) { return r.lab.ok; }).map(function (r) { return { sp: r.sport, n: num(r.lab.v.retired_count) || 0 }; })
+    : [{ sp: S.sport, n: S.lab ? num(S.lab.retired_count) || 0 : 0 }];
+  return sports.filter(function (s) { return s.n > 0; }).map(function (s) { s.url = (BASE_FIX ? '' : SPORT_BASES[s.sp]) + 'config/lab_retired.jsonl'; return s; });
+}
+function loadRetired(sources) {
+  S.labRetiredEv = 'loading';
+  return Promise.all(sources.map(function (s) {
+    return fetch(s.url + '?t=' + Date.now(), { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error('http ' + r.status); return r.text(); })
+      .then(function (t) { return t.split('\n').filter(Boolean).map(function (ln) { var e = JSON.parse(ln); e._sp = s.sp; return e; }); });
+  })).then(function (xs) {
+    S.labRetiredEv = [].concat.apply([], xs).filter(function (e) { return isObj(e) && e.event === 'retired'; }).sort(function (a, b) { return str(a.ts) < str(b.ts) ? 1 : -1; });
+  }, function () { S.labRetiredEv = 'err'; }).then(LAB_REDRAW);
+}
+/* one muted "N retired" line at the bottom of the Lab; a tap lists them */
+function labRetiredLine() {
+  var sources = labRetiredSources(), n = sources.reduce(function (a, s) { return a + s.n; }, 0);
+  if (!n) return null;
+  if (S.labRetiredOpen && S.labRetiredEv == null) loadRetired(sources);
+  var box = h('div', { class: 'lab-ret' }), btn = h('button', { class: 'lab-ret-b', type: 'button', 'aria-expanded': S.labRetiredOpen ? 'true' : 'false', text: n + ' retired ' + (S.labRetiredOpen ? '▴' : '▾') });
+  btn.addEventListener('click', function () { S.labRetiredOpen = !S.labRetiredOpen; LAB_REDRAW(); });
+  box.appendChild(btn);
+  if (!S.labRetiredOpen) return box;
+  var ev = S.labRetiredEv;
+  if (!Array.isArray(ev)) box.appendChild(h('div', { class: 'sm', text: ev === 'err' ? "Couldn't load the list." : 'Loading the list' }));
+  else ev.forEach(function (e) {
+    var f = isObj(e.final) ? e.final : {};
+    box.appendChild(h('div', { class: 'sm', text: (str(e.title) || str(e.id)) + ' · ' + (num(f.w) || 0) + '-' + (num(f.l) || 0) + ' ' + String(units(f.units, 2)).replace(/ units?$/, 'u') + ' · ' + (RETIRED_WHY[str(e.reason)] || 'retired') + ' · ' + fDateShort(str(e.ts).slice(0, 10)) }));
+  });
+  return box;
+}
 function renderLab() {
   top('Lab', false);
   app.appendChild(h('p', { class: 'mu', style: 'margin:10px 0 0;font-size:13px;line-height:19px', text: 'Most tests are paper-only — see each card for its status. Tap a test to see its picks.' }));
@@ -2365,6 +2382,8 @@ function renderLab() {
     var id = (t._sp || '') + str(t.id), sm = S.labSum[str(t.id)], st = sm && isObj(sm[str(t.stats || 'total')]) ? sm[str(t.stats || 'total')] : null;
     var open = !!S.labOpen[id], card = h('section', { class: 'lab' + (open ? ' open' : '') });
     var w = st ? (num(st.w) || 0) : 0, l = st ? (num(st.l) || 0) : 0, k = w + l, need = num(t.need), u = st ? num(st.units) : null;
+    var fade = t.direction === 'fade';   /* a fade track tracks one side but is judged on betting the other: show that result */
+    if (fade) { var swap = w; w = l; l = swap; if (u != null) u = -u; }
     /* the tile: tap to open its details and picks */
     var head = h('button', { class: 'lab-h', type: 'button', 'aria-expanded': open ? 'true' : 'false' },
       h('span', { class: 'lab-t' }, t._sp ? h('span', { class: 'sp-badge ' + t._sp, text: t._sp.toUpperCase() }) : null, h('span', { class: 'lab-n', text: str(t.title) || 'Untitled idea' })),
@@ -2372,6 +2391,7 @@ function renderLab() {
         st && u != null ? h('span', { class: 'un ' + signCls(u), text: units(u, 2).replace(/ units?$/, 'u') }) : null, h('span', { class: 'chev', 'aria-hidden': 'true', text: open ? '▴' : '▾' })));
     head.addEventListener('click', function () { S.labOpen[id] = !S.labOpen[id]; LAB_REDRAW(); });
     card.appendChild(head);
+    if (t.status === 'ready_for_sharp') card.appendChild(h('span', { class: 'lab-ready', text: 'Ready for Sharp' }));
     if (need && st) {
       var bar = h('div', { class: 'prog', role: 'img', 'aria-label': k + ' of ' + need + ' graded' }), fill = h('i'); fill.style.width = Math.min(100, k / need * 100) + '%'; bar.appendChild(fill);
       card.appendChild(bar);
@@ -2382,9 +2402,10 @@ function renderLab() {
         card.appendChild(h('div', { class: 'sm', style: 'margin-top:10px', text: sm && sm._err === 'file' ? 'No results logged yet.' : (sm ? "Its numbers couldn't be read." : 'Loading its numbers') }));
       } else {
         var bits = [k + (need ? ' of ' + need : '') + ' graded'];
+        if (fade) bits.push('fade: shown as betting against the tracked side');
         if (num(st.pending)) bits.push(st.pending + ' pending');
         if (num(st.void)) bits.push(st.void + ' void');
-        if (num(st.clv) != null) bits.push('vs closing line ' + (st.clv >= 0 ? '+' : '') + (100 * st.clv).toFixed(1) + '%');
+        if (num(st.clv) != null) { var clv = fade ? -st.clv : st.clv; bits.push('vs closing line ' + (clv >= 0 ? '+' : '') + (100 * clv).toFixed(1) + '%'); }
         card.appendChild(h('div', { class: 'sm', text: bits.join(' · ') }));
         if (sm.updated_at && fStamp(sm.updated_at)) card.appendChild(h('div', { class: 'sm', text: 'Updated ' + fStamp(sm.updated_at) }));
       }
@@ -2394,6 +2415,8 @@ function renderLab() {
     }
     app.appendChild(card);
   });
+  var retLine = labRetiredLine();
+  if (retLine) app.appendChild(retLine);
   app.appendChild(smallFoot());
 }
 
@@ -2425,7 +2448,7 @@ function renderInfoAll() {
     h('li', { text: 'Live: picks whose game has started, with the score and his number so far, read straight from ESPN (NBA.com as backup) every 10 seconds while the Live tab is open.' }),
     h('li', { text: 'Games: our checks on each game (price checks, injury report, starters) and when the next one runs.' }),
     h('li', { text: "Record: the strategy's results. REPLAY bets are the same rule run on price checks saved before it went live (Oct 25-27)." }),
-    h('li', { text: 'New picks stop by themselves if the Record falls to -10 units; the page says so at the top.' }),
+    h('li', { text: 'New picks stop by themselves if the Record falls to ' + safetyFall() + '; the page says so at the top.' }),
     h('li', { text: 'Parlays are not offered.' })));
   app.appendChild(nt);
   app.appendChild(h('footer', { class: 'foot' },
@@ -2449,7 +2472,7 @@ function renderInfo() {
     h('li', { text: 'Live: picks whose game has started, with the score and his number so far, read straight from ESPN (NBA.com as backup) every 10 seconds while the Live tab is open.' }),
     h('li', { text: 'Games: our checks on each game (price checks, injury report, starters) and when the next one runs.' }),
     h('li', { text: 'Record: the strategy\u2019s results. REPLAY bets are the same rule run on price checks saved before it went live (Oct 25-27).' }),
-    h('li', { text: 'New picks stop by themselves if the Record falls to -10 units; the page says so at the top.' }),
+    h('li', { text: 'New picks stop by themselves if the Record falls to ' + safetyFall() + '; the page says so at the top.' }),
     h('li', { text: 'Parlays are not offered.' })));
   app.appendChild(nt);
   var v = S.rules ? S.rules.version : null;
@@ -2509,7 +2532,7 @@ function statusBody(body) {
   if (L.lastTry != null && L.fail) lt += ' Last try ' + (fTime(L.lastTry) || '') + ': both feeds failed.';
   else if (L.at != null) lt += ' Last read ' + (fTime(L.at) || '') + (L.src === 'nba' ? ' via NBA.com.' : ' from ESPN.');
   row('Live scores', lt, L.fail && L.lastTry != null);
-  if (sl.safety_paused) row('Safety', 'New picks are stopped: the Record is down 10 units or more. The team reviews first.', true);
+  if (sl.safety_paused) row('Safety', 'New picks are stopped: the Record is ' + safetyDown() + '. The team reviews first.', true);
   body.appendChild(h('div', { class: 'svc-h' + (nBad ? ' bad' : ''), role: 'status' }, h('span', { class: 'ic' }, icon(nBad ? 'warn' : 'check', 16)),
     nBad ? (nBad === 1 ? '1 thing needs attention' : nBad + ' things need attention') : 'No problems found'));
   rows.forEach(function (r) { body.appendChild(r); });
@@ -2533,18 +2556,25 @@ function loadHQ() {
     fetch(base_nhl + 'paper_watch/points/summary.json').then(function(r){ return r.json(); }),
     fetch(base_nba + 'watch/pin_judge/summary.json').then(function(r){ return r.json(); }),
     fetch(base_nba + 'watch/threes_judge/summary.json').then(function(r){ return r.json(); }),
-    fetch(base_nba + 'research/lab_ah.json').then(function(r){ return r.json(); })
+    fetch(base_nba + 'research/lab_ah.json').then(function(r){ return r.json(); }),
+    fetch('sports/nhl/config/lab.json').then(function(r){ return r.json(); }),
+    fetch('sports/nba/config/lab.json').then(function(r){ return r.json(); })
   ];
   Promise.all(fetches.map(function(p){ return p.catch(function(){ return null; }); })).then(function(res) {
     S.hq = {
       loading: false,
       loadedAt: Date.now(),
       err: !res[0] && !res[1],
-      nhl: { record: res[0], status: res[2], slate: res[4], labFwd: res[6], labPts: res[7] },
-      nba: { record: res[1], status: res[3], slate: res[5], labPin: res[8], labThrees: res[9], labAh: res[10] }
+      nhl: { record: res[0], status: res[2], slate: res[4], labFwd: res[6], labPts: res[7], labCfg: res[11] },
+      nba: { record: res[1], status: res[3], slate: res[5], labPin: res[8], labThrees: res[9], labAh: res[10], labCfg: res[12] }
     };
     maybeRender();
   });
+}
+/* a Lab test's graded-picks gate, read from the sport's config/lab.json (match by test id or by stats key) */
+function hqGate(cfg, pred) {
+  var t = arr(cfg && cfg.tests).filter(isObj).filter(pred)[0];
+  return t ? num(t.need) : null;
 }
 function hqFmt(v) { /* format units as "+0.37u" or "-2.0u" */
   var n = num(v); if (n == null) return '—';
@@ -2794,6 +2824,8 @@ function renderHQ() {
     'MM5b fade':    'HR shifted its line: bet against the direction.'
   };
 
+  var nhlGate = hqGate(nhl.labCfg, function() { return true; });   /* every NHL test shares one gate */
+  var nbaGate = hqGate(nba.labCfg, function(t) { return t.id === 'pin_judge'; });
   var labTbl = h('div', { class: 'tbl', style: 'margin-top:10px' });
 
   /* header row */
@@ -2825,7 +2857,7 @@ function renderHQ() {
       labelEl,
       h('span', { class: 'num', text: w + '-' + l }),
       h('span', { class: 'num ' + uCls, text: uStr }),
-      h('span', { class: 'num', style: 'color:var(--muted)', text: n + '/' + gate }));
+      h('span', { class: 'num', style: 'color:var(--muted)', text: gate != null ? n + '/' + gate : String(n) }));
     if (!desc) return row;
     var descEl = h('div', { style: 'padding:7px 10px 9px;font-size:12.5px;color:var(--fg2);line-height:1.5;border-top:1px solid var(--line);display:none', text: desc });
     row.style.cursor = 'pointer';
@@ -2865,7 +2897,7 @@ function renderHQ() {
     for (var ri = 0; ri < nhlRows.length; ri++) {
       var nr = nhlRows[ri];
       var lbl = NHL_FWD_LABELS[nr.key] || nr.key;
-      labTbl.appendChild(labRow(lbl, nr.w, nr.l, nr.units, nr.n, 300, null, NHL_FWD_DESCS[nr.key] || null));
+      labTbl.appendChild(labRow(lbl, nr.w, nr.l, nr.units, nr.n, hqGate(nhl.labCfg, function(t) { return t.stats === nr.key; }), null, NHL_FWD_DESCS[nr.key] || null));
     }
   } else {
     labTbl.appendChild(labMuted('Nothing above breakeven yet'));
@@ -2877,7 +2909,7 @@ function renderHQ() {
   var ptsD = labPts && isObj(labPts.nov2) ? labPts.nov2 : null;
   if (ptsD) {
     var ptGraded = num(ptsD.graded_picks) || 0;
-    labTbl.appendChild(labRow('NHL points (paper watch)', num(ptsD.w) || 0, num(ptsD.l) || 0, ptsD.units, ptGraded, 300, null, 'Same shots rule applied to player points lines — tracked on paper since Nov 12.'));
+    labTbl.appendChild(labRow('NHL points (paper watch)', num(ptsD.w) || 0, num(ptsD.l) || 0, ptsD.units, ptGraded, nhlGate, null, 'Same shots rule applied to player points lines — tracked on paper since Nov 12.'));
   } else {
     labTbl.appendChild(labMuted('No data'));
   }
@@ -2888,7 +2920,7 @@ function renderHQ() {
   if (isObj(labPin) && isObj(labPin.total)) {
     var pinT = labPin.total;
     var pinGraded = (num(pinT.w) || 0) + (num(pinT.l) || 0);
-    labTbl.appendChild(labRow(labPin.label || 'Pinnacle as the price judge', num(pinT.w) || 0, num(pinT.l) || 0, pinT.units, pinGraded, 150, null, (labPin.about ? labPin.about.split('. Research only')[0] + '.' : 'HR price at or better than Pinnacle\'s de-vigged fair price on the same line.')));
+    labTbl.appendChild(labRow(labPin.label || 'Pinnacle as the price judge', num(pinT.w) || 0, num(pinT.l) || 0, pinT.units, pinGraded, nbaGate, null, (labPin.about ? labPin.about.split('. Research only')[0] + '.' : 'HR price at or better than Pinnacle\'s de-vigged fair price on the same line.')));
   } else {
     labTbl.appendChild(labMuted('No data'));
   }
@@ -2897,7 +2929,7 @@ function renderHQ() {
   var labThrees = nba.labThrees;
   if (isObj(labThrees) && isObj(labThrees.total)) {
     var thrT = labThrees.total;
-    labTbl.appendChild(labRow(labThrees.label || '3s: HR 1%+ over Pinnacle', num(thrT.w) || 0, num(thrT.l) || 0, thrT.units, (num(thrT.w) || 0) + (num(thrT.l) || 0), 150, 'new', (labThrees.about ? labThrees.about.split('. Research only')[0] + '.' : '3-pointers made: HR price 1%+ better than Pinnacle\'s fair price.')));
+    labTbl.appendChild(labRow(labThrees.label || '3s: HR 1%+ over Pinnacle', num(thrT.w) || 0, num(thrT.l) || 0, thrT.units, (num(thrT.w) || 0) + (num(thrT.l) || 0), hqGate(nba.labCfg, function(t) { return t.id === 'threes_judge'; }), 'new', (labThrees.about ? labThrees.about.split('. Research only')[0] + '.' : '3-pointers made: HR price 1%+ better than Pinnacle\'s fair price.')));
   }
 
   /* ---- NBA AH filters ---- */
@@ -2934,12 +2966,14 @@ function renderHQ() {
     labTbl.appendChild(labSubHeader('nba', 'NBA', 'AH filters'));
     for (var ai = 0; ai < ahRows.length; ai++) {
       var ar = ahRows[ai];
-      labTbl.appendChild(labRow(ar.label, ar.w, ar.l, ar.units, ar.n, 150));
+      labTbl.appendChild(labRow(ar.label, ar.w, ar.l, ar.units, ar.n, hqGate(nba.labCfg, function(t) { return t.stats === ar.key; })));
     }
   }
 
   sec5.appendChild(labTbl);
-  sec5.appendChild(h('div', { style: 'margin-top:8px;font-size:12px;color:var(--muted)', text: 'Research only. Gate: NHL 300 graded · NBA 150 graded.' }));
+  sec5.appendChild(h('div', { style: 'margin-top:8px;font-size:12px;color:var(--muted)', text: 'Research only. Gate: NHL ' + (nhlGate != null ? nhlGate : '—') + ' graded · NBA ' + (nbaGate != null ? nbaGate : '—') + ' graded.' }));
+  var hqRetired = (num(nhl.labCfg && nhl.labCfg.retired_count) || 0) + (num(nba.labCfg && nba.labCfg.retired_count) || 0);
+  if (hqRetired) sec5.appendChild(h('div', { style: 'margin-top:6px;font-size:12px;color:var(--muted)', text: hqRetired + ' retired' }));
   app.appendChild(sec5);
 
   /* --- Section 4: Tonight's Slate --- */
@@ -2998,9 +3032,7 @@ RENDER = { picks: renderPicks, live: renderLive, games: renderGames, record: ren
 /* ---------- side rail dock + routing ---------- */
 /* Side rail dock: built once so the accent bar can slide; each render only updates which item is current and the status
    dot (on Info). Labels slide out on hover (mouse) and keyboard focus; on touch only the current item's caption shows. */
-var RAIL_ALL = [['picks', 'Picks', 'ticket'], ['live', 'Live', 'pulse'], ['games', 'Games', 'court'], ['record', 'Record', 'ledger'], ['lab', 'Lab', 'flask'], ['info', 'Info', 'info'], ['hq', 'HQ', 'hq']];
-var RAIL_SPORT = [['picks', 'Picks', 'ticket'], ['live', 'Live', 'pulse'], ['games', 'Games', 'court'], ['record', 'Record', 'ledger'], ['lab', 'Lab', 'flask'], ['info', 'Info', 'info'], ['hq', 'HQ', 'hq']];
-var RAIL = RAIL_SPORT;
+var RAIL = [['picks', 'Picks', 'ticket'], ['live', 'Live', 'pulse'], ['games', 'Games', 'court'], ['record', 'Record', 'ledger'], ['lab', 'Lab', 'flask'], ['info', 'Info', 'info'], ['hq', 'HQ', 'hq']];
 var rail = { el: null, ind: null, btns: {}, dot: null, at: null };
 function freshLevel() {
   if (!S.loaded) return null;
@@ -3019,7 +3051,6 @@ function railBtn(label, ic, extra, onClick) {
     h('span', { class: 'lbl', 'aria-hidden': 'true', text: label }));
 }
 function buildRail() {
-  RAIL = S.sport === 'all' ? RAIL_ALL : RAIL_SPORT;
   rail.btns = {};
   clear(tabsEl);
   var main = h('div', { class: 'grp' });
@@ -3052,7 +3083,6 @@ function placeInd(force) {
   if (!rail.el.classList.contains('ready')) requestAnimationFrame(function () { rail.el.classList.add('ready'); });   /* no slide on first paint */
 }
 function renderTabs() {
-  RAIL = S.sport === 'all' ? RAIL_ALL : RAIL_SPORT;
   if (!rail.el) buildRail();
   renderSwitcher();
   RAIL.forEach(function (r) {

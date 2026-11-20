@@ -502,7 +502,10 @@ class Run:
         """Run nightly research scripts once per slate day (non-blocking).
         1. run8_moves.py: re-scores M1-M7 on all stored nights; output saved to data/research/.
         2. auto_hypothesis.py: tests one new hypothesis variant; appends to research/LOG.md.
-        Both are skipped if they already ran today (state file check). Failure here never fails the pipeline."""
+        3. scripts/lab_retire.py (repo root): retires dead Lab tests once the summaries above are fresh.
+        All are skipped if they already ran today (state file check). Failure here never fails the pipeline."""
+        if common.data_dir() != common.REPO_DATA:
+            return  # a redirected data dir (tests) must never run the research scripts, which read and write the repo itself
         state_path = common.dpath("research", "research_state.json")
         st = common.read_json(state_path, {}) or {}
         if st.get("slate") == self.slate:
@@ -530,6 +533,14 @@ class Run:
                 errors.append("auto_hyp exit %d: %s" % (ah.returncode, ah.stderr[:200]))
         except Exception as e:
             errors.append("auto_hyp: %s" % common.short_err(e))
+        # --- lab_retire.py: retire dead Lab tests, flag passing ones ---
+        try:
+            script = os.path.join(repo, "..", "..", "scripts", "lab_retire.py")
+            lr = subprocess.run([sys.executable, "-I", script, "--sport", "nba"], capture_output=True, text=True, timeout=120)
+            if lr.returncode != 0:
+                errors.append("lab_retire exit %d: %s" % (lr.returncode, lr.stderr[:200]))
+        except Exception as e:
+            errors.append("lab_retire: %s" % common.short_err(e))
         common.write_json(state_path, {"slate": self.slate, "at": common.iso(self.now), "errors": errors})
         if errors:
             raise RuntimeError("; ".join(errors))
@@ -555,7 +566,8 @@ class Run:
 
 def rules_doc(cfg):
     ps, r, c, el, w = cfg["pin_solo"], cfg["reads"], cfg["customer"], cfg["eligibility"], cfg["watch"]["pin_judge"]
-    return {"version": cfg["version"], "updated": cfg["updated"], "ui": cfg["ui"], "lines": [
+    return {"version": cfg["version"], "updated": cfg["updated"], "ui": cfg["ui"],
+            "safety_units": cfg["safety_pause"]["units"], "lines": [
         "Hard Rock (Florida) prices: player rebounds, points, assists and 3-pointers made, the main line, over or under. "
         "No leg worse than %d." % c["worst_price"],
         "The rule: Pinnacle (the sharpest book) moves its odds on a line by %d+ points of chance between two of our price checks, "

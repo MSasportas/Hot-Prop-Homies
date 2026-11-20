@@ -11,7 +11,7 @@ Read this first. It is a handoff from the Claude.ai NBA project. The repo's TEAM
 
 ## Who runs it
 
-A CEO agent owns the product end to end and runs subagents: Sharp (betting standard), Data Scientist (data, samples, judging results), UX, Builder, QA. They decide and ship without asking Matt. Every rule is theirs to change, except the fixed items below.
+A CEO agent owns the product end to end and runs subagents: Sharp (betting standard), Data Scientist (data, samples, judging results), UX, Engineer (all code), QA. They decide and ship without asking Matt. Every rule is theirs to change, except the fixed items below.
 
 ## How the CEO is judged
 
@@ -33,7 +33,7 @@ A CEO agent owns the product end to end and runs subagents: Sharp (betting stand
 - No hard caps on picks per game, per night, or per player. Volume is controlled by a calculated score of which picks are better over the long run.
 - Parlays: 2-3 legs (NHL default). Matt can't combine two players from the same game on Hard Rock. Round robins of picks are under consideration (not decided).
 - Leg price floor: no single leg worse than -200. Plus money is fine. (NHL default; confirm for NBA.)
-- Stake: $5 a unit on straight picks.
+- Stake: $10 a unit on straight picks (Matt's current stake; was $5).
 - Timing: Matt bets in the last hour before tip-off (regular season only). A 11 AM odds check exists to raise daily volume.
 
 ## Markets (locked)
@@ -93,3 +93,4 @@ A CEO agent owns the product end to end and runs subagents: Sharp (betting stand
 - Nov 3: Hard Rock or DraftKings only, with link to the book that beats fair price.
 - Nov 4: $5 units. Round robins considered. Page redesign to NHL's Nov 4 layout. Pulled picks show TOO LATE, then appear on Live and the Record. Live tab refresh every 10 seconds.
 - Nov 5: over vs under split on Record. Record rows expand to picks. No long pick list.
+- Later: stake raised from $5 to $10 a unit.

@@ -12,7 +12,6 @@ import model
 import names
 import odds
 import record
-import teams
 
 EPS = 1e-9
 STATE_LABEL = {"early": "Early", "clear": "Injury report clear", "starters": "Starters confirmed", "locked": "Locked"}

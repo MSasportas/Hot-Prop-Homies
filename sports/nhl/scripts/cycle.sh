@@ -103,6 +103,9 @@ fi
   git clean -fdq data/paper
 }
 
+# 3c. Lab retirement (scripts/lab_retire.py at the repo root; once a day, it skips a repeat run). Never stops the cycle.
+if [ -f ../../scripts/lab_retire.py ]; then "$PY" -I ../../scripts/lab_retire.py --sport nhl || say "Lab retirement failed; carrying on"; fi
+
 notify_live() {   # 5. Discord, only after the live page shows this push; then save who was pinged
   [ -n "${CYCLE_RUN_CMD:-}" ] && return 0          # tests: no real pings
   PC_DEFER_NOTIFY= "$PY" scripts/notify_live.py || true
@@ -121,6 +124,9 @@ notify_live() {   # 5. Discord, only after the live page shows this push; then s
 
 # 4. publish
 git add -A data
+for f in config/lab.json config/lab_retired.jsonl config/lab_state.json; do   # nightly Lab retirement
+  if [ -e "$f" ]; then git add "$f"; fi
+done
 if git diff --cached --quiet; then
   say "nothing changed, nothing pushed"
   PC_NOTIFY_NO_WAIT=1 notify_live

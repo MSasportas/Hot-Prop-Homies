@@ -287,11 +287,6 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .legend{display:flex;flex-wrap:wrap;gap:4px 12px;margin-top:6px;font-size:11px;line-height:15px;color:var(--muted)}
 .legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px}
 .dayd{margin-top:10px}
-.filters{display:inline-flex;margin:12px 0 0;border:1px solid var(--line2);border-radius:6px;overflow:hidden}
-.fbtn{min-height:44px;display:inline-flex;align-items:center}
-.fbtn+.fbtn{border-left:1px solid var(--line2)}
-.fbtn span{display:inline-flex;align-items:center;height:44px;padding:0 18px;font-size:13.5px;font-weight:600;color:var(--muted)}
-.fbtn[aria-pressed="true"] span{background:var(--raise);color:var(--fg)}
 .rf-row{display:flex;gap:6px;overflow-x:auto;margin:14px 0 2px;padding-bottom:2px;scrollbar-width:none}.rf-row::-webkit-scrollbar{display:none}
 .rf-btn{flex:0 0 auto;height:32px;padding:0 12px;border:1px solid var(--line2);border-radius:16px;background:var(--surface);color:var(--fg2);font:inherit;font-size:13px;cursor:pointer;-webkit-tap-highlight-color:transparent}.rf-btn.on{background:var(--selected-bg);color:var(--selected-text);border-color:var(--selected-bg)}
 .rf-clr{margin-left:4px;flex:0 0 auto;height:32px;padding:0 10px;background:none;border:0;color:var(--muted);font-size:12px;cursor:pointer}
@@ -327,6 +322,12 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .lab .prog{position:relative;height:4px;margin-top:8px;background:var(--line);border-radius:2px;overflow:hidden}
 .lab .prog i{position:absolute;left:0;top:0;bottom:0;background:var(--accent)}
 .lab .sm{font-size:12px;line-height:17px;color:var(--muted);margin-top:4px}
+.lab-ready{display:inline-block;flex:none;padding:0 7px;border:1px solid var(--good);border-radius:9px;font:600 11px/16px var(--num);letter-spacing:.04em;text-transform:uppercase;color:var(--good);white-space:nowrap}
+.lab>.lab-ready{margin-top:6px}
+.lab-ret{margin-top:14px}
+.lab-ret-b{display:block;width:100%;min-height:44px;padding:10px 0;background:none;border:0;color:var(--muted);font:inherit;font-size:13px;text-align:left;cursor:pointer}
+.lab-ret-b:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.lab-ret .sm{font-size:12px;line-height:17px;color:var(--muted);margin-top:4px;overflow-wrap:anywhere}
 
 /* info: update status, one row per feed with its state, like a service status page */
 .svc-h{display:flex;align-items:center;gap:8px;padding:10px 12px;margin:12px 0 6px;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 6px 6px 0;font-weight:650}
@@ -545,7 +546,6 @@ function isScratch(p) {
   if (isObj(pl) && pl.code) return pl.code === 'out';
   return /scratch|out of the lineup/i.test(str(isObj(pl) ? pl.reason : pl));
 }
-function tooLate(p) { return !!(p && p.pulled) && !isScratch(p); }
 function evOf(p) { var d = payout(p.price), pn = num(p.p); return (d == null || pn == null) ? -1 : pn * (1 + d) - 1; }
 function split() { /* board (open + too late, not started) / started (Live) / scratched */
   var games = gameMap(), out = { games: games, open: [], late: [], started: [], pulled: [], scratched: [], byId: {} };
@@ -558,7 +558,6 @@ function split() { /* board (open + too late, not started) / started (Live) / sc
     else if (p.pulled) out.late.push(p);
     else out.open.push(p);
   }
-  var byRank = function (a, b) { var x = num(a.rank), y = num(b.rank); return (x == null ? 1e9 : x) - (y == null ? 1e9 : y); };
   var byEv = function(a, b) {
     return evOf(b) - evOf(a) || (ms(a.start) || 0) - (ms(b.start) || 0);
   };
@@ -768,7 +767,6 @@ function stateChip(state, short) {
   }
   return h('span', { class: 'stp ' + s[0], role: 'img', 'aria-label': s[2] }, trk, h('span', { class: 't', 'aria-hidden': 'true', text: short ? s[3] : s[2] }));
 }
-var RESULT = { W: ['Hit', 'W'], L: ['Miss', 'L'], PUSH: ['Push', 'PUSH'], VOID: ['Void', 'VOID'] };
 /* "had 0" -> "had 0 shots", from the bet or market */
 function actualText(a, kind) {
   var t = str(a), m = /^had (\d+)$/.exec(t); if (!m) return t;
@@ -1026,8 +1024,6 @@ function notCovered(b, games) {
   var why = m[2] === 'stats behind' ? "their stats aren't updated." : (m[2] === 'stats check failed' ? "their stats couldn't be checked." : m[2] + '.');
   return { level: isObj(b) ? b.level : 'warn', text: 'No picks for ' + teams.join(', ') + ' tonight: ' + why };
 }
-/* goalie last name, kept for any list that names a goalie (the Games tab shows our checks only) */
-function lastName(n) { var w = str(n).trim().split(/\s+/); return w[w.length - 1] || ''; }
 function smallFoot() {
   return h('footer', { class: 'foot' }, h('p', { text: 'For adults 21+. Picks are estimates, not guarantees. Gambling problem? Call 1-888-ADMIT-IT.' }));
 }
@@ -1562,6 +1558,39 @@ function loadOlder() {
 }
 
 /* ---------- Lab: ideas that passed their historical test, tracked on paper (config/lab.json) ---------- */
+/* ---------- Lab: retired tests (config/lab_retired.jsonl, written by scripts/lab_retire.py) ---------- */
+var RETIRED_WHY = { fail_full: 'failed its test', fail_early: 'losing clearly, stopped early', inconclusive_cap: 'never proved itself', stalled: 'ran out of picks' };
+function labRetiredSources() {
+  var n = S.lab ? num(S.lab.retired_count) || 0 : 0;
+  return n > 0 ? [{ sp: null, n: n, url: 'config/lab_retired.jsonl' }] : [];
+}
+function LAB_REDRAW() { render(); }
+function loadRetired(sources) {
+  S.labRetiredEv = 'loading';
+  return Promise.all(sources.map(function (s) {
+    return fetch(s.url + '?t=' + Date.now(), { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error('http ' + r.status); return r.text(); })
+      .then(function (t) { return t.split('\n').filter(Boolean).map(function (ln) { var e = JSON.parse(ln); e._sp = s.sp; return e; }); });
+  })).then(function (xs) {
+    S.labRetiredEv = [].concat.apply([], xs).filter(function (e) { return isObj(e) && e.event === 'retired'; }).sort(function (a, b) { return str(a.ts) < str(b.ts) ? 1 : -1; });
+  }, function () { S.labRetiredEv = 'err'; }).then(LAB_REDRAW);
+}
+/* one muted "N retired" line at the bottom of the Lab; a tap lists them */
+function labRetiredLine() {
+  var sources = labRetiredSources(), n = sources.reduce(function (a, s) { return a + s.n; }, 0);
+  if (!n) return null;
+  if (S.labRetiredOpen && S.labRetiredEv == null) loadRetired(sources);
+  var box = h('div', { class: 'lab-ret' }), btn = h('button', { class: 'lab-ret-b', type: 'button', 'aria-expanded': S.labRetiredOpen ? 'true' : 'false', text: n + ' retired ' + (S.labRetiredOpen ? '▴' : '▾') });
+  btn.addEventListener('click', function () { S.labRetiredOpen = !S.labRetiredOpen; LAB_REDRAW(); });
+  box.appendChild(btn);
+  if (!S.labRetiredOpen) return box;
+  var ev = S.labRetiredEv;
+  if (!Array.isArray(ev)) box.appendChild(h('div', { class: 'sm', text: ev === 'err' ? "Couldn't load the list." : 'Loading the list' }));
+  else ev.forEach(function (e) {
+    var f = isObj(e.final) ? e.final : {};
+    box.appendChild(h('div', { class: 'sm', text: (str(e.title) || str(e.id)) + ' · ' + (num(f.w) || 0) + '-' + (num(f.l) || 0) + ' ' + String(units(f.units, 2)).replace(/ units?$/, 'u') + ' · ' + (RETIRED_WHY[str(e.reason)] || 'retired') + ' · ' + fDateShort(str(e.ts).slice(0, 10)) }));
+  });
+  return box;
+}
 function renderLab() {
   top('Lab', false);
   app.appendChild(h('p', { class: 'mu', style: 'margin:10px 0 0;font-size:13px;line-height:19px', text: 'Ideas that passed their historical test, now tracked on paper. Not picks: never on the Record or in Discord.' }));
@@ -1575,6 +1604,7 @@ function renderLab() {
   tests.forEach(function (t) {
     var sm = S.labSum[str(t.id)], st = sm && isObj(sm[str(t.stats)]) ? sm[str(t.stats)] : null, card = h('section', { class: 'lab' });
     card.appendChild(h('h3', { text: str(t.title) || 'Untitled idea' }));
+    if (t.status === 'ready_for_sharp') card.appendChild(h('span', { class: 'lab-ready', text: 'Ready for Sharp' }));
     if (t.rule) card.appendChild(h('div', { class: 'rl', text: str(t.rule) }));
     if (!st) {
       card.appendChild(h('div', { class: 'sm', style: 'margin-top:10px', text: sm && sm._err === 'file' ? 'No results logged yet.' : (sm ? "Its numbers couldn't be read." : 'Loading its numbers') }));
@@ -1595,6 +1625,8 @@ function renderLab() {
     if (t.gate) card.appendChild(h('div', { class: 'sm', text: str(t.gate) }));
     app.appendChild(card);
   });
+  var retLine = labRetiredLine();
+  if (retLine) app.appendChild(retLine);
   app.appendChild(smallFoot());
 }
 

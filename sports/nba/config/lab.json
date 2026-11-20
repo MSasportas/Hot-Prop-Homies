@@ -10,7 +10,8 @@
    "stats": "total",
    "need": 100,
    "discovery": "Saved data: Hard Rock follows a Pinnacle move in 20-30 minutes, so wider checks missed about 5 of 6 moves.",
-   "gate": "Kept if it adds picks and they beat the closing line. Updated nightly."
+   "gate": "Kept if it adds picks and they beat the closing line. Updated nightly.",
+   "no_auto_retire": true
   },
   {
    "id": "pin_judge",
@@ -243,9 +244,10 @@
    "rule": "Base population: when the player's last-5-game average is 10%+ above his season average, overs miss. Points overs worst. Shadow-track from 2026-11-16. Note: LVA2 tracks overs where the LINE is 5%+ above rolling avg (8-0 discovery, overs hit) — different feature (line level vs recent output). Both tracked; DS to report overlap correlation at first scoring check.",
    "summary": "research/lab_dm.json",
    "stats": "DM2",
-   "need": 80,
+   "need": 300,
    "discovery": "Discovery Nov 6-Nov 15 (second half only; min 5 prior games needed): overs in hot bucket n=361, 45.7% hit, -12.6% ROI, 90% CI [-21.0, -4.3]. Points hot overs n=105, 40.0%, -25.1%. Hot unders near breakeven (+0.7%).",
-   "gate": "n >= 80 graded forward overs in hot bucket (last-5 >= 10% above season avg, min 5 prior games). Hit rate < 50%, ROI < -5%. DS to report LVA2 overlap at the first check. If passes: Sharp reviews with DS before any live rule change."
+   "gate": "n >= 300 graded forward overs in hot bucket (last-5 >= 10% above season avg, min 5 prior games). Hit rate < 50%, ROI < -5%. DS to report LVA2 overlap at the first check. If passes: Sharp reviews with DS before any live rule change.",
+   "direction": "fade"
   },
   {
    "id": "DM3",
@@ -255,7 +257,8 @@
    "stats": "DM3",
    "need": 50,
    "discovery": "Discovery Oct 26-Nov 15 (base population): unders with Pinnacle 3+ pts off the market n=81, 32-49, 39.5% hit, -26.3% ROI, 90% CI [-43.2, -9.5]. Both halves negative (first half -18.1% n=50, second -39.6% n=31). Overs in same bucket +13.4% ROI but not stable across halves.",
-   "gate": "n >= 50 graded forward unders in the Pinnacle-outlier bucket (consensus vs Pinnacle gap >= 3 pts). Hit rate < 48%. If passes: Sharp reviews with DS before any live rule change."
+   "gate": "n >= 50 graded forward unders in the Pinnacle-outlier bucket (consensus vs Pinnacle gap >= 3 pts). Hit rate < 48%. If passes: Sharp reviews with DS before any live rule change.",
+   "direction": "fade"
   }
  ]
 }

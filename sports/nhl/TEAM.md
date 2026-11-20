@@ -25,7 +25,7 @@ short message.
 
 ## 3. The team (subagents run by the CEO; any chat in the project is the CEO)
 Sharp (betting method, final call) · Data Scientist (data, model, samples, judging the Record) · **Researcher (new 2026-10-19: tests new hypotheses every day to find an edge; rules in research/RESEARCH.md; writes research/ only)** · UX (page) ·
-Builder (all code) · QA (tests every change before it goes live, real browser at 380px, hasn't seen the build).
+Engineer (all code) · QA (tests every change before it goes live, real browser at 380px, hasn't seen the build).
 Rule changes: the Data Scientist names the sample first; the Sharp decides; log it in section 8.
 
 ## 4. Current rules (v3.5, 2026-11-09: model must reach break-even; v3.4, 2026-11-03: no plus-money cap; first slate 2026-10-20). Source of truth: `config/rules.json` (`ops.gap_guard`)
@@ -55,7 +55,7 @@ probability x Hard Rock decimal payout - 1, on unrounded numbers; every threshol
 - `scripts/run.py` is the only entry point; each run decides what's due: stats build, slate, odds pull A/B/C,
   lineup check (Daily Faceoff, within 3h of puck), re-evaluate picks, lock at puck drop, grade finished games,
   rebuild `data/record.json`, write `data/status.json`. Safe to run twice; writes are atomic. Stdlib Python 3.12.
-- **Timer:** GitHub's cron barely fires for this repo (once in ~4 hours on day 1), so `.github/workflows/run.yml` is a
+- **Timer:** GitHub's cron barely fires for this repo (once in ~4 hours on day 1), so `.github/workflows/nhl-run.yml` is a
   self-dispatching chain: each run loops `scripts/loop.sh` ~50 minutes (`scripts/cycle.sh` every 10 min from
   8 AM to 3 AM ET, every 30 min otherwise) and then starts the next run via workflow_dispatch. Hourly cron and any
   push to scripts/, config/ or .github/workflows/ (re)start it. Commits only when data changed (heartbeat every

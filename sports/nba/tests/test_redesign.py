@@ -226,12 +226,15 @@ class LabConfig(unittest.TestCase):
         # Matt 2026-11-12: everything being tested is in the Lab (paper tracks first, then the nightly forward filters)
         ids = [t["id"] for t in doc["tests"]]
         self.assertEqual(ids[:3], ["fast_checks", "pin_judge", "threes_judge"])
-        self.assertEqual(ids[3:], ["AH%d" % i for i in range(1, 16)])
+        self.assertEqual(ids[3:18], ["AH%d" % i for i in range(1, 16)])
+        self.assertEqual(ids[18:], ["NP1", "NP2", "NP3", "LVA1", "LVA2", "NP4", "DM1", "DM2", "DM3"])
         for t in doc["tests"]:
             for k in ("id", "title", "rule", "summary", "need", "gate"):
                 self.assertIn(k, t)
             self.assertNotIn("..", t["summary"])
             sm = json.load(open(os.path.join(ROOT, "data", t["summary"])))
+            if not sm and t["id"].startswith(("NP", "LVA")):          # no qualifying bet logged yet: the exporter writes {}
+                continue
             self.assertIn(t.get("stats", "total"), sm)
             for k in ("w", "l", "units", "pending"):
                 self.assertIn(k, sm[t.get("stats", "total")])
@@ -251,7 +254,7 @@ class Page(unittest.TestCase):
         self.assertNotIn("sportsbook.draftkings.com", h)
         self.assertIn("<title>HPH · NBA</title>", h)
         self.assertIn('content="#090812"', h)
-        for c in ("#090812", "#120F1E", "#F0EDF8", "#E8187A", "#17E9FF"):   # HPH Flame Night
+        for c in ("#090812", "#1A163A", "#F0EDF8", "#E8187A", "#17E9FF"):   # HPH Flame Night
             self.assertIn(c, h)
         for v in ("'picks', 'Picks'", "'live', 'Live'", "'games', 'Games'", "'record', 'Record'", "'lab', 'Lab'", "'info', 'Info'"):
             self.assertIn(v, h)

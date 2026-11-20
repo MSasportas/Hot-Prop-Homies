@@ -26,7 +26,6 @@ import urllib.parse
 from datetime import datetime, timedelta
 
 import common
-import names
 import teams
 
 API = "https://api.the-odds-api.com/v4/sports/icehockey_nhl"

@@ -6,7 +6,7 @@ This folder is the NHL subfolder (sports/nhl/) of the Hot-Prop-Homies repo (MSas
 1. `git pull --rebase origin main`. A GitHub Actions timer commits about every 10 minutes, so the local copy is always behind.
 2. Read TEAM.md in full. It is the source of truth: current rules and values, rule-change log, known gaps, session log. If this file and TEAM.md disagree on a team rule, TEAM.md wins. If they disagree on anything under "Fixed" below, this file wins.
 3. Before every push: `git pull --rebase origin main`, then push. Never force-push. Never rewrite history.
-4. Update TEAM.md last (a one-line entry at the top of section 9, plus any known gaps), then commit and push.
+4. Update TEAM.md last (a one-line entry at the top of section 9, plus any known gaps), then hand it to the Engineer to commit and push.
 5. If a push is refused for lack of access, say so in one line and continue read-only.
 
 ## Who I am
@@ -28,7 +28,7 @@ Every Claude Code session in this folder is the CEO unless I say otherwise. The 
 - Data Scientist: data, samples, judging results
 - Researcher: tests new edge ideas daily; writes only under research/ (rules in research/RESEARCH.md)
 - UX: the page
-- Builder: all code
+- Engineer: all code, commits and pushes. The other roles specify changes; the Engineer builds them
 - QA: fresh eyes, tests every change before it ships, with page changes checked in a real browser at 380px
 
 The team decides and ships without asking me. Every rule is theirs to change, except "Fixed." A rule change needs the Data Scientist to name the sample, the Sharp to decide, and an entry in the TEAM.md section 8 log.
@@ -45,7 +45,7 @@ The team decides and ships without asking me. Every rule is theirs to change, ex
 
 ## How it runs
 - It runs itself, with no chat needed. Repo: MSasportas/Hot-Prop-Homies (public, sports/nhl/ subfolder). Live page: https://msasportas.github.io/Hot-Prop-Homies/
-- Timer: `.github/workflows/run.yml` is a self-dispatching GitHub Actions chain. `scripts/run.py` is the only entry point and runs stats, odds, lineups, picks, pulls, locking and grading every 10 minutes from 8 AM to 3 AM ET. All times are Eastern.
+- Timer: `.github/workflows/nhl-run.yml` is a self-dispatching GitHub Actions chain. `scripts/run.py` is the only entry point and runs stats, odds, lineups, picks, pulls, locking and grading every 10 minutes from 8 AM to 3 AM ET. All times are Eastern.
 - Tests: `python -m unittest discover -s tests`. Stdlib Python 3.12.
 - Historical odds for research: `research/data/*.tgz`. Extract into a scratch folder, never into the repo.
 - Scheduled reviews currently run as claude.ai cloud scheduled tasks, not from this desktop: Researcher daily at 7:52 AM, daily check at 1:43 PM, full team review Sundays at 10:47 AM. Each one clones the repo fresh and works on GitHub directly. Because they also push, always pull before working.

@@ -387,6 +387,7 @@ class Oct19Engine(unittest.TestCase):
                     os.path.join(self.dir, "odds", self.DAY + ".json"))
         self.cfg = json.loads(json.dumps(common.load_config()))
         self.cfg["ops"]["gap_guard"]["live_from"] = self.DAY
+        self.cfg["ops"]["gap_guard"]["thresholds"]["require_lineup_confirmed"] = False   # the real 10-19 reads carry no lineups
         self.games = [{"id": 2026020137, "away": "ANA", "home": "NYR", "start": "2026-10-19T19:00:00-04:00", "date": self.DAY},
                       {"id": 2026020138, "away": "COL", "home": "PHI", "start": "2026-10-19T19:00:00-04:00", "date": self.DAY}]
 

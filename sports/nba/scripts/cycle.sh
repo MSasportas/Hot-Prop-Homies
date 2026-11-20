@@ -113,6 +113,9 @@ notify_live() {   # 5. Discord, only after the live page shows this push; then s
 
 # 4. publish
 git add -A data research/LOG.md   # nightly auto-hypothesis appends to research/LOG.md; an unstaged edit blocks the rebase
+for f in config/lab.json config/lab_retired.jsonl config/lab_state.json; do   # nightly Lab retirement (scripts/lab_retire.py)
+  if [ -e "$f" ]; then git add "$f"; fi
+done
 if git diff --cached --quiet; then
   say "nothing changed, nothing pushed"
   PC_NOTIFY_NO_WAIT=1 notify_live

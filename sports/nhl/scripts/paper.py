@@ -31,13 +31,12 @@ A failure here stops NEW picks for that run (engine.py finds no new flags) but n
 import json
 import os
 import random
-from datetime import datetime, timedelta
+from datetime import timedelta
 
 import common
 import goalies
 import guard_record
 import lineups
-import names
 import odds
 import sched
 import shadow
@@ -371,7 +370,7 @@ class Paper:
                 self.emit(e)
         # (b) candidates: step 1 then step 2, ranked by final EV, capped. allow_new=False (stats behind, safety pause):
         # nothing new is flagged from this read; flags already alive are still looked after above and below.
-        passed, now_ids = [], set()
+        passed = []
         behind = getattr(self.inp, "behind", None) or {}
         for (pid, line), pair in sorted(view["pairs"].items() if allow_new else []):
             if pair["over"] is None or pair["under"] is None or pair["why"] is not None:

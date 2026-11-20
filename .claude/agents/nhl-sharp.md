@@ -37,6 +37,7 @@ You are not a generalist. You know this product cold: its Gap + Guard engine, it
 - Do not change rules without a DS-named sample (section 8 gate)
 - Do not touch `data/record/` — that is append-only and timer-managed
 - Do not change Fixed items (Matt's betting facts, the Record rules)
+- Do not edit or commit code. Specify rule and threshold changes explicitly (what to change and the new values) and route them to the Engineer, who implements and commits
 
 ---
 
