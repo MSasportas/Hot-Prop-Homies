@@ -1,11 +1,11 @@
 {
- "ok": false,
+ "ok": true,
  "slate_date": "2026-11-19",
- "started_at": "2026-11-20T01:20:00-05:00",
- "status_at": "2026-11-20T01:20:00-05:00",
- "finished_at": "2026-11-20T01:20:01-05:00",
- "last_ok_at": "2026-11-20T01:01:37-05:00",
- "failed_step": "stats",
+ "started_at": "2026-11-20T01:40:00-05:00",
+ "status_at": "2026-11-20T01:40:00-05:00",
+ "finished_at": "2026-11-20T01:40:01-05:00",
+ "last_ok_at": "2026-11-20T01:40:00-05:00",
+ "failed_step": null,
  "steps": [
   {
    "step": "rules",
@@ -19,8 +19,8 @@
   },
   {
    "step": "stats",
-   "status": "failed",
-   "note": "NHL stats did not answer for 1 window(s)"
+   "status": "skipped",
+   "note": "waiting to retry"
   },
   {
    "step": "lineups",
@@ -64,23 +64,23 @@
   },
   {
    "step": "grade",
-   "status": "ok",
-   "note": "1 graded"
+   "status": "skipped",
+   "note": "nothing to grade"
   },
   {
    "step": "live",
-   "status": "ok",
-   "note": "6 game(s), 1 read this run"
+   "status": "skipped",
+   "note": "no change"
   },
   {
    "step": "shadow",
-   "status": "ok",
-   "note": "33 graded"
+   "status": "skipped",
+   "note": "nothing new"
   },
   {
    "step": "gg_grade",
    "status": "ok",
-   "note": "gap+guard: 1 grade"
+   "note": "gap+guard: nothing new"
   },
   {
    "step": "slate",
@@ -89,8 +89,8 @@
   },
   {
    "step": "record",
-   "status": "ok",
-   "note": "record.json"
+   "status": "skipped",
+   "note": "unchanged"
   }
  ],
  "sources": {
@@ -166,7 +166,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "44684840487",
-  "iteration": 3,
+  "iteration": 5,
   "chain_link": 50,
   "chain_started_at": "2026-11-18T10:00:22-05:00",
   "run_started_at": "2026-11-20T01:01:19-05:00"
