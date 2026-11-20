@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-19",
- "generated_at": "2026-11-19T20:30:01-05:00",
- "status_at": "2026-11-19T20:30:01-05:00",
+ "generated_at": "2026-11-19T20:40:00-05:00",
+ "status_at": "2026-11-19T20:40:00-05:00",
  "valid_until": "2026-11-20T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-19T20:30:01-05:00",
+   "at": "2026-11-19T20:40:00-05:00",
    "failed_step": null
   },
   "pool": {
@@ -464,7 +464,7 @@
     },
     "home": {
      "name": "Scott Wedgewood",
-     "status": "expected"
+     "status": "confirmed"
     }
    },
    "checks": {
@@ -697,8 +697,8 @@
     "ours_pct": 46.9,
     "model_pct": 48.7
    },
-   "settled": "lineup",
-   "settled_label": "Lineup confirmed",
+   "settled": "goalie",
+   "settled_label": "Goalie confirmed",
    "reason": "7 other books say 46.9%; Hard Rock's +120 only needs 45.5%. Our model agrees (our blend: 46.9%).",
    "link": "https://app.hardrock.bet/?deep_link_value=betslip/2287745857088520595",
    "links": {
@@ -769,8 +769,8 @@
     "ours_pct": 55.1,
     "model_pct": 54.7
    },
-   "settled": "lineup",
-   "settled_label": "Lineup confirmed",
+   "settled": "goalie",
+   "settled_label": "Goalie confirmed",
    "reason": "7 other books say 54.8%; Hard Rock's +105 only needs 48.8%. Our model agrees (our blend: 55.1%).",
    "link": "https://app.hardrock.bet/?deep_link_value=betslip/6002371124739047827",
    "links": {
@@ -841,8 +841,8 @@
     "ours_pct": 58.2,
     "model_pct": 56.7
    },
-   "settled": "lineup",
-   "settled_label": "Lineup confirmed",
+   "settled": "goalie",
+   "settled_label": "Goalie confirmed",
    "reason": "7 other books say 58.6%; Hard Rock's -125 only needs 55.6%. Our model agrees (our blend: 58.2%).",
    "link": "https://app.hardrock.bet/?deep_link_value=betslip/5784509492765000088",
    "links": {
@@ -913,8 +913,8 @@
     "ours_pct": 37.2,
     "model_pct": 35.0
    },
-   "settled": "lineup",
-   "settled_label": "Lineup confirmed",
+   "settled": "goalie",
+   "settled_label": "Goalie confirmed",
    "reason": "6 other books say 37.3%; Hard Rock's +180 only needs 35.7%. Our model agrees (our blend: 37.2%).",
    "link": "https://app.hardrock.bet/?deep_link_value=betslip/3121474738105483669",
    "links": {
