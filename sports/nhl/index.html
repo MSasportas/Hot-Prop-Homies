@@ -295,6 +295,15 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .rf-row{display:flex;gap:6px;overflow-x:auto;margin:14px 0 2px;padding-bottom:2px;scrollbar-width:none}.rf-row::-webkit-scrollbar{display:none}
 .rf-btn{flex:0 0 auto;height:32px;padding:0 12px;border:1px solid var(--line2);border-radius:16px;background:var(--surface);color:var(--fg2);font:inherit;font-size:13px;cursor:pointer;-webkit-tap-highlight-color:transparent}.rf-btn.on{background:var(--selected-bg);color:var(--selected-text);border-color:var(--selected-bg)}
 .rf-clr{margin-left:4px;flex:0 0 auto;height:32px;padding:0 10px;background:none;border:0;color:var(--muted);font-size:12px;cursor:pointer}
+/* nightly summary rows */
+.nt-hdr{display:grid;grid-template-columns:16px minmax(0,1fr) 54px 70px;column-gap:8px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);width:100%;min-height:44px;background:none;border-top:0;border-left:0;border-right:0;color:inherit;font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent;text-align:left}
+.nt-hdr .chev{font-size:14px;font-weight:700;color:var(--muted);transition:transform .15s;text-align:center}
+.nt-hdr .chev.on{transform:rotate(90deg);color:var(--accent)}
+.nt-d{font-size:14px;line-height:20px;font-weight:600;color:var(--fg);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nt-wl{font:600 14px/18px var(--num);text-align:right;white-space:nowrap;color:var(--fg2)}
+.nt-u{font:600 14px/18px var(--num);text-align:right;white-space:nowrap}
+.nt-body{padding:4px 0 8px;border-bottom:2px solid var(--line2)}
+@media (prefers-reduced-motion:reduce){.nt-hdr .chev{transition:none}}
 .night{margin-top:20px}
 .night h3{padding-bottom:6px;border-bottom:1px solid var(--line2)}
 .night h3 .mu{font:400 12px/16px var(--body);letter-spacing:0}
@@ -371,7 +380,7 @@ var S = {
   view: 'picks', expanded: {}, filter: 'all', legsOpen: {},
   older: [], olderIdx: 0, olderBusy: false, olderErr: false, months: {}, calMonth: null, selDay: null,
   newIds: {}, since: null, seenDone: false,
-  heads: null, key: '', scroll: {}, recFilters: []
+  heads: null, key: '', scroll: {}, recFilters: [], openNight: {}
 };
 
 var app = document.getElementById('app');
@@ -1372,26 +1381,41 @@ function renderRecord() {
     cuts.forEach(function (c) { app.appendChild(cutTable(c, few)); });
   }
 
-  /* (d) every pick, as shown */
-  app.appendChild(h('div', { class: 'sec-h', style: 'margin-top:24px' }, h('h2', { text: 'Every pick' })));
-  var fl = h('div', { class: 'filters', role: 'group', 'aria-label': 'Show' });
-  [['all', 'All'], ['late', 'Too late']].forEach(function (f) {
-    fl.appendChild(h('button', { class: 'fbtn', type: 'button', 'aria-pressed': S.filter === f[0] ? 'true' : 'false',
-      on: { click: function () { S.filter = f[0]; rerender(); } } }, h('span', { text: f[1] })));
-  });
-  app.appendChild(fl);
+  /* (d) nightly rows: expandable summaries, newest first */
+  app.appendChild(h('div', { class: 'sec-h', style: 'margin-top:24px' }, h('h2', { text: 'Nights' })));
   var nights = (filtNights || allNights()), shown = 0;
-  nights.forEach(function (nt) {
-    var ents = arr(nt.entries).filter(isObj).filter(function (e) { return S.filter === 'late' ? (!!e.pulled && !entryScratch(e)) : true; });
-    if (!ents.length) return;
-    shown++;
-    app.appendChild(nightSection(nt, ents));
-  });
-  if (!shown) app.appendChild(h('p', { class: 'mu', style: 'margin-top:16px', text: nights.length ? 'Nothing under this filter yet.' : 'No nights on the Record yet.' }));
-  var older = arr(S.record.older);
-  if (S.olderIdx < older.length) {
-    app.appendChild(h('button', { class: 'btn wide', type: 'button', style: 'margin-top:18px', text: S.olderBusy ? 'Loading' : 'Show older', on: { click: loadOlder } }));
-    if (S.olderErr) app.appendChild(h('p', { class: 'note', style: 'color:var(--warn)', text: "Couldn't load older results. Try again." }));
+  if (!nights.length) {
+    app.appendChild(h('p', { class: 'mu', style: 'margin-top:16px', text: 'No nights on the Record yet.' }));
+  } else {
+    var ntBox = h('div');
+    nights.forEach(function (nt) {
+      var ents = arr(nt.entries).filter(isObj);
+      if (!ents.length) return;
+      shown++;
+      var open = !!S.openNight[nt.date];
+      var hdr = h('button', {
+        class: 'nt-hdr', type: 'button', 'aria-expanded': open ? 'true' : 'false',
+        on: { click: (function (d) { return function () { S.openNight[d] = !S.openNight[d]; rerender(); }; })(nt.date) }
+      },
+        h('span', { class: 'chev' + (open ? ' on' : ''), 'aria-hidden': 'true', text: '›' }),
+        h('span', { class: 'nt-d', text: fDateLong(nt.date) }),
+        h('span', { class: 'nt-wl', text: (num(nt.w)||0) + (num(nt.l)||0) || nt.graded ? (num(nt.w)||0) + '-' + (num(nt.l)||0) : 'pending' }),
+        h('span', { class: 'nt-u ' + signCls(nt.units), text: uShort(nt.units, 1) || '' })
+      );
+      ntBox.appendChild(hdr);
+      if (open) {
+        var body = h('div', { class: 'nt-body' });
+        ents.forEach(function (e) { entryRow(e, nt, false).forEach(function (x) { body.appendChild(x); }); });
+        ntBox.appendChild(body);
+      }
+    });
+    if (!shown) app.appendChild(h('p', { class: 'mu', style: 'margin-top:16px', text: 'Nothing under this filter yet.' }));
+    else app.appendChild(ntBox);
+    var older = arr(S.record.older);
+    if (S.olderIdx < older.length) {
+      app.appendChild(h('button', { class: 'btn wide', type: 'button', style: 'margin-top:18px', text: S.olderBusy ? 'Loading' : 'Show older', on: { click: loadOlder } }));
+      if (S.olderErr) app.appendChild(h('p', { class: 'note', style: 'color:var(--warn)', text: "Couldn't load older results. Try again." }));
+    }
   }
   app.appendChild(h('p', { class: 'note', text: 'Graded at the posted price. Push and void are 0 units and left out of W-L and hit rate. A scratched player voids.' }));
   app.appendChild(smallFoot());
@@ -1618,11 +1642,11 @@ function slot(key, kind) {
    price, pct, pts (0.02 -> 2), num, text, list (an array: "1.5 and 2.5"); a key may be dotted (gap_guard.lines). There is ONE rule. */
 var RULES = [
   'We bet only Hard Rock shots on goal at the {gap_guard.lines|list} lines, over or under, at {gap_guard.price_gate|price} or better. Plus money has no cap.',
-  "Step 1, the gap. At the 90 and 45 minute price reads we ask the other books. At least {gap_guard.books_min|num} of them (Pinnacle must be one) must price the same player and line, both sides. We take their margin out and use the middle chance. Hard Rock's price has to beat it by at least {gap_guard.gap_ev|pct}, and Pinnacle on its own must not say the price loses.",
-  "Step 2, the guard. We blend {gap_guard.market_weight|pct} the other books' chance with {gap_guard.model_weight|pct} our model's chance. The blend still has to beat the price by at least {gap_guard.final_ev|pct}, and our model's own chance has to be at least the price's break-even. The model can only say no: it never creates a pick.",
+  "Step 1 — gap. At the 90 and 45 minute reads, at least {gap_guard.books_min|num} books (Pinnacle required) must quote both sides of the same line. We strip their margin and take the middle chance. Hard Rock must beat that chance by {gap_guard.gap_ev|pct}. Pinnacle alone must not say it loses.",
+  "Step 2 — guard. We blend {gap_guard.market_weight|pct} the books' chance with {gap_guard.model_weight|pct} our model. The blend must still beat the price by {gap_guard.final_ev|pct}, and the model must put the chance at or above break-even. The model can only veto — it never creates a pick.",
   'The first 90 or 45 minute read that passes both steps becomes the pick, and its price is frozen. That is the price shown here, in the alerts and graded on the Record. The 1 PM read only sets a baseline.',
   'One pick per player (his best side and line). No per-game or nightly limit: every leg that clears both steps is shown, ranked best blend first, and graded on the Record. Parlays are not offered: there is no evidence for them yet.',
-  "A pick comes off the board (TOO LATE) if Hard Rock moves the price and the gap falls under {gap_guard.pull_ev|pct}, fewer than {gap_guard.books_min|num} other books still quote it, Pinnacle stops quoting it or disagrees, the blend no longer beats the price by {gap_guard.final_ev|pct}, or the line is taken down. If you already bet it at the shown price, keep it (a Hard Rock bet can't be taken back). A scratched player's pick is removed and voids. The 45 minute read is the last price check: after it a pick shows Price final, and only a scratch can pull it. Every pick shown stays on the Record and counts.",
+  "TOO LATE means the pick came off the board: gap dropped under {gap_guard.pull_ev|pct}, fewer than {gap_guard.books_min|num} books quote it, Pinnacle disagrees, the blend no longer passes, or the line was pulled. If you already bet it at the shown price, keep it — Hard Rock bets can't be cancelled. Scratched players void. After the 45 minute read, picks show Price final and only a scratch can pull it. Every pick counts on the Record.",
   "A player needs {min_history|num} games of history. One who missed his team's last game waits for a confirmed lineup, and one back from {absence_games|num} or more missed games sits out {absence_sitout|num} games.",
   "Results come from the NHL boxscore once each game is final. Overtime counts, shootouts don't. Graded at the price shown, {stake|num} unit each.",
   'New picks stop by themselves if the Record falls to {gap_guard.safety_units|num} units, until the team reviews. We need {min_sample|num} graded picks before judging results.'

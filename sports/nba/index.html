@@ -289,6 +289,15 @@ button.tr.open{background:var(--selected-bg);border-bottom-color:transparent}
 .cutl{padding:2px 0 10px 12px;border-left:2px solid var(--selected-text);margin:0 0 6px;background:var(--surface)}
 .cutl .cutd{font-size:11px;line-height:15px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin:10px 0 2px}
 @media (prefers-reduced-motion:reduce){.tr .chev{transition:none}}
+/* nightly summary rows */
+.nt-hdr{display:grid;grid-template-columns:16px minmax(0,1fr) 54px 70px;column-gap:8px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);width:100%;min-height:44px;background:none;border-top:0;border-left:0;border-right:0;color:inherit;font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent;text-align:left}
+.nt-hdr .chev{font-size:14px;font-weight:700;color:var(--muted);transition:transform .15s;text-align:center}
+.nt-hdr .chev.on{transform:rotate(90deg);color:var(--accent)}
+.nt-d{font-size:14px;line-height:20px;font-weight:600;color:var(--fg);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nt-wl{font:600 14px/18px var(--num);text-align:right;white-space:nowrap;color:var(--fg2)}
+.nt-u{font:600 14px/18px var(--num);text-align:right;white-space:nowrap}
+.nt-body{padding:4px 0 8px;border-bottom:2px solid var(--line2)}
+@media (prefers-reduced-motion:reduce){.nt-hdr .chev{transition:none}}
 .cut h3,.night h3,.cal-h h3{font:400 14px/20px var(--head);letter-spacing:.01em;margin:0}
 .cut{margin-top:16px}
 .cut .cn{font-size:11.5px;line-height:15px;color:var(--muted);margin-top:1px}
@@ -395,7 +404,7 @@ var MARKET_LINE = 'Hard Rock prices only · No leg worse than -200 · Rebounds, 
 var S = {
   slate: null, record: null, rules: null, recordErr: null, lab: null, labSum: {}, labErr: null, heads: null,
   loaded: false, loadErr: false, fetchFail: false, loadedAt: null, busy: false,
-  view: 'picks', expanded: {},
+  view: 'picks', expanded: {}, openNight: {},
   older: [], olderIdx: 0, olderBusy: false, olderErr: false, months: {}, calMonth: null, selDay: null,
   newIds: {}, since: null, seenDone: false, key: '', scroll: {}
 };
@@ -1409,17 +1418,33 @@ function renderRecord() {
     app.appendChild(cutTable(cuts[ci], few));
   }
 
-  /* latest picks only (Matt, 2026-11-05: no endless list). Older picks: tap a day on the calendar or a row in the cuts. */
-  var latest = [];
-  allNights().forEach(function (nt) { arr(nt.entries).filter(isObj).forEach(function (e) { latest.push(e); }); });
-  app.appendChild(h('div', { class: 'sec-h', style: 'margin-top:24px' }, h('h2', { text: 'Latest picks' }),
-    h('span', { class: 'mu', text: latest.length > LATEST_N ? 'Last ' + LATEST_N : '' })));
-  if (!latest.length) app.appendChild(h('p', { class: 'mu', style: 'margin-top:16px', text: 'No picks on the Record yet.' }));
-  else {
-    var lbox = h('section', { class: 'night' });
-    latest.slice(0, LATEST_N).forEach(function (e) { lbox.appendChild(entryRow(e, true)); });
-    app.appendChild(lbox);
-    if (latest.length > LATEST_N) app.appendChild(h('p', { class: 'note', style: 'margin-top:6px', text: 'Older: tap a day on the calendar or a table row.' }));
+  /* nightly rows: expandable summaries, newest first */
+  var recNights = allNights();
+  app.appendChild(h('div', { class: 'sec-h', style: 'margin-top:24px' }, h('h2', { text: 'Nights' })));
+  if (!recNights.length) {
+    app.appendChild(h('p', { class: 'mu', style: 'margin-top:16px', text: 'No nights on the Record yet.' }));
+  } else {
+    var ntBox = h('div');
+    recNights.slice(0, 7).forEach(function (nt) {
+      var open = !!S.openNight[nt.date];
+      var hdr = h('button', {
+        class: 'nt-hdr', type: 'button', 'aria-expanded': open ? 'true' : 'false',
+        on: { click: (function (d) { return function () { S.openNight[d] = !S.openNight[d]; rerender(); }; })(nt.date) }
+      },
+        h('span', { class: 'chev' + (open ? ' on' : ''), 'aria-hidden': 'true', text: '›' }),
+        h('span', { class: 'nt-d', text: fDateLong(nt.date) }),
+        h('span', { class: 'nt-wl', text: (num(nt.w)||0) + (num(nt.l)||0) || nt.graded ? (num(nt.w)||0) + '-' + (num(nt.l)||0) : 'pending' }),
+        h('span', { class: 'nt-u ' + signCls(nt.units), text: uShort(nt.units, 2) || '' })
+      );
+      ntBox.appendChild(hdr);
+      if (open) {
+        var body = h('div', { class: 'nt-body' });
+        arr(nt.entries).filter(isObj).forEach(function (e) { body.appendChild(entryRow(e, true)); });
+        ntBox.appendChild(body);
+      }
+    });
+    app.appendChild(ntBox);
+    if (recNights.length > 7) app.appendChild(h('p', { class: 'note', style: 'margin-top:6px', text: 'Older: tap a day on the calendar.' }));
   }
   app.appendChild(h('p', { class: 'note', text: 'Graded at the posted price. Push and void are 0 units. REPLAY = same rule run on saved price checks. TOO LATE picks count like any other.' }));
   app.appendChild(smallFoot());
@@ -1781,14 +1806,14 @@ function renderInfo() {
   rulesBody(ru); app.appendChild(ru);
   var nt = h('section', { class: 'sec' }, h('div', { class: 'sec-h' }, h('h2', { text: 'On this page' })));
   nt.appendChild(h('ul', { class: 'plain' },
-    h('li', { text: 'Picks: every leg for a game that has not tipped, best first. Tap one for the reason, how settled it is and the Hard Rock button. NEW marks the picks the latest update added.' }),
-    h('li', { text: 'Early, Injury report clear, Starters confirmed and Locked show how settled a pick is. Price final means the last price check is done; only injury news can pull it after that.' }),
-    h('li', { text: 'TOO LATE: the pick came off the board before tip (injury news, or Hard Rock took the line down). If you already have it at the shown price, keep it; don\u2019t bet it now.' }),
+    h('li', { text: 'Picks: every qualifying leg, best first. Tap for the reason, settlement status and Hard Rock button. NEW = added in the latest update.' }),
+    h('li', { text: 'Early, Injury report clear, Starters confirmed and Locked show how settled a pick is. Price final = last check done; only injury news can pull it after that.' }),
+    h('li', { text: 'TOO LATE: pick came off the board (injury or Hard Rock pulled the line). If you already have it at the shown price, keep it.' }),
     h('li', { text: 'A player ruled Out drops off Picks and Live. Hard Rock voids the bet.' }),
-    h('li', { text: 'Live: picks whose game has tipped, with the score and his number so far, read straight from ESPN (NBA.com as backup) every 10 seconds while the Live tab is open.' }),
-    h('li', { text: 'Games: our checks on each game (price checks, injury report, starters) and when the next one runs.' }),
-    h('li', { text: 'Record: the strategy\u2019s results. REPLAY bets are the same rule run on price checks saved before it went live (Oct 25-27).' }),
-    h('li', { text: 'New picks stop by themselves if the Record falls to -10 units; the page says so at the top.' }),
+    h('li', { text: 'Live: picks in progress, with the score and his stat so far, refreshing every 10 seconds.' }),
+    h('li', { text: 'Games: price checks, injury report and starters for each game, plus next check time.' }),
+    h('li', { text: 'Record: the strategy\u2019s track record. REPLAY = test bets run on saved price checks before launch.' }),
+    h('li', { text: 'New picks stop if the Record falls to -10 units; the page says so at the top.' }),
     h('li', { text: 'Parlays are not offered.' })));
   app.appendChild(nt);
   var v = S.rules ? S.rules.version : null;

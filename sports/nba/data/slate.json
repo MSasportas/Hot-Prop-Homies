@@ -1,16 +1,16 @@
 {
- "slate": "2026-11-19",
- "valid_until": "2026-11-20T05:00:00-05:00",
+ "slate": "2026-11-20",
+ "valid_until": "2026-11-21T05:00:00-05:00",
  "banners": [],
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 2480,
+   "pool_left": 2304,
    "low": false,
    "refused": false,
    "no_keys": false,
-   "days_left": 12,
-   "allowance": 30.617,
+   "days_left": 11,
+   "allowance": 29.922,
    "reads": [
     "A",
     "B",
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-19T11:00:00-05:00",
+  "next_read_at": "2026-11-20T11:00:00-05:00",
   "last_read_at": null,
   "last_run": {
    "ok": true,
-   "at": "2026-11-19T10:10:01-05:00"
+   "at": "2026-11-20T09:20:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-19T05:00:00-05:00",
+    "at": "2026-11-20T05:00:01-05:00",
     "confirmed": []
    },
    "grade": true
@@ -38,12 +38,12 @@
  },
  "games": [
   {
-   "id": "401910019",
-   "start": "2026-11-19T20:00:00-05:00",
-   "away": "GSW",
-   "home": "MEM",
+   "id": "401909305",
+   "start": "2026-11-20T19:00:00-05:00",
+   "away": "CHA",
+   "home": "ATL",
    "state": "pre",
-   "detail": "11/19 - 8:00 PM EST",
+   "detail": "11/20 - 7:00 PM EST",
    "lineups": {
     "away": "expected",
     "home": "expected"
@@ -53,69 +53,69 @@
    "checks": [],
    "last_check_at": null,
    "final": false,
-   "next_check_at": "2026-11-19T14:00:00-05:00",
-   "next_check_read": "X360",
-   "paused": false,
-   "injury_clear": {
-    "away": false,
-    "home": true
-   }
-  },
-  {
-   "id": "401910020",
-   "start": "2026-11-19T20:00:00-05:00",
-   "away": "POR",
-   "home": "MIL",
-   "state": "pre",
-   "detail": "11/19 - 8:00 PM EST",
-   "lineups": {
-    "away": "expected",
-    "home": "expected"
-   },
-   "read_at": null,
-   "picks": 0,
-   "checks": [],
-   "last_check_at": null,
-   "final": false,
-   "next_check_at": "2026-11-19T14:00:00-05:00",
-   "next_check_read": "X360",
-   "paused": false,
-   "injury_clear": {
-    "away": false,
-    "home": true
-   }
-  },
-  {
-   "id": "401910021",
-   "start": "2026-11-19T20:00:00-05:00",
-   "away": "NYK",
-   "home": "MIN",
-   "state": "pre",
-   "detail": "11/19 - 8:00 PM EST",
-   "lineups": {
-    "away": "expected",
-    "home": "expected"
-   },
-   "read_at": null,
-   "picks": 0,
-   "checks": [],
-   "last_check_at": null,
-   "final": false,
-   "next_check_at": "2026-11-19T14:00:00-05:00",
+   "next_check_at": "2026-11-20T13:00:00-05:00",
    "next_check_read": "X360",
    "paused": false,
    "injury_clear": {
     "away": true,
+    "home": true
+   }
+  },
+  {
+   "id": "401909306",
+   "start": "2026-11-20T19:30:00-05:00",
+   "away": "ORL",
+   "home": "BKN",
+   "state": "pre",
+   "detail": "11/20 - 7:30 PM EST",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0,
+   "checks": [],
+   "last_check_at": null,
+   "final": false,
+   "next_check_at": "2026-11-20T13:30:00-05:00",
+   "next_check_read": "X360",
+   "paused": false,
+   "injury_clear": {
+    "away": true,
+    "home": true
+   }
+  },
+  {
+   "id": "401909307",
+   "start": "2026-11-20T19:30:00-05:00",
+   "away": "IND",
+   "home": "CLE",
+   "state": "pre",
+   "detail": "11/20 - 7:30 PM EST",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0,
+   "checks": [],
+   "last_check_at": null,
+   "final": false,
+   "next_check_at": "2026-11-20T13:30:00-05:00",
+   "next_check_read": "X360",
+   "paused": false,
+   "injury_clear": {
+    "away": false,
     "home": false
    }
   },
   {
-   "id": "401910022",
-   "start": "2026-11-19T20:00:00-05:00",
-   "away": "LAC",
-   "home": "SAS",
+   "id": "401909308",
+   "start": "2026-11-20T19:30:00-05:00",
+   "away": "TOR",
+   "home": "DET",
    "state": "pre",
-   "detail": "11/19 - 8:00 PM EST",
+   "detail": "11/20 - 7:30 PM EST",
    "lineups": {
     "away": "expected",
     "home": "expected"
@@ -125,11 +125,131 @@
    "checks": [],
    "last_check_at": null,
    "final": false,
-   "next_check_at": "2026-11-19T14:00:00-05:00",
+   "next_check_at": "2026-11-20T13:30:00-05:00",
    "next_check_read": "X360",
    "paused": false,
    "injury_clear": {
     "away": true,
+    "home": true
+   }
+  },
+  {
+   "id": "401909309",
+   "start": "2026-11-20T20:00:00-05:00",
+   "away": "WAS",
+   "home": "CHI",
+   "state": "pre",
+   "detail": "11/20 - 8:00 PM EST",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0,
+   "checks": [],
+   "last_check_at": null,
+   "final": false,
+   "next_check_at": "2026-11-20T14:00:00-05:00",
+   "next_check_read": "X360",
+   "paused": false,
+   "injury_clear": {
+    "away": true,
+    "home": true
+   }
+  },
+  {
+   "id": "401909310",
+   "start": "2026-11-20T20:00:00-05:00",
+   "away": "NOP",
+   "home": "OKC",
+   "state": "pre",
+   "detail": "11/20 - 8:00 PM EST",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0,
+   "checks": [],
+   "last_check_at": null,
+   "final": false,
+   "next_check_at": "2026-11-20T14:00:00-05:00",
+   "next_check_read": "X360",
+   "paused": false,
+   "injury_clear": {
+    "away": false,
+    "home": true
+   }
+  },
+  {
+   "id": "401909311",
+   "start": "2026-11-20T21:30:00-05:00",
+   "away": "PHX",
+   "home": "UTA",
+   "state": "pre",
+   "detail": "11/20 - 9:30 PM EST",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0,
+   "checks": [],
+   "last_check_at": null,
+   "final": false,
+   "next_check_at": "2026-11-20T15:30:00-05:00",
+   "next_check_read": "X360",
+   "paused": false,
+   "injury_clear": {
+    "away": true,
+    "home": true
+   }
+  },
+  {
+   "id": "401909312",
+   "start": "2026-11-20T22:00:00-05:00",
+   "away": "HOU",
+   "home": "DEN",
+   "state": "pre",
+   "detail": "11/20 - 10:00 PM EST",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0,
+   "checks": [],
+   "last_check_at": null,
+   "final": false,
+   "next_check_at": "2026-11-20T16:00:00-05:00",
+   "next_check_read": "X360",
+   "paused": false,
+   "injury_clear": {
+    "away": false,
+    "home": true
+   }
+  },
+  {
+   "id": "401909313",
+   "start": "2026-11-20T22:00:00-05:00",
+   "away": "SAC",
+   "home": "LAL",
+   "state": "pre",
+   "detail": "11/20 - 10:00 PM EST",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0,
+   "checks": [],
+   "last_check_at": null,
+   "final": false,
+   "next_check_at": "2026-11-20T16:00:00-05:00",
+   "next_check_read": "X360",
+   "paused": false,
+   "injury_clear": {
+    "away": false,
     "home": true
    }
   }
@@ -138,12 +258,12 @@
  "empty": {
   "text": "No picks yet today",
   "why": "No prices read yet. The first close look is 90 minutes before each tip.",
-  "next": "2026-11-19T11:00:00-05:00"
+  "next": "2026-11-20T11:00:00-05:00"
  },
  "counts": {
   "lines_read": 0,
   "passing": 0,
-  "games": 4
+  "games": 9
  },
  "safety_paused": false,
  "ui": {
@@ -151,6 +271,6 @@
   "refresh_sec": 120,
   "record_nights": 7
  },
- "generated_at": "2026-11-19T10:10:01-05:00",
- "status_at": "2026-11-19T10:10:01-05:00"
+ "generated_at": "2026-11-20T05:00:01-05:00",
+ "status_at": "2026-11-20T09:20:01-05:00"
 }

@@ -1,11 +1,11 @@
 {
- "ok": true,
- "slate_date": "2026-11-19",
- "started_at": "2026-11-19T10:10:00-05:00",
- "status_at": "2026-11-19T10:10:00-05:00",
- "finished_at": "2026-11-19T10:10:02-05:00",
- "last_ok_at": "2026-11-19T10:10:00-05:00",
- "failed_step": null,
+ "ok": false,
+ "slate_date": "2026-11-20",
+ "started_at": "2026-11-20T09:30:00-05:00",
+ "status_at": "2026-11-20T09:30:00-05:00",
+ "finished_at": "2026-11-20T09:30:02-05:00",
+ "last_ok_at": "2026-11-20T09:11:54-05:00",
+ "failed_step": "stats",
  "steps": [
   {
    "step": "rules",
@@ -15,27 +15,27 @@
   {
    "step": "schedule",
    "status": "ok",
-   "note": "12 game(s) today"
+   "note": "0 game(s) today"
   },
   {
    "step": "stats",
-   "status": "skipped",
-   "note": "nothing new"
+   "status": "failed",
+   "note": "NHL stats did not answer for 1 window(s)"
   },
   {
    "step": "lineups",
    "status": "skipped",
-   "note": "no game close enough"
+   "note": "no games today"
   },
   {
    "step": "lineup_history",
    "status": "skipped",
-   "note": "no change"
+   "note": "no games today"
   },
   {
    "step": "odds",
-   "status": "ok",
-   "note": "no pull due"
+   "status": "skipped",
+   "note": "no games today"
   },
   {
    "step": "market_menu",
@@ -45,7 +45,7 @@
   {
    "step": "featured",
    "status": "skipped",
-   "note": "no new shots read to match"
+   "note": "no games today"
   },
   {
    "step": "book_probe",
@@ -95,7 +95,7 @@
  ],
  "sources": {
   "nhl_web": "ok",
-  "nhl_stats": "ok",
+  "nhl_stats": "failed",
   "odds": "ok",
   "dailyfaceoff": "ok",
   "dailyfaceoff_goalies": "ok"
@@ -111,7 +111,7 @@
   },
   {
    "n": 3,
-   "left": 164
+   "left": 65
   },
   {
    "n": 4,
@@ -138,14 +138,14 @@
    "left": 500
   }
  ],
- "pool_total": 2770,
- "allowance": 31.1236,
- "tier": 4,
- "budget_today": 373,
+ "pool_total": 2671,
+ "allowance": null,
+ "tier": null,
+ "budget_today": null,
  "budget_used_today": 0,
  "prices_state": "not_yet",
  "prices_at": null,
- "next_price_read_at": "2026-11-19T13:00:00-05:00",
+ "next_price_read_at": null,
  "unmatched_names": [],
  "unknown_teams": [],
  "lineup_unmatched_names": [],
@@ -153,17 +153,15 @@
  "stats_through": "2026-11-18",
  "lineups_at": null,
  "lineups_note": null,
- "games_today": 12,
- "record_events": 329,
- "odds_notes": [
-  "key 1 refused (401)"
- ],
+ "games_today": 0,
+ "record_events": 359,
+ "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "44549844355",
-  "iteration": 2,
-  "chain_link": 32,
+  "run_id": "44751028821",
+  "iteration": 3,
+  "chain_link": 63,
   "chain_started_at": "2026-11-18T10:00:22-05:00",
-  "run_started_at": "2026-11-19T10:00:16-05:00"
+  "run_started_at": "2026-11-20T09:11:23-05:00"
  }
 }

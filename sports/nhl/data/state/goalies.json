@@ -2,16 +2,16 @@
  "date": "2026-11-19",
  "teams": {
   "OTT": {
-   "name": "Linus Ullmark",
-   "status": "expected"
+   "name": "Samuel Ersson",
+   "status": "confirmed"
   },
   "PHI": {
-   "name": "Dan Vladar",
-   "status": "expected"
+   "name": "Joseph Woll",
+   "status": "confirmed"
   },
   "CAR": {
    "name": "Pyotr Kochetkov",
-   "status": "expected"
+   "status": "confirmed"
   },
   "MTL": {
    "name": "Jakub Dobes",
@@ -19,84 +19,84 @@
   },
   "WSH": {
    "name": "Logan Thompson",
-   "status": "expected"
+   "status": "confirmed"
   },
   "BUF": {
    "name": "Ukko-Pekka Luukkonen",
-   "status": "expected"
+   "status": "confirmed"
   },
   "PIT": {
    "name": "Arturs Silovs",
-   "status": "expected"
+   "status": "confirmed"
   },
   "STL": {
    "name": "Joel Hofer",
-   "status": "expected"
+   "status": "confirmed"
   },
   "TOR": {
    "name": "Anthony Stolarz",
-   "status": "expected"
+   "status": "confirmed"
   },
   "LAK": {
    "name": "Darcy Kuemper",
-   "status": "expected"
+   "status": "confirmed"
   },
   "WPG": {
-   "name": "Stuart Skinner",
-   "status": "expected"
+   "name": "Nico Daws",
+   "status": "confirmed"
   },
   "NYI": {
-   "name": "Ilya Sorokin",
-   "status": "expected"
+   "name": "Semyon Varlamov",
+   "status": "confirmed"
   },
   "TBL": {
    "name": "Andrei Vasilevskiy",
-   "status": "expected"
+   "status": "confirmed"
   },
   "EDM": {
    "name": "Devon Levi",
-   "status": "expected"
+   "status": "confirmed"
   },
   "CHI": {
    "name": "Spencer Knight",
-   "status": "expected"
+   "status": "confirmed"
   },
   "CBJ": {
    "name": "Cam Talbot",
-   "status": "expected"
+   "status": "confirmed"
   },
   "CGY": {
    "name": "Dustin Wolf",
-   "status": "expected"
+   "status": "confirmed"
   },
   "MIN": {
    "name": "Jesper Wallstedt",
-   "status": "expected"
+   "status": "confirmed"
   },
   "COL": {
-   "name": "Mackenzie Blackwood",
-   "status": "expected"
+   "name": "Scott Wedgewood",
+   "status": "confirmed"
   },
   "ANA": {
    "name": "Lukas Dostal",
-   "status": "expected"
+   "status": "confirmed"
   },
   "SEA": {
    "name": "Philipp Grubauer",
-   "status": "expected"
+   "status": "confirmed"
   },
   "VAN": {
    "name": "Leevi Merilainen",
-   "status": "expected"
+   "status": "confirmed"
   },
   "VGK": {
-   "name": "Carter Hart",
-   "status": "expected"
+   "name": "Adin Hill",
+   "status": "confirmed"
   },
   "DAL": {
    "name": "Jake Oettinger",
-   "status": "expected"
+   "status": "confirmed"
   }
  },
- "checked_at": "2026-11-19T07:30:01-05:00"
+ "checked_at": "2026-11-19T21:20:01-05:00"
 }

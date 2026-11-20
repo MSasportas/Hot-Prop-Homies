@@ -1,6 +1,64 @@
 {
  "nights": [
   {
+   "date": "2026-11-11",
+   "graded": true,
+   "w": 0,
+   "l": 2,
+   "units": -2.0,
+   "entries": [
+    {
+     "id": "2026-11-11:2026020294:8484210:shots:1.5:under",
+     "kind": "single",
+     "player": "G. Perreault",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "NYR",
+     "game": "NYR at CGY",
+     "price": 140,
+     "first_price": 140,
+     "last_price": 140,
+     "prices": [
+      {
+       "price": 140,
+       "at": "2026-11-11T18:00:00-05:00"
+      }
+     ],
+     "result": "L",
+     "actual": "had 2",
+     "units": -1.0,
+     "pulled": {
+      "at": "2026-11-11T18:50:01-05:00",
+      "reason": "Hard Rock took the line down"
+     },
+     "legs": []
+    },
+    {
+     "id": "2026-11-11:2026020297:8481605:shots:1.5:under",
+     "kind": "single",
+     "player": "J. LaCombe",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "ANA",
+     "game": "NSH at ANA",
+     "price": 110,
+     "first_price": 110,
+     "last_price": 110,
+     "prices": [
+      {
+       "price": 110,
+       "at": "2026-11-11T20:30:01-05:00"
+      }
+     ],
+     "result": "L",
+     "actual": "had 2",
+     "units": -1.0,
+     "pulled": null,
+     "legs": []
+    }
+   ]
+  },
+  {
    "date": "2026-11-10",
    "graded": true,
    "w": 2,
