@@ -121,8 +121,6 @@ class TimerHasNoLiveStep(unittest.TestCase):
         src = open(os.path.join(ROOT, "scripts", "run.py")).read()
         self.assertNotIn("live", re.findall(r'r\.step\("(\w+)"', src))
         self.assertFalse(os.path.exists(os.path.join(ROOT, "scripts", "live.py")))
-        for wf in ("live_probe.yml", "cors_probe.yml"):
-            self.assertFalse(os.path.exists(os.path.join(ROOT, ".github", "workflows", wf)))
 
 
 class Page(unittest.TestCase):

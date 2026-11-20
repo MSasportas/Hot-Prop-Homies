@@ -55,7 +55,7 @@ probability x Hard Rock decimal payout - 1, on unrounded numbers; every threshol
 - `scripts/run.py` is the only entry point; each run decides what's due: stats build, slate, odds pull A/B/C,
   lineup check (Daily Faceoff, within 3h of puck), re-evaluate picks, lock at puck drop, grade finished games,
   rebuild `data/record.json`, write `data/status.json`. Safe to run twice; writes are atomic. Stdlib Python 3.12.
-- **Timer:** GitHub's cron barely fires for this repo (once in ~4 hours on day 1), so `.github/workflows/run.yml` is a
+- **Timer:** GitHub's cron barely fires for this repo (once in ~4 hours on day 1), so `.github/workflows/nhl-run.yml` is a
   self-dispatching chain: each run loops `scripts/loop.sh` ~50 minutes (`scripts/cycle.sh` every 10 min from
   8 AM to 3 AM ET, every 30 min otherwise) and then starts the next run via workflow_dispatch. Hourly cron and any
   push to scripts/, config/ or .github/workflows/ (re)start it. Commits only when data changed (heartbeat every

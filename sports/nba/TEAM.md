@@ -121,7 +121,7 @@ season backtest (NHL TEAM.md item 20); a single-player model does not beat a ~7%
 - `scripts/run.py` is the only entry point; each run decides what is due: schedule, injuries, lineups, odds reads, evaluate, lock at tip,
   grade finals, rebuild `data/record.json`, write `data/slate.json` and `data/status.json`. Safe to run twice; writes are atomic. Stdlib
   Python 3.12.
-- **Timer (copied from NHL):** GitHub cron barely fires, so `.github/workflows/run.yml` is a self-dispatching chain: each run loops
+- **Timer (copied from NHL):** GitHub cron barely fires, so `.github/workflows/nba-run.yml` is a self-dispatching chain: each run loops
   `scripts/loop.sh` ~50 min (`scripts/cycle.sh` every 10 min 10 AM-2 AM ET, every 30 min otherwise) then starts the next run via
   workflow_dispatch. Hourly cron and any push to scripts/, config/ or .github/workflows/ (re)start it. Off switch: commit `config/stop_timer`.
 - **Is it alive?** `git pull` and read `data/status.json`: `finished_at` < 30 min old in the day window; `runner.chain_link` increments.

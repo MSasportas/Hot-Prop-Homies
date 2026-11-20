@@ -45,7 +45,7 @@ The team decides and ships without asking me. Every rule is theirs to change, ex
 
 ## How it runs
 - It runs itself, with no chat needed. Repo: MSasportas/Hot-Prop-Homies (public, sports/nhl/ subfolder). Live page: https://msasportas.github.io/Hot-Prop-Homies/
-- Timer: `.github/workflows/run.yml` is a self-dispatching GitHub Actions chain. `scripts/run.py` is the only entry point and runs stats, odds, lineups, picks, pulls, locking and grading every 10 minutes from 8 AM to 3 AM ET. All times are Eastern.
+- Timer: `.github/workflows/nhl-run.yml` is a self-dispatching GitHub Actions chain. `scripts/run.py` is the only entry point and runs stats, odds, lineups, picks, pulls, locking and grading every 10 minutes from 8 AM to 3 AM ET. All times are Eastern.
 - Tests: `python -m unittest discover -s tests`. Stdlib Python 3.12.
 - Historical odds for research: `research/data/*.tgz`. Extract into a scratch folder, never into the repo.
 - Scheduled reviews currently run as claude.ai cloud scheduled tasks, not from this desktop: Researcher daily at 7:52 AM, daily check at 1:43 PM, full team review Sundays at 10:47 AM. Each one clones the repo fresh and works on GitHub directly. Because they also push, always pull before working.

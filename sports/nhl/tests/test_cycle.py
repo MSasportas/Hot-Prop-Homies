@@ -196,7 +196,7 @@ class Cycle(unittest.TestCase):
         self.assertEqual(self.git(self.origin, "rev-parse", "main"), top)
 
     def test_workflow_checks_out_full_history(self):
-        with open(os.path.join(REPO, ".github", "workflows", "run.yml")) as f:
+        with open(os.path.join(REPO, "..", "..", ".github", "workflows", "sport-run.yml")) as f:
             wf = f.read()
         self.assertIn("fetch-depth: 0", wf)
 
