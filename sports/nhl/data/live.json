@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-19",
- "generated_at": "2026-11-20T00:50:01-05:00",
+ "generated_at": "2026-11-20T01:00:01-05:00",
  "games": [
   {
    "game_id": 2026020350,
@@ -109,16 +109,16 @@
   },
   {
    "game_id": 2026020358,
-   "state": "CRIT",
+   "state": "FINAL",
    "schedule_state": "OK",
    "period": 5,
    "period_type": "SO",
-   "clock": "03:53",
+   "clock": "00:00",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "DAL",
-    "score": 3,
+    "score": 4,
     "sog": 22
    },
    "home": {
@@ -126,7 +126,7 @@
     "score": 3,
     "sog": 30
    },
-   "updated_at": "2026-11-20T00:50:01-05:00"
+   "updated_at": "2026-11-20T01:00:01-05:00"
   }
  ],
  "picks": {
