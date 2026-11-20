@@ -1,16 +1,21 @@
 """lab_export.py: research/fwd/lab.json for the page's Lab tab (Matt 2026-11-12: everything being tested shows in the Lab).
 Reads the forward scorers' own files (ll.json, mm.json, nn.json) and writes one totals block per variant. Research only.
-Run from sports/nhl (run_all.sh does, last): python3 research/code/fwd/lab_export.py
+Tests auto-retired by scripts/lab_retire.py are skipped. Run from sports/nhl (run_all.sh does): python3 research/code/fwd/lab_export.py
 """
 import datetime
 import json
 import os
+import sys
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "..", "..", "..", "..", "scripts"))
+import lab_retire  # noqa: E402
 
 SRC = ("ll", "mm", "nn")
 
 
 def main():
     base = os.path.join("research", "fwd")
+    gone = lab_retire.retired_stats("config", os.path.join(base, "lab.json").replace(os.sep, "/"))
     doc = {"version": 1, "active": True, "note": "Research only: forward tests, never picks. Updated by the daily Researcher run."}
     for s in SRC:
         try:
@@ -18,7 +23,7 @@ def main():
         except (OSError, ValueError):
             continue
         for name, v in d.items():
-            if not isinstance(v, dict):
+            if not isinstance(v, dict) or name in gone:
                 continue
             g, w = int(v.get("graded") or 0), int(v.get("w") or 0)
             doc[name] = {"w": w, "l": g - w, "push": 0, "void": 0, "units": round(float(v.get("units") or 0), 2),

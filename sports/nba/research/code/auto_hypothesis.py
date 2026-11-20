@@ -11,7 +11,8 @@ from datetime import date
 
 R = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")) + os.sep
 sys.path.insert(0, R + "scripts")
-import common, odds
+sys.path.insert(0, os.path.join(R, "..", "..", "scripts"))
+import common, lab_retire, odds
 
 try:
     sys.stdout.reconfigure(encoding="utf-8")
@@ -227,6 +228,11 @@ HYPOTHESES = [
 
 HYPO_IDS = [h[0] for h in HYPOTHESES]
 
+
+def retired(summary):
+    """Lab ids auto-retired from this summary file (scripts/lab_retire.py): no longer tested or exported."""
+    return lab_retire.retired_stats(R + "config", summary)
+
 # ---------------------------------------------------------------------------
 # State + main
 # ---------------------------------------------------------------------------
@@ -240,10 +246,12 @@ def save_state(st):
     common.write_json(R + "data/research/hypothesis_state.json", st)
 
 def next_hypo_idx(st):
-    last = st.get("last_id")
-    if last not in HYPO_IDS:
-        return 0
-    return (HYPO_IDS.index(last) + 1) % len(HYPOTHESES)
+    gone = retired("research/lab_ah.json")
+    idx = HYPO_IDS.index(st["last_id"]) + 1 if st.get("last_id") in HYPO_IDS else 0
+    for step in range(len(HYPOTHESES)):
+        if HYPO_IDS[(idx + step) % len(HYPOTHESES)] not in gone:
+            return (idx + step) % len(HYPOTHESES)
+    return idx % len(HYPOTHESES)
 
 def log_path():
     return os.path.join(R, "research", "LOG.md")
@@ -281,7 +289,10 @@ def export_lab(moves):
     names = _names()
     doc = {"active": True, "note": "Research only: forward results of the registered filters on Pinnacle moves. Never picks.",
            "from": FWD, "tests": {}}
+    gone = retired("research/lab_ah.json")
     for hid, hlabel, hdesc, hfn in HYPOTHESES:
+        if hid in gone:
+            continue
         es = [e for e in moves if e["day"] >= FWD and e.get("ev_pin", -1) >= 0 and hfn(e)]
         nights = {}
         tot = {"w": 0, "l": 0, "push": 0, "void": 0, "units": 0.0, "pending": 0}
@@ -451,7 +462,8 @@ def export_dm(days_map=None, box=None):
                                 if ratio >= 0.10:
                                     _dm_tally(dm["DM2"], res, price)
 
-    doc = {k: dict(v, units=round(v["units"], 2)) for k, v in dm.items()}
+    gone = retired("research/lab_dm.json")
+    doc = {k: dict(v, units=round(v["units"], 2)) for k, v in dm.items() if k not in gone}
     path = R + "data/research/lab_dm.json"
     old = None
     try:

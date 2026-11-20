@@ -365,6 +365,12 @@ button.tr.open{background:var(--selected-bg);border-bottom-color:transparent}
 .lab-d{display:flex;gap:10px;align-items:baseline;margin-top:10px;font:600 12px/17px var(--num);letter-spacing:.04em;text-transform:uppercase}
 .lab-b{display:flex;justify-content:space-between;gap:10px;align-items:baseline;padding:6px 0;border-bottom:1px solid var(--line);font-size:13px;line-height:18px}
 .lab-b:last-child{border-bottom:0}
+.lab-ready{display:inline-block;flex:none;padding:0 7px;border:1px solid var(--good);border-radius:9px;font:600 11px/16px var(--num);letter-spacing:.04em;text-transform:uppercase;color:var(--good);white-space:nowrap}
+.lab>.lab-ready{margin:0 14px 10px}
+.lab-ret{margin-top:14px}
+.lab-ret-b{display:block;width:100%;min-height:44px;padding:10px 0;background:none;border:0;color:var(--muted);font:inherit;font-size:13px;text-align:left;cursor:pointer}
+.lab-ret-b:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.lab-ret .sm{font-size:12px;line-height:17px;color:var(--muted);margin-top:4px;overflow-wrap:anywhere}
 .lab-b .who{min-width:0;overflow-wrap:anywhere}
 .lab-b .res{flex:none;font-weight:600}
 
@@ -2327,6 +2333,39 @@ function renderLabToday() {
   app.appendChild(sec);
 }
 /* ---------- Lab: ideas that passed their historical test, tracked on paper (config/lab.json) ---------- */
+/* ---------- Lab: retired tests (config/lab_retired.jsonl, written by scripts/lab_retire.py) ---------- */
+var RETIRED_WHY = { fail_full: 'failed its test', fail_early: 'losing clearly, stopped early', inconclusive_cap: 'never proved itself', stalled: 'ran out of picks' };
+function labRetiredSources() {
+  var sports = S.sport === 'all' ? arr(S.allResults).filter(function (r) { return r.lab.ok; }).map(function (r) { return { sp: r.sport, n: num(r.lab.v.retired_count) || 0 }; })
+    : [{ sp: S.sport, n: S.lab ? num(S.lab.retired_count) || 0 : 0 }];
+  return sports.filter(function (s) { return s.n > 0; }).map(function (s) { s.url = (BASE_FIX ? '' : SPORT_BASES[s.sp]) + 'config/lab_retired.jsonl'; return s; });
+}
+function loadRetired(sources) {
+  S.labRetiredEv = 'loading';
+  return Promise.all(sources.map(function (s) {
+    return fetch(s.url + '?t=' + Date.now(), { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error('http ' + r.status); return r.text(); })
+      .then(function (t) { return t.split('\n').filter(Boolean).map(function (ln) { var e = JSON.parse(ln); e._sp = s.sp; return e; }); });
+  })).then(function (xs) {
+    S.labRetiredEv = [].concat.apply([], xs).filter(function (e) { return isObj(e) && e.event === 'retired'; }).sort(function (a, b) { return str(a.ts) < str(b.ts) ? 1 : -1; });
+  }, function () { S.labRetiredEv = 'err'; }).then(LAB_REDRAW);
+}
+/* one muted "N retired" line at the bottom of the Lab; a tap lists them */
+function labRetiredLine() {
+  var sources = labRetiredSources(), n = sources.reduce(function (a, s) { return a + s.n; }, 0);
+  if (!n) return null;
+  if (S.labRetiredOpen && S.labRetiredEv == null) loadRetired(sources);
+  var box = h('div', { class: 'lab-ret' }), btn = h('button', { class: 'lab-ret-b', type: 'button', 'aria-expanded': S.labRetiredOpen ? 'true' : 'false', text: n + ' retired ' + (S.labRetiredOpen ? '▴' : '▾') });
+  btn.addEventListener('click', function () { S.labRetiredOpen = !S.labRetiredOpen; LAB_REDRAW(); });
+  box.appendChild(btn);
+  if (!S.labRetiredOpen) return box;
+  var ev = S.labRetiredEv;
+  if (!Array.isArray(ev)) box.appendChild(h('div', { class: 'sm', text: ev === 'err' ? "Couldn't load the list." : 'Loading the list' }));
+  else ev.forEach(function (e) {
+    var f = isObj(e.final) ? e.final : {};
+    box.appendChild(h('div', { class: 'sm', text: (str(e.title) || str(e.id)) + ' · ' + (num(f.w) || 0) + '-' + (num(f.l) || 0) + ' ' + String(units(f.units, 2)).replace(/ units?$/, 'u') + ' · ' + (RETIRED_WHY[str(e.reason)] || 'retired') + ' · ' + fDateShort(str(e.ts).slice(0, 10)) }));
+  });
+  return box;
+}
 function renderLab() {
   top('Lab', false);
   app.appendChild(h('p', { class: 'mu', style: 'margin:10px 0 0;font-size:13px;line-height:19px', text: 'Most tests are paper-only — see each card for its status. Tap a test to see its picks.' }));
@@ -2350,6 +2389,7 @@ function renderLab() {
         st && u != null ? h('span', { class: 'un ' + signCls(u), text: units(u, 2).replace(/ units?$/, 'u') }) : null, h('span', { class: 'chev', 'aria-hidden': 'true', text: open ? '▴' : '▾' })));
     head.addEventListener('click', function () { S.labOpen[id] = !S.labOpen[id]; LAB_REDRAW(); });
     card.appendChild(head);
+    if (t.status === 'ready_for_sharp') card.appendChild(h('span', { class: 'lab-ready', text: 'Ready for Sharp' }));
     if (need && st) {
       var bar = h('div', { class: 'prog', role: 'img', 'aria-label': k + ' of ' + need + ' graded' }), fill = h('i'); fill.style.width = Math.min(100, k / need * 100) + '%'; bar.appendChild(fill);
       card.appendChild(bar);
@@ -2372,6 +2412,8 @@ function renderLab() {
     }
     app.appendChild(card);
   });
+  var retLine = labRetiredLine();
+  if (retLine) app.appendChild(retLine);
   app.appendChild(smallFoot());
 }
 
@@ -2927,6 +2969,8 @@ function renderHQ() {
 
   sec5.appendChild(labTbl);
   sec5.appendChild(h('div', { style: 'margin-top:8px;font-size:12px;color:var(--muted)', text: 'Research only. Gate: NHL ' + (nhlGate != null ? nhlGate : '—') + ' graded · NBA ' + (nbaGate != null ? nbaGate : '—') + ' graded.' }));
+  var hqRetired = (num(nhl.labCfg && nhl.labCfg.retired_count) || 0) + (num(nba.labCfg && nba.labCfg.retired_count) || 0);
+  if (hqRetired) sec5.appendChild(h('div', { style: 'margin-top:6px;font-size:12px;color:var(--muted)', text: hqRetired + ' retired' }));
   app.appendChild(sec5);
 
   /* --- Section 4: Tonight's Slate --- */
