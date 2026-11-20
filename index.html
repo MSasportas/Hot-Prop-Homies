@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -2680,13 +2680,11 @@ function renderHQ() {
     var lastRunStr = finAt ? fMD(finAt) + ' at ' + fTime(finAt) : '—';
     card.appendChild(hqKv('Last run', lastRunStr));
 
-    /* chain link */
+    /* running since */
     var runner = isObj(st.runner) ? st.runner : null;
     if (runner) {
-      var chainStr = 'Chain #' + (runner.chain_link || '?');
       var chainStarted = ms(runner.chain_started_at);
-      if (chainStarted) chainStr += ' (since ' + fMD(chainStarted) + ')';
-      card.appendChild(hqKv('Chain', chainStr));
+      card.appendChild(hqKv('Running since', chainStarted ? fMD(chainStarted) : '—'));
     }
 
     /* key pool */
@@ -2705,7 +2703,7 @@ function renderHQ() {
       var nprAt = ms(st.next_price_read_at);
       card.appendChild(hqKv('Next read', nprAt ? fMD(nprAt) + ' at ' + fTime(nprAt) : '—'));
     } else {
-      card.appendChild(hqKv('Next read', st.odds_note || 'No read due'));
+      card.appendChild(hqKv('Next read', st.odds_note || (num(st.games_today) === 0 ? 'No games today' : '—')));
     }
 
     /* games today */
@@ -2890,7 +2888,7 @@ function renderHQ() {
   if (isObj(labPin) && isObj(labPin.total)) {
     var pinT = labPin.total;
     var pinGraded = (num(pinT.w) || 0) + (num(pinT.l) || 0);
-    labTbl.appendChild(labRow(labPin.label || 'Pinnacle as the price judge', num(pinT.w) || 0, num(pinT.l) || 0, pinT.units, pinGraded, 100, null, (labPin.about ? labPin.about.split('. Research only')[0] + '.' : 'HR price at or better than Pinnacle’s de-vigged fair price on the same line.')));
+    labTbl.appendChild(labRow(labPin.label || 'Pinnacle as the price judge', num(pinT.w) || 0, num(pinT.l) || 0, pinT.units, pinGraded, 150, null, (labPin.about ? labPin.about.split('. Research only')[0] + '.' : 'HR price at or better than Pinnacle\'s de-vigged fair price on the same line.')));
   } else {
     labTbl.appendChild(labMuted('No data'));
   }
@@ -2899,7 +2897,7 @@ function renderHQ() {
   var labThrees = nba.labThrees;
   if (isObj(labThrees) && isObj(labThrees.total)) {
     var thrT = labThrees.total;
-    labTbl.appendChild(labRow(labThrees.label || '3s: HR 1%+ over Pinnacle', num(thrT.w) || 0, num(thrT.l) || 0, thrT.units, (num(thrT.w) || 0) + (num(thrT.l) || 0), 100, 'new', (labThrees.about ? labThrees.about.split('. Research only')[0] + '.' : '3-pointers made: HR price 1%+ better than Pinnacle’s fair price.')));
+    labTbl.appendChild(labRow(labThrees.label || '3s: HR 1%+ over Pinnacle', num(thrT.w) || 0, num(thrT.l) || 0, thrT.units, (num(thrT.w) || 0) + (num(thrT.l) || 0), 150, 'new', (labThrees.about ? labThrees.about.split('. Research only')[0] + '.' : '3-pointers made: HR price 1%+ better than Pinnacle\'s fair price.')));
   }
 
   /* ---- NBA AH filters ---- */
@@ -2941,7 +2939,7 @@ function renderHQ() {
   }
 
   sec5.appendChild(labTbl);
-  sec5.appendChild(h('div', { style: 'margin-top:8px;font-size:12px;color:var(--muted)', text: 'Research only. Gate: NHL 300 graded · NBA 100 graded.' }));
+  sec5.appendChild(h('div', { style: 'margin-top:8px;font-size:12px;color:var(--muted)', text: 'Research only. Gate: NHL 300 graded · NBA 150 graded.' }));
   app.appendChild(sec5);
 
   /* --- Section 4: Tonight's Slate --- */
