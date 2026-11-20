@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T20:20:01-05:00",
+ "generated_at": "2026-11-19T20:30:01-05:00",
  "summary": {
   "headline": {
    "w": 60,
@@ -243,7 +243,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 9,
+    "n": 10,
     "graded": false
    },
    {
@@ -603,6 +603,29 @@
       {
        "price": 120,
        "at": "2026-11-19T20:20:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-19:2026020358:8475913:shots:1.5:under",
+     "kind": "single",
+     "player": "M. Stone",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "VGK",
+     "game": "DAL at VGK",
+     "price": 130,
+     "first_price": 130,
+     "last_price": 130,
+     "prices": [
+      {
+       "price": 130,
+       "at": "2026-11-19T20:30:01-05:00"
       }
      ],
      "result": null,

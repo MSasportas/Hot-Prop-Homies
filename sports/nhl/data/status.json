@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-19",
- "started_at": "2026-11-19T20:20:01-05:00",
- "status_at": "2026-11-19T20:20:01-05:00",
- "finished_at": "2026-11-19T20:20:04-05:00",
- "last_ok_at": "2026-11-19T20:20:01-05:00",
+ "started_at": "2026-11-19T20:30:01-05:00",
+ "status_at": "2026-11-19T20:30:01-05:00",
+ "finished_at": "2026-11-19T20:30:13-05:00",
+ "last_ok_at": "2026-11-19T20:30:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -24,8 +24,8 @@
   },
   {
    "step": "lineups",
-   "status": "ok",
-   "note": "6 of 6 team pages read"
+   "status": "skipped",
+   "note": "checked in the last 20 minutes"
   },
   {
    "step": "lineup_history",
@@ -55,12 +55,12 @@
   {
    "step": "gapguard",
    "status": "ok",
-   "note": "gap+guard: 3 close, 1 flag, 1 pull"
+   "note": "gap+guard: 1 flag"
   },
   {
    "step": "engine",
    "status": "ok",
-   "note": "4 new event(s), 1 newly shown"
+   "note": "1 new event(s), 1 newly shown"
   },
   {
    "step": "grade",
@@ -75,7 +75,7 @@
   {
    "step": "shadow",
    "status": "ok",
-   "note": "39 line read(s) logged"
+   "note": "32 line read(s) logged"
   },
   {
    "step": "gg_grade",
@@ -85,7 +85,7 @@
   {
    "step": "slate",
    "status": "ok",
-   "note": "1 open pick(s)"
+   "note": "2 open pick(s)"
   },
   {
    "step": "record",
@@ -111,7 +111,7 @@
   },
   {
    "n": 3,
-   "left": 80
+   "left": 75
   },
   {
    "n": 4,
@@ -138,14 +138,14 @@
    "left": 500
   }
  ],
- "pool_total": 2686,
+ "pool_total": 2681,
  "allowance": 31.1236,
  "tier": 4,
  "budget_today": 373,
- "budget_used_today": 84,
+ "budget_used_today": 89,
  "prices_state": "ok",
- "prices_at": "2026-11-19T20:20:01-05:00",
- "next_price_read_at": "2026-11-19T20:30:00-05:00",
+ "prices_at": "2026-11-19T20:30:01-05:00",
+ "next_price_read_at": "2026-11-19T20:55:00-05:00",
  "unmatched_names": [
   "Elias Pettersson"
  ],
@@ -160,12 +160,14 @@
  "lineups_at": "2026-11-19T20:20:01-05:00",
  "lineups_note": "Lineups posted for 15 of 24 teams checked so far.",
  "games_today": 12,
- "record_events": 346,
- "odds_notes": [],
+ "record_events": 347,
+ "odds_notes": [
+  "key 1 refused (401)"
+ ],
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "44651062900",
-  "iteration": 3,
+  "iteration": 4,
   "chain_link": 44,
   "chain_started_at": "2026-11-18T10:00:22-05:00",
   "run_started_at": "2026-11-19T20:06:16-05:00"
