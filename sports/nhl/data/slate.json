@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-19",
- "generated_at": "2026-11-20T00:00:00-05:00",
- "status_at": "2026-11-20T00:00:00-05:00",
+ "generated_at": "2026-11-20T00:10:00-05:00",
+ "status_at": "2026-11-20T00:10:00-05:00",
  "valid_until": "2026-11-20T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": false,
-   "at": "2026-11-20T00:00:00-05:00",
+   "at": "2026-11-20T00:10:00-05:00",
    "failed_step": "stats"
   },
   "pool": {
@@ -34,7 +34,7 @@
  "banners": [
   {
    "level": "warn",
-   "text": "Part of the last update failed at 12:00 AM (stats). Some of what is below may be older."
+   "text": "Part of the last update failed at 12:10 AM (stats). Some of what is below may be older."
   }
  ],
  "empty": {
@@ -631,7 +631,11 @@
     "code": "gap_gone"
    },
    "price_final": false,
-   "graded": null,
+   "graded": {
+    "result": "W",
+    "actual": "had 2",
+    "units": 1.05
+   },
    "rank": null,
    "tier": "main",
    "game_id": 2026020356,
@@ -703,7 +707,11 @@
     "code": "gap_gone"
    },
    "price_final": false,
-   "graded": null,
+   "graded": {
+    "result": "L",
+    "actual": "had 0",
+    "units": -1.0
+   },
    "rank": null,
    "tier": "main",
    "game_id": 2026020356,
@@ -775,7 +783,11 @@
     "code": "gap_gone"
    },
    "price_final": false,
-   "graded": null,
+   "graded": {
+    "result": "W",
+    "actual": "had 2",
+    "units": 1.8
+   },
    "rank": null,
    "tier": "main",
    "game_id": 2026020356,
@@ -1197,7 +1209,11 @@
    ],
    "pulled": null,
    "price_final": false,
-   "graded": null,
+   "graded": {
+    "result": "L",
+    "actual": "had 2",
+    "units": -1.0
+   },
    "rank": null,
    "tier": "main",
    "game_id": 2026020356,

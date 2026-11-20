@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-19",
- "generated_at": "2026-11-20T00:00:00-05:00",
+ "generated_at": "2026-11-20T00:10:00-05:00",
  "games": [
   {
    "game_id": 2026020350,
@@ -88,7 +88,7 @@
   },
   {
    "game_id": 2026020356,
-   "state": "FINAL",
+   "state": "OFF",
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
@@ -105,7 +105,7 @@
     "score": 4,
     "sog": 27
    },
-   "updated_at": "2026-11-20T00:00:00-05:00"
+   "updated_at": "2026-11-20T00:10:00-05:00"
   },
   {
    "game_id": 2026020358,
@@ -113,7 +113,7 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "18:03",
+   "clock": "12:38",
    "in_intermission": false,
    "running": false,
    "away": {
@@ -123,10 +123,10 @@
    },
    "home": {
     "abbrev": "VGK",
-    "score": 2,
-    "sog": 21
+    "score": 3,
+    "sog": 24
    },
-   "updated_at": "2026-11-20T00:00:00-05:00"
+   "updated_at": "2026-11-20T00:10:00-05:00"
   }
  ],
  "picks": {
