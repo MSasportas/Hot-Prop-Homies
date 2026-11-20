@@ -138,7 +138,7 @@ class TestEndToEnd(unittest.TestCase):
         self.assertNotIn("link", p)                # the raw feed link only opens the app: never published
         self.assertTrue(p["links"]["hardrock"]["url"].startswith(
             "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/51016545"))
-        self.assertIsNone(p["links"]["draftkings"])          # v2.5: a button only for a book the pick passed at (Hard Rock here)
+        self.assertIs(p["links"]["draftkings"]["qualifies"], False)    # DraftKings lists this line: link kept, flagged as not passing
         # a second run with the same prices changes nothing in the Record
         n = len(self.w.events())
         self.w.run("2026-10-25T15:41:00-04:00")

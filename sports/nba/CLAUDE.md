@@ -47,7 +47,7 @@ A CEO agent owns the product end to end and runs subagents: Sharp (betting stand
 
 - The only page is the root `index.html` (Hot Prop Homies). `sports/nba/` has no page of its own; the old standalone page is retired.
 - Phone width. Readable in seconds.
-- No DraftKings link on the page. No Hard Rock bet link on the page or in Discord picks.
+- DraftKings link is a convenience bet-slip link only; it changes no rules, picks, requirements or grading. No Hard Rock bet link on the page or in Discord picks.
 - Picks tab: each pick shows its Hard Rock or DraftKings number, a short plain reason, and how settled it is (early, lineup or availability confirmed, as the NBA equivalent of goalie confirmed).
 - Pulled picks (book moved the odds after Matt bet, e.g. Miles Bridges): show TOO LATE on Picks, then appear on Live and count on the Record like any other pick.
 - Live tab: refreshes every 10 seconds from the page itself.

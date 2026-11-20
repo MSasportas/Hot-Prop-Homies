@@ -14,10 +14,10 @@ OTHERS = ["draftkings", "fanduel", "betmgm", "betonlineag", "novig", "betrivers"
 LUKA = "Luka Doncic"
 
 
-def write(w, at, hr, pin, others, n_others=6, dk=None):
+def write(w, at, hr, pin, others, n_others=6, dk=None, dk_link=True):
     """hr / pin / others: (over, under) for Luka rebounds 7.5. dk: DraftKings' prices (default: same as the other books)."""
     bms = [book("hardrockbet", [(LUKA, 7.5) + hr], at, link=True), book("pinnacle", [(LUKA, 7.5) + pin], at)]
-    bms += [book(b, [(LUKA, 7.5) + (dk if (b == "draftkings" and dk) else others)], at, link=(b == "draftkings"))
+    bms += [book(b, [(LUKA, 7.5) + (dk if (b == "draftkings" and dk) else others)], at, link=(b == "draftkings" and dk_link))
             for b in OTHERS[:n_others]]
     w.write_odds("odds_lal_utah.json", {"id": "ev401909861", "bookmakers": bms})
 
@@ -73,7 +73,33 @@ class TestPinSolo(unittest.TestCase):
         self.assertEqual((p["price"], p["book"], list(p["books"])), (-120, "hardrock", ["hardrock"]))
         lk = self.w.read("slate.json")["picks"][0]["links"]
         self.assertIsNotNone(lk["hardrock"])
-        self.assertIsNone(lk["draftkings"])
+        self.assertTrue(lk["draftkings"]["url"].startswith("https://sportsbook.draftkings.com/"))   # same line: link kept for the page
+        self.assertIs(lk["draftkings"]["qualifies"], False)                                          # but its price did not pass
+        self.assertNotIn("DraftKings", notify.pick_line(self.w.read("slate.json")["picks"][0]))     # Discord: only a book that passed
+
+    def test_draftkings_link_changes_nothing_but_the_link(self):
+        # Matt, 2026-11-20: a DraftKings link for every same-line pick is a convenience only. Same inputs with and without
+        # DraftKings' link in the feed (its price passing, and not passing): the Record, the events and every pick field
+        # except `links` come out the same.
+        for dk, qualifies in ((None, True), ((105, -135), False)):
+            out = []
+            for dk_link in (True, False):
+                w = World(rule="pin_solo")
+                try:
+                    write(w, "2026-10-25T19:30:00Z", (-110, -120), (-102, -118), (-105, -115), dk=dk, dk_link=dk_link)
+                    w.run("2026-10-25T15:31:00-04:00")
+                    write(w, "2026-10-25T20:15:00Z", (-110, -120), (112, -149), (-105, -115), dk=dk, dk_link=dk_link)
+                    w.run("2026-10-25T16:16:00-04:00")
+                    slate = w.read("slate.json")
+                    links = [p.pop("links") for p in slate["picks"]]
+                    out.append((slate["picks"], w.read("record.json"), w.events(), links))
+                finally:
+                    w.close()
+            with_link, without_link = out
+            self.assertEqual(len(with_link[0]), 1)
+            self.assertEqual(with_link[:3], without_link[:3])
+            self.assertIs(with_link[3][0]["draftkings"]["qualifies"], qualifies)
+            self.assertIsNone(without_link[3][0]["draftkings"])
 
     def test_draftkings_alone_makes_no_pick(self):
         # v2.6 (Matt): Hard Rock -150 is worse than fair; DraftKings -110 passing alone is not a pick (DraftKings only adds a button)

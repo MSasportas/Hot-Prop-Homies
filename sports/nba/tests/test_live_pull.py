@@ -135,7 +135,7 @@ class Page(unittest.TestCase):
         self.assertIn("LIVE_MS = 10000", h)
         self.assertNotIn("innerHTML", h)
         hosts = set(re.findall(r"https://([a-z0-9.-]+)", h))
-        self.assertLessEqual(hosts, {"site.api.espn.com", "cdn.nba.com", "a.espncdn.com", "www.w3.org", "share.hardrock.bet"})
+        self.assertLessEqual(hosts, {"site.api.espn.com", "cdn.nba.com", "a.espncdn.com", "www.w3.org", "share.hardrock.bet", "sportsbook.draftkings.com"})   # the last two are bet-slip links only
 
     @unittest.skipUnless(shutil.which("node"), "node not installed")
     def test_live_shows_started_too_late_and_hides_scratches(self):

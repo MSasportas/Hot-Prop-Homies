@@ -73,6 +73,9 @@ class BetLinks(unittest.TestCase):
         txt = notify.bet_buttons(p)
         self.assertEqual(txt, "[Hard Rock +115](<%s>) · [DraftKings -110](<%s>)" % (
             odds.HR_SHARE + "1000000000000000002", DK % "222"))
+        dk = {"url": DK % "222", "price": -110, "qualifies": False}      # a same-line link that did not pass: page only, never Discord
+        self.assertEqual(notify.bet_buttons({"price": 115, "links": {"hardrock": p["links"]["hardrock"], "draftkings": dk}}),
+                         "[Hard Rock +115](<%s>)" % (odds.HR_SHARE + "1000000000000000002"))
         self.assertEqual(notify.bet_buttons({"price": 115, "links": None}), "")
         self.assertEqual(notify.bet_buttons({"price": 115, "links": {"hardrock": {"url": "https://app.hardrock.bet/x"}}}), "")
 

@@ -214,6 +214,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .slipbar .note{margin-top:2px;font-size:12px;line-height:16px;color:var(--muted)}
 .slipbar .btn.hr{min-height:48px;margin-top:8px;font-size:16px}
 .slipbar .btn.hr:not([href]){opacity:.5;pointer-events:none}
+.slipbar .btn.dk{min-height:44px;margin-top:8px;width:100%;text-decoration:none;white-space:nowrap}
 /* TOO LATE: off the board before tip. Solid Dugout Navy stamp, the tile dimmed under it; the price is not struck */
 .tile.late{border-color:var(--line)}
 .tile.late .dimmed{opacity:.5}
@@ -1189,6 +1190,23 @@ var SLIP_SAY_MS = 3000, SLIP_GONE_MS = 8000, SLIP_PAD = 16;
 var SLIP_VIEW = null, slipEl = null, slipTimer = null;   /* the selectable picks on screen, newest first; the bar's parts; its message timer */
 function slipIdOf(url) { var id = str(url).slice(HR_SLIP.length); return /^\d+$/.test(id) ? id : null; }
 function slipOK(p) { return slipIdOf(hrLink(p)) != null; }
+/* DraftKings (NBA only): the same convenience link for a pick DraftKings lists on the exact same line. One pick opens its own link;
+   several open DK_BASE?outcomes=<a>,<b>, each value taken from that pick's own link exactly as given. That several-pick form is
+   UNTESTED: if DraftKings wants repeated keys instead (?outcomes=<a>&outcomes=<b>), set DK_OUTCOMES_JOIN to '&outcomes='. */
+var DK_BASE = 'https://sportsbook.draftkings.com/', DK_OUTCOMES_JOIN = ',', DK_OUTCOME = /^[\w%.\-]+$/;
+function dkOutcome(url) { var m = /[?&]outcomes=([^&#]*)/.exec(str(url)); return m && DK_OUTCOME.test(m[1]) ? m[1] : null; }
+function dkUrl(p) {
+  var lk = isObj(p.links) && isObj(p.links.draftkings) ? p.links.draftkings : {}, u = slipUrl(lk.url, DK_BASE);
+  return (str(p.sport) || S.sport) === 'nba' && u && dkOutcome(u) ? u : null;
+}
+function dkHref(links) {
+  var vals = [], firsts = [];
+  links.forEach(function (u) { var v = dkOutcome(u); if (v && vals.indexOf(v) < 0) { vals.push(v); firsts.push(u); } });
+  if (!vals.length || vals.length > SLIP_MAX) return null;
+  if (vals.length === 1) return firsts[0];
+  var href = DK_BASE + '?outcomes=' + vals.join(DK_OUTCOMES_JOIN);
+  return href.length <= SLIP_MAX_CHARS ? href : null;
+}
 function slipKey(p) { return (str(p.sport) || S.sport) + ':' + str(p.id); }
 function slipIds(links) {
   var out = [];
@@ -1260,10 +1278,11 @@ function paintSlipTiles() {
 function slipBar() {
   if (slipEl) return slipEl;
   var b = { cnt: h('span', { class: 'cnt' }), note: h('div', { class: 'note' }), go: h('a', { class: 'btn hr', target: '_blank', rel: 'noopener noreferrer' }),
+    dk: h('a', { class: 'btn dk', target: '_blank', rel: 'noopener noreferrer' }), dkNote: h('div', { class: 'note' }),
     all: h('button', { class: 'lk', type: 'button', text: 'Select all', on: { click: slipAll } }),
     clr: h('button', { class: 'lk', type: 'button', text: 'Clear', on: { click: slipClear } }) };
   b.root = h('div', { class: 'slipbar', role: 'region', 'aria-label': 'Hard Rock slip' }, h('div', { class: 'in' },
-    h('div', { class: 'r1', 'aria-live': 'polite' }, b.cnt, h('div', { class: 'acts' }, b.all, b.clr)), b.note, b.go));
+    h('div', { class: 'r1', 'aria-live': 'polite' }, b.cnt, h('div', { class: 'acts' }, b.all, b.clr)), b.note, b.go, b.dk, b.dkNote));
   document.body.appendChild(b.root);
   if (window.ResizeObserver) new ResizeObserver(slipPad).observe(b.root);
   slipEl = b;
@@ -1289,6 +1308,11 @@ function paintSlipBar() {
     b.note.textContent = note; b.note.hidden = !note; b.note.className = 'note' + (broken ? ' warn' : '');
     if (href && !old) { b.go.setAttribute('href', href); b.go.removeAttribute('aria-disabled'); } else { b.go.removeAttribute('href'); b.go.setAttribute('aria-disabled', 'true'); }
     b.go.textContent = old ? 'Picks are old' : (href ? 'Add ' + n + ' to Hard Rock slip' : 'Add to Hard Rock slip');
+    var dkLinks = picked.map(dkUrl).filter(Boolean), dkRef = old || !dkLinks.length ? null : dkHref(dkLinks), skipped = picked.length - dkLinks.length;
+    var dkNote = !dkLinks.length || old ? '' : (!dkRef ? "Can't build the DraftKings slip." : (skipped ? skipped + ' skipped, no matching line.' : ''));
+    b.dk.hidden = !dkRef;
+    if (dkRef) { b.dk.setAttribute('href', dkRef); b.dk.textContent = 'Add ' + (skipped ? dkLinks.length + ' of ' + picked.length : dkLinks.length) + ' to DraftKings'; }
+    b.dkNote.textContent = dkNote; b.dkNote.hidden = !dkNote;
   }
   slipPad();
 }

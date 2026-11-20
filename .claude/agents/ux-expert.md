@@ -83,7 +83,7 @@ Hand the spec to the Engineer. When the Engineer reports it built, review the re
 - Pulled picks show TOO LATE → appear on Live → count on Record
 - Live tab: refreshes every 10 seconds
 - Record tab: rows expand to picks, no long doom-scroll list
-- No DraftKings link or Hard Rock bet link on page or in Discord
+- No Hard Rock bet link on page or in Discord. DraftKings link is a convenience bet-slip link only; it changes no rules, picks, requirements or grading.
 
 These describe what exists today. A spec may change look, feel, and structure; it may not change what the numbers mean.
 

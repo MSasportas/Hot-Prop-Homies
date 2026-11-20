@@ -1,3 +1,4 @@
+import json
 import shutil
 import unittest
 
@@ -56,6 +57,49 @@ class SelectToSlipLink(unittest.TestCase):
         h = page_source()
         self.assertIn("SLIP_MAX = 20", h)
         self.assertIn("SLIP_MAX_CHARS = 1500", h)
+
+
+DK_FUNCTIONS = ("str", "dkOutcome", "dkHref")
+DK_VARIABLES = ("DK_BASE", "SLIP_MAX", "SLIP_MAX_CHARS")
+DK = "https://sportsbook.draftkings.com/"
+DK_LINKS = [DK + "?outcomes=0QA390905561%232372938491_13L42648Q1935105358Q20",
+            DK + "event/31?outcomes=0QA390910209%232372945876_13L42648Q11799469575Q20"]
+
+
+def dk_href(links):
+    got, err = run_page_js(DK_FUNCTIONS, "console.log(JSON.stringify(dkHref(%s)))" % json.dumps(links), DK_VARIABLES)
+    return got, err
+
+
+@unittest.skipUnless(shutil.which("node"), "node not installed")
+class SelectToDraftKings(unittest.TestCase):
+    def test_one_pick_is_its_own_link_unchanged(self):
+        got, err = dk_href(DK_LINKS[:1])
+        self.assertEqual(got, DK_LINKS[0], err)
+
+    def test_several_picks_join_each_outcomes_value_as_given_in_order(self):
+        got, err = dk_href(DK_LINKS)
+        self.assertEqual(got, DK + "?outcomes=0QA390905561%232372938491_13L42648Q1935105358Q20,0QA390910209%232372945876_13L42648Q11799469575Q20", err)
+        got, err = dk_href(list(reversed(DK_LINKS)))
+        self.assertTrue(got.startswith(DK + "?outcomes=0QA390910209"), err)
+
+    def test_duplicates_collapse_and_links_without_an_outcome_are_ignored(self):
+        got, err = dk_href([DK_LINKS[0], DK + "no-outcomes", DK_LINKS[0]])
+        self.assertEqual(got, DK_LINKS[0], err)
+        got, err = dk_href([DK + "no-outcomes"])
+        self.assertIsNone(got, err)
+
+    def test_an_outcomes_value_with_odd_characters_is_refused(self):
+        for bad in ("a,b", "a b", "a'b", 'a"b'):
+            got, err = dk_href([DK + "?outcomes=" + bad])
+            self.assertIsNone(got, err)
+
+    def test_over_the_character_cap_is_refused(self):
+        got, err = dk_href([DK + "?outcomes=" + str(n) * 100 for n in range(1, 16)])
+        self.assertIsNone(got, err)
+
+    def test_the_multi_pick_format_is_one_swappable_constant(self):
+        self.assertIn("DK_OUTCOMES_JOIN = ','", page_source())
 
 
 if __name__ == "__main__":

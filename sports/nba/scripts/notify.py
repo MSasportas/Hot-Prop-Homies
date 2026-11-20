@@ -202,7 +202,7 @@ def bet_buttons(p):
         pr = hr.get("price", p.get("price"))
         out.append("[Hard Rock%s](<%s>)" % (" " + common.fmt_price(pr) if isinstance(pr, (int, float)) else "", u))
     dk = lk.get("draftkings") if isinstance(lk.get("draftkings"), dict) else {}
-    u = odds._dk_link(dk.get("url"))
+    u = odds._dk_link(dk.get("url")) if dk.get("qualifies") is not False else None   # Discord: only a DraftKings price that passed the rule
     if u:
         pr = dk.get("price")
         out.append("[DraftKings%s](<%s>)" % (" " + common.fmt_price(pr) if isinstance(pr, (int, float)) else "", u))
