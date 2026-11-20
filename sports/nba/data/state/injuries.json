@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T18:30:03-05:00",
+ "at": "2026-11-20T18:40:01-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -79,11 +79,11 @@
    "note": "Schroder has been diagnosed with a left hamstring strain and will be reevaluated in two weeks, Michael Scotto of HoopsHype.com reports."
   },
   "4397189": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Jalen Smith",
    "team": "CHI",
-   "date": "2026-11-20T17:41Z",
-   "note": "Smith (illness) has been downgraded to questionable for Friday's game against the Wizards."
+   "date": "2026-11-20T23:19Z",
+   "note": "Smith (illness) is out for Friday's game against the Wizards, Joel Lorenzi of The Athletic reports."
   },
   "5242496": {
    "status": "day-to-day",
@@ -455,13 +455,6 @@
    "team": "NO",
    "date": "2026-11-19T21:07Z",
    "note": "Mathurin (foot) has been ruled out for Friday's game against the Thunder."
-  },
-  "4397688": {
-   "status": "out",
-   "name": "Trey Murphy III",
-   "team": "NO",
-   "date": "2026-11-19T21:05Z",
-   "note": "Murphy (knee) is questionable for Friday's game against the Thunder."
   },
   "3907497": {
    "status": "out",

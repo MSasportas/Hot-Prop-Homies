@@ -2,7 +2,7 @@
  "slate": "2026-11-20",
  "teams": {
   "CHA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Coby White",
     "Brandon Miller",
@@ -18,7 +18,7 @@
    }
   },
   "ATL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Nickeil Alexander-Walker",
     "Dyson Daniels",
@@ -171,7 +171,6 @@
     "Yves Missi"
    ],
    "status": {
-    "Trey Murphy": "questionable",
     "Bennedict Mathurin": "out",
     "Bryce McGowens": "out",
     "Dejounte Murray": "out",
@@ -282,5 +281,5 @@
    }
   }
  },
- "at": "2026-11-20T18:30:03-05:00"
+ "at": "2026-11-20T18:40:01-05:00"
 }
