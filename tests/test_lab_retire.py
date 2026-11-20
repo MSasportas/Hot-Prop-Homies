@@ -70,6 +70,15 @@ class Evaluate(unittest.TestCase):
         self.assertEqual(v["final"]["clv"], -0.03)
 
 
+class Pages(unittest.TestCase):
+    def test_every_page_defines_the_redraw_its_lab_calls(self):
+        for page in ("index.html", os.path.join("sports", "nba", "index.html"), os.path.join("sports", "nhl", "index.html")):
+            with open(os.path.join(os.path.dirname(lr.__file__), "..", page), encoding="utf-8") as fh:
+                html = fh.read()
+            if "LAB_REDRAW(" in html:
+                self.assertIn("function LAB_REDRAW()", html, page)
+
+
 class Run(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()

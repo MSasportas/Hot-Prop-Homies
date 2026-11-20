@@ -1564,6 +1564,7 @@ function labRetiredSources() {
   var n = S.lab ? num(S.lab.retired_count) || 0 : 0;
   return n > 0 ? [{ sp: null, n: n, url: 'config/lab_retired.jsonl' }] : [];
 }
+function LAB_REDRAW() { render(); }
 function loadRetired(sources) {
   S.labRetiredEv = 'loading';
   return Promise.all(sources.map(function (s) {
