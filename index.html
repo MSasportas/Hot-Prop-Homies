@@ -60,7 +60,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 [hidden]{display:none!important}
 
 /* page column: everything right of the rail */
-.wrap{max-width:560px;margin:0 0 0 calc(var(--w) + var(--sal));padding:0 14px calc(28px + var(--sab));min-height:100vh}
+.wrap{max-width:560px;margin:0 0 0 calc(var(--w) + var(--sal));padding:0 14px max(calc(28px + var(--sab)),var(--slipH,0px));min-height:100vh}
 @media (min-width:640px){.wrap{margin-left:calc(var(--w) + 24px)}}
 
 /* header */
@@ -181,6 +181,39 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 16px;border-radius:6px;
   border:1px solid var(--line2);color:var(--fg);font:600 15px/20px var(--body)}
 .btn.hr{width:100%;background:var(--cta);color:var(--on-primary);border-color:var(--cta);text-decoration:none;white-space:nowrap}
+/* select to slip: Select mode swaps each tile's photo for a check circle; a bar at the bottom adds the picks to Hard Rock */
+.sec-h.hasbtn{flex-wrap:wrap}
+.sec-h.hasbtn h2{flex:1 0 auto}
+.selbtn{display:flex;align-items:center;min-height:44px;margin:-11px -12px -11px 0;padding:0 12px;color:var(--accent);font:600 14px/20px var(--body)}
+.tile .ck{flex:none;display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;border:2px solid var(--line2);color:var(--on-accent)}
+.tile .ck svg{display:none}
+.tile.sel .ck{background:var(--accent);border-color:var(--accent)}
+.tile.sel .ck svg{display:block}
+.tile .top.cr .ck{position:absolute;top:0;right:2px;width:22px;height:22px}
+.tile .top.cr .fn{margin-right:12px}
+.tile.selmode{transition:transform .12s}
+.tile.selmode.sel{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent);
+  background:linear-gradient(rgba(var(--accent-rgb),.1),rgba(var(--accent-rgb),.1)),var(--surface)}
+.tile.selmode:active{transform:scale(.98)}
+.tile.nosel{opacity:.6;cursor:default}
+.tile.nosel:active{transform:none}
+@keyframes nudge{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.tile.nudge{animation:nudge .24s}
+.slipbar{position:fixed;bottom:0;right:0;left:calc(var(--w) + var(--sal));z-index:5;background:var(--surface);border-top:1px solid var(--line2);
+  box-shadow:0 -6px 16px rgba(0,0,0,.35);padding:8px 0 calc(8px + var(--sab));transform:translateY(100%);visibility:hidden;transition:transform .18s ease-out,visibility 0s .18s}
+.slipbar.show{transform:none;visibility:visible;transition:transform .18s ease-out}
+@media (min-width:640px){.slipbar{left:calc(var(--w) + 24px)}}
+.slipbar .in{max-width:560px;padding:0 14px}
+.slipbar .r1{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:20px}
+.slipbar .cnt{font:600 15px/20px var(--body);min-width:0}
+.slipbar .cnt.mu{font-weight:400}
+.slipbar .warn{color:var(--warn)}
+.slipbar .acts{display:flex;flex:none}
+.slipbar .lk{display:flex;align-items:center;min-height:44px;margin:-12px 0;padding:0 8px;color:var(--accent);font:600 13px/18px var(--body)}
+.slipbar .lk:last-child{margin-right:-8px}
+.slipbar .note{margin-top:2px;font-size:12px;line-height:16px;color:var(--muted)}
+.slipbar .btn.hr{min-height:48px;margin-top:8px;font-size:16px}
+.slipbar .btn.hr:not([href]){opacity:.5;pointer-events:none}
 /* TOO LATE: off the board before tip. Solid Dugout Navy stamp, the tile dimmed under it; the price is not struck */
 .tile.late{border-color:var(--line)}
 .tile.late .dimmed{opacity:.5}
@@ -289,6 +322,9 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .rail.ready .ind{transition:transform .28s cubic-bezier(.3,.7,.2,1),height .28s}
 @media (prefers-reduced-motion:reduce){
   .rail.ready .ind,.tab .lbl,.tab .ico{transition:none}
+  .slipbar,.slipbar.show,.tile.selmode{transition:none}
+  .tile.nudge{animation:none}
+  .tile.selmode:active{transform:none}
 }
 
 /* record */
@@ -476,7 +512,7 @@ var S = {
   sport: _storedSport,
   slate: null, record: null, rules: null, recordErr: null, lab: null, labSum: {}, labErr: null, heads: null,
   loaded: false, loadErr: false, fetchFail: false, loadedAt: null, busy: false,
-  view: 'picks', expanded: {},
+  view: 'picks', expanded: {}, slip: { on: false, ids: {}, msg: null },
   months: {}, calMonth: null, selDay: null,
   newIds: {}, since: null, seenDone: false, key: '', scroll: {},
   allResults: null, resets: null, cutSel: null, openCut: null, recFilters: [],
@@ -898,9 +934,11 @@ function render() {
     S.key = calcKey();
     readSeen();
     clear(app);
+    SLIP_VIEW = null;
     (RENDER[S.view] || renderPicks)();
     renderTabs();
     fitNames();
+    paintSlipBar();
   } catch (err) {
     clear(app);
     app.appendChild(header(TITLE, null));
@@ -1047,10 +1085,10 @@ function nameBlock(full, closed) {
 }
 function fitsLine(el) { return el.scrollWidth <= el.clientWidth; }
 function fitName(nm) {
-  var top = nm.parentNode, im = top.querySelector('.hs'), fn = nm.querySelector('.fn'), ln = nm.querySelector('.ln');
+  var top = nm.parentNode, im = top.querySelector('.hs, .ck'), fn = nm.querySelector('.fn'), ln = nm.querySelector('.ln');
   var first = nm.getAttribute('data-first'), last = nm.getAttribute('data-last'), core = nm.getAttribute('data-core');
   var fitFirst = function () { if (!fn) return; fn.textContent = first; if (!fitsLine(fn)) fn.textContent = first.charAt(0) + '.'; };
-  var photo = function (on) { if (im) im.style.display = on ? '' : 'none'; };
+  var photo = function (on) { if (!im) return; if (im.classList.contains('ck')) top.classList.toggle('cr', !on); else im.style.display = on ? '' : 'none'; };
   ln.className = 'ln';
   var tiers = [[true, last], [true, core], [false, last], [false, core]], i, j;
   for (i = 0; i < tiers.length; i++) {
@@ -1066,9 +1104,9 @@ function fitName(nm) {
   if (!fitsLine(ln)) { ln.classList.remove('brk'); ln.classList.add('ell'); }
 }
 function fitNames() { Array.prototype.forEach.call(app.querySelectorAll('.tile .nm[data-last]'), fitName); }
-function tileTop(p, open) {
+function tileTop(p, open, mark) {
   var full = str(p.player).trim();
-  return h('div', { class: 'top' }, headshot(p), nameBlock(full || 'Player not named', !open && !!full));
+  return h('div', { class: 'top' }, mark || headshot(p), nameBlock(full || 'Player not named', !open && !!full));
 }
 function sportBadge(p) { return (S.sport === 'all' && p.sport) ? h('span', { class: 'sp-badge ' + p.sport, text: p.sport.toUpperCase() }) : null; }
 function tilePrice(p) {
@@ -1088,12 +1126,14 @@ function latestIds(d) {
 }
 function isNewPick(id, d, lat) { return !stale() && !expired() && !!(S.newIds[id] || (lat && lat[id])); }
 function pickCard(p, d, lat) {
-  var id = str(p.id), isOpen = !!S.expanded[id], isNew = isNewPick(id, d, lat);
-  var card = h('div', { class: 'tile pick' + (isOpen ? ' open' : '') + (isNew ? ' isnew' : ''), role: 'button', tabindex: '0',
-    'aria-expanded': isOpen ? 'true' : 'false', 'data-id': id });
+  var id = str(p.id), sm = S.slip.on, pickable = sm && slipOK(p), isOpen = !sm && !!S.expanded[id], isNew = isNewPick(id, d, lat);
+  var card = h('div', { class: 'tile pick' + (isOpen ? ' open' : '') + (isNew ? ' isnew' : '') + (sm ? ' selmode' : '') + (sm && !pickable ? ' nosel' : ''),
+    role: sm ? 'checkbox' : 'button', tabindex: sm && !pickable ? null : '0', 'aria-expanded': sm ? null : (isOpen ? 'true' : 'false'), 'data-id': id });
   var toggle = function () { if (S.expanded[id]) delete S.expanded[id]; else S.expanded[id] = 1; rerender(); };
-  var ev = toggleBtnKeys(toggle); card.addEventListener('click', ev.click); card.addEventListener('keydown', ev.keydown);
-  card.appendChild(tileTop(p, isOpen));
+  if (!sm) { var ev = toggleBtnKeys(toggle); card.addEventListener('click', ev.click); card.addEventListener('keydown', ev.keydown); }
+  if (pickable) slipTile(card, p);
+  else if (sm) card.setAttribute('aria-disabled', 'true');
+  card.appendChild(tileTop(p, isOpen, pickable ? h('span', { class: 'ck', 'aria-hidden': 'true' }, icon('check', 16, 3)) : null));
   card.appendChild(tilePrice(p));
   card.appendChild(chanceVs(p));
   if (!isOpen) {
@@ -1126,15 +1166,131 @@ function pickCard(p, d, lat) {
 /* Tap to bet: Hard Rock's share link opens the slip with this bet on it. Hard Rock only. Open picks on a fresh page only. */
 var HR_SLIP = 'https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/';
 function slipUrl(u, prefix) { u = str(u); return (u.indexOf(prefix) === 0 && u.length < 600 && !/[\s<>"'\\]/.test(u)) ? u : null; }
+/* the pick's own Hard Rock link while it can still be bet (stale data is the caller's call) */
+function hrLink(p) {
+  if (p.pulled || isObj(p.result) || isObj(p.graded) || !/^(early|clear|starters|lineup)$/.test(str(p.state))) return null;
+  var lk = isObj(p.links) ? p.links : {};
+  return slipUrl(isObj(lk.hardrock) && lk.hardrock.url, HR_SLIP);
+}
 function betRow(p) {
-  if (p.pulled || isObj(p.result) || isObj(p.graded) || !/^(early|clear|starters|lineup)$/.test(str(p.state)) || stale()) return null;
-  var lk = isObj(p.links) ? p.links : {}, hr = slipUrl(isObj(lk.hardrock) && lk.hardrock.url, HR_SLIP);
+  var hr = stale() ? null : hrLink(p);
   if (!hr) return null;
+  var lk = p.links;
   var stop = function (e) { e.stopPropagation(); };
   var pr = num(lk.hardrock.price) != null ? lk.hardrock.price : p.price;
   var a = h('a', { class: 'btn hr', href: hr, target: '_blank', rel: 'noopener noreferrer', text: 'Bet at Hard Rock' + (num(pr) != null ? ' ' + odds(pr) : '') });
   a.addEventListener('click', stop); a.addEventListener('keydown', stop);
   return a;
+}
+/* Select mode: pick several open picks, and one Hard Rock link puts them all on the slip (he chooses parlay or singles there).
+   The link is HR_SLIP plus each pick's own digits-only id, comma-joined, in the order the picks are on screen. Memory only. */
+var SLIP_MAX = 20, SLIP_MAX_CHARS = 1500, SLIP_IDS = /^\d+(,\d+)*$/;
+var SLIP_SAY_MS = 3000, SLIP_GONE_MS = 8000, SLIP_PAD = 16;
+var SLIP_VIEW = null, slipEl = null, slipTimer = null;   /* the selectable picks on screen, newest first; the bar's parts; its message timer */
+function slipIdOf(url) { var id = str(url).slice(HR_SLIP.length); return /^\d+$/.test(id) ? id : null; }
+function slipOK(p) { return slipIdOf(hrLink(p)) != null; }
+function slipKey(p) { return (str(p.sport) || S.sport) + ':' + str(p.id); }
+function slipIds(links) {
+  var out = [];
+  links.forEach(function (u) { var id = slipIdOf(u); if (id && out.indexOf(id) < 0) out.push(id); });
+  return out;
+}
+function slipFits(ids) { return ids.length <= SLIP_MAX && HR_SLIP.length + ids.join(',').length <= SLIP_MAX_CHARS; }
+function slipHref(links) {
+  var ids = slipIds(links), tail = ids.join(',');
+  return ids.length && slipFits(ids) && SLIP_IDS.test(tail) ? HR_SLIP + tail : null;
+}
+function slipPicked(extra) { return SLIP_VIEW.filter(function (q) { return S.slip.ids[slipKey(q)] || q === extra; }); }
+function slipCount(list) { return slipIds(list.map(hrLink)).length; }
+function slipReset() { S.slip.on = false; S.slip.ids = {}; S.slip.msg = null; }
+function slipSay(text, ms) {
+  S.slip.msg = { text: text, until: Date.now() + ms };
+  clearTimeout(slipTimer); slipTimer = setTimeout(paintSlipBar, ms + 50);
+}
+/* what is selectable now; picks that went TOO LATE, were pulled, started or lost their link leave the selection */
+function slipSync(d) {
+  var s = S.slip, ok = {}, gone = 0;
+  SLIP_VIEW = d.board.filter(slipOK);
+  SLIP_VIEW.forEach(function (p) { ok[slipKey(p)] = 1; });
+  Object.keys(s.ids).forEach(function (k) {
+    if ((S.sport === 'all' || k.indexOf(S.sport + ':') === 0) && !ok[k]) { delete s.ids[k]; gone++; }
+  });
+  if (gone) slipSay(gone + (gone === 1 ? ' pick came off.' : ' picks came off.') + ' Slip updated.', SLIP_GONE_MS);
+}
+function slipMode() {
+  var s = S.slip, on = !s.on;
+  slipReset(); s.on = on; if (on) S.expanded = {};
+  render();
+  var b = app.querySelector('.selbtn'); if (b) b.focus();
+}
+function slipTile(card, p) {
+  var k = slipKey(p), on = !!S.slip.ids[k], toggle = function () { slipToggle(p, card); }, ev = toggleBtnKeys(toggle);
+  card.setAttribute('data-key', k); card.setAttribute('aria-checked', on ? 'true' : 'false');
+  card.setAttribute('aria-label', (str(p.player).trim() || 'Player not named') + ' ' + betShort(p) + ', select');
+  if (on) card.classList.add('sel');
+  card.addEventListener('click', ev.click); card.addEventListener('keydown', ev.keydown);
+}
+function slipToggle(p, card) {
+  var ids = S.slip.ids, k = slipKey(p); S.slip.msg = null;
+  if (ids[k]) delete ids[k];
+  else if (slipFits(slipIds(slipPicked(p).map(hrLink)))) ids[k] = 1;
+  else {
+    slipSay('Max ' + slipCount(slipPicked()) + ' per slip', SLIP_SAY_MS);
+    card.classList.remove('nudge'); void card.offsetWidth; card.classList.add('nudge');
+    card.addEventListener('animationend', function () { card.classList.remove('nudge'); }, { once: true });
+  }
+  paintSlipTiles(); paintSlipBar();
+}
+function slipAll() {
+  var s = S.slip, take = [], i;
+  s.msg = null;
+  for (i = 0; i < SLIP_VIEW.length && slipFits(slipIds(take.concat(SLIP_VIEW[i]).map(hrLink))); i++) take.push(SLIP_VIEW[i]);
+  SLIP_VIEW.forEach(function (p) { delete s.ids[slipKey(p)]; });
+  take.forEach(function (p) { s.ids[slipKey(p)] = 1; });
+  if (take.length < SLIP_VIEW.length) { var n = slipCount(take); slipSay('Selected the first ' + n + '. Max is ' + n + '.', SLIP_SAY_MS); }
+  paintSlipTiles(); paintSlipBar();
+}
+function slipClear() { S.slip.ids = {}; S.slip.msg = null; paintSlipTiles(); paintSlipBar(); }
+function paintSlipTiles() {
+  Array.prototype.forEach.call(app.querySelectorAll('.tile[data-key]'), function (t) {
+    var on = !!S.slip.ids[t.getAttribute('data-key')];
+    t.classList.toggle('sel', on); t.setAttribute('aria-checked', on ? 'true' : 'false');
+  });
+}
+function slipBar() {
+  if (slipEl) return slipEl;
+  var b = { cnt: h('span', { class: 'cnt' }), note: h('div', { class: 'note' }), go: h('a', { class: 'btn hr', target: '_blank', rel: 'noopener noreferrer' }),
+    all: h('button', { class: 'lk', type: 'button', text: 'Select all', on: { click: slipAll } }),
+    clr: h('button', { class: 'lk', type: 'button', text: 'Clear', on: { click: slipClear } }) };
+  b.root = h('div', { class: 'slipbar', role: 'region', 'aria-label': 'Hard Rock slip' }, h('div', { class: 'in' },
+    h('div', { class: 'r1', 'aria-live': 'polite' }, b.cnt, h('div', { class: 'acts' }, b.all, b.clr)), b.note, b.go));
+  document.body.appendChild(b.root);
+  if (window.ResizeObserver) new ResizeObserver(slipPad).observe(b.root);
+  slipEl = b;
+  return b;
+}
+/* the page makes room for the bar: its measured height plus a little air */
+function slipPad() {
+  var on = !!slipEl && slipEl.root.classList.contains('show');
+  document.documentElement.style.setProperty('--slipH', on ? (slipEl.root.offsetHeight + SLIP_PAD) + 'px' : '0px');
+}
+function paintSlipBar() {
+  var show = !!SLIP_VIEW && S.slip.on;
+  if (!show && !slipEl) return;
+  var b = slipBar();
+  b.root.classList.toggle('show', show);
+  if (show) {
+    var picked = slipPicked(), links = picked.map(hrLink), n = slipIds(links).length, href = slipHref(links), old = stale();
+    var m = S.slip.msg && Date.now() < S.slip.msg.until ? S.slip.msg : null, broken = n > 0 && !href && !old;
+    var note = broken ? "Can't build the slip. Use each pick's button." : (n > 1 && !old ? 'You choose parlay or singles in Hard Rock.' : '');
+    b.cnt.textContent = old ? 'Picks are old. Refresh before betting.' : (m ? m.text : (n ? n + ' selected' + (n >= SLIP_MAX ? ' (max)' : '') : 'Tap picks to select'));
+    b.cnt.className = 'cnt' + (old || m ? ' warn' : (n ? '' : ' mu'));
+    b.all.hidden = picked.length === SLIP_VIEW.length; b.clr.hidden = !picked.length;
+    b.note.textContent = note; b.note.hidden = !note; b.note.className = 'note' + (broken ? ' warn' : '');
+    if (href && !old) { b.go.setAttribute('href', href); b.go.removeAttribute('aria-disabled'); } else { b.go.removeAttribute('href'); b.go.setAttribute('aria-disabled', 'true'); }
+    b.go.textContent = old ? 'Picks are old' : (href ? 'Add ' + n + ' to Hard Rock slip' : 'Add to Hard Rock slip');
+  }
+  slipPad();
 }
 /* TOO LATE: the pick came off the board before tip (any reason but a scratch). One stamp, no reason text, one line of advice. */
 function lateCard(p) {
@@ -1153,8 +1309,9 @@ function loadingView() {
 }
 function renderPicks() {
   if (!S.loaded) { loadingView(); return; }
-  if (!S.slate) { noSlate(TITLE); return; }
+  if (!S.slate) { slipReset(); noSlate(TITLE); return; }
   var sl = S.slate, exp = expired(), d = split();
+  if (exp) slipReset();
   top(TITLE, true);
   if (exp) {
     app.appendChild(banner('warn', 'This slate is old' + (slateDay() ? ' (' + fDateShort(slateDay()) + ').' : '.'),
@@ -1168,6 +1325,7 @@ function renderPicks() {
   if (!exp && sl.safety_paused && !bl.some(function (b) { return isObj(b) && b.level === 'stop'; }))
     app.appendChild(banner('stop', 'New picks are stopped.', 'The Record is ' + safetyDown() + '. The team has to review first.'));
   if (exp) { app.appendChild(smallFoot()); return; }
+  slipSync(d);
 
   if (S.since && !stale()) {                     /* nothing is "new" while updates have stopped */
     var bits = []; if (S.since.n) bits.push(S.since.n + ' new'); if (S.since.p) bits.push(S.since.p + ' too late');
@@ -1187,8 +1345,10 @@ function renderPicks() {
       fpStr ? h('div', { class: 's', style: 'margin-top:4px', text: fpStr }) : null));
   }
   var emp = isObj(sl.empty) ? sl.empty : null, nOpen = d.open.length;
-  var sec = h('section', { class: 'sec', id: 'picks' }, h('div', { class: 'sec-h' }, h('h2', { text: 'Picks (' + nOpen + (d.late.length ? ' open' : '') + ')' }),
-    d.started.length ? h('button', { class: 'linkbtn', type: 'button', style: 'min-height:0;font-size:12.5px', on: { click: function () { go('live'); } } }, d.started.length + ' on Live', icon('right', 12)) : null));
+  var canSel = S.slip.on || (!stale() && SLIP_VIEW.length > 0);
+  var sec = h('section', { class: 'sec', id: 'picks' }, h('div', { class: 'sec-h' + (canSel ? ' hasbtn' : '') }, h('h2', { text: 'Picks (' + nOpen + (d.late.length ? ' open' : '') + ')' }),
+    d.started.length ? h('button', { class: 'linkbtn', type: 'button', style: 'min-height:0;font-size:12.5px', on: { click: function () { go('live'); } } }, d.started.length + ' on Live', icon('right', 12)) : null,
+    canSel ? h('button', { class: 'selbtn', type: 'button', text: S.slip.on ? 'Done' : 'Select', on: { click: slipMode } }) : null));
   if (!d.board.length) {
     var t, s2 = null, nx = null;
     if (emp && emp.text) { t = str(emp.text); s2 = emp.why ? noDK(emp.why) : null; nx = fStamp(emp.next); }
