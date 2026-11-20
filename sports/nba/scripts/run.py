@@ -555,7 +555,8 @@ class Run:
 
 def rules_doc(cfg):
     ps, r, c, el, w = cfg["pin_solo"], cfg["reads"], cfg["customer"], cfg["eligibility"], cfg["watch"]["pin_judge"]
-    return {"version": cfg["version"], "updated": cfg["updated"], "ui": cfg["ui"], "lines": [
+    return {"version": cfg["version"], "updated": cfg["updated"], "ui": cfg["ui"],
+            "safety_units": cfg["safety_pause"]["units"], "lines": [
         "Hard Rock (Florida) prices: player rebounds, points, assists and 3-pointers made, the main line, over or under. "
         "No leg worse than %d." % c["worst_price"],
         "The rule: Pinnacle (the sharpest book) moves its odds on a line by %d+ points of chance between two of our price checks, "

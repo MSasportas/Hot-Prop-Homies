@@ -199,7 +199,6 @@ def stale_vs(prev, snap):
 
 def snapshot(inp, f, market, pair, pid, team, opp, home, thin, model_fn, lineup_state, goalie_state, now,
              historical, cons=None):
-    v = inp.v
     over, under = pair["over"], pair["under"]
     fair_over = odds.fair_two_sided(over, under)
     s = {"at": f["at"], "pull": f["pull"], "over": over, "under": under, "fair_over": _r(fair_over),

@@ -13,7 +13,6 @@ import os
 
 import common
 import engine
-import odds
 
 TRACK = "pin_judge"          # the track being worked on; flag() and summary() walk every track in config "watch"
 

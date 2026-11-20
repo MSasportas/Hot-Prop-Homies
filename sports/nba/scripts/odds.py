@@ -18,7 +18,6 @@ import urllib.parse
 from datetime import datetime, timedelta
 
 import common
-import names
 
 API_ROOT = "https://api.the-odds-api.com/v4/sports/"
 MAX_BOOKS_PER_REGION = 10

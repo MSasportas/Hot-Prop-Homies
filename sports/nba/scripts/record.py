@@ -266,7 +266,6 @@ def _replay_entries(cfg):
     for n in doc.get("nights") or []:
         for i, b in enumerate(n.get("bets") or []):
             away, home = (b["opp"], b["team"]) if b.get("home") else (b["team"], b["opp"])
-            noun = (cfg["markets"].get(b["market"]) or {}).get("noun", "")
             out.setdefault(n["date"], []).append({
                 "id": "replay:%s:%s:%s:%s:%s" % (n["date"], b["player"], b["market"], b["line"], b["side"]), "kind": "single",
                 "player": b["player"], "bet": b["bet"], "market": b["market"], "team": b["team"],

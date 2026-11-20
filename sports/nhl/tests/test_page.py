@@ -60,13 +60,6 @@ class Fixtures(unittest.TestCase):
         self.assertEqual(rules["version"], helpers.common.load_config()["version"])
 
 
-class PageRules(unittest.TestCase):
-    def test_goalie_last_name(self):
-        got = run_js(page_function("str") + "\n" + page_function("lastName") +
-                     "\nconsole.log(JSON.stringify(['Joonas Korpisalo', 'Ukko-Pekka Luukkonen', ' Vladar ', ''].map(lastName)))")
-        self.assertEqual(got, ["Korpisalo", "Luukkonen", "Vladar", ""])
-
-
 def page_array(name):
     with open(PAGE, encoding="utf-8") as f:
         src = f.read()

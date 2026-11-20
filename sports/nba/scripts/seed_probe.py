@@ -54,7 +54,6 @@ def box(summary):
     hdr = summary["header"]["competitions"][0]
     comp = {c["homeAway"]: c for c in hdr["competitors"]}
     ab = {ha: comp[ha]["team"]["abbreviation"] for ha in ("home", "away")}
-    tid = {ha: comp[ha]["team"]["id"] for ha in ("home", "away")}
     other = {ab["home"]: ab["away"], ab["away"]: ab["home"]}
     ot = max(0, max(len(comp[ha].get("linescores", []) or []) for ha in ab) - 4)
     when = summary["header"].get("competitions", [{}])[0].get("date")
