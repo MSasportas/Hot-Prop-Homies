@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-19",
- "generated_at": "2026-11-19T23:10:00-05:00",
+ "generated_at": "2026-11-19T23:20:01-05:00",
  "games": [
   {
    "game_id": 2026020350,
@@ -92,20 +92,20 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "14:35",
+   "clock": "09:02",
    "in_intermission": false,
    "running": true,
    "away": {
     "abbrev": "ANA",
     "score": 0,
-    "sog": 16
+    "sog": 19
    },
    "home": {
     "abbrev": "COL",
-    "score": 3,
-    "sog": 22
+    "score": 4,
+    "sog": 25
    },
-   "updated_at": "2026-11-19T23:10:00-05:00"
+   "updated_at": "2026-11-19T23:20:01-05:00"
   },
   {
    "game_id": 2026020358,
@@ -113,7 +113,7 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "13:47",
+   "clock": "08:52",
    "in_intermission": false,
    "running": false,
    "away": {
@@ -123,10 +123,10 @@
    },
    "home": {
     "abbrev": "VGK",
-    "score": 0,
-    "sog": 15
+    "score": 2,
+    "sog": 18
    },
-   "updated_at": "2026-11-19T23:10:00-05:00"
+   "updated_at": "2026-11-19T23:20:01-05:00"
   }
  ],
  "picks": {
@@ -168,12 +168,12 @@
   "2026-11-19:2026020356:8478038:shots:1.5:under": {
    "game_id": 2026020356,
    "market": "shots",
-   "stat": 1
+   "stat": 2
   },
   "2026-11-19:2026020356:8480039:points:1.5:over": {
    "game_id": 2026020356,
    "market": "points",
-   "stat": 1
+   "stat": 2
   },
   "2026-11-19:2026020358:8475913:shots:1.5:under": {
    "game_id": 2026020358,
