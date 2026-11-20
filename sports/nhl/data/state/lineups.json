@@ -2063,14 +2063,22 @@
    "last_error": "page not read"
   },
   "VAN": {
-   "tried_at": "2026-11-19T18:40:00-05:00",
+   "tried_at": "2026-11-19T19:00:01-05:00",
    "last_error": "page not read"
   },
   "SEA": {
-   "tried_at": "2026-11-19T18:40:00-05:00",
+   "tried_at": "2026-11-19T19:00:01-05:00",
+   "last_error": "page not read"
+  },
+  "DAL": {
+   "tried_at": "2026-11-19T19:00:01-05:00",
+   "last_error": "page not read"
+  },
+  "VGK": {
+   "tried_at": "2026-11-19T19:00:01-05:00",
    "last_error": "page not read"
   }
  },
  "last_ok_at": "2026-11-19T18:20:01-05:00",
- "last_try_at": "2026-11-19T18:50:00-05:00"
+ "last_try_at": "2026-11-19T19:00:01-05:00"
 }

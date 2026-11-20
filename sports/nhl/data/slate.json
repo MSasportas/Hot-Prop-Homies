@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-19",
- "generated_at": "2026-11-19T18:50:00-05:00",
- "status_at": "2026-11-19T18:50:00-05:00",
+ "generated_at": "2026-11-19T19:00:01-05:00",
+ "status_at": "2026-11-19T19:00:01-05:00",
  "valid_until": "2026-11-20T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -11,12 +11,12 @@
   "stats_through": "2026-11-18",
   "lineups_at": "2026-11-19T18:20:01-05:00",
   "goalies_at": null,
-  "lineups_note": "Lineups posted for 13 of 22 teams checked so far.",
+  "lineups_note": "Lineups posted for 13 of 24 teams checked so far.",
   "lineups_state": "partial",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-19T18:50:00-05:00",
+   "at": "2026-11-19T19:00:01-05:00",
    "failed_step": null
   },
   "pool": {
@@ -79,8 +79,8 @@
      "home": "2026-11-19T16:00:01-05:00"
     }
    },
-   "started": false,
-   "reads_done": true,
+   "started": true,
+   "reads_done": false,
    "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
@@ -125,8 +125,8 @@
      "home": "2026-11-19T16:00:01-05:00"
     }
    },
-   "started": false,
-   "reads_done": true,
+   "started": true,
+   "reads_done": false,
    "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
@@ -171,8 +171,8 @@
      "home": null
     }
    },
-   "started": false,
-   "reads_done": true,
+   "started": true,
+   "reads_done": false,
    "picks": 1,
    "excluded_reason": null,
    "excluded_teams": []
@@ -217,8 +217,8 @@
      "home": null
     }
    },
-   "started": false,
-   "reads_done": true,
+   "started": true,
+   "reads_done": false,
    "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
@@ -263,8 +263,8 @@
      "home": null
     }
    },
-   "started": false,
-   "reads_done": true,
+   "started": true,
+   "reads_done": false,
    "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
@@ -309,8 +309,8 @@
      "home": "2026-11-19T16:00:01-05:00"
     }
    },
-   "started": false,
-   "reads_done": true,
+   "started": true,
+   "reads_done": false,
    "picks": 1,
    "excluded_reason": null,
    "excluded_teams": []
@@ -640,67 +640,67 @@
    "games_this_season": 22
   },
   {
-   "id": "2026-11-19:2026020354:8485388:points:0.5:over",
-   "price": 140,
-   "first_price": 140,
-   "first_price_at": "2026-11-19T17:30:01-05:00",
-   "worst_price": 140,
-   "p": 0.4431,
-   "breakeven": 0.4167,
-   "p_pct": 44,
-   "breakeven_pct": 42,
+   "id": "2026-11-19:2026020353:8482720:points:0.5:over",
+   "price": -110,
+   "first_price": -110,
+   "first_price_at": "2026-11-19T18:30:00-05:00",
+   "worst_price": -110,
+   "p": 0.5437,
+   "breakeven": 0.5238,
+   "p_pct": 54,
+   "breakeven_pct": 52,
    "state": "lineup",
    "history": [
     {
-     "at": "2026-11-19T17:30:01-05:00",
+     "at": "2026-11-19T18:30:00-05:00",
      "text": "Lineup confirmed"
     }
    ],
    "prices": [
     {
-     "at": "2026-11-19T17:30:01-05:00",
-     "price": 140
+     "at": "2026-11-19T18:30:00-05:00",
+     "price": -110
     }
    ],
    "pulled": null,
-   "price_final": true,
+   "price_final": false,
    "graded": null,
    "rank": 2,
    "tier": "main",
-   "game_id": 2026020354,
-   "player": "V. Eklund",
-   "player_id": 8485388,
-   "team": "NYI",
-   "opp": "WPG",
+   "game_id": 2026020353,
+   "player": "M. Knies",
+   "player_id": 8482720,
+   "team": "CBJ",
+   "opp": "CHI",
    "home": false,
-   "start": "2026-11-19T19:00:00-05:00",
+   "start": "2026-11-19T20:00:00-05:00",
    "market": "points",
    "line": 0.5,
    "side": "over",
    "bet": "Over 0.5 points",
-   "price_at": "2026-11-19T17:30:01-05:00",
-   "gap_pct": 6.2,
-   "market_fair_pct": 44.2,
+   "price_at": "2026-11-19T18:30:00-05:00",
+   "gap_pct": 3.2,
+   "market_fair_pct": 54.1,
    "n_books": 7,
    "guard": {
     "verdict": "agrees",
-    "ours_pct": 44.3,
-    "model_pct": 44.6
+    "ours_pct": 54.4,
+    "model_pct": 55.5
    },
    "settled": "lineup",
    "settled_label": "Lineup confirmed",
-   "reason": "7 other books say 44.2%; Hard Rock's +140 only needs 41.7%. Our model agrees (our blend: 44.3%).",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/6680507187596493201",
+   "reason": "7 other books say 54.1%; Hard Rock's -110 only needs 52.4%. Our model agrees (our blend: 54.4%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/1346884428531630471",
    "links": {
     "hardrock": {
-     "id": "6680507187596493201",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/6680507187596493201"
+     "id": "1346884428531630471",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/1346884428531630471"
     },
     "draftkings": null
    },
    "thin": false,
-   "games_used": 21,
-   "games_this_season": 20
+   "games_used": 98,
+   "games_this_season": 19
   },
   {
    "id": "2026-11-19:2026020350:8477402:shots:1.5:under",
@@ -712,11 +712,15 @@
    "breakeven": 0.5,
    "p_pct": 52,
    "breakeven_pct": 50,
-   "state": "lineup",
+   "state": "locked",
    "history": [
     {
      "at": "2026-11-19T17:30:01-05:00",
      "text": "Lineup confirmed"
+    },
+    {
+     "at": "2026-11-19T19:00:01-05:00",
+     "text": "Locked"
     }
    ],
    "prices": [
@@ -726,9 +730,9 @@
     }
    ],
    "pulled": null,
-   "price_final": true,
+   "price_final": false,
    "graded": null,
-   "rank": 3,
+   "rank": null,
    "tier": "main",
    "game_id": 2026020350,
    "player": "P. Buchnevich",
@@ -766,67 +770,71 @@
    "games_this_season": 20
   },
   {
-   "id": "2026-11-19:2026020353:8482720:points:0.5:over",
-   "price": -110,
-   "first_price": -110,
-   "first_price_at": "2026-11-19T18:30:00-05:00",
-   "worst_price": -110,
-   "p": 0.5437,
-   "breakeven": 0.5238,
-   "p_pct": 54,
-   "breakeven_pct": 52,
-   "state": "lineup",
+   "id": "2026-11-19:2026020354:8485388:points:0.5:over",
+   "price": 140,
+   "first_price": 140,
+   "first_price_at": "2026-11-19T17:30:01-05:00",
+   "worst_price": 140,
+   "p": 0.4431,
+   "breakeven": 0.4167,
+   "p_pct": 44,
+   "breakeven_pct": 42,
+   "state": "locked",
    "history": [
     {
-     "at": "2026-11-19T18:30:00-05:00",
+     "at": "2026-11-19T17:30:01-05:00",
      "text": "Lineup confirmed"
+    },
+    {
+     "at": "2026-11-19T19:00:01-05:00",
+     "text": "Locked"
     }
    ],
    "prices": [
     {
-     "at": "2026-11-19T18:30:00-05:00",
-     "price": -110
+     "at": "2026-11-19T17:30:01-05:00",
+     "price": 140
     }
    ],
    "pulled": null,
    "price_final": false,
    "graded": null,
-   "rank": 4,
+   "rank": null,
    "tier": "main",
-   "game_id": 2026020353,
-   "player": "M. Knies",
-   "player_id": 8482720,
-   "team": "CBJ",
-   "opp": "CHI",
+   "game_id": 2026020354,
+   "player": "V. Eklund",
+   "player_id": 8485388,
+   "team": "NYI",
+   "opp": "WPG",
    "home": false,
-   "start": "2026-11-19T20:00:00-05:00",
+   "start": "2026-11-19T19:00:00-05:00",
    "market": "points",
    "line": 0.5,
    "side": "over",
    "bet": "Over 0.5 points",
-   "price_at": "2026-11-19T18:30:00-05:00",
-   "gap_pct": 3.2,
-   "market_fair_pct": 54.1,
+   "price_at": "2026-11-19T17:30:01-05:00",
+   "gap_pct": 6.2,
+   "market_fair_pct": 44.2,
    "n_books": 7,
    "guard": {
     "verdict": "agrees",
-    "ours_pct": 54.4,
-    "model_pct": 55.5
+    "ours_pct": 44.3,
+    "model_pct": 44.6
    },
    "settled": "lineup",
    "settled_label": "Lineup confirmed",
-   "reason": "7 other books say 54.1%; Hard Rock's -110 only needs 52.4%. Our model agrees (our blend: 54.4%).",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/1346884428531630471",
+   "reason": "7 other books say 44.2%; Hard Rock's +140 only needs 41.7%. Our model agrees (our blend: 44.3%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/6680507187596493201",
    "links": {
     "hardrock": {
-     "id": "1346884428531630471",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/1346884428531630471"
+     "id": "6680507187596493201",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/6680507187596493201"
     },
     "draftkings": null
    },
    "thin": false,
-   "games_used": 98,
-   "games_this_season": 19
+   "games_used": 21,
+   "games_this_season": 20
   }
  ],
  "parlays": [],
