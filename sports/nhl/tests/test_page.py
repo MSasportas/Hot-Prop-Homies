@@ -52,7 +52,7 @@ class Fixtures(unittest.TestCase):
                 for k in ("gap_pct", "market_fair_pct", "n_books", "guard", "settled", "price", "bet", "reason", "start"):
                     self.assertIn(k, pk, "%s: %s has no %s" % (p, pk["id"], k))
                 self.assertEqual(pk["market"], "shots", p)
-                if "/long/" not in p:                                  # the layout-stress fixture has a +1000 price on purpose
+                if os.path.basename(os.path.dirname(p)) != "long":                                  # the layout-stress fixture has a +1000 price on purpose
                     self.assertGreaterEqual(pk["price"], -200, p)
                     self.assertLessEqual(pk["price"], 120, p)
         with open(os.path.join(FIX, "normal", "rules.json")) as f:
@@ -96,10 +96,10 @@ class RulesSheet(unittest.TestCase):
         self.assertEqual([o["t"] for o in out if o["miss"]], [], "every number comes from rules.json")
         text = " ".join(o["t"] for o in out)
         self.assertIn("Hard Rock shots on goal at the 1.5, 2.5 and 3.5 lines", text)
-        self.assertIn("At least 4 of them", text)
-        self.assertIn("by at least 3%", text)
-        self.assertIn("80% the other books' chance with 20% our model's chance", text)
-        self.assertIn("by at least 2%", text)
+        self.assertIn("at least 4 books (Pinnacle required)", text)
+        self.assertIn("Hard Rock must beat that chance by 3%", text)
+        self.assertIn("80% the books' chance with 20% our model", text)
+        self.assertIn("must still beat the price by 2%", text)
         self.assertIn("The first 90 or 45 minute read that passes both steps becomes the pick, and its price is frozen", text)
         self.assertIn("One pick per player (his best side and line). No per-game or nightly limit", text)
         self.assertIn("Parlays are not offered", text)

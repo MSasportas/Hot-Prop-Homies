@@ -29,9 +29,10 @@ def cfg():
 
 def made_up_slate_config(root):
     """A copy of config/rules.json whose Gap + Guard goes live early enough for the made-up 2026-10-11 slate (the real
-    live_from is 2026-10-20, the first slate it covers)."""
+    live_from is 2026-10-20, the first slate it covers) and without the lineup-confirmed rule (the made-up lineups are never posted)."""
     c = json.loads(slurp(common.CONFIG_PATH, "r"))
     c["ops"]["gap_guard"]["live_from"] = "2026-10-01"
+    c["ops"]["gap_guard"]["thresholds"]["require_lineup_confirmed"] = False      # the made-up lineups are never posted
     for tr in c["ops"]["gap_guard"].get("watch") or []:
         tr["from_slate"] = "2999-01-01"                      # off for every test except the ones that switch it on
     path = os.path.join(root, "rules_made_up_slate.json")
@@ -165,7 +166,7 @@ class Sim:
         for d, _, files in os.walk(self.w["data"]):
             for f in files:
                 p = os.path.join(d, f)
-                out[os.path.relpath(p, self.w["data"])] = slurp(p)
+                out[os.path.relpath(p, self.w["data"]).replace(os.sep, "/")] = slurp(p)
         return out
 
     def pick(self, team, i, slate=None):
