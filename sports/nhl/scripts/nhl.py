@@ -18,6 +18,8 @@ WEB = "https://api-web.nhle.com/v1"
 STATS = "https://api.nhle.com/stats/rest/en"
 SOURCES = {}          # name -> {"ok": n, "failed": n}
 REGULAR = 2           # gameType / gameTypeId of regular-season games
+STATS_PAGE = 100      # the stats API answers at most 100 rows per request, whatever limit is asked
+STATS_SORT = {"skater/summary": ("gameId", "playerId"), "team/summary": ("gameId", "teamId")}   # one row per pair: a fixed order keeps pages from overlapping
 
 
 def note(source, ok):
@@ -159,24 +161,41 @@ def goalie_shots(pbp, team):
 
 
 # ---------------------------------------------------------------- stats REST (per-game rows)
-def stats_url(report, season, d0, d1):
+def stats_url(report, season, d0, d1, start=0):
     exp = 'seasonId=%s and gameTypeId=%d and gameDate>="%s" and gameDate<="%s"' % (season, REGULAR, d0, d1)
-    q = urllib.parse.urlencode({"isAggregate": "false", "isGame": "true", "limit": -1, "cayenneExp": exp})
+    sort = json.dumps([{"property": p, "direction": "ASC"} for p in STATS_SORT[report]])
+    q = urllib.parse.urlencode({"isAggregate": "false", "isGame": "true", "limit": STATS_PAGE, "start": start,
+                                "sort": sort, "cayenneExp": exp})
     return "%s/%s?%s" % (STATS, report, q)
+
+
+def _stats_pages(report, season, d0, d1):
+    """Every page of one report window, joined: {"data": [...], "total": n}. None if any page fails (no partial data)."""
+    rows, total = [], None
+    while total is None or len(rows) < total:
+        r = common.http_get(stats_url(report, season, d0, d1, len(rows)), timeout=60)
+        time.sleep(0.3)                                    # be polite between page pulls
+        js = r.json() if r.ok else None
+        if not (isinstance(js, dict) and isinstance(js.get("data"), list) and isinstance(js.get("total"), int)):
+            return None
+        total = js["total"]
+        if not js["data"]:
+            break                                          # the source ran dry before its own total: the check below fails it
+        rows += js["data"]
+    return {"data": rows, "total": total}
 
 
 def stats_report(report, season, d0, d1):
     """All per-game rows of `report` ('skater/summary', 'team/summary') between two dates (7 days or less).
-    Returns a list, or None when the source failed OR returned fewer rows than it said it had."""
+    Pages through the source 100 rows at a time. Returns a list, or None when the source failed OR returned
+    fewer rows than it said it had."""
     if fixture_dir():
         js = _fixture("%s_%s_%s_%s.json" % (report.replace("/", "_"), season, d0, d1))
         if isinstance(js, list):
             js = {"data": js, "total": len(js)}
     else:
-        r = common.http_get(stats_url(report, season, d0, d1), timeout=60)
-        js = r.json() if r.ok else None
+        js = _stats_pages(report, season, d0, d1)
         _record("%s_%s_%s_%s.json" % (report.replace("/", "_"), season, d0, d1), js)
-        time.sleep(0.3)                                    # be polite between report pulls
     ok = isinstance(js, dict) and isinstance(js.get("data"), list) and js.get("total", len(js["data"])) == len(js["data"])
     note("nhl_stats", ok)
     return js["data"] if ok else None
