@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T19:20:01-05:00",
+ "at": "2026-11-19T19:30:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -344,13 +344,6 @@
    "date": "2026-11-19T01:38Z",
    "note": "Head coach JJ Redick said Reaves' (heel) pregame workout went \"well,\" but he remains without an official timetable to return, Daniel Starkand of LakersNation.com reports."
   },
-  "4432810": {
-   "status": "day-to-day",
-   "name": "Isaiah Stewart",
-   "team": "MEM",
-   "date": "2026-11-19T19:11Z",
-   "note": "Stewart is questionable for Thursday's game against the Warriors due to an illness."
-  },
   "4600663": {
    "status": "out",
    "name": "Zach Edey",
@@ -589,6 +582,13 @@
    "date": "2026-09-11T16:03Z",
    "note": "Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports."
   },
+  "4683021": {
+   "status": "out",
+   "name": "Deni Avdija",
+   "team": "POR",
+   "date": "2026-11-20T00:21Z",
+   "note": "Avdija (foot) is listed as out for Thursday's game against the Bucks."
+  },
   "4706557": {
    "status": "out",
    "name": "Chris Youngblood",
@@ -602,20 +602,6 @@
    "team": "POR",
    "date": "2026-11-18T22:58Z",
    "note": "Williams (rest) is listed as out for Thursday's game versus the Bucks."
-  },
-  "4683021": {
-   "status": "day-to-day",
-   "name": "Deni Avdija",
-   "team": "POR",
-   "date": "2026-11-18T22:54Z",
-   "note": "Avdija (foot) is listed as questionable ahead of Thursday's game against Milwaukee."
-  },
-  "4431736": {
-   "status": "day-to-day",
-   "name": "Toumani Camara",
-   "team": "POR",
-   "date": "2026-11-18T22:53Z",
-   "note": "Camara is questionable to play Thursday against the Bucks due to general soreness."
   },
   "4578893": {
    "status": "out",
