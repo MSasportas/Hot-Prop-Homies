@@ -1,0 +1,16 @@
+﻿{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "Write-Output '{\"systemMessage\":\"Engineer review needed: before merging to main, spawn the engineer agent to review this branch for dead code, duplicate logic, and style issues.\"}'",
+            "shell": "powershell",
+            "statusMessage": "Reminding CEO to queue engineer review..."
+          }
+        ]
+      }
+    ]
+  }
+}
