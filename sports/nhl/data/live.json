@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-19",
- "generated_at": "2026-11-19T20:00:00-05:00",
+ "generated_at": "2026-11-19T20:06:42-05:00",
  "games": [
   {
    "game_id": 2026020350,
@@ -8,29 +8,29 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "20:00",
+   "clock": "17:54",
    "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "STL",
     "score": 0,
-    "sog": 5
+    "sog": 7
    },
    "home": {
     "abbrev": "PIT",
     "score": 1,
-    "sog": 8
+    "sog": 9
    },
-   "updated_at": "2026-11-19T20:00:00-05:00"
+   "updated_at": "2026-11-19T20:06:42-05:00"
   },
   {
    "game_id": 2026020354,
    "state": "LIVE",
    "schedule_state": "OK",
-   "period": 1,
+   "period": 2,
    "period_type": "REG",
-   "clock": "04:38",
-   "in_intermission": true,
+   "clock": "20:00",
+   "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "NYI",
@@ -42,7 +42,7 @@
     "score": 2,
     "sog": 6
    },
-   "updated_at": "2026-11-19T20:00:00-05:00"
+   "updated_at": "2026-11-19T20:06:42-05:00"
   },
   {
    "game_id": 2026020353,
@@ -63,7 +63,7 @@
     "score": null,
     "sog": null
    },
-   "updated_at": "2026-11-19T20:00:00-05:00"
+   "updated_at": "2026-11-19T20:06:42-05:00"
   },
   {
    "game_id": 2026020355,
@@ -84,14 +84,14 @@
     "score": null,
     "sog": null
    },
-   "updated_at": "2026-11-19T20:00:00-05:00"
+   "updated_at": "2026-11-19T20:06:42-05:00"
   }
  ],
  "picks": {
   "2026-11-19:2026020350:8477402:shots:1.5:under": {
    "game_id": 2026020350,
    "market": "shots",
-   "stat": 1
+   "stat": 2
   },
   "2026-11-19:2026020354:8485388:points:0.5:over": {
    "game_id": 2026020354,
