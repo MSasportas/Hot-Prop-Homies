@@ -95,8 +95,8 @@
    ],
    "status": {
     "Cade Cunningham": "probable",
+    "Ronald Holland": "doubtful",
     "Jalen Duren": "out",
-    "Ronald Holland": "out",
     "Ebuka Okorie": "out",
     "Taurean Prince": "out",
     "Duncan Robinson": "out"
@@ -141,6 +141,7 @@
     "Alex Sarr"
    ],
    "status": {
+    "Felix Okpara": "questionable",
     "Reece Beekman": "out",
     "Justin Champagnie": "out",
     "Tristan Vukcevic": "out",
@@ -157,6 +158,7 @@
     "Jalen Smith"
    ],
    "status": {
+    "Jalen Smith": "questionable",
     "Noa Essengue": "probable",
     "Caleb Wilson": "out"
    }
@@ -166,7 +168,7 @@
    "starters": [
     "Jeremiah Fears",
     "Trey Murphy",
-    "Herbert Jones",
+    "Saddiq Bey",
     "Zion Williamson",
     "Yves Missi"
    ],
@@ -184,7 +186,7 @@
     "Shai Gilgeous-Alexander",
     "Jared McCain",
     "Ajay Mitchell",
-    "Kenrich Williams",
+    "Aday Mara",
     "Isaiah Hartenstein"
    ],
    "status": {
@@ -282,5 +284,5 @@
    }
   }
  },
- "at": "2026-11-20T05:00:01-05:00"
+ "at": "2026-11-20T16:00:01-05:00"
 }

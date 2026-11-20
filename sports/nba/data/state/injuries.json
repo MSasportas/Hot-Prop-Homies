@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T15:40:01-05:00",
+ "at": "2026-11-20T16:00:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -281,6 +281,13 @@
    "date": "2026-11-19T23:17Z",
    "note": "Sengun (eye) is questionable for Friday's game against the Nuggets."
   },
+  "4396993": {
+   "status": "out",
+   "name": "Tyrese Haliburton",
+   "team": "IND",
+   "date": "2026-11-20T20:41Z",
+   "note": "Haliburton (hamstring) is expected to miss at least two more weeks, Shams Charania of ESPN reports."
+  },
   "2530530": {
    "status": "day-to-day",
    "name": "T.J. McConnell",
@@ -301,13 +308,6 @@
    "team": "IND",
    "date": "2026-11-19T22:05Z",
    "note": "Smith (ankle) is listed as questionable for Friday's game against Cleveland."
-  },
-  "4396993": {
-   "status": "out",
-   "name": "Tyrese Haliburton",
-   "team": "IND",
-   "date": "2026-11-17T18:46Z",
-   "note": "Head coach Rick Carlisle said Tuesday that Haliburton (hamstring) is \"getting there,\" but there's still no definitive timetable for his return to game action, Dustin Dopirak of The Indianapolis Star r"
   },
   "5157066": {
    "status": "out",
