@@ -1,17 +1,17 @@
 {
  "LL1f-fade": {
-  "clv": -0.0775,
+  "clv": -0.0771,
   "l": 263,
-  "pending": 3,
+  "pending": 14,
   "push": 0,
   "units": -38.81,
   "void": 0,
   "w": 249
  },
  "LL1f-follow": {
-  "clv": -0.0789,
+  "clv": -0.0795,
   "l": 247,
-  "pending": 3,
+  "pending": 14,
   "push": 0,
   "units": -37.41,
   "void": 0,
@@ -27,7 +27,7 @@
   "w": 68
  },
  "LL3b loose": {
-  "clv": 0.0287,
+  "clv": 0.0289,
   "l": 27,
   "pending": 1,
   "push": 0,
@@ -72,7 +72,7 @@
   "w": 63
  },
  "MM2a split": {
-  "clv": -0.0189,
+  "clv": -0.018,
   "l": 8,
   "pending": 2,
   "push": 0,
@@ -81,7 +81,7 @@
   "w": 4
  },
  "MM2b split 2%": {
-  "clv": -0.0072,
+  "clv": -0.0058,
   "l": 5,
   "pending": 2,
   "push": 0,
@@ -90,9 +90,9 @@
   "w": 2
  },
  "MM3a persist": {
-  "clv": 0.0337,
+  "clv": 0.0335,
   "l": 44,
-  "pending": 0,
+  "pending": 2,
   "push": 0,
   "units": 4.34,
   "void": 0,
@@ -181,6 +181,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-21T21:50:13+00:00",
+ "updated_at": "2026-11-21T22:20:08+00:00",
  "version": 1
 }
