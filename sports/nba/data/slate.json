@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 2012,
+   "pool_left": 1988,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-20T19:15:00-05:00",
-  "last_read_at": "2026-11-20T19:10:00-05:00",
+  "next_read_at": "2026-11-20T19:30:00-05:00",
+  "last_read_at": "2026-11-20T19:20:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-20T19:10:00-05:00"
+   "at": "2026-11-20T19:20:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,13 +30,15 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-20T19:10:00-05:00",
+    "at": "2026-11-20T19:20:01-05:00",
     "confirmed": [
      "ATL",
      "BKN",
      "CHA",
      "CLE",
-     "ORL"
+     "IND",
+     "ORL",
+     "TOR"
     ]
    },
    "grade": true
@@ -48,8 +50,8 @@
    "start": "2026-11-20T19:00:00-05:00",
    "away": "CHA",
    "home": "ATL",
-   "state": "pre",
-   "detail": "11/20 - 7:00 PM EST",
+   "state": "in",
+   "detail": "6:58 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -181,7 +183,7 @@
    "state": "pre",
    "detail": "11/20 - 7:30 PM EST",
    "lineups": {
-    "away": "expected",
+    "away": "confirmed",
     "home": "confirmed"
    },
    "read_at": "2026-11-20T19:10:00-05:00",
@@ -246,7 +248,7 @@
    "state": "pre",
    "detail": "11/20 - 7:30 PM EST",
    "lineups": {
-    "away": "expected",
+    "away": "confirmed",
     "home": "expected"
    },
    "read_at": "2026-11-20T19:10:00-05:00",
@@ -314,7 +316,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-20T19:00:01-05:00",
+   "read_at": "2026-11-20T19:20:01-05:00",
    "picks": 1,
    "checks": [
     {
@@ -344,12 +346,16 @@
     {
      "read": "X60",
      "at": "2026-11-20T19:00:01-05:00"
+    },
+    {
+     "read": "C",
+     "at": "2026-11-20T19:20:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-20T19:00:01-05:00",
+   "last_check_at": "2026-11-20T19:20:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-20T19:15:00-05:00",
-   "next_check_read": "C",
+   "next_check_at": "2026-11-20T19:30:00-05:00",
+   "next_check_read": "X30",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -367,7 +373,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-20T19:00:01-05:00",
+   "read_at": "2026-11-20T19:20:01-05:00",
    "picks": 1,
    "checks": [
     {
@@ -397,12 +403,16 @@
     {
      "read": "X60",
      "at": "2026-11-20T19:00:01-05:00"
+    },
+    {
+     "read": "C",
+     "at": "2026-11-20T19:20:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-20T19:00:01-05:00",
+   "last_check_at": "2026-11-20T19:20:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-20T19:15:00-05:00",
-   "next_check_read": "C",
+   "next_check_at": "2026-11-20T19:30:00-05:00",
+   "next_check_read": "X30",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -420,7 +430,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-20T18:30:03-05:00",
+   "read_at": "2026-11-20T19:20:01-05:00",
    "picks": 1,
    "checks": [
     {
@@ -434,12 +444,16 @@
     {
      "read": "X180",
      "at": "2026-11-20T18:30:03-05:00"
+    },
+    {
+     "read": "X135",
+     "at": "2026-11-20T19:20:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-20T18:30:03-05:00",
+   "last_check_at": "2026-11-20T19:20:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-20T19:15:00-05:00",
-   "next_check_read": "X135",
+   "next_check_at": "2026-11-20T20:00:00-05:00",
+   "next_check_read": "B",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -691,8 +705,8 @@
     }
    },
    "id": "2026-11-20:401909307:3992:points:17.5:under",
-   "state": "clear",
-   "state_label": "Injury report clear",
+   "state": "starters",
+   "state_label": "Starters confirmed",
    "price_final": true,
    "pulled": null,
    "added_at": "2026-11-20T19:00:01-05:00",
@@ -1104,6 +1118,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-20T19:10:00-05:00",
- "status_at": "2026-11-20T19:10:00-05:00"
+ "generated_at": "2026-11-20T19:20:01-05:00",
+ "status_at": "2026-11-20T19:20:01-05:00"
 }

@@ -328,13 +328,13 @@
     "start": "2026-11-20T19:00:00-05:00",
     "away": "CHA",
     "home": "ATL",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/20 - 7:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:58 - 1st",
     "score": {
-     "CHA": "0",
-     "ATL": "0"
+     "CHA": "13",
+     "ATL": "11"
     }
    },
    {

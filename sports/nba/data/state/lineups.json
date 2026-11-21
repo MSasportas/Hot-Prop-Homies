@@ -36,7 +36,7 @@
    }
   },
   "IND": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Andrew Nembhard",
     "Kelly Oubre",
@@ -66,11 +66,11 @@
    }
   },
   "TOR": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Immanuel Quickley",
     "Ja'Kobe Walter",
-    "Jamison Battle",
+    "Allen Graves",
     "Scottie Barnes",
     "Jakob Poeltl"
    ],
@@ -278,5 +278,5 @@
    }
   }
  },
- "at": "2026-11-20T19:10:00-05:00"
+ "at": "2026-11-20T19:20:01-05:00"
 }
