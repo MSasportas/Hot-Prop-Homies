@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 1820,
+   "pool_left": 1816,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-21T12:40:02-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-21T12:40:02-05:00"
+   "at": "2026-11-21T12:50:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-21T12:40:02-05:00",
+    "at": "2026-11-21T12:50:00-05:00",
     "confirmed": [
      "MIL",
      "PHI"
@@ -295,6 +295,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-21T12:40:02-05:00",
- "status_at": "2026-11-21T12:40:02-05:00"
+ "generated_at": "2026-11-21T12:50:00-05:00",
+ "status_at": "2026-11-21T12:50:00-05:00"
 }
