@@ -210,6 +210,20 @@
      "shots"
     ],
     "cost": 1
+   },
+   {
+    "game_id": 2026020363,
+    "pull": "B",
+    "at": "2026-11-21T17:30:00-05:00",
+    "markets": [
+     "points",
+     "shots"
+    ],
+    "returned": [
+     "points",
+     "shots"
+    ],
+    "cost": 2
    }
   ],
   "2026020364": [
@@ -224,6 +238,20 @@
      "shots"
     ],
     "cost": 1
+   },
+   {
+    "game_id": 2026020364,
+    "pull": "B",
+    "at": "2026-11-21T17:30:00-05:00",
+    "markets": [
+     "points",
+     "shots"
+    ],
+    "returned": [
+     "points",
+     "shots"
+    ],
+    "cost": 2
    }
   ],
   "2026020365": [
@@ -238,6 +266,20 @@
      "shots"
     ],
     "cost": 1
+   },
+   {
+    "game_id": 2026020365,
+    "pull": "B",
+    "at": "2026-11-21T17:30:00-05:00",
+    "markets": [
+     "points",
+     "shots"
+    ],
+    "returned": [
+     "points",
+     "shots"
+    ],
+    "cost": 2
    }
   ],
   "2026020366": [
@@ -252,6 +294,20 @@
      "shots"
     ],
     "cost": 1
+   },
+   {
+    "game_id": 2026020366,
+    "pull": "B",
+    "at": "2026-11-21T17:30:00-05:00",
+    "markets": [
+     "points",
+     "shots"
+    ],
+    "returned": [
+     "points",
+     "shots"
+    ],
+    "cost": 2
    }
   ],
   "2026020367": [
@@ -266,6 +322,20 @@
      "shots"
     ],
     "cost": 1
+   },
+   {
+    "game_id": 2026020367,
+    "pull": "B",
+    "at": "2026-11-21T17:30:00-05:00",
+    "markets": [
+     "points",
+     "shots"
+    ],
+    "returned": [
+     "points",
+     "shots"
+    ],
+    "cost": 2
    }
   ],
   "2026020368": [
@@ -280,6 +350,20 @@
      "shots"
     ],
     "cost": 1
+   },
+   {
+    "game_id": 2026020368,
+    "pull": "B",
+    "at": "2026-11-21T17:30:00-05:00",
+    "markets": [
+     "points",
+     "shots"
+    ],
+    "returned": [
+     "points",
+     "shots"
+    ],
+    "cost": 2
    }
   ],
   "2026020369": [
@@ -294,6 +378,20 @@
      "shots"
     ],
     "cost": 1
+   },
+   {
+    "game_id": 2026020369,
+    "pull": "B",
+    "at": "2026-11-21T17:30:00-05:00",
+    "markets": [
+     "points",
+     "shots"
+    ],
+    "returned": [
+     "points",
+     "shots"
+    ],
+    "cost": 2
    }
   ],
   "2026020370": [

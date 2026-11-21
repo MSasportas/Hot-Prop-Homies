@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T01:20:00-05:00",
+ "generated_at": "2026-11-21T17:30:00-05:00",
  "summary": {
   "headline": {
    "w": 66,
@@ -236,6 +236,16 @@
    }
   ],
   "days": [
+   {
+    "date": "2026-11-21",
+    "w": 0,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 0,
+    "n": 1,
+    "graded": false
+   },
    {
     "date": "2026-11-19",
     "w": 6,
@@ -509,6 +519,38 @@
   ]
  },
  "nights": [
+  {
+   "date": "2026-11-21",
+   "graded": false,
+   "w": 0,
+   "l": 0,
+   "units": 0,
+   "entries": [
+    {
+     "id": "2026-11-21:2026020365:8481533:points:0.5:over",
+     "kind": "single",
+     "player": "T. Zegras",
+     "bet": "Over 0.5 points",
+     "market": "points",
+     "team": "PHI",
+     "game": "PHI at MTL",
+     "price": 120,
+     "first_price": 120,
+     "last_price": 120,
+     "prices": [
+      {
+       "price": 120,
+       "at": "2026-11-21T17:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    }
+   ]
+  },
   {
    "date": "2026-11-19",
    "graded": true,
@@ -1493,248 +1535,6 @@
      "result": "L",
      "actual": "had 2",
      "units": -1.0,
-     "pulled": null,
-     "legs": []
-    }
-   ]
-  },
-  {
-   "date": "2026-11-12",
-   "graded": true,
-   "w": 5,
-   "l": 5,
-   "units": 0.37,
-   "entries": [
-    {
-     "id": "2026-11-12:2026020309:8482665:shots:1.5:under",
-     "kind": "single",
-     "player": "M. Beniers",
-     "bet": "Under 1.5 shots on goal",
-     "market": "shots",
-     "team": "SEA",
-     "game": "CAR at SEA",
-     "price": -125,
-     "first_price": -125,
-     "last_price": -125,
-     "prices": [
-      {
-       "price": -125,
-       "at": "2026-11-12T10:30:01-05:00"
-      }
-     ],
-     "result": "W",
-     "actual": "had 1",
-     "units": 0.8,
-     "pulled": null,
-     "legs": []
-    },
-    {
-     "id": "2026-11-12:2026020303:8478414:points:0.5:under",
-     "kind": "single",
-     "player": "T. Meier",
-     "bet": "Under 0.5 points",
-     "market": "points",
-     "team": "NJD",
-     "game": "WSH at NJD",
-     "price": -110,
-     "first_price": -110,
-     "last_price": -110,
-     "prices": [
-      {
-       "price": -110,
-       "at": "2026-11-12T17:30:01-05:00"
-      }
-     ],
-     "result": "L",
-     "actual": "had 1",
-     "units": -1.0,
-     "pulled": null,
-     "legs": []
-    },
-    {
-     "id": "2026-11-12:2026020307:8476389:shots:1.5:under",
-     "kind": "single",
-     "player": "V. Trocheck",
-     "bet": "Under 1.5 shots on goal",
-     "market": "shots",
-     "team": "UTA",
-     "game": "STL at UTA",
-     "price": 145,
-     "first_price": 145,
-     "last_price": 145,
-     "prices": [
-      {
-       "price": 145,
-       "at": "2026-11-12T19:30:01-05:00"
-      }
-     ],
-     "result": "L",
-     "actual": "had 2",
-     "units": -1.0,
-     "pulled": null,
-     "legs": []
-    },
-    {
-     "id": "2026-11-12:2026020309:8478427:shots:2.5:under",
-     "kind": "single",
-     "player": "S. Aho",
-     "bet": "Under 2.5 shots on goal",
-     "market": "shots",
-     "team": "CAR",
-     "game": "CAR at SEA",
-     "price": 110,
-     "first_price": 110,
-     "last_price": 110,
-     "prices": [
-      {
-       "price": 110,
-       "at": "2026-11-12T10:30:01-05:00"
-      }
-     ],
-     "result": "W",
-     "actual": "had 2",
-     "units": 1.1,
-     "pulled": {
-      "at": "2026-11-12T11:20:01-05:00",
-      "reason": "Hard Rock moved it to -115"
-     },
-     "legs": []
-    },
-    {
-     "id": "2026-11-12:2026020299:8483457:shots:1.5:under",
-     "kind": "single",
-     "player": "L. Hutson",
-     "bet": "Under 1.5 shots on goal",
-     "market": "shots",
-     "team": "MTL",
-     "game": "MTL at BOS",
-     "price": 105,
-     "first_price": 105,
-     "last_price": 105,
-     "prices": [
-      {
-       "price": 105,
-       "at": "2026-11-12T17:30:01-05:00"
-      }
-     ],
-     "result": "L",
-     "actual": "had 2",
-     "units": -1.0,
-     "pulled": null,
-     "legs": []
-    },
-    {
-     "id": "2026-11-12:2026020302:8480801:points:0.5:under",
-     "kind": "single",
-     "player": "B. Tkachuk",
-     "bet": "Under 0.5 points",
-     "market": "points",
-     "team": "FLA",
-     "game": "DET at FLA",
-     "price": 170,
-     "first_price": 170,
-     "last_price": 170,
-     "prices": [
-      {
-       "price": 170,
-       "at": "2026-11-12T18:00:00-05:00"
-      }
-     ],
-     "result": "L",
-     "actual": "had 1",
-     "units": -1.0,
-     "pulled": null,
-     "legs": []
-    },
-    {
-     "id": "2026-11-12:2026020308:8485366:shots:2.5:over",
-     "kind": "single",
-     "player": "M. Schaefer",
-     "bet": "Over 2.5 shots on goal",
-     "market": "shots",
-     "team": "NYI",
-     "game": "NYI at LAK",
-     "price": -115,
-     "first_price": -115,
-     "last_price": -115,
-     "prices": [
-      {
-       "price": -115,
-       "at": "2026-11-12T20:30:00-05:00"
-      }
-     ],
-     "result": "W",
-     "actual": "had 3",
-     "units": 0.8696,
-     "pulled": null,
-     "legs": []
-    },
-    {
-     "id": "2026-11-12:2026020309:8474586:shots:1.5:under",
-     "kind": "single",
-     "player": "J. Eberle",
-     "bet": "Under 1.5 shots on goal",
-     "market": "shots",
-     "team": "SEA",
-     "game": "CAR at SEA",
-     "price": 110,
-     "first_price": 110,
-     "last_price": 110,
-     "prices": [
-      {
-       "price": 110,
-       "at": "2026-11-12T10:30:01-05:00"
-      }
-     ],
-     "result": "W",
-     "actual": "had 0",
-     "units": 1.1,
-     "pulled": null,
-     "legs": []
-    },
-    {
-     "id": "2026-11-12:2026020299:8478401:shots:1.5:under",
-     "kind": "single",
-     "player": "P. Zacha",
-     "bet": "Under 1.5 shots on goal",
-     "market": "shots",
-     "team": "BOS",
-     "game": "MTL at BOS",
-     "price": 140,
-     "first_price": 140,
-     "last_price": 140,
-     "prices": [
-      {
-       "price": 140,
-       "at": "2026-11-12T17:30:01-05:00"
-      }
-     ],
-     "result": "L",
-     "actual": "had 3",
-     "units": -1.0,
-     "pulled": null,
-     "legs": []
-    },
-    {
-     "id": "2026-11-12:2026020308:8485388:points:0.5:over",
-     "kind": "single",
-     "player": "V. Eklund",
-     "bet": "Over 0.5 points",
-     "market": "points",
-     "team": "NYI",
-     "game": "NYI at LAK",
-     "price": 150,
-     "first_price": 150,
-     "last_price": 150,
-     "prices": [
-      {
-       "price": 150,
-       "at": "2026-11-12T20:30:00-05:00"
-      }
-     ],
-     "result": "W",
-     "actual": "had 1",
-     "units": 1.5,
      "pulled": null,
      "legs": []
     }

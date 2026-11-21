@@ -18,72 +18,72 @@
   "w": 258
  },
  "LL3a tight": {
-  "clv": 0.031,
+  "clv": 0.0309,
   "l": 60,
-  "pending": 1,
+  "pending": 3,
   "push": 0,
   "units": 10.57,
   "void": 0,
   "w": 68
  },
  "LL3b loose": {
-  "clv": 0.0289,
+  "clv": 0.0288,
   "l": 27,
-  "pending": 1,
+  "pending": 2,
   "push": 0,
   "units": 13.35,
   "void": 0,
   "w": 39
  },
  "LL4a fade": {
-  "clv": -0.0735,
+  "clv": -0.0714,
   "l": 67,
-  "pending": 2,
+  "pending": 16,
   "push": 0,
   "units": 7.74,
   "void": 0,
   "w": 82
  },
  "LL4b follow": {
-  "clv": -0.0917,
+  "clv": -0.0944,
   "l": 82,
-  "pending": 2,
+  "pending": 16,
   "push": 0,
   "units": -30.82,
   "void": 0,
   "w": 66
  },
  "LL5 exch": {
-  "clv": 0.024,
+  "clv": 0.023,
   "l": 92,
-  "pending": 3,
+  "pending": 10,
   "push": 0,
   "units": 20.13,
   "void": 0,
   "w": 117
  },
  "LL6 line": {
-  "clv": -0.0098,
+  "clv": -0.0118,
   "l": 36,
-  "pending": 3,
+  "pending": 11,
   "push": 0,
   "units": -1.02,
   "void": 0,
   "w": 63
  },
  "MM2a split": {
-  "clv": -0.018,
+  "clv": -0.0192,
   "l": 8,
-  "pending": 2,
+  "pending": 4,
   "push": 0,
   "units": -4.98,
   "void": 0,
   "w": 4
  },
  "MM2b split 2%": {
-  "clv": -0.0058,
+  "clv": -0.0062,
   "l": 5,
-  "pending": 2,
+  "pending": 3,
   "push": 0,
   "units": -3.49,
   "void": 0,
@@ -181,6 +181,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-21T22:20:08+00:00",
+ "updated_at": "2026-11-21T22:30:22+00:00",
  "version": 1
 }
