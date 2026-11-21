@@ -388,13 +388,13 @@
     "start": "2026-11-21T13:00:00-05:00",
     "away": "MIL",
     "home": "PHI",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/21 - 1:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:24 - 1st",
     "score": {
-     "MIL": "0",
-     "PHI": "0"
+     "MIL": "15",
+     "PHI": "8"
     }
    },
    {
