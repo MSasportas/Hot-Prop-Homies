@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 1760,
+   "pool_left": 1748,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-21T17:45:00-05:00",
-  "last_read_at": "2026-11-21T17:20:01-05:00",
+  "next_read_at": "2026-11-21T18:00:00-05:00",
+  "last_read_at": "2026-11-21T17:50:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-21T17:30:01-05:00"
+   "at": "2026-11-21T17:50:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-21T17:30:01-05:00",
+    "at": "2026-11-21T17:50:00-05:00",
     "confirmed": [
      "MIL",
      "PHI"
@@ -131,7 +131,7 @@
    "paused": false,
    "injury_clear": {
     "away": true,
-    "home": false
+    "home": true
    }
   },
   {
@@ -145,7 +145,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-21T17:00:01-05:00",
+   "read_at": "2026-11-21T17:50:00-05:00",
    "picks": 0,
    "checks": [
     {
@@ -159,12 +159,16 @@
     {
      "read": "X180",
      "at": "2026-11-21T17:00:01-05:00"
+    },
+    {
+     "read": "X135",
+     "at": "2026-11-21T17:50:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-21T17:00:01-05:00",
+   "last_check_at": "2026-11-21T17:50:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-21T17:45:00-05:00",
-   "next_check_read": "X135",
+   "next_check_at": "2026-11-21T18:30:00-05:00",
+   "next_check_read": "B",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -182,7 +186,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-21T17:00:01-05:00",
+   "read_at": "2026-11-21T17:50:00-05:00",
    "picks": 0,
    "checks": [
     {
@@ -196,12 +200,16 @@
     {
      "read": "X180",
      "at": "2026-11-21T17:00:01-05:00"
+    },
+    {
+     "read": "X135",
+     "at": "2026-11-21T17:50:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-21T17:00:01-05:00",
+   "last_check_at": "2026-11-21T17:50:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-21T17:45:00-05:00",
-   "next_check_read": "X135",
+   "next_check_at": "2026-11-21T18:30:00-05:00",
+   "next_check_read": "B",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -219,8 +227,8 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-21T17:00:01-05:00",
-   "picks": 0,
+   "read_at": "2026-11-21T17:50:00-05:00",
+   "picks": 1,
    "checks": [
     {
      "read": "X360",
@@ -233,12 +241,16 @@
     {
      "read": "X180",
      "at": "2026-11-21T17:00:01-05:00"
+    },
+    {
+     "read": "X135",
+     "at": "2026-11-21T17:50:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-21T17:00:01-05:00",
+   "last_check_at": "2026-11-21T17:50:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-21T17:45:00-05:00",
-   "next_check_read": "X135",
+   "next_check_at": "2026-11-21T18:30:00-05:00",
+   "next_check_read": "B",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -276,6 +288,73 @@
   }
  ],
  "picks": [
+  {
+   "player": "Stephon Castle",
+   "pid": "4845367",
+   "team": "SAS",
+   "opp": "NOP",
+   "home": true,
+   "game_id": "401910027",
+   "start": "2026-11-21T20:00:00-05:00",
+   "bet": "Under 17.5 points",
+   "market": "points",
+   "side": "under",
+   "line": 17.5,
+   "price": -110,
+   "price_at": "2026-11-21T17:50:00-05:00",
+   "read": "X135",
+   "p": 0.5282,
+   "p_pct": 53,
+   "breakeven": 0.5238,
+   "breakeven_pct": 52,
+   "market_fair": null,
+   "n_books": 8,
+   "gap_ev": null,
+   "final_ev": 0.0605,
+   "model_p": null,
+   "reason": "Pinnacle moved the under from +100 to -130 (47% to 53%). Hard Rock -110 is 0.8% better than Pinnacle's fair price; DraftKings -103 is 4.1% better than Pinnacle's fair price.",
+   "rule": "pin_solo",
+   "pin_before": 0.4677,
+   "pin_after": 0.5282,
+   "pin_price_before": 100,
+   "pin_price_after": -130,
+   "others_move": 0.0097,
+   "n_others": 8,
+   "ev_vs_pin": 0.0083,
+   "window": "180 \u2192 135 min",
+   "gap_vs_pin": 0.0414,
+   "book": "hardrock",
+   "books": {
+    "draftkings": {
+     "ev_vs_pin": 0.0409,
+     "price": -103
+    },
+    "hardrock": {
+     "ev_vs_pin": 0.0083,
+     "price": -110
+    }
+   },
+   "id": "2026-11-21:401910027:4845367:points:17.5:under",
+   "state": "clear",
+   "state_label": "Injury report clear",
+   "price_final": false,
+   "pulled": null,
+   "added_at": "2026-11-21T17:50:00-05:00",
+   "result": null,
+   "links": {
+    "hardrock": {
+     "id": "6165529636506829220",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/6165529636506829220",
+     "price": -110
+    },
+    "draftkings": {
+     "url": "https://sportsbook.draftkings.com/?outcomes=0QA391223281%232374357249_13L42648Q1-815980538Q20",
+     "price": -103,
+     "qualifies": true
+    }
+   },
+   "rank": 1
+  },
   {
    "player": "Anfernee Simons",
    "pid": "4351851",
@@ -343,14 +422,10 @@
    "rank": null
   }
  ],
- "empty": {
-  "text": "No picks yet today",
-  "why": "496 lines read. Pinnacle moved alone on 13, none of them bettable yet.",
-  "next": "2026-11-21T17:45:00-05:00"
- },
+ "empty": null,
  "counts": {
-  "lines_read": 496,
-  "passing": 4,
+  "lines_read": 498,
+  "passing": 6,
   "games": 6
  },
  "safety_paused": false,
@@ -360,6 +435,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-21T17:30:01-05:00",
- "status_at": "2026-11-21T17:30:01-05:00"
+ "generated_at": "2026-11-21T17:50:00-05:00",
+ "status_at": "2026-11-21T17:50:00-05:00"
 }

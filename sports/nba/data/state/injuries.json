@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T17:40:01-05:00",
+ "at": "2026-11-21T17:50:00-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -197,19 +197,19 @@
    "date": "2026-10-17T00:52Z",
    "note": "Strawther (knee) was diagnosed with a left knee sprain Friday and will be re-evaluated in six weeks, Vinny Benedetto of The Denver Gazette reports."
   },
+  "5258459": {
+   "status": "out",
+   "name": "Ebuka Okorie",
+   "team": "DET",
+   "date": "2026-11-21T22:34Z",
+   "note": "Okorie (oblique) is out for Sunday's game in Atlanta."
+  },
   "4432166": {
    "status": "day-to-day",
    "name": "Cade Cunningham",
    "team": "DET",
-   "date": "2026-11-21T22:24Z",
-   "note": "Cunningham recorded 23 points (10-22 FG, 2-7 3Pt, 1-4 FT), five rebounds, nine assists and one steal over 36 minutes in Friday's 105-102 loss to the Raptors."
-  },
-  "5258459": {
-   "status": "day-to-day",
-   "name": "Ebuka Okorie",
-   "team": "DET",
-   "date": "2026-11-21T14:53Z",
-   "note": "Okorie (oblique) has been ruled out for Friday's game against Toronto."
+   "date": "2026-11-21T22:23Z",
+   "note": "Cunningham (knee) is probable to play Sunday in Atlanta."
   },
   "4683771": {
    "status": "out",
@@ -499,18 +499,25 @@
    "note": "Clarkson (foot) won't play in Saturday's game against Portland."
   },
   "5159925": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Nikola Topic",
    "team": "OKC",
-   "date": "2026-11-21T14:54Z",
+   "date": "2026-11-21T22:36Z",
    "note": "Topic (hip) is out for Friday's game against New Orleans."
   },
+  "4432823": {
+   "status": "out",
+   "name": "Jaylin Williams",
+   "team": "OKC",
+   "date": "2026-11-21T22:34Z",
+   "note": "Williams (back) is listed as out for Sunday's game against Miami."
+  },
   "2991350": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Alex Caruso",
    "team": "OKC",
-   "date": "2026-11-21T14:54Z",
-   "note": "Caruso (hip) is listed as out for Friday's game against the Pelicans."
+   "date": "2026-11-21T22:29Z",
+   "note": "Caruso (hip) won't play Sunday against the Heat."
   },
   "5061603": {
    "status": "out",
