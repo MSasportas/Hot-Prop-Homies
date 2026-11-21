@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T20:20:00-05:00",
+ "at": "2026-11-20T20:40:00-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -274,26 +274,12 @@
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
   },
-  "2991235": {
-   "status": "day-to-day",
-   "name": "Steven Adams",
-   "team": "HOU",
-   "date": "2026-11-19T23:22Z",
-   "note": "Adams (quadriceps) is listed as questionable for Friday's game against Denver."
-  },
   "3102529": {
    "status": "out",
    "name": "Clint Capela",
    "team": "HOU",
    "date": "2026-11-19T23:19Z",
    "note": "Capela (ankle) is out for Friday's game against Denver."
-  },
-  "4871144": {
-   "status": "day-to-day",
-   "name": "Alperen Sengun",
-   "team": "HOU",
-   "date": "2026-11-19T23:17Z",
-   "note": "Sengun (eye) is questionable for Friday's game against the Nuggets."
   },
   "4396993": {
    "status": "out",
@@ -341,8 +327,8 @@
    "status": "out",
    "name": "Austin Reaves",
    "team": "LAL",
-   "date": "2026-11-20T01:05Z",
-   "note": "Reaves (heel) is listed as out for Friday's game against the Kings."
+   "date": "2026-11-21T01:26Z",
+   "note": "Head coach JJ Redick said he expects Reaves (heel) to return for Monday's matchup with Utah or Friday's game in San Antonio, Mark Medina of TheSportingTribune.com reports."
   },
   "4781746": {
    "status": "out",
