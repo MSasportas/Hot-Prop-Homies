@@ -1,0 +1,68 @@
+{
+ "R28a points gap": {
+  "bets": 0,
+  "graded": 0,
+  "w": 0,
+  "units": 0,
+  "roi": null,
+  "ci90": null,
+  "p_one_sided": null,
+  "mean_ev": null,
+  "mean_clv": null
+ },
+ "R28b under": {
+  "bets": 113,
+  "graded": 0,
+  "w": 0,
+  "units": 0,
+  "roi": null,
+  "ci90": null,
+  "p_one_sided": null,
+  "mean_ev": 0.0,
+  "mean_clv": -0.0484
+ },
+ "R28b over": {
+  "bets": 55,
+  "graded": 0,
+  "w": 0,
+  "units": 0,
+  "roi": null,
+  "ci90": null,
+  "p_one_sided": null,
+  "mean_ev": 0.0,
+  "mean_clv": -0.1023
+ },
+ "R28c rest": {
+  "bets": 173,
+  "graded": 0,
+  "w": 0,
+  "units": 0,
+  "roi": null,
+  "ci90": null,
+  "p_one_sided": null,
+  "mean_ev": 0.0,
+  "mean_clv": -0.0542
+ },
+ "R28c rest mirror": {
+  "bets": 177,
+  "graded": 0,
+  "w": 0,
+  "units": 0,
+  "roi": null,
+  "ci90": null,
+  "p_one_sided": null,
+  "mean_ev": 0.0,
+  "mean_clv": -0.086
+ },
+ "R28d backup goalie": {
+  "bets": 0,
+  "graded": 0,
+  "w": 0,
+  "units": 0,
+  "roi": null,
+  "ci90": null,
+  "p_one_sided": null,
+  "mean_ev": null,
+  "mean_clv": null
+ }
+}
