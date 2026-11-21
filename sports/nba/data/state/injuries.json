@@ -1,19 +1,19 @@
 {
- "at": "2026-11-21T17:30:01-05:00",
+ "at": "2026-11-21T17:40:01-05:00",
  "list": {
   "5149077": {
    "status": "out",
    "name": "Kingston Flemings",
    "team": "ATL",
-   "date": "2026-11-20T22:15Z",
-   "note": "Flemings (back) is out for Friday's game against the Hornets, Brad Rowland of the Locked On Podcast Network reports."
+   "date": "2026-11-21T22:16Z",
+   "note": "Flemings (back) is questionable to play Sunday against the Pistons."
   },
   "3146557": {
    "status": "out",
    "name": "Jock Landale",
    "team": "ATL",
-   "date": "2026-11-19T22:07Z",
-   "note": "Landale (hip) won't play in Friday's game against the Hornets, Brad Rowland of the Locked On Podcast Network reports."
+   "date": "2026-11-21T22:12Z",
+   "note": "Landale (hip) won't play Sunday against the Pistons."
   },
   "4873201": {
    "status": "out",
@@ -295,19 +295,19 @@
    "date": "2026-11-19T23:19Z",
    "note": "Capela (ankle) is out for Friday's game against Denver."
   },
+  "2530530": {
+   "status": "out",
+   "name": "T.J. McConnell",
+   "team": "IND",
+   "date": "2026-11-21T22:29Z",
+   "note": "McConnell (hamstring) is listed as out for Sunday's game in New York."
+  },
   "3149673": {
    "status": "day-to-day",
    "name": "Pascal Siakam",
    "team": "IND",
-   "date": "2026-11-21T22:14Z",
-   "note": "Siakam chipped in 24 points (10-17 FG, 2-2 3Pt, 2-2 FT), four rebounds, three assists, one block and three steals across 33 minutes during Wednesday's 119-104 loss to the Rockets."
-  },
-  "2530530": {
-   "status": "day-to-day",
-   "name": "T.J. McConnell",
-   "team": "IND",
-   "date": "2026-11-21T14:51Z",
-   "note": "Rick Carlisle revealed during his postgame interview that McConnell exited Friday's 128-119 loss with a left hamstring issue, Tony East of Forbes.com reports."
+   "date": "2026-11-21T22:19Z",
+   "note": "Siakam (hip) is listed as questionable for Sunday's game against New York."
   },
   "4396993": {
    "status": "out",
