@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 1736,
+   "pool_left": 1720,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-21T18:30:00-05:00",
-  "last_read_at": "2026-11-21T18:20:01-05:00",
+  "next_read_at": "2026-11-21T18:45:00-05:00",
+  "last_read_at": "2026-11-21T18:30:03-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-21T18:20:01-05:00"
+   "at": "2026-11-21T18:30:03-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-21T18:20:01-05:00",
+    "at": "2026-11-21T18:30:03-05:00",
     "confirmed": [
      "MIL",
      "PHI"
@@ -104,7 +104,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-21T18:20:01-05:00",
+   "read_at": "2026-11-21T18:30:03-05:00",
    "picks": 0,
    "checks": [
     {
@@ -130,12 +130,16 @@
     {
      "read": "X75",
      "at": "2026-11-21T18:20:01-05:00"
+    },
+    {
+     "read": "X60",
+     "at": "2026-11-21T18:30:03-05:00"
     }
    ],
-   "last_check_at": "2026-11-21T18:20:01-05:00",
+   "last_check_at": "2026-11-21T18:30:03-05:00",
    "final": false,
-   "next_check_at": "2026-11-21T18:30:00-05:00",
-   "next_check_read": "X60",
+   "next_check_at": "2026-11-21T18:45:00-05:00",
+   "next_check_read": "C",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -153,7 +157,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-21T17:50:00-05:00",
+   "read_at": "2026-11-21T18:30:03-05:00",
    "picks": 0,
    "checks": [
     {
@@ -171,12 +175,16 @@
     {
      "read": "X135",
      "at": "2026-11-21T17:50:00-05:00"
+    },
+    {
+     "read": "B",
+     "at": "2026-11-21T18:30:03-05:00"
     }
    ],
-   "last_check_at": "2026-11-21T17:50:00-05:00",
+   "last_check_at": "2026-11-21T18:30:03-05:00",
    "final": false,
-   "next_check_at": "2026-11-21T18:30:00-05:00",
-   "next_check_read": "B",
+   "next_check_at": "2026-11-21T18:45:00-05:00",
+   "next_check_read": "X75",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -194,7 +202,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-21T17:50:00-05:00",
+   "read_at": "2026-11-21T18:30:03-05:00",
    "picks": 0,
    "checks": [
     {
@@ -212,12 +220,16 @@
     {
      "read": "X135",
      "at": "2026-11-21T17:50:00-05:00"
+    },
+    {
+     "read": "B",
+     "at": "2026-11-21T18:30:03-05:00"
     }
    ],
-   "last_check_at": "2026-11-21T17:50:00-05:00",
+   "last_check_at": "2026-11-21T18:30:03-05:00",
    "final": false,
-   "next_check_at": "2026-11-21T18:30:00-05:00",
-   "next_check_read": "B",
+   "next_check_at": "2026-11-21T18:45:00-05:00",
+   "next_check_read": "X75",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -235,7 +247,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-21T17:50:00-05:00",
+   "read_at": "2026-11-21T18:30:03-05:00",
    "picks": 1,
    "checks": [
     {
@@ -253,12 +265,16 @@
     {
      "read": "X135",
      "at": "2026-11-21T17:50:00-05:00"
+    },
+    {
+     "read": "B",
+     "at": "2026-11-21T18:30:03-05:00"
     }
    ],
-   "last_check_at": "2026-11-21T17:50:00-05:00",
+   "last_check_at": "2026-11-21T18:30:03-05:00",
    "final": false,
-   "next_check_at": "2026-11-21T18:30:00-05:00",
-   "next_check_read": "B",
+   "next_check_at": "2026-11-21T18:45:00-05:00",
+   "next_check_read": "X75",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -436,7 +452,7 @@
  ],
  "empty": null,
  "counts": {
-  "lines_read": 564,
+  "lines_read": 568,
   "passing": 6,
   "games": 6
  },
@@ -447,6 +463,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-21T18:20:01-05:00",
- "status_at": "2026-11-21T18:20:01-05:00"
+ "generated_at": "2026-11-21T18:30:03-05:00",
+ "status_at": "2026-11-21T18:30:03-05:00"
 }
