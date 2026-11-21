@@ -23,7 +23,7 @@
   },
   "PIT": {
    "name": "Sergei Murashov",
-   "status": "expected"
+   "status": "confirmed"
   },
   "FLA": {
    "name": "Jacob Markstrom",
@@ -114,5 +114,5 @@
    "status": "confirmed"
   }
  },
- "checked_at": "2026-11-21T15:10:00-05:00"
+ "checked_at": "2026-11-21T16:20:01-05:00"
 }
