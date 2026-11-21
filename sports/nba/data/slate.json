@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 1988,
+   "pool_left": 1980,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-20T19:30:00-05:00",
-  "last_read_at": "2026-11-20T19:20:01-05:00",
+  "next_read_at": "2026-11-20T19:40:00-05:00",
+  "last_read_at": "2026-11-20T19:30:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-20T19:20:01-05:00"
+   "at": "2026-11-20T19:30:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,12 +30,13 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-20T19:20:01-05:00",
+    "at": "2026-11-20T19:30:00-05:00",
     "confirmed": [
      "ATL",
      "BKN",
      "CHA",
      "CLE",
+     "DET",
      "IND",
      "ORL",
      "TOR"
@@ -51,7 +52,7 @@
    "away": "CHA",
    "home": "ATL",
    "state": "in",
-   "detail": "6:58 - 1st",
+   "detail": "3:05 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -249,7 +250,7 @@
    "detail": "11/20 - 7:30 PM EST",
    "lineups": {
     "away": "confirmed",
-    "home": "expected"
+    "home": "confirmed"
    },
    "read_at": "2026-11-20T19:10:00-05:00",
    "picks": 1,
@@ -302,7 +303,7 @@
    "paused": false,
    "injury_clear": {
     "away": true,
-    "home": true
+    "home": false
    }
   },
   {
@@ -316,7 +317,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-20T19:20:01-05:00",
+   "read_at": "2026-11-20T19:30:00-05:00",
    "picks": 1,
    "checks": [
     {
@@ -350,12 +351,16 @@
     {
      "read": "C",
      "at": "2026-11-20T19:20:01-05:00"
+    },
+    {
+     "read": "X30",
+     "at": "2026-11-20T19:30:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-20T19:20:01-05:00",
+   "last_check_at": "2026-11-20T19:30:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-20T19:30:00-05:00",
-   "next_check_read": "X30",
+   "next_check_at": "2026-11-20T19:40:00-05:00",
+   "next_check_read": "D",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -373,7 +378,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-20T19:20:01-05:00",
+   "read_at": "2026-11-20T19:30:00-05:00",
    "picks": 1,
    "checks": [
     {
@@ -407,12 +412,16 @@
     {
      "read": "C",
      "at": "2026-11-20T19:20:01-05:00"
+    },
+    {
+     "read": "X30",
+     "at": "2026-11-20T19:30:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-20T19:20:01-05:00",
+   "last_check_at": "2026-11-20T19:30:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-20T19:30:00-05:00",
-   "next_check_read": "X30",
+   "next_check_at": "2026-11-20T19:40:00-05:00",
+   "next_check_read": "D",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -579,25 +588,14 @@
     }
    },
    "id": "2026-11-20:401909308:4395724:assists:5.5:over",
-   "state": "clear",
-   "state_label": "Injury report clear",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "added_at": "2026-11-20T15:30:01-05:00",
    "result": null,
-   "links": {
-    "hardrock": {
-     "id": "5521527958841459102",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/5521527958841459102",
-     "price": -125
-    },
-    "draftkings": {
-     "url": "https://sportsbook.draftkings.com/?outcomes=0QA390898712%232372897954_13L42648Q1-1820894743Q20",
-     "price": -125,
-     "qualifies": false
-    }
-   },
-   "rank": 1
+   "links": null,
+   "rank": null
   },
   {
    "player": "Collin Gillespie",
@@ -660,7 +658,7 @@
      "qualifies": false
     }
    },
-   "rank": 2
+   "rank": 1
   },
   {
    "player": "James Harden",
@@ -705,25 +703,14 @@
     }
    },
    "id": "2026-11-20:401909307:3992:points:17.5:under",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "added_at": "2026-11-20T19:00:01-05:00",
    "result": null,
-   "links": {
-    "hardrock": {
-     "id": "4898994309596053917",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/4898994309596053917",
-     "price": -110
-    },
-    "draftkings": {
-     "url": "https://sportsbook.draftkings.com/?outcomes=0QA390909116%232372940498_13L42648Q1-815980538Q20",
-     "price": -104,
-     "qualifies": false
-    }
-   },
-   "rank": 3
+   "links": null,
+   "rank": null
   },
   {
    "player": "Jared McCain",
@@ -786,7 +773,7 @@
      "qualifies": false
     }
    },
-   "rank": 4
+   "rank": 2
   },
   {
    "player": "Naz Reid",
@@ -909,7 +896,7 @@
      "qualifies": true
     }
    },
-   "rank": 5
+   "rank": 3
   },
   {
    "player": "Josh Giddey",
@@ -976,7 +963,7 @@
      "qualifies": true
     }
    },
-   "rank": 6
+   "rank": 4
   },
   {
    "player": "Franz Wagner",
@@ -1021,25 +1008,14 @@
     }
    },
    "id": "2026-11-20:401909306:4566434:points:24.5:under",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "added_at": "2026-11-20T13:30:00-05:00",
    "result": null,
-   "links": {
-    "hardrock": {
-     "id": "6572772606706057631",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/6572772606706057631",
-     "price": -110
-    },
-    "draftkings": {
-     "url": "https://sportsbook.draftkings.com/?outcomes=0QA390907082%232373007095_13L42648Q1-237944221Q20",
-     "price": -110,
-     "qualifies": false
-    }
-   },
-   "rank": 7
+   "links": null,
+   "rank": null
   },
   {
    "player": "Anthony Black",
@@ -1084,25 +1060,14 @@
     }
    },
    "id": "2026-11-20:401909306:4712849:rebounds:4.5:over",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "added_at": "2026-11-20T16:30:01-05:00",
    "result": null,
-   "links": {
-    "hardrock": {
-     "id": "4155153202462982549",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/4155153202462982549",
-     "price": 110
-    },
-    "draftkings": {
-     "url": "https://sportsbook.draftkings.com/?outcomes=0QA390906415%232373005930_13L42648Q1-150170292Q20",
-     "price": -109,
-     "qualifies": false
-    }
-   },
-   "rank": 8
+   "links": null,
+   "rank": null
   }
  ],
  "empty": null,
@@ -1118,6 +1083,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-20T19:20:01-05:00",
- "status_at": "2026-11-20T19:20:01-05:00"
+ "generated_at": "2026-11-20T19:30:00-05:00",
+ "status_at": "2026-11-20T19:30:00-05:00"
 }
