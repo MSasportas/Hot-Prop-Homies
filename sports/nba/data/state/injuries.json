@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T17:20:01-05:00",
+ "at": "2026-11-21T17:30:01-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -196,6 +196,13 @@
    "team": "DEN",
    "date": "2026-10-17T00:52Z",
    "note": "Strawther (knee) was diagnosed with a left knee sprain Friday and will be re-evaluated in six weeks, Vinny Benedetto of The Denver Gazette reports."
+  },
+  "4432166": {
+   "status": "day-to-day",
+   "name": "Cade Cunningham",
+   "team": "DET",
+   "date": "2026-11-21T22:24Z",
+   "note": "Cunningham recorded 23 points (10-22 FG, 2-7 3Pt, 1-4 FT), five rebounds, nine assists and one steal over 36 minutes in Friday's 105-102 loss to the Raptors."
   },
   "5258459": {
    "status": "day-to-day",
@@ -609,13 +616,6 @@
    "team": "POR",
    "date": "2026-11-20T22:18Z",
    "note": "Youngblood (heel) has been ruled out for Saturday's game against the Knicks."
-  },
-  "4683021": {
-   "status": "day-to-day",
-   "name": "Deni Avdija",
-   "team": "POR",
-   "date": "2026-11-20T22:08Z",
-   "note": "Avdija (foot) is listed as questionable for Saturday's game against the Knicks."
   },
   "4578893": {
    "status": "out",
