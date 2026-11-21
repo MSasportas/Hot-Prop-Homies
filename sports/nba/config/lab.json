@@ -305,7 +305,7 @@
   {
    "id": "R28e_late_lag",
    "title": "Pinnacle moves into the close, Hard Rock flat",
-   "rule": "Paper only. Between the last pre-game read and the close, Pinnacle moves 2+ points toward a side while Hard Rock's line and price stay put; bet that side. Counting from Nov 22. Full rule: research/HYPOTHESES.md (Run 28).",
+   "rule": "Paper only. Between the last pre-game read and the close, Pinnacle's fair chance moves 2+ percentage points toward a side while Hard Rock's line and price stay put; bet that side. Counting from Nov 22. Full rule: research/HYPOTHESES.md (Run 28).",
    "summary": "research/lab_r28.json",
    "stats": "R28e",
    "need": 150,

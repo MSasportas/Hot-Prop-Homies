@@ -160,6 +160,11 @@ def complete(quote):
     return bool(quote and quote.get("over") and quote.get("under"))
 
 
+def same_prices(a, b):
+    """True when both quotes exist and post the same over and under prices (deep links and names are not prices)."""
+    return bool(a and b) and all(a.get(side) == b.get(side) for side in ("over", "under"))
+
+
 def player_teams(fetch):
     """{pid: team} from every Hard Rock market in this read."""
     return {o["pid"]: o["team"] for m in fetch["markets"].values() for o in m.get("outcomes") or []}
@@ -248,7 +253,7 @@ def run_r28b(days, box, news):
                         held = np_disc._hr_pairs(fb, m)
                         for (pid, line), q in np_disc._hr_pairs(fc, m).items():
                             key = (day, pid, m)
-                            if key in seen or pid == out_pid or teams.get(pid) != team or held.get((pid, line)) != q or not complete(q):
+                            if key in seen or pid == out_pid or teams.get(pid) != team or not same_prices(held.get((pid, line)), q) or not complete(q):
                                 continue
                             fair = pin_fair(fc, m, (pid, line))
                             if not in_window(q["over"]) or fair is None or side_ev(fair, "over", q["over"]) < 0:
@@ -310,7 +315,7 @@ def run_r28e(days, closes, box):
                 for (pid, line), q in np_disc._hr_pairs(c_read, m).items():
                     key = (day, pid, m)
                     fc, fe = pin_fair(c_read, m, (pid, line)), pin_fair(close, m, (pid, line))
-                    if key in seen or not complete(q) or at_close.get((pid, line)) != q or fc is None or fe is None:
+                    if key in seen or not complete(q) or not same_prices(at_close.get((pid, line)), q) or fc is None or fe is None:
                         continue
                     side = "over" if fe - fc >= PIN_CLOSE_MOVE_MIN - EPS else "under" if fc - fe >= PIN_CLOSE_MOVE_MIN - EPS else None
                     if side is None or not in_window(q[side]):

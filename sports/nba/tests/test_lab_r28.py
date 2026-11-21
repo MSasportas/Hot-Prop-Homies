@@ -21,6 +21,10 @@ def quote(pid, line, over, under, team=TEAM):
             {"pid": pid, "name": "P" + pid, "team": team, "side": "under", "line": line, "price": under}]
 
 
+def with_links(outcomes, tag):
+    return [dict(o, link="https://app.hardrock.bet/%s/%s" % (tag, o["side"])) for o in outcomes]
+
+
 def market(outcomes, stamp):
     return {"last_update": stamp, "outcomes": outcomes}
 
@@ -172,6 +176,29 @@ class TestLateLag(unittest.TestCase):
 
     def test_a_night_without_a_close_read_is_skipped(self):
         self.assertEqual(lf.run_r28e({DAY: {GID: [self.c]}}, {}, self.box), [])
+
+
+class TestFlatIgnoresLinks(unittest.TestCase):
+    """The C read carries Hard Rock deep links and the close read does not: same prices must still count as flat."""
+    def test_late_lag_and_injury_bump_treat_link_only_differences_as_flat(self):
+        c = read("C", "2026-11-22T18:00:00-05:00", {"points": with_links(quote("1", 20.5, -110, -110), "c")}, {"points": quote("1", 20.5, *FAIR)})
+        close = read("E", "2026-11-22T18:50:00-05:00", {"points": quote("1", 20.5, -110, -110)}, {"points": quote("1", 20.5, -130, 110)})
+        bets = lf.run_r28e({DAY: {GID: [c]}}, {DAY: {GID: close}}, box_of(result_row("1", 25.0)))
+        self.assertEqual([b["side"] for b in bets], ["over"])
+        self.assertTrue(lf.same_prices({"over": 105, "under": -125, "link_over": "x"}, {"over": 105, "under": -125}))
+        self.assertFalse(lf.same_prices({"over": 105, "under": -125}, {"over": 105, "under": -120}))
+        self.assertFalse(lf.same_prices(None, {"over": 105, "under": -125}))
+
+    def test_injury_bump_with_links_on_the_news_read_only(self):
+        pin = {"points": quote(MATE, 12.5, *FAIR)}
+        hr = quote(MATE, 12.5, 105, -125)
+        reads = [read("A", "2026-11-22T11:00:00-05:00", {"points": hr}, pin),
+                 read("B", "2026-11-22T12:00:00-05:00", {"points": hr}, pin),
+                 read("C", "2026-11-22T12:30:00-05:00", {"points": with_links(hr, "c")}, pin),
+                 read("D", "2026-11-22T13:00:00-05:00", {"points": hr}, pin)]
+        rows = history(STAR, 20.0, min=34.0) + history(MATE, 10.0, min=20.0) + [result_row(MATE, 15.0)]
+        news = [{"pid": STAR, "team": TEAM, "at": "2026-11-22T17:10:00Z"}]
+        self.assertEqual(len(lf.run_r28b({DAY: {GID: reads}}, box_of(*rows), news)), 1)
 
 
 class TestForwardNights(unittest.TestCase):
