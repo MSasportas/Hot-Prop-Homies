@@ -390,11 +390,11 @@
     "home": "PHI",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:54 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
      "MIL": "59",
-     "PHI": "55"
+     "PHI": "60"
     }
    },
    {
