@@ -50,7 +50,7 @@
    "status": "expected"
   },
   "TOR": {
-   "name": "Sergei Bobrovsky",
+   "name": "Anthony Stolarz",
    "status": "expected"
   },
   "CBJ": {
@@ -114,5 +114,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-21T10:00:01-05:00"
+ "checked_at": "2026-11-21T10:30:01-05:00"
 }
