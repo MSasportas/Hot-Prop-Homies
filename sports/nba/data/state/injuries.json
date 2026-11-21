@@ -1,5 +1,5 @@
 {
- "at": "2026-11-20T19:10:00-05:00",
+ "at": "2026-11-20T19:40:00-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -169,6 +169,13 @@
    "date": "2026-10-17T00:52Z",
    "note": "Strawther (knee) was diagnosed with a left knee sprain Friday and will be re-evaluated in six weeks, Vinny Benedetto of The Denver Gazette reports."
   },
+  "4683771": {
+   "status": "out",
+   "name": "Ronald Holland II",
+   "team": "DET",
+   "date": "2026-11-21T00:32Z",
+   "note": "Holland (knee) has been upgraded to doubtful for Friday's game against Toronto, Hunter Patterson of The Athletic reports."
+  },
   "2990962": {
    "status": "out",
    "name": "Taurean Prince",
@@ -176,26 +183,12 @@
    "date": "2026-11-20T23:02Z",
    "note": "Prince (knee) underwent surgery to address lingering issues and has no timeline for a return, Hunter Patterson of The Athletic reports."
   },
-  "4683771": {
-   "status": "day-to-day",
-   "name": "Ronald Holland II",
-   "team": "DET",
-   "date": "2026-11-20T17:46Z",
-   "note": "Holland (knee) has been upgraded to doubtful for Friday's game against Toronto, Hunter Patterson of The Athletic reports."
-  },
   "5258459": {
    "status": "out",
    "name": "Ebuka Okorie",
    "team": "DET",
    "date": "2026-11-19T21:43Z",
    "note": "Okorie (oblique) has been ruled out for Friday's game against Toronto."
-  },
-  "4432166": {
-   "status": "day-to-day",
-   "name": "Cade Cunningham",
-   "team": "DET",
-   "date": "2026-11-19T21:36Z",
-   "note": "Cunningham (knee) is expected to play in Friday's game against the Raptors, Blake Murphy of Sportsnet.ca reports."
   },
   "5037878": {
    "status": "day-to-day",

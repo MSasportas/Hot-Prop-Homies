@@ -11,6 +11,7 @@
     "Moussa Diabate"
    ],
    "status": {
+    "Brandon Miller": "questionable",
     "Grayson Allen": "out",
     "Kon Knueppel": "out",
     "Dennis Schroder": "out",
@@ -90,8 +91,8 @@
     "John Collins"
    ],
    "status": {
-    "Ronald Holland": "doubtful",
     "Jalen Duren": "out",
+    "Ronald Holland": "out",
     "Ebuka Okorie": "out",
     "Taurean Prince": "out",
     "Duncan Robinson": "out"
@@ -277,5 +278,5 @@
    }
   }
  },
- "at": "2026-11-20T19:30:00-05:00"
+ "at": "2026-11-20T19:40:00-05:00"
 }
