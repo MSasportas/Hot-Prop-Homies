@@ -67,7 +67,7 @@
   },
   "OTT": {
    "name": "Linus Ullmark",
-   "status": "expected"
+   "status": "confirmed"
   },
   "LAK": {
    "name": "Anton Forsberg",
@@ -114,5 +114,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-21T11:00:01-05:00"
+ "checked_at": "2026-11-21T11:20:00-05:00"
 }
