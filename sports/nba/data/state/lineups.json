@@ -221,7 +221,7 @@
    }
   },
   "HOU": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Fred VanVleet",
     "Amen Thompson",
@@ -234,7 +234,7 @@
    }
   },
   "DEN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jamal Murray",
     "Christian Braun",
@@ -247,7 +247,7 @@
    }
   },
   "SAC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Darius Acuff",
     "Zach LaVine",
@@ -262,7 +262,7 @@
    }
   },
   "LAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Luka Doncic",
     "Quentin Grimes",
@@ -275,5 +275,5 @@
    }
   }
  },
- "at": "2026-11-20T21:30:01-05:00"
+ "at": "2026-11-20T21:40:02-05:00"
 }
