@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:41 - 2nd",
+    "detail": "1:54 - 2nd",
     "score": {
-     "MIL": "45",
-     "PHI": "45"
+     "MIL": "59",
+     "PHI": "55"
     }
    },
    {
