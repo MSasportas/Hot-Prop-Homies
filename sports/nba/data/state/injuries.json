@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T13:00:01-05:00",
+ "at": "2026-11-21T13:30:01-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -421,19 +421,26 @@
    "date": "2026-10-05T20:53Z",
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
   },
+  "4431675": {
+   "status": "out",
+   "name": "Trendon Watford",
+   "team": "NO",
+   "date": "2026-11-21T18:21Z",
+   "note": "Watford (ankle) is out for Saturday's game against the Spurs."
+  },
+  "4397688": {
+   "status": "out",
+   "name": "Trey Murphy III",
+   "team": "NO",
+   "date": "2026-11-21T18:20Z",
+   "note": "Murphy chipped in 17 points (5-10 FG, 3-8 3Pt, 4-5 FT), four rebounds, one assist, one block and two steals over 29 minutes during Friday's 126-120 loss to the Thunder."
+  },
   "4576086": {
    "status": "out",
    "name": "Bryce McGowens",
    "team": "NO",
    "date": "2026-11-19T21:15Z",
    "note": "McGowens (elbow) has been ruled out for Friday's game against the Thunder."
-  },
-  "4431675": {
-   "status": "out",
-   "name": "Trendon Watford",
-   "team": "NO",
-   "date": "2026-11-19T21:09Z",
-   "note": "Watford (ankle) has been ruled out for Friday's game against Oklahoma City."
   },
   "4683634": {
    "status": "out",
