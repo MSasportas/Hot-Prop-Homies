@@ -192,7 +192,7 @@
    }
   },
   "PHX": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Devin Booker",
     "Jalen Green",
@@ -205,7 +205,7 @@
    }
   },
   "UTAH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Keyonte George",
     "Darryn Peterson",
@@ -255,7 +255,6 @@
     "Domantas Sabonis"
    ],
    "status": {
-    "De'Andre Hunter": "questionable",
     "Ben Simmons": "out",
     "Precious Achiuwa": "out",
     "Maxime Raynaud": "out"
@@ -275,5 +274,5 @@
    }
   }
  },
- "at": "2026-11-20T21:00:00-05:00"
+ "at": "2026-11-20T21:10:01-05:00"
 }
