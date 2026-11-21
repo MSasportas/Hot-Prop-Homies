@@ -63,7 +63,7 @@
   },
   "WSH": {
    "name": "Charlie Lindgren",
-   "status": "expected"
+   "status": "confirmed"
   },
   "OTT": {
    "name": "Linus Ullmark",
@@ -114,5 +114,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-21T12:00:01-05:00"
+ "checked_at": "2026-11-21T12:20:00-05:00"
 }
