@@ -260,5 +260,58 @@
    "gate": "n >= 50 graded forward unders in the Pinnacle-outlier bucket (consensus vs Pinnacle gap >= 3 pts). Hit rate < 48%. If passes: Sharp reviews with DS before any live rule change.",
    "direction": "fade"
   }
- ]
+ ],
+ "queued": [
+  {
+   "id": "R28a_b2b_under",
+   "title": "Back-to-back unders",
+   "rule": "Paper only. Points, rebounds or assists: the player's team played yesterday, Pinnacle's line has not moved over the last two reads, and Hard Rock's under is at least fair vs Pinnacle. Counting from Nov 22. Full rule: research/HYPOTHESES.md (Run 28).",
+   "summary": "research/lab_r28.json",
+   "stats": "R28a",
+   "need": 150,
+   "gate": "Passes only at 150 graded, profit and beating the close.",
+   "first_seen": "2026-11-22"
+  },
+  {
+   "id": "R28b_injury_bump",
+   "title": "Teammates of a newly Out starter (overs)",
+   "rule": "Paper only. A top-7 rotation player is newly ruled Out between reads; bet a teammate's over on points or assists if Hard Rock hasn't moved and is at least fair vs Pinnacle. Counting from Nov 22. Full rule: research/HYPOTHESES.md (Run 28).",
+   "summary": "research/lab_r28.json",
+   "stats": "R28b",
+   "need": 150,
+   "gate": "Passes only at 150 graded, profit and beating the close.",
+   "first_seen": "2026-11-22"
+  },
+  {
+   "id": "R28d_lva_under",
+   "title": "Line vs avg, all sides: line 5%+ below average (under)",
+   "rule": "Paper only. Every Hard Rock side with a Pinnacle price on the same line: the line is 5%+ below the player's rolling average, bet the under. Counting from Nov 22. Full rule: research/HYPOTHESES.md (Run 28).",
+   "summary": "research/lab_r28.json",
+   "stats": "R28d_under",
+   "need": 150,
+   "gate": "Passes only at 150 graded, profit and beating the close.",
+   "first_seen": "2026-11-22"
+  },
+  {
+   "id": "R28d_lva_over",
+   "title": "Line vs avg, all sides: line 5%+ above average (over)",
+   "rule": "Paper only. Every Hard Rock side with a Pinnacle price on the same line: the line is 5%+ above the player's rolling average, bet the over. Counting from Nov 22. Full rule: research/HYPOTHESES.md (Run 28).",
+   "summary": "research/lab_r28.json",
+   "stats": "R28d_over",
+   "need": 150,
+   "gate": "Passes only at 150 graded, profit and beating the close.",
+   "first_seen": "2026-11-22"
+  },
+  {
+   "id": "R28e_late_lag",
+   "title": "Pinnacle moves into the close, Hard Rock flat",
+   "rule": "Paper only. Between the last pre-game read and the close, Pinnacle moves 2+ points toward a side while Hard Rock's line and price stay put; bet that side. Counting from Nov 22. Full rule: research/HYPOTHESES.md (Run 28).",
+   "summary": "research/lab_r28.json",
+   "stats": "R28e",
+   "need": 150,
+   "gate": "Passes only at 150 graded, profit and beating the close.",
+   "first_seen": "2026-11-22"
+  }
+ ],
+ "queued_note": "Tracks registered past the 25-live-tracks cap. Their summaries already collect nightly; the Lab tab and auto-retirement ignore this list. Move an entry into tests[] when a live track retires."
 }

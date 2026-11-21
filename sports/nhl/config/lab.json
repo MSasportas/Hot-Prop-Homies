@@ -211,6 +211,75 @@
    "stats": "NN6 fade soft",
    "need": 300,
    "gate": "Passes only at 300 graded with a clear profit and beating the close."
+  },
+  {
+   "id": "fwd_R28a_points_gap",
+   "title": "Points: Hard Rock 5%+ better than Pinnacle",
+   "rule": "Points, research only. Last read before the game: Hard Rock's price is 5%+ better than Pinnacle's fair price, price -200 to +120. Counting from Nov 21. Full rule: research/HYPOTHESES.md (Run 28).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "R28a points gap",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
+   "first_seen": "2026-11-21"
+  },
+  {
+   "id": "fwd_R28b_lva_under",
+   "title": "Shots line 5%+ below average (under)",
+   "rule": "Shots, research only. The line sits 5%+ below the player's rolling shots average (5+ games): bet the under. Counting from Nov 21. Full rule: research/HYPOTHESES.md (Run 28).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "R28b under",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
+   "first_seen": "2026-11-21"
+  },
+  {
+   "id": "fwd_R28b_lva_over",
+   "title": "Shots line 5%+ above average (over)",
+   "rule": "Shots, research only. The line sits 5%+ above the player's rolling shots average (5+ games): bet the over. Counting from Nov 21. Full rule: research/HYPOTHESES.md (Run 28).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "R28b over",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
+   "first_seen": "2026-11-21"
+  },
+  {
+   "id": "fwd_R28d_backup_goalie",
+   "title": "Facing a backup goalie (shots over)",
+   "rule": "Shots, research only. The opposing goalie is confirmed and is not his team's most-started goalie: bet skaters' shots over. Counting from Nov 21. Full rule: research/HYPOTHESES.md (Run 28).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "R28d backup goalie",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
+   "first_seen": "2026-11-21"
   }
- ]
+ ],
+ "queued": [
+  {
+   "id": "fwd_R28c_rest",
+   "title": "Skater rest: 3+ days off over, back-to-back under",
+   "rule": "Shots, research only. 3+ days of rest bets the over, 0-1 days bets the under. Counting from Nov 21. Full rule: research/HYPOTHESES.md (Run 28).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "R28c rest",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
+   "first_seen": "2026-11-21"
+  },
+  {
+   "id": "fwd_R28c_rest_mirror",
+   "title": "Skater rest, reversed",
+   "rule": "Shots, research only. The opposite of the rest test: 3+ days off bets the under, 0-1 days bets the over. Counting from Nov 21. Full rule: research/HYPOTHESES.md (Run 28).",
+   "summary": "research/fwd/lab.json",
+   "base": "root",
+   "stats": "R28c rest mirror",
+   "need": 300,
+   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
+   "first_seen": "2026-11-21"
+  }
+ ],
+ "queued_note": "Tracks registered past the 25-live-tracks cap. Their summaries already collect nightly; the Lab tab and auto-retirement ignore this list. Move an entry into tests[] when a live track retires."
 }
