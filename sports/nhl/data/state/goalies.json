@@ -75,7 +75,7 @@
   },
   "WPG": {
    "name": "Stuart Skinner",
-   "status": "expected"
+   "status": "confirmed"
   },
   "VGK": {
    "name": "Carter Hart",
@@ -114,5 +114,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-21T14:00:00-05:00"
+ "checked_at": "2026-11-21T14:10:01-05:00"
 }
