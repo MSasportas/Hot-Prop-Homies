@@ -51,7 +51,7 @@
    }
   },
   "CLE": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "James Harden",
     "Donovan Mitchell",
@@ -99,7 +99,7 @@
    }
   },
   "ORL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jalen Suggs",
     "Anthony Black",
@@ -115,10 +115,10 @@
    }
   },
   "BKN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Nolan Traore",
-    "Egor Demin",
+    "Danny Wolf",
     "Michael Porter",
     "Julius Randle",
     "Day'Ron Sharpe"
@@ -278,5 +278,5 @@
    }
   }
  },
- "at": "2026-11-20T19:00:01-05:00"
+ "at": "2026-11-20T19:10:00-05:00"
 }
