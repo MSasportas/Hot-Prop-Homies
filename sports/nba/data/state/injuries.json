@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T17:50:00-05:00",
+ "at": "2026-11-21T18:00:00-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -477,19 +477,19 @@
    "date": "2026-11-13T20:19Z",
    "note": "Murray (ankle) is out for Friday's game against Memphis."
   },
+  "3136195": {
+   "status": "out",
+   "name": "Karl-Anthony Towns",
+   "team": "NY",
+   "date": "2026-11-21T22:51Z",
+   "note": "Towns (illness) won't play in Saturday's game versus the Trail Blazers."
+  },
   "3934719": {
    "status": "out",
    "name": "OG Anunoby",
    "team": "NY",
    "date": "2026-11-21T21:49Z",
    "note": "Anunoby (calf) has been ruled out for Saturday's game against the Trail Blazers."
-  },
-  "3136195": {
-   "status": "day-to-day",
-   "name": "Karl-Anthony Towns",
-   "team": "NY",
-   "date": "2026-11-21T16:05Z",
-   "note": "Towns is questionable for Saturday's game against the Trail Blazers due to an illness."
   },
   "2528426": {
    "status": "out",
@@ -498,12 +498,19 @@
    "date": "2026-11-20T22:21Z",
    "note": "Clarkson (foot) won't play in Saturday's game against Portland."
   },
+  "4278073": {
+   "status": "day-to-day",
+   "name": "Shai Gilgeous-Alexander",
+   "team": "OKC",
+   "date": "2026-11-21T22:45Z",
+   "note": "Gilgeous-Alexander (back/neck) is listed as questionable for Sunday's game versus Miami."
+  },
   "5159925": {
    "status": "out",
    "name": "Nikola Topic",
    "team": "OKC",
-   "date": "2026-11-21T22:36Z",
-   "note": "Topic (hip) is out for Friday's game against New Orleans."
+   "date": "2026-11-21T22:39Z",
+   "note": "Topic (hip) is listed as out for Sunday's game versus the Heat."
   },
   "4432823": {
    "status": "out",
