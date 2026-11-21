@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 1956,
+   "pool_left": 1952,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-20T20:00:00-05:00",
-  "last_read_at": "2026-11-20T19:50:00-05:00",
+  "next_read_at": "2026-11-20T20:15:00-05:00",
+  "last_read_at": "2026-11-20T20:00:02-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-20T19:50:00-05:00"
+   "at": "2026-11-20T20:00:02-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-20T19:50:00-05:00",
+    "at": "2026-11-20T20:00:02-05:00",
     "confirmed": [
      "ATL",
      "BKN",
@@ -39,6 +39,7 @@
      "CLE",
      "DET",
      "IND",
+     "NO",
      "OKC",
      "ORL",
      "TOR",
@@ -55,7 +56,7 @@
    "away": "CHA",
    "home": "ATL",
    "state": "in",
-   "detail": "7:42 - 2nd",
+   "detail": "2:50 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -110,7 +111,7 @@
    "next_check_read": null,
    "paused": false,
    "injury_clear": {
-    "away": true,
+    "away": false,
     "home": true
    }
   },
@@ -120,7 +121,7 @@
    "away": "ORL",
    "home": "BKN",
    "state": "in",
-   "detail": "6:29 - 1st",
+   "detail": "3:08 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -185,7 +186,7 @@
    "away": "IND",
    "home": "CLE",
    "state": "in",
-   "detail": "6:51 - 1st",
+   "detail": "3:13 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -250,7 +251,7 @@
    "away": "TOR",
    "home": "DET",
    "state": "in",
-   "detail": "7:27 - 1st",
+   "detail": "3:57 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -382,7 +383,7 @@
    "state": "pre",
    "detail": "11/20 - 8:00 PM EST",
    "lineups": {
-    "away": "expected",
+    "away": "confirmed",
     "home": "confirmed"
    },
    "read_at": "2026-11-20T19:40:00-05:00",
@@ -450,7 +451,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-20T19:20:01-05:00",
+   "read_at": "2026-11-20T20:00:02-05:00",
    "picks": 1,
    "checks": [
     {
@@ -468,12 +469,16 @@
     {
      "read": "X135",
      "at": "2026-11-20T19:20:01-05:00"
+    },
+    {
+     "read": "B",
+     "at": "2026-11-20T20:00:02-05:00"
     }
    ],
-   "last_check_at": "2026-11-20T19:20:01-05:00",
+   "last_check_at": "2026-11-20T20:00:02-05:00",
    "final": false,
-   "next_check_at": "2026-11-20T20:00:00-05:00",
-   "next_check_read": "B",
+   "next_check_at": "2026-11-20T20:15:00-05:00",
+   "next_check_read": "X75",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -774,25 +779,14 @@
     }
    },
    "id": "2026-11-20:401909310:4683778:rebounds:3.5:over",
-   "state": "clear",
-   "state_label": "Injury report clear",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "added_at": "2026-11-20T18:50:00-05:00",
    "result": null,
-   "links": {
-    "hardrock": {
-     "id": "6764811508022116777",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/6764811508022116777",
-     "price": 115
-    },
-    "draftkings": {
-     "url": "https://sportsbook.draftkings.com/?outcomes=0QA390964070%232373228074_13L42648Q11299195355Q20",
-     "price": 110,
-     "qualifies": false
-    }
-   },
-   "rank": 2
+   "links": null,
+   "rank": null
   },
   {
    "player": "Naz Reid",
@@ -915,7 +909,7 @@
      "qualifies": true
     }
    },
-   "rank": 3
+   "rank": 2
   },
   {
    "player": "Josh Giddey",
@@ -964,25 +958,14 @@
     }
    },
    "id": "2026-11-20:401909309:4871145:threes:1.5:over",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "added_at": "2026-11-20T14:00:01-05:00",
    "result": null,
-   "links": {
-    "hardrock": {
-     "id": "77187479825940888",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/77187479825940888",
-     "price": 115
-    },
-    "draftkings": {
-     "url": "https://sportsbook.draftkings.com/?outcomes=0QA390910209%232372945876_13L42648Q11799469575Q20",
-     "price": 124,
-     "qualifies": true
-    }
-   },
-   "rank": 4
+   "links": null,
+   "rank": null
   },
   {
    "player": "Franz Wagner",
@@ -1102,6 +1085,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-20T19:50:00-05:00",
- "status_at": "2026-11-20T19:50:00-05:00"
+ "generated_at": "2026-11-20T20:00:02-05:00",
+ "status_at": "2026-11-20T20:00:02-05:00"
 }

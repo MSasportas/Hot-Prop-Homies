@@ -331,10 +331,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:42 - 2nd",
+    "detail": "2:50 - 2nd",
     "score": {
-     "CHA": "46",
-     "ATL": "36"
+     "CHA": "50",
+     "ATL": "46"
     }
    },
    {
@@ -346,10 +346,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:29 - 1st",
+    "detail": "3:08 - 1st",
     "score": {
-     "ORL": "11",
-     "BKN": "17"
+     "ORL": "26",
+     "BKN": "25"
     }
    },
    {
@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:51 - 1st",
+    "detail": "3:13 - 1st",
     "score": {
-     "IND": "12",
-     "CLE": "10"
+     "IND": "20",
+     "CLE": "23"
     }
    },
    {
@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:27 - 1st",
+    "detail": "3:57 - 1st",
     "score": {
-     "TOR": "11",
-     "DET": "7"
+     "TOR": "16",
+     "DET": "15"
     }
    },
    {
