@@ -89,10 +89,10 @@
    ],
    "status": {
     "P.J. Washington": "questionable",
-    "Tobi Lawal": "questionable",
     "Walter Clayton": "questionable",
     "Tarik Biberovic": "out",
     "Sergio de Larrea": "out",
+    "Tobi Lawal": "out",
     "Dereck Lively": "out"
    }
   },
@@ -190,5 +190,5 @@
    }
   }
  },
- "at": "2026-11-21T10:00:01-05:00"
+ "at": "2026-11-21T10:10:00-05:00"
 }

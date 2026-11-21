@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T10:00:01-05:00",
+ "at": "2026-11-21T10:10:00-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -58,17 +58,17 @@
    "note": "White (shoulder) is questionable to play in Saturday's game against Sacramento."
   },
   "5279130": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Nolan Traore",
    "team": "BKN",
-   "date": "2026-11-21T02:25Z",
+   "date": "2026-11-21T14:51Z",
    "note": "Traore (hamstring) won't return to Friday's game against Orlando, Meghan Triplett of YES Network reports. He finished with four points (2-6 FG, 0-2 3Pt) and two assists over 18 minutes."
   },
   "4702670": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Grant Nelson",
    "team": "BKN",
-   "date": "2026-11-19T21:18Z",
+   "date": "2026-11-21T14:51Z",
    "note": "Nelson (ankle) has been ruled out for Friday's game against Orlando."
   },
   "4066218": {
@@ -100,10 +100,10 @@
    "note": "Schroder has been diagnosed with a left hamstring strain and will be reevaluated in two weeks, Michael Scotto of HoopsHype.com reports."
   },
   "4397189": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Jalen Smith",
    "team": "CHI",
-   "date": "2026-11-20T23:19Z",
+   "date": "2026-11-21T14:54Z",
    "note": "Smith (illness) is out for Friday's game against the Wizards, Joel Lorenzi of The Athletic reports."
   },
   "5105555": {
@@ -282,10 +282,10 @@
    "note": "Capela (ankle) is out for Friday's game against Denver."
   },
   "2530530": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "T.J. McConnell",
    "team": "IND",
-   "date": "2026-11-21T04:58Z",
+   "date": "2026-11-21T14:51Z",
    "note": "Rick Carlisle revealed during his postgame interview that McConnell exited Friday's 128-119 loss with a left hamstring issue, Tony East of Forbes.com reports."
   },
   "4396993": {
@@ -463,19 +463,19 @@
    "date": "2026-11-20T22:10Z",
    "note": "Anunoby (calf) is questionable for Saturday's game against Portland."
   },
-  "2991350": {
-   "status": "out",
-   "name": "Alex Caruso",
-   "team": "OKC",
-   "date": "2026-11-20T23:24Z",
-   "note": "Caruso (hip) is listed as out for Friday's game against the Pelicans."
-  },
   "5159925": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Nikola Topic",
    "team": "OKC",
-   "date": "2026-11-20T17:02Z",
+   "date": "2026-11-21T14:54Z",
    "note": "Topic (hip) is out for Friday's game against New Orleans."
+  },
+  "2991350": {
+   "status": "day-to-day",
+   "name": "Alex Caruso",
+   "team": "OKC",
+   "date": "2026-11-21T14:54Z",
+   "note": "Caruso (hip) is listed as out for Friday's game against the Pelicans."
   },
   "5061603": {
    "status": "out",
@@ -576,10 +576,10 @@
    "note": "Hukporti has sustained a season-ending ruptured right Achilles tendon, per Shams Charania of ESPN."
   },
   "4888725": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Ryan Dunn",
    "team": "PHX",
-   "date": "2026-11-21T04:06Z",
+   "date": "2026-11-21T14:55Z",
    "note": "Dunn won't return to Friday's game against the Jazz due to a right quad injury, Amanda Pflugrad of 3TV Phoenix reports."
   },
   "4701232": {
