@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T10:30:00-05:00",
+ "at": "2026-11-21T11:20:00-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -448,6 +448,13 @@
    "team": "NO",
    "date": "2026-11-13T20:19Z",
    "note": "Murray (ankle) is out for Friday's game against Memphis."
+  },
+  "3136195": {
+   "status": "day-to-day",
+   "name": "Karl-Anthony Towns",
+   "team": "NY",
+   "date": "2026-11-21T16:05Z",
+   "note": "Towns is questionable for Saturday's game against the Trail Blazers due to an illness."
   },
   "2528426": {
    "status": "out",
