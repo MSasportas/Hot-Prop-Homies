@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T11:30:01-05:00",
+ "at": "2026-11-21T11:40:01-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -540,6 +540,13 @@
    "date": "2026-10-24T16:47Z",
    "note": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports."
   },
+  "4431678": {
+   "status": "day-to-day",
+   "name": "Tyrese Maxey",
+   "team": "PHI",
+   "date": "2026-11-21T16:25Z",
+   "note": "Maxey (foot) will be a true game-time decision for Saturday's game against the Bucks, head coach Nick Nurse told Ky Carlin of USA Today."
+  },
   "4870562": {
    "status": "out",
    "name": "Dominick Barlow",
@@ -553,13 +560,6 @@
    "team": "PHI",
    "date": "2026-11-20T22:11Z",
    "note": "Wade (hamstring) won't play Saturday against the Bucks."
-  },
-  "4431678": {
-   "status": "day-to-day",
-   "name": "Tyrese Maxey",
-   "team": "PHI",
-   "date": "2026-11-20T22:07Z",
-   "note": "Maxey (foot) is questionable for Saturday's game against the Bucks."
   },
   "5105637": {
    "status": "out",
