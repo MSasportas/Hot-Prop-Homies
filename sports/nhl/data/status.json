@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-21",
- "started_at": "2026-11-21T07:30:01-05:00",
- "status_at": "2026-11-21T07:30:01-05:00",
- "finished_at": "2026-11-21T07:30:02-05:00",
- "last_ok_at": "2026-11-21T07:30:01-05:00",
+ "started_at": "2026-11-21T08:00:01-05:00",
+ "status_at": "2026-11-21T08:00:01-05:00",
+ "finished_at": "2026-11-21T08:00:04-05:00",
+ "last_ok_at": "2026-11-21T08:00:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -155,13 +155,15 @@
  "lineups_note": null,
  "games_today": 14,
  "record_events": 359,
- "odds_notes": [],
+ "odds_notes": [
+  "key 1 refused (401)"
+ ],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "44901820643",
+  "run_id": "44904315149",
   "iteration": 2,
-  "chain_link": 95,
+  "chain_link": 96,
   "chain_started_at": "2026-11-18T10:00:22-05:00",
-  "run_started_at": "2026-11-21T07:01:20-05:00"
+  "run_started_at": "2026-11-21T07:31:21-05:00"
  }
 }
