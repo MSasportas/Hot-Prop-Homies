@@ -436,10 +436,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:57 - 4th",
+    "detail": "2:01 - 4th",
     "score": {
-     "HOU": "115",
-     "DEN": "110"
+     "HOU": "119",
+     "DEN": "124"
     }
    },
    {
@@ -448,12 +448,12 @@
     "start": "2026-11-20T22:00:00-05:00",
     "away": "SAC",
     "home": "LAL",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "17.6 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "SAC": "103",
+     "SAC": "104",
      "LAL": "106"
     }
    }
