@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 1924,
+   "pool_left": 1912,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-20T21:00:00-05:00",
-  "last_read_at": "2026-11-20T20:50:01-05:00",
+  "next_read_at": "2026-11-20T21:10:00-05:00",
+  "last_read_at": "2026-11-20T21:00:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-20T20:50:01-05:00"
+   "at": "2026-11-20T21:00:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-20T20:50:01-05:00",
+    "at": "2026-11-20T21:00:00-05:00",
     "confirmed": [
      "ATL",
      "BKN",
@@ -56,7 +56,7 @@
    "away": "CHA",
    "home": "ATL",
    "state": "in",
-   "detail": "11:02 - 4th",
+   "detail": "6:52 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -186,7 +186,7 @@
    "away": "IND",
    "home": "CLE",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "10:23 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -251,7 +251,7 @@
    "away": "TOR",
    "home": "DET",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "8:58 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -316,7 +316,7 @@
    "away": "WAS",
    "home": "CHI",
    "state": "in",
-   "detail": "7:22 - 2nd",
+   "detail": "2:16 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -381,7 +381,7 @@
    "away": "NOP",
    "home": "OKC",
    "state": "in",
-   "detail": "6:39 - 2nd",
+   "detail": "2:38 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -451,7 +451,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-20T20:50:01-05:00",
+   "read_at": "2026-11-20T21:00:00-05:00",
    "picks": 1,
    "checks": [
     {
@@ -485,12 +485,16 @@
     {
      "read": "C",
      "at": "2026-11-20T20:50:01-05:00"
+    },
+    {
+     "read": "X30",
+     "at": "2026-11-20T21:00:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-20T20:50:01-05:00",
+   "last_check_at": "2026-11-20T21:00:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-20T21:00:00-05:00",
-   "next_check_read": "X30",
+   "next_check_at": "2026-11-20T21:10:00-05:00",
+   "next_check_read": "D",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -508,7 +512,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-20T20:50:01-05:00",
+   "read_at": "2026-11-20T21:00:00-05:00",
    "picks": 0,
    "checks": [
     {
@@ -534,12 +538,16 @@
     {
      "read": "X75",
      "at": "2026-11-20T20:50:01-05:00"
+    },
+    {
+     "read": "X60",
+     "at": "2026-11-20T21:00:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-20T20:50:01-05:00",
+   "last_check_at": "2026-11-20T21:00:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-20T21:00:00-05:00",
-   "next_check_read": "X60",
+   "next_check_at": "2026-11-20T21:15:00-05:00",
+   "next_check_read": "C",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -557,7 +565,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-20T20:50:01-05:00",
+   "read_at": "2026-11-20T21:00:00-05:00",
    "picks": 2,
    "checks": [
     {
@@ -583,12 +591,16 @@
     {
      "read": "X75",
      "at": "2026-11-20T20:50:01-05:00"
+    },
+    {
+     "read": "X60",
+     "at": "2026-11-20T21:00:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-20T20:50:01-05:00",
+   "last_check_at": "2026-11-20T21:00:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-20T21:00:00-05:00",
-   "next_check_read": "X60",
+   "next_check_at": "2026-11-20T21:15:00-05:00",
+   "next_check_read": "C",
    "paused": false,
    "injury_clear": {
     "away": false,
@@ -1231,7 +1243,7 @@
  ],
  "empty": null,
  "counts": {
-  "lines_read": 892,
+  "lines_read": 896,
   "passing": 29,
   "games": 9
  },
@@ -1242,6 +1254,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-20T20:50:01-05:00",
- "status_at": "2026-11-20T20:50:01-05:00"
+ "generated_at": "2026-11-20T21:00:00-05:00",
+ "status_at": "2026-11-20T21:00:00-05:00"
 }
