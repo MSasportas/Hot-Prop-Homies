@@ -87,7 +87,7 @@
   },
   "PHI": {
    "name": "Dan Vladar",
-   "status": "expected"
+   "status": "confirmed"
   },
   "UTA": {
    "name": "Sebastian Cossa",
@@ -114,5 +114,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-21T12:31:42-05:00"
+ "checked_at": "2026-11-21T12:40:00-05:00"
 }
