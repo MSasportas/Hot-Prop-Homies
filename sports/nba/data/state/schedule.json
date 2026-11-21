@@ -390,11 +390,11 @@
     "home": "PHI",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 3rd",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:06 - 4th",
     "score": {
-     "MIL": "92",
-     "PHI": "98"
+     "MIL": "103",
+     "PHI": "106"
     }
    },
    {
