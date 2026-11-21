@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-21",
- "generated_at": "2026-11-21T18:30:00-05:00",
- "status_at": "2026-11-21T18:30:00-05:00",
+ "generated_at": "2026-11-21T18:40:01-05:00",
+ "status_at": "2026-11-21T18:40:01-05:00",
  "valid_until": "2026-11-22T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -9,14 +9,14 @@
   "next_price_read_at": "2026-11-21T19:30:00-05:00",
   "stats_built_at": "2026-11-21T17:00:01-05:00",
   "stats_through": "2026-11-19",
-  "lineups_at": "2026-11-21T18:20:01-05:00",
+  "lineups_at": "2026-11-21T18:40:01-05:00",
   "goalies_at": null,
-  "lineups_note": "Lineups posted for 13 of 24 teams checked so far.",
+  "lineups_note": "Lineups posted for 14 of 24 teams checked so far.",
   "lineups_state": "ok",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-21T18:30:00-05:00",
+   "at": "2026-11-21T18:40:01-05:00",
    "failed_step": null
   },
   "pool": {
@@ -229,7 +229,7 @@
    "start": "2026-11-21T19:00:00-05:00",
    "lineups": {
     "away": "waiting",
-    "home": "waiting"
+    "home": "confirmed"
    },
    "goalies": {
     "away": {
@@ -259,7 +259,7 @@
     "next_read": null,
     "lineups_at": {
      "away": null,
-     "home": null
+     "home": "2026-11-21T18:40:01-05:00"
     }
    },
    "started": false,
@@ -372,7 +372,7 @@
    "goalies": {
     "away": {
      "name": "Anton Forsberg",
-     "status": "expected"
+     "status": "confirmed"
     },
     "home": {
      "name": "Linus Ullmark",
@@ -418,7 +418,7 @@
    "goalies": {
     "away": {
      "name": "Ilya Sorokin",
-     "status": "expected"
+     "status": "confirmed"
     },
     "home": {
      "name": "John Gibson",
@@ -464,11 +464,11 @@
    "goalies": {
     "away": {
      "name": "Connor Hellebuyck",
-     "status": "expected"
+     "status": "confirmed"
     },
     "home": {
-     "name": "Joel Hofer",
-     "status": "expected"
+     "name": "Jordan Binnington",
+     "status": "confirmed"
     }
    },
    "checks": {
@@ -510,7 +510,7 @@
    "goalies": {
     "away": {
      "name": "Carter Hart",
-     "status": "expected"
+     "status": "confirmed"
     },
     "home": {
      "name": "Stuart Skinner",
