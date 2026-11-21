@@ -1,5 +1,14 @@
 ## 2026-11-16, Run DM (Sharp; data mining 2026-11-16 — three leads registered)
 
+## 2026-11-21, AH5 (auto; Large solo (4+ pt solo Pinnacle move))
+Filter: MOVES where move >= 4 pts AND others < 1 pt. MOVES population (Pinnacle >= 2 pt move, HR on line, -200..+200, 1/player/market/night).
+Discovery (<2026-11-10, 24 nights): n 107 graded 106 62-44 +8.27u ROI +7.8% CLV_pin -3.4% (n 85)
+Discovery FAIR (ev_pin>=0): n 22 graded 21 13-8 +3.03u ROI +14.4% CLV_pin -0.4% (n 18)
+Forward (>=2026-11-10, 11 nights): n 62 graded 61 34-27 +0.92u ROI +1.5% CLV_pin -4.0% (n 54)
+Forward FAIR: n 10 graded 9 4-5 -1.98u ROI -22.0% CLV_pin -0.1% (n 8)
+Pass bar: n>=150 graded fwd, ROI>0, CI>0, CLV>0. Status: FORWARD - accumulating
+
+
 ## 2026-11-20, AH4 (auto; Stale HR + FAIR (HR stale, EV >= 0))
 Filter: MOVES where HR price unchanged (stale) AND ev_pin >= 0. MOVES population (Pinnacle >= 2 pt move, HR on line, -200..+200, 1/player/market/night).
 Discovery (<2026-11-10, 17 nights): n 35 graded 35 19-16 +1.57u ROI +4.5% CLV_pin -0.6% (n 31)

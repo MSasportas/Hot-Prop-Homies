@@ -1,6 +1,6 @@
 {
- "slate": "2026-11-20",
- "valid_until": "2026-11-21T05:00:00-05:00",
+ "slate": "2026-11-21",
+ "valid_until": "2026-11-22T05:00:00-05:00",
  "banners": [],
  "status": {
   "odds": {
@@ -9,8 +9,8 @@
    "low": false,
    "refused": false,
    "no_keys": false,
-   "days_left": 11,
-   "allowance": 29.922,
+   "days_left": 10,
+   "allowance": 27.529,
    "reads": [
     "A",
     "B",
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": null,
-  "last_read_at": "2026-11-20T21:40:02-05:00",
+  "next_read_at": "2026-11-21T07:00:00-05:00",
+  "last_read_at": null,
   "last_run": {
    "ok": true,
-   "at": "2026-11-21T04:30:01-05:00"
+   "at": "2026-11-21T05:00:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,1271 +30,168 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-20T21:50:01-05:00",
-    "confirmed": [
-     "ATL",
-     "BKN",
-     "CHA",
-     "CHI",
-     "CLE",
-     "DEN",
-     "DET",
-     "HOU",
-     "IND",
-     "LAL",
-     "NO",
-     "OKC",
-     "ORL",
-     "PHX",
-     "SAC",
-     "TOR",
-     "UTAH",
-     "WSH"
-    ]
+    "at": "2026-11-21T05:00:00-05:00",
+    "confirmed": []
    },
    "grade": true
   }
  },
  "games": [
   {
-   "id": "401909305",
-   "start": "2026-11-20T19:00:00-05:00",
-   "away": "CHA",
-   "home": "ATL",
-   "state": "post",
-   "detail": "Final",
+   "id": "401910023",
+   "start": "2026-11-21T13:00:00-05:00",
+   "away": "MIL",
+   "home": "PHI",
+   "state": "pre",
+   "detail": "11/21 - 1:00 PM EST",
    "lineups": {
-    "away": "confirmed",
-    "home": "confirmed"
+    "away": "expected",
+    "home": "expected"
    },
-   "read_at": "2026-11-20T18:40:01-05:00",
-   "picks": 1,
-   "checks": [
-    {
-     "read": "X360",
-     "at": "2026-11-20T13:00:01-05:00"
-    },
-    {
-     "read": "X240",
-     "at": "2026-11-20T15:00:00-05:00"
-    },
-    {
-     "read": "X180",
-     "at": "2026-11-20T16:00:01-05:00"
-    },
-    {
-     "read": "X135",
-     "at": "2026-11-20T16:50:00-05:00"
-    },
-    {
-     "read": "B",
-     "at": "2026-11-20T17:30:00-05:00"
-    },
-    {
-     "read": "X75",
-     "at": "2026-11-20T17:50:01-05:00"
-    },
-    {
-     "read": "X60",
-     "at": "2026-11-20T18:00:01-05:00"
-    },
-    {
-     "read": "C",
-     "at": "2026-11-20T18:20:00-05:00"
-    },
-    {
-     "read": "X30",
-     "at": "2026-11-20T18:30:03-05:00"
-    },
-    {
-     "read": "D",
-     "at": "2026-11-20T18:40:01-05:00"
-    }
-   ],
-   "last_check_at": "2026-11-20T18:40:01-05:00",
-   "final": true,
-   "next_check_at": null,
-   "next_check_read": null,
-   "paused": false,
-   "injury_clear": {
-    "away": true,
-    "home": true
-   }
-  },
-  {
-   "id": "401909306",
-   "start": "2026-11-20T19:30:00-05:00",
-   "away": "ORL",
-   "home": "BKN",
-   "state": "post",
-   "detail": "Final",
-   "lineups": {
-    "away": "confirmed",
-    "home": "confirmed"
-   },
-   "read_at": "2026-11-20T19:10:00-05:00",
-   "picks": 2,
-   "checks": [
-    {
-     "read": "X360",
-     "at": "2026-11-20T13:30:00-05:00"
-    },
-    {
-     "read": "X240",
-     "at": "2026-11-20T15:30:01-05:00"
-    },
-    {
-     "read": "X180",
-     "at": "2026-11-20T16:30:01-05:00"
-    },
-    {
-     "read": "X135",
-     "at": "2026-11-20T17:20:00-05:00"
-    },
-    {
-     "read": "B",
-     "at": "2026-11-20T18:00:01-05:00"
-    },
-    {
-     "read": "X75",
-     "at": "2026-11-20T18:20:00-05:00"
-    },
-    {
-     "read": "X60",
-     "at": "2026-11-20T18:30:03-05:00"
-    },
-    {
-     "read": "C",
-     "at": "2026-11-20T18:50:00-05:00"
-    },
-    {
-     "read": "X30",
-     "at": "2026-11-20T19:00:01-05:00"
-    },
-    {
-     "read": "D",
-     "at": "2026-11-20T19:10:00-05:00"
-    }
-   ],
-   "last_check_at": "2026-11-20T19:10:00-05:00",
-   "final": true,
-   "next_check_at": null,
-   "next_check_read": null,
-   "paused": false,
-   "injury_clear": {
-    "away": true,
-    "home": true
-   }
-  },
-  {
-   "id": "401909307",
-   "start": "2026-11-20T19:30:00-05:00",
-   "away": "IND",
-   "home": "CLE",
-   "state": "post",
-   "detail": "Final",
-   "lineups": {
-    "away": "confirmed",
-    "home": "confirmed"
-   },
-   "read_at": "2026-11-20T19:10:00-05:00",
-   "picks": 1,
-   "checks": [
-    {
-     "read": "X360",
-     "at": "2026-11-20T13:30:00-05:00"
-    },
-    {
-     "read": "X240",
-     "at": "2026-11-20T15:30:01-05:00"
-    },
-    {
-     "read": "X180",
-     "at": "2026-11-20T16:30:01-05:00"
-    },
-    {
-     "read": "X135",
-     "at": "2026-11-20T17:20:00-05:00"
-    },
-    {
-     "read": "B",
-     "at": "2026-11-20T18:00:01-05:00"
-    },
-    {
-     "read": "X75",
-     "at": "2026-11-20T18:20:00-05:00"
-    },
-    {
-     "read": "X60",
-     "at": "2026-11-20T18:30:03-05:00"
-    },
-    {
-     "read": "C",
-     "at": "2026-11-20T18:50:00-05:00"
-    },
-    {
-     "read": "X30",
-     "at": "2026-11-20T19:00:01-05:00"
-    },
-    {
-     "read": "D",
-     "at": "2026-11-20T19:10:00-05:00"
-    }
-   ],
-   "last_check_at": "2026-11-20T19:10:00-05:00",
-   "final": true,
-   "next_check_at": null,
-   "next_check_read": null,
-   "paused": false,
-   "injury_clear": {
-    "away": true,
-    "home": true
-   }
-  },
-  {
-   "id": "401909308",
-   "start": "2026-11-20T19:30:00-05:00",
-   "away": "TOR",
-   "home": "DET",
-   "state": "post",
-   "detail": "Final",
-   "lineups": {
-    "away": "confirmed",
-    "home": "confirmed"
-   },
-   "read_at": "2026-11-20T19:10:00-05:00",
-   "picks": 1,
-   "checks": [
-    {
-     "read": "X360",
-     "at": "2026-11-20T13:30:00-05:00"
-    },
-    {
-     "read": "X240",
-     "at": "2026-11-20T15:30:01-05:00"
-    },
-    {
-     "read": "X180",
-     "at": "2026-11-20T16:30:01-05:00"
-    },
-    {
-     "read": "X135",
-     "at": "2026-11-20T17:20:00-05:00"
-    },
-    {
-     "read": "B",
-     "at": "2026-11-20T18:00:01-05:00"
-    },
-    {
-     "read": "X75",
-     "at": "2026-11-20T18:20:00-05:00"
-    },
-    {
-     "read": "X60",
-     "at": "2026-11-20T18:30:03-05:00"
-    },
-    {
-     "read": "C",
-     "at": "2026-11-20T18:50:00-05:00"
-    },
-    {
-     "read": "X30",
-     "at": "2026-11-20T19:00:01-05:00"
-    },
-    {
-     "read": "D",
-     "at": "2026-11-20T19:10:00-05:00"
-    }
-   ],
-   "last_check_at": "2026-11-20T19:10:00-05:00",
-   "final": true,
-   "next_check_at": null,
-   "next_check_read": null,
-   "paused": false,
-   "injury_clear": {
-    "away": true,
-    "home": true
-   }
-  },
-  {
-   "id": "401909309",
-   "start": "2026-11-20T20:00:00-05:00",
-   "away": "WAS",
-   "home": "CHI",
-   "state": "post",
-   "detail": "Final",
-   "lineups": {
-    "away": "confirmed",
-    "home": "confirmed"
-   },
-   "read_at": "2026-11-20T19:40:00-05:00",
-   "picks": 1,
-   "checks": [
-    {
-     "read": "X360",
-     "at": "2026-11-20T14:00:01-05:00"
-    },
-    {
-     "read": "X240",
-     "at": "2026-11-20T16:00:01-05:00"
-    },
-    {
-     "read": "X180",
-     "at": "2026-11-20T17:00:00-05:00"
-    },
-    {
-     "read": "X135",
-     "at": "2026-11-20T17:50:01-05:00"
-    },
-    {
-     "read": "B",
-     "at": "2026-11-20T18:30:03-05:00"
-    },
-    {
-     "read": "X75",
-     "at": "2026-11-20T18:50:00-05:00"
-    },
-    {
-     "read": "X60",
-     "at": "2026-11-20T19:00:01-05:00"
-    },
-    {
-     "read": "C",
-     "at": "2026-11-20T19:20:01-05:00"
-    },
-    {
-     "read": "X30",
-     "at": "2026-11-20T19:30:00-05:00"
-    },
-    {
-     "read": "D",
-     "at": "2026-11-20T19:40:00-05:00"
-    }
-   ],
-   "last_check_at": "2026-11-20T19:40:00-05:00",
-   "final": true,
-   "next_check_at": null,
-   "next_check_read": null,
-   "paused": false,
-   "injury_clear": {
-    "away": true,
-    "home": true
-   }
-  },
-  {
-   "id": "401909310",
-   "start": "2026-11-20T20:00:00-05:00",
-   "away": "NOP",
-   "home": "OKC",
-   "state": "post",
-   "detail": "Final",
-   "lineups": {
-    "away": "confirmed",
-    "home": "confirmed"
-   },
-   "read_at": "2026-11-20T19:40:00-05:00",
-   "picks": 1,
-   "checks": [
-    {
-     "read": "X360",
-     "at": "2026-11-20T14:00:01-05:00"
-    },
-    {
-     "read": "X240",
-     "at": "2026-11-20T16:00:01-05:00"
-    },
-    {
-     "read": "X180",
-     "at": "2026-11-20T17:00:00-05:00"
-    },
-    {
-     "read": "X135",
-     "at": "2026-11-20T17:50:01-05:00"
-    },
-    {
-     "read": "B",
-     "at": "2026-11-20T18:30:03-05:00"
-    },
-    {
-     "read": "X75",
-     "at": "2026-11-20T18:50:00-05:00"
-    },
-    {
-     "read": "X60",
-     "at": "2026-11-20T19:00:01-05:00"
-    },
-    {
-     "read": "C",
-     "at": "2026-11-20T19:20:01-05:00"
-    },
-    {
-     "read": "X30",
-     "at": "2026-11-20T19:30:00-05:00"
-    },
-    {
-     "read": "D",
-     "at": "2026-11-20T19:40:00-05:00"
-    }
-   ],
-   "last_check_at": "2026-11-20T19:40:00-05:00",
-   "final": true,
-   "next_check_at": null,
-   "next_check_read": null,
-   "paused": false,
-   "injury_clear": {
-    "away": true,
-    "home": true
-   }
-  },
-  {
-   "id": "401909311",
-   "start": "2026-11-20T21:30:00-05:00",
-   "away": "PHX",
-   "home": "UTA",
-   "state": "post",
-   "detail": "Final",
-   "lineups": {
-    "away": "confirmed",
-    "home": "confirmed"
-   },
-   "read_at": "2026-11-20T21:10:01-05:00",
-   "picks": 1,
-   "checks": [
-    {
-     "read": "X360",
-     "at": "2026-11-20T15:30:01-05:00"
-    },
-    {
-     "read": "X240",
-     "at": "2026-11-20T17:30:00-05:00"
-    },
-    {
-     "read": "X180",
-     "at": "2026-11-20T18:30:03-05:00"
-    },
-    {
-     "read": "X135",
-     "at": "2026-11-20T19:20:01-05:00"
-    },
-    {
-     "read": "B",
-     "at": "2026-11-20T20:00:02-05:00"
-    },
-    {
-     "read": "X75",
-     "at": "2026-11-20T20:20:00-05:00"
-    },
-    {
-     "read": "X60",
-     "at": "2026-11-20T20:30:01-05:00"
-    },
-    {
-     "read": "C",
-     "at": "2026-11-20T20:50:01-05:00"
-    },
-    {
-     "read": "X30",
-     "at": "2026-11-20T21:00:00-05:00"
-    },
-    {
-     "read": "D",
-     "at": "2026-11-20T21:10:01-05:00"
-    }
-   ],
-   "last_check_at": "2026-11-20T21:10:01-05:00",
-   "final": true,
-   "next_check_at": null,
-   "next_check_read": null,
-   "paused": false,
-   "injury_clear": {
-    "away": true,
-    "home": true
-   }
-  },
-  {
-   "id": "401909312",
-   "start": "2026-11-20T22:00:00-05:00",
-   "away": "HOU",
-   "home": "DEN",
-   "state": "post",
-   "detail": "Final",
-   "lineups": {
-    "away": "confirmed",
-    "home": "confirmed"
-   },
-   "read_at": "2026-11-20T21:40:02-05:00",
+   "read_at": null,
    "picks": 0,
-   "checks": [
-    {
-     "read": "X360",
-     "at": "2026-11-20T16:00:01-05:00"
-    },
-    {
-     "read": "X240",
-     "at": "2026-11-20T18:00:01-05:00"
-    },
-    {
-     "read": "X180",
-     "at": "2026-11-20T19:00:01-05:00"
-    },
-    {
-     "read": "X135",
-     "at": "2026-11-20T19:50:00-05:00"
-    },
-    {
-     "read": "B",
-     "at": "2026-11-20T20:30:01-05:00"
-    },
-    {
-     "read": "X75",
-     "at": "2026-11-20T20:50:01-05:00"
-    },
-    {
-     "read": "X60",
-     "at": "2026-11-20T21:00:00-05:00"
-    },
-    {
-     "read": "C",
-     "at": "2026-11-20T21:20:00-05:00"
-    },
-    {
-     "read": "X30",
-     "at": "2026-11-20T21:30:01-05:00"
-    },
-    {
-     "read": "D",
-     "at": "2026-11-20T21:40:02-05:00"
-    }
-   ],
-   "last_check_at": "2026-11-20T21:40:02-05:00",
-   "final": true,
-   "next_check_at": null,
-   "next_check_read": null,
+   "checks": [],
+   "last_check_at": null,
+   "final": false,
+   "next_check_at": "2026-11-21T07:00:00-05:00",
+   "next_check_read": "X360",
    "paused": false,
    "injury_clear": {
     "away": true,
-    "home": true
+    "home": false
    }
   },
   {
-   "id": "401909313",
-   "start": "2026-11-20T22:00:00-05:00",
-   "away": "SAC",
-   "home": "LAL",
-   "state": "post",
-   "detail": "Final",
+   "id": "401910024",
+   "start": "2026-11-21T19:30:00-05:00",
+   "away": "POR",
+   "home": "NYK",
+   "state": "pre",
+   "detail": "11/21 - 7:30 PM EST",
    "lineups": {
-    "away": "confirmed",
-    "home": "confirmed"
+    "away": "expected",
+    "home": "expected"
    },
-   "read_at": "2026-11-20T21:40:02-05:00",
-   "picks": 2,
-   "checks": [
-    {
-     "read": "X360",
-     "at": "2026-11-20T16:00:01-05:00"
-    },
-    {
-     "read": "X240",
-     "at": "2026-11-20T18:00:01-05:00"
-    },
-    {
-     "read": "X180",
-     "at": "2026-11-20T19:00:01-05:00"
-    },
-    {
-     "read": "X135",
-     "at": "2026-11-20T19:50:00-05:00"
-    },
-    {
-     "read": "B",
-     "at": "2026-11-20T20:30:01-05:00"
-    },
-    {
-     "read": "X75",
-     "at": "2026-11-20T20:50:01-05:00"
-    },
-    {
-     "read": "X60",
-     "at": "2026-11-20T21:00:00-05:00"
-    },
-    {
-     "read": "C",
-     "at": "2026-11-20T21:20:00-05:00"
-    },
-    {
-     "read": "X30",
-     "at": "2026-11-20T21:30:01-05:00"
-    },
-    {
-     "read": "D",
-     "at": "2026-11-20T21:40:02-05:00"
-    }
-   ],
-   "last_check_at": "2026-11-20T21:40:02-05:00",
-   "final": true,
-   "next_check_at": null,
-   "next_check_read": null,
+   "read_at": null,
+   "picks": 0,
+   "checks": [],
+   "last_check_at": null,
+   "final": false,
+   "next_check_at": "2026-11-21T13:30:00-05:00",
+   "next_check_read": "X360",
+   "paused": false,
+   "injury_clear": {
+    "away": false,
+    "home": false
+   }
+  },
+  {
+   "id": "401910025",
+   "start": "2026-11-21T20:00:00-05:00",
+   "away": "LAC",
+   "home": "DAL",
+   "state": "pre",
+   "detail": "11/21 - 8:00 PM EST",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0,
+   "checks": [],
+   "last_check_at": null,
+   "final": false,
+   "next_check_at": "2026-11-21T14:00:00-05:00",
+   "next_check_read": "X360",
+   "paused": false,
+   "injury_clear": {
+    "away": true,
+    "home": false
+   }
+  },
+  {
+   "id": "401910026",
+   "start": "2026-11-21T20:00:00-05:00",
+   "away": "MEM",
+   "home": "MIN",
+   "state": "pre",
+   "detail": "11/21 - 8:00 PM EST",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0,
+   "checks": [],
+   "last_check_at": null,
+   "final": false,
+   "next_check_at": "2026-11-21T14:00:00-05:00",
+   "next_check_read": "X360",
    "paused": false,
    "injury_clear": {
     "away": true,
     "home": true
    }
+  },
+  {
+   "id": "401910027",
+   "start": "2026-11-21T20:00:00-05:00",
+   "away": "NOP",
+   "home": "SAS",
+   "state": "pre",
+   "detail": "11/21 - 8:00 PM EST",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0,
+   "checks": [],
+   "last_check_at": null,
+   "final": false,
+   "next_check_at": "2026-11-21T14:00:00-05:00",
+   "next_check_read": "X360",
+   "paused": false,
+   "injury_clear": {
+    "away": true,
+    "home": true
+   }
+  },
+  {
+   "id": "401910028",
+   "start": "2026-11-21T22:00:00-05:00",
+   "away": "BOS",
+   "home": "SAC",
+   "state": "pre",
+   "detail": "11/21 - 10:00 PM EST",
+   "lineups": {
+    "away": "expected",
+    "home": "expected"
+   },
+   "read_at": null,
+   "picks": 0,
+   "checks": [],
+   "last_check_at": null,
+   "final": false,
+   "next_check_at": "2026-11-21T16:00:00-05:00",
+   "next_check_read": "X360",
+   "paused": false,
+   "injury_clear": {
+    "away": false,
+    "home": true
+   }
   }
  ],
- "picks": [
-  {
-   "player": "Immanuel Quickley",
-   "pid": "4395724",
-   "team": "TOR",
-   "opp": "DET",
-   "home": false,
-   "game_id": "401909308",
-   "start": "2026-11-20T19:30:00-05:00",
-   "bet": "Over 5.5 assists",
-   "market": "assists",
-   "side": "over",
-   "line": 5.5,
-   "price": -125,
-   "price_at": "2026-11-20T15:30:01-05:00",
-   "read": "X240",
-   "p": 0.5592,
-   "p_pct": 56,
-   "breakeven": 0.5556,
-   "breakeven_pct": 56,
-   "market_fair": null,
-   "n_books": 8,
-   "gap_ev": null,
-   "final_ev": 0.0734,
-   "model_p": null,
-   "reason": "Pinnacle moved the over from -108 to -149 (49% to 56%). Hard Rock -125 is 0.7% better than Pinnacle's fair price.",
-   "rule": "pin_solo",
-   "pin_before": 0.4858,
-   "pin_after": 0.5592,
-   "pin_price_before": -108,
-   "pin_price_after": -149,
-   "others_move": 0.0383,
-   "n_others": 8,
-   "ev_vs_pin": 0.0066,
-   "window": "360 \u2192 240 min",
-   "gap_vs_pin": 0.0428,
-   "book": "hardrock",
-   "books": {
-    "hardrock": {
-     "ev_vs_pin": 0.0066,
-     "price": -125
-    }
-   },
-   "id": "2026-11-20:401909308:4395724:assists:5.5:over",
-   "state": "locked",
-   "state_label": "Locked",
-   "price_final": false,
-   "pulled": null,
-   "added_at": "2026-11-20T15:30:01-05:00",
-   "result": {
-    "result": "W",
-    "actual": "11 assists",
-    "units": 0.8
-   },
-   "links": null,
-   "rank": null
-  },
-  {
-   "player": "Collin Gillespie",
-   "pid": "4278585",
-   "team": "PHX",
-   "opp": "UTA",
-   "home": false,
-   "game_id": "401909311",
-   "start": "2026-11-20T21:30:00-05:00",
-   "bet": "Over 3.5 assists",
-   "market": "assists",
-   "side": "over",
-   "line": 3.5,
-   "price": 115,
-   "price_at": "2026-11-20T17:30:00-05:00",
-   "read": "X240",
-   "p": 0.4788,
-   "p_pct": 48,
-   "breakeven": 0.4651,
-   "breakeven_pct": 47,
-   "market_fair": null,
-   "n_books": 8,
-   "gap_ev": null,
-   "final_ev": 0.0634,
-   "model_p": null,
-   "reason": "Pinnacle moved the over from +125 to -105 (42% to 48%). Hard Rock +115 is 2.9% better than Pinnacle's fair price.",
-   "rule": "pin_solo",
-   "pin_before": 0.4154,
-   "pin_after": 0.4788,
-   "pin_price_before": 125,
-   "pin_price_after": -105,
-   "others_move": 0.0153,
-   "n_others": 8,
-   "ev_vs_pin": 0.0294,
-   "window": "360 \u2192 240 min",
-   "gap_vs_pin": 0.0471,
-   "book": "hardrock",
-   "books": {
-    "hardrock": {
-     "ev_vs_pin": 0.0294,
-     "price": 115
-    }
-   },
-   "id": "2026-11-20:401909311:4278585:assists:3.5:over",
-   "state": "locked",
-   "state_label": "Locked",
-   "price_final": false,
-   "pulled": null,
-   "added_at": "2026-11-20T17:30:00-05:00",
-   "result": {
-    "result": "W",
-    "actual": "5 assists",
-    "units": 1.15
-   },
-   "links": null,
-   "rank": null
-  },
-  {
-   "player": "Kevin Durant",
-   "pid": "3202",
-   "team": "HOU",
-   "opp": "DEN",
-   "home": false,
-   "game_id": "401909312",
-   "start": "2026-11-20T22:00:00-05:00",
-   "bet": "Over 4.5 assists",
-   "market": "assists",
-   "side": "over",
-   "line": 4.5,
-   "price": 125,
-   "price_at": "2026-11-20T20:30:01-05:00",
-   "read": "B",
-   "p": 0.4542,
-   "p_pct": 45,
-   "breakeven": 0.4444,
-   "breakeven_pct": 44,
-   "market_fair": null,
-   "n_books": 7,
-   "gap_ev": null,
-   "final_ev": 0.0613,
-   "model_p": null,
-   "reason": "Pinnacle moved the over from +138 to +106 (39% to 45%). Hard Rock +125 is 2.2% better than Pinnacle's fair price; DraftKings +121 is 0.4% better than Pinnacle's fair price.",
-   "rule": "pin_solo",
-   "pin_before": 0.3929,
-   "pin_after": 0.4542,
-   "pin_price_before": 138,
-   "pin_price_after": 106,
-   "others_move": 0.0,
-   "n_others": 7,
-   "ev_vs_pin": 0.022,
-   "window": "135 \u2192 90 min",
-   "gap_vs_pin": 0.041,
-   "book": "hardrock",
-   "books": {
-    "draftkings": {
-     "ev_vs_pin": 0.0038,
-     "price": 121
-    },
-    "hardrock": {
-     "ev_vs_pin": 0.022,
-     "price": 125
-    }
-   },
-   "id": "2026-11-20:401909312:3202:assists:4.5:over",
-   "state": "clear",
-   "state_label": "Injury report clear",
-   "price_final": true,
-   "pulled": {
-    "at": "2026-11-20T20:50:01-05:00",
-    "reason": "Hard Rock took the line down",
-    "if_bet": "Got +125? Your bet still stands.",
-    "code": "line_gone",
-    "status": null
-   },
-   "added_at": "2026-11-20T20:30:01-05:00",
-   "result": {
-    "result": "L",
-    "actual": "4 assists",
-    "units": -1.0
-   },
-   "links": null,
-   "rank": null
-  },
-  {
-   "player": "James Harden",
-   "pid": "3992",
-   "team": "CLE",
-   "opp": "IND",
-   "home": true,
-   "game_id": "401909307",
-   "start": "2026-11-20T19:30:00-05:00",
-   "bet": "Under 17.5 points",
-   "market": "points",
-   "side": "under",
-   "line": 17.5,
-   "price": -110,
-   "price_at": "2026-11-20T19:00:01-05:00",
-   "read": "X30",
-   "p": 0.5399,
-   "p_pct": 54,
-   "breakeven": 0.5238,
-   "breakeven_pct": 52,
-   "market_fair": null,
-   "n_books": 6,
-   "gap_ev": null,
-   "final_ev": 0.0611,
-   "model_p": null,
-   "reason": "Pinnacle moved the under from -105 to -137 (48% to 54%). Hard Rock -110 is 3.1% better than Pinnacle's fair price.",
-   "rule": "pin_solo",
-   "pin_before": 0.4788,
-   "pin_after": 0.5399,
-   "pin_price_before": -105,
-   "pin_price_after": -137,
-   "others_move": 0.0048,
-   "n_others": 6,
-   "ev_vs_pin": 0.0307,
-   "window": "45 \u2192 30 min",
-   "gap_vs_pin": 0.0542,
-   "book": "hardrock",
-   "books": {
-    "hardrock": {
-     "ev_vs_pin": 0.0307,
-     "price": -110
-    }
-   },
-   "id": "2026-11-20:401909307:3992:points:17.5:under",
-   "state": "locked",
-   "state_label": "Locked",
-   "price_final": false,
-   "pulled": null,
-   "added_at": "2026-11-20T19:00:01-05:00",
-   "result": {
-    "result": "L",
-    "actual": "51 points",
-    "units": -1.0
-   },
-   "links": null,
-   "rank": null
-  },
-  {
-   "player": "Jared McCain",
-   "pid": "4683778",
-   "team": "OKC",
-   "opp": "NOP",
-   "home": true,
-   "game_id": "401909310",
-   "start": "2026-11-20T20:00:00-05:00",
-   "bet": "Over 3.5 rebounds",
-   "market": "rebounds",
-   "side": "over",
-   "line": 3.5,
-   "price": 115,
-   "price_at": "2026-11-20T18:50:00-05:00",
-   "read": "X75",
-   "p": 0.4747,
-   "p_pct": 47,
-   "breakeven": 0.4651,
-   "breakeven_pct": 47,
-   "market_fair": null,
-   "n_books": 8,
-   "gap_ev": null,
-   "final_ev": 0.0555,
-   "model_p": null,
-   "reason": "Pinnacle moved the over from +123 to -103 (42% to 47%). Hard Rock +115 is 2.1% better than Pinnacle's fair price.",
-   "rule": "pin_solo",
-   "pin_before": 0.4192,
-   "pin_after": 0.4747,
-   "pin_price_before": 123,
-   "pin_price_after": -103,
-   "others_move": 0.0,
-   "n_others": 8,
-   "ev_vs_pin": 0.0207,
-   "window": "90 \u2192 75 min",
-   "gap_vs_pin": 0.0423,
-   "book": "hardrock",
-   "books": {
-    "hardrock": {
-     "ev_vs_pin": 0.0207,
-     "price": 115
-    }
-   },
-   "id": "2026-11-20:401909310:4683778:rebounds:3.5:over",
-   "state": "locked",
-   "state_label": "Locked",
-   "price_final": false,
-   "pulled": null,
-   "added_at": "2026-11-20T18:50:00-05:00",
-   "result": {
-    "result": "L",
-    "actual": "3 rebounds",
-    "units": -1.0
-   },
-   "links": null,
-   "rank": null
-  },
-  {
-   "player": "Naz Reid",
-   "pid": "4396971",
-   "team": "CHA",
-   "opp": "ATL",
-   "home": false,
-   "game_id": "401909305",
-   "start": "2026-11-20T19:00:00-05:00",
-   "bet": "Over 18.5 points",
-   "market": "points",
-   "side": "over",
-   "line": 18.5,
-   "price": -120,
-   "price_at": "2026-11-20T15:00:00-05:00",
-   "read": "X240",
-   "p": 0.5504,
-   "p_pct": 55,
-   "breakeven": 0.5455,
-   "breakeven_pct": 55,
-   "market_fair": null,
-   "n_books": 8,
-   "gap_ev": null,
-   "final_ev": 0.0484,
-   "model_p": null,
-   "reason": "Pinnacle moved the over from -116 to -143 (50% to 55%). Hard Rock -120 is 0.9% better than Pinnacle's fair price; DraftKings -116 is 2.5% better than Pinnacle's fair price.",
-   "rule": "pin_solo",
-   "pin_before": 0.502,
-   "pin_after": 0.5504,
-   "pin_price_before": -116,
-   "pin_price_after": -143,
-   "others_move": 0.0071,
-   "n_others": 8,
-   "ev_vs_pin": 0.009,
-   "window": "360 \u2192 240 min",
-   "gap_vs_pin": 0.043,
-   "book": "hardrock",
-   "books": {
-    "draftkings": {
-     "ev_vs_pin": 0.0248,
-     "price": -116
-    },
-    "hardrock": {
-     "ev_vs_pin": 0.009,
-     "price": -120
-    }
-   },
-   "id": "2026-11-20:401909305:4396971:points:18.5:over",
-   "state": "locked",
-   "state_label": "Locked",
-   "price_final": false,
-   "pulled": null,
-   "added_at": "2026-11-20T15:00:00-05:00",
-   "result": {
-    "result": "L",
-    "actual": "12 points",
-    "units": -1.0
-   },
-   "links": null,
-   "rank": null
-  },
-  {
-   "player": "Collin Sexton",
-   "pid": "4277811",
-   "team": "LAL",
-   "opp": "SAC",
-   "home": true,
-   "game_id": "401909313",
-   "start": "2026-11-20T22:00:00-05:00",
-   "bet": "Under 13.5 points",
-   "market": "points",
-   "side": "under",
-   "line": 13.5,
-   "price": -115,
-   "price_at": "2026-11-20T16:00:01-05:00",
-   "read": "X360",
-   "p": 0.5371,
-   "p_pct": 54,
-   "breakeven": 0.5349,
-   "breakeven_pct": 53,
-   "market_fair": null,
-   "n_books": 6,
-   "gap_ev": null,
-   "final_ev": 0.0472,
-   "model_p": null,
-   "reason": "Pinnacle moved the under from -110 to -135 (49% to 54%). Hard Rock -115 is 0.4% better than Pinnacle's fair price; DraftKings -111 is 2.1% better than Pinnacle's fair price.",
-   "rule": "pin_solo",
-   "pin_before": 0.4899,
-   "pin_after": 0.5371,
-   "pin_price_before": -110,
-   "pin_price_after": -135,
-   "others_move": 0.0244,
-   "n_others": 6,
-   "ev_vs_pin": 0.0042,
-   "window": "11 AM \u2192 360 min",
-   "gap_vs_pin": 0.0396,
-   "book": "hardrock",
-   "books": {
-    "draftkings": {
-     "ev_vs_pin": 0.021,
-     "price": -111
-    },
-    "hardrock": {
-     "ev_vs_pin": 0.0042,
-     "price": -115
-    }
-   },
-   "id": "2026-11-20:401909313:4277811:points:13.5:under",
-   "state": "locked",
-   "state_label": "Locked",
-   "price_final": false,
-   "pulled": null,
-   "added_at": "2026-11-20T16:00:01-05:00",
-   "result": {
-    "result": "W",
-    "actual": "10 points",
-    "units": 0.8696
-   },
-   "links": null,
-   "rank": null
-  },
-  {
-   "player": "Josh Giddey",
-   "pid": "4871145",
-   "team": "CHI",
-   "opp": "WAS",
-   "home": true,
-   "game_id": "401909309",
-   "start": "2026-11-20T20:00:00-05:00",
-   "bet": "Over 1.5 threes",
-   "market": "threes",
-   "side": "over",
-   "line": 1.5,
-   "price": 115,
-   "price_at": "2026-11-20T14:00:01-05:00",
-   "read": "X360",
-   "p": 0.4677,
-   "p_pct": 47,
-   "breakeven": 0.4651,
-   "breakeven_pct": 47,
-   "market_fair": null,
-   "n_books": 8,
-   "gap_ev": null,
-   "final_ev": 0.0394,
-   "model_p": null,
-   "reason": "Pinnacle moved the over from +118 to +100 (43% to 47%). Hard Rock +115 is 0.6% better than Pinnacle's fair price; DraftKings +124 is 4.8% better than Pinnacle's fair price.",
-   "rule": "pin_solo",
-   "pin_before": 0.4283,
-   "pin_after": 0.4677,
-   "pin_price_before": 118,
-   "pin_price_after": 100,
-   "others_move": 0.0218,
-   "n_others": 8,
-   "ev_vs_pin": 0.0056,
-   "window": "11 AM \u2192 360 min",
-   "gap_vs_pin": 0.0349,
-   "book": "hardrock",
-   "books": {
-    "draftkings": {
-     "ev_vs_pin": 0.0477,
-     "price": 124
-    },
-    "hardrock": {
-     "ev_vs_pin": 0.0056,
-     "price": 115
-    }
-   },
-   "id": "2026-11-20:401909309:4871145:threes:1.5:over",
-   "state": "locked",
-   "state_label": "Locked",
-   "price_final": false,
-   "pulled": null,
-   "added_at": "2026-11-20T14:00:01-05:00",
-   "result": {
-    "result": "L",
-    "actual": "0 threes",
-    "units": -1.0
-   },
-   "links": null,
-   "rank": null
-  },
-  {
-   "player": "Franz Wagner",
-   "pid": "4566434",
-   "team": "ORL",
-   "opp": "BKN",
-   "home": false,
-   "game_id": "401909306",
-   "start": "2026-11-20T19:30:00-05:00",
-   "bet": "Under 24.5 points",
-   "market": "points",
-   "side": "under",
-   "line": 24.5,
-   "price": -110,
-   "price_at": "2026-11-20T13:30:00-05:00",
-   "read": "X360",
-   "p": 0.5273,
-   "p_pct": 53,
-   "breakeven": 0.5238,
-   "breakeven_pct": 52,
-   "market_fair": null,
-   "n_books": 6,
-   "gap_ev": null,
-   "final_ev": 0.0334,
-   "model_p": null,
-   "reason": "Pinnacle moved the under from -112 to -129 (49% to 53%). Hard Rock -110 is 0.7% better than Pinnacle's fair price.",
-   "rule": "pin_solo",
-   "pin_before": 0.4939,
-   "pin_after": 0.5273,
-   "pin_price_before": -112,
-   "pin_price_after": -129,
-   "others_move": -0.0021,
-   "n_others": 6,
-   "ev_vs_pin": 0.0067,
-   "window": "11 AM \u2192 360 min",
-   "gap_vs_pin": 0.0395,
-   "book": "hardrock",
-   "books": {
-    "hardrock": {
-     "ev_vs_pin": 0.0067,
-     "price": -110
-    }
-   },
-   "id": "2026-11-20:401909306:4566434:points:24.5:under",
-   "state": "locked",
-   "state_label": "Locked",
-   "price_final": false,
-   "pulled": null,
-   "added_at": "2026-11-20T13:30:00-05:00",
-   "result": {
-    "result": "L",
-    "actual": "35 points",
-    "units": -1.0
-   },
-   "links": null,
-   "rank": null
-  },
-  {
-   "player": "Walker Kessler",
-   "pid": "4433136",
-   "team": "LAL",
-   "opp": "SAC",
-   "home": true,
-   "game_id": "401909313",
-   "start": "2026-11-20T22:00:00-05:00",
-   "bet": "Over 10.5 rebounds",
-   "market": "rebounds",
-   "side": "over",
-   "line": 10.5,
-   "price": -120,
-   "price_at": "2026-11-20T20:30:01-05:00",
-   "read": "B",
-   "p": 0.553,
-   "p_pct": 55,
-   "breakeven": 0.5455,
-   "breakeven_pct": 55,
-   "market_fair": null,
-   "n_books": 7,
-   "gap_ev": null,
-   "final_ev": 0.0318,
-   "model_p": null,
-   "reason": "Pinnacle moved the over from -126 to -145 (52% to 55%). Hard Rock -120 is 1.4% better than Pinnacle's fair price; DraftKings -103 is 9.0% better than Pinnacle's fair price.",
-   "rule": "pin_solo",
-   "pin_before": 0.5212,
-   "pin_after": 0.553,
-   "pin_price_before": -126,
-   "pin_price_after": -145,
-   "others_move": 0.0,
-   "n_others": 7,
-   "ev_vs_pin": 0.0138,
-   "window": "135 \u2192 90 min",
-   "gap_vs_pin": 0.0464,
-   "book": "hardrock",
-   "books": {
-    "draftkings": {
-     "ev_vs_pin": 0.0898,
-     "price": -103
-    },
-    "hardrock": {
-     "ev_vs_pin": 0.0138,
-     "price": -120
-    }
-   },
-   "id": "2026-11-20:401909313:4433136:rebounds:10.5:over",
-   "state": "locked",
-   "state_label": "Locked",
-   "price_final": false,
-   "pulled": null,
-   "added_at": "2026-11-20T20:30:01-05:00",
-   "result": {
-    "result": "L",
-    "actual": "7 rebounds",
-    "units": -1.0
-   },
-   "links": null,
-   "rank": null
-  },
-  {
-   "player": "Anthony Black",
-   "pid": "4712849",
-   "team": "ORL",
-   "opp": "BKN",
-   "home": false,
-   "game_id": "401909306",
-   "start": "2026-11-20T19:30:00-05:00",
-   "bet": "Over 4.5 rebounds",
-   "market": "rebounds",
-   "side": "over",
-   "line": 4.5,
-   "price": 110,
-   "price_at": "2026-11-20T16:30:01-05:00",
-   "read": "X180",
-   "p": 0.4858,
-   "p_pct": 49,
-   "breakeven": 0.4762,
-   "breakeven_pct": 48,
-   "market_fair": null,
-   "n_books": 8,
-   "gap_ev": null,
-   "final_ev": 0.0277,
-   "model_p": null,
-   "reason": "Pinnacle moved the over from +104 to -108 (46% to 49%). Hard Rock +110 is 2.0% better than Pinnacle's fair price.",
-   "rule": "pin_solo",
-   "pin_before": 0.4581,
-   "pin_after": 0.4858,
-   "pin_price_before": 104,
-   "pin_price_after": -108,
-   "others_move": -0.0011,
-   "n_others": 8,
-   "ev_vs_pin": 0.0202,
-   "window": "240 \u2192 180 min",
-   "gap_vs_pin": 0.043,
-   "book": "hardrock",
-   "books": {
-    "hardrock": {
-     "ev_vs_pin": 0.0202,
-     "price": 110
-    }
-   },
-   "id": "2026-11-20:401909306:4712849:rebounds:4.5:over",
-   "state": "locked",
-   "state_label": "Locked",
-   "price_final": false,
-   "pulled": null,
-   "added_at": "2026-11-20T16:30:01-05:00",
-   "result": {
-    "result": "W",
-    "actual": "7 rebounds",
-    "units": 1.1
-   },
-   "links": null,
-   "rank": null
-  }
- ],
+ "picks": [],
  "empty": {
-  "text": "No open picks right now",
-  "why": "Every game has started.",
-  "next": null
+  "text": "No picks yet today",
+  "why": "No prices read yet. The first close look is 90 minutes before each tip.",
+  "next": "2026-11-21T07:00:00-05:00"
  },
  "counts": {
-  "lines_read": 894,
-  "passing": 29,
-  "games": 9
+  "lines_read": 0,
+  "passing": 0,
+  "games": 6
  },
  "safety_paused": false,
  "ui": {
@@ -1303,6 +200,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-21T00:40:00-05:00",
- "status_at": "2026-11-21T04:30:01-05:00"
+ "generated_at": "2026-11-21T05:00:00-05:00",
+ "status_at": "2026-11-21T05:00:00-05:00"
 }
