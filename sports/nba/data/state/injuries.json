@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T15:43:02-05:00",
+ "at": "2026-11-21T16:00:00-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -43,19 +43,26 @@
    "date": "2026-09-21T19:50Z",
    "note": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday."
   },
-  "4065648": {
-   "status": "day-to-day",
-   "name": "Jayson Tatum",
+  "4351852": {
+   "status": "out",
+   "name": "Mitchell Robinson",
    "team": "BOS",
-   "date": "2026-11-21T01:07Z",
-   "note": "Tatum (rest) is listed as questionable for Saturday's game against Sacramento."
+   "date": "2026-11-21T20:55Z",
+   "note": "Robinson (illness) has been ruled out for Saturday's game against the Kings, Keith Smith of Spotrac.com reports."
   },
   "3078576": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Derrick White",
    "team": "BOS",
-   "date": "2026-11-21T01:00Z",
-   "note": "White (shoulder) is questionable to play in Saturday's game against Sacramento."
+   "date": "2026-11-21T20:53Z",
+   "note": "White (shoulder) has been ruled out for Saturday's game against Sacramento."
+  },
+  "4065648": {
+   "status": "out",
+   "name": "Jayson Tatum",
+   "team": "BOS",
+   "date": "2026-11-21T20:51Z",
+   "note": "Tatum (rest) has been ruled out for Saturday's game against the Kings."
   },
   "5279130": {
    "status": "day-to-day",
