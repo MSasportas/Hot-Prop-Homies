@@ -2,12 +2,12 @@
  "slate": "2026-11-21",
  "teams": {
   "MIL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
-    "Brayden Burries",
+    "Ryan Rollins",
     "Tyler Herro",
+    "Jaime Jaquez",
     "Kyle Kuzma",
-    "Jericho Sims",
     "Myles Turner"
    ],
    "status": {
@@ -15,7 +15,7 @@
    }
   },
   "PHI": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Tyrese Maxey",
     "VJ Edgecombe",
@@ -189,5 +189,5 @@
    }
   }
  },
- "at": "2026-11-21T12:30:01-05:00"
+ "at": "2026-11-21T12:40:02-05:00"
 }
