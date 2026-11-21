@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 1896,
+   "pool_left": 1888,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-20T21:30:00-05:00",
-  "last_read_at": "2026-11-20T21:20:00-05:00",
+  "next_read_at": "2026-11-20T21:40:00-05:00",
+  "last_read_at": "2026-11-20T21:30:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-20T21:22:30-05:00"
+   "at": "2026-11-20T21:30:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-20T21:22:30-05:00",
+    "at": "2026-11-20T21:30:01-05:00",
     "confirmed": [
      "ATL",
      "BKN",
@@ -123,7 +123,7 @@
    "away": "ORL",
    "home": "BKN",
    "state": "in",
-   "detail": "3:45 - 3rd",
+   "detail": "1:14 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -179,7 +179,7 @@
    "paused": false,
    "injury_clear": {
     "away": true,
-    "home": false
+    "home": true
    }
   },
   {
@@ -188,7 +188,7 @@
    "away": "IND",
    "home": "CLE",
    "state": "in",
-   "detail": "End of 3rd",
+   "detail": "8:35 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -253,7 +253,7 @@
    "away": "TOR",
    "home": "DET",
    "state": "in",
-   "detail": "1:57 - 3rd",
+   "detail": "11:57 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -318,7 +318,7 @@
    "away": "WAS",
    "home": "CHI",
    "state": "in",
-   "detail": "10:54 - 3rd",
+   "detail": "7:37 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -383,7 +383,7 @@
    "away": "NOP",
    "home": "OKC",
    "state": "in",
-   "detail": "10:40 - 3rd",
+   "detail": "7:11 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -518,7 +518,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-20T21:20:00-05:00",
+   "read_at": "2026-11-20T21:30:01-05:00",
    "picks": 0,
    "checks": [
     {
@@ -552,12 +552,16 @@
     {
      "read": "C",
      "at": "2026-11-20T21:20:00-05:00"
+    },
+    {
+     "read": "X30",
+     "at": "2026-11-20T21:30:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-20T21:20:00-05:00",
+   "last_check_at": "2026-11-20T21:30:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-20T21:30:00-05:00",
-   "next_check_read": "X30",
+   "next_check_at": "2026-11-20T21:40:00-05:00",
+   "next_check_read": "D",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -575,7 +579,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-20T21:20:00-05:00",
+   "read_at": "2026-11-20T21:30:01-05:00",
    "picks": 2,
    "checks": [
     {
@@ -609,12 +613,16 @@
     {
      "read": "C",
      "at": "2026-11-20T21:20:00-05:00"
+    },
+    {
+     "read": "X30",
+     "at": "2026-11-20T21:30:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-20T21:20:00-05:00",
+   "last_check_at": "2026-11-20T21:30:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-20T21:30:00-05:00",
-   "next_check_read": "X30",
+   "next_check_at": "2026-11-20T21:40:00-05:00",
+   "next_check_read": "D",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -718,25 +726,14 @@
     }
    },
    "id": "2026-11-20:401909311:4278585:assists:3.5:over",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "added_at": "2026-11-20T17:30:00-05:00",
    "result": null,
-   "links": {
-    "hardrock": {
-     "id": "4750487148092850610",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/4750487148092850610",
-     "price": 115
-    },
-    "draftkings": {
-     "url": "https://sportsbook.draftkings.com/?outcomes=0QA390963233%232373224728_13L42648Q1-1851975937Q20",
-     "price": 107,
-     "qualifies": false
-    }
-   },
-   "rank": 1
+   "links": null,
+   "rank": null
   },
   {
    "player": "Kevin Durant",
@@ -1029,7 +1026,7 @@
      "qualifies": true
     }
    },
-   "rank": 2
+   "rank": 1
   },
   {
    "player": "Josh Giddey",
@@ -1204,7 +1201,7 @@
      "qualifies": true
     }
    },
-   "rank": 3
+   "rank": 2
   },
   {
    "player": "Anthony Black",
@@ -1272,6 +1269,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-20T21:22:30-05:00",
- "status_at": "2026-11-20T21:22:30-05:00"
+ "generated_at": "2026-11-20T21:30:01-05:00",
+ "status_at": "2026-11-20T21:30:01-05:00"
 }
