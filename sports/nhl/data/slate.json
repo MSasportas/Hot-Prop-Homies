@@ -1,38 +1,42 @@
 {
  "slate_date": "2026-11-21",
- "generated_at": "2026-11-21T18:10:01-05:00",
- "status_at": "2026-11-21T18:10:01-05:00",
+ "generated_at": "2026-11-21T18:20:01-05:00",
+ "status_at": "2026-11-21T18:20:01-05:00",
  "valid_until": "2026-11-22T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
-  "prices_at": "2026-11-21T17:30:00-05:00",
-  "next_price_read_at": "2026-11-21T18:15:00-05:00",
+  "prices_at": "2026-11-21T18:20:01-05:00",
+  "next_price_read_at": "2026-11-21T19:30:00-05:00",
   "stats_built_at": "2026-11-21T17:00:01-05:00",
   "stats_through": "2026-11-21",
-  "lineups_at": "2026-11-21T18:10:01-05:00",
+  "lineups_at": "2026-11-21T18:20:01-05:00",
   "goalies_at": null,
   "lineups_note": "Lineups posted for 13 of 24 teams checked so far.",
   "lineups_state": "ok",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-21T18:10:01-05:00",
+   "at": "2026-11-21T18:20:01-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 2603,
+   "pulls_left": 2586,
    "keys": 9,
    "game_days_left": 9,
    "days_left": 10,
    "low": false
   },
   "excluded_teams": [],
-  "lines_checked": 177,
+  "lines_checked": 176,
   "flag_reads": 11,
   "tier": 4
  },
  "banners": [],
- "empty": null,
+ "empty": {
+  "code": "none_qualified",
+  "text": "No picks yet today",
+  "sub": "176 lines read, none cleared both checks. Next read at 7:30 PM."
+ },
  "games": [
   {
    "id": 2026020359,
@@ -246,19 +250,20 @@
      {
       "pull": "B",
       "at": "2026-11-21T17:30:00-05:00"
+     },
+     {
+      "pull": "C",
+      "at": "2026-11-21T18:20:01-05:00"
      }
     ],
-    "next_read": {
-     "pull": "C",
-     "at": "2026-11-21T18:15:00-05:00"
-    },
+    "next_read": null,
     "lineups_at": {
      "away": null,
      "home": null
     }
    },
    "started": false,
-   "reads_done": false,
+   "reads_done": true,
    "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
@@ -291,19 +296,20 @@
      {
       "pull": "B",
       "at": "2026-11-21T17:30:00-05:00"
+     },
+     {
+      "pull": "C",
+      "at": "2026-11-21T18:20:01-05:00"
      }
     ],
-    "next_read": {
-     "pull": "C",
-     "at": "2026-11-21T18:15:00-05:00"
-    },
+    "next_read": null,
     "lineups_at": {
      "away": "2026-11-21T16:00:01-05:00",
      "home": "2026-11-21T16:00:01-05:00"
     }
    },
    "started": false,
-   "reads_done": false,
+   "reads_done": true,
    "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
@@ -336,20 +342,21 @@
      {
       "pull": "B",
       "at": "2026-11-21T17:30:00-05:00"
+     },
+     {
+      "pull": "C",
+      "at": "2026-11-21T18:20:01-05:00"
      }
     ],
-    "next_read": {
-     "pull": "C",
-     "at": "2026-11-21T18:15:00-05:00"
-    },
+    "next_read": null,
     "lineups_at": {
      "away": "2026-11-21T16:00:01-05:00",
      "home": null
     }
    },
    "started": false,
-   "reads_done": false,
-   "picks": 1,
+   "reads_done": true,
+   "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
   },
@@ -381,19 +388,20 @@
      {
       "pull": "B",
       "at": "2026-11-21T17:30:00-05:00"
+     },
+     {
+      "pull": "C",
+      "at": "2026-11-21T18:20:01-05:00"
      }
     ],
-    "next_read": {
-     "pull": "C",
-     "at": "2026-11-21T18:15:00-05:00"
-    },
+    "next_read": null,
     "lineups_at": {
      "away": "2026-11-21T16:00:01-05:00",
      "home": "2026-11-21T16:00:01-05:00"
     }
    },
    "started": false,
-   "reads_done": false,
+   "reads_done": true,
    "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
@@ -426,19 +434,20 @@
      {
       "pull": "B",
       "at": "2026-11-21T17:30:00-05:00"
+     },
+     {
+      "pull": "C",
+      "at": "2026-11-21T18:20:01-05:00"
      }
     ],
-    "next_read": {
-     "pull": "C",
-     "at": "2026-11-21T18:15:00-05:00"
-    },
+    "next_read": null,
     "lineups_at": {
      "away": "2026-11-21T16:00:01-05:00",
      "home": null
     }
    },
    "started": false,
-   "reads_done": false,
+   "reads_done": true,
    "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
@@ -471,19 +480,20 @@
      {
       "pull": "B",
       "at": "2026-11-21T17:30:00-05:00"
+     },
+     {
+      "pull": "C",
+      "at": "2026-11-21T18:20:01-05:00"
      }
     ],
-    "next_read": {
-     "pull": "C",
-     "at": "2026-11-21T18:15:00-05:00"
-    },
+    "next_read": null,
     "lineups_at": {
      "away": null,
      "home": "2026-11-21T16:00:01-05:00"
     }
    },
    "started": false,
-   "reads_done": false,
+   "reads_done": true,
    "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
@@ -516,19 +526,20 @@
      {
       "pull": "B",
       "at": "2026-11-21T17:30:00-05:00"
+     },
+     {
+      "pull": "C",
+      "at": "2026-11-21T18:20:01-05:00"
      }
     ],
-    "next_read": {
-     "pull": "C",
-     "at": "2026-11-21T18:15:00-05:00"
-    },
+    "next_read": null,
     "lineups_at": {
      "away": null,
      "home": "2026-11-21T16:00:01-05:00"
     }
    },
    "started": false,
-   "reads_done": false,
+   "reads_done": true,
    "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
@@ -673,6 +684,10 @@
     {
      "at": "2026-11-21T17:30:00-05:00",
      "text": "Lineup confirmed"
+    },
+    {
+     "at": "2026-11-21T18:20:01-05:00",
+     "text": "Pulled: Hard Rock moved it to -120"
     }
    ],
    "prices": [
@@ -681,10 +696,15 @@
      "price": 120
     }
    ],
-   "pulled": null,
+   "pulled": {
+    "at": "2026-11-21T18:20:01-05:00",
+    "reason": "Hard Rock moved it to -120",
+    "if_bet": "Got +120? Still a good bet. Don't bet it at -120.",
+    "code": "gap_gone"
+   },
    "price_final": false,
    "graded": null,
-   "rank": 1,
+   "rank": null,
    "tier": "main",
    "game_id": 2026020365,
    "player": "T. Zegras",

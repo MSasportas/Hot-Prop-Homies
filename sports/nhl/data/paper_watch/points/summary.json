@@ -2,7 +2,7 @@
  "version": 1,
  "note": "Behind the scenes: research only. Not picks, not on the Record, never sent to Discord.",
  "market": "points",
- "generated_at": "2026-11-21T18:10:01-05:00",
+ "generated_at": "2026-11-21T18:20:01-05:00",
  "slate": "2026-11-21",
  "active": true,
  "window": {
@@ -37,11 +37,15 @@
     "settled": "Goalie confirmed",
     "frozen_settled": "Goalie confirmed",
     "move30_pct": null,
-    "pulled": null,
+    "pulled": {
+     "reason": "price moved, gap gone",
+     "detail": "gap -11.9% at -120",
+     "at": "2026-11-21T18:20:01-05:00"
+    },
     "locked": false,
-    "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "state": "pulled",
+    "close_fair_pct": 48.1,
+    "clv_pct": 5.7,
     "result": null,
     "units": null
    }
@@ -76,8 +80,8 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "close_fair_pct": 41.6,
+    "clv_pct": 4.0,
     "result": null,
     "units": null
    },
@@ -110,8 +114,8 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "close_fair_pct": 57.3,
+    "clv_pct": 3.1,
     "result": null,
     "units": null
    },
@@ -144,8 +148,8 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "close_fair_pct": 37.7,
+    "clv_pct": 3.8,
     "result": null,
     "units": null
    }
@@ -2347,7 +2351,7 @@
   }
  ],
  "nov2": {
-  "gaps_measured": 55,
+  "gaps_measured": 59,
   "gaps_logged": 65,
   "graded_picks": 44,
   "w": 25,
@@ -2356,25 +2360,25 @@
   "units": 13.968181818181817,
   "wins_z": 1.282011760212224,
   "clv_gaps": {
-   "n": 55,
-   "mean": 0.045003443088426937,
-   "lb80": 0.04187110724658336,
+   "n": 59,
+   "mean": 0.04477145706809375,
+   "lb80": 0.04169896075813045,
    "pos_share": 1.0
   },
   "clv_flags": {
-   "n": 42,
-   "mean": 0.04593181768596686,
-   "lb80": 0.04252999617831588,
+   "n": 43,
+   "mean": 0.046199818348810436,
+   "lb80": 0.042833742437361856,
    "pos_share": 1.0
   },
   "clv_vetoed": {
-   "n": 13,
-   "mean": 0.042004079004067184,
-   "lb80": 0.03542139946090402,
+   "n": 16,
+   "mean": 0.04093273612616766,
+   "lb80": 0.0354921591760332,
    "pos_share": 1.0
   },
-  "clv_passed_mean": 0.04593181768596686,
-  "clv_vetoed_mean": 0.042004079004067184,
+  "clv_passed_mean": 0.046199818348810436,
+  "clv_vetoed_mean": 0.04093273612616766,
   "nights": 24,
   "nights_with_flags": 15,
   "population_slope": null,

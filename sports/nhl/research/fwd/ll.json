@@ -1,6 +1,6 @@
 {
  "LL1f-follow": {
-  "bets": 519,
+  "bets": 572,
   "graded": 505,
   "w": 258,
   "units": -37.409,
@@ -10,13 +10,13 @@
    0.0057
   ],
   "p_one_sided": 0.932,
-  "mean_ev": -0.0793,
-  "mean_clv": -0.0795,
+  "mean_ev": -0.0801,
+  "mean_clv": -0.0803,
   "games": 70,
   "candidate": false
  },
  "LL1f-fade": {
-  "bets": 526,
+  "bets": 580,
   "graded": 512,
   "w": 249,
   "units": -38.811,
@@ -26,8 +26,8 @@
    0.0065
   ],
   "p_one_sided": 0.934,
-  "mean_ev": -0.0771,
-  "mean_clv": -0.0771,
+  "mean_ev": -0.0765,
+  "mean_clv": -0.0765,
   "games": 70,
   "candidate": false
  },
@@ -43,12 +43,12 @@
   ],
   "p_one_sided": 0.1765,
   "mean_ev": 0.0323,
-  "mean_clv": 0.0309,
+  "mean_clv": 0.0308,
   "games": 68,
   "candidate": false
  },
  "LL3b loose": {
-  "bets": 68,
+  "bets": 70,
   "graded": 66,
   "w": 39,
   "units": 13.348,
@@ -58,13 +58,13 @@
    0.4251
   ],
   "p_one_sided": 0.0755,
-  "mean_ev": 0.0299,
-  "mean_clv": 0.0288,
+  "mean_ev": 0.0296,
+  "mean_clv": 0.0285,
   "games": 46,
   "candidate": false
  },
  "LL4a fade": {
-  "bets": 165,
+  "bets": 166,
   "graded": 149,
   "w": 82,
   "units": 7.737,
@@ -74,13 +74,13 @@
    0.1901
   ],
   "p_one_sided": 0.271,
-  "mean_ev": -0.0705,
-  "mean_clv": -0.0714,
+  "mean_ev": -0.0704,
+  "mean_clv": -0.0715,
   "games": 60,
   "candidate": false
  },
  "LL4b follow": {
-  "bets": 164,
+  "bets": 165,
   "graded": 148,
   "w": 66,
   "units": -30.82,
@@ -90,13 +90,13 @@
    -0.0806
   ],
   "p_one_sided": 0.998,
-  "mean_ev": -0.0952,
-  "mean_clv": -0.0944,
+  "mean_ev": -0.0951,
+  "mean_clv": -0.0941,
   "games": 60,
   "candidate": false
  },
  "LL5 exch": {
-  "bets": 219,
+  "bets": 222,
   "graded": 209,
   "w": 117,
   "units": 20.133,
@@ -106,8 +106,8 @@
    0.1997
   ],
   "p_one_sided": 0.0705,
-  "mean_ev": 0.043,
-  "mean_clv": 0.023,
+  "mean_ev": 0.0428,
+  "mean_clv": 0.0226,
   "games": 69,
   "candidate": false
  },
@@ -123,7 +123,7 @@
   ],
   "p_one_sided": 0.5405,
   "mean_ev": -0.0123,
-  "mean_clv": -0.0118,
+  "mean_clv": -0.011,
   "games": 59,
   "candidate": false
  }

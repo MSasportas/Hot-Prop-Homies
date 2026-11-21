@@ -1,24 +1,24 @@
 {
  "LL1f-fade": {
-  "clv": -0.0771,
+  "clv": -0.0765,
   "l": 263,
-  "pending": 14,
+  "pending": 68,
   "push": 0,
   "units": -38.81,
   "void": 0,
   "w": 249
  },
  "LL1f-follow": {
-  "clv": -0.0795,
+  "clv": -0.0803,
   "l": 247,
-  "pending": 14,
+  "pending": 67,
   "push": 0,
   "units": -37.41,
   "void": 0,
   "w": 258
  },
  "LL3a tight": {
-  "clv": 0.0309,
+  "clv": 0.0308,
   "l": 60,
   "pending": 3,
   "push": 0,
@@ -27,43 +27,43 @@
   "w": 68
  },
  "LL3b loose": {
-  "clv": 0.0288,
+  "clv": 0.0285,
   "l": 27,
-  "pending": 2,
+  "pending": 4,
   "push": 0,
   "units": 13.35,
   "void": 0,
   "w": 39
  },
  "LL4a fade": {
-  "clv": -0.0714,
+  "clv": -0.0715,
   "l": 67,
-  "pending": 16,
+  "pending": 17,
   "push": 0,
   "units": 7.74,
   "void": 0,
   "w": 82
  },
  "LL4b follow": {
-  "clv": -0.0944,
+  "clv": -0.0941,
   "l": 82,
-  "pending": 16,
+  "pending": 17,
   "push": 0,
   "units": -30.82,
   "void": 0,
   "w": 66
  },
  "LL5 exch": {
-  "clv": 0.023,
+  "clv": 0.0226,
   "l": 92,
-  "pending": 10,
+  "pending": 13,
   "push": 0,
   "units": 20.13,
   "void": 0,
   "w": 117
  },
  "LL6 line": {
-  "clv": -0.0118,
+  "clv": -0.011,
   "l": 36,
   "pending": 11,
   "push": 0,
@@ -72,27 +72,27 @@
   "w": 63
  },
  "MM2a split": {
-  "clv": -0.0192,
+  "clv": -0.0177,
   "l": 8,
-  "pending": 4,
+  "pending": 5,
   "push": 0,
   "units": -4.98,
   "void": 0,
   "w": 4
  },
  "MM2b split 2%": {
-  "clv": -0.0062,
+  "clv": -0.0044,
   "l": 5,
-  "pending": 3,
+  "pending": 4,
   "push": 0,
   "units": -3.49,
   "void": 0,
   "w": 2
  },
  "MM3a persist": {
-  "clv": 0.0335,
+  "clv": 0.0331,
   "l": 44,
-  "pending": 2,
+  "pending": 5,
   "push": 0,
   "units": 4.34,
   "void": 0,
@@ -108,27 +108,27 @@
   "w": 1
  },
  "MM4 total": {
-  "clv": -0.1166,
+  "clv": -0.1223,
   "l": 6,
-  "pending": 0,
+  "pending": 2,
   "push": 0,
   "units": -0.07,
   "void": 0,
   "w": 7
  },
  "MM5a follow": {
-  "clv": -0.0875,
+  "clv": -0.0885,
   "l": 40,
-  "pending": 0,
+  "pending": 3,
   "push": 0,
   "units": -18.17,
   "void": 0,
   "w": 16
  },
  "MM5b fade": {
-  "clv": -0.0667,
+  "clv": -0.0674,
   "l": 15,
-  "pending": 0,
+  "pending": 2,
   "push": 0,
   "units": 7.6,
   "void": 0,
@@ -181,6 +181,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-21T22:30:22+00:00",
+ "updated_at": "2026-11-21T23:20:16+00:00",
  "version": 1
 }
