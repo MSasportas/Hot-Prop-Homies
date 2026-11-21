@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-21T15:30:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-21T15:30:01-05:00"
+   "at": "2026-11-21T15:40:02-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -45,8 +45,8 @@
    "start": "2026-11-21T13:00:00-05:00",
    "away": "MIL",
    "home": "PHI",
-   "state": "in",
-   "detail": "4.8 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -297,7 +297,11 @@
     "status": null
    },
    "added_at": "2026-11-21T12:00:01-05:00",
-   "result": null,
+   "result": {
+    "result": "L",
+    "actual": "18 points",
+    "units": -1.0
+   },
    "links": null,
    "rank": null
   }
@@ -319,6 +323,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-21T15:30:01-05:00",
- "status_at": "2026-11-21T15:30:01-05:00"
+ "generated_at": "2026-11-21T15:40:02-05:00",
+ "status_at": "2026-11-21T15:40:02-05:00"
 }
