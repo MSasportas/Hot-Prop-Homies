@@ -83,12 +83,12 @@
     "Kyrie Irving",
     "Caleb Martin",
     "Cooper Flagg",
-    "P.J. Washington",
+    "Naji Marshall",
     "Daniel Gafford"
    ],
    "status": {
-    "P.J. Washington": "questionable",
     "Walter Clayton": "questionable",
+    "P.J. Washington": "doubtful",
     "Tarik Biberovic": "out",
     "Sergio de Larrea": "out",
     "Tobi Lawal": "out",
@@ -105,7 +105,6 @@
     "Zach Edey"
    ],
    "status": {
-    "Ty Jerome": "probable",
     "Cameron Boozer": "out",
     "Jerami Grant": "out",
     "GG Jackson": "out",
@@ -123,6 +122,7 @@
     "Rudy Gobert"
    ],
    "status": {
+    "Isaiah Evans": "questionable",
     "Jaylen Clark": "out",
     "Donte DiVincenzo": "out",
     "Anthony Edwards": "out"
@@ -140,6 +140,7 @@
    "status": {
     "Bennedict Mathurin": "out",
     "Bryce McGowens": "out",
+    "Trey Murphy": "out",
     "Dejounte Murray": "out",
     "Trendon Watford": "out"
    }
@@ -162,15 +163,16 @@
   "BOS": {
    "state": "expected",
    "starters": [
-    "Derrick White",
+    "Payton Pritchard",
     "Jordan Walsh",
-    "Jayson Tatum",
+    "Baylor Scheierman",
     "Paul George",
     "Neemias Queta"
    ],
    "status": {
-    "Derrick White": "questionable",
-    "Jayson Tatum": "questionable"
+    "Mitchell Robinson": "out",
+    "Jayson Tatum": "out",
+    "Derrick White": "out"
    }
   },
   "SAC": {
@@ -189,5 +191,5 @@
    }
   }
  },
- "at": "2026-11-21T12:50:00-05:00"
+ "at": "2026-11-21T16:30:00-05:00"
 }
