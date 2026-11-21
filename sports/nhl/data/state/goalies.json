@@ -95,7 +95,7 @@
   },
   "ANA": {
    "name": "Ville Husso",
-   "status": "expected"
+   "status": "confirmed"
   },
   "SJS": {
    "name": "Alex Nedeljkovic",
@@ -114,5 +114,5 @@
    "status": "confirmed"
   }
  },
- "checked_at": "2026-11-21T14:20:00-05:00"
+ "checked_at": "2026-11-21T14:50:00-05:00"
 }
