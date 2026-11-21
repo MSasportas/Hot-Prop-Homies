@@ -22,15 +22,15 @@
    "status": "expected"
   },
   "PIT": {
-   "name": "Arturs Silovs",
+   "name": "Sergei Murashov",
    "status": "expected"
   },
   "FLA": {
-   "name": "Jacob Markstrom",
+   "name": "Akira Schmid",
    "status": "expected"
   },
   "BUF": {
-   "name": "Ukko-Pekka Luukkonen",
+   "name": "Alex Lyon",
    "status": "expected"
   },
   "STL": {
@@ -50,7 +50,7 @@
    "status": "expected"
   },
   "TOR": {
-   "name": "Anthony Stolarz",
+   "name": "Sergei Bobrovsky",
    "status": "expected"
   },
   "CBJ": {
@@ -66,11 +66,11 @@
    "status": "expected"
   },
   "OTT": {
-   "name": "Samuel Ersson",
+   "name": "Linus Ullmark",
    "status": "expected"
   },
   "LAK": {
-   "name": "Darcy Kuemper",
+   "name": "Anton Forsberg",
    "status": "expected"
   },
   "WPG": {
@@ -82,7 +82,7 @@
    "status": "expected"
   },
   "MTL": {
-   "name": "Jakub Dobes",
+   "name": "Jacob Fowler",
    "status": "expected"
   },
   "PHI": {
@@ -90,7 +90,7 @@
    "status": "expected"
   },
   "UTA": {
-   "name": "Karel Vejmelka",
+   "name": "Sebastian Cossa",
    "status": "expected"
   },
   "ANA": {
@@ -114,5 +114,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-21T05:00:01-05:00"
+ "checked_at": "2026-11-21T07:31:57-05:00"
 }
