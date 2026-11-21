@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T14:50:01-05:00",
+ "at": "2026-11-21T15:43:02-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -383,8 +383,15 @@
    "status": "day-to-day",
    "name": "Myron Gardner",
    "team": "MIA",
-   "date": "2026-11-19T14:45Z",
-   "note": "Gardner (hamstring) is out for Wednesday's game against the Bucks."
+   "date": "2026-11-21T20:35Z",
+   "note": "Gardner (hamstring) is probable for Sunday's game against the Thunder."
+  },
+  "3032977": {
+   "status": "day-to-day",
+   "name": "Giannis Antetokounmpo",
+   "team": "MIA",
+   "date": "2026-11-21T20:33Z",
+   "note": "Antetokounmpo (groin) is listed as questionable for Sunday's game against Oklahoma City, Ira Winderman of the South Florida Sun Sentinel reports."
   },
   "4997526": {
    "status": "out",
