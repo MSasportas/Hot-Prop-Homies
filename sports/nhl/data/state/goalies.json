@@ -3,11 +3,11 @@
  "teams": {
   "CAR": {
    "name": "Pyotr Kochetkov",
-   "status": "expected"
+   "status": "confirmed"
   },
   "EDM": {
-   "name": "Tristan Jarry",
-   "status": "expected"
+   "name": "Devon Levi",
+   "status": "confirmed"
   },
   "CGY": {
    "name": "Dustin Wolf",
@@ -114,5 +114,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-21T12:20:00-05:00"
+ "checked_at": "2026-11-21T12:31:42-05:00"
 }
