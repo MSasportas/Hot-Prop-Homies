@@ -507,7 +507,8 @@ class Run:
         """Run nightly research scripts once per slate day (non-blocking).
         1. run8_moves.py: re-scores M1-M7 on all stored nights; output saved to data/research/.
         2. auto_hypothesis.py: tests one new hypothesis variant; appends to research/LOG.md.
-        3. scripts/lab_retire.py (repo root): retires dead Lab tests once the summaries above are fresh.
+        3. lab_forward.py: forward tallies for the NP and LVA Lab tracks (data/research/lab_np.json, lab_lva.json).
+        4. scripts/lab_retire.py (repo root): retires dead Lab tests once the summaries above are fresh.
         All are skipped if they already ran today (state file check). Failure here never fails the pipeline."""
         if common.data_dir() != common.REPO_DATA:
             return  # a redirected data dir (tests) must never run the research scripts, which read and write the repo itself
@@ -538,6 +539,14 @@ class Run:
                 errors.append("auto_hyp exit %d: %s" % (ah.returncode, ah.stderr[:200]))
         except Exception as e:
             errors.append("auto_hyp: %s" % common.short_err(e))
+        # --- lab_forward.py: NP1-NP4 and LVA1-LVA2 forward tallies ---
+        try:
+            script = os.path.join(repo, "research", "code", "lab_forward.py")
+            lf = subprocess.run([sys.executable, script], capture_output=True, text=True, timeout=120)
+            if lf.returncode != 0:
+                errors.append("lab_forward exit %d: %s" % (lf.returncode, lf.stderr[:200]))
+        except Exception as e:
+            errors.append("lab_forward: %s" % common.short_err(e))
         # --- lab_retire.py: retire dead Lab tests, flag passing ones ---
         try:
             script = os.path.join(repo, "..", "..", "scripts", "lab_retire.py")

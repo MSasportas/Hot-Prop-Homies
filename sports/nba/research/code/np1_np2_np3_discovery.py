@@ -1,4 +1,4 @@
-"""np1_np2_np3_discovery.py: discovery scoring for NP1, NP2, NP3 (registered 2026-11-15).
+"""np1_np2_np3_discovery.py: scoring for NP1-NP4 (registered 2026-11-15); lab_forward.py reuses run_np1..run_np4 for the nightly forward tally.
 Reads all stored odds nights (Oct 25 - Nov 14). Writes nothing. Prints W-L counts.
 Run: python research/code/np1_np2_np3_discovery.py
 """
@@ -337,6 +337,59 @@ def run_np3(days, box):
     return bets
 
 # ---------------------------------------------------------------------------
+# NP4: Exchange move, HR unchanged
+# Consecutive reads, HR prices identical. novig AND prophetx both move fair-over >= 0.01
+# in the same direction. No Pinnacle condition. Bet HR in the exchange direction, first per
+# player/market/night.
+# ---------------------------------------------------------------------------
+
+EXCHANGE_BOOKS = ("novig", "prophetx")
+EXCHANGE_MOVE_MIN = 0.01
+
+def run_np4(days, box):
+    bets = []
+    for day, byg in sorted(days.items()):
+        seen = set()
+        for gid, fs in byg.items():
+            for fa, fb in zip(fs, fs[1:]):
+                for m in fb["markets"]:
+                    ha = _hr_pairs(fa, m)
+                    hb = _hr_pairs(fb, m)
+                    for (pid, line) in hb:
+                        if (pid, line) not in ha:
+                            continue
+                        qa, qb = ha[(pid, line)], hb[(pid, line)]
+                        if not (qa.get("over") and qa.get("under") and qb.get("over") and qb.get("under")):
+                            continue
+                        if qa["over"] != qb["over"] or qa["under"] != qb["under"]:
+                            continue
+                        moves = []
+                        for bk in EXCHANGE_BOOKS:
+                            fo_a = _fo(_bk_pairs(fa, bk, m).get((pid, line)))
+                            fo_b = _fo(_bk_pairs(fb, bk, m).get((pid, line)))
+                            if fo_a is None or fo_b is None:
+                                break
+                            moves.append(fo_b - fo_a)
+                        if len(moves) < len(EXCHANGE_BOOKS):
+                            continue
+                        if all(c >= EXCHANGE_MOVE_MIN for c in moves):
+                            side = "over"
+                        elif all(c <= -EXCHANGE_MOVE_MIN for c in moves):
+                            side = "under"
+                        else:
+                            continue
+                        price = qb[side]
+                        if not (-200 <= price <= 200):
+                            continue
+                        key = (pid, m)
+                        if key in seen:
+                            continue
+                        seen.add(key)
+                        bets.append({"day": day, "gid": gid, "pid": pid, "m": m, "line": line, "side": side,
+                                     "price": price, "res": _grade(box, gid, pid, m, line, side)})
+    return bets
+
+# ---------------------------------------------------------------------------
 # main
 # ---------------------------------------------------------------------------
 
@@ -345,7 +398,7 @@ if __name__ == "__main__":
     box  = _load_box()
     print("Nights loaded: %d" % len(days))
 
-    for label, bets in [("NP1", run_np1(days, box)), ("NP2", run_np2(days, box)), ("NP3", run_np3(days, box))]:
+    for label, bets in [("NP1", run_np1(days, box)), ("NP2", run_np2(days, box)), ("NP3", run_np3(days, box)), ("NP4", run_np4(days, box))]:
         s = _summarize(label, bets)
         print("%s: %s" % (label, fmt(s)))
         # Also show FAIR subset (ev >= 0 already enforced, so all bets are "fair" - print by-side breakdown)

@@ -20,9 +20,5 @@ python3 -I research/code/r19/score_q20.py "$PWD"          # Q20a-b
 python3 -I research/code/r20/score_q21.py "$PWD"          # Q21a-b
 python3 -I research/code/r21/score_q22.py "$PWD"          # Q22a-b
 python3 -I research/code/r22/score_q23.py "$PWD"          # Q23a-b
-python3 -I research/code/r24/score_q24.py "$PWD"          # Q24
-python3 -I research/code/r24/score_ll.py "$PWD"          # LL1f, LL3a-b, LL4a-b, LL5, LL6 (run 24)
-python3 -I research/code/r25/score_mm.py "$PWD"          # MM2a-b, MM3a-b, MM4, MM5a-b (run 25)
-python3 -I research/code/r26/score_nn.py "$PWD"          # NN2fa-b, NN4, NN5, NN6 (run 26)
-python3 -I research/code/fwd/lab_export.py                 # Lab tab totals for LL / MM / NN
+sh research/code/fwd/run_lab.sh                              # Q24, LL, MM, NN and the Lab tab totals
 python3 -I ../../scripts/lab_retire.py --sport nhl          # retire dead Lab tests, flag passing ones (always last)

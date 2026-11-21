@@ -103,7 +103,9 @@ fi
   git clean -fdq data/paper
 }
 
-# 3c. Lab retirement (scripts/lab_retire.py at the repo root; once a day, it skips a repeat run). Never stops the cycle.
+# 3c. Lab: re-score the forward tests (research/code/fwd/run_lab.sh) so the Lab summaries are current, then retire dead tests
+#     (scripts/lab_retire.py at the repo root; once a day, it skips a repeat run). Neither stops the cycle.
+if [ -f research/code/fwd/run_lab.sh ]; then PC_PYTHON="$PY" sh research/code/fwd/run_lab.sh >/dev/null || say "Lab re-score failed; carrying on"; fi
 if [ -f ../../scripts/lab_retire.py ]; then "$PY" -I ../../scripts/lab_retire.py --sport nhl || say "Lab retirement failed; carrying on"; fi
 
 notify_live() {   # 5. Discord, only after the live page shows this push; then save who was pinged
@@ -124,7 +126,7 @@ notify_live() {   # 5. Discord, only after the live page shows this push; then s
 
 # 4. publish
 git add -A data
-for f in config/lab.json config/lab_retired.jsonl config/lab_state.json; do   # nightly Lab retirement
+for f in config/lab.json config/lab_retired.jsonl config/lab_state.json research/fwd; do   # nightly Lab re-score and retirement
   if [ -e "$f" ]; then git add "$f"; fi
 done
 if git diff --cached --quiet; then
