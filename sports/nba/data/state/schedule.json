@@ -433,13 +433,13 @@
     "start": "2026-11-20T22:00:00-05:00",
     "away": "HOU",
     "home": "DEN",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:01 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "HOU": "119",
-     "DEN": "124"
+     "HOU": "124",
+     "DEN": "133"
     }
    },
    {

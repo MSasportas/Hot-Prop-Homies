@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-21T00:30:00-05:00",
+ "generated_at": "2026-11-21T00:40:00-05:00",
  "summary": {
   "headline": {
    "w": 65,
-   "l": 44,
+   "l": 45,
    "push": 0,
    "void": 2,
-   "units": 17.24,
-   "hit_rate": 0.5963,
-   "needed": 0.518,
-   "n": 109
+   "units": 16.24,
+   "hit_rate": 0.5909,
+   "needed": 0.5173,
+   "n": 110
   },
   "rows": [
    {
@@ -40,13 +40,13 @@
     "key": "assists",
     "label": "Assists",
     "w": 10,
-    "l": 9,
+    "l": 10,
     "push": 0,
     "void": 0,
-    "units": 0.39,
-    "hit_rate": 0.5263,
-    "needed": 0.512,
-    "n": 19
+    "units": -0.61,
+    "hit_rate": 0.5,
+    "needed": 0.5087,
+    "n": 20
    },
    {
     "key": "threes",
@@ -124,13 +124,13 @@
     "key": "window:135 \u2192 90 min",
     "label": "Window 135 \u2192 90 min",
     "w": 3,
-    "l": 5,
+    "l": 6,
     "push": 0,
     "void": 1,
-    "units": -2.57,
-    "hit_rate": 0.375,
-    "needed": 0.5301,
-    "n": 8
+    "units": -3.57,
+    "hit_rate": 0.3333,
+    "needed": 0.5206,
+    "n": 9
    },
    {
     "key": "window:180 \u2192 135 min",
@@ -339,13 +339,13 @@
       "key": "assists",
       "label": "Assists",
       "w": 10,
-      "l": 9,
+      "l": 10,
       "push": 0,
       "void": 0,
-      "units": 0.39,
-      "hit_rate": 0.5263,
-      "needed": 0.512,
-      "n": 19,
+      "units": -0.61,
+      "hit_rate": 0.5,
+      "needed": 0.5087,
+      "n": 20,
       "ids": [
        "2026-11-20:401909308:4395724:assists:5.5:over",
        "2026-11-20:401909311:4278585:assists:3.5:over",
@@ -414,13 +414,13 @@
       "key": "over",
       "label": "Over",
       "w": 22,
-      "l": 10,
+      "l": 11,
       "push": 0,
       "void": 1,
-      "units": 12.93,
-      "hit_rate": 0.6875,
-      "needed": 0.4977,
-      "n": 32,
+      "units": 11.93,
+      "hit_rate": 0.6667,
+      "needed": 0.4961,
+      "n": 33,
       "ids": [
        "2026-11-20:401909309:4871145:threes:1.5:over",
        "2026-11-20:401909305:4396971:points:18.5:over",
@@ -656,13 +656,13 @@
       "key": "e2",
       "label": "2 to 5%",
       "w": 12,
-      "l": 10,
+      "l": 11,
       "push": 0,
       "void": 1,
-      "units": 1.08,
-      "hit_rate": 0.5455,
-      "needed": 0.514,
-      "n": 22,
+      "units": 0.08,
+      "hit_rate": 0.5217,
+      "needed": 0.511,
+      "n": 23,
       "ids": [
        "2026-11-20:401909306:4712849:rebounds:4.5:over",
        "2026-11-20:401909311:4278585:assists:3.5:over",
@@ -722,13 +722,13 @@
       "key": "early",
       "label": "Early",
       "w": 3,
-      "l": 7,
+      "l": 8,
       "push": 0,
       "void": 2,
-      "units": -4.18,
-      "hit_rate": 0.3,
-      "needed": 0.5105,
-      "n": 10,
+      "units": -5.18,
+      "hit_rate": 0.2727,
+      "needed": 0.5045,
+      "n": 11,
       "ids": [
        "2026-11-20:401909309:4871145:threes:1.5:over",
        "2026-11-20:401909312:3202:assists:4.5:over",
@@ -880,13 +880,13 @@
       "key": "plus",
       "label": "Plus money",
       "w": 22,
-      "l": 18,
+      "l": 19,
       "push": 0,
       "void": 0,
-      "units": 8.75,
-      "hit_rate": 0.55,
-      "needed": 0.4623,
-      "n": 40,
+      "units": 7.75,
+      "hit_rate": 0.5366,
+      "needed": 0.4619,
+      "n": 41,
       "ids": [
        "2026-11-20:401909309:4871145:threes:1.5:over",
        "2026-11-20:401909306:4712849:rebounds:4.5:over",
@@ -1023,12 +1023,12 @@
    {
     "date": "2026-11-20",
     "w": 4,
-    "l": 6,
+    "l": 7,
     "push": 0,
     "void": 0,
-    "units": -2.08,
+    "units": -3.08,
     "n": 11,
-    "graded": false
+    "graded": true
    },
    {
     "date": "2026-11-18",
@@ -1235,10 +1235,10 @@
  "nights": [
   {
    "date": "2026-11-20",
-   "graded": false,
+   "graded": true,
    "w": 4,
-   "l": 6,
-   "units": -2.08,
+   "l": 7,
+   "units": -3.08,
    "entries": [
     {
      "id": "2026-11-20:401909306:4566434:points:24.5:under",
@@ -1491,9 +1491,9 @@
        "at": "2026-11-20T20:30:01-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "L",
+     "actual": "4 assists",
+     "units": -1.0,
      "pulled": {
       "at": "2026-11-20T20:50:01-05:00",
       "reason": "Hard Rock took the line down",
