@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T17:00:01-05:00",
+ "at": "2026-11-21T17:20:01-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -287,6 +287,13 @@
    "team": "HOU",
    "date": "2026-11-19T23:19Z",
    "note": "Capela (ankle) is out for Friday's game against Denver."
+  },
+  "3149673": {
+   "status": "day-to-day",
+   "name": "Pascal Siakam",
+   "team": "IND",
+   "date": "2026-11-21T22:14Z",
+   "note": "Siakam chipped in 24 points (10-17 FG, 2-2 3Pt, 2-2 FT), four rebounds, three assists, one block and three steals across 33 minutes during Wednesday's 119-104 loss to the Rockets."
   },
   "2530530": {
    "status": "day-to-day",
