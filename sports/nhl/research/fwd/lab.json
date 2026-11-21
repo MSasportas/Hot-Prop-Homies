@@ -1,172 +1,172 @@
 {
  "LL1f-fade": {
-  "clv": -0.0762,
-  "l": 97,
-  "pending": 1,
+  "clv": -0.0775,
+  "l": 262,
+  "pending": 5,
   "push": 0,
-  "units": -18.31,
+  "units": -38.53,
   "void": 0,
-  "w": 89
+  "w": 248
  },
  "LL1f-follow": {
-  "clv": -0.0836,
-  "l": 89,
-  "pending": 1,
+  "clv": -0.0789,
+  "l": 246,
+  "pending": 5,
   "push": 0,
-  "units": -11.75,
+  "units": -37.36,
   "void": 0,
-  "w": 94
+  "w": 257
  },
  "LL3a tight": {
-  "clv": 0.0286,
-  "l": 21,
+  "clv": 0.0311,
+  "l": 60,
   "pending": 0,
   "push": 0,
-  "units": -0.7,
+  "units": 10.57,
   "void": 0,
-  "w": 19
+  "w": 68
  },
  "LL3b loose": {
-  "clv": 0.0268,
-  "l": 11,
+  "clv": 0.0289,
+  "l": 27,
   "pending": 0,
   "push": 0,
-  "units": 4.52,
+  "units": 13.35,
   "void": 0,
-  "w": 14
+  "w": 39
  },
  "LL4a fade": {
-  "clv": -0.0761,
-  "l": 26,
-  "pending": 0,
+  "clv": -0.0729,
+  "l": 65,
+  "pending": 4,
   "push": 0,
-  "units": -2.29,
+  "units": 8.87,
   "void": 0,
-  "w": 26
+  "w": 81
  },
  "LL4b follow": {
-  "clv": -0.0897,
-  "l": 26,
-  "pending": 0,
+  "clv": -0.0918,
+  "l": 81,
+  "pending": 4,
   "push": 0,
-  "units": -6.05,
+  "units": -31.61,
   "void": 0,
-  "w": 26
+  "w": 64
  },
  "LL5 exch": {
-  "clv": 0.0171,
-  "l": 35,
-  "pending": 0,
+  "clv": 0.024,
+  "l": 91,
+  "pending": 3,
   "push": 0,
-  "units": 6.96,
+  "units": 21.13,
   "void": 0,
-  "w": 45
+  "w": 117
  },
  "LL6 line": {
-  "clv": -0.0123,
-  "l": 14,
-  "pending": 1,
+  "clv": -0.0097,
+  "l": 36,
+  "pending": 2,
   "push": 0,
-  "units": -1.47,
+  "units": -1.53,
   "void": 0,
-  "w": 23
+  "w": 62
  },
  "MM2a split": {
-  "clv": -0.033,
-  "l": 5,
-  "pending": 0,
+  "clv": -0.0214,
+  "l": 8,
+  "pending": 1,
   "push": 0,
-  "units": -2.72,
+  "units": -4.98,
   "void": 0,
-  "w": 3
+  "w": 4
  },
  "MM2b split 2%": {
-  "clv": -0.0286,
-  "l": 3,
+  "clv": -0.0098,
+  "l": 5,
+  "pending": 1,
+  "push": 0,
+  "units": -3.49,
+  "void": 0,
+  "w": 2
+ },
+ "MM3a persist": {
+  "clv": 0.0337,
+  "l": 44,
   "pending": 0,
   "push": 0,
-  "units": -2.23,
+  "units": 4.34,
+  "void": 0,
+  "w": 46
+ },
+ "MM3b confirm": {
+  "clv": 0.0641,
+  "l": 0,
+  "pending": 0,
+  "push": 0,
+  "units": 0.74,
   "void": 0,
   "w": 1
  },
- "MM3a persist": {
-  "clv": 0.0291,
-  "l": 18,
-  "pending": 0,
-  "push": 0,
-  "units": -2.79,
-  "void": 0,
-  "w": 14
- },
- "MM3b confirm": {
-  "clv": null,
-  "l": 0,
-  "pending": 0,
-  "push": 0,
-  "units": 0.0,
-  "void": 0,
-  "w": 0
- },
  "MM4 total": {
-  "clv": -0.1309,
-  "l": 5,
-  "pending": 0,
-  "push": 0,
-  "units": -0.53,
-  "void": 0,
-  "w": 5
- },
- "MM5a follow": {
-  "clv": -0.0979,
-  "l": 15,
-  "pending": 0,
-  "push": 0,
-  "units": -5.35,
-  "void": 0,
-  "w": 7
- },
- "MM5b fade": {
-  "clv": -0.0516,
+  "clv": -0.1166,
   "l": 6,
   "pending": 0,
   "push": 0,
-  "units": 2.33,
+  "units": -0.07,
   "void": 0,
-  "w": 15
+  "w": 7
+ },
+ "MM5a follow": {
+  "clv": -0.0875,
+  "l": 40,
+  "pending": 0,
+  "push": 0,
+  "units": -18.17,
+  "void": 0,
+  "w": 16
+ },
+ "MM5b fade": {
+  "clv": -0.0667,
+  "l": 15,
+  "pending": 0,
+  "push": 0,
+  "units": 7.6,
+  "void": 0,
+  "w": 40
  },
  "NN2fa follow market": {
-  "clv": null,
-  "l": 0,
+  "clv": -0.0851,
+  "l": 14,
   "pending": 0,
   "push": 0,
-  "units": 0.0,
+  "units": -8.83,
   "void": 0,
-  "w": 0
+  "w": 6
  },
  "NN2fb follow HR": {
-  "clv": null,
-  "l": 0,
+  "clv": -0.0551,
+  "l": 6,
   "pending": 0,
   "push": 0,
-  "units": 0.0,
+  "units": 5.06,
   "void": 0,
-  "w": 0
+  "w": 14
  },
  "NN4 exch steam": {
-  "clv": 0.015,
-  "l": 1,
-  "pending": 0,
+  "clv": -0.0281,
+  "l": 2,
+  "pending": 1,
   "push": 0,
-  "units": -1.0,
+  "units": -2.0,
   "void": 0,
   "w": 0
  },
  "NN5 market moves": {
-  "clv": 0.0263,
-  "l": 0,
+  "clv": 0.021,
+  "l": 2,
   "pending": 0,
   "push": 0,
-  "units": 1.25,
+  "units": -0.75,
   "void": 0,
   "w": 1
  },
@@ -181,6 +181,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-13T20:25:20+00:00",
+ "updated_at": "2026-11-21T20:40:43+00:00",
  "version": 1
 }

@@ -1,56 +1,66 @@
 {
  "NN2fa follow market": {
-  "bets": 0,
-  "graded": 0,
-  "w": 0,
-  "units": 0,
-  "roi": null,
-  "ci90": null,
-  "p_one_sided": null,
-  "mean_ev": null,
-  "mean_clv": null
+  "bets": 20,
+  "graded": 20,
+  "w": 6,
+  "units": -8.83,
+  "roi": -0.4415,
+  "ci90": [
+   -0.4415,
+   -0.4415
+  ],
+  "p_one_sided": 1.0,
+  "mean_ev": -0.081,
+  "mean_clv": -0.0851,
+  "games": 1,
+  "candidate": false
  },
  "NN2fb follow HR": {
-  "bets": 0,
-  "graded": 0,
-  "w": 0,
-  "units": 0,
-  "roi": null,
-  "ci90": null,
-  "p_one_sided": null,
-  "mean_ev": null,
-  "mean_clv": null
+  "bets": 20,
+  "graded": 20,
+  "w": 14,
+  "units": 5.057,
+  "roi": 0.2529,
+  "ci90": [
+   0.2528,
+   0.2528
+  ],
+  "p_one_sided": 0.0,
+  "mean_ev": -0.0531,
+  "mean_clv": -0.0551,
+  "games": 1,
+  "candidate": false
  },
  "NN4 exch steam": {
-  "bets": 1,
-  "graded": 1,
+  "bets": 3,
+  "graded": 2,
   "w": 0,
-  "units": -1.0,
+  "units": -2.0,
   "roi": -1.0,
   "ci90": [
    -1.0,
    -1.0
   ],
   "p_one_sided": 1.0,
-  "mean_ev": 0.0038,
-  "mean_clv": 0.015,
-  "games": 1,
+  "mean_ev": 0.0224,
+  "mean_clv": -0.0281,
+  "games": 2,
   "candidate": false
  },
  "NN5 market moves": {
-  "bets": 1,
-  "graded": 1,
+  "bets": 3,
+  "graded": 3,
   "w": 1,
-  "units": 1.25,
-  "roi": 1.25,
+  "units": -0.75,
+  "roi": -0.25,
   "ci90": [
-   1.25,
-   1.25
+   -1.0,
+   0.5
   ],
-  "p_one_sided": 0.0,
-  "mean_ev": 0.0263,
-  "mean_clv": 0.0263,
-  "games": 1,
+  "p_one_sided": 0.732,
+  "mean_ev": 0.0217,
+  "mean_clv": 0.021,
+  "games": 3,
   "candidate": false
  },
  "NN6 fade soft": {

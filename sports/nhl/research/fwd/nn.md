@@ -2,10 +2,10 @@
 
 | variant | bets | graded | W | units | ROI | 90% CI | p | mean CLV | candidate |
 |---|---|---|---|---|---|---|---|---|---|
-| NN2fa follow market | 0 | 0 | - | - | - | - | - | - | False |
-| NN2fb follow HR | 0 | 0 | - | - | - | - | - | - | False |
-| NN4 exch steam | 1 | 1 | 0 | -1.00 | -100.0% | -100..-100% | 1.0000 | 0.0150 | False |
-| NN5 market moves | 1 | 1 | 1 | +1.25 | +125.0% | +125..+125% | 0.0000 | 0.0263 | False |
+| NN2fa follow market | 20 | 20 | 6 | -8.83 | -44.1% | -44..-44% | 1.0000 | -0.0851 | False |
+| NN2fb follow HR | 20 | 20 | 14 | +5.06 | +25.3% | +25..+25% | 0.0000 | -0.0551 | False |
+| NN4 exch steam | 3 | 2 | 0 | -2.00 | -100.0% | -100..-100% | 1.0000 | -0.0281 | False |
+| NN5 market moves | 3 | 3 | 1 | -0.75 | -25.0% | -100..+50% | 0.7320 | 0.0210 | False |
 | NN6 fade soft | 0 | 0 | - | - | - | - | - | - | False |
 
 Descriptive, seen nights < 2026-11-11 (not a test, never a result):
