@@ -2,8 +2,8 @@
  "version": 1,
  "note": "Behind the scenes: research only. Not picks, not on the Record, never sent to Discord.",
  "market": "points",
- "generated_at": "2026-11-21T04:30:01-05:00",
- "slate": "2026-11-20",
+ "generated_at": "2026-11-21T05:00:01-05:00",
+ "slate": "2026-11-21",
  "active": true,
  "window": {
   "live_from": "2026-10-28",
@@ -2237,7 +2237,7 @@
   },
   "clv_passed_mean": 0.04593181768596686,
   "clv_vetoed_mean": 0.042004079004067184,
-  "nights": 23,
+  "nights": 24,
   "nights_with_flags": 14,
   "population_slope": null,
   "checkpoint": "2026-11-02"
