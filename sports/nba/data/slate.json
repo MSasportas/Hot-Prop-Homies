@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 1352,
+   "pool_left": 1348,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-22T18:45:00-05:00",
-  "last_read_at": "2026-11-22T18:40:01-05:00",
+  "next_read_at": "2026-11-22T19:00:00-05:00",
+  "last_read_at": "2026-11-22T18:50:03-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-22T18:40:01-05:00"
+   "at": "2026-11-22T18:50:03-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-22T18:40:01-05:00",
+    "at": "2026-11-22T18:50:03-05:00",
     "confirmed": [
      "ATL",
      "CHI",
@@ -113,7 +113,7 @@
    "away": "OKC",
    "home": "MIA",
    "state": "in",
-   "detail": "10:55 - 2nd",
+   "detail": "6:37 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -378,7 +378,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-22T18:30:03-05:00",
+   "read_at": "2026-11-22T18:50:03-05:00",
    "picks": 0,
    "checks": [
     {
@@ -400,12 +400,16 @@
     {
      "read": "B",
      "at": "2026-11-22T18:30:03-05:00"
+    },
+    {
+     "read": "X75",
+     "at": "2026-11-22T18:50:03-05:00"
     }
    ],
-   "last_check_at": "2026-11-22T18:30:03-05:00",
+   "last_check_at": "2026-11-22T18:50:03-05:00",
    "final": false,
-   "next_check_at": "2026-11-22T18:45:00-05:00",
-   "next_check_read": "X75",
+   "next_check_at": "2026-11-22T19:00:00-05:00",
+   "next_check_read": "X60",
    "paused": false,
    "injury_clear": {
     "away": false,
@@ -458,7 +462,7 @@
  "empty": {
   "text": "No picks yet today",
   "why": "622 lines read. Pinnacle moved alone on 147, none of them bettable yet.",
-  "next": "2026-11-22T18:45:00-05:00"
+  "next": "2026-11-22T19:00:00-05:00"
  },
  "counts": {
   "lines_read": 622,
@@ -472,6 +476,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-22T18:40:01-05:00",
- "status_at": "2026-11-22T18:40:01-05:00"
+ "generated_at": "2026-11-22T18:50:03-05:00",
+ "status_at": "2026-11-22T18:50:03-05:00"
 }
