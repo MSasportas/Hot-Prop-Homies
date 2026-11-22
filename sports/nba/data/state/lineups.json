@@ -11,8 +11,8 @@
     "John Collins"
    ],
    "status": {
-    "Jalen Duren": "out",
-    "Ebuka Okorie": "out",
+    "Jalen Duren": "doubtful",
+    "Ebuka Okorie": "questionable",
     "Taurean Prince": "out",
     "Duncan Robinson": "out"
    }
@@ -27,9 +27,9 @@
     "Onyeka Okongwu"
    ],
    "status": {
+    "Jock Landale": "questionable",
     "Henri Veesaar": "out",
     "Mouhamed Gueye": "out",
-    "Jock Landale": "out",
     "CJ McCollum": "out",
     "Asa Newell": "out"
    }
@@ -226,5 +226,5 @@
    }
   }
  },
- "at": "2026-11-22T17:50:01-05:00"
+ "at": "2026-11-22T18:00:02-05:00"
 }
