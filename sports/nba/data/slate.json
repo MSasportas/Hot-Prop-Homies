@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 1576,
+   "pool_left": 1572,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-22T12:30:00-05:00",
-  "last_read_at": "2026-11-22T12:00:00-05:00",
+  "next_read_at": "2026-11-22T13:00:00-05:00",
+  "last_read_at": "2026-11-22T12:30:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-22T12:20:01-05:00"
+   "at": "2026-11-22T12:30:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-22T05:00:00-05:00",
+    "at": "2026-11-22T12:30:00-05:00",
     "confirmed": []
    },
    "grade": true
@@ -48,18 +48,22 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-22T11:30:01-05:00",
+   "read_at": "2026-11-22T12:30:00-05:00",
    "picks": 0,
    "checks": [
     {
      "read": "X240",
      "at": "2026-11-22T11:30:01-05:00"
+    },
+    {
+     "read": "X180",
+     "at": "2026-11-22T12:30:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-22T11:30:01-05:00",
+   "last_check_at": "2026-11-22T12:30:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-22T12:30:00-05:00",
-   "next_check_read": "X180",
+   "next_check_at": "2026-11-22T13:15:00-05:00",
+   "next_check_read": "X135",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -140,7 +144,7 @@
    "paused": false,
    "injury_clear": {
     "away": true,
-    "home": false
+    "home": true
    }
   },
   {
@@ -163,7 +167,7 @@
    "next_check_read": "X360",
    "paused": false,
    "injury_clear": {
-    "away": true,
+    "away": false,
     "home": true
    }
   },
@@ -211,7 +215,7 @@
    "next_check_read": "X360",
    "paused": false,
    "injury_clear": {
-    "away": true,
+    "away": false,
     "home": true
    }
   }
@@ -220,7 +224,7 @@
  "empty": {
   "text": "No picks yet today",
   "why": "586 lines read. Pinnacle moved alone on 2, none of them bettable yet.",
-  "next": "2026-11-22T12:30:00-05:00"
+  "next": "2026-11-22T13:00:00-05:00"
  },
  "counts": {
   "lines_read": 586,
@@ -234,6 +238,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-22T12:00:00-05:00",
- "status_at": "2026-11-22T12:20:01-05:00"
+ "generated_at": "2026-11-22T12:30:00-05:00",
+ "status_at": "2026-11-22T12:30:00-05:00"
 }

@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T12:20:01-05:00",
+ "at": "2026-11-22T12:30:00-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -106,6 +106,13 @@
    "date": "2026-11-08T22:26Z",
    "note": "Schroder has been diagnosed with a left hamstring strain and will be reevaluated in two weeks, Michael Scotto of HoopsHype.com reports."
   },
+  "4278067": {
+   "status": "day-to-day",
+   "name": "Nic Claxton",
+   "team": "CHI",
+   "date": "2026-11-22T17:23Z",
+   "note": "Claxton ended with 11 points (4-8 FG, 3-3 FT), seven rebounds, one assist and two blocks across 29 minutes during Friday's 98-94 loss to Washington."
+  },
   "2595516": {
    "status": "out",
    "name": "Norman Powell",
@@ -126,13 +133,6 @@
    "team": "CHI",
    "date": "2026-11-21T14:54Z",
    "note": "Smith (illness) is out for Friday's game against the Wizards, Joel Lorenzi of The Athletic reports."
-  },
-  "5105555": {
-   "status": "out",
-   "name": "Tobe Awaka",
-   "team": "CHI",
-   "date": "2026-11-17T20:53Z",
-   "note": "Awaka (back) has been ruled out for Wednesday's game against the Nets."
   },
   "5095151": {
    "status": "out",
@@ -691,8 +691,8 @@
    "status": "day-to-day",
    "name": "Collin Murray-Boyles",
    "team": "TOR",
-   "date": "2026-11-21T14:52Z",
-   "note": "Murray-Boyles (concussion) has been ruled out for Friday's game against the Pistons."
+   "date": "2026-11-22T17:10Z",
+   "note": "Murray-Boyles (concussion) participated in Sunday's practice, Michael Grange of Sportsnet.ca reports."
   },
   "6450": {
    "status": "out",

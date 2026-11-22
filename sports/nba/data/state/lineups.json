@@ -88,15 +88,16 @@
    "state": "expected",
    "starters": [
     "Josh Giddey",
-    "Norman Powell",
     "Isaac Okoro",
     "Matas Buzelis",
+    "Noa Essengue",
     "Jalen Smith"
    ],
    "status": {
-    "Norman Powell": "questionable",
-    "Jalen Smith": "questionable",
+    "Jalen Smith": "probable",
     "Patrick Williams": "probable",
+    "Nic Claxton": "questionable",
+    "Norman Powell": "out",
     "Caleb Wilson": "out"
    }
   },
@@ -110,10 +111,10 @@
     "Daniel Gafford"
    ],
    "status": {
-    "P.J. Washington": "out",
+    "P.J. Washington": "questionable",
+    "Tobi Lawal": "questionable",
     "Tarik Biberovic": "out",
     "Sergio de Larrea": "out",
-    "Tobi Lawal": "out",
     "Dereck Lively": "out"
    }
   },
@@ -158,6 +159,7 @@
     "Alex Sarr"
    ],
    "status": {
+    "Deandre Ayton": "questionable",
     "Reece Beekman": "out",
     "Justin Champagnie": "out",
     "Tristan Vukcevic": "out",
@@ -206,9 +208,9 @@
     "Neemias Queta"
    ],
    "status": {
-    "Derrick White": "out",
-    "Jayson Tatum": "out",
-    "Mitchell Robinson": "out"
+    "Derrick White": "questionable",
+    "Jayson Tatum": "probable",
+    "Mitchell Robinson": "questionable"
    }
   },
   "GS": {
@@ -229,5 +231,5 @@
    }
   }
  },
- "at": "2026-11-22T05:00:00-05:00"
+ "at": "2026-11-22T12:30:00-05:00"
 }
