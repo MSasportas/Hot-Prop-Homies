@@ -2,18 +2,18 @@
  "LL1f-fade": {
   "clv": -0.0765,
   "l": 263,
-  "pending": 68,
+  "pending": 67,
   "push": 0,
-  "units": -38.81,
+  "units": -37.86,
   "void": 0,
-  "w": 249
+  "w": 250
  },
  "LL1f-follow": {
   "clv": -0.0803,
-  "l": 247,
-  "pending": 67,
+  "l": 248,
+  "pending": 66,
   "push": 0,
-  "units": -37.41,
+  "units": -38.41,
   "void": 0,
   "w": 258
  },
@@ -55,12 +55,12 @@
  },
  "LL5 exch": {
   "clv": 0.0226,
-  "l": 92,
-  "pending": 13,
+  "l": 93,
+  "pending": 11,
   "push": 0,
-  "units": 20.13,
+  "units": 20.0,
   "void": 0,
-  "w": 117
+  "w": 118
  },
  "LL6 line": {
   "clv": -0.011,
@@ -74,20 +74,20 @@
  "MM2a split": {
   "clv": -0.0177,
   "l": 8,
-  "pending": 5,
+  "pending": 4,
   "push": 0,
-  "units": -4.98,
+  "units": -4.11,
   "void": 0,
-  "w": 4
+  "w": 5
  },
  "MM2b split 2%": {
   "clv": -0.0044,
   "l": 5,
-  "pending": 4,
+  "pending": 3,
   "push": 0,
-  "units": -3.49,
+  "units": -2.62,
   "void": 0,
-  "w": 2
+  "w": 3
  },
  "MM3a persist": {
   "clv": 0.0331,
@@ -155,11 +155,11 @@
  "NN4 exch steam": {
   "clv": -0.0281,
   "l": 2,
-  "pending": 1,
+  "pending": 0,
   "push": 0,
-  "units": -2.0,
+  "units": -1.13,
   "void": 0,
-  "w": 0
+  "w": 1
  },
  "NN5 market moves": {
   "clv": 0.021,
@@ -181,6 +181,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-21T23:20:16+00:00",
+ "updated_at": "2026-11-22T00:00:17+00:00",
  "version": 1
 }
