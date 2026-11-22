@@ -19,7 +19,7 @@
   },
   "DAL": {
    "name": "Jake Oettinger",
-   "status": "expected"
+   "status": "confirmed"
   },
   "PIT": {
    "name": "Arturs Silovs",
@@ -42,5 +42,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-22T10:30:01-05:00"
+ "checked_at": "2026-11-22T10:50:01-05:00"
 }
