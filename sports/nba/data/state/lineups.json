@@ -203,13 +203,12 @@
     "Derrick White",
     "Jordan Walsh",
     "Jayson Tatum",
-    "Paul George",
+    "Sam Hauser",
     "Neemias Queta"
    ],
    "status": {
-    "Derrick White": "questionable",
-    "Jayson Tatum": "probable",
-    "Mitchell Robinson": "questionable"
+    "Paul George": "out",
+    "Mitchell Robinson": "out"
    }
   },
   "GS": {
@@ -230,5 +229,5 @@
    }
   }
  },
- "at": "2026-11-22T15:50:01-05:00"
+ "at": "2026-11-22T16:00:02-05:00"
 }
