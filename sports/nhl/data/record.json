@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-21T18:20:01-05:00",
+ "generated_at": "2026-11-21T22:10:00-05:00",
  "summary": {
   "headline": {
    "w": 66,
-   "l": 51,
+   "l": 52,
    "push": 0,
    "void": 0,
-   "units": 22.02,
-   "hit_rate": 0.5641,
-   "needed": 0.4787,
-   "n": 117
+   "units": 21.02,
+   "hit_rate": 0.5593,
+   "needed": 0.4785,
+   "n": 118
   },
   "rows": [
    {
@@ -28,13 +28,13 @@
     "key": "points",
     "label": "Points",
     "w": 12,
-    "l": 9,
+    "l": 10,
     "push": 0,
     "void": 0,
-    "units": 7.47,
-    "hit_rate": 0.5714,
-    "needed": 0.4409,
-    "n": 21
+    "units": 6.47,
+    "hit_rate": 0.5455,
+    "needed": 0.4415,
+    "n": 22
    }
   ],
   "cuts": [
@@ -126,13 +126,13 @@
       "key": "edge_2_3",
       "label": "2 to 3 pts",
       "w": 24,
-      "l": 20,
+      "l": 21,
       "push": 0,
       "void": 0,
-      "units": 5.37,
-      "hit_rate": 0.5455,
-      "needed": 0.4892,
-      "n": 44
+      "units": 4.37,
+      "hit_rate": 0.5333,
+      "needed": 0.4884,
+      "n": 45
      },
      {
       "key": "edge_3_4",
@@ -181,13 +181,13 @@
       "key": "lineup",
       "label": "Lineup confirmed",
       "w": 47,
-      "l": 32,
+      "l": 33,
       "push": 0,
       "void": 0,
-      "units": 21.15,
-      "hit_rate": 0.5949,
-      "needed": 0.4764,
-      "n": 79
+      "units": 20.15,
+      "hit_rate": 0.5875,
+      "needed": 0.4761,
+      "n": 80
      }
     ]
    },
@@ -224,13 +224,13 @@
       "key": "plus",
       "label": "Even or plus money",
       "w": 45,
-      "l": 38,
+      "l": 39,
       "push": 0,
       "void": 0,
-      "units": 17.7,
-      "hit_rate": 0.5422,
+      "units": 16.7,
+      "hit_rate": 0.5357,
       "needed": 0.4503,
-      "n": 83
+      "n": 84
      }
     ]
    }
@@ -239,12 +239,12 @@
    {
     "date": "2026-11-21",
     "w": 0,
-    "l": 0,
+    "l": 1,
     "push": 0,
     "void": 0,
-    "units": 0,
+    "units": -1.0,
     "n": 1,
-    "graded": false
+    "graded": true
    },
    {
     "date": "2026-11-19",
@@ -521,10 +521,10 @@
  "nights": [
   {
    "date": "2026-11-21",
-   "graded": false,
+   "graded": true,
    "w": 0,
-   "l": 0,
-   "units": 0,
+   "l": 1,
+   "units": -1.0,
    "entries": [
     {
      "id": "2026-11-21:2026020365:8481533:points:0.5:over",
@@ -543,9 +543,9 @@
        "at": "2026-11-21T17:30:00-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "L",
+     "actual": "had 0",
+     "units": -1.0,
      "pulled": {
       "at": "2026-11-21T18:20:01-05:00",
       "reason": "Hard Rock moved it to -120"
