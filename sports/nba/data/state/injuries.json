@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T15:50:01-05:00",
+ "at": "2026-11-22T16:03:03-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -421,12 +421,19 @@
    "date": "2026-10-05T20:53Z",
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
   },
+  "4576086": {
+   "status": "out",
+   "name": "Bryce McGowens",
+   "team": "NO",
+   "date": "2026-11-22T20:53Z",
+   "note": "McGowens (elbow) is listed as probable for Monday's game against Phoenix."
+  },
   "4395628": {
    "status": "day-to-day",
    "name": "Zion Williamson",
    "team": "NO",
-   "date": "2026-11-22T15:07Z",
-   "note": "Williamson is out for Saturday's game against the Spurs due to a left thigh contusion."
+   "date": "2026-11-22T20:50Z",
+   "note": "Williamson (thigh) is probable for Monday's game against Phoenix."
   },
   "4397688": {
    "status": "day-to-day",
@@ -441,13 +448,6 @@
    "team": "NO",
    "date": "2026-11-21T18:21Z",
    "note": "Watford (ankle) is out for Saturday's game against the Spurs."
-  },
-  "4576086": {
-   "status": "out",
-   "name": "Bryce McGowens",
-   "team": "NO",
-   "date": "2026-11-19T21:15Z",
-   "note": "McGowens (elbow) has been ruled out for Friday's game against the Thunder."
   },
   "4683634": {
    "status": "out",
