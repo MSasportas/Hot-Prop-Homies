@@ -1,66 +1,66 @@
 {
  "LL1f-fade": {
   "clv": -0.0759,
-  "l": 307,
-  "pending": 16,
+  "l": 310,
+  "pending": 8,
   "push": 0,
-  "units": -57.22,
+  "units": -56.68,
   "void": 0,
-  "w": 280
+  "w": 285
  },
  "LL1f-follow": {
   "clv": -0.0808,
-  "l": 277,
-  "pending": 16,
+  "l": 282,
+  "pending": 8,
   "push": 0,
-  "units": -27.99,
+  "units": -30.57,
   "void": 0,
-  "w": 302
+  "w": 305
  },
  "LL3a tight": {
   "clv": 0.0308,
-  "l": 63,
-  "pending": 4,
+  "l": 64,
+  "pending": 2,
   "push": 0,
-  "units": 8.62,
+  "units": 8.72,
   "void": 0,
-  "w": 69
+  "w": 70
  },
  "LL3b loose": {
   "clv": 0.0286,
-  "l": 29,
-  "pending": 2,
+  "l": 31,
+  "pending": 0,
   "push": 0,
-  "units": 13.7,
+  "units": 11.7,
   "void": 0,
   "w": 41
  },
  "LL4a fade": {
   "clv": -0.0692,
   "l": 77,
-  "pending": 6,
+  "pending": 4,
   "push": 0,
-  "units": 7.05,
+  "units": 8.29,
   "void": 0,
-  "w": 92
+  "w": 94
  },
  "LL4b follow": {
   "clv": -0.095,
-  "l": 92,
-  "pending": 6,
+  "l": 94,
+  "pending": 4,
   "push": 0,
-  "units": -31.98,
+  "units": -33.98,
   "void": 0,
   "w": 76
  },
  "LL5 exch": {
   "clv": 0.0227,
-  "l": 101,
-  "pending": 8,
+  "l": 104,
+  "pending": 4,
   "push": 0,
-  "units": 15.88,
+  "units": 13.98,
   "void": 0,
-  "w": 122
+  "w": 123
  },
  "LL6 line": {
   "clv": -0.0114,
@@ -91,10 +91,10 @@
  },
  "MM3a persist": {
   "clv": 0.0336,
-  "l": 48,
-  "pending": 2,
+  "l": 50,
+  "pending": 0,
   "push": 0,
-  "units": 2.54,
+  "units": 0.54,
   "void": 0,
   "w": 48
  },
@@ -118,21 +118,21 @@
  },
  "MM5a follow": {
   "clv": -0.0874,
-  "l": 42,
-  "pending": 2,
+  "l": 43,
+  "pending": 1,
   "push": 0,
-  "units": -17.57,
+  "units": -18.57,
   "void": 0,
   "w": 18
  },
  "MM5b fade": {
   "clv": -0.068,
   "l": 17,
-  "pending": 2,
+  "pending": 1,
   "push": 0,
-  "units": 6.19,
+  "units": 6.8,
   "void": 0,
-  "w": 41
+  "w": 42
  },
  "NN2fa follow market": {
   "clv": -0.0851,
@@ -155,11 +155,11 @@
  "NN4 exch steam": {
   "clv": -0.0253,
   "l": 2,
-  "pending": 1,
+  "pending": 0,
   "push": 0,
-  "units": -1.13,
+  "units": -0.52,
   "void": 0,
-  "w": 1
+  "w": 2
  },
  "NN5 market moves": {
   "clv": 0.0234,
@@ -181,6 +181,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-22T05:10:15+00:00",
+ "updated_at": "2026-11-22T06:20:14+00:00",
  "version": 1
 }
