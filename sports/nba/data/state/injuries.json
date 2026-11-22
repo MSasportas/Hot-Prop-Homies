@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T14:10:00-05:00",
+ "at": "2026-11-22T14:20:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -159,15 +159,22 @@
    "status": "day-to-day",
    "name": "P.J. Washington",
    "team": "DAL",
-   "date": "2026-11-22T15:02Z",
-   "note": "Washington (illness/shoulder) is listed as out for Saturday's game against the Clippers."
+   "date": "2026-11-22T19:07Z",
+   "note": "Washington (illness) is doubtful to play Sunday's game against the Jazz."
+  },
+  "4896372": {
+   "status": "day-to-day",
+   "name": "Walter Clayton Jr.",
+   "team": "DAL",
+   "date": "2026-11-22T19:07Z",
+   "note": "Clayton (knee) is listed as questionable for Sunday's game against the Jazz."
   },
   "5106040": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Tobi Lawal",
    "team": "DAL",
-   "date": "2026-11-22T15:02Z",
-   "note": "Lawal (groin) is out for Saturday's game against the Clippers."
+   "date": "2026-11-22T19:04Z",
+   "note": "Lawal (groin) has been ruled out for Sunday's game against the Jazz."
   },
   "4683688": {
    "status": "out",
