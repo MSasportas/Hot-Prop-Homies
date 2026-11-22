@@ -1,16 +1,16 @@
 {
  "slate_date": "2026-11-21",
- "generated_at": "2026-11-21T21:30:01-05:00",
+ "generated_at": "2026-11-21T21:32:10-05:00",
  "games": [
   {
    "game_id": 2026020365,
-   "state": "LIVE",
+   "state": "CRIT",
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "05:36",
+   "clock": "04:02",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "PHI",
     "score": 3,
@@ -21,7 +21,7 @@
     "score": 3,
     "sog": 21
    },
-   "updated_at": "2026-11-21T21:30:01-05:00"
+   "updated_at": "2026-11-21T21:32:10-05:00"
   }
  ],
  "picks": {
