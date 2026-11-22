@@ -466,10 +466,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:43 - 2nd",
+    "detail": "7:48 - 2nd",
     "score": {
-     "BOS": "29",
-     "SAC": "27"
+     "BOS": "37",
+     "SAC": "32"
     }
    }
   ]
