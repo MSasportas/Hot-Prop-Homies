@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T12:50:00-05:00",
+ "at": "2026-11-22T13:20:01-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -481,22 +481,22 @@
    "status": "day-to-day",
    "name": "Karl-Anthony Towns",
    "team": "NY",
-   "date": "2026-11-22T03:05Z",
-   "note": "Towns (illness) won't play in Saturday's game versus the Trail Blazers."
-  },
-  "2528426": {
-   "status": "day-to-day",
-   "name": "Jordan Clarkson",
-   "team": "NY",
-   "date": "2026-11-22T03:05Z",
-   "note": "Clarkson (foot) won't play in Saturday's game against Portland."
+   "date": "2026-11-22T18:09Z",
+   "note": "Towns (illness) is questionable to play in Sunday's game against the Pacers."
   },
   "3934719": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "OG Anunoby",
    "team": "NY",
-   "date": "2026-11-22T03:04Z",
+   "date": "2026-11-22T18:09Z",
    "note": "Anunoby (calf) has been ruled out for Saturday's game against the Trail Blazers."
+  },
+  "2528426": {
+   "status": "out",
+   "name": "Jordan Clarkson",
+   "team": "NY",
+   "date": "2026-11-22T18:05Z",
+   "note": "Clarkson (foot) has been ruled out for Sunday's game against Indiana."
   },
   "4278073": {
    "status": "day-to-day",

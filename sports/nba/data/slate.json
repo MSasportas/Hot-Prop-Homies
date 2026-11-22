@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 1560,
+   "pool_left": 1556,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-22T13:15:00-05:00",
-  "last_read_at": "2026-11-22T13:00:01-05:00",
+  "next_read_at": "2026-11-22T14:00:00-05:00",
+  "last_read_at": "2026-11-22T13:20:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-22T13:00:01-05:00"
+   "at": "2026-11-22T13:20:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-22T13:00:01-05:00",
+    "at": "2026-11-22T13:20:01-05:00",
     "confirmed": []
    },
    "grade": true
@@ -48,7 +48,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-22T12:30:00-05:00",
+   "read_at": "2026-11-22T13:20:01-05:00",
    "picks": 0,
    "checks": [
     {
@@ -58,12 +58,16 @@
     {
      "read": "X180",
      "at": "2026-11-22T12:30:00-05:00"
+    },
+    {
+     "read": "X135",
+     "at": "2026-11-22T13:20:01-05:00"
     }
    ],
-   "last_check_at": "2026-11-22T12:30:00-05:00",
+   "last_check_at": "2026-11-22T13:20:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-22T13:15:00-05:00",
-   "next_check_read": "X135",
+   "next_check_at": "2026-11-22T14:00:00-05:00",
+   "next_check_read": "B",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -238,8 +242,8 @@
  "picks": [],
  "empty": {
   "text": "No picks yet today",
-  "why": "602 lines read. Pinnacle moved alone on 20, none of them bettable yet.",
-  "next": "2026-11-22T13:15:00-05:00"
+  "why": "602 lines read. Pinnacle moved alone on 21, none of them bettable yet.",
+  "next": "2026-11-22T14:00:00-05:00"
  },
  "counts": {
   "lines_read": 602,
@@ -253,6 +257,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-22T13:00:01-05:00",
- "status_at": "2026-11-22T13:00:01-05:00"
+ "generated_at": "2026-11-22T13:20:01-05:00",
+ "status_at": "2026-11-22T13:20:01-05:00"
 }
