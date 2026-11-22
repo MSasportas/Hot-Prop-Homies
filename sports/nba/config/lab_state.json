@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-21T10:00:29+00:00",
- "day": "2026-11-21",
+ "updated": "2026-11-22T10:00:53+00:00",
+ "day": "2026-11-22",
  "tracks": {
   "pin_judge": {
    "fail_streak": 0,
-   "k": 109,
-   "k_changed": "2026-11-21"
+   "k": 112,
+   "k_changed": "2026-11-22"
   },
   "threes_judge": {
    "fail_streak": 0,
-   "k": 17,
-   "k_changed": "2026-11-21"
+   "k": 20,
+   "k_changed": "2026-11-22"
   },
   "AH1": {
    "fail_streak": 0,
-   "k": 27,
-   "k_changed": "2026-11-21"
+   "k": 29,
+   "k_changed": "2026-11-22"
   },
   "AH2": {
    "fail_streak": 0,
@@ -34,8 +34,8 @@
   },
   "AH5": {
    "fail_streak": 0,
-   "k": 9,
-   "k_changed": "2026-11-21"
+   "k": 11,
+   "k_changed": "2026-11-22"
   },
   "AH6": {
    "fail_streak": 0,
@@ -54,13 +54,13 @@
   },
   "AH9": {
    "fail_streak": 0,
-   "k": 26,
-   "k_changed": "2026-11-21"
+   "k": 28,
+   "k_changed": "2026-11-22"
   },
   "AH10": {
    "fail_streak": 0,
-   "k": 34,
-   "k_changed": "2026-11-21"
+   "k": 36,
+   "k_changed": "2026-11-22"
   },
   "AH11": {
    "fail_streak": 0,
@@ -69,8 +69,8 @@
   },
   "AH12": {
    "fail_streak": 0,
-   "k": 16,
-   "k_changed": "2026-11-21"
+   "k": 18,
+   "k_changed": "2026-11-22"
   },
   "AH13": {
    "fail_streak": 0,
@@ -89,8 +89,8 @@
   },
   "NP1": {
    "fail_streak": 0,
-   "k": 0,
-   "k_changed": "2026-11-21"
+   "k": 34,
+   "k_changed": "2026-11-22"
   },
   "NP2": {
    "fail_streak": 0,
@@ -99,30 +99,33 @@
   },
   "NP3": {
    "fail_streak": 0,
-   "k": 0,
-   "k_changed": "2026-11-21"
+   "k": 4,
+   "k_changed": "2026-11-22"
   },
-  "LVA1": {},
-  "LVA2": {},
-  "NP4": {
+  "LVA1": {
    "fail_streak": 0,
-   "k": 0,
-   "k_changed": "2026-11-21"
+   "k": 20,
+   "k_changed": "2026-11-22"
   },
-  "DM1": {
+  "LVA2": {
+   "fail_streak": 0,
+   "k": 11,
+   "k_changed": "2026-11-22"
+  },
+  "NP4": {
    "fail_streak": 1,
-   "k": 103,
-   "k_changed": "2026-11-21"
+   "k": 605,
+   "k_changed": "2026-11-22"
   },
   "DM2": {
    "fail_streak": 0,
-   "k": 365,
-   "k_changed": "2026-11-21"
+   "k": 413,
+   "k_changed": "2026-11-22"
   },
   "DM3": {
    "fail_streak": 0,
-   "k": 28,
-   "k_changed": "2026-11-21"
+   "k": 38,
+   "k_changed": "2026-11-22"
   }
  }
 }
