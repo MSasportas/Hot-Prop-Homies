@@ -1,30 +1,30 @@
 {
  "LL1f-fade": {
   "clv": -0.0759,
-  "l": 296,
-  "pending": 32,
+  "l": 300,
+  "pending": 25,
   "push": 0,
-  "units": -50.01,
+  "units": -51.56,
   "void": 0,
-  "w": 275
+  "w": 278
  },
  "LL1f-follow": {
   "clv": -0.0808,
-  "l": 272,
-  "pending": 32,
+  "l": 275,
+  "pending": 25,
   "push": 0,
-  "units": -33.06,
+  "units": -31.69,
   "void": 0,
-  "w": 291
+  "w": 295
  },
  "LL3a tight": {
   "clv": 0.0308,
   "l": 62,
-  "pending": 6,
+  "pending": 5,
   "push": 0,
-  "units": 8.57,
+  "units": 9.62,
   "void": 0,
-  "w": 68
+  "w": 69
  },
  "LL3b loose": {
   "clv": 0.0286,
@@ -38,36 +38,36 @@
  "LL4a fade": {
   "clv": -0.0692,
   "l": 74,
-  "pending": 12,
+  "pending": 10,
   "push": 0,
-  "units": 7.4,
+  "units": 9.28,
   "void": 0,
-  "w": 89
+  "w": 91
  },
  "LL4b follow": {
   "clv": -0.095,
-  "l": 89,
-  "pending": 12,
+  "l": 91,
+  "pending": 10,
   "push": 0,
-  "units": -31.32,
+  "units": -33.32,
   "void": 0,
   "w": 73
  },
  "LL5 exch": {
   "clv": 0.0227,
   "l": 100,
-  "pending": 10,
+  "pending": 9,
   "push": 0,
-  "units": 15.83,
+  "units": 16.88,
   "void": 0,
-  "w": 121
+  "w": 122
  },
  "LL6 line": {
   "clv": -0.0114,
-  "l": 38,
-  "pending": 5,
+  "l": 41,
+  "pending": 2,
   "push": 0,
-  "units": -0.21,
+  "units": -3.21,
   "void": 0,
   "w": 68
  },
@@ -92,11 +92,11 @@
  "MM3a persist": {
   "clv": 0.0336,
   "l": 47,
-  "pending": 4,
+  "pending": 3,
   "push": 0,
-  "units": 2.49,
+  "units": 3.54,
   "void": 0,
-  "w": 47
+  "w": 48
  },
  "MM3b confirm": {
   "clv": 0.0641,
@@ -181,6 +181,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-22T03:30:17+00:00",
+ "updated_at": "2026-11-22T03:40:17+00:00",
  "version": 1
 }

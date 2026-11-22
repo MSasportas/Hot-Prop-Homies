@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-21",
- "started_at": "2026-11-21T22:10:00-05:00",
- "status_at": "2026-11-21T22:10:00-05:00",
- "finished_at": "2026-11-21T22:10:02-05:00",
- "last_ok_at": "2026-11-21T22:10:00-05:00",
+ "started_at": "2026-11-21T22:40:01-05:00",
+ "status_at": "2026-11-21T22:40:01-05:00",
+ "finished_at": "2026-11-21T22:40:08-05:00",
+ "last_ok_at": "2026-11-21T22:40:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -19,8 +19,8 @@
   },
   {
    "step": "stats",
-   "status": "skipped",
-   "note": "waiting to retry"
+   "status": "ok",
+   "note": "1 window(s) read, 2 team-games still missing"
   },
   {
    "step": "lineups",
@@ -64,18 +64,18 @@
   },
   {
    "step": "grade",
-   "status": "ok",
-   "note": "1 graded"
+   "status": "skipped",
+   "note": "nothing to grade"
   },
   {
    "step": "live",
-   "status": "ok",
-   "note": "1 game(s), 1 read this run"
+   "status": "skipped",
+   "note": "no change"
   },
   {
    "step": "shadow",
    "status": "ok",
-   "note": "71 graded"
+   "note": "34 graded"
   },
   {
    "step": "gg_grade",
@@ -89,8 +89,8 @@
   },
   {
    "step": "record",
-   "status": "ok",
-   "note": "record.json"
+   "status": "skipped",
+   "note": "unchanged"
   }
  ],
  "sources": {
@@ -163,10 +163,10 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "44976485617",
-  "iteration": 5,
-  "chain_link": 2,
+  "run_id": "44980244368",
+  "iteration": 3,
+  "chain_link": 3,
   "chain_started_at": "2026-11-21T19:51:40-05:00",
-  "run_started_at": "2026-11-21T21:31:30-05:00"
+  "run_started_at": "2026-11-21T22:21:31-05:00"
  }
 }
