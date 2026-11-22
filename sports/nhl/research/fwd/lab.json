@@ -1,17 +1,17 @@
 {
  "LL1f-fade": {
-  "clv": -0.0765,
+  "clv": -0.0762,
   "l": 263,
-  "pending": 67,
+  "pending": 77,
   "push": 0,
   "units": -37.86,
   "void": 0,
   "w": 250
  },
  "LL1f-follow": {
-  "clv": -0.0803,
+  "clv": -0.0804,
   "l": 248,
-  "pending": 66,
+  "pending": 76,
   "push": 0,
   "units": -38.41,
   "void": 0,
@@ -90,9 +90,9 @@
   "w": 3
  },
  "MM3a persist": {
-  "clv": 0.0331,
+  "clv": 0.0336,
   "l": 44,
-  "pending": 5,
+  "pending": 6,
   "push": 0,
   "units": 4.34,
   "void": 0,
@@ -117,18 +117,18 @@
   "w": 7
  },
  "MM5a follow": {
-  "clv": -0.0885,
+  "clv": -0.0883,
   "l": 40,
-  "pending": 3,
+  "pending": 4,
   "push": 0,
   "units": -18.17,
   "void": 0,
   "w": 16
  },
  "MM5b fade": {
-  "clv": -0.0674,
+  "clv": -0.0672,
   "l": 15,
-  "pending": 2,
+  "pending": 3,
   "push": 0,
   "units": 7.6,
   "void": 0,
@@ -181,6 +181,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-22T00:30:19+00:00",
+ "updated_at": "2026-11-22T01:20:13+00:00",
  "version": 1
 }

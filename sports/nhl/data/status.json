@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-21",
- "started_at": "2026-11-21T20:00:01-05:00",
- "status_at": "2026-11-21T20:00:01-05:00",
- "finished_at": "2026-11-21T20:00:03-05:00",
- "last_ok_at": "2026-11-21T20:00:01-05:00",
+ "started_at": "2026-11-21T20:20:01-05:00",
+ "status_at": "2026-11-21T20:20:01-05:00",
+ "finished_at": "2026-11-21T20:20:04-05:00",
+ "last_ok_at": "2026-11-21T20:20:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -25,7 +25,7 @@
   {
    "step": "lineups",
    "status": "ok",
-   "note": "4 of 4 team pages read"
+   "note": "6 of 6 team pages read"
   },
   {
    "step": "lineup_history",
@@ -35,7 +35,7 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "no pull due"
+   "note": "1 game(s) priced"
   },
   {
    "step": "market_menu",
@@ -44,8 +44,8 @@
   },
   {
    "step": "featured",
-   "status": "skipped",
-   "note": "no new shots read to match"
+   "status": "ok",
+   "note": "sides/totals for 3 game(s), 10 book(s) max, 3 credit(s)"
   },
   {
    "step": "book_probe",
@@ -74,8 +74,8 @@
   },
   {
    "step": "shadow",
-   "status": "skipped",
-   "note": "nothing new"
+   "status": "ok",
+   "note": "34 line read(s) logged"
   },
   {
    "step": "gg_grade",
@@ -115,7 +115,7 @@
   },
   {
    "n": 4,
-   "left": 475
+   "left": 470
   },
   {
    "n": 5,
@@ -138,14 +138,14 @@
    "left": 500
   }
  ],
- "pool_total": 2581,
+ "pool_total": 2576,
  "allowance": 34.6883,
  "tier": 4,
  "budget_today": 485,
- "budget_used_today": 90,
+ "budget_used_today": 95,
  "prices_state": "ok",
- "prices_at": "2026-11-21T19:30:01-05:00",
- "next_price_read_at": "2026-11-21T20:15:00-05:00",
+ "prices_at": "2026-11-21T20:20:01-05:00",
+ "next_price_read_at": "2026-11-21T20:30:00-05:00",
  "unmatched_names": [
   "Elias Pettersson"
  ],
@@ -156,7 +156,7 @@
  ],
  "excluded_teams": [],
  "stats_through": "2026-11-21",
- "lineups_at": "2026-11-21T20:00:01-05:00",
+ "lineups_at": "2026-11-21T20:20:01-05:00",
  "lineups_note": "Lineups posted for 16 of 28 teams checked so far.",
  "games_today": 14,
  "record_events": 361,
@@ -164,7 +164,7 @@
  "runner": {
   "event": "schedule",
   "run_id": "44966675262",
-  "iteration": 2,
+  "iteration": 4,
   "chain_link": 0,
   "chain_started_at": "2026-11-21T19:51:40-05:00",
   "run_started_at": "2026-11-21T19:51:40-05:00"
