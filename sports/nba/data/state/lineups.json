@@ -62,7 +62,7 @@
    }
   },
   "LAC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Darius Garland",
     "Max Strus",
@@ -77,12 +77,12 @@
    }
   },
   "DAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Kyrie Irving",
     "Caleb Martin",
     "Cooper Flagg",
-    "Naji Marshall",
+    "Zaccharie Risacher",
     "Daniel Gafford"
    ],
    "status": {
@@ -111,7 +111,7 @@
    }
   },
   "MIN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "LaMelo Ball",
     "Ayo Dosunmu",
@@ -126,12 +126,12 @@
    }
   },
   "NO": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jeremiah Fears",
     "Herbert Jones",
     "Saddiq Bey",
-    "Zion Williamson",
+    "Derik Queen",
     "Yves Missi"
    ],
    "status": {
@@ -188,5 +188,5 @@
    }
   }
  },
- "at": "2026-11-21T19:30:01-05:00"
+ "at": "2026-11-21T19:40:01-05:00"
 }
