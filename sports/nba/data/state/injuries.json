@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T12:30:00-05:00",
+ "at": "2026-11-22T12:41:33-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -110,8 +110,15 @@
    "status": "day-to-day",
    "name": "Nic Claxton",
    "team": "CHI",
-   "date": "2026-11-22T17:23Z",
-   "note": "Claxton ended with 11 points (4-8 FG, 3-3 FT), seven rebounds, one assist and two blocks across 29 minutes during Friday's 98-94 loss to Washington."
+   "date": "2026-11-22T17:24Z",
+   "note": "Claxton (illness) is questionable to play in Sunday's game against the Nuggets."
+  },
+  "4397189": {
+   "status": "day-to-day",
+   "name": "Jalen Smith",
+   "team": "CHI",
+   "date": "2026-11-22T17:22Z",
+   "note": "Smith (illness) has been upgraded to probable for Sunday's game against the Nuggets."
   },
   "2595516": {
    "status": "out",
@@ -126,13 +133,6 @@
    "team": "CHI",
    "date": "2026-11-22T06:06Z",
    "note": "Williams is probable for Sunday's game against the Nuggets due to a left thumb sprain."
-  },
-  "4397189": {
-   "status": "day-to-day",
-   "name": "Jalen Smith",
-   "team": "CHI",
-   "date": "2026-11-21T14:54Z",
-   "note": "Smith (illness) is out for Friday's game against the Wizards, Joel Lorenzi of The Athletic reports."
   },
   "5095151": {
    "status": "out",
@@ -735,6 +735,13 @@
    "team": "UTAH",
    "date": "2026-10-27T19:25Z",
    "note": "Jackson has been diagnosed with a torn MCL in his right knee and will be sidelined for 6-to-8 weeks, per Shams Charania of ESPN."
+  },
+  "4278129": {
+   "status": "day-to-day",
+   "name": "Deandre Ayton",
+   "team": "WSH",
+   "date": "2026-11-22T17:28Z",
+   "note": "Ayton had two points (1-1 FG), four rebounds and one block in nine minutes during Thursday's 144-140 double-overtime loss to the Pistons."
   },
   "4997537": {
    "status": "out",
