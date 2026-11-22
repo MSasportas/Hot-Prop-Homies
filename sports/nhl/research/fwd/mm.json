@@ -80,7 +80,7 @@
   "candidate": false
  },
  "MM5a follow": {
-  "bets": 63,
+  "bets": 65,
   "graded": 63,
   "w": 18,
   "units": -20.567,
@@ -96,7 +96,7 @@
   "candidate": false
  },
  "MM5b fade": {
-  "bets": 61,
+  "bets": 63,
   "graded": 61,
   "w": 44,
   "units": 7.865,
@@ -106,8 +106,8 @@
    0.2561
   ],
   "p_one_sided": 0.061,
-  "mean_ev": -0.0691,
-  "mean_clv": -0.0703,
+  "mean_ev": -0.0686,
+  "mean_clv": -0.0697,
   "games": 41,
   "candidate": false
  }
