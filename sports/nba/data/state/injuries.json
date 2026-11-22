@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T21:00:02-05:00",
+ "at": "2026-11-21T22:20:00-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -485,25 +485,25 @@
    "note": "Murray (ankle) is out for Friday's game against Memphis."
   },
   "3136195": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Karl-Anthony Towns",
    "team": "NY",
-   "date": "2026-11-21T22:51Z",
+   "date": "2026-11-22T03:05Z",
    "note": "Towns (illness) won't play in Saturday's game versus the Trail Blazers."
   },
-  "3934719": {
-   "status": "out",
-   "name": "OG Anunoby",
-   "team": "NY",
-   "date": "2026-11-21T21:49Z",
-   "note": "Anunoby (calf) has been ruled out for Saturday's game against the Trail Blazers."
-  },
   "2528426": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Jordan Clarkson",
    "team": "NY",
-   "date": "2026-11-20T22:21Z",
+   "date": "2026-11-22T03:05Z",
    "note": "Clarkson (foot) won't play in Saturday's game against Portland."
+  },
+  "3934719": {
+   "status": "day-to-day",
+   "name": "OG Anunoby",
+   "team": "NY",
+   "date": "2026-11-22T03:04Z",
+   "note": "Anunoby (calf) has been ruled out for Saturday's game against the Trail Blazers."
   },
   "4278073": {
    "status": "day-to-day",
