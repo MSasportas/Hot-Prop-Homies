@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-22",
- "generated_at": "2026-11-22T15:50:00-05:00",
- "status_at": "2026-11-22T15:50:00-05:00",
+ "generated_at": "2026-11-22T16:00:00-05:00",
+ "status_at": "2026-11-22T16:00:00-05:00",
  "valid_until": "2026-11-23T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -9,14 +9,14 @@
   "next_price_read_at": "2026-11-22T16:15:00-05:00",
   "stats_built_at": "2026-11-22T15:50:00-05:00",
   "stats_through": "2026-11-22",
-  "lineups_at": "2026-11-22T15:40:00-05:00",
+  "lineups_at": "2026-11-22T16:00:00-05:00",
   "goalies_at": null,
-  "lineups_note": "Lineups posted for 3 of 4 teams checked so far.",
+  "lineups_note": "Lineups posted for 6 of 8 teams checked so far.",
   "lineups_state": "ok",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-22T15:50:00-05:00",
+   "at": "2026-11-22T16:00:00-05:00",
    "failed_step": null
   },
   "pool": {
@@ -135,8 +135,8 @@
    "home": "STL",
    "start": "2026-11-22T19:00:00-05:00",
    "lineups": {
-    "away": "not_checked",
-    "home": "not_checked"
+    "away": "confirmed",
+    "home": "confirmed"
    },
    "goalies": {
     "away": {
@@ -160,8 +160,8 @@
      "at": "2026-11-22T17:30:00-05:00"
     },
     "lineups_at": {
-     "away": null,
-     "home": null
+     "away": "2026-11-22T16:00:00-05:00",
+     "home": "2026-11-22T16:00:00-05:00"
     }
    },
    "started": false,
@@ -176,8 +176,8 @@
    "home": "DAL",
    "start": "2026-11-22T19:00:00-05:00",
    "lineups": {
-    "away": "not_checked",
-    "home": "not_checked"
+    "away": "confirmed",
+    "home": "waiting"
    },
    "goalies": {
     "away": {
@@ -201,7 +201,7 @@
      "at": "2026-11-22T17:30:00-05:00"
     },
     "lineups_at": {
-     "away": null,
+     "away": "2026-11-22T16:00:00-05:00",
      "home": null
     }
    },
