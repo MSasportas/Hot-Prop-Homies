@@ -10,8 +10,8 @@
    "status": "confirmed"
   },
   "TBL": {
-   "name": "Andrei Vasilevskiy",
-   "status": "expected"
+   "name": "Dennis Hildeby",
+   "status": "confirmed"
   },
   "BUF": {
    "name": "Ukko-Pekka Luukkonen",
@@ -42,5 +42,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-22T15:30:01-05:00"
+ "checked_at": "2026-11-22T15:50:00-05:00"
 }
