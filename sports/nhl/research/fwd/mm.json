@@ -1,50 +1,50 @@
 {
  "MM2a split": {
   "bets": 17,
-  "graded": 13,
+  "graded": 14,
   "w": 5,
-  "units": -4.11,
-  "roi": -0.3162,
+  "units": -5.11,
+  "roi": -0.365,
   "ci90": [
-   -0.6991,
-   0.05
+   -0.7223,
+   0.0024
   ],
-  "p_one_sided": 0.9235,
+  "p_one_sided": 0.949,
   "mean_ev": 0.0313,
   "mean_clv": -0.0177,
-  "games": 12,
+  "games": 13,
   "candidate": false
  },
  "MM2b split 2%": {
   "bets": 11,
-  "graded": 8,
+  "graded": 9,
   "w": 3,
-  "units": -2.62,
-  "roi": -0.3275,
+  "units": -3.62,
+  "roi": -0.4022,
   "ci90": [
-   -0.7824,
-   0.1398
+   -0.8066,
+   0.0132
   ],
-  "p_one_sided": 0.863,
+  "p_one_sided": 0.9205,
   "mean_ev": 0.0437,
   "mean_clv": -0.0044,
-  "games": 8,
+  "games": 9,
   "candidate": false
  },
  "MM3a persist": {
   "bets": 96,
-  "graded": 90,
+  "graded": 92,
   "w": 46,
-  "units": 4.34,
-  "roi": 0.0482,
+  "units": 2.34,
+  "roi": 0.0254,
   "ci90": [
-   -0.1502,
-   0.2539
+   -0.1678,
+   0.2194
   ],
-  "p_one_sided": 0.339,
+  "p_one_sided": 0.43,
   "mean_ev": 0.0336,
   "mean_clv": 0.0336,
-  "games": 49,
+  "games": 51,
   "candidate": false
  },
  "MM3b confirm": {

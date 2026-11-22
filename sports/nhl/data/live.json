@@ -1,27 +1,27 @@
 {
  "slate_date": "2026-11-21",
- "generated_at": "2026-11-21T21:00:00-05:00",
+ "generated_at": "2026-11-21T21:10:01-05:00",
  "games": [
   {
    "game_id": 2026020365,
    "state": "LIVE",
    "schedule_state": "OK",
-   "period": 2,
+   "period": 3,
    "period_type": "REG",
-   "clock": "00:55",
-   "in_intermission": true,
+   "clock": "15:48",
+   "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "PHI",
     "score": 3,
-    "sog": 12
+    "sog": 14
    },
    "home": {
     "abbrev": "MTL",
-    "score": 1,
-    "sog": 18
+    "score": 2,
+    "sog": 20
    },
-   "updated_at": "2026-11-21T21:00:00-05:00"
+   "updated_at": "2026-11-21T21:10:01-05:00"
   }
  ],
  "picks": {
