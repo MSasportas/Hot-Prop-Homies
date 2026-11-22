@@ -187,15 +187,15 @@
    "state": "expected",
    "starters": [
     "Jalen Brunson",
+    "Landry Shamet",
     "Mikal Bridges",
     "Josh Hart",
-    "OG Anunoby",
     "Karl-Anthony Towns"
    ],
    "status": {
-    "OG Anunoby": "questionable",
     "Karl-Anthony Towns": "questionable",
-    "Jordan Clarkson": "questionable"
+    "OG Anunoby": "out",
+    "Jordan Clarkson": "out"
    }
   },
   "BOS": {
@@ -231,5 +231,5 @@
    }
   }
  },
- "at": "2026-11-22T13:00:01-05:00"
+ "at": "2026-11-22T13:10:02-05:00"
 }

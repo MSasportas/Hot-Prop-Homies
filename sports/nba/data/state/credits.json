@@ -67,14 +67,14 @@
   {
    "n": 10,
    "left": 68,
-   "status": "limited",
+   "status": "ok",
    "checked_at": "2026-11-22T13:00:01-05:00",
    "month": "2026-11"
   },
   {
    "n": 11,
    "left": 500,
-   "status": "limited",
+   "status": "ok",
    "checked_at": "2026-11-22T13:00:01-05:00",
    "month": "2026-11"
   },
