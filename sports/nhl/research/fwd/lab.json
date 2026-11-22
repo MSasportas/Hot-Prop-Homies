@@ -1,28 +1,28 @@
 {
  "LL1f-fade": {
   "clv": -0.0759,
-  "l": 300,
-  "pending": 25,
+  "l": 307,
+  "pending": 16,
   "push": 0,
-  "units": -51.56,
+  "units": -57.22,
   "void": 0,
-  "w": 278
+  "w": 280
  },
  "LL1f-follow": {
   "clv": -0.0808,
-  "l": 275,
-  "pending": 25,
+  "l": 277,
+  "pending": 16,
   "push": 0,
-  "units": -31.69,
+  "units": -27.99,
   "void": 0,
-  "w": 295
+  "w": 302
  },
  "LL3a tight": {
   "clv": 0.0308,
-  "l": 62,
-  "pending": 5,
+  "l": 63,
+  "pending": 4,
   "push": 0,
-  "units": 9.62,
+  "units": 8.62,
   "void": 0,
   "w": 69
  },
@@ -37,28 +37,28 @@
  },
  "LL4a fade": {
   "clv": -0.0692,
-  "l": 74,
-  "pending": 10,
+  "l": 77,
+  "pending": 6,
   "push": 0,
-  "units": 9.28,
+  "units": 7.05,
   "void": 0,
-  "w": 91
+  "w": 92
  },
  "LL4b follow": {
   "clv": -0.095,
-  "l": 91,
-  "pending": 10,
+  "l": 92,
+  "pending": 6,
   "push": 0,
-  "units": -33.32,
+  "units": -31.98,
   "void": 0,
-  "w": 73
+  "w": 76
  },
  "LL5 exch": {
   "clv": 0.0227,
-  "l": 100,
-  "pending": 9,
+  "l": 101,
+  "pending": 8,
   "push": 0,
-  "units": 16.88,
+  "units": 15.88,
   "void": 0,
   "w": 122
  },
@@ -91,10 +91,10 @@
  },
  "MM3a persist": {
   "clv": 0.0336,
-  "l": 47,
-  "pending": 3,
+  "l": 48,
+  "pending": 2,
   "push": 0,
-  "units": 3.54,
+  "units": 2.54,
   "void": 0,
   "w": 48
  },
@@ -119,18 +119,18 @@
  "MM5a follow": {
   "clv": -0.0874,
   "l": 42,
-  "pending": 3,
+  "pending": 2,
   "push": 0,
-  "units": -18.92,
+  "units": -17.57,
   "void": 0,
-  "w": 17
+  "w": 18
  },
  "MM5b fade": {
   "clv": -0.068,
-  "l": 16,
-  "pending": 3,
+  "l": 17,
+  "pending": 2,
   "push": 0,
-  "units": 7.19,
+  "units": 6.19,
   "void": 0,
   "w": 41
  },
@@ -181,6 +181,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-22T03:40:17+00:00",
+ "updated_at": "2026-11-22T05:10:15+00:00",
  "version": 1
 }
