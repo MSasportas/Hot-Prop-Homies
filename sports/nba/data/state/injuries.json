@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T22:20:00-05:00",
+ "at": "2026-11-22T01:20:01-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -105,6 +105,13 @@
    "team": "CHA",
    "date": "2026-11-08T22:26Z",
    "note": "Schroder has been diagnosed with a left hamstring strain and will be reevaluated in two weeks, Michael Scotto of HoopsHype.com reports."
+  },
+  "4431687": {
+   "status": "day-to-day",
+   "name": "Patrick Williams",
+   "team": "CHI",
+   "date": "2026-11-22T06:06Z",
+   "note": "Williams is probable for Sunday's game against the Nuggets due to a left thumb sprain."
   },
   "2595516": {
    "status": "day-to-day",
@@ -246,19 +253,12 @@
    "date": "2026-11-08T16:05Z",
    "note": "Duren (hamstring) has begun on-court activity and will be re-evaluated in two weeks, Hunter Patterson of The Athletic reports."
   },
-  "6589": {
-   "status": "day-to-day",
-   "name": "Draymond Green",
-   "team": "GS",
-   "date": "2026-11-20T03:53Z",
-   "note": "Green (elbow) is out for Thursday's game against the Grizzlies."
-  },
   "4397040": {
    "status": "out",
    "name": "Brandon Williams",
    "team": "GS",
-   "date": "2026-11-18T17:12Z",
-   "note": "Williams (hamstring) has progressed to on-court activities and will be re-evaluated Saturday."
+   "date": "2026-11-22T06:10Z",
+   "note": "Williams (hamstring) is out for Sunday's game against the Celtics."
   },
   "3975": {
    "status": "out",
