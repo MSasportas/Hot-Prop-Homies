@@ -1,26 +1,26 @@
 {
  "LL1f-fade": {
-  "clv": -0.0762,
+  "clv": -0.0759,
   "l": 270,
-  "pending": 66,
+  "pending": 79,
   "push": 0,
   "units": -41.55,
   "void": 0,
   "w": 254
  },
  "LL1f-follow": {
-  "clv": -0.0804,
+  "clv": -0.0808,
   "l": 252,
-  "pending": 65,
+  "pending": 78,
   "push": 0,
   "units": -35.6,
   "void": 0,
   "w": 265
  },
  "LL3a tight": {
-  "clv": 0.0312,
+  "clv": 0.0308,
   "l": 61,
-  "pending": 4,
+  "pending": 7,
   "push": 0,
   "units": 9.57,
   "void": 0,
@@ -36,7 +36,7 @@
   "w": 39
  },
  "LL4a fade": {
-  "clv": -0.0693,
+  "clv": -0.0692,
   "l": 68,
   "pending": 25,
   "push": 0,
@@ -45,7 +45,7 @@
   "w": 82
  },
  "LL4b follow": {
-  "clv": -0.0949,
+  "clv": -0.095,
   "l": 82,
   "pending": 25,
   "push": 0,
@@ -56,14 +56,14 @@
  "LL5 exch": {
   "clv": 0.0227,
   "l": 94,
-  "pending": 17,
+  "pending": 19,
   "push": 0,
   "units": 19.0,
   "void": 0,
   "w": 118
  },
  "LL6 line": {
-  "clv": -0.0113,
+  "clv": -0.0114,
   "l": 37,
   "pending": 10,
   "push": 0,
@@ -92,7 +92,7 @@
  "MM3a persist": {
   "clv": 0.0336,
   "l": 46,
-  "pending": 4,
+  "pending": 6,
   "push": 0,
   "units": 2.34,
   "void": 0,
@@ -117,18 +117,18 @@
   "w": 7
  },
  "MM5a follow": {
-  "clv": -0.0883,
+  "clv": -0.0874,
   "l": 40,
-  "pending": 4,
+  "pending": 6,
   "push": 0,
   "units": -18.17,
   "void": 0,
   "w": 16
  },
  "MM5b fade": {
-  "clv": -0.0672,
+  "clv": -0.068,
   "l": 15,
-  "pending": 3,
+  "pending": 5,
   "push": 0,
   "units": 7.6,
   "void": 0,
@@ -153,18 +153,18 @@
   "w": 14
  },
  "NN4 exch steam": {
-  "clv": -0.0281,
+  "clv": -0.0253,
   "l": 2,
-  "pending": 0,
+  "pending": 1,
   "push": 0,
   "units": -1.13,
   "void": 0,
   "w": 1
  },
  "NN5 market moves": {
-  "clv": 0.021,
+  "clv": 0.0234,
   "l": 2,
-  "pending": 0,
+  "pending": 1,
   "push": 0,
   "units": -0.75,
   "void": 0,
@@ -181,6 +181,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-22T02:10:14+00:00",
+ "updated_at": "2026-11-22T02:20:09+00:00",
  "version": 1
 }
