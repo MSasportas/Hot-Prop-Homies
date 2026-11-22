@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-21T21:40:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-22T00:10:00-05:00"
+   "at": "2026-11-22T00:20:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -369,7 +369,7 @@
    "away": "BOS",
    "home": "SAC",
    "state": "in",
-   "detail": "8:34 - 4th",
+   "detail": "3:37 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -574,6 +574,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-22T00:10:00-05:00",
- "status_at": "2026-11-22T00:10:00-05:00"
+ "generated_at": "2026-11-22T00:20:00-05:00",
+ "status_at": "2026-11-22T00:20:00-05:00"
 }
