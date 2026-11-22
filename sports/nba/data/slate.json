@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-21T21:40:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-21T22:20:00-05:00"
+   "at": "2026-11-21T22:30:26-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -173,8 +173,8 @@
    "start": "2026-11-21T20:00:00-05:00",
    "away": "LAC",
    "home": "DAL",
-   "state": "in",
-   "detail": "3:09 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -303,8 +303,8 @@
    "start": "2026-11-21T20:00:00-05:00",
    "away": "NOP",
    "home": "SAS",
-   "state": "in",
-   "detail": "3:34 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -369,7 +369,7 @@
    "away": "BOS",
    "home": "SAC",
    "state": "in",
-   "detail": "7:16 - 1st",
+   "detail": "3:28 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -482,7 +482,11 @@
    "price_final": false,
    "pulled": null,
    "added_at": "2026-11-21T17:50:00-05:00",
-   "result": null,
+   "result": {
+    "result": "L",
+    "actual": "19 points",
+    "units": -1.0
+   },
    "links": null,
    "rank": null
   },
@@ -570,6 +574,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-21T22:20:00-05:00",
- "status_at": "2026-11-21T22:20:00-05:00"
+ "generated_at": "2026-11-21T22:30:26-05:00",
+ "status_at": "2026-11-21T22:30:26-05:00"
 }
