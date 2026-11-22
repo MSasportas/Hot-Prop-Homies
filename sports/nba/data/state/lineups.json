@@ -105,12 +105,11 @@
     "Daniel Gafford"
    ],
    "status": {
-    "Walter Clayton": "questionable",
-    "P.J. Washington": "doubtful",
     "Tarik Biberovic": "out",
     "Sergio de Larrea": "out",
     "Tobi Lawal": "out",
-    "Dereck Lively": "out"
+    "Dereck Lively": "out",
+    "P.J. Washington": "out"
    }
   },
   "UTAH": {
@@ -226,5 +225,5 @@
    }
   }
  },
- "at": "2026-11-22T17:20:01-05:00"
+ "at": "2026-11-22T17:30:02-05:00"
 }
