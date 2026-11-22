@@ -1,17 +1,17 @@
 {
  "LL1f-fade": {
-  "clv": -0.0759,
+  "clv": -0.0757,
   "l": 314,
-  "pending": 9,
+  "pending": 24,
   "push": 0,
   "units": -58.01,
   "void": 0,
   "w": 288
  },
  "LL1f-follow": {
-  "clv": -0.0812,
+  "clv": -0.0815,
   "l": 285,
-  "pending": 8,
+  "pending": 23,
   "push": 0,
   "units": -30.32,
   "void": 0,
@@ -54,16 +54,16 @@
   "w": 79
  },
  "LL5 exch": {
-  "clv": 0.0225,
+  "clv": 0.0226,
   "l": 110,
-  "pending": 3,
+  "pending": 4,
   "push": 0,
   "units": 9.03,
   "void": 0,
   "w": 124
  },
  "LL6 line": {
-  "clv": -0.0127,
+  "clv": -0.0128,
   "l": 42,
   "pending": 7,
   "push": 0,
@@ -117,18 +117,18 @@
   "w": 9
  },
  "MM5a follow": {
-  "clv": -0.0851,
+  "clv": -0.0916,
   "l": 45,
-  "pending": 2,
+  "pending": 6,
   "push": 0,
   "units": -20.57,
   "void": 0,
   "w": 18
  },
  "MM5b fade": {
-  "clv": -0.0697,
+  "clv": -0.0694,
   "l": 17,
-  "pending": 2,
+  "pending": 5,
   "push": 0,
   "units": 7.87,
   "void": 0,
@@ -181,6 +181,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-22T22:30:13+00:00",
+ "updated_at": "2026-11-22T23:20:10+00:00",
  "version": 1
 }
