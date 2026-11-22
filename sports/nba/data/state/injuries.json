@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T16:10:01-05:00",
+ "at": "2026-11-22T16:20:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -414,6 +414,13 @@
    "date": "2026-10-05T20:53Z",
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
   },
+  "4397688": {
+   "status": "day-to-day",
+   "name": "Trey Murphy III",
+   "team": "NO",
+   "date": "2026-11-22T21:02Z",
+   "note": "Murphy (knees) is listed as probable for Monday's game against the Suns."
+  },
   "4576086": {
    "status": "out",
    "name": "Bryce McGowens",
@@ -427,13 +434,6 @@
    "team": "NO",
    "date": "2026-11-22T20:50Z",
    "note": "Williamson (thigh) is probable for Monday's game against Phoenix."
-  },
-  "4397688": {
-   "status": "day-to-day",
-   "name": "Trey Murphy III",
-   "team": "NO",
-   "date": "2026-11-22T15:07Z",
-   "note": "Murphy (knee) has been ruled out for Saturday's game against the Spurs."
   },
   "4431675": {
    "status": "out",
