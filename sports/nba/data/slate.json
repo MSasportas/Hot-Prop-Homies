@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-21T19:50:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-21T19:50:00-05:00"
+   "at": "2026-11-21T19:53:05-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-21T19:50:00-05:00",
+    "at": "2026-11-21T19:53:05-05:00",
     "confirmed": [
      "DAL",
      "LAC",
@@ -107,7 +107,7 @@
    "away": "POR",
    "home": "NYK",
    "state": "in",
-   "detail": "9:02 - 1st",
+   "detail": "6:34 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -551,6 +551,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-21T19:50:00-05:00",
- "status_at": "2026-11-21T19:50:00-05:00"
+ "generated_at": "2026-11-21T19:53:05-05:00",
+ "status_at": "2026-11-21T19:53:05-05:00"
 }
