@@ -2,7 +2,7 @@
  "slate": "2026-11-22",
  "teams": {
   "DET": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Cade Cunningham",
     "Daniss Jenkins",
@@ -11,7 +11,6 @@
     "John Collins"
    ],
    "status": {
-    "Cade Cunningham": "probable",
     "Jalen Duren": "out",
     "Ebuka Okorie": "out",
     "Taurean Prince": "out",
@@ -19,7 +18,7 @@
    }
   },
   "ATL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Kingston Flemings",
     "Nickeil Alexander-Walker",
@@ -231,5 +230,5 @@
    }
   }
  },
- "at": "2026-11-22T15:00:01-05:00"
+ "at": "2026-11-22T15:10:02-05:00"
 }
