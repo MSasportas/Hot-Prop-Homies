@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-21",
- "started_at": "2026-11-21T21:30:01-05:00",
- "status_at": "2026-11-21T21:30:01-05:00",
- "finished_at": "2026-11-21T21:30:09-05:00",
- "last_ok_at": "2026-11-21T21:30:01-05:00",
+ "started_at": "2026-11-21T21:50:00-05:00",
+ "status_at": "2026-11-21T21:50:00-05:00",
+ "finished_at": "2026-11-21T21:50:08-05:00",
+ "last_ok_at": "2026-11-21T21:50:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -20,12 +20,12 @@
   {
    "step": "stats",
    "status": "ok",
-   "note": "1 window(s) read"
+   "note": "1 window(s) read, 10 team-games still missing"
   },
   {
    "step": "lineups",
-   "status": "ok",
-   "note": "4 of 4 team pages read"
+   "status": "skipped",
+   "note": "checked in the last 20 minutes"
   },
   {
    "step": "lineup_history",
@@ -155,18 +155,20 @@
   "Ty Mueller"
  ],
  "excluded_teams": [],
- "stats_through": "2026-11-21",
+ "stats_through": "2026-11-19",
  "lineups_at": "2026-11-21T21:30:01-05:00",
  "lineups_note": "Lineups posted for 17 of 28 teams checked so far.",
  "games_today": 14,
  "record_events": 361,
- "odds_notes": [],
+ "odds_notes": [
+  "key 1 refused (401)"
+ ],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "44972622251",
-  "iteration": 6,
-  "chain_link": 1,
+  "run_id": "44976485617",
+  "iteration": 3,
+  "chain_link": 2,
   "chain_started_at": "2026-11-21T19:51:40-05:00",
-  "run_started_at": "2026-11-21T20:41:32-05:00"
+  "run_started_at": "2026-11-21T21:31:30-05:00"
  }
 }
