@@ -316,10 +316,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:46 - 1st",
+    "detail": "1:30 - 1st",
     "score": {
-     "OKC": "16",
-     "MIA": "22"
+     "OKC": "24",
+     "MIA": "30"
     }
    },
    {
