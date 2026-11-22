@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T10:20:00-05:00",
+ "at": "2026-11-22T10:30:01-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -106,19 +106,19 @@
    "date": "2026-11-08T22:26Z",
    "note": "Schroder has been diagnosed with a left hamstring strain and will be reevaluated in two weeks, Michael Scotto of HoopsHype.com reports."
   },
+  "2595516": {
+   "status": "out",
+   "name": "Norman Powell",
+   "team": "CHI",
+   "date": "2026-11-22T15:19Z",
+   "note": "Powell is questionable for Sunday's game against the Nuggets due to a right hamstring strain."
+  },
   "4431687": {
    "status": "day-to-day",
    "name": "Patrick Williams",
    "team": "CHI",
    "date": "2026-11-22T06:06Z",
    "note": "Williams is probable for Sunday's game against the Nuggets due to a left thumb sprain."
-  },
-  "2595516": {
-   "status": "day-to-day",
-   "name": "Norman Powell",
-   "team": "CHI",
-   "date": "2026-11-22T00:11Z",
-   "note": "Powell is questionable for Sunday's game against the Nuggets due to a right hamstring strain."
   },
   "4397189": {
    "status": "day-to-day",
