@@ -3,7 +3,7 @@
  "teams": {
   "NYR": {
    "name": "Dylan Garand",
-   "status": "expected"
+   "status": "confirmed"
   },
   "CAR": {
    "name": "Brandon Bussi",
@@ -42,5 +42,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-22T10:50:01-05:00"
+ "checked_at": "2026-11-22T12:10:00-05:00"
 }
