@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T13:20:01-05:00",
+ "at": "2026-11-22T13:40:00-05:00",
  "list": {
   "5149077": {
    "status": "out",
@@ -477,19 +477,19 @@
    "date": "2026-11-13T20:19Z",
    "note": "Murray (ankle) is out for Friday's game against Memphis."
   },
+  "3934719": {
+   "status": "out",
+   "name": "OG Anunoby",
+   "team": "NY",
+   "date": "2026-11-22T18:13Z",
+   "note": "Anunoby (calf) won't play Sunday against the Pacers."
+  },
   "3136195": {
    "status": "day-to-day",
    "name": "Karl-Anthony Towns",
    "team": "NY",
    "date": "2026-11-22T18:09Z",
    "note": "Towns (illness) is questionable to play in Sunday's game against the Pacers."
-  },
-  "3934719": {
-   "status": "out",
-   "name": "OG Anunoby",
-   "team": "NY",
-   "date": "2026-11-22T18:09Z",
-   "note": "Anunoby (calf) has been ruled out for Saturday's game against the Trail Blazers."
   },
   "2528426": {
    "status": "out",
@@ -735,6 +735,13 @@
    "team": "UTAH",
    "date": "2026-10-27T19:25Z",
    "note": "Jackson has been diagnosed with a torn MCL in his right knee and will be sidelined for 6-to-8 weeks, per Shams Charania of ESPN."
+  },
+  "4845374": {
+   "status": "day-to-day",
+   "name": "Bub Carrington",
+   "team": "WSH",
+   "date": "2026-11-22T18:21Z",
+   "note": "Carrington (illness) has been downgraded to questionable for Sunday's game against the Magic."
   },
   "4278129": {
    "status": "day-to-day",
