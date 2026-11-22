@@ -37,15 +37,15 @@
   "OKC": {
    "state": "expected",
    "starters": [
-    "Shai Gilgeous-Alexander",
-    "Jared McCain",
     "Ajay Mitchell",
+    "Jared McCain",
+    "Kenrich Williams",
     "Aday Mara",
     "Isaiah Hartenstein"
    ],
    "status": {
-    "Shai Gilgeous-Alexander": "questionable",
     "Alex Caruso": "out",
+    "Shai Gilgeous-Alexander": "out",
     "Chet Holmgren": "out",
     "Thomas Sorber": "out",
     "Nikola Topic": "out",
@@ -228,5 +228,5 @@
    }
   }
  },
- "at": "2026-11-22T16:30:00-05:00"
+ "at": "2026-11-22T16:40:02-05:00"
 }

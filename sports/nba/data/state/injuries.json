@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T16:30:00-05:00",
+ "at": "2026-11-22T16:40:02-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -365,13 +365,6 @@
    "date": "2026-11-07T17:24Z",
    "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
   },
-  "4431772": {
-   "status": "day-to-day",
-   "name": "Myron Gardner",
-   "team": "MIA",
-   "date": "2026-11-21T20:35Z",
-   "note": "Gardner (hamstring) is probable for Sunday's game against the Thunder."
-  },
   "3032977": {
    "status": "day-to-day",
    "name": "Giannis Antetokounmpo",
@@ -471,11 +464,11 @@
    "note": "Clarkson (foot) has been ruled out for Sunday's game against Indiana."
   },
   "4278073": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Shai Gilgeous-Alexander",
    "team": "OKC",
-   "date": "2026-11-21T22:45Z",
-   "note": "Gilgeous-Alexander (back/neck) is listed as questionable for Sunday's game versus Miami."
+   "date": "2026-11-22T21:35Z",
+   "note": "Gilgeous-Alexander (back/neck) is listed as out for Sunday's game against the Heat."
   },
   "5159925": {
    "status": "out",
