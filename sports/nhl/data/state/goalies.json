@@ -103,16 +103,16 @@
   },
   "SEA": {
    "name": "Philipp Grubauer",
-   "status": "expected"
+   "status": "confirmed"
   },
   "VAN": {
    "name": "Leevi Merilainen",
-   "status": "expected"
+   "status": "confirmed"
   },
   "MIN": {
    "name": "Jesper Wallstedt",
    "status": "confirmed"
   }
  },
- "checked_at": "2026-11-21T20:50:01-05:00"
+ "checked_at": "2026-11-21T21:40:00-05:00"
 }
