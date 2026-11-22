@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-22",
- "started_at": "2026-11-22T17:30:01-05:00",
- "status_at": "2026-11-22T17:30:01-05:00",
- "finished_at": "2026-11-22T17:30:03-05:00",
- "last_ok_at": "2026-11-22T17:30:01-05:00",
+ "started_at": "2026-11-22T17:32:01-05:00",
+ "status_at": "2026-11-22T17:32:01-05:00",
+ "finished_at": "2026-11-22T17:32:02-05:00",
+ "last_ok_at": "2026-11-22T17:32:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -35,7 +35,7 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "2 game(s) priced"
+   "note": "no pull due"
   },
   {
    "step": "market_menu",
@@ -44,8 +44,8 @@
   },
   {
    "step": "featured",
-   "status": "ok",
-   "note": "sides/totals for 3 game(s), 10 book(s) max, 3 credit(s)"
+   "status": "skipped",
+   "note": "no new shots read to match"
   },
   {
    "step": "book_probe",
@@ -60,7 +60,7 @@
   {
    "step": "engine",
    "status": "ok",
-   "note": "1 new event(s), 1 newly shown"
+   "note": "no change"
   },
   {
    "step": "grade",
@@ -74,8 +74,8 @@
   },
   {
    "step": "shadow",
-   "status": "ok",
-   "note": "70 line read(s) logged"
+   "status": "skipped",
+   "note": "nothing new"
   },
   {
    "step": "gg_grade",
@@ -84,13 +84,13 @@
   },
   {
    "step": "slate",
-   "status": "ok",
-   "note": "1 open pick(s)"
+   "status": "skipped",
+   "note": "unchanged"
   },
   {
    "step": "record",
-   "status": "ok",
-   "note": "record.json, 2026-11.json"
+   "status": "skipped",
+   "note": "unchanged"
   }
  ],
  "sources": {
@@ -157,15 +157,13 @@
  "lineups_note": "Lineups posted for 7 of 10 teams checked so far.",
  "games_today": 5,
  "record_events": 363,
- "odds_notes": [
-  "key 1 refused (401)"
- ],
+ "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "45073482244",
-  "iteration": 6,
-  "chain_link": 29,
+  "run_id": "45078178828",
+  "iteration": 1,
+  "chain_link": 30,
   "chain_started_at": "2026-11-21T19:51:40-05:00",
-  "run_started_at": "2026-11-22T16:41:23-05:00"
+  "run_started_at": "2026-11-22T17:31:28-05:00"
  }
 }
