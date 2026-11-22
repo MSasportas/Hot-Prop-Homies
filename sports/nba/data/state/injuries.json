@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T16:20:01-05:00",
+ "at": "2026-11-22T16:30:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -259,13 +259,6 @@
    "team": "GS",
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
-  },
-  "3102529": {
-   "status": "out",
-   "name": "Clint Capela",
-   "team": "HOU",
-   "date": "2026-11-19T23:19Z",
-   "note": "Capela (ankle) is out for Friday's game against Denver."
   },
   "2530530": {
    "status": "out",
@@ -670,8 +663,15 @@
    "status": "day-to-day",
    "name": "Collin Murray-Boyles",
    "team": "TOR",
-   "date": "2026-11-22T17:10Z",
-   "note": "Murray-Boyles (concussion) participated in Sunday's practice, Michael Grange of Sportsnet.ca reports."
+   "date": "2026-11-22T21:15Z",
+   "note": "Murray-Boyles (concussion) is listed as probable for Monday's game against Milwaukee, Blake Murphy of Sportsnet.ca reports."
+  },
+  "4432586": {
+   "status": "out",
+   "name": "Nate Bittle",
+   "team": "TOR",
+   "date": "2026-11-22T21:13Z",
+   "note": "Bittle (foot) has been ruled out for Monday's game against the Bucks, Blake Murphy of Sportsnet.ca reports."
   },
   "6450": {
    "status": "out",
@@ -686,13 +686,6 @@
    "team": "TOR",
    "date": "2026-11-19T21:13Z",
    "note": "Barrett has been diagnosed with a right hamstring strain and will be re-evaluated in two weeks, Brett Siegel of ClutchPoints.com reports."
-  },
-  "4432586": {
-   "status": "out",
-   "name": "Nate Bittle",
-   "team": "TOR",
-   "date": "2026-11-14T21:59Z",
-   "note": "Bittle (foot) has been ruled out for Sunday's game against the Knicks, Zulfi Sheikh of Sportsnet.ca reports."
   },
   "3102530": {
    "status": "out",

@@ -301,10 +301,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:40 - 2nd",
+    "detail": "4:14 - 2nd",
     "score": {
-     "DET": "31",
-     "ATL": "40"
+     "DET": "42",
+     "ATL": "46"
     }
    },
    {
