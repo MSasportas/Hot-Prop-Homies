@@ -1,118 +1,46 @@
 {
- "date": "2026-11-21",
+ "date": "2026-11-22",
  "teams": {
+  "NYR": {
+   "name": "Dylan Garand",
+   "status": "expected"
+  },
   "CAR": {
    "name": "Pyotr Kochetkov",
-   "status": "confirmed"
+   "status": "expected"
   },
-  "EDM": {
-   "name": "Devon Levi",
-   "status": "confirmed"
-  },
-  "CGY": {
-   "name": "Dustin Wolf",
-   "status": "confirmed"
-  },
-  "CHI": {
-   "name": "Spencer Knight",
-   "status": "confirmed"
-  },
-  "NSH": {
-   "name": "Juuse Saros",
-   "status": "confirmed"
-  },
-  "PIT": {
-   "name": "Sergei Murashov",
-   "status": "confirmed"
-  },
-  "FLA": {
-   "name": "Jacob Markstrom",
-   "status": "confirmed"
+  "TBL": {
+   "name": "Andrei Vasilevskiy",
+   "status": "expected"
   },
   "BUF": {
    "name": "Alex Lyon",
-   "status": "confirmed"
+   "status": "expected"
+  },
+  "DAL": {
+   "name": "Jake Oettinger",
+   "status": "expected"
+  },
+  "PIT": {
+   "name": "Sergei Murashov",
+   "status": "expected"
   },
   "STL": {
    "name": "Jordan Binnington",
-   "status": "confirmed"
+   "status": "expected"
   },
-  "NJD": {
-   "name": "Connor Hellebuyck",
-   "status": "confirmed"
-  },
-  "DET": {
-   "name": "John Gibson",
-   "status": "confirmed"
-  },
-  "NYI": {
-   "name": "Ilya Sorokin",
-   "status": "confirmed"
-  },
-  "TOR": {
-   "name": "Anthony Stolarz",
-   "status": "confirmed"
-  },
-  "CBJ": {
-   "name": "Cam Talbot",
-   "status": "confirmed"
-  },
-  "BOS": {
-   "name": "Jeremy Swayman",
-   "status": "confirmed"
-  },
-  "WSH": {
-   "name": "Charlie Lindgren",
-   "status": "confirmed"
-  },
-  "OTT": {
-   "name": "Linus Ullmark",
-   "status": "confirmed"
-  },
-  "LAK": {
-   "name": "Anton Forsberg",
-   "status": "confirmed"
-  },
-  "WPG": {
-   "name": "Stuart Skinner",
-   "status": "confirmed"
-  },
-  "VGK": {
-   "name": "Carter Hart",
-   "status": "confirmed"
-  },
-  "MTL": {
-   "name": "Jacob Fowler",
-   "status": "confirmed"
-  },
-  "PHI": {
-   "name": "Dan Vladar",
-   "status": "confirmed"
-  },
-  "UTA": {
-   "name": "Sebastian Cossa",
-   "status": "confirmed"
-  },
-  "ANA": {
-   "name": "Ville Husso",
-   "status": "confirmed"
-  },
-  "SJS": {
-   "name": "Alex Nedeljkovic",
-   "status": "confirmed"
-  },
-  "SEA": {
-   "name": "Philipp Grubauer",
-   "status": "confirmed"
+  "EDM": {
+   "name": "Tristan Jarry",
+   "status": "expected"
   },
   "VAN": {
-   "name": "Leevi Merilainen",
-   "status": "confirmed"
+   "name": "Nikita Tolopilo",
+   "status": "expected"
   },
-  "MIN": {
-   "name": "Jesper Wallstedt",
-   "status": "confirmed"
+  "CHI": {
+   "name": "Drew Commesso",
+   "status": "expected"
   }
  },
- "checked_at": "2026-11-21T21:40:00-05:00"
+ "checked_at": "2026-11-22T05:00:00-05:00"
 }

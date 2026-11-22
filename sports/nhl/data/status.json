@@ -1,10 +1,10 @@
 {
  "ok": true,
- "slate_date": "2026-11-21",
- "started_at": "2026-11-22T04:30:01-05:00",
- "status_at": "2026-11-22T04:30:01-05:00",
- "finished_at": "2026-11-22T04:30:02-05:00",
- "last_ok_at": "2026-11-22T04:30:01-05:00",
+ "slate_date": "2026-11-22",
+ "started_at": "2026-11-22T05:00:00-05:00",
+ "status_at": "2026-11-22T05:00:00-05:00",
+ "finished_at": "2026-11-22T05:00:08-05:00",
+ "last_ok_at": "2026-11-22T05:00:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -15,7 +15,7 @@
   {
    "step": "schedule",
    "status": "ok",
-   "note": "14 game(s) today"
+   "note": "5 game(s) today"
   },
   {
    "step": "stats",
@@ -70,7 +70,7 @@
   {
    "step": "live",
    "status": "skipped",
-   "note": "no change"
+   "note": "no started game with a pick"
   },
   {
    "step": "shadow",
@@ -139,34 +139,31 @@
   }
  ],
  "pool_total": 2562,
- "allowance": 34.6883,
+ "allowance": 40.6667,
  "tier": 4,
- "budget_today": 485,
- "budget_used_today": 109,
- "prices_state": "ok",
- "prices_at": "2026-11-21T21:20:00-05:00",
- "next_price_read_at": null,
- "unmatched_names": [
-  "Elias Pettersson"
- ],
+ "budget_today": 203,
+ "budget_used_today": 0,
+ "prices_state": "not_yet",
+ "prices_at": null,
+ "next_price_read_at": "2026-11-22T09:30:00-05:00",
+ "unmatched_names": [],
  "unknown_teams": [],
- "lineup_unmatched_names": [
-  "Elias Nils Pettersson",
-  "Ty Mueller"
- ],
+ "lineup_unmatched_names": [],
  "excluded_teams": [],
  "stats_through": "2026-11-21",
- "lineups_at": "2026-11-21T21:30:01-05:00",
- "lineups_note": "Lineups posted for 17 of 28 teams checked so far.",
- "games_today": 14,
+ "lineups_at": null,
+ "lineups_note": null,
+ "games_today": 5,
  "record_events": 362,
- "odds_notes": [],
+ "odds_notes": [
+  "key 1 refused (401)"
+ ],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "45005494383",
+  "run_id": "45007941034",
   "iteration": 2,
-  "chain_link": 11,
+  "chain_link": 12,
   "chain_started_at": "2026-11-21T19:51:40-05:00",
-  "run_started_at": "2026-11-22T04:01:26-05:00"
+  "run_started_at": "2026-11-22T04:31:24-05:00"
  }
 }
