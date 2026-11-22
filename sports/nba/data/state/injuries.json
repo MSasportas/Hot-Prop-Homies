@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T17:10:02-05:00",
+ "at": "2026-11-22T17:20:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -64,19 +64,26 @@
    "date": "2026-11-22T20:37Z",
    "note": "Traore (hamstring) has been ruled out for Monday's game against the Timberwolves."
   },
-  "4066218": {
-   "status": "day-to-day",
-   "name": "Grant Williams",
-   "team": "CHA",
-   "date": "2026-11-21T14:49Z",
-   "note": "Williams (hamstring) is listed as out for Friday's game versus the Hawks."
-  },
   "3135045": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Grayson Allen",
    "team": "CHA",
-   "date": "2026-11-21T14:49Z",
-   "note": "Allen (concussion) has been ruled out for Friday's game against Atlanta."
+   "date": "2026-11-22T22:08Z",
+   "note": "Allen (concussion) has been ruled out for Monday's game against the Grizzlies."
+  },
+  "4433287": {
+   "status": "day-to-day",
+   "name": "Brandon Miller",
+   "team": "CHA",
+   "date": "2026-11-22T22:08Z",
+   "note": "Miller is probable for Monday's game against the Grizzlies due to a right knee contusion."
+  },
+  "4066218": {
+   "status": "out",
+   "name": "Grant Williams",
+   "team": "CHA",
+   "date": "2026-11-22T22:05Z",
+   "note": "Williams (hamstring) won't play Monday's game against the Grizzlies."
   },
   "5061575": {
    "status": "out",
@@ -99,26 +106,12 @@
    "date": "2026-11-22T20:22Z",
    "note": "Claxton (illness) won't play in Sunday's game against the Nuggets."
   },
-  "4397189": {
-   "status": "day-to-day",
-   "name": "Jalen Smith",
-   "team": "CHI",
-   "date": "2026-11-22T17:22Z",
-   "note": "Smith (illness) has been upgraded to probable for Sunday's game against the Nuggets."
-  },
   "2595516": {
    "status": "out",
    "name": "Norman Powell",
    "team": "CHI",
    "date": "2026-11-22T15:25Z",
    "note": "Powell has been diagnosed with a mild right hamstring strain and will be re-evaluated later this week."
-  },
-  "4431687": {
-   "status": "day-to-day",
-   "name": "Patrick Williams",
-   "team": "CHI",
-   "date": "2026-11-22T06:06Z",
-   "note": "Williams is probable for Sunday's game against the Nuggets due to a left thumb sprain."
   },
   "5095151": {
    "status": "out",
@@ -323,19 +316,19 @@
    "date": "2026-11-22T20:25Z",
    "note": "Reaves (heel) was a full participant in Sunday's practice, Thuc Nhi Nguyen of the Los Angeles Times reports."
   },
+  "5041935": {
+   "status": "out",
+   "name": "Cameron Boozer",
+   "team": "MEM",
+   "date": "2026-11-22T22:14Z",
+   "note": "Boozer is out for Saturday's game against Minnesota due to a right ankle sprain."
+  },
   "4781746": {
    "status": "day-to-day",
    "name": "Javon Small",
    "team": "MEM",
    "date": "2026-11-22T15:09Z",
    "note": "Small won't play Saturday against the Timberwolves due to personal reasons."
-  },
-  "5041935": {
-   "status": "day-to-day",
-   "name": "Cameron Boozer",
-   "team": "MEM",
-   "date": "2026-11-22T15:09Z",
-   "note": "Boozer is out for Saturday's game against Minnesota due to a right ankle sprain."
   },
   "2991070": {
    "status": "day-to-day",
