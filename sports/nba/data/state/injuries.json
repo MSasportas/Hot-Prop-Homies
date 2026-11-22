@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T17:30:02-05:00",
+ "at": "2026-11-22T17:40:03-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -142,18 +142,11 @@
    "note": "Mobley will receive treatment and participate in rehab after the team confirmed a diagnosis of a right great toe sprain, and he'll be re-evaluated in the next 7-to-10 days."
   },
   "4278078": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "P.J. Washington",
    "team": "DAL",
-   "date": "2026-11-22T19:07Z",
-   "note": "Washington (illness) is doubtful to play Sunday's game against the Jazz."
-  },
-  "4896372": {
-   "status": "day-to-day",
-   "name": "Walter Clayton Jr.",
-   "team": "DAL",
-   "date": "2026-11-22T19:07Z",
-   "note": "Clayton (knee) is listed as questionable for Sunday's game against the Jazz."
+   "date": "2026-11-22T22:24Z",
+   "note": "Washington (illness) has been ruled out for Sunday's game against the Jazz."
   },
   "5106040": {
    "status": "out",
@@ -316,26 +309,19 @@
    "date": "2026-11-22T20:25Z",
    "note": "Reaves (heel) was a full participant in Sunday's practice, Thuc Nhi Nguyen of the Los Angeles Times reports."
   },
-  "5041935": {
-   "status": "out",
-   "name": "Cameron Boozer",
-   "team": "MEM",
-   "date": "2026-11-22T22:14Z",
-   "note": "Boozer is out for Saturday's game against Minnesota due to a right ankle sprain."
-  },
-  "4781746": {
-   "status": "day-to-day",
-   "name": "Javon Small",
-   "team": "MEM",
-   "date": "2026-11-22T15:09Z",
-   "note": "Small won't play Saturday against the Timberwolves due to personal reasons."
-  },
   "2991070": {
    "status": "day-to-day",
    "name": "Jerami Grant",
    "team": "MEM",
-   "date": "2026-11-22T15:08Z",
-   "note": "Grant (calf) is out for Saturday's game against the Timberwolves."
+   "date": "2026-11-22T22:21Z",
+   "note": "Grant (calf) has been ruled out for Monday's game against the Hornets."
+  },
+  "5041935": {
+   "status": "out",
+   "name": "Cameron Boozer",
+   "team": "MEM",
+   "date": "2026-11-22T22:18Z",
+   "note": "Boozer (ankle) won't play Monday's game against the Hornets."
   },
   "5105550": {
    "status": "out",

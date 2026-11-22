@@ -35,18 +35,19 @@
    }
   },
   "OKC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Ajay Mitchell",
     "Jared McCain",
+    "Micah Peavy",
     "Kenrich Williams",
-    "Aday Mara",
     "Isaiah Hartenstein"
    ],
    "status": {
     "Alex Caruso": "out",
     "Shai Gilgeous-Alexander": "out",
     "Chet Holmgren": "out",
+    "Aday Mara": "out",
     "Thomas Sorber": "out",
     "Nikola Topic": "out",
     "Cason Wallace": "out",
@@ -55,12 +56,12 @@
    }
   },
   "MIA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Davion Mitchell",
     "Klay Thompson",
     "Pelle Larsson",
-    "Andrew Wiggins",
+    "Bobby Portis",
     "Bam Adebayo"
    ],
    "status": {
@@ -225,5 +226,5 @@
    }
   }
  },
- "at": "2026-11-22T17:30:02-05:00"
+ "at": "2026-11-22T17:40:03-05:00"
 }

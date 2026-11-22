@@ -5,17 +5,49 @@
  "about": "Lab (Matt, 2026-11-12; research Run 11 T1b): 3-pointers only, Hard Rock's main-line price 1%+ better than Pinnacle's de-vigged chance on the same line, no Pinnacle move needed. 18 nights before tracking: 17 bets 10-7 +6.15u, beat the close by 0.9%. Research only, never the Record or Discord.",
  "from_slate": "2026-11-12",
  "min_ev": 0.01,
- "updated_at": "2026-11-22T00:40:05-05:00",
+ "updated_at": "2026-11-22T17:40:07-05:00",
  "total": {
   "w": 10,
   "l": 10,
   "push": 0,
   "void": 0,
   "units": 1.94,
-  "pending": 0,
+  "pending": 1,
   "hit_rate": 0.5
  },
  "nights": [
+  {
+   "date": "2026-11-22",
+   "w": 0,
+   "l": 0,
+   "units": 0,
+   "bets": [
+    {
+     "at": "2026-11-22T17:40:03-05:00",
+     "bet": "Over 3.5 threes",
+     "game_id": "401910030",
+     "gap_ev": -0.0399,
+     "home": false,
+     "line": 3.5,
+     "market": "threes",
+     "market_fair": 0.4364,
+     "opp": "MIA",
+     "pid": "4683778",
+     "pin_ev": 0.0228,
+     "pin_fair": 0.4649,
+     "player": "Jared McCain",
+     "price": 120,
+     "read": "D",
+     "side": "over",
+     "slate": "2026-11-22",
+     "start": "2026-11-22T18:00:00-05:00",
+     "team": "OKC",
+     "result": null,
+     "actual": null,
+     "units": null
+    }
+   ]
+  },
   {
    "date": "2026-11-21",
    "w": 2,
