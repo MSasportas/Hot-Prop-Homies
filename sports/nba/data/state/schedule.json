@@ -465,11 +465,11 @@
     "home": "SAC",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:40 - 3rd",
     "score": {
-     "BOS": "54",
-     "SAC": "41"
+     "BOS": "58",
+     "SAC": "49"
     }
    }
   ]
