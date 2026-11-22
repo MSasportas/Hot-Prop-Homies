@@ -5,7 +5,7 @@
 | NN2fa follow market | 20 | 20 | 6 | -8.83 | -44.1% | -44..-44% | 1.0000 | -0.0851 | False |
 | NN2fb follow HR | 20 | 20 | 14 | +5.06 | +25.3% | +25..+25% | 0.0000 | -0.0551 | False |
 | NN4 exch steam | 4 | 4 | 2 | -0.52 | -13.1% | -100..+61% | 0.7015 | -0.0253 | False |
-| NN5 market moves | 4 | 3 | 1 | -0.75 | -25.0% | -100..+50% | 0.7320 | 0.0234 | False |
+| NN5 market moves | 4 | 4 | 1 | -1.75 | -43.8% | -100..+12% | 0.7330 | 0.0234 | False |
 | NN6 fade soft | 0 | 0 | - | - | - | - | - | - | False |
 
 Descriptive, seen nights < 2026-11-11 (not a test, never a result):

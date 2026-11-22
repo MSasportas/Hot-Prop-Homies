@@ -49,18 +49,18 @@
  },
  "NN5 market moves": {
   "bets": 4,
-  "graded": 3,
+  "graded": 4,
   "w": 1,
-  "units": -0.75,
-  "roi": -0.25,
+  "units": -1.75,
+  "roi": -0.4375,
   "ci90": [
    -1.0,
-   0.5
+   0.125
   ],
-  "p_one_sided": 0.732,
+  "p_one_sided": 0.733,
   "mean_ev": 0.024,
   "mean_clv": 0.0234,
-  "games": 3,
+  "games": 4,
   "candidate": false
  },
  "NN6 fade soft": {
