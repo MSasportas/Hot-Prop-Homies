@@ -20,7 +20,7 @@
  "LL3a tight": {
   "clv": 0.0306,
   "l": 69,
-  "pending": 1,
+  "pending": 2,
   "push": 0,
   "units": 3.72,
   "void": 0,
@@ -36,18 +36,18 @@
   "w": 41
  },
  "LL4a fade": {
-  "clv": -0.0696,
+  "clv": -0.0694,
   "l": 80,
-  "pending": 5,
+  "pending": 9,
   "push": 0,
   "units": 6.59,
   "void": 0,
   "w": 95
  },
  "LL4b follow": {
-  "clv": -0.0957,
+  "clv": -0.096,
   "l": 95,
-  "pending": 5,
+  "pending": 9,
   "push": 0,
   "units": -32.64,
   "void": 0,
@@ -56,16 +56,16 @@
  "LL5 exch": {
   "clv": 0.0225,
   "l": 110,
-  "pending": 2,
+  "pending": 3,
   "push": 0,
   "units": 9.03,
   "void": 0,
   "w": 124
  },
  "LL6 line": {
-  "clv": -0.0124,
+  "clv": -0.0127,
   "l": 42,
-  "pending": 4,
+  "pending": 7,
   "push": 0,
   "units": -3.65,
   "void": 0,
@@ -181,6 +181,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-22T21:20:11+00:00",
+ "updated_at": "2026-11-22T22:30:13+00:00",
  "version": 1
 }

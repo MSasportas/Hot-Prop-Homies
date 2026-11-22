@@ -2,7 +2,7 @@
  "version": 1,
  "note": "Behind the scenes: research only. Not picks, not on the Record, never sent to Discord.",
  "market": "points",
- "generated_at": "2026-11-22T17:20:01-05:00",
+ "generated_at": "2026-11-22T17:30:01-05:00",
  "slate": "2026-11-22",
  "active": true,
  "window": {
@@ -10,7 +10,42 @@
   "checkpoint": "2026-11-02"
  },
  "tonight": {
-  "flags": [],
+  "flags": [
+   {
+    "id": "2026-11-22:2026020375:8477934:1.5:over",
+    "kind": "flag",
+    "slate": "2026-11-22",
+    "game_id": 2026020375,
+    "player": "L. Draisaitl",
+    "team": "EDM",
+    "opp": "STL",
+    "game": "EDM @ STL",
+    "start": "2026-11-22T19:00:00-05:00",
+    "side": "over",
+    "line": 1.5,
+    "bet": "OVER 1.5 points",
+    "price": 160,
+    "gap_pct": 7.6,
+    "final_pct": 10.6,
+    "market_fair_pct": 41.4,
+    "final_p_pct": 42.5,
+    "n_books": 7,
+    "guard": "pass",
+    "cap": null,
+    "flagged_at": "2026-11-22T17:30:01-05:00",
+    "read_pull": "B",
+    "settled": "Goalie confirmed",
+    "frozen_settled": "Goalie confirmed",
+    "move30_pct": null,
+    "pulled": null,
+    "locked": false,
+    "state": "open",
+    "close_fair_pct": null,
+    "clv_pct": null,
+    "result": null,
+    "units": null
+   }
+  ],
   "vetoes": [
    {
     "id": "2026-11-22:2026020373:8478427:0.5:under",
@@ -2392,7 +2427,7 @@
  ],
  "nov2": {
   "gaps_measured": 60,
-  "gaps_logged": 66,
+  "gaps_logged": 67,
   "graded_picks": 45,
   "w": 25,
   "l": 20,
@@ -2420,7 +2455,7 @@
   "clv_passed_mean": 0.046199818348810436,
   "clv_vetoed_mean": 0.04000875896860932,
   "nights": 25,
-  "nights_with_flags": 15,
+  "nights_with_flags": 16,
   "population_slope": null,
   "checkpoint": "2026-11-02"
  }

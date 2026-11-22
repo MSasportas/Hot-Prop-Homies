@@ -1,6 +1,38 @@
 {
  "nights": [
   {
+   "date": "2026-11-13",
+   "graded": true,
+   "w": 0,
+   "l": 1,
+   "units": -1.0,
+   "entries": [
+    {
+     "id": "2026-11-13:2026020310:8484210:shots:1.5:under",
+     "kind": "single",
+     "player": "G. Perreault",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "NYR",
+     "game": "NYR at VAN",
+     "price": 145,
+     "first_price": 145,
+     "last_price": 145,
+     "prices": [
+      {
+       "price": 145,
+       "at": "2026-11-13T19:30:00-05:00"
+      }
+     ],
+     "result": "L",
+     "actual": "had 2",
+     "units": -1.0,
+     "pulled": null,
+     "legs": []
+    }
+   ]
+  },
+  {
    "date": "2026-11-12",
    "graded": true,
    "w": 5,
