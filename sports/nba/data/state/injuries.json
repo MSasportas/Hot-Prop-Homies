@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T15:30:00-05:00",
+ "at": "2026-11-22T15:50:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -57,19 +57,19 @@
    "date": "2026-11-22T15:02Z",
    "note": "Tatum (rest) has been ruled out for Saturday's game against the Kings."
   },
-  "5279130": {
-   "status": "day-to-day",
-   "name": "Nolan Traore",
-   "team": "BKN",
-   "date": "2026-11-21T14:51Z",
-   "note": "Traore (hamstring) won't return to Friday's game against Orlando, Meghan Triplett of YES Network reports. He finished with four points (2-6 FG, 0-2 3Pt) and two assists over 18 minutes."
-  },
   "4702670": {
    "status": "day-to-day",
    "name": "Grant Nelson",
    "team": "BKN",
-   "date": "2026-11-21T14:51Z",
-   "note": "Nelson (ankle) has been ruled out for Friday's game against Orlando."
+   "date": "2026-11-22T20:39Z",
+   "note": "Nelson (ankle) is probable for Monday's game against the Timberwolves."
+  },
+  "5279130": {
+   "status": "out",
+   "name": "Nolan Traore",
+   "team": "BKN",
+   "date": "2026-11-22T20:37Z",
+   "note": "Traore (hamstring) has been ruled out for Monday's game against the Timberwolves."
   },
   "4066218": {
    "status": "day-to-day",

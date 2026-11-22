@@ -298,13 +298,13 @@
     "start": "2026-11-22T15:30:00-05:00",
     "away": "DET",
     "home": "ATL",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/22 - 3:30 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:38 - 1st",
     "score": {
-     "DET": "0",
-     "ATL": "0"
+     "DET": "10",
+     "ATL": "16"
     }
    },
    {
