@@ -27,7 +27,7 @@
   },
   "STL": {
    "name": "Joel Hofer",
-   "status": "expected"
+   "status": "confirmed"
   },
   "EDM": {
    "name": "Tristan Jarry",
@@ -42,5 +42,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-22T08:00:01-05:00"
+ "checked_at": "2026-11-22T08:10:00-05:00"
 }
