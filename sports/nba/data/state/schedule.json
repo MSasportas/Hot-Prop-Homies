@@ -406,10 +406,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:00 - 1st",
+    "detail": "10:53 - 2nd",
     "score": {
-     "POR": "21",
-     "NY": "37"
+     "POR": "25",
+     "NY": "42"
     }
    },
    {
