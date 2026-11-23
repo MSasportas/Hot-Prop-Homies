@@ -32,7 +32,7 @@
   "candidate": false
  },
  "MM3a persist": {
-  "bets": 98,
+  "bets": 99,
   "graded": 98,
   "w": 48,
   "units": 0.54,
@@ -42,8 +42,8 @@
    0.1911
   ],
   "p_one_sided": 0.4815,
-  "mean_ev": 0.0336,
-  "mean_clv": 0.0336,
+  "mean_ev": 0.0338,
+  "mean_clv": 0.0338,
   "games": 56,
   "candidate": false
  },
@@ -80,7 +80,7 @@
   "candidate": false
  },
  "MM5a follow": {
-  "bets": 69,
+  "bets": 70,
   "graded": 63,
   "w": 18,
   "units": -20.567,
@@ -90,13 +90,13 @@
    -0.1235
   ],
   "p_one_sided": 0.995,
-  "mean_ev": -0.0902,
+  "mean_ev": -0.0903,
   "mean_clv": -0.0916,
   "games": 43,
   "candidate": false
  },
  "MM5b fade": {
-  "bets": 66,
+  "bets": 67,
   "graded": 61,
   "w": 44,
   "units": 7.865,
@@ -106,8 +106,8 @@
    0.2561
   ],
   "p_one_sided": 0.061,
-  "mean_ev": -0.0684,
-  "mean_clv": -0.0694,
+  "mean_ev": -0.068,
+  "mean_clv": -0.069,
   "games": 41,
   "candidate": false
  }
