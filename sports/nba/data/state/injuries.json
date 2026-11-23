@@ -1,5 +1,5 @@
 {
- "at": "2026-11-22T20:30:01-05:00",
+ "at": "2026-11-22T20:50:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -602,6 +602,20 @@
    "team": "SAC",
    "date": "2026-10-21T04:22Z",
    "note": "Simmons underwent successful surgery Tuesday to repair a torn right Achilles tendon, James Ham of ESPN 1320 Sacramento reports."
+  },
+  "4066259": {
+   "status": "day-to-day",
+   "name": "De'Aaron Fox",
+   "team": "SA",
+   "date": "2026-11-23T01:39Z",
+   "note": "Fox is questionable for Monday's game against the Kings due to a right shin contusion, Jared Weiss of The Athletic reports."
+  },
+  "3134916": {
+   "status": "day-to-day",
+   "name": "Jordan McLaughlin",
+   "team": "SA",
+   "date": "2026-11-23T01:38Z",
+   "note": "McLaughlin (shoulder) is listed as questionable for Monday's game against the Kings."
   },
   "5037871": {
    "status": "out",
