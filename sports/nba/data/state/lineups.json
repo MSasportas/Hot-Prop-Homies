@@ -27,9 +27,7 @@
     "Dominick Barlow"
    ],
    "status": {
-    "Jaylen Brown": "probable",
     "Ariel Hukporti": "out",
-    "Adem Bona": "probable",
     "Dean Wade": "probable",
     "Joel Embiid": "out"
    }
@@ -210,8 +208,6 @@
     "Jalen Smith"
    ],
    "status": {
-    "Jalen Smith": "probable",
-    "Nic Claxton": "questionable",
     "Norman Powell": "out",
     "Caleb Wilson": "out"
    }
@@ -303,5 +299,5 @@
    }
   }
  },
- "at": "2026-11-23T18:10:00-05:00"
+ "at": "2026-11-23T18:20:00-05:00"
 }
