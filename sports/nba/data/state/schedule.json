@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:49 - 3rd",
+    "detail": "2:18 - 3rd",
     "score": {
      "IND": "69",
-     "NY": "74"
+     "NY": "76"
     }
    },
    {
@@ -390,10 +390,10 @@
     "home": "GS",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "10:42 - 3rd",
     "score": {
-     "BOS": "42",
+     "BOS": "45",
      "GS": "44"
     }
    }
