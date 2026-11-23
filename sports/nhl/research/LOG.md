@@ -1,4 +1,7 @@
 # LOG.md: Researcher runs (newest first)
+
+## 2026-11-21, Run 28 (Researcher; idea register, no results)
+- 8 new ideas registered as R28a-R28h (see HYPOTHESES.md). Nothing tested yet; forward only. R28h (assists) needs credits, not stored. Scorers needed from the Engineer for R28a-R28g; no lab.json entries yet because each track needs a summary writer first.
 - 2026-11-13 (Researcher run 27, daily; SHOTS ON GOAL ONLY; books, not players). No key used, no odds pull, stored data only.
   Re-scored forward: run_all.sh ran clean (exit 0). Forward Q-tests (Q1, Q6, Q12, Q13, Q19, Q24, LL, MM, NN) re-scored; nothing new cleared the bar.
   DP1 registered in HYPOTHESES.md before any test (book agreement: spread of other books' no-vig fairs, B and C reads).
