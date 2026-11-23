@@ -343,12 +343,12 @@
     "start": "2026-11-22T19:00:00-05:00",
     "away": "DEN",
     "home": "CHI",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11.0 - OT",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final/OT",
     "score": {
-     "DEN": "150",
+     "DEN": "151",
      "CHI": "145"
     }
    },
@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:14 - 3rd",
+    "detail": "3:49 - 3rd",
     "score": {
-     "IND": "63",
-     "NY": "67"
+     "IND": "69",
+     "NY": "74"
     }
    },
    {
