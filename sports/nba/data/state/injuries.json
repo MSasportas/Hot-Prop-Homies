@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T18:20:00-05:00",
+ "at": "2026-11-23T18:30:03-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -78,20 +78,6 @@
    "date": "2026-11-08T22:26Z",
    "note": "Schroder has been diagnosed with a left hamstring strain and will be reevaluated in two weeks, Michael Scotto of HoopsHype.com reports."
   },
-  "4397189": {
-   "status": "day-to-day",
-   "name": "Jalen Smith",
-   "team": "CHI",
-   "date": "2026-11-23T18:40Z",
-   "note": "Smith (illness) is probable for Monday's game against Cleveland."
-  },
-  "4278067": {
-   "status": "day-to-day",
-   "name": "Nic Claxton",
-   "team": "CHI",
-   "date": "2026-11-23T18:35Z",
-   "note": "Claxton (illness) is questionable for Monday's game against Cleveland."
-  },
   "2595516": {
    "status": "out",
    "name": "Norman Powell",
@@ -131,8 +117,8 @@
    "status": "day-to-day",
    "name": "P.J. Washington",
    "team": "DAL",
-   "date": "2026-11-23T15:05Z",
-   "note": "Washington (illness) has been ruled out for Sunday's game against the Jazz."
+   "date": "2026-11-23T23:21Z",
+   "note": "Washington (illness) is questionable for Tuesday's game against the Nuggets."
   },
   "5106040": {
    "status": "out",
@@ -295,19 +281,19 @@
    "date": "2026-11-23T01:09Z",
    "note": "Reaves (heel) has been ruled out for Monday's game against the Jazz, Jovan Buha of The Athletic reports."
   },
+  "5041935": {
+   "status": "out",
+   "name": "Cameron Boozer",
+   "team": "MEM",
+   "date": "2026-11-23T23:07Z",
+   "note": "Boozer (ankle) will be re-evaluated in four weeks, Brett Siegel of ClutchPoints.com reports."
+  },
   "2991070": {
    "status": "out",
    "name": "Jerami Grant",
    "team": "MEM",
    "date": "2026-11-23T04:04Z",
    "note": "Grant was diagnosed with a grade 1 left calf strain and will be re-evaluated in two weeks."
-  },
-  "5041935": {
-   "status": "out",
-   "name": "Cameron Boozer",
-   "team": "MEM",
-   "date": "2026-11-22T22:18Z",
-   "note": "Boozer (ankle) won't play Monday's game against the Hornets."
   },
   "5105550": {
    "status": "out",

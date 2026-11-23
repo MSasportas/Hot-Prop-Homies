@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 1064,
+   "pool_left": 1036,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-23T18:30:00-05:00",
-  "last_read_at": "2026-11-23T18:20:00-05:00",
+  "next_read_at": "2026-11-23T18:40:00-05:00",
+  "last_read_at": "2026-11-23T18:30:03-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-23T18:20:00-05:00"
+   "at": "2026-11-23T18:30:03-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-23T18:20:00-05:00",
+    "at": "2026-11-23T18:30:03-05:00",
     "confirmed": []
    },
    "grade": true
@@ -48,7 +48,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-23T18:20:00-05:00",
+   "read_at": "2026-11-23T18:30:03-05:00",
    "picks": 0,
    "checks": [
     {
@@ -82,12 +82,16 @@
     {
      "read": "C",
      "at": "2026-11-23T18:20:00-05:00"
+    },
+    {
+     "read": "X30",
+     "at": "2026-11-23T18:30:03-05:00"
     }
    ],
-   "last_check_at": "2026-11-23T18:20:00-05:00",
+   "last_check_at": "2026-11-23T18:30:03-05:00",
    "final": false,
-   "next_check_at": "2026-11-23T18:30:00-05:00",
-   "next_check_read": "X30",
+   "next_check_at": "2026-11-23T18:40:00-05:00",
+   "next_check_read": "D",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -105,7 +109,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-23T18:20:00-05:00",
+   "read_at": "2026-11-23T18:30:03-05:00",
    "picks": 0,
    "checks": [
     {
@@ -139,16 +143,20 @@
     {
      "read": "C",
      "at": "2026-11-23T18:20:00-05:00"
+    },
+    {
+     "read": "X30",
+     "at": "2026-11-23T18:30:03-05:00"
     }
    ],
-   "last_check_at": "2026-11-23T18:20:00-05:00",
+   "last_check_at": "2026-11-23T18:30:03-05:00",
    "final": false,
-   "next_check_at": "2026-11-23T18:30:00-05:00",
-   "next_check_read": "X30",
+   "next_check_at": "2026-11-23T18:40:00-05:00",
+   "next_check_read": "D",
    "paused": false,
    "injury_clear": {
     "away": true,
-    "home": true
+    "home": false
    }
   },
   {
@@ -162,7 +170,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-23T18:20:00-05:00",
+   "read_at": "2026-11-23T18:30:03-05:00",
    "picks": 1,
    "checks": [
     {
@@ -188,12 +196,16 @@
     {
      "read": "X75",
      "at": "2026-11-23T18:20:00-05:00"
+    },
+    {
+     "read": "X60",
+     "at": "2026-11-23T18:30:03-05:00"
     }
    ],
-   "last_check_at": "2026-11-23T18:20:00-05:00",
+   "last_check_at": "2026-11-23T18:30:03-05:00",
    "final": false,
-   "next_check_at": "2026-11-23T18:30:00-05:00",
-   "next_check_read": "X60",
+   "next_check_at": "2026-11-23T18:45:00-05:00",
+   "next_check_read": "C",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -211,7 +223,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-23T18:20:00-05:00",
+   "read_at": "2026-11-23T18:30:03-05:00",
    "picks": 0,
    "checks": [
     {
@@ -237,12 +249,16 @@
     {
      "read": "X75",
      "at": "2026-11-23T18:20:00-05:00"
+    },
+    {
+     "read": "X60",
+     "at": "2026-11-23T18:30:03-05:00"
     }
    ],
-   "last_check_at": "2026-11-23T18:20:00-05:00",
+   "last_check_at": "2026-11-23T18:30:03-05:00",
    "final": false,
-   "next_check_at": "2026-11-23T18:30:00-05:00",
-   "next_check_read": "X60",
+   "next_check_at": "2026-11-23T18:45:00-05:00",
+   "next_check_read": "C",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -260,7 +276,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-23T18:20:00-05:00",
+   "read_at": "2026-11-23T18:30:03-05:00",
    "picks": 1,
    "checks": [
     {
@@ -286,12 +302,16 @@
     {
      "read": "X75",
      "at": "2026-11-23T18:20:00-05:00"
+    },
+    {
+     "read": "X60",
+     "at": "2026-11-23T18:30:03-05:00"
     }
    ],
-   "last_check_at": "2026-11-23T18:20:00-05:00",
+   "last_check_at": "2026-11-23T18:30:03-05:00",
    "final": false,
-   "next_check_at": "2026-11-23T18:30:00-05:00",
-   "next_check_read": "X60",
+   "next_check_at": "2026-11-23T18:45:00-05:00",
+   "next_check_read": "C",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -309,7 +329,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-23T17:50:01-05:00",
+   "read_at": "2026-11-23T18:30:03-05:00",
    "picks": 1,
    "checks": [
     {
@@ -327,16 +347,20 @@
     {
      "read": "X135",
      "at": "2026-11-23T17:50:01-05:00"
+    },
+    {
+     "read": "B",
+     "at": "2026-11-23T18:30:03-05:00"
     }
    ],
-   "last_check_at": "2026-11-23T17:50:01-05:00",
+   "last_check_at": "2026-11-23T18:30:03-05:00",
    "final": false,
-   "next_check_at": "2026-11-23T18:30:00-05:00",
-   "next_check_read": "B",
+   "next_check_at": "2026-11-23T18:45:00-05:00",
+   "next_check_read": "X75",
    "paused": false,
    "injury_clear": {
     "away": true,
-    "home": false
+    "home": true
    }
   },
   {
@@ -350,7 +374,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-23T17:50:01-05:00",
+   "read_at": "2026-11-23T18:30:03-05:00",
    "picks": 0,
    "checks": [
     {
@@ -368,12 +392,16 @@
     {
      "read": "X135",
      "at": "2026-11-23T17:50:01-05:00"
+    },
+    {
+     "read": "B",
+     "at": "2026-11-23T18:30:03-05:00"
     }
    ],
-   "last_check_at": "2026-11-23T17:50:01-05:00",
+   "last_check_at": "2026-11-23T18:30:03-05:00",
    "final": false,
-   "next_check_at": "2026-11-23T18:30:00-05:00",
-   "next_check_read": "B",
+   "next_check_at": "2026-11-23T18:45:00-05:00",
+   "next_check_read": "X75",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -689,8 +717,8 @@
  ],
  "empty": null,
  "counts": {
-  "lines_read": 920,
-  "passing": 15,
+  "lines_read": 934,
+  "passing": 16,
   "games": 10
  },
  "safety_paused": false,
@@ -700,6 +728,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-23T18:20:00-05:00",
- "status_at": "2026-11-23T18:20:00-05:00"
+ "generated_at": "2026-11-23T18:30:03-05:00",
+ "status_at": "2026-11-23T18:30:03-05:00"
 }
