@@ -315,8 +315,8 @@
     "home": "MIA",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "11:20 - 3rd",
     "score": {
      "OKC": "54",
      "MIA": "67"
@@ -328,13 +328,13 @@
     "start": "2026-11-22T19:00:00-05:00",
     "away": "ORL",
     "home": "WSH",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/22 - 7:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:23 - 1st",
     "score": {
-     "ORL": "0",
-     "WSH": "0"
+     "ORL": "4",
+     "WSH": "12"
     }
    },
    {
@@ -343,13 +343,13 @@
     "start": "2026-11-22T19:00:00-05:00",
     "away": "DEN",
     "home": "CHI",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/22 - 7:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "5:37 - 1st",
     "score": {
-     "DEN": "0",
-     "CHI": "0"
+     "DEN": "19",
+     "CHI": "21"
     }
    },
    {
@@ -358,13 +358,13 @@
     "start": "2026-11-22T19:00:00-05:00",
     "away": "DAL",
     "home": "UTAH",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/22 - 7:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:24 - 1st",
     "score": {
-     "DAL": "0",
-     "UTAH": "0"
+     "DAL": "9",
+     "UTAH": "9"
     }
    },
    {
