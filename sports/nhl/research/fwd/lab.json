@@ -170,8 +170,62 @@
   "void": 0,
   "w": 0
  },
+ "R28a points gap": {
+  "clv": null,
+  "l": 0,
+  "pending": 0,
+  "push": 0,
+  "units": 0.0,
+  "void": 0,
+  "w": 0
+ },
+ "R28b over": {
+  "clv": -0.1229,
+  "l": 54,
+  "pending": 1,
+  "push": 0,
+  "units": -7.7,
+  "void": 0,
+  "w": 42
+ },
+ "R28b under": {
+  "clv": -0.0467,
+  "l": 78,
+  "pending": 1,
+  "push": 0,
+  "units": 10.32,
+  "void": 0,
+  "w": 89
+ },
+ "R28c rest": {
+  "clv": -0.0513,
+  "l": 120,
+  "pending": 4,
+  "push": 0,
+  "units": 0.72,
+  "void": 0,
+  "w": 139
+ },
+ "R28c rest mirror": {
+  "clv": -0.0931,
+  "l": 143,
+  "pending": 4,
+  "push": 0,
+  "units": -31.45,
+  "void": 0,
+  "w": 122
+ },
+ "R28d backup goalie": {
+  "clv": -0.0966,
+  "l": 42,
+  "pending": 1,
+  "push": 0,
+  "units": -10.04,
+  "void": 0,
+  "w": 35
+ },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-23T04:20:19+00:00",
+ "updated_at": "2026-11-23T16:49:39+00:00",
  "version": 1
 }

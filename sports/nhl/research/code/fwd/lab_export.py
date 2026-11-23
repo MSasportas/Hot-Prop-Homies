@@ -1,5 +1,5 @@
 """lab_export.py: research/fwd/lab.json for the page's Lab tab (Matt 2026-11-12: everything being tested shows in the Lab).
-Reads the forward scorers' own files (ll.json, mm.json, nn.json) and writes one totals block per variant. Research only.
+Reads the forward scorers' own files (ll.json, mm.json, nn.json, r28.json) and writes one totals block per variant. Research only.
 Tests auto-retired by scripts/lab_retire.py are skipped. Run from sports/nhl (run_all.sh does): python3 research/code/fwd/lab_export.py
 """
 import datetime
@@ -8,7 +8,7 @@ import os
 import sys
 
 
-SRC = ("ll", "mm", "nn")
+SRC = ("ll", "mm", "nn", "r28")
 
 
 def retired_names(summary):

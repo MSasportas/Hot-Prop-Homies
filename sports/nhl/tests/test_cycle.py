@@ -158,9 +158,12 @@ class Cycle(unittest.TestCase):
         """Two nightly cycles in a repo laid out like the real one retire a failing Lab test and publish lab.json,
         lab_retired.jsonl and lab_state.json (and nothing else new)."""
         self.lab_runner(self.LAB_DEAD)
+        earlier = os.path.join(self.runner, "config", "lab_retired.jsonl")       # the real repo's own retirements, copied in
+        before = [json.loads(line) for line in open(earlier) if line.strip()] if os.path.exists(earlier) else []
         self.nightly("2026-10-11", "2026-10-12")
         archive = [json.loads(line) for line in self.origin_file("config/lab_retired.jsonl").splitlines()]
-        self.assertEqual([(e["event"], e["id"], e["reason"]) for e in archive], [("retired", "T1", "fail_full")])
+        self.assertEqual([(e["event"], e["id"], e["reason"]) for e in archive[len(before):]], [("retired", "T1", "fail_full")])
+        self.assertEqual(archive[:len(before)], before)
         self.assertEqual(json.loads(self.origin_file("config/lab.json"))["tests"], [])
         self.assertEqual(json.loads(self.origin_file("config/lab_state.json"))["day"], "2026-10-12")
 

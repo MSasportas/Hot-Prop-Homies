@@ -20,5 +20,5 @@ python3 -I research/code/r19/score_q20.py "$PWD"          # Q20a-b
 python3 -I research/code/r20/score_q21.py "$PWD"          # Q21a-b
 python3 -I research/code/r21/score_q22.py "$PWD"          # Q22a-b
 python3 -I research/code/r22/score_q23.py "$PWD"          # Q23a-b
-sh research/code/fwd/run_lab.sh                              # Q24, LL, MM, NN and the Lab tab totals
+sh research/code/fwd/run_lab.sh                              # Q24, LL, MM, NN, R28 and the Lab tab totals
 python3 -I ../../scripts/lab_retire.py --sport nhl          # retire dead Lab tests, flag passing ones (always last)
