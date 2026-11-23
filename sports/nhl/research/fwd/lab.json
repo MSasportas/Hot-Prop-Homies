@@ -9,36 +9,36 @@
   "w": 325
  },
  "LL3a tight": {
-  "clv": 0.0309,
+  "clv": 0.0312,
   "l": 71,
-  "pending": 2,
+  "pending": 7,
   "push": 0,
   "units": 3.98,
   "void": 0,
   "w": 72
  },
  "LL3b loose": {
-  "clv": 0.0281,
+  "clv": 0.0282,
   "l": 32,
-  "pending": 1,
+  "pending": 3,
   "push": 0,
   "units": 10.7,
   "void": 0,
   "w": 41
  },
  "LL4a fade": {
-  "clv": -0.0681,
+  "clv": -0.0683,
   "l": 86,
-  "pending": 3,
+  "pending": 17,
   "push": 0,
   "units": 5.57,
   "void": 0,
   "w": 101
  },
  "LL4b follow": {
-  "clv": -0.0968,
+  "clv": -0.0971,
   "l": 101,
-  "pending": 3,
+  "pending": 17,
   "push": 0,
   "units": -34.35,
   "void": 0,
@@ -47,16 +47,16 @@
  "LL5 exch": {
   "clv": 0.0229,
   "l": 113,
-  "pending": 2,
+  "pending": 11,
   "push": 0,
   "units": 9.0,
   "void": 0,
   "w": 127
  },
  "LL6 line": {
-  "clv": -0.014,
+  "clv": -0.0145,
   "l": 45,
-  "pending": 3,
+  "pending": 7,
   "push": 0,
   "units": -4.94,
   "void": 0,
@@ -180,45 +180,45 @@
   "w": 0
  },
  "R28b over": {
-  "clv": -0.1219,
+  "clv": -0.1214,
   "l": 54,
-  "pending": 32,
+  "pending": 36,
   "push": 0,
   "units": -7.7,
   "void": 0,
   "w": 42
  },
  "R28b under": {
-  "clv": -0.0487,
+  "clv": -0.0483,
   "l": 78,
-  "pending": 44,
+  "pending": 52,
   "push": 0,
   "units": 10.32,
   "void": 0,
   "w": 89
  },
  "R28c rest": {
-  "clv": -0.0494,
+  "clv": -0.0489,
   "l": 120,
-  "pending": 98,
+  "pending": 115,
   "push": 0,
   "units": 0.72,
   "void": 0,
   "w": 139
  },
  "R28c rest mirror": {
-  "clv": -0.0953,
+  "clv": -0.0962,
   "l": 143,
-  "pending": 101,
+  "pending": 119,
   "push": 0,
   "units": -31.45,
   "void": 0,
   "w": 122
  },
  "R28d backup goalie": {
-  "clv": -0.1001,
+  "clv": -0.1003,
   "l": 42,
-  "pending": 12,
+  "pending": 18,
   "push": 0,
   "units": -10.04,
   "void": 0,
@@ -226,6 +226,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-23T22:30:19+00:00",
+ "updated_at": "2026-11-23T23:00:39+00:00",
  "version": 1
 }
