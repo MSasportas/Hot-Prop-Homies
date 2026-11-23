@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-22T20:10:03-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-22T21:20:01-05:00"
+   "at": "2026-11-22T21:30:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -249,7 +249,7 @@
    "away": "DEN",
    "home": "CHI",
    "state": "in",
-   "detail": "40.6 - 4th",
+   "detail": "2:27 - OT",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -313,8 +313,8 @@
    "start": "2026-11-22T19:00:00-05:00",
    "away": "DAL",
    "home": "UTA",
-   "state": "in",
-   "detail": "15.2 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -379,7 +379,7 @@
    "away": "IND",
    "home": "NYK",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "9:23 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -444,7 +444,7 @@
    "away": "BOS",
    "home": "GSW",
    "state": "in",
-   "detail": "7:41 - 2nd",
+   "detail": "2:34 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -581,6 +581,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-22T21:20:01-05:00",
- "status_at": "2026-11-22T21:20:01-05:00"
+ "generated_at": "2026-11-22T21:30:00-05:00",
+ "status_at": "2026-11-22T21:30:00-05:00"
 }
