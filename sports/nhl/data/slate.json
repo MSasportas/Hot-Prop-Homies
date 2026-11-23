@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-22",
- "generated_at": "2026-11-22T18:50:01-05:00",
- "status_at": "2026-11-22T18:50:01-05:00",
+ "generated_at": "2026-11-22T19:00:01-05:00",
+ "status_at": "2026-11-22T19:00:01-05:00",
  "valid_until": "2026-11-23T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-22T18:50:01-05:00",
+   "at": "2026-11-22T19:00:01-05:00",
    "failed_step": null
   },
   "pool": {
@@ -32,7 +32,11 @@
   "tier": 4
  },
  "banners": [],
- "empty": null,
+ "empty": {
+  "code": "none_qualified",
+  "text": "No picks yet today",
+  "sub": "75 lines read, none cleared both checks. Today's earlier pick is on the Live tab. Next read at 7:15 PM."
+ },
  "games": [
   {
    "id": 2026020373,
@@ -166,8 +170,8 @@
      "home": "2026-11-22T16:00:00-05:00"
     }
    },
-   "started": false,
-   "reads_done": true,
+   "started": true,
+   "reads_done": false,
    "picks": 1,
    "excluded_reason": null,
    "excluded_teams": []
@@ -212,8 +216,8 @@
      "home": "2026-11-22T18:50:01-05:00"
     }
    },
-   "started": false,
-   "reads_done": true,
+   "started": true,
+   "reads_done": false,
    "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
@@ -275,11 +279,15 @@
    "breakeven": 0.3846,
    "p_pct": 42,
    "breakeven_pct": 38,
-   "state": "lineup",
+   "state": "locked",
    "history": [
     {
      "at": "2026-11-22T17:30:01-05:00",
      "text": "Lineup confirmed"
+    },
+    {
+     "at": "2026-11-22T19:00:01-05:00",
+     "text": "Locked"
     }
    ],
    "prices": [
@@ -289,9 +297,9 @@
     }
    ],
    "pulled": null,
-   "price_final": true,
+   "price_final": false,
    "graded": null,
-   "rank": 1,
+   "rank": null,
    "tier": "main",
    "game_id": 2026020375,
    "player": "L. Draisaitl",

@@ -1,6 +1,6 @@
 {
  "note": "The page's Lab tab. Matt 2026-11-12: EVERYTHING being tested is listed here (live-tracked paper tests and the Researcher's forward tests). Each entry's numbers come live from its summary file. Remove an entry when its test is closed.",
- "updated": "2026-11-12",
+ "updated": "2026-11-23",
  "tests": [
   {
    "id": "q24",
@@ -11,16 +11,6 @@
    "stats": "fwd",
    "need": 300,
    "gate": "Passes only at 300 graded with a clear profit. Even then it comes to Matt: 1 PM picks are off until he says go. Updated each morning."
-  },
-  {
-   "id": "fwd_LL1f-fade",
-   "title": "Hard Rock moved since 1 PM: bet against it",
-   "rule": "Shots, research only. Run 24, counting from Nov 9. Full rule: research/HYPOTHESES.md (LL1f-fade).",
-   "summary": "research/fwd/lab.json",
-   "base": "root",
-   "stats": "LL1f-fade",
-   "need": 300,
-   "gate": "Passes only at 300 graded with a clear profit and beating the close."
   },
   {
    "id": "fwd_LL1f-follow",
@@ -212,5 +202,6 @@
    "need": 300,
    "gate": "Passes only at 300 graded with a clear profit and beating the close."
   }
- ]
+ ],
+ "retired_count": 1
 }
