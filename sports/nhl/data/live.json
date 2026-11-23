@@ -1,16 +1,16 @@
 {
  "slate_date": "2026-11-22",
- "generated_at": "2026-11-22T21:20:00-05:00",
+ "generated_at": "2026-11-22T21:30:00-05:00",
  "games": [
   {
    "game_id": 2026020375,
-   "state": "LIVE",
+   "state": "CRIT",
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "09:18",
+   "clock": "05:00",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "EDM",
     "score": 4,
@@ -19,9 +19,9 @@
    "home": {
     "abbrev": "STL",
     "score": 2,
-    "sog": 19
+    "sog": 24
    },
-   "updated_at": "2026-11-22T21:20:00-05:00"
+   "updated_at": "2026-11-22T21:30:00-05:00"
   }
  ],
  "picks": {
