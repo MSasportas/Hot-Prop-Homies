@@ -316,10 +316,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:15 - 4th",
+    "detail": "4:19 - 4th",
     "score": {
-     "OKC": "93",
-     "MIA": "111"
+     "OKC": "100",
+     "MIA": "116"
     }
    },
    {
@@ -373,13 +373,13 @@
     "start": "2026-11-22T20:00:00-05:00",
     "away": "IND",
     "home": "NY",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/22 - 8:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "10:54 - 1st",
     "score": {
-     "IND": "0",
-     "NY": "0"
+     "IND": "2",
+     "NY": "5"
     }
    },
    {
