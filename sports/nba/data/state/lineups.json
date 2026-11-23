@@ -161,7 +161,7 @@
    }
   },
   "IND": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Andrew Nembhard",
     "Kelly Oubre",
@@ -170,7 +170,6 @@
     "Ivica Zubac"
    ],
    "status": {
-    "Pascal Siakam": "questionable",
     "Johnny Furphy": "out",
     "Tyrese Haliburton": "out",
     "T.J. McConnell": "out",
@@ -224,5 +223,5 @@
    }
   }
  },
- "at": "2026-11-22T19:30:00-05:00"
+ "at": "2026-11-22T19:40:00-05:00"
 }
