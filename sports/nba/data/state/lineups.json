@@ -123,7 +123,7 @@
     "Jaxson Hayes"
    ],
    "status": {
-    "Jaxson Hayes": "questionable",
+    "Jaxson Hayes": "out",
     "Jaren Jackson": "out",
     "Lauri Markkanen": "out",
     "Jusuf Nurkic": "out"
@@ -193,10 +193,10 @@
    }
   },
   "BOS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Derrick White",
-    "Jordan Walsh",
+    "Hugo Gonzalez",
     "Jayson Tatum",
     "Sam Hauser",
     "Neemias Queta"
@@ -224,5 +224,5 @@
    }
   }
  },
- "at": "2026-11-22T20:12:37-05:00"
+ "at": "2026-11-22T20:20:01-05:00"
 }
