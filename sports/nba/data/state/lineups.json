@@ -32,12 +32,12 @@
    }
   },
   "MEM": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Ty Jerome",
-    "Jahmai Mashack",
     "Cedric Coward",
     "Jaylen Wells",
+    "Kris Murray",
     "Zach Edey"
    ],
    "status": {
@@ -298,5 +298,5 @@
    }
   }
  },
- "at": "2026-11-23T18:40:01-05:00"
+ "at": "2026-11-23T18:50:02-05:00"
 }
