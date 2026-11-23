@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-22T19:00:03-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-22T19:00:03-05:00"
+   "at": "2026-11-22T19:10:03-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-22T19:00:03-05:00",
+    "at": "2026-11-22T19:10:03-05:00",
     "confirmed": [
      "ATL",
      "CHI",
@@ -115,7 +115,7 @@
    "away": "OKC",
    "home": "MIA",
    "state": "in",
-   "detail": "1:37 - 2nd",
+   "detail": "Halftime",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -486,6 +486,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-22T19:00:03-05:00",
- "status_at": "2026-11-22T19:00:03-05:00"
+ "generated_at": "2026-11-22T19:10:03-05:00",
+ "status_at": "2026-11-22T19:10:03-05:00"
 }
