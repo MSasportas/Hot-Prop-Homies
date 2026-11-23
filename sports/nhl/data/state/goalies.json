@@ -39,7 +39,7 @@
   },
   "UTA": {
    "name": "Sebastian Cossa",
-   "status": "expected"
+   "status": "confirmed"
   },
   "SEA": {
    "name": "Philipp Grubauer",
@@ -58,5 +58,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-23T12:30:01-05:00"
+ "checked_at": "2026-11-23T12:50:01-05:00"
 }
