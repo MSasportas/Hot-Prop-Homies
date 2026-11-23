@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T00:00:01-05:00",
+ "at": "2026-11-23T10:10:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -36,19 +36,19 @@
    "date": "2026-09-21T19:50Z",
    "note": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday."
   },
+  "4251": {
+   "status": "day-to-day",
+   "name": "Paul George",
+   "team": "BOS",
+   "date": "2026-11-23T15:07Z",
+   "note": "George (rest) has been ruled out for Sunday's game against Golden State, Justin Turpin of WEEI.com reports."
+  },
   "4351852": {
    "status": "out",
    "name": "Mitchell Robinson",
    "team": "BOS",
    "date": "2026-11-22T20:58Z",
    "note": "Robinson (illness) has been ruled out for Sunday's game against Golden State, Justin Turpin of WEEI.com reports."
-  },
-  "4251": {
-   "status": "out",
-   "name": "Paul George",
-   "team": "BOS",
-   "date": "2026-11-22T20:56Z",
-   "note": "George (rest) has been ruled out for Sunday's game against Golden State, Justin Turpin of WEEI.com reports."
   },
   "4702670": {
    "status": "day-to-day",
@@ -331,10 +331,10 @@
    "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
   },
   "3032977": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Giannis Antetokounmpo",
    "team": "MIA",
-   "date": "2026-11-22T22:09Z",
+   "date": "2026-11-23T15:04Z",
    "note": "Antetokounmpo (groin) won't play in Sunday's game against Oklahoma City, Clemente Almanza of USA Today reports."
   },
   "4997526": {
@@ -674,10 +674,10 @@
    "note": "Barrett has been diagnosed with a right hamstring strain and will be re-evaluated in two weeks, Brett Siegel of ClutchPoints.com reports."
   },
   "4397077": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Jaxson Hayes",
    "team": "UTAH",
-   "date": "2026-11-23T01:16Z",
+   "date": "2026-11-23T15:06Z",
    "note": "Hayes (knee) has been ruled out for the remainder of Sunday's game against the Mavericks, Grant Afseth of DallasHoopsJournal.com reports."
   },
   "3102530": {
