@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T13:50:01-05:00",
+ "at": "2026-11-23T13:51:46-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -428,33 +428,40 @@
    "date": "2026-11-22T18:05Z",
    "note": "Clarkson (foot) has been ruled out for Sunday's game against Indiana."
   },
-  "2991350": {
+  "4432823": {
    "status": "out",
-   "name": "Alex Caruso",
+   "name": "Jaylin Williams",
    "team": "OKC",
-   "date": "2026-11-23T18:35Z",
-   "note": "Caruso (hip) won't play Sunday against the Heat."
+   "date": "2026-11-23T18:49Z",
+   "note": "Williams (back) is listed as out for Sunday's game against Miami."
+  },
+  "5159925": {
+   "status": "out",
+   "name": "Nikola Topic",
+   "team": "OKC",
+   "date": "2026-11-23T18:46Z",
+   "note": "Topic (hip) is listed as out for Sunday's game versus the Heat."
   },
   "5174983": {
    "status": "out",
    "name": "Aday Mara",
    "team": "OKC",
-   "date": "2026-11-23T18:34Z",
-   "note": "Mara (shin) is listed as out for Sunday's game versus Miami."
+   "date": "2026-11-23T18:45Z",
+   "note": "Mara (shin) has been ruled out for Monday's game against the Pacers."
   },
-  "4432823": {
-   "status": "day-to-day",
-   "name": "Jaylin Williams",
+  "4593803": {
+   "status": "out",
+   "name": "Jalen Williams",
    "team": "OKC",
-   "date": "2026-11-23T15:03Z",
-   "note": "Williams (back) is listed as out for Sunday's game against Miami."
+   "date": "2026-11-23T18:43Z",
+   "note": "Williams (ankle) has been ruled out for Monday's game against the Pacers, according to the NBA's official injury report."
   },
-  "5159925": {
-   "status": "day-to-day",
-   "name": "Nikola Topic",
+  "2991350": {
+   "status": "out",
+   "name": "Alex Caruso",
    "team": "OKC",
-   "date": "2026-11-23T15:03Z",
-   "note": "Topic (hip) is listed as out for Sunday's game versus the Heat."
+   "date": "2026-11-23T18:38Z",
+   "note": "Caruso (hip) has been ruled out for Monday's game against the Pacers, according to the NBA's official injury report."
   },
   "5061603": {
    "status": "out",
@@ -476,13 +483,6 @@
    "team": "OKC",
    "date": "2026-10-31T01:02Z",
    "note": "Holmgren underwent a biological treatment Friday to address a small patellar tendon tear and will miss at least 8-10 weeks, Nick Crain of Slam reports."
-  },
-  "4593803": {
-   "status": "out",
-   "name": "Jalen Williams",
-   "team": "OKC",
-   "date": "2026-10-28T23:41Z",
-   "note": "Williams (leg) underwent successful surgery Wednesday to \"address a fractured left fibula and reconstruction of ankle ligaments following a fracture and dislocation.\" He will be re-evaluated before th"
   },
   "4065654": {
    "status": "out",
