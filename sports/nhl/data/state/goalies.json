@@ -3,7 +3,7 @@
  "teams": {
   "NJD": {
    "name": "Connor Hellebuyck",
-   "status": "expected"
+   "status": "confirmed"
   },
   "CBJ": {
    "name": "Cam Talbot",
@@ -58,5 +58,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-23T11:40:00-05:00"
+ "checked_at": "2026-11-23T12:00:00-05:00"
 }
