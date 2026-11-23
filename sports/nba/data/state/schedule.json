@@ -373,13 +373,13 @@
     "start": "2026-11-22T20:00:00-05:00",
     "away": "IND",
     "home": "NY",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:24 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "IND": "100",
-     "NY": "112"
+     "IND": "106",
+     "NY": "113"
     }
    },
    {
@@ -391,9 +391,9 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:32 - 4th",
+    "detail": "3:44 - 4th",
     "score": {
-     "BOS": "81",
+     "BOS": "86",
      "GS": "83"
     }
    }
