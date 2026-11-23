@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-23",
- "started_at": "2026-11-23T17:30:01-05:00",
- "status_at": "2026-11-23T17:30:01-05:00",
- "finished_at": "2026-11-23T17:30:10-05:00",
- "last_ok_at": "2026-11-23T17:30:01-05:00",
+ "started_at": "2026-11-23T17:50:01-05:00",
+ "status_at": "2026-11-23T17:50:01-05:00",
+ "finished_at": "2026-11-23T17:50:03-05:00",
+ "last_ok_at": "2026-11-23T17:50:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -29,13 +29,13 @@
   },
   {
    "step": "lineup_history",
-   "status": "ok",
-   "note": "1 team(s) changed"
+   "status": "skipped",
+   "note": "no change"
   },
   {
    "step": "odds",
    "status": "ok",
-   "note": "1 game(s) priced"
+   "note": "no pull due"
   },
   {
    "step": "market_menu",
@@ -44,8 +44,8 @@
   },
   {
    "step": "featured",
-   "status": "ok",
-   "note": "sides/totals for 7 game(s), 10 book(s) max, 3 credit(s)"
+   "status": "skipped",
+   "note": "no new shots read to match"
   },
   {
    "step": "book_probe",
@@ -55,12 +55,12 @@
   {
    "step": "gapguard",
    "status": "ok",
-   "note": "gap+guard: 1 flag"
+   "note": "gap+guard: nothing new"
   },
   {
    "step": "engine",
    "status": "ok",
-   "note": "1 new event(s), 1 newly shown"
+   "note": "no change"
   },
   {
    "step": "grade",
@@ -74,8 +74,8 @@
   },
   {
    "step": "shadow",
-   "status": "ok",
-   "note": "38 line read(s) logged"
+   "status": "skipped",
+   "note": "nothing new"
   },
   {
    "step": "gg_grade",
@@ -89,8 +89,8 @@
   },
   {
    "step": "record",
-   "status": "ok",
-   "note": "record.json, 2026-11.json"
+   "status": "skipped",
+   "note": "unchanged"
   }
  ],
  "sources": {
@@ -155,7 +155,7 @@
  ],
  "excluded_teams": [],
  "stats_through": "2026-11-22",
- "lineups_at": "2026-11-23T17:30:01-05:00",
+ "lineups_at": "2026-11-23T17:50:01-05:00",
  "lineups_note": "Lineups posted for 8 of 10 teams checked so far.",
  "games_today": 7,
  "record_events": 366,
@@ -163,7 +163,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "45277214762",
-  "iteration": 3,
+  "iteration": 5,
   "chain_link": 9,
   "chain_started_at": "2026-11-23T09:55:27-05:00",
   "run_started_at": "2026-11-23T17:11:25-05:00"
