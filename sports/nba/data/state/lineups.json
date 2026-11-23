@@ -123,6 +123,7 @@
     "Jaxson Hayes"
    ],
    "status": {
+    "Jaxson Hayes": "questionable",
     "Jaren Jackson": "out",
     "Lauri Markkanen": "out",
     "Jusuf Nurkic": "out"
@@ -206,7 +207,7 @@
    }
   },
   "GS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "De'Anthony Melton",
     "Brandin Podziemski",
@@ -223,5 +224,5 @@
    }
   }
  },
- "at": "2026-11-22T20:00:03-05:00"
+ "at": "2026-11-22T20:10:03-05:00"
 }
