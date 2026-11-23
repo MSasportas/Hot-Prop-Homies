@@ -19,7 +19,7 @@
   },
   "OTT": {
    "name": "Linus Ullmark",
-   "status": "expected"
+   "status": "confirmed"
   },
   "CGY": {
    "name": "Devin Cooley",
@@ -58,5 +58,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-23T11:10:00-05:00"
+ "checked_at": "2026-11-23T11:30:01-05:00"
 }
