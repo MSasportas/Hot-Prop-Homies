@@ -1,9 +1,5 @@
 ## 2026-11-16, Run DM (Sharp; data mining 2026-11-16 — three leads registered)
 
-<<<<<<< HEAD
-## 2026-11-21, Run 28 (Researcher; idea register, no results)
-- 8 new ideas registered as R28a-R28h (see HYPOTHESES.md). Nothing tested yet; forward from 2026-11-21 reads. R28f is a descriptive audit; R28g and R28h need credits (totals and blocks/steals/combos are not stored). Scorers needed from the Engineer for R28a-R28e; R28c needs lineups.json prior-state history to be confirmed first. No lab.json entries yet: each new track needs a summary writer first.
-=======
 ## 2026-11-23, AH7 (auto; 45->20 window only)
 Filter: MOVES in the 45->20 minute window. MOVES population (Pinnacle >= 2 pt move, HR on line, -200..+200, 1/player/market/night).
 Discovery (<2026-11-10, 13 nights): n 65 graded 65 38-27 +6.06u ROI +9.3% CLV_pin - (n 0)
@@ -21,7 +17,9 @@ Forward (>=2026-11-10, 2 nights): n 20 graded 20 16-4 +8.86u ROI +44.3% CLV_pin 
 Forward FAIR: n 1 graded 1 1-0 +0.77u ROI +76.9% CLV_pin +1.2% (n 1)
 Pass bar: n>=150 graded fwd, ROI>0, CI>0, CLV>0. Status: FORWARD - accumulating
 
->>>>>>> origin/main
+## 2026-11-21, Run 28 (Researcher; idea register, no results)
+- 8 new ideas registered as R28a-R28h (see HYPOTHESES.md). Nothing tested yet; forward from 2026-11-21 reads. R28f is a descriptive audit; R28g and R28h need credits (totals and blocks/steals/combos are not stored). Scorers needed from the Engineer for R28a-R28e; R28c needs lineups.json prior-state history to be confirmed first. No lab.json entries yet: each new track needs a summary writer first.
+
 
 ## 2026-11-21, AH5 (auto; Large solo (4+ pt solo Pinnacle move))
 Filter: MOVES where move >= 4 pts AND others < 1 pt. MOVES population (Pinnacle >= 2 pt move, HR on line, -200..+200, 1/player/market/night).
