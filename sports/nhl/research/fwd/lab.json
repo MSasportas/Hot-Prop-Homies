@@ -180,45 +180,45 @@
   "w": 0
  },
  "R28b over": {
-  "clv": -0.1229,
+  "clv": -0.1225,
   "l": 54,
-  "pending": 1,
+  "pending": 29,
   "push": 0,
   "units": -7.7,
   "void": 0,
   "w": 42
  },
  "R28b under": {
-  "clv": -0.0467,
+  "clv": -0.0472,
   "l": 78,
-  "pending": 1,
+  "pending": 41,
   "push": 0,
   "units": 10.32,
   "void": 0,
   "w": 89
  },
  "R28c rest": {
-  "clv": -0.0513,
+  "clv": -0.0483,
   "l": 120,
-  "pending": 4,
+  "pending": 92,
   "push": 0,
   "units": 0.72,
   "void": 0,
   "w": 139
  },
  "R28c rest mirror": {
-  "clv": -0.0931,
+  "clv": -0.0959,
   "l": 143,
-  "pending": 4,
+  "pending": 94,
   "push": 0,
   "units": -31.45,
   "void": 0,
   "w": 122
  },
  "R28d backup goalie": {
-  "clv": -0.0966,
+  "clv": -0.1001,
   "l": 42,
-  "pending": 1,
+  "pending": 12,
   "push": 0,
   "units": -10.04,
   "void": 0,
@@ -226,6 +226,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-23T16:49:39+00:00",
+ "updated_at": "2026-11-23T18:00:15+00:00",
  "version": 1
 }
