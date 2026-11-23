@@ -225,9 +225,11 @@ class LabConfig(unittest.TestCase):
         doc = json.load(open(os.path.join(ROOT, "config", "lab.json")))
         # Matt 2026-11-12: everything being tested is in the Lab (paper tracks first, then the nightly forward filters)
         ids = [t["id"] for t in doc["tests"]]
-        self.assertEqual(ids[:3], ["fast_checks", "pin_judge", "threes_judge"])
-        self.assertEqual(ids[3:18], ["AH%d" % i for i in range(1, 16)])
-        self.assertEqual(ids[18:], ["NP1", "NP2", "NP3", "LVA1", "LVA2", "NP4", "DM1", "DM2", "DM3"])
+        archive = os.path.join(ROOT, "config", "lab_retired.jsonl")
+        retired = {json.loads(line)["id"] for line in open(archive) if line.strip()} if os.path.exists(archive) else set()
+        original = (["fast_checks", "pin_judge", "threes_judge"] + ["AH%d" % i for i in range(1, 16)]
+                    + ["NP1", "NP2", "NP3", "LVA1", "LVA2", "NP4", "DM1", "DM2", "DM3"])
+        self.assertEqual(ids, [i for i in original if i not in retired])      # auto-retirement removes tracks, never reorders or adds
         for t in doc["tests"]:
             for k in ("id", "title", "rule", "summary", "need", "gate"):
                 self.assertIn(k, t)
