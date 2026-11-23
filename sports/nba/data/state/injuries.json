@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T18:30:03-05:00",
+ "at": "2026-11-23T18:40:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -113,19 +113,19 @@
    "date": "2026-11-16T22:06Z",
    "note": "Mobley will receive treatment and participate in rehab after the team confirmed a diagnosis of a right great toe sprain, and he'll be re-evaluated in the next 7-to-10 days."
   },
+  "5106040": {
+   "status": "out",
+   "name": "Tobi Lawal",
+   "team": "DAL",
+   "date": "2026-11-23T23:25Z",
+   "note": "Lawal (groin) is out for Tuesday's game against Denver."
+  },
   "4278078": {
    "status": "day-to-day",
    "name": "P.J. Washington",
    "team": "DAL",
    "date": "2026-11-23T23:21Z",
    "note": "Washington (illness) is questionable for Tuesday's game against the Nuggets."
-  },
-  "5106040": {
-   "status": "out",
-   "name": "Tobi Lawal",
-   "team": "DAL",
-   "date": "2026-11-22T19:04Z",
-   "note": "Lawal (groin) has been ruled out for Sunday's game against the Jazz."
   },
   "4683688": {
    "status": "out",
@@ -483,13 +483,6 @@
    "team": "PHI",
    "date": "2026-11-23T22:49Z",
    "note": "Embiid (illness) is out for Monday's game against Portland, Austin Krell of OnPattison.com reports."
-  },
-  "3912848": {
-   "status": "day-to-day",
-   "name": "Dean Wade",
-   "team": "PHI",
-   "date": "2026-11-22T22:15Z",
-   "note": "Wade (hamstring) is listed as probable for Monday's game against Portland."
   },
   "4871141": {
    "status": "out",
