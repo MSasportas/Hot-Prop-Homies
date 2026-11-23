@@ -1,46 +1,62 @@
 {
- "date": "2026-11-22",
+ "date": "2026-11-23",
  "teams": {
-  "NYR": {
-   "name": "Dylan Garand",
-   "status": "confirmed"
+  "NJD": {
+   "name": "Connor Hellebuyck",
+   "status": "expected"
   },
-  "CAR": {
-   "name": "Brandon Bussi",
-   "status": "confirmed"
+  "CBJ": {
+   "name": "Cam Talbot",
+   "status": "expected"
   },
-  "TBL": {
-   "name": "Dennis Hildeby",
-   "status": "confirmed"
+  "MTL": {
+   "name": "Jacob Fowler",
+   "status": "expected"
   },
-  "BUF": {
-   "name": "Ukko-Pekka Luukkonen",
-   "status": "confirmed"
+  "LAK": {
+   "name": "Anton Forsberg",
+   "status": "expected"
   },
-  "DAL": {
-   "name": "Jake Oettinger",
-   "status": "confirmed"
+  "OTT": {
+   "name": "Linus Ullmark",
+   "status": "expected"
   },
-  "PIT": {
-   "name": "Arturs Silovs",
-   "status": "confirmed"
+  "CGY": {
+   "name": "Dustin Wolf",
+   "status": "expected"
   },
-  "STL": {
-   "name": "Joel Hofer",
-   "status": "confirmed"
+  "NYI": {
+   "name": "Ilya Sorokin",
+   "status": "expected"
   },
-  "EDM": {
-   "name": "Tristan Jarry",
-   "status": "confirmed"
+  "TOR": {
+   "name": "Anthony Stolarz",
+   "status": "expected"
   },
-  "VAN": {
-   "name": "Nikita Tolopilo",
-   "status": "confirmed"
+  "WPG": {
+   "name": "Stuart Skinner",
+   "status": "expected"
   },
-  "CHI": {
-   "name": "Drew Commesso",
-   "status": "confirmed"
+  "UTA": {
+   "name": "Sebastian Cossa",
+   "status": "expected"
+  },
+  "SEA": {
+   "name": "Philipp Grubauer",
+   "status": "expected"
+  },
+  "ANA": {
+   "name": "Ville Husso",
+   "status": "expected"
+  },
+  "SJS": {
+   "name": "Alex Nedeljkovic",
+   "status": "expected"
+  },
+  "MIN": {
+   "name": "Jesper Wallstedt",
+   "status": "expected"
   }
  },
- "checked_at": "2026-11-22T19:40:00-05:00"
+ "checked_at": "2026-11-23T05:00:00-05:00"
 }
