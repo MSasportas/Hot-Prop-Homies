@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-22",
- "started_at": "2026-11-22T21:40:00-05:00",
- "status_at": "2026-11-22T21:40:00-05:00",
- "finished_at": "2026-11-22T21:40:02-05:00",
- "last_ok_at": "2026-11-22T21:40:00-05:00",
+ "started_at": "2026-11-22T22:10:00-05:00",
+ "status_at": "2026-11-22T22:10:00-05:00",
+ "finished_at": "2026-11-22T22:10:02-05:00",
+ "last_ok_at": "2026-11-22T22:10:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -74,8 +74,8 @@
   },
   {
    "step": "shadow",
-   "status": "skipped",
-   "note": "nothing new"
+   "status": "ok",
+   "note": "36 graded"
   },
   {
    "step": "gg_grade",
@@ -161,7 +161,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "45100682887",
-  "iteration": 2,
+  "iteration": 5,
   "chain_link": 35,
   "chain_started_at": "2026-11-21T19:51:40-05:00",
   "run_started_at": "2026-11-22T21:31:25-05:00"

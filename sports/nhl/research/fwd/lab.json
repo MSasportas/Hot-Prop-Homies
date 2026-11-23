@@ -1,12 +1,12 @@
 {
  "LL1f-follow": {
   "clv": -0.0818,
-  "l": 287,
-  "pending": 24,
+  "l": 291,
+  "pending": 17,
   "push": 0,
-  "units": -30.06,
+  "units": -31.95,
   "void": 0,
-  "w": 312
+  "w": 315
  },
  "LL3a tight": {
   "clv": 0.0307,
@@ -29,38 +29,38 @@
  "LL4a fade": {
   "clv": -0.0683,
   "l": 82,
-  "pending": 11,
+  "pending": 9,
   "push": 0,
-  "units": 5.42,
+  "units": 6.88,
   "void": 0,
-  "w": 96
+  "w": 98
  },
  "LL4b follow": {
   "clv": -0.0968,
-  "l": 96,
-  "pending": 11,
+  "l": 98,
+  "pending": 9,
   "push": 0,
-  "units": -32.27,
+  "units": -34.27,
   "void": 0,
   "w": 81
  },
  "LL5 exch": {
   "clv": 0.0226,
   "l": 111,
-  "pending": 4,
+  "pending": 3,
   "push": 0,
-  "units": 8.94,
+  "units": 9.65,
   "void": 0,
-  "w": 125
+  "w": 126
  },
  "LL6 line": {
   "clv": -0.0128,
   "l": 44,
-  "pending": 4,
+  "pending": 2,
   "push": 0,
-  "units": -5.08,
+  "units": -3.94,
   "void": 0,
-  "w": 70
+  "w": 72
  },
  "MM2a split": {
   "clv": -0.0177,
@@ -109,21 +109,21 @@
  },
  "MM5a follow": {
   "clv": -0.0916,
-  "l": 46,
-  "pending": 5,
+  "l": 48,
+  "pending": 3,
   "push": 0,
-  "units": -20.12,
+  "units": -22.12,
   "void": 0,
   "w": 19
  },
  "MM5b fade": {
   "clv": -0.069,
   "l": 18,
-  "pending": 4,
+  "pending": 3,
   "push": 0,
-  "units": 7.44,
+  "units": 8.06,
   "void": 0,
-  "w": 45
+  "w": 46
  },
  "NN2fa follow market": {
   "clv": -0.0851,
@@ -172,6 +172,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-23T01:10:13+00:00",
+ "updated_at": "2026-11-23T03:10:08+00:00",
  "version": 1
 }
