@@ -1,6 +1,6 @@
 {
  "note": "The page's Lab tab. Matt 2026-11-12: EVERYTHING being tested is listed here, and a tile opens to its picks. Each entry's numbers come live from its summary file (path relative to data/). Remove an entry when its test is closed or goes live.",
- "updated": "2026-11-22",
+ "updated": "2026-11-23",
  "tests": [
   {
    "id": "fast_checks",
@@ -219,16 +219,6 @@
    "gate": "n>=30 fresh forward over picks in the above-5% bucket (min 3 prior games), hit rate clearly above the base over rate (78.9%). Post-hoc finding, forward only."
   },
   {
-   "id": "NP4",
-   "title": "Exchange move, HR unchanged",
-   "rule": "Consecutive reads, HR prices identical at both reads. novig AND prophetx both move their fair-over >= 1 pt (0.01) in the same direction. No Pinnacle condition. Bet HR in the direction of the exchange move, price -200..+200, first per player/market/night.",
-   "summary": "research/lab_np.json",
-   "stats": "NP4",
-   "need": 150,
-   "discovery": "Discovery Oct 25-Nov 14 (21 nights): 795 graded, 398-397, -46.79u, ROI -5.9%.",
-   "gate": "Passes only at 150 graded forward, profit and beating close."
-  },
-  {
    "id": "DM2",
    "title": "Hot-form overs fade (data mining)",
    "rule": "Base population: when the player's last-5-game average is 10%+ above his season average, overs miss. Points overs worst. Shadow-track from 2026-11-16. Note: LVA2 tracks overs where the LINE is 5%+ above rolling avg (8-0 discovery, overs hit) — different feature (line level vs recent output). Both tracked; DS to report overlap correlation at first scoring check.",
@@ -251,5 +241,5 @@
    "direction": "fade"
   }
  ],
- "retired_count": 1
+ "retired_count": 2
 }
