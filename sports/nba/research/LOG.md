@@ -1,7 +1,27 @@
 ## 2026-11-16, Run DM (Sharp; data mining 2026-11-16 — three leads registered)
 
+<<<<<<< HEAD
 ## 2026-11-21, Run 28 (Researcher; idea register, no results)
 - 8 new ideas registered as R28a-R28h (see HYPOTHESES.md). Nothing tested yet; forward from 2026-11-21 reads. R28f is a descriptive audit; R28g and R28h need credits (totals and blocks/steals/combos are not stored). Scorers needed from the Engineer for R28a-R28e; R28c needs lineups.json prior-state history to be confirmed first. No lab.json entries yet: each new track needs a summary writer first.
+=======
+## 2026-11-23, AH7 (auto; 45->20 window only)
+Filter: MOVES in the 45->20 minute window. MOVES population (Pinnacle >= 2 pt move, HR on line, -200..+200, 1/player/market/night).
+Discovery (<2026-11-10, 13 nights): n 65 graded 65 38-27 +6.06u ROI +9.3% CLV_pin - (n 0)
+Discovery FAIR (ev_pin>=0): n 10 graded 10 7-3 +3.47u ROI +34.7% CLV_pin - (n 0)
+Forward (>=2026-11-10, 2 nights): n 10 graded 10 4-6 -2.34u ROI -23.4% CLV_pin - (n 0)
+Forward FAIR: n 1 graded 1 0-1 -1.00u ROI -100.0% CLV_pin - (n 0)
+Pass bar: n>=150 graded fwd, ROI>0, CI>0, CLV>0. Status: FORWARD - accumulating
+
+
+## 2026-11-22, AH6 (auto; 90->45 window only)
+Filter: MOVES in the 90->45 minute window. MOVES population (Pinnacle >= 2 pt move, HR on line, -200..+200, 1/player/market/night).
+Discovery (<2026-11-10, 14 nights): n 127 graded 127 77-50 +13.49u ROI +10.6% CLV_pin -4.0% (n 125)
+Discovery FAIR (ev_pin>=0): n 14 graded 14 9-5 +3.14u ROI +22.4% CLV_pin -0.2% (n 14)
+Forward (>=2026-11-10, 2 nights): n 20 graded 20 16-4 +8.86u ROI +44.3% CLV_pin -3.0% (n 19)
+Forward FAIR: n 1 graded 1 1-0 +0.77u ROI +76.9% CLV_pin +1.2% (n 1)
+Pass bar: n>=150 graded fwd, ROI>0, CI>0, CLV>0. Status: FORWARD - accumulating
+
+>>>>>>> origin/main
 
 ## 2026-11-21, AH5 (auto; Large solo (4+ pt solo Pinnacle move))
 Filter: MOVES where move >= 4 pts AND others < 1 pt. MOVES population (Pinnacle >= 2 pt move, HR on line, -200..+200, 1/player/market/night).

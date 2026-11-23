@@ -1,172 +1,163 @@
 {
- "LL1f-fade": {
-  "clv": -0.0762,
-  "l": 97,
-  "pending": 1,
-  "push": 0,
-  "units": -18.31,
-  "void": 0,
-  "w": 89
- },
  "LL1f-follow": {
-  "clv": -0.0836,
-  "l": 89,
-  "pending": 1,
+  "clv": -0.0818,
+  "l": 295,
+  "pending": 3,
   "push": 0,
-  "units": -11.75,
+  "units": -28.91,
   "void": 0,
-  "w": 94
+  "w": 325
  },
  "LL3a tight": {
-  "clv": 0.0286,
-  "l": 21,
+  "clv": 0.0307,
+  "l": 71,
   "pending": 0,
   "push": 0,
-  "units": -0.7,
+  "units": 3.98,
   "void": 0,
-  "w": 19
+  "w": 72
  },
  "LL3b loose": {
-  "clv": 0.0268,
+  "clv": 0.0282,
+  "l": 32,
+  "pending": 0,
+  "push": 0,
+  "units": 10.7,
+  "void": 0,
+  "w": 41
+ },
+ "LL4a fade": {
+  "clv": -0.0683,
+  "l": 86,
+  "pending": 2,
+  "push": 0,
+  "units": 5.57,
+  "void": 0,
+  "w": 101
+ },
+ "LL4b follow": {
+  "clv": -0.0968,
+  "l": 101,
+  "pending": 2,
+  "push": 0,
+  "units": -34.35,
+  "void": 0,
+  "w": 85
+ },
+ "LL5 exch": {
+  "clv": 0.0226,
+  "l": 113,
+  "pending": 0,
+  "push": 0,
+  "units": 9.0,
+  "void": 0,
+  "w": 127
+ },
+ "LL6 line": {
+  "clv": -0.0128,
+  "l": 45,
+  "pending": 1,
+  "push": 0,
+  "units": -4.94,
+  "void": 0,
+  "w": 72
+ },
+ "MM2a split": {
+  "clv": -0.0177,
   "l": 11,
   "pending": 0,
   "push": 0,
-  "units": 4.52,
+  "units": -6.11,
   "void": 0,
-  "w": 14
- },
- "LL4a fade": {
-  "clv": -0.0761,
-  "l": 26,
-  "pending": 0,
-  "push": 0,
-  "units": -2.29,
-  "void": 0,
-  "w": 26
- },
- "LL4b follow": {
-  "clv": -0.0897,
-  "l": 26,
-  "pending": 0,
-  "push": 0,
-  "units": -6.05,
-  "void": 0,
-  "w": 26
- },
- "LL5 exch": {
-  "clv": 0.0171,
-  "l": 35,
-  "pending": 0,
-  "push": 0,
-  "units": 6.96,
-  "void": 0,
-  "w": 45
- },
- "LL6 line": {
-  "clv": -0.0123,
-  "l": 14,
-  "pending": 1,
-  "push": 0,
-  "units": -1.47,
-  "void": 0,
-  "w": 23
- },
- "MM2a split": {
-  "clv": -0.033,
-  "l": 5,
-  "pending": 0,
-  "push": 0,
-  "units": -2.72,
-  "void": 0,
-  "w": 3
+  "w": 6
  },
  "MM2b split 2%": {
-  "clv": -0.0286,
-  "l": 3,
+  "clv": -0.0044,
+  "l": 7,
   "pending": 0,
   "push": 0,
-  "units": -2.23,
+  "units": -3.62,
+  "void": 0,
+  "w": 4
+ },
+ "MM3a persist": {
+  "clv": 0.0338,
+  "l": 50,
+  "pending": 0,
+  "push": 0,
+  "units": 1.89,
+  "void": 0,
+  "w": 49
+ },
+ "MM3b confirm": {
+  "clv": 0.0641,
+  "l": 0,
+  "pending": 0,
+  "push": 0,
+  "units": 0.74,
   "void": 0,
   "w": 1
  },
- "MM3a persist": {
-  "clv": 0.0291,
-  "l": 18,
-  "pending": 0,
-  "push": 0,
-  "units": -2.79,
-  "void": 0,
-  "w": 14
- },
- "MM3b confirm": {
-  "clv": null,
-  "l": 0,
-  "pending": 0,
-  "push": 0,
-  "units": 0.0,
-  "void": 0,
-  "w": 0
- },
  "MM4 total": {
-  "clv": -0.1309,
-  "l": 5,
+  "clv": -0.1177,
+  "l": 9,
   "pending": 0,
   "push": 0,
-  "units": -0.53,
+  "units": -0.62,
   "void": 0,
-  "w": 5
+  "w": 9
  },
  "MM5a follow": {
-  "clv": -0.0979,
-  "l": 15,
+  "clv": -0.0916,
+  "l": 50,
   "pending": 0,
   "push": 0,
-  "units": -5.35,
+  "units": -22.97,
   "void": 0,
-  "w": 7
+  "w": 20
  },
  "MM5b fade": {
-  "clv": -0.0516,
+  "clv": -0.069,
+  "l": 19,
+  "pending": 0,
+  "push": 0,
+  "units": 8.31,
+  "void": 0,
+  "w": 48
+ },
+ "NN2fa follow market": {
+  "clv": -0.0851,
+  "l": 14,
+  "pending": 0,
+  "push": 0,
+  "units": -8.83,
+  "void": 0,
+  "w": 6
+ },
+ "NN2fb follow HR": {
+  "clv": -0.0551,
   "l": 6,
   "pending": 0,
   "push": 0,
-  "units": 2.33,
+  "units": 5.06,
   "void": 0,
-  "w": 15
- },
- "NN2fa follow market": {
-  "clv": null,
-  "l": 0,
-  "pending": 0,
-  "push": 0,
-  "units": 0.0,
-  "void": 0,
-  "w": 0
- },
- "NN2fb follow HR": {
-  "clv": null,
-  "l": 0,
-  "pending": 0,
-  "push": 0,
-  "units": 0.0,
-  "void": 0,
-  "w": 0
+  "w": 14
  },
  "NN4 exch steam": {
-  "clv": 0.015,
-  "l": 1,
+  "clv": -0.0253,
+  "l": 2,
   "pending": 0,
   "push": 0,
-  "units": -1.0,
+  "units": -0.52,
   "void": 0,
-  "w": 0
+  "w": 2
  },
  "NN5 market moves": {
-  "clv": 0.0263,
-  "l": 0,
+  "clv": 0.0234,
+  "l": 3,
   "pending": 0,
   "push": 0,
-  "units": 1.25,
+  "units": -1.75,
   "void": 0,
   "w": 1
  },
@@ -181,6 +172,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-13T20:25:20+00:00",
+ "updated_at": "2026-11-23T04:20:19+00:00",
  "version": 1
 }
