@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-23",
- "generated_at": "2026-11-23T05:30:00-05:00",
- "status_at": "2026-11-23T05:30:00-05:00",
+ "generated_at": "2026-11-23T09:55:56-05:00",
+ "status_at": "2026-11-23T09:55:56-05:00",
  "valid_until": "2026-11-24T05:00:00-05:00",
  "status": {
   "prices_state": "not_yet",
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-23T05:30:00-05:00",
+   "at": "2026-11-23T09:55:56-05:00",
    "failed_step": null
   },
   "pool": {
@@ -85,11 +85,11 @@
    },
    "goalies": {
     "away": {
-     "name": "Anton Forsberg",
+     "name": "Darcy Kuemper",
      "status": "expected"
     },
     "home": {
-     "name": "Jacob Fowler",
+     "name": "Jakub Dobes",
      "status": "expected"
     }
    },
@@ -121,7 +121,7 @@
    },
    "goalies": {
     "away": {
-     "name": "Dustin Wolf",
+     "name": "Devin Cooley",
      "status": "expected"
     },
     "home": {
@@ -229,7 +229,7 @@
    },
    "goalies": {
     "away": {
-     "name": "Ville Husso",
+     "name": "Lukas Dostal",
      "status": "expected"
     },
     "home": {
@@ -269,7 +269,7 @@
      "status": "expected"
     },
     "home": {
-     "name": "Alex Nedeljkovic",
+     "name": "Yaroslav Askarov",
      "status": "expected"
     }
    },

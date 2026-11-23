@@ -10,11 +10,11 @@
    "status": "expected"
   },
   "MTL": {
-   "name": "Jacob Fowler",
+   "name": "Jakub Dobes",
    "status": "expected"
   },
   "LAK": {
-   "name": "Anton Forsberg",
+   "name": "Darcy Kuemper",
    "status": "expected"
   },
   "OTT": {
@@ -22,7 +22,7 @@
    "status": "expected"
   },
   "CGY": {
-   "name": "Dustin Wolf",
+   "name": "Devin Cooley",
    "status": "expected"
   },
   "NYI": {
@@ -46,11 +46,11 @@
    "status": "expected"
   },
   "ANA": {
-   "name": "Ville Husso",
+   "name": "Lukas Dostal",
    "status": "expected"
   },
   "SJS": {
-   "name": "Alex Nedeljkovic",
+   "name": "Yaroslav Askarov",
    "status": "expected"
   },
   "MIN": {
@@ -58,5 +58,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-23T05:00:00-05:00"
+ "checked_at": "2026-11-23T09:55:56-05:00"
 }
