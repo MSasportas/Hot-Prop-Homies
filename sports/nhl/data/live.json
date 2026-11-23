@@ -1,10 +1,10 @@
 {
  "slate_date": "2026-11-22",
- "generated_at": "2026-11-22T22:20:01-05:00",
+ "generated_at": "2026-11-22T22:22:04-05:00",
  "games": [
   {
    "game_id": 2026020375,
-   "state": "FINAL",
+   "state": "OFF",
    "schedule_state": "OK",
    "period": 5,
    "period_type": "SO",
@@ -21,7 +21,7 @@
     "score": 5,
     "sog": 27
    },
-   "updated_at": "2026-11-22T22:20:01-05:00"
+   "updated_at": "2026-11-22T22:22:04-05:00"
   }
  ],
  "picks": {
