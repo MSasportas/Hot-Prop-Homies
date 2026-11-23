@@ -328,13 +328,13 @@
     "start": "2026-11-22T19:00:00-05:00",
     "away": "ORL",
     "home": "WSH",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:23 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "ORL": "91",
-     "WSH": "113"
+     "ORL": "96",
+     "WSH": "116"
     }
    },
    {
@@ -346,10 +346,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:11 - 4th",
+    "detail": "40.6 - 4th",
     "score": {
-     "DEN": "119",
-     "CHI": "119"
+     "DEN": "131",
+     "CHI": "128"
     }
    },
    {
@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:57 - 4th",
+    "detail": "15.2 - 4th",
     "score": {
-     "DAL": "109",
-     "UTAH": "92"
+     "DAL": "114",
+     "UTAH": "112"
     }
    },
    {
@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:39 - 2nd",
+    "detail": "7:41 - 2nd",
     "score": {
-     "BOS": "22",
-     "GS": "30"
+     "BOS": "26",
+     "GS": "34"
     }
    }
   ]
