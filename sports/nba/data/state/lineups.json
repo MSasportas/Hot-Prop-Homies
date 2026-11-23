@@ -28,6 +28,7 @@
    ],
    "status": {
     "Jaylen Brown": "probable",
+    "Joel Embiid": "questionable",
     "Ariel Hukporti": "out",
     "Adem Bona": "probable",
     "Dean Wade": "probable"
@@ -37,9 +38,9 @@
    "state": "expected",
    "starters": [
     "Ty Jerome",
+    "Jahmai Mashack",
     "Cedric Coward",
     "Jaylen Wells",
-    "Jahmai Mashack",
     "Zach Edey"
    ],
    "status": {
@@ -72,14 +73,13 @@
     "Shai Gilgeous-Alexander",
     "Jared McCain",
     "Ajay Mitchell",
-    "Aday Mara",
+    "Kenrich Williams",
     "Isaiah Hartenstein"
    ],
    "status": {
-    "Shai Gilgeous-Alexander": "out",
-    "Aday Mara": "out",
     "Alex Caruso": "out",
     "Chet Holmgren": "out",
+    "Aday Mara": "out",
     "Thomas Sorber": "out",
     "Nikola Topic": "out",
     "Cason Wallace": "out",
@@ -91,15 +91,17 @@
    "state": "expected",
    "starters": [
     "Andrew Nembhard",
+    "Quenton Jackson",
     "Kelly Oubre",
-    "Aaron Nesmith",
     "Pascal Siakam",
     "Ivica Zubac"
    ],
    "status": {
+    "Pascal Siakam": "questionable",
     "Johnny Furphy": "out",
     "Tyrese Haliburton": "out",
     "T.J. McConnell": "out",
+    "Aaron Nesmith": "out",
     "Ben Sheppard": "out"
    }
   },
@@ -113,7 +115,6 @@
     "Day'Ron Sharpe"
    ],
    "status": {
-    "Grant Nelson": "probable",
     "Nolan Traore": "out"
    }
   },
@@ -135,27 +136,26 @@
   "MIL": {
    "state": "expected",
    "starters": [
-    "Brayden Burries",
+    "Ryan Rollins",
     "Tyler Herro",
+    "Jaime Jaquez",
     "Kyle Kuzma",
-    "Jericho Sims",
     "Myles Turner"
    ],
-   "status": {
-    "Ousmane Dieng": "questionable"
-   }
+   "status": {}
   },
   "TOR": {
    "state": "expected",
    "starters": [
     "Immanuel Quickley",
     "Ja'Kobe Walter",
-    "Jamison Battle",
+    "Allen Graves",
     "Scottie Barnes",
     "Collin Murray-Boyles"
    ],
    "status": {
     "Collin Murray-Boyles": "probable",
+    "Jaden Bradley": "questionable",
     "RJ Barrett": "out",
     "Kawhi Leonard": "out"
    }
@@ -170,7 +170,6 @@
     "Oso Ighodaro"
    ],
    "status": {
-    "Ryan Dunn": "questionable",
     "Mark Williams": "out"
    }
   },
@@ -185,8 +184,6 @@
    ],
    "status": {
     "Zion Williamson": "probable",
-    "Bryce McGowens": "probable",
-    "Trey Murphy": "probable",
     "Bennedict Mathurin": "out",
     "Dejounte Murray": "out",
     "Trendon Watford": "out"
@@ -217,7 +214,8 @@
     "Jalen Smith"
    ],
    "status": {
-    "Nic Claxton": "out",
+    "Jalen Smith": "probable",
+    "Nic Claxton": "questionable",
     "Norman Powell": "out",
     "Caleb Wilson": "out"
    }
@@ -226,8 +224,8 @@
    "state": "expected",
    "starters": [
     "Darius Garland",
+    "Max Strus",
     "Brandon Ingram",
-    "Derrick Jones",
     "Rui Hachimura",
     "Brook Lopez"
    ],
@@ -257,7 +255,7 @@
     "Jaxson Hayes"
    ],
    "status": {
-    "Jaxson Hayes": "out",
+    "Jaxson Hayes": "questionable",
     "Jaren Jackson": "out",
     "Lauri Markkanen": "out",
     "Jusuf Nurkic": "out"
@@ -309,5 +307,5 @@
    }
   }
  },
- "at": "2026-11-23T05:00:00-05:00"
+ "at": "2026-11-23T16:00:01-05:00"
 }
