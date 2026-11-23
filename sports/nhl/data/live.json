@@ -1,15 +1,15 @@
 {
  "slate_date": "2026-11-22",
- "generated_at": "2026-11-22T20:50:00-05:00",
+ "generated_at": "2026-11-22T21:00:01-05:00",
  "games": [
   {
    "game_id": 2026020375,
    "state": "LIVE",
    "schedule_state": "OK",
-   "period": 2,
+   "period": 3,
    "period_type": "REG",
-   "clock": "08:06",
-   "in_intermission": true,
+   "clock": "20:00",
+   "in_intermission": false,
    "running": false,
    "away": {
     "abbrev": "EDM",
@@ -21,7 +21,7 @@
     "score": 1,
     "sog": 10
    },
-   "updated_at": "2026-11-22T20:50:00-05:00"
+   "updated_at": "2026-11-22T21:00:01-05:00"
   }
  ],
  "picks": {
