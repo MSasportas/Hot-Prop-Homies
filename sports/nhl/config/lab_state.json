@@ -1,106 +1,101 @@
 {
- "updated": "2026-11-21T00:00:01+00:00",
- "day": "2026-11-21",
+ "updated": "2026-11-23T00:00:12+00:00",
+ "day": "2026-11-23",
  "tracks": {
   "q24": {
    "fail_streak": 0,
    "k": 62,
    "k_changed": "2026-11-20"
   },
-  "fwd_LL1f-fade": {
-   "fail_streak": 0,
-   "k": 186,
-   "k_changed": "2026-11-20"
-  },
   "fwd_LL1f-follow": {
    "fail_streak": 0,
-   "k": 183,
-   "k_changed": "2026-11-20"
+   "k": 594,
+   "k_changed": "2026-11-23"
   },
   "fwd_LL3a_tight": {
    "fail_streak": 0,
-   "k": 40,
-   "k_changed": "2026-11-20"
+   "k": 139,
+   "k_changed": "2026-11-23"
   },
   "fwd_LL3b_loose": {
    "fail_streak": 0,
-   "k": 25,
-   "k_changed": "2026-11-20"
+   "k": 72,
+   "k_changed": "2026-11-23"
   },
   "fwd_LL4a_fade": {
    "fail_streak": 0,
-   "k": 52,
-   "k_changed": "2026-11-20"
+   "k": 175,
+   "k_changed": "2026-11-23"
   },
   "fwd_LL4b_follow": {
-   "fail_streak": 0,
-   "k": 52,
-   "k_changed": "2026-11-20"
+   "fail_streak": 1,
+   "k": 174,
+   "k_changed": "2026-11-23"
   },
   "fwd_LL5_exch": {
    "fail_streak": 0,
-   "k": 80,
-   "k_changed": "2026-11-20"
+   "k": 234,
+   "k_changed": "2026-11-23"
   },
   "fwd_LL6_line": {
    "fail_streak": 0,
-   "k": 37,
-   "k_changed": "2026-11-20"
+   "k": 111,
+   "k_changed": "2026-11-23"
   },
   "fwd_MM2a_split": {
    "fail_streak": 0,
-   "k": 8,
-   "k_changed": "2026-11-20"
+   "k": 17,
+   "k_changed": "2026-11-23"
   },
   "fwd_MM2b_split_2pct": {
    "fail_streak": 0,
-   "k": 4,
-   "k_changed": "2026-11-20"
+   "k": 11,
+   "k_changed": "2026-11-23"
   },
   "fwd_MM3a_persist": {
    "fail_streak": 0,
-   "k": 32,
-   "k_changed": "2026-11-20"
+   "k": 98,
+   "k_changed": "2026-11-23"
   },
   "fwd_MM3b_confirm": {
    "fail_streak": 0,
-   "k": 0,
-   "k_changed": "2026-11-20"
+   "k": 1,
+   "k_changed": "2026-11-22"
   },
   "fwd_MM4_total": {
    "fail_streak": 0,
-   "k": 10,
-   "k_changed": "2026-11-20"
+   "k": 18,
+   "k_changed": "2026-11-23"
   },
   "fwd_MM5a_follow": {
    "fail_streak": 0,
-   "k": 22,
-   "k_changed": "2026-11-20"
+   "k": 63,
+   "k_changed": "2026-11-23"
   },
   "fwd_MM5b_fade": {
    "fail_streak": 0,
-   "k": 21,
-   "k_changed": "2026-11-20"
+   "k": 61,
+   "k_changed": "2026-11-23"
   },
   "fwd_NN2fa_follow_market": {
    "fail_streak": 0,
-   "k": 0,
-   "k_changed": "2026-11-20"
+   "k": 20,
+   "k_changed": "2026-11-22"
   },
   "fwd_NN2fb_follow_HR": {
    "fail_streak": 0,
-   "k": 0,
-   "k_changed": "2026-11-20"
+   "k": 20,
+   "k_changed": "2026-11-22"
   },
   "fwd_NN4_exch_steam": {
    "fail_streak": 0,
-   "k": 1,
-   "k_changed": "2026-11-20"
+   "k": 4,
+   "k_changed": "2026-11-23"
   },
   "fwd_NN5_market_moves": {
    "fail_streak": 0,
-   "k": 1,
-   "k_changed": "2026-11-20"
+   "k": 4,
+   "k_changed": "2026-11-23"
   },
   "fwd_NN6_fade_soft": {
    "fail_streak": 0,
