@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-23",
- "started_at": "2026-11-23T18:40:01-05:00",
- "status_at": "2026-11-23T18:40:01-05:00",
- "finished_at": "2026-11-23T18:40:03-05:00",
- "last_ok_at": "2026-11-23T18:40:01-05:00",
+ "started_at": "2026-11-23T18:50:01-05:00",
+ "status_at": "2026-11-23T18:50:01-05:00",
+ "finished_at": "2026-11-23T18:50:04-05:00",
+ "last_ok_at": "2026-11-23T18:50:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -25,17 +25,17 @@
   {
    "step": "lineups",
    "status": "ok",
-   "note": "2 of 2 team pages read"
+   "note": "10 of 10 team pages read"
   },
   {
    "step": "lineup_history",
    "status": "ok",
-   "note": "2 team(s) changed"
+   "note": "1 team(s) changed"
   },
   {
    "step": "odds",
    "status": "ok",
-   "note": "no pull due"
+   "note": "4 game(s) priced"
   },
   {
    "step": "market_menu",
@@ -44,8 +44,8 @@
   },
   {
    "step": "featured",
-   "status": "skipped",
-   "note": "no new shots read to match"
+   "status": "ok",
+   "note": "sides/totals for 7 game(s), 10 book(s) max, 3 credit(s)"
   },
   {
    "step": "book_probe",
@@ -74,8 +74,8 @@
   },
   {
    "step": "shadow",
-   "status": "skipped",
-   "note": "nothing new"
+   "status": "ok",
+   "note": "148 line read(s) logged"
   },
   {
    "step": "gg_grade",
@@ -115,7 +115,7 @@
   },
   {
    "n": 4,
-   "left": 372
+   "left": 361
   },
   {
    "n": 5,
@@ -138,14 +138,14 @@
    "left": 500
   }
  ],
- "pool_total": 2478,
+ "pool_total": 2467,
  "allowance": 43.2759,
  "tier": 4,
  "budget_today": 302,
- "budget_used_today": 32,
+ "budget_used_today": 43,
  "prices_state": "ok",
- "prices_at": "2026-11-23T18:20:01-05:00",
- "next_price_read_at": "2026-11-23T18:45:00-05:00",
+ "prices_at": "2026-11-23T18:50:01-05:00",
+ "next_price_read_at": "2026-11-23T20:10:00-05:00",
  "unmatched_names": [],
  "unknown_teams": [],
  "lineup_unmatched_names": [
@@ -155,7 +155,7 @@
  ],
  "excluded_teams": [],
  "stats_through": "2026-11-22",
- "lineups_at": "2026-11-23T18:40:01-05:00",
+ "lineups_at": "2026-11-23T18:50:01-05:00",
  "lineups_note": "Lineups posted for 10 of 12 teams checked so far.",
  "games_today": 7,
  "record_events": 366,
@@ -163,7 +163,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "45285135581",
-  "iteration": 5,
+  "iteration": 6,
   "chain_link": 10,
   "chain_started_at": "2026-11-23T09:55:27-05:00",
   "run_started_at": "2026-11-23T18:01:52-05:00"
