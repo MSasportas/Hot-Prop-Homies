@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T14:20:01-05:00",
+ "at": "2026-11-23T14:30:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -421,19 +421,19 @@
    "date": "2026-11-22T18:05Z",
    "note": "Clarkson (foot) has been ruled out for Sunday's game against Indiana."
   },
+  "4432823": {
+   "status": "out",
+   "name": "Jaylin Williams",
+   "team": "OKC",
+   "date": "2026-11-23T19:09Z",
+   "note": "Williams (back) has been ruled out for Monday's game against the Pacers"
+  },
   "5159925": {
    "status": "out",
    "name": "Nikola Topic",
    "team": "OKC",
    "date": "2026-11-23T18:49Z",
    "note": "Topic (hip) has been ruled out for Monday's game against the Pacers, according to the NBA's official injury report."
-  },
-  "4432823": {
-   "status": "out",
-   "name": "Jaylin Williams",
-   "team": "OKC",
-   "date": "2026-11-23T18:49Z",
-   "note": "Williams (back) is listed as out for Sunday's game against Miami."
   },
   "5174983": {
    "status": "out",
