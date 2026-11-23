@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-22",
- "generated_at": "2026-11-22T21:30:00-05:00",
+ "generated_at": "2026-11-22T21:32:08-05:00",
  "games": [
   {
    "game_id": 2026020375,
@@ -8,9 +8,9 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "05:00",
+   "clock": "04:22",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "EDM",
     "score": 4,
@@ -18,10 +18,10 @@
    },
    "home": {
     "abbrev": "STL",
-    "score": 2,
-    "sog": 24
+    "score": 4,
+    "sog": 26
    },
-   "updated_at": "2026-11-22T21:30:00-05:00"
+   "updated_at": "2026-11-22T21:32:08-05:00"
   }
  ],
  "picks": {
