@@ -1,13 +1,4 @@
 {
- "LL1f-fade": {
-  "clv": -0.0757,
-  "l": 314,
-  "pending": 24,
-  "push": 0,
-  "units": -58.01,
-  "void": 0,
-  "w": 288
- },
  "LL1f-follow": {
   "clv": -0.0815,
   "l": 285,
@@ -181,6 +172,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-22T23:30:19+00:00",
+ "updated_at": "2026-11-23T00:01:57+00:00",
  "version": 1
 }
