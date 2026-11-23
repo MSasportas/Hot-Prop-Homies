@@ -31,7 +31,7 @@
   },
   "TOR": {
    "name": "Anthony Stolarz",
-   "status": "expected"
+   "status": "confirmed"
   },
   "WPG": {
    "name": "Stuart Skinner",
@@ -58,5 +58,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-23T12:10:01-05:00"
+ "checked_at": "2026-11-23T12:30:01-05:00"
 }
