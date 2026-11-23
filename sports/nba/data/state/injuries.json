@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T14:30:01-05:00",
+ "at": "2026-11-23T16:10:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -35,13 +35,6 @@
    "team": "ATL",
    "date": "2026-09-21T19:50Z",
    "note": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday."
-  },
-  "4251": {
-   "status": "day-to-day",
-   "name": "Paul George",
-   "team": "BOS",
-   "date": "2026-11-23T15:07Z",
-   "note": "George (rest) has been ruled out for Sunday's game against Golden State, Justin Turpin of WEEI.com reports."
   },
   "4351852": {
    "status": "out",
@@ -667,11 +660,11 @@
    "note": "Barrett has been diagnosed with a right hamstring strain and will be re-evaluated in two weeks, Brett Siegel of ClutchPoints.com reports."
   },
   "4397077": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Jaxson Hayes",
    "team": "UTAH",
-   "date": "2026-11-23T15:06Z",
-   "note": "Hayes (knee) has been ruled out for the remainder of Sunday's game against the Mavericks, Grant Afseth of DallasHoopsJournal.com reports."
+   "date": "2026-11-23T21:04Z",
+   "note": "Hayes (knee) has been ruled out for Monday's game against the Lakers."
   },
   "3102530": {
    "status": "out",
