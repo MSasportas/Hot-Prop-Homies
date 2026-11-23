@@ -7,7 +7,7 @@
   },
   "CBJ": {
    "name": "Cam Talbot",
-   "status": "expected"
+   "status": "confirmed"
   },
   "MTL": {
    "name": "Jakub Dobes",
@@ -58,5 +58,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-23T12:00:00-05:00"
+ "checked_at": "2026-11-23T12:10:01-05:00"
 }
