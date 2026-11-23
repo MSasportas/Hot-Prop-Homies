@@ -1,66 +1,66 @@
 {
  "LL1f-follow": {
   "clv": -0.0818,
-  "l": 285,
-  "pending": 29,
+  "l": 287,
+  "pending": 24,
   "push": 0,
-  "units": -30.32,
+  "units": -30.06,
   "void": 0,
-  "w": 309
+  "w": 312
  },
  "LL3a tight": {
   "clv": 0.0307,
   "l": 69,
-  "pending": 4,
+  "pending": 3,
   "push": 0,
-  "units": 3.72,
+  "units": 4.63,
   "void": 0,
-  "w": 70
+  "w": 71
  },
  "LL3b loose": {
   "clv": 0.0282,
-  "l": 31,
-  "pending": 1,
+  "l": 32,
+  "pending": 0,
   "push": 0,
-  "units": 11.7,
+  "units": 10.7,
   "void": 0,
   "w": 41
  },
  "LL4a fade": {
   "clv": -0.0683,
-  "l": 80,
-  "pending": 14,
+  "l": 82,
+  "pending": 11,
   "push": 0,
-  "units": 6.59,
+  "units": 5.42,
   "void": 0,
-  "w": 95
+  "w": 96
  },
  "LL4b follow": {
   "clv": -0.0968,
-  "l": 95,
-  "pending": 14,
+  "l": 96,
+  "pending": 11,
   "push": 0,
-  "units": -32.64,
+  "units": -32.27,
   "void": 0,
-  "w": 79
+  "w": 81
  },
  "LL5 exch": {
   "clv": 0.0226,
-  "l": 110,
-  "pending": 6,
+  "l": 111,
+  "pending": 4,
   "push": 0,
-  "units": 9.03,
+  "units": 8.94,
   "void": 0,
-  "w": 124
+  "w": 125
  },
  "LL6 line": {
   "clv": -0.0128,
-  "l": 42,
-  "pending": 7,
+  "l": 44,
+  "pending": 4,
   "push": 0,
-  "units": -3.65,
+  "units": -5.08,
   "void": 0,
-  "w": 69
+  "w": 70
  },
  "MM2a split": {
   "clv": -0.0177,
@@ -109,21 +109,21 @@
  },
  "MM5a follow": {
   "clv": -0.0916,
-  "l": 45,
-  "pending": 7,
+  "l": 46,
+  "pending": 5,
   "push": 0,
-  "units": -20.57,
+  "units": -20.12,
   "void": 0,
-  "w": 18
+  "w": 19
  },
  "MM5b fade": {
   "clv": -0.069,
-  "l": 17,
-  "pending": 6,
+  "l": 18,
+  "pending": 4,
   "push": 0,
-  "units": 7.87,
+  "units": 7.44,
   "void": 0,
-  "w": 44
+  "w": 45
  },
  "NN2fa follow market": {
   "clv": -0.0851,
@@ -172,6 +172,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-23T00:20:11+00:00",
+ "updated_at": "2026-11-23T01:10:13+00:00",
  "version": 1
 }
