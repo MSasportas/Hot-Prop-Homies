@@ -1,142 +1,5 @@
 {
  "days": {
-  "2026-11-20": [
-   {
-    "id": "401909305",
-    "date": "2026-11-20",
-    "start": "2026-11-20T19:00:00-05:00",
-    "away": "CHA",
-    "home": "ATL",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "CHA": "97",
-     "ATL": "111"
-    }
-   },
-   {
-    "id": "401909306",
-    "date": "2026-11-20",
-    "start": "2026-11-20T19:30:00-05:00",
-    "away": "ORL",
-    "home": "BKN",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "ORL": "113",
-     "BKN": "111"
-    }
-   },
-   {
-    "id": "401909307",
-    "date": "2026-11-20",
-    "start": "2026-11-20T19:30:00-05:00",
-    "away": "IND",
-    "home": "CLE",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "IND": "119",
-     "CLE": "128"
-    }
-   },
-   {
-    "id": "401909308",
-    "date": "2026-11-20",
-    "start": "2026-11-20T19:30:00-05:00",
-    "away": "TOR",
-    "home": "DET",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "TOR": "105",
-     "DET": "102"
-    }
-   },
-   {
-    "id": "401909309",
-    "date": "2026-11-20",
-    "start": "2026-11-20T20:00:00-05:00",
-    "away": "WSH",
-    "home": "CHI",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "WSH": "98",
-     "CHI": "94"
-    }
-   },
-   {
-    "id": "401909310",
-    "date": "2026-11-20",
-    "start": "2026-11-20T20:00:00-05:00",
-    "away": "NO",
-    "home": "OKC",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "NO": "120",
-     "OKC": "126"
-    }
-   },
-   {
-    "id": "401909311",
-    "date": "2026-11-20",
-    "start": "2026-11-20T21:30:00-05:00",
-    "away": "PHX",
-    "home": "UTAH",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "PHX": "111",
-     "UTAH": "101"
-    }
-   },
-   {
-    "id": "401909312",
-    "date": "2026-11-20",
-    "start": "2026-11-20T22:00:00-05:00",
-    "away": "HOU",
-    "home": "DEN",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "HOU": "124",
-     "DEN": "133"
-    }
-   },
-   {
-    "id": "401909313",
-    "date": "2026-11-20",
-    "start": "2026-11-20T22:00:00-05:00",
-    "away": "SAC",
-    "home": "LAL",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "SAC": "104",
-     "LAL": "106"
-    }
-   }
-  ],
   "2026-11-21": [
    {
     "id": "401910023",
@@ -487,12 +350,58 @@
      "SAC": "107"
     }
    }
+  ],
+  "2026-11-24": [
+   {
+    "id": "401909314",
+    "date": "2026-11-24",
+    "start": "2026-11-24T19:00:00-05:00",
+    "away": "DET",
+    "home": "ORL",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/24 - 7:00 PM EST",
+    "score": {
+     "DET": "0",
+     "ORL": "0"
+    }
+   },
+   {
+    "id": "401909315",
+    "date": "2026-11-24",
+    "start": "2026-11-24T20:00:00-05:00",
+    "away": "BOS",
+    "home": "WSH",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/24 - 8:00 PM EST",
+    "score": {
+     "BOS": "0",
+     "WSH": "0"
+    }
+   },
+   {
+    "id": "401909316",
+    "date": "2026-11-24",
+    "start": "2026-11-24T22:00:00-05:00",
+    "away": "DAL",
+    "home": "DEN",
+    "state": "pre",
+    "completed": false,
+    "status_name": "STATUS_SCHEDULED",
+    "detail": "11/24 - 10:00 PM EST",
+    "score": {
+     "DAL": "0",
+     "DEN": "0"
+    }
+   }
   ]
  },
  "month": {
-  "made_for": "2026-11-23",
+  "made_for": "2026-11-24",
   "counts": {
-   "2026-11-23": 10,
    "2026-11-24": 3,
    "2026-11-25": 9,
    "2026-11-26": 0,
