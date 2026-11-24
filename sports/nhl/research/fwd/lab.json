@@ -2,56 +2,56 @@
  "LL1f-follow": {
   "clv": -0.0831,
   "l": 295,
-  "pending": 46,
+  "pending": 42,
   "push": 0,
-  "units": -28.91,
+  "units": -25.58,
   "void": 0,
-  "w": 325
+  "w": 329
  },
  "LL3a tight": {
   "clv": 0.0307,
   "l": 71,
-  "pending": 9,
+  "pending": 7,
   "push": 0,
-  "units": 3.98,
+  "units": 5.69,
   "void": 0,
-  "w": 72
+  "w": 74
  },
  "LL3b loose": {
   "clv": 0.0287,
   "l": 32,
-  "pending": 5,
+  "pending": 4,
   "push": 0,
-  "units": 10.7,
+  "units": 11.95,
   "void": 0,
-  "w": 41
+  "w": 42
  },
  "LL4a fade": {
   "clv": -0.0686,
-  "l": 86,
-  "pending": 19,
+  "l": 87,
+  "pending": 18,
   "push": 0,
-  "units": 5.57,
+  "units": 4.57,
   "void": 0,
   "w": 101
  },
  "LL5 exch": {
   "clv": 0.0231,
   "l": 113,
-  "pending": 13,
+  "pending": 11,
   "push": 0,
-  "units": 9.0,
+  "units": 11.3,
   "void": 0,
-  "w": 127
+  "w": 129
  },
  "LL6 line": {
   "clv": -0.015,
-  "l": 45,
-  "pending": 10,
+  "l": 46,
+  "pending": 8,
   "push": 0,
-  "units": -4.94,
+  "units": -5.38,
   "void": 0,
-  "w": 72
+  "w": 73
  },
  "MM2a split": {
   "clv": -0.02,
@@ -74,11 +74,11 @@
  "MM3a persist": {
   "clv": 0.0343,
   "l": 50,
-  "pending": 11,
+  "pending": 8,
   "push": 0,
-  "units": 1.89,
+  "units": 4.86,
   "void": 0,
-  "w": 49
+  "w": 52
  },
  "MM3b confirm": {
   "clv": 0.0641,
@@ -100,21 +100,21 @@
  },
  "MM5a follow": {
   "clv": -0.0867,
-  "l": 50,
-  "pending": 6,
+  "l": 51,
+  "pending": 5,
   "push": 0,
-  "units": -22.97,
+  "units": -23.97,
   "void": 0,
   "w": 20
  },
  "MM5b fade": {
   "clv": -0.0712,
   "l": 19,
-  "pending": 6,
+  "pending": 5,
   "push": 0,
-  "units": 8.31,
+  "units": 8.86,
   "void": 0,
-  "w": 48
+  "w": 49
  },
  "NN2fa follow market": {
   "clv": -0.0851,
@@ -172,39 +172,39 @@
  },
  "R28b over": {
   "clv": -0.1212,
-  "l": 54,
-  "pending": 39,
+  "l": 56,
+  "pending": 34,
   "push": 0,
-  "units": -7.7,
+  "units": -6.59,
   "void": 0,
-  "w": 42
+  "w": 45
  },
  "R28b under": {
   "clv": -0.0469,
-  "l": 78,
-  "pending": 55,
+  "l": 85,
+  "pending": 44,
   "push": 0,
-  "units": 10.32,
+  "units": 7.67,
   "void": 0,
-  "w": 89
+  "w": 93
  },
  "R28c rest": {
   "clv": -0.0482,
-  "l": 120,
-  "pending": 123,
+  "l": 130,
+  "pending": 105,
   "push": 0,
-  "units": 0.72,
+  "units": -1.9,
   "void": 0,
-  "w": 139
+  "w": 147
  },
  "R28c rest mirror": {
   "clv": -0.097,
-  "l": 143,
-  "pending": 127,
+  "l": 152,
+  "pending": 108,
   "push": 0,
-  "units": -31.45,
+  "units": -31.43,
   "void": 0,
-  "w": 122
+  "w": 132
  },
  "R28d backup goalie": {
   "clv": -0.1027,
@@ -217,6 +217,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-24T02:20:10+00:00",
+ "updated_at": "2026-11-24T03:10:22+00:00",
  "version": 1
 }
