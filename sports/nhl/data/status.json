@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-24",
- "started_at": "2026-11-24T13:00:01-05:00",
- "status_at": "2026-11-24T13:00:01-05:00",
- "finished_at": "2026-11-24T13:00:16-05:00",
- "last_ok_at": "2026-11-24T13:00:01-05:00",
+ "started_at": "2026-11-24T13:20:51-05:00",
+ "status_at": "2026-11-24T13:20:51-05:00",
+ "finished_at": "2026-11-24T13:20:52-05:00",
+ "last_ok_at": "2026-11-24T13:20:51-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -35,7 +35,7 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "1 game(s) priced"
+   "note": "no pull due"
   },
   {
    "step": "market_menu",
@@ -44,8 +44,8 @@
   },
   {
    "step": "featured",
-   "status": "ok",
-   "note": "sides/totals for 1 game(s), 9 book(s) max, 3 credit(s)"
+   "status": "skipped",
+   "note": "no new shots read to match"
   },
   {
    "step": "book_probe",
@@ -74,8 +74,8 @@
   },
   {
    "step": "shadow",
-   "status": "ok",
-   "note": "18 line read(s) logged"
+   "status": "skipped",
+   "note": "nothing new"
   },
   {
    "step": "gg_grade",
@@ -98,7 +98,7 @@
   "nhl_stats": "ok",
   "odds": "ok",
   "dailyfaceoff": "ok",
-  "dailyfaceoff_goalies": "ok"
+  "dailyfaceoff_goalies": "failed"
  },
  "keys": [
   {
@@ -155,13 +155,15 @@
  "lineups_note": null,
  "games_today": 1,
  "record_events": 371,
- "odds_notes": [],
+ "odds_notes": [
+  "key 1 refused (401)"
+ ],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "45449518826",
-  "iteration": 4,
-  "chain_link": 37,
+  "run_id": "45458411121",
+  "iteration": 1,
+  "chain_link": 38,
   "chain_started_at": "2026-11-23T09:55:27-05:00",
-  "run_started_at": "2026-11-24T12:31:38-05:00"
+  "run_started_at": "2026-11-24T13:20:29-05:00"
  }
 }
