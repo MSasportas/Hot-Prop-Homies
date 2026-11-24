@@ -463,13 +463,13 @@
     "start": "2026-11-23T22:00:00-05:00",
     "away": "UTAH",
     "home": "LAL",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:22 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "UTAH": "90",
-     "LAL": "105"
+     "UTAH": "94",
+     "LAL": "109"
     }
    },
    {
