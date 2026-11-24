@@ -466,10 +466,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:23 - 2nd",
+    "detail": "30.6 - 2nd",
     "score": {
-     "UTAH": "36",
-     "LAL": "50"
+     "UTAH": "40",
+     "LAL": "51"
     }
    },
    {
@@ -480,11 +480,11 @@
     "home": "SAC",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:54 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "SA": "53",
-     "SAC": "45"
+     "SA": "60",
+     "SAC": "51"
     }
    }
   ]
