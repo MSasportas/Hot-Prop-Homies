@@ -1,66 +1,66 @@
 {
  "LL1f-follow": {
   "bets": 666,
-  "graded": 657,
-  "w": 347,
-  "units": -25.401,
-  "roi": -0.0387,
+  "graded": 663,
+  "w": 350,
+  "units": -26.052,
+  "roi": -0.0393,
   "ci90": [
-   -0.1078,
-   0.031
+   -0.1097,
+   0.0323
   ],
-  "p_one_sided": 0.8225,
+  "p_one_sided": 0.819,
   "mean_ev": -0.083,
   "mean_clv": -0.0831,
-  "games": 94,
+  "games": 95,
   "candidate": false
  },
  "LL1f-fade": {
   "bets": 675,
-  "graded": 666,
-  "w": 314,
-  "units": -73.884,
-  "roi": -0.1109,
+  "graded": 672,
+  "w": 317,
+  "units": -73.744,
+  "roi": -0.1097,
   "ci90": [
-   -0.1847,
-   -0.0402
+   -0.1828,
+   -0.0389
   ],
-  "p_one_sided": 0.9935,
+  "p_one_sided": 0.995,
   "mean_ev": -0.0743,
   "mean_clv": -0.0744,
-  "games": 94,
+  "games": 95,
   "candidate": false
  },
  "LL3a tight": {
   "bets": 152,
-  "graded": 151,
+  "graded": 152,
   "w": 76,
-  "units": 3.292,
-  "roi": 0.0218,
+  "units": 2.292,
+  "roi": 0.0151,
   "ci90": [
-   -0.1182,
-   0.156
+   -0.1269,
+   0.1484
   ],
-  "p_one_sided": 0.391,
+  "p_one_sided": 0.4155,
   "mean_ev": 0.0325,
   "mean_clv": 0.0307,
-  "games": 83,
+  "games": 84,
   "candidate": false
  },
  "LL3b loose": {
   "bets": 78,
-  "graded": 77,
-  "w": 43,
-  "units": 10.688,
-  "roi": 0.1388,
+  "graded": 78,
+  "w": 44,
+  "units": 11.938,
+  "roi": 0.1531,
   "ci90": [
-   -0.0778,
-   0.3505
+   -0.0695,
+   0.3621
   ],
-  "p_one_sided": 0.162,
+  "p_one_sided": 0.143,
   "mean_ev": 0.0306,
   "mean_clv": 0.0287,
-  "games": 55,
+  "games": 56,
   "candidate": false
  },
  "LL4a fade": {
@@ -97,34 +97,34 @@
  },
  "LL5 exch": {
   "bets": 253,
-  "graded": 252,
-  "w": 133,
-  "units": 9.184,
-  "roi": 0.0364,
+  "graded": 253,
+  "w": 134,
+  "units": 10.434,
+  "roi": 0.0412,
   "ci90": [
-   -0.0638,
-   0.1374
+   -0.0605,
+   0.1441
   ],
-  "p_one_sided": 0.2705,
+  "p_one_sided": 0.251,
   "mean_ev": 0.0428,
   "mean_clv": 0.0231,
-  "games": 90,
+  "games": 91,
   "candidate": false
  },
  "LL6 line": {
   "bets": 127,
-  "graded": 125,
+  "graded": 126,
   "w": 75,
-  "units": -8.314,
-  "roi": -0.0665,
+  "units": -9.314,
+  "roi": -0.0739,
   "ci90": [
-   -0.1816,
-   0.0447
+   -0.1857,
+   0.0372
   ],
-  "p_one_sided": 0.8355,
+  "p_one_sided": 0.867,
   "mean_ev": -0.016,
   "mean_clv": -0.015,
-  "games": 76,
+  "games": 77,
   "candidate": false
  }
 }

@@ -1,30 +1,30 @@
 {
  "LL1f-follow": {
   "clv": -0.0831,
-  "l": 310,
-  "pending": 9,
+  "l": 313,
+  "pending": 3,
   "push": 0,
-  "units": -25.4,
+  "units": -26.05,
   "void": 0,
-  "w": 347
+  "w": 350
  },
  "LL3a tight": {
   "clv": 0.0307,
-  "l": 75,
-  "pending": 1,
+  "l": 76,
+  "pending": 0,
   "push": 0,
-  "units": 3.29,
+  "units": 2.29,
   "void": 0,
   "w": 76
  },
  "LL3b loose": {
   "clv": 0.0287,
   "l": 34,
-  "pending": 1,
+  "pending": 0,
   "push": 0,
-  "units": 10.69,
+  "units": 11.94,
   "void": 0,
-  "w": 43
+  "w": 44
  },
  "LL4a fade": {
   "clv": -0.0686,
@@ -38,18 +38,18 @@
  "LL5 exch": {
   "clv": 0.0231,
   "l": 119,
-  "pending": 1,
+  "pending": 0,
   "push": 0,
-  "units": 9.18,
+  "units": 10.43,
   "void": 0,
-  "w": 133
+  "w": 134
  },
  "LL6 line": {
   "clv": -0.015,
-  "l": 50,
-  "pending": 2,
+  "l": 51,
+  "pending": 1,
   "push": 0,
-  "units": -8.31,
+  "units": -9.31,
   "void": 0,
   "w": 75
  },
@@ -73,12 +73,12 @@
  },
  "MM3a persist": {
   "clv": 0.0343,
-  "l": 53,
-  "pending": 2,
+  "l": 54,
+  "pending": 0,
   "push": 0,
-  "units": 4.2,
+  "units": 4.45,
   "void": 0,
-  "w": 55
+  "w": 56
  },
  "MM3b confirm": {
   "clv": 0.0641,
@@ -172,51 +172,51 @@
  },
  "R28b over": {
   "clv": -0.1212,
-  "l": 77,
-  "pending": 3,
+  "l": 78,
+  "pending": 1,
   "push": 0,
-  "units": -16.6,
+  "units": -16.4,
   "void": 0,
-  "w": 55
+  "w": 56
  },
  "R28b under": {
   "clv": -0.0469,
-  "l": 103,
-  "pending": 9,
+  "l": 108,
+  "pending": 2,
   "push": 0,
-  "units": 7.82,
+  "units": 4.79,
   "void": 0,
-  "w": 110
+  "w": 112
  },
  "R28c rest": {
   "clv": -0.0482,
-  "l": 166,
-  "pending": 19,
+  "l": 172,
+  "pending": 5,
   "push": 0,
-  "units": 5.27,
+  "units": 6.32,
   "void": 0,
-  "w": 197
+  "w": 205
  },
  "R28c rest mirror": {
   "clv": -0.097,
-  "l": 205,
-  "pending": 19,
+  "l": 213,
+  "pending": 5,
   "push": 0,
-  "units": -53.7,
+  "units": -56.68,
   "void": 0,
-  "w": 168
+  "w": 174
  },
  "R28d backup goalie": {
   "clv": -0.1027,
-  "l": 50,
-  "pending": 7,
+  "l": 54,
+  "pending": 1,
   "push": 0,
-  "units": -10.54,
+  "units": -13.04,
   "void": 0,
-  "w": 44
+  "w": 46
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-24T06:00:24+00:00",
+ "updated_at": "2026-11-24T06:20:23+00:00",
  "version": 1
 }
