@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-23T19:00:01-05:00",
+ "generated_at": "2026-11-23T20:30:00-05:00",
  "summary": {
   "headline": {
    "w": 66,
@@ -243,7 +243,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 1,
+    "n": 2,
     "graded": false
    },
    {
@@ -561,6 +561,29 @@
       {
        "price": 105,
        "at": "2026-11-23T17:30:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-23:2026020384:8485702:shots:1.5:under",
+     "kind": "single",
+     "player": "M. Shabanov",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "MIN",
+     "game": "MIN at SJS",
+     "price": 125,
+     "first_price": 125,
+     "last_price": 125,
+     "prices": [
+      {
+       "price": 125,
+       "at": "2026-11-23T20:30:00-05:00"
       }
      ],
      "result": null,

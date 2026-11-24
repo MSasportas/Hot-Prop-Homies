@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-23",
- "started_at": "2026-11-23T20:20:01-05:00",
- "status_at": "2026-11-23T20:20:01-05:00",
- "finished_at": "2026-11-23T20:20:03-05:00",
- "last_ok_at": "2026-11-23T20:20:01-05:00",
+ "started_at": "2026-11-23T20:30:00-05:00",
+ "status_at": "2026-11-23T20:30:00-05:00",
+ "finished_at": "2026-11-23T20:30:08-05:00",
+ "last_ok_at": "2026-11-23T20:30:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -24,8 +24,8 @@
   },
   {
    "step": "lineups",
-   "status": "ok",
-   "note": "4 of 4 team pages read"
+   "status": "skipped",
+   "note": "checked in the last 20 minutes"
   },
   {
    "step": "lineup_history",
@@ -35,7 +35,7 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "no pull due"
+   "note": "1 game(s) priced"
   },
   {
    "step": "market_menu",
@@ -44,8 +44,8 @@
   },
   {
    "step": "featured",
-   "status": "skipped",
-   "note": "no new shots read to match"
+   "status": "ok",
+   "note": "sides/totals for 2 game(s), 10 book(s) max, 3 credit(s)"
   },
   {
    "step": "book_probe",
@@ -55,12 +55,12 @@
   {
    "step": "gapguard",
    "status": "ok",
-   "note": "gap+guard: nothing new"
+   "note": "gap+guard: 1 flag"
   },
   {
    "step": "engine",
    "status": "ok",
-   "note": "no change"
+   "note": "1 new event(s), 1 newly shown"
   },
   {
    "step": "grade",
@@ -74,8 +74,8 @@
   },
   {
    "step": "shadow",
-   "status": "skipped",
-   "note": "nothing new"
+   "status": "ok",
+   "note": "34 line read(s) logged"
   },
   {
    "step": "gg_grade",
@@ -85,12 +85,12 @@
   {
    "step": "slate",
    "status": "ok",
-   "note": "0 open pick(s)"
+   "note": "1 open pick(s)"
   },
   {
    "step": "record",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "record.json"
   }
  ],
  "sources": {
@@ -115,7 +115,7 @@
   },
   {
    "n": 4,
-   "left": 356
+   "left": 351
   },
   {
    "n": 5,
@@ -138,14 +138,14 @@
    "left": 500
   }
  ],
- "pool_total": 2462,
+ "pool_total": 2457,
  "allowance": 43.2759,
  "tier": 4,
  "budget_today": 302,
- "budget_used_today": 48,
+ "budget_used_today": 53,
  "prices_state": "ok",
- "prices_at": "2026-11-23T20:10:00-05:00",
- "next_price_read_at": "2026-11-23T20:30:00-05:00",
+ "prices_at": "2026-11-23T20:30:00-05:00",
+ "next_price_read_at": "2026-11-23T20:55:00-05:00",
  "unmatched_names": [],
  "unknown_teams": [],
  "lineup_unmatched_names": [
@@ -158,12 +158,12 @@
  "lineups_at": "2026-11-23T20:20:01-05:00",
  "lineups_note": "Lineups posted for 12 of 14 teams checked so far.",
  "games_today": 7,
- "record_events": 367,
+ "record_events": 368,
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "45300544034",
-  "iteration": 4,
+  "iteration": 5,
   "chain_link": 13,
   "chain_started_at": "2026-11-23T09:55:27-05:00",
   "run_started_at": "2026-11-23T19:51:41-05:00"
