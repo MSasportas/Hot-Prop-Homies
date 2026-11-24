@@ -1,5 +1,5 @@
 {
- "at": "2026-11-24T12:00:01-05:00",
+ "at": "2026-11-24T12:20:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -316,6 +316,13 @@
    "date": "2026-11-23T15:04Z",
    "note": "Antetokounmpo (groin) won't play in Sunday's game against Oklahoma City, Clemente Almanza of USA Today reports."
   },
+  "3934673": {
+   "status": "out",
+   "name": "Donte DiVincenzo",
+   "team": "MIN",
+   "date": "2026-11-24T17:10Z",
+   "note": "DiVincenzo (Achilles) has been cleared for team basketball activities and is targeting a return to game action in January, Jon Krawczynski of The Athletic reports."
+  },
   "4432247": {
    "status": "out",
    "name": "Jaylen Clark",
@@ -329,13 +336,6 @@
    "team": "MIN",
    "date": "2026-10-29T18:33Z",
    "note": "Edwards underwent a successful arthroscopic procedure on his right knee Thursday, the Timberwolves announced."
-  },
-  "3934673": {
-   "status": "out",
-   "name": "Donte DiVincenzo",
-   "team": "MIN",
-   "date": "2026-10-05T20:53Z",
-   "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
   },
   "4431675": {
    "status": "out",
