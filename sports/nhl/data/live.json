@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-23",
- "generated_at": "2026-11-23T21:50:01-05:00",
+ "generated_at": "2026-11-23T22:00:01-05:00",
  "games": [
   {
    "game_id": 2026020378,
@@ -21,7 +21,28 @@
     "score": 3,
     "sog": 30
    },
-   "updated_at": "2026-11-23T21:50:01-05:00"
+   "updated_at": "2026-11-23T22:00:01-05:00"
+  },
+  {
+   "game_id": 2026020384,
+   "state": "PRE",
+   "schedule_state": "OK",
+   "period": null,
+   "period_type": null,
+   "clock": null,
+   "in_intermission": false,
+   "running": false,
+   "away": {
+    "abbrev": "MIN",
+    "score": null,
+    "sog": null
+   },
+   "home": {
+    "abbrev": "SJS",
+    "score": null,
+    "sog": null
+   },
+   "updated_at": "2026-11-23T22:00:01-05:00"
   }
  ],
  "picks": {
@@ -29,6 +50,11 @@
    "game_id": 2026020378,
    "market": "shots",
    "stat": 1
+  },
+  "2026-11-23:2026020384:8485702:shots:1.5:under": {
+   "game_id": 2026020384,
+   "market": "shots",
+   "stat": null
   }
  }
 }
