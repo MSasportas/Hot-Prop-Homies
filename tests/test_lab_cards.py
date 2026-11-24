@@ -12,7 +12,7 @@ FIXTURE_LAB = os.path.join(ROOT, "fixtures", "lab-cards", "config", "lab.json")
 OUTCOMES = {"review", "filter", "matt", "live"}
 NAME_MAX, PLAIN_MAX, WHY_MAX = 28, 80, 110
 # words that stay inside "Show the math"; "Sharp books" is the one allowed use on a card face
-JARGON = re.compile(r"n=|\bROI\b|\bCI\b|bucket|discovery|shadow-track|base population|\bDS\b|(?-i:\bSharp\b(?! books| vs))|\bLVA|\bCLV\b|\bEV\b|de-vig|\bgate\b|hit rate|forward test", re.I)
+JARGON = re.compile(r"n=|\bROI\b|\bCI\b|bucket|discovery|shadow-track|base population|\bDS\b|(?-i:\bSharp\b)|\bLVA|\bCLV\b|\bEV\b|de-vig|\bgate\b|hit rate|forward test", re.I)
 STATUS_FUNCTIONS = ("isObj", "num", "str", "labStatus")
 NIGHT_FUNCTIONS = ("isObj", "arr", "num", "str", "labNightRows", "labPer", "labFlipResult", "labNights")
 

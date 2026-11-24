@@ -109,9 +109,9 @@
    "stats": "MM2a split",
    "need": 300,
    "gate": "Passes only at 300 graded with a clear profit and beating the close.",
-   "name": "Sharp vs casual books",
+   "name": "Pro books vs casual books",
    "plain": "Follow the sharp books when casual books disagree",
-   "why": "Sharp books (the ones pros use) are usually right.",
+   "why": "Books the pros use (sharp books) are usually right.",
    "outcome": "review"
   },
   {
@@ -123,7 +123,7 @@
    "stats": "MM2b split 2%",
    "need": 300,
    "gate": "Passes only at 300 graded with a clear profit and beating the close.",
-   "name": "Sharp vs casual, big gap",
+   "name": "Pro books vs casual, big gap",
    "plain": "Same as above, only when the gap is 2%+",
    "why": "A bigger gap should be a clearer signal, with fewer picks.",
    "outcome": "review"
@@ -237,7 +237,7 @@
    "gate": "Passes only at 300 graded with a clear profit and beating the close.",
    "name": "Exchanges moved first",
    "plain": "Follow the betting exchanges when they move and Hard Rock has not",
-   "why": "Exchanges are sharp. Hard Rock may be slow to catch up.",
+   "why": "Exchanges are well informed. Hard Rock may be slow to catch up.",
    "outcome": "review"
   },
   {
@@ -265,7 +265,7 @@
    "gate": "Passes only at 300 graded with a clear profit and beating the close.",
    "name": "Against casual-book moves",
    "plain": "Bet against a move that only casual books made",
-   "why": "If casual books move and sharp books stay put, the move may be wrong.",
+   "why": "If casual books move and the top books stay put, the move may be wrong.",
    "outcome": "review"
   },
   {
@@ -280,7 +280,7 @@
    "first_seen": "2026-11-21",
    "name": "Points: Hard Rock bargain",
    "plain": "Bet points when Hard Rock pays 5%+ more than Pinnacle's fair price",
-   "why": "Pinnacle is the sharpest book. If Hard Rock pays more, that is a bargain.",
+   "why": "Pinnacle is the book pros trust most. If Hard Rock pays more, that is a bargain.",
    "outcome": "review"
   },
   {

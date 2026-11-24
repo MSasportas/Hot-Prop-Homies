@@ -29,7 +29,7 @@
    "gate": "Live only at 150 graded, units up, and when Matt says go.",
    "name": "Pinnacle price check",
    "plain": "Bet when Hard Rock pays 2%+ more than Pinnacle's fair price",
-   "why": "Pinnacle is the sharpest book. If Hard Rock pays more, that is a bargain.",
+   "why": "Pinnacle is the book pros trust most. If Hard Rock pays more, that is a bargain.",
    "outcome": "matt"
   },
   {
@@ -82,7 +82,7 @@
    "gate": "Passes only at 150 graded, profit and beating the close.",
    "name": "Late, only Pinnacle moved",
    "plain": "Of our real picks, late ones where only Pinnacle moved",
-   "why": "One sharp book moving alone may know something others do not.",
+   "why": "One top book moving alone may know something others do not.",
    "outcome": "filter"
   },
   {
@@ -250,9 +250,9 @@
    "need": 150,
    "discovery": "Discovery Oct 25-Nov 14 (21 nights): 90 events, 87 graded, 49-38, +11.48u, ROI +13.2%.",
    "gate": "Passes only at 150 graded forward, profit and beating close.",
-   "name": "Sharp vs casual books",
+   "name": "Pro books vs casual books",
    "plain": "Bet the way the sharp books lean when casual books disagree",
-   "why": "Sharp books (the ones pros use) are usually right.",
+   "why": "Books the pros use (sharp books) are usually right.",
    "outcome": "review"
   },
   {
@@ -266,7 +266,7 @@
    "gate": "Passes only at 150 graded forward, profit and beating close.",
    "name": "Against casual-book moves",
    "plain": "Bet against a move that only casual books made",
-   "why": "If casual books move and sharp books stay put, the move may be wrong.",
+   "why": "If casual books move and the top books stay put, the move may be wrong.",
    "outcome": "review"
   },
   {

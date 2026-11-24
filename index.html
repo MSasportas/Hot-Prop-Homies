@@ -411,8 +411,8 @@ button.tr.open{background:var(--selected-bg);border-bottom-color:transparent}
 .lc.paper{border-style:dashed;border-color:var(--line2)}
 .lc-h{display:flex;flex-direction:column;gap:10px;width:100%;min-height:96px;padding:14px;background:none;border:0;color:inherit;font:inherit;text-align:left;cursor:pointer}
 .lc-h:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
-.lc-l1{display:flex;align-items:flex-start;gap:8px}
-.lc-nm{flex:1;min-width:0;font:400 14px/19px var(--head);overflow-wrap:anywhere}
+.lc-l1{display:flex;align-items:center;gap:8px}
+.lc-nm{font:400 14px/19px var(--head);overflow-wrap:anywhere}
 .lc-pill{flex:none;height:20px;padding:0 8px;border:1px solid var(--accent);border-radius:10px;font:600 11px/18px var(--num);letter-spacing:.04em;text-transform:uppercase;white-space:nowrap;color:var(--accent)}
 .lc-pill.ready{background:var(--good-soft);border-color:var(--good);color:var(--good)}
 .lc-pill.check{background:var(--warn-soft);border-color:var(--warn);color:var(--warn)}
@@ -2518,6 +2518,8 @@ var LAB_LUCK_NOTE = 'Early results can be luck. It has to hold up.';
 var LAB_NO_LIST = 'Pick-by-pick list is coming. The totals above are live.';
 var LAB_LEDE = ['Paper tests. We pretend-bet ideas to see if they would make money.', 'None of these are in your picks unless the card says REAL PICKS.'];
 function labName(t) { return str(t.name) || str(t.title) || 'Untitled idea'; }
+/* a retired line has only its title: drop a trailing note like "(data mining)" */
+function labPlainTitle(s) { return s.replace(/\s*\([^)]*\)$/, ''); }
 function labKey(t) { return (t._sp || '') + str(t.id); }
 function labSport(t) { return t._sp || S.sport; }
 function labIsPaper(t) { return t.paper !== false; }
@@ -2633,7 +2635,8 @@ function labFace(m) {
   S.labSeen[m.id] = true;
   var head = h('button', { class: 'lc-h', type: 'button', 'aria-expanded': open ? 'true' : 'false' },
     h('span', { class: 'lc-l1' }, t._sp ? h('span', { class: 'sp-badge ' + t._sp, style: 'margin-left:0', text: t._sp.toUpperCase() }) : null,
-      h('span', { class: 'lc-nm', text: labName(t) }), h('span', { class: 'lc-pill ' + m.status, text: LAB_STATUS[m.status] })),
+      h('span', { class: 'lc-pill ' + m.status, text: LAB_STATUS[m.status] })),
+    h('span', { class: 'lc-nm', text: labName(t) }),
     str(t.plain) ? h('span', { class: 'lc-pl', text: str(t.plain) }) : null,
     h('span', { class: 'lc-l3' },
       h('span', { class: 'lc-ml', text: labMeterText(m.st, m.k, m.need) }),
@@ -2956,7 +2959,7 @@ function labRetiredLine() {
   if (!Array.isArray(ev)) box.appendChild(h('div', { class: 'sm', text: ev === 'err' ? "Couldn't load the list." : 'Loading the list' }));
   else ev.forEach(function (e) {
     var f = isObj(e.final) ? e.final : {};
-    box.appendChild(h('div', { class: 'sm', text: (str(e.title) || str(e.id)) + ' · ' + (num(f.w) || 0) + '-' + (num(f.l) || 0) + ' ' + String(units(f.units, 2)).replace(/ units?$/, 'u') + ' · ' + (RETIRED_WHY[str(e.reason)] || 'retired') + ' · ' + fDateShort(str(e.ts).slice(0, 10)) }));
+    box.appendChild(h('div', { class: 'sm', text: (str(e.name) || labPlainTitle(str(e.title)) || str(e.id)) + ' · ' + (num(f.w) || 0) + '-' + (num(f.l) || 0) + ' ' + String(units(f.units, 2)).replace(/ units?$/, 'u') + ' · ' + (RETIRED_WHY[str(e.reason)] || 'retired') + ' · ' + fDateShort(str(e.ts).slice(0, 10)) }));
   });
   return box;
 }
