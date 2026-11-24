@@ -1,5 +1,5 @@
 {
- "at": "2026-11-24T17:40:02-05:00",
+ "at": "2026-11-24T18:10:02-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -281,6 +281,13 @@
    "date": "2026-11-24T01:31Z",
    "note": "Coach JJ Redick stated Monday that the team is optimistic Reaves (heel) will return for Friday's game against San Antonio, Daniel Starkand of LakersNation.com reports."
   },
+  "4431785": {
+   "status": "out",
+   "name": "Scotty Pippen Jr.",
+   "team": "MEM",
+   "date": "2026-11-24T23:04Z",
+   "note": "Pippen (back) is out for Wednesday's game against the Clippers."
+  },
   "5041935": {
    "status": "out",
    "name": "Cameron Boozer",
@@ -301,13 +308,6 @@
    "team": "MEM",
    "date": "2026-11-17T23:18Z",
    "note": "Jackson underwent a procedure Wednesday to repair a broken fifth metatarsal in his left foot. He is expected to recover fully and will be re-evaluated in approximately three months."
-  },
-  "4431785": {
-   "status": "out",
-   "name": "Scotty Pippen Jr.",
-   "team": "MEM",
-   "date": "2026-11-16T17:16Z",
-   "note": "Pippen (back) is progressing in his recovery but is still considered week-to-week."
   },
   "5105462": {
    "status": "out",
