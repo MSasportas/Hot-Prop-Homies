@@ -47,7 +47,7 @@
   },
   "ANA": {
    "name": "Lukas Dostal",
-   "status": "expected"
+   "status": "confirmed"
   },
   "SJS": {
    "name": "Yaroslav Askarov",
@@ -58,5 +58,5 @@
    "status": "confirmed"
   }
  },
- "checked_at": "2026-11-23T21:32:21-05:00"
+ "checked_at": "2026-11-23T21:40:00-05:00"
 }

@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-23",
- "generated_at": "2026-11-23T21:32:21-05:00",
- "status_at": "2026-11-23T21:32:21-05:00",
+ "generated_at": "2026-11-23T21:40:00-05:00",
+ "status_at": "2026-11-23T21:40:00-05:00",
  "valid_until": "2026-11-24T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-23T21:32:21-05:00",
+   "at": "2026-11-23T21:40:00-05:00",
    "failed_step": null
   },
   "pool": {
@@ -276,7 +276,7 @@
    "goalies": {
     "away": {
      "name": "Lukas Dostal",
-     "status": "expected"
+     "status": "confirmed"
     },
     "home": {
      "name": "Joey Daccord",
@@ -304,8 +304,8 @@
      "home": "2026-11-23T18:40:01-05:00"
     }
    },
-   "started": false,
-   "reads_done": true,
+   "started": true,
+   "reads_done": false,
    "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
