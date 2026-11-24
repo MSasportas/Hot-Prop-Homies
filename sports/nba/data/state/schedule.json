@@ -465,11 +465,11 @@
     "home": "LAL",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "30.6 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "UTAH": "40",
-     "LAL": "51"
+     "UTAH": "42",
+     "LAL": "53"
     }
    },
    {
