@@ -466,10 +466,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:51 - 4th",
+    "detail": "2:22 - 4th",
     "score": {
-     "UTAH": "84",
-     "LAL": "95"
+     "UTAH": "90",
+     "LAL": "105"
     }
    },
    {
@@ -478,13 +478,13 @@
     "start": "2026-11-23T22:00:00-05:00",
     "away": "SA",
     "home": "SAC",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:05 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "SA": "119",
-     "SAC": "106"
+     "SA": "123",
+     "SAC": "107"
     }
    }
   ]
