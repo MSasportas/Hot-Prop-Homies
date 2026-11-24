@@ -35,7 +35,7 @@
   },
   "WPG": {
    "name": "Stuart Skinner",
-   "status": "expected"
+   "status": "confirmed"
   },
   "UTA": {
    "name": "Sebastian Cossa",
@@ -58,5 +58,5 @@
    "status": "confirmed"
   }
  },
- "checked_at": "2026-11-23T19:10:01-05:00"
+ "checked_at": "2026-11-23T19:20:00-05:00"
 }
