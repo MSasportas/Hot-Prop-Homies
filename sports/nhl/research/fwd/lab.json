@@ -35,15 +35,6 @@
   "void": 0,
   "w": 101
  },
- "LL4b follow": {
-  "clv": -0.097,
-  "l": 101,
-  "pending": 17,
-  "push": 0,
-  "units": -34.35,
-  "void": 0,
-  "w": 85
- },
  "LL5 exch": {
   "clv": 0.0227,
   "l": 113,
@@ -226,6 +217,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-23T23:50:15+00:00",
+ "updated_at": "2026-11-24T00:03:08+00:00",
  "version": 1
 }
