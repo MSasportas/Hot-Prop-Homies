@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-23T21:20:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-23T21:20:01-05:00"
+   "at": "2026-11-23T21:23:45-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-23T21:20:01-05:00",
+    "at": "2026-11-23T21:23:45-05:00",
     "confirmed": [
      "BKN",
      "CHA",
@@ -61,7 +61,7 @@
    "away": "MEM",
    "home": "CHA",
    "state": "in",
-   "detail": "1:32 - 4th",
+   "detail": "26.1 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -126,7 +126,7 @@
    "away": "POR",
    "home": "PHI",
    "state": "in",
-   "detail": "2:51 - 4th",
+   "detail": "32.1 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -191,7 +191,7 @@
    "away": "OKC",
    "home": "IND",
    "state": "in",
-   "detail": "End of 3rd",
+   "detail": "11:44 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -256,7 +256,7 @@
    "away": "MIL",
    "home": "TOR",
    "state": "in",
-   "detail": "58.0 - 3rd",
+   "detail": "2.9 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -321,7 +321,7 @@
    "away": "BKN",
    "home": "MIN",
    "state": "in",
-   "detail": "2:37 - 3rd",
+   "detail": "33.4 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -451,7 +451,7 @@
    "away": "PHX",
    "home": "NOP",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "10:29 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -516,7 +516,7 @@
    "away": "LAC",
    "home": "HOU",
    "state": "in",
-   "detail": "4:29 - 2nd",
+   "detail": "3:00 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -1049,6 +1049,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-23T21:20:01-05:00",
- "status_at": "2026-11-23T21:20:01-05:00"
+ "generated_at": "2026-11-23T21:23:45-05:00",
+ "status_at": "2026-11-23T21:23:45-05:00"
 }
