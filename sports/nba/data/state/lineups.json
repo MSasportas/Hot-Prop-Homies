@@ -183,16 +183,15 @@
    }
   },
   "CLE": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "James Harden",
     "Donovan Mitchell",
-    "Jaylon Tyson",
+    "Sam Merrill",
     "Peyton Watson",
     "Jarrett Allen"
    ],
    "status": {
-    "Jaylon Tyson": "probable",
     "Evan Mobley": "out",
     "Nae'Qwan Tomlin": "out"
    }
@@ -298,5 +297,5 @@
    }
   }
  },
- "at": "2026-11-23T19:20:01-05:00"
+ "at": "2026-11-23T19:30:01-05:00"
 }
