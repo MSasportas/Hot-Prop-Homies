@@ -1,5 +1,5 @@
 {
- "at": "2026-11-24T13:30:00-05:00",
+ "at": "2026-11-24T13:50:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -159,15 +159,29 @@
    "status": "out",
    "name": "Ebuka Okorie",
    "team": "DET",
-   "date": "2026-11-23T22:10Z",
-   "note": "Okorie (oblique) won't play Tuesday in Orlando."
+   "date": "2026-11-24T18:37Z",
+   "note": "The Pistons announced Tuesday that Okorie (oblique) will miss at least two weeks, per Eric Vincent of ClutchPoints.com."
+  },
+  "2990962": {
+   "status": "out",
+   "name": "Taurean Prince",
+   "team": "DET",
+   "date": "2026-11-24T18:33Z",
+   "note": "Prince underwent arthroscopic right knee surgery Nov. 18 and will be re-evaluated in four weeks, Eric Vincent of ClutchPoints.com reports."
+  },
+  "3157465": {
+   "status": "out",
+   "name": "Duncan Robinson",
+   "team": "DET",
+   "date": "2026-11-24T18:30Z",
+   "note": "Robinson (quadriceps) is considered day-to-day as he progresses in his rehab, Eric Vincent of ClutchPoints.com reports."
   },
   "4433621": {
    "status": "out",
    "name": "Jalen Duren",
    "team": "DET",
-   "date": "2026-11-23T22:08Z",
-   "note": "Duren (hamstring) has been ruled out for Tuesday's game against the Magic."
+   "date": "2026-11-24T18:27Z",
+   "note": "Duren (hamstring) is being assigned to the Motor City Cruise on Wednesday for practice as he ramps up for a return, Eric Vincent of ClutchPoints.com reports."
   },
   "4432166": {
    "status": "day-to-day",
@@ -175,20 +189,6 @@
    "team": "DET",
    "date": "2026-11-23T22:07Z",
    "note": "Cunningham (knee) is probable for Tuesday's game against the Orlando."
-  },
-  "2990962": {
-   "status": "out",
-   "name": "Taurean Prince",
-   "team": "DET",
-   "date": "2026-11-20T23:02Z",
-   "note": "Prince (knee) underwent surgery to address lingering issues and has no timeline for a return, Hunter Patterson of The Athletic reports."
-  },
-  "3157465": {
-   "status": "out",
-   "name": "Duncan Robinson",
-   "team": "DET",
-   "date": "2026-11-17T16:25Z",
-   "note": "Robinson will be re-evaluated in one week due to a left quadriceps strain, Coty M. Davis of The Detroit News reports."
   },
   "4397040": {
    "status": "out",
@@ -369,8 +369,8 @@
    "status": "day-to-day",
    "name": "Miles McBride",
    "team": "NY",
-   "date": "2026-11-23T15:07Z",
-   "note": "McBride (abdomen) has been ruled out for Sunday's game against the Pacers."
+   "date": "2026-11-24T18:40Z",
+   "note": "McBride (groin) practiced Tuesday, per Jared Schwartz of the New York Post."
   },
   "3934719": {
    "status": "day-to-day",
