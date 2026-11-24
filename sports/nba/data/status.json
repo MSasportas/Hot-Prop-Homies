@@ -1,5 +1,5 @@
 {
- "finished_at": "2026-11-24T07:00:00-05:00",
+ "finished_at": "2026-11-24T07:30:01-05:00",
  "slate": "2026-11-24",
  "ok": true,
  "steps": {
@@ -13,7 +13,7 @@
   },
   "injuries": {
    "ok": true,
-   "sec": 0.0
+   "sec": 0.2
   },
   "lineups": {
    "ok": true,
@@ -148,10 +148,10 @@
  "unmatched": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "45384968789",
+  "run_id": "45389527165",
   "iteration": 2,
-  "chain_link": 410,
+  "chain_link": 411,
   "chain_started_at": "2026-11-12T08:01:08-05:00",
-  "run_started_at": "2026-11-24T06:32:25-05:00"
+  "run_started_at": "2026-11-24T07:02:00-05:00"
  }
 }
