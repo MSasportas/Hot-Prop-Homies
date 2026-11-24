@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-23T21:40:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-23T21:50:00-05:00"
+   "at": "2026-11-23T22:00:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-23T21:50:00-05:00",
+    "at": "2026-11-23T22:00:00-05:00",
     "confirmed": [
      "BKN",
      "CHA",
@@ -193,8 +193,8 @@
    "start": "2026-11-23T19:30:00-05:00",
    "away": "OKC",
    "home": "IND",
-   "state": "in",
-   "detail": "39.7 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -259,7 +259,7 @@
    "away": "MIL",
    "home": "TOR",
    "state": "in",
-   "detail": "3:31 - 4th",
+   "detail": "1:13 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -323,8 +323,8 @@
    "start": "2026-11-23T19:30:00-05:00",
    "away": "BKN",
    "home": "MIN",
-   "state": "in",
-   "detail": "4:44 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -389,7 +389,7 @@
    "away": "CLE",
    "home": "CHI",
    "state": "in",
-   "detail": "43.7 - 3rd",
+   "detail": "9:57 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -454,7 +454,7 @@
    "away": "PHX",
    "home": "NOP",
    "state": "in",
-   "detail": "1:49 - 3rd",
+   "detail": "0.0 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -519,7 +519,7 @@
    "away": "LAC",
    "home": "HOU",
    "state": "in",
-   "detail": "Halftime",
+   "detail": "6:51 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -856,7 +856,11 @@
    "price_final": false,
    "pulled": null,
    "added_at": "2026-11-23T13:30:01-05:00",
-   "result": null,
+   "result": {
+    "result": "W",
+    "actual": "6 assists",
+    "units": 1.15
+   },
    "links": null,
    "rank": null
   },
@@ -912,7 +916,11 @@
    "price_final": false,
    "pulled": null,
    "added_at": "2026-11-23T13:30:01-05:00",
-   "result": null,
+   "result": {
+    "result": "L",
+    "actual": "3 assists",
+    "units": -1.0
+   },
    "links": null,
    "rank": null
   },
@@ -963,25 +971,14 @@
     }
    },
    "id": "2026-11-23:401910044:4277919:rebounds:9.5:under",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "added_at": "2026-11-23T20:50:01-05:00",
    "result": null,
-   "links": {
-    "hardrock": {
-     "id": "3704543398357762462",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/3704543398357762462",
-     "price": -125
-    },
-    "draftkings": {
-     "url": "https://sportsbook.draftkings.com/?outcomes=0QA391885917%232378394601_13L42648Q1-1408532810Q20",
-     "price": -122,
-     "qualifies": true
-    }
-   },
-   "rank": 1
+   "links": null,
+   "rank": null
   },
   {
    "player": "Domantas Sabonis",
@@ -1026,28 +1023,21 @@
     }
    },
    "id": "2026-11-23:401910045:3155942:rebounds:12.5:over",
-   "state": "starters",
-   "state_label": "Starters confirmed",
-   "price_final": true,
+   "state": "locked",
+   "state_label": "Locked",
+   "price_final": false,
    "pulled": null,
    "added_at": "2026-11-23T20:50:01-05:00",
    "result": null,
-   "links": {
-    "hardrock": {
-     "id": "7937007411836092822",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/7937007411836092822",
-     "price": 105
-    },
-    "draftkings": {
-     "url": "https://sportsbook.draftkings.com/?outcomes=0QA391866405%232377953465_13L42648Q1583108280Q20",
-     "price": -115,
-     "qualifies": false
-    }
-   },
-   "rank": 2
+   "links": null,
+   "rank": null
   }
  ],
- "empty": null,
+ "empty": {
+  "text": "No open picks right now",
+  "why": "Every game has started.",
+  "next": null
+ },
  "counts": {
   "lines_read": 958,
   "passing": 24,
@@ -1060,6 +1050,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-23T21:50:00-05:00",
- "status_at": "2026-11-23T21:50:00-05:00"
+ "generated_at": "2026-11-23T22:00:00-05:00",
+ "status_at": "2026-11-23T22:00:00-05:00"
 }
