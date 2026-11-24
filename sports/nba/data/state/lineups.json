@@ -266,19 +266,19 @@
   "SA": {
    "state": "expected",
    "starters": [
-    "De'Aaron Fox",
+    "Jordan McLaughlin",
     "Stephon Castle",
     "Julian Champagnie",
     "Devin Vassell",
-    "Victor Wembanyama"
+    "Luke Kornet"
    ],
    "status": {
-    "De'Aaron Fox": "questionable",
-    "Victor Wembanyama": "questionable",
     "Jordan McLaughlin": "questionable",
+    "De'Aaron Fox": "out",
     "Dylan Harper": "out",
     "Tobias Harris": "out",
-    "Jayden Quaintance": "out"
+    "Jayden Quaintance": "out",
+    "Victor Wembanyama": "out"
    }
   },
   "SAC": {
@@ -296,5 +296,5 @@
    }
   }
  },
- "at": "2026-11-23T20:20:00-05:00"
+ "at": "2026-11-23T20:30:01-05:00"
 }
