@@ -74,6 +74,20 @@
      "side": "under"
     }
    ]
+  },
+  {
+   "date": "2026-11-23",
+   "bets": [
+    {
+     "player": "Cade Cunningham",
+     "bet": "UNDER 8.5 assists",
+     "price": -105,
+     "result": null,
+     "units": 0,
+     "market": "rebounds",
+     "side": "under"
+    }
+   ]
   }
  ]
 }
