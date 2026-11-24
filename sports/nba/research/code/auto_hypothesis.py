@@ -20,6 +20,10 @@ except Exception:
 
 FWD = "2026-11-10"  # forward period starts here (run8 registration night)
 DM_FWD = "2026-11-16"  # forward period for DM1/DM2/DM3 (data mining registration date)
+DM_FADE_TRACKS = ("DM2", "DM3")  # fade tests: the tracked side is expected to lose, the bet is the OTHER side at its own price
+DM_PRICE_MIN = -200  # Matt's fixed rule: no leg worse than -200
+DM_PRICE_WINDOW = (-200, 200)  # the base population's Hard Rock price window, on the tracked side
+OPPOSITE = {"over": "under", "under": "over"}
 
 # ---------------------------------------------------------------------------
 # Data loading (mirrors run8_moves.py)
@@ -376,8 +380,37 @@ def _dm_tally(t, res, price):
         t["pending"] += 1
 
 
+def _fade_row(track, day, gid, pid, m, line, hq, box, tracked):
+    """One fade-test event as a real bet: the side opposite `tracked`, on the same line and the same read, at Hard Rock's own
+    price for that side and graded on its own result. `skip` names why it cannot be bet (no price, or worse than -200)."""
+    bet = OPPOSITE[tracked]
+    row = {"track": track, "night": day, "game": gid, "pid": pid, "market": m, "line": line,
+           "over": hq.get("over"), "under": hq.get("under"), "bet": bet,
+           "over_res": _grade(box, gid, pid, m, line, "over"), "under_res": _grade(box, gid, pid, m, line, "under")}
+    price = hq.get(bet)
+    if not price:
+        row["skip"] = "no_price"
+    elif price < DM_PRICE_MIN:
+        row["skip"] = "worse_than_%d" % -DM_PRICE_MIN
+    return row
+
+
+def _fade_tally(t, rows):
+    """Tally one fade track's bettable rows on the bet side's own result and price; `excluded` counts the skipped ones."""
+    t["excluded"] = 0
+    nights = set()
+    for r in rows:
+        if "skip" in r:
+            t["excluded"] += 1
+            continue
+        _dm_tally(t, r[r["bet"] + "_res"], r[r["bet"]])
+        nights.add((r["night"], r["pid"]))
+    t["player_nights"] = len(nights)
+
+
 def export_dm(days_map=None, box=None):
-    """data/research/lab_dm.json: nightly forward shadow tracking for DM1-DM3.
+    """data/research/lab_dm.json (tallies) and lab_dm_bets.jsonl (one row per fade event): nightly forward shadow tracking
+    for DM1-DM3.
 
     DM1 — Minutes down 3+, unders
       Base population (all Pinnacle-on-line sides, HR -200..+200, 1/player/market/side/night).
@@ -391,6 +424,10 @@ def export_dm(days_map=None, box=None):
     DM3 — Pinnacle 3+ pts off market, skip unders
       Same base population.  Filter: Pinnacle's de-vigged fair for the bet side differs from the
       median of all other books by >= 3 pts (0.03).  Side must be under.
+
+    DM2 and DM3 are fade tests, tallied as the bet they imply: DM2 bets the under and DM3 the over, on the same line, at
+    Hard Rock's own price for that side and graded on its own result (never the tracked side's units mirrored, which
+    ignores the vig). A bet with no price or worse than -200 is skipped and counted in `excluded`.
 
     Forward period: nights >= DM_FWD (2026-11-16).
     """
@@ -410,6 +447,7 @@ def export_dm(days_map=None, box=None):
     player_hist = _build_player_history(box)
     dm = {k: {"w": 0, "l": 0, "units": 0.0, "pending": 0, "push": 0, "void": 0}
           for k in ("DM1", "DM2", "DM3")}
+    fades = {k: [] for k in DM_FADE_TRACKS}
 
     for day in sorted(days_map.keys()):
         if day < DM_FWD:
@@ -439,7 +477,7 @@ def export_dm(days_map=None, box=None):
                         cons_fair = statistics.median(cons_list) if cons_list else None
                         for side in ("over", "under"):
                             price = hq.get(side)
-                            if not price or not (-200 <= price <= 200):
+                            if not price or not (DM_PRICE_WINDOW[0] <= price <= DM_PRICE_WINDOW[1]):
                                 continue
                             key = (pid, m, side)
                             if key in seen:
@@ -451,7 +489,7 @@ def export_dm(days_map=None, box=None):
                             if side == "under" and cons_fair is not None:
                                 cons_sp = 1 - cons_fair
                                 if abs(pin_sp - cons_sp) >= 0.03:
-                                    _dm_tally(dm["DM3"], res, price)
+                                    fades["DM3"].append(_fade_row("DM3", day, gid, pid, m, line, hq, box, side))
                             # DM1 and DM2 require rolling player stats
                             rolling = _dm_rolling(player_hist, pid, day, m)
                             if rolling is None:
@@ -464,10 +502,21 @@ def export_dm(days_map=None, box=None):
                             if side == "over" and rolling["last5_stat"] is not None and rolling["season_stat"]:
                                 ratio = (rolling["last5_stat"] - rolling["season_stat"]) / rolling["season_stat"]
                                 if ratio >= 0.10:
-                                    _dm_tally(dm["DM2"], res, price)
+                                    fades["DM2"].append(_fade_row("DM2", day, gid, pid, m, line, hq, box, side))
+
+    for track, rows in fades.items():
+        _fade_tally(dm[track], rows)
 
     gone = retired("research/lab_dm.json")
     doc = {k: dict(v, units=round(v["units"], 2)) for k, v in dm.items() if k not in gone}
+    names = _names()
+    bets = [dict(r, player=names.get(str(r["pid"]))) for t, rows in fades.items() if t not in gone for r in rows]
+    bets.sort(key=lambda r: (r["track"], r["night"], str(r["game"]), str(r["pid"]), r["market"]))
+    bets_path = R + "data/research/lab_dm_bets.jsonl"
+    os.makedirs(os.path.dirname(bets_path), exist_ok=True)
+    with open(bets_path, "w", encoding="utf-8", newline=chr(10)) as fh:
+        for r in bets:
+            fh.write(json.dumps(r, separators=(",", ":"), sort_keys=True) + chr(10))
     path = R + "data/research/lab_dm.json"
     old = None
     try:

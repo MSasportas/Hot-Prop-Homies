@@ -13,9 +13,9 @@
    "discovery": "On 1,204 past picks (n=1,204, ROI +3.1%, CI 0.4 to 5.8) the idea showed an edge.",
    "gate": "Passes only at 300 graded with a clear profit and a positive CLV.",
    "direction": "fade",
-   "name": "Hot streak overs fade",
+   "name": "Hot streak, bet under",
    "plain": "Bet UNDER on players who've been hot lately",
-   "why": "Hot streaks cool off, but books price the streak in. We bet the opposite side.",
+   "why": "Hot streaks cool off, but books price the streak in.",
    "outcome": "review"
   },
   {

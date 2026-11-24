@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T23:30:01-05:00",
+ "at": "2026-11-24T00:00:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -50,6 +50,13 @@
    "date": "2026-11-23T15:22Z",
    "note": "Traore will be re-evaluated in approximately 8-10 weeks due to a right hamstring strain, Michael Scotto of HoopsHype.com reports."
   },
+  "4066218": {
+   "status": "day-to-day",
+   "name": "Grant Williams",
+   "team": "CHA",
+   "date": "2026-11-24T04:32Z",
+   "note": "Williams (hamstring) won't play Monday's game against the Grizzlies."
+  },
   "4576060": {
    "status": "day-to-day",
    "name": "Ryan Kalkbrenner",
@@ -63,13 +70,6 @@
    "team": "CHA",
    "date": "2026-11-22T22:08Z",
    "note": "Allen (concussion) has been ruled out for Monday's game against the Grizzlies."
-  },
-  "4066218": {
-   "status": "out",
-   "name": "Grant Williams",
-   "team": "CHA",
-   "date": "2026-11-22T22:05Z",
-   "note": "Williams (hamstring) won't play Monday's game against the Grizzlies."
   },
   "5061575": {
    "status": "out",
@@ -218,26 +218,26 @@
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
   },
+  "4396909": {
+   "status": "day-to-day",
+   "name": "Aaron Nesmith",
+   "team": "IND",
+   "date": "2026-11-24T04:40Z",
+   "note": "Nesmith is out for Monday's game against the Thunder due to right foot soreness."
+  },
+  "2530530": {
+   "status": "day-to-day",
+   "name": "T.J. McConnell",
+   "team": "IND",
+   "date": "2026-11-24T04:40Z",
+   "note": "McConnell is out for Monday's game against the Thunder due to left hamstring soreness."
+  },
   "2580365": {
    "status": "day-to-day",
    "name": "Larry Nance Jr.",
    "team": "IND",
    "date": "2026-11-24T02:00Z",
    "note": "Nance exited Monday's game against the Thunder due to a sore right ankle and he will not return, Tony East of Forbes.com reports."
-  },
-  "2530530": {
-   "status": "out",
-   "name": "T.J. McConnell",
-   "team": "IND",
-   "date": "2026-11-23T18:25Z",
-   "note": "McConnell is out for Monday's game against the Thunder due to left hamstring soreness."
-  },
-  "4396909": {
-   "status": "out",
-   "name": "Aaron Nesmith",
-   "team": "IND",
-   "date": "2026-11-23T18:22Z",
-   "note": "Nesmith is out for Monday's game against the Thunder due to right foot soreness."
   },
   "4396993": {
    "status": "out",
@@ -387,11 +387,18 @@
    "note": "Clarkson (foot) has been ruled out for Sunday's game against Indiana."
   },
   "4432823": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Jaylin Williams",
    "team": "OKC",
-   "date": "2026-11-23T19:09Z",
+   "date": "2026-11-24T04:36Z",
    "note": "Williams (back) has been ruled out for Monday's game against the Pacers"
+  },
+  "5174983": {
+   "status": "day-to-day",
+   "name": "Aday Mara",
+   "team": "OKC",
+   "date": "2026-11-24T04:36Z",
+   "note": "Mara (shin) has been ruled out for Monday's game against the Pacers."
   },
   "5159925": {
    "status": "out",
@@ -399,13 +406,6 @@
    "team": "OKC",
    "date": "2026-11-23T18:49Z",
    "note": "Topic (hip) has been ruled out for Monday's game against the Pacers, according to the NBA's official injury report."
-  },
-  "5174983": {
-   "status": "out",
-   "name": "Aday Mara",
-   "team": "OKC",
-   "date": "2026-11-23T18:45Z",
-   "note": "Mara (shin) has been ruled out for Monday's game against the Pacers."
   },
   "4593803": {
    "status": "out",
@@ -471,10 +471,10 @@
    "note": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports."
   },
   "3059318": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Joel Embiid",
    "team": "PHI",
-   "date": "2026-11-23T22:49Z",
+   "date": "2026-11-24T04:33Z",
    "note": "Embiid (illness) is out for Monday's game against Portland, Austin Krell of OnPattison.com reports."
   },
   "4871141": {

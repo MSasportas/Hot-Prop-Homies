@@ -465,11 +465,11 @@
     "home": "LAL",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:28 - 3rd",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 3rd",
     "score": {
-     "UTAH": "45",
-     "LAL": "53"
+     "UTAH": "77",
+     "LAL": "78"
     }
    },
    {
@@ -481,10 +481,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:04 - 3rd",
+    "detail": "8:29 - 4th",
     "score": {
-     "SA": "71",
-     "SAC": "59"
+     "SA": "98",
+     "SAC": "85"
     }
    }
   ]

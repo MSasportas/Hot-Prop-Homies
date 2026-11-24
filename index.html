@@ -2702,12 +2702,15 @@ function labMath(m) {
   var t = m.t, st = m.st, box = h('div', { class: 'lc-math' });
   if (str(t.name) && str(t.title)) box.appendChild(labMathBlock('Original title', str(t.title)));
   if (str(t.rule)) box.appendChild(labMathBlock('Exact rule', str(t.rule)));
+  if (str(t.bet)) box.appendChild(labMathBlock('How it is counted', str(t.bet)));
   if (str(t.discovery)) box.appendChild(labMathBlock('What the history showed', str(t.discovery)));
   if (str(t.gate)) box.appendChild(labMathBlock('Pass mark', str(t.gate)));
   if (st) {
     var counts = [m.k + ' graded'];
     if (num(st.pending)) counts.push(st.pending + ' pending');
     if (num(st.void)) counts.push(st.void + ' void');
+    if (num(st.excluded)) counts.push(st.excluded + ' skipped');
+    if (num(st.player_nights)) counts.push(st.player_nights + ' player-nights');
     box.appendChild(labMathBlock('Counts', counts.join(', ')));
     if (num(st.clv) != null) { var clv = m.fade ? -st.clv : st.clv; box.appendChild(labMathBlock('Beat the closing price', (clv >= 0 ? '+' : '') + (100 * clv).toFixed(1) + '%')); }
   }

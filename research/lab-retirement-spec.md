@@ -12,6 +12,10 @@ SPEC ONLY, for the Engineer. A dead test retires on its own; a passing test is o
 Per track: `k = w + l` (pushes and voids excluded), `u = units`, `roi = u / k`, `clv` = mean CLV if present (NBA AH/NP/DM/LVA blocks carry none today; NHL fwd blocks do).
 Noise model: SD of one bet's unit result is about 1.0, so `se = 1 / sqrt(k)`.
 
+**Fade tests are graded on the bet they imply.** A fade or mirror test (DM2, DM3, the NHL "fade" tracks) is tallied by its exporter as the OTHER side's bet: same line, Hard Rock's own posted price for that side, that side's own result. Its `units`, `w`, `l` and `clv` are therefore real bet-side numbers and `lab_retire.py` never flips a sign. Mirroring the tracked side's units assumed the opposite side pays the same price and ignored the vig (DM2: +24.36u mirrored, -26.4u real). A bet with no price, or worse than -200 (Matt's fixed rule), is skipped and counted in the block's `excluded`. NBA DM2 and DM3 also write one row per event to `data/research/lab_dm_bets.jsonl` (both prices, both results, `skip` when excluded); the block's `player_nights` counts distinct player-nights among the bets.
+
+**CLV caveat.** The Lab's CLV is measured against the vig-free close, but Hard Rock's price carries its own vig. Betting both sides of one pair would show negative CLV on both, so `clv <= 0` is nearly automatic for a Hard Rock-priced track and the rule "retire needs `clv` missing or <= 0" barely filters. The rule is left as written: the Sharp and DS decide whether CLV should be measured against Hard Rock's own close or given a vig allowance.
+
 ## 2. Retire criteria
 Retire when A or B holds and all guards pass.
 - **A. Full-sample fail:** `k >= need` AND `roi + 1.645*se < 0` (one-sided 95%: even the optimistic end is below break-even) AND (`clv` missing OR `clv <= 0`).
