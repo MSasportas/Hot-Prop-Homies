@@ -1,5 +1,5 @@
 {
- "at": "2026-11-24T18:10:02-05:00",
+ "at": "2026-11-24T18:30:02-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -400,19 +400,19 @@
    "date": "2026-11-24T21:50Z",
    "note": "Towns (knee) is questionable for Wednesday's game against Cleveland."
   },
+  "5174983": {
+   "status": "out",
+   "name": "Aday Mara",
+   "team": "OKC",
+   "date": "2026-11-24T23:18Z",
+   "note": "Mara (shin) has been ruled out for Monday's game against the Pacers."
+  },
   "4432823": {
    "status": "day-to-day",
    "name": "Jaylin Williams",
    "team": "OKC",
    "date": "2026-11-24T04:36Z",
    "note": "Williams (back) has been ruled out for Monday's game against the Pacers"
-  },
-  "5174983": {
-   "status": "day-to-day",
-   "name": "Aday Mara",
-   "team": "OKC",
-   "date": "2026-11-24T04:36Z",
-   "note": "Mara (shin) has been ruled out for Monday's game against the Pacers."
   },
   "5159925": {
    "status": "out",
