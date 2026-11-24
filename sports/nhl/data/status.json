@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-23",
- "started_at": "2026-11-23T23:00:00-05:00",
- "status_at": "2026-11-23T23:00:00-05:00",
- "finished_at": "2026-11-23T23:00:02-05:00",
- "last_ok_at": "2026-11-23T23:00:00-05:00",
+ "started_at": "2026-11-23T23:10:01-05:00",
+ "status_at": "2026-11-23T23:10:01-05:00",
+ "finished_at": "2026-11-23T23:10:09-05:00",
+ "last_ok_at": "2026-11-23T23:10:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -19,8 +19,8 @@
   },
   {
    "step": "stats",
-   "status": "skipped",
-   "note": "waiting to retry"
+   "status": "ok",
+   "note": "1 window(s) read"
   },
   {
    "step": "lineups",
@@ -74,8 +74,8 @@
   },
   {
    "step": "shadow",
-   "status": "skipped",
-   "note": "nothing new"
+   "status": "ok",
+   "note": "32 graded"
   },
   {
    "step": "gg_grade",
@@ -84,8 +84,8 @@
   },
   {
    "step": "slate",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "0 open pick(s)"
   },
   {
    "step": "record",
@@ -154,7 +154,7 @@
   "Sam Morton"
  ],
  "excluded_teams": [],
- "stats_through": "2026-11-22",
+ "stats_through": "2026-11-23",
  "lineups_at": "2026-11-23T21:32:21-05:00",
  "lineups_note": "Lineups posted for 12 of 14 teams checked so far.",
  "games_today": 7,
@@ -163,7 +163,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "45318817270",
-  "iteration": 5,
+  "iteration": 6,
   "chain_link": 16,
   "chain_started_at": "2026-11-23T09:55:27-05:00",
   "run_started_at": "2026-11-23T22:20:36-05:00"
