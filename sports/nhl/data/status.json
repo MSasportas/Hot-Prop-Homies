@@ -1,10 +1,10 @@
 {
  "ok": true,
- "slate_date": "2026-11-23",
- "started_at": "2026-11-24T04:30:00-05:00",
- "status_at": "2026-11-24T04:30:00-05:00",
- "finished_at": "2026-11-24T04:30:01-05:00",
- "last_ok_at": "2026-11-24T04:30:00-05:00",
+ "slate_date": "2026-11-24",
+ "started_at": "2026-11-24T05:00:01-05:00",
+ "status_at": "2026-11-24T05:00:01-05:00",
+ "finished_at": "2026-11-24T05:00:03-05:00",
+ "last_ok_at": "2026-11-24T05:00:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -15,7 +15,7 @@
   {
    "step": "schedule",
    "status": "ok",
-   "note": "7 game(s) today"
+   "note": "1 game(s) today"
   },
   {
    "step": "stats",
@@ -70,7 +70,7 @@
   {
    "step": "live",
    "status": "skipped",
-   "note": "no change"
+   "note": "no started game with a pick"
   },
   {
    "step": "shadow",
@@ -139,33 +139,31 @@
   }
  ],
  "pool_total": 2447,
- "allowance": 43.2759,
+ "allowance": 47.9804,
  "tier": 4,
- "budget_today": 302,
- "budget_used_today": 63,
- "prices_state": "ok",
- "prices_at": "2026-11-23T21:20:01-05:00",
- "next_price_read_at": null,
+ "budget_today": 47,
+ "budget_used_today": 0,
+ "prices_state": "not_yet",
+ "prices_at": null,
+ "next_price_read_at": "2026-11-24T13:00:00-05:00",
  "unmatched_names": [],
  "unknown_teams": [],
- "lineup_unmatched_names": [
-  "Dylan Larkin",
-  "Mikael Pyyhtia",
-  "Sam Morton"
- ],
+ "lineup_unmatched_names": [],
  "excluded_teams": [],
  "stats_through": "2026-11-23",
- "lineups_at": "2026-11-23T21:32:21-05:00",
- "lineups_note": "Lineups posted for 12 of 14 teams checked so far.",
- "games_today": 7,
+ "lineups_at": null,
+ "lineups_note": null,
+ "games_today": 1,
  "record_events": 371,
- "odds_notes": [],
+ "odds_notes": [
+  "key 1 refused (401)"
+ ],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "45361232006",
+  "run_id": "45365968704",
   "iteration": 2,
-  "chain_link": 24,
+  "chain_link": 25,
   "chain_started_at": "2026-11-23T09:55:27-05:00",
-  "run_started_at": "2026-11-24T04:01:37-05:00"
+  "run_started_at": "2026-11-24T04:31:30-05:00"
  }
 }

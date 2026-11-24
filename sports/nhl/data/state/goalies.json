@@ -1,62 +1,14 @@
 {
- "date": "2026-11-23",
+ "date": "2026-11-24",
  "teams": {
-  "NJD": {
-   "name": "Connor Hellebuyck",
-   "status": "confirmed"
+  "EDM": {
+   "name": "Devon Levi",
+   "status": "expected"
   },
-  "CBJ": {
-   "name": "Cam Talbot",
-   "status": "confirmed"
-  },
-  "MTL": {
-   "name": "Jakub Dobes",
-   "status": "confirmed"
-  },
-  "LAK": {
-   "name": "Darcy Kuemper",
-   "status": "confirmed"
-  },
-  "OTT": {
-   "name": "Linus Ullmark",
-   "status": "confirmed"
-  },
-  "CGY": {
-   "name": "Devin Cooley",
-   "status": "confirmed"
-  },
-  "NYI": {
-   "name": "Ilya Sorokin",
-   "status": "confirmed"
-  },
-  "TOR": {
-   "name": "Anthony Stolarz",
-   "status": "confirmed"
-  },
-  "WPG": {
-   "name": "Stuart Skinner",
-   "status": "confirmed"
-  },
-  "UTA": {
-   "name": "Sebastian Cossa",
-   "status": "confirmed"
-  },
-  "SEA": {
-   "name": "Joey Daccord",
-   "status": "confirmed"
-  },
-  "ANA": {
-   "name": "Lukas Dostal",
-   "status": "confirmed"
-  },
-  "SJS": {
-   "name": "Yaroslav Askarov",
-   "status": "confirmed"
-  },
-  "MIN": {
-   "name": "Filip Gustavsson",
-   "status": "confirmed"
+  "VGK": {
+   "name": "Carter Hart",
+   "status": "expected"
   }
  },
- "checked_at": "2026-11-23T21:40:00-05:00"
+ "checked_at": "2026-11-24T05:00:01-05:00"
 }
