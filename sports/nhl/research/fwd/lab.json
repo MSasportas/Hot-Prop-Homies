@@ -1,15 +1,15 @@
 {
  "LL1f-follow": {
-  "clv": -0.0831,
+  "clv": -0.083,
   "l": 295,
-  "pending": 37,
+  "pending": 40,
   "push": 0,
   "units": -28.91,
   "void": 0,
   "w": 325
  },
  "LL3a tight": {
-  "clv": 0.0306,
+  "clv": 0.0307,
   "l": 71,
   "pending": 9,
   "push": 0,
@@ -45,7 +45,7 @@
   "w": 127
  },
  "LL6 line": {
-  "clv": -0.0151,
+  "clv": -0.015,
   "l": 45,
   "pending": 10,
   "push": 0,
@@ -54,9 +54,9 @@
   "w": 72
  },
  "MM2a split": {
-  "clv": -0.0177,
+  "clv": -0.02,
   "l": 11,
-  "pending": 0,
+  "pending": 1,
   "push": 0,
   "units": -6.11,
   "void": 0,
@@ -74,7 +74,7 @@
  "MM3a persist": {
   "clv": 0.0339,
   "l": 50,
-  "pending": 8,
+  "pending": 9,
   "push": 0,
   "units": 1.89,
   "void": 0,
@@ -99,18 +99,18 @@
   "w": 9
  },
  "MM5a follow": {
-  "clv": -0.0891,
+  "clv": -0.0867,
   "l": 50,
-  "pending": 3,
+  "pending": 6,
   "push": 0,
   "units": -22.97,
   "void": 0,
   "w": 20
  },
  "MM5b fade": {
-  "clv": -0.0697,
+  "clv": -0.0712,
   "l": 19,
-  "pending": 3,
+  "pending": 6,
   "push": 0,
   "units": 8.31,
   "void": 0,
@@ -162,16 +162,16 @@
   "w": 0
  },
  "R28a points gap": {
-  "clv": null,
+  "clv": 0.0557,
   "l": 0,
-  "pending": 0,
+  "pending": 1,
   "push": 0,
   "units": 0.0,
   "void": 0,
   "w": 0
  },
  "R28b over": {
-  "clv": -0.1213,
+  "clv": -0.1212,
   "l": 54,
   "pending": 39,
   "push": 0,
@@ -180,7 +180,7 @@
   "w": 42
  },
  "R28b under": {
-  "clv": -0.0469,
+  "clv": -0.047,
   "l": 78,
   "pending": 55,
   "push": 0,
@@ -217,6 +217,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-24T01:30:15+00:00",
+ "updated_at": "2026-11-24T02:00:10+00:00",
  "version": 1
 }

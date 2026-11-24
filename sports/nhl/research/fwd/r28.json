@@ -1,14 +1,14 @@
 {
  "R28a points gap": {
-  "bets": 0,
+  "bets": 1,
   "graded": 0,
   "w": 0,
   "units": 0,
   "roi": null,
   "ci90": null,
   "p_one_sided": null,
-  "mean_ev": null,
-  "mean_clv": null
+  "mean_ev": 0.0557,
+  "mean_clv": 0.0557
  },
  "R28b under": {
   "bets": 222,
@@ -22,7 +22,7 @@
   ],
   "p_one_sided": 0.215,
   "mean_ev": 0.0,
-  "mean_clv": -0.0469,
+  "mean_clv": -0.047,
   "games": 19,
   "candidate": false
  },
@@ -38,7 +38,7 @@
   ],
   "p_one_sided": 0.719,
   "mean_ev": 0.0,
-  "mean_clv": -0.1213,
+  "mean_clv": -0.1212,
   "games": 19,
   "candidate": false
  },
