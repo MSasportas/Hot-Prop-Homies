@@ -47,7 +47,7 @@ Uses fields that exist: `k = w + l` (after the fade swap), `need`, `u` (units, a
 | Order | Pill text | Rule | Color |
 |---|---|---|---|
 | 1 | Ready for review | `t.status === 'ready_for_sharp'` | `--good` fill-soft, `--good` text and border (existing `.lab-ready` look) |
-| 2 | Check due | `k >= need` and not ready | `--warn` text, `--warn-soft` bg |
+| 2 | Check due | `k >= need`, not ready and `u >= 0` (`u < 0` stays Looking bad) | `--warn` text, `--warn-soft` bg |
 | 3 | Looking good | `k >= min(need, max(20, 0.25*need))` and `u > 0` | `--good` |
 | 3 | Looking bad | same sample floor and `u < 0` | `--bad` |
 | 4 | Collecting | under the sample floor, or `u == 0` | `--accent` outline, transparent bg |
@@ -66,7 +66,7 @@ Replaces `.lab-h`. Whole card is the tap target (min height 96px, well over 44px
 
 ```
 +--------------------------------------------------+  width 352 (380 minus 14 gutters)
-| [NBA]  Hot streak overs fade       [LOOKING GOOD] |  line 1: badge, name (Orbitron 14/19, 2 lines max), status pill
+| [NBA]  Hot streak, bet under       [LOOKING GOOD] |  line 1: badge, name (Orbitron 14/19, 2 lines max), status pill
 |                                                  |
 | Bet UNDER on players who've been hot lately      |  line 2: plain (14/20, --fg2, 2 lines max)
 |                                                  |
@@ -271,10 +271,10 @@ Tonight section (labLiveRow expanded area): replace the `rule` / `discovery` / `
 | LVA2 | Overs, high line | Flag Over picks when the line is well above his average | Early results: these overs won 8 of 8. That is too few to trust yet. | filter |
 | NP4 | Exchanges moved first | Follow the betting exchanges when they move and Hard Rock has not | Exchanges like Novig are sharp. Hard Rock may be slow to catch up. | review |
 | DM1 | Fewer minutes, bet Under | Bet UNDER on players getting fewer minutes lately | Less court time means fewer points and rebounds. Books may be slow to adjust. | review |
-| DM2 | Hot streak overs fade | Bet UNDER on players who've been hot lately | Hot streaks cool off, but books price the streak in. We bet the opposite side. | review |
+| DM2 | Hot streak, bet under | Bet UNDER on players who've been hot lately | Hot streaks cool off, but books price the streak in. We bet the opposite side. | review |
 | DM3 | Pinnacle far from pack | Bet OVER instead when the Under looks like a trap | When Pinnacle is far from the other books, the under tends to lose. | review |
 
-Note on the AH group: these are filters on the real picks, so "Paper test" is still true (the filter is not applied to your picks) but the card tag for `outcome: filter` reads `PAPER TEST - your picks are unchanged`. Same dashed border.
+Note on the AH group: these are filters on the real picks, so "Paper test" is still true (the filter is not applied to your picks) but the card tag for `outcome: filter` reads `PAPER TEST - picks unchanged`. Same dashed border.
 
 ## 10. Plain copy, NHL (`sports/nhl/config/lab.json`), 21 tests
 
@@ -339,12 +339,12 @@ No looping animation. Nothing moves after settling.
 ## 14. Acceptance criteria (QA at 380px; also check 340 and 768)
 
 1. Closed card shows, without scrolling inside the card: sport badge, name, status pill, plain line, meter with words, record and units, paper tag. Name never pushes the pill off screen; 2-line max.
-2. DM2 (Hot streak overs fade) closed reads: `Bet UNDER on players who've been hot lately`, pill `LOOKING GOOD`, `488 picks · goal was 300`, `247-241`, `+24.36u`, `PAPER TEST - not in your picks`.
+2. DM2 (Hot streak, bet under) closed reads: `Bet UNDER on players who've been hot lately`, pill the pill from section 3 (a test at goal that is not ready is `CHECK DUE` when units are 0 or up, `LOOKING BAD` when down), `488 picks · goal was 300`, its record and units, `PAPER TEST - not in your picks`.
 3. Opened card shows The idea (3 rows), scorecard, trend chart (if 3+ nights saved), What happens next, fade line (fade tests), and two closed drawers. No paragraph over 2 lines outside the drawers. Total opened height of DM2 with drawers closed is at most 1.5 screens at 380x800.
 4. None of these words appear outside Show the math: n=, ROI, CI, bucket, discovery, shadow-track, base population, DS, Sharp (as a person), LVA, CLV, EV, gate, fade (as a word), hit rate.
 5. Every string in Show the math equals the existing lab.json text (rule, discovery, gate) exactly; counts, closing-price and Updated lines are present when the data exists.
 6. Fade tests: record, units, and Wins chip use the swapped numbers (DM2 shows 247-241 +24.36u as today), and the fade line is visible.
-7. Paper tests have dashed border and the paper tag; `fast_checks` has solid border and `REAL PICKS - on your Record`. `filter` outcome tests show the `your picks are unchanged` tag text.
+7. Paper tests have dashed border and the paper tag; `fast_checks` has solid border and `REAL PICKS - on your Record`. `filter` outcome tests show the `picks unchanged` tag text.
 8. Status pill matches section 3 for each fixture state; no state claims a pass except Ready for review.
 9. Tests with no nights saved: no chart, no empty chips, one line `Pick-by-pick list is coming. The totals above are live.`
 10. Missing `name/plain/why/outcome` falls back cleanly (title shown, rule inside the drawer), no blank rows, no console errors.

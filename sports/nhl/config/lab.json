@@ -69,7 +69,7 @@
    "gate": "Passes only at 300 graded with a clear profit and beating the close.",
    "name": "Hard Rock alone: go against",
    "plain": "When only Hard Rock moves a price, bet the other way",
-   "why": "A move nobody else made may be a mistake. We bet the opposite side.",
+   "why": "A move nobody else made may be a mistake.",
    "outcome": "review"
   },
   {
@@ -195,7 +195,7 @@
    "gate": "Passes only at 300 graded with a clear profit and beating the close.",
    "name": "Hard Rock shift: go against",
    "plain": "When Hard Rock shifts its line, bet the other way",
-   "why": "A line shift may be an overreaction. We bet the opposite side.",
+   "why": "A line shift may be an overreaction.",
    "outcome": "review"
   },
   {

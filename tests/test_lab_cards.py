@@ -38,6 +38,7 @@ class LabCardLogic(unittest.TestCase):
             labStatus(T(300, 'ready_for_sharp'), st, 400, -5),
             labStatus(T(150), st, 150, 0),
             labStatus(T(300), st, 488, 24.36),
+            labStatus(T(300), st, 488, -3),
             labStatus(T(300), st, 75, 4),
             labStatus(T(300), st, 74, 4),
             labStatus(T(300), st, 80, -4),
@@ -46,7 +47,7 @@ class LabCardLogic(unittest.TestCase):
             labStatus(T(40), st, 19, 1),
             labStatus(T(300), st, 12, null)
           ]));""", ("LAB_FLOOR_MIN", "LAB_FLOOR_FRAC"))
-        self.assertEqual(got, ["starting", "ready", "check", "good", "good", "collecting", "bad", "collecting", "good", "collecting", "collecting"])
+        self.assertEqual(got, ["starting", "ready", "check", "check", "bad", "good", "collecting", "bad", "collecting", "good", "collecting", "collecting"])
 
     def test_meter_words(self):
         got = self.run_js(("labMeterText",), "console.log(JSON.stringify([labMeterText(null, 0, 300), labMeterText({}, 120, 300), labMeterText({}, 488, 300), labMeterText({}, 7, null)]"
@@ -104,7 +105,7 @@ class LabCardLogic(unittest.TestCase):
             labTag({}), labTag({ outcome: 'filter' }), labTag({ paper: false, outcome: 'live' }),
             labOutcome({ outcome: 'matt' }).short, labOutcome({}).short, labOutcome({ outcome: 'nope' }).short]));""",
                            ("LAB_TAG_PAPER", "LAB_TAG_FILTER", "LAB_TAG_REAL", "LAB_OUTCOME"))
-        self.assertEqual(got, ["Short", "Long title", "Untitled idea", "PAPER TEST - not in your picks", "PAPER TEST - your picks are unchanged",
+        self.assertEqual(got, ["Short", "Long title", "Untitled idea", "PAPER TEST - not in your picks", "PAPER TEST - picks unchanged",
                                "REAL PICKS - on your Record", "You get the call.", "Goes to review.", "Goes to review."])
 
 

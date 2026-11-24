@@ -321,9 +321,9 @@
    "discovery": "Discovery Nov 6-Nov 15 (second half only; min 5 prior games needed): overs in hot bucket n=361, 45.7% hit, -12.6% ROI, 90% CI [-21.0, -4.3]. Points hot overs n=105, 40.0%, -25.1%. Hot unders near breakeven (+0.7%).",
    "gate": "n >= 300 graded forward overs in hot bucket (last-5 >= 10% above season avg, min 5 prior games). Hit rate < 50%, ROI < -5%. DS to report LVA2 overlap at the first check. If passes: Sharp reviews with DS before any live rule change.",
    "direction": "fade",
-   "name": "Hot streak overs fade",
+   "name": "Hot streak, bet under",
    "plain": "Bet UNDER on players who've been hot lately",
-   "why": "Hot streaks cool off, but books price the streak in. We bet the opposite side.",
+   "why": "Hot streaks cool off, but books price the streak in.",
    "outcome": "review"
   },
   {

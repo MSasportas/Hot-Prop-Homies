@@ -2508,9 +2508,9 @@ var LAB_SPARK_H = 56;
 var LAB_STATUS = { ready: 'Ready for review', check: 'Check due', good: 'Looking good', bad: 'Looking bad', collecting: 'Collecting', starting: 'Starting up' };
 var LAB_STATUS_ORDER = ['ready', 'check', 'good', 'collecting', 'bad', 'starting'];
 var LAB_CHIP_ORDER = ['ready', 'check', 'good', 'bad', 'collecting', 'starting'];
-var LAB_OUTCOME = { review: { long: 'Our betting expert looks it over. Nothing changes in your picks until then.', short: 'Goes to review.' }, filter: { long: 'We could change which of our real picks you see. Nothing changes until it is reviewed.', short: 'We review it.' }, matt: { long: 'It goes to you. Nothing changes in your picks until you say go.', short: 'You get the call.' }, live: { long: 'These are already real picks on your Record. We keep the faster checks.', short: 'Kept.' } };
+var LAB_OUTCOME = { review: { long: 'Our expert reviews it. Your picks stay the same.', short: 'Goes to review.' }, filter: { long: 'We may filter your picks later, after review.', short: 'We review it.' }, matt: { long: 'You get the call. Your picks stay the same.', short: 'You get the call.' }, live: { long: 'Already real picks on your Record. We keep them.', short: 'Kept.' } };
 var LAB_TAG_PAPER = 'PAPER TEST - not in your picks';
-var LAB_TAG_FILTER = 'PAPER TEST - your picks are unchanged';
+var LAB_TAG_FILTER = 'PAPER TEST - picks unchanged';
 var LAB_TAG_REAL = 'REAL PICKS - on your Record';
 var LAB_FAIL_PAPER = 'We retire it. Nothing changes for you.';
 var LAB_FAIL_REAL = 'We turn the extra checks off.';
@@ -2528,7 +2528,7 @@ function labStatus(t, st, k, u) {
   var need = num(t.need);
   if (!st) return 'starting';
   if (t.status === 'ready_for_sharp') return 'ready';
-  if (need && k >= need && !u) return 'check';
+  if (need && k >= need && !(u < 0)) return 'check';
   var floor = need ? Math.min(need, Math.max(LAB_FLOOR_MIN, LAB_FLOOR_FRAC * need)) : LAB_FLOOR_MIN;
   if (k >= floor && u > 0) return 'good';
   if (k >= floor && u < 0) return 'bad';
@@ -2682,7 +2682,7 @@ function labSparkEl(m) {
   svg.appendChild(svgEl('path', { d: g.line, class: 'ln', 'vector-effect': 'non-scaling-stroke' }));
   var anim = !S.labSpark[m.id];
   S.labSpark[m.id] = true;
-  return h('div', { class: 'lc-blk' }, h('div', { class: 'lc-bh', text: 'Cumulative units' }),
+  return h('div', { class: 'lc-blk' }, h('div', { class: 'lc-bh', text: 'Running profit' }),
     h('div', { class: 'lc-spark' + (anim ? ' anim' : ''), role: 'img', 'aria-label': 'Cumulative units, from ' + fDateShort(first) + ' to ' + fDateShort(last) + ': ' + uShort(cum[0], 2) + ' to ' + uShort(end, 2) },
       svg, h('i', { class: 'dot ' + (end > 0 ? 'good' : (end < 0 ? 'bad' : '')), style: 'top:' + g.endY.toFixed(1) + '%' })),
     h('div', { class: 'lc-dates' }, h('span', { text: fDateShort(first) }), h('span', { text: fDateShort(last) })));
