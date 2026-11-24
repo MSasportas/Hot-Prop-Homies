@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-23",
- "generated_at": "2026-11-23T22:20:01-05:00",
+ "generated_at": "2026-11-23T22:20:57-05:00",
  "games": [
   {
    "game_id": 2026020378,
@@ -29,12 +29,12 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "12:30",
+   "clock": "12:23",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "MIN",
-    "score": 0,
+    "score": 1,
     "sog": 4
    },
    "home": {
@@ -42,7 +42,7 @@
     "score": 0,
     "sog": 3
    },
-   "updated_at": "2026-11-23T22:20:01-05:00"
+   "updated_at": "2026-11-23T22:20:57-05:00"
   }
  ],
  "picks": {
