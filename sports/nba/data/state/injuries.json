@@ -1,5 +1,5 @@
 {
- "at": "2026-11-24T13:50:01-05:00",
+ "at": "2026-11-24T14:00:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -365,26 +365,26 @@
    "date": "2026-11-13T20:19Z",
    "note": "Murray (ankle) is out for Friday's game against Memphis."
   },
+  "2528426": {
+   "status": "out",
+   "name": "Jordan Clarkson",
+   "team": "NY",
+   "date": "2026-11-24T18:48Z",
+   "note": "Clarkson (foot) didn't participate in Tuesday's practice, Jared Schwartz of the New York Post reports."
+  },
+  "3934719": {
+   "status": "day-to-day",
+   "name": "OG Anunoby",
+   "team": "NY",
+   "date": "2026-11-24T18:42Z",
+   "note": "Anunoby (calf) did not participate in Tuesday's practice, Jared Schwartz of the New York Post reports."
+  },
   "4431823": {
    "status": "day-to-day",
    "name": "Miles McBride",
    "team": "NY",
    "date": "2026-11-24T18:40Z",
    "note": "McBride (groin) practiced Tuesday, per Jared Schwartz of the New York Post."
-  },
-  "3934719": {
-   "status": "day-to-day",
-   "name": "OG Anunoby",
-   "team": "NY",
-   "date": "2026-11-23T15:07Z",
-   "note": "Anunoby (calf) won't play Sunday against the Pacers."
-  },
-  "2528426": {
-   "status": "out",
-   "name": "Jordan Clarkson",
-   "team": "NY",
-   "date": "2026-11-22T18:05Z",
-   "note": "Clarkson (foot) has been ruled out for Sunday's game against Indiana."
   },
   "4432823": {
    "status": "day-to-day",

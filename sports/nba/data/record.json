@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24T00:40:01-05:00",
+ "generated_at": "2026-11-24T14:00:00-05:00",
  "summary": {
   "headline": {
    "w": 68,
@@ -247,6 +247,8 @@
       "needed": 0.5195,
       "n": 32,
       "ids": [
+       "2026-11-24:401909315:3078576:rebounds:3.5:over",
+       "2026-11-24:401909315:4277905:rebounds:2.5:over",
        "2026-11-23:401910044:4277919:rebounds:9.5:under",
        "2026-11-23:401910045:3155942:rebounds:12.5:over",
        "2026-11-20:401909306:4712849:rebounds:4.5:over",
@@ -431,6 +433,8 @@
       "needed": 0.497,
       "n": 37,
       "ids": [
+       "2026-11-24:401909315:3078576:rebounds:3.5:over",
+       "2026-11-24:401909315:4277905:rebounds:2.5:over",
        "2026-11-23:401910038:4900671:assists:3.5:over",
        "2026-11-23:401910040:4431671:assists:3.5:over",
        "2026-11-23:401910041:5041951:points:9.5:over",
@@ -587,6 +591,8 @@
       "needed": 0.5224,
       "n": 87,
       "ids": [
+       "2026-11-24:401909315:3078576:rebounds:3.5:over",
+       "2026-11-24:401909315:4277905:rebounds:2.5:over",
        "2026-11-23:401910040:4431671:assists:3.5:over",
        "2026-11-23:401910041:5041951:points:9.5:over",
        "2026-11-23:401910044:4277919:rebounds:9.5:under",
@@ -786,6 +792,8 @@
       "needed": 0.5214,
       "n": 94,
       "ids": [
+       "2026-11-24:401909315:3078576:rebounds:3.5:over",
+       "2026-11-24:401909315:4277905:rebounds:2.5:over",
        "2026-11-23:401910038:4900671:assists:3.5:over",
        "2026-11-23:401910040:4431671:assists:3.5:over",
        "2026-11-23:401910041:5041951:points:9.5:over",
@@ -924,6 +932,8 @@
       "needed": 0.4626,
       "n": 43,
       "ids": [
+       "2026-11-24:401909315:3078576:rebounds:3.5:over",
+       "2026-11-24:401909315:4277905:rebounds:2.5:over",
        "2026-11-23:401910040:4431671:assists:3.5:over",
        "2026-11-23:401910045:3155942:rebounds:12.5:over",
        "2026-11-20:401909309:4871145:threes:1.5:over",
@@ -1065,6 +1075,16 @@
    }
   ],
   "days": [
+   {
+    "date": "2026-11-24",
+    "w": 0,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 0,
+    "n": 2,
+    "graded": false
+   },
    {
     "date": "2026-11-23",
     "w": 3,
@@ -1308,6 +1328,67 @@
   ]
  },
  "nights": [
+  {
+   "date": "2026-11-24",
+   "graded": false,
+   "w": 0,
+   "l": 0,
+   "units": 0,
+   "entries": [
+    {
+     "id": "2026-11-24:401909315:3078576:rebounds:3.5:over",
+     "kind": "single",
+     "player": "Derrick White",
+     "bet": "Over 3.5 rebounds",
+     "market": "rebounds",
+     "team": "BOS",
+     "game": "BOS at WAS",
+     "price": 120,
+     "first_price": 120,
+     "last_price": 120,
+     "prices": [
+      {
+       "price": 120,
+       "at": "2026-11-24T14:00:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "11 AM \u2192 360 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-24:401909315:4277905:rebounds:2.5:over",
+     "kind": "single",
+     "player": "Trae Young",
+     "bet": "Over 2.5 rebounds",
+     "market": "rebounds",
+     "team": "WAS",
+     "game": "BOS at WAS",
+     "price": 130,
+     "first_price": 130,
+     "last_price": 130,
+     "prices": [
+      {
+       "price": 130,
+       "at": "2026-11-24T14:00:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "11 AM \u2192 360 min",
+     "book": "hardrock",
+     "under_fair": false
+    }
+   ]
+  },
   {
    "date": "2026-11-23",
    "graded": true,
@@ -2351,179 +2432,6 @@
      "pulled": null,
      "legs": [],
      "window": "30 \u2192 20 min",
-     "book": "hardrock",
-     "under_fair": false
-    }
-   ]
-  },
-  {
-   "date": "2026-11-16",
-   "graded": true,
-   "w": 4,
-   "l": 2,
-   "units": 1.55,
-   "entries": [
-    {
-     "id": "2026-11-16:401910001:3136193:points:23.5:under",
-     "kind": "single",
-     "player": "Devin Booker",
-     "bet": "Under 23.5 points",
-     "market": "points",
-     "team": "PHX",
-     "game": "PHX at DEN",
-     "price": -120,
-     "first_price": -120,
-     "last_price": -120,
-     "prices": [
-      {
-       "price": -120,
-       "at": "2026-11-16T15:00:01-05:00"
-      }
-     ],
-     "result": "W",
-     "actual": "20 points",
-     "units": 0.8333,
-     "pulled": {
-      "at": "2026-11-16T17:00:01-05:00",
-      "reason": "Hard Rock took the line down",
-      "code": "line_gone"
-     },
-     "legs": [],
-     "window": "11 AM \u2192 360 min",
-     "book": "hardrock",
-     "under_fair": false
-    },
-    {
-     "id": "2026-11-16:401910001:4066383:threes:1.5:over",
-     "kind": "single",
-     "player": "Miles Bridges",
-     "bet": "Over 1.5 threes",
-     "market": "threes",
-     "team": "PHX",
-     "game": "PHX at DEN",
-     "price": 105,
-     "first_price": 105,
-     "last_price": 105,
-     "prices": [
-      {
-       "price": 105,
-       "at": "2026-11-16T15:00:01-05:00"
-      }
-     ],
-     "result": "W",
-     "actual": "2 threes",
-     "units": 1.05,
-     "pulled": null,
-     "legs": [],
-     "window": "11 AM \u2192 360 min",
-     "book": "hardrock",
-     "under_fair": false
-    },
-    {
-     "id": "2026-11-16:401909998:3202:threes:1.5:under",
-     "kind": "single",
-     "player": "Kevin Durant",
-     "bet": "Under 1.5 threes",
-     "market": "threes",
-     "team": "HOU",
-     "game": "HOU at MIA",
-     "price": 110,
-     "first_price": 110,
-     "last_price": 110,
-     "prices": [
-      {
-       "price": 110,
-       "at": "2026-11-16T15:30:01-05:00"
-      }
-     ],
-     "result": "L",
-     "actual": "2 threes",
-     "units": -1.0,
-     "pulled": null,
-     "legs": [],
-     "window": "360 \u2192 240 min",
-     "book": "hardrock",
-     "under_fair": false
-    },
-    {
-     "id": "2026-11-16:401909998:3032977:points:28.5:under",
-     "kind": "single",
-     "player": "Giannis Antetokounmpo",
-     "bet": "Under 28.5 points",
-     "market": "points",
-     "team": "MIA",
-     "game": "HOU at MIA",
-     "price": -120,
-     "first_price": -120,
-     "last_price": -120,
-     "prices": [
-      {
-       "price": -120,
-       "at": "2026-11-16T17:20:01-05:00"
-      }
-     ],
-     "result": "W",
-     "actual": "20 points",
-     "units": 0.8333,
-     "pulled": null,
-     "legs": [],
-     "window": "180 \u2192 135 min",
-     "book": "hardrock",
-     "under_fair": false
-    },
-    {
-     "id": "2026-11-16:401910000:5144091:assists:6.5:under",
-     "kind": "single",
-     "player": "Jeremiah Fears",
-     "bet": "Under 6.5 assists",
-     "market": "assists",
-     "team": "NOP",
-     "game": "GSW at NOP",
-     "price": -135,
-     "first_price": -135,
-     "last_price": -135,
-     "prices": [
-      {
-       "price": -135,
-       "at": "2026-11-16T17:50:00-05:00"
-      }
-     ],
-     "result": "L",
-     "actual": "10 assists",
-     "units": -1.0,
-     "pulled": {
-      "at": "2026-11-16T18:30:01-05:00",
-      "reason": "Hard Rock took the line down",
-      "code": "line_gone"
-     },
-     "legs": [],
-     "window": "180 \u2192 135 min",
-     "book": "hardrock",
-     "under_fair": false
-    },
-    {
-     "id": "2026-11-16:401909998:4066261:points:18.5:under",
-     "kind": "single",
-     "player": "Bam Adebayo",
-     "bet": "Under 18.5 points",
-     "market": "points",
-     "team": "MIA",
-     "game": "HOU at MIA",
-     "price": -120,
-     "first_price": -120,
-     "last_price": -120,
-     "prices": [
-      {
-       "price": -120,
-       "at": "2026-11-16T18:00:01-05:00"
-      }
-     ],
-     "result": "W",
-     "actual": "4 points",
-     "units": 0.8333,
-     "pulled": null,
-     "legs": [],
-     "window": "135 \u2192 90 min",
      "book": "hardrock",
      "under_fair": false
     }
