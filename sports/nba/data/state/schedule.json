@@ -343,13 +343,13 @@
     "start": "2026-11-23T19:00:00-05:00",
     "away": "MEM",
     "home": "CHA",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/23 - 7:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:45 - 1st",
     "score": {
-     "MEM": "0",
-     "CHA": "0"
+     "MEM": "18",
+     "CHA": "10"
     }
    },
    {
@@ -358,13 +358,13 @@
     "start": "2026-11-23T19:00:00-05:00",
     "away": "POR",
     "home": "PHI",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/23 - 7:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:11 - 1st",
     "score": {
-     "POR": "0",
-     "PHI": "0"
+     "POR": "11",
+     "PHI": "15"
     }
    },
    {

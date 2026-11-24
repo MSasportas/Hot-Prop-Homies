@@ -140,13 +140,13 @@
    "status": {}
   },
   "TOR": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Immanuel Quickley",
     "Ja'Kobe Walter",
     "Allen Graves",
     "Scottie Barnes",
-    "Collin Murray-Boyles"
+    "Jakob Poeltl"
    ],
    "status": {
     "RJ Barrett": "out",
@@ -298,5 +298,5 @@
    }
   }
  },
- "at": "2026-11-23T19:10:04-05:00"
+ "at": "2026-11-23T19:20:01-05:00"
 }
