@@ -264,12 +264,12 @@
    }
   },
   "SA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Stephon Castle",
-    "Julian Champagnie",
-    "Keldon Johnson",
     "Devin Vassell",
+    "Julian Champagnie",
+    "Harrison Barnes",
     "Luke Kornet"
    ],
    "status": {
@@ -295,5 +295,5 @@
    }
   }
  },
- "at": "2026-11-23T20:40:01-05:00"
+ "at": "2026-11-23T20:50:01-05:00"
 }
