@@ -2,10 +2,10 @@
  "slate": "2026-11-24",
  "teams": {
   "DET": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
-    "Cade Cunningham",
     "Daniss Jenkins",
+    "Isaiah Joe",
     "Kevin Huerter",
     "Ausar Thompson",
     "John Collins"
@@ -19,7 +19,7 @@
    }
   },
   "ORL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jalen Suggs",
     "Anthony Black",
@@ -93,5 +93,5 @@
    "status": {}
   }
  },
- "at": "2026-11-24T18:33:09-05:00"
+ "at": "2026-11-24T18:40:00-05:00"
 }
