@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-23",
- "generated_at": "2026-11-23T19:20:00-05:00",
+ "generated_at": "2026-11-23T19:30:01-05:00",
  "games": [
   {
    "game_id": 2026020378,
@@ -8,20 +8,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "13:33",
+   "clock": "06:17",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "CBJ",
     "score": 0,
-    "sog": 4
+    "sog": 7
    },
    "home": {
     "abbrev": "NJD",
-    "score": 1,
-    "sog": 3
+    "score": 2,
+    "sog": 7
    },
-   "updated_at": "2026-11-23T19:20:00-05:00"
+   "updated_at": "2026-11-23T19:30:01-05:00"
   }
  ],
  "picks": {
