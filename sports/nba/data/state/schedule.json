@@ -346,10 +346,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:03 - 3rd",
+    "detail": "4:27 - 3rd",
     "score": {
-     "MEM": "69",
-     "CHA": "70"
+     "MEM": "74",
+     "CHA": "72"
     }
    },
    {
@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:19 - 3rd",
+    "detail": "4:32 - 3rd",
     "score": {
-     "POR": "76",
-     "PHI": "76"
+     "POR": "84",
+     "PHI": "80"
     }
    },
    {
@@ -375,10 +375,10 @@
     "home": "IND",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "43.4 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "OKC": "48",
+     "OKC": "51",
      "IND": "56"
     }
    },
@@ -390,11 +390,11 @@
     "home": "TOR",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:40 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "MIL": "41",
-     "TOR": "43"
+     "MIL": "49",
+     "TOR": "53"
     }
    },
    {
@@ -405,11 +405,11 @@
     "home": "MIN",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:20 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "BKN": "55",
-     "MIN": "62"
+     "BKN": "61",
+     "MIN": "74"
     }
    },
    {
@@ -420,11 +420,11 @@
     "home": "CHI",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:44 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
-     "CLE": "22",
-     "CHI": "22"
+     "CLE": "30",
+     "CHI": "27"
     }
    },
    {
@@ -436,10 +436,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:36 - 1st",
+    "detail": "11:16 - 2nd",
     "score": {
-     "PHX": "25",
-     "NO": "23"
+     "PHX": "34",
+     "NO": "35"
     }
    },
    {
