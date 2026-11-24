@@ -1,5 +1,5 @@
 {
- "at": "2026-11-24T16:30:01-05:00",
+ "at": "2026-11-24T17:00:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -365,19 +365,33 @@
    "date": "2026-11-13T20:19Z",
    "note": "Murray (ankle) is out for Friday's game against Memphis."
   },
+  "3062679": {
+   "status": "day-to-day",
+   "name": "Josh Hart",
+   "team": "NY",
+   "date": "2026-11-24T21:53Z",
+   "note": "Hart recorded 10 points (5-11 FG, 0-4 3Pt), 11 rebounds, 10 assists and one steal in 39 minutes during Sunday's 113-106 win over the Pacers."
+  },
+  "3934719": {
+   "status": "out",
+   "name": "OG Anunoby",
+   "team": "NY",
+   "date": "2026-11-24T21:52Z",
+   "note": "Anunoby (calf) did not participate in Tuesday's practice, Jared Schwartz of the New York Post reports."
+  },
+  "3136195": {
+   "status": "day-to-day",
+   "name": "Karl-Anthony Towns",
+   "team": "NY",
+   "date": "2026-11-24T21:50Z",
+   "note": "Towns (knee) is questionable for Wednesday's game against Cleveland."
+  },
   "2528426": {
    "status": "out",
    "name": "Jordan Clarkson",
    "team": "NY",
    "date": "2026-11-24T18:48Z",
    "note": "Clarkson (foot) didn't participate in Tuesday's practice, Jared Schwartz of the New York Post reports."
-  },
-  "3934719": {
-   "status": "day-to-day",
-   "name": "OG Anunoby",
-   "team": "NY",
-   "date": "2026-11-24T18:42Z",
-   "note": "Anunoby (calf) did not participate in Tuesday's practice, Jared Schwartz of the New York Post reports."
   },
   "4431823": {
    "status": "day-to-day",
