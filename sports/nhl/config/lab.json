@@ -10,7 +10,11 @@
    "base": "root",
    "stats": "fwd",
    "need": 300,
-   "gate": "Passes only at 300 graded with a clear profit. Even then it comes to Matt: 1 PM picks are off until he says go. Updated each morning."
+   "gate": "Passes only at 300 graded with a clear profit. Even then it comes to Matt: 1 PM picks are off until he says go. Updated each morning.",
+   "name": "1 PM price",
+   "plain": "Bet shots at the 1 PM price when Hard Rock beats other books by 1%+",
+   "why": "Hard Rock's early price is sometimes better than the market's. We grade at that price.",
+   "outcome": "matt"
   },
   {
    "id": "fwd_LL1f-follow",
@@ -20,7 +24,11 @@
    "base": "root",
    "stats": "LL1f-follow",
    "need": 300,
-   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
+   "name": "Hard Rock moved: follow",
+   "plain": "After Hard Rock changes a price since 1 PM, bet the same way",
+   "why": "Hard Rock may have news, and the move is right.",
+   "outcome": "review"
   },
   {
    "id": "fwd_LL3a_tight",
@@ -30,7 +38,11 @@
    "base": "root",
    "stats": "LL3a tight",
    "need": 300,
-   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
+   "name": "Bargain, books agree",
+   "plain": "Bet when Hard Rock pays 1%+ more and the other books all agree",
+   "why": "If every other book agrees, the bargain is more likely real.",
+   "outcome": "review"
   },
   {
    "id": "fwd_LL3b_loose",
@@ -40,7 +52,11 @@
    "base": "root",
    "stats": "LL3b loose",
    "need": 300,
-   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
+   "name": "Bargain, books split",
+   "plain": "Bet when Hard Rock pays 1%+ more and the other books disagree",
+   "why": "When books disagree, a good price may just be noise. We check.",
+   "outcome": "review"
   },
   {
    "id": "fwd_LL4a_fade",
@@ -50,7 +66,11 @@
    "base": "root",
    "stats": "LL4a fade",
    "need": 300,
-   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
+   "name": "Hard Rock alone: go against",
+   "plain": "When only Hard Rock moves a price, bet the other way",
+   "why": "A move nobody else made may be a mistake. We bet the opposite side.",
+   "outcome": "review"
   },
   {
    "id": "fwd_LL5_exch",
@@ -60,7 +80,11 @@
    "base": "root",
    "stats": "LL5 exch",
    "need": 300,
-   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
+   "name": "Exchange prices",
+   "plain": "Use betting exchange prices to find bargains",
+   "why": "Exchanges have almost no markup, so their price is a good guide to the real odds.",
+   "outcome": "review"
   },
   {
    "id": "fwd_LL6_line",
@@ -70,7 +94,11 @@
    "base": "root",
    "stats": "LL6 line",
    "need": 300,
-   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
+   "name": "Different line at Hard Rock",
+   "plain": "Bet when Hard Rock's line is different from the other books",
+   "why": "A different line can hide a better chance to win.",
+   "outcome": "review"
   },
   {
    "id": "fwd_MM2a_split",
@@ -80,7 +108,11 @@
    "base": "root",
    "stats": "MM2a split",
    "need": 300,
-   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
+   "name": "Sharp vs casual books",
+   "plain": "Follow the sharp books when casual books disagree",
+   "why": "Sharp books (the ones pros use) are usually right.",
+   "outcome": "review"
   },
   {
    "id": "fwd_MM2b_split_2pct",
@@ -90,7 +122,11 @@
    "base": "root",
    "stats": "MM2b split 2%",
    "need": 300,
-   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
+   "name": "Sharp vs casual, big gap",
+   "plain": "Same as above, only when the gap is 2%+",
+   "why": "A bigger gap should be a clearer signal, with fewer picks.",
+   "outcome": "review"
   },
   {
    "id": "fwd_MM3a_persist",
@@ -100,7 +136,11 @@
    "base": "root",
    "stats": "MM3a persist",
    "need": 300,
-   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
+   "name": "Gap lasts 90 to 45 min",
+   "plain": "Bet when a price gap stays from 90 to 45 minutes before the game",
+   "why": "A gap that lasts is likelier to be real than one that flashes.",
+   "outcome": "review"
   },
   {
    "id": "fwd_MM3b_confirm",
@@ -110,7 +150,11 @@
    "base": "root",
    "stats": "MM3b confirm",
    "need": 300,
-   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
+   "name": "Gap still there at 45 min",
+   "plain": "Bet when a price gap is still there 45 minutes before the game",
+   "why": "Checking again later filters out gaps that close fast.",
+   "outcome": "review"
   },
   {
    "id": "fwd_MM4_total",
@@ -120,7 +164,11 @@
    "base": "root",
    "stats": "MM4 total",
    "need": 300,
-   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
+   "name": "Game total moved",
+   "plain": "Bet shots when the game total moved but player prices did not",
+   "why": "If the game's expected scoring changed, a player's price may be behind.",
+   "outcome": "review"
   },
   {
    "id": "fwd_MM5a_follow",
@@ -130,7 +178,11 @@
    "base": "root",
    "stats": "MM5a follow",
    "need": 300,
-   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
+   "name": "Hard Rock line shift: follow",
+   "plain": "When Hard Rock shifts its line, bet the way it moved",
+   "why": "Hard Rock may know something.",
+   "outcome": "review"
   },
   {
    "id": "fwd_MM5b_fade",
@@ -140,7 +192,11 @@
    "base": "root",
    "stats": "MM5b fade",
    "need": 300,
-   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
+   "name": "Hard Rock shift: go against",
+   "plain": "When Hard Rock shifts its line, bet the other way",
+   "why": "A line shift may be an overreaction. We bet the opposite side.",
+   "outcome": "review"
   },
   {
    "id": "fwd_NN2fa_follow_market",
@@ -150,7 +206,11 @@
    "base": "root",
    "stats": "NN2fa follow market",
    "need": 300,
-   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
+   "name": "Winner: follow the market",
+   "plain": "Pick the game winner the other books favor when Hard Rock disagrees",
+   "why": "The books together are usually more right than one book. Research only, game winners are not picks.",
+   "outcome": "review"
   },
   {
    "id": "fwd_NN2fb_follow_HR",
@@ -160,7 +220,11 @@
    "base": "root",
    "stats": "NN2fb follow HR",
    "need": 300,
-   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
+   "name": "Winner: follow Hard Rock",
+   "plain": "Pick the game winner Hard Rock favors when it disagrees with others",
+   "why": "Hard Rock may see something the others miss. Research only, game winners are not picks.",
+   "outcome": "review"
   },
   {
    "id": "fwd_NN4_exch_steam",
@@ -170,7 +234,11 @@
    "base": "root",
    "stats": "NN4 exch steam",
    "need": 300,
-   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
+   "name": "Exchanges moved first",
+   "plain": "Follow the betting exchanges when they move and Hard Rock has not",
+   "why": "Exchanges are sharp. Hard Rock may be slow to catch up.",
+   "outcome": "review"
   },
   {
    "id": "fwd_NN5_market_moves",
@@ -180,7 +248,11 @@
    "base": "root",
    "stats": "NN5 market moves",
    "need": 300,
-   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
+   "name": "Market moved, Hard Rock not",
+   "plain": "Follow the market when most books moved and Hard Rock has not",
+   "why": "If everyone else moved, Hard Rock's price is probably out of date.",
+   "outcome": "review"
   },
   {
    "id": "fwd_NN6_fade_soft",
@@ -190,7 +262,11 @@
    "base": "root",
    "stats": "NN6 fade soft",
    "need": 300,
-   "gate": "Passes only at 300 graded with a clear profit and beating the close."
+   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
+   "name": "Against casual-book moves",
+   "plain": "Bet against a move that only casual books made",
+   "why": "If casual books move and sharp books stay put, the move may be wrong.",
+   "outcome": "review"
   },
   {
    "id": "fwd_R28a_points_gap",
@@ -201,7 +277,11 @@
    "stats": "R28a points gap",
    "need": 300,
    "gate": "Passes only at 300 graded with a clear profit and beating the close.",
-   "first_seen": "2026-11-21"
+   "first_seen": "2026-11-21",
+   "name": "Points: Hard Rock bargain",
+   "plain": "Bet points when Hard Rock pays 5%+ more than Pinnacle's fair price",
+   "why": "Pinnacle is the sharpest book. If Hard Rock pays more, that is a bargain.",
+   "outcome": "review"
   },
   {
    "id": "fwd_R28b_lva_under",
@@ -212,7 +292,11 @@
    "stats": "R28b under",
    "need": 300,
    "gate": "Passes only at 300 graded with a clear profit and beating the close.",
-   "first_seen": "2026-11-21"
+   "first_seen": "2026-11-21",
+   "name": "Shots line below average",
+   "plain": "Bet UNDER when a player's shots line is well below his average",
+   "why": "We check if a line far from a player's usual is a bargain on one side.",
+   "outcome": "review"
   },
   {
    "id": "fwd_R28b_lva_over",
@@ -223,7 +307,11 @@
    "stats": "R28b over",
    "need": 300,
    "gate": "Passes only at 300 graded with a clear profit and beating the close.",
-   "first_seen": "2026-11-21"
+   "first_seen": "2026-11-21",
+   "name": "Shots line above average",
+   "plain": "Bet OVER when a player's shots line is well above his average",
+   "why": "We check if a line far from a player's usual is a bargain on one side.",
+   "outcome": "review"
   },
   {
    "id": "fwd_R28d_backup_goalie",
@@ -234,7 +322,11 @@
    "stats": "R28d backup goalie",
    "need": 300,
    "gate": "Passes only at 300 graded with a clear profit and beating the close.",
-   "first_seen": "2026-11-21"
+   "first_seen": "2026-11-21",
+   "name": "Facing a backup goalie",
+   "plain": "Bet shots OVER when the other team plays a backup goalie",
+   "why": "A backup goalie may change how teams shoot. Books may be slow to adjust.",
+   "outcome": "review"
   },
   {
    "id": "fwd_R28c_rest",
@@ -245,7 +337,11 @@
    "stats": "R28c rest",
    "need": 300,
    "gate": "Passes only at 300 graded with a clear profit and beating the close.",
-   "first_seen": "2026-11-21"
+   "first_seen": "2026-11-21",
+   "name": "Skater rest days",
+   "plain": "Bet shots OVER after 3+ days off, UNDER after 0 to 1",
+   "why": "Rest may change how much a skater shoots. Books may not price it fully.",
+   "outcome": "review"
   }
  ],
  "retired_count": 2,

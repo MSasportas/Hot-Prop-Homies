@@ -1,0 +1,148 @@
+{
+ "updated_at": "2026-11-23T05:00:00-05:00",
+ "total": {
+  "w": 241,
+  "l": 247,
+  "push": 0,
+  "units": -24.36,
+  "pending": 12,
+  "void": 12,
+  "clv": -0.012
+ },
+ "nights": [
+  {
+   "date": "2026-11-16",
+   "bets": [
+    {
+     "player": "Nikola Jokic",
+     "bet": "OVER 12.5 rebounds",
+     "price": -110,
+     "result": "L",
+     "units": -1.0,
+     "market": "rebounds",
+     "side": "over"
+    },
+    {
+     "player": "Domantas Sabonis",
+     "bet": "OVER 13.5 rebounds",
+     "price": -105,
+     "result": "W",
+     "units": 0.95,
+     "market": "rebounds",
+     "side": "over"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-17",
+   "bets": [
+    {
+     "player": "Bam Adebayo",
+     "bet": "OVER 9.5 rebounds",
+     "price": -120,
+     "result": "L",
+     "units": -1.0,
+     "market": "rebounds",
+     "side": "over"
+    },
+    {
+     "player": "Rudy Gobert",
+     "bet": "OVER 11.5 rebounds",
+     "price": 100,
+     "result": "L",
+     "units": -1.0,
+     "market": "rebounds",
+     "side": "over"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-18",
+   "bets": [
+    {
+     "player": "Anthony Davis",
+     "bet": "OVER 11.5 rebounds",
+     "price": -115,
+     "result": "L",
+     "units": -1.0,
+     "market": "rebounds",
+     "side": "over"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-19",
+   "bets": [
+    {
+     "player": "Evan Mobley",
+     "bet": "OVER 8.5 rebounds",
+     "price": -110,
+     "result": "W",
+     "units": 0.91,
+     "market": "rebounds",
+     "side": "over"
+    },
+    {
+     "player": "Alperen Sengun",
+     "bet": "OVER 9.5 rebounds",
+     "price": 105,
+     "result": "L",
+     "units": -1.0,
+     "market": "rebounds",
+     "side": "over"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-20",
+   "bets": [
+    {
+     "player": "Jarrett Allen",
+     "bet": "OVER 9.5 rebounds",
+     "price": -125,
+     "result": "L",
+     "units": -1.0,
+     "market": "rebounds",
+     "side": "over"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-21",
+   "bets": [
+    {
+     "player": "Victor Wembanyama",
+     "bet": "OVER 11.5 rebounds",
+     "price": -110,
+     "result": "L",
+     "units": -1.0,
+     "market": "rebounds",
+     "side": "over"
+    },
+    {
+     "player": "Giannis Antetokounmpo",
+     "bet": "OVER 12.5 rebounds",
+     "price": -120,
+     "result": "L",
+     "units": -1.0,
+     "market": "rebounds",
+     "side": "over"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-22",
+   "bets": [
+    {
+     "player": "Karl-Anthony Towns",
+     "bet": "OVER 12.5 rebounds",
+     "price": 110,
+     "result": "L",
+     "units": -1.0,
+     "market": "rebounds",
+     "side": "over"
+    }
+   ]
+  }
+ ]
+}

@@ -394,25 +394,108 @@ button.tr.open{background:var(--selected-bg);border-bottom-color:transparent}
 .lab{margin-top:14px;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
 .lab h3{font:400 16px/22px var(--head);margin:0}
 .lab .rl{font-size:13px;line-height:19px;color:var(--fg2);margin-top:4px}
-.lab .prog{position:relative;height:4px;margin-top:8px;background:var(--line);border-radius:2px;overflow:hidden}
-.lab .prog i{position:absolute;left:0;top:0;bottom:0;background:var(--accent)}
 .lab .sm{font-size:12px;line-height:17px;color:var(--muted);margin-top:4px}
 .lab{padding:0;overflow:hidden}
-.lab-h{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;min-height:48px;padding:10px 14px;background:none;border:0;color:inherit;font:inherit;text-align:left;cursor:pointer}
-.lab-h:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
-.lab-t{display:flex;align-items:center;gap:8px;min-width:0;flex:1}
-.lab-n{font:400 14px/19px var(--head);overflow-wrap:anywhere}
-.lab-r{display:flex;align-items:baseline;gap:8px;flex:none;font:600 14px/19px var(--num);white-space:nowrap}
-.lab-r .chev{font-size:11px;color:var(--muted)}
-.lab .prog{margin:0 14px 10px}
-.lab.open .rl,.lab.open>.sm{margin-left:14px;margin-right:14px}
-.lab-p{border-top:1px solid var(--line);margin-top:10px;padding:4px 14px 10px}
-.lab-p .sm{margin-top:8px}
 .lab-d{display:flex;gap:10px;align-items:baseline;margin-top:10px;font:600 12px/17px var(--num);letter-spacing:.04em;text-transform:uppercase}
 .lab-b{display:flex;justify-content:space-between;gap:10px;align-items:baseline;padding:6px 0;border-bottom:1px solid var(--line);font-size:13px;line-height:18px}
 .lab-b:last-child{border-bottom:0}
-.lab-ready{display:inline-block;flex:none;padding:0 7px;border:1px solid var(--good);border-radius:9px;font:600 11px/16px var(--num);letter-spacing:.04em;text-transform:uppercase;color:var(--good);white-space:nowrap}
-.lab>.lab-ready{margin:0 14px 10px}
+/* lab cards: a dashed border means paper, solid means real picks */
+.lab-lede{margin:10px 0 0;font-size:13px;line-height:19px;color:var(--muted)}
+.lab-chips{display:flex;gap:8px;margin:12px -14px 0;padding:0 14px;overflow-x:auto;scrollbar-width:none}
+.lab-chips::-webkit-scrollbar{display:none}
+.lab-chip{flex:none;min-height:44px;padding:0 14px;border:1px solid var(--line2);border-radius:22px;background:transparent;color:var(--fg2);font:600 12px/16px var(--num);white-space:nowrap;cursor:pointer}
+.lab-chip[aria-pressed=true]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+.lab-chip:focus-visible,.lc-dh:focus-visible,.lc-more:focus-visible,.lab-link:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.lab-list{max-width:560px}
+.lc{margin-top:12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);overflow:hidden;scroll-margin-top:72px}
+.lc.paper{border-style:dashed;border-color:var(--line2)}
+.lc-h{display:flex;flex-direction:column;gap:10px;width:100%;min-height:96px;padding:14px;background:none;border:0;color:inherit;font:inherit;text-align:left;cursor:pointer}
+.lc-h:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.lc-l1{display:flex;align-items:flex-start;gap:8px}
+.lc-nm{flex:1;min-width:0;font:400 14px/19px var(--head);overflow-wrap:anywhere}
+.lc-pill{flex:none;height:20px;padding:0 8px;border:1px solid var(--accent);border-radius:10px;font:600 11px/18px var(--num);letter-spacing:.04em;text-transform:uppercase;white-space:nowrap;color:var(--accent)}
+.lc-pill.ready{background:var(--good-soft);border-color:var(--good);color:var(--good)}
+.lc-pill.check{background:var(--warn-soft);border-color:var(--warn);color:var(--warn)}
+.lc-pill.good{border-color:var(--good);color:var(--good)}
+.lc-pill.bad{border-color:var(--bad);color:var(--bad)}
+.lc-pill.starting{border-color:var(--muted);color:var(--muted)}
+.lc-pl{font-size:14px;line-height:20px;color:var(--fg2)}
+.lc-l3{display:grid;grid-template-columns:1fr auto;gap:6px 10px;align-items:center}
+.lc-ml{font-size:12px;line-height:17px;color:var(--muted)}
+.lc-rec{font:600 14px/19px var(--num);text-align:right;white-space:nowrap}
+.lc-meter{position:relative;height:6px;border-radius:3px;background:var(--line);overflow:hidden}
+.lc-meter::after{content:"";position:absolute;left:25%;top:0;bottom:0;width:1px;background:var(--line2)}
+.lc-meter i{position:absolute;left:0;top:0;bottom:0;border-radius:3px;background:var(--accent)}
+.lc-meter i.good{background:var(--good)}
+.lc-meter i.bad{background:var(--bad)}
+.lc-meter i.warn{background:var(--warn)}
+.lc-meter i.anim{animation:lc-fill .6s ease-out}
+.lc-un{font:600 15px/19px var(--num);text-align:right;white-space:nowrap}
+.lc-l4{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.lc-tag{display:flex;align-items:center;gap:6px;min-width:0;font:400 11px/16px var(--num);letter-spacing:.02em;color:var(--muted)}
+.lc-tag.real{color:var(--good)}
+.lc-dash{flex:none;width:10px;height:10px;border:1px dashed var(--muted);border-radius:50%}
+.lc-chev{flex:none;display:inline-flex;color:var(--muted);transition:transform .16s ease-out}
+.lc-chev.open{transform:rotate(90deg)}
+.lc-grow{display:grid;grid-template-rows:1fr}
+.lc-grow-in{min-height:0;overflow:hidden}
+.lc-grow.anim{animation:lc-grow var(--lc-ms,180ms) ease-out}
+.lc-x{padding:0 14px 4px}
+.lc-blk{margin-top:16px}
+.lc-bh,.lc-lab{font:400 12px/17px var(--num);letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.lc-row{display:flex;gap:10px;margin-top:10px}
+.lc-ic{flex:none;display:inline-flex;margin-top:1px;color:var(--accent)}
+.lc-rb{min-width:0}
+.lc-tx{font-size:14px;line-height:20px;color:var(--fg)}
+.lc-note{margin-top:2px;font-size:12px;line-height:17px;color:var(--muted)}
+.lc-chips{display:grid;gap:8px;margin-top:8px}
+.lc-chips.c4,.lc-chips.c2{grid-template-columns:1fr 1fr}
+.lc-chips.c3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.lc-chip{min-height:64px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--raise)}
+.lc-cl{font:400 11px/16px var(--num);letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.lc-cv{font:600 18px/24px var(--num);overflow-wrap:anywhere}
+.lc-cs{font-size:11px;line-height:15px;color:var(--muted)}
+.lc-spark{position:relative;height:56px;margin-top:8px}
+.lc-spark svg{display:block;width:100%;height:100%;overflow:visible}
+.lc-spark .area{fill:var(--accent-soft);stroke:none}
+.lc-spark .ln{fill:none;stroke:var(--accent);stroke-width:2;stroke-linejoin:round}
+.lc-spark .zero{stroke:var(--line2);stroke-width:1;stroke-dasharray:3 3}
+.lc-spark .dot{position:absolute;right:-2px;width:5px;height:5px;margin-top:-2px;border-radius:50%;background:var(--muted)}
+.lc-spark .dot.good{background:var(--good)}
+.lc-spark .dot.bad{background:var(--bad)}
+.lc-spark.anim svg{animation:lc-draw .5s ease-out}
+.lc-spark.anim .dot{animation:lc-dot .5s ease-out}
+.lc-dates{display:flex;justify-content:space-between;margin-top:4px;font-size:11px;line-height:16px;color:var(--muted)}
+.lc-two{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:8px}
+.lc-col{padding-left:10px;border-left:2px solid var(--line)}
+.lc-col.hot{border-left-color:var(--good)}
+.lc-col .lc-lab{display:flex;align-items:center;gap:6px;text-transform:none;letter-spacing:0;font-family:var(--body)}
+.lc-col .lc-lab svg{color:var(--muted)}
+.lc-col:first-child .lc-lab svg{color:var(--good)}
+.lc-tx2{margin-top:2px;font-size:13px;line-height:18px;color:var(--fg)}
+.lc-fade{display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:8px;background:var(--accent-soft);color:var(--accent);font-size:13px;line-height:18px}
+.lc-blk>.lc-cs{margin-top:4px}
+.lc-none{font-size:12px;line-height:17px;color:var(--muted)}
+.lc-drs{margin:16px -14px 0}
+.lc-dr{border-top:1px solid var(--line)}
+.lc-dh{display:flex;align-items:center;justify-content:space-between;width:100%;min-height:48px;padding:0 14px;background:none;border:0;color:var(--fg);font:600 13px/18px var(--body);text-align:left;cursor:pointer}
+.lc-math{padding:0 14px 12px}
+.lc-mb+.lc-mb{margin-top:10px}
+.lc-ml2{font-size:12px;line-height:17px;color:var(--muted)}
+.lc-mt2{font-size:12px;line-height:18px;color:var(--fg2);overflow-wrap:anywhere}
+.lc-mt2.warn{color:var(--warn)}
+.lc-picks{padding:0 14px 6px}
+.lc-more{display:block;width:100%;min-height:44px;background:none;border:0;color:var(--accent);font:600 13px/18px var(--body);text-align:left;cursor:pointer}
+.lc-nolist{padding:12px 14px;border-top:1px solid var(--line);font-size:12px;line-height:17px;color:var(--muted)}
+.lab-link{display:block;min-height:44px;margin-top:2px;padding:0;background:none;border:0;color:var(--accent);font:600 13px/18px var(--body);text-align:left;cursor:pointer}
+@keyframes lc-fill{from{width:0}}
+@keyframes lc-grow{from{grid-template-rows:0fr}to{grid-template-rows:1fr}}
+@keyframes lc-draw{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes lc-dot{0%,90%{opacity:0}100%{opacity:1}}
+@media (prefers-reduced-motion:reduce){
+  .lc-meter i.anim,.lc-grow.anim,.lc-spark.anim svg,.lc-spark.anim .dot{animation:none}
+  .lc-chev{transition:none}
+}
 .lab-ret{margin-top:14px}
 .lab-ret-b{display:block;width:100%;min-height:44px;padding:10px 0;background:none;border:0;color:var(--muted);font:inherit;font-size:13px;text-align:left;cursor:pointer}
 .lab-ret-b:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
@@ -590,6 +673,10 @@ var ICONS = {
   court: ['M3.5 5h17v14h-17z', 'M12 5v14', 'M12 9.8a2.2 2.2 0 1 0 0 4.4 2.2 2.2 0 0 0 0-4.4z', 'M3.5 9.5h3v5h-3', 'M20.5 9.5h-3v5h3'],
   ledger: ['M3.8 6.6l1.5 1.5 2.6-3', 'M11 6.8h9', 'M3.8 12.6l1.5 1.5 2.6-3', 'M11 12.8h9', 'M4.2 18.6h3.4', 'M11 18.8h9'],
   flask: ['M9 3.5h6', 'M10.2 3.5v6L5 18.3A1.8 1.8 0 0 0 6.5 21h11a1.8 1.8 0 0 0 1.5-2.7l-5.2-8.8v-6', 'M7.6 15h8.8'],
+  bulb: ['M9 18h6', 'M10 21h4', 'M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z'],
+  ask: ['M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z', 'M9.6 9.3a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1.1.9-1.1 1.6', 'M12 16.6v.3'],
+  next: ['M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z', 'M8 12h8', 'M13 8.5l3.5 3.5-3.5 3.5'],
+  pass: ['M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z', 'M8.3 12.3l2.7 2.7 4.7-5.4'],
   hq: ['M3 3h8v8H3z', 'M13 3h8v8h-8z', 'M3 13h8v8H3z', 'M13 13h8v8h-8z']
 };
 function icon(name, size, sw) {
@@ -780,7 +867,7 @@ function load() {
   if (S.sport === 'all') return loadAll();
   S.busy = true;
   var base = getBase(S.sport);
-  var labUrl = BASE_FIX ? 'config/lab.json' : SPORT_BASES[S.sport] + 'config/lab.json';  /* SPORT_BASES now local paths */
+  var labUrl = BASE_FIX ? BASE_FIX + 'config/lab.json' : SPORT_BASES[S.sport] + 'config/lab.json';  /* SPORT_BASES now local paths */
   var fetches = [settle(getJSON(base + 'slate.json')), settle(getJSON(base + 'record.json')), settle(getJSON(base + 'rules.json')),
                  settle(getJSON(base + 'headshots.json')), settle(getJSON(labUrl))];
   if (S.sport === 'nhl') fetches.push(settle(getJSON(base + 'record/resets.json')));  /* NHL only: NBA has no Record resets yet */
@@ -2408,28 +2495,290 @@ function entryRow(e, withDate) {
     h('div', { class: 'e1' }, e.sport ? h('span', { class: 'sp-badge ' + e.sport, style: 'margin-left:0', text: e.sport.toUpperCase() }) : null, e.replay ? h('span', { class: 'ptag scr', text: 'REPLAY' }) : null, h('span', { class: 'pn', text: e.player || 'Player not named' }), ' ' + str(e.bet)),
     h('div', { class: 'e2', text: l2.join(' · ') })));
 }
-/* the picks behind one Lab tile, newest night first (Matt 2026-11-12). Summary files differ: nights[].bets (NBA) or nights[].flags (NHL) */
-function labPicks(sm, t) {
-  var box = h('div', { class: 'lab-p' });
-  var per = sm && isObj(sm.tests) && isObj(sm.tests[str(t.stats)]) ? sm.tests[str(t.stats)] : sm;
-  var nights = per ? arr(per.nights).filter(isObj) : [], any = false;
-  nights.forEach(function (n) {
-    var rows = arr(n.bets).concat(arr(n.flags)).filter(function (b) { return isObj(b) && (!b.kind || b.kind === 'flag'); });
+/* ---------- Lab cards (display only: status, trend and dollars are read off the summary numbers, never fed back) ---------- */
+var LAB_NBA_UNIT_USD = 10;
+var LAB_FLOOR_MIN = 20;
+var LAB_FLOOR_FRAC = 0.25;
+var LAB_STALE_MS = 36 * 3600 * 1000;
+var LAB_NIGHTS_SHOWN = 3;
+var LAB_TREND_NIGHTS = 7;
+var LAB_MIN_NIGHTS = 3;
+var LAB_SPARK_W = 300;
+var LAB_SPARK_H = 56;
+var LAB_STATUS = { ready: 'Ready for review', check: 'Check due', good: 'Looking good', bad: 'Looking bad', collecting: 'Collecting', starting: 'Starting up' };
+var LAB_STATUS_ORDER = ['ready', 'check', 'good', 'collecting', 'bad', 'starting'];
+var LAB_CHIP_ORDER = ['ready', 'check', 'good', 'bad', 'collecting', 'starting'];
+var LAB_OUTCOME = { review: { long: 'Our betting expert looks it over. Nothing changes in your picks until then.', short: 'Goes to review.' }, filter: { long: 'We could change which of our real picks you see. Nothing changes until it is reviewed.', short: 'We review it.' }, matt: { long: 'It goes to you. Nothing changes in your picks until you say go.', short: 'You get the call.' }, live: { long: 'These are already real picks on your Record. We keep the faster checks.', short: 'Kept.' } };
+var LAB_TAG_PAPER = 'PAPER TEST - not in your picks';
+var LAB_TAG_FILTER = 'PAPER TEST - your picks are unchanged';
+var LAB_TAG_REAL = 'REAL PICKS - on your Record';
+var LAB_FAIL_PAPER = 'We retire it. Nothing changes for you.';
+var LAB_FAIL_REAL = 'We turn the extra checks off.';
+var LAB_LUCK_NOTE = 'Early results can be luck. It has to hold up.';
+var LAB_NO_LIST = 'Pick-by-pick list is coming. The totals above are live.';
+var LAB_LEDE = ['Paper tests. We pretend-bet ideas to see if they would make money.', 'None of these are in your picks unless the card says REAL PICKS.'];
+function labName(t) { return str(t.name) || str(t.title) || 'Untitled idea'; }
+function labKey(t) { return (t._sp || '') + str(t.id); }
+function labSport(t) { return t._sp || S.sport; }
+function labIsPaper(t) { return t.paper !== false; }
+function labTag(t) { return !labIsPaper(t) ? LAB_TAG_REAL : (t.outcome === 'filter' ? LAB_TAG_FILTER : LAB_TAG_PAPER); }
+function labOutcome(t) { return LAB_OUTCOME[t.outcome] || LAB_OUTCOME.review; }
+/* one word for where a test stands; k and u are graded picks and units after any fade swap. Only Ready for review means it passed */
+function labStatus(t, st, k, u) {
+  var need = num(t.need);
+  if (!st) return 'starting';
+  if (t.status === 'ready_for_sharp') return 'ready';
+  if (need && k >= need && !u) return 'check';
+  var floor = need ? Math.min(need, Math.max(LAB_FLOOR_MIN, LAB_FLOOR_FRAC * need)) : LAB_FLOOR_MIN;
+  if (k >= floor && u > 0) return 'good';
+  if (k >= floor && u < 0) return 'bad';
+  return 'collecting';
+}
+function labMeterText(st, k, need) {
+  if (!st) return 'Waiting for first picks';
+  if (!need) return k + ' picks';
+  return k >= need ? k + ' picks · goal was ' + need : k + ' of ' + need + ' picks';
+}
+function labMeterTone(status) { return { good: 'good', ready: 'good', bad: 'bad', check: 'warn' }[status] || ''; }
+/* the word and units for the newest nights (oldest first in); null when fewer than three nights are saved */
+function labTrend(nights) {
+  if (nights.length < LAB_MIN_NIGHTS) return null;
+  var last = nights.slice(-LAB_TREND_NIGHTS), sum = 0;
+  last.forEach(function (n) { sum += n.u; });
+  sum = Math.round(sum * 100) / 100;
+  return { word: sum > 0 ? 'Up lately' : (sum < 0 ? 'Down lately' : 'Flat'), sum: sum, n: last.length };
+}
+function labDollars(u) {
+  var d = Math.round(u * LAB_NBA_UNIT_USD);
+  return (d < 0 ? '-$' : '+$') + comma(Math.abs(d));
+}
+/* cumulative units in a w x hgt box: the line, the area under it, the zero line and the end point (as a percent of the height) */
+function labSpark(cum, w, hgt) {
+  var pad = 4, hi = Math.max(0, Math.max.apply(null, cum)), lo = Math.min(0, Math.min.apply(null, cum)), span = (hi - lo) || 1;
+  var yOf = function (v) { return pad + (hi - v) / span * (hgt - 2 * pad); };
+  var pts = cum.map(function (v, i) { return (i / (cum.length - 1) * w).toFixed(1) + ',' + yOf(v).toFixed(1); });
+  var line = 'M' + pts.join(' L');
+  return { line: line, area: line + ' L' + w + ',' + hgt + ' L0,' + hgt + ' Z', zero: yOf(0), endY: yOf(cum[cum.length - 1]) / hgt * 100 };
+}
+function labNightRows(n) { return arr(n.bets).concat(arr(n.flags)).filter(function (b) { return isObj(b) && (!b.kind || b.kind === 'flag'); }); }
+function labPer(sm, t) { return sm && isObj(sm.tests) && isObj(sm.tests[str(t.stats)]) ? sm.tests[str(t.stats)] : sm; }
+function labFlipResult(r) { return r === 'W' ? 'L' : (r === 'L' ? 'W' : r); }
+function labFlipBet(s) { return s.replace(/^(OVER|UNDER|Over|Under)/, function (m) { return { OVER: 'UNDER', UNDER: 'OVER', Over: 'Under', Under: 'Over' }[m]; }); }
+/* nights with saved picks, oldest first; a fade test counts the side we would have bet */
+function labNights(sm, t, fade) {
+  var per = labPer(sm, t), out = [];
+  (per ? arr(per.nights).filter(isObj) : []).forEach(function (n) {
+    var rows = labNightRows(n);
     if (!rows.length) return;
-    any = true;
     var w = 0, l = 0, u = 0;
-    rows.forEach(function (b) { if (b.result === 'W') w++; else if (b.result === 'L') l++; u += num(b.units) || 0; });
-    box.appendChild(h('div', { class: 'lab-d' }, h('span', { text: fDateShort(str(n.date)) || str(n.date) }), h('span', { class: 'mu', text: w + '-' + l }), h('span', { class: signCls(u), text: units(u, 2) })));
     rows.forEach(function (b) {
-      var res = str(b.result), pr = num(b.price), cls = res === 'W' ? 'pos' : (res === 'L' ? 'neg' : 'mu');
+      var r = fade ? labFlipResult(str(b.result)) : str(b.result);
+      if (r === 'W') w++; else if (r === 'L') l++;
+      u += num(b.units) || 0;
+    });
+    out.push({ date: str(n.date), rows: rows, w: w, l: l, u: Math.round((fade ? -u : u) * 100) / 100 });
+  });
+  return out.sort(function (a, b) { return a.date < b.date ? -1 : (a.date > b.date ? 1 : 0); });
+}
+function labSortModels(models) {
+  var rank = function (m) { return LAB_STATUS_ORDER.indexOf(m.status); };
+  return models.slice().sort(function (a, b) {
+    if (rank(a) !== rank(b)) return rank(a) - rank(b);
+    if (a.status === 'good' || a.status === 'bad') return (b.u || 0) - (a.u || 0);
+    if (a.status === 'collecting') return b.k - a.k;
+    return 0;
+  });
+}
+function labCounts(models) {
+  var c = {};
+  models.forEach(function (m) { c[m.status] = (c[m.status] || 0) + 1; });
+  return c;
+}
+/* a block that grows open once, right after a tap, and is simply there on every later redraw */
+function labGrow(key, ms, body) {
+  var fresh = S.labJust === key;
+  if (fresh) S.labJust = null;
+  return h('div', { class: 'lc-grow' + (fresh ? ' anim' : ''), style: fresh ? '--lc-ms:' + ms + 'ms' : null }, h('div', { class: 'lc-grow-in' }, body));
+}
+function labToggle(map, key, grow) { map[key] = !map[key]; S.labJust = map[key] ? grow : null; LAB_REDRAW(); }
+function labReveal(id) {
+  var el = document.querySelector('[data-labid="' + id + '"]');
+  if (el && (el.getBoundingClientRect().top < 0 || el.getBoundingClientRect().top > window.innerHeight)) el.scrollIntoView({ block: 'start' });
+}
+/* Tonight's "See this test": open that card in the list below and scroll to it */
+function labShow(t) {
+  var id = labKey(t);
+  S.labOpen = S.labOpen || {};
+  S.labOpen[id] = true; S.labFilter = null;
+  LAB_REDRAW();
+  labReveal(id);
+}
+function labModel(t) {
+  var sm = S.labSum[str(t.id)], st = sm && isObj(sm[str(t.stats || 'total')]) ? sm[str(t.stats || 'total')] : null;
+  var w = st ? (num(st.w) || 0) : 0, l = st ? (num(st.l) || 0) : 0, u = st ? num(st.units) : null;
+  var fade = t.direction === 'fade';   /* a fade track tracks one side but is judged on betting the other: show that result */
+  if (fade) { var swap = w; w = l; l = swap; if (u != null) u = -u; }
+  var k = w + l;
+  return { t: t, id: labKey(t), sm: sm, st: st, w: w, l: l, k: k, u: u, need: num(t.need), fade: fade, status: labStatus(t, st, k, u), nights: labNights(sm, t, fade) };
+}
+function labFace(m) {
+  var t = m.t, paper = labIsPaper(t), open = !!S.labOpen[m.id];
+  var meter = h('div', { class: 'lc-meter' });
+  if (m.st && m.need) {
+    var fill = h('i', { class: labMeterTone(m.status) + (S.labSeen[m.id] ? '' : ' anim') });
+    fill.style.width = Math.min(100, m.k / m.need * 100) + '%';
+    meter.setAttribute('role', 'img'); meter.setAttribute('aria-label', m.k + ' of ' + m.need + ' picks');
+    meter.appendChild(fill);
+  }
+  S.labSeen[m.id] = true;
+  var head = h('button', { class: 'lc-h', type: 'button', 'aria-expanded': open ? 'true' : 'false' },
+    h('span', { class: 'lc-l1' }, t._sp ? h('span', { class: 'sp-badge ' + t._sp, style: 'margin-left:0', text: t._sp.toUpperCase() }) : null,
+      h('span', { class: 'lc-nm', text: labName(t) }), h('span', { class: 'lc-pill ' + m.status, text: LAB_STATUS[m.status] })),
+    str(t.plain) ? h('span', { class: 'lc-pl', text: str(t.plain) }) : null,
+    h('span', { class: 'lc-l3' },
+      h('span', { class: 'lc-ml', text: labMeterText(m.st, m.k, m.need) }),
+      h('span', { class: 'lc-rec' + (m.st ? '' : ' mu'), text: m.st ? m.w + '-' + m.l : '...' }),
+      meter,
+      m.st && m.u != null ? h('span', { class: 'lc-un ' + signCls(m.u), text: uShort(m.u, 2) }) : h('span')),
+    h('span', { class: 'lc-l4' }, h('span', { class: 'lc-tag' + (paper ? '' : ' real') }, paper ? h('span', { class: 'lc-dash', 'aria-hidden': 'true' }) : null, labTag(t)),
+      h('span', { class: 'lc-chev' + (open ? ' open' : ''), 'aria-hidden': 'true' }, icon('right', 16, '2'))));
+  head.addEventListener('click', function () { labToggle(S.labOpen, m.id, 'card:' + m.id); if (S.labOpen[m.id]) labReveal(m.id); });
+  return head;
+}
+function labIdeaRow(ic, label, text, note) {
+  return h('div', { class: 'lc-row' }, h('span', { class: 'lc-ic' }, icon(ic, 18, '1.5')),
+    h('div', { class: 'lc-rb' }, h('div', { class: 'lc-lab', text: label }), h('div', { class: 'lc-tx', text: text }), note ? h('div', { class: 'lc-note', text: note }) : null));
+}
+function labIdea(m) {
+  var t = m.t, early = m.status === 'good' && m.need && m.k < m.need;
+  return h('div', { class: 'lc-blk' }, h('div', { class: 'lc-bh', text: 'The idea' }),
+    str(t.plain) ? labIdeaRow('bulb', "What we're testing", str(t.plain)) : null,
+    str(t.why) ? labIdeaRow('ask', 'Why we think it works', str(t.why)) : null,
+    labIdeaRow('next', 'If it passes', labOutcome(t).long, early ? LAB_LUCK_NOTE : null));
+}
+function labChip(label, value, sub, cls) {
+  return h('div', { class: 'lc-chip' }, h('div', { class: 'lc-cl', text: label }), h('div', { class: 'lc-cv ' + (cls || ''), text: value }), sub ? h('div', { class: 'lc-cs', text: sub }) : null);
+}
+function labScore(m) {
+  var chips = [], tr = labTrend(m.nights), pending = num(m.st.pending);
+  chips.push(labChip('Wins', m.k ? (100 * m.w / m.k).toFixed(1) + '%' : '--', m.w + ' won, ' + m.l + ' lost'));
+  if (m.u != null) chips.push(labChip('Profit', uShort(m.u, 2), labSport(m.t) === 'nba' ? 'about ' + labDollars(m.u) + ' at $' + LAB_NBA_UNIT_USD + ' a pick' : null, signCls(m.u) || 'mu'));
+  chips.push(labChip('Picks', m.need && m.k < m.need ? m.k + ' of ' + m.need : String(m.k), pending ? pending + ' still to play' : null));
+  if (tr) chips.push(labChip('Trend', tr.word, 'last ' + tr.n + ' nights: ' + uShort(tr.sum, 1), signCls(tr.sum) || 'mu'));
+  return h('div', { class: 'lc-blk' }, h('div', { class: 'lc-bh', text: 'Scorecard' }), h('div', { class: 'lc-chips c' + chips.length }, chips));
+}
+function svgEl(name, attrs) {
+  var e = document.createElementNS(SVGNS, name), k;
+  for (k in attrs) e.setAttribute(k, attrs[k]);
+  return e;
+}
+function labSparkEl(m) {
+  var cum = [], run = 0;
+  m.nights.forEach(function (n) { run += n.u; cum.push(Math.round(run * 100) / 100); });
+  var g = labSpark(cum, LAB_SPARK_W, LAB_SPARK_H), first = m.nights[0].date, last = m.nights[m.nights.length - 1].date, end = cum[cum.length - 1];
+  var svg = svgEl('svg', { viewBox: '0 0 ' + LAB_SPARK_W + ' ' + LAB_SPARK_H, preserveAspectRatio: 'none', 'aria-hidden': 'true' });
+  svg.appendChild(svgEl('path', { d: g.area, class: 'area' }));
+  svg.appendChild(svgEl('line', { x1: 0, x2: LAB_SPARK_W, y1: g.zero, y2: g.zero, class: 'zero', 'vector-effect': 'non-scaling-stroke' }));
+  svg.appendChild(svgEl('path', { d: g.line, class: 'ln', 'vector-effect': 'non-scaling-stroke' }));
+  var anim = !S.labSpark[m.id];
+  S.labSpark[m.id] = true;
+  return h('div', { class: 'lc-blk' }, h('div', { class: 'lc-bh', text: 'Cumulative units' }),
+    h('div', { class: 'lc-spark' + (anim ? ' anim' : ''), role: 'img', 'aria-label': 'Cumulative units, from ' + fDateShort(first) + ' to ' + fDateShort(last) + ': ' + uShort(cum[0], 2) + ' to ' + uShort(end, 2) },
+      svg, h('i', { class: 'dot ' + (end > 0 ? 'good' : (end < 0 ? 'bad' : '')), style: 'top:' + g.endY.toFixed(1) + '%' })),
+    h('div', { class: 'lc-dates' }, h('span', { text: fDateShort(first) }), h('span', { text: fDateShort(last) })));
+}
+function labNext(m) {
+  var t = m.t;
+  return h('div', { class: 'lc-blk' }, h('div', { class: 'lc-bh', text: 'What happens next' }),
+    h('div', { class: 'lc-two' },
+      h('div', { class: 'lc-col' + (m.status === 'ready' ? ' hot' : '') }, h('div', { class: 'lc-lab' }, icon('pass', 16, '1.5'), 'If it passes'), h('div', { class: 'lc-tx2', text: labOutcome(t).short })),
+      h('div', { class: 'lc-col' }, h('div', { class: 'lc-lab' }, icon('stop', 16, '1.5'), 'If it fails'), h('div', { class: 'lc-tx2', text: labIsPaper(t) ? LAB_FAIL_PAPER : LAB_FAIL_REAL }))));
+}
+function labMathBlock(label, text, cls) {
+  return h('div', { class: 'lc-mb' }, h('div', { class: 'lc-ml2', text: label }), h('div', { class: 'lc-mt2' + (cls ? ' ' + cls : ''), text: text }));
+}
+/* the Researcher's own words, untouched, plus the counts behind the card */
+function labMath(m) {
+  var t = m.t, st = m.st, box = h('div', { class: 'lc-math' });
+  if (str(t.name) && str(t.title)) box.appendChild(labMathBlock('Original title', str(t.title)));
+  if (str(t.rule)) box.appendChild(labMathBlock('Exact rule', str(t.rule)));
+  if (str(t.discovery)) box.appendChild(labMathBlock('What the history showed', str(t.discovery)));
+  if (str(t.gate)) box.appendChild(labMathBlock('Pass mark', str(t.gate)));
+  if (st) {
+    var counts = [m.k + ' graded'];
+    if (num(st.pending)) counts.push(st.pending + ' pending');
+    if (num(st.void)) counts.push(st.void + ' void');
+    box.appendChild(labMathBlock('Counts', counts.join(', ')));
+    if (num(st.clv) != null) { var clv = m.fade ? -st.clv : st.clv; box.appendChild(labMathBlock('Beat the closing price', (clv >= 0 ? '+' : '') + (100 * clv).toFixed(1) + '%')); }
+  }
+  var at = m.sm && fStamp(m.sm.updated_at);
+  if (at) {
+    var old = now() - ms(m.sm.updated_at) > LAB_STALE_MS;
+    box.appendChild(labMathBlock('Updated', 'Updated ' + at + (old ? ' - older than usual' : ''), old ? 'warn' : ''));
+  }
+  return box;
+}
+/* a 48px row that opens a block under it; its open state lives in `map` (kept across redraws) */
+function labDrawer(map, key, grow, label, body) {
+  var open = !!map[key];
+  var btn = h('button', { class: 'lc-dh', type: 'button', 'aria-expanded': open ? 'true' : 'false' }, h('span', { text: label }), h('span', { class: 'lc-chev' + (open ? ' open' : ''), 'aria-hidden': 'true' }, icon('right', 16, '2')));
+  btn.addEventListener('click', function () { labToggle(map, key, grow); });
+  return h('div', { class: 'lc-dr' }, btn, open ? labGrow(grow, 160, body()) : null);
+}
+/* the picks behind one test, newest night first. Summary files differ: nights[].bets (NBA) or nights[].flags (NHL) */
+function labPicks(m) {
+  var box = h('div', { class: 'lc-picks' }), all = !!S.labAllNights[m.id], nights = m.nights.slice().reverse();
+  (all ? nights : nights.slice(0, LAB_NIGHTS_SHOWN)).forEach(function (n) {
+    box.appendChild(h('div', { class: 'lab-d' }, h('span', { text: fDateShort(n.date) || n.date }), h('span', { class: 'mu', text: n.w + '-' + n.l }), h('span', { class: signCls(n.u), text: units(n.u, 2) })));
+    n.rows.forEach(function (b) {
+      var res = m.fade ? labFlipResult(str(b.result)) : str(b.result), pr = m.fade ? null : num(b.price), cls = res === 'W' ? 'pos' : (res === 'L' ? 'neg' : 'mu');
       var bet = str(b.bet).replace(/^OVER/, 'Over').replace(/^UNDER/, 'Under');
+      if (m.fade) bet = labFlipBet(bet);
       box.appendChild(h('div', { class: 'lab-b' },
         h('span', { class: 'who' }, h('b', { text: str(b.player) || 'Player' }), h('span', { class: 'mu', text: ' ' + bet + (pr != null ? ' ' + (pr > 0 ? '+' + pr : pr) : '') })),
         h('span', { class: 'res ' + cls, text: res === 'W' ? 'Won' : res === 'L' ? 'Lost' : res === 'PUSH' ? 'Push' : res === 'VOID' ? 'Void' : (b.pulled ? 'Pulled' : 'Pending') })));
     });
   });
-  if (!any) box.appendChild(h('div', { class: 'sm', text: per && per.nights ? 'No picks logged yet.' : "This test's pick list isn't saved yet, only its totals." }));
+  if (!all && nights.length > LAB_NIGHTS_SHOWN) {
+    box.appendChild(h('button', { class: 'lc-more', type: 'button', text: 'Show all nights', on: { click: function () { S.labAllNights[m.id] = true; LAB_REDRAW(); } } }));
+  }
   return box;
+}
+function labBody(m) {
+  var body = h('div', { class: 'lc-x' }), per = labPer(m.sm, m.t);
+  body.appendChild(labIdea(m));
+  if (!m.st) {
+    body.appendChild(h('div', { class: 'lc-blk lc-none', text: m.sm && m.sm._err === 'file' ? 'No results logged yet.' : (m.sm ? "Its numbers couldn't be read." : 'Loading its numbers') }));
+  } else {
+    body.appendChild(labScore(m));
+    if (m.nights.length >= LAB_MIN_NIGHTS) body.appendChild(labSparkEl(m));
+    body.appendChild(labNext(m));
+  }
+  if (m.fade) body.appendChild(h('div', { class: 'lc-blk' }, h('div', { class: 'lc-fade' }, icon('flask', 16, '1.5'), h('span', { text: 'We bet the opposite side.' })), h('div', { class: 'lc-cs', text: 'The record above is what betting against it would have done.' })));
+  var drawers = h('div', { class: 'lc-drs' }, labDrawer(S.labMath, m.id, 'math:' + m.id, 'Show the math', function () { return labMath(m); }));
+  if (m.st) {
+    if (m.nights.length) drawers.appendChild(labDrawer(S.labPicksOpen, m.id, 'picks:' + m.id, 'Recent picks (' + m.nights.length + ')', function () { return labPicks(m); }));
+    else drawers.appendChild(h('div', { class: 'lc-nolist', text: per && per.nights ? 'No picks logged yet.' : LAB_NO_LIST }));
+  }
+  body.appendChild(drawers);
+  return body;
+}
+function labCard(m) {
+  var card = h('section', { class: 'lc ' + (labIsPaper(m.t) ? 'paper' : 'real'), 'data-labid': m.id });
+  card.appendChild(labFace(m));
+  if (S.labOpen[m.id]) card.appendChild(labGrow('card:' + m.id, 180, labBody(m)));
+  return card;
+}
+/* summary chips: the first clears the filter, the rest filter by status and add up to the total */
+function labChips(models) {
+  var counts = labCounts(models), row = h('div', { class: 'lab-chips', role: 'group', 'aria-label': 'Filter tests' });
+  var add = function (key, text) {
+    var on = (S.labFilter || null) === key;
+    row.appendChild(h('button', { class: 'lab-chip', type: 'button', 'aria-pressed': on ? 'true' : 'false', text: text, on: { click: function () { S.labFilter = on ? null : key; LAB_REDRAW(); } } }));
+  };
+  add(null, models.length + (models.length === 1 ? ' test' : ' tests'));
+  LAB_CHIP_ORDER.forEach(function (s) { if (counts[s]) add(s, counts[s] + ' ' + LAB_STATUS[s].toLowerCase()); });
+  return row;
 }
 function LAB_REDRAW() { render(); }
 
@@ -2510,15 +2859,15 @@ function labLiveRow(bet, test, d) {
   card.appendChild(h('div', { class: 'gs' }, h('b', { text: gl.status }), _hasSep ? ' · ' : null, _glTrail));
   if (open) {
     var xp = h('div', { class: 'lv-xp' });
-    xp.appendChild(h('div', null, h('b', { text: str(test.title) || 'Lab test' })));
-    if (test.rule) xp.appendChild(h('div', null, str(test.rule)));
-    if (test.discovery) xp.appendChild(h('div', { class: 'lxm' }, '▶ ' + str(test.discovery)));
-    if (test.gate) xp.appendChild(h('div', { class: 'lxm' }, '▶ ' + str(test.gate)));
+    xp.appendChild(h('div', null, h('b', { text: labName(test) })));
+    if (test.plain) xp.appendChild(h('div', null, str(test.plain)));
+    xp.appendChild(h('div', { class: 'lxm', text: labTag(test) }));
+    xp.appendChild(h('button', { class: 'lab-link', type: 'button', text: 'See this test', on: { click: function (e) { e.stopPropagation(); labShow(test); } } }));
     card.appendChild(xp);
   }
   var toggle = function () { S.labTodayOpen[openKey] = !open; LAB_REDRAW(); };
   card.addEventListener('click', toggle);
-  card.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
+  card.addEventListener('keydown', function (e) { if (e.target === card && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); toggle(); } });
   return card;
 }
 function renderLabToday() {
@@ -2530,14 +2879,13 @@ function renderLabToday() {
   tests.forEach(function (t) {
     var sm = S.labSum[str(t.id)];
     if (!sm) return;
-    var per = sm && isObj(sm.tests) && isObj(sm.tests[str(t.stats)]) ? sm.tests[str(t.stats)] : sm;
+    var per = labPer(sm, t);
     if (!per) return;
     var nights = arr(per.nights).filter(isObj);
     var tonight = null;
     for (var i = 0; i < nights.length; i++) { if (str(nights[i].date) === slateDate) { tonight = nights[i]; break; } }
     if (!tonight) return;
-    var rows = arr(tonight.bets).concat(arr(tonight.flags)).filter(function (b) { return isObj(b) && (!b.kind || b.kind === 'flag'); });
-    rows.forEach(function (bet) { todayBets.push({ bet: bet, test: t }); });
+    labNightRows(tonight).forEach(function (bet) { todayBets.push({ bet: bet, test: t }); });
   });
   if (!todayBets.length) return;
   /* sort: pending (no result) first, then by game start */
@@ -2611,7 +2959,7 @@ function labRetiredLine() {
 }
 function renderLab() {
   top('Lab', false);
-  app.appendChild(h('p', { class: 'mu', style: 'margin:10px 0 0;font-size:13px;line-height:19px', text: 'Most tests are paper-only — see each card for its status. Tap a test to see its picks.' }));
+  app.appendChild(h('p', { class: 'lab-lede' }, LAB_LEDE[0], h('br'), LAB_LEDE[1]));
   if (!S.loaded) { app.appendChild(h('div', { class: 'stack' }, h('div', { class: 'skel sm' }), h('div', { class: 'skel' }))); return; }
   renderLabToday();
   var tests = S.lab ? arr(S.lab.tests).filter(isObj) : [];
@@ -2620,44 +2968,12 @@ function renderLab() {
     app.appendChild(smallFoot()); return;
   }
   if (!tests.length) app.appendChild(h('div', { class: 'card empty' }, h('div', { class: 't', text: 'Nothing is being tracked on paper right now.' })));
-  S.labOpen = S.labOpen || {};
-  tests.forEach(function (t) {
-    var id = (t._sp || '') + str(t.id), sm = S.labSum[str(t.id)], st = sm && isObj(sm[str(t.stats || 'total')]) ? sm[str(t.stats || 'total')] : null;
-    var open = !!S.labOpen[id], card = h('section', { class: 'lab' + (open ? ' open' : '') });
-    var w = st ? (num(st.w) || 0) : 0, l = st ? (num(st.l) || 0) : 0, k = w + l, need = num(t.need), u = st ? num(st.units) : null;
-    var fade = t.direction === 'fade';   /* a fade track tracks one side but is judged on betting the other: show that result */
-    if (fade) { var swap = w; w = l; l = swap; if (u != null) u = -u; }
-    /* the tile: tap to open its details and picks */
-    var head = h('button', { class: 'lab-h', type: 'button', 'aria-expanded': open ? 'true' : 'false' },
-      h('span', { class: 'lab-t' }, t._sp ? h('span', { class: 'sp-badge ' + t._sp, text: t._sp.toUpperCase() }) : null, h('span', { class: 'lab-n', text: str(t.title) || 'Untitled idea' })),
-      h('span', { class: 'lab-r' }, h('span', { class: 'rec' + (st ? '' : ' mu'), text: st ? w + '-' + l : (sm ? '0-0' : '...') }),
-        st && u != null ? h('span', { class: 'un ' + signCls(u), text: units(u, 2).replace(/ units?$/, 'u') }) : null, h('span', { class: 'chev', 'aria-hidden': 'true', text: open ? '▴' : '▾' })));
-    head.addEventListener('click', function () { S.labOpen[id] = !S.labOpen[id]; LAB_REDRAW(); });
-    card.appendChild(head);
-    if (t.status === 'ready_for_sharp') card.appendChild(h('span', { class: 'lab-ready', text: 'Ready for Sharp' }));
-    if (need && st) {
-      var bar = h('div', { class: 'prog', role: 'img', 'aria-label': k + ' of ' + need + ' graded' }), fill = h('i'); fill.style.width = Math.min(100, k / need * 100) + '%'; bar.appendChild(fill);
-      card.appendChild(bar);
-    }
-    if (open) {
-      if (t.rule) card.appendChild(h('div', { class: 'rl', text: str(t.rule) }));
-      if (!st) {
-        card.appendChild(h('div', { class: 'sm', style: 'margin-top:10px', text: sm && sm._err === 'file' ? 'No results logged yet.' : (sm ? "Its numbers couldn't be read." : 'Loading its numbers') }));
-      } else {
-        var bits = [k + (need ? ' of ' + need : '') + ' graded'];
-        if (fade) bits.push('fade: shown as betting against the tracked side');
-        if (num(st.pending)) bits.push(st.pending + ' pending');
-        if (num(st.void)) bits.push(st.void + ' void');
-        if (num(st.clv) != null) { var clv = fade ? -st.clv : st.clv; bits.push('vs closing line ' + (clv >= 0 ? '+' : '') + (100 * clv).toFixed(1) + '%'); }
-        card.appendChild(h('div', { class: 'sm', text: bits.join(' · ') }));
-        if (sm.updated_at && fStamp(sm.updated_at)) card.appendChild(h('div', { class: 'sm', text: 'Updated ' + fStamp(sm.updated_at) }));
-      }
-      if (t.discovery) card.appendChild(h('div', { class: 'sm', text: str(t.discovery) }));
-      if (t.gate) card.appendChild(h('div', { class: 'sm', text: str(t.gate) }));
-      card.appendChild(labPicks(sm, t));
-    }
-    app.appendChild(card);
-  });
+  ['labOpen', 'labMath', 'labPicksOpen', 'labAllNights', 'labSeen', 'labSpark'].forEach(function (k) { S[k] = S[k] || {}; });
+  var models = tests.map(labModel);
+  if (models.length) app.appendChild(labChips(models));
+  var list = h('div', { class: 'lab-list' });
+  labSortModels(models.filter(function (m) { return !S.labFilter || m.status === S.labFilter; })).forEach(function (m) { list.appendChild(labCard(m)); });
+  app.appendChild(list);
   var retLine = labRetiredLine();
   if (retLine) app.appendChild(retLine);
   app.appendChild(smallFoot());
@@ -3376,7 +3692,7 @@ function go(v) {
 function route() {
   var v = viewFromHash();
   if (v !== S.view) {
-    S.scroll[S.view] = window.scrollY || 0; S.view = v; render(); window.scrollTo(0, S.scroll[v] || 0);
+    S.scroll[S.view] = window.scrollY || 0; S.view = v; S.labFilter = null; render(); window.scrollTo(0, S.scroll[v] || 0);
     if (v === 'live' || v === 'lab') liveGo(true); else liveStop();
     if (v === 'hq') loadHQ();
   }

@@ -1,0 +1,79 @@
+{
+ "updated_at": "2026-11-23T05:00:00-05:00",
+ "total": {
+  "w": 46,
+  "l": 34,
+  "push": 0,
+  "units": 6.5,
+  "pending": 3,
+  "void": 0,
+  "clv": 0.02
+ },
+ "nights": [
+  {
+   "date": "2026-11-19",
+   "bets": [
+    {
+     "player": "Jalen Brunson",
+     "bet": "UNDER 6.5 assists",
+     "price": 105,
+     "result": "W",
+     "units": 1.05,
+     "market": "rebounds",
+     "side": "under"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-20",
+   "bets": [
+    {
+     "player": "Tyrese Haliburton",
+     "bet": "UNDER 9.5 assists",
+     "price": -105,
+     "result": "W",
+     "units": 0.95,
+     "market": "rebounds",
+     "side": "under"
+    },
+    {
+     "player": "Trae Young",
+     "bet": "UNDER 10.5 assists",
+     "price": 100,
+     "result": "L",
+     "units": -1.0,
+     "market": "rebounds",
+     "side": "under"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-21",
+   "bets": [
+    {
+     "player": "James Harden",
+     "bet": "UNDER 7.5 assists",
+     "price": -110,
+     "result": "W",
+     "units": 0.91,
+     "market": "rebounds",
+     "side": "under"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-22",
+   "bets": [
+    {
+     "player": "Luka Doncic",
+     "bet": "UNDER 8.5 assists",
+     "price": 110,
+     "result": "W",
+     "units": 1.1,
+     "market": "rebounds",
+     "side": "under"
+    }
+   ]
+  }
+ ]
+}

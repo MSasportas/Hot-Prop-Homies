@@ -11,7 +11,12 @@
    "need": 100,
    "discovery": "Saved data: Hard Rock follows a Pinnacle move in 20-30 minutes, so wider checks missed about 5 of 6 moves.",
    "gate": "Kept if it adds picks and they beat the closing line. Updated nightly.",
-   "no_auto_retire": true
+   "no_auto_retire": true,
+   "name": "Faster price checks",
+   "plain": "Check prices every 15 minutes near tip-off",
+   "why": "Hard Rock copies Pinnacle in 20 to 30 minutes, so wider checks missed most moves.",
+   "outcome": "live",
+   "paper": false
   },
   {
    "id": "pin_judge",
@@ -21,7 +26,11 @@
    "stats": "total",
    "need": 150,
    "discovery": "Discovery Oct 25-27: 6 bets 5-1 +3.18u.",
-   "gate": "Live only at 150 graded, units up, and when Matt says go."
+   "gate": "Live only at 150 graded, units up, and when Matt says go.",
+   "name": "Pinnacle price check",
+   "plain": "Bet when Hard Rock pays 2%+ more than Pinnacle's fair price",
+   "why": "Pinnacle is the sharpest book. If Hard Rock pays more, that is a bargain.",
+   "outcome": "matt"
   },
   {
    "id": "threes_judge",
@@ -31,7 +40,11 @@
    "stats": "total",
    "need": 150,
    "discovery": "18 nights before tracking: 17 bets 10-7 +6.15u, beat the close by 0.9%.",
-   "gate": "Live only at 150 graded, units up and beating the close."
+   "gate": "Live only at 150 graded, units up and beating the close.",
+   "name": "3-pointer bargains",
+   "plain": "Bet 3-pointer props when Hard Rock beats Pinnacle by 1%+",
+   "why": "Same idea as the Pinnacle check, with a lower bar, only for 3s.",
+   "outcome": "matt"
   },
   {
    "id": "AH1",
@@ -40,7 +53,11 @@
    "summary": "research/lab_ah.json",
    "stats": "AH1",
    "need": 150,
-   "gate": "Passes only at 150 graded, profit and beating the close."
+   "gate": "Passes only at 150 graded, profit and beating the close.",
+   "name": "Big move, unders only",
+   "plain": "Of our real picks, unders after a big line move (4+ pts)",
+   "why": "A big move can mean real news. We check if the under side does best.",
+   "outcome": "filter"
   },
   {
    "id": "AH2",
@@ -49,7 +66,11 @@
    "summary": "research/lab_ah.json",
    "stats": "AH2",
    "need": 150,
-   "gate": "Passes only at 150 graded, profit and beating the close."
+   "gate": "Passes only at 150 graded, profit and beating the close.",
+   "name": "Late and big",
+   "plain": "Of our real picks, late ones after a 3+ pt move",
+   "why": "Late moves are fresh news, and Hard Rock has less time to fix its price.",
+   "outcome": "filter"
   },
   {
    "id": "AH3",
@@ -58,7 +79,11 @@
    "summary": "research/lab_ah.json",
    "stats": "AH3",
    "need": 150,
-   "gate": "Passes only at 150 graded, profit and beating the close."
+   "gate": "Passes only at 150 graded, profit and beating the close.",
+   "name": "Late, only Pinnacle moved",
+   "plain": "Of our real picks, late ones where only Pinnacle moved",
+   "why": "One sharp book moving alone may know something others do not.",
+   "outcome": "filter"
   },
   {
    "id": "AH4",
@@ -67,7 +92,11 @@
    "summary": "research/lab_ah.json",
    "stats": "AH4",
    "need": 150,
-   "gate": "Passes only at 150 graded, profit and beating the close."
+   "gate": "Passes only at 150 graded, profit and beating the close.",
+   "name": "Hard Rock has not moved",
+   "plain": "Of our real picks, ones where Hard Rock's price is unchanged and fair",
+   "why": "A price that sat still while the market moved can be a bargain.",
+   "outcome": "filter"
   },
   {
    "id": "AH5",
@@ -76,7 +105,11 @@
    "summary": "research/lab_ah.json",
    "stats": "AH5",
    "need": 150,
-   "gate": "Passes only at 150 graded, profit and beating the close."
+   "gate": "Passes only at 150 graded, profit and beating the close.",
+   "name": "Big move, only Pinnacle",
+   "plain": "Of our real picks, a 4+ pt move that only Pinnacle made",
+   "why": "A big move nobody copied may be early news. Or it may be noise.",
+   "outcome": "filter"
   },
   {
    "id": "AH6",
@@ -85,7 +118,11 @@
    "summary": "research/lab_ah.json",
    "stats": "AH6",
    "need": 150,
-   "gate": "Passes only at 150 graded, profit and beating the close."
+   "gate": "Passes only at 150 graded, profit and beating the close.",
+   "name": "90 to 45 min before tip",
+   "plain": "Of our real picks, the ones made 90 to 45 minutes before tip",
+   "why": "We check if picks do better at certain times before the game.",
+   "outcome": "filter"
   },
   {
    "id": "AH7",
@@ -94,7 +131,11 @@
    "summary": "research/lab_ah.json",
    "stats": "AH7",
    "need": 150,
-   "gate": "Passes only at 150 graded, profit and beating the close."
+   "gate": "Passes only at 150 graded, profit and beating the close.",
+   "name": "45 to 20 min before tip",
+   "plain": "Of our real picks, the ones made 45 to 20 minutes before tip",
+   "why": "We check if picks do better at certain times before the game.",
+   "outcome": "filter"
   },
   {
    "id": "AH8",
@@ -103,7 +144,11 @@
    "summary": "research/lab_ah.json",
    "stats": "AH8",
    "need": 150,
-   "gate": "Passes only at 150 graded, profit and beating the close."
+   "gate": "Passes only at 150 graded, profit and beating the close.",
+   "name": "Late unders",
+   "plain": "Of our real picks, unders made in the last 90 minutes",
+   "why": "Late news may make unders hit more. We are checking.",
+   "outcome": "filter"
   },
   {
    "id": "AH9",
@@ -112,7 +157,11 @@
    "summary": "research/lab_ah.json",
    "stats": "AH9",
    "need": 150,
-   "gate": "Passes only at 150 graded, profit and beating the close."
+   "gate": "Passes only at 150 graded, profit and beating the close.",
+   "name": "A few books follow",
+   "plain": "Of our real picks, ones where 2 to 4 other books moved the same way",
+   "why": "Some agreement may mean the move is real, before the price is gone.",
+   "outcome": "filter"
   },
   {
    "id": "AH10",
@@ -121,7 +170,11 @@
    "summary": "research/lab_ah.json",
    "stats": "AH10",
    "need": 150,
-   "gate": "Passes only at 150 graded, profit and beating the close."
+   "gate": "Passes only at 150 graded, profit and beating the close.",
+   "name": "Big-move unders by size",
+   "plain": "Unders after a 3 to 4 pt move, compared with 4+ pts",
+   "why": "We check if a bigger move means a better under.",
+   "outcome": "filter"
   },
   {
    "id": "AH11",
@@ -130,7 +183,11 @@
    "summary": "research/lab_ah.json",
    "stats": "AH11",
    "need": 150,
-   "gate": "Passes only at 150 graded, profit and beating the close."
+   "gate": "Passes only at 150 graded, profit and beating the close.",
+   "name": "Morning overs vs unders",
+   "plain": "Picks made before the last 90 minutes, overs and unders compared",
+   "why": "We check which side does better early in the day.",
+   "outcome": "filter"
   },
   {
    "id": "AH12",
@@ -139,7 +196,11 @@
    "summary": "research/lab_ah.json",
    "stats": "AH12",
    "need": 150,
-   "gate": "Passes only at 150 graded, profit and beating the close."
+   "gate": "Passes only at 150 graded, profit and beating the close.",
+   "name": "Medium-big, only Pinnacle",
+   "plain": "Of our real picks, a 3+ pt move that only Pinnacle made",
+   "why": "A smaller version of the big-move test, so we get more picks to judge.",
+   "outcome": "filter"
   },
   {
    "id": "AH13",
@@ -148,7 +209,11 @@
    "summary": "research/lab_ah.json",
    "stats": "AH13",
    "need": 150,
-   "gate": "Passes only at 150 graded, profit and beating the close."
+   "gate": "Passes only at 150 graded, profit and beating the close.",
+   "name": "Hard Rock stuck, unders",
+   "plain": "Of our real picks, unders where Hard Rock's price has not changed",
+   "why": "A stuck price on the under side may be a bargain.",
+   "outcome": "filter"
   },
   {
    "id": "AH14",
@@ -157,7 +222,11 @@
    "summary": "research/lab_ah.json",
    "stats": "AH14",
    "need": 150,
-   "gate": "Passes only at 150 graded, profit and beating the close."
+   "gate": "Passes only at 150 graded, profit and beating the close.",
+   "name": "Small moves, fair price",
+   "plain": "Of our real picks, small moves (2 to 3 pts) at a fair price",
+   "why": "Small moves are common. We check if the fairly priced ones pay.",
+   "outcome": "filter"
   },
   {
    "id": "AH15",
@@ -166,7 +235,11 @@
    "summary": "research/lab_ah.json",
    "stats": "AH15",
    "need": 150,
-   "gate": "Passes only at 150 graded, profit and beating the close."
+   "gate": "Passes only at 150 graded, profit and beating the close.",
+   "name": "Late, fair price",
+   "plain": "Of our real picks, late ones (last 90 min) at a fair price",
+   "why": "Late and fairly priced may be the sweet spot.",
+   "outcome": "filter"
   },
   {
    "id": "NP1",
@@ -176,7 +249,11 @@
    "stats": "NP1",
    "need": 150,
    "discovery": "Discovery Oct 25-Nov 14 (21 nights): 90 events, 87 graded, 49-38, +11.48u, ROI +13.2%.",
-   "gate": "Passes only at 150 graded forward, profit and beating close."
+   "gate": "Passes only at 150 graded forward, profit and beating close.",
+   "name": "Sharp vs casual books",
+   "plain": "Bet the way the sharp books lean when casual books disagree",
+   "why": "Sharp books (the ones pros use) are usually right.",
+   "outcome": "review"
   },
   {
    "id": "NP2",
@@ -186,7 +263,11 @@
    "stats": "NP2",
    "need": 150,
    "discovery": "Discovery Oct 25-Nov 14 (21 nights): 23 candidate pairs before EV gate; 0 clear EV >= 0 (sample too thin; sharp never pricing the fade side favorably at HR's stale price).",
-   "gate": "Passes only at 150 graded forward, profit and beating close."
+   "gate": "Passes only at 150 graded forward, profit and beating close.",
+   "name": "Against casual-book moves",
+   "plain": "Bet against a move that only casual books made",
+   "why": "If casual books move and sharp books stay put, the move may be wrong.",
+   "outcome": "review"
   },
   {
    "id": "NP3",
@@ -196,7 +277,11 @@
    "stats": "NP3",
    "need": 150,
    "discovery": "Discovery Oct 25-Nov 14 (21 nights): 3 events, 3 graded, 1-2, -0.85u (sample too thin to judge).",
-   "gate": "Passes only at 150 graded forward, profit and beating close."
+   "gate": "Passes only at 150 graded forward, profit and beating close.",
+   "name": "Whole market moved",
+   "plain": "Follow a move that most books made but Hard Rock has not",
+   "why": "If everyone else moved, Hard Rock's price is probably out of date.",
+   "outcome": "review"
   },
   {
    "id": "LVA1",
@@ -206,7 +291,11 @@
    "stats": "LVA1",
    "need": 40,
    "discovery": "Discovery Oct 25-Nov 14 (71 live picks): unders in the below-5% bucket 4-13 (23.5%, n=17 at min 3 prior games). Base under rate 50% (26-26).",
-   "gate": "n>=40 fresh forward under picks in the below-5% bucket (min 3 prior games), hit rate above breakeven. Post-hoc finding, forward only."
+   "gate": "n>=40 fresh forward under picks in the below-5% bucket (min 3 prior games), hit rate above breakeven. Post-hoc finding, forward only.",
+   "name": "Skip unders, low line",
+   "plain": "Skip Under picks when the line is well below his average",
+   "why": "A line far below his usual may already be too low. Early results were poor.",
+   "outcome": "filter"
   },
   {
    "id": "LVA2",
@@ -216,7 +305,11 @@
    "stats": "LVA2",
    "need": 30,
    "discovery": "Discovery Oct 25-Nov 14 (71 live picks): overs in the above-5% bucket 8-0 (100%, n=8 at min 3 prior games). Base over rate 78.9% (15-4). Post-hoc.",
-   "gate": "n>=30 fresh forward over picks in the above-5% bucket (min 3 prior games), hit rate clearly above the base over rate (78.9%). Post-hoc finding, forward only."
+   "gate": "n>=30 fresh forward over picks in the above-5% bucket (min 3 prior games), hit rate clearly above the base over rate (78.9%). Post-hoc finding, forward only.",
+   "name": "Overs, high line",
+   "plain": "Flag Over picks when the line is well above his average",
+   "why": "Early results: these overs won 8 of 8. That is too few to trust yet.",
+   "outcome": "filter"
   },
   {
    "id": "DM2",
@@ -227,7 +320,11 @@
    "need": 300,
    "discovery": "Discovery Nov 6-Nov 15 (second half only; min 5 prior games needed): overs in hot bucket n=361, 45.7% hit, -12.6% ROI, 90% CI [-21.0, -4.3]. Points hot overs n=105, 40.0%, -25.1%. Hot unders near breakeven (+0.7%).",
    "gate": "n >= 300 graded forward overs in hot bucket (last-5 >= 10% above season avg, min 5 prior games). Hit rate < 50%, ROI < -5%. DS to report LVA2 overlap at the first check. If passes: Sharp reviews with DS before any live rule change.",
-   "direction": "fade"
+   "direction": "fade",
+   "name": "Hot streak overs fade",
+   "plain": "Bet UNDER on players who've been hot lately",
+   "why": "Hot streaks cool off, but books price the streak in. We bet the opposite side.",
+   "outcome": "review"
   },
   {
    "id": "DM3",
@@ -238,7 +335,11 @@
    "need": 50,
    "discovery": "Discovery Oct 26-Nov 15 (base population): unders with Pinnacle 3+ pts off the market n=81, 32-49, 39.5% hit, -26.3% ROI, 90% CI [-43.2, -9.5]. Both halves negative (first half -18.1% n=50, second -39.6% n=31). Overs in same bucket +13.4% ROI but not stable across halves.",
    "gate": "n >= 50 graded forward unders in the Pinnacle-outlier bucket (consensus vs Pinnacle gap >= 3 pts). Hit rate < 48%. If passes: Sharp reviews with DS before any live rule change.",
-   "direction": "fade"
+   "direction": "fade",
+   "name": "Pinnacle far from pack",
+   "plain": "Bet OVER instead when the Under looks like a trap",
+   "why": "When Pinnacle is far from the other books, the under tends to lose.",
+   "outcome": "review"
   }
  ],
  "retired_count": 2,
