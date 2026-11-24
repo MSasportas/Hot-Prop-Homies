@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-23",
- "started_at": "2026-11-23T21:20:01-05:00",
- "status_at": "2026-11-23T21:20:01-05:00",
- "finished_at": "2026-11-23T21:20:02-05:00",
- "last_ok_at": "2026-11-23T21:20:01-05:00",
+ "started_at": "2026-11-23T21:32:21-05:00",
+ "status_at": "2026-11-23T21:32:21-05:00",
+ "finished_at": "2026-11-23T21:32:22-05:00",
+ "last_ok_at": "2026-11-23T21:32:21-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -20,12 +20,12 @@
   {
    "step": "stats",
    "status": "skipped",
-   "note": "nothing new"
+   "note": "waiting to retry"
   },
   {
    "step": "lineups",
-   "status": "skipped",
-   "note": "checked in the last 20 minutes"
+   "status": "ok",
+   "note": "4 of 4 team pages read"
   },
   {
    "step": "lineup_history",
@@ -35,7 +35,7 @@
   {
    "step": "odds",
    "status": "ok",
-   "note": "1 game(s) priced"
+   "note": "no pull due"
   },
   {
    "step": "market_menu",
@@ -44,8 +44,8 @@
   },
   {
    "step": "featured",
-   "status": "ok",
-   "note": "sides/totals for 2 game(s), 10 book(s) max, 3 credit(s)"
+   "status": "skipped",
+   "note": "no new shots read to match"
   },
   {
    "step": "book_probe",
@@ -55,7 +55,7 @@
   {
    "step": "gapguard",
    "status": "ok",
-   "note": "gap+guard: 1 close"
+   "note": "gap+guard: nothing new"
   },
   {
    "step": "engine",
@@ -74,8 +74,8 @@
   },
   {
    "step": "shadow",
-   "status": "ok",
-   "note": "34 line read(s) logged"
+   "status": "skipped",
+   "note": "nothing new"
   },
   {
    "step": "gg_grade",
@@ -97,8 +97,8 @@
   "nhl_web": "ok",
   "nhl_stats": "ok",
   "odds": "ok",
-  "dailyfaceoff": "failed",
-  "dailyfaceoff_goalies": "failed"
+  "dailyfaceoff": "ok",
+  "dailyfaceoff_goalies": "ok"
  },
  "keys": [
   {
@@ -155,17 +155,17 @@
  ],
  "excluded_teams": [],
  "stats_through": "2026-11-22",
- "lineups_at": "2026-11-23T20:40:01-05:00",
+ "lineups_at": "2026-11-23T21:32:21-05:00",
  "lineups_note": "Lineups posted for 12 of 14 teams checked so far.",
  "games_today": 7,
  "record_events": 368,
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "45306901680",
-  "iteration": 5,
-  "chain_link": 14,
+  "run_id": "45313027011",
+  "iteration": 1,
+  "chain_link": 15,
   "chain_started_at": "2026-11-23T09:55:27-05:00",
-  "run_started_at": "2026-11-23T20:41:42-05:00"
+  "run_started_at": "2026-11-23T21:31:47-05:00"
  }
 }

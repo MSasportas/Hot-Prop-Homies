@@ -43,7 +43,7 @@
   },
   "SEA": {
    "name": "Joey Daccord",
-   "status": "expected"
+   "status": "confirmed"
   },
   "ANA": {
    "name": "Lukas Dostal",
@@ -58,5 +58,5 @@
    "status": "confirmed"
   }
  },
- "checked_at": "2026-11-23T19:20:00-05:00"
+ "checked_at": "2026-11-23T21:32:21-05:00"
 }
