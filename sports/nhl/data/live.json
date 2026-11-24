@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-23",
- "generated_at": "2026-11-24T00:20:01-05:00",
+ "generated_at": "2026-11-24T00:30:00-05:00",
  "games": [
   {
    "game_id": 2026020378,
@@ -25,24 +25,24 @@
   },
   {
    "game_id": 2026020384,
-   "state": "LIVE",
+   "state": "CRIT",
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "09:15",
+   "clock": "03:23",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "MIN",
     "score": 3,
-    "sog": 25
+    "sog": 27
    },
    "home": {
     "abbrev": "SJS",
     "score": 2,
-    "sog": 21
+    "sog": 24
    },
-   "updated_at": "2026-11-24T00:20:01-05:00"
+   "updated_at": "2026-11-24T00:30:00-05:00"
   }
  ],
  "picks": {
