@@ -167,7 +167,7 @@
    }
   },
   "NO": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jeremiah Fears",
     "Herbert Jones",
@@ -296,5 +296,5 @@
    }
   }
  },
- "at": "2026-11-23T19:40:03-05:00"
+ "at": "2026-11-23T19:43:39-05:00"
 }

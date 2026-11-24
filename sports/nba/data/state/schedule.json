@@ -346,9 +346,9 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:43 - 2nd",
+    "detail": "9:04 - 2nd",
     "score": {
-     "MEM": "34",
+     "MEM": "39",
      "CHA": "32"
     }
    },
@@ -360,11 +360,11 @@
     "home": "PHI",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "10:35 - 2nd",
     "score": {
-     "POR": "30",
-     "PHI": "32"
+     "POR": "32",
+     "PHI": "40"
     }
    },
    {
@@ -373,12 +373,12 @@
     "start": "2026-11-23T19:30:00-05:00",
     "away": "OKC",
     "home": "IND",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/23 - 7:30 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "9:34 - 1st",
     "score": {
-     "OKC": "0",
+     "OKC": "4",
      "IND": "0"
     }
    },
@@ -388,13 +388,13 @@
     "start": "2026-11-23T19:30:00-05:00",
     "away": "MIL",
     "home": "TOR",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/23 - 7:30 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "11:26 - 1st",
     "score": {
      "MIL": "0",
-     "TOR": "0"
+     "TOR": "3"
     }
    },
    {
@@ -403,13 +403,13 @@
     "start": "2026-11-23T19:30:00-05:00",
     "away": "BKN",
     "home": "MIN",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/23 - 7:30 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "10:36 - 1st",
     "score": {
-     "BKN": "0",
-     "MIN": "0"
+     "BKN": "5",
+     "MIN": "5"
     }
    },
    {

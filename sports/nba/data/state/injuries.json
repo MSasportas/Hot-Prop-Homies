@@ -1,5 +1,5 @@
 {
- "at": "2026-11-23T19:40:03-05:00",
+ "at": "2026-11-23T19:43:39-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -91,13 +91,6 @@
    "team": "CHI",
    "date": "2026-11-12T21:35Z",
    "note": "Wilson (hand) is expected to miss four to six weeks, Shams Charania of ESPN reports."
-  },
-  "4683747": {
-   "status": "out",
-   "name": "Jaylon Tyson",
-   "team": "CLE",
-   "date": "2026-11-22T21:51Z",
-   "note": "Tyson (ankle) is probable for Monday's game against the Bulls."
   },
   "5106268": {
    "status": "out",
@@ -336,6 +329,13 @@
    "team": "MIN",
    "date": "2026-10-05T20:53Z",
    "note": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports."
+  },
+  "4395628": {
+   "status": "day-to-day",
+   "name": "Zion Williamson",
+   "team": "NO",
+   "date": "2026-11-22T20:50Z",
+   "note": "Williamson (thigh) is probable for Monday's game against Phoenix."
   },
   "4431675": {
    "status": "out",
