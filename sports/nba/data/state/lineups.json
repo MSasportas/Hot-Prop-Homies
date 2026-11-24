@@ -237,7 +237,7 @@
    "status": {}
   },
   "UTAH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Keyonte George",
     "Darryn Peterson",
@@ -253,12 +253,12 @@
    }
   },
   "LAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Luka Doncic",
     "Quentin Grimes",
     "Matisse Thybulle",
-    "Ziaire Williams",
+    "Jake LaRavia",
     "Walker Kessler"
    ],
    "status": {
@@ -283,7 +283,7 @@
    }
   },
   "SAC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Darius Acuff",
     "Zach LaVine",
@@ -297,5 +297,5 @@
    }
   }
  },
- "at": "2026-11-23T21:30:00-05:00"
+ "at": "2026-11-23T21:40:01-05:00"
 }
