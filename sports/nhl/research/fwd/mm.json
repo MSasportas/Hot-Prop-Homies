@@ -32,7 +32,7 @@
   "candidate": false
  },
  "MM3a persist": {
-  "bets": 108,
+  "bets": 110,
   "graded": 99,
   "w": 49,
   "units": 1.89,
@@ -42,8 +42,8 @@
    0.2052
   ],
   "p_one_sided": 0.445,
-  "mean_ev": 0.0339,
-  "mean_clv": 0.0339,
+  "mean_ev": 0.0343,
+  "mean_clv": 0.0343,
   "games": 57,
   "candidate": false
  },
