@@ -15,7 +15,7 @@
   },
   "LAK": {
    "name": "Darcy Kuemper",
-   "status": "expected"
+   "status": "confirmed"
   },
   "OTT": {
    "name": "Linus Ullmark",
@@ -27,7 +27,7 @@
   },
   "NYI": {
    "name": "Ilya Sorokin",
-   "status": "expected"
+   "status": "confirmed"
   },
   "TOR": {
    "name": "Anthony Stolarz",
@@ -58,5 +58,5 @@
    "status": "confirmed"
   }
  },
- "checked_at": "2026-11-23T14:20:00-05:00"
+ "checked_at": "2026-11-23T19:10:01-05:00"
 }
