@@ -1,19 +1,19 @@
 {
  "LL1f-follow": {
   "clv": -0.0831,
-  "l": 309,
-  "pending": 12,
+  "l": 310,
+  "pending": 9,
   "push": 0,
-  "units": -26.15,
+  "units": -25.4,
   "void": 0,
-  "w": 345
+  "w": 347
  },
  "LL3a tight": {
   "clv": 0.0307,
-  "l": 74,
-  "pending": 2,
+  "l": 75,
+  "pending": 1,
   "push": 0,
-  "units": 4.29,
+  "units": 3.29,
   "void": 0,
   "w": 76
  },
@@ -28,37 +28,37 @@
  },
  "LL4a fade": {
   "clv": -0.0686,
-  "l": 93,
-  "pending": 4,
+  "l": 95,
+  "pending": 2,
   "push": 0,
-  "units": 5.3,
+  "units": 3.3,
   "void": 0,
   "w": 109
  },
  "LL5 exch": {
   "clv": 0.0231,
-  "l": 118,
-  "pending": 2,
+  "l": 119,
+  "pending": 1,
   "push": 0,
-  "units": 10.18,
+  "units": 9.18,
   "void": 0,
   "w": 133
  },
  "LL6 line": {
   "clv": -0.015,
-  "l": 48,
-  "pending": 4,
+  "l": 50,
+  "pending": 2,
   "push": 0,
-  "units": -6.31,
+  "units": -8.31,
   "void": 0,
   "w": 75
  },
  "MM2a split": {
   "clv": -0.02,
-  "l": 11,
-  "pending": 1,
+  "l": 12,
+  "pending": 0,
   "push": 0,
-  "units": -6.11,
+  "units": -7.11,
   "void": 0,
   "w": 6
  },
@@ -73,10 +73,10 @@
  },
  "MM3a persist": {
   "clv": 0.0343,
-  "l": 52,
-  "pending": 3,
+  "l": 53,
+  "pending": 2,
   "push": 0,
-  "units": 5.2,
+  "units": 4.2,
   "void": 0,
   "w": 55
  },
@@ -100,21 +100,21 @@
  },
  "MM5a follow": {
   "clv": -0.0867,
-  "l": 52,
-  "pending": 3,
+  "l": 53,
+  "pending": 0,
   "push": 0,
-  "units": -23.57,
+  "units": -22.07,
   "void": 0,
-  "w": 21
+  "w": 23
  },
  "MM5b fade": {
   "clv": -0.0712,
-  "l": 20,
-  "pending": 3,
+  "l": 22,
+  "pending": 0,
   "push": 0,
-  "units": 8.45,
+  "units": 6.99,
   "void": 0,
-  "w": 50
+  "w": 51
  },
  "NN2fa follow market": {
   "clv": -0.0851,
@@ -164,47 +164,47 @@
  "R28a points gap": {
   "clv": 0.0557,
   "l": 0,
-  "pending": 1,
+  "pending": 0,
   "push": 0,
-  "units": 0.0,
+  "units": 0.91,
   "void": 0,
-  "w": 0
+  "w": 1
  },
  "R28b over": {
   "clv": -0.1212,
-  "l": 69,
-  "pending": 14,
+  "l": 77,
+  "pending": 3,
   "push": 0,
-  "units": -11.61,
+  "units": -16.6,
   "void": 0,
-  "w": 52
+  "w": 55
  },
  "R28b under": {
   "clv": -0.0469,
-  "l": 101,
-  "pending": 13,
+  "l": 103,
+  "pending": 9,
   "push": 0,
-  "units": 7.07,
+  "units": 7.82,
   "void": 0,
-  "w": 108
+  "w": 110
  },
  "R28c rest": {
   "clv": -0.0482,
-  "l": 161,
-  "pending": 37,
+  "l": 166,
+  "pending": 19,
   "push": 0,
-  "units": -1.04,
+  "units": 5.27,
   "void": 0,
-  "w": 184
+  "w": 197
  },
  "R28c rest mirror": {
   "clv": -0.097,
-  "l": 190,
-  "pending": 39,
+  "l": 205,
+  "pending": 19,
   "push": 0,
-  "units": -42.82,
+  "units": -53.7,
   "void": 0,
-  "w": 163
+  "w": 168
  },
  "R28d backup goalie": {
   "clv": -0.1027,
@@ -217,6 +217,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-24T04:10:21+00:00",
+ "updated_at": "2026-11-24T06:00:24+00:00",
  "version": 1
 }
