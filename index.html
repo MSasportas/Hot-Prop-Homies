@@ -114,7 +114,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .note{font-size:13px;line-height:18px;color:var(--muted);margin-top:12px}
 
 /* pick tiles: a 2-column board, newest first; a tapped tile opens full width */
-.board{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-flow:row;gap:8px;margin-top:10px}
+.board,.lvlist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-flow:row;gap:8px;margin-top:10px}
 .tile{position:relative;display:flex;flex-direction:column;min-width:0;padding:10px 10px 9px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
 .tile[role=button]{cursor:pointer}
 .tile.open{grid-column:1 / -1;border-color:var(--primary);background:var(--selected-bg)}
@@ -226,33 +226,33 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .tonight{margin-top:12px;font:400 18px/24px var(--head);letter-spacing:.01em}
 .lvupd{margin-top:6px;font-size:12.5px;line-height:17px;color:var(--muted)}
 .lvupd.bad{color:var(--warn);font-weight:600}
-/* Live cards sit two to a row, like the Picks board (2026-11-09, Matt: "so we can fit more") */
-.lvlist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:8px}
-.lv{display:flex;flex-direction:column;min-width:0;padding:9px 9px 8px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
-.lv .top{display:flex;gap:7px;align-items:center;min-width:0}
-.lv .hs{width:26px;height:26px}
-.lv .nm{flex:1;min-width:0;font:600 15px/19px var(--cond);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.lv .row2{display:flex;align-items:baseline;justify-content:space-between;gap:6px;margin-top:6px}
-.lv .bt{min-width:0;font:600 13px/17px var(--num);color:var(--fg2);overflow-wrap:anywhere}
-.lv .pp{flex:none;font:600 14px/17px var(--num);color:var(--muted);white-space:nowrap}
-.lv .gs{margin-top:auto;padding-top:7px;font-size:12.5px;line-height:17px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.lv .gs b{color:var(--fg);font-weight:600}
-.lv .gs .sc{white-space:nowrap}
+/* A Live tile is a Picks tile (.tile.lv): same shell, name, bet and price; it adds a tracker and a game block. Nothing here clips: fitLines() steps the text down. */
+.lv .trk2{display:flex;flex-direction:column;gap:4px;margin-top:8px;min-width:0}
+.lv .lva{display:flex;flex-wrap:wrap;align-items:center;gap:4px 6px;min-width:0}
 .lv .pips{gap:3px} .lv .pip{width:11px;height:11px}
-.lv .trk2 .meter{flex:1 1 56px;width:auto;min-width:0}
-.lv .trk2 .msg{flex:1 0 100%;min-width:0;font:600 13px/17px var(--num);color:var(--fg);overflow-wrap:anywhere}
-.lv .trk2 .stmp{flex:none;margin:0 0 0 auto;padding:0 5px;font-size:12px}
-.lv.fin .trk2 .msg{color:var(--fg2)}
+.lv .lva .meter{flex:1 1 48px;width:auto;min-width:48px}
+.lv .lva .stmp{flex:none;margin:0 0 0 auto;padding:0 5px;font-size:12px}
+.lv .lvn,.lv .lvh,.lv .lvg1,.lv .lvg2{display:block;min-width:0;overflow:hidden;white-space:nowrap}
+.lv .lvn{font:600 16px/20px var(--num);color:var(--fg)}
+.lv .lvn.st{font:400 13px/18px var(--body);color:var(--fg2)}
+.lv .lvh{font:400 12px/16px var(--body);color:var(--muted)}
+.lv .lvg{margin-top:auto;padding-top:8px;min-width:0}
+.lv .lvg1{font:600 13px/17px var(--body);color:var(--fg)}
+.lv .lvg2{font:400 12.5px/17px var(--body);color:var(--muted);font-variant-numeric:tabular-nums}
+.lv .lvg2 b{color:var(--fg);font-weight:600}
+.lv .lvg2 .stk{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:0 8px}
+.lv .lvg2 .stk b{color:var(--fg2);font-weight:400;text-align:right}
+.lv .lvg2 .stk .ld,.lv .lvg2 .stk .ld+b{color:var(--fg);font-weight:700}
+.lv .ft .lvtl{color:var(--warn);font-weight:700;letter-spacing:.06em;white-space:nowrap}
+.lv.fin .nm,.lv.fin .pr,.lv.fin .lvn,.lv.fin .lvg1,.lv.fin .lvg2 b,.lv.fin .lvg2 .stk .ld+b{color:var(--fg2)}
 .stmp{display:inline-block;margin-top:5px;padding:1px 6px;border:1.5px solid var(--muted);border-radius:4px;color:var(--muted);font:700 13px/16px var(--cond);letter-spacing:.1em}
 .stmp.W{border-color:var(--good);color:var(--good)} .stmp.L{border-color:var(--bad);color:var(--bad)}
-.trk2{display:flex;flex-wrap:wrap;align-items:center;gap:5px 8px;margin-top:8px;font-size:12.5px;line-height:17px;color:var(--fg2)}
 .pips{display:inline-flex;gap:4px;align-items:center}
 .pip{width:13px;height:13px;border-radius:50%;border:1.5px solid var(--line2);background:transparent}
 .pip.on{background:var(--good);border-color:var(--good)}
 .pip.used{background:var(--warn);border-color:var(--warn)}
 .pip.lose{border-color:var(--bad)}
 .pip.lose.on{background:var(--bad)}
-.lv.fin .nm,.lv.fin .pp{color:var(--fg2)}
 .lv.open{grid-column:1 / -1;border-color:var(--accent);background:var(--accent-soft)}
 .lv.open .nm{color:var(--fg)}
 .lv-xp{margin-top:10px;padding-top:8px;border-top:1px solid var(--line);font-size:12.5px;line-height:18px;color:var(--fg2)}
@@ -838,11 +838,7 @@ function headshot(p) {
   var u = S.heads && p && p.pid != null ? str(S.heads[str(p.pid)]) : '';
   if (!HS_RE.test(u)) return null;
   var im = h('img', { class: 'hs', src: u, alt: '', loading: 'lazy', decoding: 'async', width: '30', height: '30', referrerpolicy: 'no-referrer' });
-  im.addEventListener('error', function () {
-    var pn = im.parentNode; if (!pn) return;
-    /* a Live row is a grid whose first column is the photo: keep the slot, or the name falls into the 30px column */
-    if (pn.classList && pn.classList.contains('lv')) pn.replaceChild(document.createElement('span'), im); else pn.removeChild(im);
-  });
+  im.addEventListener('error', function () { if (im.parentNode) im.parentNode.removeChild(im); });
   return im;
 }
 
@@ -1191,12 +1187,29 @@ function fitName(nm) {
   ln.classList.add('brk');
   if (!fitsLine(ln)) { ln.classList.remove('brk'); ln.classList.add('ell'); }
 }
-function fitNames() { Array.prototype.forEach.call(app.querySelectorAll('.tile .nm[data-last]'), fitName); }
+/* Any line that must never clip: data-fit holds its tiers (font size, replacement text, or which variant child shows), tried in order; the first one that fits stays. */
+function fitSpec(el, tiers) { el.setAttribute('data-fit', JSON.stringify(tiers)); return el; }
+function fitLine(el) {
+  var tiers = JSON.parse(el.getAttribute('data-fit')), i, t;
+  for (i = 0; i < tiers.length; i++) {
+    t = tiers[i];
+    el.style.fontSize = t.size ? t.size + 'px' : '';
+    if (t.text != null) el.textContent = t.text;
+    if (t.v) Array.prototype.forEach.call(el.children, function (c) { c.hidden = c.getAttribute('data-k') !== t.v; });
+    if (fitsLine(el)) return;
+  }
+}
+function fitLines() { Array.prototype.forEach.call(app.querySelectorAll('[data-fit]'), fitLine); }
+function fitNames() { Array.prototype.forEach.call(app.querySelectorAll('.tile .nm[data-last]'), fitName); fitLines(); }
 function tileTop(p, open, mark) {
   var full = str(p.player).trim();
   return h('div', { class: 'top' }, mark || headshot(p), nameBlock(full || 'Player not named', !open && !!full));
 }
-function sportBadge(p) { return (S.sport === 'all' && p.sport) ? h('span', { class: 'sp-badge ' + p.sport, text: p.sport.toUpperCase() }) : null; }
+/* sport: the pick's sport where S.sport is not 'all' while the tile is built (Live in All sets S.sport per sport) */
+function sportBadge(p, sport) {
+  var sp = sport || (S.sport === 'all' ? p.sport : null);
+  return sp ? h('span', { class: 'sp-badge ' + sp, text: sp.toUpperCase() }) : null;
+}
 function tilePrice(p) {
   var np = num(p.price) == null;
   return h('div', { class: 'row2' }, h('span', { class: 'bt', text: betShort(p) }),
@@ -1785,7 +1798,9 @@ function livePoll() {
   var forceE = !!FIX && (FEED_Q === 'espnfail' || FEED_Q === 'allfail'), forceN = !!FIX && FEED_Q === 'allfail';
   var forced = function (pr, on) { return on ? pr.then(function () { throw new Error('forced'); }) : pr; };
   var primary;
-  if (S.sport === 'all') {
+  /* QA: a fixture slate may carry its own feed (fixture_live: games, stats, done) so Live states show without the network */
+  if (FIX && isObj(S.slate.fixture_live)) primary = Promise.resolve(Object.assign({ src: 'fixture', games: {}, stats: {}, done: {} }, S.slate.fixture_live));
+  else if (S.sport === 'all') {
     var subPlan = function (sp) {
       var st = pl.d.started.filter(function (p) { return p.sport === sp; });
       var nd = {}; st.forEach(function (p) { if (!isObj(p.result) && p.game_id != null && !L.done[str(p.game_id)]) nd[str(p.game_id)] = 1; });
@@ -1825,19 +1840,19 @@ function liveTick() {
 function clockSec(c) { var s = str(c); if (!s) return 0; var m = /^(\d+):(\d+(?:\.\d+)?)$/.exec(s); if (m) return parseInt(m[1], 10) * 60 + parseFloat(m[2]); return parseFloat(s) || 0; }
 function pickProgress(p, games) { var lg = liveGame(p.game_id); if (!lg || lg.state === 'pre') return 0; var per = num(lg.period) || 0; return per * 10000 - (lg.in_break ? 0 : clockSec(str(lg.clock))); }
 function gameLine(p, d) {
-  var lg = liveGame(p.game_id), g = d.games[p.game_id], score = null, st, n = lg ? num(lg.period) : null, clk = lg ? str(lg.clock) : '';
+  var lg = liveGame(p.game_id), g = d.games[p.game_id], score = null, st, short = null, n = lg ? num(lg.period) : null, clk = lg ? str(lg.clock) : '';
   var nhl = (str(p.sport) || S.sport) === 'nhl';
   if (lg && g && num(lg.away.score) != null && num(lg.home.score) != null)
-    score = str(g.away) + ' ' + lg.away.score + '-' + lg.home.score + ' ' + str(g.home);
+    score = { away: str(g.away), as: lg.away.score, home: str(g.home), hs: lg.home.score };
   var ot = n != null && n > (nhl ? 3 : 4) ? (n === (nhl ? 4 : 5) ? 'OT' : (n - (nhl ? 3 : 4)) + 'OT') : null;
   if (isObj(p.result) || isFinalGame(lg) || (g && g.state === 'post')) st = 'Final' + (ot ? ' (' + ot + ')' : '');
-  else if (!lg || !lg.state) st = 'Started' + (fTime(pickStart(p, d.games)) ? ' ' + fTime(pickStart(p, d.games)) : '');
+  else if (!lg || !lg.state) { st = 'Started'; if (fTime(pickStart(p, d.games))) { short = st; st += ' ' + fTime(pickStart(p, d.games)); } }
   else if (lg.state === 'pre') st = 'Starting';
   else if (lg.in_break && /half/i.test(str(lg.detail))) st = nhl ? 'Intermission' : 'Half';
   else if (lg.in_break) st = 'End ' + (ot || (n != null ? (nhl ? 'P' : 'Q') + n : (nhl ? 'of period' : 'of quarter')));
   else st = (ot || (n != null ? (nhl ? 'P' : 'Q') + n : 'In play')) + (clk ? ' ' + clk : '');
   var mu = muNodes(p, d.games, false);
-  return { status: st, score: score, mu: mu };
+  return { status: st, short: short, score: score, mu: mu };
 }
 /* the player's number so far: the Record's grade once graded, else this session's live read */
 function liveStat(p) {
@@ -1849,9 +1864,9 @@ function liveStat(p) {
 }
 function liveDnp(p) { var x = liveOK() ? L.stats[str(p.id)] : null; return !!(x && x.dnp); }
 /* tracker: pips for small lines (under 6), else a meter "14 / 21.5". Over: HIT once stat > line; under: LOST once stat > line.
-   The other outcome only at the final. Returns {el, msg, stamp} */
+   The other outcome only at the final. Returns {el, stamp} plus {num, noun, help} (his number) or {msg} (no number yet) */
 function tracker(p, s, fin, dnp) {
-  var ln = num(p.line), side = str(p.side), noun = NOUN[str(p.market)] || '', stamp = null, msg, el, i;
+  var ln = num(p.line), side = str(p.side), noun = NOUN[str(p.market)] || '', stamp = null, el, i;
   if (ln == null || (side !== 'over' && side !== 'under')) return null;
   var k = s == null ? 0 : s, over = k > ln;
   if (side === 'over' && s != null && over) stamp = 'HIT';
@@ -1873,30 +1888,72 @@ function tracker(p, s, fin, dnp) {
     fill.style.width = Math.min(100, k / max * 100) + '%'; el.appendChild(fill);
     var tick = h('u'); tick.style.left = (ln / max * 100) + '%'; el.appendChild(tick);
   }
-  if (s == null) msg = (L.fail && L.lastTry != null) ? 'Live stats unavailable' : (L.at == null ? 'Getting live stats\u2026' : (dnp ? (fin ? 'Did not play' : 'Has not played yet') : 'No stats yet'));
-  else {
-    msg = k + ' / ' + ln + (noun ? ' ' + noun : '');
-    if (!fin && !stamp) msg += side === 'over' ? ', needs ' + (Math.floor(ln) + 1 - k) + ' more' : ', ' + (Math.floor(ln) - k) + ' to spare';
-  }
-  return { el: el, msg: msg, stamp: stamp };
+  if (s == null) return { el: el, msg: (L.fail && L.lastTry != null) ? 'Stats unavailable' : (L.at == null ? 'Getting stats\u2026' : (dnp ? (fin ? 'Did not play' : 'Not played yet') : 'No stats yet')), stamp: stamp };
+  var left = side === 'over' ? Math.floor(ln) + 1 - k : Math.floor(ln) - k;
+  return { el: el, num: k + ' / ' + ln, noun: noun, stamp: stamp,
+    help: (fin || stamp) ? null : (side === 'over' ? ['needs ' + left + ' more', left + ' to go'] : [left + ' to spare', left + ' left']) };
 }
 var FINAL_STAMP = { W: ['WON', 'W'], L: ['LOST', 'L'], VOID: ['VOID', ''], PUSH: ['PUSH', ''] };
-function liveRow(p, d) {
-  var gl = gameLine(p, d), s = liveStat(p), fin = pickFinal(p), r = isObj(p.result) ? p.result : null, tk = tracker(p, s, fin, liveDnp(p)), st = null;
-  if (r && FINAL_STAMP[str(r.result)]) st = FINAL_STAMP[str(r.result)];
-  else if (tk && tk.stamp === 'HIT') st = ['HIT', 'W'];
-  else if (tk && tk.stamp === 'LOST') st = ['LOST', 'L'];
-  /* a card, two to a row: photo + name / bet + posted price / tracker + stamp + his number / game clock + score */
-  var stmp = st ? h('span', { class: 'stmp ' + st[1], text: st[0] }) : null, trk = null;
-  if (r && str(r.result) === 'VOID') trk = h('div', { class: 'trk2' }, stmp, h('span', { class: 'msg', text: str(r.actual) || 'Void' }));
-  else if (tk) trk = h('div', { class: 'trk2' }, tk.el, stmp, h('span', { class: 'msg', text: tk.msg }));
-  else if (stmp) trk = h('div', { class: 'trk2' }, stmp);
-  return h('div', { class: 'lv' + (fin ? ' fin' : ''), 'data-id': str(p.id) },
-    h('div', { class: 'top' }, headshot(p), h('div', { class: 'nm', text: p.player || 'Player not named' })),
-    h('div', { class: 'row2' }, h('span', { class: 'bt', text: str(p.bet) || 'Bet not posted' }),
-      h('span', { class: 'pp', text: odds(p.price), title: 'Posted Hard Rock price' })),
-    trk,
-    h('div', { class: 'gs' }, h('b', { text: gl.status }), ' \u00b7 ', gl.score ? h('span', { class: 'sc', text: gl.score }) : gl.mu));
+/* [label, class] for the stamp: the Record's grade once graded, else HIT / LOST as it happens */
+function liveStamp(result, tk) {
+  if (FINAL_STAMP[result]) return FINAL_STAMP[result];
+  if (tk && tk.stamp === 'HIT') return ['HIT', 'W'];
+  return tk && tk.stamp === 'LOST' ? ['LOST', 'L'] : null;
+}
+/* his number never wraps: 16, 14, 13 px, then the noun goes; the helper under it falls back to its short copy */
+function numLine(tk) {
+  if (tk.msg) return h('span', { class: 'lvn st', text: tk.msg });
+  var full = tk.num + (tk.noun ? ' ' + tk.noun : ''), tiers = [16, 14, 13].map(function (z) { return { size: z, text: full }; });
+  if (tk.noun) tiers.push({ size: 13, text: tk.num });
+  return fitSpec(h('span', { class: 'lvn', text: full }), tiers);
+}
+function trackBlock(tk, st, voidText) {
+  var stmp = st ? h('span', { class: 'stmp ' + st[1], text: st[0] }) : null, graphic = voidText ? null : (tk && tk.el);
+  if (!graphic && !stmp) return null;
+  var out = h('div', { class: 'trk2' }, h('div', { class: 'lva' }, graphic, stmp));
+  if (voidText) out.appendChild(h('span', { class: 'lvn st', text: voidText }));
+  else if (tk) {
+    out.appendChild(numLine(tk));
+    if (tk.help) out.appendChild(fitSpec(h('span', { class: 'lvh', text: tk.help[0] }), tk.help.map(function (t) { return { text: t }; })));
+  }
+  return out;
+}
+/* the score steps 12.5 px, 12 px, then a two-row scoreboard; the matchup drops his team's pill last */
+function scoreLine(gl) {
+  var sc = gl.score, el, tiers;
+  if (sc) {
+    var lead = sc.as > sc.hs ? 'a' : (sc.hs > sc.as ? 'h' : '');
+    var row = function (ab, n, ld) { return [h('span', { class: ld ? 'ld' : null, text: ab }), h('b', { text: String(n) })]; };
+    el = h('span', { class: 'lvg2' },
+      h('span', { 'data-k': 'one' }, sc.away + ' ', h('b', { text: String(sc.as) }), ' - ', h('b', { text: String(sc.hs) }), ' ' + sc.home),
+      h('span', { 'data-k': 'stk', class: 'stk' }, row(sc.away, sc.as, lead === 'a'), row(sc.home, sc.hs, lead === 'h')));
+    tiers = [{ size: 12.5, v: 'one' }, { size: 12, v: 'one' }, { size: 12.5, v: 'stk' }];
+  } else {
+    if (!gl.mu.length) return null;
+    var opp = gl.mu.length > 1 && typeof gl.mu[1] === 'string' ? gl.mu[1].trim() : null;
+    el = h('span', { class: 'lvg2' }, h('span', { 'data-k': 'one' }, gl.mu), opp ? h('span', { 'data-k': 'alt', text: opp }) : null);
+    tiers = opp ? [{ v: 'one' }, { v: 'alt' }] : [{ v: 'one' }];
+  }
+  return fitSpec(el, tiers);
+}
+function gameBlock(gl) {
+  var st = h('span', { class: 'lvg1', text: gl.status });
+  if (gl.short) fitSpec(st, [{ text: gl.status }, { text: gl.short }]);
+  return h('div', { class: 'lvg' }, st, scoreLine(gl));
+}
+/* One Live tile for the Live tab and Lab "Today": the Picks tile (photo, stacked name, bet, price) plus tracker and game block.
+   o: fin, result ('W'/'L'/...), actual, tk (tracker), sport (badge), late (TOO LATE tag), cls */
+function liveTile(p, d, o) {
+  var late = o.late ? h('span', { class: 'lvtl', text: 'TOO LATE', title: 'Came off the board before tip. Still counts on the Record.' }) : null, badge = sportBadge(p, o.sport);
+  return h('div', { class: 'tile lv' + (o.fin ? ' fin' : '') + (o.cls || '') }, tileTop(p, false), tilePrice(p),
+    trackBlock(o.tk, liveStamp(o.result, o.tk), o.result === 'VOID' ? (o.actual || 'Void') : null),
+    late || badge ? h('div', { class: 'ft' }, late, badge) : null, gameBlock(gameLine(p, d)));
+}
+function liveRow(p, d, sport) {
+  var r = isObj(p.result) ? p.result : null, fin = pickFinal(p);
+  var tile = liveTile(p, d, { fin: fin, result: r ? str(r.result) : '', actual: r ? str(r.actual) : '', tk: tracker(p, liveStat(p), fin, liveDnp(p)), sport: sport, late: !!p.pulled });
+  tile.setAttribute('data-id', str(p.id));
+  return tile;
 }
 function renderLive() {
   if (S.sport === 'all') { renderLiveAll(); return; }
@@ -2047,14 +2104,12 @@ function renderLiveAll() {
     S.sport = sp; S.slate = r.slate.v; S.record = r.record.ok ? r.record.v : null;
     var d = split();
     if (!d.started.length) { S.sport = savedSport; S.slate = savedSlate; S.record = savedRecord; return; }
-    var label = sp === 'nba' ? 'NBA' : 'NHL';
-    app.appendChild(h('div', { class: 'sport-sec-h' }, h('span', { class: 'sp-badge ' + sp, text: label })));
     var list = h('div', { class: 'lvlist' });
     var on2 = d.started.filter(function(p){ return !pickFinal(p); }), done2 = d.started.filter(pickFinal);
     var byStart2 = function(a,b){ return (ms(a.start)||0) - (ms(b.start)||0); };
     var byProg2 = function(a,b){ var pa = pickProgress(a, d.games), pb = pickProgress(b, d.games); return pa !== pb ? pb - pa : byStart2(a,b); };
     on2.sort(byProg2); done2.sort(byStart2);
-    on2.concat(done2).forEach(function (p) { list.appendChild(liveRow(p, d)); });
+    on2.concat(done2).forEach(function (p) { list.appendChild(liveRow(p, d, sp)); });
     app.appendChild(list);
     S.sport = savedSport; S.slate = savedSlate; S.record = savedRecord;
   });
@@ -2838,31 +2893,10 @@ function labPickFinal(bet) {
 function labLiveRow(bet, test, d) {
   S.labTodayOpen = S.labTodayOpen || {};
   var openKey = str(test.id) + '/' + str(bet.game_id) + '/' + str(bet.pid) + '/' + str(bet.market) + '/' + str(bet.side);
-  var open = !!S.labTodayOpen[openKey], fin = labPickFinal(bet), s = labLiveStat(bet), tk = tracker(bet, s, fin, labLiveDnp(bet));
-  var stPair = null;
-  if (bet.result && FINAL_STAMP[bet.result]) stPair = FINAL_STAMP[bet.result];
-  else if (tk && tk.stamp === 'HIT') stPair = ['HIT', 'W'];
-  else if (tk && tk.stamp === 'LOST') stPair = ['LOST', 'L'];
-  var stmp = stPair ? h('span', { class: 'stmp ' + stPair[1], text: stPair[0] }) : null, trk = null;
-  if (bet.result === 'VOID') trk = h('div', { class: 'trk2' }, stmp, h('span', { class: 'msg', text: str(bet.actual) || 'Void' }));
-  else if (tk) trk = h('div', { class: 'trk2' }, tk.el, stmp, h('span', { class: 'msg', text: tk.msg }));
-  else if (stmp) trk = h('div', { class: 'trk2' }, stmp);
-  var gl = gameLine(bet, d);
-  var spCls = str(test._sp) || (S.sport !== 'all' ? S.sport : 'nba');
-  var card = h('div', { class: 'lv' + (fin ? ' fin' : '') + (open ? ' open' : ''), 'data-labkey': openKey, role: 'button', tabindex: '0' });
-  card.appendChild(h('div', { class: 'top' },
-    headshot(bet),
-    h('div', { class: 'nm', text: str(bet.player) || 'Player not named' }),
-    h('span', { class: 'sp-badge ' + spCls, style: 'margin-left:auto;flex:none', text: spCls.toUpperCase() })
-  ));
-  card.appendChild(h('div', { class: 'row2' },
-    h('span', { class: 'bt', text: betShort(bet) }),
-    h('span', { class: 'pp', text: odds(bet.price) })
-  ));
-  if (trk) card.appendChild(trk);
-  var _glTrail = gl.score ? h('span', { class: 'sc', text: gl.score }) : gl.mu;
-  var _hasSep = gl.score || (Array.isArray(gl.mu) && gl.mu.length > 0);
-  card.appendChild(h('div', { class: 'gs' }, h('b', { text: gl.status }), _hasSep ? ' · ' : null, _glTrail));
+  var open = !!S.labTodayOpen[openKey], fin = labPickFinal(bet);
+  var card = liveTile(bet, d, { fin: fin, result: str(bet.result), actual: str(bet.actual), tk: tracker(bet, labLiveStat(bet), fin, labLiveDnp(bet)),
+    sport: str(test._sp) || (S.sport !== 'all' ? S.sport : 'nba'), cls: open ? ' open' : '' });
+  card.setAttribute('data-labkey', openKey); card.setAttribute('role', 'button'); card.setAttribute('tabindex', '0');
   if (open) {
     var xp = h('div', { class: 'lv-xp' });
     xp.appendChild(h('div', null, h('b', { text: labName(test) })));
