@@ -346,10 +346,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:00 - 3rd",
+    "detail": "9:35 - 4th",
     "score": {
-     "MEM": "84",
-     "CHA": "81"
+     "MEM": "94",
+     "CHA": "85"
     }
    },
    {
@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:24 - 3rd",
+    "detail": "10:07 - 4th",
     "score": {
-     "POR": "96",
-     "PHI": "88"
+     "POR": "109",
+     "PHI": "94"
     }
    },
    {
@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "11:07 - 3rd",
+    "detail": "6:54 - 3rd",
     "score": {
-     "OKC": "53",
-     "IND": "59"
+     "OKC": "68",
+     "IND": "76"
     }
    },
    {
@@ -390,11 +390,11 @@
     "home": "TOR",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:22 - 3rd",
     "score": {
-     "MIL": "49",
-     "TOR": "53"
+     "MIL": "57",
+     "TOR": "63"
     }
    },
    {
@@ -405,11 +405,11 @@
     "home": "MIN",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "9:05 - 3rd",
     "score": {
-     "BKN": "61",
-     "MIN": "74"
+     "BKN": "69",
+     "MIN": "77"
     }
    },
    {
@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:03 - 2nd",
+    "detail": "4:35 - 2nd",
     "score": {
-     "CLE": "38",
-     "CHI": "44"
+     "CLE": "40",
+     "CHI": "59"
     }
    },
    {
@@ -436,10 +436,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:03 - 2nd",
+    "detail": "2:53 - 2nd",
     "score": {
-     "PHX": "45",
-     "NO": "47"
+     "PHX": "52",
+     "NO": "49"
     }
    },
    {
@@ -451,10 +451,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:47 - 1st",
+    "detail": "2:07 - 1st",
     "score": {
-     "LAC": "8",
-     "HOU": "12"
+     "LAC": "13",
+     "HOU": "21"
     }
    },
    {
