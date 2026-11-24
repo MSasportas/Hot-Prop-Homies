@@ -346,10 +346,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:37 - 1st",
+    "detail": "9:43 - 2nd",
     "score": {
-     "MEM": "28",
-     "CHA": "24"
+     "MEM": "34",
+     "CHA": "32"
     }
    },
    {
@@ -360,11 +360,11 @@
     "home": "PHI",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:23 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
-     "POR": "25",
-     "PHI": "26"
+     "POR": "30",
+     "PHI": "32"
     }
    },
    {

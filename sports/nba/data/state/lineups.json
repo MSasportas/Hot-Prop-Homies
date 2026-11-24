@@ -154,7 +154,7 @@
    }
   },
   "PHX": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Devin Booker",
     "Jalen Green",
@@ -171,12 +171,11 @@
    "starters": [
     "Jeremiah Fears",
     "Herbert Jones",
-    "Saddiq Bey",
+    "Trey Murphy",
     "Zion Williamson",
     "Yves Missi"
    ],
    "status": {
-    "Zion Williamson": "probable",
     "Bennedict Mathurin": "out",
     "Dejounte Murray": "out",
     "Trendon Watford": "out"
@@ -197,7 +196,7 @@
    }
   },
   "CHI": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Josh Giddey",
     "Buddy Hield",
@@ -297,5 +296,5 @@
    }
   }
  },
- "at": "2026-11-23T19:30:01-05:00"
+ "at": "2026-11-23T19:40:03-05:00"
 }
