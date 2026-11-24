@@ -1,0 +1,12 @@
+{
+ "updated_at": "2026-11-23T05:00:00-05:00",
+ "total": {
+  "w": 0,
+  "l": 0,
+  "push": 0,
+  "units": 0,
+  "pending": 5,
+  "void": 0
+ },
+ "nights": []
+}
