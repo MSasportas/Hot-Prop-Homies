@@ -72,23 +72,23 @@ def block_clv(block):
     return clv if isinstance(clv, (int, float)) else None
 
 
-def final_stats(track, block):
-    """Graded-bet numbers for a track. A fade track (a pass means the bet side loses) is mirrored."""
+def final_stats(block):
+    """Graded-bet numbers for a track, exactly as its summary tallies the bet. A fade test's summary already tallies the bet it
+    implies (the opposite side at its own posted price), so nothing is mirrored here: mirroring would ignore the vig."""
     w, l = int(block.get("w") or 0), int(block.get("l") or 0)
     k = w + l
-    sign = -1 if track.get("direction") == "fade" else 1
-    units = sign * float(block.get("units") or 0)
+    units = float(block.get("units") or 0)
     clv = block_clv(block)
     return {"w": w, "l": l, "push": int(block.get("push") or 0), "void": int(block.get("void") or 0),
             "pending": int(block.get("pending") or 0), "units": round(units, 2), "k": k,
             "roi": units / k if k else 0.0, "se": 1 / math.sqrt(k) if k else None,
-            "clv": None if clv is None else sign * clv}
+            "clv": clv}
 
 
 def evaluate(track, block):
     """One night's verdict for a track: {"verdict": retire|ready|keep|skip, "reason", "final", "roi_upper95"}.
     `retire` here is the single-night condition; run() applies the two-night streak."""
-    f = final_stats(track, block)
+    f = final_stats(block)
     k, need = f["k"], track["need"]
     out = {"verdict": "skip", "reason": None, "final": f, "roi_upper95": None}
     if k < MIN_K:

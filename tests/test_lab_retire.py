@@ -56,18 +56,13 @@ class Evaluate(unittest.TestCase):
         self.assertEqual(self.verdict(300, 0)["reason"], lr.CAP)
         self.assertEqual(self.verdict(299, 0)["verdict"], "keep")
 
-    def test_fade_track_mirrors_roi(self):
-        direct = self.verdict(150, -25)
-        fade = self.verdict(150, -25, track={"direction": "fade"})
-        self.assertEqual(direct["verdict"], "retire")
-        self.assertEqual(fade["verdict"], "ready")
-        self.assertEqual(fade["final"]["units"], 25)
-        self.assertEqual(self.verdict(150, 25, track={"direction": "fade"})["reason"], lr.FAIL_FULL)
+    def test_a_fade_track_is_judged_on_its_summarys_bet_side_units_unmirrored(self):
+        for direction in ("fade", None):
+            v = self.verdict(150, -25, track={"direction": direction} if direction else {})
+            self.assertEqual((v["verdict"], v["final"]["units"]), ("retire", -25), direction)
 
-    def test_fade_mirrors_clv(self):
-        v = self.verdict(150, 25, clv=0.03, track={"direction": "fade"})
-        self.assertEqual(v["reason"], lr.FAIL_FULL)
-        self.assertEqual(v["final"]["clv"], -0.03)
+    def test_clv_is_not_mirrored(self):
+        self.assertEqual(self.verdict(150, 25, clv=0.03, track={"direction": "fade"})["final"]["clv"], 0.03)
 
 
 class Pages(unittest.TestCase):
