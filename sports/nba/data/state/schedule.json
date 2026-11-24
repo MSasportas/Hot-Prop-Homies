@@ -466,9 +466,9 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:05 - 3rd",
+    "detail": "1:27 - 3rd",
     "score": {
-     "UTAH": "70",
+     "UTAH": "72",
      "LAL": "71"
     }
    },
@@ -480,10 +480,10 @@
     "home": "SAC",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "52.6 - 3rd",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 3rd",
     "score": {
-     "SA": "89",
+     "SA": "92",
      "SAC": "74"
     }
    }
