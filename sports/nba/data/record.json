@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-23T22:00:00-05:00",
+ "generated_at": "2026-11-23T22:30:01-05:00",
  "summary": {
   "headline": {
-   "w": 66,
+   "w": 67,
    "l": 49,
    "push": 0,
    "void": 2,
-   "units": 13.39,
-   "hit_rate": 0.5739,
+   "units": 14.35,
+   "hit_rate": 0.5776,
    "needed": 0.5179,
-   "n": 115
+   "n": 116
   },
   "rows": [
    {
@@ -27,14 +27,14 @@
    {
     "key": "points",
     "label": "Points",
-    "w": 24,
+    "w": 25,
     "l": 18,
     "push": 0,
     "void": 2,
-    "units": 2.16,
-    "hit_rate": 0.5714,
-    "needed": 0.5407,
-    "n": 42
+    "units": 3.11,
+    "hit_rate": 0.5814,
+    "needed": 0.5401,
+    "n": 43
    },
    {
     "key": "assists",
@@ -171,14 +171,14 @@
    {
     "key": "window:360 \u2192 240 min",
     "label": "Window 360 \u2192 240 min",
-    "w": 3,
+    "w": 4,
     "l": 2,
     "push": 0,
     "void": 0,
-    "units": 0.82,
-    "hit_rate": 0.6,
-    "needed": 0.5154,
-    "n": 5
+    "units": 1.77,
+    "hit_rate": 0.6667,
+    "needed": 0.5149,
+    "n": 6
    },
    {
     "key": "window:45 \u2192 30 min",
@@ -284,14 +284,14 @@
      {
       "key": "points",
       "label": "Points",
-      "w": 24,
+      "w": 25,
       "l": 18,
       "push": 0,
       "void": 2,
-      "units": 2.16,
-      "hit_rate": 0.5714,
-      "needed": 0.5407,
-      "n": 42,
+      "units": 3.11,
+      "hit_rate": 0.5814,
+      "needed": 0.5401,
+      "n": 43,
       "ids": [
        "2026-11-23:401910041:5041951:points:9.5:over",
        "2026-11-23:401910043:3202:points:21.5:under",
@@ -422,14 +422,14 @@
      {
       "key": "over",
       "label": "Over",
-      "w": 23,
+      "w": 24,
       "l": 12,
       "push": 0,
       "void": 1,
-      "units": 12.08,
-      "hit_rate": 0.6571,
-      "needed": 0.4969,
-      "n": 35,
+      "units": 13.04,
+      "hit_rate": 0.6667,
+      "needed": 0.4973,
+      "n": 36,
       "ids": [
        "2026-11-23:401910038:4900671:assists:3.5:over",
        "2026-11-23:401910040:4431671:assists:3.5:over",
@@ -578,14 +578,14 @@
      {
       "key": "e0",
       "label": "0 to 2%",
-      "w": 49,
+      "w": 50,
       "l": 35,
       "push": 0,
       "void": 1,
-      "units": 10.65,
-      "hit_rate": 0.5833,
-      "needed": 0.5225,
-      "n": 84,
+      "units": 11.6,
+      "hit_rate": 0.5882,
+      "needed": 0.5224,
+      "n": 85,
       "ids": [
        "2026-11-23:401910040:4431671:assists:3.5:over",
        "2026-11-23:401910041:5041951:points:9.5:over",
@@ -777,14 +777,14 @@
      {
       "key": "clear",
       "label": "Injury report clear",
-      "w": 54,
+      "w": 55,
       "l": 36,
       "push": 0,
       "void": 0,
-      "units": 14.41,
-      "hit_rate": 0.6,
-      "needed": 0.5211,
-      "n": 90,
+      "units": 15.36,
+      "hit_rate": 0.6044,
+      "needed": 0.521,
+      "n": 91,
       "ids": [
        "2026-11-23:401910038:4900671:assists:3.5:over",
        "2026-11-23:401910040:4431671:assists:3.5:over",
@@ -972,14 +972,14 @@
      {
       "key": "fav",
       "label": "-100 to -150",
-      "w": 43,
+      "w": 44,
       "l": 30,
       "push": 0,
       "void": 2,
-      "units": 4.49,
-      "hit_rate": 0.589,
-      "needed": 0.5501,
-      "n": 73,
+      "units": 5.45,
+      "hit_rate": 0.5946,
+      "needed": 0.5496,
+      "n": 74,
       "ids": [
        "2026-11-23:401910038:4900671:assists:3.5:over",
        "2026-11-23:401910041:5041951:points:9.5:over",
@@ -1067,11 +1067,11 @@
   "days": [
    {
     "date": "2026-11-23",
-    "w": 1,
+    "w": 2,
     "l": 1,
     "push": 0,
     "void": 0,
-    "units": 0.15,
+    "units": 1.1,
     "n": 6,
     "graded": false
    },
@@ -1311,9 +1311,9 @@
   {
    "date": "2026-11-23",
    "graded": false,
-   "w": 1,
+   "w": 2,
    "l": 1,
-   "units": 0.15,
+   "units": 1.1,
    "entries": [
     {
      "id": "2026-11-23:401910038:4900671:assists:3.5:over",
@@ -1384,9 +1384,9 @@
        "at": "2026-11-23T16:00:01-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "13 points",
+     "units": 0.9524,
      "pulled": {
       "at": "2026-11-23T19:40:03-05:00",
       "reason": "Hard Rock took the line down",
