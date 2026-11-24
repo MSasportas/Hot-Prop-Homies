@@ -466,10 +466,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:10 - 3rd",
+    "detail": "3:05 - 3rd",
     "score": {
-     "UTAH": "57",
-     "LAL": "56"
+     "UTAH": "70",
+     "LAL": "71"
     }
    },
    {
@@ -481,10 +481,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:56 - 3rd",
+    "detail": "52.6 - 3rd",
     "score": {
-     "SA": "84",
-     "SAC": "64"
+     "SA": "89",
+     "SAC": "74"
     }
    }
   ]
