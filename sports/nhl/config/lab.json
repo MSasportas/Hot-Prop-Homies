@@ -1,6 +1,6 @@
 {
  "note": "The page's Lab tab. Matt 2026-11-12: EVERYTHING being tested is listed here (live-tracked paper tests and the Researcher's forward tests). Each entry's numbers come live from its summary file. Remove an entry when its test is closed.",
- "updated": "2026-11-23",
+ "updated": "2026-11-24",
  "tests": [
   {
    "id": "q24",
@@ -49,16 +49,6 @@
    "summary": "research/fwd/lab.json",
    "base": "root",
    "stats": "LL4a fade",
-   "need": 300,
-   "gate": "Passes only at 300 graded with a clear profit and beating the close."
-  },
-  {
-   "id": "fwd_LL4b_follow",
-   "title": "Hard Rock moves alone: follow it",
-   "rule": "Shots, research only. Run 24, counting from Nov 9. Full rule: research/HYPOTHESES.md (LL4b).",
-   "summary": "research/fwd/lab.json",
-   "base": "root",
-   "stats": "LL4b follow",
    "need": 300,
    "gate": "Passes only at 300 graded with a clear profit and beating the close."
   },
@@ -258,7 +248,7 @@
    "first_seen": "2026-11-21"
   }
  ],
- "retired_count": 1,
+ "retired_count": 2,
  "queued": [
   {
    "id": "fwd_R28c_rest_mirror",
