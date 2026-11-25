@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:40 - 4th",
+    "detail": "1:34 - 4th",
     "score": {
-     "BOS": "117",
-     "WSH": "104"
+     "BOS": "123",
+     "WSH": "112"
     }
    },
    {
@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:18 - 1st",
+    "detail": "4:59 - 1st",
     "score": {
-     "DAL": "9",
-     "DEN": "7"
+     "DAL": "15",
+     "DEN": "8"
     }
    }
   ]

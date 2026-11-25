@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-24T21:40:02-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-24T22:20:00-05:00"
+   "at": "2026-11-24T22:30:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -115,7 +115,7 @@
    "away": "BOS",
    "home": "WAS",
    "state": "in",
-   "detail": "5:40 - 4th",
+   "detail": "1:34 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -180,7 +180,7 @@
    "away": "DAL",
    "home": "DEN",
    "state": "in",
-   "detail": "7:18 - 1st",
+   "detail": "4:59 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -523,6 +523,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-24T22:20:00-05:00",
- "status_at": "2026-11-24T22:20:00-05:00"
+ "generated_at": "2026-11-24T22:30:01-05:00",
+ "status_at": "2026-11-24T22:30:01-05:00"
 }
