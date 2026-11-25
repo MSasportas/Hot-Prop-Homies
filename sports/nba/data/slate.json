@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 728,
+   "pool_left": 724,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-24T21:40:02-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-24T21:40:02-05:00"
+   "at": "2026-11-24T21:50:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-24T21:40:02-05:00",
+    "at": "2026-11-24T21:50:01-05:00",
     "confirmed": [
      "BOS",
      "DAL",
@@ -115,7 +115,7 @@
    "away": "BOS",
    "home": "WAS",
    "state": "in",
-   "detail": "6:31 - 3rd",
+   "detail": "3:44 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -235,7 +235,7 @@
    "next_check_read": null,
    "paused": false,
    "injury_clear": {
-    "away": false,
+    "away": true,
     "home": true
    }
   }
@@ -530,6 +530,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-24T21:40:02-05:00",
- "status_at": "2026-11-24T21:40:02-05:00"
+ "generated_at": "2026-11-24T21:50:01-05:00",
+ "status_at": "2026-11-24T21:50:01-05:00"
 }
