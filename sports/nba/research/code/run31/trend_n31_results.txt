@@ -1,0 +1,22 @@
+N31 two-step Pinnacle trend. Nights: 31 (2026-10-25 to 2026-11-25). Forward starts 2026-11-26 (none stored yet).
+Population (trend up or down, Pinnacle A->B->C each step >= 1 pt, cumulative >= 3 pts, HR two-sided at C, -200..+200): follow 80, fade 81 bets
+
+N31a follow all        n   80 graded   80   41-  39   -6.28u ROI  -7.9% CI90 [-23.9, +8.7]    CLV_pin -4.1% (n 79) placebo>=actual 0.682
+N31a follow over       n   47 graded   47   25-  22   -1.40u ROI  -3.0% CI90 [-24.0, +17.7]   CLV_pin -4.8% (n 46) placebo>=actual 0.154
+N31a follow under      n   33 graded   33   16-  17   -4.88u ROI -14.8% CI90 [-41.1, +11.1]   CLV_pin -3.1% (n 33) placebo>=actual 0.786
+N31a follow discovery  n   80 graded   80   41-  39   -6.28u ROI  -7.9% CI90 [-23.9, +8.7]    CLV_pin -4.1% (n 79) placebo>=actual 0.682
+N31a follow forward    n    0 graded    0    0-   0   +0.00u ROI      - CI90 -                CLV_pin     - (n 0) placebo>=actual None
+N31a follow mkt assists n   19 graded   19    8-  11   -4.25u ROI -22.4% CI90 [-50.1, +5.0]    CLV_pin -5.1% (n 18) placebo>=actual 0.144
+N31a follow mkt points n   27 graded   27   15-  12   +0.58u ROI  +2.1% CI90 [-26.2, +31.9]   CLV_pin -2.6% (n 27) placebo>=actual 0.452
+N31a follow mkt rebounds n   25 graded   25   14-  11   -0.17u ROI  -0.7% CI90 [-31.0, +30.2]   CLV_pin -4.7% (n 25) placebo>=actual 0.844
+N31a follow mkt threes n    9 graded    9    4-   5   -2.43u ROI -27.0% CI90 [-66.1, +19.5]   CLV_pin -4.8% (n 9) placebo>=actual 1.0
+
+N31b fade all          n   81 graded   81   39-  42   -4.08u ROI  -5.0% CI90 [-22.5, +11.4]   CLV_pin -8.5% (n 80) placebo>=actual 0.866
+N31b fade over         n   34 graded   34   17-  17   -0.17u ROI  -0.5% CI90 [-27.8, +29.2]   CLV_pin -9.3% (n 34) placebo>=actual 0.942
+N31b fade under        n   47 graded   47   22-  25   -3.91u ROI  -8.3% CI90 [-30.0, +13.7]   CLV_pin -7.9% (n 46) placebo>=actual 0.172
+N31b fade discovery    n   81 graded   81   39-  42   -4.08u ROI  -5.0% CI90 [-22.5, +11.4]   CLV_pin -8.5% (n 80) placebo>=actual 0.866
+N31b fade forward      n    0 graded    0    0-   0   +0.00u ROI      - CI90 -                CLV_pin     - (n 0) placebo>=actual None
+N31b fade mkt assists  n   19 graded   19   11-   8   +3.30u ROI +17.4% CI90 [-13.0, +48.0]   CLV_pin -7.5% (n 18) placebo>=actual 0.1
+N31b fade mkt points   n   28 graded   28   12-  16   -4.97u ROI -17.7% CI90 [-47.4, +12.9]   CLV_pin -10.2% (n 28) placebo>=actual 0.7
+N31b fade mkt rebounds n   25 graded   25   11-  14   -3.68u ROI -14.7% CI90 [-48.2, +17.7]   CLV_pin -7.8% (n 25) placebo>=actual 0.782
+N31b fade mkt threes   n    9 graded    9    5-   4   +1.26u ROI +14.0% CI90 [-38.8, +69.4]   CLV_pin -7.1% (n 9) placebo>=actual 1.0
