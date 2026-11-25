@@ -375,11 +375,11 @@
     "home": "WSH",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:59 - 3rd",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 3rd",
     "score": {
-     "BOS": "102",
-     "WSH": "81"
+     "BOS": "104",
+     "WSH": "89"
     }
    },
    {
