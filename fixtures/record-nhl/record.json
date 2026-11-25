@@ -1,0 +1,1361 @@
+{
+ "generated_at": "2026-11-23T22:10:01-05:00",
+ "summary": {
+  "headline": {
+   "w": 67,
+   "l": 53,
+   "push": 0,
+   "void": 0,
+   "units": 21.07,
+   "hit_rate": 0.5583,
+   "needed": 0.4778,
+   "n": 120
+  },
+  "rows": [
+   {
+    "key": "shots",
+    "label": "Shots on goal",
+    "w": 55,
+    "l": 42,
+    "push": 0,
+    "void": 0,
+    "units": 15.6,
+    "hit_rate": 0.567,
+    "needed": 0.4869,
+    "n": 97
+   },
+   {
+    "key": "points",
+    "label": "Points",
+    "w": 12,
+    "l": 11,
+    "push": 0,
+    "void": 0,
+    "units": 5.47,
+    "hit_rate": 0.5217,
+    "needed": 0.4391,
+    "n": 23
+   }
+  ],
+  "cuts": [
+   {
+    "key": "line",
+    "label": "By line",
+    "note": null,
+    "rows": [
+     {
+      "key": "over_1.5",
+      "label": "Over 1.5",
+      "w": 3,
+      "l": 6,
+      "push": 0,
+      "void": 0,
+      "units": -2.89,
+      "hit_rate": 0.3333,
+      "needed": 0.4996,
+      "n": 9
+     },
+     {
+      "key": "over_2.5",
+      "label": "Over 2.5",
+      "w": 4,
+      "l": 4,
+      "push": 0,
+      "void": 0,
+      "units": 0.77,
+      "hit_rate": 0.5,
+      "needed": 0.453,
+      "n": 8
+     },
+     {
+      "key": "under_1.5",
+      "label": "Under 1.5",
+      "w": 25,
+      "l": 24,
+      "push": 0,
+      "void": 0,
+      "units": 3.64,
+      "hit_rate": 0.5102,
+      "needed": 0.4746,
+      "n": 49
+     },
+     {
+      "key": "under_2.5",
+      "label": "Under 2.5",
+      "w": 22,
+      "l": 8,
+      "push": 0,
+      "void": 0,
+      "units": 12.84,
+      "hit_rate": 0.7333,
+      "needed": 0.5138,
+      "n": 30
+     },
+     {
+      "key": "under_3.5",
+      "label": "Under 3.5",
+      "w": 1,
+      "l": 0,
+      "push": 0,
+      "void": 0,
+      "units": 1.25,
+      "hit_rate": 1.0,
+      "needed": 0.4444,
+      "n": 1
+     }
+    ]
+   },
+   {
+    "key": "edge",
+    "label": "By edge",
+    "note": "Our chance minus what the price needs, in points, when shown",
+    "rows": [
+     {
+      "key": "edge_lt2",
+      "label": "Under 2 pts",
+      "w": 19,
+      "l": 17,
+      "push": 0,
+      "void": 0,
+      "units": 4.9,
+      "hit_rate": 0.5278,
+      "needed": 0.4658,
+      "n": 36
+     },
+     {
+      "key": "edge_2_3",
+      "label": "2 to 3 pts",
+      "w": 24,
+      "l": 21,
+      "push": 0,
+      "void": 0,
+      "units": 4.37,
+      "hit_rate": 0.5333,
+      "needed": 0.4884,
+      "n": 45
+     },
+     {
+      "key": "edge_3_4",
+      "label": "3 to 4 pts",
+      "w": 17,
+      "l": 11,
+      "push": 0,
+      "void": 0,
+      "units": 8.03,
+      "hit_rate": 0.6071,
+      "needed": 0.4808,
+      "n": 28
+     },
+     {
+      "key": "edge_4",
+      "label": "4 pts or more",
+      "w": 7,
+      "l": 4,
+      "push": 0,
+      "void": 0,
+      "units": 3.77,
+      "hit_rate": 0.6364,
+      "needed": 0.4653,
+      "n": 11
+     }
+    ]
+   },
+   {
+    "key": "settled",
+    "label": "By how settled when shown",
+    "note": "A Locked pick can't be bet, so it is not a row",
+    "rows": [
+     {
+      "key": "early",
+      "label": "Early",
+      "w": 19,
+      "l": 19,
+      "push": 0,
+      "void": 0,
+      "units": 0.87,
+      "hit_rate": 0.5,
+      "needed": 0.4833,
+      "n": 38
+     },
+     {
+      "key": "lineup",
+      "label": "Lineup confirmed",
+      "w": 48,
+      "l": 34,
+      "push": 0,
+      "void": 0,
+      "units": 20.2,
+      "hit_rate": 0.5854,
+      "needed": 0.4752,
+      "n": 82
+     }
+    ]
+   },
+   {
+    "key": "price",
+    "label": "By price",
+    "note": "Posted Hard Rock price",
+    "rows": [
+     {
+      "key": "fav_big",
+      "label": "-200 to -150",
+      "w": 2,
+      "l": 1,
+      "push": 0,
+      "void": 0,
+      "units": 0.1,
+      "hit_rate": 0.6667,
+      "needed": 0.6382,
+      "n": 3
+     },
+     {
+      "key": "fav",
+      "label": "-149 to -101",
+      "w": 19,
+      "l": 12,
+      "push": 0,
+      "void": 0,
+      "units": 4.22,
+      "hit_rate": 0.6129,
+      "needed": 0.5392,
+      "n": 31
+     },
+     {
+      "key": "plus",
+      "label": "Even or plus money",
+      "w": 46,
+      "l": 40,
+      "push": 0,
+      "void": 0,
+      "units": 16.75,
+      "hit_rate": 0.5349,
+      "needed": 0.45,
+      "n": 86
+     }
+    ]
+   }
+  ],
+  "days": [
+   {
+    "date": "2026-11-23",
+    "w": 1,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 1.05,
+    "n": 2,
+    "graded": false
+   },
+   {
+    "date": "2026-11-22",
+    "w": 0,
+    "l": 1,
+    "push": 0,
+    "void": 0,
+    "units": -1.0,
+    "n": 1,
+    "graded": true
+   },
+   {
+    "date": "2026-11-21",
+    "w": 0,
+    "l": 1,
+    "push": 0,
+    "void": 0,
+    "units": -1.0,
+    "n": 1,
+    "graded": true
+   },
+   {
+    "date": "2026-11-19",
+    "w": 6,
+    "l": 4,
+    "push": 0,
+    "void": 0,
+    "units": 3.46,
+    "n": 10,
+    "graded": true
+   },
+   {
+    "date": "2026-11-18",
+    "w": 0,
+    "l": 1,
+    "push": 0,
+    "void": 0,
+    "units": -1.0,
+    "n": 1,
+    "graded": true
+   },
+   {
+    "date": "2026-11-17",
+    "w": 12,
+    "l": 4,
+    "push": 0,
+    "void": 0,
+    "units": 11.16,
+    "n": 16,
+    "graded": true
+   },
+   {
+    "date": "2026-11-15",
+    "w": 0,
+    "l": 1,
+    "push": 0,
+    "void": 0,
+    "units": -1.0,
+    "n": 1,
+    "graded": true
+   },
+   {
+    "date": "2026-11-14",
+    "w": 8,
+    "l": 3,
+    "push": 0,
+    "void": 0,
+    "units": 6.8,
+    "n": 11,
+    "graded": true
+   },
+   {
+    "date": "2026-11-13",
+    "w": 0,
+    "l": 1,
+    "push": 0,
+    "void": 0,
+    "units": -1.0,
+    "n": 1,
+    "graded": true
+   },
+   {
+    "date": "2026-11-12",
+    "w": 5,
+    "l": 5,
+    "push": 0,
+    "void": 0,
+    "units": 0.37,
+    "n": 10,
+    "graded": true
+   },
+   {
+    "date": "2026-11-11",
+    "w": 0,
+    "l": 2,
+    "push": 0,
+    "void": 0,
+    "units": -2.0,
+    "n": 2,
+    "graded": true
+   },
+   {
+    "date": "2026-11-10",
+    "w": 2,
+    "l": 1,
+    "push": 0,
+    "void": 0,
+    "units": 1.4,
+    "n": 3,
+    "graded": true
+   },
+   {
+    "date": "2026-11-09",
+    "w": 0,
+    "l": 1,
+    "push": 0,
+    "void": 0,
+    "units": -1.0,
+    "n": 1,
+    "graded": true
+   },
+   {
+    "date": "2026-11-08",
+    "w": 0,
+    "l": 2,
+    "push": 0,
+    "void": 0,
+    "units": -2.0,
+    "n": 2,
+    "graded": true
+   },
+   {
+    "date": "2026-11-07",
+    "w": 4,
+    "l": 5,
+    "push": 0,
+    "void": 0,
+    "units": 0.0,
+    "n": 9,
+    "graded": true
+   },
+   {
+    "date": "2026-11-06",
+    "w": 0,
+    "l": 2,
+    "push": 0,
+    "void": 0,
+    "units": -2.0,
+    "n": 2,
+    "graded": true
+   },
+   {
+    "date": "2026-11-05",
+    "w": 0,
+    "l": 1,
+    "push": 0,
+    "void": 0,
+    "units": -1.0,
+    "n": 1,
+    "graded": true
+   },
+   {
+    "date": "2026-11-04",
+    "w": 0,
+    "l": 1,
+    "push": 0,
+    "void": 0,
+    "units": -1.0,
+    "n": 1,
+    "graded": true
+   },
+   {
+    "date": "2026-11-03",
+    "w": 5,
+    "l": 3,
+    "push": 0,
+    "void": 0,
+    "units": 2.8,
+    "n": 8,
+    "graded": true
+   },
+   {
+    "date": "2026-11-02",
+    "w": 0,
+    "l": 1,
+    "push": 0,
+    "void": 0,
+    "units": -1.0,
+    "n": 1,
+    "graded": true
+   },
+   {
+    "date": "2026-11-01",
+    "w": 0,
+    "l": 2,
+    "push": 0,
+    "void": 0,
+    "units": -2.0,
+    "n": 2,
+    "graded": true
+   },
+   {
+    "date": "2026-10-31",
+    "w": 2,
+    "l": 2,
+    "push": 0,
+    "void": 0,
+    "units": -0.59,
+    "n": 4,
+    "graded": true
+   },
+   {
+    "date": "2026-10-29",
+    "w": 2,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 2.2,
+    "n": 2,
+    "graded": true
+   },
+   {
+    "date": "2026-10-28",
+    "w": 0,
+    "l": 1,
+    "push": 0,
+    "void": 0,
+    "units": -1.0,
+    "n": 1,
+    "graded": true
+   },
+   {
+    "date": "2026-10-27",
+    "w": 5,
+    "l": 1,
+    "push": 0,
+    "void": 0,
+    "units": 3.9,
+    "n": 6,
+    "graded": true
+   },
+   {
+    "date": "2026-10-26",
+    "w": 1,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 0.71,
+    "n": 1,
+    "graded": true
+   },
+   {
+    "date": "2026-10-24",
+    "w": 6,
+    "l": 3,
+    "push": 0,
+    "void": 0,
+    "units": 2.37,
+    "n": 9,
+    "graded": true
+   },
+   {
+    "date": "2026-10-23",
+    "w": 2,
+    "l": 0,
+    "push": 0,
+    "void": 0,
+    "units": 1.61,
+    "n": 2,
+    "graded": true
+   },
+   {
+    "date": "2026-10-22",
+    "w": 3,
+    "l": 2,
+    "push": 0,
+    "void": 0,
+    "units": 0.77,
+    "n": 5,
+    "graded": true
+   },
+   {
+    "date": "2026-10-20",
+    "w": 3,
+    "l": 2,
+    "push": 0,
+    "void": 0,
+    "units": 1.05,
+    "n": 5,
+    "graded": true
+   }
+  ]
+ },
+ "nights": [
+  {
+   "date": "2026-11-23",
+   "graded": false,
+   "w": 1,
+   "l": 0,
+   "units": 1.05,
+   "entries": [
+    {
+     "id": "2026-11-23:2026020378:8484166:shots:2.5:under",
+     "kind": "single",
+     "player": "A. Fantilli",
+     "bet": "Under 2.5 shots on goal",
+     "market": "shots",
+     "team": "CBJ",
+     "game": "CBJ at NJD",
+     "price": 105,
+     "first_price": 105,
+     "last_price": 105,
+     "prices": [
+      {
+       "price": 105,
+       "at": "2026-11-23T17:30:01-05:00"
+      }
+     ],
+     "result": "W",
+     "actual": "had 1",
+     "units": 1.05,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-23:2026020384:8485702:shots:1.5:under",
+     "kind": "single",
+     "player": "M. Shabanov",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "MIN",
+     "game": "MIN at SJS",
+     "price": 125,
+     "first_price": 125,
+     "last_price": 125,
+     "prices": [
+      {
+       "price": 125,
+       "at": "2026-11-23T20:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    }
+   ]
+  },
+  {
+   "date": "2026-11-22",
+   "graded": true,
+   "w": 0,
+   "l": 1,
+   "units": -1.0,
+   "entries": [
+    {
+     "id": "2026-11-22:2026020375:8477934:points:1.5:over",
+     "kind": "single",
+     "player": "L. Draisaitl",
+     "bet": "Over 1.5 points",
+     "market": "points",
+     "team": "EDM",
+     "game": "EDM at STL",
+     "price": 160,
+     "first_price": 160,
+     "last_price": 160,
+     "prices": [
+      {
+       "price": 160,
+       "at": "2026-11-22T17:30:01-05:00"
+      }
+     ],
+     "result": "L",
+     "actual": "had 1",
+     "units": -1.0,
+     "pulled": null,
+     "legs": []
+    }
+   ]
+  },
+  {
+   "date": "2026-11-21",
+   "graded": true,
+   "w": 0,
+   "l": 1,
+   "units": -1.0,
+   "entries": [
+    {
+     "id": "2026-11-21:2026020365:8481533:points:0.5:over",
+     "kind": "single",
+     "player": "T. Zegras",
+     "bet": "Over 0.5 points",
+     "market": "points",
+     "team": "PHI",
+     "game": "PHI at MTL",
+     "price": 120,
+     "first_price": 120,
+     "last_price": 120,
+     "prices": [
+      {
+       "price": 120,
+       "at": "2026-11-21T17:30:00-05:00"
+      }
+     ],
+     "result": "L",
+     "actual": "had 0",
+     "units": -1.0,
+     "pulled": {
+      "at": "2026-11-21T18:20:01-05:00",
+      "reason": "Hard Rock moved it to -120"
+     },
+     "legs": []
+    }
+   ]
+  },
+  {
+   "date": "2026-11-19",
+   "graded": true,
+   "w": 6,
+   "l": 4,
+   "units": 3.46,
+   "entries": [
+    {
+     "id": "2026-11-19:2026020354:8485388:points:0.5:over",
+     "kind": "single",
+     "player": "V. Eklund",
+     "bet": "Over 0.5 points",
+     "market": "points",
+     "team": "NYI",
+     "game": "NYI at WPG",
+     "price": 140,
+     "first_price": 140,
+     "last_price": 140,
+     "prices": [
+      {
+       "price": 140,
+       "at": "2026-11-19T17:30:01-05:00"
+      }
+     ],
+     "result": "L",
+     "actual": "had 0",
+     "units": -1.0,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-19:2026020355:8485702:shots:1.5:under",
+     "kind": "single",
+     "player": "M. Shabanov",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "MIN",
+     "game": "MIN at CGY",
+     "price": 120,
+     "first_price": 120,
+     "last_price": 120,
+     "prices": [
+      {
+       "price": 120,
+       "at": "2026-11-19T18:30:00-05:00"
+      }
+     ],
+     "result": "W",
+     "actual": "had 1",
+     "units": 1.2,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-19:2026020356:8475754:shots:1.5:over",
+     "kind": "single",
+     "player": "B. Nelson",
+     "bet": "Over 1.5 shots on goal",
+     "market": "shots",
+     "team": "COL",
+     "game": "ANA at COL",
+     "price": 105,
+     "first_price": 105,
+     "last_price": 105,
+     "prices": [
+      {
+       "price": 105,
+       "at": "2026-11-19T19:30:01-05:00"
+      }
+     ],
+     "result": "W",
+     "actual": "had 2",
+     "units": 1.05,
+     "pulled": {
+      "at": "2026-11-19T20:20:01-05:00",
+      "reason": "Hard Rock moved it to -130"
+     },
+     "legs": []
+    },
+    {
+     "id": "2026-11-19:2026020356:8478038:shots:1.5:under",
+     "kind": "single",
+     "player": "D. Toews",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "COL",
+     "game": "ANA at COL",
+     "price": 120,
+     "first_price": 120,
+     "last_price": 120,
+     "prices": [
+      {
+       "price": 120,
+       "at": "2026-11-19T20:20:01-05:00"
+      }
+     ],
+     "result": "L",
+     "actual": "had 2",
+     "units": -1.0,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-19:2026020358:8475913:shots:1.5:under",
+     "kind": "single",
+     "player": "M. Stone",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "VGK",
+     "game": "DAL at VGK",
+     "price": 130,
+     "first_price": 130,
+     "last_price": 130,
+     "prices": [
+      {
+       "price": 130,
+       "at": "2026-11-19T20:30:01-05:00"
+      }
+     ],
+     "result": "W",
+     "actual": "had 0",
+     "units": 1.3,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-19:2026020350:8477402:shots:1.5:under",
+     "kind": "single",
+     "player": "P. Buchnevich",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "STL",
+     "game": "STL at PIT",
+     "price": 100,
+     "first_price": 100,
+     "last_price": 100,
+     "prices": [
+      {
+       "price": 100,
+       "at": "2026-11-19T17:30:01-05:00"
+      }
+     ],
+     "result": "L",
+     "actual": "had 2",
+     "units": -1.0,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-19:2026020355:8478493:shots:2.5:under",
+     "kind": "single",
+     "player": "J. Eriksson Ek",
+     "bet": "Under 2.5 shots on goal",
+     "market": "shots",
+     "team": "MIN",
+     "game": "MIN at CGY",
+     "price": 120,
+     "first_price": 120,
+     "last_price": 120,
+     "prices": [
+      {
+       "price": 120,
+       "at": "2026-11-19T19:20:00-05:00"
+      }
+     ],
+     "result": "W",
+     "actual": "had 2",
+     "units": 1.2,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-19:2026020356:8477476:points:0.5:over",
+     "kind": "single",
+     "player": "A. Lehkonen",
+     "bet": "Over 0.5 points",
+     "market": "points",
+     "team": "COL",
+     "game": "ANA at COL",
+     "price": -125,
+     "first_price": -125,
+     "last_price": -125,
+     "prices": [
+      {
+       "price": -125,
+       "at": "2026-11-19T19:30:01-05:00"
+      }
+     ],
+     "result": "L",
+     "actual": "had 0",
+     "units": -1.0,
+     "pulled": {
+      "at": "2026-11-19T20:20:01-05:00",
+      "reason": "Hard Rock moved it to -145"
+     },
+     "legs": []
+    },
+    {
+     "id": "2026-11-19:2026020353:8482720:points:0.5:over",
+     "kind": "single",
+     "player": "M. Knies",
+     "bet": "Over 0.5 points",
+     "market": "points",
+     "team": "CBJ",
+     "game": "CBJ at CHI",
+     "price": -110,
+     "first_price": -110,
+     "last_price": -110,
+     "prices": [
+      {
+       "price": -110,
+       "at": "2026-11-19T18:30:00-05:00"
+      }
+     ],
+     "result": "W",
+     "actual": "had 3",
+     "units": 0.9091,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-19:2026020356:8480039:points:1.5:over",
+     "kind": "single",
+     "player": "M. Necas",
+     "bet": "Over 1.5 points",
+     "market": "points",
+     "team": "COL",
+     "game": "ANA at COL",
+     "price": 180,
+     "first_price": 180,
+     "last_price": 180,
+     "prices": [
+      {
+       "price": 180,
+       "at": "2026-11-19T19:30:01-05:00"
+      }
+     ],
+     "result": "W",
+     "actual": "had 2",
+     "units": 1.8,
+     "pulled": {
+      "at": "2026-11-19T20:20:01-05:00",
+      "reason": "Hard Rock moved it to +150"
+     },
+     "legs": []
+    }
+   ]
+  },
+  {
+   "date": "2026-11-18",
+   "graded": true,
+   "w": 0,
+   "l": 1,
+   "units": -1.0,
+   "entries": [
+    {
+     "id": "2026-11-18:2026020346:8476389:points:0.5:under",
+     "kind": "single",
+     "player": "V. Trocheck",
+     "bet": "Under 0.5 points",
+     "market": "points",
+     "team": "UTA",
+     "game": "COL at UTA",
+     "price": 130,
+     "first_price": 130,
+     "last_price": 130,
+     "prices": [
+      {
+       "price": 130,
+       "at": "2026-11-18T20:30:01-05:00"
+      }
+     ],
+     "result": "L",
+     "actual": "had 2",
+     "units": -1.0,
+     "pulled": null,
+     "legs": []
+    }
+   ]
+  },
+  {
+   "date": "2026-11-17",
+   "graded": true,
+   "w": 12,
+   "l": 4,
+   "units": 11.16,
+   "entries": [
+    {
+     "id": "2026-11-17:2026020337:8477948:points:0.5:over",
+     "kind": "single",
+     "player": "T. Sanheim",
+     "bet": "Over 0.5 points",
+     "market": "points",
+     "team": "PHI",
+     "game": "BUF at PHI",
+     "price": 225,
+     "first_price": 225,
+     "last_price": 225,
+     "prices": [
+      {
+       "price": 225,
+       "at": "2026-11-17T17:30:00-05:00"
+      }
+     ],
+     "result": "W",
+     "actual": "had 1",
+     "units": 2.25,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-17:2026020342:8475913:shots:1.5:under",
+     "kind": "single",
+     "player": "M. Stone",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "VGK",
+     "game": "DAL at VGK",
+     "price": 135,
+     "first_price": 135,
+     "last_price": 135,
+     "prices": [
+      {
+       "price": 135,
+       "at": "2026-11-17T20:30:01-05:00"
+      }
+     ],
+     "result": "W",
+     "actual": "had 0",
+     "units": 1.35,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-17:2026020333:8482124:points:0.5:under",
+     "kind": "single",
+     "player": "Q. Byfield",
+     "bet": "Under 0.5 points",
+     "market": "points",
+     "team": "LAK",
+     "game": "LAK at BOS",
+     "price": 115,
+     "first_price": 115,
+     "last_price": 115,
+     "prices": [
+      {
+       "price": 115,
+       "at": "2026-11-17T17:30:00-05:00"
+      }
+     ],
+     "result": "W",
+     "actual": "had 0",
+     "units": 1.15,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-17:2026020342:8484803:points:0.5:under",
+     "kind": "single",
+     "player": "T. Connelly",
+     "bet": "Under 0.5 points",
+     "market": "points",
+     "team": "VGK",
+     "game": "DAL at VGK",
+     "price": -130,
+     "first_price": -130,
+     "last_price": -130,
+     "prices": [
+      {
+       "price": -130,
+       "at": "2026-11-17T20:30:01-05:00"
+      }
+     ],
+     "result": "L",
+     "actual": "had 2",
+     "units": -1.0,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-17:2026020333:8482155:points:0.5:under",
+     "kind": "single",
+     "player": "A. Laferriere",
+     "bet": "Under 0.5 points",
+     "market": "points",
+     "team": "LAK",
+     "game": "LAK at BOS",
+     "price": 110,
+     "first_price": 110,
+     "last_price": 110,
+     "prices": [
+      {
+       "price": 110,
+       "at": "2026-11-17T17:30:00-05:00"
+      }
+     ],
+     "result": "W",
+     "actual": "had 0",
+     "units": 1.1,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-17:2026020339:8481598:shots:1.5:under",
+     "kind": "single",
+     "player": "P. Broberg",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "STL",
+     "game": "ANA at STL",
+     "price": 120,
+     "first_price": 120,
+     "last_price": 120,
+     "prices": [
+      {
+       "price": 120,
+       "at": "2026-11-17T18:30:00-05:00"
+      }
+     ],
+     "result": "W",
+     "actual": "had 1",
+     "units": 1.2,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-17:2026020334:8478519:points:0.5:over",
+     "kind": "single",
+     "player": "A. Cirelli",
+     "bet": "Over 0.5 points",
+     "market": "points",
+     "team": "TBL",
+     "game": "WSH at TBL",
+     "price": 130,
+     "first_price": 130,
+     "last_price": 130,
+     "prices": [
+      {
+       "price": 130,
+       "at": "2026-11-17T18:50:01-05:00"
+      }
+     ],
+     "result": "W",
+     "actual": "had 1",
+     "units": 1.3,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-17:2026020337:8480064:points:0.5:over",
+     "kind": "single",
+     "player": "J. Norris",
+     "bet": "Over 0.5 points",
+     "market": "points",
+     "team": "BUF",
+     "game": "BUF at PHI",
+     "price": 175,
+     "first_price": 175,
+     "last_price": 175,
+     "prices": [
+      {
+       "price": 175,
+       "at": "2026-11-17T17:30:00-05:00"
+      }
+     ],
+     "result": "L",
+     "actual": "had 0",
+     "units": -1.0,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-17:2026020336:8485388:shots:1.5:under",
+     "kind": "single",
+     "player": "V. Eklund",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "NYI",
+     "game": "CBJ at NYI",
+     "price": 125,
+     "first_price": 125,
+     "last_price": 125,
+     "prices": [
+      {
+       "price": 125,
+       "at": "2026-11-17T17:30:00-05:00"
+      }
+     ],
+     "result": "W",
+     "actual": "had 1",
+     "units": 1.25,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-17:2026020340:8474600:shots:2.5:over",
+     "kind": "single",
+     "player": "R. Josi",
+     "bet": "Over 2.5 shots on goal",
+     "market": "shots",
+     "team": "NSH",
+     "game": "NSH at MIN",
+     "price": 125,
+     "first_price": 125,
+     "last_price": 125,
+     "prices": [
+      {
+       "price": 125,
+       "at": "2026-11-17T18:30:00-05:00"
+      }
+     ],
+     "result": "W",
+     "actual": "had 3",
+     "units": 1.25,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-17:2026020333:8477942:points:0.5:under",
+     "kind": "single",
+     "player": "K. Fiala",
+     "bet": "Under 0.5 points",
+     "market": "points",
+     "team": "LAK",
+     "game": "LAK at BOS",
+     "price": 115,
+     "first_price": 115,
+     "last_price": 115,
+     "prices": [
+      {
+       "price": 115,
+       "at": "2026-11-17T17:30:00-05:00"
+      }
+     ],
+     "result": "W",
+     "actual": "had 0",
+     "units": 1.15,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-17:2026020337:8480839:shots:2.5:under",
+     "kind": "single",
+     "player": "R. Dahlin",
+     "bet": "Under 2.5 shots on goal",
+     "market": "shots",
+     "team": "BUF",
+     "game": "BUF at PHI",
+     "price": -105,
+     "first_price": -105,
+     "last_price": -105,
+     "prices": [
+      {
+       "price": -105,
+       "at": "2026-11-17T17:30:00-05:00"
+      }
+     ],
+     "result": "W",
+     "actual": "had 2",
+     "units": 0.9524,
+     "pulled": {
+      "at": "2026-11-17T18:20:01-05:00",
+      "reason": "Pinnacle moved against it"
+     },
+     "legs": []
+    },
+    {
+     "id": "2026-11-17:2026020333:8479325:points:0.5:under",
+     "kind": "single",
+     "player": "C. McAvoy",
+     "bet": "Under 0.5 points",
+     "market": "points",
+     "team": "BOS",
+     "game": "LAK at BOS",
+     "price": 130,
+     "first_price": 130,
+     "last_price": 130,
+     "prices": [
+      {
+       "price": 130,
+       "at": "2026-11-17T17:30:00-05:00"
+      }
+     ],
+     "result": "W",
+     "actual": "had 0",
+     "units": 1.3,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-17:2026020337:8482142:shots:1.5:under",
+     "kind": "single",
+     "player": "J. Drysdale",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "PHI",
+     "game": "BUF at PHI",
+     "price": -130,
+     "first_price": -130,
+     "last_price": -130,
+     "prices": [
+      {
+       "price": -130,
+       "at": "2026-11-17T18:20:01-05:00"
+      }
+     ],
+     "result": "L",
+     "actual": "had 2",
+     "units": -1.0,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-17:2026020339:8481580:shots:1.5:under",
+     "kind": "single",
+     "player": "C. McMichael",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "STL",
+     "game": "ANA at STL",
+     "price": -110,
+     "first_price": -110,
+     "last_price": -110,
+     "prices": [
+      {
+       "price": -110,
+       "at": "2026-11-17T18:30:00-05:00"
+      }
+     ],
+     "result": "L",
+     "actual": "had 5",
+     "units": -1.0,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-17:2026020340:8474564:points:0.5:over",
+     "kind": "single",
+     "player": "S. Stamkos",
+     "bet": "Over 0.5 points",
+     "market": "points",
+     "team": "NSH",
+     "game": "NSH at MIN",
+     "price": -110,
+     "first_price": -110,
+     "last_price": -110,
+     "prices": [
+      {
+       "price": -110,
+       "at": "2026-11-17T18:30:00-05:00"
+      }
+     ],
+     "result": "W",
+     "actual": "had 1",
+     "units": 0.9091,
+     "pulled": null,
+     "legs": []
+    }
+   ]
+  },
+  {
+   "date": "2026-11-15",
+   "graded": true,
+   "w": 0,
+   "l": 1,
+   "units": -1.0,
+   "entries": [
+    {
+     "id": "2026-11-15:2026020326:8485406:shots:1.5:under",
+     "kind": "single",
+     "player": "P. Martone",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "PHI",
+     "game": "EDM at PHI",
+     "price": 130,
+     "first_price": 130,
+     "last_price": 130,
+     "prices": [
+      {
+       "price": 130,
+       "at": "2026-11-15T18:50:01-05:00"
+      }
+     ],
+     "result": "L",
+     "actual": "had 2",
+     "units": -1.0,
+     "pulled": null,
+     "legs": []
+    }
+   ]
+  }
+ ],
+ "older": [
+  "record/2026-11.json",
+  "record/2026-10.json"
+ ]
+}

@@ -1,0 +1,189 @@
+{
+ "slate": "2026-11-23",
+ "valid_until": "2026-11-24T05:00:00-05:00",
+ "fixture": true,
+ "fixture_now": "2026-11-23T22:00:00-05:00",
+ "banners": [],
+ "status": {},
+ "empty": false,
+ "ui": {},
+ "generated_at": "2026-11-23T21:55:00-05:00",
+ "status_at": "2026-11-23T21:55:00-05:00",
+ "games": [
+  {
+   "id": "n1",
+   "away": "MTL",
+   "home": "TBL",
+   "start": "2026-11-23T19:00:00-05:00",
+   "lineups": {
+    "away": "confirmed",
+    "home": "confirmed"
+   },
+   "checks": []
+  },
+  {
+   "id": "n2",
+   "away": "WSH",
+   "home": "FLA",
+   "start": "2026-11-23T19:00:00-05:00",
+   "lineups": {
+    "away": "confirmed",
+    "home": "confirmed"
+   },
+   "checks": []
+  },
+  {
+   "id": "n3",
+   "away": "COL",
+   "home": "VGK",
+   "start": "2026-11-23T19:30:00-05:00",
+   "lineups": {
+    "away": "confirmed",
+    "home": "confirmed"
+   },
+   "checks": []
+  }
+ ],
+ "picks": [
+  {
+   "id": "fx-21",
+   "player": "J. Slafkovský",
+   "pid": null,
+   "team": "MTL",
+   "opp": "TBL",
+   "home": false,
+   "game_id": "n1",
+   "start": "2026-11-23T19:00:00-05:00",
+   "bet": "Over 2.5 shots",
+   "market": "shots",
+   "side": "over",
+   "line": 2.5,
+   "price": 105,
+   "price_at": "2026-11-23T17:00:00-05:00",
+   "state": "locked",
+   "p": 0.56,
+   "breakeven": 0.53,
+   "sport": "nhl"
+  },
+  {
+   "id": "fx-22",
+   "player": "Tom Wilson Jr.",
+   "pid": null,
+   "team": "WSH",
+   "opp": "FLA",
+   "home": false,
+   "game_id": "n2",
+   "start": "2026-11-23T19:00:00-05:00",
+   "bet": "Over 3.5 shots",
+   "market": "shots",
+   "side": "over",
+   "line": 3.5,
+   "price": -110,
+   "price_at": "2026-11-23T17:00:00-05:00",
+   "state": "locked",
+   "p": 0.56,
+   "breakeven": 0.53,
+   "sport": "nhl"
+  },
+  {
+   "id": "fx-23",
+   "player": "Nathan MacKinnon",
+   "pid": null,
+   "team": "COL",
+   "opp": "VGK",
+   "home": false,
+   "game_id": "n3",
+   "start": "2026-11-23T19:00:00-05:00",
+   "bet": "Under 4.5 shots",
+   "market": "shots",
+   "side": "under",
+   "line": 4.5,
+   "price": -105,
+   "price_at": "2026-11-23T17:00:00-05:00",
+   "state": "locked",
+   "p": 0.56,
+   "breakeven": 0.53,
+   "result": {
+    "result": "W",
+    "actual": "4 shots",
+    "units": 0.95
+   },
+   "sport": "nhl"
+  },
+  {
+   "id": "fx-24",
+   "player": "Mikko Rantanen",
+   "pid": null,
+   "team": "COL",
+   "opp": "VGK",
+   "home": false,
+   "game_id": "n3",
+   "start": "2026-11-23T19:00:00-05:00",
+   "bet": "Over 3.5 shots",
+   "market": "shots",
+   "side": "over",
+   "line": 3.5,
+   "price": -120,
+   "price_at": "2026-11-23T17:00:00-05:00",
+   "state": "locked",
+   "p": 0.56,
+   "breakeven": 0.53,
+   "sport": "nhl"
+  }
+ ],
+ "counts": {},
+ "fixture_live": {
+  "games": {
+   "n1": {
+    "state": "in",
+    "period": 2,
+    "clock": "14:05",
+    "in_break": false,
+    "away": {
+     "score": 1
+    },
+    "home": {
+     "score": 2
+    }
+   },
+   "n2": {
+    "state": "in",
+    "period": 4,
+    "clock": "1:12",
+    "in_break": false,
+    "away": {
+     "score": 3
+    },
+    "home": {
+     "score": 3
+    }
+   },
+   "n3": {
+    "state": "post",
+    "period": 4,
+    "clock": "0:00",
+    "in_break": false,
+    "away": {
+     "score": 4
+    },
+    "home": {
+     "score": 3
+    }
+   }
+  },
+  "stats": {
+   "fx-21": {
+    "stat": 2
+   },
+   "fx-22": {
+    "stat": 3
+   },
+   "fx-24": {
+    "stat": 5
+   }
+  },
+  "done": {
+   "n3": 1
+  }
+ }
+}
