@@ -1,0 +1,5 @@
+Run 30 PT1/PT2 discovery (NHL points shadow rows, all nights through 2026-11-25; 2513 rows with consensus and both sides).
+PT1 EV >= +2%: n 114 graded 114 59-55 +6.45u ROI +5.7% CLV_HR -5.9% (n 114) | 90% CI -12.4%, +23.0% | placebo share >= actual 0.848
+   by side: over n 61 graded 61 29-32 +1.23u ROI +2.0% CLV_HR -5.3% (n 61) | under n 53 graded 53 30-23 +5.22u ROI +9.9% CLV_HR -6.5% (n 53)
+PT2 EV >= +0%: n 291 graded 285 130-155 -27.68u ROI -9.7% CLV_HR -6.1% (n 285) | 90% CI -20.6%, +0.6% | placebo share >= actual 0.887
+   by side: over n 145 graded 141 60-81 -15.89u ROI -11.3% CLV_HR -5.9% (n 141) | under n 146 graded 144 70-74 -11.79u ROI -8.2% CLV_HR -6.3% (n 144)

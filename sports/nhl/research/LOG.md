@@ -1,5 +1,17 @@
 # LOG.md: Researcher runs (newest first)
 
+## 2026-11-24, Run 30 (Researcher daily; POINTS: Hard Rock vs the other books' median, new market for the book-comparison priority)
+Registered before any test: PT1 (EV >= +2%) and PT2 (EV >= 0%) in HYPOTHESES.md (Run 30). Discovery = every stored shadow night through 2026-11-25; forward from 2026-11-26 (none yet). Not a re-run of R29a/b (price timing, hold) or R28a (Pinnacle-only gap). Stored data only, no key. Code research/code/r2026_11_24/pt_points.py, output pt_results.txt.
+Population: 2,513 points rows with the other books' median fair (cons_fair_over_med) and both HR sides at -200..+200 at open. Bet = the side with the higher EV vs the consensus. CLV is a proxy: Hard Rock's own no-vig at the close read, not the consensus.
+
+- PT1 (EV >= +2%): n 114 graded, 59-55, +6.45u, ROI +5.7%, 90% CI [-12.4, +23.0], CLV_HR -5.9% (n 114), placebo share 0.85. Over 29-32 +2.0%, under 30-23 +9.9%.
+- PT2 (EV >= 0%): n 291 graded 285, 130-155, -27.68u, ROI -9.7%, 90% CI [-20.6, +0.6], CLV_HR -6.1%, placebo share 0.89. Over -11.3%, under -8.2%.
+
+**Verdict: no candidate.** PT1's +5.7% sits on 114 bets with a CI that spans zero, its shuffle placebo is 0.85, and the CLV proxy is negative. Its under side looks better (+9.9%) but that split is post-hoc, so treat it as noise. PT2 (the looser bar) loses money, which says the gap only shows at the +2% bar, and that is a small sample. Discovery only.
+
+**Forward re-score status (honest):** this run's run_all.sh did not finish inside its time limit and printed nothing, so no new score table came from this run. The fwd outputs were refreshed at 17:43 by a concurrent job: r28.md (R28a 1 bet +90.9%, R28b under 231 graded +3.6% CI [-7, +15], R28b over -14.2%, R28c rest -14.4% mirror, R28d backup goalie -17.0%; all below bar, p 0.29 to 0.998). Q1 and the other Q tables in fwd/scores.md are still dated 2026-11-13: fwd/scores.md has not been rewritten since Nov 13, so the main scorer's output is stale. Flagged to the CEO for the Engineer.
+Next: (1) Engineer to confirm score_fwd.py writes scores.md on each run; (2) PT1 forward scorer from 2026-11-26 (add to run_all.sh); (3) R28 items keep forward. Nothing ready for the Sharp.
+
 ## 2026-11-21, Run 28 (Researcher; idea register, no results)
 - 8 new ideas registered as R28a-R28h (see HYPOTHESES.md). Nothing tested yet; forward only. R28h (assists) needs credits, not stored. Scorers needed from the Engineer for R28a-R28g; no lab.json entries yet because each track needs a summary writer first.
 - 2026-11-13 (Researcher run 27, daily; SHOTS ON GOAL ONLY; books, not players). No key used, no odds pull, stored data only.

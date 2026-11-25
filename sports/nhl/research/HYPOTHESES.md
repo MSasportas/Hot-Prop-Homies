@@ -761,3 +761,31 @@ Discovery only: every stored night through 2026-11-12 was already seen (Q1, Q13,
 - R28f Points line vs rolling average (LVA on points). Same rule as R28b on HR points lines. Need 300 per side. Data: stats logs, data/odds.
 - R28g Points drift (LL1f ported to points). A read vs last C read, HR points fair moved >= 0.01; FOLLOW and FADE at C price. Need 300. Overlap: LL1f (shots).
 - R28h Assists: NOT TESTABLE. Not stored. Proposal to CEO (credits are Matt's call).
+
+## Run 29 (Researcher, 2026-11-21 run; registered 2026-11-25 run, before any of these were tested). POINTS MARKET, PRICE TIMING AND HOLD.
+Discovery = stored shadow nights through 2026-11-25 (points rows in data/shadow). Forward = nights after this registration (first forward night 2026-11-26). Pass bar: n >= 150 graded forward, ROI > 0, 90% game-clustered lower bound > 0, CLV > 0. Nothing here is a re-run of Q1-Q24, R28, LL, MM, NN, JJ or DP1; points rows only (shots already covered).
+
+- R29a Points: open vs close price, same side (price timing). Base: points rows where the HR open read (open, pull A or B) and close read (close) both exist, line one per player/night, price -200..+120 at each read, consensus open fair EV >= 0 at the open read. Bet the side at its OPEN price, and separately at its CLOSE price. Metric: ROI at open price vs ROI at close price (paired by row), CLV = close fair minus open price implied. Question: is the early price better than the late price on points? Overlap: none on points.
+- R29b Points low-hold lines. Base: points rows at the close read, HR close hold <= 0.06 (cheap overround), price -200..+120, the FAVORITE side (consensus fair over or under > 0.5) bet at its close price (no EV filter). Amended before any test ran: betting every side of a line would be two bets per line and built-in hold loss, so one side per line. Metric: ROI, 90% game-clustered CI, CLV. Mirror (hold >= 0.09) tracked for context only, not a pass.
+- Placebo for both: shuffle results within night (500 draws); report the share of placebo ROIs >= actual.
+
+## Run 30 (Researcher, 2026-11-24 daily run; registered before any of these were tested). POINTS: HARD ROCK VS THE CONSENSUS (new market for the book-comparison priority)
+Discovery = every stored shadow night through 2026-11-25 (points rows with result). Forward = nights from 2026-11-26 on (none yet). Not a re-run of R29a/b (price timing and low hold) or of R28a (Pinnacle-only gap).
+Population: data/shadow rows, market = points, with open.cons_fair_over_med present (median fair over of the other books on the same line, fresh, hold 0-15%) and Hard Rock over and under both posted at open. Each side s: consensus fair q_s (q_over = cons_fair_over_med, q_under = 1 - q_over), EV_s = q_s x decimal(HR price_s) - 1. One bet per row: the side with the higher EV, if that EV clears the variant bar and the HR price is -200..+200. Result W/L/P from the row's graded result for that side (push = P, no result = void). 1u flat at HR's open price.
+- PT1 bar: EV >= +2%.
+- PT2 bar: EV >= 0%.
+CLV = HR's own no-vig fair for the side at the close read, times the open decimal price, minus 1 (proxy only: the close is Hard Rock's, not the consensus; flagged as such).
+Metric: n, W-L, units, ROI, 90% game-clustered bootstrap (2,000 draws), CLV mean, shuffle placebo (results permuted within night, 500 draws, share of placebo ROI >= actual).
+Pass bar: RESEARCH.md rule 4 (n >= 150 graded forward, ROI > 0, 90% lower bound > 0, CLV > 0). Discovery cannot pass. Expected false positives with 2 variants: about 0.1.
+Code: research/code/r2026_11_24/pt_points.py.
+
+## Run 31 (Researcher, 2026-11-25). POINTS LINE MAJORITY (LL6 ported to points). Registered before any of these were tested.
+Discovery = every stored odds night with points through 2026-11-25 (points rows were already seen by Q14, R28 and R29/R30, but this rule is new, so discovery only). Forward = nights from 2026-11-26 on (none yet). Not a re-run of LL6 (shots line majority, forward since Nov 9), PT1/PT2 (points price vs consensus fair, same line), or R29a/b (price timing and hold).
+Population: data/odds reads B and C with markets.points (Hard Rock) and `others` (fresh < 60 min at the read, two-sided, hold 0-15%).
+Main line per book for a player = the two-sided line whose proportional no-vig over chance is closest to 0.5. Hard Rock's line = the same rule on Hard Rock.
+Event: at least 3 other books have a main line for that player, and a strict majority of them sit ABOVE Hard Rock's line: bet Hard Rock OVER. A strict majority BELOW: bet Hard Rock UNDER. Price on Hard Rock -200..+120 (no EV filter). First qualifying read per (night, game, player). 1u flat, graded from the data/shadow points result (void = no bet).
+- PL1 Points line majority (the rule above). 1 variant.
+- PL1 forward from 2026-11-26 only. Discovery reported as a labelled check.
+CLV = the median no-vig chance of the other books on the same Hard Rock line at the game's last read (fresh, two-sided, hold 0-15%), for the bet side, times the frozen Hard Rock decimal price, minus 1. Proxy for the close (the books' own last read, not a closing line).
+Pass bar: rule 4 (n >= 150 graded forward, ROI > 0, 90% game-clustered lower bound > 0, CLV > 0). Placebo: results shuffled within night, 500 draws, share of placebo ROI >= actual.
+Code: sports/nhl/research/code/run31/pl1_points_line_majority.py (output pl1_results.txt).
