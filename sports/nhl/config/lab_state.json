@@ -1,46 +1,41 @@
 {
- "updated": "2026-11-24T00:00:14+00:00",
- "day": "2026-11-24",
+ "updated": "2026-11-25T00:00:11+00:00",
+ "day": "2026-11-25",
  "tracks": {
   "q24": {
    "fail_streak": 0,
    "k": 62,
    "k_changed": "2026-11-20"
   },
-  "fwd_LL1f-follow": {
-   "fail_streak": 1,
-   "k": 620,
-   "k_changed": "2026-11-24"
-  },
   "fwd_LL3a_tight": {
    "fail_streak": 0,
-   "k": 143,
-   "k_changed": "2026-11-24"
+   "k": 152,
+   "k_changed": "2026-11-25"
   },
   "fwd_LL3b_loose": {
    "fail_streak": 0,
-   "k": 73,
-   "k_changed": "2026-11-24"
+   "k": 78,
+   "k_changed": "2026-11-25"
   },
   "fwd_LL4a_fade": {
    "fail_streak": 0,
-   "k": 187,
-   "k_changed": "2026-11-24"
+   "k": 204,
+   "k_changed": "2026-11-25"
   },
   "fwd_LL5_exch": {
    "fail_streak": 0,
-   "k": 240,
-   "k_changed": "2026-11-24"
+   "k": 253,
+   "k_changed": "2026-11-25"
   },
   "fwd_LL6_line": {
    "fail_streak": 0,
-   "k": 117,
-   "k_changed": "2026-11-24"
+   "k": 126,
+   "k_changed": "2026-11-25"
   },
   "fwd_MM2a_split": {
    "fail_streak": 0,
-   "k": 17,
-   "k_changed": "2026-11-23"
+   "k": 18,
+   "k_changed": "2026-11-25"
   },
   "fwd_MM2b_split_2pct": {
    "fail_streak": 0,
@@ -49,8 +44,8 @@
   },
   "fwd_MM3a_persist": {
    "fail_streak": 0,
-   "k": 99,
-   "k_changed": "2026-11-24"
+   "k": 110,
+   "k_changed": "2026-11-25"
   },
   "fwd_MM3b_confirm": {
    "fail_streak": 0,
@@ -64,13 +59,13 @@
   },
   "fwd_MM5a_follow": {
    "fail_streak": 0,
-   "k": 70,
-   "k_changed": "2026-11-24"
+   "k": 76,
+   "k_changed": "2026-11-25"
   },
   "fwd_MM5b_fade": {
    "fail_streak": 0,
-   "k": 67,
-   "k_changed": "2026-11-24"
+   "k": 73,
+   "k_changed": "2026-11-25"
   },
   "fwd_NN2fa_follow_market": {
    "fail_streak": 0,
@@ -99,28 +94,28 @@
   },
   "fwd_R28a_points_gap": {
    "fail_streak": 0,
-   "k": 0,
-   "k_changed": "2026-11-24"
+   "k": 1,
+   "k_changed": "2026-11-25"
   },
   "fwd_R28b_lva_under": {
    "fail_streak": 0,
-   "k": 167,
-   "k_changed": "2026-11-24"
+   "k": 220,
+   "k_changed": "2026-11-25"
   },
   "fwd_R28b_lva_over": {
    "fail_streak": 0,
-   "k": 96,
-   "k_changed": "2026-11-24"
+   "k": 134,
+   "k_changed": "2026-11-25"
   },
   "fwd_R28d_backup_goalie": {
    "fail_streak": 0,
-   "k": 77,
-   "k_changed": "2026-11-24"
+   "k": 100,
+   "k_changed": "2026-11-25"
   },
   "fwd_R28c_rest": {
    "fail_streak": 0,
-   "k": 259,
-   "k_changed": "2026-11-24"
+   "k": 377,
+   "k_changed": "2026-11-25"
   }
  }
 }

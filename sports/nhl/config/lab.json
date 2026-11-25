@@ -1,6 +1,6 @@
 {
  "note": "The page's Lab tab. Matt 2026-11-12: EVERYTHING being tested is listed here (live-tracked paper tests and the Researcher's forward tests). Each entry's numbers come live from its summary file. Remove an entry when its test is closed.",
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "tests": [
   {
    "id": "q24",
@@ -15,20 +15,6 @@
    "plain": "Bet shots at the 1 PM price when Hard Rock beats other books by 1%+",
    "why": "Hard Rock's early price is sometimes better than the market's. We grade at that price.",
    "outcome": "matt"
-  },
-  {
-   "id": "fwd_LL1f-follow",
-   "title": "Hard Rock moved since 1 PM: follow it",
-   "rule": "Shots, research only. Run 24, counting from Nov 9. Full rule: research/HYPOTHESES.md (LL1f-follow).",
-   "summary": "research/fwd/lab.json",
-   "base": "root",
-   "stats": "LL1f-follow",
-   "need": 300,
-   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
-   "name": "Hard Rock moved: follow",
-   "plain": "After Hard Rock changes a price since 1 PM, bet the same way",
-   "why": "Hard Rock may have news, and the move is right.",
-   "outcome": "review"
   },
   {
    "id": "fwd_LL3a_tight",
@@ -344,7 +330,7 @@
    "outcome": "review"
   }
  ],
- "retired_count": 2,
+ "retired_count": 3,
  "queued": [
   {
    "id": "fwd_R28c_rest_mirror",
