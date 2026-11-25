@@ -43,7 +43,7 @@
    }
   },
   "CHA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Coby White",
     "Brandon Miller",
@@ -266,5 +266,5 @@
    }
   }
  },
- "at": "2026-11-25T18:40:01-05:00"
+ "at": "2026-11-25T18:50:01-05:00"
 }
