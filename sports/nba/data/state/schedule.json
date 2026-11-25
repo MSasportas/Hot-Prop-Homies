@@ -391,10 +391,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:10 - 3rd",
+    "detail": "2:02 - 3rd",
     "score": {
-     "DAL": "71",
-     "DEN": "65"
+     "DAL": "80",
+     "DEN": "72"
     }
    }
   ]
