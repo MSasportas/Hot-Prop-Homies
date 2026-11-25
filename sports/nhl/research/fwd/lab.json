@@ -1,8 +1,8 @@
 {
  "LL3a tight": {
-  "clv": 0.0308,
+  "clv": 0.0306,
   "l": 76,
-  "pending": 3,
+  "pending": 4,
   "push": 0,
   "units": 2.29,
   "void": 0,
@@ -27,9 +27,9 @@
   "w": 110
  },
  "LL5 exch": {
-  "clv": 0.0219,
+  "clv": 0.0218,
   "l": 119,
-  "pending": 15,
+  "pending": 16,
   "push": 0,
   "units": 10.43,
   "void": 0,
@@ -45,18 +45,18 @@
   "w": 76
  },
  "MM2a split": {
-  "clv": -0.02,
+  "clv": -0.0195,
   "l": 12,
-  "pending": 0,
+  "pending": 1,
   "push": 0,
   "units": -7.11,
   "void": 0,
   "w": 6
  },
  "MM2b split 2%": {
-  "clv": -0.0044,
+  "clv": -0.0049,
   "l": 7,
-  "pending": 0,
+  "pending": 1,
   "push": 0,
   "units": -3.62,
   "void": 0,
@@ -108,18 +108,18 @@
   "w": 51
  },
  "NN2fa follow market": {
-  "clv": -0.0851,
+  "clv": -0.0777,
   "l": 14,
-  "pending": 0,
+  "pending": 17,
   "push": 0,
   "units": -8.83,
   "void": 0,
   "w": 6
  },
  "NN2fb follow HR": {
-  "clv": -0.0551,
+  "clv": -0.0645,
   "l": 6,
-  "pending": 0,
+  "pending": 17,
   "push": 0,
   "units": 5.06,
   "void": 0,
@@ -162,9 +162,9 @@
   "w": 1
  },
  "R28b over": {
-  "clv": -0.118,
+  "clv": -0.1183,
   "l": 81,
-  "pending": 70,
+  "pending": 71,
   "push": 0,
   "units": -19.4,
   "void": 0,
@@ -189,7 +189,7 @@
   "w": 208
  },
  "R28c rest mirror": {
-  "clv": -0.0932,
+  "clv": -0.0933,
   "l": 216,
   "pending": 175,
   "push": 0,
@@ -198,9 +198,9 @@
   "w": 178
  },
  "R28d backup goalie": {
-  "clv": -0.0997,
+  "clv": -0.0998,
   "l": 62,
-  "pending": 60,
+  "pending": 61,
   "push": 0,
   "units": -18.88,
   "void": 0,
@@ -208,6 +208,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-25T22:30:26+00:00",
+ "updated_at": "2026-11-25T23:00:12+00:00",
  "version": 1
 }

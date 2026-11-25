@@ -1,6 +1,6 @@
 {
  "MM2a split": {
-  "bets": 18,
+  "bets": 19,
   "graded": 18,
   "w": 6,
   "units": -7.11,
@@ -10,13 +10,13 @@
    -0.0962
   ],
   "p_one_sided": 0.9845,
-  "mean_ev": 0.0299,
-  "mean_clv": -0.02,
+  "mean_ev": 0.0306,
+  "mean_clv": -0.0195,
   "games": 16,
   "candidate": false
  },
  "MM2b split 2%": {
-  "bets": 11,
+  "bets": 12,
   "graded": 11,
   "w": 4,
   "units": -3.62,
@@ -26,8 +26,8 @@
    0.0694
   ],
   "p_one_sided": 0.9145,
-  "mean_ev": 0.0437,
-  "mean_clv": -0.0044,
+  "mean_ev": 0.0436,
+  "mean_clv": -0.0049,
   "games": 10,
   "candidate": false
  },

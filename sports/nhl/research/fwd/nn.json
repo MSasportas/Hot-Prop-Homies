@@ -1,6 +1,6 @@
 {
  "NN2fa follow market": {
-  "bets": 20,
+  "bets": 37,
   "graded": 20,
   "w": 6,
   "units": -8.83,
@@ -10,13 +10,13 @@
    -0.4415
   ],
   "p_one_sided": 1.0,
-  "mean_ev": -0.081,
-  "mean_clv": -0.0851,
+  "mean_ev": -0.0757,
+  "mean_clv": -0.0777,
   "games": 1,
   "candidate": false
  },
  "NN2fb follow HR": {
-  "bets": 20,
+  "bets": 37,
   "graded": 20,
   "w": 14,
   "units": 5.057,
@@ -26,8 +26,8 @@
    0.2528
   ],
   "p_one_sided": 0.0,
-  "mean_ev": -0.0531,
-  "mean_clv": -0.0551,
+  "mean_ev": -0.0631,
+  "mean_clv": -0.0645,
   "games": 1,
   "candidate": false
  },
