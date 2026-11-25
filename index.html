@@ -128,7 +128,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .tile.open .hs{width:30px;height:30px}
 .tile .nm{display:block;flex:1;min-width:0;overflow-wrap:normal;word-break:normal;hyphens:none}
 .tile .nm .fn,.tile .nm .ln{display:block;min-width:0;overflow:hidden;white-space:nowrap;overflow-wrap:normal;word-break:normal;hyphens:none}
-.tile .nm .fn{font:500 12px/14px var(--cond);color:var(--muted)}
+.tile .nm .fn{font:500 13px/15px var(--cond);color:var(--muted)}
 .tile .nm .ln{font:600 15px/19px var(--cond);letter-spacing:.005em}
 .tile .nm .ln.brk{white-space:normal}
 .tile.open .nm{font:600 16px/21px var(--cond);letter-spacing:.005em}
@@ -342,11 +342,11 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .tr.th{font-size:11px;line-height:15px;color:var(--muted);padding:6px 0 5px}
 .tr>*{text-align:right;white-space:nowrap}
 .tr>:first-child{text-align:left;white-space:normal}
-.tbl.cuts{container-type:inline-size}
+.tbl{container-type:inline-size}
 @container (max-width:290px){
-  .cuts .tr{grid-template-columns:50px 60px minmax(0,1fr)}
-  .cuts .tr>:first-child{grid-column:1 / -1;text-align:left}
-  .cuts .tr.th>:first-child{display:none}
+  .tbl .tr{grid-template-columns:56px 78px minmax(0,1fr)}
+  .tbl .tr>:first-child{grid-column:1 / -1;text-align:left}
+  .tbl .tr.th>:first-child{display:none}
 }
 .tr .num{font:600 15px/18px var(--num)}
 .tr .lbl small{display:block;font-size:11px;line-height:14px;color:var(--warn)}
@@ -2442,7 +2442,7 @@ function nightSection(nt, ents) {
 /* a compact cut table: label | W-L | units | hit vs what the prices needed on average */
 function cutTable(c, few) {
   var box = h('section', { class: 'cut' }, h('h3', { text: str(c.label) }), c.note ? h('div', { class: 'cn', text: str(c.note) }) : null);
-  var tbl = h('div', { class: 'tbl cuts', role: 'table', 'aria-label': str(c.label) });
+  var tbl = h('div', { class: 'tbl', role: 'table', 'aria-label': str(c.label) });
   tbl.appendChild(h('div', { class: 'tr th', role: 'row' }, h('span', { role: 'columnheader', text: '' }), h('span', { role: 'columnheader', text: 'W-L' }),
     h('span', { role: 'columnheader', text: 'Units' }), h('span', { role: 'columnheader', text: 'Hit vs needs' })));
   arr(c.rows).filter(isObj).forEach(function (r) {
@@ -2728,7 +2728,7 @@ function labFace(m) {
     str(t.plain) ? h('span', { class: 'lc-pl', text: str(t.plain) }) : null,
     h('span', { class: 'lc-l3' },
       h('span', { class: 'lc-ml', text: labMeterText(m.st, m.k, m.need) }),
-      h('span', { class: 'lc-rec' + (m.st ? '' : ' mu'), text: m.st ? m.w + '-' + m.l : '...' }),
+      h('span', { class: 'lc-rec' + (m.st ? '' : ' mu'), text: m.st ? m.w + '-' + m.l : '\u2014' }),
       meter,
       m.st && m.u != null ? h('span', { class: 'lc-un ' + signCls(m.u), text: uShort(m.u, 2) }) : h('span')),
     h('span', { class: 'lc-l4' }, h('span', { class: 'lc-tag' + (paper ? '' : ' real') }, paper ? h('span', { class: 'lc-dash', 'aria-hidden': 'true' }) : null, labTag(t)),

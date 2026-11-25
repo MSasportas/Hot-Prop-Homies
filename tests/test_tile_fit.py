@@ -17,11 +17,12 @@ ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 CHECK_JS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tile_check.js")
 WIDTHS = (320, 340, 380, 430)
 ALL_VIEWS = ("picks", "live", "games", "record", "lab", "info")
+REAL_DATA_VIEWS = ALL_VIEWS + ("hq",)  # HQ reads the committed data files directly, so it has no fixture
 # the long-name and lab fixtures run every tab; the open-pick fixtures cover Picks tiles in each settled state,
 # the record fixtures hold the real NBA and NHL Record files (market, side, edge and price cuts)
 REAL_DATA = ""  # no ?fixture: the page reads the committed sports/*/data files, as the live site does
 FIXTURE_VIEWS = {
-    REAL_DATA: ALL_VIEWS,
+    REAL_DATA: REAL_DATA_VIEWS,
     "livelong": ALL_VIEWS,
     "livelong-nhl": ALL_VIEWS,
     "lab-cards": ALL_VIEWS,
@@ -33,7 +34,7 @@ FIXTURE_VIEWS = {
 SPORTS = ("all", "nba", "nhl")
 RECORD_SPORT = {"record-nba": "nba", "record-nhl": "nhl"}  # the breakdown tables show for one sport at a time
 # the page renders differently for All, NBA and NHL: the committed data is swept for each, the fixtures where it matters
-WIDE_SPORT_RUNS = tuple((REAL_DATA, v) for v in ALL_VIEWS) + (("livelong", "picks"), ("livelong", "live"), ("livelong-nhl", "live"), ("open-picks", "picks"), ("open-picks-nhl", "picks"))
+WIDE_SPORT_RUNS = tuple((REAL_DATA, v) for v in REAL_DATA_VIEWS) + (("livelong", "picks"), ("livelong", "live"), ("livelong-nhl", "live"), ("open-picks", "picks"), ("open-picks-nhl", "picks"))
 RENDER_MS = 700
 SWITCH_MIN_TAP_PX = 40
 TAP_ALL = """() => {
@@ -114,9 +115,9 @@ class EveryTileFits(unittest.TestCase):
         ctx = self.browser.new_context(viewport={"width": 320, "height": 900})
         for fixture, label in (("record-nba", "Rebounds"), ("record-nhl", "Under 1.5")):
             page = self.render(ctx, fixture, "record", RECORD_SPORT[fixture], tap=False)
-            labels = page.evaluate("Array.from(document.querySelectorAll('.cuts .lbl')).map((e) => e.textContent)")
+            labels = page.evaluate("Array.from(document.querySelectorAll('.tbl .lbl')).map((e) => e.textContent)")
             self.assertTrue(any(label in t for t in labels), (fixture, labels))
-            self.assertTrue(page.evaluate("Array.from(document.querySelectorAll('.cuts .lbl small')).length > 0"), fixture)
+            self.assertTrue(page.evaluate("Array.from(document.querySelectorAll('.tbl .lbl small')).length > 0"), fixture)
             page.close()
         ctx.close()
 
