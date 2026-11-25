@@ -93,6 +93,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .live.warn{background:var(--warn)} .live.bad{background:var(--primary)}
 .statusline{font-size:12.5px;line-height:17px;color:var(--fg2)}
 .nb{white-space:nowrap}
+.tr>span>small{display:block;font-size:11px;line-height:14px;color:var(--muted)}
 .statusline .wt{color:var(--warn);font-weight:600}
 
 /* banners: a 3px meaning bar on the left, plain text */
@@ -160,6 +161,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .stp.early{color:var(--warn)} .stp.ok{color:var(--good)} .stp.lock{color:var(--muted)}
 .stp .t{color:inherit;font-weight:600}
 .stp.lock .t{color:var(--fg2)}
+.xp .stp{max-width:100%;white-space:normal}
+.xp .stp .trk{flex:none}
 .xp .stp .n{width:8px;height:8px} .xp .stp .c{width:10px}
 .chip.hollow{display:inline-flex;align-items:center;height:20px;padding:0 6px;border:1px solid var(--line2);border-radius:4px;font-size:11.5px;color:var(--fg2)}
 /* opened tile */
@@ -2114,7 +2117,7 @@ function renderLiveAll() {
     var parts = ['Today ' + tw + '-' + tl + ' · ', h('span', { class: signCls(tu), text: uShort(tu, 1) })];
     ['nba', 'nhl'].forEach(function(sp) {
       var ss = sportSt[sp]; if (!ss) return;
-      parts.push(' · '); parts.push(h('span', { class: 'sp-badge ' + sp, text: sp.toUpperCase() })); parts.push(' ' + ss.w + '-' + ss.l);
+      parts.push(' · '); parts.push(h('span', { class: 'nb' }, h('span', { class: 'sp-badge ' + sp, text: sp.toUpperCase() }), ' ' + ss.w + '-' + ss.l));
     });
     app.appendChild(h('div', { class: 'tonight' }, parts));
   }

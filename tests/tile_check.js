@@ -1,5 +1,5 @@
 /* Runs in the page. Returns one entry per problem found on the rendered view: any ellipsis, clipped or sideways-scrolling text,
-   a line cut by an overflow:hidden ancestor, a word split across two lines (a break after a hyphen between two letters is allowed; a record like 2-3 or a number like 1-800 is not), or the page scrolling sideways. */
+   a line cut by an overflow:hidden ancestor, a word split across two lines (a break after a hyphen between two letters is allowed; a record like 2-3 or a number like 1-800 is not), a pill left on a different line from the number after it, text inside a tile's padding, or the page scrolling sideways. */
 () => {
   const out = [];
   const root = document.documentElement;
@@ -41,6 +41,23 @@
     }
   }
 
+  for (const pill of document.querySelectorAll('#app .sp-badge, #app .ptag, #app .lc-pill, #app .tagx.conf')) {
+    if (pill.closest('[hidden]') || getComputedStyle(pill).display === 'none') continue;
+    let next = pill.nextSibling;
+    while (next && next.nodeType === 3 && !next.textContent.trim()) next = next.nextSibling;
+    if (!next || !/^\s*[+-]?\d/.test(next.textContent)) continue;
+    const range = document.createRange();
+    range.selectNodeContents(next);
+    const first = range.getClientRects()[0], at = pill.getBoundingClientRect();
+    if (first && first.width && Math.abs(first.top + first.height / 2 - (at.top + at.height / 2)) > at.height) add('pill-split-from-its-number', pill, next.textContent.trim().slice(0, 12));
+  }
+  for (const el of document.querySelectorAll('#app .tile *')) {
+    if (el.children.length || !el.textContent.trim() || el.closest('[hidden]')) continue;
+    const tile = el.closest('.tile'), tcs = getComputedStyle(tile), range = document.createRange();
+    range.selectNodeContents(el);
+    const inner = tile.getBoundingClientRect().right - parseFloat(tcs.borderRightWidth) - parseFloat(tcs.paddingRight);
+    if (range.getBoundingClientRect().right > inner + SLACK) add('text-in-the-card-padding', el, Math.round(range.getBoundingClientRect().right) + '>' + Math.round(inner));
+  }
   const walker = document.createTreeWalker(document.getElementById('app'), NodeFilter.SHOW_TEXT);
   for (let n = walker.nextNode(); n; n = walker.nextNode()) {
     const el = n.parentElement;
