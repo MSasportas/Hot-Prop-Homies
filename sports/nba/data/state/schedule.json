@@ -390,11 +390,11 @@
     "home": "DEN",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "10:51 - 2nd",
     "score": {
-     "DAL": "24",
-     "DEN": "17"
+     "DAL": "26",
+     "DEN": "19"
     }
    }
   ]
