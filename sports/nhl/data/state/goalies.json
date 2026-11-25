@@ -27,7 +27,7 @@
   },
   "FLA": {
    "name": "Jacob Markstrom",
-   "status": "expected"
+   "status": "confirmed"
   },
   "OTT": {
    "name": "Linus Ullmark",
@@ -114,5 +114,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-25T10:40:01-05:00"
+ "checked_at": "2026-11-25T10:50:00-05:00"
 }
