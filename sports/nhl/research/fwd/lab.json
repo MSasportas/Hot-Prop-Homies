@@ -1,8 +1,8 @@
 {
  "LL3a tight": {
-  "clv": 0.0303,
+  "clv": 0.0302,
   "l": 76,
-  "pending": 6,
+  "pending": 7,
   "push": 0,
   "units": 2.29,
   "void": 0,
@@ -11,7 +11,7 @@
  "LL3b loose": {
   "clv": 0.0282,
   "l": 34,
-  "pending": 4,
+  "pending": 5,
   "push": 0,
   "units": 11.94,
   "void": 0,
@@ -20,25 +20,25 @@
  "LL4a fade": {
   "clv": -0.0704,
   "l": 96,
-  "pending": 4,
+  "pending": 7,
   "push": 0,
   "units": 3.17,
   "void": 0,
   "w": 110
  },
  "LL5 exch": {
-  "clv": 0.0215,
+  "clv": 0.0214,
   "l": 119,
-  "pending": 18,
+  "pending": 22,
   "push": 0,
   "units": 10.43,
   "void": 0,
   "w": 134
  },
  "LL6 line": {
-  "clv": -0.0161,
+  "clv": -0.0159,
   "l": 51,
-  "pending": 10,
+  "pending": 11,
   "push": 0,
   "units": -8.8,
   "void": 0,
@@ -162,7 +162,7 @@
   "w": 1
  },
  "R28b over": {
-  "clv": -0.1191,
+  "clv": -0.1195,
   "l": 81,
   "pending": 71,
   "push": 0,
@@ -171,7 +171,7 @@
   "w": 56
  },
  "R28b under": {
-  "clv": -0.0501,
+  "clv": -0.0498,
   "l": 111,
   "pending": 128,
   "push": 0,
@@ -180,7 +180,7 @@
   "w": 120
  },
  "R28c rest": {
-  "clv": -0.0522,
+  "clv": -0.0523,
   "l": 176,
   "pending": 175,
   "push": 0,
@@ -208,6 +208,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-25T23:20:11+00:00",
+ "updated_at": "2026-11-25T23:30:42+00:00",
  "version": 1
 }

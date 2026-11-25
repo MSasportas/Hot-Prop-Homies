@@ -1,41 +1,41 @@
 {
  "slate_date": "2026-11-25",
- "generated_at": "2026-11-25T18:22:09-05:00",
- "status_at": "2026-11-25T18:22:09-05:00",
+ "generated_at": "2026-11-25T18:30:01-05:00",
+ "status_at": "2026-11-25T18:30:01-05:00",
  "valid_until": "2026-11-26T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
-  "prices_at": "2026-11-25T18:20:00-05:00",
-  "next_price_read_at": "2026-11-25T18:30:00-05:00",
+  "prices_at": "2026-11-25T18:30:01-05:00",
+  "next_price_read_at": "2026-11-25T18:45:00-05:00",
   "stats_built_at": "2026-11-24T23:30:01-05:00",
   "stats_through": "2026-11-24",
-  "lineups_at": "2026-11-25T18:22:09-05:00",
+  "lineups_at": "2026-11-25T18:30:01-05:00",
   "goalies_at": null,
-  "lineups_note": "Lineups posted for 12 of 22 teams checked so far.",
+  "lineups_note": "Lineups posted for 13 of 24 teams checked so far.",
   "lineups_state": "ok",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-25T18:22:09-05:00",
+   "at": "2026-11-25T18:30:01-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 2373,
+   "pulls_left": 2366,
    "keys": 9,
    "game_days_left": 5,
    "days_left": 6,
    "low": false
   },
   "excluded_teams": [],
-  "lines_checked": 144,
-  "flag_reads": 9,
+  "lines_checked": 177,
+  "flag_reads": 11,
   "tier": 4
  },
  "banners": [],
  "empty": {
   "code": "none_qualified",
   "text": "No picks yet today",
-  "sub": "144 lines read, none cleared both checks. 1 had a gap but our model said no. Next read at 6:30 PM."
+  "sub": "177 lines read, none cleared both checks. 1 had a gap but our model said no. Next read at 6:45 PM."
  },
  "games": [
   {
@@ -475,11 +475,15 @@
      {
       "pull": "A",
       "at": "2026-11-25T13:00:00-05:00"
+     },
+     {
+      "pull": "B",
+      "at": "2026-11-25T18:30:01-05:00"
      }
     ],
     "next_read": {
-     "pull": "B",
-     "at": "2026-11-25T18:30:00-05:00"
+     "pull": "C",
+     "at": "2026-11-25T19:15:00-05:00"
     },
     "lineups_at": {
      "away": null,
@@ -516,11 +520,15 @@
      {
       "pull": "A",
       "at": "2026-11-25T13:00:00-05:00"
+     },
+     {
+      "pull": "B",
+      "at": "2026-11-25T18:30:01-05:00"
      }
     ],
     "next_read": {
-     "pull": "B",
-     "at": "2026-11-25T18:30:00-05:00"
+     "pull": "C",
+     "at": "2026-11-25T19:15:00-05:00"
     },
     "lineups_at": {
      "away": null,
@@ -539,8 +547,8 @@
    "home": "COL",
    "start": "2026-11-25T21:30:00-05:00",
    "lineups": {
-    "away": "not_checked",
-    "home": "not_checked"
+    "away": "waiting",
+    "home": "confirmed"
    },
    "goalies": {
     "away": {
@@ -565,7 +573,7 @@
     },
     "lineups_at": {
      "away": null,
-     "home": null
+     "home": "2026-11-25T18:30:01-05:00"
     }
    },
    "started": false,

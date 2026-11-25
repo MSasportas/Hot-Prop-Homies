@@ -27,7 +27,7 @@
   ],
   "p_one_sided": 0.291,
   "mean_ev": 0.0,
-  "mean_clv": -0.0501,
+  "mean_clv": -0.0498,
   "games": 27,
   "candidate": false
  },
@@ -43,7 +43,7 @@
   ],
   "p_one_sided": 0.896,
   "mean_ev": 0.0,
-  "mean_clv": -0.1191,
+  "mean_clv": -0.1195,
   "games": 27,
   "candidate": false
  },
@@ -59,7 +59,7 @@
   ],
   "p_one_sided": 0.408,
   "mean_ev": 0.0,
-  "mean_clv": -0.0522,
+  "mean_clv": -0.0523,
   "games": 27,
   "candidate": false
  },
