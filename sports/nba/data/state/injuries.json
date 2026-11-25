@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T13:00:01-05:00",
+ "at": "2026-11-25T13:20:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -372,12 +372,19 @@
    "date": "2026-11-13T20:19Z",
    "note": "Murray (ankle) is out for Friday's game against Memphis."
   },
+  "3062679": {
+   "status": "day-to-day",
+   "name": "Josh Hart",
+   "team": "NY",
+   "date": "2026-11-25T17:57Z",
+   "note": "Hart (shoulder) has been upgraded to probable for Wednesday's game against the Cavaliers."
+  },
   "4431823": {
    "status": "out",
    "name": "Miles McBride",
    "team": "NY",
-   "date": "2026-11-25T17:54Z",
-   "note": "McBride (adductor) is listed as questionable for Wednesday's game versus Cleveland."
+   "date": "2026-11-25T17:57Z",
+   "note": "McBride (adductor) has been ruled out for Wednesday's game against the Cavaliers."
   },
   "3136195": {
    "status": "day-to-day",
@@ -399,13 +406,6 @@
    "team": "NY",
    "date": "2026-11-24T21:56Z",
    "note": "Clarkson (foot) is out for Wednesday's game against Cleveland."
-  },
-  "3062679": {
-   "status": "day-to-day",
-   "name": "Josh Hart",
-   "team": "NY",
-   "date": "2026-11-24T21:54Z",
-   "note": "Hart (shoulder) is listed as questionable for Wednesday's game against Cleveland."
   },
   "3934719": {
    "status": "out",
