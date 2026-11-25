@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-24T19:50:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-24T20:00:01-05:00"
+   "at": "2026-11-24T20:10:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-24T20:00:01-05:00",
+    "at": "2026-11-24T20:10:01-05:00",
     "confirmed": [
      "BOS",
      "DET",
@@ -48,7 +48,7 @@
    "away": "DET",
    "home": "ORL",
    "state": "in",
-   "detail": "3:16 - 2nd",
+   "detail": "Halftime",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -441,6 +441,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-24T20:00:01-05:00",
- "status_at": "2026-11-24T20:00:01-05:00"
+ "generated_at": "2026-11-24T20:10:01-05:00",
+ "status_at": "2026-11-24T20:10:01-05:00"
 }
