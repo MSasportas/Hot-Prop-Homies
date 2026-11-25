@@ -45,7 +45,7 @@
   "w": 76
  },
  "MM2a split": {
-  "clv": -0.0209,
+  "clv": -0.0211,
   "l": 12,
   "pending": 2,
   "push": 0,
@@ -54,7 +54,7 @@
   "w": 6
  },
  "MM2b split 2%": {
-  "clv": -0.0049,
+  "clv": -0.0051,
   "l": 7,
   "pending": 1,
   "push": 0,
@@ -63,9 +63,9 @@
   "w": 4
  },
  "MM3a persist": {
-  "clv": 0.034,
+  "clv": 0.0339,
   "l": 54,
-  "pending": 5,
+  "pending": 6,
   "push": 0,
   "units": 4.45,
   "void": 0,
@@ -90,18 +90,18 @@
   "w": 9
  },
  "MM5a follow": {
-  "clv": -0.087,
+  "clv": -0.0865,
   "l": 53,
-  "pending": 5,
+  "pending": 6,
   "push": 0,
   "units": -22.07,
   "void": 0,
   "w": 23
  },
  "MM5b fade": {
-  "clv": -0.0709,
+  "clv": -0.071,
   "l": 22,
-  "pending": 4,
+  "pending": 5,
   "push": 0,
   "units": 6.99,
   "void": 0,
@@ -117,7 +117,7 @@
   "w": 6
  },
  "NN2fb follow HR": {
-  "clv": -0.0645,
+  "clv": -0.0646,
   "l": 6,
   "pending": 17,
   "push": 0,
@@ -162,7 +162,7 @@
   "w": 1
  },
  "R28b over": {
-  "clv": -0.1195,
+  "clv": -0.1196,
   "l": 81,
   "pending": 71,
   "push": 0,
@@ -171,7 +171,7 @@
   "w": 56
  },
  "R28b under": {
-  "clv": -0.0498,
+  "clv": -0.0497,
   "l": 111,
   "pending": 128,
   "push": 0,
@@ -198,7 +198,7 @@
   "w": 178
  },
  "R28d backup goalie": {
-  "clv": -0.1006,
+  "clv": -0.1008,
   "l": 62,
   "pending": 61,
   "push": 0,
@@ -208,6 +208,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-25T23:30:42+00:00",
+ "updated_at": "2026-11-25T23:50:15+00:00",
  "version": 1
 }
