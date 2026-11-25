@@ -1,24 +1,24 @@
 {
  "LL3a tight": {
-  "clv": 0.0306,
+  "clv": 0.0303,
   "l": 76,
-  "pending": 4,
+  "pending": 6,
   "push": 0,
   "units": 2.29,
   "void": 0,
   "w": 76
  },
  "LL3b loose": {
-  "clv": 0.0285,
+  "clv": 0.0282,
   "l": 34,
-  "pending": 3,
+  "pending": 4,
   "push": 0,
   "units": 11.94,
   "void": 0,
   "w": 44
  },
  "LL4a fade": {
-  "clv": -0.0705,
+  "clv": -0.0704,
   "l": 96,
   "pending": 4,
   "push": 0,
@@ -27,16 +27,16 @@
   "w": 110
  },
  "LL5 exch": {
-  "clv": 0.0218,
+  "clv": 0.0215,
   "l": 119,
-  "pending": 16,
+  "pending": 18,
   "push": 0,
   "units": 10.43,
   "void": 0,
   "w": 134
  },
  "LL6 line": {
-  "clv": -0.0165,
+  "clv": -0.0161,
   "l": 51,
   "pending": 10,
   "push": 0,
@@ -45,9 +45,9 @@
   "w": 76
  },
  "MM2a split": {
-  "clv": -0.0195,
+  "clv": -0.0209,
   "l": 12,
-  "pending": 1,
+  "pending": 2,
   "push": 0,
   "units": -7.11,
   "void": 0,
@@ -63,9 +63,9 @@
   "w": 4
  },
  "MM3a persist": {
-  "clv": 0.0343,
+  "clv": 0.034,
   "l": 54,
-  "pending": 0,
+  "pending": 5,
   "push": 0,
   "units": 4.45,
   "void": 0,
@@ -90,18 +90,18 @@
   "w": 9
  },
  "MM5a follow": {
-  "clv": -0.0867,
+  "clv": -0.087,
   "l": 53,
-  "pending": 0,
+  "pending": 5,
   "push": 0,
   "units": -22.07,
   "void": 0,
   "w": 23
  },
  "MM5b fade": {
-  "clv": -0.0712,
+  "clv": -0.0709,
   "l": 22,
-  "pending": 0,
+  "pending": 4,
   "push": 0,
   "units": 6.99,
   "void": 0,
@@ -126,7 +126,7 @@
   "w": 14
  },
  "NN4 exch steam": {
-  "clv": -0.0315,
+  "clv": -0.0309,
   "l": 2,
   "pending": 1,
   "push": 0,
@@ -162,7 +162,7 @@
   "w": 1
  },
  "R28b over": {
-  "clv": -0.1183,
+  "clv": -0.1191,
   "l": 81,
   "pending": 71,
   "push": 0,
@@ -171,7 +171,7 @@
   "w": 56
  },
  "R28b under": {
-  "clv": -0.0505,
+  "clv": -0.0501,
   "l": 111,
   "pending": 128,
   "push": 0,
@@ -180,7 +180,7 @@
   "w": 120
  },
  "R28c rest": {
-  "clv": -0.0524,
+  "clv": -0.0522,
   "l": 176,
   "pending": 175,
   "push": 0,
@@ -189,7 +189,7 @@
   "w": 208
  },
  "R28c rest mirror": {
-  "clv": -0.0933,
+  "clv": -0.0935,
   "l": 216,
   "pending": 175,
   "push": 0,
@@ -198,7 +198,7 @@
   "w": 178
  },
  "R28d backup goalie": {
-  "clv": -0.0998,
+  "clv": -0.1006,
   "l": 62,
   "pending": 61,
   "push": 0,
@@ -208,6 +208,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-25T23:00:12+00:00",
+ "updated_at": "2026-11-25T23:20:11+00:00",
  "version": 1
 }
