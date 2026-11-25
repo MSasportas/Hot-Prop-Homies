@@ -1,0 +1,9 @@
+| set | bets | graded | W-L | units | ROI | 90% CI (game-clustered) | CLV proxy |
+|---|---|---|---|---|---|---|---|
+| ALL | 3 | 3 | 2-1 | +0.00u | +0.0% | -50.0..+50.0% | - |
+| Discovery (< 2026-11-26, labelled check) | 3 | 3 | 2-1 | +0.00u | +0.0% | -50.0..+50.0% | - |
+| Forward (>= 2026-11-26) | 0 | 0 | - | - | - | - | - |
+| Discovery over | 1 | 1 | 1-0 | +0.50u | +50.0% | +50.0..+50.0% | - |
+| Discovery under | 2 | 2 | 1-1 | -0.50u | -25.0% | -100.0..+50.0% | - |
+
+Placebo (discovery, within-night shuffle, 500 draws): share of placebo units >= actual = 1.000

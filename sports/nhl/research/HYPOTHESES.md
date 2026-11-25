@@ -789,3 +789,14 @@ Event: at least 3 other books have a main line for that player, and a strict maj
 CLV = the median no-vig chance of the other books on the same Hard Rock line at the game's last read (fresh, two-sided, hold 0-15%), for the bet side, times the frozen Hard Rock decimal price, minus 1. Proxy for the close (the books' own last read, not a closing line).
 Pass bar: rule 4 (n >= 150 graded forward, ROI > 0, 90% game-clustered lower bound > 0, CLV > 0). Placebo: results shuffled within night, 500 draws, share of placebo ROI >= actual.
 Code: sports/nhl/research/code/run31/pl1_points_line_majority.py (output pl1_results.txt).
+
+## Run 31 (Researcher, 2026-11-25). POINTS LINE MAJORITY (LL6 ported to points). Registered before any of these were tested.
+Discovery = every stored odds night with points through 2026-11-25 (seen by Q14, R28 and R29/R30 for points, so discovery only). Forward = nights from 2026-11-26 on. Not a re-run of LL6 (shots line majority, forward since Nov 9), PT1/PT2 (points price vs consensus fair, same line), or R29a/b (price timing and hold).
+Population: data/odds reads B and C with markets.points (Hard Rock) and `others` (fresh < 60 min at the read, two-sided, hold 0-15%).
+Main line per book for a player = the two-sided line whose proportional no-vig over chance is closest to 0.5. Hard Rock's line = the same rule on Hard Rock.
+Event: at least 3 other books have a main line for that player, and a strict majority of them sit ABOVE Hard Rock's line: bet Hard Rock OVER. A strict majority BELOW: bet Hard Rock UNDER. Price on Hard Rock -200..+120 (no EV filter). First qualifying read per (night, game, player). 1u flat, graded from the data/shadow points result (void = no bet).
+- PL1 Points line majority (the rule above). 1 variant.
+CLV = the median no-vig chance of the other books on the same Hard Rock line at the game's last read (fresh, two-sided, hold 0-15%), for the bet side, times the frozen Hard Rock decimal price, minus 1. Proxy for the close (the books' own last read, not a closing line).
+Pass bar: rule 4 (n >= 150 graded forward, ROI > 0, 90% game-clustered lower bound > 0, CLV > 0). Placebo: results shuffled within night, 500 draws, share of placebo ROI >= actual.
+Code: sports/nhl/research/code/run31/pl1_points_line_majority.py (output pl1_results.txt).
+Result (2026-11-25 run): 3 graded bets in discovery (2-1, 0.00u). The rule almost never fires: other books rarely carry two-sided points lines in data/odds. NO RESULT. Forward from 2026-11-26 stays open but needs a points-coverage check before its count means anything.

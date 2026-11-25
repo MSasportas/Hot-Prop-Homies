@@ -1,3 +1,10 @@
+## 2026-11-25, Run 31 (Researcher daily; PL1 points line majority, NHL)
+Registered in HYPOTHESES.md (Run 31) before any test: LL6 ported to points. >= 3 other books with a main line, strict majority above HR's points line -> HR OVER, below -> HR UNDER, reads B and C, price -200..+120. Stored data only, no key. Code research/code/run31/pl1_points_line_majority.py, output pl1_results.txt.
+- PL1 discovery: 3 graded bets, 2-1, 0.00u. The rule almost never fires: other books rarely carry two-sided points lines in data/odds. No ROI read is possible. NO RESULT.
+- Forward scorer run_all.sh refreshed the forward files (research/fwd/*, timestamps 17:43 today); no READY FOR SHARP flag in them. Full per-test read not redone in this run.
+**Verdict: no candidate. PL1 needs a points-coverage check before its forward count means anything.**
+Next: (1) check how many books carry points lines per night (data/odds others.*.points); (2) if coverage is thin, write PL1 up as a proposal to the CEO for a wider others list (no credits needed if the list is in the existing fetch).
+
 # LOG.md: Researcher runs (newest first)
 
 ## 2026-11-24, Run 30 (Researcher daily; POINTS: Hard Rock vs the other books' median, new market for the book-comparison priority)
