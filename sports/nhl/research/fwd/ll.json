@@ -1,6 +1,6 @@
 {
  "LL1f-follow": {
-  "bets": 666,
+  "bets": 674,
   "graded": 663,
   "w": 350,
   "units": -26.052,
@@ -10,13 +10,13 @@
    0.0323
   ],
   "p_one_sided": 0.819,
-  "mean_ev": -0.083,
-  "mean_clv": -0.0831,
+  "mean_ev": -0.0829,
+  "mean_clv": -0.083,
   "games": 95,
   "candidate": false
  },
  "LL1f-fade": {
-  "bets": 675,
+  "bets": 683,
   "graded": 672,
   "w": 317,
   "units": -73.744,
@@ -26,8 +26,8 @@
    -0.0389
   ],
   "p_one_sided": 0.995,
-  "mean_ev": -0.0743,
-  "mean_clv": -0.0744,
+  "mean_ev": -0.0748,
+  "mean_clv": -0.0748,
   "games": 95,
   "candidate": false
  },

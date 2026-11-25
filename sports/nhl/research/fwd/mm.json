@@ -64,7 +64,7 @@
   "candidate": false
  },
  "MM4 total": {
-  "bets": 18,
+  "bets": 20,
   "graded": 18,
   "w": 9,
   "units": -0.625,
@@ -74,8 +74,8 @@
    0.233
   ],
   "p_one_sided": 0.5685,
-  "mean_ev": -0.1177,
-  "mean_clv": -0.1177,
+  "mean_ev": -0.1149,
+  "mean_clv": -0.1149,
   "games": 6,
   "candidate": false
  },
