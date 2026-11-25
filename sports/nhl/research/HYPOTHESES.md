@@ -769,6 +769,10 @@ Discovery = stored shadow nights through 2026-11-25 (points rows in data/shadow)
 - R29b Points low-hold lines. Base: points rows at the close read, HR close hold <= 0.06 (cheap overround), price -200..+120, the FAVORITE side (consensus fair over or under > 0.5) bet at its close price (no EV filter). Amended before any test ran: betting every side of a line would be two bets per line and built-in hold loss, so one side per line. Metric: ROI, 90% game-clustered CI, CLV. Mirror (hold >= 0.09) tracked for context only, not a pass.
 - Placebo for both: shuffle results within night (500 draws); report the share of placebo ROIs >= actual.
 
+Results (run 29, 2026-11-21 run; discovery through 2026-11-25; details in LOG.md):
+- R29a: VOID as registered. The EV >= 0 gate selects 0 of 4,139 points rows (best open EV median -6.5%, max -4.6%). Descriptive deviation (post-hoc, not a pass test): highest-EV side, open -8.7% n2,596 vs close -8.8%, no timing edge. Status: failed (no timing edge); gate void.
+- R29b: n 2 favorites at close hold <= 0.06 (1-1). Untestable on stored data (points hold median 7.0%). Mirror hold >= 0.09 favorites -9.2% n178 (context). Status: untestable; mirror noted.
+
 ## Run 30 (Researcher, 2026-11-24 daily run; registered before any of these were tested). POINTS: HARD ROCK VS THE CONSENSUS (new market for the book-comparison priority)
 Discovery = every stored shadow night through 2026-11-25 (points rows with result). Forward = nights from 2026-11-26 on (none yet). Not a re-run of R29a/b (price timing and low hold) or of R28a (Pinnacle-only gap).
 Population: data/shadow rows, market = points, with open.cons_fair_over_med present (median fair over of the other books on the same line, fresh, hold 0-15%) and Hard Rock over and under both posted at open. Each side s: consensus fair q_s (q_over = cons_fair_over_med, q_under = 1 - q_over), EV_s = q_s x decimal(HR price_s) - 1. One bet per row: the side with the higher EV, if that EV clears the variant bar and the HR price is -200..+200. Result W/L/P from the row's graded result for that side (push = P, no result = void). 1u flat at HR's open price.
