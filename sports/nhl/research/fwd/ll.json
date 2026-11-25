@@ -1,34 +1,34 @@
 {
  "LL1f-follow": {
   "bets": 674,
-  "graded": 663,
-  "w": 350,
-  "units": -26.052,
-  "roi": -0.0393,
+  "graded": 671,
+  "w": 354,
+  "units": -27.25,
+  "roi": -0.0406,
   "ci90": [
-   -0.1097,
-   0.0323
+   -0.1061,
+   0.0285
   ],
-  "p_one_sided": 0.819,
+  "p_one_sided": 0.831,
   "mean_ev": -0.0829,
   "mean_clv": -0.083,
-  "games": 95,
+  "games": 96,
   "candidate": false
  },
  "LL1f-fade": {
   "bets": 683,
-  "graded": 672,
-  "w": 317,
-  "units": -73.744,
-  "roi": -0.1097,
+  "graded": 680,
+  "w": 321,
+  "units": -74.084,
+  "roi": -0.1089,
   "ci90": [
-   -0.1828,
-   -0.0389
+   -0.1779,
+   -0.0406
   ],
-  "p_one_sided": 0.995,
+  "p_one_sided": 0.9935,
   "mean_ev": -0.0748,
   "mean_clv": -0.0748,
-  "games": 95,
+  "games": 96,
   "candidate": false
  },
  "LL3a tight": {
@@ -65,34 +65,34 @@
  },
  "LL4a fade": {
   "bets": 208,
-  "graded": 204,
-  "w": 109,
-  "units": 3.296,
-  "roi": 0.0162,
+  "graded": 206,
+  "w": 110,
+  "units": 3.166,
+  "roi": 0.0154,
   "ci90": [
-   -0.101,
-   0.131
+   -0.0959,
+   0.1351
   ],
-  "p_one_sided": 0.4095,
+  "p_one_sided": 0.4195,
   "mean_ev": -0.0692,
   "mean_clv": -0.07,
-  "games": 82,
+  "games": 83,
   "candidate": false
  },
  "LL4b follow": {
   "bets": 207,
-  "graded": 203,
-  "w": 94,
-  "units": -34.572,
-  "roi": -0.1703,
+  "graded": 205,
+  "w": 95,
+  "units": -34.858,
+  "roi": -0.17,
   "ci90": [
-   -0.2785,
-   -0.0586
+   -0.2812,
+   -0.0649
   ],
-  "p_one_sided": 0.995,
+  "p_one_sided": 0.991,
   "mean_ev": -0.0973,
   "mean_clv": -0.0965,
-  "games": 82,
+  "games": 83,
   "candidate": false
  },
  "LL5 exch": {
@@ -113,18 +113,18 @@
  },
  "LL6 line": {
   "bets": 128,
-  "graded": 126,
-  "w": 75,
-  "units": -9.314,
-  "roi": -0.0739,
+  "graded": 127,
+  "w": 76,
+  "units": -8.802,
+  "roi": -0.0693,
   "ci90": [
-   -0.1857,
-   0.0372
+   -0.1806,
+   0.0389
   ],
-  "p_one_sided": 0.867,
+  "p_one_sided": 0.8495,
   "mean_ev": -0.0167,
   "mean_clv": -0.0157,
-  "games": 77,
+  "games": 78,
   "candidate": false
  }
 }
