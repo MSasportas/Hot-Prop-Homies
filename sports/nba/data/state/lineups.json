@@ -54,8 +54,8 @@
    ],
    "status": {
     "Sion James": "probable",
-    "Grayson Allen": "questionable",
-    "Ryan Kalkbrenner": "doubtful",
+    "Grayson Allen": "out",
+    "Ryan Kalkbrenner": "out",
     "Kon Knueppel": "out",
     "Dennis Schroder": "out"
    }
@@ -84,11 +84,12 @@
     "Karl-Anthony Towns"
    ],
    "status": {
-    "Josh Hart": "questionable",
-    "Karl-Anthony Towns": "questionable",
-    "Miles McBride": "questionable",
+    "Jalen Brunson": "questionable",
+    "Josh Hart": "probable",
+    "Karl-Anthony Towns": "probable",
     "OG Anunoby": "out",
-    "Jordan Clarkson": "out"
+    "Jordan Clarkson": "out",
+    "Miles McBride": "out"
    }
   },
   "MIN": {
@@ -269,5 +270,5 @@
    }
   }
  },
- "at": "2026-11-25T05:00:01-05:00"
+ "at": "2026-11-25T14:00:00-05:00"
 }
