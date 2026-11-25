@@ -64,9 +64,9 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 @media (min-width:640px){.wrap{margin-left:calc(var(--w) + 24px)}}
 
 /* header */
-.hdr{position:sticky;top:0;z-index:6;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin:0 -14px;padding:calc(var(--sat) + 14px) 14px 10px;
+.hdr{position:sticky;top:0;z-index:6;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 16px;margin:0 -14px;padding:calc(var(--sat) + 14px) 14px 10px;
   background:var(--bg);border-bottom:1px solid var(--line)}
-.hdr h1{font:400 20px/26px var(--head);letter-spacing:.01em;margin:0;flex:1 1 auto;min-width:0}
+.hdr h1{font:400 20px/26px var(--head);letter-spacing:.01em;margin:0;flex:1 0 auto;max-width:100%}
 .hdr .date{font-size:13px;line-height:18px;color:var(--muted);white-space:nowrap}
 .hdr h1.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .hdr .sport-sw{margin-left:auto}
@@ -92,6 +92,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .live{display:inline-block;width:7px;height:7px;margin-right:7px;vertical-align:1px;border-radius:50%;background:var(--accent)}
 .live.warn{background:var(--warn)} .live.bad{background:var(--primary)}
 .statusline{font-size:12.5px;line-height:17px;color:var(--fg2)}
+.nb{white-space:nowrap}
 .statusline .wt{color:var(--warn);font-weight:600}
 
 /* banners: a 3px meaning bar on the left, plain text */
@@ -269,8 +270,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 /* games */
 .gl{margin-top:4px}
 .gm{padding:12px 0;border-bottom:1px solid var(--line)}
-.gm .g1{display:flex;align-items:baseline;gap:8px}
-.gm .mt{flex:1;min-width:0;font:600 16px/22px var(--cond);letter-spacing:.01em}
+.gm .g1{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 8px}
+.gm .mt{flex:1 0 auto;max-width:100%;font:600 16px/22px var(--cond);letter-spacing:.01em}
 .gm .pt{flex:none;font-size:13px;color:var(--fg2);white-space:nowrap}
 .ck{margin:6px 0 0;padding:0;list-style:none;font-size:12.5px;line-height:18px;color:var(--fg2)}
 .ck li{display:flex;gap:6px;align-items:flex-start;padding:1px 0}
@@ -1018,6 +1019,23 @@ function calcKey() {
 }
 function maybeRender() { var k = calcKey(); if (k !== S.key) render(); }
 var RENDER = {};
+/* A word that has both a digit and a hyphen (a record like 2-3, 1-800, 90->45, below-5%) never breaks across lines: it is wrapped so the line breaks before it. Fitted lines (data-fit) and names are left alone. */
+var HELD_TOKEN = /\S*\d\S*-\S*|\S*-\S*\d\S*/g;
+function holdTokens(root) {
+  var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT), nodes = [], n;
+  for (n = walker.nextNode(); n; n = walker.nextNode()) if (!n.parentNode.closest('[data-fit], .nm, script, style') && n.nodeValue.search(HELD_TOKEN) >= 0) nodes.push(n);
+  nodes.forEach(function (t) {
+    var text = t.nodeValue, at = 0, frag = document.createDocumentFragment(), m;
+    HELD_TOKEN.lastIndex = 0;
+    for (m = HELD_TOKEN.exec(text); m; m = HELD_TOKEN.exec(text)) {
+      if (m.index > at) frag.appendChild(document.createTextNode(text.slice(at, m.index)));
+      frag.appendChild(h('span', { class: 'nb', text: m[0] }));
+      at = m.index + m[0].length;
+    }
+    if (at < text.length) frag.appendChild(document.createTextNode(text.slice(at)));
+    t.parentNode.replaceChild(frag, t);
+  });
+}
 function render() {
   var y = window.scrollY || 0;
   try {
@@ -1027,6 +1045,7 @@ function render() {
     SLIP_VIEW = null;
     (RENDER[S.view] || renderPicks)();
     renderTabs();
+    holdTokens(app);
     fitNames();
     paintSlipBar();
   } catch (err) {

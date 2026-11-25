@@ -120,6 +120,17 @@ class EveryTileFits(unittest.TestCase):
             page.close()
         ctx.close()
 
+    def test_records_and_the_helpline_are_held_whole_at_every_width(self):
+        for width in WIDTHS:
+            ctx = self.browser.new_context(viewport={"width": width, "height": 900})
+            page = self.render(ctx, "livelong-nhl", "live", "all", tap=False)
+            held = page.evaluate("Array.from(document.querySelectorAll('.nb')).map((e) => [e.textContent, e.getClientRects().length === 1])")
+            texts = [t for t, _ in held]
+            self.assertTrue(any(re.fullmatch(r"\d+-\d+", t) for t in texts), (width, texts))
+            self.assertIn("1-800-GAMBLER.", texts)
+            self.assertTrue(all(one_line for _, one_line in held), (width, held))
+            ctx.close()
+
     def test_sport_switch_buttons_are_a_real_tap_size(self):
         ctx = self.browser.new_context(viewport={"width": 320, "height": 900})
         page = self.render(ctx, "livelong", "picks", "all", tap=False)

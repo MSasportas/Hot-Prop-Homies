@@ -1,5 +1,5 @@
 /* Runs in the page. Returns one entry per problem found on the rendered view: any ellipsis, clipped or sideways-scrolling text,
-   a line cut by an overflow:hidden ancestor, a word split across two lines (a break after a hyphen is allowed), or the page scrolling sideways. */
+   a line cut by an overflow:hidden ancestor, a word split across two lines (a break after a hyphen between two letters is allowed; a record like 2-3 or a number like 1-800 is not), or the page scrolling sideways. */
 () => {
   const out = [];
   const root = document.documentElement;
@@ -55,7 +55,8 @@
         before.setStart(n, m.index + i - 1); before.setEnd(n, m.index + i);
         after.setStart(n, m.index + i); after.setEnd(n, m.index + i + 1);
         const a = before.getClientRects()[0], b = after.getClientRects()[0];
-        split = !!(a && b && Math.abs(a.top - b.top) > a.height / 2 && m[0][i - 1] !== '-');
+        const hyphenBetweenLetters = m[0][i - 1] === '-' && /[A-Za-z]/.test(m[0][i - 2] || '') && /[A-Za-z]/.test(m[0][i]);
+        split = !!(a && b && Math.abs(a.top - b.top) > a.height / 2 && !hyphenBetweenLetters);
       }
       if (split) out.push({ kind: 'word-split-across-lines', where: where(el), text: m[0], detail: '' });
     }
