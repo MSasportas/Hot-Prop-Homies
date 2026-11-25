@@ -35,10 +35,10 @@
    }
   },
   "BOS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Derrick White",
-    "Jordan Walsh",
+    "Sam Hauser",
     "Jayson Tatum",
     "Paul George",
     "Neemias Queta"
@@ -92,5 +92,5 @@
    "status": {}
   }
  },
- "at": "2026-11-24T19:40:01-05:00"
+ "at": "2026-11-24T19:50:01-05:00"
 }
