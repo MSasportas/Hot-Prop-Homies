@@ -804,3 +804,9 @@ CLV = the median no-vig chance of the other books on the same Hard Rock line at 
 Pass bar: rule 4 (n >= 150 graded forward, ROI > 0, 90% game-clustered lower bound > 0, CLV > 0). Placebo: results shuffled within night, 500 draws, share of placebo ROI >= actual.
 Code: sports/nhl/research/code/run31/pl1_points_line_majority.py (output pl1_results.txt).
 Result (2026-11-25 run): 3 graded bets in discovery (2-1, 0.00u). The rule almost never fires: other books rarely carry two-sided points lines in data/odds. NO RESULT. Forward from 2026-11-26 stays open but needs a points-coverage check before its count means anything.
+## Run 31 (Researcher, 2026-11-25 daily). TWO-STEP PINNACLE TREND, NHL port of N31 (NBA). Registered before any of these were tested.
+Ids T31a/T31b (T = trend; Run 29 and Run 30 ids are taken by other registrations). Discovery = every stored odds night (data/odds, 44 nights through 2026-11-25). Forward = nights from 2026-11-26 on. Pass bar: rule 4 (n >= 150 graded forward, ROI > 0, 90% game-clustered lower bound > 0, mean CLV > 0). Code: research/code/run31/trend_n31_nhl.py. Stored data only: data/odds fetches with pulls A, B, C, D; data/shadow rows for grading (result.actual, toi check as in r22/jj22.py).
+Population: each game with pulls A, B and C in data/odds; markets shots and points (both as stored). Pinnacle two-sided on the same (player, line) at A, B and C (hold <= 15%, de-vigged fair over fA, fB, fC). Trend UP: fB - fA >= +1 pt, fC - fB >= +1 pt, fC - fA >= +3 pts, side OVER. Trend DOWN: mirror, side UNDER. Hard Rock two-sided on that line at C. Hard Rock price on the bet side -200..+200 at C. First per player/market/night.
+- T31a FOLLOW the trend at Hard Rock's C price.
+- T31b FADE the trend: bet the opposite side at Hard Rock's C price (-200..+200).
+Metrics: as N31 (n, W-L, units, ROI, 90% game-clustered CI, CLV vs Pinnacle D-read fair, shuffle placebo within night). Split by market and side.

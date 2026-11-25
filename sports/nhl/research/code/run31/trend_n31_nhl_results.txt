@@ -1,0 +1,18 @@
+T31 two-step Pinnacle trend, NHL. Nights: 44 (2026-10-12 to 2026-11-25). Forward starts 2026-11-26.
+Population: follow 7, fade 7 bets (shots and points, -200..+200 at read C)
+
+T31a follow all        n    7 graded    7    0-   7   -7.00u ROI -100.0% CI90 [-100.0, -100.0] CLV_pin     - (n 0) placebo>=actual 1.0
+T31a follow over       n    6 graded    6    0-   6   -6.00u ROI -100.0% CI90 [-100.0, -100.0] CLV_pin     - (n 0) placebo>=actual 1.0
+T31a follow under      n    1 graded    1    0-   1   -1.00u ROI -100.0% CI90 [-100.0, -100.0] CLV_pin     - (n 0) placebo>=actual 1.0
+T31a follow mkt shots  n    7 graded    7    0-   7   -7.00u ROI -100.0% CI90 [-100.0, -100.0] CLV_pin     - (n 0) placebo>=actual 1.0
+T31a follow mkt points n    0 graded    0    0-   0   +0.00u ROI      - CI90 -                CLV_pin     - (n 0) placebo>=actual None
+T31a follow discovery  n    7 graded    7    0-   7   -7.00u ROI -100.0% CI90 [-100.0, -100.0] CLV_pin     - (n 0) placebo>=actual 1.0
+T31a follow forward    n    0 graded    0    0-   0   +0.00u ROI      - CI90 -                CLV_pin     - (n 0) placebo>=actual None
+
+T31b fade all          n    7 graded    7    7-   0   +5.91u ROI +84.4% CI90 [+68.4, +102.2]  CLV_pin     - (n 0) placebo>=actual 1.0
+T31b fade over         n    1 graded    1    1-   0   +0.61u ROI +60.6% CI90 [+60.6, +60.6]   CLV_pin     - (n 0) placebo>=actual 1.0
+T31b fade under        n    6 graded    6    6-   0   +5.30u ROI +88.4% CI90 [+70.9, +106.6]  CLV_pin     - (n 0) placebo>=actual 1.0
+T31b fade mkt shots    n    7 graded    7    7-   0   +5.91u ROI +84.4% CI90 [+68.4, +102.2]  CLV_pin     - (n 0) placebo>=actual 1.0
+T31b fade mkt points   n    0 graded    0    0-   0   +0.00u ROI      - CI90 -                CLV_pin     - (n 0) placebo>=actual None
+T31b fade discovery    n    7 graded    7    7-   0   +5.91u ROI +84.4% CI90 [+68.4, +102.2]  CLV_pin     - (n 0) placebo>=actual 1.0
+T31b fade forward      n    0 graded    0    0-   0   +0.00u ROI      - CI90 -                CLV_pin     - (n 0) placebo>=actual None

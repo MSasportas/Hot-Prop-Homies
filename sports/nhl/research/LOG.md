@@ -4,6 +4,14 @@ Registered in HYPOTHESES.md (Run 31) before any test: LL6 ported to points. >= 3
 - Forward scorer run_all.sh refreshed the forward files (research/fwd/*, timestamps 17:43 today); no READY FOR SHARP flag in them. Full per-test read not redone in this run.
 **Verdict: no candidate. PL1 needs a points-coverage check before its forward count means anything.**
 Next: (1) check how many books carry points lines per night (data/odds others.*.points); (2) if coverage is thin, write PL1 up as a proposal to the CEO for a wider others list (no credits needed if the list is in the existing fetch).
+## 2026-11-25, Run 31 (Researcher daily; TWO-STEP PINNACLE TREND, NHL port of the NBA test)
+Registered before any test: T31a/T31b in HYPOTHESES.md (Run 31). Code research/code/run31/trend_n31_nhl.py, output research/code/run31/trend_n31_nhl_results.txt. Stored data only (44 odds nights, Oct 12 - Nov 25; shadow rows for results). No odds pull. Discovery = every stored night; forward from 2026-11-26.
+- Rule: Pinnacle de-vigged fair moves >= 1 pt on each step (A->B, B->C), same way, cumulative >= 3 pts; Hard Rock two-sided at C; price -200..+200; shots and points.
+- Population is almost empty: 7 follow bets and 7 fade bets in 44 nights (about 0.16 a night). The NBA version gives about 2.6 a night, so the NHL pulls rarely show a clean two-step Pinnacle move on the same line.
+- T31a follow: 0-7, -7.00u, ROI -100%. T31b fade: 7-0, +5.91u. I checked each row against its shadow result (line, side, actual); grading is right. n 7 is not a result: no CI, no CLV (no D-read Pinnacle close on these rows).
+**Verdict: untestable at this volume. Nothing passed; READY FOR SHARP: no.**
+Forward re-score (research/code/fwd/run_all.sh, nights through 2026-11-25; fwd/scores.md): Q1g +6.9% n848 p .03 CLV +3.4%; Q1b +5.2% n990 p .04 CLV +3.4%; Q1a +1.9% n1323. These are the live multi-book Q1 family, judged on its registered bar (n >= 300 graded, ROI > 0, one-sided p < 0.0033, CLV > 0). Q1g meets n, ROI and CLV but not p, so it does not clear. Note the p has been falling for weeks (Q1g p .21 Nov 13, .068 Nov 10, .03 now); that is a lead to watch, not a pass.
+Next: (1) a proposal for the CEO: the trend idea needs a wider population (for example a cumulative >= 2 pt two-step, or reads B to D) to get volume. Stored data only, no credits. (2) Q1g/Q1b forward keeps accruing; no change to the registered bar. (3) Engineer to confirm run_all.sh is in the nightly run (this run's scorer ran clean).
 
 # LOG.md: Researcher runs (newest first)
 
