@@ -361,10 +361,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:00 - 4th",
+    "detail": "4:07 - 4th",
     "score": {
-     "DET": "86",
-     "ORL": "71"
+     "DET": "94",
+     "ORL": "79"
     }
    },
    {
@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:13 - 2nd",
+    "detail": "49.7 - 2nd",
     "score": {
-     "BOS": "59",
-     "WSH": "36"
+     "BOS": "75",
+     "WSH": "44"
     }
    },
    {
