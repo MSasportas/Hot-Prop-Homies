@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T11:40:01-05:00",
+ "at": "2026-11-25T12:50:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -51,11 +51,18 @@
    "note": "Traore will be re-evaluated in approximately 8-10 weeks due to a right hamstring strain, Michael Scotto of HoopsHype.com reports."
   },
   "4576060": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Ryan Kalkbrenner",
    "team": "CHA",
-   "date": "2026-11-24T22:33Z",
-   "note": "Kalkbrenner (hip) is doubtful to play Wednesday against the Bulls."
+   "date": "2026-11-25T17:41Z",
+   "note": "Kalkbrenner (hip) has been ruled out for Wednesday's matchup with Chicago."
+  },
+  "3135045": {
+   "status": "out",
+   "name": "Grayson Allen",
+   "team": "CHA",
+   "date": "2026-11-25T17:39Z",
+   "note": "Allen (concussion) has been ruled out for Wednesday's game against Chicago."
   },
   "3032979": {
    "status": "out",
@@ -70,13 +77,6 @@
    "team": "CHA",
    "date": "2026-11-24T22:30Z",
    "note": "James is probable for Wednesday's game against the Bulls due to general soreness."
-  },
-  "3135045": {
-   "status": "out",
-   "name": "Grayson Allen",
-   "team": "CHA",
-   "date": "2026-11-24T22:29Z",
-   "note": "Allen (concussion) is listed as questionable for Wednesday's game versus Chicago."
   },
   "5061575": {
    "status": "out",
