@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T12:50:01-05:00",
+ "at": "2026-11-25T13:00:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -373,11 +373,25 @@
    "note": "Murray (ankle) is out for Friday's game against Memphis."
   },
   "4431823": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Miles McBride",
    "team": "NY",
-   "date": "2026-11-24T21:56Z",
+   "date": "2026-11-25T17:54Z",
    "note": "McBride (adductor) is listed as questionable for Wednesday's game versus Cleveland."
+  },
+  "3136195": {
+   "status": "day-to-day",
+   "name": "Karl-Anthony Towns",
+   "team": "NY",
+   "date": "2026-11-25T17:54Z",
+   "note": "Towns (knee) is probable for Wednesday's game against Cleveland."
+  },
+  "3934672": {
+   "status": "day-to-day",
+   "name": "Jalen Brunson",
+   "team": "NY",
+   "date": "2026-11-25T17:53Z",
+   "note": "Brunson (illness) has been downgraded to questionable for Wednesday's game against the Cavaliers."
   },
   "2528426": {
    "status": "out",
@@ -399,13 +413,6 @@
    "team": "NY",
    "date": "2026-11-24T21:53Z",
    "note": "Anunoby (calf) is out for Wednesday's game against Cleveland."
-  },
-  "3136195": {
-   "status": "day-to-day",
-   "name": "Karl-Anthony Towns",
-   "team": "NY",
-   "date": "2026-11-24T21:50Z",
-   "note": "Towns (knee) is questionable for Wednesday's game against Cleveland."
   },
   "5159925": {
    "status": "out",
