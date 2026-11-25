@@ -1,40 +1,40 @@
 {
- "generated_at": "2026-11-24T22:00:01-05:00",
+ "generated_at": "2026-11-24T22:40:01-05:00",
  "summary": {
   "headline": {
-   "w": 68,
-   "l": 51,
+   "w": 70,
+   "l": 53,
    "push": 0,
    "void": 2,
    "units": 13.15,
-   "hit_rate": 0.5714,
-   "needed": 0.5183,
-   "n": 119
+   "hit_rate": 0.5691,
+   "needed": 0.5171,
+   "n": 123
   },
   "rows": [
    {
     "key": "rebounds",
     "label": "Rebounds",
-    "w": 18,
-    "l": 14,
+    "w": 19,
+    "l": 16,
     "push": 0,
     "void": 0,
-    "units": 2.59,
-    "hit_rate": 0.5625,
-    "needed": 0.5195,
-    "n": 32
+    "units": 1.79,
+    "hit_rate": 0.5429,
+    "needed": 0.5143,
+    "n": 35
    },
    {
     "key": "points",
     "label": "Points",
-    "w": 25,
+    "w": 26,
     "l": 19,
     "push": 0,
     "void": 2,
-    "units": 2.11,
-    "hit_rate": 0.5682,
-    "needed": 0.5404,
-    "n": 44
+    "units": 2.91,
+    "hit_rate": 0.5778,
+    "needed": 0.5408,
+    "n": 45
    },
    {
     "key": "assists",
@@ -111,14 +111,14 @@
    {
     "key": "window:11 AM \u2192 360 min",
     "label": "Window 11 AM \u2192 360 min",
-    "w": 5,
-    "l": 5,
+    "w": 6,
+    "l": 6,
     "push": 0,
     "void": 0,
-    "units": 0.2,
+    "units": 0.4,
     "hit_rate": 0.5,
-    "needed": 0.5013,
-    "n": 10
+    "needed": 0.4918,
+    "n": 12
    },
    {
     "key": "window:135 \u2192 90 min",
@@ -160,13 +160,13 @@
     "key": "window:30 \u2192 20 min",
     "label": "Window 30 \u2192 20 min",
     "w": 3,
-    "l": 0,
+    "l": 1,
     "push": 0,
     "void": 0,
-    "units": 3.25,
-    "hit_rate": 1.0,
-    "needed": 0.4808,
-    "n": 3
+    "units": 2.25,
+    "hit_rate": 0.75,
+    "needed": 0.4826,
+    "n": 4
    },
    {
     "key": "window:360 \u2192 240 min",
@@ -219,14 +219,14 @@
    {
     "key": "window:90 \u2192 75 min",
     "label": "Window 90 \u2192 75 min",
-    "w": 4,
+    "w": 5,
     "l": 4,
     "push": 0,
     "void": 0,
-    "units": -0.26,
-    "hit_rate": 0.5,
-    "needed": 0.5095,
-    "n": 8
+    "units": 0.54,
+    "hit_rate": 0.5556,
+    "needed": 0.5146,
+    "n": 9
    }
   ],
   "cuts": [
@@ -238,14 +238,14 @@
      {
       "key": "rebounds",
       "label": "Rebounds",
-      "w": 18,
-      "l": 14,
+      "w": 19,
+      "l": 16,
       "push": 0,
       "void": 0,
-      "units": 2.59,
-      "hit_rate": 0.5625,
-      "needed": 0.5195,
-      "n": 32,
+      "units": 1.79,
+      "hit_rate": 0.5429,
+      "needed": 0.5143,
+      "n": 35,
       "ids": [
        "2026-11-24:401909315:3078576:rebounds:3.5:over",
        "2026-11-24:401909315:4277905:rebounds:2.5:over",
@@ -288,14 +288,14 @@
      {
       "key": "points",
       "label": "Points",
-      "w": 25,
+      "w": 26,
       "l": 19,
       "push": 0,
       "void": 2,
-      "units": 2.11,
-      "hit_rate": 0.5682,
-      "needed": 0.5404,
-      "n": 44,
+      "units": 2.91,
+      "hit_rate": 0.5778,
+      "needed": 0.5408,
+      "n": 45,
       "ids": [
        "2026-11-24:401909315:3078576:points:13.5:under",
        "2026-11-23:401910041:5041951:points:9.5:over",
@@ -427,14 +427,14 @@
      {
       "key": "over",
       "label": "Over",
-      "w": 24,
-      "l": 13,
+      "w": 25,
+      "l": 15,
       "push": 0,
       "void": 1,
-      "units": 12.04,
-      "hit_rate": 0.6486,
-      "needed": 0.497,
-      "n": 37,
+      "units": 11.24,
+      "hit_rate": 0.625,
+      "needed": 0.4942,
+      "n": 40,
       "ids": [
        "2026-11-24:401909315:3078576:rebounds:3.5:over",
        "2026-11-24:401909315:4277905:rebounds:2.5:over",
@@ -483,14 +483,14 @@
      {
       "key": "under",
       "label": "Under",
-      "w": 44,
+      "w": 45,
       "l": 38,
       "push": 0,
       "void": 1,
-      "units": 1.11,
-      "hit_rate": 0.5366,
-      "needed": 0.5278,
-      "n": 82,
+      "units": 1.91,
+      "hit_rate": 0.5422,
+      "needed": 0.5282,
+      "n": 83,
       "ids": [
        "2026-11-24:401909315:3078576:points:13.5:under",
        "2026-11-23:401910043:3202:points:21.5:under",
@@ -588,14 +588,14 @@
      {
       "key": "e0",
       "label": "0 to 2%",
-      "w": 51,
-      "l": 36,
+      "w": 53,
+      "l": 38,
       "push": 0,
       "void": 1,
       "units": 11.4,
-      "hit_rate": 0.5862,
-      "needed": 0.5224,
-      "n": 87,
+      "hit_rate": 0.5824,
+      "needed": 0.5206,
+      "n": 91,
       "ids": [
        "2026-11-24:401909315:3078576:rebounds:3.5:over",
        "2026-11-24:401909315:4277905:rebounds:2.5:over",
@@ -793,14 +793,14 @@
      {
       "key": "clear",
       "label": "Injury report clear",
-      "w": 56,
-      "l": 38,
+      "w": 58,
+      "l": 39,
       "push": 0,
       "void": 0,
-      "units": 14.16,
-      "hit_rate": 0.5957,
-      "needed": 0.5214,
-      "n": 94,
+      "units": 15.16,
+      "hit_rate": 0.5979,
+      "needed": 0.5202,
+      "n": 97,
       "ids": [
        "2026-11-24:401909315:3078576:rebounds:3.5:over",
        "2026-11-24:401909315:4277905:rebounds:2.5:over",
@@ -905,13 +905,13 @@
       "key": "starters",
       "label": "Starters confirmed",
       "w": 6,
-      "l": 3,
+      "l": 4,
       "push": 0,
       "void": 0,
-      "units": 3.55,
-      "hit_rate": 0.6667,
-      "needed": 0.4886,
-      "n": 9,
+      "units": 2.55,
+      "hit_rate": 0.6,
+      "needed": 0.4885,
+      "n": 10,
       "ids": [
        "2026-11-24:401909315:4251:rebounds:5.5:over",
        "2026-11-17:401910003:4431736:rebounds:4.5:over",
@@ -935,14 +935,14 @@
      {
       "key": "plus",
       "label": "Plus money",
-      "w": 23,
-      "l": 20,
+      "w": 24,
+      "l": 22,
       "push": 0,
       "void": 0,
-      "units": 7.9,
-      "hit_rate": 0.5349,
-      "needed": 0.4626,
-      "n": 43,
+      "units": 7.1,
+      "hit_rate": 0.5217,
+      "needed": 0.4623,
+      "n": 46,
       "ids": [
        "2026-11-24:401909315:3078576:rebounds:3.5:over",
        "2026-11-24:401909315:4277905:rebounds:2.5:over",
@@ -995,14 +995,14 @@
      {
       "key": "fav",
       "label": "-100 to -150",
-      "w": 45,
+      "w": 46,
       "l": 31,
       "push": 0,
       "void": 2,
-      "units": 5.25,
-      "hit_rate": 0.5921,
+      "units": 6.05,
+      "hit_rate": 0.5974,
       "needed": 0.5498,
-      "n": 76,
+      "n": 77,
       "ids": [
        "2026-11-24:401909315:3078576:points:13.5:under",
        "2026-11-24:401909316:5211175:rebounds:3.5:over",
@@ -1092,11 +1092,11 @@
   "days": [
    {
     "date": "2026-11-24",
-    "w": 0,
-    "l": 0,
+    "w": 2,
+    "l": 2,
     "push": 0,
     "void": 0,
-    "units": 0,
+    "units": 0.0,
     "n": 5,
     "graded": false
    },
@@ -1346,9 +1346,9 @@
   {
    "date": "2026-11-24",
    "graded": false,
-   "w": 0,
-   "l": 0,
-   "units": 0,
+   "w": 2,
+   "l": 2,
+   "units": 0.0,
    "entries": [
     {
      "id": "2026-11-24:401909315:3078576:rebounds:3.5:over",
@@ -1367,9 +1367,9 @@
        "at": "2026-11-24T14:00:00-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "7 rebounds",
+     "units": 1.2,
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 360 min",
@@ -1393,9 +1393,9 @@
        "at": "2026-11-24T14:00:00-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "L",
+     "actual": "0 rebounds",
+     "units": -1.0,
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 360 min",
@@ -1419,9 +1419,9 @@
        "at": "2026-11-24T18:50:01-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "W",
+     "actual": "6 points",
+     "units": 0.8,
      "pulled": null,
      "legs": [],
      "window": "90 \u2192 75 min",
@@ -1445,9 +1445,9 @@
        "at": "2026-11-24T19:40:01-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "L",
+     "actual": "4 rebounds",
+     "units": -1.0,
      "pulled": null,
      "legs": [],
      "window": "30 \u2192 20 min",
