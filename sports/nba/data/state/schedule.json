@@ -391,9 +391,9 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:26 - 4th",
+    "detail": "4:44 - 4th",
     "score": {
-     "DAL": "99",
+     "DAL": "106",
      "DEN": "88"
     }
    }
