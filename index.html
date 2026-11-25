@@ -64,17 +64,18 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 @media (min-width:640px){.wrap{margin-left:calc(var(--w) + 24px)}}
 
 /* header */
-.hdr{position:sticky;top:0;z-index:6;display:flex;align-items:baseline;gap:10px;margin:0 -14px;padding:calc(var(--sat) + 14px) 14px 10px;
+.hdr{position:sticky;top:0;z-index:6;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin:0 -14px;padding:calc(var(--sat) + 14px) 14px 10px;
   background:var(--bg);border-bottom:1px solid var(--line)}
-.hdr h1{font:400 20px/26px var(--head);letter-spacing:.01em;margin:0;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hdr h1{font:400 20px/26px var(--head);letter-spacing:.01em;margin:0;flex:1 1 auto;min-width:0}
 .hdr .date{font-size:13px;line-height:18px;color:var(--muted);white-space:nowrap}
 .hdr h1.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .hdr .sport-sw{margin-left:auto}
 .tag-test{margin:0 -14px;padding:calc(var(--sat) + 3px) 14px 3px;font-size:11px;line-height:16px;color:var(--warn);background:var(--warn-soft);border-bottom:1px solid var(--line)}
 .tag-test+.hdr{padding-top:12px;top:0}
 /* sport switcher pill */
-.sport-sw{display:flex;gap:2px;background:var(--line);border-radius:20px;padding:2px;flex:none;align-items:center}
-.sport-sw button{padding:3px 9px;border-radius:18px;font-size:12px;line-height:17px;font-weight:600;color:var(--muted)}
+/* 36px buttons; the negative block margin keeps the header the height it was */
+.sport-sw{display:flex;gap:2px;background:var(--line);border-radius:22px;padding:2px;flex:none;align-items:center;align-self:center;margin-block:-7px}
+.sport-sw button{display:flex;align-items:center;justify-content:center;min-height:36px;min-width:44px;padding:0 10px;border-radius:18px;font-size:12px;line-height:17px;font-weight:600;color:var(--muted)}
 .sport-sw button[aria-pressed=true]{background:var(--surface);color:var(--fg);box-shadow:0 1px 2px rgba(0,0,0,.12)}
 /* sport badge on pick tiles in All mode */
 .sp-badge{display:inline-block;padding:1px 5px;border-radius:4px;font-size:10px;line-height:14px;font-weight:700;letter-spacing:.04em;vertical-align:1px;margin-left:5px;flex:none}
@@ -90,7 +91,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .chev{flex:none;color:var(--muted);display:flex}
 .live{display:inline-block;width:7px;height:7px;margin-right:7px;vertical-align:1px;border-radius:50%;background:var(--accent)}
 .live.warn{background:var(--warn)} .live.bad{background:var(--primary)}
-.statusline{font-size:12.5px;line-height:17px;color:var(--fg2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.statusline{font-size:12.5px;line-height:17px;color:var(--fg2)}
 .statusline .wt{color:var(--warn);font-weight:600}
 
 /* banners: a 3px meaning bar on the left, plain text */
@@ -128,11 +129,10 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .tile .nm .fn{font:500 12px/14px var(--cond);color:var(--muted)}
 .tile .nm .ln{font:600 15px/19px var(--cond);letter-spacing:.005em}
 .tile .nm .ln.brk{white-space:normal}
-.tile .nm .ln.ell{text-overflow:ellipsis}
 .tile.open .nm{font:600 16px/21px var(--cond);letter-spacing:.005em}
-.tile .row2{display:flex;align-items:baseline;justify-content:space-between;gap:6px;margin-top:8px}
-.tile .bt{min-width:0;font:600 13.5px/18px var(--num);letter-spacing:0;color:var(--fg2);overflow-wrap:anywhere}
-.tile .pr{flex:none;font:600 21px/24px var(--num);color:var(--fg);white-space:nowrap}
+.tile .row2{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:0 6px;margin-top:8px}
+.tile .bt{min-width:0;font:600 13.5px/18px var(--num);letter-spacing:0;color:var(--fg2)}
+.tile .pr{flex:none;margin-left:auto;font:600 21px/24px var(--num);color:var(--fg);white-space:nowrap}
 .tile .pr.noprice{font-size:15px;color:var(--muted)}
 .tile .cv{font-size:12.5px;line-height:17px;color:var(--muted);margin-top:3px;white-space:nowrap}
 .tile .cv b{font-weight:700;color:var(--good)}
@@ -232,7 +232,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .lv .pips{gap:3px} .lv .pip{width:11px;height:11px}
 .lv .lva .meter{flex:1 1 48px;width:auto;min-width:48px}
 .lv .lva .stmp{flex:none;margin:0 0 0 auto;padding:0 5px;font-size:12px}
-.lv .lvn,.lv .lvh,.lv .lvg1,.lv .lvg2{display:block;min-width:0;overflow:hidden;white-space:nowrap}
+.lv .lvn,.lv .lvh,.lv .lvg1,.lv .lvg2{display:block;min-width:0;white-space:nowrap}
 .lv .lvn{font:600 16px/20px var(--num);color:var(--fg)}
 .lv .lvn.st{font:400 13px/18px var(--body);color:var(--fg2)}
 .lv .lvh{font:400 12px/16px var(--body);color:var(--muted)}
@@ -362,12 +362,12 @@ button.tr.open{background:var(--selected-bg);border-bottom-color:transparent}
 .cal{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px;margin-top:8px}
 .cal .wd{font-size:10.5px;line-height:14px;color:var(--muted);text-align:center}
 .cd{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:46px;padding:3px 4px;border-radius:4px;
-  background:var(--raise);font-size:10.5px;line-height:13px;color:var(--muted);overflow:hidden}
+  background:var(--raise);font-size:10.5px;line-height:13px;color:var(--muted);container-type:inline-size}
 .cd.none{background:transparent;border:1px solid var(--line)}
 .cd.blank{background:transparent}
 .cd.has{color:var(--fg)}
-.cd .u{font:600 11px/13px var(--num);color:var(--fg);white-space:nowrap}
-.cd .wl-sm{font:600 9px/11px var(--num);color:var(--fg);white-space:nowrap}
+.cd .u{font:600 11px/13px var(--num);font-size:clamp(8px,26cqw,11px);color:var(--fg);white-space:nowrap}
+.cd .wl-sm{font:600 9px/11px var(--num);font-size:clamp(7px,22cqw,9px);color:var(--fg);white-space:nowrap}
 .cd.even{background:var(--raise);border:1px solid var(--line2)}
 .cd.open{border:1px dashed var(--accent)}
 .cd.sel{outline:2px solid var(--accent);outline-offset:1px}
@@ -401,8 +401,7 @@ button.tr.open{background:var(--selected-bg);border-bottom-color:transparent}
 .lab-b:last-child{border-bottom:0}
 /* lab cards: a dashed border means paper, solid means real picks */
 .lab-lede{margin:10px 0 0;font-size:13px;line-height:19px;color:var(--muted)}
-.lab-chips{display:flex;gap:8px;margin:12px -14px 0;padding:0 14px;overflow-x:auto;scrollbar-width:none}
-.lab-chips::-webkit-scrollbar{display:none}
+.lab-chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0}
 .lab-chip{flex:none;min-height:44px;padding:0 14px;border:1px solid var(--line2);border-radius:22px;background:transparent;color:var(--fg2);font:600 12px/16px var(--num);white-space:nowrap;cursor:pointer}
 .lab-chip[aria-pressed=true]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
 .lab-chip:focus-visible,.lc-dh:focus-visible,.lc-more:focus-visible,.lab-link:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
@@ -450,10 +449,10 @@ button.tr.open{background:var(--selected-bg);border-bottom-color:transparent}
 .lc-note{margin-top:2px;font-size:12px;line-height:17px;color:var(--muted)}
 .lc-chips{display:grid;gap:8px;margin-top:8px}
 .lc-chips.c4,.lc-chips.c2{grid-template-columns:1fr 1fr}
-.lc-chips.c3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.lc-chips.c3{grid-template-columns:repeat(auto-fit,minmax(104px,1fr))}
 .lc-chip{min-height:64px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--raise)}
 .lc-cl{font:400 11px/16px var(--num);letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
-.lc-cv{font:600 18px/24px var(--num);overflow-wrap:anywhere}
+.lc-cv{font:600 18px/24px var(--num)}
 .lc-cs{font-size:11px;line-height:15px;color:var(--muted)}
 .lc-spark{position:relative;height:56px;margin-top:8px}
 .lc-spark svg{display:block;width:100%;height:100%;overflow:visible}
@@ -520,14 +519,14 @@ button.tr.open{background:var(--selected-bg);border-bottom-color:transparent}
 .plain{margin:10px 0 0;padding:0 0 0 18px;font-size:13.5px;line-height:20px;color:var(--fg2)}
 .plain li{margin:0 0 6px}
 .fixed{margin:10px 0 0;padding:10px 12px;border:1px solid var(--line);border-radius:6px;background:var(--surface);font-size:13px;line-height:19px;font-weight:600;color:var(--fg)}
-.cutsw{display:flex;gap:6px;overflow-x:auto;margin:8px 0 10px;padding-bottom:2px;scrollbar-width:none}.cutsw::-webkit-scrollbar{display:none}.cswb{flex:0 0 auto;height:32px;padding:0 12px;border:1px solid var(--line2);border-radius:16px;background:var(--surface);color:var(--fg2);font:inherit;font-size:13px}.cswb:first-letter{text-transform:uppercase}.cut h3{display:none}.cswb.on{background:var(--selected-bg);color:var(--selected-text);border-color:var(--selected-bg)}
-.rf-row{display:flex;gap:6px;overflow-x:auto;margin:14px 0 2px;padding-bottom:2px;scrollbar-width:none}.rf-row::-webkit-scrollbar{display:none}
-.rf-btn{flex:0 0 auto;height:32px;padding:0 12px;border:1px solid var(--line2);border-radius:16px;background:var(--surface);color:var(--fg2);font:inherit;font-size:13px;cursor:pointer;-webkit-tap-highlight-color:transparent}.rf-btn.on{background:var(--selected-bg);color:var(--selected-text);border-color:var(--selected-bg)}
-.rf-clr{margin-left:4px;flex:0 0 auto;height:32px;padding:0 10px;background:none;border:0;color:var(--muted);font-size:12px;cursor:pointer}
+.cutsw{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 10px}.cswb{flex:0 0 auto;min-height:32px;padding:0 12px;border:1px solid var(--line2);border-radius:16px;background:var(--surface);color:var(--fg2);font:inherit;font-size:13px}.cswb:first-letter{text-transform:uppercase}.cut h3{display:none}.cswb.on{background:var(--selected-bg);color:var(--selected-text);border-color:var(--selected-bg)}
+.rf-row{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 2px}
+.rf-btn{flex:0 0 auto;min-height:32px;padding:0 12px;border:1px solid var(--line2);border-radius:16px;background:var(--surface);color:var(--fg2);font:inherit;font-size:13px;cursor:pointer;-webkit-tap-highlight-color:transparent}.rf-btn.on{background:var(--selected-bg);color:var(--selected-text);border-color:var(--selected-bg)}
+.rf-clr{margin-left:4px;flex:0 0 auto;min-height:32px;padding:0 10px;background:none;border:0;color:var(--muted);font-size:12px;cursor:pointer}
 /* P1: confidence badge */
 .tagx.conf{background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent);font-size:10.5px;font-weight:700;letter-spacing:.04em;padding:1px 5px;border-radius:4px}
 /* P2: 7-day W-L strip */
-.wl-strip{display:flex;gap:6px;margin:10px 0 4px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}.wl-strip::-webkit-scrollbar{display:none}
+.wl-strip{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 4px}
 .wl-day{flex:0 0 auto;display:flex;align-items:center;justify-content:center;min-width:48px;height:32px;border-radius:6px;font:700 12.5px var(--cond);border:1px solid var(--line)}
 .wl-day.up{background:rgba(200,16,46,.12);color:var(--primary);border-color:rgba(200,16,46,.25)}
 .wl-day.dn{background:rgba(74,97,129,.12);color:var(--muted);border-color:var(--line2)}
@@ -536,7 +535,7 @@ button.tr.open{background:var(--selected-bg);border-bottom-color:transparent}
 .upcoming{margin-top:14px;border-top:1px solid var(--line);padding-top:10px}
 .up-row{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid var(--line);font-size:13.5px;gap:8px}
 .up-row:last-child{border-bottom:none}
-.up-teams{color:var(--fg2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.up-teams{color:var(--fg2);min-width:0}
 .up-time{color:var(--muted);font-size:12.5px;white-space:nowrap;flex-shrink:0}
 /* Q2: breakdown expand animation */
 .chev{display:inline-block;margin-right:4px;transition:transform .2s;font-style:normal}
@@ -1151,9 +1150,9 @@ function chanceVs(p) {
     h('b', { class: short ? 'short' : null, text: pc || '—' }), ' vs ', h('span', { text: be || '—' }));
 }
 /* Names never break inside a word. A closed tile stacks first name over last name and fits the last name to its room (fitNames):
-   smaller type, then no suffix, then no photo, then an initial for the first name, then a wrap after a hyphen, then an ellipsis. */
+   smaller type, then no suffix, then no photo, then an initial for the first name, then a wrap after a hyphen. */
 var NAME_SUFFIX = /^(jr\.?|sr\.?|ii|iii|iv|v)$/i;
-var NAME_SIZES = [15, 14, 13];
+var NAME_SIZES = [15, 14, 13, 12, 11];
 function splitName(full) {
   var t = str(full).trim().replace(/\s+/g, ' ').split(' ');
   if (t.length < 2) return { first: '', last: t[0], core: t[0] };
@@ -1185,12 +1184,12 @@ function fitName(nm) {
   }
   photo(false); ln.textContent = last; ln.style.fontSize = NAME_SIZES[0] + 'px'; fitFirst();
   ln.classList.add('brk');
-  if (!fitsLine(ln)) { ln.classList.remove('brk'); ln.classList.add('ell'); }
 }
 /* Any line that must never clip: data-fit holds its tiers (font size, replacement text, or which variant child shows), tried in order; the first one that fits stays. */
 function fitSpec(el, tiers) { el.setAttribute('data-fit', JSON.stringify(tiers)); return el; }
 function fitLine(el) {
   var tiers = JSON.parse(el.getAttribute('data-fit')), i, t;
+  el.style.whiteSpace = '';
   for (i = 0; i < tiers.length; i++) {
     t = tiers[i];
     el.style.fontSize = t.size ? t.size + 'px' : '';
@@ -1198,6 +1197,7 @@ function fitLine(el) {
     if (t.v) Array.prototype.forEach.call(el.children, function (c) { c.hidden = c.getAttribute('data-k') !== t.v; });
     if (fitsLine(el)) return;
   }
+  el.style.whiteSpace = 'normal';
 }
 function fitLines() { Array.prototype.forEach.call(app.querySelectorAll('[data-fit]'), fitLine); }
 function fitNames() { Array.prototype.forEach.call(app.querySelectorAll('.tile .nm[data-last]'), fitName); fitLines(); }
@@ -1828,7 +1828,7 @@ function livePoll() {
 function agoText(t) { var s = Math.max(0, Math.floor((Date.now() - t) / 1000)); return s < 60 ? s + 's ago' : Math.floor(s / 60) + 'm ' + (s % 60) + 's ago'; }
 function liveAgo() {
   if (L.fail && L.lastTry != null) return { text: 'Live scores unavailable. Trying again every 10 seconds.', bad: true };
-  if (L.at == null) return { text: 'Getting live scores…', bad: false };
+  if (L.at == null) return { text: 'Getting live scores', bad: false };
   return { text: 'Updated ' + agoText(L.at) + (L.src === 'nba' ? ' via NBA.com' : '') + (L.stopped ? ' · No game in progress' : ''), bad: false };
 }
 function liveTick() {
@@ -1888,7 +1888,7 @@ function tracker(p, s, fin, dnp) {
     fill.style.width = Math.min(100, k / max * 100) + '%'; el.appendChild(fill);
     var tick = h('u'); tick.style.left = (ln / max * 100) + '%'; el.appendChild(tick);
   }
-  if (s == null) return { el: el, msg: (L.fail && L.lastTry != null) ? 'Stats unavailable' : (L.at == null ? 'Getting stats\u2026' : (dnp ? (fin ? 'Did not play' : 'Not played yet') : 'No stats yet')), stamp: stamp };
+  if (s == null) return { el: el, msg: (L.fail && L.lastTry != null) ? 'Stats unavailable' : (L.at == null ? 'Getting stats' : (dnp ? (fin ? 'Did not play' : 'Not played yet') : 'No stats yet')), stamp: stamp };
   var left = side === 'over' ? Math.floor(ln) + 1 - k : Math.floor(ln) - k;
   return { el: el, num: k + ' / ' + ln, noun: noun, stamp: stamp,
     help: (fin || stamp) ? null : (side === 'over' ? ['needs ' + left + ' more', left + ' to go'] : [left + ' to spare', left + ' left']) };
@@ -1900,9 +1900,11 @@ function liveStamp(result, tk) {
   if (tk && tk.stamp === 'HIT') return ['HIT', 'W'];
   return tk && tk.stamp === 'LOST' ? ['LOST', 'L'] : null;
 }
+/* a plain sentence in the tracker slot: one line if it fits, else it wraps */
+function stLine(text) { return fitSpec(h('span', { class: 'lvn st', text: text }), [{ text: text }]); }
 /* his number never wraps: 16, 14, 13 px, then the noun goes; the helper under it falls back to its short copy */
 function numLine(tk) {
-  if (tk.msg) return h('span', { class: 'lvn st', text: tk.msg });
+  if (tk.msg) return stLine(tk.msg);
   var full = tk.num + (tk.noun ? ' ' + tk.noun : ''), tiers = [16, 14, 13].map(function (z) { return { size: z, text: full }; });
   if (tk.noun) tiers.push({ size: 13, text: tk.num });
   return fitSpec(h('span', { class: 'lvn', text: full }), tiers);
@@ -1911,7 +1913,7 @@ function trackBlock(tk, st, voidText) {
   var stmp = st ? h('span', { class: 'stmp ' + st[1], text: st[0] }) : null, graphic = voidText ? null : (tk && tk.el);
   if (!graphic && !stmp) return null;
   var out = h('div', { class: 'trk2' }, h('div', { class: 'lva' }, graphic, stmp));
-  if (voidText) out.appendChild(h('span', { class: 'lvn st', text: voidText }));
+  if (voidText) out.appendChild(stLine(voidText));
   else if (tk) {
     out.appendChild(numLine(tk));
     if (tk.help) out.appendChild(fitSpec(h('span', { class: 'lvh', text: tk.help[0] }), tk.help.map(function (t) { return { text: t }; })));
