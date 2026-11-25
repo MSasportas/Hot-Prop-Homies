@@ -19,7 +19,7 @@
   },
   "CBJ": {
    "name": "Cam Talbot",
-   "status": "expected"
+   "status": "confirmed"
   },
   "NJD": {
    "name": "Connor Hellebuyck",
@@ -46,7 +46,7 @@
    "status": "expected"
   },
   "CAR": {
-   "name": "Pyotr Kochetkov",
+   "name": "Brandon Bussi",
    "status": "expected"
   },
   "BOS": {
@@ -54,7 +54,7 @@
    "status": "confirmed"
   },
   "WPG": {
-   "name": "Stuart Skinner",
+   "name": "Nico Daws",
    "status": "expected"
   },
   "BUF": {
@@ -63,7 +63,7 @@
   },
   "NYR": {
    "name": "Joonas Korpisalo",
-   "status": "expected"
+   "status": "confirmed"
   },
   "DET": {
    "name": "Daniil Tarasov",
@@ -114,5 +114,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-25T11:20:01-05:00"
+ "checked_at": "2026-11-25T11:40:00-05:00"
 }
