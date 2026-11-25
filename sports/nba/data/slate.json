@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-25T18:30:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-25T18:30:01-05:00"
+   "at": "2026-11-25T18:33:09-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-25T18:30:01-05:00",
+    "at": "2026-11-25T18:33:09-05:00",
     "confirmed": [
      "MIA",
      "PHI"
@@ -46,7 +46,7 @@
    "away": "MIA",
    "home": "PHI",
    "state": "in",
-   "detail": "11:19 - 3rd",
+   "detail": "10:15 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -78,7 +78,7 @@
    "paused": false,
    "injury_clear": {
     "away": true,
-    "home": false
+    "home": true
    }
   },
   {
@@ -333,6 +333,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-25T18:30:01-05:00",
- "status_at": "2026-11-25T18:30:01-05:00"
+ "generated_at": "2026-11-25T18:33:09-05:00",
+ "status_at": "2026-11-25T18:33:09-05:00"
 }
