@@ -1,13 +1,4 @@
 {
- "LL1f-follow": {
-  "clv": -0.0831,
-  "l": 313,
-  "pending": 3,
-  "push": 0,
-  "units": -26.05,
-  "void": 0,
-  "w": 350
- },
  "LL3a tight": {
   "clv": 0.0307,
   "l": 76,
@@ -217,6 +208,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-24T23:30:12+00:00",
+ "updated_at": "2026-11-25T00:02:48+00:00",
  "version": 1
 }
