@@ -1,0 +1,561 @@
+{
+ "slate": "2026-11-23",
+ "valid_until": "2026-11-24T05:00:00-05:00",
+ "fixture": true,
+ "fixture_now": "2026-11-23T22:00:00-05:00",
+ "banners": [],
+ "status": {},
+ "empty": false,
+ "ui": {},
+ "generated_at": "2026-11-23T21:55:00-05:00",
+ "status_at": "2026-11-23T21:55:00-05:00",
+ "games": [
+  {
+   "id": "g1",
+   "away": "LAL",
+   "home": "MIN",
+   "start": "2026-11-23T19:30:00-05:00",
+   "lineups": {
+    "away": "confirmed",
+    "home": "confirmed"
+   },
+   "checks": []
+  },
+  {
+   "id": "g2",
+   "away": "NYK",
+   "home": "WSH",
+   "start": "2026-11-23T18:00:00-05:00",
+   "lineups": {
+    "away": "confirmed",
+    "home": "confirmed"
+   },
+   "checks": []
+  },
+  {
+   "id": "g3",
+   "away": "CHA",
+   "home": "MIL",
+   "start": "2026-11-23T19:00:00-05:00",
+   "lineups": {
+    "away": "confirmed",
+    "home": "confirmed"
+   },
+   "checks": []
+  },
+  {
+   "id": "g4",
+   "away": "SA",
+   "home": "GS",
+   "start": "2026-11-23T20:00:00-05:00",
+   "lineups": {
+    "away": "confirmed",
+    "home": "confirmed"
+   },
+   "checks": []
+  },
+  {
+   "id": "g5",
+   "away": "DEN",
+   "home": "PHX",
+   "start": "2026-11-23T20:30:00-05:00",
+   "lineups": {
+    "away": "confirmed",
+    "home": "confirmed"
+   },
+   "checks": []
+  },
+  {
+   "id": "g6",
+   "away": "BOS",
+   "home": "MIA",
+   "start": "2026-11-23T19:45:00-05:00",
+   "lineups": {
+    "away": "confirmed",
+    "home": "confirmed"
+   },
+   "checks": []
+  },
+  {
+   "id": "g7",
+   "away": "POR",
+   "home": "DAL",
+   "start": "2026-11-23T21:30:00-05:00",
+   "lineups": {
+    "away": "confirmed",
+    "home": "confirmed"
+   },
+   "checks": []
+  },
+  {
+   "id": "g8",
+   "away": "ATL",
+   "home": "ORL",
+   "start": "2026-11-23T18:30:00-05:00",
+   "lineups": {
+    "away": "confirmed",
+    "home": "confirmed"
+   },
+   "checks": []
+  },
+  {
+   "id": "g9",
+   "away": "UTA",
+   "home": "LAC",
+   "start": "2026-11-23T17:30:00-05:00",
+   "lineups": {
+    "away": "confirmed",
+    "home": "confirmed"
+   },
+   "checks": []
+  },
+  {
+   "id": "g10",
+   "away": "TOR",
+   "home": "CLE",
+   "start": "2026-11-23T20:00:00-05:00",
+   "lineups": {
+    "away": "confirmed",
+    "home": "confirmed"
+   },
+   "checks": []
+  }
+ ],
+ "picks": [
+  {
+   "id": "fx-01",
+   "player": "Nickeil Alexander-Walker",
+   "pid": "4066648",
+   "team": "MIN",
+   "opp": "LAL",
+   "home": true,
+   "game_id": "g1",
+   "start": "2026-11-23T19:30:00-05:00",
+   "bet": "Over 27.5 points",
+   "market": "points",
+   "side": "over",
+   "line": 27.5,
+   "price": -115,
+   "price_at": "2026-11-23T17:00:00-05:00",
+   "state": "locked",
+   "p": 0.56,
+   "breakeven": 0.53
+  },
+  {
+   "id": "fx-02",
+   "player": "Shai Gilgeous-Alexander",
+   "pid": "4278073",
+   "team": "MIL",
+   "opp": "CHA",
+   "home": true,
+   "game_id": "g3",
+   "start": "2026-11-23T19:00:00-05:00",
+   "bet": "Over 31.5 points",
+   "market": "points",
+   "side": "over",
+   "line": 31.5,
+   "price": -110,
+   "price_at": "2026-11-23T17:00:00-05:00",
+   "state": "locked",
+   "p": 0.56,
+   "breakeven": 0.53
+  },
+  {
+   "id": "fx-03",
+   "player": "Giannis Antetokounmpo",
+   "pid": "3032977",
+   "team": "MIA",
+   "opp": "BOS",
+   "home": true,
+   "game_id": "g6",
+   "start": "2026-11-23T19:45:00-05:00",
+   "bet": "Over 1.5 threes",
+   "market": "threes",
+   "side": "over",
+   "line": 1.5,
+   "price": 115,
+   "price_at": "2026-11-23T17:00:00-05:00",
+   "state": "locked",
+   "p": 0.56,
+   "breakeven": 0.53
+  },
+  {
+   "id": "fx-04",
+   "player": "Collin Murray-Boyles",
+   "pid": "4433134",
+   "team": "CHA",
+   "opp": "MIL",
+   "home": false,
+   "game_id": "g3",
+   "start": "2026-11-23T19:00:00-05:00",
+   "bet": "Over 1.5 threes",
+   "market": "threes",
+   "side": "over",
+   "line": 1.5,
+   "price": 140,
+   "price_at": "2026-11-23T17:00:00-05:00",
+   "state": "locked",
+   "p": 0.56,
+   "breakeven": 0.53
+  },
+  {
+   "id": "fx-05",
+   "player": "Karl-Anthony Towns",
+   "pid": "3136195",
+   "team": "DEN",
+   "opp": "PHX",
+   "home": false,
+   "game_id": "g5",
+   "start": "2026-11-23T20:30:00-05:00",
+   "bet": "Over 11.5 rebounds",
+   "market": "rebounds",
+   "side": "over",
+   "line": 11.5,
+   "price": -105,
+   "price_at": "2026-11-23T17:00:00-05:00",
+   "state": "locked",
+   "p": 0.56,
+   "breakeven": 0.53
+  },
+  {
+   "id": "fx-06",
+   "player": "Brandin Podziemski",
+   "pid": "4397002",
+   "team": "POR",
+   "opp": "DAL",
+   "home": false,
+   "game_id": "g7",
+   "start": "2026-11-23T21:30:00-05:00",
+   "bet": "Over 4.5 assists",
+   "market": "assists",
+   "side": "over",
+   "line": 4.5,
+   "price": -120,
+   "price_at": "2026-11-23T17:00:00-05:00",
+   "state": "locked",
+   "p": 0.56,
+   "breakeven": 0.53
+  },
+  {
+   "id": "fx-07",
+   "player": "Isaiah Hartenstein",
+   "pid": "3064290",
+   "team": "ATL",
+   "opp": "ORL",
+   "home": false,
+   "game_id": "g8",
+   "start": "2026-11-23T18:30:00-05:00",
+   "bet": "Over 8.5 rebounds",
+   "market": "rebounds",
+   "side": "over",
+   "line": 8.5,
+   "price": -125,
+   "price_at": "2026-11-23T17:00:00-05:00",
+   "state": "locked",
+   "p": 0.56,
+   "breakeven": 0.53
+  },
+  {
+   "id": "fx-08",
+   "player": "Wendell Carter Jr",
+   "pid": "4066648",
+   "team": "NYK",
+   "opp": "WSH",
+   "home": false,
+   "game_id": "g2",
+   "start": "2026-11-23T18:00:00-05:00",
+   "bet": "Over 9.5 rebounds",
+   "market": "rebounds",
+   "side": "over",
+   "line": 9.5,
+   "price": -130,
+   "price_at": "2026-11-23T17:00:00-05:00",
+   "state": "locked",
+   "p": 0.56,
+   "breakeven": 0.53,
+   "result": {
+    "result": "W",
+    "actual": "12 rebounds",
+    "units": 0.77
+   }
+  },
+  {
+   "id": "fx-09",
+   "player": "Michael Porter Jr",
+   "pid": "3155942",
+   "team": "WSH",
+   "opp": "NYK",
+   "home": true,
+   "game_id": "g2",
+   "start": "2026-11-23T18:00:00-05:00",
+   "bet": "Under 27.5 points",
+   "market": "points",
+   "side": "under",
+   "line": 27.5,
+   "price": -110,
+   "price_at": "2026-11-23T17:00:00-05:00",
+   "state": "locked",
+   "p": 0.56,
+   "breakeven": 0.53,
+   "result": {
+    "result": "L",
+    "actual": "31 points",
+    "units": -1
+   }
+  },
+  {
+   "id": "fx-10",
+   "player": "Victor Wembanyama",
+   "pid": "5104157",
+   "team": "SA",
+   "opp": "GS",
+   "home": false,
+   "game_id": "g4",
+   "start": "2026-11-23T20:00:00-05:00",
+   "bet": "Over 9.5 rebounds",
+   "market": "rebounds",
+   "side": "over",
+   "line": 9.5,
+   "price": 100,
+   "price_at": "2026-11-23T17:00:00-05:00",
+   "state": "locked",
+   "p": 0.56,
+   "breakeven": 0.53,
+   "pulled": {
+    "code": "late",
+    "reason": "Hard Rock took the line down"
+   }
+  },
+  {
+   "id": "fx-11",
+   "player": "Jaren Jackson Jr.",
+   "pid": "4277961",
+   "team": "UTA",
+   "opp": "LAC",
+   "home": false,
+   "game_id": "g9",
+   "start": "2026-11-23T17:30:00-05:00",
+   "bet": "Over 20.0 points",
+   "market": "points",
+   "side": "over",
+   "line": 20.0,
+   "price": -105,
+   "price_at": "2026-11-23T17:00:00-05:00",
+   "state": "locked",
+   "p": 0.56,
+   "breakeven": 0.53,
+   "result": {
+    "result": "PUSH",
+    "actual": "20 points",
+    "units": 0
+   }
+  },
+  {
+   "id": "fx-12",
+   "player": "Nene",
+   "pid": null,
+   "team": "CLE",
+   "opp": "TOR",
+   "home": true,
+   "game_id": "g10",
+   "start": "2026-11-23T20:00:00-05:00",
+   "bet": "Over 3.5 rebounds",
+   "market": "rebounds",
+   "side": "over",
+   "line": 3.5,
+   "price": -115,
+   "price_at": "2026-11-23T17:00:00-05:00",
+   "state": "locked",
+   "p": 0.56,
+   "breakeven": 0.53
+  },
+  {
+   "id": "fx-13",
+   "player": "Brandin Podziemski",
+   "pid": "4397002",
+   "team": "LAC",
+   "opp": "UTA",
+   "home": true,
+   "game_id": "g9",
+   "start": "2026-11-23T17:30:00-05:00",
+   "bet": "Over 5.5 assists",
+   "market": "assists",
+   "side": "over",
+   "line": 5.5,
+   "price": -110,
+   "price_at": "2026-11-23T17:00:00-05:00",
+   "state": "locked",
+   "p": 0.56,
+   "breakeven": 0.53,
+   "result": {
+    "result": "VOID",
+    "actual": "Did not play",
+    "units": 0
+   }
+  },
+  {
+   "id": "fx-14",
+   "player": "Giannis Antetokounmpo",
+   "pid": "3032977",
+   "team": "LAL",
+   "opp": "MIN",
+   "home": false,
+   "game_id": "g1",
+   "start": "2026-11-23T19:30:00-05:00",
+   "bet": "Under 12.5 rebounds",
+   "market": "rebounds",
+   "side": "under",
+   "line": 12.5,
+   "price": -115,
+   "price_at": "2026-11-23T17:00:00-05:00",
+   "state": "locked",
+   "p": 0.56,
+   "breakeven": 0.53
+  }
+ ],
+ "counts": {},
+ "fixture_live": {
+  "games": {
+   "g1": {
+    "state": "in",
+    "period": 2,
+    "clock": "3:45",
+    "in_break": false,
+    "away": {
+     "score": 48
+    },
+    "home": {
+     "score": 51
+    }
+   },
+   "g2": {
+    "state": "post",
+    "period": 6,
+    "clock": "0:00",
+    "in_break": false,
+    "away": {
+     "score": 140
+    },
+    "home": {
+     "score": 143
+    }
+   },
+   "g3": {
+    "state": "in",
+    "period": 5,
+    "clock": "1:02",
+    "in_break": false,
+    "away": {
+     "score": 118
+    },
+    "home": {
+     "score": 121
+    }
+   },
+   "g4": {
+    "state": "in",
+    "period": 3,
+    "clock": "8:21",
+    "in_break": false,
+    "away": {
+     "score": 64
+    },
+    "home": {
+     "score": 70
+    }
+   },
+   "g5": {
+    "state": "in",
+    "period": 2,
+    "clock": "0:00",
+    "detail": "Halftime",
+    "in_break": true,
+    "away": {
+     "score": 55
+    },
+    "home": {
+     "score": 52
+    }
+   },
+   "g6": {
+    "state": "in",
+    "period": 1,
+    "clock": "0:00",
+    "in_break": true,
+    "away": {
+     "score": 28
+    },
+    "home": {
+     "score": 28
+    }
+   },
+   "g7": {
+    "state": "pre",
+    "period": 0,
+    "clock": "",
+    "in_break": false,
+    "away": {
+     "score": null
+    },
+    "home": {
+     "score": null
+    }
+   },
+   "g8": {
+    "state": "post",
+    "period": 4,
+    "clock": "0:00",
+    "in_break": false,
+    "away": {
+     "score": 101
+    },
+    "home": {
+     "score": 97
+    }
+   },
+   "g9": {
+    "state": "post",
+    "period": 4,
+    "clock": "0:00",
+    "in_break": false,
+    "away": {
+     "score": 109
+    },
+    "home": {
+     "score": 112
+    }
+   }
+  },
+  "stats": {
+   "fx-01": {
+    "stat": 14
+   },
+   "fx-02": {
+    "stat": 28
+   },
+   "fx-04": {
+    "stat": 2
+   },
+   "fx-05": {
+    "stat": 6
+   },
+   "fx-07": {
+    "dnp": true
+   },
+   "fx-10": {
+    "stat": 4
+   },
+   "fx-14": {
+    "stat": 5
+   },
+   "fx-06": {
+    "dnp": true
+   }
+  },
+  "done": {
+   "g2": 1,
+   "g8": 1,
+   "g9": 1
+  }
+ }
+}

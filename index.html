@@ -73,9 +73,9 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .tag-test{margin:0 -14px;padding:calc(var(--sat) + 3px) 14px 3px;font-size:11px;line-height:16px;color:var(--warn);background:var(--warn-soft);border-bottom:1px solid var(--line)}
 .tag-test+.hdr{padding-top:12px;top:0}
 /* sport switcher pill */
-/* 36px buttons; the negative block margin keeps the header the height it was */
-.sport-sw{display:flex;gap:2px;background:var(--line);border-radius:22px;padding:2px;flex:none;align-items:center;align-self:center;margin-block:-7px}
-.sport-sw button{display:flex;align-items:center;justify-content:center;min-height:36px;min-width:44px;padding:0 10px;border-radius:18px;font-size:12px;line-height:17px;font-weight:600;color:var(--muted)}
+/* 40px buttons; the negative block margin keeps the header the height it was */
+.sport-sw{display:flex;gap:2px;background:var(--line);border-radius:22px;padding:2px;flex:none;align-items:center;align-self:center;margin-block:-9px}
+.sport-sw button{display:flex;align-items:center;justify-content:center;min-height:40px;min-width:44px;padding:0 10px;border-radius:18px;font-size:12px;line-height:17px;font-weight:600;color:var(--muted)}
 .sport-sw button[aria-pressed=true]{background:var(--surface);color:var(--fg);box-shadow:0 1px 2px rgba(0,0,0,.12)}
 /* sport badge on pick tiles in All mode */
 .sp-badge{display:inline-block;padding:1px 5px;border-radius:4px;font-size:10px;line-height:14px;font-weight:700;letter-spacing:.04em;vertical-align:1px;margin-left:5px;flex:none}
@@ -118,6 +118,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .board,.lvlist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-flow:row;gap:8px;margin-top:10px}
 .tile{position:relative;display:flex;flex-direction:column;min-width:0;padding:10px 10px 9px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
 .tile[role=button]{cursor:pointer}
+.tile.wide{grid-column:1 / -1}
 .tile.open{grid-column:1 / -1;border-color:var(--primary);background:var(--selected-bg)}
 .tile.open .nm{color:var(--selected-text)}
 .tile .top{display:flex;gap:6px;align-items:center;min-width:0}
@@ -336,10 +337,16 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;te
 .hitline{margin-top:10px}
 .hitline .bar{margin-top:4px}
 .tbl{margin-top:8px;font-size:13px;line-height:18px;border-top:1px solid var(--line2)}
-.tr{display:grid;grid-template-columns:minmax(0,1fr) 50px 54px 86px;column-gap:6px;align-items:baseline;padding:7px 0;border-bottom:1px solid var(--line)}
+.tr{display:grid;grid-template-columns:minmax(min-content,1fr) 50px 54px 86px;column-gap:6px;align-items:baseline;padding:7px 0;border-bottom:1px solid var(--line)}
 .tr.th{font-size:11px;line-height:15px;color:var(--muted);padding:6px 0 5px}
 .tr>*{text-align:right;white-space:nowrap}
-.tr>:first-child{text-align:left;white-space:normal;overflow-wrap:anywhere}
+.tr>:first-child{text-align:left;white-space:normal}
+.tbl.cuts{container-type:inline-size}
+@container (max-width:290px){
+  .cuts .tr{grid-template-columns:50px 60px minmax(0,1fr)}
+  .cuts .tr>:first-child{grid-column:1 / -1;text-align:left}
+  .cuts .tr.th>:first-child{display:none}
+}
 .tr .num{font:600 15px/18px var(--num)}
 .tr .lbl small{display:block;font-size:11px;line-height:14px;color:var(--warn)}
 .tr .hv{font-size:12px;color:var(--fg2)}
@@ -1150,9 +1157,9 @@ function chanceVs(p) {
     h('b', { class: short ? 'short' : null, text: pc || '—' }), ' vs ', h('span', { text: be || '—' }));
 }
 /* Names never break inside a word. A closed tile stacks first name over last name and fits the last name to its room (fitNames):
-   smaller type, then no suffix, then no photo, then an initial for the first name, then a wrap after a hyphen. */
+   smaller type, then no suffix, then no photo, then an initial for the first name, then a wrap after a hyphen or space at 13px, then the tile takes the full row. */
 var NAME_SUFFIX = /^(jr\.?|sr\.?|ii|iii|iv|v)$/i;
-var NAME_SIZES = [15, 14, 13, 12, 11];
+var NAME_SIZES = [15, 14, 13];
 function splitName(full) {
   var t = str(full).trim().replace(/\s+/g, ' ').split(' ');
   if (t.length < 2) return { first: '', last: t[0], core: t[0] };
@@ -1168,22 +1175,27 @@ function nameBlock(full, closed) {
 }
 function fitsLine(el) { return el.scrollWidth <= el.clientWidth; }
 function fitName(nm) {
-  var top = nm.parentNode, im = top.querySelector('.hs, .ck'), fn = nm.querySelector('.fn'), ln = nm.querySelector('.ln');
+  var tile = nm.closest('.tile'), top = nm.parentNode, im = top.querySelector('.hs, .ck'), fn = nm.querySelector('.fn'), ln = nm.querySelector('.ln');
   var first = nm.getAttribute('data-first'), last = nm.getAttribute('data-last'), core = nm.getAttribute('data-core');
   var fitFirst = function () { if (!fn) return; fn.textContent = first; if (!fitsLine(fn)) fn.textContent = first.charAt(0) + '.'; };
   var photo = function (on) { if (!im) return; if (im.classList.contains('ck')) top.classList.toggle('cr', !on); else im.style.display = on ? '' : 'none'; };
-  ln.className = 'ln';
-  var tiers = [[true, last], [true, core], [false, last], [false, core]], i, j;
-  for (i = 0; i < tiers.length; i++) {
-    if (!im && !tiers[i][0]) continue;
-    photo(tiers[i][0]); ln.textContent = tiers[i][1];
-    for (j = 0; j < NAME_SIZES.length; j++) {
-      ln.style.fontSize = NAME_SIZES[j] + 'px'; fitFirst();
-      if (fitsLine(ln)) return;
+  var tryFit = function () {
+    var tiers = [[true, last], [true, core], [false, last], [false, core]], i, j;
+    ln.className = 'ln';
+    for (i = 0; i < tiers.length; i++) {
+      if (!im && !tiers[i][0]) continue;
+      photo(tiers[i][0]); ln.textContent = tiers[i][1];
+      for (j = 0; j < NAME_SIZES.length; j++) {
+        ln.style.fontSize = NAME_SIZES[j] + 'px'; fitFirst();
+        if (fitsLine(ln)) return true;
+      }
     }
-  }
-  photo(false); ln.textContent = last; ln.style.fontSize = NAME_SIZES[0] + 'px'; fitFirst();
-  ln.classList.add('brk');
+    photo(false); ln.textContent = last; ln.style.fontSize = NAME_SIZES[NAME_SIZES.length - 1] + 'px'; fitFirst();
+    ln.classList.add('brk');
+    return fitsLine(ln);
+  };
+  tile.classList.remove('wide');
+  if (!tryFit()) { tile.classList.add('wide'); tryFit(); }
 }
 /* Any line that must never clip: data-fit holds its tiers (font size, replacement text, or which variant child shows), tried in order; the first one that fits stays. */
 function fitSpec(el, tiers) { el.setAttribute('data-fit', JSON.stringify(tiers)); return el; }
@@ -2411,7 +2423,7 @@ function nightSection(nt, ents) {
 /* a compact cut table: label | W-L | units | hit vs what the prices needed on average */
 function cutTable(c, few) {
   var box = h('section', { class: 'cut' }, h('h3', { text: str(c.label) }), c.note ? h('div', { class: 'cn', text: str(c.note) }) : null);
-  var tbl = h('div', { class: 'tbl', role: 'table', 'aria-label': str(c.label) });
+  var tbl = h('div', { class: 'tbl cuts', role: 'table', 'aria-label': str(c.label) });
   tbl.appendChild(h('div', { class: 'tr th', role: 'row' }, h('span', { role: 'columnheader', text: '' }), h('span', { role: 'columnheader', text: 'W-L' }),
     h('span', { role: 'columnheader', text: 'Units' }), h('span', { role: 'columnheader', text: 'Hit vs needs' })));
   arr(c.rows).filter(isObj).forEach(function (r) {

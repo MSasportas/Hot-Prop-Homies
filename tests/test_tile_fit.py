@@ -16,11 +16,26 @@ except ImportError:
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 CHECK_JS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tile_check.js")
 WIDTHS = (320, 340, 380, 430)
-VIEWS = ("picks", "live", "games", "record", "lab", "info")
-FIXTURES = ("livelong", "livelong-nhl", "lab-cards")
+ALL_VIEWS = ("picks", "live", "games", "record", "lab", "info")
+# the long-name and lab fixtures run every tab; the open-pick fixtures cover Picks tiles in each settled state,
+# the record fixtures hold the real NBA and NHL Record files (market, side, edge and price cuts)
+REAL_DATA = ""  # no ?fixture: the page reads the committed sports/*/data files, as the live site does
+FIXTURE_VIEWS = {
+    REAL_DATA: ALL_VIEWS,
+    "livelong": ALL_VIEWS,
+    "livelong-nhl": ALL_VIEWS,
+    "lab-cards": ALL_VIEWS,
+    "open-picks": ("picks", "games"),
+    "open-picks-nhl": ("picks", "games"),
+    "record-nba": ("record",),
+    "record-nhl": ("record",),
+}
 SPORTS = ("all", "nba", "nhl")
+RECORD_SPORT = {"record-nba": "nba", "record-nhl": "nhl"}  # the breakdown tables show for one sport at a time
+# the page renders differently for All, NBA and NHL: the committed data is swept for each, the fixtures where it matters
+WIDE_SPORT_RUNS = tuple((REAL_DATA, v) for v in ALL_VIEWS) + (("livelong", "picks"), ("livelong", "live"), ("livelong-nhl", "live"), ("open-picks", "picks"), ("open-picks-nhl", "picks"))
 RENDER_MS = 700
-SWITCH_MIN_TAP_PX = 36
+SWITCH_MIN_TAP_PX = 40
 TAP_ALL = """() => {
   for (let pass = 0; pass < 3; pass++) {
     document.querySelectorAll('#app [aria-expanded="false"], #app button.tr:not(.open), #app .lc-more').forEach((b) => b.click());
@@ -59,27 +74,51 @@ class EveryTileFits(unittest.TestCase):
     def render(self, ctx, fixture, view, sport, tap=True):
         page = ctx.new_page()
         page.add_init_script("localStorage.setItem('pc_sport', '%s')" % sport)
-        page.goto("http://127.0.0.1:%d/index.html?fixture=%s#%s" % (self.server.server_address[1], fixture, view))
+        query = "?fixture=" + fixture if fixture else ""
+        page.goto("http://127.0.0.1:%d/index.html%s#%s" % (self.server.server_address[1], query, view))
         page.wait_for_timeout(RENDER_MS)
         if tap:
             page.evaluate(TAP_ALL)
             page.wait_for_timeout(RENDER_MS // 2)
         return page
 
+    def found(self, page, view):
+        """Problems on the view as it stands; on Record, once for each breakdown table behind the switcher, with its rows opened."""
+        out = page.evaluate(self.check)
+        if view != "record":
+            return out
+        for i in range(page.locator(".cswb").count()):
+            page.locator(".cswb").nth(i).click()
+            page.wait_for_timeout(RENDER_MS // 2)
+            page.evaluate(TAP_ALL)
+            page.wait_for_timeout(RENDER_MS // 2)
+            out += page.evaluate(self.check)
+        return out
+
     def test_no_tile_has_cut_off_words_at_any_phone_width(self):
         problems = []
         for width in WIDTHS:
             ctx = self.browser.new_context(viewport={"width": width, "height": 900})
-            for fixture in FIXTURES:
-                for view in VIEWS:
-                    sports = SPORTS if (fixture, view) in (("livelong", "picks"), ("livelong", "live"), ("livelong-nhl", "live")) else ("all",)
+            for fixture, views in FIXTURE_VIEWS.items():
+                for view in views:
+                    sports = SPORTS if (fixture, view) in WIDE_SPORT_RUNS else (RECORD_SPORT.get(fixture, "all"),)
                     for sport in sports:
                         page = self.render(ctx, fixture, view, sport)
-                        for p in page.evaluate(self.check):
-                            problems.append("%dpx %s %s %s: %s in %s %s %s" % (width, fixture, view, sport, p["kind"], p["where"], repr(p["text"]), p["detail"]))
+                        for p in self.found(page, view):
+                            problems.append("%dpx %s %s %s: %s in %s %s %s" % (width, fixture or "real-data", view, sport, p["kind"], p["where"], repr(p["text"]), p["detail"]))
                         page.close()
             ctx.close()
         self.assertEqual(sorted(set(problems)), [])
+
+    def test_the_record_fixtures_really_render_the_breakdown_labels(self):
+        ctx = self.browser.new_context(viewport={"width": 320, "height": 900})
+        for fixture, label in (("record-nba", "Rebounds"), ("record-nhl", "Under 1.5")):
+            page = self.render(ctx, fixture, "record", RECORD_SPORT[fixture], tap=False)
+            labels = page.evaluate("Array.from(document.querySelectorAll('.cuts .lbl')).map((e) => e.textContent)")
+            self.assertTrue(any(label in t for t in labels), (fixture, labels))
+            self.assertTrue(page.evaluate("Array.from(document.querySelectorAll('.cuts .lbl small')).length > 0"), fixture)
+            page.close()
+        ctx.close()
 
     def test_sport_switch_buttons_are_a_real_tap_size(self):
         ctx = self.browser.new_context(viewport={"width": 320, "height": 900})
