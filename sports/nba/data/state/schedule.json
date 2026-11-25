@@ -315,10 +315,10 @@
     "home": "PHI",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "11:19 - 3rd",
     "score": {
-     "MIA": "53",
+     "MIA": "54",
      "PHI": "62"
     }
    },
