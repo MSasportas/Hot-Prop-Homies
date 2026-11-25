@@ -233,3 +233,14 @@ Event: at least 4 other books have a main line for that player and market, and a
 CLV = Pinnacle's no-vig chance for the side on the same Hard Rock line at the last read of that game that night, times the frozen price, minus 1 (CLV_pin; n = 0 where Pinnacle has no two-sided price on that line).
 Pass bar: RESEARCH.md rule 4 (n >= 150 graded forward, ROI > 0, 90% game-clustered lower bound > 0, CLV_pin > 0). Discovery cannot pass. Placebo: results shuffled within night, 500 draws, share of placebo ROI >= actual.
 Code: sports/nba/research/code/run30/main_line_majority.py (output main_line_majority_results.txt).
+
+## Run 30 (Researcher, 2026-11-25). MAIN-LINE MAJORITY (line disagreement, NBA port of NHL LL6). Registered before any of these were tested.
+Discovery = every stored odds night through 2026-11-25 (all seen by AH1-AH15, so discovery only). Forward = nights from 2026-11-26 on. Not a re-run of F7b/F8 (Pinnacle's own line move; a line move HR did not make) or of R28d/LVA (line vs rolling average).
+Population: data/odds reads B and C (90 and 45 min before tip). Markets: points, rebounds, assists, threes. Books: Hard Rock plus `others` (fresh < 60 min at the read, two-sided, hold 0-15%).
+Main line per book for a player and market = its two-sided line whose proportional no-vig over chance is closest to 0.5. Hard Rock's line = the same rule on Hard Rock.
+Event: at least 4 other books have a main line for that player and market, and a strict majority of them sit ABOVE Hard Rock's line: bet Hard Rock OVER. A strict majority BELOW: bet Hard Rock UNDER. Side price on Hard Rock -200..+200 (no EV filter). First qualifying read per (night, game, player, market). 1u flat, graded from box scores (DNP = void, whole-number line exact = push).
+- R30a Main-line majority, all four markets pooled (the rule above). 1 variant.
+CLV = Pinnacle's no-vig chance for the side on the same Hard Rock line at the last read of that game that night, times the frozen price, minus 1 (CLV_pin; n = 0 where Pinnacle has no two-sided price on that line).
+Pass bar: RESEARCH.md rule 4 (n >= 150 graded forward, ROI > 0, 90% game-clustered lower bound > 0, CLV_pin > 0). Discovery cannot pass. Placebo: results shuffled within night, 500 draws, share of placebo ROI >= actual.
+Code: sports/nba/research/code/run30/main_line_majority.py (output main_line_majority_results.txt).
+Result (discovery, 2026-11-25 run): 1,056 bets, 1,034 graded, 593-441, -22.25u, ROI -2.2% [90% CI -6.1..+1.9], CLV_pin -4.6% (n218). Placebo share 0.98. Points -4.1% (n505), rebounds +3.5% (n285, CI -4.1..+10.7, CLV -4.7%), assists -7.9% (n165), threes +2.0% (n79). Over -5.0%, under +0.3%. Verdict: FAILED on discovery. Forward from 2026-11-26: none yet.

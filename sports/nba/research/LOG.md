@@ -1,3 +1,10 @@
+## 2026-11-25, Run 30 (Researcher daily; R30a main-line majority, NBA)
+Registered in HYPOTHESES.md (Run 30) before any test. Books' main-line majority vs Hard Rock's line: >= 4 other books, strict majority above -> HR OVER, below -> HR UNDER, reads B and C, -200..+200, points / rebounds / assists / threes. Stored data only, no key. Code research/code/run30/main_line_majority.py, output main_line_majority_results.txt.
+- R30a discovery (all nights through 2026-11-25): 1,034 graded, 593-441, -22.25u, ROI -2.2% [90% CI -6.1..+1.9], CLV_pin -4.6% (n218). Placebo share 0.98.
+- By market: points -4.1% (n505), rebounds +3.5% (n285, CI -4.1..+10.7, CLV -4.7%), assists -7.9% (n165), threes +2.0% (n79). Over -5.0%, under +0.3%.
+**Verdict: FAILED on discovery. No candidate for the Sharp.** The book majority does not point to the side that wins; CLV is negative in every cut. Forward judged from 2026-11-26 (none yet).
+Next: (1) forward scorer for R30a from 2026-11-26 (Engineer, nightly auto run); (2) R29a/b and R28 items still need scorers.
+
 ## 2026-11-24, Run 30 (Researcher daily; MARKET SPLIT of the Pinnacle-move population, priority 4)
 Registered before any test: MK1-MK4 in HYPOTHESES.md (Run 30). Discovery = every stored night through 2026-11-25; forward starts 2026-11-26 (no forward nights yet). Population unchanged from AH1-AH15: auto_hypothesis.build_moves() (Pinnacle >= 2 pt move, Hard Rock two-sided on the line both reads, -200..+200, first per player/market/night). Stored data only, no key. Code research/code/r2026_11_24/mk_market.py, output mk_results.txt.
 Re-scored: AH9 (latest auto entry, 2026-11-25) forward 140-165, -44.61u, ROI -14.6%, CLV_pin -3.9% (below bar, unchanged).
