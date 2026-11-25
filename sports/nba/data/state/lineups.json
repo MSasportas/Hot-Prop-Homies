@@ -48,7 +48,7 @@
    }
   },
   "WSH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Trae Young",
     "Kyshawn George",
@@ -57,7 +57,6 @@
     "Alex Sarr"
    ],
    "status": {
-    "Tre Mann": "questionable",
     "Reece Beekman": "out",
     "Justin Champagnie": "out",
     "Tristan Vukcevic": "out",
@@ -93,5 +92,5 @@
    "status": {}
   }
  },
- "at": "2026-11-24T19:30:01-05:00"
+ "at": "2026-11-24T19:40:01-05:00"
 }
