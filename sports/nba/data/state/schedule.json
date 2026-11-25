@@ -315,11 +315,11 @@
     "home": "PHI",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "10:17 - 2nd",
     "score": {
-     "MIA": "32",
-     "PHI": "29"
+     "MIA": "34",
+     "PHI": "33"
     }
    },
    {
