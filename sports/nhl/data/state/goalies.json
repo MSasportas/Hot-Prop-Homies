@@ -7,7 +7,7 @@
   },
   "STL": {
    "name": "Joel Hofer",
-   "status": "expected"
+   "status": "confirmed"
   },
   "WSH": {
    "name": "Logan Thompson",
@@ -23,7 +23,7 @@
   },
   "NJD": {
    "name": "Connor Hellebuyck",
-   "status": "expected"
+   "status": "confirmed"
   },
   "FLA": {
    "name": "Jacob Markstrom",
@@ -43,11 +43,11 @@
   },
   "TBL": {
    "name": "Andrei Vasilevskiy",
-   "status": "expected"
+   "status": "confirmed"
   },
   "CAR": {
    "name": "Brandon Bussi",
-   "status": "expected"
+   "status": "confirmed"
   },
   "BOS": {
    "name": "Jeremy Swayman",
@@ -59,7 +59,7 @@
   },
   "BUF": {
    "name": "Ukko-Pekka Luukkonen",
-   "status": "expected"
+   "status": "confirmed"
   },
   "NYR": {
    "name": "Joonas Korpisalo",
@@ -114,5 +114,5 @@
    "status": "confirmed"
   }
  },
- "checked_at": "2026-11-25T15:00:00-05:00"
+ "checked_at": "2026-11-25T18:40:01-05:00"
 }
