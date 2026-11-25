@@ -313,13 +313,13 @@
     "start": "2026-11-25T17:00:00-05:00",
     "away": "MIA",
     "home": "PHI",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/25 - 5:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:42 - 1st",
     "score": {
-     "MIA": "0",
-     "PHI": "0"
+     "MIA": "13",
+     "PHI": "10"
     }
    },
    {

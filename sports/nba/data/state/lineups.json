@@ -33,11 +33,11 @@
     "Buddy Hield",
     "Isaac Okoro",
     "Matas Buzelis",
-    "Jalen Smith"
+    "Nic Claxton"
    ],
    "status": {
-    "Jalen Smith": "out",
     "Norman Powell": "out",
+    "Jalen Smith": "out",
     "Caleb Wilson": "out"
    }
   },
@@ -51,7 +51,6 @@
     "Moussa Diabate"
    ],
    "status": {
-    "Sion James": "probable",
     "Grayson Allen": "out",
     "Ryan Kalkbrenner": "out",
     "Kon Knueppel": "out",
@@ -269,5 +268,5 @@
    }
   }
  },
- "at": "2026-11-25T17:10:01-05:00"
+ "at": "2026-11-25T17:20:01-05:00"
 }
