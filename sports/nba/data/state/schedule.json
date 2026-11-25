@@ -390,8 +390,8 @@
     "home": "DEN",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "0.0 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
      "DAL": "58",
      "DEN": "39"
