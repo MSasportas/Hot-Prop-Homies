@@ -1,5 +1,14 @@
 ## 2026-11-16, Run DM (Sharp; data mining 2026-11-16 — three leads registered)
 
+## 2026-11-25, AH9 (auto; 2-4 books following (consensus middle band))
+Filter: MOVES where 2-4 other books moved >= 1 pt the same way. MOVES population (Pinnacle >= 2 pt move, HR on line, -200..+200, 1/player/market/night).
+Discovery (<2026-11-10, 28 nights): n 532 graded 517 266-251 -20.87u ROI -4.0% CLV_pin -4.0% (n 442)
+Discovery FAIR (ev_pin>=0): n 58 graded 55 29-26 +2.91u ROI +5.3% CLV_pin -0.6% (n 47)
+Forward (>=2026-11-10, 15 nights): n 316 graded 305 140-165 -44.61u ROI -14.6% CLV_pin -3.9% (n 260)
+Forward FAIR: n 38 graded 35 15-20 -6.15u ROI -17.6% CLV_pin -0.6% (n 31)
+Pass bar: n>=150 graded fwd, ROI>0, CI>0, CLV>0. Status: BELOW BAR
+
+
 ## 2026-11-24, AH8 (auto; Unders in last 90 min)
 Filter: MOVES where side = under AND window in last 90 min. MOVES population (Pinnacle >= 2 pt move, HR on line, -200..+200, 1/player/market/night).
 Discovery (<2026-11-10, 15 nights): n 101 graded 101 69-32 +24.73u ROI +24.5% CLV_pin -3.0% (n 68)
