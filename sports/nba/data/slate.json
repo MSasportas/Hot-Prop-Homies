@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 748,
+   "pool_left": 744,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-24T20:45:00-05:00",
-  "last_read_at": "2026-11-24T20:30:00-05:00",
+  "next_read_at": "2026-11-24T21:00:00-05:00",
+  "last_read_at": "2026-11-24T20:50:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-24T20:40:01-05:00"
+   "at": "2026-11-24T20:50:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-24T20:40:01-05:00",
+    "at": "2026-11-24T20:50:00-05:00",
     "confirmed": [
      "BOS",
      "DET",
@@ -48,7 +48,7 @@
    "away": "DET",
    "home": "ORL",
    "state": "in",
-   "detail": "4:31 - 3rd",
+   "detail": "27.2 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -113,7 +113,7 @@
    "away": "BOS",
    "home": "WAS",
    "state": "in",
-   "detail": "0.0 - 1st",
+   "detail": "9:28 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -183,7 +183,7 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-24T20:30:00-05:00",
+   "read_at": "2026-11-24T20:50:00-05:00",
    "picks": 1,
    "checks": [
     {
@@ -205,12 +205,16 @@
     {
      "read": "B",
      "at": "2026-11-24T20:30:00-05:00"
+    },
+    {
+     "read": "X75",
+     "at": "2026-11-24T20:50:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-24T20:30:00-05:00",
+   "last_check_at": "2026-11-24T20:50:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-24T20:45:00-05:00",
-   "next_check_read": "X75",
+   "next_check_at": "2026-11-24T21:00:00-05:00",
+   "next_check_read": "X60",
    "paused": false,
    "injury_clear": {
     "away": false,
@@ -508,6 +512,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-24T20:40:01-05:00",
- "status_at": "2026-11-24T20:40:01-05:00"
+ "generated_at": "2026-11-24T20:50:00-05:00",
+ "status_at": "2026-11-24T20:50:00-05:00"
 }
