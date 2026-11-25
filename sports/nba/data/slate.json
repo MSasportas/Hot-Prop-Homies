@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 732,
+   "pool_left": 728,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-24T21:40:00-05:00",
-  "last_read_at": "2026-11-24T21:30:01-05:00",
+  "next_read_at": null,
+  "last_read_at": "2026-11-24T21:40:02-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-24T21:30:01-05:00"
+   "at": "2026-11-24T21:40:02-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,9 +30,11 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-24T21:30:01-05:00",
+    "at": "2026-11-24T21:40:02-05:00",
     "confirmed": [
      "BOS",
+     "DAL",
+     "DEN",
      "DET",
      "ORL",
      "WSH"
@@ -113,7 +115,7 @@
    "away": "BOS",
    "home": "WAS",
    "state": "in",
-   "detail": "10:30 - 3rd",
+   "detail": "6:31 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -180,10 +182,10 @@
    "state": "pre",
    "detail": "11/24 - 10:00 PM EST",
    "lineups": {
-    "away": "expected",
-    "home": "expected"
+    "away": "confirmed",
+    "home": "confirmed"
    },
-   "read_at": "2026-11-24T21:30:01-05:00",
+   "read_at": "2026-11-24T21:40:02-05:00",
    "picks": 1,
    "checks": [
     {
@@ -221,12 +223,16 @@
     {
      "read": "X30",
      "at": "2026-11-24T21:30:01-05:00"
+    },
+    {
+     "read": "D",
+     "at": "2026-11-24T21:40:02-05:00"
     }
    ],
-   "last_check_at": "2026-11-24T21:30:01-05:00",
-   "final": false,
-   "next_check_at": "2026-11-24T21:40:00-05:00",
-   "next_check_read": "D",
+   "last_check_at": "2026-11-24T21:40:02-05:00",
+   "final": true,
+   "next_check_at": null,
+   "next_check_read": null,
    "paused": false,
    "injury_clear": {
     "away": false,
@@ -490,9 +496,9 @@
     }
    },
    "id": "2026-11-24:401909316:5211175:rebounds:3.5:over",
-   "state": "early",
-   "state_label": "Early",
-   "price_final": false,
+   "state": "starters",
+   "state_label": "Starters confirmed",
+   "price_final": true,
    "pulled": null,
    "added_at": "2026-11-24T20:30:00-05:00",
    "result": null,
@@ -513,7 +519,7 @@
  ],
  "empty": null,
  "counts": {
-  "lines_read": 248,
+  "lines_read": 242,
   "passing": 11,
   "games": 3
  },
@@ -524,6 +530,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-24T21:30:01-05:00",
- "status_at": "2026-11-24T21:30:01-05:00"
+ "generated_at": "2026-11-24T21:40:02-05:00",
+ "status_at": "2026-11-24T21:40:02-05:00"
 }

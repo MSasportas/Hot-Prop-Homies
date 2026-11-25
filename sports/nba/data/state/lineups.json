@@ -64,16 +64,15 @@
    }
   },
   "DAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Kyrie Irving",
     "Caleb Martin",
     "Cooper Flagg",
-    "P.J. Washington",
+    "Zaccharie Risacher",
     "Daniel Gafford"
    ],
    "status": {
-    "P.J. Washington": "questionable",
     "Tarik Biberovic": "out",
     "Sergio de Larrea": "out",
     "Tobi Lawal": "out",
@@ -81,7 +80,7 @@
    }
   },
   "DEN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jamal Murray",
     "Christian Braun",
@@ -92,5 +91,5 @@
    "status": {}
   }
  },
- "at": "2026-11-24T21:30:01-05:00"
+ "at": "2026-11-24T21:40:02-05:00"
 }

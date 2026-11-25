@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:30 - 3rd",
+    "detail": "6:31 - 3rd",
     "score": {
-     "BOS": "86",
-     "WSH": "55"
+     "BOS": "92",
+     "WSH": "68"
     }
    },
    {
