@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T15:50:01-05:00",
+ "at": "2026-11-25T16:02:44-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -539,6 +539,13 @@
    "team": "POR",
    "date": "2026-08-24T20:23Z",
    "note": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN."
+  },
+  "3064440": {
+   "status": "day-to-day",
+   "name": "Zach LaVine",
+   "team": "SAC",
+   "date": "2026-11-25T20:49Z",
+   "note": "LaVine (knee) has been downgraded to questionable for Wednesday's game against Golden State."
   },
   "4898371": {
    "status": "out",
