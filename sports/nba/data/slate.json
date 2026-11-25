@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 664,
+   "pool_left": 660,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-25T16:40:00-05:00",
-  "last_read_at": "2026-11-25T16:20:01-05:00",
+  "next_read_at": "2026-11-25T16:45:00-05:00",
+  "last_read_at": "2026-11-25T16:40:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-25T16:30:02-05:00"
+   "at": "2026-11-25T16:40:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,8 +30,11 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-25T16:30:02-05:00",
-    "confirmed": []
+    "at": "2026-11-25T16:40:00-05:00",
+    "confirmed": [
+     "MIA",
+     "PHI"
+    ]
    },
    "grade": true
   }
@@ -45,10 +48,10 @@
    "state": "pre",
    "detail": "11/25 - 5:00 PM EST",
    "lineups": {
-    "away": "expected",
-    "home": "expected"
+    "away": "confirmed",
+    "home": "confirmed"
    },
-   "read_at": "2026-11-25T16:20:01-05:00",
+   "read_at": "2026-11-25T16:40:00-05:00",
    "picks": 0,
    "checks": [
     {
@@ -62,12 +65,16 @@
     {
      "read": "C",
      "at": "2026-11-25T16:20:01-05:00"
+    },
+    {
+     "read": "D",
+     "at": "2026-11-25T16:40:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-25T16:20:01-05:00",
-   "final": false,
-   "next_check_at": "2026-11-25T16:40:00-05:00",
-   "next_check_read": "D",
+   "last_check_at": "2026-11-25T16:40:00-05:00",
+   "final": true,
+   "next_check_at": null,
+   "next_check_read": null,
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -129,7 +136,7 @@
    "paused": false,
    "injury_clear": {
     "away": true,
-    "home": false
+    "home": true
    }
   },
   {
@@ -285,11 +292,11 @@
  "picks": [],
  "empty": {
   "text": "No picks yet today",
-  "why": "808 lines read. Pinnacle moved alone on 28, none of them bettable yet.",
-  "next": "2026-11-25T16:40:00-05:00"
+  "why": "816 lines read. Pinnacle moved alone on 28, none of them bettable yet.",
+  "next": "2026-11-25T16:45:00-05:00"
  },
  "counts": {
-  "lines_read": 808,
+  "lines_read": 816,
   "passing": 3,
   "games": 9
  },
@@ -300,6 +307,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-25T16:30:02-05:00",
- "status_at": "2026-11-25T16:30:02-05:00"
+ "generated_at": "2026-11-25T16:40:00-05:00",
+ "status_at": "2026-11-25T16:40:00-05:00"
 }

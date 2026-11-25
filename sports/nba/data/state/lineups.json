@@ -2,7 +2,7 @@
  "slate": "2026-11-25",
  "teams": {
   "MIA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Davion Mitchell",
     "Klay Thompson",
@@ -13,7 +13,7 @@
    "status": {}
   },
   "PHI": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Tyrese Maxey",
     "VJ Edgecombe",
@@ -82,7 +82,7 @@
     "Karl-Anthony Towns"
    ],
    "status": {
-    "Jalen Brunson": "questionable",
+    "Jalen Brunson": "probable",
     "Josh Hart": "probable",
     "Karl-Anthony Towns": "probable",
     "OG Anunoby": "out",
@@ -269,5 +269,5 @@
    }
   }
  },
- "at": "2026-11-25T16:30:02-05:00"
+ "at": "2026-11-25T16:40:00-05:00"
 }
