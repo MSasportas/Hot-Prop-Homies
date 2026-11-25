@@ -376,10 +376,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:00 - 4th",
+    "detail": "5:40 - 4th",
     "score": {
-     "BOS": "109",
-     "WSH": "96"
+     "BOS": "117",
+     "WSH": "104"
     }
    },
    {
@@ -388,13 +388,13 @@
     "start": "2026-11-24T22:00:00-05:00",
     "away": "DAL",
     "home": "DEN",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/24 - 10:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:18 - 1st",
     "score": {
-     "DAL": "0",
-     "DEN": "0"
+     "DAL": "9",
+     "DEN": "7"
     }
    }
   ]
