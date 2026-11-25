@@ -14,8 +14,8 @@
    "status": "confirmed"
   },
   "PHI": {
-   "name": "Dan Vladar",
-   "status": "expected"
+   "name": "Joseph Woll",
+   "status": "confirmed"
   },
   "CBJ": {
    "name": "Cam Talbot",
@@ -35,7 +35,7 @@
   },
   "PIT": {
    "name": "Arturs Silovs",
-   "status": "expected"
+   "status": "confirmed"
   },
   "CGY": {
    "name": "Dustin Wolf",
@@ -51,7 +51,7 @@
   },
   "BOS": {
    "name": "Jeremy Swayman",
-   "status": "expected"
+   "status": "confirmed"
   },
   "WPG": {
    "name": "Stuart Skinner",
@@ -114,5 +114,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-25T11:00:01-05:00"
+ "checked_at": "2026-11-25T11:20:01-05:00"
 }
