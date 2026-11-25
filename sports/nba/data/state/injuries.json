@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T18:33:09-05:00",
+ "at": "2026-11-25T18:40:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -455,6 +455,13 @@
    "team": "ORL",
    "date": "2026-10-24T16:47Z",
    "note": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports."
+  },
+  "3917376": {
+   "status": "out",
+   "name": "Jaylen Brown",
+   "team": "PHI",
+   "date": "2026-11-25T23:30Z",
+   "note": "Brown (hamstring) won't return to Wednesday's game against Miami, Kyle Neubeck of AllPHLY.com reports. He finished with six points (2-8 FG, 0-1 3Pt, 2-2 FT), one rebound and one assist over 17 minutes"
   },
   "3059318": {
    "status": "out",
