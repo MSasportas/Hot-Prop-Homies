@@ -1,3 +1,29 @@
+## 2026-11-24, Run 30 (Researcher daily; MARKET SPLIT of the Pinnacle-move population, priority 4)
+Registered before any test: MK1-MK4 in HYPOTHESES.md (Run 30). Discovery = every stored night through 2026-11-25; forward starts 2026-11-26 (no forward nights yet). Population unchanged from AH1-AH15: auto_hypothesis.build_moves() (Pinnacle >= 2 pt move, Hard Rock two-sided on the line both reads, -200..+200, first per player/market/night). Stored data only, no key. Code research/code/r2026_11_24/mk_market.py, output mk_results.txt.
+Re-scored: AH9 (latest auto entry, 2026-11-25) forward 140-165, -44.61u, ROI -14.6%, CLV_pin -3.9% (below bar, unchanged).
+
+- All markets, reference: n 1422 graded, 749-673, -37.58u, ROI -2.6%, CLV_pin -4.2% (n 1252).
+- MK1 points: n 451, 236-215, -15.40u, ROI -3.4%, 90% CI [-10.4, +3.5], CLV_pin -3.7% (n 393), placebo share 0.99.
+- MK2 rebounds: n 422, 232-190, +2.48u, ROI +0.6%, 90% CI [-6.8, +8.2], CLV_pin -4.6% (n 367), placebo share 0.98.
+- MK3 assists: n 286, 154-132, -5.75u, ROI -2.0%, 90% CI [-10.3, +6.8], CLV_pin -4.3% (n 260), placebo share 0.86.
+- MK4 threes: n 263, 127-136, -18.92u, ROI -7.2%, 90% CI [-17.2, +2.6], CLV_pin -4.1% (n 232), placebo share 0.37.
+
+**Verdict: no market clears; no candidate for the Sharp.** Rebounds is the only near-zero line (+0.6%) and its CLV is -4.6%, so the move population shows no market where Hard Rock's price beats the close. The placebo column is the share of shuffled W/L assignments at or above the actual ROI: 0.99 for points and 0.98 for rebounds means the actual wins sat on worse prices than random would give. Discovery only; nothing here can pass.
+Next: (1) forward scoring of MK1-MK4 from 2026-11-26 (Engineer adds a scorer to the nightly auto run); (2) R29a/b and R28 items still need scorers; (3) R28g totals and R28h blocks/steals/combos need a credit decision from Matt (not stored; assists IS stored and MK3 covers it).
+
+## 2026-11-21 (Researcher run 29, daily; code research/code/r29/nba_r29.py; registered in HYPOTHESES.md before any test)
+Stored data only: data/shadow reads A/B/C/D/X* (every side, price, market fair, hold), graded from data/state/box. No odds pull, no credits. Discovery = nights through 2026-11-25 (Run 29 registered this run; forward starts 2026-11-26).
+- R29a Read timing, paired: every Hard Rock side at -200..+200 on points, rebounds, assists, threes seen at BOTH read A and read C (same player, market, line, side, night). n 12,442 sides.
+  At A price: 6,204-6,238 (W-L), ROI -6.2% [90% CI -6.4, -5.9], CLV -3.25 pts vs C fair. At C price: ROI -6.3% [-6.6, -6.1], CLV -3.26 pts.
+  Paired A-minus-C units per bet +0.002 (A better on 2,153 of 12,442 pairs). Shuffle placebo share >= actual 1.000.
+  **Verdict: no timing edge.** The early read and the late read price the same sides within 0.1 pt of ROI. Both are the hold (~-6%). Price timing does not rescue the books.
+- R29b Low-hold favorites (hold <= 0.045 at read C): 0 sides. The floor is real: across all 20,412 read-C sides on the four markets the minimum hold is 4.64% (median 6.8%; 3,800 sides at or under 6.0%), so this filter cannot run on stored data. Mirror (favorite, hold >= 0.07, context only): n 275, W-L 149-126, ROI -8.3% [-16.6, -0.4], CLV -3.9 pts. Heavier-vig favorites lose more; no pass, the mirror is not a bet.
+- Forward: no nights yet for R29 (first forward night 2026-11-26). R28a-R28h also forward from 2026-11-21 (nothing scored yet by this run).
+- Auto-scorer (read, not re-run): latest AH9 (2-4 books following, forward n 305 graded, ROI -14.6%, CLV -3.9 pts, BELOW BAR); AH8 unders late (forward n 21, +38.5%, 2 nights, too early); AH6 (forward n 19, +44%, 2 nights); AH7 (forward n 2 nights).
+- Finding on data: NBA stored data has no price below ~4.5% hold at read C, so "cheap line" ideas are not testable here. Hold, not timing, is the wall.
+**Verdict: nothing passed; no candidate for the Sharp. READY FOR SHARP: no.**
+Next: (1) R28a-R28h forward scorers (Engineer) before the first forward night reads; (2) R29a/R29b forward from 2026-11-26 (add a scorer to the nightly auto-scorer via Engineer); (3) data proposal for the CEO: a totals pull (R28g) and blocks/steals/combos (R28h) need credits, Matt's call.
+
 ## 2026-11-16, Run DM (Sharp; data mining 2026-11-16 — three leads registered)
 
 ## 2026-11-25, AH9 (auto; 2-4 books following (consensus middle band))

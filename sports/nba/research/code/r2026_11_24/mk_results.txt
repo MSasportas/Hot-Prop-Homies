@@ -1,0 +1,6 @@
+Run 30 MK1-MK4 discovery (all stored nights through 2026-11-25). Population: all MOVES graded W/L/P.
+All-market reference: n 1422 graded 1422 749-673 -37.58u ROI -2.6% CLV_pin -4.2% (n 1252)
+MK1 points    n 451 graded 451 236-215 -15.40u ROI -3.4% CLV_pin -3.7% (n 393) | 90% CI [-10.4%, +3.5%] | CLV_pin mean -3.7% (n 393) | rest-of-market ROI -2.3% | placebo share >= actual 0.987
+MK2 rebounds  n 422 graded 422 232-190 +2.48u ROI +0.6% CLV_pin -4.6% (n 367) | 90% CI [-6.8%, +8.2%] | CLV_pin mean -4.6% (n 367) | rest-of-market ROI -4.0% | placebo share >= actual 0.978
+MK3 assists   n 286 graded 286 154-132 -5.75u ROI -2.0% CLV_pin -4.3% (n 260) | 90% CI [-10.3%, +6.8%] | CLV_pin mean -4.3% (n 260) | rest-of-market ROI -2.8% | placebo share >= actual 0.862
+MK4 threes    n 263 graded 263 127-136 -18.92u ROI -7.2% CLV_pin -4.1% (n 232) | 90% CI [-17.2%, +2.6%] | CLV_pin mean -4.1% (n 232) | rest-of-market ROI -1.6% | placebo share >= actual 0.373

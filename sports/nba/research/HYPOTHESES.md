@@ -207,3 +207,29 @@ Discovery only: every stored night through 2026-11-12 was already seen by the AH
 - R28f Market gap audit (descriptive, not a test). HR EV vs median fair by market (points, rebounds, assists, threes) at read C, forward nights only. Purpose: find which market the gap lives in. Feeds Matt's priority 4. No need.
 - R28g Totals / pace environment: NOT TESTABLE. Totals are not stored in data/odds. Proposal to CEO: one totals pull for 10 nights (credits are Matt's call).
 - R28h Blocks, steals, combos: NOT TESTABLE. Not stored. Proposal to CEO as above (Matt's call on credits).
+
+## Run 29 (Researcher, 2026-11-21 run; registered 2026-11-25 run, before any of these were tested). Discovery = stored nights through 2026-11-25; forward = nights after this registration (first forward night 2026-11-26). Pass bar: rule 4 (n >= 150 graded forward, ROI > 0, 90% game-clustered lower bound > 0, CLV > 0). Stored data only: data/shadow reads (A, C), data/state/box for results. Nothing here re-runs R1-R28, F1-F5, M1-M7, AH1-AH15, NP1-NP4, LVA, DM, BB1 or DP-style dispersion.
+
+- R29a Read-timing on the base population: for every Hard Rock side at -200..+200 on points, rebounds, assists or threes that appears at BOTH read A and read C (same player, market, line, side, night), bet at A's price vs at C's price. Metric: ROI at A vs ROI at C (paired), and count of pairs where A's price is better. Tests Matt's priority 3 (price timing vs close). Discovery and forward both reported.
+- R29b Low-hold lines: at read C, every Hard Rock side at -200..+200 on points, rebounds, assists or threes whose row hold <= 0.045 (cheap overround). Bet the FAVORITE side (market_fair > 0.5) at its C price (no EV filter; first read per player/market/night). Amended before any test ran: both sides of a line would be two bets per line with built-in hold loss. Metric: ROI, 90% game-clustered CI, CLV vs the C-read market fair. Mirror hold >= 0.07 tracked for context only.
+- Placebo for both: shuffle results within night (500 draws).
+
+## Run 30 (Researcher, 2026-11-24 daily run; registered before any of these were tested). MARKET SPLIT OF THE MOVES POPULATION (priority 4: which prop market the Pinnacle-move edge lives in)
+Discovery = every stored night through 2026-11-25 (MOVES built by research/code/auto_hypothesis.py build_moves: Pinnacle >= 2 pt move, Hard Rock two-sided on that line both reads, -200..+200, first per player/market/night). Forward = nights from 2026-11-26 on (none yet). This only splits the existing population by market; the population rule itself is unchanged, so it is not a re-run of AH1-AH15 (those split by window, size, side and HR price state, never by market).
+- MK1 points MOVES only. Metric: W-L, ROI, CLV_pin.
+- MK2 rebounds MOVES only.
+- MK3 assists MOVES only.
+- MK4 threes MOVES only.
+Each variant is judged on its own market. The market with the best discovery number is NOT promoted by this registration; forward starts 2026-11-26 for each.
+Pass bar: RESEARCH.md rule 4 (n >= 150 graded forward, ROI > 0 at HR price, 90% game-clustered lower bound > 0, CLV_pin > 0, and the market's ROI above the other three markets' combined ROI). Shuffle placebo: results permuted within the market (2,000 draws), share of placebo ROI >= actual.
+Code: research/code/r2026_11_24/mk_market.py.
+
+## Run 30 (Researcher, 2026-11-25). MAIN-LINE MAJORITY (line disagreement, NBA port of NHL LL6). Registered before any of these were tested.
+Discovery = every stored odds night through 2026-11-25 (all of these nights were already seen by AH1-AH15 and R29, but this rule is new, so counts as discovery only). Forward = nights from 2026-11-26 on (none yet). Not a re-run of F7b/F8 (Pinnacle's own line move, a line move HR did not make) or of R28d/LVA (line vs rolling average).
+Population: data/odds reads B and C (90 and 45 min before tip). Markets: points, rebounds, assists, threes. Books: Hard Rock plus `others` (fresh < 60 min at the read, two-sided, hold 0-15%).
+Main line per book for a player and market = its two-sided line whose proportional no-vig over chance is closest to 0.5. Hard Rock's line = the same rule on Hard Rock.
+Event: at least 4 other books have a main line for that player and market, and a strict majority of them sit ABOVE Hard Rock's line: bet Hard Rock OVER. A strict majority BELOW: bet Hard Rock UNDER. Side price on Hard Rock -200..+200 (no EV filter). First qualifying read per (night, game, player, market). 1u flat, graded from box scores (DNP = void, whole-number line exact = push).
+- R30a Main-line majority, all four markets pooled (the rule above). 1 variant.
+CLV = Pinnacle's no-vig chance for the side on the same Hard Rock line at the last read of that game that night, times the frozen price, minus 1 (CLV_pin; n = 0 where Pinnacle has no two-sided price on that line).
+Pass bar: RESEARCH.md rule 4 (n >= 150 graded forward, ROI > 0, 90% game-clustered lower bound > 0, CLV_pin > 0). Discovery cannot pass. Placebo: results shuffled within night, 500 draws, share of placebo ROI >= actual.
+Code: sports/nba/research/code/run30/main_line_majority.py (output main_line_majority_results.txt).
