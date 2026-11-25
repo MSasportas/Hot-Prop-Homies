@@ -214,6 +214,10 @@ Discovery only: every stored night through 2026-11-12 was already seen by the AH
 - R29b Low-hold lines: at read C, every Hard Rock side at -200..+200 on points, rebounds, assists or threes whose row hold <= 0.045 (cheap overround). Bet the FAVORITE side (market_fair > 0.5) at its C price (no EV filter; first read per player/market/night). Amended before any test ran: both sides of a line would be two bets per line with built-in hold loss. Metric: ROI, 90% game-clustered CI, CLV vs the C-read market fair. Mirror hold >= 0.07 tracked for context only.
 - Placebo for both: shuffle results within night (500 draws).
 
+Results (run 29, 2026-11-21 run; discovery through 2026-11-25; details in LOG.md):
+- R29a: n 12,442 paired sides. ROI at A price -6.2% [-6.4, -5.9]; at C price -6.3% [-6.6, -6.1]. Paired difference +0.002u per bet. No timing edge. Status: failed. Forward: first night 2026-11-26.
+- R29b: 0 favorite sides at read C with hold <= 0.045. The stored hold floor is 4.64% (median 6.8%) across 20,412 sides. Untestable on stored data. Mirror (favorite, hold >= 0.07) -8.3% n275 (context). Status: untestable.
+
 ## Run 30 (Researcher, 2026-11-24 daily run; registered before any of these were tested). MARKET SPLIT OF THE MOVES POPULATION (priority 4: which prop market the Pinnacle-move edge lives in)
 Discovery = every stored night through 2026-11-25 (MOVES built by research/code/auto_hypothesis.py build_moves: Pinnacle >= 2 pt move, Hard Rock two-sided on that line both reads, -200..+200, first per player/market/night). Forward = nights from 2026-11-26 on (none yet). This only splits the existing population by market; the population rule itself is unchanged, so it is not a re-run of AH1-AH15 (those split by window, size, side and HR price state, never by market).
 - MK1 points MOVES only. Metric: W-L, ROI, CLV_pin.
