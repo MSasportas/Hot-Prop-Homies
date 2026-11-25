@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-24T21:40:02-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-24T23:50:00-05:00"
+   "at": "2026-11-25T00:00:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -180,7 +180,7 @@
    "away": "DAL",
    "home": "DEN",
    "state": "in",
-   "detail": "2:02 - 3rd",
+   "detail": "10:10 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -539,6 +539,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-24T23:50:00-05:00",
- "status_at": "2026-11-24T23:50:00-05:00"
+ "generated_at": "2026-11-25T00:00:01-05:00",
+ "status_at": "2026-11-25T00:00:01-05:00"
 }
