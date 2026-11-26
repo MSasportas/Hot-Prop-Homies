@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T23:00:00-05:00",
+ "at": "2026-11-26T00:40:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -58,10 +58,10 @@
    "note": "Traore will be re-evaluated in approximately 8-10 weeks due to a right hamstring strain, Michael Scotto of HoopsHype.com reports."
   },
   "4576060": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Ryan Kalkbrenner",
    "team": "CHA",
-   "date": "2026-11-25T17:41Z",
+   "date": "2026-11-26T05:30Z",
    "note": "Kalkbrenner (hip) has been ruled out for Wednesday's matchup with Chicago."
   },
   "3135045": {
@@ -86,10 +86,10 @@
    "note": "Knueppel (hamstring) was diagnosed with a left hamstring strain Sunday and will be re-evaluated in four weeks."
   },
   "4397189": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Jalen Smith",
    "team": "CHI",
-   "date": "2026-11-25T22:07Z",
+   "date": "2026-11-26T05:29Z",
    "note": "Smith (illness) is listed as out for Wednesday's game against Charlotte."
   },
   "2595516": {
@@ -365,6 +365,13 @@
    "date": "2026-11-13T20:19Z",
    "note": "Murray (ankle) is out for Friday's game against Memphis."
   },
+  "4431823": {
+   "status": "day-to-day",
+   "name": "Miles McBride",
+   "team": "NY",
+   "date": "2026-11-26T05:31Z",
+   "note": "McBride (adductor) has been ruled out for Wednesday's game against the Cavaliers."
+  },
   "6585": {
    "status": "day-to-day",
    "name": "Andre Drummond",
@@ -378,13 +385,6 @@
    "team": "NY",
    "date": "2026-11-25T23:19Z",
    "note": "Anunoby (calf) participated in on-court work for the first time since sustaining the injury, Ian Begley of SportsNet New York reports."
-  },
-  "4431823": {
-   "status": "out",
-   "name": "Miles McBride",
-   "team": "NY",
-   "date": "2026-11-25T17:57Z",
-   "note": "McBride (adductor) has been ruled out for Wednesday's game against the Cavaliers."
   },
   "2528426": {
    "status": "out",
@@ -527,10 +527,10 @@
    "note": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN."
   },
   "3064440": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Zach LaVine",
    "team": "SAC",
-   "date": "2026-11-25T22:40Z",
+   "date": "2026-11-26T05:33Z",
    "note": "LaVine (knee) is listed as out for Wednesday's game versus the Warriors."
   },
   "4898371": {
