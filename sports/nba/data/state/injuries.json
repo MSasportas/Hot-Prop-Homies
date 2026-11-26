@@ -1,5 +1,5 @@
 {
- "at": "2026-11-26T14:20:00-05:00",
+ "at": "2026-11-26T16:20:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -308,6 +308,13 @@
    "team": "MEM",
    "date": "2026-11-07T17:24Z",
    "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
+  },
+  "3059319": {
+   "status": "day-to-day",
+   "name": "Andrew Wiggins",
+   "team": "MIA",
+   "date": "2026-11-26T21:08Z",
+   "note": "Wiggins is probable for Friday's game against the Knicks due to a right ankle sprain."
   },
   "4432816": {
    "status": "day-to-day",
