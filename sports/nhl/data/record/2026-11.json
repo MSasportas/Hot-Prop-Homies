@@ -1,6 +1,38 @@
 {
  "nights": [
   {
+   "date": "2026-11-15",
+   "graded": true,
+   "w": 0,
+   "l": 1,
+   "units": -1.0,
+   "entries": [
+    {
+     "id": "2026-11-15:2026020326:8485406:shots:1.5:under",
+     "kind": "single",
+     "player": "P. Martone",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "PHI",
+     "game": "EDM at PHI",
+     "price": 130,
+     "first_price": 130,
+     "last_price": 130,
+     "prices": [
+      {
+       "price": 130,
+       "at": "2026-11-15T18:50:01-05:00"
+      }
+     ],
+     "result": "L",
+     "actual": "had 2",
+     "units": -1.0,
+     "pulled": null,
+     "legs": []
+    }
+   ]
+  },
+  {
    "date": "2026-11-14",
    "graded": true,
    "w": 8,

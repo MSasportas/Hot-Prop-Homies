@@ -2,7 +2,7 @@
  "version": 1,
  "note": "Behind the scenes: research only. Not picks, not on the Record, never sent to Discord.",
  "market": "points",
- "generated_at": "2026-11-25T20:20:01-05:00",
+ "generated_at": "2026-11-25T20:30:00-05:00",
  "slate": "2026-11-25",
  "active": true,
  "window": {
@@ -10,7 +10,42 @@
   "checkpoint": "2026-11-02"
  },
  "tonight": {
-  "flags": [],
+  "flags": [
+   {
+    "id": "2026-11-25:2026020398:8481538:0.5:over",
+    "kind": "flag",
+    "slate": "2026-11-25",
+    "game_id": 2026020398,
+    "player": "J. Caulfield",
+    "team": "ANA",
+    "opp": "SJS",
+    "game": "ANA vs SJS",
+    "start": "2026-11-25T22:00:00-05:00",
+    "side": "over",
+    "line": 0.5,
+    "bet": "OVER 0.5 points",
+    "price": 130,
+    "gap_pct": 4.2,
+    "final_pct": 3.4,
+    "market_fair_pct": 45.3,
+    "final_p_pct": 45.0,
+    "n_books": 7,
+    "guard": "pass",
+    "cap": null,
+    "flagged_at": "2026-11-25T20:30:00-05:00",
+    "read_pull": "B",
+    "settled": "Goalie confirmed",
+    "frozen_settled": "Goalie confirmed",
+    "move30_pct": null,
+    "pulled": null,
+    "locked": false,
+    "state": "open",
+    "close_fair_pct": null,
+    "clv_pct": null,
+    "result": null,
+    "units": null
+   }
+  ],
   "vetoes": [],
   "capped": []
  },
@@ -2472,7 +2507,7 @@
  ],
  "nov2": {
   "gaps_measured": 62,
-  "gaps_logged": 68,
+  "gaps_logged": 69,
   "graded_picks": 46,
   "w": 25,
   "l": 21,
@@ -2500,7 +2535,7 @@
   "clv_passed_mean": 0.04703408752457645,
   "clv_vetoed_mean": 0.04087781994715483,
   "nights": 28,
-  "nights_with_flags": 16,
+  "nights_with_flags": 17,
   "population_slope": null,
   "checkpoint": "2026-11-02"
  }
