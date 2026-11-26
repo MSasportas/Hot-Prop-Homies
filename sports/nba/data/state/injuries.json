@@ -1,12 +1,12 @@
 {
- "at": "2026-11-26T17:40:00-05:00",
+ "at": "2026-11-26T18:00:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
    "name": "Jock Landale",
    "team": "ATL",
-   "date": "2026-11-21T22:12Z",
-   "note": "Landale (hip) won't play Sunday against the Pistons."
+   "date": "2026-11-26T22:44Z",
+   "note": "Landale (hip) is out for Friday's game against the Celtics."
   },
   "4873201": {
    "status": "out",
@@ -211,6 +211,13 @@
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
   },
+  "2580365": {
+   "status": "day-to-day",
+   "name": "Larry Nance Jr.",
+   "team": "IND",
+   "date": "2026-11-26T22:43Z",
+   "note": "Nance (ankle) is questionable for Friday's game against the 76ers."
+  },
   "4396909": {
    "status": "day-to-day",
    "name": "Aaron Nesmith",
@@ -231,13 +238,6 @@
    "team": "IND",
    "date": "2026-11-24T19:41Z",
    "note": "Haliburton (hamstring) was recalled from the G League's Noblesville Boom on Tuesday, Tony East of Forbes.com reports."
-  },
-  "2580365": {
-   "status": "day-to-day",
-   "name": "Larry Nance Jr.",
-   "team": "IND",
-   "date": "2026-11-24T02:00Z",
-   "note": "Nance exited Monday's game against the Thunder due to a sore right ankle and he will not return, Tony East of Forbes.com reports."
   },
   "4433076": {
    "status": "out",
