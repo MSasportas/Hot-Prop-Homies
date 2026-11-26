@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:01 - 4th",
+    "detail": "5:39 - 4th",
     "score": {
      "SAC": "95",
-     "GS": "106"
+     "GS": "110"
     }
    },
    {
@@ -435,11 +435,11 @@
     "home": "POR",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 3rd",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "8:52 - 4th",
     "score": {
-     "SA": "87",
-     "POR": "84"
+     "SA": "91",
+     "POR": "96"
     }
    }
   ]
