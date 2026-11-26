@@ -59,7 +59,7 @@
    }
   },
   "CLE": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "James Harden",
     "Donovan Mitchell",
@@ -73,7 +73,7 @@
    }
   },
   "NY": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jalen Brunson",
     "Landry Shamet",
@@ -88,7 +88,7 @@
    }
   },
   "MIN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "LaMelo Ball",
     "Ayo Dosunmu",
@@ -103,10 +103,10 @@
    }
   },
   "OKC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Shai Gilgeous-Alexander",
-    "Jared McCain",
+    "Bennett Stirtz",
     "Ajay Mitchell",
     "Micah Peavy",
     "Isaiah Hartenstein"
@@ -266,5 +266,5 @@
    }
   }
  },
- "at": "2026-11-25T19:00:00-05:00"
+ "at": "2026-11-25T19:10:02-05:00"
 }
