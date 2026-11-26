@@ -1,5 +1,5 @@
 {
- "at": "2026-11-26T18:33:23-05:00",
+ "at": "2026-11-26T18:50:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -267,12 +267,19 @@
    "date": "2026-11-26T23:21Z",
    "note": "Reaves (heel) is questionable for Friday's game against the Spurs."
   },
+  "4432810": {
+   "status": "day-to-day",
+   "name": "Isaiah Stewart",
+   "team": "MEM",
+   "date": "2026-11-26T23:27Z",
+   "note": "Stewart is questionable for Friday's game against the Timberwolves due to right hip soreness."
+  },
   "4600663": {
    "status": "day-to-day",
    "name": "Zach Edey",
    "team": "MEM",
-   "date": "2026-11-26T03:43Z",
-   "note": "Edey (ankle) did not return to Wednesday's 115-97 win over the Clippers. He finished with seven points (3-4 FG, 1-1 FT), four rebounds, two assists and two blocks across nine minutes."
+   "date": "2026-11-26T23:24Z",
+   "note": "Edey (ankle) is questionable for Friday's game against the Timberwolves."
   },
   "4431785": {
    "status": "out",
@@ -568,19 +575,19 @@
    "date": "2026-10-21T04:22Z",
    "note": "Simmons underwent successful surgery Tuesday to repair a torn right Achilles tendon, James Ham of ESPN 1320 Sacramento reports."
   },
-  "4066259": {
-   "status": "day-to-day",
-   "name": "De'Aaron Fox",
-   "team": "SA",
-   "date": "2026-11-26T06:01Z",
-   "note": "Fox (shin) has been ruled out for Wednesday's game against Portland, Jeff McDonald of the San Antonio Express-News reports."
-  },
   "5037871": {
    "status": "out",
    "name": "Dylan Harper",
    "team": "SA",
-   "date": "2026-11-19T20:07Z",
-   "note": "Harper (hip) is expected to miss two to three weeks, Brett Siegel of ClutchPoints.com reports."
+   "date": "2026-11-26T23:41Z",
+   "note": "Harper (hip) is questionable for Friday's game against the Lakers."
+  },
+  "4066259": {
+   "status": "day-to-day",
+   "name": "De'Aaron Fox",
+   "team": "SA",
+   "date": "2026-11-26T23:35Z",
+   "note": "Fox (shin) is questionable for Friday's game against the Lakers."
   },
   "6440": {
    "status": "out",
