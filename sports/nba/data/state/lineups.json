@@ -22,9 +22,9 @@
     "Jabari Walker"
    ],
    "status": {
-    "Jaylen Brown": "out",
-    "Ariel Hukporti": "out",
-    "Joel Embiid": "out"
+    "Jaylen Brown": "questionable",
+    "Joel Embiid": "questionable",
+    "Ariel Hukporti": "out"
    }
   },
   "CHI": {
@@ -176,7 +176,7 @@
    }
   },
   "PHX": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Devin Booker",
     "Jalen Green",
@@ -189,7 +189,7 @@
    }
   },
   "HOU": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Fred VanVleet",
     "Amen Thompson",
@@ -266,5 +266,5 @@
    }
   }
  },
- "at": "2026-11-25T20:00:03-05:00"
+ "at": "2026-11-25T20:10:00-05:00"
 }
