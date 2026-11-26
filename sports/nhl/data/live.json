@@ -1,60 +1,34 @@
 {
- "slate_date": "2026-11-23",
- "generated_at": "2026-11-24T01:20:01-05:00",
+ "slate_date": "2026-11-25",
+ "generated_at": "2026-11-25T22:00:00-05:00",
  "games": [
   {
-   "game_id": 2026020378,
-   "state": "OFF",
+   "game_id": 2026020398,
+   "state": "PRE",
    "schedule_state": "OK",
-   "period": 3,
-   "period_type": "REG",
-   "clock": "00:00",
+   "period": null,
+   "period_type": null,
+   "clock": null,
    "in_intermission": false,
    "running": false,
    "away": {
-    "abbrev": "CBJ",
-    "score": 2,
-    "sog": 21
-   },
-   "home": {
-    "abbrev": "NJD",
-    "score": 3,
-    "sog": 30
-   },
-   "updated_at": "2026-11-23T22:10:01-05:00"
-  },
-  {
-   "game_id": 2026020384,
-   "state": "OFF",
-   "schedule_state": "OK",
-   "period": 3,
-   "period_type": "REG",
-   "clock": "00:00",
-   "in_intermission": false,
-   "running": false,
-   "away": {
-    "abbrev": "MIN",
-    "score": 5,
-    "sog": 30
-   },
-   "home": {
     "abbrev": "SJS",
-    "score": 2,
-    "sog": 24
+    "score": null,
+    "sog": null
    },
-   "updated_at": "2026-11-24T01:20:01-05:00"
+   "home": {
+    "abbrev": "ANA",
+    "score": null,
+    "sog": null
+   },
+   "updated_at": "2026-11-25T22:00:00-05:00"
   }
  ],
  "picks": {
-  "2026-11-23:2026020378:8484166:shots:2.5:under": {
-   "game_id": 2026020378,
-   "market": "shots",
-   "stat": 1
-  },
-  "2026-11-23:2026020384:8485702:shots:1.5:under": {
-   "game_id": 2026020384,
-   "market": "shots",
-   "stat": 0
+  "2026-11-25:2026020398:8481538:points:0.5:over": {
+   "game_id": 2026020398,
+   "market": "points",
+   "stat": null
   }
  }
 }
