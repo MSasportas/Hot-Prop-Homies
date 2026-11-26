@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-25T19:20:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-25T19:20:01-05:00"
+   "at": "2026-11-25T19:22:54-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-25T19:20:01-05:00",
+    "at": "2026-11-25T19:22:54-05:00",
     "confirmed": [
      "CHA",
      "CHI",
@@ -93,7 +93,7 @@
    "away": "CHI",
    "home": "CHA",
    "state": "in",
-   "detail": "6:56 - 1st",
+   "detail": "4:58 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -432,6 +432,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-25T19:20:01-05:00",
- "status_at": "2026-11-25T19:20:01-05:00"
+ "generated_at": "2026-11-25T19:22:54-05:00",
+ "status_at": "2026-11-25T19:22:54-05:00"
 }

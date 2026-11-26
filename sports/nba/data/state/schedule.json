@@ -331,10 +331,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:56 - 1st",
+    "detail": "4:58 - 1st",
     "score": {
-     "CHI": "4",
-     "CHA": "8"
+     "CHI": "9",
+     "CHA": "12"
     }
    },
    {
