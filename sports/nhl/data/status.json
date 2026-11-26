@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-25",
- "started_at": "2026-11-26T00:40:01-05:00",
- "status_at": "2026-11-26T00:40:01-05:00",
- "finished_at": "2026-11-26T00:40:04-05:00",
- "last_ok_at": "2026-11-26T00:40:01-05:00",
+ "started_at": "2026-11-26T01:10:01-05:00",
+ "status_at": "2026-11-26T01:10:01-05:00",
+ "finished_at": "2026-11-26T01:10:05-05:00",
+ "last_ok_at": "2026-11-26T01:10:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -20,7 +20,7 @@
   {
    "step": "stats",
    "status": "ok",
-   "note": "1 window(s) read, 6 team-games still missing"
+   "note": "1 window(s) read, 4 team-games still missing"
   },
   {
    "step": "lineups",
@@ -74,8 +74,8 @@
   },
   {
    "step": "shadow",
-   "status": "skipped",
-   "note": "nothing new"
+   "status": "ok",
+   "note": "41 graded"
   },
   {
    "step": "gg_grade",
@@ -160,10 +160,10 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "45758876697",
-  "iteration": 5,
-  "chain_link": 84,
+  "run_id": "45764161664",
+  "iteration": 3,
+  "chain_link": 85,
   "chain_started_at": "2026-11-23T09:55:27-05:00",
-  "run_started_at": "2026-11-26T00:01:44-05:00"
+  "run_started_at": "2026-11-26T00:50:20-05:00"
  }
 }
