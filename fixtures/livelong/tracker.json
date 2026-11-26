@@ -1,0 +1,596 @@
+{
+ "day": "2026-11-23",
+ "games": {
+  "nba|OKC@MIL": {
+   "state": "in",
+   "period": 2,
+   "clock": "5:30",
+   "detail": "",
+   "in_break": false,
+   "away": {
+    "score": 54
+   },
+   "home": {
+    "score": 51
+   },
+   "start": 1795478400000
+  },
+  "nba|DEN@PHX": {
+   "state": "in",
+   "period": 3,
+   "clock": "4:12",
+   "detail": "",
+   "in_break": false,
+   "away": {
+    "score": 71
+   },
+   "home": {
+    "score": 68
+   },
+   "start": 1795483800000
+  },
+  "nba|BOS@MIA": {
+   "state": "pre",
+   "period": 0,
+   "clock": "",
+   "detail": "",
+   "in_break": false,
+   "away": {
+    "score": null
+   },
+   "home": {
+    "score": null
+   },
+   "start": 1795491000000
+  },
+  "nba|NYK@WAS": {
+   "state": "post",
+   "period": 4,
+   "clock": "0.0",
+   "detail": "Final",
+   "in_break": false,
+   "away": {
+    "score": 112
+   },
+   "home": {
+    "score": 104
+   },
+   "start": 1795474800000
+  },
+  "nhl|TBL@TOR": {
+   "state": "in",
+   "period": 2,
+   "clock": "8:15",
+   "detail": "",
+   "in_break": false,
+   "away": {
+    "score": 2
+   },
+   "home": {
+    "score": 1
+   },
+   "start": 1795478400000
+  },
+  "nhl|CAR@PHI": {
+   "state": "pre",
+   "period": 0,
+   "clock": "",
+   "detail": "",
+   "in_break": false,
+   "away": {
+    "score": null
+   },
+   "home": {
+    "score": null
+   },
+   "start": 1795489200000
+  }
+ },
+ "boxes": {
+  "nba|OKC@MIL": [
+   {
+    "id": "4278073",
+    "name": "Shai Gilgeous-Alexander",
+    "team": "OKC",
+    "dnp": false,
+    "points": 18,
+    "rebounds": 3,
+    "assists": 5,
+    "threes": 2
+   },
+   {
+    "id": "3032977",
+    "name": "Giannis Antetokounmpo",
+    "team": "MIL",
+    "dnp": false,
+    "points": 14,
+    "rebounds": 12,
+    "assists": 4,
+    "threes": 0
+   }
+  ],
+  "nba|DEN@PHX": [
+   {
+    "id": "3112335",
+    "name": "Nikola Jokić",
+    "team": "DEN",
+    "dnp": false,
+    "points": 27,
+    "rebounds": 8,
+    "assists": 7,
+    "threes": 1
+   },
+   {
+    "id": "3136193",
+    "name": "Devin Booker",
+    "team": "PHX",
+    "dnp": false,
+    "points": 22,
+    "rebounds": 3,
+    "assists": 4,
+    "threes": 3
+   }
+  ],
+  "nba|NYK@WAS": [
+   {
+    "id": "3934672",
+    "name": "Jalen Brunson",
+    "team": "NYK",
+    "dnp": false,
+    "points": 24,
+    "rebounds": 3,
+    "assists": 8,
+    "threes": 2
+   },
+   {
+    "id": "3136195",
+    "name": "Karl-Anthony Towns",
+    "team": "NYK",
+    "dnp": true,
+    "points": null,
+    "rebounds": null,
+    "assists": null,
+    "threes": null
+   }
+  ],
+  "nhl|TBL@TOR": [
+   {
+    "id": "3114727",
+    "name": "Nikita Kucherov",
+    "team": "TBL",
+    "dnp": false,
+    "shots": 4,
+    "goals": 1,
+    "assists": 0
+   },
+   {
+    "id": "4024123",
+    "name": "Auston Matthews",
+    "team": "TOR",
+    "dnp": false,
+    "shots": 2,
+    "goals": 0,
+    "assists": 1
+   }
+  ]
+ },
+ "players": [
+  {
+   "sport": "nba",
+   "pid": "4278073",
+   "name": "Shai Gilgeous-Alexander",
+   "team": "OKC",
+   "gameKey": "nba|OKC@MIL"
+  },
+  {
+   "sport": "nba",
+   "pid": "3032977",
+   "name": "Giannis Antetokounmpo",
+   "team": "MIL",
+   "gameKey": "nba|OKC@MIL"
+  },
+  {
+   "sport": "nba",
+   "pid": "3112335",
+   "name": "Nikola Jokić",
+   "team": "DEN",
+   "gameKey": "nba|DEN@PHX"
+  },
+  {
+   "sport": "nba",
+   "pid": "3136193",
+   "name": "Devin Booker",
+   "team": "PHX",
+   "gameKey": "nba|DEN@PHX"
+  },
+  {
+   "sport": "nba",
+   "pid": "4066338",
+   "name": "Jayson Tatum",
+   "team": "BOS",
+   "gameKey": "nba|BOS@MIA"
+  },
+  {
+   "sport": "nba",
+   "pid": "4066261",
+   "name": "Bam Adebayo",
+   "team": "MIA",
+   "gameKey": "nba|BOS@MIA"
+  },
+  {
+   "sport": "nba",
+   "pid": "3934672",
+   "name": "Jalen Brunson",
+   "team": "NYK",
+   "gameKey": "nba|NYK@WAS"
+  },
+  {
+   "sport": "nba",
+   "pid": "3136195",
+   "name": "Karl-Anthony Towns",
+   "team": "NYK",
+   "gameKey": "nba|NYK@WAS"
+  },
+  {
+   "sport": "nhl",
+   "pid": "8476453",
+   "name": "Nikita Kucherov",
+   "team": "TBL",
+   "gameKey": "nhl|TBL@TOR"
+  },
+  {
+   "sport": "nhl",
+   "pid": "8479318",
+   "name": "Auston Matthews",
+   "team": "TOR",
+   "gameKey": "nhl|TBL@TOR"
+  },
+  {
+   "sport": "nhl",
+   "pid": "8478427",
+   "name": "Sebastian Aho",
+   "team": "CAR",
+   "gameKey": "nhl|CAR@PHI"
+  }
+ ],
+ "demo": {
+  "bets": [
+   {
+    "id": "d01",
+    "sport": "nba",
+    "pid": "4066338",
+    "name": "Jayson Tatum",
+    "team": "BOS",
+    "opp": "MIA",
+    "home": false,
+    "gameKey": "nba|BOS@MIA",
+    "stat": "rebounds",
+    "side": "over",
+    "line": 8.5,
+    "createdAt": 1795400000003,
+    "dayOffset": 0,
+    "settled": null,
+    "start": null
+   },
+   {
+    "id": "d02",
+    "sport": "nba",
+    "pid": "3112335",
+    "name": "Nikola Jokić",
+    "team": "DEN",
+    "opp": "PHX",
+    "home": false,
+    "gameKey": "nba|DEN@PHX",
+    "stat": "points",
+    "side": "over",
+    "line": 24.5,
+    "createdAt": 1795400000003,
+    "dayOffset": 0,
+    "settled": null,
+    "start": null
+   },
+   {
+    "id": "d03",
+    "sport": "nba",
+    "pid": "3136193",
+    "name": "Devin Booker",
+    "team": "PHX",
+    "opp": "DEN",
+    "home": true,
+    "gameKey": "nba|DEN@PHX",
+    "stat": "points",
+    "side": "under",
+    "line": 20.5,
+    "createdAt": 1795400000003,
+    "dayOffset": 0,
+    "settled": null,
+    "start": null
+   },
+   {
+    "id": "d04",
+    "sport": "nba",
+    "pid": "3934672",
+    "name": "Jalen Brunson",
+    "team": "NYK",
+    "opp": "WAS",
+    "home": false,
+    "gameKey": "nba|NYK@WAS",
+    "stat": "assists",
+    "side": "over",
+    "line": 5.5,
+    "createdAt": 1795400000003,
+    "dayOffset": 0,
+    "settled": null,
+    "start": null
+   },
+   {
+    "id": "d05",
+    "sport": "nba",
+    "pid": "4278073",
+    "name": "Shai Gilgeous-Alexander",
+    "team": "OKC",
+    "opp": "MIL",
+    "home": false,
+    "gameKey": "nba|OKC@MIL",
+    "stat": "pra",
+    "side": "over",
+    "line": 38.5,
+    "createdAt": 1795400000003,
+    "dayOffset": 0,
+    "settled": null,
+    "start": null
+   },
+   {
+    "id": "d06",
+    "sport": "nba",
+    "pid": "3032977",
+    "name": "Giannis Antetokounmpo",
+    "team": "MIL",
+    "opp": "OKC",
+    "home": true,
+    "gameKey": "nba|OKC@MIL",
+    "stat": "pr",
+    "side": "under",
+    "line": 40.5,
+    "createdAt": 1795400000003,
+    "dayOffset": 0,
+    "settled": null,
+    "start": null
+   },
+   {
+    "id": "d07",
+    "sport": "nhl",
+    "pid": "8476453",
+    "name": "Nikita Kucherov",
+    "team": "TBL",
+    "opp": "TOR",
+    "home": false,
+    "gameKey": "nhl|TBL@TOR",
+    "stat": "points",
+    "side": "over",
+    "line": 1.5,
+    "createdAt": 1795400000003,
+    "dayOffset": 0,
+    "settled": null,
+    "start": null
+   },
+   {
+    "id": "d08",
+    "sport": "nba",
+    "pid": "3136195",
+    "name": "Karl-Anthony Towns",
+    "team": "NYK",
+    "opp": "WAS",
+    "home": false,
+    "gameKey": "nba|NYK@WAS",
+    "stat": "rebounds",
+    "side": "over",
+    "line": 9.5,
+    "createdAt": 1795400000003,
+    "dayOffset": 0,
+    "settled": null,
+    "start": null
+   },
+   {
+    "id": "d09",
+    "sport": "nba",
+    "pid": "9999999",
+    "name": "Zzyzx Nomatch",
+    "team": "DEN",
+    "opp": "PHX",
+    "home": false,
+    "gameKey": "nba|DEN@PHX",
+    "stat": "points",
+    "side": "over",
+    "line": 10.5,
+    "createdAt": 1795400000003,
+    "dayOffset": 0,
+    "settled": null,
+    "start": null
+   },
+   {
+    "id": "d10",
+    "sport": "nba",
+    "pid": "3934672",
+    "name": "Jalen Brunson",
+    "team": "NYK",
+    "opp": "WAS",
+    "home": false,
+    "gameKey": "nba|NYK@WAS",
+    "stat": "points",
+    "side": "over",
+    "line": 24,
+    "createdAt": 1795400000003,
+    "dayOffset": 0,
+    "settled": null,
+    "start": null
+   },
+   {
+    "id": "d11",
+    "sport": "nba",
+    "pid": "3112335",
+    "name": "Nikola Jokić",
+    "team": "DEN",
+    "opp": "PHX",
+    "home": false,
+    "gameKey": "nba|DEN@PHX",
+    "stat": "assists",
+    "side": "over",
+    "line": 9.5,
+    "createdAt": 1795400000003,
+    "dayOffset": 0,
+    "settled": null,
+    "start": null,
+    "parlayId": "p1"
+   },
+   {
+    "id": "d12",
+    "sport": "nba",
+    "pid": "3032977",
+    "name": "Giannis Antetokounmpo",
+    "team": "MIL",
+    "opp": "OKC",
+    "home": true,
+    "gameKey": "nba|OKC@MIL",
+    "stat": "rebounds",
+    "side": "over",
+    "line": 10.5,
+    "createdAt": 1795400000003,
+    "dayOffset": 0,
+    "settled": null,
+    "start": null,
+    "parlayId": "p1"
+   },
+   {
+    "id": "d13",
+    "sport": "nhl",
+    "pid": "8476453",
+    "name": "Nikita Kucherov",
+    "team": "TBL",
+    "opp": "TOR",
+    "home": false,
+    "gameKey": "nhl|TBL@TOR",
+    "stat": "shots",
+    "side": "under",
+    "line": 2.5,
+    "createdAt": 1795400000003,
+    "dayOffset": 0,
+    "settled": null,
+    "start": null,
+    "parlayId": "p1"
+   },
+   {
+    "id": "d14",
+    "sport": "nba",
+    "pid": "4066338",
+    "name": "Jayson Tatum",
+    "team": "BOS",
+    "opp": "MIA",
+    "home": false,
+    "gameKey": "nba|BOS@MIA",
+    "stat": "points",
+    "side": "over",
+    "line": 25.5,
+    "createdAt": 1795400000003,
+    "dayOffset": 0,
+    "settled": null,
+    "start": null,
+    "parlayId": "p2"
+   },
+   {
+    "id": "d15",
+    "sport": "nba",
+    "pid": "4066261",
+    "name": "Bam Adebayo",
+    "team": "MIA",
+    "opp": "BOS",
+    "home": true,
+    "gameKey": "nba|BOS@MIA",
+    "stat": "assists",
+    "side": "over",
+    "line": 3.5,
+    "createdAt": 1795400000003,
+    "dayOffset": 0,
+    "settled": null,
+    "start": null,
+    "parlayId": "p2"
+   },
+   {
+    "id": "d16",
+    "sport": "nhl",
+    "pid": "8479318",
+    "name": "Auston Matthews",
+    "team": "TOR",
+    "opp": "TBL",
+    "home": true,
+    "gameKey": "nhl|TBL@TOR",
+    "stat": "shots",
+    "side": "over",
+    "line": 3.5,
+    "createdAt": 1795400000003,
+    "dayOffset": 0,
+    "settled": null,
+    "start": null
+   },
+   {
+    "id": "y01",
+    "sport": "nba",
+    "pid": "1629029",
+    "name": "Luka Dončić",
+    "team": "LAL",
+    "opp": "DAL",
+    "home": false,
+    "gameKey": "nba|LAL@DAL",
+    "stat": "points",
+    "side": "over",
+    "line": 29.5,
+    "createdAt": 1795400000003,
+    "dayOffset": -1,
+    "settled": null,
+    "start": null
+   },
+   {
+    "id": "y02",
+    "sport": "nba",
+    "pid": "3112335",
+    "name": "Nikola Jokić",
+    "team": "DEN",
+    "opp": "UTA",
+    "home": false,
+    "gameKey": "nba|DEN@UTA",
+    "stat": "rebounds",
+    "side": "over",
+    "line": 11.5,
+    "createdAt": 1795400000003,
+    "dayOffset": -1,
+    "settled": {
+     "result": "W",
+     "actual": 13,
+     "at": 1795400000000,
+     "manual": false,
+     "why": ""
+    },
+    "start": null
+   }
+  ],
+  "parlays": [
+   {
+    "id": "p1",
+    "legIds": [
+     "d11",
+     "d12",
+     "d13"
+    ],
+    "createdAt": 1795400000000
+   },
+   {
+    "id": "p2",
+    "legIds": [
+     "d14",
+     "d15"
+    ],
+    "createdAt": 1795400000001
+   }
+  ]
+ }
+}

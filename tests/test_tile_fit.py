@@ -111,6 +111,81 @@ class EveryTileFits(unittest.TestCase):
             ctx.close()
         self.assertEqual(sorted(set(problems)), [])
 
+    def tracker_screens(self, ctx, sport):
+        """My Tracker as Matt meets it, one check per screen: the list, an opened tile, Yesterday, parlay select, the create sheet (search, no match, stat form, preview, errors) and a toast."""
+        page = ctx.new_page()
+        page.add_init_script("localStorage.setItem('pc_sport', '%s'); localStorage.setItem('hph.live.seg', 'tracker')" % sport)
+        page.goto("http://127.0.0.1:%d/index.html?fixture=livelong&trk=demo#live" % self.server.server_address[1])
+        page.wait_for_selector(".trkban")
+        page.wait_for_timeout(RENDER_MS)
+        screens = {}
+        screens["list"] = page.evaluate(self.check)
+        page.evaluate(TAP_ALL)
+        page.wait_for_timeout(RENDER_MS // 2)
+        screens["opened tile"] = page.evaluate(self.check)
+        page.click(".trkyd")
+        page.wait_for_timeout(RENDER_MS // 2)
+        screens["yesterday"] = page.evaluate(self.check)
+        page.click("text=Make a parlay")
+        page.wait_for_timeout(RENDER_MS // 2)
+        page.locator("#app .tile.trk").nth(0).click()
+        page.locator("#app .tile.trk").nth(1).click()
+        page.wait_for_timeout(RENDER_MS // 2)
+        screens["parlay select"] = page.evaluate(self.check)
+        page.click("#trk-bar >> text=Cancel")
+        page.click(".trkadd")
+        page.wait_for_selector("#trk-sheet .trkpr")
+        screens["sheet players"] = page.evaluate(self.check)
+        page.fill("#trk-sheet .srch", "zzzz")
+        screens["sheet no match"] = page.evaluate(self.check)
+        page.fill("#trk-sheet .srch", "shai")
+        page.locator("#trk-sheet .trkpr").first.click()
+        page.wait_for_selector("#trk-sheet .trkchip[aria-pressed]")
+        screens["sheet stat"] = page.evaluate(self.check)
+        page.locator("#trk-sheet .trkchip", has_text="Pts + Reb + Ast").click()
+        page.locator("#trk-sheet .trkseg2 button", has_text="Over").click()
+        page.fill("#trk-sheet input[aria-label=Line]", "38.5")
+        page.wait_for_timeout(RENDER_MS // 2)
+        screens["sheet preview"] = page.evaluate(self.check)
+        page.fill("#trk-sheet input[aria-label=Line]", "24.25")
+        screens["sheet error"] = page.evaluate(self.check)
+        page.keyboard.press("Escape")
+        page.locator("#app .tile.trk .trkn").first.click()
+        page.click("#app .trkx .trkbtn.del")
+        page.wait_for_selector("#trk-toast:not([hidden])")
+        screens["toast"] = page.evaluate(self.check)
+        page.close()
+        return screens
+
+    def test_my_tracker_has_no_cut_off_words_on_any_screen_at_any_phone_width(self):
+        problems = []
+        for width in WIDTHS:
+            ctx = self.browser.new_context(viewport={"width": width, "height": 900})
+            for sport in SPORTS:
+                for screen, found in self.tracker_screens(ctx, sport).items():
+                    for p in found:
+                        problems.append("%dpx my-tracker %s %s: %s in %s %s %s" % (width, sport, screen, p["kind"], p["where"], repr(p["text"]), p["detail"]))
+            ctx.close()
+        self.assertEqual(sorted(set(problems)), [])
+
+    def test_my_tracker_text_is_at_least_13px_and_tap_targets_are_44px(self):
+        ctx = self.browser.new_context(viewport={"width": 320, "height": 900})
+        page = ctx.new_page()
+        page.add_init_script("localStorage.setItem('pc_sport', 'all'); localStorage.setItem('hph.live.seg', 'tracker')")
+        page.goto("http://127.0.0.1:%d/index.html?fixture=livelong&trk=demo#live" % self.server.server_address[1])
+        page.wait_for_selector(".trkban")
+        page.wait_for_timeout(RENDER_MS)
+        page.evaluate(TAP_ALL)
+        page.click(".trkyd")
+        page.wait_for_timeout(RENDER_MS // 2)
+        small = page.evaluate("""() => Array.from(document.querySelectorAll('#app .tile.trk *, #app .pcard *, .trkban, .trkseg *')).filter((e) => e.children.length === 0 && e.textContent.trim()
+          && parseFloat(getComputedStyle(e).fontSize) < 13 && getComputedStyle(e).display !== 'none').map((e) => e.className + ':' + e.textContent.trim().slice(0, 20) + ':' + getComputedStyle(e).fontSize)""")
+        self.assertEqual(small, [])
+        short = page.evaluate("""() => Array.from(document.querySelectorAll('#app button, #app input[type=checkbox]')).filter((e) => e.getBoundingClientRect().height < 44 && !e.closest('.tile.trk .trkx')
+          && !e.classList.contains('trkn') && !e.classList.contains('rowbtn') && !e.closest('.sport-sw')).map((e) => e.className + ':' + e.textContent.trim().slice(0, 20) + ':' + e.getBoundingClientRect().height)""")
+        self.assertEqual(short, [])
+        ctx.close()
+
     def test_the_record_fixtures_really_render_the_breakdown_labels(self):
         ctx = self.browser.new_context(viewport={"width": 320, "height": 900})
         for fixture, label in (("record-nba", "Rebounds"), ("record-nhl", "Under 1.5")):
