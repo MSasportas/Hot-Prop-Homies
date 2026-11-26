@@ -171,6 +171,7 @@
     "Zach Edey"
    ],
    "status": {
+    "Zach Edey": "doubtful",
     "Cameron Boozer": "out",
     "Jerami Grant": "out",
     "GG Jackson": "out",
@@ -233,7 +234,7 @@
    }
   },
   "SA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Stephon Castle",
     "Devin Vassell",
@@ -249,7 +250,7 @@
    }
   },
   "POR": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Damian Lillard",
     "Sidy Cissoko",
@@ -265,5 +266,5 @@
    }
   }
  },
- "at": "2026-11-25T21:40:00-05:00"
+ "at": "2026-11-25T21:50:00-05:00"
 }
