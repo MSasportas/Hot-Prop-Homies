@@ -1,5 +1,5 @@
 {
- "at": "2026-11-26T17:10:01-05:00",
+ "at": "2026-11-26T17:30:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -148,19 +148,19 @@
    "date": "2026-11-17T22:42Z",
    "note": "Biberovic (heel) is out for Wednesday's game against the Warriors."
   },
+  "4432166": {
+   "status": "out",
+   "name": "Cade Cunningham",
+   "team": "DET",
+   "date": "2026-11-26T22:20Z",
+   "note": "Cunningham (knee) is listed as out for Tuesday's game against Orlando."
+  },
   "4433621": {
    "status": "out",
    "name": "Jalen Duren",
    "team": "DET",
    "date": "2026-11-26T15:31Z",
    "note": "Detroit recalled Duren (hamstring) from the G League's Motor City Cruise on Wednesday."
-  },
-  "4432166": {
-   "status": "day-to-day",
-   "name": "Cade Cunningham",
-   "team": "DET",
-   "date": "2026-11-25T19:00Z",
-   "note": "Cunningham (knee) is listed as out for Tuesday's game against Orlando."
   },
   "5258459": {
    "status": "out",
@@ -379,6 +379,20 @@
    "date": "2026-11-13T20:19Z",
    "note": "Murray (ankle) is out for Friday's game against Memphis."
   },
+  "4431823": {
+   "status": "day-to-day",
+   "name": "Miles McBride",
+   "team": "NY",
+   "date": "2026-11-26T22:11Z",
+   "note": "McBride (groin) is questionable for Friday's game against the Heat."
+  },
+  "2528426": {
+   "status": "out",
+   "name": "Jordan Clarkson",
+   "team": "NY",
+   "date": "2026-11-26T22:03Z",
+   "note": "Clarkson (foot) is questionable for Friday's game against the Heat."
+  },
   "3934719": {
    "status": "out",
    "name": "OG Anunoby",
@@ -392,20 +406,6 @@
    "team": "NY",
    "date": "2026-11-26T21:51Z",
    "note": "Drummond (head) is questionable for Friday's game against the Heat."
-  },
-  "4431823": {
-   "status": "day-to-day",
-   "name": "Miles McBride",
-   "team": "NY",
-   "date": "2026-11-26T05:31Z",
-   "note": "McBride (adductor) has been ruled out for Wednesday's game against the Cavaliers."
-  },
-  "2528426": {
-   "status": "out",
-   "name": "Jordan Clarkson",
-   "team": "NY",
-   "date": "2026-11-24T21:56Z",
-   "note": "Clarkson (foot) is out for Wednesday's game against Cleveland."
   },
   "5159925": {
    "status": "out",
@@ -495,15 +495,15 @@
    "status": "day-to-day",
    "name": "Joel Embiid",
    "team": "PHI",
-   "date": "2026-11-26T01:06Z",
-   "note": "Embiid (illness) is out for Wednesday's game against Miami, Ira Winderman of the South Florida Sun Sentinel reports."
+   "date": "2026-11-26T22:16Z",
+   "note": "Embiid (illness) is questionable for Friday's game against the Pacers."
   },
   "3917376": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Jaylen Brown",
    "team": "PHI",
-   "date": "2026-11-26T01:06Z",
-   "note": "Brown (hamstring) will receive imaging, and the Sixers will provide an update Thursday, Ky Carlin of USA Today reports."
+   "date": "2026-11-26T22:13Z",
+   "note": "Brown (hamstring) is out for Friday's game against the Pacers."
   },
   "4871141": {
    "status": "out",
