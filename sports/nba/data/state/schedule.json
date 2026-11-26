@@ -345,10 +345,10 @@
     "home": "NY",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "32.6 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
-     "CLE": "33",
+     "CLE": "34",
      "NY": "23"
     }
    },
@@ -360,11 +360,11 @@
     "home": "OKC",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "53.4 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
      "MIN": "26",
-     "OKC": "14"
+     "OKC": "16"
     }
    },
    {
@@ -373,13 +373,13 @@
     "start": "2026-11-25T20:00:00-05:00",
     "away": "LAC",
     "home": "MEM",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/25 - 8:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "9:47 - 1st",
     "score": {
-     "LAC": "0",
-     "MEM": "0"
+     "LAC": "2",
+     "MEM": "9"
     }
    },
    {
@@ -388,10 +388,10 @@
     "start": "2026-11-25T20:00:00-05:00",
     "away": "BKN",
     "home": "MIL",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/25 - 8:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "10:49 - 1st",
     "score": {
      "BKN": "0",
      "MIL": "0"
