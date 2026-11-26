@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T19:30:01-05:00",
+ "generated_at": "2026-11-25T21:20:00-05:00",
  "summary": {
   "headline": {
    "w": 71,
@@ -248,6 +248,8 @@
       "n": 36,
       "ids": [
        "2026-11-25:401909319:3908809:rebounds:4.5:over",
+       "2026-11-25:401909324:6589:rebounds:4.5:under",
+       "2026-11-25:401909325:4845367:rebounds:5.5:under",
        "2026-11-24:401909315:3078576:rebounds:3.5:over",
        "2026-11-24:401909315:4277905:rebounds:2.5:over",
        "2026-11-24:401909315:4251:rebounds:5.5:over",
@@ -494,6 +496,8 @@
       "needed": 0.5282,
       "n": 83,
       "ids": [
+       "2026-11-25:401909324:6589:rebounds:4.5:under",
+       "2026-11-25:401909325:4845367:rebounds:5.5:under",
        "2026-11-24:401909315:3078576:points:13.5:under",
        "2026-11-23:401910043:3202:points:21.5:under",
        "2026-11-23:401910044:4277919:rebounds:9.5:under",
@@ -600,6 +604,7 @@
       "n": 92,
       "ids": [
        "2026-11-25:401909319:3908809:rebounds:4.5:over",
+       "2026-11-25:401909324:6589:rebounds:4.5:under",
        "2026-11-24:401909315:3078576:rebounds:3.5:over",
        "2026-11-24:401909315:4277905:rebounds:2.5:over",
        "2026-11-24:401909315:3078576:points:13.5:under",
@@ -707,6 +712,7 @@
       "needed": 0.5145,
       "n": 25,
       "ids": [
+       "2026-11-25:401909325:4845367:rebounds:5.5:under",
        "2026-11-23:401910038:4900671:assists:3.5:over",
        "2026-11-23:401910043:3202:points:21.5:under",
        "2026-11-20:401909306:4712849:rebounds:4.5:over",
@@ -775,6 +781,7 @@
       "needed": 0.5161,
       "n": 14,
       "ids": [
+       "2026-11-25:401909325:4845367:rebounds:5.5:under",
        "2026-11-24:401909316:5211175:rebounds:3.5:over",
        "2026-11-22:401910034:3934672:assists:6.5:under",
        "2026-11-21:401910023:4351851:points:12.5:under",
@@ -806,6 +813,7 @@
       "n": 97,
       "ids": [
        "2026-11-25:401909319:3908809:rebounds:4.5:over",
+       "2026-11-25:401909324:6589:rebounds:4.5:under",
        "2026-11-24:401909315:3078576:rebounds:3.5:over",
        "2026-11-24:401909315:4277905:rebounds:2.5:over",
        "2026-11-24:401909315:3078576:points:13.5:under",
@@ -1009,6 +1017,8 @@
       "needed": 0.55,
       "n": 78,
       "ids": [
+       "2026-11-25:401909324:6589:rebounds:4.5:under",
+       "2026-11-25:401909325:4845367:rebounds:5.5:under",
        "2026-11-24:401909315:3078576:points:13.5:under",
        "2026-11-24:401909316:5211175:rebounds:3.5:over",
        "2026-11-23:401910038:4900671:assists:3.5:over",
@@ -1102,7 +1112,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 1,
+    "n": 3,
     "graded": false
    },
    {
@@ -1380,6 +1390,58 @@
       {
        "price": 110,
        "at": "2026-11-25T18:50:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "90 \u2192 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-25:401909324:6589:rebounds:4.5:under",
+     "kind": "single",
+     "player": "Draymond Green",
+     "bet": "Under 4.5 rebounds",
+     "market": "rebounds",
+     "team": "GSW",
+     "game": "SAC at GSW",
+     "price": -105,
+     "first_price": -105,
+     "last_price": -105,
+     "prices": [
+      {
+       "price": -105,
+       "at": "2026-11-25T21:20:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "90 \u2192 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-25:401909325:4845367:rebounds:5.5:under",
+     "kind": "single",
+     "player": "Stephon Castle",
+     "bet": "Under 5.5 rebounds",
+     "market": "rebounds",
+     "team": "SAS",
+     "game": "SAS at POR",
+     "price": -135,
+     "first_price": -135,
+     "last_price": -135,
+     "prices": [
+      {
+       "price": -135,
+       "at": "2026-11-25T21:20:00-05:00"
       }
      ],
      "result": null,
