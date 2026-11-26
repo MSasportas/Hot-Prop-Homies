@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T22:10:00-05:00",
+ "at": "2026-11-25T22:20:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -308,6 +308,13 @@
    "team": "MEM",
    "date": "2026-11-07T17:24Z",
    "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
+  },
+  "4432816": {
+   "status": "day-to-day",
+   "name": "LaMelo Ball",
+   "team": "MIN",
+   "date": "2026-11-26T03:02Z",
+   "note": "Ball finished with 17 points (6-16 FG, 2-10 3Pt, 3-3 FT), two rebounds, three assists, one block and one steal across 30 minutes during Monday's 142-116 victory over the Nets."
   },
   "3934673": {
    "status": "out",
