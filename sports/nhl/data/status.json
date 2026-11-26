@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-25",
- "started_at": "2026-11-25T20:30:00-05:00",
- "status_at": "2026-11-25T20:30:00-05:00",
- "finished_at": "2026-11-25T20:30:05-05:00",
- "last_ok_at": "2026-11-25T20:30:00-05:00",
+ "started_at": "2026-11-25T20:50:01-05:00",
+ "status_at": "2026-11-25T20:50:01-05:00",
+ "finished_at": "2026-11-25T20:50:04-05:00",
+ "last_ok_at": "2026-11-25T20:50:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -60,7 +60,7 @@
   {
    "step": "engine",
    "status": "ok",
-   "note": "1 new event(s), 1 newly shown"
+   "note": "no change"
   },
   {
    "step": "grade",
@@ -75,7 +75,7 @@
   {
    "step": "shadow",
    "status": "ok",
-   "note": "35 line read(s) logged"
+   "note": "39 line read(s) logged"
   },
   {
    "step": "gg_grade",
@@ -89,8 +89,8 @@
   },
   {
    "step": "record",
-   "status": "ok",
-   "note": "record.json, 2026-11.json"
+   "status": "skipped",
+   "note": "unchanged"
   }
  ],
  "sources": {
@@ -115,7 +115,7 @@
   },
   {
    "n": 4,
-   "left": 245
+   "left": 240
   },
   {
    "n": 5,
@@ -138,14 +138,14 @@
    "left": 500
   }
  ],
- "pool_total": 2339,
+ "pool_total": 2334,
  "allowance": 48.66,
  "tier": 4,
  "budget_today": 681,
- "budget_used_today": 94,
+ "budget_used_today": 99,
  "prices_state": "ok",
- "prices_at": "2026-11-25T20:30:00-05:00",
- "next_price_read_at": "2026-11-25T20:45:00-05:00",
+ "prices_at": "2026-11-25T20:50:01-05:00",
+ "next_price_read_at": "2026-11-25T20:55:00-05:00",
  "unmatched_names": [],
  "unknown_teams": [],
  "lineup_unmatched_names": [
@@ -153,17 +153,17 @@
  ],
  "excluded_teams": [],
  "stats_through": "2026-11-24",
- "lineups_at": "2026-11-25T20:30:00-05:00",
+ "lineups_at": "2026-11-25T20:50:01-05:00",
  "lineups_note": "Lineups posted for 18 of 28 teams checked so far.",
  "games_today": 14,
  "record_events": 372,
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "45731778366",
-  "iteration": 5,
-  "chain_link": 79,
+  "run_id": "45737318352",
+  "iteration": 2,
+  "chain_link": 80,
   "chain_started_at": "2026-11-23T09:55:27-05:00",
-  "run_started_at": "2026-11-25T19:52:12-05:00"
+  "run_started_at": "2026-11-25T20:40:28-05:00"
  }
 }
