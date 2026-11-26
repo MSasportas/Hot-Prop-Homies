@@ -9,9 +9,9 @@
   "w": 76
  },
  "LL3b loose": {
-  "clv": 0.0281,
+  "clv": 0.028,
   "l": 34,
-  "pending": 6,
+  "pending": 7,
   "push": 0,
   "units": 11.94,
   "void": 0,
@@ -36,9 +36,9 @@
   "w": 134
  },
  "LL6 line": {
-  "clv": -0.0158,
+  "clv": -0.016,
   "l": 51,
-  "pending": 12,
+  "pending": 13,
   "push": 0,
   "units": -8.8,
   "void": 0,
@@ -162,7 +162,7 @@
   "w": 1
  },
  "R28b over": {
-  "clv": -0.1204,
+  "clv": -0.1208,
   "l": 81,
   "pending": 73,
   "push": 0,
@@ -171,7 +171,7 @@
   "w": 56
  },
  "R28b under": {
-  "clv": -0.0496,
+  "clv": -0.0498,
   "l": 111,
   "pending": 131,
   "push": 0,
@@ -208,6 +208,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-26T01:00:15+00:00",
+ "updated_at": "2026-11-26T01:10:15+00:00",
  "version": 1
 }

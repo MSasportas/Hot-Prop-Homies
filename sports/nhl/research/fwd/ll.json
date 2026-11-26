@@ -48,7 +48,7 @@
   "candidate": false
  },
  "LL3b loose": {
-  "bets": 84,
+  "bets": 85,
   "graded": 78,
   "w": 44,
   "units": 11.938,
@@ -58,8 +58,8 @@
    0.3621
   ],
   "p_one_sided": 0.143,
-  "mean_ev": 0.0301,
-  "mean_clv": 0.0281,
+  "mean_ev": 0.03,
+  "mean_clv": 0.028,
   "games": 56,
   "candidate": false
  },
@@ -112,7 +112,7 @@
   "candidate": false
  },
  "LL6 line": {
-  "bets": 139,
+  "bets": 140,
   "graded": 127,
   "w": 76,
   "units": -8.802,
@@ -122,8 +122,8 @@
    0.0389
   ],
   "p_one_sided": 0.8495,
-  "mean_ev": -0.017,
-  "mean_clv": -0.0158,
+  "mean_ev": -0.0172,
+  "mean_clv": -0.016,
   "games": 78,
   "candidate": false
  }
