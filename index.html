@@ -3836,8 +3836,8 @@ var TRK_MAX_BETS = 20, TRK_MAX_PARLAYS = 6, TRK_MAX_LEGS = 3, TRK_KEEP_DAYS = 2,
 var TRK_LINE_MIN = 0.5, TRK_LINE_MAX = 199.5, TRK_LINE_STEP = 0.5;
 var TRK_SAVE_MS = 250, TRK_UNDO_MS = 5000, TRK_NOTE_MS = 4000, TRK_DAY_CUTOFF_H = 5, TRK_NAME_MAX = 60;
 var TRK_STAT_FLOOR = 13, TRK_FOLD_KEY = 'hph.tracker.fold', TRK_EMPTY_WAIT_MS = 4000;
-var TRK_NBA = [{ k: 'points', label: 'Points', noun: 'points', parts: ['points'], grp: 'Singles' }, { k: 'rebounds', label: 'Rebounds', noun: 'rebounds', parts: ['rebounds'], grp: 'Singles' }, { k: 'assists', label: 'Assists', noun: 'assists', parts: ['assists'], grp: 'Singles' }, { k: 'threes', label: '3-pointers made', noun: 'threes', parts: ['threes'], grp: 'Singles' }, { k: 'pra', label: 'PRA', sub: 'Points + Rebounds + Assists', noun: 'PRA', parts: ['points', 'rebounds', 'assists'], grp: 'Combos' }, { k: 'pr', label: 'PR', sub: 'Points + Rebounds', noun: 'PR', parts: ['points', 'rebounds'], grp: 'Combos' }, { k: 'pa', label: 'PA', sub: 'Points + Assists', noun: 'PA', parts: ['points', 'assists'], grp: 'Combos' }, { k: 'ra', label: 'RA', sub: 'Rebounds + Assists', noun: 'RA', parts: ['rebounds', 'assists'], grp: 'Combos' }];
-var TRK_NHL = [{ k: 'shots', label: 'Shots on goal', noun: 'shots on goal', parts: ['shots'], grp: 'Singles' }, { k: 'goals', label: 'Goals', noun: 'goals', parts: ['goals'], grp: 'Singles' }, { k: 'assists', label: 'Assists', noun: 'assists', parts: ['assists'], grp: 'Singles' }, { k: 'points', label: 'Points', sub: 'Goals + Assists', noun: 'points', parts: ['goals', 'assists'], grp: 'Combos' }];
+var TRK_NBA = [{ k: 'points', label: 'Points', noun: 'points', one: 'point', parts: ['points'], grp: 'Singles' }, { k: 'rebounds', label: 'Rebounds', noun: 'rebounds', one: 'rebound', parts: ['rebounds'], grp: 'Singles' }, { k: 'assists', label: 'Assists', noun: 'assists', one: 'assist', parts: ['assists'], grp: 'Singles' }, { k: 'threes', label: '3-pointers made', noun: 'threes', one: 'three', parts: ['threes'], grp: 'Singles' }, { k: 'pra', label: 'PRA', sub: 'Points + Rebounds + Assists', noun: 'PRA', parts: ['points', 'rebounds', 'assists'], grp: 'Combos' }, { k: 'pr', label: 'PR', sub: 'Points + Rebounds', noun: 'PR', parts: ['points', 'rebounds'], grp: 'Combos' }, { k: 'pa', label: 'PA', sub: 'Points + Assists', noun: 'PA', parts: ['points', 'assists'], grp: 'Combos' }, { k: 'ra', label: 'RA', sub: 'Rebounds + Assists', noun: 'RA', parts: ['rebounds', 'assists'], grp: 'Combos' }];
+var TRK_NHL = [{ k: 'shots', label: 'Shots on goal', noun: 'shots on goal', one: 'shot on goal', parts: ['shots'], grp: 'Singles' }, { k: 'goals', label: 'Goals', noun: 'goals', one: 'goal', parts: ['goals'], grp: 'Singles' }, { k: 'assists', label: 'Assists', noun: 'assists', one: 'assist', parts: ['assists'], grp: 'Singles' }, { k: 'points', label: 'Points', sub: 'Goals + Assists', noun: 'points', one: 'point', parts: ['goals', 'assists'], grp: 'Combos' }];
 var TRK_STAMP = { W: ['HIT', 'W'], L: ['LOST', 'L'], PUSH: ['PUSH', ''], VOID: ['VOID', ''] };
 var TRK_TEAMS_NBA = 'ATL Hawks|BOS Celtics|BKN Nets|CHA Hornets|CHI Bulls|CLE Cavaliers|DAL Mavericks|DEN Nuggets|DET Pistons|GSW Warriors|HOU Rockets|IND Pacers|LAC Clippers|LAL Lakers|MEM Grizzlies|MIA Heat|MIL Bucks|MIN Timberwolves|NOP Pelicans|NYK Knicks|OKC Thunder|ORL Magic|PHI 76ers|PHX Suns|POR Trail Blazers|SAC Kings|SAS Spurs|TOR Raptors|UTA Jazz|WAS Wizards';
 var TRK_TEAMS_NHL = 'ANA Ducks|BOS Bruins|BUF Sabres|CGY Flames|CAR Hurricanes|CHI Blackhawks|COL Avalanche|CBJ Blue Jackets|DAL Stars|DET Red Wings|EDM Oilers|FLA Panthers|LAK Kings|MIN Wild|MTL Canadiens|NSH Predators|NJD Devils|NYI Islanders|NYR Rangers|OTT Senators|PHI Flyers|PIT Penguins|SEA Kraken|SJS Sharks|STL Blues|TBL Lightning|TOR Maple Leafs|UTA Mammoth|VAN Canucks|VGK Golden Knights|WSH Capitals|WPG Jets';
@@ -3979,6 +3979,8 @@ function trkSummaryText(words) {
   return out.length ? out.join(', ') : 'Nothing in play';
 }
 function trkBetText(b) { var st = trkStat(b.sport, b.stat); return (b.side === 'over' ? 'Over ' : 'Under ') + b.line + ' ' + (st ? st.noun : b.stat); }
+/* a count with its stat word, singular for exactly one (1 goal, 0 goals, 2 goals; a combo keeps its name) */
+function trkCount(st, n) { return n + ' ' + (n === 1 && st.one ? st.one : st.noun); }
 function trkSub(b) { var st = trkStat(b.sport, b.stat); return st && st.sub ? st.sub.toLowerCase() : ''; }
 function trkInitials(name) { var t = str(name).trim().split(/\s+/); return ((t[0] || '').charAt(0) + (t.length > 1 ? t[t.length - 1].charAt(0) : '')).toUpperCase(); }
 function trkHaystack(p) {
@@ -4586,7 +4588,7 @@ function renderTracker() {
 }
 function trkResetBlock() {
   if (!TK.confirmAll) return h('button', { type: 'button', class: 'trkbtn del', text: 'Delete everything in My Tracker', on: { click: function () { TK.confirmAll = true; trkRerender(); } } });
-  return h('div', { class: 'trkconf' }, h('p', { text: 'Delete all ' + TK.bets.length + "? This can't be undone." }),
+  return h('div', { class: 'trkconf' }, h('p', { text: (TK.bets.length === 1 ? 'Delete 1 bet' : 'Delete all ' + TK.bets.length) + "? This can't be undone." }),
     h('div', { class: 'trkmk' }, h('button', { type: 'button', class: 'trkbtn del', text: 'Delete all', on: { click: function () { TK.confirmAll = false; TK.bets = []; TK.parlays = []; TK.open = null; TK.edit = null; trkSave(); trkRerender(); } } }),
       h('button', { type: 'button', class: 'trkbtn', text: 'Cancel', on: { click: function () { TK.confirmAll = false; trkRerender(); } } })));
 }
@@ -4745,7 +4747,7 @@ function trkSheetSum() {
   s.sum.appendChild(h('div', { class: 'trksum-t' }, trkAvatar(s.player), h('span', { class: 'trksum-n', text: s.player.name })));
   s.sum.appendChild(h('div', { class: 'trkhelp', text: s.player.team + ' ' + (s.player.home ? 'vs ' : '@ ') + s.player.opp + '. ' + text }));
   st = s.stat ? trkStat(s.player.sport, s.stat) : null;
-  if (st && ev.state === 'in' && ev.stat != null) s.sum.appendChild(h('div', { class: 'trkrn', text: 'Right now: ' + ev.stat + ' ' + st.noun }));
+  if (st && ev.state === 'in' && ev.stat != null) s.sum.appendChild(h('div', { class: 'trkrn', text: 'Right now: ' + trkCount(st, ev.stat) }));
   s.startAt = st && ev.state === 'in' && ev.stat != null ? ev.stat + 0.5 : null;
 }
 function trkSheetForm() {

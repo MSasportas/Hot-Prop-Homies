@@ -22,7 +22,7 @@ SEG_KEY = "hph.live.seg"
 FOLD_KEY = "hph.tracker.fold"
 RULE_FNS = ("str", "num", "arr", "isObj", "cnt", "tri", "nhlTeam", "normName", "nhlNameKey", "trkStats", "trkStat", "trkTeam", "trkNameKey", "trkValue", "trkResult",
             "trkLineCheck", "trkStepLine", "trkSamePlayer", "trkSameStat", "trkDuplicate", "trkConflict", "trkParlayStatus", "trkDayAdd", "trkPairTeams", "trkSanitize",
-            "trkBoxIndex", "trkRowFor", "trkMatches", "trkHaystack", "trkBetText", "trkInitials", "trkSummaryText", "trkSub", "trkMergeList")
+            "trkBoxIndex", "trkRowFor", "trkMatches", "trkHaystack", "trkBetText", "trkInitials", "trkSummaryText", "trkSub", "trkCount", "trkMergeList")
 RULE_VARS = ("TRK_NBA", "TRK_NHL", "TRK_MAX_BETS", "TRK_MAX_PARLAYS", "TRK_MAX_LEGS", "TRK_KEEP_DAYS", "TRK_LINE_MIN", "TRK_LINE_MAX", "TRK_LINE_STEP", "TRK_NAME_MAX",
              "TRK_TEAMS_NBA", "TRK_TEAMS_NHL", "NBA_TRI", "NHL_TEAM")
 
@@ -66,6 +66,12 @@ class StatMath(unittest.TestCase):
     def test_a_combo_is_spelled_out_once_under_the_bet_line_and_nhl_points_is_goals_plus_assists(self):
         got = rules("""console.log(JSON.stringify(['pra', 'pr', 'pa', 'ra'].map(function (k) { return trkSub({ sport: 'nba', stat: k }); }).concat([trkSub({ sport: 'nhl', stat: 'points' }), trkSub({ sport: 'nba', stat: 'points' }), trkSub({ sport: 'nhl', stat: 'shots' })])));""")
         self.assertEqual(got, ["points + rebounds + assists", "points + rebounds", "points + assists", "rebounds + assists", "goals + assists", "", ""])
+
+    def test_a_count_of_exactly_one_uses_the_singular_and_zero_and_many_stay_plural(self):
+        got = rules("""var one = function (sp, k, n) { return trkCount(trkStat(sp, k), n); };
+          console.log(JSON.stringify([one('nhl', 'goals', 1), one('nhl', 'goals', 0), one('nhl', 'goals', 2), one('nhl', 'assists', 1), one('nhl', 'shots', 1), one('nhl', 'shots', 4), one('nhl', 'points', 1),
+            one('nba', 'points', 1), one('nba', 'rebounds', 1), one('nba', 'assists', 1), one('nba', 'threes', 1), one('nba', 'threes', 3), one('nba', 'pra', 1), one('nba', 'pr', 1), one('nba', 'pra', 26)]));""")
+        self.assertEqual(got, ["1 goal", "0 goals", "2 goals", "1 assist", "1 shot on goal", "4 shots on goal", "1 point", "1 point", "1 rebound", "1 assist", "1 three", "3 threes", "1 PRA", "1 PR", "26 PRA"])
 
     def test_a_collapsed_tracker_summarises_alive_hit_and_missed_and_skips_the_rest(self):
         got = rules("""console.log(JSON.stringify([trkSummaryText(['alive', 'alive', 'hit']), trkSummaryText(['missed', 'hit', 'alive', 'alive', 'alive']), trkSummaryText([]), trkSummaryText(['', ''])]));""")
@@ -1074,6 +1080,31 @@ class Screens(unittest.TestCase):
         self.open_sheet(page)
         self.pick(page, "Nikita Kucherov")
         self.assertEqual(self.text(page, "#trk-sheet .trkchip[data-stat=points]"), "Points\nGoals + Assists")
+
+    def test_the_right_now_line_reads_one_goal_not_one_goals(self):
+        page = self.open()
+        self.open_sheet(page)
+        page.fill("#trk-sheet .srch", "kucherov")
+        self.pick(page, "Nikita Kucherov")
+        for stat, want in (("goals", "Right now: 1 goal"), ("assists", "Right now: 0 assists"), ("shots", "Right now: 4 shots on goal"), ("points", "Right now: 1 point")):
+            page.click("#trk-sheet .trkchip[data-stat=%s]" % stat)
+            self.assertIn(want, self.text(page, "#trk-sheet .trksum"), stat)
+            self.assertNotIn("1 goals", self.text(page, "#trk-sheet"))
+        page.click("#trk-sheet .trks-bk")
+        page.fill("#trk-sheet .srch", "matthews")
+        self.pick(page, "Auston Matthews")
+        page.click("#trk-sheet .trkchip[data-stat=assists]")
+        self.assertIn("Right now: 1 assist", self.text(page, "#trk-sheet .trksum"))
+        page.click("#trk-sheet .trks-bk")
+        page.fill("#trk-sheet .srch", "shai")
+        self.pick(page, "Shai Gilgeous-Alexander")
+        page.click("#trk-sheet .trkchip[data-stat=pra]")
+        self.assertIn("Right now: 26 PRA", self.text(page, "#trk-sheet .trksum"))
+
+    def test_the_delete_everything_confirm_reads_right_for_one_bet(self):
+        page = self.open(init=seed([bet("a", "Nikola Jokić", "DEN", "PHX", "nba|DEN@PHX", "points", "over", 30.5, pid="3112335")]))
+        page.click("text=Delete everything in My Tracker")
+        self.assertIn("Delete 1 bet? This can't be undone.", self.text(page))
 
     def test_settled_tiles_are_dimmed_to_the_specs_point_eight_five(self):
         page = self.open(query="&trk=demo")
