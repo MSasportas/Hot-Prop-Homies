@@ -1,5 +1,5 @@
 {
- "at": "2026-11-26T17:30:01-05:00",
+ "at": "2026-11-26T17:40:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -148,12 +148,19 @@
    "date": "2026-11-17T22:42Z",
    "note": "Biberovic (heel) is out for Wednesday's game against the Warriors."
   },
+  "3157465": {
+   "status": "out",
+   "name": "Duncan Robinson",
+   "team": "DET",
+   "date": "2026-11-26T22:26Z",
+   "note": "Robinson (quadriceps) is out for Friday's game against the Bucks."
+  },
   "4432166": {
    "status": "out",
    "name": "Cade Cunningham",
    "team": "DET",
-   "date": "2026-11-26T22:20Z",
-   "note": "Cunningham (knee) is listed as out for Tuesday's game against Orlando."
+   "date": "2026-11-26T22:25Z",
+   "note": "Cunningham (knee) is out for Friday's game against the Bucks."
   },
   "4433621": {
    "status": "out",
@@ -175,13 +182,6 @@
    "team": "DET",
    "date": "2026-11-24T18:33Z",
    "note": "Prince underwent arthroscopic right knee surgery Nov. 18 and will be re-evaluated in four weeks, Eric Vincent of ClutchPoints.com reports."
-  },
-  "3157465": {
-   "status": "out",
-   "name": "Duncan Robinson",
-   "team": "DET",
-   "date": "2026-11-24T18:30Z",
-   "note": "Robinson (quadriceps) is considered day-to-day as he progresses in his rehab, Eric Vincent of ClutchPoints.com reports."
   },
   "3975": {
    "status": "out",
@@ -211,12 +211,19 @@
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
   },
+  "4396909": {
+   "status": "day-to-day",
+   "name": "Aaron Nesmith",
+   "team": "IND",
+   "date": "2026-11-26T22:31Z",
+   "note": "Nesmith (foot) is questionable for Friday's game against the 76ers."
+  },
   "2530530": {
    "status": "day-to-day",
    "name": "T.J. McConnell",
    "team": "IND",
-   "date": "2026-11-24T19:43Z",
-   "note": "McConnell (hamstring) was recalled from the G League's Noblesville Boom on Tuesday, Shams Charania of ESPN reports."
+   "date": "2026-11-26T22:29Z",
+   "note": "McConnell (hamstring) is questionable for Friday's game against the 76ers."
   },
   "4396993": {
    "status": "out",
@@ -224,13 +231,6 @@
    "team": "IND",
    "date": "2026-11-24T19:41Z",
    "note": "Haliburton (hamstring) was recalled from the G League's Noblesville Boom on Tuesday, Tony East of Forbes.com reports."
-  },
-  "4396909": {
-   "status": "day-to-day",
-   "name": "Aaron Nesmith",
-   "team": "IND",
-   "date": "2026-11-24T04:40Z",
-   "note": "Nesmith is out for Monday's game against the Thunder due to right foot soreness."
   },
   "2580365": {
    "status": "day-to-day",
