@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T20:13:07-05:00",
+ "at": "2026-11-25T20:30:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -175,20 +175,6 @@
    "team": "DET",
    "date": "2026-11-24T18:27Z",
    "note": "Duren (hamstring) is being assigned to the Motor City Cruise on Wednesday for practice as he ramps up for a return, Eric Vincent of ClutchPoints.com reports."
-  },
-  "5175737": {
-   "status": "day-to-day",
-   "name": "Yaxel Lendeborg",
-   "team": "GS",
-   "date": "2026-11-24T23:20Z",
-   "note": "Lendeborg is questionable for Wednesday's game against the Kings with an illness."
-  },
-  "4397040": {
-   "status": "out",
-   "name": "Brandon Williams",
-   "team": "GS",
-   "date": "2026-11-24T20:58Z",
-   "note": "Head coach Steve Kerr said Tuesday that Williams (hamstring) is questionable to play Wednesday against the Kings, per Dalton Johnson of NBC Sports Bay Area."
   },
   "3975": {
    "status": "out",
@@ -456,19 +442,19 @@
    "date": "2026-10-24T16:47Z",
    "note": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports."
   },
-  "3917376": {
-   "status": "out",
-   "name": "Jaylen Brown",
-   "team": "PHI",
-   "date": "2026-11-26T01:00Z",
-   "note": "Brown (hamstring) will receive imaging, and the Sixers will provide an update Thursday, Ky Carlin of USA Today reports."
-  },
   "3059318": {
-   "status": "out",
+   "status": "day-to-day",
    "name": "Joel Embiid",
    "team": "PHI",
-   "date": "2026-11-25T20:07Z",
+   "date": "2026-11-26T01:06Z",
    "note": "Embiid (illness) is out for Wednesday's game against Miami, Ira Winderman of the South Florida Sun Sentinel reports."
+  },
+  "3917376": {
+   "status": "day-to-day",
+   "name": "Jaylen Brown",
+   "team": "PHI",
+   "date": "2026-11-26T01:06Z",
+   "note": "Brown (hamstring) will receive imaging, and the Sixers will provide an update Thursday, Ky Carlin of USA Today reports."
   },
   "4871141": {
    "status": "out",
