@@ -120,6 +120,11 @@ class EveryTileFits(unittest.TestCase):
         page.wait_for_timeout(RENDER_MS)
         screens = {}
         screens["list"] = page.evaluate(self.check)
+        page.click(".trkfold")
+        page.wait_for_timeout(RENDER_MS // 2)
+        screens["collapsed"] = page.evaluate(self.check)
+        page.click(".trkfold")
+        page.wait_for_timeout(RENDER_MS // 2)
         page.evaluate(TAP_ALL)
         page.wait_for_timeout(RENDER_MS // 2)
         screens["opened tile"] = page.evaluate(self.check)
@@ -142,7 +147,7 @@ class EveryTileFits(unittest.TestCase):
         page.locator("#trk-sheet .trkpr").first.click()
         page.wait_for_selector("#trk-sheet .trkchip[aria-pressed]")
         screens["sheet stat"] = page.evaluate(self.check)
-        page.locator("#trk-sheet .trkchip", has_text="Pts + Reb + Ast").click()
+        page.click("#trk-sheet .trkchip[data-stat=pra]")
         page.locator("#trk-sheet .trkseg2 button", has_text="Over").click()
         page.fill("#trk-sheet input[aria-label=Line]", "38.5")
         page.wait_for_timeout(RENDER_MS // 2)
@@ -160,7 +165,7 @@ class EveryTileFits(unittest.TestCase):
     def test_my_tracker_has_no_cut_off_words_on_any_screen_at_any_phone_width(self):
         problems = []
         for width in WIDTHS:
-            ctx = self.browser.new_context(viewport={"width": width, "height": 900})
+            ctx = self.browser.new_context(viewport={"width": width, "height": 900}, reduced_motion="reduce")  # the sheet slide is not what is measured, and a machine under load must not catch it mid-slide
             for sport in SPORTS:
                 for screen, found in self.tracker_screens(ctx, sport).items():
                     for p in found:
@@ -178,7 +183,12 @@ class EveryTileFits(unittest.TestCase):
         page.evaluate(TAP_ALL)
         page.click(".trkyd")
         page.wait_for_timeout(RENDER_MS // 2)
-        small = page.evaluate("""() => Array.from(document.querySelectorAll('#app .tile.trk *, #app .pcard *, .trkban, .trkseg *')).filter((e) => e.children.length === 0 && e.textContent.trim()
+        page.click(".trkadd")
+        page.wait_for_selector("#trk-sheet .trkpr")
+        page.locator("#trk-sheet .trkpr").first.click()
+        page.wait_for_selector("#trk-sheet .trkchip[aria-pressed]")
+        page.wait_for_timeout(RENDER_MS // 2)
+        small = page.evaluate("""() => Array.from(document.querySelectorAll('#app .tile.trk *, #app .pcard *, .trkban, .trkseg *, .trkfold *, #trkupd, .trkhdr .sport-sw button, #trk-sheet *')).filter((e) => e.children.length === 0 && e.textContent.trim()
           && parseFloat(getComputedStyle(e).fontSize) < 13 && getComputedStyle(e).display !== 'none').map((e) => e.className + ':' + e.textContent.trim().slice(0, 20) + ':' + getComputedStyle(e).fontSize)""")
         self.assertEqual(small, [])
         short = page.evaluate("""() => Array.from(document.querySelectorAll('#app button, #app input[type=checkbox]')).filter((e) => e.getBoundingClientRect().height < 44 && !e.closest('.tile.trk .trkx')

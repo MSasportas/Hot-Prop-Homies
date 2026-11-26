@@ -19,9 +19,10 @@ ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 DAY = "2026-11-23"  # the fixture's slate day (fixtures/livelong/tracker.json)
 TRK_KEY = "hph.tracker.fx.v1"
 SEG_KEY = "hph.live.seg"
+FOLD_KEY = "hph.tracker.fold"
 RULE_FNS = ("str", "num", "arr", "isObj", "cnt", "tri", "nhlTeam", "normName", "nhlNameKey", "trkStats", "trkStat", "trkTeam", "trkNameKey", "trkValue", "trkResult",
             "trkLineCheck", "trkStepLine", "trkSamePlayer", "trkSameStat", "trkDuplicate", "trkConflict", "trkParlayStatus", "trkDayAdd", "trkPairTeams", "trkSanitize",
-            "trkBoxIndex", "trkRowFor", "trkMatches", "trkHaystack", "trkBetText", "trkInitials")
+            "trkBoxIndex", "trkRowFor", "trkMatches", "trkHaystack", "trkBetText", "trkInitials", "trkSummaryText", "trkSub", "trkMergeList")
 RULE_VARS = ("TRK_NBA", "TRK_NHL", "TRK_MAX_BETS", "TRK_MAX_PARLAYS", "TRK_MAX_LEGS", "TRK_KEEP_DAYS", "TRK_LINE_MIN", "TRK_LINE_MAX", "TRK_LINE_STEP", "TRK_NAME_MAX",
              "TRK_TEAMS_NBA", "TRK_TEAMS_NHL", "NBA_TRI", "NHL_TEAM")
 
@@ -59,8 +60,16 @@ class StatMath(unittest.TestCase):
 
     def test_the_pickers_offer_exactly_the_stats_the_feed_parses(self):
         got = rules("console.log(JSON.stringify([trkStats('nba').map(function (s) { return s.label + '/' + s.grp; }), trkStats('nhl').map(function (s) { return s.label + '/' + s.grp; })]));")
-        self.assertEqual(got[0], ["Points/Singles", "Rebounds/Singles", "Assists/Singles", "3-pointers made/Singles", "Pts + Reb + Ast/Combos", "Pts + Reb/Combos", "Pts + Ast/Combos", "Reb + Ast/Combos"])
+        self.assertEqual(got[0], ["Points/Singles", "Rebounds/Singles", "Assists/Singles", "3-pointers made/Singles", "PRA/Combos", "PR/Combos", "PA/Combos", "RA/Combos"])
         self.assertEqual(got[1], ["Shots on goal/Singles", "Goals/Singles", "Assists/Singles", "Points/Combos"])
+
+    def test_a_combo_is_spelled_out_once_under_the_bet_line_and_nhl_points_is_goals_plus_assists(self):
+        got = rules("""console.log(JSON.stringify(['pra', 'pr', 'pa', 'ra'].map(function (k) { return trkSub({ sport: 'nba', stat: k }); }).concat([trkSub({ sport: 'nhl', stat: 'points' }), trkSub({ sport: 'nba', stat: 'points' }), trkSub({ sport: 'nhl', stat: 'shots' })])));""")
+        self.assertEqual(got, ["points + rebounds + assists", "points + rebounds", "points + assists", "rebounds + assists", "goals + assists", "", ""])
+
+    def test_a_collapsed_tracker_summarises_alive_hit_and_missed_and_skips_the_rest(self):
+        got = rules("""console.log(JSON.stringify([trkSummaryText(['alive', 'alive', 'hit']), trkSummaryText(['missed', 'hit', 'alive', 'alive', 'alive']), trkSummaryText([]), trkSummaryText(['', ''])]));""")
+        self.assertEqual(got, ["2 alive, 1 hit", "3 alive, 1 hit, 1 missed", "Nothing in play", "Nothing in play"])
 
     def test_a_combo_reads_as_its_name_and_the_sum(self):
         got = rules("console.log(JSON.stringify([trkBetText({ sport: 'nba', stat: 'pra', side: 'over', line: 38.5 }), trkBetText({ sport: 'nhl', stat: 'shots', side: 'under', line: 2.5 })]));")
@@ -147,16 +156,42 @@ class LineAndParlayRules(unittest.TestCase):
           console.log(JSON.stringify([trkConflict([a, b]), trkConflict([a, c]), trkConflict([a, d]), trkConflict([a, b, c])]));""" % json.dumps(a))
         self.assertEqual(got, [True, False, True, True])
 
-    def test_a_duplicate_is_only_blocked_while_the_first_is_in_play(self):
-        got = rules("""var a = { id: 'a', sport: 'nba', pid: '1', name: 'X Y', stat: 'points', side: 'over', line: 24.5, settled: null };
-          var c = { id: 'new', sport: 'nba', pid: '1', name: 'X Y', stat: 'points', side: 'over', line: 24.5 };
-          var done = Object.assign({}, a, { settled: { result: 'W' } });
-          console.log(JSON.stringify([trkDuplicate([a], c), trkDuplicate([done], c), trkDuplicate([a], Object.assign({}, c, { line: 25.5 })), trkDuplicate([a], a)]));""")
-        self.assertEqual(got, [True, False, False, False])
+    def test_a_duplicate_is_blocked_today_in_any_state_but_not_another_side_line_or_day(self):
+        got = rules("""var a = { id: 'a', gameDay: '2026-11-23', sport: 'nba', pid: '1', name: 'X Y', stat: 'points', side: 'over', line: 24.5, settled: null };
+          var c = { id: 'new', gameDay: '2026-11-23', sport: 'nba', pid: '1', name: 'X Y', stat: 'points', side: 'over', line: 24.5 };
+          var hit = Object.assign({}, a, { settled: { result: 'W' } }), lost = Object.assign({}, a, { settled: { result: 'L' } }), old = Object.assign({}, a, { gameDay: '2026-11-22' });
+          console.log(JSON.stringify([trkDuplicate([a], c), trkDuplicate([hit], c), trkDuplicate([lost], c), trkDuplicate([old], c),
+            trkDuplicate([a], Object.assign({}, c, { line: 25.5 })), trkDuplicate([a], Object.assign({}, c, { side: 'under' })), trkDuplicate([a], a)]));""")
+        self.assertEqual(got, [True, True, True, False, False, False, False])
 
     def test_the_page_caps_a_parlay_at_three_legs_and_a_tracker_at_twenty_bets(self):
         got = rules("console.log(JSON.stringify([TRK_MAX_LEGS, TRK_MAX_BETS, TRK_MAX_PARLAYS]));")
         self.assertEqual(got, [3, 20, 6])
+
+
+@unittest.skipUnless(shutil.which("node"), "node not installed")
+class TabMerge(unittest.TestCase):
+    def merge(self, mem, stored, base, sync_at=100):
+        return rules("console.log(JSON.stringify(trkMergeList(%s, %s, %s, %d).map(function (x) { return x.id + ':' + x.v; })));" % (json.dumps(mem), json.dumps(stored), json.dumps({k: 1 for k in base}), sync_at))
+
+    def test_an_item_only_another_tab_saved_is_kept(self):
+        self.assertEqual(self.merge([], [{"id": "a", "v": 1}], []), ["a:1"])
+
+    def test_an_item_this_tab_deleted_stays_deleted(self):
+        self.assertEqual(self.merge([], [{"id": "a", "v": 1}], ["a"]), [])
+
+    def test_an_item_deleted_in_another_tab_is_dropped_unless_this_tab_changed_it_since(self):
+        self.assertEqual(self.merge([{"id": "a", "v": 1, "upd": 50}], [], ["a"]), [])
+        self.assertEqual(self.merge([{"id": "a", "v": 2, "upd": 150}], [], ["a"]), ["a:2"])
+
+    def test_an_item_this_tab_added_and_has_not_saved_is_kept(self):
+        self.assertEqual(self.merge([{"id": "n", "v": 1, "upd": 150}], [{"id": "a", "v": 1}], ["a"]), ["n:1"])
+        self.assertEqual(self.merge([{"id": "n", "v": 1, "upd": 150}], [{"id": "a", "v": 1}], []), ["n:1", "a:1"])
+
+    def test_the_newer_edit_wins_and_a_tie_goes_to_this_tab(self):
+        self.assertEqual(self.merge([{"id": "a", "v": "mine", "upd": 10}], [{"id": "a", "v": "theirs", "upd": 20}], ["a"]), ["a:theirs"])
+        self.assertEqual(self.merge([{"id": "a", "v": "mine", "upd": 30}], [{"id": "a", "v": "theirs", "upd": 20}], ["a"]), ["a:mine"])
+        self.assertEqual(self.merge([{"id": "a", "v": "mine", "upd": 20}], [{"id": "a", "v": "theirs", "upd": 20}], ["a"]), ["a:mine"])
 
 
 @unittest.skipUnless(shutil.which("node"), "node not installed")
@@ -207,6 +242,10 @@ class SavedData(unittest.TestCase):
     def test_settled_results_survive_a_round_trip(self):
         raw = {"bets": [self.bet("a", DAY, settled={"result": "W", "actual": 27, "at": 5, "manual": False})], "parlays": []}
         self.assertEqual(self.sanitize(raw)["bets"][0]["settled"], {"result": "W", "actual": 27, "at": 5, "manual": False, "why": ""})
+
+    def test_the_last_change_time_survives_so_tabs_can_tell_which_edit_is_newer(self):
+        raw = {"bets": [self.bet("a", DAY, upd=1234)], "parlays": []}
+        self.assertEqual(self.sanitize(raw)["bets"][0]["upd"], 1234)
 
 
 @unittest.skipUnless(shutil.which("node"), "node not installed")
@@ -292,7 +331,7 @@ class PollingRules(unittest.TestCase):
 
 @unittest.skipUnless(shutil.which("node"), "node not installed")
 class Recheck(unittest.TestCase):
-    FNS = ("trkRecheck", "trkRowFor", "trkValue", "trkResult", "trkBoxIndex", "trkStat", "trkStats", "trkNameKey", "trkTeam", "tri", "nhlTeam", "normName", "nhlNameKey", "str", "num", "arr", "isObj")
+    FNS = ("trkRecheck", "trkTouch", "trkRowFor", "trkValue", "trkResult", "trkBoxIndex", "trkStat", "trkStats", "trkNameKey", "trkTeam", "tri", "nhlTeam", "normName", "nhlNameKey", "str", "num", "arr", "isObj")
 
     def run_js(self, feed):
         body = """var FIX = false, TK = { demo: false, rechecked: false, bets: [
@@ -334,7 +373,8 @@ class IsolationInSource(unittest.TestCase):
 
     def test_the_only_things_it_stores_are_its_own_two_keys(self):
         src = tracker_source()
-        self.assertEqual(sorted(set(re.findall(r"localStorage\.(?:setItem|removeItem)\(([A-Za-z_]+)", src))), ["TRK_KEY", "TRK_SEG_KEY"])
+        self.assertEqual(sorted(set(re.findall(r"localStorage\.(?:setItem|removeItem)\(([A-Za-z_]+)", src))), ["TRK_FOLD_KEY", "TRK_KEY", "TRK_SEG_KEY"])
+        self.assertIn("var TRK_STAT_FLOOR = 13, TRK_FOLD_KEY = 'hph.tracker.fold'", src)
         self.assertIn("var TRK_KEY = FIX ? 'hph.tracker.fx.v1' : 'hph.tracker.v1';", src)
         self.assertIn("var TRK_SEG_KEY = 'hph.live.seg';", src)
 
@@ -395,7 +435,8 @@ class Screens(unittest.TestCase):
         page.requests = []
         page.on("request", lambda r: page.requests.append(r.url))
         seg_js = "localStorage.setItem('%s', '%s');" % (SEG_KEY, seg) if seg else ""
-        page.add_init_script("localStorage.setItem('pc_sport', '%s');%s%s" % (sport, seg_js, init))
+        page.init_js = "localStorage.setItem('pc_sport', '%s');%s%s" % (sport, seg_js, init)
+        page.add_init_script(page.init_js)
         page.goto("http://127.0.0.1:%d/index.html?fixture=livelong%s%s" % (self.server.server_address[1], query, hash_))
         page.wait_for_selector(".trkseg")
         page.wait_for_timeout(900)
@@ -413,10 +454,10 @@ class Screens(unittest.TestCase):
         page.locator("#trk-sheet .trkpr", has_text=name).first.click()
         page.wait_for_selector("#trk-sheet .trkchip[aria-pressed]")
 
-    def build(self, page, name, stat_label, side, line):
+    def build(self, page, name, stat, side, line):
         self.open_sheet(page)
         self.pick(page, name)
-        page.locator("#trk-sheet .trkchip", has_text=re.compile("^%s$" % re.escape(stat_label))).click()
+        page.click("#trk-sheet .trkchip[data-stat=%s]" % stat)
         page.locator("#trk-sheet .trkseg2 button", has_text=side).click()
         page.fill("#trk-sheet input[aria-label=Line]", line)
 
@@ -461,6 +502,7 @@ class Screens(unittest.TestCase):
         texts = []
         for sport in ("all", "nba", "nhl"):
             page = self.open(query="&trk=demo", sport=sport)
+            page.wait_for_function("/^Updated/.test(document.getElementById('trkupd').textContent)")
             texts.append(re.sub(r"\s+", " ", re.sub(r"Updated \d+s ago", "", self.text(page).replace("My Tracker shows both sports.", ""))))
         self.assertEqual(texts[0], texts[1])
         self.assertEqual(texts[1], texts[2])
@@ -477,7 +519,7 @@ class Screens(unittest.TestCase):
         page = self.open(query="&trk=demo")
         app = self.text(page)
         for want in ("Not started yet", "No stats yet" if False else "Can't find him in the live numbers.", "HIT", "LOST", "PUSH", "VOID", "Did not play", "ALIVE", "DEAD", "Leg 3 lost. Parlay is dead.",
-                     "Over 38.5 PRA", "26 / 38.5 PRA", "Under 40.5 PR", "Over 1.5 points", "Yesterday (2)", "Tonight's tracker: 2 hit, 2 missed."):
+                     "Over 38.5 PRA", "26 / 38.5 PRA", "Under 40.5 PR", "Over 1.5 points", "Yesterday (2)", "Tonight's tracker: 1 hit, 0 missed."):
             self.assertIn(want, app, want)
         self.assertEqual(page.locator("#app .pcard").count(), 2)
         self.assertEqual(page.evaluate("localStorage.getItem('%s')" % TRK_KEY), None)  # the demo is never saved
@@ -535,7 +577,7 @@ class Screens(unittest.TestCase):
         self.assertIn("Cleared.", self.text(page, "#trk-toast"))
         self.assertNotIn("Yesterday", self.text(page))
         self.assertEqual(page.locator("#app .tile.trk").count(), 1)
-        page.click("#trk-toast .trkt-u")
+        page.click("#trk-toast .trkt-u:has-text('Undo')")
         page.wait_for_selector(".trkyd")
         self.assertEqual(page.locator("#app .tile.trk").count(), 2)
 
@@ -570,12 +612,12 @@ class Screens(unittest.TestCase):
         page = self.open()
         self.open_sheet(page)
         self.pick(page, "Nikola Jokić")
-        self.assertEqual(page.locator("#trk-sheet .trkchip").all_inner_texts(), ["Points", "Rebounds", "Assists", "3-pointers made", "Pts + Reb + Ast", "Pts + Reb", "Pts + Ast", "Reb + Ast"])
+        self.assertEqual(page.locator("#trk-sheet .trkchip").all_inner_texts(), ["Points", "Rebounds", "Assists", "3-pointers made", "PRA\nPoints + Rebounds + Assists", "PR\nPoints + Rebounds", "PA\nPoints + Assists", "RA\nRebounds + Assists"])
         self.assertEqual(page.locator("#trk-sheet .trkgl").all_inner_texts(), ["Singles", "Combos"])
         page.click("#trk-sheet .trks-bk")
         page.fill("#trk-sheet .srch", "kucherov")
         self.pick(page, "Nikita Kucherov")
-        self.assertEqual(page.locator("#trk-sheet .trkchip").all_inner_texts(), ["Shots on goal", "Goals", "Assists", "Points"])
+        self.assertEqual(page.locator("#trk-sheet .trkchip").all_inner_texts(), ["Shots on goal", "Goals", "Assists", "Points\nGoals + Assists"])
         self.assertEqual(page.locator("#trk-sheet .trkgl").all_inner_texts(), ["Singles", "Combos"])
 
     def test_add_stays_disabled_until_a_stat_a_side_and_a_line_are_set(self):
@@ -585,7 +627,7 @@ class Screens(unittest.TestCase):
         add = page.locator("#trk-sheet .trks-f .trkadd")
         self.assertTrue(add.is_disabled())
         self.assertIn("Pick a stat, Over or Under, and a line.", self.text(page, "#trk-sheet .trks-f"))
-        page.locator("#trk-sheet .trkchip", has_text=re.compile("^Points$")).click()
+        page.click("#trk-sheet .trkchip[data-stat=points]")
         self.assertIn("Pick Over or Under and a line.", self.text(page, "#trk-sheet .trks-f"))
         page.locator("#trk-sheet .trkseg2 button", has_text="Over").click()
         self.assertTrue(add.is_disabled())
@@ -620,23 +662,24 @@ class Screens(unittest.TestCase):
 
     def test_a_combo_previews_its_name_and_the_sum_of_the_parts(self):
         page = self.open()
-        self.build(page, "Shai Gilgeous-Alexander", "Pts + Reb + Ast", "Over", "38.5")
+        self.build(page, "Shai Gilgeous-Alexander", "pra", "Over", "38.5")
         preview = self.text(page, "#trk-sheet .trkprev")
         self.assertIn("Over 38.5 PRA", preview)
+        self.assertIn("points + rebounds + assists", preview)
         self.assertIn("26 / 38.5 PRA", preview)
         self.assertIn("needs 13 more", preview)
 
     def test_adding_creates_one_tile_with_a_toast_and_undo_and_it_survives_a_reload(self):
         page = self.open()
-        self.build(page, "Nikola Jokić", "Points", "Under", "30.5")
+        self.build(page, "Nikola Jokić", "points", "Under", "30.5")
         self.assertIn("Right now: 27 points", self.text(page, "#trk-sheet"))
         self.add(page)
         self.assertEqual(page.locator("#app .tile.trk").count(), 1)
         self.assertIn("Added. Tracking Jokić points.", self.text(page, "#trk-toast"))
-        page.click("#trk-toast .trkt-u")
+        page.click("#trk-toast .trkt-u:has-text('Undo')")
         page.wait_for_timeout(200)
         self.assertEqual(page.locator("#app .tile.trk").count(), 0)
-        self.build(page, "Nikola Jokić", "Points", "Under", "30.5")
+        self.build(page, "Nikola Jokić", "points", "Under", "30.5")
         self.add(page)
         page.wait_for_timeout(400)
         page.reload()
@@ -647,9 +690,9 @@ class Screens(unittest.TestCase):
 
     def test_a_duplicate_is_blocked_and_changing_one_value_unblocks_it(self):
         page = self.open()
-        self.build(page, "Nikola Jokić", "Points", "Over", "30.5")
+        self.build(page, "Nikola Jokić", "points", "Over", "30.5")
         self.add(page)
-        self.build(page, "Nikola Jokić", "Points", "Over", "30.5")
+        self.build(page, "Nikola Jokić", "points", "Over", "30.5")
         self.assertEqual(self.text(page, "#trk-sheet .trkerr"), "You're already tracking that.")
         self.assertTrue(page.locator("#trk-sheet .trks-f .trkadd").is_disabled())
         page.fill("#trk-sheet input[aria-label=Line]", "31.5")
@@ -659,13 +702,13 @@ class Screens(unittest.TestCase):
         bets = [bet("b%02d" % i, "Jalen Brunson", "NYK", "WAS", "nba|NYK@WAS", "points", "over", 10.5 + i, pid="3934672") for i in range(20)]
         page = self.open(init=seed(bets))
         self.assertEqual(page.locator("#app .tile.trk").count(), 20)
-        self.build(page, "Nikola Jokić", "Points", "Over", "24.5")
+        self.build(page, "Nikola Jokić", "points", "Over", "24.5")
         self.assertEqual(self.text(page, "#trk-sheet .trkerr"), "20 is the max. Delete one to add another.")
         self.assertTrue(page.locator("#trk-sheet .trks-f .trkadd").is_disabled())
 
     def test_adding_a_bet_already_past_the_line_shows_hit_and_the_note(self):
         page = self.open()
-        self.build(page, "Nikola Jokić", "Points", "Over", "20.5")
+        self.build(page, "Nikola Jokić", "points", "Over", "20.5")
         self.add(page)
         tile = self.text(page, "#app .tile.trk")
         self.assertIn("HIT", tile)
@@ -673,7 +716,7 @@ class Screens(unittest.TestCase):
 
     def test_a_game_that_has_not_started_can_be_added(self):
         page = self.open()
-        self.build(page, "Jayson Tatum", "Rebounds", "Over", "8.5")
+        self.build(page, "Jayson Tatum", "rebounds", "Over", "8.5")
         self.add(page)
         tile = self.text(page, "#app .tile.trk")
         self.assertIn("Not started yet", tile)
@@ -695,7 +738,7 @@ class Screens(unittest.TestCase):
 
     def test_backing_out_of_step_two_saves_nothing_and_the_phone_back_button_closes_the_sheet(self):
         page = self.open()
-        self.build(page, "Nikola Jokić", "Points", "Over", "30.5")
+        self.build(page, "Nikola Jokić", "points", "Over", "30.5")
         page.click("#trk-sheet .trks-bk")
         self.assertEqual(page.locator("#app .tile.trk").count(), 0)
         page.go_back()
@@ -737,7 +780,7 @@ class Screens(unittest.TestCase):
         page.click("#app .trkx .trkbtn.del")
         self.assertEqual(page.locator("#app .tile.trk").count(), 1)
         self.assertIn("Deleted.", self.text(page, "#trk-toast"))
-        page.click("#trk-toast .trkt-u")
+        page.click("#trk-toast .trkt-u:has-text('Undo')")
         page.wait_for_timeout(200)
         self.assertEqual(page.locator("#app .tile.trk .trkn").all_inner_texts(), before)
 
@@ -824,7 +867,7 @@ class Screens(unittest.TestCase):
         page.click("#app .pcard >> text=Ungroup")
         page.wait_for_selector("#app .pcard", state="detached")
         self.assertIn("Ungrouped.", self.text(page, "#trk-toast"))
-        page.click("#trk-toast .trkt-u")
+        page.click("#trk-toast .trkt-u:has-text('Undo')")
         page.wait_for_selector("#app .pcard")
         page.locator("#app .pcard .trkn").first.click()
         page.click("#app .pcard .trkbtn.del")
@@ -874,7 +917,7 @@ class Screens(unittest.TestCase):
         blocked = "Storage.prototype.getItem = function () { throw new DOMException('blocked', 'SecurityError'); }; Storage.prototype.setItem = function () { throw new DOMException('blocked', 'SecurityError'); };"
         page = self.open(init=blocked, seg=None, hash_="#tracker")
         self.assertIn("Can't save on this browser. Your tracker will be gone when you close this tab.", self.text(page))
-        self.build(page, "Nikola Jokić", "Points", "Over", "30.5")
+        self.build(page, "Nikola Jokić", "points", "Over", "30.5")
         self.add(page)
         page.wait_for_timeout(500)
         self.assertEqual(page.locator("#app .tile.trk").count(), 1)
@@ -883,7 +926,7 @@ class Screens(unittest.TestCase):
     def test_a_full_phone_says_so_and_the_page_keeps_working(self):
         full = ("(function () { var set = Storage.prototype.setItem; Storage.prototype.setItem = function (k, v) { if (k === '%s') throw new DOMException('full', 'QuotaExceededError'); return set.call(this, k, v); }; })();" % TRK_KEY)
         page = self.open(init=full)
-        self.build(page, "Nikola Jokić", "Points", "Over", "30.5")
+        self.build(page, "Nikola Jokić", "points", "Over", "30.5")
         self.add(page)
         page.wait_for_selector("#trk-toast:not([hidden])")
         page.wait_for_timeout(500)
@@ -898,12 +941,368 @@ class Screens(unittest.TestCase):
         self.assertEqual(page.errors, [])
         self.assertIsNone(page.evaluate("localStorage.getItem('%s')" % TRK_KEY))
 
+    # collapse and expand
+    def test_the_tracker_header_collapses_to_a_one_line_summary_and_expands_again(self):
+        page = self.open(query="&trk=demo")
+        fold = page.locator(".trkfold")
+        self.assertEqual(fold.get_attribute("aria-expanded"), "true")
+        self.assertRegex(fold.inner_text(), r"^My Tracker \(\d+\)")
+        self.assertGreater(page.locator("#app .tile.trk").count(), 5)
+        fold.click()
+        self.assertEqual(page.get_attribute(".trkfold", "aria-expanded"), "false")
+        self.assertEqual(page.locator("#app .tile.trk, #app .pcard, .trkyd, #trkupd").count(), 0)
+        self.assertIn("alive", self.text(page, ".trkfold"))
+        self.assertRegex(self.text(page, ".trkfold"), r"\d+ alive, \d+ hit, \d+ missed")
+        self.assertIn("MY TRACKER. Your own notes.", self.text(page, ".trkban"))
+        self.assertEqual(page.locator(".trkadd").count(), 1)
+        page.click(".trkfold")
+        self.assertGreater(page.locator("#app .tile.trk").count(), 5)
+
+    def test_the_fold_choice_is_remembered_and_the_default_is_expanded(self):
+        page = self.open(init=seed([bet("a", "Nikola Jokić", "DEN", "PHX", "nba|DEN@PHX", "points", "over", 30.5, pid="3112335")]))
+        self.assertEqual(page.get_attribute(".trkfold", "aria-expanded"), "true")
+        self.assertIsNone(page.evaluate("localStorage.getItem('%s')" % FOLD_KEY))
+        page.click(".trkfold")
+        self.assertEqual(page.evaluate("localStorage.getItem('%s')" % FOLD_KEY), "1")
+        page.reload()
+        page.wait_for_selector(".trkfold")
+        self.assertEqual(page.get_attribute(".trkfold", "aria-expanded"), "false")
+        self.assertEqual(page.locator("#app .tile.trk").count(), 0)
+        page.click(".trkfold")
+        page.reload()
+        page.wait_for_selector(".tile.trk")
+        self.assertEqual(page.evaluate("localStorage.getItem('%s')" % FOLD_KEY), "0")
+
+    def test_a_blocked_phone_still_folds_in_memory(self):
+        blocked = "Storage.prototype.getItem = function () { throw new DOMException('blocked', 'SecurityError'); }; Storage.prototype.setItem = function () { throw new DOMException('blocked', 'SecurityError'); };"
+        page = self.open(init=blocked, seg=None, hash_="#tracker", query="&trk=demo")
+        page.click(".trkfold")
+        self.assertEqual(page.get_attribute(".trkfold", "aria-expanded"), "false")
+        self.assertEqual(page.errors, [])
+
+    def test_track_a_stat_stays_reachable_when_collapsed_and_adding_expands_with_a_clear_toast(self):
+        page = self.open(init=seed([bet("a", "Jalen Brunson", "NYK", "WAS", "nba|NYK@WAS", "assists", "over", 5.5, pid="3934672")]) + "localStorage.setItem('%s', '1');" % FOLD_KEY)
+        self.assertEqual(page.get_attribute(".trkfold", "aria-expanded"), "false")
+        self.build(page, "Nikola Jokić", "points", "Under", "30.5")
+        self.add(page)
+        self.assertEqual(page.get_attribute(".trkfold", "aria-expanded"), "true")
+        self.assertEqual(page.locator("#app .tile.trk").count(), 2)
+        toast = self.text(page, "#trk-toast")
+        self.assertIn("Added. Tracking Jokić points.", toast)
+        self.assertIn("Show", toast)
+        self.assertIn("Undo", toast)
+        self.assertEqual(page.evaluate("localStorage.getItem('%s')" % FOLD_KEY), "0")
+
+    def test_the_fold_never_changes_what_is_polled(self):
+        plan = re.search(r"function trkPlan\(\) \{[\s\S]*?\n\}\n", tracker_source()).group(0)
+        poll = re.search(r"function trkPoll\(\) \{[\s\S]*?\n\}\n", tracker_source()).group(0)
+        go = re.search(r"function trkGo\(entry\) \{[\s\S]*?\n\}\n", tracker_source()).group(0)
+        for body in (plan, poll, go):
+            self.assertNotIn("folded", body)
+            self.assertNotIn("TRK_FOLD_KEY", body)
+
+    def test_a_folded_tracker_keeps_polling(self):
+        page = self.open(query="&trk=demo")
+        page.click(".trkfold")
+        page.click(".trkfold")
+        self.assertRegex(self.text(page, "#trkupd"), r"^Updated \d+s ago")
+
+    # the polish pass
+    def test_the_select_bar_is_one_row_at_320_and_the_max_toast_sits_above_it(self):
+        page = self.open(init=seed(self.PARLAY_BETS), width=320)
+        page.click("text=Make a parlay")
+        page.wait_for_selector("#trk-bar")
+        mids = page.evaluate("Array.from(document.querySelectorAll('#trk-bar > *')).map((e) => Math.round(e.getBoundingClientRect().top + e.getBoundingClientRect().height / 2))")
+        self.assertEqual(len(set(mids)), 1, mids)
+        right = page.evaluate("Math.max.apply(null, Array.from(document.querySelectorAll('#trk-bar > *')).map((e) => e.getBoundingClientRect().right)) <= window.innerWidth")
+        self.assertTrue(right)
+        for name in ("Tatum", "Kucherov", "Booker", "Jokić"):
+            page.locator("#app .tile.trk", has_text=name).first.click()
+        page.wait_for_selector("#trk-toast:not([hidden])")
+        toast = page.locator("#trk-toast").bounding_box()
+        bar = page.locator("#trk-bar").bounding_box()
+        self.assertLessEqual(toast["y"] + toast["height"], bar["y"] + 1)
+
+    def test_adding_a_bet_far_down_the_list_scrolls_to_it_pulses_it_and_the_toast_can_show_it(self):
+        bets = [bet("b%02d" % i, "Jalen Brunson", "NYK", "WAS", "nba|NYK@WAS", "points", "over", 10.5 + i, pid="3934672") for i in range(8)]
+        page = self.open(init=seed(bets))
+        self.build(page, "Nikola Jokić", "points", "Under", "30.5")
+        self.add(page)
+        page.wait_for_timeout(900)
+        added = page.locator("#app .tile.trk", has_text="Under 30.5 points")
+        self.assertEqual(added.count(), 1)
+        box = added.bounding_box()
+        self.assertTrue(0 <= box["y"] and box["y"] + box["height"] <= 900, box)
+        self.assertIn("pulse", added.get_attribute("class"))
+        page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+        page.click("#trk-toast >> text=Show")
+        page.wait_for_timeout(900)
+        box = added.bounding_box()
+        self.assertTrue(0 <= box["y"] <= 900, box)
+
+    def test_an_empty_players_list_ends_in_no_games_after_a_bounded_wait(self):
+        page = self.browser.new_context(viewport={"width": 380, "height": 900}).new_page()
+        page.route("**/tracker.json*", lambda route: route.fulfill(content_type="application/json", body=json.dumps({"day": DAY, "games": {}, "boxes": {}, "players": [], "demo": {}})))
+        page.add_init_script("localStorage.setItem('pc_sport', 'nba'); localStorage.setItem('%s', 'tracker');" % SEG_KEY)
+        page.goto("http://127.0.0.1:%d/index.html?fixture=livelong&feed=allfail#live" % self.server.server_address[1])
+        page.wait_for_selector(".trkadd")
+        page.click(".trkadd")
+        page.wait_for_selector("#trk-sheet")
+        page.wait_for_timeout(5200)
+        self.assertIn("No games tonight. Come back on a game day.", self.text(page, "#trk-sheet"))
+        self.assertNotIn("Loading tonight's players", self.text(page, "#trk-sheet"))
+
+    def test_combos_are_named_the_same_in_the_picker_the_preview_and_the_tile(self):
+        page = self.open()
+        self.open_sheet(page)
+        self.pick(page, "Shai Gilgeous-Alexander")
+        chip = self.text(page, "#trk-sheet .trkchip[data-stat=pra]")
+        self.assertEqual(chip, "PRA\nPoints + Rebounds + Assists")
+        page.click("#trk-sheet .trkchip[data-stat=pra]")
+        page.locator("#trk-sheet .trkseg2 button", has_text="Over").click()
+        page.fill("#trk-sheet input[aria-label=Line]", "38.5")
+        preview = self.text(page, "#trk-sheet .trkprev")
+        self.add(page)
+        tile = self.text(page, "#app .tile.trk")
+        for text in (preview, tile):
+            self.assertIn("Over 38.5 PRA", text)
+            self.assertIn("points + rebounds + assists", text)
+        page.click("#app .tile.trk .trkn")
+        page.click("#app .trkx .trkbtn.del")
+        page.click("#trk-toast .trkt-u:has-text('Undo')")
+        page = self.open()
+        self.open_sheet(page)
+        self.pick(page, "Nikita Kucherov")
+        self.assertEqual(self.text(page, "#trk-sheet .trkchip[data-stat=points]"), "Points\nGoals + Assists")
+
+    def test_settled_tiles_are_dimmed_to_the_specs_point_eight_five(self):
+        page = self.open(query="&trk=demo")
+        opacity = page.evaluate("Array.from(document.querySelectorAll('#app .tile.trk.fin')).map((e) => getComputedStyle(e).opacity)")
+        self.assertTrue(opacity and all(o == "0.85" for o in opacity), opacity)
+        self.assertEqual(page.evaluate("getComputedStyle(document.querySelector('#app .pcard.dead')).opacity"), "0.8")
+
+    # two tabs on one phone
+    def new_tab(self, page, query=""):
+        other = page.context.new_page()
+        other.errors = []
+        other.on("pageerror", lambda e: other.errors.append(str(e)))
+        other.init_js = page.init_js
+        other.add_init_script(page.init_js)
+        other.goto("http://127.0.0.1:%d/index.html?fixture=livelong%s#live" % (self.server.server_address[1], query))
+        other.wait_for_selector(".trkseg")
+        other.wait_for_timeout(700)
+        return other
+
+    def saved_ids(self, page):
+        raw = page.evaluate("localStorage.getItem('%s')" % TRK_KEY)
+        return sorted(b["id"] for b in json.loads(raw)["bets"]) if raw else []
+
+    def hide(self, page):
+        page.evaluate("window.dispatchEvent(new Event('pagehide'))")
+        page.evaluate("Object.defineProperty(document, 'hidden', { configurable: true, get: () => true }); document.dispatchEvent(new Event('visibilitychange'));")
+
+    def test_a_stale_tab_that_changed_nothing_never_erases_what_another_tab_saved(self):
+        a = self.open()
+        b = self.new_tab(a)
+        self.build(b, "Nikola Jokić", "points", "Over", "30.5")
+        self.add(b)
+        b.wait_for_timeout(600)
+        self.assertEqual(len(self.saved_ids(a)), 1)
+        self.hide(a)
+        a.close(run_before_unload=True)
+        b.wait_for_timeout(300)
+        self.assertEqual(len(self.saved_ids(b)), 1)
+        c = self.new_tab(b)
+        self.assertEqual(c.locator("#app .tile.trk").count(), 1)
+
+    def test_hiding_and_closing_tabs_never_empty_a_saved_tracker(self):
+        bets = [bet("a", "Nikola Jokić", "DEN", "PHX", "nba|DEN@PHX", "points", "over", 30.5, pid="3112335")]
+        page = self.open(init=seed(bets))
+        for _ in range(3):
+            self.hide(page)
+        page.wait_for_timeout(300)
+        self.assertEqual(self.saved_ids(page), ["a"])
+
+    def test_two_tabs_adding_at_once_keep_both_bets_even_when_one_misses_the_storage_event(self):
+        a = self.open()
+        b = self.new_tab(a)
+        b.evaluate("window.addEventListener('storage', (e) => e.stopImmediatePropagation(), true)")
+        self.build(a, "Nikola Jokić", "points", "Over", "30.5")
+        self.add(a)
+        self.build(b, "Devin Booker", "points", "Over", "20.5")
+        self.add(b)
+        b.wait_for_timeout(600)
+        self.assertEqual(len(self.saved_ids(b)), 2)
+        self.assertEqual(b.locator("#app .tile.trk").count(), 2)
+        a.wait_for_timeout(600)
+        self.assertEqual(a.locator("#app .tile.trk").count(), 2)
+
+    def test_a_bet_added_in_one_tab_shows_up_in_the_other_without_a_reload(self):
+        a = self.open()
+        b = self.new_tab(a)
+        self.build(a, "Nikola Jokić", "points", "Over", "30.5")
+        self.add(a)
+        b.wait_for_selector("#app .tile.trk")
+        self.assertEqual(b.locator("#app .tile.trk").count(), 1)
+
+    def test_a_delete_in_one_tab_stays_deleted_when_the_other_tab_changes_something_later(self):
+        bets = [bet("a", "Nikola Jokić", "DEN", "PHX", "nba|DEN@PHX", "points", "over", 30.5, pid="3112335"), bet("b", "Devin Booker", "PHX", "DEN", "nba|DEN@PHX", "points", "over", 20.5, pid="3136193", home=True)]
+        a = self.open(init=seed(bets))
+        b = self.new_tab(a)
+        b.evaluate("window.addEventListener('storage', (e) => e.stopImmediatePropagation(), true)")
+        a.locator("#app .tile.trk .trkn", has_text="Jokić").click()
+        a.click("#app .trkx .trkbtn.del")
+        a.wait_for_timeout(600)
+        self.assertEqual(self.saved_ids(a), ["b"])
+        self.build(b, "Jayson Tatum", "rebounds", "Over", "8.5")
+        self.add(b)
+        b.wait_for_timeout(600)
+        saved = self.saved_ids(b)
+        self.assertEqual(len(saved), 2)
+        self.assertNotIn("a", saved)
+
+    def test_a_delete_in_one_tab_removes_the_bet_in_the_other_when_it_hears_about_it(self):
+        bets = [bet("a", "Nikola Jokić", "DEN", "PHX", "nba|DEN@PHX", "points", "over", 30.5, pid="3112335"), bet("b", "Devin Booker", "PHX", "DEN", "nba|DEN@PHX", "points", "over", 20.5, pid="3136193", home=True)]
+        a = self.open(init=seed(bets))
+        b = self.new_tab(a)
+        a.locator("#app .tile.trk .trkn", has_text="Jokić").click()
+        a.click("#app .trkx .trkbtn.del")
+        b.wait_for_function("document.querySelectorAll('#app .tile.trk').length === 1")
+        self.assertNotIn("Jokić", self.text(b))
+
+    def test_the_newer_edit_wins_when_both_tabs_edit_the_same_bet(self):
+        bets = [bet("a", "Nikola Jokić", "DEN", "PHX", "nba|DEN@PHX", "points", "over", 30.5, pid="3112335")]
+        a = self.open(init=seed(bets))
+        b = self.new_tab(a)
+        a.locator("#app .tile.trk .trkn").click()
+        a.fill("#app .trkx input[aria-label=Line]", "26.5")
+        a.click("#app .trkx .trkbtn.solid")
+        a.wait_for_timeout(600)
+        b.wait_for_timeout(600)
+        self.assertIn("Over 26.5 points", self.text(b))
+
+    # a duplicate is refused in any state today
+    def test_the_same_bet_is_refused_after_it_has_hit_or_lost_but_another_side_or_line_is_fine(self):
+        hit = {"result": "W", "actual": 27, "at": 1, "manual": False, "why": ""}
+        page = self.open(init=seed([bet("a", "Nikola Jokić", "DEN", "PHX", "nba|DEN@PHX", "points", "over", 24.5, pid="3112335", settled=hit)]))
+        self.build(page, "Nikola Jokić", "points", "Over", "24.5")
+        self.assertEqual(self.text(page, "#trk-sheet .trkerr"), "You're already tracking that.")
+        self.assertTrue(page.locator("#trk-sheet .trks-f .trkadd").is_disabled())
+        page.fill("#trk-sheet input[aria-label=Line]", "25.5")
+        self.assertFalse(page.locator("#trk-sheet .trks-f .trkadd").is_disabled())
+        page.fill("#trk-sheet input[aria-label=Line]", "24.5")
+        page.locator("#trk-sheet .trkseg2 button", has_text="Under").click()
+        self.assertFalse(page.locator("#trk-sheet .trks-f .trkadd").is_disabled())
+
+    def test_a_copy_from_yesterday_does_not_block_todays_bet(self):
+        old = {"result": "W", "actual": 27, "at": 1, "manual": False, "why": ""}
+        page = self.open(init=seed([bet("a", "Nikola Jokić", "DEN", "PHX", "nba|DEN@PHX", "points", "over", 24.5, pid="3112335", day="2026-11-22", settled=old)]))
+        self.build(page, "Nikola Jokić", "points", "Over", "24.5")
+        self.assertEqual(self.text(page, "#trk-sheet .trkerr"), "")
+        self.assertFalse(page.locator("#trk-sheet .trks-f .trkadd").is_disabled())
+
+    def test_editing_a_bet_into_an_identical_one_is_refused(self):
+        bets = [bet("a", "Nikola Jokić", "DEN", "PHX", "nba|DEN@PHX", "points", "over", 30.5, pid="3112335"), bet("b", "Nikola Jokić", "DEN", "PHX", "nba|DEN@PHX", "points", "over", 31.5, pid="3112335")]
+        page = self.open(init=seed(bets))
+        page.locator("#app .tile.trk .trkn").nth(1).click()
+        page.fill("#app .trkx input[aria-label=Line]", "30.5")
+        page.click("#app .trkx .trkbtn.solid")
+        self.assertEqual(self.text(page, "#app .trkx .trkerr"), "You're already tracking that.")
+
+    # tonight's tracker counts finished results only
+    def test_the_tonight_line_counts_finished_games_only(self):
+        locked = {"result": "W", "actual": 27, "at": 1, "manual": False, "why": ""}
+        page = self.open(init=seed([bet("a", "Nikola Jokić", "DEN", "PHX", "nba|DEN@PHX", "points", "over", 24.5, pid="3112335", settled=locked)]))
+        self.assertIn("HIT", self.text(page))
+        self.assertNotIn("Tonight's tracker", self.text(page))
+        page = self.open(init=seed([bet("a", "Jalen Brunson", "NYK", "WAS", "nba|NYK@WAS", "assists", "over", 5.5, pid="3934672")]))
+        self.assertIn("Tonight's tracker: 1 hit, 0 missed.", self.text(page))
+
+    # the cases QA could not reach
+    def test_a_lost_under_and_a_missed_over_at_the_final_show_lost_and_count_as_missed(self):
+        page = self.open(init=seed([bet("a", "Jalen Brunson", "NYK", "WAS", "nba|NYK@WAS", "assists", "over", 8.5, pid="3934672"), bet("b", "Jalen Brunson", "NYK", "WAS", "nba|NYK@WAS", "points", "under", 20.5, pid="3934672")]))
+        self.assertEqual(page.locator("#app .stmp.L").count(), 2)
+        self.assertIn("Tonight's tracker: 0 hit, 2 missed.", self.text(page))
+
+    def test_reduced_motion_turns_off_the_sheet_slide_and_the_new_tile_pulse(self):
+        ctx = self.browser.new_context(viewport={"width": 380, "height": 900}, reduced_motion="reduce")
+        page = ctx.new_page()
+        page.add_init_script("localStorage.setItem('pc_sport', 'nba'); localStorage.setItem('%s', 'tracker');" % SEG_KEY)
+        page.goto("http://127.0.0.1:%d/index.html?fixture=livelong#live" % self.server.server_address[1])
+        page.wait_for_selector(".trkadd")
+        page.click(".trkadd")
+        page.wait_for_selector("#trk-sheet .trkpr")
+        self.assertEqual(page.evaluate("getComputedStyle(document.querySelector('#trk-sheet .trks-p')).animationName"), "none")
+        self.assertEqual(page.evaluate("getComputedStyle(document.querySelector('#trk-sheet .trks-b')).animationName"), "none")
+        self.pick(page, "Nikola Jokić")
+        page.click("#trk-sheet .trkchip[data-stat=points]")
+        page.locator("#trk-sheet .trkseg2 button", has_text="Over").click()
+        page.fill("#trk-sheet input[aria-label=Line]", "30.5")
+        self.add(page)
+        pulse = page.evaluate("(() => { const s = getComputedStyle(document.querySelector('#app .tile.trk.pulse')); return [s.animationName, s.outlineStyle]; })()")
+        self.assertNotEqual(pulse[0], "trk-pulse")
+        self.assertEqual(pulse[1], "solid")
+        self.assertEqual(page.evaluate("getComputedStyle(document.getElementById('trk-toast')).animationName"), "none")
+        ctx.close()
+
+    def test_with_the_keyboard_open_the_add_button_and_the_line_field_stay_visible(self):
+        page = self.open()
+        self.open_sheet(page)
+        self.pick(page, "Nikola Jokić")
+        page.click("#trk-sheet .trkchip[data-stat=points]")
+        page.locator("#trk-sheet .trkseg2 button", has_text="Over").click()
+        page.set_viewport_size({"width": 380, "height": 440})
+        page.click("#trk-sheet input[aria-label=Line]")
+        page.fill("#trk-sheet input[aria-label=Line]", "30.5")
+        page.wait_for_timeout(300)
+        add = page.locator("#trk-sheet .trks-f .trkadd").bounding_box()
+        field = page.locator("#trk-sheet input[aria-label=Line]").bounding_box()
+        self.assertLessEqual(add["y"] + add["height"], 440)
+        self.assertGreaterEqual(add["y"], 0)
+        self.assertTrue(0 <= field["y"] and field["y"] + field["height"] <= add["y"] + 1, (field, add))
+
+    def test_the_toast_clears_by_itself_and_never_hides_the_parlay_buttons_while_it_shows(self):
+        page = self.open(init=seed(self.PARLAY_BETS))
+        self.make_parlay(page, ["Tatum", "Kucherov"])
+        page.click("#trk-bar .trkbtn.solid")
+        page.wait_for_selector("#app .pcard")
+        page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+        page.wait_for_timeout(200)
+        covered = page.evaluate("""(() => { const b = document.querySelector('#app .pcard .trkbtn').getBoundingClientRect(), t = document.getElementById('trk-toast');
+          if (t.hidden) return false; const r = t.getBoundingClientRect(); return !(b.bottom <= r.top || b.top >= r.bottom); })()""")
+        self.assertFalse(covered)
+        page.wait_for_timeout(5600)
+        self.assertTrue(page.locator("#trk-toast").is_hidden())
+        self.assertEqual(page.evaluate("document.body.classList.contains('trk-toast')"), False)
+
+    def test_ungroup_undo_and_a_second_undo_window_each_restore_the_right_thing(self):
+        page = self.open(init=seed(self.PARLAY_BETS))
+        self.make_parlay(page, ["Tatum", "Kucherov"])
+        page.click("#trk-bar .trkbtn.solid")
+        page.wait_for_selector("#app .pcard")
+        page.click("#trk-toast .trkt-u:has-text('Undo')")
+        page.wait_for_selector("#app .pcard", state="detached")
+        self.assertEqual(page.locator("#app .tile.trk").count(), 5)
+        self.make_parlay(page, ["Tatum", "Kucherov"])
+        page.click("#trk-bar .trkbtn.solid")
+        page.wait_for_selector("#app .pcard")
+        page.click("#app .pcard >> text=Ungroup")
+        page.click("#trk-toast .trkt-u:has-text('Undo')")
+        page.wait_for_selector("#app .pcard")
+        self.assertEqual(page.locator("#app .pcard .leg").count(), 2)
+
+    def test_the_twenty_bet_cap_blocks_the_sheet_and_the_unsettled_unresolved_state_has_both_buttons(self):
+        page = self.open(query="&trk=demo")
+        page.click(".trkyd")
+        self.assertEqual(page.locator("#app .trkmk .trkbtn").all_inner_texts(), ["Hit", "Missed"])
+        self.assertEqual(page.locator("#app .stmp", has_text="?").count(), 1)
+
     # isolation
     def test_the_tracker_only_writes_its_own_keys_and_only_asks_for_its_own_feed(self):
         spy = "(function () { window.__keys = []; var set = Storage.prototype.setItem; Storage.prototype.setItem = function (k, v) { window.__keys.push(k); return set.call(this, k, v); }; })();"
         page = self.open(init=spy)
         settled = len(page.requests)
-        self.build(page, "Nikola Jokić", "Points", "Over", "30.5")
+        self.build(page, "Nikola Jokić", "points", "Over", "30.5")
         self.add(page)
         page.click("text=Delete everything in My Tracker")
         page.click("#app .trkconf .trkbtn.del")
@@ -911,7 +1310,7 @@ class Screens(unittest.TestCase):
         new = [u for u in page.requests[settled:] if "espncdn" not in u and "/fonts/" not in u]
         self.assertTrue(all("tracker.json" in u for u in new), new)
         writes = set(page.evaluate("window.__keys"))
-        self.assertLessEqual(writes - {"pc_seen_fx"}, {TRK_KEY, SEG_KEY, "pc_sport"})
+        self.assertLessEqual(writes - {"pc_seen_fx"}, {TRK_KEY, SEG_KEY, FOLD_KEY, "pc_sport"})
 
     def test_the_odds_player_list_reads_the_committed_file_and_does_not_write_it(self):
         src = tracker_source()

@@ -16,7 +16,7 @@
   for (const el of document.querySelectorAll('#app *, #tabs *, #trk-sheet *, #trk-toast *, #trk-bar *')) {
     if (el.closest('.sr, [hidden]')) continue;
     const cs = getComputedStyle(el), box = el.getBoundingClientRect();
-    if (cs.display === 'none' || cs.visibility === 'hidden' || (!box.width && !box.height)) continue;
+    if (cs.display === 'none' || cs.visibility === 'hidden' || (!box.width && !box.height) || el.tagName === 'IMG') continue;  /* a photo holds no words, and its border makes it read as clipped while it loads */
     const own = Array.from(el.childNodes).filter((n) => n.nodeType === 3).map((n) => n.textContent).join('');
     const text = (el.textContent || '').trim();
 

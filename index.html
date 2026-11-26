@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -559,6 +559,13 @@ button.tr.open{background:var(--selected-bg);border-bottom-color:transparent}
 .trkseg{display:flex;gap:2px;margin-top:12px;padding:2px;border-radius:24px;background:var(--line)}
 .trkseg button{flex:1 1 auto;display:flex;align-items:center;justify-content:center;min-height:44px;padding:4px 10px;border-radius:22px;font:600 15px/20px var(--body);color:var(--muted);text-align:center}
 .trkseg button[aria-pressed=true]{background:var(--surface);color:var(--fg);box-shadow:0 1px 2px rgba(0,0,0,.12)}
+.trkfold{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;min-height:48px;margin-top:10px;padding:6px 0;border-bottom:1px solid var(--line2);font:700 16px/22px var(--body);color:var(--fg)}
+.trkfold-t{display:flex;flex-direction:column;min-width:0}
+.trkfold-s{font:400 13px/18px var(--body);color:var(--fg2)}
+.trkfold .chev{transition:transform .15s}
+.trkfold .chev.on{transform:rotate(90deg)}
+.trksub{display:block;font:400 13px/18px var(--body);color:var(--muted)}
+.trkchip{flex-direction:column;gap:0}
 .trkhelp{margin:8px 0 0;font:400 13px/18px var(--body);color:var(--muted)}
 .trkban{margin-top:10px;padding:10px 12px;border:1.5px dashed var(--my-edge);border-radius:8px;background:var(--my-soft);font:400 13px/18px var(--body);color:var(--fg)}
 .trkban b{color:var(--my-text);font-weight:700;letter-spacing:.02em}
@@ -646,6 +653,13 @@ button.tr.open{background:var(--selected-bg);border-bottom-color:transparent}
 @media (min-width:640px){.trkbar{left:calc(var(--w) + 24px)}}
 .trkcnt{flex:1 1 auto;font:600 15px/20px var(--body);text-align:center}
 body.trk-sel .wrap{padding-bottom:calc(88px + var(--sab))}
+body.trk-sel .trkt{bottom:calc(84px + var(--sab))}
+body.trk-toast .wrap{padding-bottom:calc(96px + var(--sab))}
+#trkupd{font-size:13px;line-height:18px}
+.trkhdr .sport-sw button{font-size:13px}
+.trkbar{flex-wrap:nowrap;gap:6px}
+.trkbar .trkbtn{flex:none;padding:0 10px;font-size:14px}
+.trkcnt{min-width:0;font-size:14px}
 .trkt{position:fixed;z-index:30;left:calc(var(--w) + var(--sal) + 10px);right:10px;bottom:calc(14px + var(--sab));display:flex;align-items:center;justify-content:space-between;gap:8px;max-width:520px;padding:4px 4px 4px 14px;border:1px solid var(--line2);border-radius:10px;background:var(--raise);box-shadow:0 8px 24px rgba(0,0,0,.45);font:600 14px/20px var(--body);animation:trk-fade .2s ease-out}
 .trkt-m{min-width:0;padding:6px 0}
 .trkt-u{flex:none;min-width:56px;min-height:44px;padding:0 12px;color:var(--my-text);font:700 15px/20px var(--body);text-align:center}
@@ -682,6 +696,7 @@ body.trk-lock{overflow:hidden}
 .trkprev{margin-top:14px}
 .trkprev .tile{cursor:default}
 @media (prefers-reduced-motion:reduce){
+  .trkfold .chev{transition:none}
   .trks-p,.trks-b,.trkt,.pulse{animation:none}
   .pulse{outline:2px solid var(--my-edge);outline-offset:-1px;animation:trk-hold 2s steps(1) 1 forwards}
   .trkyd .chev{transition:none}
@@ -3820,14 +3835,14 @@ var TRK_SEG_KEY = 'hph.live.seg';
 var TRK_MAX_BETS = 20, TRK_MAX_PARLAYS = 6, TRK_MAX_LEGS = 3, TRK_KEEP_DAYS = 2, TRK_LIST_MAX = 60;
 var TRK_LINE_MIN = 0.5, TRK_LINE_MAX = 199.5, TRK_LINE_STEP = 0.5;
 var TRK_SAVE_MS = 250, TRK_UNDO_MS = 5000, TRK_NOTE_MS = 4000, TRK_DAY_CUTOFF_H = 5, TRK_NAME_MAX = 60;
-var TRK_STAT_FLOOR = 13;
-var TRK_NBA = [{ k: 'points', label: 'Points', noun: 'points', parts: ['points'], grp: 'Singles' }, { k: 'rebounds', label: 'Rebounds', noun: 'rebounds', parts: ['rebounds'], grp: 'Singles' }, { k: 'assists', label: 'Assists', noun: 'assists', parts: ['assists'], grp: 'Singles' }, { k: 'threes', label: '3-pointers made', noun: 'threes', parts: ['threes'], grp: 'Singles' }, { k: 'pra', label: 'Pts + Reb + Ast', noun: 'PRA', parts: ['points', 'rebounds', 'assists'], grp: 'Combos' }, { k: 'pr', label: 'Pts + Reb', noun: 'PR', parts: ['points', 'rebounds'], grp: 'Combos' }, { k: 'pa', label: 'Pts + Ast', noun: 'PA', parts: ['points', 'assists'], grp: 'Combos' }, { k: 'ra', label: 'Reb + Ast', noun: 'RA', parts: ['rebounds', 'assists'], grp: 'Combos' }];
-var TRK_NHL = [{ k: 'shots', label: 'Shots on goal', noun: 'shots on goal', parts: ['shots'], grp: 'Singles' }, { k: 'goals', label: 'Goals', noun: 'goals', parts: ['goals'], grp: 'Singles' }, { k: 'assists', label: 'Assists', noun: 'assists', parts: ['assists'], grp: 'Singles' }, { k: 'points', label: 'Points', noun: 'points', parts: ['goals', 'assists'], grp: 'Combos' }];
+var TRK_STAT_FLOOR = 13, TRK_FOLD_KEY = 'hph.tracker.fold', TRK_EMPTY_WAIT_MS = 4000;
+var TRK_NBA = [{ k: 'points', label: 'Points', noun: 'points', parts: ['points'], grp: 'Singles' }, { k: 'rebounds', label: 'Rebounds', noun: 'rebounds', parts: ['rebounds'], grp: 'Singles' }, { k: 'assists', label: 'Assists', noun: 'assists', parts: ['assists'], grp: 'Singles' }, { k: 'threes', label: '3-pointers made', noun: 'threes', parts: ['threes'], grp: 'Singles' }, { k: 'pra', label: 'PRA', sub: 'Points + Rebounds + Assists', noun: 'PRA', parts: ['points', 'rebounds', 'assists'], grp: 'Combos' }, { k: 'pr', label: 'PR', sub: 'Points + Rebounds', noun: 'PR', parts: ['points', 'rebounds'], grp: 'Combos' }, { k: 'pa', label: 'PA', sub: 'Points + Assists', noun: 'PA', parts: ['points', 'assists'], grp: 'Combos' }, { k: 'ra', label: 'RA', sub: 'Rebounds + Assists', noun: 'RA', parts: ['rebounds', 'assists'], grp: 'Combos' }];
+var TRK_NHL = [{ k: 'shots', label: 'Shots on goal', noun: 'shots on goal', parts: ['shots'], grp: 'Singles' }, { k: 'goals', label: 'Goals', noun: 'goals', parts: ['goals'], grp: 'Singles' }, { k: 'assists', label: 'Assists', noun: 'assists', parts: ['assists'], grp: 'Singles' }, { k: 'points', label: 'Points', sub: 'Goals + Assists', noun: 'points', parts: ['goals', 'assists'], grp: 'Combos' }];
 var TRK_STAMP = { W: ['HIT', 'W'], L: ['LOST', 'L'], PUSH: ['PUSH', ''], VOID: ['VOID', ''] };
 var TRK_TEAMS_NBA = 'ATL Hawks|BOS Celtics|BKN Nets|CHA Hornets|CHI Bulls|CLE Cavaliers|DAL Mavericks|DEN Nuggets|DET Pistons|GSW Warriors|HOU Rockets|IND Pacers|LAC Clippers|LAL Lakers|MEM Grizzlies|MIA Heat|MIL Bucks|MIN Timberwolves|NOP Pelicans|NYK Knicks|OKC Thunder|ORL Magic|PHI 76ers|PHX Suns|POR Trail Blazers|SAC Kings|SAS Spurs|TOR Raptors|UTA Jazz|WAS Wizards';
 var TRK_TEAMS_NHL = 'ANA Ducks|BOS Bruins|BUF Sabres|CGY Flames|CAR Hurricanes|CHI Blackhawks|COL Avalanche|CBJ Blue Jackets|DAL Stars|DET Red Wings|EDM Oilers|FLA Panthers|LAK Kings|MIN Wild|MTL Canadiens|NSH Predators|NJD Devils|NYI Islanders|NYR Rangers|OTT Senators|PHI Flyers|PIT Penguins|SEA Kraken|SJS Sharks|STL Blues|TBL Lightning|TOR Maple Leafs|UTA Mammoth|VAN Canucks|VGK Golden Knights|WSH Capitals|WPG Jets';
 var F_ISO = dtf({ year: 'numeric', month: '2-digit', day: '2-digit' });
-var TK = { bets: [], parlays: [], seg: 'picks', open: null, edit: null, select: null, sheet: null, mem: false, demo: false, confirmAll: false, yOpen: false,
+var TK = { bets: [], parlays: [], base: {}, syncAt: 0, dirty: false, seg: 'picks', folded: false, plDoneAt: 0, open: null, edit: null, select: null, sheet: null, mem: false, demo: false, confirmAll: false, yOpen: false,
           games: {}, box: {}, done: {}, okSp: {}, src: '', at: null, fail: false, lastTry: null, busy: false, next: null, stopped: false,
           players: [], plState: 'idle', fx: null, fxDay: '', ver: 0, saveT: null, noteT: null, rechecked: false };
 
@@ -3869,9 +3884,9 @@ function trkStepLine(text, dir) {
 }
 function trkSamePlayer(a, b) { return a.sport === b.sport && ((!!a.pid && a.pid === b.pid) || normName(a.name) === normName(b.name)); }
 function trkSameStat(a, b) { return trkSamePlayer(a, b) && a.stat === b.stat; }
-/* the same bet already in play (a bet that has settled is not in play) */
+/* the same player, stat, side and line already tracked today, in any state (pending, live, hit, lost). A different side or line is a different bet. */
 function trkDuplicate(bets, c) {
-  return bets.some(function (b) { return b.id !== c.id && !b.settled && trkSameStat(b, c) && b.side === c.side && b.line === c.line; });
+  return bets.some(function (b) { return b.id !== c.id && b.gameDay === c.gameDay && trkSameStat(b, c) && b.side === c.side && b.line === c.line; });
 }
 /* a parlay may not hold two legs on the same player and stat */
 function trkConflict(bets) {
@@ -3911,7 +3926,7 @@ function trkSanitize(raw, today) {
     if (s && ['W', 'L', 'PUSH', 'VOID'].indexOf(s.result) < 0) return;
     ids[b.id] = 1;
     bets.push({ id: str(b.id), sport: sp, gameDay: b.gameDay, gameKey: b.gameKey, pid: str(b.pid), name: str(b.name).slice(0, TRK_NAME_MAX), team: str(b.team).slice(0, 6), opp: str(b.opp).slice(0, 6),
-      home: b.home === true, start: num(b.start), stat: st.k, side: b.side, line: line.value, createdAt: num(b.createdAt) || 0, pastLine: b.pastLine === true, parlayId: null,
+      home: b.home === true, start: num(b.start), stat: st.k, side: b.side, line: line.value, createdAt: num(b.createdAt) || 0, upd: num(b.upd) || 0, pastLine: b.pastLine === true, parlayId: null,
       settled: s ? { result: s.result, actual: num(s.actual), at: num(s.at) || 0, manual: s.manual === true, why: str(s.why) } : null });
   });
   bets.forEach(function (b) { byId[b.id] = b; });
@@ -3920,9 +3935,24 @@ function trkSanitize(raw, today) {
     var legs = arr(p.legIds).map(str), ok = legs.length >= 2 && legs.length <= TRK_MAX_LEGS && legs.every(function (id, i) { return byId[id] && !byId[id].parlayId && legs.indexOf(id) === i; });
     if (!ok || trkConflict(legs.map(function (id) { return byId[id]; }))) return;
     legs.forEach(function (id) { byId[id].parlayId = str(p.id); });
-    parlays.push({ id: str(p.id), legIds: legs, createdAt: num(p.createdAt) || 0 });
+    parlays.push({ id: str(p.id), legIds: legs, createdAt: num(p.createdAt) || 0, upd: num(p.upd) || 0 });
   });
   return { bets: bets, parlays: parlays };
+}
+/* Two tabs on one phone share the saved list. This tab's list merged with what is saved now: base = the ids this tab last saw saved, syncAt = when.
+   A saved item this tab has not seen is another tab's new one (kept); one this tab saw and does not have is its own delete (dropped); one in both
+   keeps the newer edit; one this tab saw that is gone from storage was deleted elsewhere (dropped unless this tab changed it since). */
+function trkMergeList(mem, stored, base, syncAt) {
+  var out = [], inMem = {}, inStored = {};
+  mem.forEach(function (m) { inMem[m.id] = m; });
+  stored.forEach(function (x) { inStored[x.id] = x; });
+  mem.forEach(function (m) {
+    var x = inStored[m.id];
+    if (!x) { if (!base[m.id] || (num(m.upd) || 0) > syncAt) out.push(m); return; }
+    out.push((num(x.upd) || 0) > (num(m.upd) || 0) ? x : m);
+  });
+  stored.forEach(function (x) { if (!inMem[x.id] && !base[x.id]) out.push(x); });
+  return out;
 }
 function trkNameKey(sp, team, name) { var n = sp === 'nhl' ? nhlNameKey(name) : normName(name); return n ? trkTeam(sp, team) + '|' + n : ''; }
 /* a game's box rows, indexed by ESPN athlete id and by team + name. Two players with one key = neither (never a wrong player). */
@@ -3941,7 +3971,15 @@ function trkRowFor(b, idx) {
   r = b.sport === 'nba' && b.pid ? idx.byId[str(b.pid)] : null;
   return r || idx.byName[trkNameKey(b.sport, b.team, b.name)] || null;
 }
+/* the one line a collapsed My Tracker shows: how many are alive, hit or missed (a push or void is not counted) */
+function trkSummaryText(words) {
+  var n = { alive: 0, hit: 0, missed: 0 }, out = [];
+  words.forEach(function (w) { if (n[w] != null) n[w]++; });
+  ['alive', 'hit', 'missed'].forEach(function (k) { if (n[k]) out.push(n[k] + ' ' + k); });
+  return out.length ? out.join(', ') : 'Nothing in play';
+}
 function trkBetText(b) { var st = trkStat(b.sport, b.stat); return (b.side === 'over' ? 'Over ' : 'Under ') + b.line + ' ' + (st ? st.noun : b.stat); }
+function trkSub(b) { var st = trkStat(b.sport, b.stat); return st && st.sub ? st.sub.toLowerCase() : ''; }
 function trkInitials(name) { var t = str(name).trim().split(/\s+/); return ((t[0] || '').charAt(0) + (t.length > 1 ? t[t.length - 1].charAt(0) : '')).toUpperCase(); }
 function trkHaystack(p) {
   var teams = p.sport === 'nhl' ? TRK_TEAMS_NHL : TRK_TEAMS_NBA, m = new RegExp('(?:^|\\|)' + p.team + ' ([^|]*)').exec(teams);
@@ -3962,18 +4000,44 @@ function trkDay() {
 function trkId() { return Math.random().toString(36).slice(2, 8) + Date.now().toString(36).slice(-3); }
 function trkRerender() { TK.ver++; render(); }
 function trkQuota(e) { return !!e && (e.name === 'QuotaExceededError' || e.code === 22 || e.code === 1014); }
+function trkTouch(x) { x.upd = Date.now(); }
+function trkIds(list) { var o = {}; list.forEach(function (x) { o[x.id] = 1; }); return o; }
+/* what is saved right now, cleaned (null = nothing readable saved) */
+function trkReadStore() {
+  var o = null;
+  try { o = JSON.parse(window.localStorage.getItem(TRK_KEY)); } catch (e) { return null; }
+  return isObj(o) && o.v === 1 ? trkSanitize(o, trkDay()) : null;
+}
+/* fold what is saved into this tab's list; returns true when this tab's list changed */
+function trkMerge(stored) {
+  var today = trkDay(), cur = trkSanitize({ bets: TK.bets, parlays: TK.parlays }, today);
+  var m = trkSanitize({ bets: trkMergeList(cur.bets, stored.bets, TK.base, TK.syncAt), parlays: trkMergeList(cur.parlays, stored.parlays, TK.base, TK.syncAt) }, today);
+  TK.bets = m.bets; TK.parlays = m.parlays;
+  return JSON.stringify(cur) !== JSON.stringify(m);
+}
 function trkFlush() {
-  var json;
+  var stored, changed = false;
   if (TK.saveT) { clearTimeout(TK.saveT); TK.saveT = null; }
-  if (TK.demo) return;
-  json = JSON.stringify({ v: 1, bets: TK.bets, parlays: TK.parlays, day: trkDay() });
-  try { window.localStorage.setItem(TRK_KEY, json); }
+  if (TK.demo || !TK.dirty) return;
+  stored = trkReadStore();
+  if (stored) changed = trkMerge(stored);
+  try { window.localStorage.setItem(TRK_KEY, JSON.stringify({ v: 1, bets: TK.bets, parlays: TK.parlays, day: trkDay() })); }
   catch (e) {
     if (trkQuota(e)) trkToast("Phone storage is full. That one wasn't saved.");
     else if (!TK.mem) { TK.mem = true; TK.ver++; try { maybeRender(); } catch (er) { /* the page never breaks on storage */ } }
+    return;
   }
+  TK.dirty = false; TK.base = Object.assign(trkIds(TK.bets), trkIds(TK.parlays)); TK.syncAt = Date.now();
+  if (changed) { TK.ver++; try { maybeRender(); } catch (er) { /* the page never breaks on storage */ } }
 }
-function trkSave() { if (TK.demo) return; if (TK.saveT) clearTimeout(TK.saveT); TK.saveT = setTimeout(trkFlush, TRK_SAVE_MS); }
+function trkSave() { if (TK.demo) return; TK.dirty = true; if (TK.saveT) clearTimeout(TK.saveT); TK.saveT = setTimeout(trkFlush, TRK_SAVE_MS); }
+/* another tab saved: take its changes in (this tab's own unsaved ones stay) */
+function trkPull() {
+  var stored = trkReadStore() || { bets: [], parlays: [] };
+  if (TK.demo) return;
+  if (trkMerge(stored)) { TK.open = null; TK.edit = null; trkRerender(); trkGo(true); }
+  TK.base = Object.assign(trkIds(stored.bets), trkIds(stored.parlays)); TK.syncAt = Date.now();
+}
 function trkLoad() {
   var raw = null, o = null, c;
   try { raw = window.localStorage.getItem(TRK_KEY); } catch (e) { TK.mem = true; return; }
@@ -3985,18 +4049,22 @@ function trkLoad() {
     return;
   }
   c = trkSanitize(o, trkDay()); TK.bets = c.bets; TK.parlays = c.parlays;
+  TK.base = Object.assign(trkIds(c.bets), trkIds(c.parlays)); TK.syncAt = Date.now();
 }
+function trkStoreFold(folded) { try { window.localStorage.setItem(TRK_FOLD_KEY, folded ? '1' : '0'); } catch (e) { /* the choice just is not remembered */ } }
+function trkSetFold(folded) { TK.folded = folded; TK.open = null; TK.edit = null; trkStoreFold(folded); trkRerender(); }
 function trkSegSave(seg) { try { window.localStorage.setItem(TRK_SEG_KEY, seg); } catch (e) { /* the choice just is not remembered */ } }
 /* one change to the list: the snapshot lets Undo put it all back (bets and parlays, in their slots) */
 function trkSnap() { return JSON.stringify({ bets: TK.bets, parlays: TK.parlays }); }
-function trkChange(message, fn) {
+function trkChange(message, fn, show) {
   var snap = trkSnap(), said = fn() || message;
   trkSave(); trkRerender(); trkGo(true);
-  if (said) trkToast(said, snap);
+  if (said) trkToast(said, snap, show);
 }
 function trkUndo(snap) {
   var o = null; try { o = JSON.parse(snap); } catch (e) { return; }
   TK.bets = arr(o && o.bets); TK.parlays = arr(o && o.parlays); TK.open = null; TK.edit = null;
+  TK.bets.forEach(trkTouch); TK.parlays.forEach(trkTouch);
   trkSave(); trkRerender(); trkGo(true);
 }
 function trkBet(id) { var i; for (i = 0; i < TK.bets.length; i++) if (TK.bets[i].id === id) return TK.bets[i]; return null; }
@@ -4007,6 +4075,7 @@ function trkRemoveBet(id) {
   TK.bets = TK.bets.filter(function (x) { return x.id !== id; });
   if (pl) {
     pl.legIds = pl.legIds.filter(function (x) { return x !== id; });
+    trkTouch(pl);
     if (pl.legIds.length < 2) { trkDissolve(pl); note = 'Parlay needs 2 legs. Ungrouped.'; }
   }
   if (TK.open === id) { TK.open = null; TK.edit = null; }
@@ -4023,7 +4092,7 @@ function trkMakeParlay(ids) {
   if (TK.parlays.length >= TRK_MAX_PARLAYS) { trkToast('6 parlays is the max. Ungroup one first.'); return; }
   trkChange('Parlay made. ' + legs.length + ' legs.', function () {
     pl = { id: trkId(), legIds: legs.map(function (b) { return b.id; }), createdAt: Date.now() };
-    TK.parlays.push(pl); legs.forEach(function (b) { b.parlayId = pl.id; });
+    trkTouch(pl); TK.parlays.push(pl); legs.forEach(function (b) { b.parlayId = pl.id; trkTouch(b); });
     TK.select = null;
   });
 }
@@ -4034,7 +4103,7 @@ function trkSetSeg(seg) {
   try { history.replaceState(null, '', location.pathname + location.search + '#' + (seg === 'tracker' ? 'tracker' : 'live')); } catch (e) { /* the hash just stays */ }
   trkRerender(); trkGo(true);
 }
-function trkMark(b, result) { trkChange(null, function () { b.settled = { result: result, actual: null, at: Date.now(), manual: true, why: '' }; }); }
+function trkMark(b, result) { trkChange(null, function () { b.settled = { result: result, actual: null, at: Date.now(), manual: true, why: '' }; trkTouch(b); }); }
 
 /* ----- what a bet shows right now ----- */
 function trkPast(b) { return b.gameDay < trkDay(); }
@@ -4082,11 +4151,11 @@ function trkSettleAll() {
   TK.bets.forEach(function (b) {
     var ev = trkEval(b), res;
     if (b.settled || ev.past) {
-      if (b.settled && !b.settled.manual && ev.final && ev.stat != null && b.settled.actual !== ev.stat) { b.settled.actual = ev.stat; changed = true; }
+      if (b.settled && !b.settled.manual && ev.final && ev.stat != null && b.settled.actual !== ev.stat) { b.settled.actual = ev.stat; trkTouch(b); changed = true; }
       return;
     }
     res = trkResult(b, ev.stat, ev.dnp, ev.final);
-    if (res) { b.settled = { result: res, actual: ev.stat, at: Date.now(), manual: false, why: res === 'VOID' ? 'dnp' : '' }; changed = true; }
+    if (res) { b.settled = { result: res, actual: ev.stat, at: Date.now(), manual: false, why: res === 'VOID' ? 'dnp' : '' }; trkTouch(b); changed = true; }
   });
   if (changed) trkSave();
   return changed;
@@ -4284,9 +4353,9 @@ function trkRecheck() {
       TK.bets.forEach(function (b) {
         var g = r.games[b.gameKey], row, stat, dnp, res;
         if (b.settled || b.sport !== gp.sp || b.gameDay !== gp.day || !g) return;
-        if (g.state !== 'post') { b.settled = { result: 'VOID', actual: null, at: Date.now(), manual: false, why: 'unfinished' }; return; }
+        if (g.state !== 'post') { b.settled = { result: 'VOID', actual: null, at: Date.now(), manual: false, why: 'unfinished' }; trkTouch(b); return; }
         row = trkRowFor(b, r.boxes[b.gameKey]); stat = trkValue(b.sport, b.stat, row); dnp = !!(row && row.dnp); res = trkResult(b, stat, dnp, true);
-        if (res) b.settled = { result: res, actual: stat, at: Date.now(), manual: false, why: res === 'VOID' ? 'dnp' : '' };
+        if (res) { b.settled = { result: res, actual: stat, at: Date.now(), manual: false, why: res === 'VOID' ? 'dnp' : '' }; trkTouch(b); }
       });
       trkSave(); trkRerender();
     }, function () { /* the feed could not confirm: the bet shows the ? stamp and Matt marks it */ });
@@ -4301,15 +4370,21 @@ function trkSeedDemo(fx) {
 }
 
 /* ----- toast and focus ----- */
-function trkToast(msg, snap) {
+function trkToastHide() {
+  var el = document.getElementById('trk-toast');
+  if (el) el.hidden = true;
+  document.body.classList.remove('trk-toast');
+}
+function trkToast(msg, snap, show) {
   var el = document.getElementById('trk-toast');
   if (!el) { el = h('div', { id: 'trk-toast', class: 'trkt', role: 'status', hidden: true }); document.body.appendChild(el); }
   clear(el);
   el.appendChild(h('span', { class: 'trkt-m', text: msg }));
-  if (snap) el.appendChild(h('button', { type: 'button', class: 'trkt-u', text: 'Undo', on: { click: function () { el.hidden = true; trkUndo(snap); } } }));
-  el.hidden = false;
+  if (show) el.appendChild(h('button', { type: 'button', class: 'trkt-u', text: 'Show', on: { click: function () { trkReveal(show); } } }));
+  if (snap) el.appendChild(h('button', { type: 'button', class: 'trkt-u', text: 'Undo', on: { click: function () { trkToastHide(); trkUndo(snap); } } }));
+  el.hidden = false; document.body.classList.add('trk-toast');
   if (TK.noteT) clearTimeout(TK.noteT);
-  TK.noteT = setTimeout(function () { el.hidden = true; }, snap ? TRK_UNDO_MS : TRK_NOTE_MS);
+  TK.noteT = setTimeout(trkToastHide, snap ? TRK_UNDO_MS : TRK_NOTE_MS);
 }
 /* a field being typed in survives the page redrawing around it (the poll, the minute tick) */
 function trkKeepFocus() {
@@ -4335,7 +4410,7 @@ function trkReveal(id) {
 function trkAvatar(b) {
   var ini = h('span', { class: 'hs ini', 'aria-hidden': 'true', text: trkInitials(b.name) }), im;
   if (b.sport !== 'nba' || !/^\d+$/.test(str(b.pid))) return ini;
-  im = h('img', { class: 'hs', src: 'https://a.espncdn.com/i/headshots/nba/players/full/' + b.pid + '.png', alt: '', loading: 'lazy', decoding: 'async', width: '30', height: '30', referrerpolicy: 'no-referrer' });
+  im = h('img', { class: 'hs', src: 'https://a.espncdn.com/i/headshots/nba/players/full/' + b.pid + '.png', alt: '', loading: 'lazy', decoding: 'async', referrerpolicy: 'no-referrer' });
   im.addEventListener('error', function () { if (im.parentNode) im.parentNode.replaceChild(ini, im); });
   return im;
 }
@@ -4373,7 +4448,7 @@ function trkPanel(b, ev) {
       if (c.err) { err.textContent = c.err; return; }
       if (trkDuplicate(TK.bets, Object.assign({}, b, { line: c.value, side: e.side }))) { err.textContent = "You're already tracking that."; return; }
       trkChange(null, function () {
-        b.line = c.value; b.side = e.side; b.pastLine = false;
+        b.line = c.value; b.side = e.side; b.pastLine = false; trkTouch(b);
         if (!(b.settled && b.settled.manual)) b.settled = null;
         TK.open = null; TK.edit = null; trkSettleAll();
       });
@@ -4407,6 +4482,7 @@ function trkNode(b, o) {
   node = h('div', { class: cls, 'data-id': o.preview ? null : b.id },
     h('div', { class: 'trktop' }, o.sel ? h('span', { class: 'trkck' }, h('input', { type: 'checkbox', checked: picked, 'aria-label': 'Select ' + b.name + ' ' + trkBetText(b).toLowerCase() })) : null, trkAvatar(b), nameEl, trkBadges(b, !o.leg)),
     h('div', { class: 'trkbet', text: trkBetText(b) }),
+    trkSub(b) ? h('div', { class: 'trksub', text: trkSub(b) }) : null,
     trackBlock(tk, stamp, voidText),
     b.pastLine ? h('div', { class: 'trknote', text: 'Already past the line when added.' }) : null,
     ev.unresolved ? h('div', { class: 'trkmk' }, h('button', { type: 'button', class: 'trkbtn', text: 'Hit', on: { click: function () { trkMark(b, 'W'); } } }), h('button', { type: 'button', class: 'trkbtn', text: 'Missed', on: { click: function () { trkMark(b, 'L'); } } })) : null,
@@ -4450,13 +4526,23 @@ function trkItems() {
 }
 function trkEligible(b) { return !b.parlayId && !trkPast(b) && !trkEval(b).final; }
 function trkFinishedItem(x) { return x.res != null; }
+/* "Tonight's tracker": only what is finished (every game final), never a running count */
 function trkTally(items) {
   var hit = 0, missed = 0;
   items.forEach(function (x) {
-    var w = x.pl ? trkParlayStatus(trkLegs(x.pl).map(function (b) { return trkEval(b).res; })).word : (x.res === 'W' ? 'ALL HIT' : (x.res === 'L' ? 'DEAD' : ''));
-    if (w === 'ALL HIT') hit++; else if (w === 'DEAD') missed++;
+    var over = (x.pl ? trkLegs(x.pl) : [x.b]).every(function (b) { return trkEval(b).final; }), w = trkItemWord(x);
+    if (over && w === 'hit') hit++; else if (over && w === 'missed') missed++;
   });
   return hit || missed ? "Tonight's tracker: " + hit + ' hit, ' + missed + ' missed.' : null;
+}
+function trkItemWord(x) {
+  var w = x.pl ? trkParlayStatus(trkLegs(x.pl).map(function (b) { return trkEval(b).res; })).word : x.res;
+  return { 'ALIVE': 'alive', 'ALL HIT': 'hit', 'DEAD': 'missed', 'W': 'hit', 'L': 'missed' }[w] || (x.pl || x.res ? '' : 'alive');
+}
+function trkFoldRow(summary) {
+  return h('button', { type: 'button', class: 'trkfold', 'aria-expanded': TK.folded ? 'false' : 'true', on: { click: function () { trkSetFold(!TK.folded); } } },
+    h('span', { class: 'trkfold-t' }, h('span', { class: 'nb', text: 'My Tracker (' + trkInPlay() + ')' }), TK.folded ? h('span', { class: 'trkfold-s', text: summary }) : null),
+    h('span', { class: 'chev' + (TK.folded ? '' : ' on') }, icon('right', 18)));
 }
 function trkItemNode(x, ro) { return x.pl ? trkParlayNode(x.pl, ro) : trkNode(x.b, { ro: ro }); }
 function trkClearFinished() {
@@ -4471,13 +4557,16 @@ function trkClearFinished() {
 function renderTracker() {
   var it = trkItems(), sel = TK.select, today = it.today, el, la = trkAgo(), eligible = TK.bets.filter(trkEligible);
   app.appendChild(header('Live', null));
+  app.querySelector('.hdr').classList.add('trkhdr');
   app.appendChild(trkSwitch());
   if (S.sport !== 'all') app.appendChild(h('p', { class: 'trkhelp', text: 'My Tracker shows both sports.' }));
   app.appendChild(h('div', { class: 'trkban', role: 'note' }, sel ? 'Pick 2 or 3 bets for your parlay.' : [h('b', { text: 'MY TRACKER.' }), ' Your own notes. Not a Hot Prop Homies pick. Not on the Record.']));
   if (TK.mem) app.appendChild(banner('warn', null, "Can't save on this browser. Your tracker will be gone when you close this tab."));
-  if (TK.bets.length) app.appendChild(h('div', { id: 'trkupd', class: 'lvupd' + (la.bad ? ' bad' : ''), role: 'status', text: la.text }));
   if (sel) { trkSelectView(eligible); return; }
+  if (TK.bets.length) app.appendChild(trkFoldRow(trkSummaryText(today.map(trkItemWord))));
   app.appendChild(h('button', { type: 'button', class: 'trkadd', text: '+ Track a stat', on: { click: trkOpenSheet } }));
+  if (TK.bets.length && TK.folded) { app.appendChild(smallFoot()); return; }
+  if (TK.bets.length) app.appendChild(h('div', { id: 'trkupd', class: 'lvupd' + (la.bad ? ' bad' : ''), role: 'status', text: la.text }));
   if (!TK.bets.length) {
     app.appendChild(h('div', { class: 'card empty' }, h('div', { class: 't', text: 'Nothing tracked yet.' }), h('div', { class: 's', text: "Pick a player, a stat, and a line. We'll watch it for you." }), h('div', { class: 's', text: 'Stays on this phone only.' })));
     app.appendChild(smallFoot()); return;
@@ -4547,7 +4636,9 @@ function trkLoadPlayers(force) {
     TK.players = [];
     rs.forEach(function (r) { if (r.ok) TK.players = TK.players.concat(r.rows); });
     TK.plState = !TK.players.length && rs.some(function (r) { return !r.ok && r.kind === 'net'; }) ? 'fail' : 'ok';
+    TK.plDoneAt = Date.now();
     trkSheetLive();
+    setTimeout(trkSheetLive, TRK_EMPTY_WAIT_MS + 50);
   });
 }
 /* the picker's games: every game Hard Rock has player lines on, plus every game on the scoreboard, each with its players (odds-list names first, then anyone in a box score) */
@@ -4606,7 +4697,7 @@ function trkSheetList() {
   if (TK.plState === 'loading') list.appendChild(h('div', null, h('p', { class: 'trkhelp', text: "Loading tonight's players" }), h('div', { class: 'skel sm' }), h('div', { class: 'skel sm' })));
   else if (!any && TK.plState === 'fail') list.appendChild(h('div', null, h('p', { class: 'trkhelp', text: "Couldn't load the players list. Try again." }), h('button', { type: 'button', class: 'trkbtn', text: 'Try again', on: { click: function () { trkLoadPlayers(true); trkSheetList(); } } })));
   else if (!any && q) list.appendChild(h('div', null, h('p', { class: 'trkhelp', text: 'No player named that tonight. Check the spelling, or try a team.' }), h('button', { type: 'button', class: 'trkbtn quiet', text: 'Clear search', on: { click: function () { s.q = ''; s.search.value = ''; trkSheetList(); } } })));
-  else if (!any && TK.at != null && !TK.fail) list.appendChild(h('p', { class: 'trkhelp', text: 'No games tonight. Come back on a game day.' }));
+  else if (!any && ((TK.at != null && !TK.fail) || (TK.plState === 'ok' && Date.now() - TK.plDoneAt >= TRK_EMPTY_WAIT_MS))) list.appendChild(h('p', { class: 'trkhelp', text: 'No games tonight. Come back on a game day.' }));
   else if (!any) list.appendChild(h('p', { class: 'trkhelp', text: "Loading tonight's players" }));
   holdTokens(list);
 }
@@ -4685,7 +4776,9 @@ function trkAdd(cand) {
   cand.id = trkId(); ev = trkEval(cand); res = trkResult(cand, ev.stat, ev.dnp, ev.final);
   if (res) cand.settled = { result: res, actual: ev.stat, at: Date.now(), manual: false, why: res === 'VOID' ? 'dnp' : '' };
   trkCloseSheet();
-  trkChange('Added. Tracking ' + splitName(cand.name).core + ' ' + st.noun + '.', function () { TK.bets.push(cand); });
+  if (TK.folded) { TK.folded = false; trkStoreFold(false); }
+  cand.upd = Date.now();
+  trkChange('Added. Tracking ' + splitName(cand.name).core + ' ' + st.noun + '.', function () { TK.bets.push(cand); }, cand.id);
   trkReveal(cand.id);
 }
 function trkSheetStep2() {
@@ -4699,9 +4792,9 @@ function trkSheetStep2() {
   s.body.appendChild(s.sum);
   trkStats(p.sport).forEach(function (st) {
     var grp = groups[st.grp] || (groups[st.grp] = h('div', { class: 'trkchips', role: 'group', 'aria-label': st.grp }));
-    chips[st.k] = h('button', { type: 'button', class: 'trkchip', 'aria-pressed': 'false', text: st.label, on: { click: function () {
+    chips[st.k] = h('button', { type: 'button', class: 'trkchip', 'data-stat': st.k, 'aria-pressed': 'false', on: { click: function () {
       s.stat = st.k; Object.keys(chips).forEach(function (k) { chips[k].setAttribute('aria-pressed', k === st.k ? 'true' : 'false'); }); trkSheetSum(); trkSheetForm();
-    } } });
+    } } }, h('span', { text: st.label }), st.sub ? h('span', { class: 'trksub', text: st.sub }) : null);
     grp.appendChild(chips[st.k]);
   });
   s.body.appendChild(h('div', { class: 'trkl8', text: 'Stat' }));
@@ -4763,6 +4856,7 @@ function trkCloseSheet(fromPop) {
 function renderLiveView() { if (TK.seg === 'tracker') renderTracker(); else renderLive(); }
 function trkInit() {
   try { if (window.localStorage.getItem(TRK_SEG_KEY) === 'tracker') TK.seg = 'tracker'; } catch (e) { /* Our Picks stays the default */ }
+  try { TK.folded = window.localStorage.getItem(TRK_FOLD_KEY) === '1'; } catch (e) { /* My Tracker stays open */ }
   if (location.hash === '#tracker') TK.seg = 'tracker';
   if (FIX) {
     trkFixture().then(function (fx) {
@@ -4899,6 +4993,7 @@ window.addEventListener('pageshow', function () { liveGo(true); trkGo(true); });
 window.addEventListener('focus', function () { liveGo(true); trkGo(true); });
 setInterval(liveTick, 1000);   /* "Updated Xs ago" on Live */
 setInterval(trkTick, 1000);    /* and on My Tracker */
+window.addEventListener('storage', function (e) { if (e.key === TRK_KEY) trkPull(); });
 window.addEventListener('pagehide', function () { writeSeen(); trkFlush(); });
 setInterval(function () { if (S.loaded && !document.hidden) maybeRender(); }, 30000);   /* "to tip", stale and live checks tick on */
 
