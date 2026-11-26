@@ -79,7 +79,7 @@
   },
   "UTA": {
    "name": "Karel Vejmelka",
-   "status": "expected"
+   "status": "confirmed"
   },
   "DAL": {
    "name": "Jake Oettinger",
@@ -87,7 +87,7 @@
   },
   "NSH": {
    "name": "Juuse Saros",
-   "status": "expected"
+   "status": "confirmed"
   },
   "COL": {
    "name": "Mackenzie Blackwood",
@@ -114,5 +114,5 @@
    "status": "confirmed"
   }
  },
- "checked_at": "2026-11-25T19:20:01-05:00"
+ "checked_at": "2026-11-25T19:40:01-05:00"
 }
