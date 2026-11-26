@@ -1,0 +1,6 @@
+S32a HR price >= 5% above median raw decimal of >=3 other books (shots). Nights 44 (2026-10-12..2026-11-25). Forward from 2026-11-26.
+S32a all               n 1184 graded 1176  616- 560  +26.11u ROI  +2.2% CI90 [-2.6, +6.9]     CLV_pin +1.2% (n 1002) placebo>=actual 1.0
+over                   n  281 graded  278  126- 152  -24.51u ROI  -8.8% CI90 [-19.9, +2.2]    CLV_pin +0.7% (n 238) placebo>=actual 0.992
+under                  n  903 graded  898  490- 408  +50.63u ROI  +5.6% CI90 [+0.6, +10.8]    CLV_pin +1.3% (n 764) placebo>=actual 1.0
+discovery              n 1184 graded 1176  616- 560  +26.11u ROI  +2.2% CI90 [-2.6, +6.9]     CLV_pin +1.2% (n 1002) placebo>=actual 1.0
+forward                n    0 graded    0    0-   0   +0.00u ROI      - CI90 -                CLV_pin     - (n 0) placebo>=actual None

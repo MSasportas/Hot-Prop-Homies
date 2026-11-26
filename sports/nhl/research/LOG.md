@@ -1,3 +1,12 @@
+## 2026-11-26, Run 32 (Researcher daily; SHOTS price shop: Hard Rock's price vs other books' raw prices, priority 2)
+Registered before any test: S32a in HYPOTHESES.md (Run 32). Code research/code/run32/price_shop_s32.py, output price_shop_s32_results.txt. Stored data only (44 odds nights Oct 12 - Nov 25), no key. Discovery = all stored nights; forward from 2026-11-26.
+- Rule: reads B/C, HR shots side whose decimal price is >= 5% above the median raw decimal of >= 3 other two-sided books on the same line; price -200..+200; first per player/night.
+- S32a all: n 1,176 graded, 616-560, +26.11u, ROI +2.2% [90% CI -2.6, +6.9], CLV (others' median no-vig at last read) +1.2% (n 1,002), placebo share 1.0. Over 126-152 -8.8% (n 278); under 490-408 +5.6% [+0.6, +10.8] (n 898).
+- The under split is post-hoc (not registered), so it is a lead, not a result. Overlaps heavily with the live Q1 family (HR longer than the consensus), so not independent evidence.
+- Forward re-score (run_all.sh, nights through 2026-11-25; shallow clone so Q2 lineup events incomplete): Q1g +6.8% n876 p .0195 CLV +3.4%; Q1b +5.3% n1022 p .038; Q1h +6.9% n633 p .04; Q1a +1.9% n1374. Bar is n >= 300, p < 0.0033: none clears. p keeps falling (Q1g .03 -> .0195).
+**Verdict: no candidate. READY FOR SHARP: no.** S32a adds nothing past Q1; unders-only is a lead to watch forward.
+Next: (1) S32a-under forward from 2026-11-26 (Engineer to add scorer if the CEO wants it); (2) Engineer: unshallow the clone so Q2 events score.
+
 ## 2026-11-25, Run 31 (Researcher daily; PL1 points line majority, NHL)
 Registered in HYPOTHESES.md (Run 31) before any test: LL6 ported to points. >= 3 other books with a main line, strict majority above HR's points line -> HR OVER, below -> HR UNDER, reads B and C, price -200..+120. Stored data only, no key. Code research/code/run31/pl1_points_line_majority.py, output pl1_results.txt.
 - PL1 discovery: 3 graded bets, 2-1, 0.00u. The rule almost never fires: other books rarely carry two-sided points lines in data/odds. No ROI read is possible. NO RESULT.

@@ -255,3 +255,10 @@ Population: every game with reads A (11 AM), B (~90), C (~45) and D (~20) in dat
 - N31b FADE the trend: bet the opposite side at Hard Rock's C price for that opposite side (same -200..+200 window).
 Metrics per variant: n, W-L, units, ROI at the posted price, 90% game-clustered bootstrap CI, mean CLV vs Pinnacle's D-read fair on the same side (close_pin), shuffle placebo (results shuffled within night, 500 draws; share of placebo ROIs >= actual). Split: over vs under.
 Expected overlap: some N31a bets will also be in AH-series populations (a >= 2 pt step is allowed inside the trend). Reported as a count, not removed.
+
+## Run 32 (Researcher, 2026-11-26 daily). PINNACLE LINE LEVEL VS HARD ROCK LINE (book comparison, priority 2). Registered before any test.
+Ids N32a/N32b. Not a re-run of R30a (majority of >= 4 other books), F7b (Pinnacle line MOVE) or R4 (single-book judge on same line). Discovery = every stored odds night through 2026-11-25; forward from 2026-11-26. Pass bar: rule 4 (n >= 150 graded forward, ROI > 0, 90% game-clustered CI > 0, CLV_pin > 0).
+Population: data/odds reads B and C; per player/market, Pinnacle main line = Pinnacle two-sided line (hold <= 15%) with fair over closest to 0.5; Hard Rock main line = same rule on Hard Rock. Pinnacle line differs from Hard Rock's by >= 0.5 and HR two-sided on its own line, HR price -200..+200 on the bet side. First read per player/market/night.
+- N32a: Pinnacle line > HR line -> HR OVER; Pinnacle line < HR line -> HR UNDER (HR's line is soft on that side).
+- N32b: the opposite side (fade), same populations, for context.
+Code: research/code/run32/line_level_n32.py. Stored data only.

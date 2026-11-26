@@ -1,5 +1,13 @@
 ## 2026-11-25, Run 30 (Researcher daily; R30a main-line majority, NBA)
 
+## 2026-11-26, Run 32 (Researcher daily; PINNACLE LINE LEVEL vs HARD ROCK LINE, priority 2 book comparison)
+Registered before any test: N32a/N32b in HYPOTHESES.md (Run 32). Code research/code/run32/line_level_n32.py, output line_level_n32_results.txt. Stored data only (31 odds nights, Oct 25 - Nov 25), no key. Discovery = all stored nights; forward from 2026-11-26 (none yet).
+- N32a follow Pinnacle's main line (HR line differs by >= 0.5; over if Pinnacle line higher, else under; at HR's price): n 1,640 graded, 886-754, -86.53u, ROI -5.3% [90% CI -8.6, -1.8], CLV_pin -8.1% (n 61, close line often changes so CLV n is small), placebo 1.0. Over -6.6%, under -2.9%. Points -5.3%, rebounds -1.0%, assists -11.6%, threes -7.0%.
+- N32b fade (opposite side): n 1,666 graded, 763-903, -121.49u, ROI -7.3% [-11.3, -3.3], CLV_pin -4.0%.
+**Verdict: FAILED, both directions lose about the hold.** Hard Rock's price already compensates for a line that differs from Pinnacle's; a line gap is not a bet. READY FOR SHARP: no.
+Forward: auto-scorer latest entries (AH9 -14.6% n305, AH10 -8.3% n330) are below bar; R30a/N31 still need scorers.
+Next: (1) no forward scorer needed for N32 (failed); (2) idea backlog: HR price vs other books' raw price shop on NBA (NHL S32a lead below) once NHL forward shows anything.
+
 ## 2026-11-26, AH10 (auto; Large move unders by size band (3-4 vs 4+))
 Filter: MOVES: unders, split 3-4 pts vs 4+ pts. MOVES population (Pinnacle >= 2 pt move, HR on line, -200..+200, 1/player/market/night).
 Discovery (<2026-11-10, 30 nights): n 567 graded 553 284-269 -32.62u ROI -5.9% CLV_pin -3.1% (n 503)

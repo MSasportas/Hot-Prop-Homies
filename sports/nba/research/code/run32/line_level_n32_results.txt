@@ -1,0 +1,21 @@
+N32 Pinnacle main line vs HR main line (>=0.5). Nights 31 (2026-10-25..2026-11-25). Forward from 2026-11-26.
+
+N32a follow Pinnacle line all n 1670 graded 1640  886- 754  -86.53u ROI  -5.3% CI90 [-8.6, -1.8]     CLV_pin -8.1% (n 61) placebo>=actual 1.0
+N32a follow Pinnacle line over n 1059 graded 1034  554- 480  -68.69u ROI  -6.6% CI90 [-11.4, -2.0]    CLV_pin -10.0% (n 30) placebo>=actual 1.0
+N32a follow Pinnacle line under n  611 graded  606  332- 274  -17.84u ROI  -2.9% CI90 [-8.7, +3.0]     CLV_pin -6.4% (n 31) placebo>=actual 0.886
+N32a follow Pinnacle line assists n  235 graded  230  122- 108  -26.77u ROI -11.6% CI90 [-21.3, -2.4]    CLV_pin -7.4% (n 11) placebo>=actual 0.938
+N32a follow Pinnacle line points n  928 graded  913  473- 440  -48.31u ROI  -5.3% CI90 [-10.2, -0.6]    CLV_pin -8.7% (n 36) placebo>=actual 0.848
+N32a follow Pinnacle line rebounds n  395 graded  388  226- 162   -3.84u ROI  -1.0% CI90 [-7.9, +6.0]     CLV_pin -7.2% (n 11) placebo>=actual 0.918
+N32a follow Pinnacle line threes n  112 graded  109   65-  44   -7.60u ROI  -7.0% CI90 [-19.9, +5.2]    CLV_pin -7.3% (n 3) placebo>=actual 0.98
+N32a follow Pinnacle line |diff|>=1 n 1669 graded 1639  886- 753  -85.53u ROI  -5.2% CI90 [-8.6, -1.8]     CLV_pin -8.1% (n 61) placebo>=actual 1.0
+N32a follow Pinnacle line forward n    0 graded    0    0-   0   +0.00u ROI      - CI90 -                CLV_pin     - (n 0) placebo>=actual None
+
+N32b fade all          n 1696 graded 1666  763- 903 -121.49u ROI  -7.3% CI90 [-11.3, -3.3]    CLV_pin -4.0% (n 62) placebo>=actual 1.0
+N32b fade over         n  614 graded  609  274- 335  -60.83u ROI -10.0% CI90 [-16.6, -3.6]    CLV_pin -6.0% (n 31) placebo>=actual 0.926
+N32b fade under        n 1082 graded 1057  489- 568  -60.66u ROI  -5.7% CI90 [-11.0, -0.3]    CLV_pin -2.0% (n 31) placebo>=actual 1.0
+N32b fade assists      n  235 graded  230  108- 122   +1.10u ROI  +0.5% CI90 [-11.3, +12.8]   CLV_pin -4.1% (n 11) placebo>=actual 0.982
+N32b fade points       n  928 graded  913  440- 473  -69.11u ROI  -7.6% CI90 [-12.5, -2.4]    CLV_pin -4.0% (n 36) placebo>=actual 0.768
+N32b fade rebounds     n  395 graded  388  162- 226  -46.23u ROI -11.9% CI90 [-20.5, -3.3]    CLV_pin -4.4% (n 11) placebo>=actual 0.846
+N32b fade threes       n  138 graded  135   53-  82   -7.25u ROI  -5.4% CI90 [-21.6, +11.4]   CLV_pin -2.9% (n 4) placebo>=actual 0.944
+N32b fade |diff|>=1    n 1695 graded 1665  762- 903 -122.35u ROI  -7.3% CI90 [-11.4, -3.4]    CLV_pin -4.0% (n 62) placebo>=actual 0.998
+N32b fade forward      n    0 graded    0    0-   0   +0.00u ROI      - CI90 -                CLV_pin     - (n 0) placebo>=actual None

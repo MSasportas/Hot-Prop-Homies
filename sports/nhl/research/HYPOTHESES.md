@@ -810,3 +810,9 @@ Population: each game with pulls A, B and C in data/odds; markets shots and poin
 - T31a FOLLOW the trend at Hard Rock's C price.
 - T31b FADE the trend: bet the opposite side at Hard Rock's C price (-200..+200).
 Metrics: as N31 (n, W-L, units, ROI, 90% game-clustered CI, CLV vs Pinnacle D-read fair, shuffle placebo within night). Split by market and side.
+
+## Run 32 (Researcher, 2026-11-26 daily). SHOTS: HARD ROCK PRICE vs OTHER BOOKS' BEST RAW PRICE (book comparison, priority 2). Registered before any test.
+Id S32a. Not a re-run of Q12 (vs Pinnacle fair), PT1/PT2 (points vs consensus fair) or DP1 (dispersion). Discovery = every stored odds night through 2026-11-25; forward from 2026-11-26. Pass bar: rule 4.
+Population: data/odds reads B and C, market shots, HR two-sided on a line also two-sided on >= 3 other books (hold <= 15%) at that same line. Bet the side where HR's decimal price is >= 5% above the MEDIAN raw decimal price of the other books for that side (HR is the longest price in the room, a pure price-shop test, no de-vig), HR price -200..+200. First read per player/night. 1u flat, graded from data/shadow.
+- S32a: the rule above. CLV vs the median of other books' no-vig for the side at the last read, on HR price.
+Code: research/code/run32/price_shop_s32.py.
