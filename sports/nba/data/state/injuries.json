@@ -1,5 +1,5 @@
 {
- "at": "2026-11-26T16:20:01-05:00",
+ "at": "2026-11-26T16:30:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -309,6 +309,13 @@
    "date": "2026-11-07T17:24Z",
    "note": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports."
   },
+  "3032977": {
+   "status": "day-to-day",
+   "name": "Giannis Antetokounmpo",
+   "team": "MIA",
+   "date": "2026-11-26T21:15Z",
+   "note": "Antetokounmpo is probable for Friday's game against the Knicks due to right groin tendinitis."
+  },
   "3059319": {
    "status": "day-to-day",
    "name": "Andrew Wiggins",
@@ -344,6 +351,13 @@
    "date": "2026-10-29T18:33Z",
    "note": "Edwards underwent a successful arthroscopic procedure on his right knee Thursday, the Timberwolves announced."
   },
+  "4683634": {
+   "status": "out",
+   "name": "Bennedict Mathurin",
+   "team": "NO",
+   "date": "2026-11-26T21:21Z",
+   "note": "Mathurin (foot) is doubtful for Friday's game against the Clippers."
+  },
   "4683742": {
    "status": "day-to-day",
    "name": "Julian Reese",
@@ -357,13 +371,6 @@
    "team": "NO",
    "date": "2026-11-21T18:21Z",
    "note": "Watford (ankle) is out for Saturday's game against the Spurs."
-  },
-  "4683634": {
-   "status": "out",
-   "name": "Bennedict Mathurin",
-   "team": "NO",
-   "date": "2026-11-19T21:07Z",
-   "note": "Mathurin (foot) has been ruled out for Friday's game against the Thunder."
   },
   "3907497": {
    "status": "out",
@@ -588,6 +595,13 @@
    "team": "SA",
    "date": "2026-10-05T21:43Z",
    "note": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports."
+  },
+  "4702656": {
+   "status": "day-to-day",
+   "name": "Alijah Martin",
+   "team": "TOR",
+   "date": "2026-11-26T21:19Z",
+   "note": "Martin contributed two rebounds in eight minutes during Tuesday's 111-102 loss to the Knicks."
   },
   "6450": {
    "status": "out",
