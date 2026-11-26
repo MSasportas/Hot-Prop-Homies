@@ -1,39 +1,39 @@
 {
  "LL3a tight": {
   "clv": 0.03,
-  "l": 80,
-  "pending": 1,
+  "l": 81,
+  "pending": 0,
   "push": 0,
-  "units": 2.19,
+  "units": 1.19,
   "void": 0,
   "w": 80
  },
  "LL3b loose": {
   "clv": 0.0281,
-  "l": 36,
-  "pending": 2,
+  "l": 37,
+  "pending": 0,
   "push": 0,
-  "units": 14.46,
+  "units": 14.51,
   "void": 0,
-  "w": 49
+  "w": 50
  },
  "LL4a fade": {
   "clv": -0.0705,
-  "l": 100,
-  "pending": 5,
+  "l": 101,
+  "pending": 2,
   "push": 0,
-  "units": 1.39,
+  "units": 1.79,
   "void": 0,
-  "w": 113
+  "w": 115
  },
  "LL5 exch": {
   "clv": 0.0208,
-  "l": 130,
-  "pending": 2,
+  "l": 131,
+  "pending": 0,
   "push": 0,
-  "units": 17.0,
+  "units": 16.8,
   "void": 0,
-  "w": 155
+  "w": 156
  },
  "LL6 line": {
   "clv": -0.016,
@@ -64,10 +64,10 @@
  },
  "MM3a persist": {
   "clv": 0.0337,
-  "l": 56,
-  "pending": 2,
+  "l": 58,
+  "pending": 0,
   "push": 0,
-  "units": 7.29,
+  "units": 5.29,
   "void": 0,
   "w": 61
  },
@@ -163,51 +163,51 @@
  },
  "R28b over": {
   "clv": -0.1229,
-  "l": 121,
-  "pending": 12,
+  "l": 127,
+  "pending": 3,
   "push": 0,
-  "units": -36.03,
+  "units": -39.26,
   "void": 0,
-  "w": 77
+  "w": 80
  },
  "R28b under": {
   "clv": -0.0497,
-  "l": 181,
-  "pending": 8,
+  "l": 182,
+  "pending": 3,
   "push": 0,
-  "units": -11.81,
+  "units": -9.21,
   "void": 0,
-  "w": 173
+  "w": 177
  },
  "R28c rest": {
   "clv": -0.0522,
-  "l": 251,
-  "pending": 22,
+  "l": 257,
+  "pending": 5,
   "push": 0,
-  "units": -1.92,
+  "units": 0.69,
   "void": 0,
-  "w": 290
+  "w": 301
  },
  "R28c rest mirror": {
   "clv": -0.094,
-  "l": 297,
-  "pending": 22,
+  "l": 308,
+  "pending": 5,
   "push": 0,
-  "units": -74.43,
+  "units": -79.98,
   "void": 0,
-  "w": 253
+  "w": 259
  },
  "R28d backup goalie": {
   "clv": -0.101,
-  "l": 95,
-  "pending": 18,
+  "l": 106,
+  "pending": 1,
   "push": 0,
-  "units": -28.82,
+  "units": -34.28,
   "void": 0,
-  "w": 76
+  "w": 82
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-26T06:10:15+00:00",
+ "updated_at": "2026-11-26T06:20:12+00:00",
  "version": 1
 }
