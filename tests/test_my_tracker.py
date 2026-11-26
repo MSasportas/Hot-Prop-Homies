@@ -1467,6 +1467,66 @@ class Screens(unittest.TestCase):
         page.click(".trkfold")
         self.assertIn("2 alive", self.text(page, ".trkfold"))
 
+    # the new tile is brought into view and pulsed, in every mode
+    def add_and_watch(self, reduced, collapsed):
+        ctx = self.browser.new_context(viewport={"width": 380, "height": 900}, reduced_motion="reduce" if reduced else "no-preference")
+        self.addCleanup(ctx.close)
+        page = ctx.new_page()
+        page.add_init_script("localStorage.setItem('pc_sport', 'nba'); localStorage.setItem('%s', 'tracker');" % SEG_KEY)
+        page.goto("http://127.0.0.1:%d/index.html?fixture=livelong&trk=demo#live" % self.server.server_address[1])
+        page.wait_for_selector(".trkfold")
+        page.wait_for_timeout(900)
+        if collapsed:
+            page.click(".trkfold")
+        page.evaluate("window.scrollTo(0, 0)")
+        self.build(page, "Jayson Tatum", "points", "Under", "22.5")
+        page.click("#trk-sheet .trks-f .trkadd")
+        page.wait_for_selector("#trk-sheet", state="detached")
+        page.wait_for_timeout(250)
+        early = page.evaluate("(() => { const e = Array.from(document.querySelectorAll('#app .tile.trk')).find((t) => t.textContent.includes('Under 22.5 points')); return e ? e.classList.contains('pulse') : null; })()")
+        page.wait_for_timeout(900)
+        state = page.evaluate("""(() => { const e = Array.from(document.querySelectorAll('#app .tile.trk')).find((t) => t.textContent.includes('Under 22.5 points'));
+          if (!e) return null; const r = e.getBoundingClientRect(), s = getComputedStyle(e); return { top: r.top, bottom: r.bottom, h: window.innerHeight, y: window.scrollY, pulse: e.classList.contains('pulse'), outline: s.outlineStyle, anim: s.animationName }; })()""")
+        page.wait_for_timeout(2400)
+        late = page.evaluate("(() => { const e = Array.from(document.querySelectorAll('#app .tile.trk')).find((t) => t.textContent.includes('Under 22.5 points')); return e ? e.classList.contains('pulse') : null; })()")
+        return early, state, late
+
+    def check_revealed(self, reduced, collapsed):
+        early, state, late = self.add_and_watch(reduced, collapsed)
+        self.assertTrue(early, "no pulse class soon after Add")
+        self.assertIsNotNone(state)
+        self.assertTrue(0 <= state["top"] and state["bottom"] <= state["h"], state)
+        self.assertGreater(state["y"], 0)
+        self.assertTrue(state["pulse"], state)
+        if reduced:
+            self.assertEqual(state["outline"], "solid")
+            self.assertNotEqual(state["anim"], "trk-pulse")
+        else:
+            self.assertEqual(state["anim"], "trk-pulse")
+        self.assertFalse(late, "the pulse class should clear after a few seconds")
+
+    def test_the_new_tile_is_scrolled_into_view_and_pulsed_expanded_normal_motion(self):
+        self.check_revealed(False, False)
+
+    def test_the_new_tile_is_scrolled_into_view_and_pulsed_collapsed_normal_motion(self):
+        self.check_revealed(False, True)
+
+    def test_the_new_tile_is_scrolled_into_view_and_outlined_expanded_reduced_motion(self):
+        self.check_revealed(True, False)
+
+    def test_the_new_tile_is_scrolled_into_view_and_outlined_collapsed_reduced_motion(self):
+        self.check_revealed(True, True)
+
+    def test_scroll_restoration_is_only_held_off_while_the_sheet_is_open(self):
+        page = self.open(query="&trk=demo")
+        self.assertEqual(page.evaluate("history.scrollRestoration"), "auto")
+        self.open_sheet(page)
+        self.assertEqual(page.evaluate("history.scrollRestoration"), "manual")
+        page.keyboard.press("Escape")
+        page.wait_for_selector("#trk-sheet", state="detached")
+        page.wait_for_timeout(800)
+        self.assertEqual(page.evaluate("history.scrollRestoration"), "auto")
+
     # isolation
     def test_the_tracker_only_writes_its_own_keys_and_only_asks_for_its_own_feed(self):
         spy = "(function () { window.__keys = []; var set = Storage.prototype.setItem; Storage.prototype.setItem = function (k, v) { window.__keys.push(k); return set.call(this, k, v); }; })();"
