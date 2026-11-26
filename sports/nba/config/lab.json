@@ -1,6 +1,6 @@
 {
  "note": "The page's Lab tab. Matt 2026-11-12: EVERYTHING being tested is listed here, and a tile opens to its picks. Each entry's numbers come live from its summary file (path relative to data/). Remove an entry when its test is closed or goes live.",
- "updated": "2026-11-23",
+ "updated": "2026-11-26",
  "tests": [
   {
    "id": "fast_checks",
@@ -312,21 +312,6 @@
    "outcome": "filter"
   },
   {
-   "id": "DM2",
-   "title": "Hot-form overs fade (data mining)",
-   "rule": "Base population: when the player's last-5-game average is 10%+ above his season average, overs miss. Points overs worst. Shadow-track from 2026-11-16. Note: LVA2 tracks overs where the LINE is 5%+ above rolling avg (8-0 discovery, overs hit) — different feature (line level vs recent output). Both tracked; DS to report overlap correlation at first scoring check.",
-   "summary": "research/lab_dm.json",
-   "stats": "DM2",
-   "need": 300,
-   "discovery": "Discovery Nov 6-Nov 15 (second half only; min 5 prior games needed): overs in hot bucket n=361, 45.7% hit, -12.6% ROI, 90% CI [-21.0, -4.3]. Points hot overs n=105, 40.0%, -25.1%. Hot unders near breakeven (+0.7%).",
-   "gate": "n >= 300 graded forward overs in hot bucket (last-5 >= 10% above season avg, min 5 prior games). Hit rate < 50%, ROI < -5%. DS to report LVA2 overlap at the first check. If passes: Sharp reviews with DS before any live rule change.",
-   "name": "Hot streak, bet under",
-   "plain": "Bet UNDER on players who've been hot lately",
-   "why": "Hot streaks cool off, but books price the streak in.",
-   "outcome": "review",
-   "bet": "Tallied as the real bet: the under on the same line at Hard Rock's posted under price, graded on its own result. Skipped when the under has no price or is worse than -200."
-  },
-  {
    "id": "DM3",
    "title": "Pinnacle 3+ pts off market = skip under (data mining)",
    "rule": "Base population: when Pinnacle's de-vigged fair differs from the consensus (other books median) by 3+ pts on the bet side, unders miss badly. Likely meaning: when Pinnacle is a lone outlier vs the market, the under is a trap. Shadow-track from 2026-11-16.",
@@ -342,7 +327,7 @@
    "bet": "Tallied as the real bet: the over on the same line at Hard Rock's posted over price, graded on its own result. Skipped when the over has no price or is worse than -200."
   }
  ],
- "retired_count": 2,
+ "retired_count": 3,
  "queued": [
   {
    "id": "R28a_b2b_under",

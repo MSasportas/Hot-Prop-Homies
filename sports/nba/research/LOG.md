@@ -1,4 +1,13 @@
 ## 2026-11-25, Run 30 (Researcher daily; R30a main-line majority, NBA)
+
+## 2026-11-26, AH10 (auto; Large move unders by size band (3-4 vs 4+))
+Filter: MOVES: unders, split 3-4 pts vs 4+ pts. MOVES population (Pinnacle >= 2 pt move, HR on line, -200..+200, 1/player/market/night).
+Discovery (<2026-11-10, 30 nights): n 567 graded 553 284-269 -32.62u ROI -5.9% CLV_pin -3.1% (n 503)
+Discovery FAIR (ev_pin>=0): n 85 graded 83 43-40 -1.36u ROI -1.6% CLV_pin +0.1% (n 73)
+Forward (>=2026-11-10, 16 nights): n 340 graded 330 166-164 -27.54u ROI -8.3% CLV_pin -3.0% (n 301)
+Forward FAIR: n 49 graded 47 20-27 -9.70u ROI -20.6% CLV_pin +0.2% (n 44)
+Pass bar: n>=150 graded fwd, ROI>0, CI>0, CLV>0. Status: BELOW BAR
+
 Registered in HYPOTHESES.md (Run 30) before any test. Books' main-line majority vs Hard Rock's line: >= 4 other books, strict majority above -> HR OVER, below -> HR UNDER, reads B and C, -200..+200, points / rebounds / assists / threes. Stored data only, no key. Code research/code/run30/main_line_majority.py, output main_line_majority_results.txt.
 - R30a discovery (all nights through 2026-11-25): 1,034 graded, 593-441, -22.25u, ROI -2.2% [90% CI -6.1..+1.9], CLV_pin -4.6% (n218). Placebo share 0.98.
 - By market: points -4.1% (n505), rebounds +3.5% (n285, CI -4.1..+10.7, CLV -4.7%), assists -7.9% (n165), threes +2.0% (n79). Over -5.0%, under +0.3%.

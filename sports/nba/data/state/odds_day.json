@@ -1,42 +1,8 @@
 {
- "date": "2026-11-25",
- "plan": {
-  "allowance": 17.238,
-  "reads": [
-   "A",
-   "B",
-   "C",
-   "D"
-  ],
-  "spare": [],
-  "extra": [
-   "X135",
-   "X180",
-   "X240",
-   "X30",
-   "X360",
-   "X60",
-   "X75"
-  ],
-  "pool_at_plan": 724,
-  "games_left": 42,
-  "games_today": 9,
-  "key_count": 13,
-  "made_at": "2026-11-25T05:00:01-05:00",
-  "cost_per_read": 4
- },
- "events": {
-  "401909317": "4f6d199bb67cf3a517a3880fd2f00b26",
-  "401909318": "87ce247fb83685389ca8ffb21be6cd3e",
-  "401909319": "f08629281f1510f47d91cc408f86a2a8",
-  "401909320": "07421d1675d6bc51bb5fa91f84a09eb3",
-  "401909322": "9e203cbbc6d37b7b0d9c08cb89fe0b28",
-  "401909321": "698d6d78acf30f4ff4e4aaf6670249ee",
-  "401909323": "60fd73164f7b0d1848f998d922155d87",
-  "401909324": "e6df92326adb480e427bb7c10f445c60",
-  "401909325": "9aa9f220709533d70d11f85fae886771"
- },
- "events_at": "2026-11-25T05:00:01-05:00",
+ "date": "2026-11-26",
+ "plan": null,
+ "events": {},
+ "events_at": null,
  "unknown_teams": [],
- "key_count": 13
+ "key_count": null
 }

@@ -1,112 +1,5 @@
 {
  "days": {
-  "2026-11-22": [
-   {
-    "id": "401910029",
-    "date": "2026-11-22",
-    "start": "2026-11-22T15:30:00-05:00",
-    "away": "DET",
-    "home": "ATL",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "DET": "97",
-     "ATL": "107"
-    }
-   },
-   {
-    "id": "401910030",
-    "date": "2026-11-22",
-    "start": "2026-11-22T18:00:00-05:00",
-    "away": "OKC",
-    "home": "MIA",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "OKC": "113",
-     "MIA": "123"
-    }
-   },
-   {
-    "id": "401910031",
-    "date": "2026-11-22",
-    "start": "2026-11-22T19:00:00-05:00",
-    "away": "ORL",
-    "home": "WSH",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "ORL": "96",
-     "WSH": "116"
-    }
-   },
-   {
-    "id": "401910032",
-    "date": "2026-11-22",
-    "start": "2026-11-22T19:00:00-05:00",
-    "away": "DEN",
-    "home": "CHI",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final/OT",
-    "score": {
-     "DEN": "151",
-     "CHI": "145"
-    }
-   },
-   {
-    "id": "401910033",
-    "date": "2026-11-22",
-    "start": "2026-11-22T19:00:00-05:00",
-    "away": "DAL",
-    "home": "UTAH",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "DAL": "116",
-     "UTAH": "114"
-    }
-   },
-   {
-    "id": "401910034",
-    "date": "2026-11-22",
-    "start": "2026-11-22T20:00:00-05:00",
-    "away": "IND",
-    "home": "NY",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "IND": "106",
-     "NY": "113"
-    }
-   },
-   {
-    "id": "401910035",
-    "date": "2026-11-22",
-    "start": "2026-11-22T20:30:00-05:00",
-    "away": "BOS",
-    "home": "GS",
-    "state": "post",
-    "completed": true,
-    "status_name": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "BOS": "87",
-     "GS": "88"
-    }
-   }
-  ],
   "2026-11-23": [
    {
     "id": "401910036",
@@ -442,12 +335,12 @@
      "POR": "116"
     }
    }
-  ]
+  ],
+  "2026-11-26": []
  },
  "month": {
-  "made_for": "2026-11-25",
+  "made_for": "2026-11-26",
   "counts": {
-   "2026-11-25": 9,
    "2026-11-26": 0,
    "2026-11-27": 11,
    "2026-11-28": 5,
