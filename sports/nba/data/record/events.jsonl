@@ -549,3 +549,4 @@
 {"at":"2026-11-25T22:00:00-05:00","id":"2026-11-25:401909324:6589:rebounds:4.5:under","state":"locked","t":"locked"}
 {"at":"2026-11-25T22:00:00-05:00","id":"2026-11-25:401909325:4845367:rebounds:5.5:under","state":"locked","t":"locked"}
 {"actual":null,"actual_text":"4 rebounds","at":"2026-11-25T22:00:00-05:00","id":"2026-11-25:401909319:3908809:rebounds:4.5:over","price":110,"result":"L","t":"graded","units":-1.0}
+{"actual":null,"actual_text":"4 rebounds","at":"2026-11-26T00:23:31-05:00","id":"2026-11-25:401909324:6589:rebounds:4.5:under","price":-105,"result":"W","t":"graded","units":0.9524}
