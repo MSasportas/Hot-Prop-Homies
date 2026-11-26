@@ -82,6 +82,7 @@
     "Karl-Anthony Towns"
    ],
    "status": {
+    "Andre Drummond": "questionable",
     "OG Anunoby": "out",
     "Jordan Clarkson": "out",
     "Miles McBride": "out"
@@ -131,7 +132,8 @@
     "Day'Ron Sharpe"
    ],
    "status": {
-    "Nolan Traore": "out"
+    "Nolan Traore": "out",
+    "Moritz Wagner": "out"
    }
   },
   "MIL": {
@@ -224,7 +226,6 @@
     "Charles Bassey"
    ],
    "status": {
-    "Brandon Williams": "questionable",
     "Jimmy Butler": "out",
     "Stephen Curry": "out",
     "Moses Moody": "out",
@@ -234,15 +235,14 @@
   "SA": {
    "state": "expected",
    "starters": [
-    "De'Aaron Fox",
     "Stephon Castle",
-    "Julian Champagnie",
     "Devin Vassell",
+    "Julian Champagnie",
+    "Harrison Barnes",
     "Victor Wembanyama"
    ],
    "status": {
     "De'Aaron Fox": "out",
-    "Victor Wembanyama": "questionable",
     "Dylan Harper": "out",
     "Tobias Harris": "out",
     "Jayden Quaintance": "out"
@@ -265,5 +265,5 @@
    }
   }
  },
- "at": "2026-11-25T21:20:00-05:00"
+ "at": "2026-11-25T21:30:01-05:00"
 }
