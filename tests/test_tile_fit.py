@@ -192,7 +192,7 @@ class EveryTileFits(unittest.TestCase):
           && parseFloat(getComputedStyle(e).fontSize) < 13 && getComputedStyle(e).display !== 'none').map((e) => e.className + ':' + e.textContent.trim().slice(0, 20) + ':' + getComputedStyle(e).fontSize)""")
         self.assertEqual(small, [])
         short = page.evaluate("""() => Array.from(document.querySelectorAll('#app button, #app input[type=checkbox]')).filter((e) => e.getBoundingClientRect().height < 44 && !e.closest('.tile.trk .trkx')
-          && !e.classList.contains('trkn') && !e.classList.contains('rowbtn') && !e.closest('.sport-sw')).map((e) => e.className + ':' + e.textContent.trim().slice(0, 20) + ':' + e.getBoundingClientRect().height)""")
+          && !e.classList.contains('rowbtn') && !e.closest('.sport-sw')).map((e) => e.className + ':' + e.textContent.trim().slice(0, 20) + ':' + e.getBoundingClientRect().height)""")
         self.assertEqual(short, [])
         ctx.close()
 

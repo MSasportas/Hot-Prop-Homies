@@ -585,7 +585,7 @@ button.tr.open{background:var(--selected-bg);border-bottom-color:transparent}
 .trktop{display:flex;flex-wrap:wrap;align-items:flex-start;gap:6px 8px;min-width:0}
 .trktop .hs{width:30px;height:30px}
 .hs.ini{display:inline-flex;align-items:center;justify-content:center;font:700 13px/1 var(--cond);color:var(--fg2)}
-.trkn{flex:1 1 96px;min-width:0;padding:3px 0;font:600 16px/20px var(--cond);letter-spacing:.005em;color:var(--fg);text-align:left;overflow-wrap:normal;word-break:normal;hyphens:none}
+.trkn{display:flex;align-items:center;flex:1 1 96px;min-width:0;min-height:44px;margin:-9px 0;padding:0;font:600 16px/20px var(--cond);letter-spacing:.005em;color:var(--fg);text-align:left;overflow-wrap:normal;word-break:normal;hyphens:none}
 .trkbd{display:flex;flex:none;align-items:center;gap:6px;margin-left:auto}
 .trkbd .sp-badge{margin:0;padding:1px 6px;font-size:13px;line-height:18px;white-space:nowrap}
 .mine{display:inline-block;padding:0 5px;border:1px solid var(--my-edge);border-radius:4px;font:700 13px/18px var(--cond);letter-spacing:.08em;color:var(--my-text);white-space:nowrap}
@@ -4014,8 +4014,9 @@ function trkReadStore() {
 function trkMerge(stored) {
   var today = trkDay(), cur = trkSanitize({ bets: TK.bets, parlays: TK.parlays }, today);
   var m = trkSanitize({ bets: trkMergeList(cur.bets, stored.bets, TK.base, TK.syncAt), parlays: trkMergeList(cur.parlays, stored.parlays, TK.base, TK.syncAt) }, today);
+  if (JSON.stringify(cur) === JSON.stringify(m)) return false;   /* nothing new: keep the very objects the screen's buttons hold */
   TK.bets = m.bets; TK.parlays = m.parlays;
-  return JSON.stringify(cur) !== JSON.stringify(m);
+  return true;
 }
 function trkFlush() {
   var stored, changed = false;
@@ -4085,7 +4086,7 @@ function trkRemoveBet(id) {
 }
 function trkDissolve(pl) {
   pl.legIds.forEach(function (id) { var b = trkBet(id); if (b) b.parlayId = null; });
-  TK.parlays = TK.parlays.filter(function (x) { return x !== pl; });
+  TK.parlays = TK.parlays.filter(function (x) { return x.id !== pl.id; });
 }
 function trkDeleteBet(id) { trkChange('Deleted.', function () { return trkRemoveBet(id); }); }
 function trkMakeParlay(ids) {
@@ -4162,8 +4163,8 @@ function trkSettleAll() {
   if (changed) trkSave();
   return changed;
 }
-/* bets still in play: not settled, today */
-function trkInPlay() { return TK.bets.filter(function (b) { return !b.settled && !trkPast(b); }).length; }
+/* what is still alive today, one count for a single or a whole parlay (the header, the switch and the collapsed summary all use it) */
+function trkInPlay() { return trkItems().today.filter(function (x) { return trkItemWord(x) === 'alive'; }).length; }
 
 /* ----- feeds (read-only, the same public score feeds Live uses) ----- */
 function espnBoxRows(s) { var b = espnBox(s); return b ? Object.keys(b).map(function (k) { return b[k]; }) : null; }
@@ -4551,7 +4552,7 @@ function trkClearFinished() {
   var it = trkItems();
   trkChange('Cleared.', function () {
     it.today.concat(it.earlier).filter(trkFinishedItem).forEach(function (x) {
-      if (x.pl) { trkLegs(x.pl).forEach(function (b) { b.parlayId = null; trkRemoveBet(b.id); }); TK.parlays = TK.parlays.filter(function (p) { return p !== x.pl; }); }
+      if (x.pl) { trkLegs(x.pl).forEach(function (b) { b.parlayId = null; trkRemoveBet(b.id); }); TK.parlays = TK.parlays.filter(function (p) { return p.id !== x.pl.id; }); }
       else trkRemoveBet(x.b.id);
     });
   });

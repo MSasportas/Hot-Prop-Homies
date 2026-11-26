@@ -1328,6 +1328,145 @@ class Screens(unittest.TestCase):
         self.assertEqual(page.locator("#app .trkmk .trkbtn").all_inner_texts(), ["Hit", "Missed"])
         self.assertEqual(page.locator("#app .stmp", has_text="?").count(), 1)
 
+    # parlay operations survive the save and merge (a button must act on the live data after a save)
+    def parlay_of(self, page, names):
+        self.make_parlay(page, names)
+        page.click("#trk-bar .trkbtn.solid")
+        page.wait_for_selector("#app .pcard")
+        page.wait_for_timeout(700)
+
+    def saved(self, page):
+        return json.loads(page.evaluate("localStorage.getItem('%s')" % TRK_KEY))
+
+    def test_ungroup_after_the_parlay_was_saved_removes_it_for_good(self):
+        page = self.open(init=seed(self.PARLAY_BETS))
+        self.parlay_of(page, ["Tatum", "Kucherov", "Booker"])
+        page.click("#app .pcard >> text=Ungroup")
+        page.wait_for_timeout(3600)
+        self.assertEqual(page.locator("#app .pcard").count(), 0)
+        self.assertEqual(page.locator("#app .tile.trk").count(), 5)
+        saved = self.saved(page)
+        self.assertEqual(saved["parlays"], [])
+        self.assertTrue(all(not b.get("parlayId") for b in saved["bets"]))
+        page.reload()
+        page.wait_for_selector(".tile.trk")
+        self.assertEqual(page.locator("#app .pcard").count(), 0)
+        self.assertEqual(page.locator("#app .tile.trk").count(), 5)
+
+    def test_ungroup_then_undo_brings_the_parlay_back_and_it_stays_after_a_reload(self):
+        page = self.open(init=seed(self.PARLAY_BETS))
+        self.parlay_of(page, ["Tatum", "Kucherov", "Booker"])
+        page.click("#app .pcard >> text=Ungroup")
+        page.wait_for_timeout(600)
+        page.click("#trk-toast .trkt-u:has-text('Undo')")
+        page.wait_for_timeout(900)
+        self.assertEqual(page.locator("#app .pcard .leg").count(), 3)
+        self.assertEqual(page.locator("#app .tile.trk").count(), 2)
+        page.reload()
+        page.wait_for_selector(".pcard")
+        self.assertEqual(page.locator("#app .pcard .leg").count(), 3)
+        self.assertEqual(page.locator("#app .tile.trk").count(), 2)
+
+    def test_deleting_a_leg_of_a_three_leg_parlay_persists_a_two_leg_parlay(self):
+        page = self.open(init=seed(self.PARLAY_BETS))
+        self.parlay_of(page, ["Tatum", "Kucherov", "Booker"])
+        page.locator("#app .pcard .trkn").first.click()
+        page.click("#app .pcard .trkbtn.del")
+        page.wait_for_timeout(900)
+        self.assertEqual(page.locator("#app .pcard .leg").count(), 2)
+        page.reload()
+        page.wait_for_selector(".pcard")
+        self.assertEqual(page.locator("#app .pcard .leg").count(), 2)
+        self.assertEqual(len(self.saved(page)["bets"]), 4)
+        self.assertEqual(len(self.saved(page)["parlays"]), 1)
+
+    def test_deleting_a_leg_of_a_two_leg_parlay_ungroups_it_and_the_single_stays_after_a_reload(self):
+        page = self.open(init=seed(self.PARLAY_BETS))
+        self.parlay_of(page, ["Tatum", "Kucherov"])
+        page.locator("#app .pcard .trkn").first.click()
+        page.click("#app .pcard .trkbtn.del")
+        self.assertIn("Parlay needs 2 legs. Ungrouped.", self.text(page, "#trk-toast"))
+        page.wait_for_timeout(900)
+        self.assertEqual(page.locator("#app .pcard").count(), 0)
+        self.assertEqual(page.locator("#app .tile.trk").count(), 4)
+        page.reload()
+        page.wait_for_selector(".tile.trk")
+        self.assertEqual(page.locator("#app .pcard").count(), 0)
+        self.assertEqual(page.locator("#app .tile.trk").count(), 4)
+        self.assertEqual(self.saved(page)["parlays"], [])
+
+    def test_undoing_the_two_leg_auto_ungroup_restores_the_parlay_and_its_leg(self):
+        page = self.open(init=seed(self.PARLAY_BETS))
+        self.parlay_of(page, ["Tatum", "Kucherov"])
+        page.locator("#app .pcard .trkn").first.click()
+        page.click("#app .pcard .trkbtn.del")
+        page.click("#trk-toast .trkt-u:has-text('Undo')")
+        page.wait_for_timeout(900)
+        self.assertEqual(page.locator("#app .pcard .leg").count(), 2)
+        page.reload()
+        page.wait_for_selector(".pcard")
+        self.assertEqual(page.locator("#app .pcard .leg").count(), 2)
+
+    def test_an_edit_after_a_save_changes_the_live_bet_not_a_stale_copy(self):
+        page = self.open(init=seed(self.PARLAY_BETS))
+        self.parlay_of(page, ["Tatum", "Kucherov"])
+        page.locator("#app .tile.trk .trkn", has_text="Booker").click()
+        page.fill("#app .trkx input[aria-label=Line]", "9.5")
+        page.click("#app .trkx .trkbtn.solid")
+        page.wait_for_timeout(900)
+        page.reload()
+        page.wait_for_selector(".tile.trk")
+        self.assertIn("Over 9.5 assists", self.text(page))
+
+    def test_clear_finished_after_a_save_removes_a_finished_parlay_for_good(self):
+        done = {"result": "W", "actual": 30, "at": 1, "manual": True, "why": ""}
+        bets = [bet("a", "Jalen Brunson", "NYK", "WAS", "nba|NYK@WAS", "assists", "over", 5.5, pid="3934672", settled=done), bet("b", "Jalen Brunson", "NYK", "WAS", "nba|NYK@WAS", "points", "over", 20.5, pid="3934672", settled=done),
+                bet("c", "Jayson Tatum", "BOS", "MIA", "nba|BOS@MIA", "rebounds", "over", 8.5, pid="4066338")]
+        page = self.open(init=seed(bets, [{"id": "p", "legIds": ["a", "b"], "createdAt": 1}]))
+        self.build(page, "Jayson Tatum", "rebounds", "Over", "9.5")
+        self.add(page)
+        page.wait_for_timeout(700)
+        page.click("text=Clear finished")
+        page.wait_for_timeout(900)
+        self.assertEqual(page.locator("#app .pcard").count(), 0)
+        page.reload()
+        page.wait_for_selector(".tile.trk")
+        self.assertEqual(page.locator("#app .pcard").count(), 0)
+        self.assertEqual(len(self.saved(page)["bets"]), 2)
+
+    def test_two_tabs_see_each_others_parlay_group_and_ungroup(self):
+        a = self.open(init=seed(self.PARLAY_BETS))
+        b = self.new_tab(a)
+        self.parlay_of(a, ["Tatum", "Kucherov"])
+        b.wait_for_selector("#app .pcard")
+        self.assertEqual(b.locator("#app .pcard .leg").count(), 2)
+        a.click("#app .pcard >> text=Ungroup")
+        b.wait_for_function("document.querySelectorAll('#app .pcard').length === 0")
+        self.assertEqual(b.locator("#app .tile.trk").count(), 5)
+        a.wait_for_timeout(600)
+        self.assertEqual(a.locator("#app .tile.trk").count(), 5)
+
+    def test_a_group_made_in_one_tab_is_not_undone_by_the_other_tab_changing_something_else(self):
+        a = self.open(init=seed(self.PARLAY_BETS))
+        b = self.new_tab(a)
+        b.evaluate("window.addEventListener('storage', (e) => e.stopImmediatePropagation(), true)")
+        self.parlay_of(a, ["Tatum", "Kucherov"])
+        self.build(b, "Devin Booker", "points", "Over", "20.5")
+        self.add(b)
+        b.wait_for_timeout(700)
+        saved = self.saved(b)
+        self.assertEqual(len(saved["parlays"]), 1)
+        self.assertEqual(len(saved["bets"]), 6)
+
+    def test_the_count_is_one_rule_everywhere_a_parlay_counts_as_one(self):
+        bets = [bet("a", "Jayson Tatum", "BOS", "MIA", "nba|BOS@MIA", "rebounds", "over", 8.5, pid="4066338"), bet("b", "Nikita Kucherov", "TBL", "TOR", "nhl|TBL@TOR", "shots", "over", 4.5, sport="nhl", pid="8476453"),
+                bet("c", "Devin Booker", "PHX", "DEN", "nba|DEN@PHX", "assists", "over", 7.5, pid="3136193", home=True)]
+        page = self.open(init=seed(bets, [{"id": "p", "legIds": ["a", "b"], "createdAt": 1}]))
+        self.assertIn("My Tracker 2", self.text(page, ".trkseg"))
+        self.assertIn("My Tracker (2)", self.text(page, ".trkfold"))
+        page.click(".trkfold")
+        self.assertIn("2 alive", self.text(page, ".trkfold"))
+
     # isolation
     def test_the_tracker_only_writes_its_own_keys_and_only_asks_for_its_own_feed(self):
         spy = "(function () { window.__keys = []; var set = Storage.prototype.setItem; Storage.prototype.setItem = function (k, v) { window.__keys.push(k); return set.call(this, k, v); }; })();"
