@@ -19,19 +19,19 @@
  },
  "LL4a fade": {
   "clv": -0.0705,
-  "l": 96,
-  "pending": 12,
+  "l": 97,
+  "pending": 11,
   "push": 0,
-  "units": 3.17,
+  "units": 2.17,
   "void": 0,
   "w": 110
  },
  "LL5 exch": {
   "clv": 0.0208,
-  "l": 120,
-  "pending": 30,
+  "l": 121,
+  "pending": 29,
   "push": 0,
-  "units": 11.85,
+  "units": 10.85,
   "void": 0,
   "w": 137
  },
@@ -163,21 +163,21 @@
  },
  "R28b over": {
   "clv": -0.1229,
-  "l": 84,
-  "pending": 67,
+  "l": 86,
+  "pending": 64,
   "push": 0,
-  "units": -18.95,
+  "units": -19.85,
   "void": 0,
-  "w": 59
+  "w": 60
  },
  "R28b under": {
   "clv": -0.0497,
-  "l": 121,
-  "pending": 111,
+  "l": 125,
+  "pending": 102,
   "push": 0,
-  "units": 7.25,
+  "units": 7.44,
   "void": 0,
-  "w": 130
+  "w": 135
  },
  "R28c rest": {
   "clv": -0.0522,
@@ -199,15 +199,15 @@
  },
  "R28d backup goalie": {
   "clv": -0.101,
-  "l": 67,
-  "pending": 70,
+  "l": 72,
+  "pending": 61,
   "push": 0,
-  "units": -20.63,
+  "units": -21.82,
   "void": 0,
-  "w": 52
+  "w": 56
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-26T03:10:10+00:00",
+ "updated_at": "2026-11-26T03:20:11+00:00",
  "version": 1
 }
