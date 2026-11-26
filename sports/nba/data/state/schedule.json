@@ -316,10 +316,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:48 - 4th",
+    "detail": "4:22 - 4th",
     "score": {
-     "MIA": "87",
-     "PHI": "100"
+     "MIA": "95",
+     "PHI": "106"
     }
    },
    {
@@ -328,13 +328,13 @@
     "start": "2026-11-25T19:00:00-05:00",
     "away": "CHI",
     "home": "CHA",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/25 - 7:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:56 - 1st",
     "score": {
-     "CHI": "0",
-     "CHA": "0"
+     "CHI": "4",
+     "CHA": "8"
     }
    },
    {
