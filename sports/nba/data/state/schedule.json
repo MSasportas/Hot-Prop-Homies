@@ -316,10 +316,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:22 - 4th",
+    "detail": "44.0 - 4th",
     "score": {
-     "MIA": "95",
-     "PHI": "106"
+     "MIA": "100",
+     "PHI": "111"
     }
    },
    {
@@ -331,10 +331,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:58 - 1st",
+    "detail": "2:08 - 1st",
     "score": {
-     "CHI": "9",
-     "CHA": "12"
+     "CHI": "14",
+     "CHA": "20"
     }
    },
    {
