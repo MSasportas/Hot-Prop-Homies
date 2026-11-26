@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-25T00:00:11+00:00",
- "day": "2026-11-25",
+ "updated": "2026-11-26T00:00:12+00:00",
+ "day": "2026-11-26",
  "tracks": {
   "q24": {
    "fail_streak": 0,
-   "k": 62,
-   "k_changed": "2026-11-20"
+   "k": 252,
+   "k_changed": "2026-11-26"
   },
   "fwd_LL3a_tight": {
    "fail_streak": 0,
@@ -19,8 +19,8 @@
   },
   "fwd_LL4a_fade": {
    "fail_streak": 0,
-   "k": 204,
-   "k_changed": "2026-11-25"
+   "k": 206,
+   "k_changed": "2026-11-26"
   },
   "fwd_LL5_exch": {
    "fail_streak": 0,
@@ -29,8 +29,8 @@
   },
   "fwd_LL6_line": {
    "fail_streak": 0,
-   "k": 126,
-   "k_changed": "2026-11-25"
+   "k": 127,
+   "k_changed": "2026-11-26"
   },
   "fwd_MM2a_split": {
    "fail_streak": 0,
@@ -54,8 +54,8 @@
   },
   "fwd_MM4_total": {
    "fail_streak": 0,
-   "k": 18,
-   "k_changed": "2026-11-23"
+   "k": 20,
+   "k_changed": "2026-11-26"
   },
   "fwd_MM5a_follow": {
    "fail_streak": 0,
@@ -99,23 +99,23 @@
   },
   "fwd_R28b_lva_under": {
    "fail_streak": 0,
-   "k": 220,
-   "k_changed": "2026-11-25"
+   "k": 231,
+   "k_changed": "2026-11-26"
   },
   "fwd_R28b_lva_over": {
    "fail_streak": 0,
-   "k": 134,
-   "k_changed": "2026-11-25"
+   "k": 137,
+   "k_changed": "2026-11-26"
   },
   "fwd_R28d_backup_goalie": {
    "fail_streak": 0,
-   "k": 100,
-   "k_changed": "2026-11-25"
+   "k": 111,
+   "k_changed": "2026-11-26"
   },
   "fwd_R28c_rest": {
    "fail_streak": 0,
-   "k": 377,
-   "k_changed": "2026-11-25"
+   "k": 384,
+   "k_changed": "2026-11-26"
   }
  }
 }
