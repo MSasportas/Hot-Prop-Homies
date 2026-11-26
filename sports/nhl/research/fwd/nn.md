@@ -2,8 +2,8 @@
 
 | variant | bets | graded | W | units | ROI | 90% CI | p | mean CLV | candidate |
 |---|---|---|---|---|---|---|---|---|---|
-| NN2fa follow market | 37 | 20 | 6 | -8.83 | -44.1% | -44..-44% | 1.0000 | -0.0777 | False |
-| NN2fb follow HR | 37 | 20 | 14 | +5.06 | +25.3% | +25..+25% | 0.0000 | -0.0646 | False |
+| NN2fa follow market | 37 | 37 | 13 | -13.02 | -35.2% | -44..-25% | 1.0000 | -0.0777 | False |
+| NN2fb follow HR | 37 | 37 | 24 | +7.26 | +19.6% | +13..+25% | 0.0000 | -0.0646 | False |
 | NN4 exch steam | 5 | 5 | 2 | -1.52 | -30.5% | -100..+39% | 0.7215 | -0.0309 | False |
 | NN5 market moves | 4 | 4 | 1 | -1.75 | -43.8% | -100..+12% | 0.7330 | 0.0234 | False |
 | NN6 fade soft | 0 | 0 | - | - | - | - | - | - | False |
