@@ -2,11 +2,11 @@
  "LL3a tight": {
   "clv": 0.03,
   "l": 80,
-  "pending": 3,
+  "pending": 2,
   "push": 0,
-  "units": 0.23,
+  "units": 1.28,
   "void": 0,
-  "w": 78
+  "w": 79
  },
  "LL3b loose": {
   "clv": 0.0281,
@@ -28,21 +28,21 @@
  },
  "LL5 exch": {
   "clv": 0.0208,
-  "l": 126,
-  "pending": 16,
+  "l": 128,
+  "pending": 12,
   "push": 0,
-  "units": 12.71,
+  "units": 12.63,
   "void": 0,
-  "w": 145
+  "w": 147
  },
  "LL6 line": {
   "clv": -0.016,
   "l": 52,
-  "pending": 4,
+  "pending": 3,
   "push": 0,
-  "units": -5.42,
+  "units": -4.88,
   "void": 0,
-  "w": 84
+  "w": 85
  },
  "MM2a split": {
   "clv": -0.0211,
@@ -91,21 +91,21 @@
  },
  "MM5a follow": {
   "clv": -0.0869,
-  "l": 57,
-  "pending": 3,
+  "l": 58,
+  "pending": 2,
   "push": 0,
-  "units": -23.42,
+  "units": -24.42,
   "void": 0,
   "w": 25
  },
  "MM5b fade": {
   "clv": -0.0717,
   "l": 24,
-  "pending": 2,
+  "pending": 1,
   "push": 0,
-  "units": 6.53,
+  "units": 7.06,
   "void": 0,
-  "w": 54
+  "w": 55
  },
  "NN2fa follow market": {
   "clv": -0.0777,
@@ -163,39 +163,39 @@
  },
  "R28b over": {
   "clv": -0.1229,
-  "l": 105,
-  "pending": 36,
+  "l": 109,
+  "pending": 32,
   "push": 0,
-  "units": -28.78,
+  "units": -32.78,
   "void": 0,
   "w": 69
  },
  "R28b under": {
   "clv": -0.0497,
-  "l": 157,
-  "pending": 45,
+  "l": 164,
+  "pending": 34,
   "push": 0,
-  "units": 0.85,
+  "units": -2.35,
   "void": 0,
-  "w": 160
+  "w": 164
  },
  "R28c rest": {
   "clv": -0.0522,
-  "l": 226,
-  "pending": 80,
+  "l": 230,
+  "pending": 72,
   "push": 0,
-  "units": -3.62,
+  "units": -3.88,
   "void": 0,
-  "w": 257
+  "w": 261
  },
  "R28c rest mirror": {
   "clv": -0.094,
-  "l": 265,
-  "pending": 79,
+  "l": 269,
+  "pending": 71,
   "push": 0,
-  "units": -62.16,
+  "units": -63.55,
   "void": 0,
-  "w": 228
+  "w": 232
  },
  "R28d backup goalie": {
   "clv": -0.101,
@@ -208,6 +208,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-26T03:50:12+00:00",
+ "updated_at": "2026-11-26T04:10:11+00:00",
  "version": 1
 }
