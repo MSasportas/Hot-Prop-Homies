@@ -421,10 +421,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:39 - 4th",
+    "detail": "1:52 - 4th",
     "score": {
-     "SAC": "95",
-     "GS": "110"
+     "SAC": "102",
+     "GS": "123"
     }
    },
    {
@@ -436,10 +436,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:52 - 4th",
+    "detail": "5:34 - 4th",
     "score": {
-     "SA": "91",
-     "POR": "96"
+     "SA": "100",
+     "POR": "101"
     }
    }
   ]
