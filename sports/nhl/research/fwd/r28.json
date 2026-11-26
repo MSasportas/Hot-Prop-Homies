@@ -16,7 +16,7 @@
   "candidate": false
  },
  "R28b under": {
-  "bets": 360,
+  "bets": 362,
   "graded": 231,
   "w": 120,
   "units": 8.304,
@@ -27,12 +27,12 @@
   ],
   "p_one_sided": 0.291,
   "mean_ev": 0.0,
-  "mean_clv": -0.0494,
+  "mean_clv": -0.0496,
   "games": 27,
   "candidate": false
  },
  "R28b over": {
-  "bets": 208,
+  "bets": 210,
   "graded": 137,
   "w": 56,
   "units": -19.4,
@@ -43,12 +43,12 @@
   ],
   "p_one_sided": 0.896,
   "mean_ev": 0.0,
-  "mean_clv": -0.1198,
+  "mean_clv": -0.1204,
   "games": 27,
   "candidate": false
  },
  "R28c rest": {
-  "bets": 559,
+  "bets": 563,
   "graded": 384,
   "w": 208,
   "units": 4.244,
@@ -59,12 +59,12 @@
   ],
   "p_one_sided": 0.408,
   "mean_ev": 0.0,
-  "mean_clv": -0.0522,
+  "mean_clv": -0.0523,
   "games": 27,
   "candidate": false
  },
  "R28c rest mirror": {
-  "bets": 569,
+  "bets": 572,
   "graded": 394,
   "w": 178,
   "units": -56.617,
