@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-25",
- "generated_at": "2026-11-25T23:10:00-05:00",
+ "generated_at": "2026-11-25T23:12:08-05:00",
  "games": [
   {
    "game_id": 2026020398,
@@ -8,7 +8,7 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "18:19",
+   "clock": "16:59",
    "in_intermission": false,
    "running": true,
    "away": {
@@ -19,9 +19,9 @@
    "home": {
     "abbrev": "ANA",
     "score": 3,
-    "sog": 11
+    "sog": 12
    },
-   "updated_at": "2026-11-25T23:10:00-05:00"
+   "updated_at": "2026-11-25T23:12:08-05:00"
   }
  ],
  "picks": {
