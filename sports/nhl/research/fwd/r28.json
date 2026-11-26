@@ -16,7 +16,7 @@
   "candidate": false
  },
  "R28b under": {
-  "bets": 359,
+  "bets": 360,
   "graded": 231,
   "w": 120,
   "units": 8.304,
@@ -27,7 +27,7 @@
   ],
   "p_one_sided": 0.291,
   "mean_ev": 0.0,
-  "mean_clv": -0.0497,
+  "mean_clv": -0.0494,
   "games": 27,
   "candidate": false
  },
@@ -43,7 +43,7 @@
   ],
   "p_one_sided": 0.896,
   "mean_ev": 0.0,
-  "mean_clv": -0.1196,
+  "mean_clv": -0.1198,
   "games": 27,
   "candidate": false
  },
@@ -59,7 +59,7 @@
   ],
   "p_one_sided": 0.408,
   "mean_ev": 0.0,
-  "mean_clv": -0.0523,
+  "mean_clv": -0.0522,
   "games": 27,
   "candidate": false
  },
@@ -75,7 +75,7 @@
   ],
   "p_one_sided": 0.998,
   "mean_ev": 0.0,
-  "mean_clv": -0.0935,
+  "mean_clv": -0.0936,
   "games": 27,
   "candidate": false
  },
