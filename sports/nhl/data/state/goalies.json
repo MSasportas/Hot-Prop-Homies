@@ -99,11 +99,11 @@
   },
   "SEA": {
    "name": "Joey Daccord",
-   "status": "expected"
+   "status": "confirmed"
   },
   "CHI": {
    "name": "Spencer Knight",
-   "status": "expected"
+   "status": "confirmed"
   },
   "ANA": {
    "name": "Laurent Brossoit",
@@ -114,5 +114,5 @@
    "status": "confirmed"
   }
  },
- "checked_at": "2026-11-25T19:40:01-05:00"
+ "checked_at": "2026-11-25T21:20:01-05:00"
 }
