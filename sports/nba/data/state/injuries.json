@@ -1,5 +1,5 @@
 {
- "at": "2026-11-26T16:50:01-05:00",
+ "at": "2026-11-26T17:10:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -379,26 +379,26 @@
    "date": "2026-11-13T20:19Z",
    "note": "Murray (ankle) is out for Friday's game against Memphis."
   },
+  "3934719": {
+   "status": "out",
+   "name": "OG Anunoby",
+   "team": "NY",
+   "date": "2026-11-26T21:57Z",
+   "note": "Anunoby (calf) is doubtful for Friday's game against the Heat."
+  },
+  "6585": {
+   "status": "day-to-day",
+   "name": "Andre Drummond",
+   "team": "NY",
+   "date": "2026-11-26T21:51Z",
+   "note": "Drummond (head) is questionable for Friday's game against the Heat."
+  },
   "4431823": {
    "status": "day-to-day",
    "name": "Miles McBride",
    "team": "NY",
    "date": "2026-11-26T05:31Z",
    "note": "McBride (adductor) has been ruled out for Wednesday's game against the Cavaliers."
-  },
-  "6585": {
-   "status": "day-to-day",
-   "name": "Andre Drummond",
-   "team": "NY",
-   "date": "2026-11-26T03:40Z",
-   "note": "Drummond (head) did not return to Wednesday's 121-102 win over the Cavaliers."
-  },
-  "3934719": {
-   "status": "out",
-   "name": "OG Anunoby",
-   "team": "NY",
-   "date": "2026-11-25T23:19Z",
-   "note": "Anunoby (calf) participated in on-court work for the first time since sustaining the injury, Ian Begley of SportsNet New York reports."
   },
   "2528426": {
    "status": "out",
