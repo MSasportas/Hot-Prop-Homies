@@ -1,5 +1,5 @@
 {
- "at": "2026-11-25T20:30:01-05:00",
+ "at": "2026-11-25T20:40:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -180,8 +180,15 @@
    "status": "out",
    "name": "Stephen Curry",
    "team": "GS",
-   "date": "2026-11-12T17:03Z",
-   "note": "Curry has been diagnosed with an oblique abdominal tear and will be re-evaluated in two weeks, Shams Charania of ESPN reports."
+   "date": "2026-11-26T01:36Z",
+   "note": "Curry (abdomen) will be re-evaluated Friday after Thanksgiving, Anthony Slater of ESPN.com reports."
+  },
+  "4397040": {
+   "status": "out",
+   "name": "Brandon Williams",
+   "team": "GS",
+   "date": "2026-11-26T01:32Z",
+   "note": "Head coach Steve Kerr said Tuesday that Williams (hamstring) is questionable to play Wednesday against the Kings, per Dalton Johnson of NBC Sports Bay Area."
   },
   "3102531": {
    "status": "out",
