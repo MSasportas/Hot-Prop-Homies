@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-25T20:30:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-25T21:00:00-05:00"
+   "at": "2026-11-25T21:03:02-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-25T21:00:00-05:00",
+    "at": "2026-11-25T21:03:02-05:00",
     "confirmed": [
      "BKN",
      "CHA",
@@ -99,7 +99,7 @@
    "away": "CHI",
    "home": "CHA",
    "state": "in",
-   "detail": "6:38 - 4th",
+   "detail": "5:29 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -140,7 +140,7 @@
    "away": "CLE",
    "home": "NYK",
    "state": "in",
-   "detail": "10:07 - 3rd",
+   "detail": "8:33 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -181,7 +181,7 @@
    "away": "MIN",
    "home": "OKC",
    "state": "in",
-   "detail": "11:15 - 3rd",
+   "detail": "9:28 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -222,7 +222,7 @@
    "away": "LAC",
    "home": "MEM",
    "state": "in",
-   "detail": "3:21 - 2nd",
+   "detail": "1:57 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -259,7 +259,7 @@
    "away": "BKN",
    "home": "MIL",
    "state": "in",
-   "detail": "2:35 - 2nd",
+   "detail": "43.8 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -296,7 +296,7 @@
    "away": "PHX",
    "home": "HOU",
    "state": "in",
-   "detail": "4:17 - 1st",
+   "detail": "3:55 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -457,6 +457,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-25T21:00:00-05:00",
- "status_at": "2026-11-25T21:00:00-05:00"
+ "generated_at": "2026-11-25T21:03:02-05:00",
+ "status_at": "2026-11-25T21:03:02-05:00"
 }
