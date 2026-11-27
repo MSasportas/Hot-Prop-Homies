@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T13:10:01-05:00",
+ "at": "2026-11-27T13:20:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -211,6 +211,13 @@
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
   },
+  "2580365": {
+   "status": "day-to-day",
+   "name": "Larry Nance Jr.",
+   "team": "IND",
+   "date": "2026-11-27T18:07Z",
+   "note": "Nance (ankle) is probable for Friday's game against the 76ers."
+  },
   "4396993": {
    "status": "out",
    "name": "Tyrese Haliburton",
@@ -224,13 +231,6 @@
    "team": "IND",
    "date": "2026-11-27T00:42Z",
    "note": "Oubre is questionable for Friday's game against the 76ers due to a right hand laceration."
-  },
-  "2580365": {
-   "status": "day-to-day",
-   "name": "Larry Nance Jr.",
-   "team": "IND",
-   "date": "2026-11-26T22:43Z",
-   "note": "Nance (ankle) is questionable for Friday's game against the 76ers."
   },
   "2530530": {
    "status": "day-to-day",
@@ -327,8 +327,8 @@
    "status": "out",
    "name": "Kasparas Jakucionis",
    "team": "MIL",
-   "date": "2026-11-27T17:51Z",
-   "note": "Jakucionis logged 18 points (6-11 FG, 3-6 3Pt, 3-5 FT), three rebounds, two assists and one steal over 22 minutes during Thursday's 124-114 loss to the Trail Blazers."
+   "date": "2026-11-27T17:58Z",
+   "note": "Jakucionis (ankle) won't play Friday's game against the Pistons."
   },
   "4432816": {
    "status": "day-to-day",
