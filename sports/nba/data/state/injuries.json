@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T16:30:00-05:00",
+ "at": "2026-11-27T17:20:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -61,8 +61,8 @@
    "status": "day-to-day",
    "name": "Ryan Kalkbrenner",
    "team": "CHA",
-   "date": "2026-11-26T05:30Z",
-   "note": "Kalkbrenner (hip) has been ruled out for Wednesday's matchup with Chicago."
+   "date": "2026-11-27T22:04Z",
+   "note": "Kalkbrenner (hip) is probable for Saturday's matchup with Brooklyn."
   },
   "3135045": {
    "status": "out",
@@ -224,6 +224,13 @@
    "team": "GS",
    "date": "2026-10-16T16:11Z",
    "note": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports."
+  },
+  "2991235": {
+   "status": "day-to-day",
+   "name": "Steven Adams",
+   "team": "HOU",
+   "date": "2026-11-27T22:06Z",
+   "note": "Adams (knee) is questionable for Saturday's game against the 76ers."
   },
   "2580365": {
    "status": "day-to-day",
