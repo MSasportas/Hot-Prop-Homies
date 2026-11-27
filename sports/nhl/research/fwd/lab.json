@@ -1,46 +1,46 @@
 {
  "LL3a tight": {
   "clv": 0.0299,
-  "l": 81,
-  "pending": 15,
+  "l": 82,
+  "pending": 14,
   "push": 0,
-  "units": 1.19,
+  "units": 0.19,
   "void": 0,
   "w": 80
  },
  "LL3b loose": {
   "clv": 0.0285,
-  "l": 38,
-  "pending": 5,
+  "l": 39,
+  "pending": 4,
   "push": 0,
-  "units": 16.78,
+  "units": 15.78,
   "void": 0,
   "w": 53
  },
  "LL4a fade": {
   "clv": -0.0678,
-  "l": 101,
-  "pending": 15,
+  "l": 102,
+  "pending": 13,
   "push": 0,
   "units": 1.79,
   "void": 0,
-  "w": 115
+  "w": 116
  },
  "LL5 exch": {
   "clv": 0.0185,
-  "l": 136,
-  "pending": 32,
+  "l": 139,
+  "pending": 28,
   "push": 0,
-  "units": 16.37,
+  "units": 13.96,
   "void": 0,
-  "w": 162
+  "w": 163
  },
  "LL6 line": {
   "clv": -0.0176,
-  "l": 55,
-  "pending": 16,
+  "l": 56,
+  "pending": 15,
   "push": 0,
-  "units": -5.16,
+  "units": -6.16,
   "void": 0,
   "w": 90
  },
@@ -64,19 +64,19 @@
  },
  "MM3a persist": {
   "clv": 0.0334,
-  "l": 58,
-  "pending": 7,
+  "l": 59,
+  "pending": 6,
   "push": 0,
-  "units": 5.29,
+  "units": 4.29,
   "void": 0,
   "w": 61
  },
  "MM3b confirm": {
   "clv": 0.0543,
-  "l": 0,
-  "pending": 1,
+  "l": 1,
+  "pending": 0,
   "push": 0,
-  "units": 0.74,
+  "units": -0.26,
   "void": 0,
   "w": 1
  },
@@ -163,51 +163,51 @@
  },
  "R28b over": {
   "clv": -0.119,
-  "l": 138,
-  "pending": 64,
+  "l": 140,
+  "pending": 60,
   "push": 0,
-  "units": -44.01,
+  "units": -43.21,
   "void": 0,
-  "w": 85
+  "w": 87
  },
  "R28b under": {
   "clv": -0.0507,
-  "l": 196,
-  "pending": 90,
+  "l": 201,
+  "pending": 84,
   "push": 0,
-  "units": -13.69,
+  "units": -17.78,
   "void": 0,
-  "w": 187
+  "w": 188
  },
  "R28c rest": {
   "clv": -0.0502,
-  "l": 282,
-  "pending": 164,
+  "l": 292,
+  "pending": 151,
   "push": 0,
-  "units": -1.84,
+  "units": -9.31,
   "void": 0,
-  "w": 327
+  "w": 330
  },
  "R28c rest mirror": {
   "clv": -0.0934,
-  "l": 335,
-  "pending": 165,
+  "l": 338,
+  "pending": 152,
   "push": 0,
-  "units": -86.58,
+  "units": -80.82,
   "void": 0,
-  "w": 284
+  "w": 294
  },
  "R28d backup goalie": {
   "clv": -0.1014,
-  "l": 109,
-  "pending": 25,
+  "l": 112,
+  "pending": 19,
   "push": 0,
-  "units": -34.96,
+  "units": -35.71,
   "void": 0,
-  "w": 85
+  "w": 88
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-27T21:50:20+00:00",
+ "updated_at": "2026-11-27T22:10:16+00:00",
  "version": 1
 }
