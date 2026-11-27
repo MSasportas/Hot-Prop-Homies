@@ -11,8 +11,7 @@
     "Bam Adebayo"
    ],
    "status": {
-    "Giannis Antetokounmpo": "probable",
-    "Andrew Wiggins": "probable"
+    "Giannis Antetokounmpo": "probable"
    }
   },
   "NY": {
@@ -25,10 +24,11 @@
     "Karl-Anthony Towns"
    ],
    "status": {
-    "Jordan Clarkson": "questionable",
-    "Andre Drummond": "questionable",
-    "Miles McBride": "questionable",
-    "OG Anunoby": "doubtful"
+    "Karl-Anthony Towns": "questionable",
+    "OG Anunoby": "out",
+    "Jordan Clarkson": "out",
+    "Andre Drummond": "out",
+    "Miles McBride": "out"
    }
   },
   "MIL": {
@@ -40,7 +40,9 @@
     "Kyle Kuzma",
     "Myles Turner"
    ],
-   "status": {}
+   "status": {
+    "Kasparas Jakucionis": "out"
+   }
   },
   "DET": {
    "state": "expected",
@@ -64,7 +66,7 @@
    "starters": [
     "Tyrese Maxey",
     "VJ Edgecombe",
-    "Dean Wade",
+    "Kentavious Caldwell-Pope",
     "LeBron James",
     "Joel Embiid"
    ],
@@ -85,8 +87,8 @@
    ],
    "status": {
     "Kelly Oubre": "questionable",
+    "Larry Nance": "probable",
     "T.J. McConnell": "questionable",
-    "Larry Nance": "questionable",
     "Johnny Furphy": "out",
     "Tyrese Haliburton": "out",
     "Ben Sheppard": "out"
@@ -148,7 +150,7 @@
     "Neemias Queta"
    ],
    "status": {
-    "Mitchell Robinson": "questionable"
+    "Mitchell Robinson": "out"
    }
   },
   "MEM": {
@@ -157,7 +159,7 @@
     "Ty Jerome",
     "Cedric Coward",
     "Jaylen Wells",
-    "Jahmai Mashack",
+    "Kris Murray",
     "Zach Edey"
    ],
    "status": {
@@ -172,14 +174,14 @@
   "MIN": {
    "state": "expected",
    "starters": [
-    "LaMelo Ball",
     "Ayo Dosunmu",
+    "Terrence Shannon",
     "Jonathan Kuminga",
     "Jaden McDaniels",
     "Rudy Gobert"
    ],
    "status": {
-    "LaMelo Ball": "questionable",
+    "LaMelo Ball": "out",
     "Jaylen Clark": "out",
     "Donte DiVincenzo": "out",
     "Anthony Edwards": "out"
@@ -195,6 +197,7 @@
     "Daniel Gafford"
    ],
    "status": {
+    "Kyrie Irving": "questionable",
     "Tarik Biberovic": "out",
     "Sergio de Larrea": "out",
     "Tobi Lawal": "out",
@@ -219,7 +222,7 @@
    "starters": [
     "Jeremiah Fears",
     "Herbert Jones",
-    "Saddiq Bey",
+    "Trey Murphy",
     "Zion Williamson",
     "Yves Missi"
    ],
@@ -234,7 +237,7 @@
    "starters": [
     "Darius Garland",
     "Brandon Ingram",
-    "Max Strus",
+    "Derrick Jones",
     "Rui Hachimura",
     "Brook Lopez"
    ],
@@ -262,7 +265,7 @@
   "POR": {
    "state": "expected",
    "starters": [
-    "Damian Lillard",
+    "Jrue Holiday",
     "Sidy Cissoko",
     "Toumani Camara",
     "Deni Avdija",
@@ -270,6 +273,7 @@
    ],
    "status": {
     "Vit Krejci": "out",
+    "Damian Lillard": "out",
     "Ja Morant": "out",
     "Shaedon Sharpe": "out",
     "Chris Youngblood": "out"
@@ -284,16 +288,14 @@
     "Ziaire Williams",
     "Walker Kessler"
    ],
-   "status": {
-    "Austin Reaves": "questionable"
-   }
+   "status": {}
   },
   "SA": {
    "state": "expected",
    "starters": [
     "De'Aaron Fox",
+    "Dylan Harper",
     "Stephon Castle",
-    "Julian Champagnie",
     "Devin Vassell",
     "Victor Wembanyama"
    ],
@@ -326,11 +328,12 @@
    ],
    "status": {
     "Jaxson Hayes": "questionable",
+    "Mo Bamba": "questionable",
     "Jusuf Nurkic": "questionable",
     "Jaren Jackson": "out",
     "Lauri Markkanen": "out"
    }
   }
  },
- "at": "2026-11-27T05:00:01-05:00"
+ "at": "2026-11-27T16:00:01-05:00"
 }
