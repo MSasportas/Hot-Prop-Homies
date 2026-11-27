@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T12:40:01-05:00",
+ "at": "2026-11-27T13:00:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -322,6 +322,13 @@
    "team": "MIA",
    "date": "2026-11-26T21:15Z",
    "note": "Antetokounmpo is probable for Friday's game against the Knicks due to right groin tendinitis."
+  },
+  "5214640": {
+   "status": "out",
+   "name": "Kasparas Jakucionis",
+   "team": "MIL",
+   "date": "2026-11-27T17:51Z",
+   "note": "Jakucionis logged 18 points (6-11 FG, 3-6 3Pt, 3-5 FT), three rebounds, two assists and one steal over 22 minutes during Thursday's 124-114 loss to the Trail Blazers."
   },
   "4432816": {
    "status": "day-to-day",
