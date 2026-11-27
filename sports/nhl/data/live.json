@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-27",
- "generated_at": "2026-11-27T14:10:01-05:00",
+ "generated_at": "2026-11-27T14:10:56-05:00",
  "games": [
   {
    "game_id": 2026020403,
@@ -8,7 +8,7 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "19:34",
+   "clock": "19:28",
    "in_intermission": false,
    "running": false,
    "away": {
@@ -19,9 +19,9 @@
    "home": {
     "abbrev": "STL",
     "score": 1,
-    "sog": null
+    "sog": 1
    },
-   "updated_at": "2026-11-27T14:10:01-05:00"
+   "updated_at": "2026-11-27T14:10:56-05:00"
   }
  ],
  "picks": {

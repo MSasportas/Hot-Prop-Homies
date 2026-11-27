@@ -43,7 +43,7 @@
   },
   "PHI": {
    "name": "Dan Vladar",
-   "status": "expected"
+   "status": "confirmed"
   },
   "VAN": {
    "name": "Kevin Lankinen",
@@ -83,7 +83,7 @@
   },
   "SJS": {
    "name": "Yaroslav Askarov",
-   "status": "expected"
+   "status": "confirmed"
   },
   "VGK": {
    "name": "Adin Hill",
@@ -110,7 +110,7 @@
    "status": "confirmed"
   },
   "SEA": {
-   "name": "Joey Daccord",
+   "name": "Philipp Grubauer",
    "status": "expected"
   },
   "BUF": {
@@ -122,5 +122,5 @@
    "status": "confirmed"
   }
  },
- "checked_at": "2026-11-27T13:00:01-05:00"
+ "checked_at": "2026-11-27T14:10:56-05:00"
 }
