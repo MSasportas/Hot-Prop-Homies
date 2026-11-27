@@ -16,83 +16,83 @@
   "candidate": false
  },
  "R28b under": {
-  "bets": 473,
-  "graded": 389,
-  "w": 188,
-  "units": -17.781,
-  "roi": -0.0457,
+  "bets": 474,
+  "graded": 398,
+  "w": 196,
+  "units": -10.926,
+  "roi": -0.0275,
   "ci90": [
-   -0.1256,
-   0.0328
+   -0.1087,
+   0.0567
   ],
-  "p_one_sided": 0.837,
+  "p_one_sided": 0.7025,
   "mean_ev": 0.0,
-  "mean_clv": -0.0507,
-  "games": 45,
+  "mean_clv": -0.0509,
+  "games": 46,
   "candidate": false
  },
  "R28b over": {
   "bets": 287,
-  "graded": 227,
+  "graded": 230,
   "w": 87,
-  "units": -43.211,
-  "roi": -0.1904,
+  "units": -46.211,
+  "roi": -0.2009,
   "ci90": [
-   -0.3146,
-   -0.0593
+   -0.3344,
+   -0.0623
   ],
-  "p_one_sided": 0.99,
+  "p_one_sided": 0.9955,
   "mean_ev": 0.0,
-  "mean_clv": -0.119,
-  "games": 45,
+  "mean_clv": -0.1195,
+  "games": 46,
   "candidate": false
  },
  "R28c rest": {
-  "bets": 773,
-  "graded": 622,
-  "w": 330,
-  "units": -9.308,
-  "roi": -0.015,
+  "bets": 774,
+  "graded": 636,
+  "w": 342,
+  "units": -0.871,
+  "roi": -0.0014,
   "ci90": [
-   -0.0804,
-   0.0499
+   -0.0687,
+   0.0651
   ],
-  "p_one_sided": 0.657,
+  "p_one_sided": 0.517,
   "mean_ev": 0.0,
   "mean_clv": -0.0502,
-  "games": 44,
+  "games": 45,
   "candidate": false
  },
  "R28c rest mirror": {
-  "bets": 784,
-  "graded": 632,
-  "w": 294,
-  "units": -80.818,
-  "roi": -0.1279,
+  "bets": 785,
+  "graded": 646,
+  "w": 296,
+  "units": -91.193,
+  "roi": -0.1412,
   "ci90": [
-   -0.1976,
-   -0.0574
-  ],
-  "p_one_sided": 0.9985,
-  "mean_ev": 0.0,
-  "mean_clv": -0.0934,
-  "games": 44,
-  "candidate": false
- },
- "R28d backup goalie": {
-  "bets": 219,
-  "graded": 200,
-  "w": 88,
-  "units": -35.706,
-  "roi": -0.1785,
-  "ci90": [
-   -0.2677,
-   -0.0964
+   -0.2138,
+   -0.0707
   ],
   "p_one_sided": 1.0,
   "mean_ev": 0.0,
-  "mean_clv": -0.1014,
-  "games": 22,
+  "mean_clv": -0.0935,
+  "games": 45,
+  "candidate": false
+ },
+ "R28d backup goalie": {
+  "bets": 225,
+  "graded": 207,
+  "w": 89,
+  "units": -40.706,
+  "roi": -0.1966,
+  "ci90": [
+   -0.2878,
+   -0.1111
+  ],
+  "p_one_sided": 1.0,
+  "mean_ev": 0.0,
+  "mean_clv": -0.1021,
+  "games": 23,
   "candidate": false
  }
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T17:10:00-05:00",
+ "generated_at": "2026-11-27T18:00:01-05:00",
  "summary": {
   "headline": {
    "w": 69,
@@ -243,7 +243,7 @@
     "push": 0,
     "void": 0,
     "units": -1.0,
-    "n": 3,
+    "n": 4,
     "graded": false
    },
    {
@@ -604,6 +604,29 @@
       {
        "price": 155,
        "at": "2026-11-27T15:20:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-27:2026020412:8478445:shots:2.5:under",
+     "kind": "single",
+     "player": "M. Barzal",
+     "bet": "Under 2.5 shots on goal",
+     "market": "shots",
+     "team": "NYI",
+     "game": "WPG at NYI",
+     "price": -120,
+     "first_price": -120,
+     "last_price": -120,
+     "prices": [
+      {
+       "price": -120,
+       "at": "2026-11-27T18:00:01-05:00"
       }
      ],
      "result": null,
