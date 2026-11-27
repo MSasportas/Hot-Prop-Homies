@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-27",
- "generated_at": "2026-11-27T17:40:01-05:00",
+ "generated_at": "2026-11-27T17:50:00-05:00",
  "games": [
   {
    "game_id": 2026020403,
@@ -29,20 +29,20 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "02:46",
-   "in_intermission": false,
+   "clock": "11:46",
+   "in_intermission": true,
    "running": false,
    "away": {
     "abbrev": "VGK",
     "score": 0,
-    "sog": 20
+    "sog": 21
    },
    "home": {
     "abbrev": "SJS",
     "score": 1,
-    "sog": 25
+    "sog": 26
    },
-   "updated_at": "2026-11-27T17:40:01-05:00"
+   "updated_at": "2026-11-27T17:50:00-05:00"
   }
  ],
  "picks": {
@@ -59,7 +59,7 @@
   "2026-11-27:2026020410:8484801:shots:3.5:over": {
    "game_id": 2026020410,
    "market": "shots",
-   "stat": 1
+   "stat": 2
   }
  }
 }
