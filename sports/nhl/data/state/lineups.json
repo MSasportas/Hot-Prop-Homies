@@ -2240,7 +2240,7 @@
    "checked_at": "2026-11-27T15:50:01-05:00"
   },
   "NYR": {
-   "tried_at": "2026-11-27T16:00:01-05:00",
+   "tried_at": "2026-11-27T16:30:00-05:00",
    "page": {
     "today": true,
     "page_date": "2026-11-27",
@@ -2347,7 +2347,7 @@
    "last_error": "page not read"
   },
   "CHI": {
-   "tried_at": "2026-11-27T16:00:01-05:00",
+   "tried_at": "2026-11-27T16:30:00-05:00",
    "page": {
     "today": true,
     "page_date": "2026-11-27",
@@ -2449,8 +2449,16 @@
    },
    "checked_at": "2026-11-27T15:40:00-05:00",
    "last_error": "page not read"
+  },
+  "WPG": {
+   "tried_at": "2026-11-27T16:30:00-05:00",
+   "last_error": "page not read"
+  },
+  "NYI": {
+   "tried_at": "2026-11-27T16:30:00-05:00",
+   "last_error": "page not read"
   }
  },
  "last_ok_at": "2026-11-27T15:50:01-05:00",
- "last_try_at": "2026-11-27T16:00:01-05:00"
+ "last_try_at": "2026-11-27T16:30:00-05:00"
 }

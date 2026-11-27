@@ -28,21 +28,21 @@
  },
  "LL5 exch": {
   "clv": 0.0185,
-  "l": 135,
-  "pending": 35,
+  "l": 136,
+  "pending": 32,
   "push": 0,
-  "units": 16.14,
+  "units": 16.37,
   "void": 0,
-  "w": 160
+  "w": 162
  },
  "LL6 line": {
   "clv": -0.0176,
   "l": 55,
-  "pending": 17,
+  "pending": 16,
   "push": 0,
-  "units": -5.77,
+  "units": -5.16,
   "void": 0,
-  "w": 89
+  "w": 90
  },
  "MM2a split": {
   "clv": -0.021,
@@ -82,12 +82,12 @@
  },
  "MM4 total": {
   "clv": -0.1032,
-  "l": 11,
-  "pending": 15,
+  "l": 20,
+  "pending": 0,
   "push": 0,
-  "units": -2.62,
+  "units": -7.28,
   "void": 0,
-  "w": 9
+  "w": 15
  },
  "MM5a follow": {
   "clv": -0.0865,
@@ -128,11 +128,11 @@
  "NN4 exch steam": {
   "clv": -0.0253,
   "l": 3,
-  "pending": 3,
+  "pending": 2,
   "push": 0,
-  "units": -1.52,
+  "units": -0.92,
   "void": 0,
-  "w": 2
+  "w": 3
  },
  "NN5 market moves": {
   "clv": 0.0217,
@@ -163,39 +163,39 @@
  },
  "R28b over": {
   "clv": -0.1189,
-  "l": 135,
-  "pending": 67,
+  "l": 138,
+  "pending": 64,
   "push": 0,
-  "units": -41.01,
+  "units": -44.01,
   "void": 0,
   "w": 85
  },
  "R28b under": {
   "clv": -0.0509,
-  "l": 191,
-  "pending": 99,
+  "l": 196,
+  "pending": 90,
   "push": 0,
-  "units": -12.53,
+  "units": -13.69,
   "void": 0,
-  "w": 183
+  "w": 187
  },
  "R28c rest": {
   "clv": -0.0503,
-  "l": 276,
-  "pending": 179,
+  "l": 282,
+  "pending": 164,
   "push": 0,
-  "units": -3.33,
+  "units": -1.84,
   "void": 0,
-  "w": 318
+  "w": 327
  },
  "R28c rest mirror": {
   "clv": -0.0933,
-  "l": 326,
-  "pending": 180,
+  "l": 335,
+  "pending": 165,
   "push": 0,
-  "units": -81.93,
+  "units": -86.58,
   "void": 0,
-  "w": 278
+  "w": 284
  },
  "R28d backup goalie": {
   "clv": -0.1014,
@@ -208,6 +208,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-27T21:20:11+00:00",
+ "updated_at": "2026-11-27T21:30:14+00:00",
  "version": 1
 }

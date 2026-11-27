@@ -33,18 +33,18 @@
  },
  "NN4 exch steam": {
   "bets": 8,
-  "graded": 5,
-  "w": 2,
-  "units": -1.524,
-  "roi": -0.3048,
+  "graded": 6,
+  "w": 3,
+  "units": -0.918,
+  "roi": -0.153,
   "ci90": [
-   -1.0,
-   0.3903
+   -0.7323,
+   0.4262
   ],
-  "p_one_sided": 0.7215,
+  "p_one_sided": 0.6555,
   "mean_ev": 0.0365,
   "mean_clv": -0.0253,
-  "games": 5,
+  "games": 6,
   "candidate": false
  },
  "NN5 market moves": {

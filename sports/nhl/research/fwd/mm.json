@@ -65,18 +65,18 @@
  },
  "MM4 total": {
   "bets": 35,
-  "graded": 20,
-  "w": 9,
-  "units": -2.625,
-  "roi": -0.1313,
+  "graded": 35,
+  "w": 15,
+  "units": -7.281,
+  "roi": -0.208,
   "ci90": [
-   -0.515,
-   0.1443
+   -0.41,
+   0.0536
   ],
-  "p_one_sided": 0.756,
+  "p_one_sided": 0.9095,
   "mean_ev": -0.1032,
   "mean_clv": -0.1032,
-  "games": 7,
+  "games": 8,
   "candidate": false
  },
  "MM5a follow": {
