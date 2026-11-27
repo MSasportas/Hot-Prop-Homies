@@ -48,7 +48,7 @@
   "candidate": false
  },
  "NN5 market moves": {
-  "bets": 4,
+  "bets": 5,
   "graded": 4,
   "w": 1,
   "units": -1.75,
@@ -58,8 +58,8 @@
    0.125
   ],
   "p_one_sided": 0.733,
-  "mean_ev": 0.024,
-  "mean_clv": 0.0234,
+  "mean_ev": 0.0222,
+  "mean_clv": 0.0217,
   "games": 4,
   "candidate": false
  },
