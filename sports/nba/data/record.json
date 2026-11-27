@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T18:00:00-05:00",
+ "generated_at": "2026-11-27T18:20:01-05:00",
  "summary": {
   "headline": {
    "w": 72,
@@ -301,6 +301,7 @@
       "needed": 0.5408,
       "n": 45,
       "ids": [
+       "2026-11-27:401909326:3032977:points:27.5:under",
        "2026-11-24:401909315:3078576:points:13.5:under",
        "2026-11-23:401910041:5041951:points:9.5:over",
        "2026-11-23:401910043:3202:points:21.5:under",
@@ -498,6 +499,7 @@
       "n": 85,
       "ids": [
        "2026-11-27:401909328:5124612:rebounds:6.5:under",
+       "2026-11-27:401909326:3032977:points:27.5:under",
        "2026-11-25:401909324:6589:rebounds:4.5:under",
        "2026-11-25:401909325:4845367:rebounds:5.5:under",
        "2026-11-24:401909315:3078576:points:13.5:under",
@@ -715,6 +717,7 @@
       "needed": 0.5168,
       "n": 26,
       "ids": [
+       "2026-11-27:401909326:3032977:points:27.5:under",
        "2026-11-25:401909325:4845367:rebounds:5.5:under",
        "2026-11-23:401910038:4900671:assists:3.5:over",
        "2026-11-23:401910043:3202:points:21.5:under",
@@ -816,6 +819,7 @@
       "needed": 0.5196,
       "n": 99,
       "ids": [
+       "2026-11-27:401909326:3032977:points:27.5:under",
        "2026-11-25:401909319:3908809:rebounds:4.5:over",
        "2026-11-25:401909324:6589:rebounds:4.5:under",
        "2026-11-24:401909315:3078576:rebounds:3.5:over",
@@ -1022,6 +1026,7 @@
       "n": 80,
       "ids": [
        "2026-11-27:401909328:5124612:rebounds:6.5:under",
+       "2026-11-27:401909326:3032977:points:27.5:under",
        "2026-11-25:401909324:6589:rebounds:4.5:under",
        "2026-11-25:401909325:4845367:rebounds:5.5:under",
        "2026-11-24:401909315:3078576:points:13.5:under",
@@ -1117,7 +1122,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 1,
+    "n": 2,
     "graded": false
    },
    {
@@ -1413,6 +1418,32 @@
      "pulled": null,
      "legs": [],
      "window": "11 AM \u2192 90 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-27:401909326:3032977:points:27.5:under",
+     "kind": "single",
+     "player": "Giannis Antetokounmpo",
+     "bet": "Under 27.5 points",
+     "market": "points",
+     "team": "MIA",
+     "game": "MIA at NYK",
+     "price": -105,
+     "first_price": -105,
+     "last_price": -105,
+     "prices": [
+      {
+       "price": -105,
+       "at": "2026-11-27T18:20:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "90 \u2192 45 min",
      "book": "hardrock",
      "under_fair": false
     }
