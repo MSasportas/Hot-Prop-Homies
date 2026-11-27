@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-27",
- "started_at": "2026-11-27T12:00:01-05:00",
- "status_at": "2026-11-27T12:00:01-05:00",
- "finished_at": "2026-11-27T12:00:03-05:00",
- "last_ok_at": "2026-11-27T12:00:01-05:00",
+ "started_at": "2026-11-27T12:10:01-05:00",
+ "status_at": "2026-11-27T12:10:01-05:00",
+ "finished_at": "2026-11-27T12:10:03-05:00",
+ "last_ok_at": "2026-11-27T12:10:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -25,12 +25,12 @@
   {
    "step": "lineups",
    "status": "ok",
-   "note": "10 of 10 team pages read"
+   "note": "6 of 6 team pages read"
   },
   {
    "step": "lineup_history",
-   "status": "ok",
-   "note": "8 team(s) changed"
+   "status": "skipped",
+   "note": "no change"
   },
   {
    "step": "odds",
@@ -154,7 +154,7 @@
  ],
  "excluded_teams": [],
  "stats_through": "2026-11-25",
- "lineups_at": "2026-11-27T12:00:01-05:00",
+ "lineups_at": "2026-11-27T12:10:01-05:00",
  "lineups_note": "Lineups posted for 2 of 16 teams checked so far.",
  "games_today": 15,
  "record_events": 374,
@@ -162,7 +162,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "46035706490",
-  "iteration": 3,
+  "iteration": 4,
   "chain_link": 20,
   "chain_started_at": "2026-11-26T22:20:31-05:00",
   "run_started_at": "2026-11-27T11:41:30-05:00"
