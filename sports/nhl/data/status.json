@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-27",
- "started_at": "2026-11-27T17:32:14-05:00",
- "status_at": "2026-11-27T17:32:14-05:00",
- "finished_at": "2026-11-27T17:32:16-05:00",
- "last_ok_at": "2026-11-27T17:32:14-05:00",
+ "started_at": "2026-11-27T17:40:01-05:00",
+ "status_at": "2026-11-27T17:40:01-05:00",
+ "finished_at": "2026-11-27T17:40:06-05:00",
+ "last_ok_at": "2026-11-27T17:40:01-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -19,13 +19,13 @@
   },
   {
    "step": "stats",
-   "status": "skipped",
-   "note": "nothing new"
+   "status": "ok",
+   "note": "1 window(s) read, 2 team-games still missing"
   },
   {
    "step": "lineups",
-   "status": "skipped",
-   "note": "checked in the last 20 minutes"
+   "status": "ok",
+   "note": "4 of 4 team pages read"
   },
   {
    "step": "lineup_history",
@@ -84,8 +84,8 @@
   },
   {
    "step": "slate",
-   "status": "skipped",
-   "note": "unchanged"
+   "status": "ok",
+   "note": "0 open pick(s)"
   },
   {
    "step": "record",
@@ -155,8 +155,8 @@
   "Landon Slaggert"
  ],
  "excluded_teams": [],
- "stats_through": "2026-11-27",
- "lineups_at": "2026-11-27T17:30:01-05:00",
+ "stats_through": "2026-11-25",
+ "lineups_at": "2026-11-27T17:40:01-05:00",
  "lineups_note": "Lineups posted for 21 of 30 teams checked so far.",
  "games_today": 15,
  "record_events": 381,
@@ -164,7 +164,7 @@
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "46077172600",
-  "iteration": 1,
+  "iteration": 2,
   "chain_link": 27,
   "chain_started_at": "2026-11-26T22:20:31-05:00",
   "run_started_at": "2026-11-27T17:31:47-05:00"
