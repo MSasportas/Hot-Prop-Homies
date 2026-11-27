@@ -1,27 +1,27 @@
 {
  "slate_date": "2026-11-27",
- "generated_at": "2026-11-27T16:30:00-05:00",
+ "generated_at": "2026-11-27T16:40:00-05:00",
  "games": [
   {
    "game_id": 2026020403,
-   "state": "CRIT",
+   "state": "FINAL",
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "03:29",
+   "clock": "00:00",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "DAL",
     "score": 3,
-    "sog": 25
+    "sog": 28
    },
    "home": {
     "abbrev": "STL",
-    "score": 4,
-    "sog": 19
+    "score": 5,
+    "sog": 20
    },
-   "updated_at": "2026-11-27T16:30:00-05:00"
+   "updated_at": "2026-11-27T16:40:00-05:00"
   },
   {
    "game_id": 2026020410,
@@ -29,20 +29,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "08:31",
+   "clock": "03:07",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "VGK",
     "score": 0,
-    "sog": 10
+    "sog": 12
    },
    "home": {
     "abbrev": "SJS",
     "score": 0,
-    "sog": 6
+    "sog": 9
    },
-   "updated_at": "2026-11-27T16:30:00-05:00"
+   "updated_at": "2026-11-27T16:40:00-05:00"
   }
  ],
  "picks": {
@@ -59,7 +59,7 @@
   "2026-11-27:2026020410:8484801:shots:3.5:over": {
    "game_id": 2026020410,
    "market": "shots",
-   "stat": 0
+   "stat": 1
   }
  }
 }
