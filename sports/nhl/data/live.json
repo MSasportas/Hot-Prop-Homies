@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-27",
- "generated_at": "2026-11-27T15:20:00-05:00",
+ "generated_at": "2026-11-27T15:30:00-05:00",
  "games": [
   {
    "game_id": 2026020403,
@@ -8,27 +8,27 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "11:39",
+   "clock": "06:40",
    "in_intermission": false,
    "running": true,
    "away": {
     "abbrev": "DAL",
-    "score": 0,
-    "sog": 13
+    "score": 2,
+    "sog": 18
    },
    "home": {
     "abbrev": "STL",
     "score": 2,
-    "sog": 7
+    "sog": 10
    },
-   "updated_at": "2026-11-27T15:20:00-05:00"
+   "updated_at": "2026-11-27T15:30:00-05:00"
   }
  ],
  "picks": {
   "2026-11-27:2026020403:8482077:shots:2.5:under": {
    "game_id": 2026020403,
    "market": "shots",
-   "stat": 0
+   "stat": 1
   }
  }
 }
