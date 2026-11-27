@@ -262,3 +262,8 @@ Population: data/odds reads B and C; per player/market, Pinnacle main line = Pin
 - N32a: Pinnacle line > HR line -> HR OVER; Pinnacle line < HR line -> HR UNDER (HR's line is soft on that side).
 - N32b: the opposite side (fade), same populations, for context.
 Code: research/code/run32/line_level_n32.py. Stored data only.
+
+## Run 33 (Researcher, 2026-11-27 daily). TWO IDEAS, registered before any test. Discovery = every stored odds night through 2026-11-26; forward from 2026-11-27. Pass bar: rule 4.
+- S33n (NBA port of NHL S32a, price shop): reads B and C, HR two-sided on a line also two-sided on >= 3 other books (hold <= 15%). Bet the side where HR's decimal price is >= 5% above the MEDIAN raw decimal of the other books for that side, price -200..+200, first per player/market/night. CLV vs other books' median no-vig at the last later read.
+- H33n (NBA port of NHL H33a, HR lags the consensus move): pulls A and C, same line two-sided at HR and >= 3 other books at both. Consensus (median no-vig over) moves >= 2 pts toward a side A->C while HR's own no-vig moves < 0.5 pt that way: bet that side at HR's C price, -200..+200, first per player/market/night. Over/under split labelled post hoc.
+Not a re-run of N31 (Pinnacle trend), N32 (Pinnacle line level), R30a (line majority), AH moves (Pinnacle only). Code: research/code/run33/nba_r33.py.

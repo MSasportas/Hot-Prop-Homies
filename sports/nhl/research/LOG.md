@@ -1,3 +1,12 @@
+## 2026-11-27, Run 33 (Researcher daily; HARD ROCK LAGS THE CONSENSUS MOVE, priorities 1-2)
+Registered before any test: H33a in HYPOTHESES.md (Run 33). Code research/code/run33/hr_lag_h33.py, output hr_lag_h33_results.txt. Stored data only (45 odds nights Oct 12 - Nov 27), no key. Discovery = all stored nights; forward from 2026-11-27 (none yet).
+- Rule: shots; other books' median no-vig moves >= 2 pts toward a side A->C while HR's own no-vig moves < 0.5 pt that way; bet that side at HR's C price, -200..+200; first per player/night.
+- H33a: n 116 graded, 55-61, -16.63u, ROI -14.3% [90% CI -27.9, -0.8], placebo 0.88. CLV not computable (no later read with >= 3 other books). Over 21-19 -3.1% (n 40); under 34-42 -20.3% (n 76).
+- Reading: when the other books move and HR does not, HR is not stale; it already holds the right price. Following the consensus into HR's old price loses worse than the hold.
+**Verdict: FAILED (CI below zero). No candidate. READY FOR SHARP: no.** No forward scorer needed.
+Forward re-score (run_all.sh, ran clean, nights through 2026-11-27): Q1g +6.8% n876 p .0195 CLV +3.3%; Q1b +5.3% n1022 p .038; Q1h +6.9% n633 p .04; Q1a +1.9% n1374. Bar n >= 300, p < 0.0033: none clears; numbers unchanged since Nov 26 (no new graded nights yet).
+Next: (1) S32a-under forward (needs Engineer scorer); (2) Q1g/Q1b keep accruing.
+
 ## 2026-11-26, Run 32 (Researcher daily; SHOTS price shop: Hard Rock's price vs other books' raw prices, priority 2)
 Registered before any test: S32a in HYPOTHESES.md (Run 32). Code research/code/run32/price_shop_s32.py, output price_shop_s32_results.txt. Stored data only (44 odds nights Oct 12 - Nov 25), no key. Discovery = all stored nights; forward from 2026-11-26.
 - Rule: reads B/C, HR shots side whose decimal price is >= 5% above the median raw decimal of >= 3 other two-sided books on the same line; price -200..+200; first per player/night.

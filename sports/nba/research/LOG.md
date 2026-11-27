@@ -1,3 +1,11 @@
+## 2026-11-27, Run 33 (Researcher daily; price shop + HR lag, NBA ports of NHL S32a/H33a)
+Registered before any test: S33n and H33n in HYPOTHESES.md (Run 33). Code research/code/run33/nba_r33.py, output nba_r33_results.txt. Stored data only (31 odds nights Oct 25 - Nov 25), no key. Discovery = all stored nights; forward from 2026-11-27 (none yet).
+- S33n price shop (HR decimal >= 5% above median of >= 3 other books, -200..+200): n 300, 297 graded, 132-165, -16.62u, ROI -5.6% [90% CI -16.1, +3.9], CLV -0.8% (n 257), placebo 0.93. Over -13.7% (n 42), under -4.3% (n 255). By market: points +1.0% (n 50), assists -7.7%, rebounds -4.2%, threes -8.8%.
+- H33n HR lags consensus (others' median moves >= 2 pts A->C, HR < 0.5 pt): n 74, 36-38, -3.96u, ROI -5.4% [-23.8, +12.7], CLV -2.6%. Over 9-15 -31.8% [-61.8, -2.2] (n 24); under 27-23 +7.3% [-15.3, +31.4] (n 50, post hoc split, noise).
+**Verdict: both FAILED on discovery (negative ROI and CLV). No candidate. READY FOR SHARP: no.** Unlike NHL shots, an NBA price shop gives no lead: HR's longest-price rows lose about the hold.
+Forward: auto-scorer's latest entry (AH11 fwd -0.5% n106) below bar; nothing clears.
+Next: (1) no scorer needed for S33n/H33n; (2) backlog: time-of-day staleness needs more than 4 reads a day, which we do not store (proposal for CEO only if Matt wants more pulls).
+
 ## 2026-11-25, Run 30 (Researcher daily; R30a main-line majority, NBA)
 
 ## 2026-11-27, AH11 (auto; Morning overs vs unders)

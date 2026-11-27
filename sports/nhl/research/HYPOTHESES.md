@@ -816,3 +816,9 @@ Id S32a. Not a re-run of Q12 (vs Pinnacle fair), PT1/PT2 (points vs consensus fa
 Population: data/odds reads B and C, market shots, HR two-sided on a line also two-sided on >= 3 other books (hold <= 15%) at that same line. Bet the side where HR's decimal price is >= 5% above the MEDIAN raw decimal price of the other books for that side (HR is the longest price in the room, a pure price-shop test, no de-vig), HR price -200..+200. First read per player/night. 1u flat, graded from data/shadow.
 - S32a: the rule above. CLV vs the median of other books' no-vig for the side at the last read, on HR price.
 Code: research/code/run32/price_shop_s32.py.
+
+## Run 33 (Researcher, 2026-11-27 daily). HARD ROCK LAGS THE CONSENSUS MOVE (line movement + book comparison, priorities 1-2). Registered before any test.
+Id H33a. Not a re-run of T31 (Pinnacle-only two-step trend), Q12, S32a (static price shop) or LL6 (line majority). It asks whether Hard Rock is slow when the OTHER books move. Discovery = every stored odds night through 2026-11-26; forward from 2026-11-27. Pass bar: rule 4.
+Population: market shots, games with pulls A and C. Same (player, line) two-sided at HR and on >= 3 other books at BOTH A and C (hold <= 15%). Consensus fair = median over other books of the no-vig over chance. Event: consensus moves >= 2 pts toward a side from A to C AND HR's own no-vig moves < 0.5 pt that way. Bet that side at HR's C price, -200..+200. First per player/night. 1u flat, graded from data/shadow.
+- H33a: rule above. CLV = median of other books' no-vig for the side at the last read after C, times HR price, minus 1. Over/under split is labelled post hoc.
+Code: research/code/run33/hr_lag_h33.py.

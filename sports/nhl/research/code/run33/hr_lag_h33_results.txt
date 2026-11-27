@@ -1,0 +1,5 @@
+H33a HR lags consensus move >=2pts A->C (shots). Nights 45 (2026-10-12..2026-11-27). Forward from 2026-11-27.
+H33a all               n  116 graded  116   55-  61  -16.63u ROI -14.3% CI90 [-27.9, -0.8]    CLV_pin     - (n 0) placebo>=actual 0.88
+over                   n   40 graded   40   21-  19   -1.22u ROI  -3.1% CI90 [-28.1, +22.3]   CLV_pin     - (n 0) placebo>=actual 0.56
+under                  n   76 graded   76   34-  42  -15.41u ROI -20.3% CI90 [-35.4, -4.6]    CLV_pin     - (n 0) placebo>=actual 0.962
+forward                n    0 graded    0    0-   0   +0.00u ROI      - CI90 -                CLV_pin     - (n 0) placebo>=actual None

@@ -1,0 +1,19 @@
+NBA R33. Nights 31 (2026-10-25..2026-11-25). Forward from 2026-11-27.
+
+S33n price shop all    n  300 graded  297  132- 165  -16.62u ROI  -5.6% CI90 [-16.1, +3.9]    CLV_pin -0.8% (n 257) placebo>=actual 0.934
+S33n price shop over   n   42 graded   42   17-  25   -5.74u ROI -13.7% CI90 [-40.8, +13.9]   CLV_pin -2.6% (n 36) placebo>=actual 0.806
+S33n price shop under  n  258 graded  255  115- 140  -10.88u ROI  -4.3% CI90 [-15.4, +6.9]    CLV_pin -0.5% (n 221) placebo>=actual 0.88
+S33n price shop assists n   82 graded   81   35-  46   -6.26u ROI  -7.7% CI90 [-24.5, +9.9]    CLV_pin -0.6% (n 72) placebo>=actual 0.954
+S33n price shop points n   51 graded   50   26-  24   +0.52u ROI  +1.0% CI90 [-20.7, +23.8]   CLV_pin -1.8% (n 39) placebo>=actual 0.434
+S33n price shop rebounds n   80 graded   80   37-  43   -3.34u ROI  -4.2% CI90 [-23.9, +15.3]   CLV_pin -1.1% (n 68) placebo>=actual 0.782
+S33n price shop threes n   87 graded   86   34-  52   -7.54u ROI  -8.8% CI90 [-28.7, +12.1]   CLV_pin -0.3% (n 78) placebo>=actual 0.364
+S33n price shop forward n    0 graded    0    0-   0   +0.00u ROI      - CI90 -                CLV_pin     - (n 0) placebo>=actual None
+
+H33n HR lag all        n   74 graded   74   36-  38   -3.96u ROI  -5.4% CI90 [-23.8, +12.7]   CLV_pin -2.6% (n 71) placebo>=actual 0.468
+H33n HR lag over       n   24 graded   24    9-  15   -7.63u ROI -31.8% CI90 [-61.8, -2.2]    CLV_pin -4.3% (n 22) placebo>=actual 0.804
+H33n HR lag under      n   50 graded   50   27-  23   +3.67u ROI  +7.3% CI90 [-15.3, +31.4]   CLV_pin -1.9% (n 49) placebo>=actual 0.506
+H33n HR lag assists    n   19 graded   19    9-  10   -2.13u ROI -11.2% CI90 [-46.2, +22.6]   CLV_pin -3.9% (n 18) placebo>=actual 1.0
+H33n HR lag points     n   17 graded   17    7-  10   -3.97u ROI -23.3% CI90 [-59.0, +16.6]   CLV_pin -4.0% (n 15) placebo>=actual 0.668
+H33n HR lag rebounds   n   20 graded   20   12-   8   +3.71u ROI +18.5% CI90 [-19.1, +52.5]   CLV_pin -2.3% (n 20) placebo>=actual 0.724
+H33n HR lag threes     n   18 graded   18    8-  10   -1.57u ROI  -8.7% CI90 [-50.2, +32.0]   CLV_pin -0.7% (n 18) placebo>=actual 0.652
+H33n HR lag forward    n    0 graded    0    0-   0   +0.00u ROI      - CI90 -                CLV_pin     - (n 0) placebo>=actual None
