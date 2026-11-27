@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-27",
- "generated_at": "2026-11-27T18:10:02-05:00",
+ "generated_at": "2026-11-27T18:20:01-05:00",
  "games": [
   {
    "game_id": 2026020403,
@@ -29,20 +29,20 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "14:38",
+   "clock": "10:19",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "VGK",
     "score": 0,
-    "sog": 23
+    "sog": 26
    },
    "home": {
     "abbrev": "SJS",
     "score": 2,
-    "sog": 27
+    "sog": 31
    },
-   "updated_at": "2026-11-27T18:10:02-05:00"
+   "updated_at": "2026-11-27T18:20:01-05:00"
   }
  ],
  "picks": {
