@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T18:20:01-05:00",
+ "generated_at": "2026-11-27T18:40:01-05:00",
  "summary": {
   "headline": {
    "w": 72,
@@ -400,6 +400,7 @@
       "needed": 0.4756,
       "n": 20,
       "ids": [
+       "2026-11-27:401909326:3062679:threes:1.5:under",
        "2026-11-20:401909309:4871145:threes:1.5:over",
        "2026-11-18:401910017:5041955:threes:2.5:over",
        "2026-11-18:401910015:4431767:threes:1.5:over",
@@ -500,6 +501,7 @@
       "ids": [
        "2026-11-27:401909328:5124612:rebounds:6.5:under",
        "2026-11-27:401909326:3032977:points:27.5:under",
+       "2026-11-27:401909326:3062679:threes:1.5:under",
        "2026-11-25:401909324:6589:rebounds:4.5:under",
        "2026-11-25:401909325:4845367:rebounds:5.5:under",
        "2026-11-24:401909315:3078576:points:13.5:under",
@@ -608,6 +610,7 @@
       "n": 94,
       "ids": [
        "2026-11-27:401909328:5124612:rebounds:6.5:under",
+       "2026-11-27:401909326:3062679:threes:1.5:under",
        "2026-11-25:401909319:3908809:rebounds:4.5:over",
        "2026-11-25:401909324:6589:rebounds:4.5:under",
        "2026-11-24:401909315:3078576:rebounds:3.5:over",
@@ -933,6 +936,7 @@
       "needed": 0.4885,
       "n": 10,
       "ids": [
+       "2026-11-27:401909326:3062679:threes:1.5:under",
        "2026-11-24:401909315:4251:rebounds:5.5:over",
        "2026-11-17:401910003:4431736:rebounds:4.5:over",
        "2026-11-15:401909985:3149673:assists:3.5:under",
@@ -1027,6 +1031,7 @@
       "ids": [
        "2026-11-27:401909328:5124612:rebounds:6.5:under",
        "2026-11-27:401909326:3032977:points:27.5:under",
+       "2026-11-27:401909326:3062679:threes:1.5:under",
        "2026-11-25:401909324:6589:rebounds:4.5:under",
        "2026-11-25:401909325:4845367:rebounds:5.5:under",
        "2026-11-24:401909315:3078576:points:13.5:under",
@@ -1122,7 +1127,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 2,
+    "n": 3,
     "graded": false
    },
    {
@@ -1444,6 +1449,32 @@
      "pulled": null,
      "legs": [],
      "window": "90 \u2192 45 min",
+     "book": "hardrock",
+     "under_fair": false
+    },
+    {
+     "id": "2026-11-27:401909326:3062679:threes:1.5:under",
+     "kind": "single",
+     "player": "Josh Hart",
+     "bet": "Under 1.5 threes",
+     "market": "threes",
+     "team": "NYK",
+     "game": "MIA at NYK",
+     "price": -150,
+     "first_price": -150,
+     "last_price": -150,
+     "prices": [
+      {
+       "price": -150,
+       "at": "2026-11-27T18:40:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": [],
+     "window": "45 \u2192 20 min",
      "book": "hardrock",
      "under_fair": false
     }

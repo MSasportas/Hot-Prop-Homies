@@ -13,7 +13,7 @@
    "status": {}
   },
   "NY": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jalen Brunson",
     "Mikal Bridges",
@@ -331,5 +331,5 @@
    }
   }
  },
- "at": "2026-11-27T18:33:11-05:00"
+ "at": "2026-11-27T18:40:01-05:00"
 }
