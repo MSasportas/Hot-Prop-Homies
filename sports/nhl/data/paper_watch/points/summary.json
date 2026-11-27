@@ -2,7 +2,7 @@
  "version": 1,
  "note": "Behind the scenes: research only. Not picks, not on the Record, never sent to Discord.",
  "market": "points",
- "generated_at": "2026-11-27T15:01:46-05:00",
+ "generated_at": "2026-11-27T15:20:00-05:00",
  "slate": "2026-11-27",
  "active": true,
  "window": {
@@ -10,7 +10,42 @@
   "checkpoint": "2026-11-02"
  },
  "tonight": {
-  "flags": [],
+  "flags": [
+   {
+    "id": "2026-11-27:2026020410:8478975:0.5:over",
+    "kind": "flag",
+    "slate": "2026-11-27",
+    "game_id": 2026020410,
+    "player": "M. Marchment",
+    "team": "SJS",
+    "opp": "VGK",
+    "game": "SJS vs VGK",
+    "start": "2026-11-27T16:00:00-05:00",
+    "side": "over",
+    "line": 0.5,
+    "bet": "OVER 0.5 points",
+    "price": 155,
+    "gap_pct": 5.5,
+    "final_pct": 5.8,
+    "market_fair_pct": 41.4,
+    "final_p_pct": 41.5,
+    "n_books": 7,
+    "guard": "pass",
+    "cap": null,
+    "flagged_at": "2026-11-27T15:20:00-05:00",
+    "read_pull": "C",
+    "settled": "Lineup confirmed",
+    "frozen_settled": "Lineup confirmed",
+    "move30_pct": 0.0,
+    "pulled": null,
+    "locked": false,
+    "state": "open",
+    "close_fair_pct": 41.4,
+    "clv_pct": null,
+    "result": null,
+    "units": null
+   }
+  ],
   "vetoes": [],
   "capped": []
  },
@@ -2084,7 +2119,7 @@
      "cap": null,
      "flagged_at": "2026-11-03T17:30:02-05:00",
      "read_pull": "B",
-     "settled": "Lineup confirmed",
+     "settled": "Goalie confirmed",
      "frozen_settled": "Goalie confirmed",
      "move30_pct": null,
      "pulled": null,
@@ -2512,7 +2547,7 @@
  ],
  "nov2": {
   "gaps_measured": 63,
-  "gaps_logged": 69,
+  "gaps_logged": 70,
   "graded_picks": 47,
   "w": 26,
   "l": 21,
@@ -2540,7 +2575,7 @@
   "clv_passed_mean": 0.04693177639711506,
   "clv_vetoed_mean": 0.04087781994715483,
   "nights": 29,
-  "nights_with_flags": 17,
+  "nights_with_flags": 18,
   "population_slope": null,
   "checkpoint": "2026-11-02"
  }

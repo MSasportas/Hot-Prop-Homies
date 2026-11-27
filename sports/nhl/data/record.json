@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T14:00:00-05:00",
+ "generated_at": "2026-11-27T15:20:00-05:00",
  "summary": {
   "headline": {
    "w": 69,
@@ -243,7 +243,7 @@
     "push": 0,
     "void": 0,
     "units": 0,
-    "n": 1,
+    "n": 3,
     "graded": false
    },
    {
@@ -581,6 +581,52 @@
       {
        "price": -110,
        "at": "2026-11-27T13:20:01-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-27:2026020410:8478975:points:0.5:over",
+     "kind": "single",
+     "player": "M. Marchment",
+     "bet": "Over 0.5 points",
+     "market": "points",
+     "team": "SJS",
+     "game": "VGK at SJS",
+     "price": 155,
+     "first_price": 155,
+     "last_price": 155,
+     "prices": [
+      {
+       "price": 155,
+       "at": "2026-11-27T15:20:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-27:2026020410:8484801:shots:3.5:over",
+     "kind": "single",
+     "player": "M. Celebrini",
+     "bet": "Over 3.5 shots on goal",
+     "market": "shots",
+     "team": "SJS",
+     "game": "VGK at SJS",
+     "price": 135,
+     "first_price": 135,
+     "last_price": 135,
+     "prices": [
+      {
+       "price": 135,
+       "at": "2026-11-27T15:20:00-05:00"
       }
      ],
      "result": null,
