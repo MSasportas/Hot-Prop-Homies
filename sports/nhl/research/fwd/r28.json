@@ -1,6 +1,6 @@
 {
  "R28a points gap": {
-  "bets": 1,
+  "bets": 2,
   "graded": 1,
   "w": 1,
   "units": 0.909,
@@ -10,13 +10,13 @@
    0.9091
   ],
   "p_one_sided": 0.0,
-  "mean_ev": 0.0557,
-  "mean_clv": 0.0557,
+  "mean_ev": 0.0534,
+  "mean_clv": 0.0418,
   "games": 1,
   "candidate": false
  },
  "R28b under": {
-  "bets": 466,
+  "bets": 470,
   "graded": 359,
   "w": 177,
   "units": -9.209,
@@ -27,12 +27,12 @@
   ],
   "p_one_sided": 0.698,
   "mean_ev": 0.0,
-  "mean_clv": -0.0511,
+  "mean_clv": -0.0512,
   "games": 41,
   "candidate": false
  },
  "R28b over": {
-  "bets": 278,
+  "bets": 280,
   "graded": 207,
   "w": 80,
   "units": -39.261,
@@ -43,12 +43,12 @@
   ],
   "p_one_sided": 0.9875,
   "mean_ev": 0.0,
-  "mean_clv": -0.1172,
+  "mean_clv": -0.1173,
   "games": 41,
   "candidate": false
  },
  "R28c rest": {
-  "bets": 757,
+  "bets": 764,
   "graded": 558,
   "w": 301,
   "units": 0.686,
@@ -59,12 +59,12 @@
   ],
   "p_one_sided": 0.4955,
   "mean_ev": 0.0,
-  "mean_clv": -0.0514,
+  "mean_clv": -0.051,
   "games": 40,
   "candidate": false
  },
  "R28c rest mirror": {
-  "bets": 767,
+  "bets": 774,
   "graded": 567,
   "w": 259,
   "units": -79.984,
@@ -75,7 +75,7 @@
   ],
   "p_one_sided": 1.0,
   "mean_ev": 0.0,
-  "mean_clv": -0.0918,
+  "mean_clv": -0.0923,
   "games": 40,
   "candidate": false
  },
@@ -91,7 +91,7 @@
   ],
   "p_one_sided": 0.9995,
   "mean_ev": 0.0,
-  "mean_clv": -0.0994,
+  "mean_clv": -0.0992,
   "games": 20,
   "candidate": false
  }
