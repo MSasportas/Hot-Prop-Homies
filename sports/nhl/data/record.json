@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T18:00:01-05:00",
+ "generated_at": "2026-11-27T18:30:00-05:00",
  "summary": {
   "headline": {
    "w": 69,
@@ -243,7 +243,7 @@
     "push": 0,
     "void": 0,
     "units": -1.0,
-    "n": 4,
+    "n": 7,
     "graded": false
    },
    {
@@ -636,6 +636,29 @@
      "legs": []
     },
     {
+     "id": "2026-11-27:2026020413:8482097:shots:2.5:over",
+     "kind": "single",
+     "player": "J. Quinn",
+     "bet": "Over 2.5 shots on goal",
+     "market": "shots",
+     "team": "BUF",
+     "game": "PIT at BUF",
+     "price": 105,
+     "first_price": 105,
+     "last_price": 105,
+     "prices": [
+      {
+       "price": 105,
+       "at": "2026-11-27T18:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
      "id": "2026-11-27:2026020410:8484801:shots:3.5:over",
      "kind": "single",
      "player": "M. Celebrini",
@@ -650,6 +673,52 @@
       {
        "price": 135,
        "at": "2026-11-27T15:20:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-27:2026020414:8484800:shots:1.5:under",
+     "kind": "single",
+     "player": "B. Catton",
+     "bet": "Under 1.5 shots on goal",
+     "market": "shots",
+     "team": "SEA",
+     "game": "SEA at EDM",
+     "price": -115,
+     "first_price": -115,
+     "last_price": -115,
+     "prices": [
+      {
+       "price": -115,
+       "at": "2026-11-27T18:30:00-05:00"
+      }
+     ],
+     "result": null,
+     "actual": null,
+     "units": null,
+     "pulled": null,
+     "legs": []
+    },
+    {
+     "id": "2026-11-27:2026020414:8477934:points:1.5:over",
+     "kind": "single",
+     "player": "L. Draisaitl",
+     "bet": "Over 1.5 points",
+     "market": "points",
+     "team": "EDM",
+     "game": "SEA at EDM",
+     "price": 115,
+     "first_price": 115,
+     "last_price": 115,
+     "prices": [
+      {
+       "price": 115,
+       "at": "2026-11-27T18:30:00-05:00"
       }
      ],
      "result": null,
