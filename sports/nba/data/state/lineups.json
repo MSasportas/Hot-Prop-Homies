@@ -86,9 +86,9 @@
    "status": {
     "Kelly Oubre": "questionable",
     "Larry Nance": "probable",
-    "T.J. McConnell": "questionable",
     "Johnny Furphy": "out",
     "Tyrese Haliburton": "out",
+    "T.J. McConnell": "out",
     "Ben Sheppard": "out"
    }
   },
@@ -333,5 +333,5 @@
    }
   }
  },
- "at": "2026-11-27T17:50:00-05:00"
+ "at": "2026-11-27T18:00:00-05:00"
 }

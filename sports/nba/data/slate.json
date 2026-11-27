@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 516,
+   "pool_left": 504,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-27T18:00:00-05:00",
-  "last_read_at": "2026-11-27T17:30:01-05:00",
+  "next_read_at": "2026-11-27T18:15:00-05:00",
+  "last_read_at": "2026-11-27T18:00:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-27T17:50:00-05:00"
+   "at": "2026-11-27T18:00:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-27T17:50:00-05:00",
+    "at": "2026-11-27T18:00:00-05:00",
     "confirmed": []
    },
    "grade": true
@@ -58,8 +58,8 @@
    ],
    "last_check_at": "2026-11-27T17:30:01-05:00",
    "final": false,
-   "next_check_at": "2026-11-27T18:00:00-05:00",
-   "next_check_read": "X60",
+   "next_check_at": "2026-11-27T18:15:00-05:00",
+   "next_check_read": "C",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -77,13 +77,18 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-27T11:00:00-05:00",
+   "read_at": "2026-11-27T18:00:00-05:00",
    "picks": 0,
-   "checks": [],
-   "last_check_at": null,
+   "checks": [
+    {
+     "read": "B",
+     "at": "2026-11-27T18:00:00-05:00"
+    }
+   ],
+   "last_check_at": "2026-11-27T18:00:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-27T18:00:00-05:00",
-   "next_check_read": "B",
+   "next_check_at": "2026-11-27T18:15:00-05:00",
+   "next_check_read": "X75",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -101,13 +106,18 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-27T11:00:00-05:00",
-   "picks": 0,
-   "checks": [],
-   "last_check_at": null,
+   "read_at": "2026-11-27T18:00:00-05:00",
+   "picks": 1,
+   "checks": [
+    {
+     "read": "B",
+     "at": "2026-11-27T18:00:00-05:00"
+    }
+   ],
+   "last_check_at": "2026-11-27T18:00:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-27T18:00:00-05:00",
-   "next_check_read": "B",
+   "next_check_at": "2026-11-27T18:15:00-05:00",
+   "next_check_read": "X75",
    "paused": false,
    "injury_clear": {
     "away": false,
@@ -125,13 +135,18 @@
     "away": "expected",
     "home": "expected"
    },
-   "read_at": "2026-11-27T11:00:00-05:00",
+   "read_at": "2026-11-27T18:00:00-05:00",
    "picks": 0,
-   "checks": [],
-   "last_check_at": null,
+   "checks": [
+    {
+     "read": "B",
+     "at": "2026-11-27T18:00:00-05:00"
+    }
+   ],
+   "last_check_at": "2026-11-27T18:00:00-05:00",
    "final": false,
-   "next_check_at": "2026-11-27T18:00:00-05:00",
-   "next_check_read": "B",
+   "next_check_at": "2026-11-27T18:15:00-05:00",
+   "next_check_read": "X75",
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -202,8 +217,8 @@
    "checks": [],
    "last_check_at": null,
    "final": false,
-   "next_check_at": "2026-11-27T18:00:00-05:00",
-   "next_check_read": "X180",
+   "next_check_at": "2026-11-27T18:45:00-05:00",
+   "next_check_read": "X135",
    "paused": false,
    "injury_clear": {
     "away": false,
@@ -307,15 +322,75 @@
    }
   }
  ],
- "picks": [],
- "empty": {
-  "text": "No picks yet today",
-  "why": "1056 lines read. Pinnacle moved alone on 14, none of them bettable yet.",
-  "next": "2026-11-27T18:00:00-05:00"
- },
+ "picks": [
+  {
+   "player": "VJ Edgecombe",
+   "pid": "5124612",
+   "team": "PHI",
+   "opp": "IND",
+   "home": false,
+   "game_id": "401909328",
+   "start": "2026-11-27T19:30:00-05:00",
+   "bet": "Under 6.5 rebounds",
+   "market": "rebounds",
+   "side": "under",
+   "line": 6.5,
+   "price": -145,
+   "price_at": "2026-11-27T18:00:00-05:00",
+   "read": "B",
+   "p": 0.5987,
+   "p_pct": 60,
+   "breakeven": 0.5918,
+   "breakeven_pct": 59,
+   "market_fair": null,
+   "n_books": 7,
+   "gap_ev": null,
+   "final_ev": 0.0402,
+   "model_p": null,
+   "reason": "Pinnacle moved the under from -148 to -178 (56% to 60%). Hard Rock -145 is 1.2% better than Pinnacle's fair price.",
+   "rule": "pin_solo",
+   "pin_before": 0.5585,
+   "pin_after": 0.5987,
+   "pin_price_before": -148,
+   "pin_price_after": -178,
+   "others_move": 0.0018,
+   "n_others": 7,
+   "ev_vs_pin": 0.0116,
+   "window": "11 AM \u2192 90 min",
+   "gap_vs_pin": 0.0485,
+   "book": "hardrock",
+   "books": {
+    "hardrock": {
+     "ev_vs_pin": 0.0116,
+     "price": -145
+    }
+   },
+   "id": "2026-11-27:401909328:5124612:rebounds:6.5:under",
+   "state": "early",
+   "state_label": "Early",
+   "price_final": false,
+   "pulled": null,
+   "added_at": "2026-11-27T18:00:00-05:00",
+   "result": null,
+   "links": {
+    "hardrock": {
+     "id": "3982145900618318218",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/3982145900618318218",
+     "price": -145
+    },
+    "draftkings": {
+     "url": "https://sportsbook.draftkings.com/?outcomes=0QA392804278%232382201332_13L42648Q1-1595150841Q20",
+     "price": -153,
+     "qualifies": false
+    }
+   },
+   "rank": 1
+  }
+ ],
+ "empty": null,
  "counts": {
-  "lines_read": 1056,
-  "passing": 1,
+  "lines_read": 1078,
+  "passing": 4,
   "games": 11
  },
  "safety_paused": false,
@@ -325,6 +400,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-27T17:50:00-05:00",
- "status_at": "2026-11-27T17:50:00-05:00"
+ "generated_at": "2026-11-27T18:00:00-05:00",
+ "status_at": "2026-11-27T18:00:00-05:00"
 }
