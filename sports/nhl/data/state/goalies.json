@@ -19,7 +19,7 @@
   },
   "NJD": {
    "name": "Jake Allen",
-   "status": "expected"
+   "status": "confirmed"
   },
   "CGY": {
    "name": "Dustin Wolf",
@@ -122,5 +122,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-27T10:30:01-05:00"
+ "checked_at": "2026-11-27T10:50:48-05:00"
 }
