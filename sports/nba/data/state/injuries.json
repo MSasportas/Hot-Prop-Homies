@@ -1,5 +1,5 @@
 {
- "at": "2026-11-26T18:50:01-05:00",
+ "at": "2026-11-26T19:20:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -124,29 +124,29 @@
    "status": "out",
    "name": "Tobi Lawal",
    "team": "DAL",
-   "date": "2026-11-23T23:25Z",
-   "note": "Lawal (groin) is out for Tuesday's game against Denver."
-  },
-  "4683688": {
-   "status": "out",
-   "name": "Dereck Lively II",
-   "team": "DAL",
-   "date": "2026-11-20T19:31Z",
-   "note": "Head coach Dusty May said Friday that Lively (foot) is moving well and progressing in his recovery, and the big man told May he's \"close\" to returning, Mike Curtis of The Dallas Morning News reports."
+   "date": "2026-11-27T00:01Z",
+   "note": "Lawal (groin) is out for Friday's game against the Suns."
   },
   "5279129": {
    "status": "out",
    "name": "Sergio de Larrea",
    "team": "DAL",
-   "date": "2026-11-17T22:53Z",
-   "note": "De Larrea (knee) is listed as out for Wednesday's game against the Warriors."
+   "date": "2026-11-26T23:59Z",
+   "note": "De Larrea (knee) is out for Friday's game against the Suns."
+  },
+  "4683688": {
+   "status": "out",
+   "name": "Dereck Lively II",
+   "team": "DAL",
+   "date": "2026-11-26T23:56Z",
+   "note": "Lively (foot) is out for Friday's game against the Suns."
   },
   "5148538": {
    "status": "out",
    "name": "Tarik Biberovic",
    "team": "DAL",
-   "date": "2026-11-17T22:42Z",
-   "note": "Biberovic (heel) is out for Wednesday's game against the Warriors."
+   "date": "2026-11-26T23:53Z",
+   "note": "Biberovic (heel) is out for Friday's game against the Suns."
   },
   "3157465": {
    "status": "out",
@@ -635,15 +635,15 @@
    "status": "day-to-day",
    "name": "Jaxson Hayes",
    "team": "UTAH",
-   "date": "2026-11-24T06:07Z",
-   "note": "Hayes (knee) has been ruled out for Monday's game against the Lakers."
+   "date": "2026-11-27T00:11Z",
+   "note": "Hayes (knee) is questionable for Friday's game against the Nuggets."
   },
   "3102530": {
    "status": "out",
    "name": "Jusuf Nurkic",
    "team": "UTAH",
-   "date": "2026-11-20T22:40Z",
-   "note": "Nurkic (foot) has been cleared for on-court work and will be re-evaluated in one week."
+   "date": "2026-11-27T00:08Z",
+   "note": "Nurkic (foot) is questionable for Friday's game against the Nuggets."
   },
   "4066336": {
    "status": "out",
