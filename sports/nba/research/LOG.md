@@ -1,5 +1,14 @@
 ## 2026-11-25, Run 30 (Researcher daily; R30a main-line majority, NBA)
 
+## 2026-11-27, AH11 (auto; Morning overs vs unders)
+Filter: MOVES in 11AM->90 window, split by side. MOVES population (Pinnacle >= 2 pt move, HR on line, -200..+200, 1/player/market/night).
+Discovery (<2026-11-10, 15 nights): n 558 graded 550 291-259 -14.14u ROI -2.6% CLV_pin -4.5% (n 544)
+Discovery FAIR (ev_pin>=0): n 34 graded 34 22-12 +9.64u ROI +28.4% CLV_pin -0.2% (n 34)
+Forward (>=2026-11-10, 4 nights): n 106 graded 106 58-48 -0.53u ROI -0.5% CLV_pin -4.5% (n 102)
+Forward FAIR: n 3 graded 3 1-2 -1.20u ROI -40.0% CLV_pin -1.1% (n 3)
+Pass bar: n>=150 graded fwd, ROI>0, CI>0, CLV>0. Status: FORWARD - accumulating
+
+
 ## 2026-11-26, Run 32 (Researcher daily; PINNACLE LINE LEVEL vs HARD ROCK LINE, priority 2 book comparison)
 Registered before any test: N32a/N32b in HYPOTHESES.md (Run 32). Code research/code/run32/line_level_n32.py, output line_level_n32_results.txt. Stored data only (31 odds nights, Oct 25 - Nov 25), no key. Discovery = all stored nights; forward from 2026-11-26 (none yet).
 - N32a follow Pinnacle's main line (HR line differs by >= 0.5; over if Pinnacle line higher, else under; at HR's price): n 1,640 graded, 886-754, -86.53u, ROI -5.3% [90% CI -8.6, -1.8], CLV_pin -8.1% (n 61, close line often changes so CLV n is small), placebo 1.0. Over -6.6%, under -2.9%. Points -5.3%, rebounds -1.0%, assists -11.6%, threes -7.0%.
