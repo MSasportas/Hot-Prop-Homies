@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-27",
- "started_at": "2026-11-27T15:50:01-05:00",
- "status_at": "2026-11-27T15:50:01-05:00",
- "finished_at": "2026-11-27T15:50:05-05:00",
- "last_ok_at": "2026-11-27T15:50:01-05:00",
+ "started_at": "2026-11-27T15:51:51-05:00",
+ "status_at": "2026-11-27T15:51:51-05:00",
+ "finished_at": "2026-11-27T15:51:52-05:00",
+ "last_ok_at": "2026-11-27T15:51:51-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -19,18 +19,18 @@
   },
   {
    "step": "stats",
-   "status": "ok",
-   "note": "1 window(s) read, 4 team-games still missing"
+   "status": "skipped",
+   "note": "waiting to retry"
   },
   {
    "step": "lineups",
-   "status": "ok",
-   "note": "6 of 6 team pages read"
+   "status": "skipped",
+   "note": "checked in the last 20 minutes"
   },
   {
    "step": "lineup_history",
-   "status": "ok",
-   "note": "3 team(s) changed"
+   "status": "skipped",
+   "note": "no change"
   },
   {
    "step": "odds",
@@ -84,8 +84,8 @@
   },
   {
    "step": "slate",
-   "status": "ok",
-   "note": "2 open pick(s)"
+   "status": "skipped",
+   "note": "unchanged"
   },
   {
    "step": "record",
@@ -98,7 +98,7 @@
   "nhl_stats": "ok",
   "odds": "ok",
   "dailyfaceoff": "ok",
-  "dailyfaceoff_goalies": "ok"
+  "dailyfaceoff_goalies": "failed"
  },
  "keys": [
   {
@@ -161,10 +161,10 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "46060712285",
-  "iteration": 6,
-  "chain_link": 24,
+  "run_id": "46066430968",
+  "iteration": 1,
+  "chain_link": 25,
   "chain_started_at": "2026-11-26T22:20:31-05:00",
-  "run_started_at": "2026-11-27T15:01:25-05:00"
+  "run_started_at": "2026-11-27T15:51:32-05:00"
  }
 }
