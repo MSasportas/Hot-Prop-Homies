@@ -2,7 +2,7 @@
  "LL3a tight": {
   "clv": 0.0302,
   "l": 81,
-  "pending": 8,
+  "pending": 11,
   "push": 0,
   "units": 1.19,
   "void": 0,
@@ -11,52 +11,52 @@
  "LL3b loose": {
   "clv": 0.0284,
   "l": 37,
-  "pending": 8,
+  "pending": 9,
   "push": 0,
   "units": 14.51,
   "void": 0,
   "w": 50
  },
  "LL4a fade": {
-  "clv": -0.0694,
+  "clv": -0.0685,
   "l": 101,
-  "pending": 7,
+  "pending": 10,
   "push": 0,
   "units": 1.79,
   "void": 0,
   "w": 115
  },
  "LL5 exch": {
-  "clv": 0.0196,
+  "clv": 0.0185,
   "l": 131,
-  "pending": 30,
+  "pending": 41,
   "push": 0,
   "units": 16.8,
   "void": 0,
   "w": 156
  },
  "LL6 line": {
-  "clv": -0.0172,
+  "clv": -0.0177,
   "l": 52,
-  "pending": 15,
+  "pending": 20,
   "push": 0,
   "units": -3.79,
   "void": 0,
   "w": 87
  },
  "MM2a split": {
-  "clv": -0.0211,
+  "clv": -0.0216,
   "l": 12,
-  "pending": 0,
+  "pending": 1,
   "push": 0,
   "units": -4.96,
   "void": 0,
   "w": 8
  },
  "MM2b split 2%": {
-  "clv": -0.0051,
+  "clv": -0.0072,
   "l": 7,
-  "pending": 0,
+  "pending": 1,
   "push": 0,
   "units": -2.27,
   "void": 0,
@@ -126,9 +126,9 @@
   "w": 24
  },
  "NN4 exch steam": {
-  "clv": -0.0262,
+  "clv": -0.027,
   "l": 3,
-  "pending": 2,
+  "pending": 3,
   "push": 0,
   "units": -1.52,
   "void": 0,
@@ -162,9 +162,9 @@
   "w": 1
  },
  "R28b over": {
-  "clv": -0.1185,
+  "clv": -0.1184,
   "l": 127,
-  "pending": 74,
+  "pending": 75,
   "push": 0,
   "units": -39.26,
   "void": 0,
@@ -173,7 +173,7 @@
  "R28b under": {
   "clv": -0.051,
   "l": 182,
-  "pending": 113,
+  "pending": 114,
   "push": 0,
   "units": -9.21,
   "void": 0,
@@ -182,7 +182,7 @@
  "R28c rest": {
   "clv": -0.0504,
   "l": 257,
-  "pending": 210,
+  "pending": 211,
   "push": 0,
   "units": 0.69,
   "void": 0,
@@ -191,7 +191,7 @@
  "R28c rest mirror": {
   "clv": -0.0929,
   "l": 308,
-  "pending": 211,
+  "pending": 212,
   "push": 0,
   "units": -79.98,
   "void": 0,
@@ -208,6 +208,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-27T19:20:11+00:00",
+ "updated_at": "2026-11-27T19:30:13+00:00",
  "version": 1
 }

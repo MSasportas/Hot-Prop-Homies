@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-27",
- "started_at": "2026-11-27T14:20:00-05:00",
- "status_at": "2026-11-27T14:20:00-05:00",
- "finished_at": "2026-11-27T14:20:03-05:00",
- "last_ok_at": "2026-11-27T14:20:00-05:00",
+ "started_at": "2026-11-27T14:30:00-05:00",
+ "status_at": "2026-11-27T14:30:00-05:00",
+ "finished_at": "2026-11-27T14:30:04-05:00",
+ "last_ok_at": "2026-11-27T14:30:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -24,18 +24,18 @@
   },
   {
    "step": "lineups",
-   "status": "skipped",
-   "note": "checked in the last 20 minutes"
+   "status": "ok",
+   "note": "2 of 2 team pages read"
   },
   {
    "step": "lineup_history",
-   "status": "skipped",
-   "note": "no change"
+   "status": "ok",
+   "note": "2 team(s) changed"
   },
   {
    "step": "odds",
    "status": "ok",
-   "note": "4 game(s) priced"
+   "note": "3 game(s) priced"
   },
   {
    "step": "market_menu",
@@ -75,7 +75,7 @@
   {
    "step": "shadow",
    "status": "ok",
-   "note": "115 line read(s) logged"
+   "note": "90 line read(s) logged"
   },
   {
    "step": "gg_grade",
@@ -97,7 +97,7 @@
   "nhl_web": "ok",
   "nhl_stats": "ok",
   "odds": "ok",
-  "dailyfaceoff": "failed",
+  "dailyfaceoff": "ok",
   "dailyfaceoff_goalies": "ok"
  },
  "keys": [
@@ -115,7 +115,7 @@
   },
   {
    "n": 4,
-   "left": 162
+   "left": 153
   },
   {
    "n": 5,
@@ -138,14 +138,14 @@
    "left": 500
   }
  ],
- "pool_total": 2256,
+ "pool_total": 2247,
  "allowance": 64.5556,
  "tier": 4,
  "budget_today": 968,
- "budget_used_today": 68,
+ "budget_used_today": 77,
  "prices_state": "ok",
- "prices_at": "2026-11-27T14:20:00-05:00",
- "next_price_read_at": "2026-11-27T14:30:00-05:00",
+ "prices_at": "2026-11-27T14:30:00-05:00",
+ "next_price_read_at": "2026-11-27T15:15:00-05:00",
  "unmatched_names": [],
  "unknown_teams": [],
  "lineup_unmatched_names": [
@@ -154,15 +154,17 @@
  ],
  "excluded_teams": [],
  "stats_through": "2026-11-25",
- "lineups_at": "2026-11-27T13:20:01-05:00",
- "lineups_note": "Lineups posted for 5 of 22 teams checked so far.",
+ "lineups_at": "2026-11-27T14:30:00-05:00",
+ "lineups_note": "Lineups posted for 7 of 24 teams checked so far.",
  "games_today": 15,
  "record_events": 376,
- "odds_notes": [],
+ "odds_notes": [
+  "key 1 refused (401)"
+ ],
  "runner": {
   "event": "workflow_dispatch",
   "run_id": "46054773769",
-  "iteration": 2,
+  "iteration": 3,
   "chain_link": 23,
   "chain_started_at": "2026-11-26T22:20:31-05:00",
   "run_started_at": "2026-11-27T14:10:23-05:00"

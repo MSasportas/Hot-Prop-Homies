@@ -32,7 +32,7 @@
   "candidate": false
  },
  "NN4 exch steam": {
-  "bets": 7,
+  "bets": 8,
   "graded": 5,
   "w": 2,
   "units": -1.524,
@@ -42,8 +42,8 @@
    0.3903
   ],
   "p_one_sided": 0.7215,
-  "mean_ev": 0.0265,
-  "mean_clv": -0.0262,
+  "mean_ev": 0.0365,
+  "mean_clv": -0.027,
   "games": 5,
   "candidate": false
  },
