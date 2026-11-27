@@ -1,5 +1,5 @@
 {
- "at": "2026-11-26T20:11:51-05:00",
+ "at": "2026-11-27T10:50:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -386,6 +386,13 @@
    "date": "2026-11-13T20:19Z",
    "note": "Murray (ankle) is out for Friday's game against Memphis."
   },
+  "6585": {
+   "status": "out",
+   "name": "Andre Drummond",
+   "team": "NY",
+   "date": "2026-11-27T15:36Z",
+   "note": "Drummond (concussion) has been ruled out for Friday's game against the Heat."
+  },
   "4431823": {
    "status": "day-to-day",
    "name": "Miles McBride",
@@ -406,13 +413,6 @@
    "team": "NY",
    "date": "2026-11-26T21:57Z",
    "note": "Anunoby (calf) is doubtful for Friday's game against the Heat."
-  },
-  "6585": {
-   "status": "day-to-day",
-   "name": "Andre Drummond",
-   "team": "NY",
-   "date": "2026-11-26T21:51Z",
-   "note": "Drummond (head) is questionable for Friday's game against the Heat."
   },
   "5159925": {
    "status": "out",
