@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T11:50:00-05:00",
+ "at": "2026-11-27T12:00:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -385,6 +385,13 @@
    "team": "NO",
    "date": "2026-11-13T20:19Z",
    "note": "Murray (ankle) is out for Friday's game against Memphis."
+  },
+  "3136195": {
+   "status": "day-to-day",
+   "name": "Karl-Anthony Towns",
+   "team": "NY",
+   "date": "2026-11-27T16:51Z",
+   "note": "Towns is questionable for Friday's game against the Heat due to a right abdominal contusion."
   },
   "6585": {
    "status": "out",
