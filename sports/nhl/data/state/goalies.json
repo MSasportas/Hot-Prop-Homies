@@ -35,10 +35,10 @@
   },
   "CBJ": {
    "name": "Jet Greaves",
-   "status": "expected"
+   "status": "confirmed"
   },
   "DET": {
-   "name": "John Gibson",
+   "name": "Daniil Tarasov",
    "status": "expected"
   },
   "PHI": {
@@ -46,7 +46,7 @@
    "status": "expected"
   },
   "VAN": {
-   "name": "Leevi Merilainen",
+   "name": "Kevin Lankinen",
    "status": "expected"
   },
   "WSH": {
@@ -106,7 +106,7 @@
    "status": "expected"
   },
   "EDM": {
-   "name": "Devon Levi",
+   "name": "Tristan Jarry",
    "status": "expected"
   },
   "SEA": {
@@ -118,9 +118,9 @@
    "status": "expected"
   },
   "PIT": {
-   "name": "Arturs Silovs",
+   "name": "Sergei Murashov",
    "status": "expected"
   }
  },
- "checked_at": "2026-11-27T09:00:00-05:00"
+ "checked_at": "2026-11-27T09:10:01-05:00"
 }
