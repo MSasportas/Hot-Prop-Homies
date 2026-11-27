@@ -1,8 +1,8 @@
 {
  "LL3a tight": {
-  "clv": 0.0299,
+  "clv": 0.0298,
   "l": 85,
-  "pending": 13,
+  "pending": 14,
   "push": 0,
   "units": 0.01,
   "void": 0,
@@ -18,7 +18,7 @@
   "w": 55
  },
  "LL4a fade": {
-  "clv": -0.0661,
+  "clv": -0.0662,
   "l": 103,
   "pending": 15,
   "push": 0,
@@ -29,14 +29,14 @@
  "LL5 exch": {
   "clv": 0.019,
   "l": 145,
-  "pending": 21,
+  "pending": 22,
   "push": 0,
   "units": 15.5,
   "void": 0,
   "w": 171
  },
  "LL6 line": {
-  "clv": -0.0173,
+  "clv": -0.0175,
   "l": 59,
   "pending": 12,
   "push": 0,
@@ -171,7 +171,7 @@
   "w": 94
  },
  "R28b under": {
-  "clv": -0.0514,
+  "clv": -0.0512,
   "l": 213,
   "pending": 51,
   "push": 0,
@@ -180,7 +180,7 @@
   "w": 210
  },
  "R28c rest": {
-  "clv": -0.0501,
+  "clv": -0.05,
   "l": 316,
   "pending": 94,
   "push": 0,
@@ -189,7 +189,7 @@
   "w": 366
  },
  "R28c rest mirror": {
-  "clv": -0.0936,
+  "clv": -0.0937,
   "l": 374,
   "pending": 95,
   "push": 0,
@@ -198,7 +198,7 @@
   "w": 318
  },
  "R28d backup goalie": {
-  "clv": -0.1016,
+  "clv": -0.1018,
   "l": 126,
   "pending": 14,
   "push": 0,
@@ -208,6 +208,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-27T23:30:13+00:00",
+ "updated_at": "2026-11-27T23:50:13+00:00",
  "version": 1
 }

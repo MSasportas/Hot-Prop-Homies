@@ -27,7 +27,7 @@
   ],
   "p_one_sided": 0.6345,
   "mean_ev": 0.0,
-  "mean_clv": -0.0514,
+  "mean_clv": -0.0512,
   "games": 49,
   "candidate": false
  },
@@ -59,7 +59,7 @@
   ],
   "p_one_sided": 0.531,
   "mean_ev": 0.0,
-  "mean_clv": -0.0501,
+  "mean_clv": -0.05,
   "games": 48,
   "candidate": false
  },
@@ -75,7 +75,7 @@
   ],
   "p_one_sided": 0.9995,
   "mean_ev": 0.0,
-  "mean_clv": -0.0936,
+  "mean_clv": -0.0937,
   "games": 48,
   "candidate": false
  },
@@ -91,7 +91,7 @@
   ],
   "p_one_sided": 1.0,
   "mean_ev": 0.0,
-  "mean_clv": -0.1016,
+  "mean_clv": -0.1018,
   "games": 25,
   "candidate": false
  }

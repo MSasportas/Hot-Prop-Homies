@@ -1,12 +1,12 @@
 {
  "slate_date": "2026-11-27",
- "generated_at": "2026-11-27T18:40:02-05:00",
- "status_at": "2026-11-27T18:40:02-05:00",
+ "generated_at": "2026-11-27T18:50:01-05:00",
+ "status_at": "2026-11-27T18:50:01-05:00",
  "valid_until": "2026-11-28T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
-  "prices_at": "2026-11-27T18:30:00-05:00",
-  "next_price_read_at": "2026-11-27T18:45:00-05:00",
+  "prices_at": "2026-11-27T18:50:01-05:00",
+  "next_price_read_at": "2026-11-27T19:15:00-05:00",
   "stats_built_at": "2026-11-27T18:40:02-05:00",
   "stats_through": "2026-11-25",
   "lineups_at": "2026-11-27T18:40:02-05:00",
@@ -16,11 +16,11 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-27T18:40:02-05:00",
+   "at": "2026-11-27T18:50:01-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 2216,
+   "pulls_left": 2211,
    "keys": 9,
    "game_days_left": 4,
    "days_left": 4,
@@ -614,20 +614,21 @@
      {
       "pull": "B",
       "at": "2026-11-27T18:00:01-05:00"
+     },
+     {
+      "pull": "C",
+      "at": "2026-11-27T18:50:01-05:00"
      }
     ],
-    "next_read": {
-     "pull": "C",
-     "at": "2026-11-27T18:45:00-05:00"
-    },
+    "next_read": null,
     "lineups_at": {
      "away": "2026-11-27T16:50:00-05:00",
      "home": "2026-11-27T16:50:00-05:00"
     }
    },
    "started": false,
-   "reads_done": false,
-   "picks": 1,
+   "reads_done": true,
+   "picks": 0,
    "excluded_reason": null,
    "excluded_teams": []
   },
@@ -850,69 +851,6 @@
    "games_this_season": 22
   },
   {
-   "id": "2026-11-27:2026020412:8478445:shots:2.5:under",
-   "price": -120,
-   "first_price": -120,
-   "first_price_at": "2026-11-27T18:00:01-05:00",
-   "worst_price": -120,
-   "p": 0.5714,
-   "breakeven": 0.5455,
-   "p_pct": 57,
-   "breakeven_pct": 55,
-   "state": "lineup",
-   "history": [
-    {
-     "at": "2026-11-27T18:00:01-05:00",
-     "text": "Lineup confirmed"
-    }
-   ],
-   "prices": [
-    {
-     "at": "2026-11-27T18:00:01-05:00",
-     "price": -120
-    }
-   ],
-   "pulled": null,
-   "price_final": false,
-   "graded": null,
-   "rank": 3,
-   "tier": "main",
-   "game_id": 2026020412,
-   "player": "M. Barzal",
-   "player_id": 8478445,
-   "team": "NYI",
-   "opp": "WPG",
-   "home": true,
-   "start": "2026-11-27T19:30:00-05:00",
-   "market": "shots",
-   "line": 2.5,
-   "side": "under",
-   "bet": "Under 2.5 shots on goal",
-   "price_at": "2026-11-27T18:00:01-05:00",
-   "gap_pct": 3.1,
-   "market_fair_pct": 56.3,
-   "n_books": 7,
-   "guard": {
-    "verdict": "agrees",
-    "ours_pct": 57.1,
-    "model_pct": 62.3
-   },
-   "settled": "lineup",
-   "settled_label": "Lineup confirmed",
-   "reason": "7 other books say 56.3%; Hard Rock's -120 only needs 54.5%. Our model agrees (our blend: 57.1%).",
-   "link": "https://app.hardrock.bet/?deep_link_value=betslip/8945429990353273246",
-   "links": {
-    "hardrock": {
-     "id": "8945429990353273246",
-     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/8945429990353273246"
-    },
-    "draftkings": null
-   },
-   "thin": false,
-   "games_used": 87,
-   "games_this_season": 6
-  },
-  {
    "id": "2026-11-27:2026020414:8477934:points:1.5:over",
    "price": 115,
    "first_price": 115,
@@ -938,7 +876,7 @@
    "pulled": null,
    "price_final": false,
    "graded": null,
-   "rank": 4,
+   "rank": 3,
    "tier": "main",
    "game_id": 2026020414,
    "player": "L. Draisaitl",
@@ -974,6 +912,78 @@
    "thin": false,
    "games_used": 92,
    "games_this_season": 27
+  },
+  {
+   "id": "2026-11-27:2026020412:8478445:shots:2.5:under",
+   "price": -120,
+   "first_price": -120,
+   "first_price_at": "2026-11-27T18:00:01-05:00",
+   "worst_price": -120,
+   "p": 0.5714,
+   "breakeven": 0.5455,
+   "p_pct": 57,
+   "breakeven_pct": 55,
+   "state": "lineup",
+   "history": [
+    {
+     "at": "2026-11-27T18:00:01-05:00",
+     "text": "Lineup confirmed"
+    },
+    {
+     "at": "2026-11-27T18:50:01-05:00",
+     "text": "Pulled: Hard Rock moved it to -125"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-27T18:00:01-05:00",
+     "price": -120
+    }
+   ],
+   "pulled": {
+    "at": "2026-11-27T18:50:01-05:00",
+    "reason": "Hard Rock moved it to -125",
+    "if_bet": "Got -120? Still a good bet. Don't bet it at -125.",
+    "code": "gap_gone"
+   },
+   "price_final": false,
+   "graded": null,
+   "rank": null,
+   "tier": "main",
+   "game_id": 2026020412,
+   "player": "M. Barzal",
+   "player_id": 8478445,
+   "team": "NYI",
+   "opp": "WPG",
+   "home": true,
+   "start": "2026-11-27T19:30:00-05:00",
+   "market": "shots",
+   "line": 2.5,
+   "side": "under",
+   "bet": "Under 2.5 shots on goal",
+   "price_at": "2026-11-27T18:00:01-05:00",
+   "gap_pct": 3.1,
+   "market_fair_pct": 56.3,
+   "n_books": 7,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 57.1,
+    "model_pct": 62.3
+   },
+   "settled": "lineup",
+   "settled_label": "Lineup confirmed",
+   "reason": "7 other books say 56.3%; Hard Rock's -120 only needs 54.5%. Our model agrees (our blend: 57.1%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/8945429990353273246",
+   "links": {
+    "hardrock": {
+     "id": "8945429990353273246",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/8945429990353273246"
+    },
+    "draftkings": null
+   },
+   "thin": false,
+   "games_used": 87,
+   "games_this_season": 6
   },
   {
    "id": "2026-11-27:2026020403:8482077:shots:2.5:under",
