@@ -1,7 +1,7 @@
 {
  "slate_date": "2026-11-27",
- "generated_at": "2026-11-27T14:30:00-05:00",
- "status_at": "2026-11-27T14:30:00-05:00",
+ "generated_at": "2026-11-27T14:40:01-05:00",
+ "status_at": "2026-11-27T14:40:01-05:00",
  "valid_until": "2026-11-28T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
@@ -9,14 +9,14 @@
   "next_price_read_at": "2026-11-27T15:15:00-05:00",
   "stats_built_at": "2026-11-26T01:30:00-05:00",
   "stats_through": "2026-11-25",
-  "lineups_at": "2026-11-27T14:30:00-05:00",
+  "lineups_at": "2026-11-27T14:40:01-05:00",
   "goalies_at": null,
-  "lineups_note": "Lineups posted for 7 of 24 teams checked so far.",
+  "lineups_note": "Lineups posted for 13 of 24 teams checked so far.",
   "lineups_state": "ok",
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-27T14:30:00-05:00",
+   "at": "2026-11-27T14:40:01-05:00",
    "failed_step": null
   },
   "pool": {
@@ -229,7 +229,7 @@
    "start": "2026-11-27T15:00:00-05:00",
    "lineups": {
     "away": "confirmed",
-    "home": "waiting"
+    "home": "confirmed"
    },
    "goalies": {
     "away": {
@@ -237,8 +237,8 @@
      "status": "confirmed"
     },
     "home": {
-     "name": "Andrei Vasilevskiy",
-     "status": "expected"
+     "name": "Dennis Hildeby",
+     "status": "confirmed"
     }
    },
    "checks": {
@@ -259,7 +259,7 @@
     "next_read": null,
     "lineups_at": {
      "away": "2026-11-27T12:30:01-05:00",
-     "home": null
+     "home": "2026-11-27T14:40:01-05:00"
     }
    },
    "started": false,
@@ -275,12 +275,12 @@
    "start": "2026-11-27T15:00:00-05:00",
    "lineups": {
     "away": "waiting",
-    "home": "waiting"
+    "home": "confirmed"
    },
    "goalies": {
     "away": {
-     "name": "Kevin Lankinen",
-     "status": "expected"
+     "name": "Leevi Merilainen",
+     "status": "confirmed"
     },
     "home": {
      "name": "Dan Vladar",
@@ -305,7 +305,7 @@
     "next_read": null,
     "lineups_at": {
      "away": null,
-     "home": null
+     "home": "2026-11-27T14:40:01-05:00"
     }
    },
    "started": false,
@@ -320,8 +320,8 @@
    "home": "WSH",
    "start": "2026-11-27T15:00:00-05:00",
    "lineups": {
-    "away": "waiting",
-    "home": "waiting"
+    "away": "confirmed",
+    "home": "confirmed"
    },
    "goalies": {
     "away": {
@@ -350,8 +350,8 @@
     ],
     "next_read": null,
     "lineups_at": {
-     "away": null,
-     "home": null
+     "away": "2026-11-27T14:40:01-05:00",
+     "home": "2026-11-27T14:40:01-05:00"
     }
    },
    "started": false,
@@ -371,8 +371,8 @@
    },
    "goalies": {
     "away": {
-     "name": "Daniil Tarasov",
-     "status": "expected"
+     "name": "John Gibson",
+     "status": "confirmed"
     },
     "home": {
      "name": "Jet Greaves",
@@ -457,7 +457,7 @@
    "home": "ANA",
    "start": "2026-11-27T16:00:00-05:00",
    "lineups": {
-    "away": "waiting",
+    "away": "confirmed",
     "home": "waiting"
    },
    "goalies": {
@@ -486,7 +486,7 @@
      "at": "2026-11-27T15:15:00-05:00"
     },
     "lineups_at": {
-     "away": null,
+     "away": "2026-11-27T14:40:01-05:00",
      "home": null
     }
    },
@@ -503,7 +503,7 @@
    "start": "2026-11-27T16:00:00-05:00",
    "lineups": {
     "away": "waiting",
-    "home": "waiting"
+    "home": "confirmed"
    },
    "goalies": {
     "away": {
@@ -532,7 +532,7 @@
     },
     "lineups_at": {
      "away": null,
-     "home": null
+     "home": "2026-11-27T14:40:01-05:00"
     }
    },
    "started": false,

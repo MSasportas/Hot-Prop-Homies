@@ -38,16 +38,16 @@
    "status": "confirmed"
   },
   "DET": {
-   "name": "Daniil Tarasov",
-   "status": "expected"
+   "name": "John Gibson",
+   "status": "confirmed"
   },
   "PHI": {
    "name": "Dan Vladar",
    "status": "confirmed"
   },
   "VAN": {
-   "name": "Kevin Lankinen",
-   "status": "expected"
+   "name": "Leevi Merilainen",
+   "status": "confirmed"
   },
   "WSH": {
    "name": "Logan Thompson",
@@ -58,8 +58,8 @@
    "status": "confirmed"
   },
   "TBL": {
-   "name": "Andrei Vasilevskiy",
-   "status": "expected"
+   "name": "Dennis Hildeby",
+   "status": "confirmed"
   },
   "OTT": {
    "name": "Linus Ullmark",
@@ -122,5 +122,5 @@
    "status": "confirmed"
   }
  },
- "checked_at": "2026-11-27T14:10:56-05:00"
+ "checked_at": "2026-11-27T14:40:01-05:00"
 }
