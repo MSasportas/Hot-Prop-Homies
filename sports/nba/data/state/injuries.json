@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T14:30:01-05:00",
+ "at": "2026-11-27T16:30:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -476,6 +476,20 @@
    "team": "OKC",
    "date": "2026-10-31T01:02Z",
    "note": "Holmgren underwent a biological treatment Friday to address a small patellar tendon tear and will miss at least 8-10 weeks, Nick Crain of Slam reports."
+  },
+  "4397140": {
+   "status": "out",
+   "name": "Kevin Porter Jr.",
+   "team": "ORL",
+   "date": "2026-11-27T21:08Z",
+   "note": "Porter won't play Saturday against the Wizards as he's still in the process of getting up to speed on his conditioning."
+  },
+  "4712849": {
+   "status": "day-to-day",
+   "name": "Anthony Black",
+   "team": "ORL",
+   "date": "2026-11-27T21:05Z",
+   "note": "Black (back) is questionable for Saturday's game against the Wizards."
   },
   "4397204": {
    "status": "day-to-day",
