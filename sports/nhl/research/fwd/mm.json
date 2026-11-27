@@ -32,7 +32,7 @@
   "candidate": false
  },
  "MM3a persist": {
-  "bets": 119,
+  "bets": 120,
   "graded": 119,
   "w": 61,
   "units": 5.286,
@@ -42,13 +42,13 @@
    0.216
   ],
   "p_one_sided": 0.342,
-  "mean_ev": 0.0337,
-  "mean_clv": 0.0337,
+  "mean_ev": 0.0338,
+  "mean_clv": 0.0338,
   "games": 69,
   "candidate": false
  },
  "MM3b confirm": {
-  "bets": 1,
+  "bets": 2,
   "graded": 1,
   "w": 1,
   "units": 0.741,
@@ -58,8 +58,8 @@
    0.7407
   ],
   "p_one_sided": 0.0,
-  "mean_ev": 0.0641,
-  "mean_clv": 0.0641,
+  "mean_ev": 0.0543,
+  "mean_clv": 0.0543,
   "games": 1,
   "candidate": false
  },
