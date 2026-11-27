@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T13:20:01-05:00",
+ "at": "2026-11-27T13:30:00-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -386,6 +386,27 @@
    "date": "2026-11-13T20:19Z",
    "note": "Murray (ankle) is out for Friday's game against Memphis."
   },
+  "4431823": {
+   "status": "out",
+   "name": "Miles McBride",
+   "team": "NY",
+   "date": "2026-11-27T18:21Z",
+   "note": "McBride (groin) is out for Friday's game against the Heat."
+  },
+  "3934719": {
+   "status": "out",
+   "name": "OG Anunoby",
+   "team": "NY",
+   "date": "2026-11-27T18:20Z",
+   "note": "Anunoby (calf) has been ruled out for Friday's game against the Heat. The forward was previously listed as doubtful and will miss his third consecutive contest due to a left calf strain."
+  },
+  "2528426": {
+   "status": "out",
+   "name": "Jordan Clarkson",
+   "team": "NY",
+   "date": "2026-11-27T18:19Z",
+   "note": "Clarkson (foot) is out for Friday's game against the Heat."
+  },
   "3136195": {
    "status": "day-to-day",
    "name": "Karl-Anthony Towns",
@@ -399,27 +420,6 @@
    "team": "NY",
    "date": "2026-11-27T15:36Z",
    "note": "Drummond (concussion) has been ruled out for Friday's game against the Heat."
-  },
-  "4431823": {
-   "status": "day-to-day",
-   "name": "Miles McBride",
-   "team": "NY",
-   "date": "2026-11-26T22:11Z",
-   "note": "McBride (groin) is questionable for Friday's game against the Heat."
-  },
-  "2528426": {
-   "status": "out",
-   "name": "Jordan Clarkson",
-   "team": "NY",
-   "date": "2026-11-26T22:03Z",
-   "note": "Clarkson (foot) is questionable for Friday's game against the Heat."
-  },
-  "3934719": {
-   "status": "out",
-   "name": "OG Anunoby",
-   "team": "NY",
-   "date": "2026-11-26T21:57Z",
-   "note": "Anunoby (calf) is doubtful for Friday's game against the Heat."
   },
   "5159925": {
    "status": "out",
