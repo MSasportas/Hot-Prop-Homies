@@ -18,7 +18,7 @@
    "status": "expected"
   },
   "NJD": {
-   "name": "Connor Hellebuyck",
+   "name": "Jake Allen",
    "status": "expected"
   },
   "CGY": {
@@ -34,7 +34,7 @@
    "status": "expected"
   },
   "CBJ": {
-   "name": "Cam Talbot",
+   "name": "Jet Greaves",
    "status": "expected"
   },
   "DET": {
@@ -122,5 +122,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-27T05:00:00-05:00"
+ "checked_at": "2026-11-27T09:00:00-05:00"
 }
