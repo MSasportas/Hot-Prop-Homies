@@ -98,7 +98,7 @@
    "status": "expected"
   },
   "NYI": {
-   "name": "Ilya Sorokin",
+   "name": "Semyon Varlamov",
    "status": "expected"
   },
   "WPG": {
@@ -122,5 +122,5 @@
    "status": "expected"
   }
  },
- "checked_at": "2026-11-27T09:10:01-05:00"
+ "checked_at": "2026-11-27T10:30:01-05:00"
 }
