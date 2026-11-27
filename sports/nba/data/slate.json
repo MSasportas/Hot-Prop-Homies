@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-27T18:30:01-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-27T18:30:01-05:00"
+   "at": "2026-11-27T18:33:11-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,8 +30,10 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-27T18:30:01-05:00",
-    "confirmed": []
+    "at": "2026-11-27T18:33:11-05:00",
+    "confirmed": [
+     "MIA"
+    ]
    },
    "grade": true
   }
@@ -45,7 +47,7 @@
    "state": "pre",
    "detail": "11/27 - 7:00 PM EST",
    "lineups": {
-    "away": "expected",
+    "away": "confirmed",
     "home": "expected"
    },
    "read_at": "2026-11-27T18:20:01-05:00",
@@ -67,7 +69,7 @@
    "paused": false,
    "injury_clear": {
     "away": true,
-    "home": false
+    "home": true
    }
   },
   {
@@ -466,7 +468,7 @@
  "empty": null,
  "counts": {
   "lines_read": 1084,
-  "passing": 7,
+  "passing": 9,
   "games": 11
  },
  "safety_paused": false,
@@ -476,6 +478,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-27T18:30:01-05:00",
- "status_at": "2026-11-27T18:30:01-05:00"
+ "generated_at": "2026-11-27T18:33:11-05:00",
+ "status_at": "2026-11-27T18:33:11-05:00"
 }
