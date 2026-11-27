@@ -1,13 +1,39 @@
 {
- "date": "2026-11-26",
- "plan": null,
- "events": {},
- "events_at": null,
+ "date": "2026-11-27",
+ "plan": {
+  "allowance": 64.5556,
+  "tier": 4,
+  "budget_today": 968,
+  "pool_at_plan": 2324,
+  "games_left": 36,
+  "games_today": 15,
+  "key_count": 9,
+  "unknown_keys": 1,
+  "made_at": "2026-11-27T05:00:00-05:00"
+ },
+ "events": {
+  "2026020400": "27cb678af08c1929cf19d9350d9f511e",
+  "2026020401": "978dfc077c2cba5159882a1f65088b8d",
+  "2026020402": "b5234ea5788fb4f5393efc6c33c8e5e7",
+  "2026020403": "f23fc3f7fb3bfb06c2bee42fcfe8f050",
+  "2026020407": "f4f067c12199285d9589564210a2a7d5",
+  "2026020406": "f59fbb4eb34e72efeecfce2b7adc2198",
+  "2026020404": "e455a88aa787a29717a862a536046895",
+  "2026020405": "a76ba8f9808ac21b09342afdd5df0b32",
+  "2026020409": "634c54722c6860c9773604c369f6e062",
+  "2026020408": "d86dc755fe06568141403800fce290fb",
+  "2026020410": "80ad2e83d5b53a2f48a70cfdecd3dc5c",
+  "2026020411": "05bd16c51ce4454e77900af56cd8997c",
+  "2026020412": "26c93a0fb3baf8842c064fe3aad7082d",
+  "2026020413": "3553bd967a739912ede178eb373433b8",
+  "2026020414": "6be85c97118cc429ba24770044f011cd"
+ },
+ "events_at": "2026-11-27T05:00:00-05:00",
  "unknown_teams": [],
  "done": {},
  "stage": null,
  "skipped": {},
  "last_fail_at": null,
  "fail_note": null,
- "key_count": null
+ "key_count": 9
 }
