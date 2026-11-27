@@ -32,7 +32,7 @@
   "candidate": false
  },
  "LL3a tight": {
-  "bets": 161,
+  "bets": 162,
   "graded": 161,
   "w": 80,
   "units": 1.192,
@@ -42,8 +42,8 @@
    0.1389
   ],
   "p_one_sided": 0.4705,
-  "mean_ev": 0.0319,
-  "mean_clv": 0.03,
+  "mean_ev": 0.0318,
+  "mean_clv": 0.0299,
   "games": 92,
   "candidate": false
  },
@@ -96,7 +96,7 @@
   "candidate": false
  },
  "LL5 exch": {
-  "bets": 298,
+  "bets": 300,
   "graded": 287,
   "w": 156,
   "units": 16.799,
@@ -106,13 +106,13 @@
    0.1483
   ],
   "p_one_sided": 0.142,
-  "mean_ev": 0.0424,
-  "mean_clv": 0.0207,
+  "mean_ev": 0.0423,
+  "mean_clv": 0.0204,
   "games": 104,
   "candidate": false
  },
  "LL6 line": {
-  "bets": 146,
+  "bets": 147,
   "graded": 139,
   "w": 87,
   "units": -3.792,
@@ -122,7 +122,7 @@
    0.079
   ],
   "p_one_sided": 0.675,
-  "mean_ev": -0.0166,
+  "mean_ev": -0.0165,
   "mean_clv": -0.0154,
   "games": 85,
   "candidate": false

@@ -1,8 +1,8 @@
 {
  "LL3a tight": {
-  "clv": 0.03,
+  "clv": 0.0299,
   "l": 81,
-  "pending": 0,
+  "pending": 1,
   "push": 0,
   "units": 1.19,
   "void": 0,
@@ -27,9 +27,9 @@
   "w": 115
  },
  "LL5 exch": {
-  "clv": 0.0207,
+  "clv": 0.0204,
   "l": 131,
-  "pending": 11,
+  "pending": 13,
   "push": 0,
   "units": 16.8,
   "void": 0,
@@ -38,7 +38,7 @@
  "LL6 line": {
   "clv": -0.0154,
   "l": 52,
-  "pending": 7,
+  "pending": 8,
   "push": 0,
   "units": -3.79,
   "void": 0,
@@ -162,7 +162,7 @@
   "w": 1
  },
  "R28b over": {
-  "clv": -0.1173,
+  "clv": -0.1175,
   "l": 127,
   "pending": 73,
   "push": 0,
@@ -208,6 +208,6 @@
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-27T17:20:14+00:00",
+ "updated_at": "2026-11-27T17:30:16+00:00",
  "version": 1
 }
