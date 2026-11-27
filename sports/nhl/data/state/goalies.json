@@ -71,23 +71,23 @@
   },
   "LAK": {
    "name": "Darcy Kuemper",
-   "status": "expected"
+   "status": "confirmed"
   },
   "MIN": {
    "name": "Jesper Wallstedt",
-   "status": "expected"
+   "status": "confirmed"
   },
   "COL": {
    "name": "Mackenzie Blackwood",
-   "status": "expected"
+   "status": "confirmed"
   },
   "SJS": {
    "name": "Yaroslav Askarov",
    "status": "confirmed"
   },
   "VGK": {
-   "name": "Adin Hill",
-   "status": "expected"
+   "name": "Carter Hart",
+   "status": "confirmed"
   },
   "CHI": {
    "name": "Spencer Knight",
@@ -122,5 +122,5 @@
    "status": "confirmed"
   }
  },
- "checked_at": "2026-11-27T15:20:00-05:00"
+ "checked_at": "2026-11-27T15:40:00-05:00"
 }
