@@ -27,11 +27,11 @@
   },
   "STL": {
    "name": "Joel Hofer",
-   "status": "expected"
+   "status": "confirmed"
   },
   "DAL": {
-   "name": "Jake Oettinger",
-   "status": "expected"
+   "name": "Casey DeSmith",
+   "status": "confirmed"
   },
   "CBJ": {
    "name": "Jet Greaves",
@@ -51,7 +51,7 @@
   },
   "WSH": {
    "name": "Logan Thompson",
-   "status": "expected"
+   "status": "confirmed"
   },
   "FLA": {
    "name": "Jacob Markstrom",
@@ -63,7 +63,7 @@
   },
   "OTT": {
    "name": "Linus Ullmark",
-   "status": "expected"
+   "status": "confirmed"
   },
   "ANA": {
    "name": "Laurent Brossoit",
@@ -122,5 +122,5 @@
    "status": "confirmed"
   }
  },
- "checked_at": "2026-11-27T12:40:01-05:00"
+ "checked_at": "2026-11-27T13:00:01-05:00"
 }
