@@ -237,12 +237,12 @@
     "start": "2026-11-27T19:30:00-05:00",
     "away": "BKN",
     "home": "TOR",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:01 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "BKN": "98",
+     "BKN": "100",
      "TOR": "124"
     }
    },
@@ -255,10 +255,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:17 - 4th",
+    "detail": "3:35 - 4th",
     "score": {
-     "ATL": "77",
-     "BOS": "75"
+     "ATL": "81",
+     "BOS": "78"
     }
    },
    {
@@ -270,10 +270,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:22 - 3rd",
+    "detail": "3:13 - 3rd",
     "score": {
-     "MEM": "69",
-     "MIN": "66"
+     "MEM": "72",
+     "MIN": "76"
     }
    },
    {
@@ -284,11 +284,11 @@
     "home": "PHX",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:35 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "DAL": "44",
-     "PHX": "51"
+     "DAL": "53",
+     "PHX": "63"
     }
    },
    {
@@ -299,10 +299,10 @@
     "home": "SA",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:00 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
-     "LAL": "21",
+     "LAL": "27",
      "SA": "14"
     }
    },
@@ -315,10 +315,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:22 - 1st",
+    "detail": "9:57 - 2nd",
     "score": {
-     "DEN": "24",
-     "UTAH": "14"
+     "DEN": "29",
+     "UTAH": "25"
     }
    },
    {
@@ -330,10 +330,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:39 - 1st",
+    "detail": "11:12 - 2nd",
     "score": {
-     "NO": "20",
-     "LAC": "25"
+     "NO": "29",
+     "LAC": "28"
     }
    },
    {
@@ -345,10 +345,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "3:49 - 1st",
+    "detail": "20.2 - 1st",
     "score": {
-     "GS": "6",
-     "POR": "23"
+     "GS": "11",
+     "POR": "34"
     }
    }
   ]

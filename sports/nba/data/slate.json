@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-27T21:10:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-27T22:00:00-05:00"
+   "at": "2026-11-27T22:10:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -176,8 +176,8 @@
    "start": "2026-11-27T19:30:00-05:00",
    "away": "BKN",
    "home": "TOR",
-   "state": "in",
-   "detail": "1:01 - 4th",
+   "state": "post",
+   "detail": "Final",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -214,7 +214,7 @@
    "away": "ATL",
    "home": "BOS",
    "state": "in",
-   "detail": "8:17 - 4th",
+   "detail": "3:35 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -251,7 +251,7 @@
    "away": "MEM",
    "home": "MIN",
    "state": "in",
-   "detail": "6:22 - 3rd",
+   "detail": "3:13 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -288,7 +288,7 @@
    "away": "DAL",
    "home": "PHX",
    "state": "in",
-   "detail": "3:35 - 2nd",
+   "detail": "Halftime",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -325,7 +325,7 @@
    "away": "LAL",
    "home": "SAS",
    "state": "in",
-   "detail": "3:00 - 1st",
+   "detail": "End of 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -362,7 +362,7 @@
    "away": "DEN",
    "home": "UTA",
    "state": "in",
-   "detail": "2:22 - 1st",
+   "detail": "9:57 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -399,7 +399,7 @@
    "away": "NOP",
    "home": "LAC",
    "state": "in",
-   "detail": "2:39 - 1st",
+   "detail": "11:12 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -436,7 +436,7 @@
    "away": "GSW",
    "home": "POR",
    "state": "in",
-   "detail": "3:49 - 1st",
+   "detail": "20.2 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -719,6 +719,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-27T22:00:00-05:00",
- "status_at": "2026-11-27T22:00:00-05:00"
+ "generated_at": "2026-11-27T22:10:00-05:00",
+ "status_at": "2026-11-27T22:10:00-05:00"
 }
