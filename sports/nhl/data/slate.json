@@ -1,14 +1,14 @@
 {
  "slate_date": "2026-11-28",
- "generated_at": "2026-11-28T05:00:01-05:00",
- "status_at": "2026-11-28T05:00:01-05:00",
+ "generated_at": "2026-11-28T05:30:00-05:00",
+ "status_at": "2026-11-28T05:30:00-05:00",
  "valid_until": "2026-11-29T05:00:00-05:00",
  "status": {
   "prices_state": "not_yet",
   "prices_at": null,
   "next_price_read_at": "2026-11-28T13:00:00-05:00",
-  "stats_built_at": "2026-11-27T23:30:00-05:00",
-  "stats_through": "2026-11-25",
+  "stats_built_at": "2026-11-28T05:30:00-05:00",
+  "stats_through": "2026-11-27",
   "lineups_at": null,
   "goalies_at": null,
   "lineups_note": null,
@@ -16,7 +16,7 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-28T05:00:01-05:00",
+   "at": "2026-11-28T05:30:00-05:00",
    "failed_step": null
   },
   "pool": {
@@ -26,22 +26,12 @@
    "days_left": 3,
    "low": false
   },
-  "excluded_teams": [
-   {
-    "team": "PIT",
-    "reason": "stats check failed"
-   }
-  ],
+  "excluded_teams": [],
   "lines_checked": 0,
   "flag_reads": 0,
   "tier": 4
  },
- "banners": [
-  {
-   "level": "warn",
-   "text": "Not covered tonight: PIT (stats check failed)."
-  }
- ],
+ "banners": [],
  "empty": {
   "code": "not_yet",
   "text": "No picks yet today",
@@ -261,10 +251,8 @@
    "started": false,
    "reads_done": false,
    "picks": 0,
-   "excluded_reason": "stats check failed",
-   "excluded_teams": [
-    "PIT"
-   ]
+   "excluded_reason": null,
+   "excluded_teams": []
   },
   {
    "id": 2026020421,
