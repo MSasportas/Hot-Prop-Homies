@@ -42,7 +42,7 @@
    }
   },
   "DET": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Daniss Jenkins",
     "Isaiah Joe",
@@ -158,11 +158,11 @@
    ],
    "status": {
     "Zach Edey": "questionable",
-    "Isaiah Stewart": "questionable",
     "Cameron Boozer": "out",
     "Jerami Grant": "out",
     "GG Jackson": "out",
-    "Scotty Pippen": "out"
+    "Scotty Pippen": "out",
+    "Isaiah Stewart": "out"
    }
   },
   "MIN": {
@@ -329,5 +329,5 @@
    }
   }
  },
- "at": "2026-11-27T19:10:02-05:00"
+ "at": "2026-11-27T19:20:01-05:00"
 }

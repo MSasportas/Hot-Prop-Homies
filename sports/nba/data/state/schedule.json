@@ -192,13 +192,13 @@
     "start": "2026-11-27T19:00:00-05:00",
     "away": "MIA",
     "home": "NY",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/27 - 7:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "7:03 - 1st",
     "score": {
-     "MIA": "0",
-     "NY": "0"
+     "MIA": "15",
+     "NY": "7"
     }
    },
    {
