@@ -18,4 +18,6 @@ def run_page_js(functions, body, variables=()):
     parts = [re.search(r"\nfunction %s\([^\n]*\}\n|\nfunction %s\([\s\S]*?\n}\n" % (n, n), src).group(0) for n in functions]
     lines = [re.search(r"\nvar [^\n]*\b%s = [^\n]*\n" % v, src).group(0) for v in variables]
     out = subprocess.run(["node", "-e", "".join(parts + list(dict.fromkeys(lines))) + body], capture_output=True, text=True, timeout=30)
+    if not out.stdout.strip():
+        raise ValueError("node returned empty stdout (exit=%s): %s" % (out.returncode, out.stderr.strip()))
     return json.loads(out.stdout), out.stderr
