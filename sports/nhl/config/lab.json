@@ -1,6 +1,6 @@
 {
  "note": "The page's Lab tab. Matt 2026-11-12: EVERYTHING being tested is listed here (live-tracked paper tests and the Researcher's forward tests). Each entry's numbers come live from its summary file. Remove an entry when its test is closed.",
- "updated": "2026-11-25",
+ "updated": "2026-11-28",
  "tests": [
   {
    "id": "q24",
@@ -70,7 +70,9 @@
    "name": "Exchange prices",
    "plain": "Use betting exchange prices to find bargains",
    "why": "Exchanges have almost no markup, so their price is a good guide to the real odds.",
-   "outcome": "review"
+   "outcome": "review",
+   "status": "ready_for_sharp",
+   "ready_at": "2026-11-28"
   },
   {
    "id": "fwd_LL6_line",
@@ -285,36 +287,6 @@
    "outcome": "review"
   },
   {
-   "id": "fwd_R28b_lva_over",
-   "title": "Shots line 5%+ above average (over)",
-   "rule": "Shots, research only. The line sits 5%+ above the player's rolling shots average (5+ games): bet the over. Counting from Nov 21. Full rule: research/HYPOTHESES.md (Run 28).",
-   "summary": "research/fwd/lab.json",
-   "base": "root",
-   "stats": "R28b over",
-   "need": 300,
-   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
-   "first_seen": "2026-11-21",
-   "name": "Shots line above average",
-   "plain": "Bet OVER when a player's shots line is well above his average",
-   "why": "We check if a line far from a player's usual is a bargain on one side.",
-   "outcome": "review"
-  },
-  {
-   "id": "fwd_R28d_backup_goalie",
-   "title": "Facing a backup goalie (shots over)",
-   "rule": "Shots, research only. The opposing goalie is confirmed and is not his team's most-started goalie: bet skaters' shots over. Counting from Nov 21. Full rule: research/HYPOTHESES.md (Run 28).",
-   "summary": "research/fwd/lab.json",
-   "base": "root",
-   "stats": "R28d backup goalie",
-   "need": 300,
-   "gate": "Passes only at 300 graded with a clear profit and beating the close.",
-   "first_seen": "2026-11-21",
-   "name": "Facing a backup goalie",
-   "plain": "Bet shots OVER when the other team plays a backup goalie",
-   "why": "A backup goalie may change how teams shoot. Books may be slow to adjust.",
-   "outcome": "review"
-  },
-  {
    "id": "fwd_R28c_rest",
    "title": "Skater rest: 3+ days off over, back-to-back under",
    "rule": "Shots, research only. 3+ days of rest bets the over, 0-1 days bets the under. Counting from Nov 21. Full rule: research/HYPOTHESES.md (Run 28).",
@@ -330,7 +302,7 @@
    "outcome": "review"
   }
  ],
- "retired_count": 3,
+ "retired_count": 5,
  "queued": [
   {
    "id": "fwd_R28c_rest_mirror",
