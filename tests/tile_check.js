@@ -13,10 +13,10 @@
 
   if (root.scrollWidth > root.clientWidth) out.push({ kind: 'page-scrolls-sideways', where: 'html', text: '', detail: root.scrollWidth + '>' + root.clientWidth });
 
-  for (const el of document.querySelectorAll('#app *, #tabs *')) {
+  for (const el of document.querySelectorAll('#app *, #tabs *, #trk-sheet *, #trk-toast *, #trk-bar *')) {
     if (el.closest('.sr, [hidden]')) continue;
     const cs = getComputedStyle(el), box = el.getBoundingClientRect();
-    if (cs.display === 'none' || cs.visibility === 'hidden' || (!box.width && !box.height)) continue;
+    if (cs.display === 'none' || cs.visibility === 'hidden' || (!box.width && !box.height) || el.tagName === 'IMG') continue;  /* a photo holds no words, and its border makes it read as clipped while it loads */
     const own = Array.from(el.childNodes).filter((n) => n.nodeType === 3).map((n) => n.textContent).join('');
     const text = (el.textContent || '').trim();
 
@@ -33,7 +33,7 @@
       const range = document.createRange();
       range.selectNodeContents(el);
       const rect = range.getBoundingClientRect();
-      for (let a = el.parentElement; a && a.id !== 'app'; a = a.parentElement) {
+      for (let a = el.parentElement; a && a.id !== 'app' && a.id !== 'trk-sheet'; a = a.parentElement) {
         const ac = getComputedStyle(a), ar = a.getBoundingClientRect();
         if (clipsX(ac) && !scrolls(ac.overflowX) && (rect.right > ar.right + SLACK || rect.left < ar.left - SLACK)) { add('text-cut-by-parent-sideways', el, label(a)); break; }
         if (clipsY(ac) && !scrolls(ac.overflowY) && ar.height > 0 && (rect.bottom > ar.bottom + SLACK || rect.top < ar.top - SLACK)) { add('text-cut-by-parent-below', el, label(a)); break; }
@@ -41,7 +41,7 @@
     }
   }
 
-  for (const pill of document.querySelectorAll('#app .sp-badge, #app .ptag, #app .lc-pill, #app .tagx.conf')) {
+  for (const pill of document.querySelectorAll('#app .sp-badge, #app .ptag, #app .lc-pill, #app .tagx.conf, #app .mine, #trk-sheet .sp-badge')) {
     if (pill.closest('[hidden]') || getComputedStyle(pill).display === 'none') continue;
     let next = pill.nextSibling;
     while (next && next.nodeType === 3 && !next.textContent.trim()) next = next.nextSibling;
@@ -51,31 +51,33 @@
     const first = range.getClientRects()[0], at = pill.getBoundingClientRect();
     if (first && first.width && Math.abs(first.top + first.height / 2 - (at.top + at.height / 2)) > at.height) add('pill-split-from-its-number', pill, next.textContent.trim().slice(0, 12));
   }
-  for (const el of document.querySelectorAll('#app .tile *')) {
+  for (const el of document.querySelectorAll('#app .tile *, #app .pcard *, #trk-sheet .tile *')) {
     if (el.children.length || !el.textContent.trim() || el.closest('[hidden]')) continue;
-    const tile = el.closest('.tile'), tcs = getComputedStyle(tile), range = document.createRange();
+    const tile = el.closest('.tile, .pcard'), tcs = getComputedStyle(tile), range = document.createRange();
     range.selectNodeContents(el);
     const inner = tile.getBoundingClientRect().right - parseFloat(tcs.borderRightWidth) - parseFloat(tcs.paddingRight);
     if (range.getBoundingClientRect().right > inner + SLACK) add('text-in-the-card-padding', el, Math.round(range.getBoundingClientRect().right) + '>' + Math.round(inner));
   }
-  const walker = document.createTreeWalker(document.getElementById('app'), NodeFilter.SHOW_TEXT);
-  for (let n = walker.nextNode(); n; n = walker.nextNode()) {
-    const el = n.parentElement;
-    if (!el || el.closest('.sr, [hidden]')) continue;
-    const cs = getComputedStyle(el);
-    if (cs.display === 'none' || cs.visibility === 'hidden') continue;
-    const re = /\S{3,}/g;
-    for (let m = re.exec(n.textContent); m; m = re.exec(n.textContent)) {
-      let split = false;
-      for (let i = 1; i < m[0].length && !split; i++) {
-        const before = document.createRange(), after = document.createRange();
-        before.setStart(n, m.index + i - 1); before.setEnd(n, m.index + i);
-        after.setStart(n, m.index + i); after.setEnd(n, m.index + i + 1);
-        const a = before.getClientRects()[0], b = after.getClientRects()[0];
-        const hyphenBetweenLetters = m[0][i - 1] === '-' && /[A-Za-z]/.test(m[0][i - 2] || '') && /[A-Za-z]/.test(m[0][i]);
-        split = !!(a && b && Math.abs(a.top - b.top) > a.height / 2 && !hyphenBetweenLetters);
+  for (const rootEl of [document.getElementById('app'), document.getElementById('trk-sheet'), document.getElementById('trk-toast')].filter(Boolean)) {
+    const walker = document.createTreeWalker(rootEl, NodeFilter.SHOW_TEXT);
+    for (let n = walker.nextNode(); n; n = walker.nextNode()) {
+      const el = n.parentElement;
+      if (!el || el.closest('.sr, [hidden]')) continue;
+      const cs = getComputedStyle(el);
+      if (cs.display === 'none' || cs.visibility === 'hidden') continue;
+      const re = /\S{3,}/g;
+      for (let m = re.exec(n.textContent); m; m = re.exec(n.textContent)) {
+        let split = false;
+        for (let i = 1; i < m[0].length && !split; i++) {
+          const before = document.createRange(), after = document.createRange();
+          before.setStart(n, m.index + i - 1); before.setEnd(n, m.index + i);
+          after.setStart(n, m.index + i); after.setEnd(n, m.index + i + 1);
+          const a = before.getClientRects()[0], b = after.getClientRects()[0];
+          const hyphenBetweenLetters = m[0][i - 1] === '-' && /[A-Za-z]/.test(m[0][i - 2] || '') && /[A-Za-z]/.test(m[0][i]);
+          split = !!(a && b && Math.abs(a.top - b.top) > a.height / 2 && !hyphenBetweenLetters);
+        }
+        if (split) out.push({ kind: 'word-split-across-lines', where: where(el), text: m[0], detail: '' });
       }
-      if (split) out.push({ kind: 'word-split-across-lines', where: where(el), text: m[0], detail: '' });
     }
   }
   return out;
