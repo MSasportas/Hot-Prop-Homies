@@ -286,9 +286,9 @@
    "state": "expected",
    "starters": [
     "De'Aaron Fox",
-    "Dylan Harper",
-    "Stephon Castle",
     "Devin Vassell",
+    "Stephon Castle",
+    "Julian Champagnie",
     "Victor Wembanyama"
    ],
    "status": {
@@ -297,7 +297,7 @@
    }
   },
   "DEN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jamal Murray",
     "Christian Braun",
@@ -323,5 +323,5 @@
    }
   }
  },
- "at": "2026-11-27T21:00:02-05:00"
+ "at": "2026-11-27T21:03:35-05:00"
 }

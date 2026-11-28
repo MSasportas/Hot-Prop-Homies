@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T21:00:02-05:00",
+ "at": "2026-11-27T21:03:35-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -85,6 +85,13 @@
    "date": "2026-11-08T22:31Z",
    "note": "Knueppel (hamstring) was diagnosed with a left hamstring strain Sunday and will be re-evaluated in four weeks."
   },
+  "2595516": {
+   "status": "out",
+   "name": "Norman Powell",
+   "team": "CHI",
+   "date": "2026-11-28T01:54Z",
+   "note": "Powell (hamstring) is out for Saturday's game against the Pacers."
+  },
   "5242496": {
    "status": "day-to-day",
    "name": "Noa Essengue",
@@ -98,13 +105,6 @@
    "team": "CHI",
    "date": "2026-11-27T18:36Z",
    "note": "Smith (illness) is listed as probable for Saturday's game against Indiana."
-  },
-  "2595516": {
-   "status": "out",
-   "name": "Norman Powell",
-   "team": "CHI",
-   "date": "2026-11-22T15:25Z",
-   "note": "Powell has been diagnosed with a mild right hamstring strain and will be re-evaluated later this week."
   },
   "5095151": {
    "status": "out",
