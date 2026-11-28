@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-27T21:10:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-28T00:40:01-05:00"
+   "at": "2026-11-28T00:50:01-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -315,7 +315,7 @@
    "next_check_read": null,
    "paused": false,
    "injury_clear": {
-    "away": true,
+    "away": false,
     "home": true
    }
   },
@@ -713,7 +713,7 @@
  },
  "counts": {
   "lines_read": 1130,
-  "passing": 18,
+  "passing": 17,
   "games": 11
  },
  "safety_paused": false,
@@ -723,6 +723,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-28T00:20:00-05:00",
- "status_at": "2026-11-28T00:40:01-05:00"
+ "generated_at": "2026-11-28T00:50:01-05:00",
+ "status_at": "2026-11-28T00:50:01-05:00"
 }
