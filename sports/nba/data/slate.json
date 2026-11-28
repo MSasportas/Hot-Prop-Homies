@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-27T20:10:03-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-27T20:10:03-05:00"
+   "at": "2026-11-27T20:13:35-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,13 +30,14 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-27T20:10:03-05:00",
+    "at": "2026-11-27T20:13:35-05:00",
     "confirmed": [
      "ATL",
      "BKN",
      "BOS",
      "DET",
      "IND",
+     "MEM",
      "MIA",
      "MIL",
      "MIN",
@@ -55,7 +56,7 @@
    "away": "MIA",
    "home": "NYK",
    "state": "in",
-   "detail": "58.0 - 2nd",
+   "detail": "Halftime",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -92,7 +93,7 @@
    "away": "MIL",
    "home": "DET",
    "state": "in",
-   "detail": "End of 1st",
+   "detail": "10:58 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -129,7 +130,7 @@
    "away": "PHI",
    "home": "IND",
    "state": "in",
-   "detail": "End of 1st",
+   "detail": "10:23 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -166,7 +167,7 @@
    "away": "BKN",
    "home": "TOR",
    "state": "in",
-   "detail": "End of 1st",
+   "detail": "11:23 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -202,8 +203,8 @@
    "start": "2026-11-27T20:00:00-05:00",
    "away": "ATL",
    "home": "BOS",
-   "state": "pre",
-   "detail": "11/27 - 8:00 PM EST",
+   "state": "in",
+   "detail": "9:56 - 1st",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -242,7 +243,7 @@
    "state": "pre",
    "detail": "11/27 - 8:30 PM EST",
    "lineups": {
-    "away": "expected",
+    "away": "confirmed",
     "home": "confirmed"
    },
    "read_at": "2026-11-27T20:10:03-05:00",
@@ -521,8 +522,8 @@
     }
    },
    "id": "2026-11-27:401909331:3032976:points:8.5:under",
-   "state": "clear",
-   "state_label": "Injury report clear",
+   "state": "starters",
+   "state_label": "Starters confirmed",
    "price_final": true,
    "pulled": null,
    "added_at": "2026-11-27T19:50:02-05:00",
@@ -663,6 +664,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-27T20:10:03-05:00",
- "status_at": "2026-11-27T20:10:03-05:00"
+ "generated_at": "2026-11-27T20:13:35-05:00",
+ "status_at": "2026-11-27T20:13:35-05:00"
 }

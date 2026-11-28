@@ -194,11 +194,11 @@
     "home": "NY",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "58.0 - 2nd",
+    "status_name": "STATUS_HALFTIME",
+    "detail": "Halftime",
     "score": {
-     "MIA": "58",
-     "NY": "42"
+     "MIA": "60",
+     "NY": "44"
     }
    },
    {
@@ -209,11 +209,11 @@
     "home": "DET",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "10:58 - 2nd",
     "score": {
      "MIL": "29",
-     "DET": "24"
+     "DET": "27"
     }
    },
    {
@@ -224,11 +224,11 @@
     "home": "IND",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "10:23 - 2nd",
     "score": {
      "PHI": "30",
-     "IND": "22"
+     "IND": "26"
     }
    },
    {
@@ -239,8 +239,8 @@
     "home": "TOR",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_END_PERIOD",
-    "detail": "End of 1st",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "11:23 - 2nd",
     "score": {
      "BKN": "27",
      "TOR": "31"
@@ -252,13 +252,13 @@
     "start": "2026-11-27T20:00:00-05:00",
     "away": "ATL",
     "home": "BOS",
-    "state": "pre",
+    "state": "in",
     "completed": false,
-    "status_name": "STATUS_SCHEDULED",
-    "detail": "11/27 - 8:00 PM EST",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "9:56 - 1st",
     "score": {
      "ATL": "0",
-     "BOS": "0"
+     "BOS": "4"
     }
    },
    {
