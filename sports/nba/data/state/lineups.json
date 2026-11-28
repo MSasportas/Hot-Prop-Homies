@@ -165,7 +165,7 @@
    }
   },
   "MIN": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Ayo Dosunmu",
     "Terrence Shannon",
@@ -328,5 +328,5 @@
    }
   }
  },
- "at": "2026-11-27T20:00:01-05:00"
+ "at": "2026-11-27T20:10:03-05:00"
 }
