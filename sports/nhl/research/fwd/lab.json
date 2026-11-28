@@ -161,15 +161,6 @@
   "void": 0,
   "w": 1
  },
- "R28b over": {
-  "clv": -0.1206,
-  "l": 149,
-  "pending": 45,
-  "push": 0,
-  "units": -43.7,
-  "void": 0,
-  "w": 94
- },
  "R28b under": {
   "clv": -0.0512,
   "l": 213,
@@ -197,17 +188,8 @@
   "void": 0,
   "w": 318
  },
- "R28d backup goalie": {
-  "clv": -0.1018,
-  "l": 126,
-  "pending": 14,
-  "push": 0,
-  "units": -45.77,
-  "void": 0,
-  "w": 92
- },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-27T23:50:13+00:00",
+ "updated_at": "2026-11-28T00:01:16+00:00",
  "version": 1
 }
