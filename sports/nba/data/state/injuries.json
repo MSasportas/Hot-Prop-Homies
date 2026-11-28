@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T20:40:01-05:00",
+ "at": "2026-11-27T21:00:02-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -442,6 +442,13 @@
    "date": "2026-10-31T01:02Z",
    "note": "Holmgren underwent a biological treatment Friday to address a small patellar tendon tear and will miss at least 8-10 weeks, Nick Crain of Slam reports."
   },
+  "4397204": {
+   "status": "out",
+   "name": "Colin Castleton",
+   "team": "ORL",
+   "date": "2026-11-28T01:53Z",
+   "note": "Castleton totaled five points (2-4 FG, 1-1 3Pt) and four rebounds in seven minutes during Tuesday's 132-116 preseason win over the Cavaliers."
+  },
   "4397140": {
    "status": "out",
    "name": "Kevin Porter Jr.",
@@ -455,13 +462,6 @@
    "team": "ORL",
    "date": "2026-11-27T21:05Z",
    "note": "Black (back) is questionable for Saturday's game against the Wizards."
-  },
-  "4397204": {
-   "status": "day-to-day",
-   "name": "Colin Castleton",
-   "team": "ORL",
-   "date": "2026-11-26T16:10Z",
-   "note": "Castleton totaled five points (2-4 FG, 1-1 3Pt) and four rebounds in seven minutes during Tuesday's 132-116 preseason win over the Cavaliers."
   },
   "4065654": {
    "status": "out",
@@ -575,20 +575,6 @@
    "date": "2026-10-21T04:22Z",
    "note": "Simmons underwent successful surgery Tuesday to repair a torn right Achilles tendon, James Ham of ESPN 1320 Sacramento reports."
   },
-  "5037871": {
-   "status": "out",
-   "name": "Dylan Harper",
-   "team": "SA",
-   "date": "2026-11-27T18:51Z",
-   "note": "Harper (hip) participated in Friday's morning shootaround, per Matt Guzman of SI.com."
-  },
-  "4066259": {
-   "status": "day-to-day",
-   "name": "De'Aaron Fox",
-   "team": "SA",
-   "date": "2026-11-26T23:35Z",
-   "note": "Fox (shin) is questionable for Friday's game against the Lakers."
-  },
   "6440": {
    "status": "out",
    "name": "Tobias Harris",
@@ -628,8 +614,8 @@
    "status": "out",
    "name": "Mo Bamba",
    "team": "UTAH",
-   "date": "2026-11-28T01:34Z",
-   "note": "Bamba (illness) is listed as questionable for Friday's game against the Nuggets, according to the Jazz's injury report."
+   "date": "2026-11-28T01:37Z",
+   "note": "Bamba (illness) has been ruled out for Friday's game against the Nuggets."
   },
   "4066336": {
    "status": "out",
