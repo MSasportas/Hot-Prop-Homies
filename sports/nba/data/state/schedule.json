@@ -300,10 +300,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "37.3 - 4th",
+    "detail": "6.6 - 4th",
     "score": {
-     "LAL": "90",
-     "SA": "96"
+     "LAL": "95",
+     "SA": "98"
     }
    },
    {
@@ -342,13 +342,13 @@
     "start": "2026-11-27T21:30:00-05:00",
     "away": "GS",
     "home": "POR",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "1:25 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "GS": "90",
-     "POR": "111"
+     "GS": "94",
+     "POR": "116"
     }
    }
   ]
