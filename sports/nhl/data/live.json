@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-27",
- "generated_at": "2026-11-27T20:40:01-05:00",
+ "generated_at": "2026-11-27T20:41:09-05:00",
  "games": [
   {
    "game_id": 2026020403,
@@ -50,9 +50,9 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "14:18",
+   "clock": "14:12",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "WPG",
     "score": 2,
@@ -63,7 +63,7 @@
     "score": 0,
     "sog": 13
    },
-   "updated_at": "2026-11-27T20:40:01-05:00"
+   "updated_at": "2026-11-27T20:41:09-05:00"
   },
   {
    "game_id": 2026020413,
@@ -71,9 +71,9 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "08:34",
+   "clock": "07:58",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "PIT",
     "score": 1,
@@ -84,7 +84,7 @@
     "score": 2,
     "sog": 6
    },
-   "updated_at": "2026-11-27T20:40:01-05:00"
+   "updated_at": "2026-11-27T20:41:09-05:00"
   },
   {
    "game_id": 2026020414,
@@ -92,9 +92,9 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "03:53",
+   "clock": "03:41",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "SEA",
     "score": 1,
@@ -105,7 +105,7 @@
     "score": 0,
     "sog": 5
    },
-   "updated_at": "2026-11-27T20:40:01-05:00"
+   "updated_at": "2026-11-27T20:41:09-05:00"
   }
  ],
  "picks": {
