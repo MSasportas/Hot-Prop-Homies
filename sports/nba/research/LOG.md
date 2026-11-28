@@ -1,4 +1,13 @@
 ## 2026-11-27, Run 33 (Researcher daily; price shop + HR lag, NBA ports of NHL S32a/H33a)
+
+## 2026-11-28, AH12 (auto; Solo large (3+ pt, solo Pinnacle))
+Filter: MOVES where move >= 3 pts AND others < 1 pt. MOVES population (Pinnacle >= 2 pt move, HR on line, -200..+200, 1/player/market/night).
+Discovery (<2026-11-10, 30 nights): n 309 graded 304 165-139 +4.12u ROI +1.4% CLV_pin -3.4% (n 261)
+Discovery FAIR (ev_pin>=0): n 55 graded 53 31-22 +6.54u ROI +12.3% CLV_pin -0.2% (n 46)
+Forward (>=2026-11-10, 17 nights): n 199 graded 194 102-92 -4.46u ROI -2.3% CLV_pin -3.6% (n 175)
+Forward FAIR: n 32 graded 30 15-15 -2.59u ROI -8.6% CLV_pin +0.4% (n 27)
+Pass bar: n>=150 graded fwd, ROI>0, CI>0, CLV>0. Status: BELOW BAR
+
 Registered before any test: S33n and H33n in HYPOTHESES.md (Run 33). Code research/code/run33/nba_r33.py, output nba_r33_results.txt. Stored data only (31 odds nights Oct 25 - Nov 25), no key. Discovery = all stored nights; forward from 2026-11-27 (none yet).
 - S33n price shop (HR decimal >= 5% above median of >= 3 other books, -200..+200): n 300, 297 graded, 132-165, -16.62u, ROI -5.6% [90% CI -16.1, +3.9], CLV -0.8% (n 257), placebo 0.93. Over -13.7% (n 42), under -4.3% (n 255). By market: points +1.0% (n 50), assists -7.7%, rebounds -4.2%, threes -8.8%.
 - H33n HR lags consensus (others' median moves >= 2 pts A->C, HR < 0.5 pt): n 74, 36-38, -3.96u, ROI -5.4% [-23.8, +12.7], CLV -2.6%. Over 9-15 -31.8% [-61.8, -2.2] (n 24); under 27-23 +7.3% [-15.3, +31.4] (n 50, post hoc split, noise).
