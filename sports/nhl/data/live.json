@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-27",
- "generated_at": "2026-11-27T19:53:27-05:00",
+ "generated_at": "2026-11-27T20:00:01-05:00",
  "games": [
   {
    "game_id": 2026020403,
@@ -50,20 +50,62 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "11:26",
+   "clock": "07:42",
    "in_intermission": false,
    "running": true,
    "away": {
     "abbrev": "WPG",
     "score": 0,
-    "sog": 6
+    "sog": 9
    },
    "home": {
     "abbrev": "NYI",
     "score": 0,
-    "sog": 4
+    "sog": 5
    },
-   "updated_at": "2026-11-27T19:53:27-05:00"
+   "updated_at": "2026-11-27T20:00:01-05:00"
+  },
+  {
+   "game_id": 2026020413,
+   "state": "PRE",
+   "schedule_state": "OK",
+   "period": null,
+   "period_type": null,
+   "clock": null,
+   "in_intermission": false,
+   "running": false,
+   "away": {
+    "abbrev": "PIT",
+    "score": null,
+    "sog": null
+   },
+   "home": {
+    "abbrev": "BUF",
+    "score": null,
+    "sog": null
+   },
+   "updated_at": "2026-11-27T20:00:01-05:00"
+  },
+  {
+   "game_id": 2026020414,
+   "state": "PRE",
+   "schedule_state": "OK",
+   "period": null,
+   "period_type": null,
+   "clock": null,
+   "in_intermission": false,
+   "running": false,
+   "away": {
+    "abbrev": "SEA",
+    "score": null,
+    "sog": null
+   },
+   "home": {
+    "abbrev": "EDM",
+    "score": null,
+    "sog": null
+   },
+   "updated_at": "2026-11-27T20:00:01-05:00"
   }
  ],
  "picks": {
@@ -86,6 +128,26 @@
    "game_id": 2026020412,
    "market": "shots",
    "stat": 1
+  },
+  "2026-11-27:2026020413:8482097:shots:2.5:over": {
+   "game_id": 2026020413,
+   "market": "shots",
+   "stat": null
+  },
+  "2026-11-27:2026020414:8477934:points:1.5:over": {
+   "game_id": 2026020414,
+   "market": "points",
+   "stat": null
+  },
+  "2026-11-27:2026020414:8477953:points:0.5:under": {
+   "game_id": 2026020414,
+   "market": "points",
+   "stat": null
+  },
+  "2026-11-27:2026020414:8484800:shots:1.5:under": {
+   "game_id": 2026020414,
+   "market": "shots",
+   "stat": null
   }
  }
 }
