@@ -103,7 +103,7 @@
   },
   "WPG": {
    "name": "Stuart Skinner",
-   "status": "expected"
+   "status": "confirmed"
   },
   "EDM": {
    "name": "Tristan Jarry",
@@ -122,5 +122,5 @@
    "status": "confirmed"
   }
  },
- "checked_at": "2026-11-27T17:10:00-05:00"
+ "checked_at": "2026-11-27T19:30:02-05:00"
 }

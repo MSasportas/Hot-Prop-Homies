@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-27",
- "generated_at": "2026-11-27T19:20:01-05:00",
+ "generated_at": "2026-11-27T19:30:02-05:00",
  "games": [
   {
    "game_id": 2026020403,
@@ -43,6 +43,27 @@
     "sog": 33
    },
    "updated_at": "2026-11-27T19:20:01-05:00"
+  },
+  {
+   "game_id": 2026020412,
+   "state": "PRE",
+   "schedule_state": "OK",
+   "period": null,
+   "period_type": null,
+   "clock": null,
+   "in_intermission": false,
+   "running": false,
+   "away": {
+    "abbrev": "WPG",
+    "score": null,
+    "sog": null
+   },
+   "home": {
+    "abbrev": "NYI",
+    "score": null,
+    "sog": null
+   },
+   "updated_at": "2026-11-27T19:30:02-05:00"
   }
  ],
  "picks": {
@@ -60,6 +81,11 @@
    "game_id": 2026020410,
    "market": "shots",
    "stat": 4
+  },
+  "2026-11-27:2026020412:8478445:shots:2.5:under": {
+   "game_id": 2026020412,
+   "market": "shots",
+   "stat": null
   }
  }
 }
