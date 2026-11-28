@@ -1,10 +1,10 @@
 {
  "ok": true,
  "slate_date": "2026-11-28",
- "started_at": "2026-11-28T05:30:00-05:00",
- "status_at": "2026-11-28T05:30:00-05:00",
- "finished_at": "2026-11-28T05:30:07-05:00",
- "last_ok_at": "2026-11-28T05:30:00-05:00",
+ "started_at": "2026-11-28T06:00:00-05:00",
+ "status_at": "2026-11-28T06:00:00-05:00",
+ "finished_at": "2026-11-28T06:00:01-05:00",
+ "last_ok_at": "2026-11-28T06:00:00-05:00",
  "failed_step": null,
  "steps": [
   {
@@ -19,8 +19,8 @@
   },
   {
    "step": "stats",
-   "status": "ok",
-   "note": "1 window(s) read"
+   "status": "skipped",
+   "note": "nothing new"
   },
   {
    "step": "lineups",
@@ -158,10 +158,10 @@
  "odds_notes": [],
  "runner": {
   "event": "workflow_dispatch",
-  "run_id": "46133208226",
+  "run_id": "46135576690",
   "iteration": 2,
-  "chain_link": 43,
+  "chain_link": 44,
   "chain_started_at": "2026-11-26T22:20:31-05:00",
-  "run_started_at": "2026-11-28T05:02:00-05:00"
+  "run_started_at": "2026-11-28T05:31:34-05:00"
  }
 }
