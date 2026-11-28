@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-27",
- "generated_at": "2026-11-27T21:32:00-05:00",
+ "generated_at": "2026-11-27T21:40:01-05:00",
  "games": [
   {
    "game_id": 2026020403,
@@ -50,9 +50,9 @@
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "18:20",
+   "clock": "13:34",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "WPG",
     "score": 3,
@@ -60,10 +60,10 @@
    },
    "home": {
     "abbrev": "NYI",
-    "score": 0,
-    "sog": 16
+    "score": 1,
+    "sog": 19
    },
-   "updated_at": "2026-11-27T21:32:00-05:00"
+   "updated_at": "2026-11-27T21:40:01-05:00"
   },
   {
    "game_id": 2026020413,
@@ -71,20 +71,20 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "12:31",
+   "clock": "06:27",
    "in_intermission": false,
    "running": true,
    "away": {
     "abbrev": "PIT",
     "score": 4,
-    "sog": 14
+    "sog": 17
    },
    "home": {
     "abbrev": "BUF",
-    "score": 2,
-    "sog": 10
+    "score": 3,
+    "sog": 14
    },
-   "updated_at": "2026-11-27T21:32:00-05:00"
+   "updated_at": "2026-11-27T21:40:01-05:00"
   },
   {
    "game_id": 2026020414,
@@ -92,9 +92,9 @@
    "schedule_state": "OK",
    "period": 2,
    "period_type": "REG",
-   "clock": "06:38",
+   "clock": "02:33",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "SEA",
     "score": 1,
@@ -103,9 +103,9 @@
    "home": {
     "abbrev": "EDM",
     "score": 2,
-    "sog": 14
+    "sog": 18
    },
-   "updated_at": "2026-11-27T21:32:00-05:00"
+   "updated_at": "2026-11-27T21:40:01-05:00"
   }
  ],
  "picks": {
@@ -132,12 +132,12 @@
   "2026-11-27:2026020413:8482097:shots:2.5:over": {
    "game_id": 2026020413,
    "market": "shots",
-   "stat": 2
+   "stat": 3
   },
   "2026-11-27:2026020414:8477934:points:1.5:over": {
    "game_id": 2026020414,
    "market": "points",
-   "stat": 0
+   "stat": 1
   },
   "2026-11-27:2026020414:8477953:points:0.5:under": {
    "game_id": 2026020414,
