@@ -195,10 +195,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:43 - 4th",
+    "detail": "1:41 - 4th",
     "score": {
-     "MIA": "93",
-     "NY": "92"
+     "MIA": "100",
+     "NY": "97"
     }
    },
    {
@@ -210,9 +210,9 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "0.0 - 3rd",
+    "detail": "8:49 - 4th",
     "score": {
-     "MIL": "76",
+     "MIL": "78",
      "DET": "90"
     }
    },
@@ -224,11 +224,11 @@
     "home": "IND",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:01 - 3rd",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 3rd",
     "score": {
-     "PHI": "72",
-     "IND": "52"
+     "PHI": "85",
+     "IND": "58"
     }
    },
    {
@@ -239,11 +239,11 @@
     "home": "TOR",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2:46 - 3rd",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 3rd",
     "score": {
-     "BKN": "74",
-     "TOR": "91"
+     "BKN": "79",
+     "TOR": "102"
     }
    },
    {
@@ -254,11 +254,11 @@
     "home": "BOS",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "6:42 - 3rd",
     "score": {
-     "ATL": "39",
-     "BOS": "51"
+     "ATL": "50",
+     "BOS": "63"
     }
    },
    {
@@ -270,10 +270,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "6:41 - 2nd",
+    "detail": "2:38 - 2nd",
     "score": {
-     "MEM": "47",
-     "MIN": "37"
+     "MEM": "55",
+     "MIN": "45"
     }
    },
    {
@@ -285,10 +285,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:05 - 1st",
+    "detail": "3:18 - 1st",
     "score": {
-     "DAL": "18",
-     "PHX": "5"
+     "DAL": "22",
+     "PHX": "21"
     }
    },
    {
