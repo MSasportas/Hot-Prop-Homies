@@ -5,7 +5,7 @@
  "status": {
   "odds": {
    "keys": 13,
-   "pool_left": 404,
+   "pool_left": 388,
    "low": false,
    "refused": false,
    "no_keys": false,
@@ -18,11 +18,11 @@
     "D"
    ]
   },
-  "next_read_at": "2026-11-27T21:10:00-05:00",
-  "last_read_at": "2026-11-27T20:50:02-05:00",
+  "next_read_at": null,
+  "last_read_at": "2026-11-27T21:10:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-27T21:03:35-05:00"
+   "at": "2026-11-27T21:10:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -30,7 +30,7 @@
    "rosters": true,
    "lineups": {
     "ok": true,
-    "at": "2026-11-27T21:03:35-05:00",
+    "at": "2026-11-27T21:10:00-05:00",
     "confirmed": [
      "ATL",
      "BKN",
@@ -38,15 +38,21 @@
      "DAL",
      "DEN",
      "DET",
+     "GS",
      "IND",
+     "LAC",
      "MEM",
      "MIA",
      "MIL",
      "MIN",
+     "NO",
      "NY",
      "PHI",
      "PHX",
-     "TOR"
+     "POR",
+     "SA",
+     "TOR",
+     "UTAH"
     ]
    },
    "grade": true
@@ -59,7 +65,7 @@
    "away": "MIA",
    "home": "NYK",
    "state": "in",
-   "detail": "10:18 - 4th",
+   "detail": "8:54 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -96,7 +102,7 @@
    "away": "MIL",
    "home": "DET",
    "state": "in",
-   "detail": "6:30 - 3rd",
+   "detail": "4:03 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -133,7 +139,7 @@
    "away": "PHI",
    "home": "IND",
    "state": "in",
-   "detail": "9:39 - 3rd",
+   "detail": "6:37 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -170,7 +176,7 @@
    "away": "BKN",
    "home": "TOR",
    "state": "in",
-   "detail": "9:23 - 3rd",
+   "detail": "6:51 - 3rd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -207,7 +213,7 @@
    "away": "ATL",
    "home": "BOS",
    "state": "in",
-   "detail": "1:37 - 2nd",
+   "detail": "Halftime",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -244,7 +250,7 @@
    "away": "MEM",
    "home": "MIN",
    "state": "in",
-   "detail": "1:18 - 1st",
+   "detail": "11:28 - 2nd",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -321,9 +327,9 @@
    "detail": "11/27 - 9:30 PM EST",
    "lineups": {
     "away": "expected",
-    "home": "expected"
+    "home": "confirmed"
    },
-   "read_at": "2026-11-27T20:50:02-05:00",
+   "read_at": "2026-11-27T21:10:00-05:00",
    "picks": 0,
    "checks": [
     {
@@ -333,12 +339,16 @@
     {
      "read": "C",
      "at": "2026-11-27T20:50:02-05:00"
+    },
+    {
+     "read": "D",
+     "at": "2026-11-27T21:10:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-27T20:50:02-05:00",
-   "final": false,
-   "next_check_at": "2026-11-27T21:10:00-05:00",
-   "next_check_read": "D",
+   "last_check_at": "2026-11-27T21:10:00-05:00",
+   "final": true,
+   "next_check_at": null,
+   "next_check_read": null,
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -354,9 +364,9 @@
    "detail": "11/27 - 9:30 PM EST",
    "lineups": {
     "away": "confirmed",
-    "home": "expected"
+    "home": "confirmed"
    },
-   "read_at": "2026-11-27T20:50:02-05:00",
+   "read_at": "2026-11-27T21:10:00-05:00",
    "picks": 0,
    "checks": [
     {
@@ -366,12 +376,16 @@
     {
      "read": "C",
      "at": "2026-11-27T20:50:02-05:00"
+    },
+    {
+     "read": "D",
+     "at": "2026-11-27T21:10:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-27T20:50:02-05:00",
-   "final": false,
-   "next_check_at": "2026-11-27T21:10:00-05:00",
-   "next_check_read": "D",
+   "last_check_at": "2026-11-27T21:10:00-05:00",
+   "final": true,
+   "next_check_at": null,
+   "next_check_read": null,
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -386,10 +400,10 @@
    "state": "pre",
    "detail": "11/27 - 9:30 PM EST",
    "lineups": {
-    "away": "expected",
-    "home": "expected"
+    "away": "confirmed",
+    "home": "confirmed"
    },
-   "read_at": "2026-11-27T20:50:02-05:00",
+   "read_at": "2026-11-27T21:10:00-05:00",
    "picks": 0,
    "checks": [
     {
@@ -399,12 +413,16 @@
     {
      "read": "C",
      "at": "2026-11-27T20:50:02-05:00"
+    },
+    {
+     "read": "D",
+     "at": "2026-11-27T21:10:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-27T20:50:02-05:00",
-   "final": false,
-   "next_check_at": "2026-11-27T21:10:00-05:00",
-   "next_check_read": "D",
+   "last_check_at": "2026-11-27T21:10:00-05:00",
+   "final": true,
+   "next_check_at": null,
+   "next_check_read": null,
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -419,10 +437,10 @@
    "state": "pre",
    "detail": "11/27 - 9:30 PM EST",
    "lineups": {
-    "away": "expected",
-    "home": "expected"
+    "away": "confirmed",
+    "home": "confirmed"
    },
-   "read_at": "2026-11-27T20:50:02-05:00",
+   "read_at": "2026-11-27T21:10:00-05:00",
    "picks": 0,
    "checks": [
     {
@@ -432,12 +450,16 @@
     {
      "read": "C",
      "at": "2026-11-27T20:50:02-05:00"
+    },
+    {
+     "read": "D",
+     "at": "2026-11-27T21:10:00-05:00"
     }
    ],
-   "last_check_at": "2026-11-27T20:50:02-05:00",
-   "final": false,
-   "next_check_at": "2026-11-27T21:10:00-05:00",
-   "next_check_read": "D",
+   "last_check_at": "2026-11-27T21:10:00-05:00",
+   "final": true,
+   "next_check_at": null,
+   "next_check_read": null,
    "paused": false,
    "injury_clear": {
     "away": true,
@@ -669,11 +691,11 @@
  ],
  "empty": {
   "text": "No picks yet today",
-  "why": "1118 lines read. Pinnacle moved alone on 172, none of them bettable yet.",
-  "next": "2026-11-27T21:10:00-05:00"
+  "why": "1130 lines read. Pinnacle moved alone on 175, none of them bettable yet.",
+  "next": null
  },
  "counts": {
-  "lines_read": 1118,
+  "lines_read": 1130,
   "passing": 18,
   "games": 11
  },
@@ -684,6 +706,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-27T21:03:35-05:00",
- "status_at": "2026-11-27T21:03:35-05:00"
+ "generated_at": "2026-11-27T21:10:00-05:00",
+ "status_at": "2026-11-27T21:10:00-05:00"
 }

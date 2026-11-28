@@ -211,7 +211,7 @@
    }
   },
   "NO": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jeremiah Fears",
     "Herbert Jones",
@@ -225,7 +225,7 @@
    }
   },
   "LAC": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Darius Garland",
     "Brandon Ingram",
@@ -239,7 +239,7 @@
    }
   },
   "GS": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "De'Anthony Melton",
     "Brandin Podziemski",
@@ -255,7 +255,7 @@
    }
   },
   "POR": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Jrue Holiday",
     "Sidy Cissoko",
@@ -283,7 +283,7 @@
    "status": {}
   },
   "SA": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "De'Aaron Fox",
     "Devin Vassell",
@@ -308,13 +308,13 @@
    "status": {}
   },
   "UTAH": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Keyonte George",
     "Darryn Peterson",
     "Josh Green",
     "Ace Bailey",
-    "Jaxson Hayes"
+    "Jusuf Nurkic"
    ],
    "status": {
     "Mo Bamba": "out",
@@ -323,5 +323,5 @@
    }
   }
  },
- "at": "2026-11-27T21:03:35-05:00"
+ "at": "2026-11-27T21:10:00-05:00"
 }
