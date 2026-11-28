@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T18:40:01-05:00",
+ "at": "2026-11-27T19:00:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -239,13 +239,6 @@
    "date": "2026-11-27T23:02Z",
    "note": "McConnell (hamstring) has been ruled out for Friday's game against the 76ers, Alex Golden of SI.com reports."
   },
-  "2580365": {
-   "status": "day-to-day",
-   "name": "Larry Nance Jr.",
-   "team": "IND",
-   "date": "2026-11-27T18:07Z",
-   "note": "Nance (ankle) is probable for Friday's game against the 76ers."
-  },
   "4396993": {
    "status": "out",
    "name": "Tyrese Haliburton",
@@ -414,19 +407,19 @@
    "date": "2026-11-27T15:36Z",
    "note": "Drummond (concussion) has been ruled out for Friday's game against the Heat."
   },
+  "5159925": {
+   "status": "out",
+   "name": "Nikola Topic",
+   "team": "OKC",
+   "date": "2026-11-27T23:49Z",
+   "note": "Topic (hip) is out for Saturday's game against the Bucks, Brandon Rahbar of DailyThunder.com reports."
+  },
   "5174983": {
    "status": "out",
    "name": "Aday Mara",
    "team": "OKC",
    "date": "2026-11-27T23:10Z",
    "note": "Mara (leg) is out for Saturday's game versus the Bucks, per Clemente Almanza of USA Today."
-  },
-  "5159925": {
-   "status": "out",
-   "name": "Nikola Topic",
-   "team": "OKC",
-   "date": "2026-11-24T23:29Z",
-   "note": "Topic (hip) is listed as out for Wednesday's game versus Minnesota."
   },
   "4432823": {
    "status": "out",
