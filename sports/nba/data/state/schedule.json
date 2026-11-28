@@ -252,13 +252,13 @@
     "start": "2026-11-27T20:00:00-05:00",
     "away": "ATL",
     "home": "BOS",
-    "state": "in",
-    "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "2.6 - 4th",
+    "state": "post",
+    "completed": true,
+    "status_name": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "ATL": "85",
-     "BOS": "83"
+     "ATL": "87",
+     "BOS": "86"
     }
    },
    {
@@ -270,10 +270,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "10:21 - 4th",
+    "detail": "5:14 - 4th",
     "score": {
-     "MEM": "87",
-     "MIN": "81"
+     "MEM": "101",
+     "MIN": "89"
     }
    },
    {
@@ -284,11 +284,11 @@
     "home": "PHX",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_HALFTIME",
-    "detail": "Halftime",
+    "status_name": "STATUS_IN_PROGRESS",
+    "detail": "10:04 - 3rd",
     "score": {
-     "DAL": "53",
-     "PHX": "63"
+     "DAL": "57",
+     "PHX": "65"
     }
    },
    {
@@ -300,10 +300,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "9:24 - 2nd",
+    "detail": "5:40 - 2nd",
     "score": {
-     "LAL": "34",
-     "SA": "17"
+     "LAL": "43",
+     "SA": "23"
     }
    },
    {
@@ -315,10 +315,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "5:23 - 2nd",
+    "detail": "23.0 - 2nd",
     "score": {
-     "DEN": "40",
-     "UTAH": "38"
+     "DEN": "50",
+     "UTAH": "50"
     }
    },
    {
@@ -330,10 +330,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "7:18 - 2nd",
+    "detail": "3:45 - 2nd",
     "score": {
-     "NO": "32",
-     "LAC": "39"
+     "NO": "40",
+     "LAC": "46"
     }
    },
    {
@@ -345,10 +345,10 @@
     "state": "in",
     "completed": false,
     "status_name": "STATUS_IN_PROGRESS",
-    "detail": "8:34 - 2nd",
+    "detail": "5:20 - 2nd",
     "score": {
-     "GS": "16",
-     "POR": "47"
+     "GS": "27",
+     "POR": "53"
     }
    }
   ]
