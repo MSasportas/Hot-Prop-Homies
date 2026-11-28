@@ -1,12 +1,12 @@
 {
  "slate_date": "2026-11-27",
- "generated_at": "2026-11-27T19:01:00-05:00",
- "status_at": "2026-11-27T19:01:00-05:00",
+ "generated_at": "2026-11-27T19:20:01-05:00",
+ "status_at": "2026-11-27T19:20:01-05:00",
  "valid_until": "2026-11-28T05:00:00-05:00",
  "status": {
   "prices_state": "ok",
-  "prices_at": "2026-11-27T18:50:01-05:00",
-  "next_price_read_at": "2026-11-27T19:15:00-05:00",
+  "prices_at": "2026-11-27T19:20:01-05:00",
+  "next_price_read_at": null,
   "stats_built_at": "2026-11-27T18:40:02-05:00",
   "stats_through": "2026-11-25",
   "lineups_at": "2026-11-27T19:01:00-05:00",
@@ -16,11 +16,11 @@
   "stats_state": "ok",
   "last_run": {
    "ok": true,
-   "at": "2026-11-27T19:01:00-05:00",
+   "at": "2026-11-27T19:20:01-05:00",
    "failed_step": null
   },
   "pool": {
-   "pulls_left": 2211,
+   "pulls_left": 2204,
    "keys": 9,
    "game_days_left": 4,
    "days_left": 4,
@@ -660,19 +660,20 @@
      {
       "pull": "B",
       "at": "2026-11-27T18:30:00-05:00"
+     },
+     {
+      "pull": "C",
+      "at": "2026-11-27T19:20:01-05:00"
      }
     ],
-    "next_read": {
-     "pull": "C",
-     "at": "2026-11-27T19:15:00-05:00"
-    },
+    "next_read": null,
     "lineups_at": {
      "away": "2026-11-27T17:00:01-05:00",
      "home": "2026-11-27T17:00:01-05:00"
     }
    },
    "started": false,
-   "reads_done": false,
+   "reads_done": true,
    "picks": 1,
    "excluded_reason": null,
    "excluded_teams": []
@@ -705,20 +706,21 @@
      {
       "pull": "B",
       "at": "2026-11-27T18:30:00-05:00"
+     },
+     {
+      "pull": "C",
+      "at": "2026-11-27T19:20:01-05:00"
      }
     ],
-    "next_read": {
-     "pull": "C",
-     "at": "2026-11-27T19:15:00-05:00"
-    },
+    "next_read": null,
     "lineups_at": {
      "away": "2026-11-27T17:00:01-05:00",
      "home": "2026-11-27T17:00:01-05:00"
     }
    },
    "started": false,
-   "reads_done": false,
-   "picks": 2,
+   "reads_done": true,
+   "picks": 3,
    "excluded_reason": null,
    "excluded_teams": []
   }
@@ -748,7 +750,7 @@
     }
    ],
    "pulled": null,
-   "price_final": false,
+   "price_final": true,
    "graded": null,
    "rank": 1,
    "tier": "main",
@@ -788,6 +790,69 @@
    "games_this_season": 25
   },
   {
+   "id": "2026-11-27:2026020414:8477953:points:0.5:under",
+   "price": 105,
+   "first_price": 105,
+   "first_price_at": "2026-11-27T19:20:01-05:00",
+   "worst_price": 105,
+   "p": 0.5258,
+   "breakeven": 0.4878,
+   "p_pct": 52,
+   "breakeven_pct": 49,
+   "state": "lineup",
+   "history": [
+    {
+     "at": "2026-11-27T19:20:01-05:00",
+     "text": "Lineup confirmed"
+    }
+   ],
+   "prices": [
+    {
+     "at": "2026-11-27T19:20:01-05:00",
+     "price": 105
+    }
+   ],
+   "pulled": null,
+   "price_final": true,
+   "graded": null,
+   "rank": 2,
+   "tier": "main",
+   "game_id": 2026020414,
+   "player": "K. Kapanen",
+   "player_id": 8477953,
+   "team": "EDM",
+   "opp": "SEA",
+   "home": true,
+   "start": "2026-11-27T20:00:00-05:00",
+   "market": "points",
+   "line": 0.5,
+   "side": "under",
+   "bet": "Under 0.5 points",
+   "price_at": "2026-11-27T19:20:01-05:00",
+   "gap_pct": 6.5,
+   "market_fair_pct": 51.9,
+   "n_books": 6,
+   "guard": {
+    "verdict": "agrees",
+    "ours_pct": 52.6,
+    "model_pct": 55.1
+   },
+   "settled": "lineup",
+   "settled_label": "Lineup confirmed",
+   "reason": "6 other books say 51.9%; Hard Rock's +105 only needs 48.8%. Our model agrees (our blend: 52.6%).",
+   "link": "https://app.hardrock.bet/?deep_link_value=betslip/3078685049422479769",
+   "links": {
+    "hardrock": {
+     "id": "3078685049422479769",
+     "url": "https://share.hardrock.bet/Pt0T/bet?deep_link_value=hardrock://betslip/3078685049422479769"
+    },
+    "draftkings": null
+   },
+   "thin": false,
+   "games_used": 68,
+   "games_this_season": 27
+  },
+  {
    "id": "2026-11-27:2026020414:8484800:shots:1.5:under",
    "price": -115,
    "first_price": -115,
@@ -811,9 +876,9 @@
     }
    ],
    "pulled": null,
-   "price_final": false,
+   "price_final": true,
    "graded": null,
-   "rank": 2,
+   "rank": 3,
    "tier": "main",
    "game_id": 2026020414,
    "player": "B. Catton",
@@ -874,9 +939,9 @@
     }
    ],
    "pulled": null,
-   "price_final": false,
+   "price_final": true,
    "graded": null,
-   "rank": 3,
+   "rank": 4,
    "tier": "main",
    "game_id": 2026020414,
    "player": "L. Draisaitl",
@@ -1085,7 +1150,11 @@
    ],
    "pulled": null,
    "price_final": false,
-   "graded": null,
+   "graded": {
+    "result": "L",
+    "actual": "had 0",
+    "units": -1.0
+   },
    "rank": null,
    "tier": "main",
    "game_id": 2026020410,
@@ -1152,7 +1221,11 @@
    ],
    "pulled": null,
    "price_final": false,
-   "graded": null,
+   "graded": {
+    "result": "W",
+    "actual": "had 4",
+    "units": 1.35
+   },
    "rank": null,
    "tier": "main",
    "game_id": 2026020410,

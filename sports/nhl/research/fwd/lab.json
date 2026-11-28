@@ -11,38 +11,38 @@
  "LL3b loose": {
   "clv": 0.0294,
   "l": 40,
-  "pending": 5,
+  "pending": 4,
   "push": 0,
-  "units": 16.67,
+  "units": 18.02,
   "void": 0,
-  "w": 55
+  "w": 56
  },
  "LL4a fade": {
-  "clv": -0.0662,
+  "clv": -0.0661,
   "l": 103,
   "pending": 15,
   "push": 0,
-  "units": 2.18,
+  "units": 4.22,
   "void": 0,
-  "w": 118
+  "w": 120
  },
  "LL5 exch": {
-  "clv": 0.019,
-  "l": 145,
+  "clv": 0.0189,
+  "l": 147,
   "pending": 22,
   "push": 0,
-  "units": 15.5,
+  "units": 14.5,
   "void": 0,
-  "w": 171
+  "w": 172
  },
  "LL6 line": {
-  "clv": -0.0175,
-  "l": 59,
-  "pending": 12,
+  "clv": -0.0177,
+  "l": 60,
+  "pending": 10,
   "push": 0,
-  "units": -7.02,
+  "units": -6.88,
   "void": 0,
-  "w": 94
+  "w": 96
  },
  "MM2a split": {
   "clv": -0.021,
@@ -63,13 +63,13 @@
   "w": 5
  },
  "MM3a persist": {
-  "clv": 0.0334,
+  "clv": 0.0332,
   "l": 59,
-  "pending": 5,
+  "pending": 9,
   "push": 0,
-  "units": 5.49,
+  "units": 6.84,
   "void": 0,
-  "w": 62
+  "w": 63
  },
  "MM3b confirm": {
   "clv": 0.0543,
@@ -90,22 +90,22 @@
   "w": 15
  },
  "MM5a follow": {
-  "clv": -0.0899,
-  "l": 63,
-  "pending": 4,
+  "clv": -0.0915,
+  "l": 64,
+  "pending": 5,
   "push": 0,
-  "units": -25.52,
+  "units": -26.52,
   "void": 0,
   "w": 28
  },
  "MM5b fade": {
-  "clv": -0.0705,
+  "clv": -0.0692,
   "l": 26,
-  "pending": 3,
+  "pending": 4,
   "push": 0,
-  "units": 7.81,
+  "units": 8.37,
   "void": 0,
-  "w": 60
+  "w": 61
  },
  "NN2fa follow market": {
   "clv": -0.0777,
@@ -163,33 +163,33 @@
  },
  "R28b under": {
   "clv": -0.0512,
-  "l": 213,
-  "pending": 51,
+  "l": 219,
+  "pending": 42,
   "push": 0,
-  "units": -6.48,
+  "units": -8.79,
   "void": 0,
-  "w": 210
+  "w": 214
  },
  "R28c rest": {
   "clv": -0.05,
-  "l": 316,
-  "pending": 94,
+  "l": 321,
+  "pending": 88,
   "push": 0,
-  "units": -1.07,
+  "units": -4.74,
   "void": 0,
-  "w": 366
+  "w": 368
  },
  "R28c rest mirror": {
   "clv": -0.0937,
-  "l": 374,
-  "pending": 95,
+  "l": 376,
+  "pending": 89,
   "push": 0,
-  "units": -95.06,
+  "units": -92.41,
   "void": 0,
-  "w": 318
+  "w": 323
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-28T00:01:16+00:00",
+ "updated_at": "2026-11-28T00:20:22+00:00",
  "version": 1
 }

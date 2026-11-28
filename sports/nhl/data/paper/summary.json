@@ -2,7 +2,7 @@
  "version": 1,
  "note": "Gap + Guard research log. Every flag here is a pick on the page and in the Record; vetoed and capped rows are research only.",
  "market": "shots",
- "generated_at": "2026-11-27T19:10:01-05:00",
+ "generated_at": "2026-11-27T19:20:01-05:00",
  "slate": "2026-11-27",
  "active": true,
  "window": {
@@ -40,8 +40,8 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "close_fair_pct": 54.6,
+    "clv_pct": 11.9,
     "result": null,
     "units": null
    },
@@ -108,8 +108,8 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "close_fair_pct": 55.8,
+    "clv_pct": 4.2,
     "result": null,
     "units": null
    },
@@ -182,8 +182,8 @@
     "state": "locked",
     "close_fair_pct": 44.2,
     "clv_pct": null,
-    "result": null,
-    "units": null
+    "result": "W",
+    "units": 1.35
    }
   ],
   "vetoes": [
@@ -216,8 +216,8 @@
     "pulled": null,
     "locked": false,
     "state": "open",
-    "close_fair_pct": null,
-    "clv_pct": null,
+    "close_fair_pct": 41.2,
+    "clv_pct": 3.0,
     "result": null,
     "units": null
    }
@@ -1056,34 +1056,34 @@
   }
  ],
  "nov2": {
-  "gaps_measured": 81,
+  "gaps_measured": 84,
   "gaps_logged": 107,
-  "graded_picks": 84,
-  "w": 52,
+  "graded_picks": 85,
+  "w": 53,
   "l": 32,
   "void": 0,
-  "units": 21.849135610305026,
-  "wins_z": 1.8547442821487639,
+  "units": 23.199135610305024,
+  "wins_z": 1.9661734950199579,
   "clv_gaps": {
-   "n": 81,
-   "mean": 0.0489830732666477,
-   "lb80": 0.04578562219999663,
+   "n": 84,
+   "mean": 0.04951564716357365,
+   "lb80": 0.046307885176816166,
    "pos_share": 1.0
   },
   "clv_flags": {
-   "n": 69,
-   "mean": 0.04994797376729938,
-   "lb80": 0.04644135146900498,
+   "n": 71,
+   "mean": 0.05081156855441212,
+   "lb80": 0.04715757753378515,
    "pos_share": 1.0
   },
   "clv_vetoed": {
-   "n": 12,
-   "mean": 0.04343489538790054,
-   "lb80": 0.039115405555399475,
+   "n": 13,
+   "mean": 0.04243792264437892,
+   "lb80": 0.03829909870223121,
    "pos_share": 1.0
   },
-  "clv_passed_mean": 0.04994797376729938,
-  "clv_vetoed_mean": 0.04343489538790054,
+  "clv_passed_mean": 0.05081156855441212,
+  "clv_vetoed_mean": 0.04243792264437892,
   "nights": 34,
   "nights_with_flags": 23,
   "population_slope": null,
