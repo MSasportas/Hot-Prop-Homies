@@ -194,11 +194,11 @@
     "home": "NY",
     "state": "in",
     "completed": false,
-    "status_name": "STATUS_IN_PROGRESS",
-    "detail": "4:23 - 1st",
+    "status_name": "STATUS_END_PERIOD",
+    "detail": "End of 1st",
     "score": {
-     "MIA": "20",
-     "NY": "13"
+     "MIA": "31",
+     "NY": "21"
     }
    },
    {

@@ -45,9 +45,9 @@
    "state": "confirmed",
    "starters": [
     "Daniss Jenkins",
-    "Isaiah Joe",
     "Kevin Huerter",
     "Ausar Thompson",
+    "Javonte Green",
     "John Collins"
    ],
    "status": {
@@ -118,7 +118,7 @@
    }
   },
   "ATL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Kingston Flemings",
     "Nickeil Alexander-Walker",
@@ -191,7 +191,7 @@
     "Daniel Gafford"
    ],
    "status": {
-    "Kyrie Irving": "questionable",
+    "Kyrie Irving": "out",
     "Tarik Biberovic": "out",
     "Sergio de Larrea": "out",
     "Tobi Lawal": "out",
@@ -329,5 +329,5 @@
    }
   }
  },
- "at": "2026-11-27T19:30:01-05:00"
+ "at": "2026-11-27T19:40:02-05:00"
 }
