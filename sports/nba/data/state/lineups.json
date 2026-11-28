@@ -181,11 +181,11 @@
    }
   },
   "DAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
-    "Walter Clayton",
-    "Caleb Martin",
     "Cooper Flagg",
+    "Caleb Martin",
+    "Zaccharie Risacher",
     "P.J. Washington",
     "Daniel Gafford"
    ],
@@ -198,7 +198,7 @@
    }
   },
   "PHX": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Devin Booker",
     "Jalen Green",
@@ -319,13 +319,11 @@
     "Jaxson Hayes"
    ],
    "status": {
-    "Jaxson Hayes": "questionable",
-    "Mo Bamba": "questionable",
-    "Jusuf Nurkic": "questionable",
+    "Mo Bamba": "out",
     "Jaren Jackson": "out",
     "Lauri Markkanen": "out"
    }
   }
  },
- "at": "2026-11-27T20:30:03-05:00"
+ "at": "2026-11-27T20:40:01-05:00"
 }

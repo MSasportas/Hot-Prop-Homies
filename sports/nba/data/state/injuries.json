@@ -1,5 +1,5 @@
 {
- "at": "2026-11-27T20:30:03-05:00",
+ "at": "2026-11-27T20:40:01-05:00",
  "list": {
   "3146557": {
    "status": "out",
@@ -348,8 +348,8 @@
    "status": "out",
    "name": "Bennedict Mathurin",
    "team": "NO",
-   "date": "2026-11-26T21:21Z",
-   "note": "Mathurin (foot) is doubtful for Friday's game against the Clippers."
+   "date": "2026-11-28T01:22Z",
+   "note": "Mathurin (foot) is out for Friday's game against the Clippers."
   },
   "4683742": {
    "status": "day-to-day",
@@ -625,25 +625,11 @@
    "note": "Barrett has been diagnosed with a right hamstring strain and will be re-evaluated in two weeks, Brett Siegel of ClutchPoints.com reports."
   },
   "4277919": {
-   "status": "day-to-day",
+   "status": "out",
    "name": "Mo Bamba",
    "team": "UTAH",
-   "date": "2026-11-27T16:41Z",
+   "date": "2026-11-28T01:34Z",
    "note": "Bamba (illness) is listed as questionable for Friday's game against the Nuggets, according to the Jazz's injury report."
-  },
-  "4397077": {
-   "status": "day-to-day",
-   "name": "Jaxson Hayes",
-   "team": "UTAH",
-   "date": "2026-11-27T00:11Z",
-   "note": "Hayes (knee) is questionable for Friday's game against the Nuggets."
-  },
-  "3102530": {
-   "status": "out",
-   "name": "Jusuf Nurkic",
-   "team": "UTAH",
-   "date": "2026-11-27T00:08Z",
-   "note": "Nurkic (foot) is questionable for Friday's game against the Nuggets."
   },
   "4066336": {
    "status": "out",
