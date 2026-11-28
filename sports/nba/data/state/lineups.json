@@ -272,12 +272,12 @@
    }
   },
   "LAL": {
-   "state": "expected",
+   "state": "confirmed",
    "starters": [
     "Luka Doncic",
     "Austin Reaves",
     "Matisse Thybulle",
-    "Ziaire Williams",
+    "Jake LaRavia",
     "Walker Kessler"
    ],
    "status": {}
@@ -323,5 +323,5 @@
    }
   }
  },
- "at": "2026-11-27T21:10:00-05:00"
+ "at": "2026-11-27T21:20:02-05:00"
 }
