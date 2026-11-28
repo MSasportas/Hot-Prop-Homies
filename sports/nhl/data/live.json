@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-27",
- "generated_at": "2026-11-27T22:40:01-05:00",
+ "generated_at": "2026-11-27T22:50:00-05:00",
  "games": [
   {
    "game_id": 2026020403,
@@ -67,45 +67,45 @@
   },
   {
    "game_id": 2026020413,
-   "state": "LIVE",
+   "state": "CRIT",
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "06:32",
+   "clock": "02:46",
    "in_intermission": false,
-   "running": false,
+   "running": true,
    "away": {
     "abbrev": "PIT",
     "score": 5,
-    "sog": 24
+    "sog": 27
    },
    "home": {
     "abbrev": "BUF",
     "score": 3,
     "sog": 22
    },
-   "updated_at": "2026-11-27T22:40:01-05:00"
+   "updated_at": "2026-11-27T22:50:00-05:00"
   },
   {
    "game_id": 2026020414,
-   "state": "CRIT",
+   "state": "FINAL",
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "02:19",
+   "clock": "00:00",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "SEA",
-    "score": 3,
-    "sog": 30
+    "score": 4,
+    "sog": 31
    },
    "home": {
     "abbrev": "EDM",
     "score": 2,
-    "sog": 25
+    "sog": 27
    },
-   "updated_at": "2026-11-27T22:40:01-05:00"
+   "updated_at": "2026-11-27T22:50:00-05:00"
   }
  ],
  "picks": {
