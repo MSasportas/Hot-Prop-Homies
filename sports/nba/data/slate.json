@@ -22,7 +22,7 @@
   "last_read_at": "2026-11-27T21:10:00-05:00",
   "last_run": {
    "ok": true,
-   "at": "2026-11-27T23:33:49-05:00"
+   "at": "2026-11-27T23:40:00-05:00"
   },
   "feeds": {
    "schedule": true,
@@ -325,7 +325,7 @@
    "away": "LAL",
    "home": "SAS",
    "state": "in",
-   "detail": "8:13 - 4th",
+   "detail": "5:55 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -362,7 +362,7 @@
    "away": "DEN",
    "home": "UTA",
    "state": "in",
-   "detail": "5:53 - 4th",
+   "detail": "3:54 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -399,7 +399,7 @@
    "away": "NOP",
    "home": "LAC",
    "state": "in",
-   "detail": "7:23 - 4th",
+   "detail": "6:18 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -436,7 +436,7 @@
    "away": "GSW",
    "home": "POR",
    "state": "in",
-   "detail": "9:49 - 4th",
+   "detail": "8:11 - 4th",
    "lineups": {
     "away": "confirmed",
     "home": "confirmed"
@@ -723,6 +723,6 @@
   "record_nights": 7,
   "small_sample_n": 30
  },
- "generated_at": "2026-11-27T23:33:49-05:00",
- "status_at": "2026-11-27T23:33:49-05:00"
+ "generated_at": "2026-11-27T23:40:00-05:00",
+ "status_at": "2026-11-27T23:40:00-05:00"
 }
