@@ -33,18 +33,18 @@
  },
  "MM3a persist": {
   "bets": 131,
-  "graded": 126,
-  "w": 64,
-  "units": 4.936,
-  "roi": 0.0392,
+  "graded": 131,
+  "w": 68,
+  "units": 7.783,
+  "roi": 0.0594,
   "ci90": [
-   -0.1218,
-   0.2035
+   -0.1041,
+   0.2162
   ],
-  "p_one_sided": 0.3605,
+  "p_one_sided": 0.29,
   "mean_ev": 0.0332,
   "mean_clv": 0.0332,
-  "games": 75,
+  "games": 76,
   "candidate": false
  },
  "MM3b confirm": {
