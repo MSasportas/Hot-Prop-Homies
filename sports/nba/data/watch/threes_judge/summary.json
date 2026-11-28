@@ -5,17 +5,49 @@
  "about": "Lab (Matt, 2026-11-12; research Run 11 T1b): 3-pointers only, Hard Rock's main-line price 1%+ better than Pinnacle's de-vigged chance on the same line, no Pinnacle move needed. 18 nights before tracking: 17 bets 10-7 +6.15u, beat the close by 0.9%. Research only, never the Record or Discord.",
  "from_slate": "2026-11-12",
  "min_ev": 0.01,
- "updated_at": "2026-11-26T00:23:34-05:00",
+ "updated_at": "2026-11-27T20:50:08-05:00",
  "total": {
   "w": 12,
   "l": 16,
   "push": 0,
   "void": 0,
   "units": -1.46,
-  "pending": 0,
+  "pending": 1,
   "hit_rate": 0.4286
  },
  "nights": [
+  {
+   "date": "2026-11-27",
+   "w": 0,
+   "l": 0,
+   "units": 0,
+   "bets": [
+    {
+     "at": "2026-11-27T20:50:02-05:00",
+     "bet": "Over 1.5 threes",
+     "game_id": "401909333",
+     "gap_ev": -0.0667,
+     "home": true,
+     "line": 1.5,
+     "market": "threes",
+     "market_fair": 0.5275,
+     "opp": "LAL",
+     "pid": "4845367",
+     "pin_ev": 0.0146,
+     "pin_fair": 0.5735,
+     "player": "Stephon Castle",
+     "price": -130,
+     "read": "C",
+     "side": "over",
+     "slate": "2026-11-27",
+     "start": "2026-11-27T21:30:00-05:00",
+     "team": "SA",
+     "result": null,
+     "actual": null,
+     "units": null
+    }
+   ]
+  },
   {
    "date": "2026-11-25",
    "w": 0,
