@@ -157,7 +157,6 @@
     "Zach Edey"
    ],
    "status": {
-    "Zach Edey": "questionable",
     "Cameron Boozer": "out",
     "Jerami Grant": "out",
     "GG Jackson": "out",
@@ -184,16 +183,16 @@
   "DAL": {
    "state": "expected",
    "starters": [
-    "Kyrie Irving",
+    "Walter Clayton",
     "Caleb Martin",
     "Cooper Flagg",
     "P.J. Washington",
     "Daniel Gafford"
    ],
    "status": {
-    "Kyrie Irving": "out",
     "Tarik Biberovic": "out",
     "Sergio de Larrea": "out",
+    "Kyrie Irving": "out",
     "Tobi Lawal": "out",
     "Dereck Lively": "out"
    }
@@ -329,5 +328,5 @@
    }
   }
  },
- "at": "2026-11-27T19:50:02-05:00"
+ "at": "2026-11-27T20:00:01-05:00"
 }
