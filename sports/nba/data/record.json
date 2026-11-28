@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-27T22:00:00-05:00",
+ "generated_at": "2026-11-27T23:00:01-05:00",
  "summary": {
   "headline": {
    "w": 75,
-   "l": 55,
+   "l": 56,
    "push": 0,
    "void": 2,
-   "units": 15.18,
-   "hit_rate": 0.5769,
-   "needed": 0.5187,
-   "n": 130
+   "units": 14.18,
+   "hit_rate": 0.5725,
+   "needed": 0.519,
+   "n": 131
   },
   "rows": [
    {
@@ -28,13 +28,13 @@
     "key": "points",
     "label": "Points",
     "w": 27,
-    "l": 19,
+    "l": 20,
     "push": 0,
     "void": 2,
-    "units": 3.86,
-    "hit_rate": 0.587,
-    "needed": 0.5401,
-    "n": 46
+    "units": 2.86,
+    "hit_rate": 0.5745,
+    "needed": 0.5405,
+    "n": 47
    },
    {
     "key": "assists",
@@ -76,13 +76,13 @@
     "key": "window:90 \u2192 45 min",
     "label": "Window 90 \u2192 45 min",
     "w": 14,
-    "l": 10,
+    "l": 11,
     "push": 0,
     "void": 0,
-    "units": 2.32,
-    "hit_rate": 0.5833,
-    "needed": 0.5317,
-    "n": 24
+    "units": 1.32,
+    "hit_rate": 0.56,
+    "needed": 0.5326,
+    "n": 25
    },
    {
     "key": "window:45 \u2192 20 min",
@@ -293,13 +293,13 @@
       "key": "points",
       "label": "Points",
       "w": 27,
-      "l": 19,
+      "l": 20,
       "push": 0,
       "void": 2,
-      "units": 3.86,
-      "hit_rate": 0.587,
-      "needed": 0.5401,
-      "n": 46,
+      "units": 2.86,
+      "hit_rate": 0.5745,
+      "needed": 0.5405,
+      "n": 47,
       "ids": [
        "2026-11-27:401909326:3032977:points:27.5:under",
        "2026-11-27:401909331:3032976:points:8.5:under",
@@ -492,13 +492,13 @@
       "key": "under",
       "label": "Under",
       "w": 49,
-      "l": 39,
+      "l": 40,
       "push": 0,
       "void": 1,
-      "units": 4.17,
-      "hit_rate": 0.5568,
-      "needed": 0.5299,
-      "n": 88,
+      "units": 3.17,
+      "hit_rate": 0.5506,
+      "needed": 0.5301,
+      "n": 89,
       "ids": [
        "2026-11-27:401909328:5124612:rebounds:6.5:under",
        "2026-11-27:401909326:3032977:points:27.5:under",
@@ -603,13 +603,13 @@
       "key": "e0",
       "label": "0 to 2%",
       "w": 57,
-      "l": 39,
+      "l": 40,
       "push": 0,
       "void": 1,
-      "units": 13.48,
-      "hit_rate": 0.5938,
-      "needed": 0.5221,
-      "n": 96,
+      "units": 12.48,
+      "hit_rate": 0.5876,
+      "needed": 0.5225,
+      "n": 97,
       "ids": [
        "2026-11-27:401909328:5124612:rebounds:6.5:under",
        "2026-11-27:401909326:3062679:threes:1.5:under",
@@ -817,13 +817,13 @@
       "key": "clear",
       "label": "Injury report clear",
       "w": 60,
-      "l": 40,
+      "l": 41,
       "push": 0,
       "void": 0,
-      "units": 16.06,
-      "hit_rate": 0.6,
-      "needed": 0.5196,
-      "n": 100,
+      "units": 15.06,
+      "hit_rate": 0.5941,
+      "needed": 0.5199,
+      "n": 101,
       "ids": [
        "2026-11-27:401909326:3032977:points:27.5:under",
        "2026-11-27:401909331:3032976:points:8.5:under",
@@ -1025,13 +1025,13 @@
       "key": "fav",
       "label": "-100 to -150",
       "w": 51,
-      "l": 32,
+      "l": 33,
       "push": 0,
       "void": 2,
-      "units": 9.08,
-      "hit_rate": 0.6145,
-      "needed": 0.5505,
-      "n": 83,
+      "units": 8.08,
+      "hit_rate": 0.6071,
+      "needed": 0.5506,
+      "n": 84,
       "ids": [
        "2026-11-27:401909328:5124612:rebounds:6.5:under",
        "2026-11-27:401909326:3032977:points:27.5:under",
@@ -1128,12 +1128,12 @@
    {
     "date": "2026-11-27",
     "w": 3,
-    "l": 0,
+    "l": 1,
     "push": 0,
     "void": 0,
-    "units": 2.31,
+    "units": 1.31,
     "n": 4,
-    "graded": false
+    "graded": true
    },
    {
     "date": "2026-11-25",
@@ -1400,10 +1400,10 @@
  "nights": [
   {
    "date": "2026-11-27",
-   "graded": false,
+   "graded": true,
    "w": 3,
-   "l": 0,
-   "units": 2.31,
+   "l": 1,
+   "units": 1.31,
    "entries": [
     {
      "id": "2026-11-27:401909328:5124612:rebounds:6.5:under",
@@ -1500,9 +1500,9 @@
        "at": "2026-11-27T19:50:02-05:00"
       }
      ],
-     "result": null,
-     "actual": null,
-     "units": null,
+     "result": "L",
+     "actual": "13 points",
+     "units": -1.0,
      "pulled": null,
      "legs": [],
      "window": "90 \u2192 45 min",

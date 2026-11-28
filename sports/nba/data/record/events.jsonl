@@ -565,3 +565,4 @@
 {"actual":null,"actual_text":"22 points","at":"2026-11-27T21:50:01-05:00","id":"2026-11-27:401909326:3032977:points:27.5:under","price":-105,"result":"W","t":"graded","units":0.9524}
 {"actual":null,"actual_text":"1 three","at":"2026-11-27T21:50:01-05:00","id":"2026-11-27:401909326:3062679:threes:1.5:under","price":-150,"result":"W","t":"graded","units":0.6667}
 {"actual":null,"actual_text":"5 rebounds","at":"2026-11-27T22:00:00-05:00","id":"2026-11-27:401909328:5124612:rebounds:6.5:under","price":-145,"result":"W","t":"graded","units":0.6897}
+{"actual":null,"actual_text":"13 points","at":"2026-11-27T23:00:01-05:00","id":"2026-11-27:401909331:3032976:points:8.5:under","price":-125,"result":"L","t":"graded","units":-1.0}
