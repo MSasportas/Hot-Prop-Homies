@@ -2,45 +2,45 @@
  "LL3a tight": {
   "clv": 0.0298,
   "l": 90,
-  "pending": 2,
+  "pending": 1,
   "push": 0,
-  "units": 0.52,
+  "units": 1.21,
   "void": 0,
-  "w": 90
+  "w": 91
  },
  "LL3b loose": {
   "clv": 0.0294,
   "l": 40,
-  "pending": 1,
+  "pending": 0,
   "push": 0,
-  "units": 21.5,
+  "units": 22.55,
   "void": 0,
-  "w": 59
+  "w": 60
  },
  "LL4a fade": {
   "clv": -0.0661,
-  "l": 106,
-  "pending": 4,
+  "l": 107,
+  "pending": 2,
   "push": 0,
-  "units": 7.96,
+  "units": 8.01,
   "void": 0,
-  "w": 128
+  "w": 129
  },
  "LL5 exch": {
   "clv": 0.0189,
-  "l": 157,
-  "pending": 5,
+  "l": 158,
+  "pending": 1,
   "push": 0,
-  "units": 9.35,
+  "units": 11.04,
   "void": 0,
-  "w": 179
+  "w": 182
  },
  "LL6 line": {
   "clv": -0.0177,
-  "l": 63,
-  "pending": 3,
+  "l": 65,
+  "pending": 1,
   "push": 0,
-  "units": -7.7,
+  "units": -9.7,
   "void": 0,
   "w": 100
  },
@@ -91,21 +91,21 @@
  },
  "MM5a follow": {
   "clv": -0.0915,
-  "l": 65,
-  "pending": 2,
+  "l": 66,
+  "pending": 0,
   "push": 0,
-  "units": -24.82,
+  "units": -24.37,
   "void": 0,
-  "w": 30
+  "w": 31
  },
  "MM5b fade": {
   "clv": -0.0692,
-  "l": 28,
-  "pending": 2,
+  "l": 29,
+  "pending": 0,
   "push": 0,
-  "units": 6.37,
+  "units": 6.03,
   "void": 0,
-  "w": 61
+  "w": 62
  },
  "NN2fa follow market": {
   "clv": -0.0777,
@@ -163,33 +163,33 @@
  },
  "R28b under": {
   "clv": -0.0512,
-  "l": 236,
-  "pending": 12,
+  "l": 240,
+  "pending": 3,
   "push": 0,
-  "units": -11.36,
+  "units": -10.32,
   "void": 0,
-  "w": 227
+  "w": 232
  },
  "R28c rest": {
   "clv": -0.05,
-  "l": 355,
-  "pending": 25,
+  "l": 360,
+  "pending": 11,
   "push": 0,
-  "units": -12.68,
+  "units": -9.82,
   "void": 0,
-  "w": 397
+  "w": 406
  },
  "R28c rest mirror": {
   "clv": -0.0937,
-  "l": 406,
-  "pending": 25,
+  "l": 415,
+  "pending": 11,
   "push": 0,
-  "units": -93.82,
+  "units": -98.3,
   "void": 0,
-  "w": 357
+  "w": 362
  },
  "active": true,
  "note": "Research only: forward tests, never picks. Updated by the daily Researcher run.",
- "updated_at": "2026-11-28T04:20:15+00:00",
+ "updated_at": "2026-11-28T04:30:21+00:00",
  "version": 1
 }

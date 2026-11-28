@@ -17,82 +17,82 @@
  },
  "R28b under": {
   "bets": 475,
-  "graded": 463,
-  "w": 227,
-  "units": -11.358,
-  "roi": -0.0245,
+  "graded": 472,
+  "w": 232,
+  "units": -10.324,
+  "roi": -0.0219,
   "ci90": [
-   -0.0998,
-   0.0533
+   -0.0975,
+   0.0535
   ],
-  "p_one_sided": 0.7195,
+  "p_one_sided": 0.711,
   "mean_ev": 0.0,
   "mean_clv": -0.0512,
-  "games": 55,
+  "games": 56,
   "candidate": false
  },
  "R28b over": {
   "bets": 288,
-  "graded": 276,
-  "w": 109,
-  "units": -46.276,
-  "roi": -0.1677,
+  "graded": 280,
+  "w": 110,
+  "units": -47.826,
+  "roi": -0.1708,
   "ci90": [
-   -0.2837,
-   -0.0475
+   -0.2844,
+   -0.0521
   ],
   "p_one_sided": 0.9925,
   "mean_ev": 0.0,
   "mean_clv": -0.1205,
-  "games": 55,
+  "games": 56,
   "candidate": false
  },
  "R28c rest": {
   "bets": 777,
-  "graded": 752,
-  "w": 397,
-  "units": -12.683,
-  "roi": -0.0169,
+  "graded": 766,
+  "w": 406,
+  "units": -9.818,
+  "roi": -0.0128,
   "ci90": [
-   -0.0786,
-   0.045
+   -0.078,
+   0.0472
   ],
-  "p_one_sided": 0.697,
+  "p_one_sided": 0.6455,
   "mean_ev": 0.0,
   "mean_clv": -0.05,
-  "games": 54,
+  "games": 55,
   "candidate": false
  },
  "R28c rest mirror": {
   "bets": 788,
-  "graded": 763,
-  "w": 357,
-  "units": -93.816,
-  "roi": -0.123,
+  "graded": 777,
+  "w": 362,
+  "units": -98.295,
+  "roi": -0.1265,
   "ci90": [
-   -0.1869,
-   -0.0565
+   -0.1909,
+   -0.0586
   ],
-  "p_one_sided": 0.9995,
+  "p_one_sided": 0.999,
   "mean_ev": 0.0,
   "mean_clv": -0.0937,
-  "games": 54,
+  "games": 55,
   "candidate": false
  },
  "R28d backup goalie": {
   "bets": 232,
-  "graded": 224,
-  "w": 94,
-  "units": -47.986,
-  "roi": -0.2142,
+  "graded": 230,
+  "w": 96,
+  "units": -50.473,
+  "roi": -0.2194,
   "ci90": [
-   -0.3103,
-   -0.1248
+   -0.311,
+   -0.1333
   ],
   "p_one_sided": 1.0,
   "mean_ev": 0.0,
   "mean_clv": -0.1021,
-  "games": 26,
+  "games": 27,
   "candidate": false
  }
 }
