@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-27",
- "generated_at": "2026-11-27T22:50:00-05:00",
+ "generated_at": "2026-11-27T23:00:01-05:00",
  "games": [
   {
    "game_id": 2026020403,
@@ -67,24 +67,24 @@
   },
   {
    "game_id": 2026020413,
-   "state": "CRIT",
+   "state": "FINAL",
    "schedule_state": "OK",
    "period": 3,
    "period_type": "REG",
-   "clock": "02:46",
+   "clock": "00:00",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "PIT",
-    "score": 5,
-    "sog": 27
+    "score": 6,
+    "sog": 29
    },
    "home": {
     "abbrev": "BUF",
     "score": 3,
-    "sog": 22
+    "sog": 23
    },
-   "updated_at": "2026-11-27T22:50:00-05:00"
+   "updated_at": "2026-11-27T23:00:01-05:00"
   },
   {
    "game_id": 2026020414,
@@ -105,7 +105,7 @@
     "score": 2,
     "sog": 27
    },
-   "updated_at": "2026-11-27T22:50:00-05:00"
+   "updated_at": "2026-11-27T23:00:01-05:00"
   }
  ],
  "picks": {
