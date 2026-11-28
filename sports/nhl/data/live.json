@@ -1,6 +1,6 @@
 {
  "slate_date": "2026-11-27",
- "generated_at": "2026-11-27T20:20:01-05:00",
+ "generated_at": "2026-11-27T20:30:01-05:00",
  "games": [
   {
    "game_id": 2026020403,
@@ -50,7 +50,7 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "09:40",
+   "clock": "00:00",
    "in_intermission": true,
    "running": false,
    "away": {
@@ -63,7 +63,7 @@
     "score": 0,
     "sog": 11
    },
-   "updated_at": "2026-11-27T20:20:01-05:00"
+   "updated_at": "2026-11-27T20:30:01-05:00"
   },
   {
    "game_id": 2026020413,
@@ -71,20 +71,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "19:16",
+   "clock": "12:52",
    "in_intermission": false,
-   "running": true,
+   "running": false,
    "away": {
     "abbrev": "PIT",
     "score": 0,
-    "sog": null
+    "sog": 1
    },
    "home": {
     "abbrev": "BUF",
     "score": 1,
-    "sog": 1
+    "sog": 5
    },
-   "updated_at": "2026-11-27T20:20:01-05:00"
+   "updated_at": "2026-11-27T20:30:01-05:00"
   },
   {
    "game_id": 2026020414,
@@ -92,20 +92,20 @@
    "schedule_state": "OK",
    "period": 1,
    "period_type": "REG",
-   "clock": "13:56",
+   "clock": "09:30",
    "in_intermission": false,
    "running": true,
    "away": {
     "abbrev": "SEA",
     "score": 0,
-    "sog": 2
+    "sog": 6
    },
    "home": {
     "abbrev": "EDM",
     "score": 0,
     "sog": 5
    },
-   "updated_at": "2026-11-27T20:20:01-05:00"
+   "updated_at": "2026-11-27T20:30:01-05:00"
   }
  ],
  "picks": {
@@ -132,7 +132,7 @@
   "2026-11-27:2026020413:8482097:shots:2.5:over": {
    "game_id": 2026020413,
    "market": "shots",
-   "stat": 0
+   "stat": 1
   },
   "2026-11-27:2026020414:8477934:points:1.5:over": {
    "game_id": 2026020414,
